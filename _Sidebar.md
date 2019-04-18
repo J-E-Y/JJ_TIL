@@ -1,5 +1,4 @@
-#10x13 Docs
+# 10x13 Docs
 
-###Servers
+### Servers
 [[ Gollum | gollum-server ]]
-
