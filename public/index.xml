@@ -36,32 +36,32 @@
     </item>
     
     <item>
-      <title>Css</title>
+      <title>CSS</title>
+      <link>/tutorial/2/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2/</guid>
+      <description>&lt;p&gt;text&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HTML</title>
       <link>/tutorial/1./</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/1./</guid>
-      <description>&lt;p&gt;CSS&lt;/p&gt;
+      <description>&lt;p&gt;text&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>/tutorial/2/</link>
+      <link>/tutorial/javascript/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/2/</guid>
-      <description>&lt;p&gt;Javascript&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>how diffcult Java is</title>
-      <link>/tutorial/3/</link>
-      <pubDate>Thu, 18 Apr 2019 00:00:00 +0900</pubDate>
-      
-      <guid>/tutorial/3/</guid>
-      <description>&lt;p&gt;Great&lt;/p&gt;
+      <guid>/tutorial/javascript/</guid>
+      <description>&lt;p&gt;text&lt;/p&gt;
 </description>
     </item>
     
