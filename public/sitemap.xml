@@ -19,12 +19,12 @@
   </url>
   
   <url>
-    <loc>/tutorial/2/</loc>
+    <loc>/tutorial/css/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tutorial/1./</loc>
+    <loc>/tutorial/html/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -208,6 +208,10 @@
   <url>
     <loc>/author/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tutorial/python/</loc>
   </url>
   
   <url>

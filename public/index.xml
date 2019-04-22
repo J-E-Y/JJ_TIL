@@ -37,20 +37,20 @@
     
     <item>
       <title>CSS</title>
-      <link>/tutorial/2/</link>
+      <link>/tutorial/css/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/2/</guid>
+      <guid>/tutorial/css/</guid>
       <description>&lt;p&gt;text&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>HTML</title>
-      <link>/tutorial/1./</link>
+      <link>/tutorial/html/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/1./</guid>
+      <guid>/tutorial/html/</guid>
       <description>&lt;p&gt;text&lt;/p&gt;
 </description>
     </item>
@@ -584,6 +584,16 @@ Figure 1: A fancy pie chart.
     Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>/tutorial/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/python/</guid>
+      <description>&lt;p&gt;text&lt;/p&gt;
 </description>
     </item>
     
