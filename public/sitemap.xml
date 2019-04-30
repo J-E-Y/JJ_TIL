@@ -44,12 +44,12 @@
   </url>
   
   <url>
-    <loc>/tutorial/it-terminology/</loc>
-    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+    <loc>/tutorial/python/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tutorial/python/</loc>
+    <loc>/tutorial/it-terminology/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -100,16 +100,6 @@
   </url>
   
   <url>
-    <loc>/post/jupyter/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2019-04-17T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/privacy/</loc>
     <lastmod>2018-06-28T00:00:00+09:00</lastmod>
   </url>
@@ -150,6 +140,11 @@
   
   <url>
     <loc>/post/getting-started/</loc>
+    <lastmod>2019-04-17T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
     <lastmod>2019-04-17T00:00:00+09:00</lastmod>
   </url>
   
@@ -223,15 +218,6 @@
   <url>
     <loc>/author/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/slides/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/slides/example/</loc>
   </url>
   
 </urlset>
