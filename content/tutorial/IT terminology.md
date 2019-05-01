@@ -5,7 +5,7 @@ draft: true
 menu:
   tutorial:
     name: IT terminology
-    weight: 7
+    weight: 20
 toc: true
 type: docs
 ---

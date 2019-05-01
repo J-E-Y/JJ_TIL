@@ -5,12 +5,8 @@ draft: true
 menu:
   tutorial:
     name: Python
-    weight: 8
+    weight: 7
 toc: true
 type: docs
 ---
-
 text
-
-
- 
