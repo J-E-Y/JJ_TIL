@@ -24,7 +24,7 @@
 #  weight = 40
 
 [[main]]
-  name = "TIL"
+  name = "Technical document"
   url = "tutorial/"
   weight = 5
 
