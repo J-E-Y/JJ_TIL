@@ -56,12 +56,74 @@
     </item>
     
     <item>
-      <title>HTML</title>
+      <title>HTML( hyper text markup Language)</title>
       <link>/tutorial/html/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/html/</guid>
-      <description>&lt;p&gt;text&lt;/p&gt;
+      <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-lt-strong-gt-tag&#34;&gt;html: &lt;strong&gt;&amp;lt;strong&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser.&lt;/p&gt;
+
+&lt;p&gt;strong tag and b tag are diffiernt :
+strong 시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. b 는 평상시대로 굵게 읽는다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Emphasized text goes here&amp;lt;/strong&amp;gt; but not here&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sample Output&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;Emphasized text goes here but not here
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;heading 1&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;under line&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;u&gt;&lt;/u&gt; : under line&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;/br&gt; : line breaker&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;nbsp;  :띄어쓰기&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;p&gt;&lt;/p&gt; : paragraph&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;div&gt;&lt;div&gt; :element is a block-level element&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;span&gt;&lt;/span&gt; :element is a inline-level element&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;nav&gt;&lt;/nav&gt; :It is used to define a block of navigation links, either within the current document or to other documents&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;Hr/&gt; : making line break with line&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;ul&gt;&lt;/ul&gt;  : unordered list (부모태그)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;li&gt;&lt;/li&gt;  : List item (자식태그) li 태그는 반드시 부모태그를 가지고 있다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;ol&gt;&lt;/ol&gt;  : ordered list  (부모태그 &amp;lt; 숫자로 order 할때 )&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -71,16 +133,6 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript/</guid>
-      <description>&lt;p&gt;text&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>/tutorial/python/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/python/</guid>
       <description>&lt;p&gt;text&lt;/p&gt;
 </description>
     </item>
