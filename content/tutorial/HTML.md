@@ -57,10 +57,9 @@ Sample Output
 Heading 1 goes here
 ```
 
-
-* under line
-
-* <u></u> : under line
+---
+## html **&lt;u&gt;tag**
+---
  
 * </br> : line breaker
 

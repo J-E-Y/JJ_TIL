@@ -124,11 +124,13 @@ strong 시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다
 &lt;pre&gt;&lt;code&gt;Heading 1 goes here
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-lt-u-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;u&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;under line&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;u&gt;&lt;/u&gt; : under line&lt;/p&gt;&lt;/li&gt;
-
 &lt;li&gt;&lt;p&gt;&lt;/br&gt; : line breaker&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&amp;nbsp;  :띄어쓰기&lt;/p&gt;&lt;/li&gt;
