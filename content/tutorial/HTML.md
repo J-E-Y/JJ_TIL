@@ -4,7 +4,7 @@ date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    name: HTMl
+    name: Html
     weight: 2
 toc: true
 type: docs
@@ -35,11 +35,27 @@ strong 시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다
 Emphasized text goes here but not here
 ```
 
+---
+## html : **&lt;h1&gt;tag**
+---
 
+* Description
 
+>The HTML **&lt;h1&gt;tag** tag defines the highest level or most important heading in the HTML document. This tag is also commonly referred to as the **&lt;h1&gt;tag** element.
 
-* heading 1
+* Syntax
 
+```
+<body>
+<h1>Heading 1 goes here</h1>
+</body>
+
+```
+Sample Output
+
+```
+Heading 1 goes here
+```
 
 
 * under line
@@ -65,9 +81,6 @@ Emphasized text goes here but not here
 * <li></li>  : List item (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
 
 * <ol></ol>  : ordered list  (부모태그 < 숫자로 order 할때 )
-
-
-
 
 
 

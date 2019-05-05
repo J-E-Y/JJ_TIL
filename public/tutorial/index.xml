@@ -17,7 +17,7 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/css/</guid>
-      <description>sdsds</description>
+      <description>text</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/git/</guid>
-      <description>textsd</description>
+      <description>text</description>
     </item>
     
     <item>
@@ -37,7 +37,9 @@
       <guid>/tutorial/html/</guid>
       <description>html: &amp;lt;strong&amp;gt;tag  Description   The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser.
 strong tag and b tag are diffiernt : strong 시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. b 는 평상시대로 굵게 읽는다.
-  Syntax  &amp;lt;body&amp;gt; &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Emphasized text goes here&amp;lt;/strong&amp;gt; but not here&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt;   Sample Output  Emphasized text goes here but not here   heading 1</description>
+  Syntax
+&amp;lt;body&amp;gt; &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Emphasized text goes here&amp;lt;/strong&amp;gt; but not here&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt;  Sample Output
+Emphasized text goes here but not here   html : &amp;lt;h1&amp;gt;tag  Description   The HTML &amp;lt;h1&amp;gt;tag tag defines the highest level or most important heading in the HTML document.</description>
     </item>
     
     <item>

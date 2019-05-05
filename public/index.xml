@@ -41,7 +41,7 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/css/</guid>
-      <description>&lt;p&gt;sdsds&lt;/p&gt;
+      <description>&lt;p&gt;text&lt;/p&gt;
 </description>
     </item>
     
@@ -51,7 +51,7 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/git/</guid>
-      <description>&lt;p&gt;textsd&lt;/p&gt;
+      <description>&lt;p&gt;text&lt;/p&gt;
 </description>
     </item>
     
@@ -81,25 +81,50 @@ strong 시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Syntax&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
 &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Emphasized text goes here&amp;lt;/strong&amp;gt; but not here&amp;lt;/p&amp;gt;
 &amp;lt;/body&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Sample Output&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Sample Output&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Emphasized text goes here but not here
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-lt-h1-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;h1&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &lt;strong&gt;&amp;lt;h1&amp;gt;tag&lt;/strong&gt; tag defines the highest level or most important heading in the HTML document. This tag is also commonly referred to as the &lt;strong&gt;&amp;lt;h1&amp;gt;tag&lt;/strong&gt; element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;h1&amp;gt;Heading 1 goes here&amp;lt;/h1&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sample Output&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Heading 1 goes here
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;heading 1&lt;/p&gt;&lt;/li&gt;
-
 &lt;li&gt;&lt;p&gt;under line&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;u&gt;&lt;/u&gt; : under line&lt;/p&gt;&lt;/li&gt;
