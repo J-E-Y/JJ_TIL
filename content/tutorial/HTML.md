@@ -61,6 +61,30 @@ Heading 1 goes here
 ## html **&lt;u&gt;tag**
 ---
  
+* Description
+
+> The HTML &lt;u&gt; tag defines text that should be styled differently or have a non-textual annotation.
+
+* Syntax
+
+```
+
+<body>
+<p><u>Differently stylized text goes here</u> and not here</p>
+</body>
+
+```
+
+* Sample Output
+
+```
+
+<u>Differently stylized text goes here<u> and not here
+
+```
+
+ 
+ 
 * </br> : line breaker
 
 * &nbsp;  :띄어쓰기

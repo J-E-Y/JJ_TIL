@@ -131,6 +131,30 @@ strong 시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다
 &lt;hr /&gt;
 
 &lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &amp;lt;u&amp;gt; tag defines text that should be styled differently or have a non-textual annotation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;u&amp;gt;Differently stylized text goes here&amp;lt;/u&amp;gt; and not here&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sample Output&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;u&amp;gt;Differently stylized text goes here&amp;lt;u&amp;gt; and not here
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;&lt;/br&gt; : line breaker&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&amp;nbsp;  :띄어쓰기&lt;/p&gt;&lt;/li&gt;
