@@ -18,8 +18,11 @@ type: docs
 
 >The HTML &lt;strong&gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. 
 
->strong tag and b tag are diffiernt : 
-strong 시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. b 는 평상시대로 굵게 읽는다.
+### strong tag and b tag are diffiernt : 
+
+>strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. 
+
+>b tag :평상시대로 굵게 읽는다.
 
 * Syntax
 
@@ -58,39 +61,64 @@ Heading 1 goes here
 ```
 
 ---
-## html **&lt;u&gt;tag**
+## html **&lt;br&gt;tag**
 ---
  
 * Description
 
-> The HTML &lt;u&gt; tag defines text that should be styled differently or have a non-textual annotation.
+> The HTML &lt;br&gt;tag defines a line break within text in the HTML document. This tag is also commonly referred to as the <&lt;br&gt; element.
 
 * Syntax
 
 ```
 
 <body>
-<p><u>Differently stylized text goes here</u> and not here</p>
+<p>The paragraph starts here<br>
+and ends on the next line.</p>
 </body>
 
 ```
 
 * Sample Output
 
-```
-
-<u>Differently stylized text goes here<u> and not here
 
 ```
+The paragraph starts here
+and ends on the next line.
 
- 
- 
-* </br> : line breaker
+```
 
-* &nbsp;  :띄어쓰기
+---
+`&nbsp;` : making space
+---
 
-* <p></p> : paragraph
+---
+## html **&lt;p&gt;tag**
+---
 
+* Description
+
+>The HTML &lt;p&gt; tag defines a paragraph in the HTML document. This tag is also commonly referred to as the &lt;p&gt; element.
+
+
+* syntax
+
+```
+<body>
+<p>The paragraph goes here.</p>
+</body>
+
+```
+
+* output
+
+```
+this 
+
+The paragraph goes here.
+
+this
+```
 * <div><div> :element is a block-level element
 
 * <span></span> :element is a inline-level element

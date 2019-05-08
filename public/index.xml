@@ -75,9 +75,14 @@
 
 &lt;blockquote&gt;
 &lt;p&gt;The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;strong tag and b tag are diffiernt :
-strong 시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. b 는 평상시대로 굵게 읽는다.&lt;/p&gt;
+&lt;h3 id=&#34;strong-tag-and-b-tag-are-diffiernt&#34;&gt;strong tag and b tag are diffiernt :&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다.&lt;/p&gt;
+
+&lt;p&gt;b tag :평상시대로 굵게 읽는다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -126,7 +131,7 @@ strong 시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-u-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;u&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;html-lt-br-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;br&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -135,7 +140,7 @@ strong 시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;u&amp;gt; tag defines text that should be styled differently or have a non-textual annotation.&lt;/p&gt;
+&lt;p&gt;The HTML &amp;lt;br&amp;gt;tag defines a line break within text in the HTML document. This tag is also commonly referred to as the &amp;lt;&amp;lt;br&amp;gt; element.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -143,23 +148,55 @@ strong 시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다
 
 &lt;pre&gt;&lt;code&gt;
 &amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;u&amp;gt;Differently stylized text goes here&amp;lt;/u&amp;gt; and not here&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The paragraph starts here&amp;lt;br&amp;gt;
+and ends on the next line.&amp;lt;/p&amp;gt;
 &amp;lt;/body&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Sample Output&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;u&amp;gt;Differently stylized text goes here&amp;lt;u&amp;gt; and not here
+&lt;pre&gt;&lt;code&gt;The paragraph starts here
+and ends on the next line.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;nbsp-making-space&#34;&gt;&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt; : making space&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-lt-p-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;p&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &amp;lt;p&amp;gt; tag defines a paragraph in the HTML document. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;syntax&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;The paragraph goes here.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;/br&gt; : line breaker&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;output&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;&amp;nbsp;  :띄어쓰기&lt;/p&gt;&lt;/li&gt;
+&lt;pre&gt;&lt;code&gt;this 
 
-&lt;li&gt;&lt;p&gt;&lt;p&gt;&lt;/p&gt; : paragraph&lt;/p&gt;&lt;/li&gt;
+The paragraph goes here.
+
+this
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;div&gt;&lt;div&gt; :element is a block-level element&lt;/p&gt;&lt;/li&gt;
 
