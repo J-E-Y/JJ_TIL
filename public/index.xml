@@ -77,9 +77,13 @@
 &lt;p&gt;The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;strong-tag-and-b-tag-are-diffiernt&#34;&gt;strong tag and b tag are diffiernt :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Note&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;blockquote&gt;
+&lt;p&gt;what&amp;rsquo;s the difference bewteen &amp;lt;strong&amp;gt; tag and &amp;lt;b&amp;gt; ?&lt;/p&gt;
+
 &lt;p&gt;strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다.&lt;/p&gt;
 
 &lt;p&gt;b tag :평상시대로 굵게 읽는다.&lt;/p&gt;

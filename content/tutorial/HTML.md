@@ -18,7 +18,9 @@ type: docs
 
 >The HTML &lt;strong&gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. 
 
-### strong tag and b tag are diffiernt : 
+* Note 
+
+>what's the difference bewteen &lt;strong&gt; tag and &lt;b&gt; ?
 
 >strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. 
 

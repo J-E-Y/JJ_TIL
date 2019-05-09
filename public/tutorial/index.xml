@@ -36,11 +36,11 @@
       
       <guid>/tutorial/html/</guid>
       <description>html: &amp;lt;strong&amp;gt;tag  Description   The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser.
- strong tag and b tag are diffiernt :  strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다.
+  Note   what&amp;rsquo;s the difference bewteen &amp;lt;strong&amp;gt; tag and &amp;lt;b&amp;gt; ?
+strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다.
 b tag :평상시대로 굵게 읽는다.
   Syntax
-&amp;lt;body&amp;gt; &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Emphasized text goes here&amp;lt;/strong&amp;gt; but not here&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt;  Sample Output
-Emphasized text goes here but not here   html : &amp;lt;h1&amp;gt;tag  Description   The HTML &amp;lt;h1&amp;gt;tag tag defines the highest level or most important heading in the HTML document.</description>
+&amp;lt;body&amp;gt; &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Emphasized text goes here&amp;lt;/strong&amp;gt; but not here&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt;  Sample Output</description>
     </item>
     
     <item>
