@@ -119,7 +119,38 @@ The paragraph goes here.
 
 this
 ```
-* <div><div> :element is a block-level element
+
+---
+## html **&lt;div&gt;tag**
+---
+
+* Description
+
+> The HTML &lt;p&gt; tag defines a generic container in an HTML document that is generally used to group elements. This tag is also commonly referred to as the &lt;p&gt; element.
+
+* Note
+ 
+>The HTML &lt;p&gt; element is found within the <body> tag.
+The <div> tag is generally used to group elements together.
+&lt;p&gt;&lt;p&gt; :element is a block-level element.
+
+> The &lt;p&gt; element is a block-level element.
+
+
+* Syntax
+
+```
+<body>
+
+<div>
+  <div>this is the type of elemnt </div>
+</div>
+
+</body>
+
+```
+
+
 
 * <span></span> :element is a inline-level element
 

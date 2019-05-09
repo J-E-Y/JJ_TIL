@@ -197,8 +197,46 @@ The paragraph goes here.
 
 this
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;div&gt;&lt;div&gt; :element is a block-level element&lt;/p&gt;&lt;/li&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-lt-div-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;div&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &amp;lt;p&amp;gt; tag defines a generic container in an HTML document that is generally used to group elements. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Note&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &amp;lt;p&amp;gt; element is found within the &lt;body&gt; tag.
+The &lt;div&gt; tag is generally used to group elements together.
+&amp;lt;p&amp;gt;&amp;lt;p&amp;gt; :element is a block-level element.&lt;/p&gt;
+
+&lt;p&gt;The &amp;lt;p&amp;gt; element is a block-level element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+
+&amp;lt;div&amp;gt;
+&amp;lt;div&amp;gt;this is the type of elemnt &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;span&gt;&lt;/span&gt; :element is a inline-level element&lt;/p&gt;&lt;/li&gt;
 
