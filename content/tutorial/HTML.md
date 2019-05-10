@@ -122,6 +122,33 @@ The paragraph goes here.
 this
 ```
 
+* <Hr/> : making line break with line
+
+
+---
+## html **&lt;hr/&gt;tag**
+---
+
+* Description
+
+>The HTML &lt;hr/&gt; tag defines a thematic break between paragraphs in HTML5, and a horizontal rule in HTML 4.01. This tag is also commonly referred to as the &lt;hr/&gt; element.
+
+* Note
+
+> The HTML &lt;hr/&gt; element makes line bewteen two paragraphs.
+
+* Syntax
+
+```
+<body>
+<p>This is the first paragraph.</p>
+<hr>
+<p>This is the second paragraph.</p>
+</body>
+
+```
+
+
 ---
 ## html **&lt;div&gt;tag**
 ---
@@ -158,7 +185,7 @@ The <div> tag is generally used to group elements together.
 
 * <nav></nav> :It is used to define a block of navigation links, either within the current document or to other documents
 
-* <Hr/> : making line break with line
+
 
 * <ul></ul>  : unordered list (부모태그)
 

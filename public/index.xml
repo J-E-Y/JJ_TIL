@@ -201,6 +201,42 @@ The paragraph goes here.
 
 this
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;Hr/&gt; : making line break with line&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-lt-hr-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;hr/&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &amp;lt;hr/&amp;gt; tag defines a thematic break between paragraphs in HTML5, and a horizontal rule in HTML 4.01. This tag is also commonly referred to as the &amp;lt;hr/&amp;gt; element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Note&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &amp;lt;hr/&amp;gt; element makes line bewteen two paragraphs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;This is the first paragraph.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;p&amp;gt;This is the second paragraph.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -245,8 +281,6 @@ The &lt;div&gt; tag is generally used to group elements together.
 &lt;li&gt;&lt;p&gt;&lt;span&gt;&lt;/span&gt; :element is a inline-level element&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;nav&gt;&lt;/nav&gt; :It is used to define a block of navigation links, either within the current document or to other documents&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;Hr/&gt; : making line break with line&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;ul&gt;&lt;/ul&gt;  : unordered list (부모태그)&lt;/p&gt;&lt;/li&gt;
 

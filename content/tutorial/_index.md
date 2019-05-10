@@ -1,5 +1,5 @@
 ---
-title: TIL (Today JJ learned )
+title: TIL (Today I learned )
 date: 2019-04-29
 draft: true
 menu:
