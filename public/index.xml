@@ -277,9 +277,46 @@ The &lt;div&gt; tag is generally used to group elements together.
 &amp;lt;/body&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;span&gt;&lt;/span&gt; :element is a inline-level element&lt;/p&gt;&lt;/li&gt;
+&lt;hr /&gt;
 
+&lt;h2 id=&#34;html-lt-span-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;span&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &amp;lt;span&amp;gt; tag defines a generic inline container in an HTML document. This tag is also commonly referred to as the &amp;lt;&amp;lt;span&amp;gt; element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Note&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;span&amp;gt; tag is is generally used for styling purposes when there is no other element to use.
+&amp;lt;span&amp;gt; tag is a inline-level element
+&amp;lt;span&amp;gt; tag does not inherently represent anything&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;span&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;span class=&amp;quot;red_text&amp;quot;&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;nav&gt;&lt;/nav&gt; :It is used to define a block of navigation links, either within the current document or to other documents&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;ul&gt;&lt;/ul&gt;  : unordered list (부모태그)&lt;/p&gt;&lt;/li&gt;

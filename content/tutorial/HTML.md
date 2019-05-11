@@ -180,8 +180,36 @@ The <div> tag is generally used to group elements together.
 ```
 
 
+---
+## html **&lt;span&gt;tag**
+---
 
-* <span></span> :element is a inline-level element
+* Description
+
+> The HTML &lt;span&gt; tag defines a generic inline container in an HTML document. This tag is also commonly referred to as the <&lt;span&gt; element.
+
+* Note
+
+> &lt;span&gt; tag is is generally used for styling purposes when there is no other element to use.
+> &lt;span&gt; tag is a inline-level element
+> &lt;span&gt; tag does not inherently represent anything
+
+
+Syntax
+
+```
+<body>
+<p><span>Span text goes here</span> and not here</p>
+</body>
+
+
+<body>
+<p><span class="red_text">Span text goes here</span> and not here</p>
+</body>
+
+```
+
+
 
 * <nav></nav> :It is used to define a block of navigation links, either within the current document or to other documents
 
