@@ -209,10 +209,37 @@ Syntax
 
 ```
 
+---
+## html **&lt;nav&gt;tag**
+---
 
 
-* <nav></nav> :It is used to define a block of navigation links, either within the current document or to other documents
+* Description
 
+> The HTML &lt;nav&gt; tag is an HTML5 element that defines a section with navigation links in the HTML document. This tag is also commonly referred to as the &lt;nav&gt; element. It is used to define a block of navigation links, either within the current document or to other documents
+
+
+* Syntax
+
+
+```
+
+<body>
+<nav>
+  <ul>
+    <li><a href="/section1/index.html">Section1</a></li>
+    <li><a href="/section2/index.html">Section2</a></li>
+    <li><a href="/section3/index.html">Section3</a></li>
+  </ul>
+</nav>
+</body>
+
+```
+
+
+* Note
+
+>The <nav> tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: <header>, <main>, <article>, <section>, <aside>, <nav>, <footer>.
 
 
 * <ul></ul>  : unordered list (부모태그)
