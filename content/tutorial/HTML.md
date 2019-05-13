@@ -219,6 +219,11 @@ Syntax
 > The HTML &lt;nav&gt; tag is an HTML5 element that defines a section with navigation links in the HTML document. This tag is also commonly referred to as the &lt;nav&gt; element. It is used to define a block of navigation links, either within the current document or to other documents
 
 
+* Note
+
+>The <nav> tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: &lt;header&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, &lt;nav&gt;, &lt;footer&gt;.
+
+
 * Syntax
 
 
@@ -237,12 +242,45 @@ Syntax
 ```
 
 
+
+---
+## html **&lt;ul&gt;tag** (부모태그)
+---
+
+
+* Description
+
+>The HTML &lt;ul&gt; tag defines an unordered list in the HTML document. This tag is also commonly referred to as the &lt;ul&gt; element.
+
 * Note
 
->The <nav> tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: <header>, <main>, <article>, <section>, <aside>, <nav>, <footer>.
+> The HTML &lt;ul&gt; element is found within the <body> tag.
+The &lt;ul&gt; tag is made up of <li> tags.
+Use the &lt;ul&gt; tag when the list items have no numerical ordering.
+You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.
+
+* Syntax
+
+```
+<body>
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ul>
+</body>
+
+```
+
+* Sample Output
 
 
-* <ul></ul>  : unordered list (부모태그)
+```
+* First item
+* Second item
+* Third item
+
+```
 
 * <li></li>  : List item (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
 

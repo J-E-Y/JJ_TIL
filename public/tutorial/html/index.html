@@ -317,6 +317,7 @@ b tag :평상시대로 굵게 읽는다.
 <li><a href="#html-lt-div-gt-tag">html <strong>&lt;div&gt;tag</strong></a></li>
 <li><a href="#html-lt-span-gt-tag">html <strong>&lt;span&gt;tag</strong></a></li>
 <li><a href="#html-lt-nav-gt-tag">html <strong>&lt;nav&gt;tag</strong></a></li>
+<li><a href="#html-lt-ul-gt-tag-부모태그">html <strong>&lt;ul&gt;tag</strong> (부모태그)</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -607,6 +608,14 @@ The <div> tag is generally used to group elements together.
 </blockquote>
 
 <ul>
+<li>Note</li>
+</ul>
+
+<blockquote>
+<p>The <nav> tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: &lt;header&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, &lt;nav&gt;, &lt;footer&gt;.</p>
+</blockquote>
+
+<ul>
 <li><p>Syntax</p>
 
 <pre><code>
@@ -621,16 +630,53 @@ The <div> tag is generally used to group elements together.
 &lt;/body&gt;
 
 </code></pre></li>
+</ul>
 
-<li><p>Note</p></li>
+<hr />
+
+<h2 id="html-lt-ul-gt-tag-부모태그">html <strong>&lt;ul&gt;tag</strong> (부모태그)</h2>
+
+<hr />
+
+<ul>
+<li>Description</li>
 </ul>
 
 <blockquote>
-<p>The <nav> tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: <header>, <main>, <article>, <section>, <aside>, <nav>, <footer>.</p>
+<p>The HTML &lt;ul&gt; tag defines an unordered list in the HTML document. This tag is also commonly referred to as the &lt;ul&gt; element.</p>
 </blockquote>
 
 <ul>
-<li><p><ul></ul>  : unordered list (부모태그)</p></li>
+<li>Note</li>
+</ul>
+
+<blockquote>
+<p>The HTML &lt;ul&gt; element is found within the <body> tag.
+The &lt;ul&gt; tag is made up of <li> tags.
+Use the &lt;ul&gt; tag when the list items have no numerical ordering.
+You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.</p>
+</blockquote>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code>&lt;body&gt;
+&lt;ul&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+
+</code></pre></li>
+
+<li><p>Sample Output</p>
+
+<pre><code>* First item
+* Second item
+* Third item
+
+</code></pre></li>
 
 <li><p><li></li>  : List item (자식태그) li 태그는 반드시 부모태그를 가지고 있다.</p></li>
 

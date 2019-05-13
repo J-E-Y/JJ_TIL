@@ -331,6 +331,14 @@ The &lt;div&gt; tag is generally used to group elements together.
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
+&lt;li&gt;Note&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The &lt;nav&gt; tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: &amp;lt;header&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;section&amp;gt;, &amp;lt;aside&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;footer&amp;gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
@@ -345,16 +353,53 @@ The &lt;div&gt; tag is generally used to group elements together.
 &amp;lt;/body&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;Note&lt;/p&gt;&lt;/li&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-lt-ul-gt-tag-부모태그&#34;&gt;html &lt;strong&gt;&amp;lt;ul&amp;gt;tag&lt;/strong&gt; (부모태그)&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;The &lt;nav&gt; tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: &lt;header&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, &lt;nav&gt;, &lt;footer&gt;.&lt;/p&gt;
+&lt;p&gt;The HTML &amp;lt;ul&amp;gt; tag defines an unordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ul&amp;gt; element.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;ul&gt;&lt;/ul&gt;  : unordered list (부모태그)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Note&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &amp;lt;ul&amp;gt; element is found within the &lt;body&gt; tag.
+The &amp;lt;ul&amp;gt; tag is made up of &lt;li&gt; tags.
+Use the &amp;lt;ul&amp;gt; tag when the list items have no numerical ordering.
+You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu lists.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sample Output&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;* First item
+* Second item
+* Third item
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;li&gt;&lt;/li&gt;  : List item (자식태그) li 태그는 반드시 부모태그를 가지고 있다.&lt;/p&gt;&lt;/li&gt;
 
