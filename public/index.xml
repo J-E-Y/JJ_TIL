@@ -400,10 +400,78 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu l
 * Third item
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;li&gt;&lt;/li&gt;  : List item (자식태그) li 태그는 반드시 부모태그를 가지고 있다.&lt;/p&gt;&lt;/li&gt;
+&lt;hr /&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;ol&gt;&lt;/ol&gt;  : ordered list  (부모태그 &amp;lt; 숫자로 order 할때 )&lt;/p&gt;&lt;/li&gt;
+&lt;h2 id=&#34;html-lt-li-gt-tag-부모태그&#34;&gt;html &lt;strong&gt;&amp;lt;li&amp;gt;tag&lt;/strong&gt; (부모태그)&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &amp;lt;li&amp;gt; tag defines a list item in &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt; in the HTML document. This tag is also commonly referred to as the &amp;lt;li&amp;gt; element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sample Output 1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sample Output 2&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;menu type=&amp;quot;toolbar&amp;quot;&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;menu label=&amp;quot;File&amp;quot;&amp;gt;
+  &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;new()&amp;quot;&amp;gt;New&amp;lt;/button&amp;gt;
+  &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;save()&amp;quot;&amp;gt;Save&amp;lt;/button&amp;gt;
+&amp;lt;/menu&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;menu label=&amp;quot;Edit&amp;quot;&amp;gt;
+  &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;copy()&amp;quot;&amp;gt;Copy&amp;lt;/button&amp;gt;
+  &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;paste()&amp;quot;&amp;gt;Paste&amp;lt;/button&amp;gt;
+&amp;lt;/menu&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/menu&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Note&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The &amp;lt;li&amp;gt; tag is used within &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt;.
+You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;ol&gt;&lt;/ol&gt;  : ordered list  (부모태그 &amp;lt; 숫자로 order 할때 )&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

@@ -318,6 +318,7 @@ b tag :평상시대로 굵게 읽는다.
 <li><a href="#html-lt-span-gt-tag">html <strong>&lt;span&gt;tag</strong></a></li>
 <li><a href="#html-lt-nav-gt-tag">html <strong>&lt;nav&gt;tag</strong></a></li>
 <li><a href="#html-lt-ul-gt-tag-부모태그">html <strong>&lt;ul&gt;tag</strong> (부모태그)</a></li>
+<li><a href="#html-lt-li-gt-tag-부모태그">html <strong>&lt;li&gt;tag</strong> (부모태그)</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -677,10 +678,78 @@ You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.</p>
 * Third item
 
 </code></pre></li>
+</ul>
 
-<li><p><li></li>  : List item (자식태그) li 태그는 반드시 부모태그를 가지고 있다.</p></li>
+<hr />
 
-<li><p><ol></ol>  : ordered list  (부모태그 &lt; 숫자로 order 할때 )</p></li>
+<h2 id="html-lt-li-gt-tag-부모태그">html <strong>&lt;li&gt;tag</strong> (부모태그)</h2>
+
+<hr />
+
+<ul>
+<li>Description</li>
+</ul>
+
+<blockquote>
+<p>The HTML &lt;li&gt; tag defines a list item in &lt;ol&gt;, &lt;ul&gt; or &lt;menu&gt; in the HTML document. This tag is also commonly referred to as the &lt;li&gt; element.</p>
+</blockquote>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code>&lt;body&gt;
+&lt;ul&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+
+</code></pre></li>
+
+<li><p>Sample Output 1</p>
+
+<pre><code>&lt;body&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/body&gt;
+
+</code></pre></li>
+
+<li><p>Sample Output 2</p>
+
+<pre><code>&lt;body&gt;
+&lt;menu type=&quot;toolbar&quot;&gt;
+&lt;li&gt;
+&lt;menu label=&quot;File&quot;&gt;
+  &lt;button type=&quot;button&quot; onclick=&quot;new()&quot;&gt;New&lt;/button&gt;
+  &lt;button type=&quot;button&quot; onclick=&quot;save()&quot;&gt;Save&lt;/button&gt;
+&lt;/menu&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;menu label=&quot;Edit&quot;&gt;
+  &lt;button type=&quot;button&quot; onclick=&quot;copy()&quot;&gt;Copy&lt;/button&gt;
+  &lt;button type=&quot;button&quot; onclick=&quot;paste()&quot;&gt;Paste&lt;/button&gt;
+&lt;/menu&gt;
+&lt;/li&gt;
+&lt;/menu&gt;
+&lt;/body&gt;
+
+</code></pre></li>
+
+<li><p>Note</p></li>
+</ul>
+
+<blockquote>
+<p>The &lt;li&gt; tag is used within &lt;ol&gt;, &lt;ul&gt; or &lt;menu&gt;.
+You can nest &lt;ol, &lt;ul&gt; and &lt;menu&gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다.</p>
+</blockquote>
+
+<ul>
+<li><ol></ol>  : ordered list  (부모태그 &lt; 숫자로 order 할때 )</li>
 </ul>
 
           </div>

@@ -282,11 +282,70 @@ You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.
 
 ```
 
-* <li></li>  : List item (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
+---
+## html **&lt;li&gt;tag** (부모태그)
+---
+
+* Description
+
+>The HTML &lt;li&gt; tag defines a list item in &lt;ol&gt;, &lt;ul&gt; or &lt;menu&gt; in the HTML document. This tag is also commonly referred to as the &lt;li&gt; element.
+
+
+* Syntax
+
+```
+<body>
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ul>
+</body>
+
+```
+
+* Sample Output 1
+
+```
+<body>
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+</body>
+
+```
+
+
+* Sample Output 2
+
+```
+<body>
+<menu type="toolbar">
+  <li>
+    <menu label="File">
+      <button type="button" onclick="new()">New</button>
+      <button type="button" onclick="save()">Save</button>
+    </menu>
+  </li>
+  <li>
+    <menu label="Edit">
+      <button type="button" onclick="copy()">Copy</button>
+      <button type="button" onclick="paste()">Paste</button>
+    </menu>
+  </li>
+</menu>
+</body>
+
+```
+* Note
+
+>The &lt;li&gt; tag is used within &lt;ol&gt;, &lt;ul&gt; or &lt;menu&gt;.
+You can nest &lt;ol, &lt;ul> and &lt;menu&gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
+
 
 * <ol></ol>  : ordered list  (부모태그 < 숫자로 order 할때 )
-
-
 
 
 
