@@ -345,7 +345,45 @@ You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.
 You can nest &lt;ol, &lt;ul> and &lt;menu&gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
 
 
-* <ol></ol>  : ordered list  (부모태그 < 숫자로 order 할때 )
+---
+## html **&lt;ol&gt;tag** 
+---
+
+
+* Description
+
+>The HTML &lt;ol&gt; tag defines an ordered list in the HTML document. This tag is also commonly referred to as the &lt;ol&gt; element.
+
+* Syntax
+
+```
+<body>
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+</body>
+
+```
+
+* Sample Output
+
+ >1. First item
+ >1. Second item
+ >2. Third item
+ 
+ 
+* Note
+
+>The &lt;ol&gt; tag is made up of &lt;li&gt; tags. 
+>Use the &lt;ol&gt; tag when the list items have numeric, meaningful ordering.
+>You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;menu&gt; lists.
+
+
+
+
+
 
 
 

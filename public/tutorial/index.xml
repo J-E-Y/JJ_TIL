@@ -17,7 +17,8 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/css/</guid>
-      <description>text</description>
+      <description>Css: &amp;lt;style&amp;gt;tag  Syntax  a { color:red }   Note  a : selector(선택자) {Color:red}; : declaration (선언) {Color} : property (속성) {Color:red} : property value (속성값)
+Css: BoxModel { font-size:20px; text-align:center; text-decoration:none; : 밑줄없애기 text-decoration:underline; : 언더라인 만들어라 Border-bottom:red 20px solid; Border-right: lightblue 20px solid; Border-right:none; (오른쪽에 있는 선 없애기) Margin:20px; 가장자리 Padding:20px; width:20px; : 폭 Display:none; Display:block; : 전체화면을 이용해라 (block level element) Display:inline; : 부분화면을 이용해라 (inline element) }  Css: group elements tag  text : block element</description>
     </item>
     
     <item>

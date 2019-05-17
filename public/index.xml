@@ -41,7 +41,187 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/css/</guid>
-      <description>&lt;p&gt;text&lt;/p&gt;
+      <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;css-lt-style-gt-tag&#34;&gt;Css: &lt;strong&gt;&amp;lt;style&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;a {
+  color:red
+  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Note&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;dd&gt;a :  selector(선택자)&lt;/dd&gt;
+&lt;dd&gt;{Color:red}; : declaration (선언)&lt;/dd&gt;
+&lt;dd&gt;{Color} :  property (속성)&lt;/dd&gt;
+&lt;dd&gt;{Color:red} : property value (속성값)&lt;/dd&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;css-boxmodel&#34;&gt;Css: &lt;strong&gt;BoxModel&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;{
+font-size:20px;
+text-align:center;
+text-decoration:none; : 밑줄없애기
+text-decoration:underline; : 언더라인 만들어라
+Border-bottom:red 20px solid;
+Border-right: lightblue 20px solid;
+Border-right:none; (오른쪽에 있는 선 없애기)
+Margin:20px; 가장자리
+Padding:20px;
+width:20px;  : 폭
+Display:none; 
+Display:block; : 전체화면을 이용해라 (block level element)
+Display:inline; : 부분화면을 이용해라 (inline element)
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;css-group-elements-tag&#34;&gt;Css: &lt;strong&gt;group elements tag&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;div&gt;text&lt;/div&gt;  : block element&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;span&gt;text&lt;/span&gt; :  inline element&lt;br /&gt;
+   the both : 디자인 용으로 쓰임&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ID=&amp;ldquo;적용할코드&amp;rdquo;  그리고 #&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;&amp;lt;style&amp;gt;
+
+#grid {
+
+&amp;lt;/style&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;div id=&amp;quot;grid&amp;quot;&amp;gt; text &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+&lt;h1 id=&#34;id-값으로-쓴gird는-중복이-안된다&#34;&gt;id 값으로 쓴gird는 중복이 안된다.&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;grid-template-columns : 박스안에선긋고 나란히정렬
+#grid {&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;class=“묶을 이름” and . :caution *.saw and .active 순서가 바뀌면 컴퓨터는 최근에 명령때린 것에 명령을 우선순위로 한다.
+&lt;1h class=&#34;saw&#34;&gt;web&lt;/h1&gt;
+&lt;1h class=&#34;saw active&#34;&gt;CSS&lt;/h1&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;style&gt;
+
+.saw {
+    Color:red;
+}
+.active {
+    Color:bule;
+}
+
+&lt;/style&gt;
+
+&lt;ol&gt;
+&lt;li&gt;media queries
+@media(max-width:800px) :
+screen width &amp;lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.
+@media(min-width:800px)  : screen width  &amp;gt; 800px스크린이 800px 보다 클때 명령을 내린다.
+&lt;style&gt;
+@media(max-width:800px) {
+    #grid {
+        Display:block;
+}&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/style&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;cashing 파일을 따로 만든후 저장해놓는것!!&lt;link rel=&#34;stylesheet&#34; href=“파일이름&#34;&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&amp;lt;!doctype html&amp;gt;
+&lt;html&gt;
+&lt;title&gt;web1 - Son&lt;/title&gt;
+&lt;meta charset=&#34;ut-8&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;body&gt;
+  &lt;h1&gt;&lt;a href=&#34;index.html&#34;&gt;web&lt;/a&gt;&lt;/h1&gt;
+&lt;div id=&#34;grid&#34;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&#34;1.html&#34;&gt;Father&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;2.html&#34;&gt;Son&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;3.html&#34;&gt;Spirit&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div id=&#34;article&#34;&gt;
+&lt;h2&gt;Son&lt;/h2&gt;
+&lt;p&gt;son is the expression
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;h1 id=&#34;grid-template-columns&#34;&gt;grid-template-columns&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Defines the columns of a grid container. You can specify the width of a column by using a keyword (like auto) or a length (like 10px). The number of columns is determined by the number of values defined in the space-separated list.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;grid-template-columns: none;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No columns are defined, so you only have one.
+&lt;img src=&#34;/media/2018/08/test1.png =150x100&#34; alt=&#34;test1&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;grid-template-columns: auto auto auto;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can use the keyword auto so that each column resizes itself automatically.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;grid-template-columns: 80px auto 1rem;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can mix the units.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;grid-template-columns: 40px 1fr 2fr;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can use the fr flex unit to distribute the remaining space across all flex columns.&lt;/p&gt;
 </description>
     </item>
     
@@ -470,9 +650,53 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu l
 You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-lt-ol-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;ol&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;ol&gt;&lt;/ol&gt;  : ordered list  (부모태그 &amp;lt; 숫자로 order 할때 )&lt;/li&gt;
+&lt;li&gt;Description&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &amp;lt;ol&amp;gt; tag defines an ordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ol&amp;gt; element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sample Output&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Note&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The &amp;lt;ol&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags.
+Use the &amp;lt;ol&amp;gt; tag when the list items have numeric, meaningful ordering.
+You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
