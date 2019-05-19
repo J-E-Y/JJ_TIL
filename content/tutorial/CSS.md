@@ -53,6 +53,38 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 ```
 
+
+---
+## Css: **wrapper** 
+---
+
+
+
+* Most basic example 
+
+```css
+
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+```
+
+```html
+
+<body>
+    <div id="wrapper">
+        Piece of text inside a 500px width div centered on the page
+    </div>
+</body>
+```
+
+* How the principle works
+
+Create your wrapper and assign it a certain width. Then apply an automatic horizontal margin to it by using `margin: 0 auto;` or `margin-left: auto;` `margin-right: auto;.` The automatic margins make sure your element is centered.
+
+
+
 ---
 ##  Css: **group elements tag**
 ---
@@ -144,9 +176,7 @@ screen width < 800px 스크린이 800px 보다 작을때 명령을 내린다.
 
 # grid-template-columns
 
-
 * Description
-
 
 > Defines the columns of a grid container. You can specify the width of a column by using a keyword (like auto) or a length (like 10px). The number of columns is determined by the number of values defined in the space-separated list.
 
@@ -154,22 +184,26 @@ screen width < 800px 스크린이 800px 보다 작을때 명령을 내린다.
 
 * grid-template-columns: none;
 
-No columns are defined, so you only have one.
-![test1](/media/2018/08/test1.png =150x100)
+>No columns are defined, so you only have one.
 
+![](/tutorial/HTML_files/test1.png)
 
 * grid-template-columns: auto auto auto;
 
-You can use the keyword auto so that each column resizes itself automatically.
-
-
+>You can use the keyword auto so that each column resizes itself automatically.
+![](/tutorial/CSS_files/test2.png)
 
 
 * grid-template-columns: 80px auto 1rem;
 
-You can mix the units.
+>You can mix the units.
 
+![](/tutorial/CSS_files/test3.png)
 
 * grid-template-columns: 40px 1fr 2fr;
 
-You can use the fr flex unit to distribute the remaining space across all flex columns.
+>You can use the fr flex unit to distribute the remaining space across all flex columns.
+
+![](/tutorial/CSS_files/test4.png)
+
+

@@ -93,6 +93,37 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 &lt;hr /&gt;
 
+&lt;h2 id=&#34;css-wrapper&#34;&gt;Css: &lt;strong&gt;wrapper&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Most basic example&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;div id=&amp;quot;wrapper&amp;quot;&amp;gt;
+        Piece of text inside a 500px width div centered on the page
+    &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How the principle works&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Create your wrapper and assign it a certain width. Then apply an automatic horizontal margin to it by using &lt;code&gt;margin: 0 auto;&lt;/code&gt; or &lt;code&gt;margin-left: auto;&lt;/code&gt; &lt;code&gt;margin-right: auto;.&lt;/code&gt; The automatic margins make sure your element is centered.&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;css-group-elements-tag&#34;&gt;Css: &lt;strong&gt;group elements tag&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
@@ -202,26 +233,40 @@ screen width &amp;lt; 800px 스크린이 800px 보다 작을때 명령을 내린
 &lt;li&gt;grid-template-columns: none;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;No columns are defined, so you only have one.
-&lt;img src=&#34;/media/2018/08/test1.png =150x100&#34; alt=&#34;test1&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;No columns are defined, so you only have one.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/test1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;grid-template-columns: auto auto auto;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You can use the keyword auto so that each column resizes itself automatically.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can use the keyword auto so that each column resizes itself automatically.
+&lt;img src=&#34;/tutorial/CSS_files/test2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;ul&gt;
 &lt;li&gt;grid-template-columns: 80px auto 1rem;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;blockquote&gt;
 &lt;p&gt;You can mix the units.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/test3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;grid-template-columns: 40px 1fr 2fr;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;blockquote&gt;
 &lt;p&gt;You can use the fr flex unit to distribute the remaining space across all flex columns.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/test4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -696,6 +741,42 @@ You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자
 &lt;p&gt;The &amp;lt;ol&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags.
 Use the &amp;lt;ol&amp;gt; tag when the list items have numeric, meaningful ordering.
 You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-container&#34;&gt;html &lt;strong&gt;container&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In HTML, the container is the area enclosed by the beginning and ending tags. For example &amp;lt; HTML &amp;gt; encloses an entire document while other tags may enclose a single word, paragraph, or other elements. In HTML code, all container must have a start and stop tag to close the container. Without a stop tag the start tag will apply to the entire document.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    ...
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;div id=&amp;quot;container&amp;quot;&amp;gt;
+      ...
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;note&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The container div, and sometimes content div, are almost always used to allow for more sophisticated CSS styling. The body tag is special in some ways. Browsers don&amp;rsquo;t treat it like a normal div; its position and dimensions are tied to the browser window.&lt;/p&gt;
+
+&lt;p&gt;But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.&lt;/p&gt;
+
+&lt;p&gt;Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can&amp;rsquo;t go on the outside of the body, allowing for content on the outside of a border.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
     </item>

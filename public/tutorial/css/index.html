@@ -28,7 +28,7 @@
     
   
   <meta name="description" content="Css: &lt;style&gt;tag  Syntax  a { color:red }   Note  a : selector(선택자) {Color:red}; : declaration (선언) {Color} : property (속성) {Color:red} : property value (속성값)
-Css: BoxModel { font-size:20px; text-align:center; text-decoration:none; : 밑줄없애기 text-decoration:underline; : 언더라인 만들어라 Border-bottom:red 20px solid; Border-right: lightblue 20px solid; Border-right:none; (오른쪽에 있는 선 없애기) Margin:20px; 가장자리 Padding:20px; width:20px; : 폭 Display:none; Display:block; : 전체화면을 이용해라 (block level element) Display:inline; : 부분화면을 이용해라 (inline element) }  Css: group elements tag  text : block element">
+Css: BoxModel { font-size:20px; text-align:center; text-decoration:none; : 밑줄없애기 text-decoration:underline; : 언더라인 만들어라 Border-bottom:red 20px solid; Border-right: lightblue 20px solid; Border-right:none; (오른쪽에 있는 선 없애기) Margin:20px; 가장자리 Padding:20px; width:20px; : 폭 Display:none; Display:block; : 전체화면을 이용해라 (block level element) Display:inline; : 부분화면을 이용해라 (inline element) }  Css: wrapper  Most basic example  #wrapper { width: 500px; margin: 0 auto; }  &lt;body&gt; &lt;div id=&quot;wrapper&quot;&gt; Piece of text inside a 500px width div centered on the page &lt;/div&gt; &lt;/body&gt;   How the principle works  Create your wrapper and assign it a certain width.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/css/">
@@ -118,7 +118,7 @@ Css: BoxModel { font-size:20px; text-align:center; text-decoration:none; : 밑�
   <meta property="og:url" content="/tutorial/css/">
   <meta property="og:title" content="CSS | JJ&#39; Home">
   <meta property="og:description" content="Css: &lt;style&gt;tag  Syntax  a { color:red }   Note  a : selector(선택자) {Color:red}; : declaration (선언) {Color} : property (속성) {Color:red} : property value (속성값)
-Css: BoxModel { font-size:20px; text-align:center; text-decoration:none; : 밑줄없애기 text-decoration:underline; : 언더라인 만들어라 Border-bottom:red 20px solid; Border-right: lightblue 20px solid; Border-right:none; (오른쪽에 있는 선 없애기) Margin:20px; 가장자리 Padding:20px; width:20px; : 폭 Display:none; Display:block; : 전체화면을 이용해라 (block level element) Display:inline; : 부분화면을 이용해라 (inline element) }  Css: group elements tag  text : block element"><meta property="og:image" content="/img/icon-192.png">
+Css: BoxModel { font-size:20px; text-align:center; text-decoration:none; : 밑줄없애기 text-decoration:underline; : 언더라인 만들어라 Border-bottom:red 20px solid; Border-right: lightblue 20px solid; Border-right:none; (오른쪽에 있는 선 없애기) Margin:20px; 가장자리 Padding:20px; width:20px; : 폭 Display:none; Display:block; : 전체화면을 이용해라 (block level element) Display:inline; : 부분화면을 이용해라 (inline element) }  Css: wrapper  Most basic example  #wrapper { width: 500px; margin: 0 auto; }  &lt;body&gt; &lt;div id=&quot;wrapper&quot;&gt; Piece of text inside a 500px width div centered on the page &lt;/div&gt; &lt;/body&gt;   How the principle works  Create your wrapper and assign it a certain width."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -302,6 +302,7 @@ Css: BoxModel { font-size:20px; text-align:center; text-decoration:none; : 밑�
 <ul>
 <li><a href="#css-lt-style-gt-tag">Css: <strong>&lt;style&gt;tag</strong></a></li>
 <li><a href="#css-boxmodel">Css: <strong>BoxModel</strong></a></li>
+<li><a href="#css-wrapper">Css: <strong>wrapper</strong></a></li>
 <li><a href="#css-group-elements-tag">Css: <strong>group elements tag</strong></a></li>
 </ul></li>
 <li><a href="#id-값으로-쓴gird는-중복이-안된다">id 값으로 쓴gird는 중복이 안된다.</a></li>
@@ -374,6 +375,37 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 }
 
 </code></pre>
+
+<hr />
+
+<h2 id="css-wrapper">Css: <strong>wrapper</strong></h2>
+
+<hr />
+
+<ul>
+<li>Most basic example</li>
+</ul>
+
+<pre><code class="language-css">
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+</code></pre>
+
+<pre><code class="language-html">
+&lt;body&gt;
+    &lt;div id=&quot;wrapper&quot;&gt;
+        Piece of text inside a 500px width div centered on the page
+    &lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
+<ul>
+<li>How the principle works</li>
+</ul>
+
+<p>Create your wrapper and assign it a certain width. Then apply an automatic horizontal margin to it by using <code>margin: 0 auto;</code> or <code>margin-left: auto;</code> <code>margin-right: auto;.</code> The automatic margins make sure your element is centered.</p>
 
 <hr />
 
@@ -486,26 +518,40 @@ screen width &lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.
 <li>grid-template-columns: none;</li>
 </ul>
 
-<p>No columns are defined, so you only have one.
-<img src="/media/2018/08/test1.png =150x100" alt="test1" /></p>
+<blockquote>
+<p>No columns are defined, so you only have one.</p>
+</blockquote>
+
+<p><img src="/tutorial/HTML_files/test1.png" alt="" /></p>
 
 <ul>
 <li>grid-template-columns: auto auto auto;</li>
 </ul>
 
-<p>You can use the keyword auto so that each column resizes itself automatically.</p>
+<blockquote>
+<p>You can use the keyword auto so that each column resizes itself automatically.
+<img src="/tutorial/CSS_files/test2.png" alt="" /></p>
+</blockquote>
 
 <ul>
 <li>grid-template-columns: 80px auto 1rem;</li>
 </ul>
 
+<blockquote>
 <p>You can mix the units.</p>
+</blockquote>
+
+<p><img src="/tutorial/CSS_files/test3.png" alt="" /></p>
 
 <ul>
 <li>grid-template-columns: 40px 1fr 2fr;</li>
 </ul>
 
+<blockquote>
 <p>You can use the fr flex unit to distribute the remaining space across all flex columns.</p>
+</blockquote>
+
+<p><img src="/tutorial/CSS_files/test4.png" alt="" /></p>
 
           </div>
 

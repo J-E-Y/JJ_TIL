@@ -381,9 +381,34 @@ You can nest &lt;ol, &lt;ul> and &lt;menu&gt; lists. (자식태그) li 태그는
 >You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;menu&gt; lists.
 
 
+---
+## html **container** 
+---
 
 
+* Description
 
+In HTML, the container is the area enclosed by the beginning and ending tags. For example < HTML > encloses an entire document while other tags may enclose a single word, paragraph, or other elements. In HTML code, all container must have a start and stop tag to close the container. Without a stop tag the start tag will apply to the entire document.
+ 
 
+```html
+<html>
+  <head>
+    ...
+  </head>
+  <body>
+    <div id="container">
+      ...
+    </div>
+  </body>
+</html>
+```
 
+ 
+ * note
+ 
+ >The container div, and sometimes content div, are almost always used to allow for more sophisticated CSS styling. The body tag is special in some ways. Browsers don't treat it like a normal div; its position and dimensions are tied to the browser window.
 
+>But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.
+
+>Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can't go on the outside of the body, allowing for content on the outside of a border.

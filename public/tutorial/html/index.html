@@ -320,6 +320,7 @@ b tag :평상시대로 굵게 읽는다.
 <li><a href="#html-lt-ul-gt-tag-부모태그">html <strong>&lt;ul&gt;tag</strong> (부모태그)</a></li>
 <li><a href="#html-lt-li-gt-tag-부모태그">html <strong>&lt;li&gt;tag</strong> (부모태그)</a></li>
 <li><a href="#html-lt-ol-gt-tag">html <strong>&lt;ol&gt;tag</strong></a></li>
+<li><a href="#html-container">html <strong>container</strong></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -795,6 +796,42 @@ You can nest &lt;ol, &lt;ul&gt; and &lt;menu&gt; lists. (자식태그) li 태그
 <p>The &lt;ol&gt; tag is made up of &lt;li&gt; tags.
 Use the &lt;ol&gt; tag when the list items have numeric, meaningful ordering.
 You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;menu&gt; lists.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="html-container">html <strong>container</strong></h2>
+
+<hr />
+
+<ul>
+<li>Description</li>
+</ul>
+
+<p>In HTML, the container is the area enclosed by the beginning and ending tags. For example &lt; HTML &gt; encloses an entire document while other tags may enclose a single word, paragraph, or other elements. In HTML code, all container must have a start and stop tag to close the container. Without a stop tag the start tag will apply to the entire document.</p>
+
+<pre><code class="language-html">&lt;html&gt;
+  &lt;head&gt;
+    ...
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;container&quot;&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<ul>
+<li>note</li>
+</ul>
+
+<blockquote>
+<p>The container div, and sometimes content div, are almost always used to allow for more sophisticated CSS styling. The body tag is special in some ways. Browsers don&rsquo;t treat it like a normal div; its position and dimensions are tied to the browser window.</p>
+
+<p>But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.</p>
+
+<p>Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can&rsquo;t go on the outside of the body, allowing for content on the outside of a border.</p>
 </blockquote>
 
           </div>
