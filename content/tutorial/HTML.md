@@ -412,3 +412,10 @@ In HTML, the container is the area enclosed by the beginning and ending tags. Fo
 >But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.
 
 >Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can't go on the outside of the body, allowing for content on the outside of a border.
+
+
+---
+## html **cashing** :파일을 따로 만든후 저장해놓는것
+---
+
+* <link rel="stylesheet" href=“파일이름">

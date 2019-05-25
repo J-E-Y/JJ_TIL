@@ -124,102 +124,33 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;css-group-elements-tag&#34;&gt;Css: &lt;strong&gt;group elements tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;css-media-queries&#34;&gt;Css: &lt;strong&gt;@media queries&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;div&gt;text&lt;/div&gt;  : block element&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;@media(max-width:800px) :  screen width &amp;lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;span&gt;text&lt;/span&gt; :  inline element&lt;br /&gt;
-   the both : 디자인 용으로 쓰임&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ID=&amp;ldquo;적용할코드&amp;rdquo;  그리고 #&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;@media(min-width:800px)  : screen width  &amp;gt; 800px스크린이 800px 보다 클때 명령을 내린다.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;&amp;lt;style&amp;gt;
-
-#grid {
-
-&amp;lt;/style&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;body&amp;gt;
-  &amp;lt;div id=&amp;quot;grid&amp;quot;&amp;gt; text &amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;}&lt;/p&gt;
-
-&lt;h1 id=&#34;id-값으로-쓴gird는-중복이-안된다&#34;&gt;id 값으로 쓴gird는 중복이 안된다.&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;grid-template-columns : 박스안에선긋고 나란히정렬
-#grid {&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;class=“묶을 이름” and . :caution *.saw and .active 순서가 바뀌면 컴퓨터는 최근에 명령때린 것에 명령을 우선순위로 한다.
-&lt;1h class=&#34;saw&#34;&gt;web&lt;/h1&gt;
-&lt;1h class=&#34;saw active&#34;&gt;CSS&lt;/h1&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;style&gt;
-
-.saw {
-    Color:red;
-}
-.active {
-    Color:bule;
-}
-
-&lt;/style&gt;
-
-&lt;ol&gt;
-&lt;li&gt;media queries
-@media(max-width:800px) :
-screen width &amp;lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.
-@media(min-width:800px)  : screen width  &amp;gt; 800px스크린이 800px 보다 클때 명령을 내린다.
-&lt;style&gt;
-@media(max-width:800px) {
-    #grid {
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+    @media(max-width:800px) {
+    p {
+        font-size: 1px
+        font-weight
+        font-height
         Display:block;
-}&lt;/li&gt;
-&lt;/ol&gt;
+  }
+}
 
-&lt;p&gt;&lt;/style&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;ol&gt;
-&lt;li&gt;cashing 파일을 따로 만든후 저장해놓는것!!&lt;link rel=&#34;stylesheet&#34; href=“파일이름&#34;&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;&amp;lt;!doctype html&amp;gt;
-&lt;html&gt;
-&lt;title&gt;web1 - Son&lt;/title&gt;
-&lt;meta charset=&#34;ut-8&#34;&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;css-grid-template-columns&#34;&gt;Css: &lt;strong&gt;grid-template-columns&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;body&gt;
-  &lt;h1&gt;&lt;a href=&#34;index.html&#34;&gt;web&lt;/a&gt;&lt;/h1&gt;
-&lt;div id=&#34;grid&#34;&gt;
-  &lt;ol&gt;
-  &lt;li&gt;&lt;a href=&#34;1.html&#34;&gt;Father&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;2.html&#34;&gt;Son&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;3.html&#34;&gt;Spirit&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div id=&#34;article&#34;&gt;
-&lt;h2&gt;Son&lt;/h2&gt;
-&lt;p&gt;son is the expression
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;&lt;/p&gt;
-
-&lt;p&gt;```&lt;/p&gt;
-
-&lt;h1 id=&#34;grid-template-columns&#34;&gt;grid-template-columns&lt;/h1&gt;
+&lt;hr /&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Description&lt;/li&gt;
@@ -778,6 +709,16 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;p&gt;Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can&amp;rsquo;t go on the outside of the body, allowing for content on the outside of a border.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-cashing-파일을-따로-만든후-저장해놓는것&#34;&gt;html &lt;strong&gt;cashing&lt;/strong&gt; :파일을 따로 만든후 저장해놓는것&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;link rel=&#34;stylesheet&#34; href=“파일이름&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

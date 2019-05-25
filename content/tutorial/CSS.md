@@ -86,95 +86,32 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 
 
 ---
-##  Css: **group elements tag**
+##  Css: **@media queries**
 ---
 
 
-* <div>text</div>  : block element
+* @media(max-width:800px) :  screen width < 800px 스크린이 800px 보다 작을때 명령을 내린다.
 
-* <span>text</span> :  inline element  
-       the both : 디자인 용으로 쓰임 
+* @media(min-width:800px)  : screen width  > 800px스크린이 800px 보다 클때 명령을 내린다.
 
-* ID="적용할코드"  그리고 #  
 
 ```css
-<style>
 
-#grid {
-
-</style> 
-```
-
-```html
-
-<body>
-  <div id="grid"> text </div>
-</body>
-
-```
-}
-# id 값으로 쓴gird는 중복이 안된다.
-* grid-template-columns : 박스안에선긋고 나란히정렬
-#grid {
-    
-* class=“묶을 이름” and . :caution *.saw and .active 순서가 바뀌면 컴퓨터는 최근에 명령때린 것에 명령을 우선순위로 한다.
-<1h class="saw">web</h1>
-<1h class="saw active">CSS</h1>
-
-<style>
-
-.saw {
-    Color:red;
-}
-.active {
-    Color:bule;
-}
-
-</style>
-
-        
-3.  media queries 
-@media(max-width:800px) : 
-screen width < 800px 스크린이 800px 보다 작을때 명령을 내린다.
-@media(min-width:800px)  : screen width  > 800px스크린이 800px 보다 클때 명령을 내린다.
-<style>
     @media(max-width:800px) {
-        #grid {
-            Display:block;
+    p {
+        font-size: 1px
+        font-weight
+        font-height
+        Display:block;
+  }
 }
-
-</style>
-
-4. cashing 파일을 따로 만든후 저장해놓는것!!<link rel="stylesheet" href=“파일이름">
-    
-
-<!doctype html>
-<html>
-<title>web1 - Son</title>
-<meta charset="ut-8">
-<link rel="stylesheet" href="style.css">
-
-<body>
-  <h1><a href="index.html">web</a></h1>
-<div id="grid">
-  <ol>
-  <li><a href="1.html">Father</a></li>
-  <li><a href="2.html">Son</a></li>
-  <li><a href="3.html">Spirit</a></li>
-</ol>
-<div id="article">
-<h2>Son</h2>
-<p>son is the expression
-</p>
-</div>
-</div>
-</body>
-</html>
 
 ```
 
+---
+##  Css: **grid-template-columns**
+---
 
-# grid-template-columns
 
 * Description
 

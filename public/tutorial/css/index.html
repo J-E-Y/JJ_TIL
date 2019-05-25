@@ -303,10 +303,9 @@ Css: BoxModel { font-size:20px; text-align:center; text-decoration:none; : 밑�
 <li><a href="#css-lt-style-gt-tag">Css: <strong>&lt;style&gt;tag</strong></a></li>
 <li><a href="#css-boxmodel">Css: <strong>BoxModel</strong></a></li>
 <li><a href="#css-wrapper">Css: <strong>wrapper</strong></a></li>
-<li><a href="#css-group-elements-tag">Css: <strong>group elements tag</strong></a></li>
+<li><a href="#css-media-queries">Css: <strong>@media queries</strong></a></li>
+<li><a href="#css-grid-template-columns">Css: <strong>grid-template-columns</strong></a></li>
 </ul></li>
-<li><a href="#id-값으로-쓴gird는-중복이-안된다">id 값으로 쓴gird는 중복이 안된다.</a></li>
-<li><a href="#grid-template-columns">grid-template-columns</a></li>
 </ul>
 </nav>
 
@@ -409,102 +408,33 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 <hr />
 
-<h2 id="css-group-elements-tag">Css: <strong>group elements tag</strong></h2>
+<h2 id="css-media-queries">Css: <strong>@media queries</strong></h2>
 
 <hr />
 
 <ul>
-<li><p><div>text</div>  : block element</p></li>
+<li><p>@media(max-width:800px) :  screen width &lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.</p></li>
 
-<li><p><span>text</span> :  inline element<br />
-   the both : 디자인 용으로 쓰임</p></li>
-
-<li><p>ID=&ldquo;적용할코드&rdquo;  그리고 #</p></li>
+<li><p>@media(min-width:800px)  : screen width  &gt; 800px스크린이 800px 보다 클때 명령을 내린다.</p></li>
 </ul>
 
-<pre><code class="language-css">&lt;style&gt;
-
-#grid {
-
-&lt;/style&gt; 
-</code></pre>
-
-<pre><code class="language-html">
-&lt;body&gt;
-  &lt;div id=&quot;grid&quot;&gt; text &lt;/div&gt;
-&lt;/body&gt;
-
-</code></pre>
-
-<p>}</p>
-
-<h1 id="id-값으로-쓴gird는-중복이-안된다">id 값으로 쓴gird는 중복이 안된다.</h1>
-
-<ul>
-<li><p>grid-template-columns : 박스안에선긋고 나란히정렬
-#grid {</p></li>
-
-<li><p>class=“묶을 이름” and . :caution *.saw and .active 순서가 바뀌면 컴퓨터는 최근에 명령때린 것에 명령을 우선순위로 한다.
-<1h class="saw">web</h1>
-<1h class="saw active">CSS</h1></p></li>
-</ul>
-
-<style>
-
-.saw {
-    Color:red;
-}
-.active {
-    Color:bule;
-}
-
-</style>
-
-<ol>
-<li>media queries
-@media(max-width:800px) :
-screen width &lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.
-@media(min-width:800px)  : screen width  &gt; 800px스크린이 800px 보다 클때 명령을 내린다.
-<style>
-@media(max-width:800px) {
-    #grid {
+<pre><code class="language-css">
+    @media(max-width:800px) {
+    p {
+        font-size: 1px
+        font-weight
+        font-height
         Display:block;
-}</li>
-</ol>
+  }
+}
 
-<p></style></p>
+</code></pre>
 
-<ol>
-<li>cashing 파일을 따로 만든후 저장해놓는것!!<link rel="stylesheet" href=“파일이름">
-<br /></li>
-</ol>
+<hr />
 
-<p>&lt;!doctype html&gt;
-<html>
-<title>web1 - Son</title>
-<meta charset="ut-8">
-<link rel="stylesheet" href="style.css"></p>
+<h2 id="css-grid-template-columns">Css: <strong>grid-template-columns</strong></h2>
 
-<p><body>
-  <h1><a href="index.html">web</a></h1>
-<div id="grid">
-  <ol>
-  <li><a href="1.html">Father</a></li>
-  <li><a href="2.html">Son</a></li>
-  <li><a href="3.html">Spirit</a></li>
-</ol>
-<div id="article">
-<h2>Son</h2>
-<p>son is the expression
-</p>
-</div>
-</div>
-</body>
-</html></p>
-
-<p>```</p>
-
-<h1 id="grid-template-columns">grid-template-columns</h1>
+<hr />
 
 <ul>
 <li>Description</li>
