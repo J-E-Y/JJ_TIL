@@ -712,13 +712,31 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-cashing-파일을-따로-만든후-저장해놓는것&#34;&gt;html &lt;strong&gt;cashing&lt;/strong&gt; :파일을 따로 만든후 저장해놓는것&lt;/h2&gt;
+&lt;h2 id=&#34;html-cashing-파일을-따로-만든후-저장해놓는것&#34;&gt;html : &lt;strong&gt;cashing&lt;/strong&gt; : 파일을 따로 만든후 저장해놓는것&lt;/h2&gt;
 
 &lt;hr /&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;link rel=&#34;stylesheet&#34; href=“파일이름&#34;&gt;&lt;/li&gt;
+&lt;li&gt;how to use it?&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;link rel=&amp;ldquo;stylesheet&amp;rdquo; href=“파일이름&amp;rdquo;&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sample Output&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!doctype html&amp;gt;
+
+&amp;lt;html&amp;gt;
+&amp;lt;title&amp;gt;web1 - Son&amp;lt;/title&amp;gt;
+&amp;lt;meta charset=&amp;quot;ut-8&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;style.css&amp;quot;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

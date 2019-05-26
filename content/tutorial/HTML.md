@@ -415,7 +415,22 @@ In HTML, the container is the area enclosed by the beginning and ending tags. Fo
 
 
 ---
-## html **cashing** :파일을 따로 만든후 저장해놓는것
+## html : **cashing** : 파일을 따로 만든후 저장해놓는것
 ---
 
-* <link rel="stylesheet" href=“파일이름">
+* how to use it? 
+
+> &lt;link rel="stylesheet" href=“파일이름"&gt;
+
+* Sample Output
+
+```html
+
+<!doctype html>
+
+<html>
+<title>web1 - Son</title>
+<meta charset="ut-8">
+<link rel="stylesheet" href="style.css">
+
+```
