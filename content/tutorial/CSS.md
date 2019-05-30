@@ -142,5 +142,3 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 >You can use the fr flex unit to distribute the remaining space across all flex columns.
 
 ![](/tutorial/CSS_files/test4.png)
-
-

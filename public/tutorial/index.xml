@@ -54,6 +54,16 @@ b tag :평상시대로 굵게 읽는다.
     </item>
     
     <item>
+      <title>bootstrap</title>
+      <link>/tutorial/bootstrap/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/bootstrap/</guid>
+      <description> Css: BS4_Image  Description  Create responsive images by adding an .img-fluid class to the  tag. The image will then scale nicely to the parent element.
+ Syntax  &amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;  </description>
+    </item>
+    
+    <item>
       <title>IT terminology</title>
       <link>/tutorial/it-terminology/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
