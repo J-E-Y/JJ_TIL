@@ -712,9 +712,17 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-cashing-파일을-따로-만든후-저장해놓는것&#34;&gt;html : &lt;strong&gt;cashing&lt;/strong&gt; : 파일을 따로 만든후 저장해놓는것&lt;/h2&gt;
+&lt;h2 id=&#34;html-cashing&#34;&gt;html : &lt;strong&gt;cashing&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;파일을 따로 만든후 저장해놓는것&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;ul&gt;
 &lt;li&gt;how to use it?&lt;/li&gt;
@@ -760,7 +768,7 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;css-bs4-image&#34;&gt;Css: &lt;strong&gt;BS4_Image&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;bs-image-img-fluid&#34;&gt;BS_image: &lt;strong&gt;img-fluid&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -768,7 +776,9 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 &lt;li&gt;Description&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Create responsive images by adding an .img-fluid class to the &lt;img&gt; tag. The image will then scale nicely to the parent element.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Create responsive images by adding an &lt;code&gt;.img-fluid&lt;/code&gt; class to the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag. The image will then scale nicely to the parent element.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Syntax&lt;/li&gt;
@@ -776,6 +786,29 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;
 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;bs-spacing-my&#34;&gt;BS_Spacing: &lt;strong&gt;my&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Assign responsive-friendly &lt;code&gt;margin&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; values to an element or a subset of its sides with shorthand classes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;my&amp;quot;&amp;gt;
+  Centered element
+&amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>

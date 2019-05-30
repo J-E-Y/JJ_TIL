@@ -415,14 +415,22 @@ In HTML, the container is the area enclosed by the beginning and ending tags. Fo
 
 
 ---
-## html : **cashing** : 파일을 따로 만든후 저장해놓는것
+## html : **cashing** 
 ---
+
+
+* Description
+
+> 파일을 따로 만든후 저장해놓는것
+
 
 * how to use it? 
 
 > &lt;link rel="stylesheet" href=“파일이름"&gt;
 
+
 * Sample Output
+
 
 ```html
 

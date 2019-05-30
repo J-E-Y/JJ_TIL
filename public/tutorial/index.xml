@@ -59,8 +59,9 @@ b tag :평상시대로 굵게 읽는다.
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/bootstrap/</guid>
-      <description> Css: BS4_Image  Description  Create responsive images by adding an .img-fluid class to the  tag. The image will then scale nicely to the parent element.
- Syntax  &amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;  </description>
+      <description> BS_image: img-fluid  Description   Create responsive images by adding an .img-fluid class to the &amp;lt;img&amp;gt; tag. The image will then scale nicely to the parent element.
+  Syntax  &amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;  BS_Spacing: my  Description   Assign responsive-friendly margin or padding values to an element or a subset of its sides with shorthand classes
+  Syntax  &amp;lt;div class=&amp;quot;my&amp;quot;&amp;gt; Centered element &amp;lt;/div&amp;gt;  </description>
     </item>
     
     <item>
