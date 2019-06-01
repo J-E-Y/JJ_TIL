@@ -36,6 +36,61 @@
     </item>
     
     <item>
+      <title>Bootstrap</title>
+      <link>/tutorial/bootstrap/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/bootstrap/</guid>
+      <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;bs-image-img-fluid&#34;&gt;BS_image: &lt;strong&gt;img-fluid&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Create responsive images by adding an &lt;code&gt;.img-fluid&lt;/code&gt; class to the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag. The image will then scale nicely to the parent element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;bs-spacing-my&#34;&gt;BS_Spacing: &lt;strong&gt;my&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Assign responsive-friendly &lt;code&gt;margin&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; values to an element or a subset of its sides with shorthand classes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;my&amp;quot;&amp;gt;
+  Centered element
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>CSS</title>
       <link>/tutorial/css/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -745,6 +800,39 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;style.css&amp;quot;&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-lt-form-gt&#34;&gt;Html: &lt;strong&gt;&amp;lt;form&amp;gt;&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The HTML &lt;code&gt;&amp;lt;form&amp;gt; tag&lt;/code&gt; is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;form action=&amp;quot;&amp;quot; method=&amp;quot;get&amp;quot;&amp;gt;
+    Company: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;company&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+    Address: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;address&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+    &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Submit&amp;quot;&amp;gt;
+  &amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sample Output&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-06-01 at 9.40.42 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -755,61 +843,6 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
       
       <guid>/tutorial/javascript/</guid>
       <description>&lt;p&gt;text&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>bootstrap</title>
-      <link>/tutorial/bootstrap/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/bootstrap/</guid>
-      <description>
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;bs-image-img-fluid&#34;&gt;BS_image: &lt;strong&gt;img-fluid&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Create responsive images by adding an &lt;code&gt;.img-fluid&lt;/code&gt; class to the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag. The image will then scale nicely to the parent element.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Syntax&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;bs-spacing-my&#34;&gt;BS_Spacing: &lt;strong&gt;my&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Assign responsive-friendly &lt;code&gt;margin&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; values to an element or a subset of its sides with shorthand classes&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Syntax&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;my&amp;quot;&amp;gt;
-  Centered element
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

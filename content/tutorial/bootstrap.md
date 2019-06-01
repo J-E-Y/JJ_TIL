@@ -1,10 +1,10 @@
 ---
-title: bootstrap
+title: Bootstrap
 date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    name: bootstrap
+    name: Bootstrap
     weight: 8
 toc: true
 type: docs

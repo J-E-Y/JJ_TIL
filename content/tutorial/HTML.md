@@ -442,3 +442,35 @@ In HTML, the container is the area enclosed by the beginning and ending tags. Fo
 <link rel="stylesheet" href="style.css">
 
 ```
+
+
+
+---
+##  Html: **&lt;form&gt;**
+---
+
+
+* Description
+
+>The HTML `<form> tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `<form>` element.
+
+* Syntax
+
+
+
+```html
+
+<body>
+  <form action="" method="get">
+    Company: <input type="text" name="company"><br>
+    Address: <input type="text" name="address"><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+```
+Sample Output
+
+![](/tutorial/HTML_files/Screen Shot 2019-06-01 at 9.40.42 PM.png)
+
+
