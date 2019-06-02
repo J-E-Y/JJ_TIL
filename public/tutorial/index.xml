@@ -12,6 +12,15 @@
     
     
     <item>
+      <title></title>
+      <link>/tutorial/python/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/python/</guid>
+      <description> Python: Operators  Arithmetic operators Assignment operators Comparison operators Logical operators Identity operators Membership operators Bitwise operators  Arithmetic Operator           + Addition x + y   - Subtraction x - y   * Multiplication x * y   / Division x / y   % Modulus x % y   ** Exponentiation x ** y   // Floor division x // y    </description>
+    </item>
+    
+    <item>
       <title>Bootstrap</title>
       <link>/tutorial/bootstrap/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>

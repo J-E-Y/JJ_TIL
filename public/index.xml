@@ -36,6 +36,88 @@
     </item>
     
     <item>
+      <title></title>
+      <link>/tutorial/python/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/python/</guid>
+      <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;python-operators&#34;&gt;Python: &lt;strong&gt;Operators&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Arithmetic operators&lt;/li&gt;
+&lt;li&gt;Assignment operators&lt;/li&gt;
+&lt;li&gt;Comparison operators&lt;/li&gt;
+&lt;li&gt;Logical operators&lt;/li&gt;
+&lt;li&gt;Identity operators&lt;/li&gt;
+&lt;li&gt;Membership operators&lt;/li&gt;
+&lt;li&gt;Bitwise operators&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;arithmetic-operator&#34;&gt;Arithmetic Operator&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Addition&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x + y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Subtraction&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x - y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;*&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Multiplication&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x * y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Division&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x / y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;%&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Modulus&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x % y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;**&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Exponentiation&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x ** y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;//&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Floor division&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x // y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Bootstrap</title>
       <link>/tutorial/bootstrap/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
