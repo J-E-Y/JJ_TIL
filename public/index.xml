@@ -114,6 +114,98 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;h3 id=&#34;assignment-operators&#34;&gt;Assignment Operators&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x = 5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = 5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;+=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x += 3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = x + 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;-=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x -= 3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = x - 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;*=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x *= 3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = x * 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;/=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x /= 3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = x / 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;%=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x %= 3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = x % 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;//=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x //= 3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = x // 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;**=&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x &lt;code&gt;**= 3&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = x ** 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x &amp;amp;= 3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = x &amp;amp; 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;=&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;^=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x ^= 3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = x ^ 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;gt;&amp;gt;=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x &amp;gt;&amp;gt;= 3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = x &amp;gt;&amp;gt; 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;&amp;lt;=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x &amp;lt;&amp;lt;= 3&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x = x &amp;lt;&amp;lt; 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
     </item>
     
