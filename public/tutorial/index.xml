@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TIL (Today I learned ) on JJ&#39; Home</title>
+    <title>TIL (Today I learned ) on Home</title>
     <link>/tutorial/</link>
-    <description>Recent content in TIL (Today I learned ) on JJ&#39; Home</description>
+    <description>Recent content in TIL (Today I learned ) on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/python/</guid>
-      <description> Python: Operators  Arithmetic operators Assignment operators Comparison operators Logical operators Identity operators Membership operators Bitwise operators  Arithmetic Operator           + Addition x + y   - Subtraction x - y   * Multiplication x * y   / Division x / y   % Modulus x % y   ** Exponentiation x ** y   // Floor division x // y    Assignment Operators           = x = 5 x = 5   += x += 3 x = x + 3   -= x -= 3 x = x - 3   *= x *= 3 x = x * 3   /= x /= 3 x = x / 3   %= x %= 3 x = x % 3   //= x //= 3 x = x // 3   **= x **= 3 x = x ** 3   &amp;amp;= x &amp;amp;= 3 x = x &amp;amp; 3    = x   ^= x ^= 3 x = x ^ 3   &amp;gt;&amp;gt;= x &amp;gt;&amp;gt;= 3 x = x &amp;gt;&amp;gt; 3   &amp;lt;&amp;lt;= x &amp;lt;&amp;lt;= 3 x = x &amp;lt;&amp;lt; 3    </description>
+      <description>Python: Operators  Arithmetic operators Assignment operators Comparison operators Logical operators Identity operators Membership operators Bitwise operators  Arithmetic Operator           + Addition x + y   - Subtraction x - y   * Multiplication x * y   / Division x / y   % Modulus x % y   ** Exponentiation x ** y   // Floor division x // y    Assignment Operators           = x = 5 x = 5   += x += 3 x = x + 3   -= x -= 3 x = x - 3   *= x *= 3 x = x * 3   /= x /= 3 x = x / 3   %= x %= 3 x = x % 3   //= x //= 3 x = x // 3   **= x **= 3 x = x ** 3   &amp;amp;= x &amp;amp;= 3 x = x &amp;amp; 3    = x   ^= x ^= 3 x = x ^ 3   &amp;gt;&amp;gt;= x &amp;gt;&amp;gt;= 3 x = x &amp;gt;&amp;gt; 3   &amp;lt;&amp;lt;= x &amp;lt;&amp;lt;= 3 x = x &amp;lt;&amp;lt; 3    Comparison Operators           == Equal x == y   !</description>
     </item>
     
     <item>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JJ&#39; Home</title>
+    <title>Home</title>
     <link>/</link>
-    <description>Recent content on JJ&#39; Home</description>
+    <description>Recent content on Home</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0900</lastBuildDate>
@@ -203,6 +203,56 @@
 &lt;td&gt;&amp;lt;&amp;lt;=&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;x &amp;lt;&amp;lt;= 3&lt;/td&gt;
 &lt;td align=&#34;right&#34;&gt;x = x &amp;lt;&amp;lt; 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;comparison-operators&#34;&gt;Comparison Operators&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;==&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Equal&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x == y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;!=&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Not equal&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x != y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Greater than&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x &amp;gt; y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Less than&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x &amp;lt; y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Greater than or equal to&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x &amp;gt;= y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;=&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Less than or equal to&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x  &amp;lt;= y&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
