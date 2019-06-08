@@ -256,6 +256,38 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;h3 id=&#34;python-logical-operators&#34;&gt;Python Logical Operators&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;and&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Returns True if both statements are true&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x &amp;lt; 5 and  x &amp;lt; 10&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;or&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Returns True if one of the statements is true&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;x &amp;lt; 5 or x &amp;lt; 4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;not&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Reverse the result, returns False if the result is true&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;not(x &amp;lt; 5 and x &amp;lt; 10)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
     </item>
     
