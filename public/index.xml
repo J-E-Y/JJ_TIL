@@ -532,7 +532,7 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-strong-gt-tag&#34;&gt;html: &lt;strong&gt;&amp;lt;strong&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;html-lt-strong-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;strong&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -602,7 +602,7 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-br-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;br&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;html-lt-br-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;br&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -635,11 +635,21 @@ and ends on the next line.
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;nbsp-making-space&#34;&gt;&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt; : making space&lt;/h2&gt;
+&lt;h2 id=&#34;html-nbsp-making-space&#34;&gt;html : &lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;  (making space)&lt;/h2&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-p-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;p&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;HTML will only display one space between words, no matter how many times you press the space bar. To force an extra space to show up, type &lt;code&gt;&amp;amp;nbsp;&lt;/code&gt; in the area where you want to force the space.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-lt-p-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;p&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -668,13 +678,25 @@ The paragraph goes here.
 
 this
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;Hr/&gt; : making line break with line&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-hr-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;hr/&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;html-hr-tag&#34;&gt;html : &lt;code&gt;&amp;lt;Hr/&amp;gt;&lt;/code&gt; tag&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;making line break with line&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;html-lt-hr-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;hr/&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -708,7 +730,7 @@ this
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-div-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;div&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;html-lt-div-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;div&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -748,7 +770,7 @@ The &lt;div&gt; tag is generally used to group elements together.
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-span-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;span&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;html-lt-span-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;span&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -785,7 +807,7 @@ The &lt;div&gt; tag is generally used to group elements together.
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-nav-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;nav&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;html-lt-nav-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;nav&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -824,7 +846,7 @@ The &lt;div&gt; tag is generally used to group elements together.
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-ul-gt-tag-부모태그&#34;&gt;html &lt;strong&gt;&amp;lt;ul&amp;gt;tag&lt;/strong&gt; (부모태그)&lt;/h2&gt;
+&lt;h2 id=&#34;html-lt-ul-gt-tag-부모태그&#34;&gt;html : &lt;strong&gt;&amp;lt;ul&amp;gt;tag&lt;/strong&gt; (부모태그)&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -871,7 +893,7 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu l
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-li-gt-tag-부모태그&#34;&gt;html &lt;strong&gt;&amp;lt;li&amp;gt;tag&lt;/strong&gt; (부모태그)&lt;/h2&gt;
+&lt;h2 id=&#34;html-lt-li-gt-tag-부모태그&#34;&gt;html : &lt;strong&gt;&amp;lt;li&amp;gt;tag&lt;/strong&gt; (부모태그)&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -939,7 +961,7 @@ You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-ol-gt-tag&#34;&gt;html &lt;strong&gt;&amp;lt;ol&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;html-lt-ol-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;ol&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -987,7 +1009,7 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-container&#34;&gt;html &lt;strong&gt;container&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;html-container&#34;&gt;html : &lt;strong&gt;container&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -1059,7 +1081,7 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-form-gt&#34;&gt;Html: &lt;strong&gt;&amp;lt;form&amp;gt;&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;html-lt-form-gt&#34;&gt;html : &lt;strong&gt;&amp;lt;form&amp;gt;&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 

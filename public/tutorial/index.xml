@@ -56,7 +56,7 @@ Css: BoxModel { font-size:20px; text-align:center; text-decoration:none; : 밑�
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/html/</guid>
-      <description>html: &amp;lt;strong&amp;gt;tag  Description   The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser.
+      <description>html : &amp;lt;strong&amp;gt;tag  Description   The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser.
   Note   what&amp;rsquo;s the difference bewteen &amp;lt;strong&amp;gt; tag and &amp;lt;b&amp;gt; ?
 strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다.
 b tag :평상시대로 굵게 읽는다.

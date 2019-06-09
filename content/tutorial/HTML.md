@@ -11,7 +11,7 @@ type: docs
 ---
 
 ---
-##  html: **&lt;strong&gt;tag**
+##  html : **&lt;strong&gt;tag**
 ---
 
 * Description
@@ -63,7 +63,7 @@ Heading 1 goes here
 ```
 
 ---
-## html **&lt;br&gt;tag**
+## html : **&lt;br&gt;tag**
 ---
  
 * Description
@@ -91,11 +91,16 @@ and ends on the next line.
 ```
 
 ---
-`&nbsp;` : making space
+## html : `&nbsp;`  (making space)
 ---
+ 
+ 
+* Description
+
+>HTML will only display one space between words, no matter how many times you press the space bar. To force an extra space to show up, type `&nbsp;` in the area where you want to force the space.
 
 ---
-## html **&lt;p&gt;tag**
+## html : **&lt;p&gt;tag**
 ---
 
 * Description
@@ -121,12 +126,17 @@ The paragraph goes here.
 
 this
 ```
+---
+## html : `<Hr/>` tag
+---
 
-* <Hr/> : making line break with line
+* Description
+
+> making line break with line
 
 
 ---
-## html **&lt;hr/&gt;tag**
+## html : **&lt;hr/&gt;tag**
 ---
 
 * Description
@@ -150,7 +160,7 @@ this
 
 
 ---
-## html **&lt;div&gt;tag**
+## html : **&lt;div&gt;tag**
 ---
 
 * Description
@@ -181,7 +191,7 @@ The <div> tag is generally used to group elements together.
 
 
 ---
-## html **&lt;span&gt;tag**
+## html : **&lt;span&gt;tag**
 ---
 
 * Description
@@ -210,7 +220,7 @@ Syntax
 ```
 
 ---
-## html **&lt;nav&gt;tag**
+## html : **&lt;nav&gt;tag**
 ---
 
 
@@ -244,7 +254,7 @@ Syntax
 
 
 ---
-## html **&lt;ul&gt;tag** (부모태그)
+## html : **&lt;ul&gt;tag** (부모태그)
 ---
 
 
@@ -283,7 +293,7 @@ You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.
 ```
 
 ---
-## html **&lt;li&gt;tag** (부모태그)
+## html : **&lt;li&gt;tag** (부모태그)
 ---
 
 * Description
@@ -346,7 +356,7 @@ You can nest &lt;ol, &lt;ul> and &lt;menu&gt; lists. (자식태그) li 태그는
 
 
 ---
-## html **&lt;ol&gt;tag** 
+## html : **&lt;ol&gt;tag** 
 ---
 
 
@@ -382,7 +392,7 @@ You can nest &lt;ol, &lt;ul> and &lt;menu&gt; lists. (자식태그) li 태그는
 
 
 ---
-## html **container** 
+## html : **container** 
 ---
 
 
@@ -446,7 +456,7 @@ In HTML, the container is the area enclosed by the beginning and ending tags. Fo
 
 
 ---
-##  Html: **&lt;form&gt;**
+##  html : **&lt;form&gt;**
 ---
 
 
