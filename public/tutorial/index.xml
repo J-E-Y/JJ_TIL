@@ -17,7 +17,7 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/python/</guid>
-      <description>Python: Operators  Arithmetic operators Assignment operators Comparison operators Logical operators Identity operators Membership operators Bitwise operators  Arithmetic Operator           + Addition x + y   - Subtraction x - y   * Multiplication x * y   / Division x / y   % Modulus x % y   ** Exponentiation x ** y   // Floor division x // y    Assignment Operators           = x = 5 x = 5   += x += 3 x = x + 3   -= x -= 3 x = x - 3   *= x *= 3 x = x * 3   /= x /= 3 x = x / 3   %= x %= 3 x = x % 3   //= x //= 3 x = x // 3   **= x **= 3 x = x ** 3   &amp;amp;= x &amp;amp;= 3 x = x &amp;amp; 3    = x   ^= x ^= 3 x = x ^ 3   &amp;gt;&amp;gt;= x &amp;gt;&amp;gt;= 3 x = x &amp;gt;&amp;gt; 3   &amp;lt;&amp;lt;= x &amp;lt;&amp;lt;= 3 x = x &amp;lt;&amp;lt; 3    Comparison Operators           == Equal x == y   !</description>
+      <description>Python: Operators  Arithmetic operators Assignment operators Comparison operators Logical operators  Arithmetic Operator           + Addition x + y   - Subtraction x - y   * Multiplication x * y   / Division x / y   % Modulus x % y   ** Exponentiation x ** y   // Floor division x // y    Assignment Operators           = x = 5 x = 5   += x += 3 x = x + 3   -= x -= 3 x = x - 3   *= x *= 3 x = x * 3   /= x /= 3 x = x / 3   %= x %= 3 x = x % 3   //= x //= 3 x = x // 3   **= x **= 3 x = x ** 3   &amp;amp;= x &amp;amp;= 3 x = x &amp;amp; 3    = x   ^= x ^= 3 x = x ^ 3   &amp;gt;&amp;gt;= x &amp;gt;&amp;gt;= 3 x = x &amp;gt;&amp;gt; 3   &amp;lt;&amp;lt;= x &amp;lt;&amp;lt;= 3 x = x &amp;lt;&amp;lt; 3    Comparison Operators           == Equal x == y   !</description>
     </item>
     
     <item>
