@@ -14,6 +14,7 @@ type: docs
 ### 1. showing data in browser
 ---
 
+
 ```javascript
 
 <!DOCTYPE html>
@@ -24,15 +25,34 @@ type: docs
 
 </body>
 </html>
+
 ```
 
 ```javascript
 
+var p = document.getElementById('demo');
 var demo = document.getElementById('demo');
 demo.innerHTML = Date();
 
 ```
 
-  
+```javascript
+
+demo.style.color = "red";
+demo.style.background = "black";
+
+```
+
+```javascript
+
+var demo = document.getElementById('demo');
+var size = 10;
+function big() {
+    demo.style.fontSize = size + "px";
+    size = size + 1;            
+}
+var tid = setInterval(big, 100);
+
+```
 
  

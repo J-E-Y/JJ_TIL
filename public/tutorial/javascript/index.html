@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content=" 1. showing data in browser &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;body&gt; &lt;h2&gt;Javascript_note&lt;/h2&gt; &lt;p id=&quot;demo&quot;&gt;what time is it now ?&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;  var demo = document.getElementById(&#39;demo&#39;); demo.innerHTML = Date();  ">
+  <meta name="description" content=" 1. showing data in browser &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;body&gt; &lt;h2&gt;Javascript_note&lt;/h2&gt; &lt;p id=&quot;demo&quot;&gt;what time is it now ?&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;  var p = document.getElementById(&#39;demo&#39;); var demo = document.getElementById(&#39;demo&#39;); demo.innerHTML = Date();  demo.style.color = &quot;red&quot;; demo.style.background = &quot;black&quot;;  var demo = document.getElementById(&#39;demo&#39;); var size = 10; function big() { demo.style.fontSize = size &#43; &quot;px&quot;; size = size &#43; 1; } var tid = setInterval(big, 100);  ">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript/">
@@ -116,7 +116,7 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript/">
   <meta property="og:title" content="Javascript | Home">
-  <meta property="og:description" content=" 1. showing data in browser &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;body&gt; &lt;h2&gt;Javascript_note&lt;/h2&gt; &lt;p id=&quot;demo&quot;&gt;what time is it now ?&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;  var demo = document.getElementById(&#39;demo&#39;); demo.innerHTML = Date();  "><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content=" 1. showing data in browser &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;body&gt; &lt;h2&gt;Javascript_note&lt;/h2&gt; &lt;p id=&quot;demo&quot;&gt;what time is it now ?&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;  var p = document.getElementById(&#39;demo&#39;); var demo = document.getElementById(&#39;demo&#39;); demo.innerHTML = Date();  demo.style.color = &quot;red&quot;; demo.style.background = &quot;black&quot;;  var demo = document.getElementById(&#39;demo&#39;); var size = 10; function big() { demo.style.fontSize = size &#43; &quot;px&quot;; size = size &#43; 1; } var tid = setInterval(big, 100);  "><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -349,11 +349,30 @@
 
 &lt;/body&gt;
 &lt;/html&gt;
+
+</code></pre>
+
+<pre><code class="language-javascript">
+var p = document.getElementById('demo');
+var demo = document.getElementById('demo');
+demo.innerHTML = Date();
+
+</code></pre>
+
+<pre><code class="language-javascript">
+demo.style.color = &quot;red&quot;;
+demo.style.background = &quot;black&quot;;
+
 </code></pre>
 
 <pre><code class="language-javascript">
 var demo = document.getElementById('demo');
-demo.innerHTML = Date();
+var size = 10;
+function big() {
+    demo.style.fontSize = size + &quot;px&quot;;
+    size = size + 1;            
+}
+var tid = setInterval(big, 100);
 
 </code></pre>
 

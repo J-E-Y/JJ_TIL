@@ -1245,11 +1245,30 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &amp;lt;/body&amp;gt;
 &amp;lt;/html&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;
+var p = document.getElementById(&#39;demo&#39;);
+var demo = document.getElementById(&#39;demo&#39;);
+demo.innerHTML = Date();
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;
+demo.style.color = &amp;quot;red&amp;quot;;
+demo.style.background = &amp;quot;black&amp;quot;;
+
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;
 var demo = document.getElementById(&#39;demo&#39;);
-demo.innerHTML = Date();
+var size = 10;
+function big() {
+    demo.style.fontSize = size + &amp;quot;px&amp;quot;;
+    size = size + 1;            
+}
+var tid = setInterval(big, 100);
 
 &lt;/code&gt;&lt;/pre&gt;
 </description>

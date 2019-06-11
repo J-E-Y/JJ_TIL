@@ -70,7 +70,7 @@ b tag :평상시대로 굵게 읽는다.
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript/</guid>
-      <description> 1. showing data in browser &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h2&amp;gt;Javascript_note&amp;lt;/h2&amp;gt; &amp;lt;p id=&amp;quot;demo&amp;quot;&amp;gt;what time is it now ?&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  var demo = document.getElementById(&#39;demo&#39;); demo.innerHTML = Date();  </description>
+      <description> 1. showing data in browser &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h2&amp;gt;Javascript_note&amp;lt;/h2&amp;gt; &amp;lt;p id=&amp;quot;demo&amp;quot;&amp;gt;what time is it now ?&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  var p = document.getElementById(&#39;demo&#39;); var demo = document.getElementById(&#39;demo&#39;); demo.innerHTML = Date();  demo.style.color = &amp;quot;red&amp;quot;; demo.style.background = &amp;quot;black&amp;quot;;  var demo = document.getElementById(&#39;demo&#39;); var size = 10; function big() { demo.style.fontSize = size + &amp;quot;px&amp;quot;; size = size + 1; } var tid = setInterval(big, 100);  </description>
     </item>
     
     <item>
