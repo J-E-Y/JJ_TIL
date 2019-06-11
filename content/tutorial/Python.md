@@ -153,6 +153,14 @@ print(x)
 ```
 
 
+* Example
+
+```
+x = "awesome"
+print("Python is " + x)
+
+>>Python is awesome
+```
 * Note
 
 * Variable Names
