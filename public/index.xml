@@ -396,6 +396,69 @@ Variable names are case-sensitive (age, Age and AGE are three different variable
 # say_hi : 모두 소문자, 단어사이에 _
 # strSayHi : 변수명 앞에 변수의 타입을 기록
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;python-int-float-tr&#34;&gt;Python: **int float tr **&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&#34;int-정수&#34;&gt;&lt;code&gt;int&lt;/code&gt;: 정수&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;x = input(“숫자를 입력해주세요.:&amp;quot;)
+Y = input(“숫자를 입력해주세요.:”)
+
+x = 20
+y = 30
+
+Print(x+y)
+&amp;gt;&amp;gt;&amp;gt;2030
+
+
+
+x = `int`(input(“숫자를 입력해주세요.:”))
+Y = `int`(input(“숫자를 입력해주세요.:”))
+
+x = 20
+y = 30
+
+Print(x+y)
+&amp;gt;&amp;gt;&amp;gt;50
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;2-float-실수-소수점-나타내주는것&#34;&gt;2. &lt;code&gt;float&lt;/code&gt; :실수  () 소수점 나타내주는것&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;x = `float`(input(“숫자를 입력해주세요.:”)) &amp;gt;&amp;gt;20
+Y = `float`(input(“숫자를 입력해주세요.:”)) &amp;gt;&amp;gt;30
+
+Print(x+y)
+50.0
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;3-str-문자-이것을-사용하면-숫자를-문자로-변환시킬수-있다&#34;&gt;3. &lt;code&gt;Str&lt;/code&gt;  :문자 이것을 사용하면 숫자를 문자로 변환시킬수 있다.&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;x = int(input(“숫자를 입력하세요.:&amp;quot;)
+Y = int(input(“숫자를 입력하세요.:”)
+
+sum = x + y
+print(“두 수의 합은, sum, “입니다.&amp;quot;)
+&amp;gt;&amp;gt;&amp;gt;두 수의 합은 50 입니다.
+
+
+50  과 입니다 &amp;lt;&amp;lt;&amp;lt;를 붙이고싶다 또는 
+문자를 숫자로 바꾸기 위해서 str 필요하다.
+
+print(“두 수의 합은”,`str`(sum),”입니다.”)
+
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;두 수의 합은 50입니다.
+
+
+
+Print(1,2,3,4,end=“,”). &amp;lt;&amp;lt;&amp;lt; 콤마로 띄어쓴다.
+print(1,2,3,4,sep=“,”)  &amp;lt;&amp;lt;&amp;lt;&amp;lt;  중간에 문자 집어넣기
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -1445,7 +1508,6 @@ a--;
 
 &lt;pre&gt;&lt;code&gt;var a = &amp;quot;hello&amp;quot;
 a.length;
-. 연산자는 객체의 속성을 가져올 때 사용하는 연산자. 나중에 다시 설명할 예정입니다.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h5 id=&#34;문자열-간단히-조작하기&#34;&gt;문자열 간단히 조작하기&lt;/h5&gt;

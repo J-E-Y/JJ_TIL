@@ -186,3 +186,72 @@ Variable names are case-sensitive (age, Age and AGE are three different variable
 # say_hi : 모두 소문자, 단어사이에 _
 # strSayHi : 변수명 앞에 변수의 타입을 기록
 ```
+
+
+---
+##  Python: **int float tr **
+---
+
+
+##### `int`: 정수
+
+```
+x = input(“숫자를 입력해주세요.:")
+Y = input(“숫자를 입력해주세요.:”)
+
+x = 20
+y = 30
+
+Print(x+y)
+>>>2030
+
+
+
+x = `int`(input(“숫자를 입력해주세요.:”))
+Y = `int`(input(“숫자를 입력해주세요.:”))
+
+x = 20
+y = 30
+
+Print(x+y)
+>>>50
+```
+
+
+##### 2. `float` :실수  () 소수점 나타내주는것
+
+```
+x = `float`(input(“숫자를 입력해주세요.:”)) >>20
+Y = `float`(input(“숫자를 입력해주세요.:”)) >>30
+
+Print(x+y)
+50.0
+
+```
+
+##### 3. `Str`  :문자 이것을 사용하면 숫자를 문자로 변환시킬수 있다.
+
+```
+x = int(input(“숫자를 입력하세요.:")
+Y = int(input(“숫자를 입력하세요.:”)
+
+sum = x + y
+print(“두 수의 합은, sum, “입니다.")
+>>>두 수의 합은 50 입니다.
+
+
+50  과 입니다 <<<를 붙이고싶다 또는 
+문자를 숫자로 바꾸기 위해서 str 필요하다.
+
+print(“두 수의 합은”,`str`(sum),”입니다.”)
+
+>>>>두 수의 합은 50입니다.
+
+
+
+Print(1,2,3,4,end=“,”). <<< 콤마로 띄어쓴다.
+print(1,2,3,4,sep=“,”)  <<<<  중간에 문자 집어넣기
+
+```
+
+
