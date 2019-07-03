@@ -399,11 +399,11 @@ Variable names are case-sensitive (age, Age and AGE are three different variable
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;python-int-float-tr&#34;&gt;Python: **int float tr **&lt;/h2&gt;
+&lt;h2 id=&#34;python-int-float-str&#34;&gt;Python: int float str&lt;/h2&gt;
 
 &lt;hr /&gt;
 
-&lt;h5 id=&#34;int-정수&#34;&gt;&lt;code&gt;int&lt;/code&gt;: 정수&lt;/h5&gt;
+&lt;h5 id=&#34;1-int-정수&#34;&gt;1.&lt;code&gt;int&lt;/code&gt;: 정수&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;x = input(“숫자를 입력해주세요.:&amp;quot;)
 Y = input(“숫자를 입력해주세요.:”)
@@ -689,7 +689,33 @@ Display:inline; : 부분화면을 이용해라 (inline element)
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/git/</guid>
-      <description>&lt;p&gt;text&lt;/p&gt;
+      <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-pwd&#34;&gt;Git : pwd&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;print working Directory&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-ls&#34;&gt;Git : ls&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;print working List&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git&#34;&gt;Git :&lt;/h2&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     

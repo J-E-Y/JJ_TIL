@@ -10,4 +10,20 @@ toc: true
 type: docs
 ---
 
-text
+---
+## Git : pwd
+---
+
+> print working Directory 
+
+---
+## Git : ls 
+---
+
+> print working List 
+
+---
+## Git :
+---
+
+

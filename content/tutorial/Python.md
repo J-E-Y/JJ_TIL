@@ -189,11 +189,11 @@ Variable names are case-sensitive (age, Age and AGE are three different variable
 
 
 ---
-##  Python: **int float tr **
+##  Python: int float str
 ---
 
 
-##### `int`: 정수
+##### 1.`int`: 정수
 
 ```
 x = input(“숫자를 입력해주세요.:")
