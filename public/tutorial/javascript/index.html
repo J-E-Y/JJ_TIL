@@ -327,7 +327,7 @@
 </ul></li>
 </ul></li>
 <li><a href="#3-variable"><strong>3. Variable</strong></a></li>
-<li><a href="#operator"><strong>operator</strong></a>
+<li><a href="#4-operator"><strong>4.operator</strong></a>
 <ul>
 <li>
 <ul>
@@ -339,19 +339,33 @@
 </ul></li>
 </ul></li>
 </ul></li>
-<li><a href="#4-length-contral-string-slice-alert-prompt"><strong>4. length,contral string,slice alert,prompt</strong></a>
+<li><a href="#5-strings"><strong>5. Strings</strong></a>
 <ul>
 <li>
 <ul>
 <li>
 <ul>
-<li><a href="#문자열의-길이-구하기">문자열의 길이 구하기</a></li>
-<li><a href="#문자열-간단히-조작하기">문자열 간단히 조작하기</a></li>
+<li><a href="#length">length</a></li>
+<li><a href="#slice-자르기">slice :자르기</a></li>
 <li><a href="#console-log">console.log()</a></li>
 <li><a href="#alert-과-prompt-사용해-보기">alert() 과 prompt() 사용해 보기</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
+<li><a href="#exercise-1"><strong>exercise 1</strong></a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#두-수를-입력받아-4칙연산의-결과를-표시해-봅시다">두 수를 입력받아 4칙연산의 결과를 표시해 봅시다.</a></li>
+<li><a href="#bmi를-계산하는-프로그램을-작성해-봅시다">BMI를 계산하는 프로그램을 작성해 봅시다.</a></li>
+<li><a href="#화씨를-입력받아서-섭씨로-바꾸는-프로그램을-작성해-봅시다">화씨를 입력받아서 섭씨로 바꾸는 프로그램을 작성해 봅시다</a></li>
+</ul></li>
+<li><a href="#입력한-문자열의-길이를-알려주는-프로그램을-작성해-봅시다">입력한 문자열의 길이를 알려주는 프로그램을 작성해 봅시다.</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#5-if"><strong>5. If</strong></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -532,7 +546,7 @@ document.getElementById(&quot;result&quot;).innerHTML =
 
 <hr />
 
-<h2 id="operator"><strong>operator</strong></h2>
+<h2 id="4-operator"><strong>4.operator</strong></h2>
 
 <hr />
 
@@ -581,17 +595,17 @@ a--;
 
 <hr />
 
-<h2 id="4-length-contral-string-slice-alert-prompt"><strong>4. length,contral string,slice alert,prompt</strong></h2>
+<h2 id="5-strings"><strong>5. Strings</strong></h2>
 
 <hr />
 
-<h5 id="문자열의-길이-구하기">문자열의 길이 구하기</h5>
+<h5 id="length">length</h5>
 
 <pre><code>var a = &quot;hello&quot;
 a.length;
 </code></pre>
 
-<h5 id="문자열-간단히-조작하기">문자열 간단히 조작하기</h5>
+<h5 id="slice-자르기">slice :자르기</h5>
 
 <pre><code>var a = &quot;KheLLo&quot;
 a[0];
@@ -599,8 +613,8 @@ a[1] = &quot;H&quot;; //안 됨
 
 
 a.slice(1,4);
-a.toUpperCase();
-a.toLowerCase();
+a.toUpperCase(); : 대문자로 바뀐
+a.toLowerCase(); : 소문자로 바뀐다
 
 </code></pre>
 
@@ -621,6 +635,145 @@ console.log(a + &quot; &quot; + b + &quot; &quot; + c + &quot; = &quot; + a + c)
 <pre><code>var ans = prompt(&quot;How are you?&quot;);
 alert(ans);
 </code></pre>
+
+<hr />
+
+<h2 id="exercise-1"><strong>exercise 1</strong></h2>
+
+<hr />
+
+<h5 id="두-수를-입력받아-4칙연산의-결과를-표시해-봅시다">두 수를 입력받아 4칙연산의 결과를 표시해 봅시다.</h5>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;exercise1-1&lt;/h2&gt;
+    &lt;script&gt;
+        var s1 = prompt(&quot;input number&quot;);
+        var s2 = prompt(&quot;input number&quot;);
+        var n1 = Number(s1);
+        var n2 = Number(s2);
+        console.log(n1 + &quot; + &quot; + n2 + &quot; = &quot; + (n1 + n2));
+        console.log(n1 + &quot; - &quot; + n2 + &quot; = &quot; + (n1 - n2));
+        console.log(n1 + &quot; * &quot; + n2 + &quot; = &quot; + (n1 * n2));
+        console.log(n1 + &quot; / &quot; + n2 + &quot; = &quot; + (n1 / n2));
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h5 id="bmi를-계산하는-프로그램을-작성해-봅시다">BMI를 계산하는 프로그램을 작성해 봅시다.</h5>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;exercise2(BMI)&lt;/h2&gt;
+    &lt;!--(bmi 공식 몸무게(kg) / 키(m) * 키(m)  --&gt;
+    &lt;script&gt;
+        // 키를 입력받는다
+        var m1 = prompt(&quot;how tall are you?&quot;);
+        // 몸무게를 입력받는다
+        var k1 = prompt(&quot;how much do you weigh?&quot;);
+        // 숫자로 바꾼다
+        var m2 = Number(m1);
+        var k2 = Number(k1);
+        // 계산한다
+        var bmi = k2/m2*m2;
+        // 꾸민다
+        document.write(k2 +&quot;/&quot;+ m2 +&quot;*&quot;+ m2 +&quot;=&quot;+ (bmi));
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h5 id="화씨를-입력받아서-섭씨로-바꾸는-프로그램을-작성해-봅시다">화씨를 입력받아서 섭씨로 바꾸는 프로그램을 작성해 봅시다</h5>
+
+<pre><code>!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;exercise3 섭씨를 화씨로 계산&lt;/h2&gt;
+    &lt;script&gt;
+        // (섭씨온도 × 1.8) + 32 = 화씨온도
+        // 섭씨를 입력받으십시오
+        var s1 = prompt(&quot;섭씨를 입력하세요&quot;);
+        // 섭씨를 숫자로바꾸십시오
+        var s2 = Number(s1);
+        // 값구하기
+        var c = (s2*1.8) + 32;
+        // 꾸미기
+        document.write((s2+&quot;*&quot;+ 1.8)+&quot;+&quot;+ 32 +&quot;=&quot;+ c);
+
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h4 id="입력한-문자열의-길이를-알려주는-프로그램을-작성해-봅시다">입력한 문자열의 길이를 알려주는 프로그램을 작성해 봅시다.</h4>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;exercise4 문자열 길이 알려주는 프로그램&lt;/h2&gt;
+    &lt;script&gt;
+        // 입력한 문자열의 길이를 알려주는 프로그램을 작성해 봅시다.
+        // 글자를 입력하세요
+        var s1 = prompt(&quot;글을 작성하시오 그러면 길이를 알려주겠소&quot;);
+        // 계산하세요
+        var result = s1.length;
+        document.write(&quot;입력한 글자수는 &quot; + result + &quot; 입니다 &quot;);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr />
+
+<h2 id="5-if"><strong>5. If</strong></h2>
+
+<hr />
+
+<p>if 기본 문법
+if (조건식) {
+  //조건식이 참일 경우 실행될 구문
+}
+{}는 생략할 수 있지만 꼭 쓰는 게 좋다.
+indent(들여쓰기)를 예쁘게 해야 한다. (필수!)
+if + else
+if (조건식) {
+  //조건식이 참일 경우 실행
+} else  {
+  //조건식이 거짓일 경우 실행
+}
+if + else if + else
+if (조건식1) {
+  //조건식이 참일 경우 실행
+} else if(조건식2)  {
+  //조건식1은 거짓이고 2는 참일 경우
+} else {
+  //거짓일 경우 실행
+}</p>
 
           </div>
 
