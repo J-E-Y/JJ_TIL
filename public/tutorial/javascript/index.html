@@ -339,7 +339,7 @@
 </ul></li>
 </ul></li>
 </ul></li>
-<li><a href="#5-strings"><strong>5. Strings</strong></a>
+<li><a href="#5-dealing-with-string"><strong>5. dealing with String</strong></a>
 <ul>
 <li>
 <ul>
@@ -365,7 +365,35 @@
 <li><a href="#입력한-문자열의-길이를-알려주는-프로그램을-작성해-봅시다">입력한 문자열의 길이를 알려주는 프로그램을 작성해 봅시다.</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#5-if"><strong>5. If</strong></a></li>
+<li><a href="#5-if"><strong>5. If</strong></a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#if-기본-문법">if 기본 문법</a></li>
+<li><a href="#if-else">if + else</a></li>
+<li><a href="#if-else-if-else">if + else if + else</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#6-while"><strong>6. While</strong></a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#while-반복문">while 반복문</a></li>
+<li><a href="#예제">예제</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -595,7 +623,7 @@ a--;
 
 <hr />
 
-<h2 id="5-strings"><strong>5. Strings</strong></h2>
+<h2 id="5-dealing-with-string"><strong>5. dealing with String</strong></h2>
 
 <hr />
 
@@ -754,26 +782,72 @@ alert(ans);
 
 <hr />
 
-<p>if 기본 문법
-if (조건식) {
+<h6 id="if-기본-문법">if 기본 문법</h6>
+
+<pre><code>if (조건식) {
   //조건식이 참일 경우 실행될 구문
 }
 {}는 생략할 수 있지만 꼭 쓰는 게 좋다.
 indent(들여쓰기)를 예쁘게 해야 한다. (필수!)
-if + else
+</code></pre>
+
+<h6 id="if-else">if + else</h6>
+
+<pre><code>
 if (조건식) {
   //조건식이 참일 경우 실행
 } else  {
   //조건식이 거짓일 경우 실행
 }
-if + else if + else
-if (조건식1) {
+
+</code></pre>
+
+<h6 id="if-else-if-else">if + else if + else</h6>
+
+<p>if (조건식1) {
   //조건식이 참일 경우 실행
 } else if(조건식2)  {
   //조건식1은 거짓이고 2는 참일 경우
 } else {
   //거짓일 경우 실행
 }</p>
+
+<hr />
+
+<h2 id="6-while"><strong>6. While</strong></h2>
+
+<hr />
+
+<h6 id="while-반복문">while 반복문</h6>
+
+<pre><code>
+while(조건) {
+  console.log(&quot;참일때 실행됨&quot;);
+}
+var n = 1;
+while(n &lt;= 100) {    
+    console.log(&quot;Hi &quot; + n);
+    n++;
+}
+
+</code></pre>
+
+<h6 id="예제">예제</h6>
+
+<pre><code>while 문을 사용해서 1에서 100까지의 합을 구해 봅시다.
+자주 사용하는 패턴
+var i = 0; // 1 변수 초기화
+while (i &lt;= 100) { // 2 변수 검사
+  console.log(i); // 3 코드 다하고나서 
+  i++; //  4 하나씩 증가
+}
+
+그래서 for가 등장함
+위의 while 코드와 완전히 똑같음
+for (var i = 0; i &lt;= 100; i++) {
+  console.log(i);
+}
+</code></pre>
 
           </div>
 

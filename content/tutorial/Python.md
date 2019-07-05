@@ -196,8 +196,8 @@ Variable names are case-sensitive (age, Age and AGE are three different variable
 ##### 1.`int`: 정수
 
 ```
-x = input(“숫자를 입력해주세요.:")
-Y = input(“숫자를 입력해주세요.:”)
+x = input("숫자를 입력해주세요.:")
+Y = input("숫자를 입력해주세요.:”)
 
 x = 20
 y = 30
@@ -207,8 +207,8 @@ Print(x+y)
 
 
 
-x = `int`(input(“숫자를 입력해주세요.:”))
-Y = `int`(input(“숫자를 입력해주세요.:”))
+x = `int`(input("숫자를 입력해주세요.:"))
+Y = `int`(input("숫자를 입력해주세요.:"))
 
 x = 20
 y = 30
@@ -232,26 +232,424 @@ Print(x+y)
 ##### 3. `Str`  :문자 이것을 사용하면 숫자를 문자로 변환시킬수 있다.
 
 ```
-x = int(input(“숫자를 입력하세요.:")
-Y = int(input(“숫자를 입력하세요.:”)
+x = int(input("숫자를 입력하세요.:")
+Y = int(input("숫자를 입력하세요.:")
 
 sum = x + y
-print(“두 수의 합은, sum, “입니다.")
+
+print("두 수의 합은, sum, "입니다.")
 >>>두 수의 합은 50 입니다.
 
 
 50  과 입니다 <<<를 붙이고싶다 또는 
 문자를 숫자로 바꾸기 위해서 str 필요하다.
 
-print(“두 수의 합은”,`str`(sum),”입니다.”)
+print("두 수의 합은"",`str`(sum),"입니다.")
 
 >>>>두 수의 합은 50입니다.
 
 
 
-Print(1,2,3,4,end=“,”). <<< 콤마로 띄어쓴다.
-print(1,2,3,4,sep=“,”)  <<<<  중간에 문자 집어넣기
+Print(1,2,3,4,end=","). <<< 콤마로 띄어쓴다.
+print(1,2,3,4,sep=",")  <<<<  중간에 문자 집어넣기
 
 ```
 
 
+
+
+---
+##  Python:Format_string
+---
+
+
+###### format 명령
+
+##### [데이터타입] : s(문자열), c(한글자), d(정수), f(실수)
+
+
+
+* example exercise 1-1
+
+
+```
+foramt_string = "섭씨 35도는 화씨 99도 입니다."
+
+foramt_string = "섭씨 %f도는 화씨 %f도 입니다."
+
+
+msg = foramt_string % (35.7, 99.23)
+print(msg)
+
+f 는 소수점 처리를 할수 있다.
+
+
+foramt_string = "섭씨 '%0.2f'도는 화씨 '%-.4f'도 입니다."
+msg = foramt_string % (35.7, 99.23)
+print(msg)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+##  Python: Variables
+---
+
+> ariables are containers for storing data values.
+
+* Example
+
+```
+x = 5
+y = "John"
+print(x)
+print(y)
+```
+
+
+---
+##  Python: if (conditional statements)
+---
+
+
+```
+
+if (a > b):
+    [처리문 실행문]
+elif [조건문 조건식]:
+    [실행문 처리문]
+else:
+    [실행문]
+"""
+# 조건식 : 명제 -> 참과 거짓으로 판별할 수 있는 구문
+# 참과 거짓 : True False
+# a > b, a < b, a >= b, a <= b, a == b, a != b
+# and, or
+# not
+# 0, "", False, []
+# 상태 : empty
+
+
+if not empty:
+    청소를 한다.
+
+a = 7
+b = 8
+c = 9
+a > b and a > c
+a > b or a > c
+not (a > c)
+
+a < b
+a >= b
+a <= b
+a == b
+a != b    
+    
+```
+* Example
+
+
+```
+a = int(input("당신의 출생연도를 입력해주세요.:"))
+
+
+age = 2019 - a + 1
+
+
+if age >= 20:
+print("당신은 성인입니다.”)
+
+```
+
+
+
+* Example
+
+
+```
+a = int(input("당신의 출생연도를 입력해주세요.:"))
+
+age = 2019 - a + 1
+
+if age >= 20:
+print("당신은 성인입니다.")
+
+else:
+print("당신은 성인이 아닙니다.")
+```
+
+
+* Example exercise 1-1
+
+
+```
+# 사용자의 키와 체중을 입력받아서
+# bmi 계산하여 출력하세요
+# bmi = 체중(kg) / (키(m)의 제곱)
+
+
+height = input("키를 입력하세요 : ")
+height = float(height)
+
+
+
+
+weight = input("체중을 입력하세요 : ")
+weight = float(weight)
+
+
+bmi = weight / ((height/100)**2)
+
+
+
+
+# 키와 체중을 입력받고
+# bmi 계산하고
+# 18.5 미만 = 저체중
+# 18.5 이상 23 미만 = 정상체중
+# 23 이상 = 과체중
+
+
+bmi_level = ""
+if bmi < 18.5:
+    bmi_level = "저체중"
+elif 18.5 <= bmi < 23:
+    bmi_level = "정상체중"
+else:
+    bmi_level =  "과체중"
+print(bmi,bmi_level)
+
+```
+
+* Example exercise 1-2
+
+
+
+```
+
+# 섭씨 -> 화씨로 바꾸는 프로그램
+# 화시 -> 섭씨로 바꾸는 기능
+# 메뉴 입력 시작
+print("-----MENU-----")
+print("1. 섭씨 -> 화씨 변환")
+print("2. 화씨 -> 섭씨 변환")
+print("3. 프로그램 종료")
+menu = input("메뉴를 선택하세요 : ")
+# 메뉴 입력 끝
+
+
+# 온도 계산 시작
+if menu == "1":
+    C = input("섭씨 온도를 입력하세요 : ")
+    C = float(C)
+    F = C * 1.8 + 32
+    msg = "섭씨 "+str(C)+"도는 화씨 "+str(F)+"도 입니다."
+    print(msg)
+elif menu == "2":
+    F = input("화씨 온도를 입력하세요 : ")
+    F = float(F)
+    C = (F - 32) / 1.8
+    msg = "화씨 "+str(F)+"도는 섭씨 "+str(C)+"도 입니다."
+    print(msg)
+elif menu == "3":
+    print("프로그램을 종료합니다.")
+else:
+    print("잘못 선택하셨습니다.")
+```
+
+
+---
+##  Python: try, except
+---
+
+
+```
+
+try:
+    #[오류가 날지도 모르는 코드]
+    a = int("a")
+    print("in")
+except ValueError:
+    #[발생한 오류에 대응할 코드]
+    print("fired exception")
+except ZeroDivisionError:
+    #[발생한 오류에 대응할 코드]
+    print("fired exception")
+except:
+    #[발생한 오류에 대응할 코드]
+    print("fired exception")
+else:
+    #[오류가 없이 지나왔을 경우 코드]
+    print("no error")
+finally:
+    #[어쨋든 실행될 코드]
+    print("anyway")
+```
+
+* exercise 1-1
+
+```
+
+number = input("정수를 입력하세요 : ")
+try:
+    number = int(number)
+except ValueError:
+    print("정수가 아닙니다. 다시 입력하세요.")
+    number = input("정수를 입력하세요 : ")
+    number = int(number)
+
+
+result = number*number
+print(result)
+
+
+# 입력받은 정수의 제곱 값을 출력하는 프로그램
+# 만약 숫자가 아니라면 다시 입력하라는 메시지를 출력한다.
+# 다시 입력 하라는 메시지는 1회만
+```
+
+
+---
+##  Python: While 
+---
+
+```
+
+while [조건식]:
+    [실행문]
+    [실행문]
+    [실행문]
+    [실행문]
+
+"""
+1 예) 이런식으로 많이 쓰인다.
+
+While True:
+    Try:
+    Break
+    except
+2 예)
+
+
+while True:
+    # 정수를 입력받는다. 정수가 입력될 때까지
+    number = input("정수를 입력하세요 : ")
+    try:
+        number = int(number)
+        break
+    except:
+        print("정수가 아닙니다. 다시 입력하세요.")
+
+
+print(number)
+```
+
+* exercise
+
+```
+
+# 섭씨 -> 화씨로 바꾸는 프로그램
+# 화시 -> 섭씨로 바꾸는 기능
+# 메뉴 입력 시작
+print("-----MENU-----")
+print("1. 섭씨 -> 화씨 변환")
+print("2. 화씨 -> 섭씨 변환")
+print("3. 프로그램 종료")
+menu = input("메뉴를 선택하세요 : ")
+# 메뉴 입력 끝
+
+
+# 온도 계산 시작
+if menu == "1":
+    while True:
+        try:
+            C = input("섭씨 온도를 입력하세요 : ")
+            C = float(C)
+            break
+        except:
+            print("다시 입력하세요.")
+
+
+    F = C * 1.8 + 32
+    msg = "섭씨 "+str(C)+"도는 화씨 "+str(F)+"도 입니다."
+    print(msg)
+elif menu == "2":
+    while True:
+        try:
+            F = input("화씨 온도를 입력하세요 : ")
+            F = float(F)
+            break
+        except:
+            print("다시 입력하세요.")
+    C = (F - 32) / 1.8
+    msg = "화씨 "+str(F)+"도는 섭씨 "+str(C)+"도 입니다."
+    print(msg)
+elif menu == "3":
+    print("프로그램을 종료합니다.")
+else:
+    print("잘못 선택하셨습니다.")
+
+```
+---
+##  Python: for
+---
+
+* Description
+
+```
+# for [name] in [bucket]:
+#     [실행문]
+```
+
+```
+
+for n in range(10):
+    print(n)
+    print(n*n)
+
+```
+
+
+
+###### for, range 활용해서 1~100까지의 홀수의 합을 구하는 프로그램
+
+
+```
+total = 0
+for x in range(1,101,2):
+    total += x
+    total = total + x
+print(total)
+
+```
+```
+# "Range는 횟수 용으로 많이 쓰인다."
+# range(Y) : 0 ~ Y-1까지
+# range(X,Y) : X ~ Y-1까지
+# range(X,Y,Z) : X ~ Y-1까지인데, Z씩 증감
+```
+```
+for n in range(0,12.2):
+    print(n)
+2
+4
+6
+8
+10
+```

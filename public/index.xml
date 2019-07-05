@@ -405,8 +405,8 @@ Variable names are case-sensitive (age, Age and AGE are three different variable
 
 &lt;h5 id=&#34;1-int-정수&#34;&gt;1.&lt;code&gt;int&lt;/code&gt;: 정수&lt;/h5&gt;
 
-&lt;pre&gt;&lt;code&gt;x = input(“숫자를 입력해주세요.:&amp;quot;)
-Y = input(“숫자를 입력해주세요.:”)
+&lt;pre&gt;&lt;code&gt;x = input(&amp;quot;숫자를 입력해주세요.:&amp;quot;)
+Y = input(&amp;quot;숫자를 입력해주세요.:”)
 
 x = 20
 y = 30
@@ -416,8 +416,8 @@ Print(x+y)
 
 
 
-x = `int`(input(“숫자를 입력해주세요.:”))
-Y = `int`(input(“숫자를 입력해주세요.:”))
+x = `int`(input(&amp;quot;숫자를 입력해주세요.:&amp;quot;))
+Y = `int`(input(&amp;quot;숫자를 입력해주세요.:&amp;quot;))
 
 x = 20
 y = 30
@@ -438,26 +438,400 @@ Print(x+y)
 
 &lt;h5 id=&#34;3-str-문자-이것을-사용하면-숫자를-문자로-변환시킬수-있다&#34;&gt;3. &lt;code&gt;Str&lt;/code&gt;  :문자 이것을 사용하면 숫자를 문자로 변환시킬수 있다.&lt;/h5&gt;
 
-&lt;pre&gt;&lt;code&gt;x = int(input(“숫자를 입력하세요.:&amp;quot;)
-Y = int(input(“숫자를 입력하세요.:”)
+&lt;pre&gt;&lt;code&gt;x = int(input(&amp;quot;숫자를 입력하세요.:&amp;quot;)
+Y = int(input(&amp;quot;숫자를 입력하세요.:&amp;quot;)
 
 sum = x + y
-print(“두 수의 합은, sum, “입니다.&amp;quot;)
+
+print(&amp;quot;두 수의 합은, sum, &amp;quot;입니다.&amp;quot;)
 &amp;gt;&amp;gt;&amp;gt;두 수의 합은 50 입니다.
 
 
 50  과 입니다 &amp;lt;&amp;lt;&amp;lt;를 붙이고싶다 또는 
 문자를 숫자로 바꾸기 위해서 str 필요하다.
 
-print(“두 수의 합은”,`str`(sum),”입니다.”)
+print(&amp;quot;두 수의 합은&amp;quot;&amp;quot;,`str`(sum),&amp;quot;입니다.&amp;quot;)
 
 &amp;gt;&amp;gt;&amp;gt;&amp;gt;두 수의 합은 50입니다.
 
 
 
-Print(1,2,3,4,end=“,”). &amp;lt;&amp;lt;&amp;lt; 콤마로 띄어쓴다.
-print(1,2,3,4,sep=“,”)  &amp;lt;&amp;lt;&amp;lt;&amp;lt;  중간에 문자 집어넣기
+Print(1,2,3,4,end=&amp;quot;,&amp;quot;). &amp;lt;&amp;lt;&amp;lt; 콤마로 띄어쓴다.
+print(1,2,3,4,sep=&amp;quot;,&amp;quot;)  &amp;lt;&amp;lt;&amp;lt;&amp;lt;  중간에 문자 집어넣기
 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;python-format-string&#34;&gt;Python:Format_string&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h6 id=&#34;format-명령&#34;&gt;format 명령&lt;/h6&gt;
+
+&lt;h5 id=&#34;데이터타입-s-문자열-c-한글자-d-정수-f-실수&#34;&gt;[데이터타입] : s(문자열), c(한글자), d(정수), f(실수)&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;example exercise 1-1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;foramt_string = &amp;quot;섭씨 35도는 화씨 99도 입니다.&amp;quot;
+
+foramt_string = &amp;quot;섭씨 %f도는 화씨 %f도 입니다.&amp;quot;
+
+
+msg = foramt_string % (35.7, 99.23)
+print(msg)
+
+f 는 소수점 처리를 할수 있다.
+
+
+foramt_string = &amp;quot;섭씨 &#39;%0.2f&#39;도는 화씨 &#39;%-.4f&#39;도 입니다.&amp;quot;
+msg = foramt_string % (35.7, 99.23)
+print(msg)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;python-variables-1&#34;&gt;Python: Variables&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ariables are containers for storing data values.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x = 5
+y = &amp;quot;John&amp;quot;
+print(x)
+print(y)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;python-if-conditional-statements&#34;&gt;Python: if (conditional statements)&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;
+if (a &amp;gt; b):
+    [처리문 실행문]
+elif [조건문 조건식]:
+    [실행문 처리문]
+else:
+    [실행문]
+&amp;quot;&amp;quot;&amp;quot;
+# 조건식 : 명제 -&amp;gt; 참과 거짓으로 판별할 수 있는 구문
+# 참과 거짓 : True False
+# a &amp;gt; b, a &amp;lt; b, a &amp;gt;= b, a &amp;lt;= b, a == b, a != b
+# and, or
+# not
+# 0, &amp;quot;&amp;quot;, False, []
+# 상태 : empty
+
+
+if not empty:
+    청소를 한다.
+
+a = 7
+b = 8
+c = 9
+a &amp;gt; b and a &amp;gt; c
+a &amp;gt; b or a &amp;gt; c
+not (a &amp;gt; c)
+
+a &amp;lt; b
+a &amp;gt;= b
+a &amp;lt;= b
+a == b
+a != b    
+    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;a = int(input(&amp;quot;당신의 출생연도를 입력해주세요.:&amp;quot;))
+
+
+age = 2019 - a + 1
+
+
+if age &amp;gt;= 20:
+print(&amp;quot;당신은 성인입니다.”)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;a = int(input(&amp;quot;당신의 출생연도를 입력해주세요.:&amp;quot;))
+
+age = 2019 - a + 1
+
+if age &amp;gt;= 20:
+print(&amp;quot;당신은 성인입니다.&amp;quot;)
+
+else:
+print(&amp;quot;당신은 성인이 아닙니다.&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Example exercise 1-1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 사용자의 키와 체중을 입력받아서
+# bmi 계산하여 출력하세요
+# bmi = 체중(kg) / (키(m)의 제곱)
+
+
+height = input(&amp;quot;키를 입력하세요 : &amp;quot;)
+height = float(height)
+
+
+
+
+weight = input(&amp;quot;체중을 입력하세요 : &amp;quot;)
+weight = float(weight)
+
+
+bmi = weight / ((height/100)**2)
+
+
+
+
+# 키와 체중을 입력받고
+# bmi 계산하고
+# 18.5 미만 = 저체중
+# 18.5 이상 23 미만 = 정상체중
+# 23 이상 = 과체중
+
+
+bmi_level = &amp;quot;&amp;quot;
+if bmi &amp;lt; 18.5:
+bmi_level = &amp;quot;저체중&amp;quot;
+elif 18.5 &amp;lt;= bmi &amp;lt; 23:
+bmi_level = &amp;quot;정상체중&amp;quot;
+else:
+bmi_level =  &amp;quot;과체중&amp;quot;
+print(bmi,bmi_level)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Example exercise 1-2&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+# 섭씨 -&amp;gt; 화씨로 바꾸는 프로그램
+# 화시 -&amp;gt; 섭씨로 바꾸는 기능
+# 메뉴 입력 시작
+print(&amp;quot;-----MENU-----&amp;quot;)
+print(&amp;quot;1. 섭씨 -&amp;gt; 화씨 변환&amp;quot;)
+print(&amp;quot;2. 화씨 -&amp;gt; 섭씨 변환&amp;quot;)
+print(&amp;quot;3. 프로그램 종료&amp;quot;)
+menu = input(&amp;quot;메뉴를 선택하세요 : &amp;quot;)
+# 메뉴 입력 끝
+
+
+# 온도 계산 시작
+if menu == &amp;quot;1&amp;quot;:
+C = input(&amp;quot;섭씨 온도를 입력하세요 : &amp;quot;)
+C = float(C)
+F = C * 1.8 + 32
+msg = &amp;quot;섭씨 &amp;quot;+str(C)+&amp;quot;도는 화씨 &amp;quot;+str(F)+&amp;quot;도 입니다.&amp;quot;
+print(msg)
+elif menu == &amp;quot;2&amp;quot;:
+F = input(&amp;quot;화씨 온도를 입력하세요 : &amp;quot;)
+F = float(F)
+C = (F - 32) / 1.8
+msg = &amp;quot;화씨 &amp;quot;+str(F)+&amp;quot;도는 섭씨 &amp;quot;+str(C)+&amp;quot;도 입니다.&amp;quot;
+print(msg)
+elif menu == &amp;quot;3&amp;quot;:
+print(&amp;quot;프로그램을 종료합니다.&amp;quot;)
+else:
+print(&amp;quot;잘못 선택하셨습니다.&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;python-try-except&#34;&gt;Python: try, except&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;
+try:
+    #[오류가 날지도 모르는 코드]
+    a = int(&amp;quot;a&amp;quot;)
+    print(&amp;quot;in&amp;quot;)
+except ValueError:
+    #[발생한 오류에 대응할 코드]
+    print(&amp;quot;fired exception&amp;quot;)
+except ZeroDivisionError:
+    #[발생한 오류에 대응할 코드]
+    print(&amp;quot;fired exception&amp;quot;)
+except:
+    #[발생한 오류에 대응할 코드]
+    print(&amp;quot;fired exception&amp;quot;)
+else:
+    #[오류가 없이 지나왔을 경우 코드]
+    print(&amp;quot;no error&amp;quot;)
+finally:
+    #[어쨋든 실행될 코드]
+    print(&amp;quot;anyway&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;exercise 1-1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+number = input(&amp;quot;정수를 입력하세요 : &amp;quot;)
+try:
+number = int(number)
+except ValueError:
+print(&amp;quot;정수가 아닙니다. 다시 입력하세요.&amp;quot;)
+number = input(&amp;quot;정수를 입력하세요 : &amp;quot;)
+number = int(number)
+
+
+result = number*number
+print(result)
+
+
+# 입력받은 정수의 제곱 값을 출력하는 프로그램
+# 만약 숫자가 아니라면 다시 입력하라는 메시지를 출력한다.
+# 다시 입력 하라는 메시지는 1회만
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;python-while&#34;&gt;Python: While&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;
+while [조건식]:
+    [실행문]
+    [실행문]
+    [실행문]
+    [실행문]
+
+&amp;quot;&amp;quot;&amp;quot;
+1 예) 이런식으로 많이 쓰인다.
+
+While True:
+    Try:
+    Break
+    except
+2 예)
+
+
+while True:
+    # 정수를 입력받는다. 정수가 입력될 때까지
+    number = input(&amp;quot;정수를 입력하세요 : &amp;quot;)
+    try:
+        number = int(number)
+        break
+    except:
+        print(&amp;quot;정수가 아닙니다. 다시 입력하세요.&amp;quot;)
+
+
+print(number)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;exercise&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+# 섭씨 -&amp;gt; 화씨로 바꾸는 프로그램
+# 화시 -&amp;gt; 섭씨로 바꾸는 기능
+# 메뉴 입력 시작
+print(&amp;quot;-----MENU-----&amp;quot;)
+print(&amp;quot;1. 섭씨 -&amp;gt; 화씨 변환&amp;quot;)
+print(&amp;quot;2. 화씨 -&amp;gt; 섭씨 변환&amp;quot;)
+print(&amp;quot;3. 프로그램 종료&amp;quot;)
+menu = input(&amp;quot;메뉴를 선택하세요 : &amp;quot;)
+# 메뉴 입력 끝
+
+
+# 온도 계산 시작
+if menu == &amp;quot;1&amp;quot;:
+while True:
+    try:
+        C = input(&amp;quot;섭씨 온도를 입력하세요 : &amp;quot;)
+        C = float(C)
+        break
+    except:
+        print(&amp;quot;다시 입력하세요.&amp;quot;)
+
+
+F = C * 1.8 + 32
+msg = &amp;quot;섭씨 &amp;quot;+str(C)+&amp;quot;도는 화씨 &amp;quot;+str(F)+&amp;quot;도 입니다.&amp;quot;
+print(msg)
+elif menu == &amp;quot;2&amp;quot;:
+while True:
+    try:
+        F = input(&amp;quot;화씨 온도를 입력하세요 : &amp;quot;)
+        F = float(F)
+        break
+    except:
+        print(&amp;quot;다시 입력하세요.&amp;quot;)
+C = (F - 32) / 1.8
+msg = &amp;quot;화씨 &amp;quot;+str(F)+&amp;quot;도는 섭씨 &amp;quot;+str(C)+&amp;quot;도 입니다.&amp;quot;
+print(msg)
+elif menu == &amp;quot;3&amp;quot;:
+print(&amp;quot;프로그램을 종료합니다.&amp;quot;)
+else:
+print(&amp;quot;잘못 선택하셨습니다.&amp;quot;)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;python-for&#34;&gt;Python: for&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Description&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# for [name] in [bucket]:
+#     [실행문]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;
+for n in range(10):
+print(n)
+print(n*n)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;for-range-활용해서-1-100까지의-홀수의-합을-구하는-프로그램&#34;&gt;for, range 활용해서 1~100까지의 홀수의 합을 구하는 프로그램&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code&gt;total = 0
+for x in range(1,101,2):
+    total += x
+    total = total + x
+print(total)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;# &amp;quot;Range는 횟수 용으로 많이 쓰인다.&amp;quot;
+# range(Y) : 0 ~ Y-1까지
+# range(X,Y) : X ~ Y-1까지
+# range(X,Y,Z) : X ~ Y-1까지인데, Z씩 증감
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;for n in range(0,12.2):
+    print(n)
+2
+4
+6
+8
+10
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
@@ -693,7 +1067,7 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;git-pwd&#34;&gt;Git : pwd&lt;/h2&gt;
+&lt;h2 id=&#34;git-pwd&#34;&gt;Git : &lt;strong&gt;pwd&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -703,7 +1077,7 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;git-ls&#34;&gt;Git : ls&lt;/h2&gt;
+&lt;h2 id=&#34;git-ls&#34;&gt;Git : &lt;strong&gt;ls&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -713,9 +1087,152 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;git&#34;&gt;Git :&lt;/h2&gt;
+&lt;h2 id=&#34;git-cd&#34;&gt;Git :&lt;strong&gt;cd&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;go back to beginning&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-cd-1&#34;&gt;Git :&lt;strong&gt;cd -&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;previous directory (or back)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-init&#34;&gt;Git :&lt;strong&gt;init&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Create an empty Git repository or reinitialize an existing one&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-clone&#34;&gt;Git :&lt;strong&gt;clone&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Clone a repository into a new directory&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-add&#34;&gt;Git :&lt;strong&gt;add .&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Add all file contents to the index&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-add-1&#34;&gt;Git : &lt;strong&gt;add&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;one file add&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;git add jung.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-rm&#34;&gt;Git :&lt;strong&gt;rm&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Remove files&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-rm-f&#34;&gt;Git :&lt;strong&gt;rm -f&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Remove files and directory&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-mkdir&#34;&gt;Git :&lt;strong&gt;mkdir&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;create directory&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git mkdir jung
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-touch&#34;&gt;Git :&lt;strong&gt;touch&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;create file&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git touch jung.txt 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-commit-m&#34;&gt;Git :&lt;strong&gt;commit -m &amp;ldquo;&amp;rdquo;&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;write message into github&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-remote-add-origin&#34;&gt;Git :&lt;strong&gt;remote add origin&amp;rdquo;&amp;rdquo;&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;link local to github&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;Git remote add origin &amp;quot;https://github.com/J-E-Y/test_2.git&amp;quot;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;git push -u origin master  최종 깇허브에 올리기
+git push -u origin master&lt;br /&gt;
+git push -f origin master ( 강제로)
+git log  기록 업데이트한 기록 확인&lt;/p&gt;
+
+&lt;p&gt;Git —help 옵션을 볼수 있다.&lt;/p&gt;
 </description>
     </item>
     
@@ -1526,7 +2043,7 @@ a--;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;5-strings&#34;&gt;&lt;strong&gt;5. Strings&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5-dealing-with-string&#34;&gt;&lt;strong&gt;5. dealing with String&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -1685,26 +2202,72 @@ alert(ans);
 
 &lt;hr /&gt;
 
-&lt;p&gt;if 기본 문법
-if (조건식) {
+&lt;h6 id=&#34;if-기본-문법&#34;&gt;if 기본 문법&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code&gt;if (조건식) {
   //조건식이 참일 경우 실행될 구문
 }
 {}는 생략할 수 있지만 꼭 쓰는 게 좋다.
 indent(들여쓰기)를 예쁘게 해야 한다. (필수!)
-if + else
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h6 id=&#34;if-else&#34;&gt;if + else&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code&gt;
 if (조건식) {
   //조건식이 참일 경우 실행
 } else  {
   //조건식이 거짓일 경우 실행
 }
-if + else if + else
-if (조건식1) {
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h6 id=&#34;if-else-if-else&#34;&gt;if + else if + else&lt;/h6&gt;
+
+&lt;p&gt;if (조건식1) {
   //조건식이 참일 경우 실행
 } else if(조건식2)  {
   //조건식1은 거짓이고 2는 참일 경우
 } else {
   //거짓일 경우 실행
 }&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;6-while&#34;&gt;&lt;strong&gt;6. While&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h6 id=&#34;while-반복문&#34;&gt;while 반복문&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code&gt;
+while(조건) {
+  console.log(&amp;quot;참일때 실행됨&amp;quot;);
+}
+var n = 1;
+while(n &amp;lt;= 100) {    
+    console.log(&amp;quot;Hi &amp;quot; + n);
+    n++;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h6 id=&#34;예제&#34;&gt;예제&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code&gt;while 문을 사용해서 1에서 100까지의 합을 구해 봅시다.
+자주 사용하는 패턴
+var i = 0; // 1 변수 초기화
+while (i &amp;lt;= 100) { // 2 변수 검사
+  console.log(i); // 3 코드 다하고나서 
+  i++; //  4 하나씩 증가
+}
+
+그래서 for가 등장함
+위의 while 코드와 완전히 똑같음
+for (var i = 0; i &amp;lt;= 100; i++) {
+  console.log(i);
+}
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

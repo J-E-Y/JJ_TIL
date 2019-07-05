@@ -328,6 +328,37 @@
 </ul></li>
 </ul></li>
 </ul></li>
+<li><a href="#python-format-string">Python:Format_string</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#format-명령">format 명령</a></li>
+</ul></li>
+<li><a href="#데이터타입-s-문자열-c-한글자-d-정수-f-실수">[데이터타입] : s(문자열), c(한글자), d(정수), f(실수)</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#python-variables-1">Python: Variables</a></li>
+<li><a href="#python-if-conditional-statements">Python: if (conditional statements)</a></li>
+<li><a href="#python-try-except">Python: try, except</a></li>
+<li><a href="#python-while">Python: While</a></li>
+<li><a href="#python-for">Python: for</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#for-range-활용해서-1-100까지의-홀수의-합을-구하는-프로그램">for, range 활용해서 1~100까지의 홀수의 합을 구하는 프로그램</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -712,8 +743,8 @@ Variable names are case-sensitive (age, Age and AGE are three different variable
 
 <h5 id="1-int-정수">1.<code>int</code>: 정수</h5>
 
-<pre><code>x = input(“숫자를 입력해주세요.:&quot;)
-Y = input(“숫자를 입력해주세요.:”)
+<pre><code>x = input(&quot;숫자를 입력해주세요.:&quot;)
+Y = input(&quot;숫자를 입력해주세요.:”)
 
 x = 20
 y = 30
@@ -723,8 +754,8 @@ Print(x+y)
 
 
 
-x = `int`(input(“숫자를 입력해주세요.:”))
-Y = `int`(input(“숫자를 입력해주세요.:”))
+x = `int`(input(&quot;숫자를 입력해주세요.:&quot;))
+Y = `int`(input(&quot;숫자를 입력해주세요.:&quot;))
 
 x = 20
 y = 30
@@ -745,26 +776,400 @@ Print(x+y)
 
 <h5 id="3-str-문자-이것을-사용하면-숫자를-문자로-변환시킬수-있다">3. <code>Str</code>  :문자 이것을 사용하면 숫자를 문자로 변환시킬수 있다.</h5>
 
-<pre><code>x = int(input(“숫자를 입력하세요.:&quot;)
-Y = int(input(“숫자를 입력하세요.:”)
+<pre><code>x = int(input(&quot;숫자를 입력하세요.:&quot;)
+Y = int(input(&quot;숫자를 입력하세요.:&quot;)
 
 sum = x + y
-print(“두 수의 합은, sum, “입니다.&quot;)
+
+print(&quot;두 수의 합은, sum, &quot;입니다.&quot;)
 &gt;&gt;&gt;두 수의 합은 50 입니다.
 
 
 50  과 입니다 &lt;&lt;&lt;를 붙이고싶다 또는 
 문자를 숫자로 바꾸기 위해서 str 필요하다.
 
-print(“두 수의 합은”,`str`(sum),”입니다.”)
+print(&quot;두 수의 합은&quot;&quot;,`str`(sum),&quot;입니다.&quot;)
 
 &gt;&gt;&gt;&gt;두 수의 합은 50입니다.
 
 
 
-Print(1,2,3,4,end=“,”). &lt;&lt;&lt; 콤마로 띄어쓴다.
-print(1,2,3,4,sep=“,”)  &lt;&lt;&lt;&lt;  중간에 문자 집어넣기
+Print(1,2,3,4,end=&quot;,&quot;). &lt;&lt;&lt; 콤마로 띄어쓴다.
+print(1,2,3,4,sep=&quot;,&quot;)  &lt;&lt;&lt;&lt;  중간에 문자 집어넣기
 
+</code></pre>
+
+<hr />
+
+<h2 id="python-format-string">Python:Format_string</h2>
+
+<hr />
+
+<h6 id="format-명령">format 명령</h6>
+
+<h5 id="데이터타입-s-문자열-c-한글자-d-정수-f-실수">[데이터타입] : s(문자열), c(한글자), d(정수), f(실수)</h5>
+
+<ul>
+<li><p>example exercise 1-1</p>
+
+<pre><code>foramt_string = &quot;섭씨 35도는 화씨 99도 입니다.&quot;
+
+foramt_string = &quot;섭씨 %f도는 화씨 %f도 입니다.&quot;
+
+
+msg = foramt_string % (35.7, 99.23)
+print(msg)
+
+f 는 소수점 처리를 할수 있다.
+
+
+foramt_string = &quot;섭씨 '%0.2f'도는 화씨 '%-.4f'도 입니다.&quot;
+msg = foramt_string % (35.7, 99.23)
+print(msg)
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2 id="python-variables-1">Python: Variables</h2>
+
+<hr />
+
+<blockquote>
+<p>ariables are containers for storing data values.</p>
+</blockquote>
+
+<ul>
+<li><p>Example</p>
+
+<pre><code>x = 5
+y = &quot;John&quot;
+print(x)
+print(y)
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2 id="python-if-conditional-statements">Python: if (conditional statements)</h2>
+
+<hr />
+
+<pre><code>
+if (a &gt; b):
+    [처리문 실행문]
+elif [조건문 조건식]:
+    [실행문 처리문]
+else:
+    [실행문]
+&quot;&quot;&quot;
+# 조건식 : 명제 -&gt; 참과 거짓으로 판별할 수 있는 구문
+# 참과 거짓 : True False
+# a &gt; b, a &lt; b, a &gt;= b, a &lt;= b, a == b, a != b
+# and, or
+# not
+# 0, &quot;&quot;, False, []
+# 상태 : empty
+
+
+if not empty:
+    청소를 한다.
+
+a = 7
+b = 8
+c = 9
+a &gt; b and a &gt; c
+a &gt; b or a &gt; c
+not (a &gt; c)
+
+a &lt; b
+a &gt;= b
+a &lt;= b
+a == b
+a != b    
+    
+</code></pre>
+
+<ul>
+<li><p>Example</p>
+
+<pre><code>a = int(input(&quot;당신의 출생연도를 입력해주세요.:&quot;))
+
+
+age = 2019 - a + 1
+
+
+if age &gt;= 20:
+print(&quot;당신은 성인입니다.”)
+
+</code></pre></li>
+
+<li><p>Example</p>
+
+<pre><code>a = int(input(&quot;당신의 출생연도를 입력해주세요.:&quot;))
+
+age = 2019 - a + 1
+
+if age &gt;= 20:
+print(&quot;당신은 성인입니다.&quot;)
+
+else:
+print(&quot;당신은 성인이 아닙니다.&quot;)
+</code></pre></li>
+
+<li><p>Example exercise 1-1</p>
+
+<pre><code># 사용자의 키와 체중을 입력받아서
+# bmi 계산하여 출력하세요
+# bmi = 체중(kg) / (키(m)의 제곱)
+
+
+height = input(&quot;키를 입력하세요 : &quot;)
+height = float(height)
+
+
+
+
+weight = input(&quot;체중을 입력하세요 : &quot;)
+weight = float(weight)
+
+
+bmi = weight / ((height/100)**2)
+
+
+
+
+# 키와 체중을 입력받고
+# bmi 계산하고
+# 18.5 미만 = 저체중
+# 18.5 이상 23 미만 = 정상체중
+# 23 이상 = 과체중
+
+
+bmi_level = &quot;&quot;
+if bmi &lt; 18.5:
+bmi_level = &quot;저체중&quot;
+elif 18.5 &lt;= bmi &lt; 23:
+bmi_level = &quot;정상체중&quot;
+else:
+bmi_level =  &quot;과체중&quot;
+print(bmi,bmi_level)
+
+</code></pre></li>
+
+<li><p>Example exercise 1-2</p>
+
+<pre><code>
+# 섭씨 -&gt; 화씨로 바꾸는 프로그램
+# 화시 -&gt; 섭씨로 바꾸는 기능
+# 메뉴 입력 시작
+print(&quot;-----MENU-----&quot;)
+print(&quot;1. 섭씨 -&gt; 화씨 변환&quot;)
+print(&quot;2. 화씨 -&gt; 섭씨 변환&quot;)
+print(&quot;3. 프로그램 종료&quot;)
+menu = input(&quot;메뉴를 선택하세요 : &quot;)
+# 메뉴 입력 끝
+
+
+# 온도 계산 시작
+if menu == &quot;1&quot;:
+C = input(&quot;섭씨 온도를 입력하세요 : &quot;)
+C = float(C)
+F = C * 1.8 + 32
+msg = &quot;섭씨 &quot;+str(C)+&quot;도는 화씨 &quot;+str(F)+&quot;도 입니다.&quot;
+print(msg)
+elif menu == &quot;2&quot;:
+F = input(&quot;화씨 온도를 입력하세요 : &quot;)
+F = float(F)
+C = (F - 32) / 1.8
+msg = &quot;화씨 &quot;+str(F)+&quot;도는 섭씨 &quot;+str(C)+&quot;도 입니다.&quot;
+print(msg)
+elif menu == &quot;3&quot;:
+print(&quot;프로그램을 종료합니다.&quot;)
+else:
+print(&quot;잘못 선택하셨습니다.&quot;)
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2 id="python-try-except">Python: try, except</h2>
+
+<hr />
+
+<pre><code>
+try:
+    #[오류가 날지도 모르는 코드]
+    a = int(&quot;a&quot;)
+    print(&quot;in&quot;)
+except ValueError:
+    #[발생한 오류에 대응할 코드]
+    print(&quot;fired exception&quot;)
+except ZeroDivisionError:
+    #[발생한 오류에 대응할 코드]
+    print(&quot;fired exception&quot;)
+except:
+    #[발생한 오류에 대응할 코드]
+    print(&quot;fired exception&quot;)
+else:
+    #[오류가 없이 지나왔을 경우 코드]
+    print(&quot;no error&quot;)
+finally:
+    #[어쨋든 실행될 코드]
+    print(&quot;anyway&quot;)
+</code></pre>
+
+<ul>
+<li><p>exercise 1-1</p>
+
+<pre><code>
+number = input(&quot;정수를 입력하세요 : &quot;)
+try:
+number = int(number)
+except ValueError:
+print(&quot;정수가 아닙니다. 다시 입력하세요.&quot;)
+number = input(&quot;정수를 입력하세요 : &quot;)
+number = int(number)
+
+
+result = number*number
+print(result)
+
+
+# 입력받은 정수의 제곱 값을 출력하는 프로그램
+# 만약 숫자가 아니라면 다시 입력하라는 메시지를 출력한다.
+# 다시 입력 하라는 메시지는 1회만
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2 id="python-while">Python: While</h2>
+
+<hr />
+
+<pre><code>
+while [조건식]:
+    [실행문]
+    [실행문]
+    [실행문]
+    [실행문]
+
+&quot;&quot;&quot;
+1 예) 이런식으로 많이 쓰인다.
+
+While True:
+    Try:
+    Break
+    except
+2 예)
+
+
+while True:
+    # 정수를 입력받는다. 정수가 입력될 때까지
+    number = input(&quot;정수를 입력하세요 : &quot;)
+    try:
+        number = int(number)
+        break
+    except:
+        print(&quot;정수가 아닙니다. 다시 입력하세요.&quot;)
+
+
+print(number)
+</code></pre>
+
+<ul>
+<li><p>exercise</p>
+
+<pre><code>
+# 섭씨 -&gt; 화씨로 바꾸는 프로그램
+# 화시 -&gt; 섭씨로 바꾸는 기능
+# 메뉴 입력 시작
+print(&quot;-----MENU-----&quot;)
+print(&quot;1. 섭씨 -&gt; 화씨 변환&quot;)
+print(&quot;2. 화씨 -&gt; 섭씨 변환&quot;)
+print(&quot;3. 프로그램 종료&quot;)
+menu = input(&quot;메뉴를 선택하세요 : &quot;)
+# 메뉴 입력 끝
+
+
+# 온도 계산 시작
+if menu == &quot;1&quot;:
+while True:
+    try:
+        C = input(&quot;섭씨 온도를 입력하세요 : &quot;)
+        C = float(C)
+        break
+    except:
+        print(&quot;다시 입력하세요.&quot;)
+
+
+F = C * 1.8 + 32
+msg = &quot;섭씨 &quot;+str(C)+&quot;도는 화씨 &quot;+str(F)+&quot;도 입니다.&quot;
+print(msg)
+elif menu == &quot;2&quot;:
+while True:
+    try:
+        F = input(&quot;화씨 온도를 입력하세요 : &quot;)
+        F = float(F)
+        break
+    except:
+        print(&quot;다시 입력하세요.&quot;)
+C = (F - 32) / 1.8
+msg = &quot;화씨 &quot;+str(F)+&quot;도는 섭씨 &quot;+str(C)+&quot;도 입니다.&quot;
+print(msg)
+elif menu == &quot;3&quot;:
+print(&quot;프로그램을 종료합니다.&quot;)
+else:
+print(&quot;잘못 선택하셨습니다.&quot;)
+
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2 id="python-for">Python: for</h2>
+
+<hr />
+
+<ul>
+<li><p>Description</p>
+
+<pre><code># for [name] in [bucket]:
+#     [실행문]
+</code></pre>
+
+<pre><code>
+for n in range(10):
+print(n)
+print(n*n)
+
+</code></pre></li>
+</ul>
+
+<h6 id="for-range-활용해서-1-100까지의-홀수의-합을-구하는-프로그램">for, range 활용해서 1~100까지의 홀수의 합을 구하는 프로그램</h6>
+
+<pre><code>total = 0
+for x in range(1,101,2):
+    total += x
+    total = total + x
+print(total)
+
+</code></pre>
+
+<pre><code># &quot;Range는 횟수 용으로 많이 쓰인다.&quot;
+# range(Y) : 0 ~ Y-1까지
+# range(X,Y) : X ~ Y-1까지
+# range(X,Y,Z) : X ~ Y-1까지인데, Z씩 증감
+</code></pre>
+
+<pre><code>for n in range(0,12.2):
+    print(n)
+2
+4
+6
+8
+10
 </code></pre>
 
           </div>
