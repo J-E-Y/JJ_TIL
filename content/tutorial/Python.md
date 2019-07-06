@@ -653,3 +653,70 @@ for n in range(0,12.2):
 8
 10
 ```
+
+---
+##  Python: Module
+---
+
+
+```
+
+import datetime
+변수 = datetime.datetime.now()
+Print(변수)
+Print(변수.strftime(“%y-%m-%d"))
+Print(변수.year)
+Print(변수.hour)
+Print(변수.corosecond)
+
+```
+###### 윤년 프로그램 
+```
+# 윤년 프로그램을 짜본다.
+# 윤년 2월 29일까지 있는 해
+# 연도가 400으로 나누어 떨어지면 윤년
+# 연도가 100으로 나누어 떨어지면 윤년 x
+# 연도가 4로 나누어 떨어지면 윤년
+# 1. 올해의 윤년여부 출력
+# 2. 사용자의 입력을 받아서 윤년 여부 출력
+# 3. 프로그램 종료
+```
+
+```
+
+import datetime
+while True:
+    print("----Menu----")
+    print("1. 올해 윤년 여부")
+    print("2. 입력 받은 연도 윤년 여부")
+    print("3. 프로그램 종료")
+    menu = input("메뉴를 선택하세요 : ")
+
+
+    if menu == "1":
+        current_time = datetime.datetime.now()
+        year = current_time.year
+        if (year % 4 == 0 and year % 100 !=0) or year % 400 == 0:
+            print("윤년입니다.")
+        else:
+            print("윤년이 아닙니다.")
+    elif menu == "2":
+        while True:
+            try:
+                year = input("판별하고자 하는 연도를 입력하세요 : ")
+                year = int(year)
+                break
+            except:
+                print("다시 입력하세요.")
+        if (year % 4 == 0 and year % 100 !=0) or year % 400 == 0:
+            print("윤년입니다.")
+        else:
+            print("윤년이 아닙니다.")
+    elif menu == "3":
+        break
+        # exit()
+    else:
+        print("없는 메뉴 입니다.")
+
+```
+
