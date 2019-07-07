@@ -720,3 +720,123 @@ while True:
 
 ```
 
+
+---
+##  Python: function
+---
+
+```
+# def [함수이름]([매개변수,입력값]):
+#     [실행구문]
+#     [return (반환값, 출력값)]
+```
+
+* example 1-1
+
+```
+A = 1
+B = 2
+x = 1+2
+Print(x)
+
+>>>3
+
+함수 이용하기
+
+def x (A,B) : 
+    return A+B
+print (x(1,2))
+
+>>>3
+
+```
+* example 1-2
+
+```
+def sayHi():
+    print("Hello Python")
+
+
+sayHi()
+
+```
+
+* exercise 1-2
+
+```
+
+# 1~9까지의 각각의 제곱을 출력하는 함수를 만드세요.
+def PrintSquare():
+    for x in range(1,10):
+        print(x*x)
+
+
+PrintSquare()
+PrintSquare()
+PrintSquare()
+PrintSquare()
+PrintSquare()
+
+
+def PrintSquare2(endNumber):
+    for x in range(1,endNumber+1):
+        print(x*x)
+
+
+PrintSquare2(10)
+
+
+```
+
+* exercise 1-3
+
+```
+# 두개의 숫자를 전달 받아서
+# 그 두 숫자의 합을 출력하는 함수
+def printSum(number1, number2):
+    print(number1+number2)
+
+
+printSum(10, 22)
+
+```
+
+* exercise 1-4
+
+```
+# 별줄수 만들기
+
+"""
+사용자에게 줄 수를 입력받아서
+해당 줄 수만큼 별을 출력하시오.
+   *
+  ***
+ *****
+"""
+
+
+line_count = input("출력할 줄 수를 입력하세요 : ")
+line_count = int(line_count)
+
+
+max_width = line_count*2 - 1
+format_string = "{:^"+str(max_width)+"s}"
+for count in range(line_count):
+    #blank_count = line_count-(count+1)
+    #print(" " * blank_count, end="")
+    start_count = 2 * count + 1
+
+
+
+
+    msg = format_string.format("*"*start_count)
+    print(msg)
+
+   *
+  ***
+ *****
+
+```
+
+
+

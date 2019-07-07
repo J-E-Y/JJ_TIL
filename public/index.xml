@@ -899,6 +899,122 @@ while True:
         print(&amp;quot;없는 메뉴 입니다.&amp;quot;)
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;python-function&#34;&gt;Python: function&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;# def [함수이름]([매개변수,입력값]):
+#     [실행구문]
+#     [return (반환값, 출력값)]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;example 1-1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;A = 1
+B = 2
+x = 1+2
+Print(x)
+
+&amp;gt;&amp;gt;&amp;gt;3
+
+함수 이용하기
+
+def x (A,B) : 
+return A+B
+print (x(1,2))
+
+&amp;gt;&amp;gt;&amp;gt;3
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;example 1-2&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def sayHi():
+print(&amp;quot;Hello Python&amp;quot;)
+
+
+sayHi()
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;exercise 1-2&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+# 1~9까지의 각각의 제곱을 출력하는 함수를 만드세요.
+def PrintSquare():
+for x in range(1,10):
+    print(x*x)
+
+
+PrintSquare()
+PrintSquare()
+PrintSquare()
+PrintSquare()
+PrintSquare()
+
+
+def PrintSquare2(endNumber):
+for x in range(1,endNumber+1):
+    print(x*x)
+
+
+PrintSquare2(10)
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;exercise 1-3&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 두개의 숫자를 전달 받아서
+# 그 두 숫자의 합을 출력하는 함수
+def printSum(number1, number2):
+print(number1+number2)
+
+
+printSum(10, 22)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;exercise 1-4&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 별줄수 만들기
+
+&amp;quot;&amp;quot;&amp;quot;
+사용자에게 줄 수를 입력받아서
+해당 줄 수만큼 별을 출력하시오.
+*
+***
+*****
+&amp;quot;&amp;quot;&amp;quot;
+
+
+line_count = input(&amp;quot;출력할 줄 수를 입력하세요 : &amp;quot;)
+line_count = int(line_count)
+
+
+max_width = line_count*2 - 1
+format_string = &amp;quot;{:^&amp;quot;+str(max_width)+&amp;quot;s}&amp;quot;
+for count in range(line_count):
+#blank_count = line_count-(count+1)
+#print(&amp;quot; &amp;quot; * blank_count, end=&amp;quot;&amp;quot;)
+start_count = 2 * count + 1
+
+
+
+
+msg = format_string.format(&amp;quot;*&amp;quot;*start_count)
+print(msg)
+
+*
+***
+*****
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
