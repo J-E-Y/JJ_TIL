@@ -27,7 +27,9 @@
   
     
   
-  <meta name="description" content="1. showing data in browser &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;body&gt; &lt;h2&gt;Javascript_note&lt;/h2&gt; &lt;p id=&quot;demo&quot;&gt;what time is it now ?&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;  var p = document.getElementById(&#39;demo&#39;); var demo = document.getElementById(&#39;demo&#39;); demo.innerHTML = Date();  demo.style.color = &quot;red&quot;; demo.style.background = &quot;black&quot;;  var demo = document.getElementById(&#39;demo&#39;); var size = 10; function big() { demo.style.fontSize = size &#43; &quot;px&quot;; size = size &#43; 1; } var tid = setInterval(big, 100);  2. data type 자료형이란?">
+  <meta name="description" content="2. data type (자료형) 자료형이란?  어떤 종류의 데이터를 사용하는 것이지 컴퓨터에게 알려주는 것 자료형마다 사용 가능한 연산자(Operator)를 따로 가지고 있습니다! 자료형이 같아야 연산을 할 수 있습니다!
+ 자료형의 종류  Number :숫자 String :문자 Boolean :true and False Null : 값이 비어있다 Undefined :값이 정의되지 않았다 symbol(new in ECMAScript 6) and Object :  1. Number type (숫자)  ex)
+var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript/">
@@ -116,7 +118,9 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript/">
   <meta property="og:title" content="Javascript | Home">
-  <meta property="og:description" content="1. showing data in browser &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;body&gt; &lt;h2&gt;Javascript_note&lt;/h2&gt; &lt;p id=&quot;demo&quot;&gt;what time is it now ?&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;  var p = document.getElementById(&#39;demo&#39;); var demo = document.getElementById(&#39;demo&#39;); demo.innerHTML = Date();  demo.style.color = &quot;red&quot;; demo.style.background = &quot;black&quot;;  var demo = document.getElementById(&#39;demo&#39;); var size = 10; function big() { demo.style.fontSize = size &#43; &quot;px&quot;; size = size &#43; 1; } var tid = setInterval(big, 100);  2. data type 자료형이란?"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="2. data type (자료형) 자료형이란?  어떤 종류의 데이터를 사용하는 것이지 컴퓨터에게 알려주는 것 자료형마다 사용 가능한 연산자(Operator)를 따로 가지고 있습니다! 자료형이 같아야 연산을 할 수 있습니다!
+ 자료형의 종류  Number :숫자 String :문자 Boolean :true and False Null : 값이 비어있다 Undefined :값이 정의되지 않았다 symbol(new in ECMAScript 6) and Object :  1. Number type (숫자)  ex)
+var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -308,8 +312,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#1-showing-data-in-browser"><strong>1. showing data in browser</strong></a></li>
-<li><a href="#2-data-type"><strong>2. data type</strong></a>
+<li><a href="#2-data-type-자료형"><strong>2. data type (자료형)</strong></a>
 <ul>
 <li>
 <ul>
@@ -317,80 +320,89 @@
 <ul>
 <li><a href="#자료형이란">자료형이란?</a></li>
 <li><a href="#자료형의-종류">자료형의 종류</a></li>
-<li><a href="#number-type">Number type</a></li>
-<li><a href="#string-문자열">String (문자열)</a></li>
-<li><a href="#boolean-불리언">Boolean (불리언)</a></li>
-<li><a href="#the-typeof-operator-데이터유형을-알려주는-중요한-연산자">The typeof Operator: 데이터유형을 알려주는 중요한 연산자!</a></li>
-<li><a href="#symbol-심볼">symbol (심볼)</a></li>
-<li><a href="#object-객체">object (객체)</a></li>
+<li><a href="#1-number-type-숫자">1. Number type (숫자)</a></li>
+<li><a href="#2-string-문자열">2. String (문자열)</a></li>
+<li><a href="#3-boolean-불리언">3. Boolean (불리언)</a></li>
+<li><a href="#4-the-typeof-operator-데이터유형을-알려주는-중요한-연산자">4. The typeof Operator: 데이터유형을 알려주는 중요한 연산자!</a></li>
+<li><a href="#5-symbol-심볼">5. symbol (심볼)</a></li>
+<li><a href="#6-object-객체">6. object (객체)</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
-<li><a href="#3-variable"><strong>3. Variable</strong></a></li>
-<li><a href="#4-operator"><strong>4.operator</strong></a>
+<li><a href="#3-variable-변수"><strong>3. Variable (변수)</strong></a>
 <ul>
 <li>
 <ul>
 <li>
 <ul>
-<li><a href="#logical-operator-논리연산자">Logical operator (논리연산자)</a></li>
-<li><a href="#increment-decrement-operator-증감연산자">increment/decrement operator (증감연산자)</a></li>
+<li><a href="#using-variables">Using Variables</a></li>
+<li><a href="#declaring-a-variable-without-a-vaue">Declaring a variable without a Vaue</a></li>
+<li><a href="#changing-a-variable-s-value">Changing a Variable’s value</a></li>
+<li><a href="#scopes">Scopes</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#4-operator-연산자"><strong>4.operator (연산자)</strong></a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#arithmetic-operator-산술-연산자">arithmetic operator (산술 연산자)</a></li>
+<li><a href="#assignment-operator-대입-연산자">assignment operator (대입 연산자)</a></li>
+<li><a href="#increment-and-decrement-operator-증감-연산자">increment and decrement operator ( 증감 연산자 )</a></li>
 <li><a href="#comparison-operator-비교-연산자">comparison operator (비교 연산자)</a></li>
+<li><a href="#logical-operator-논리연산자">Logical operator (논리연산자)</a></li>
+<li><a href="#bitwise-operator-비트-연산자">bitwise operator (비트 연산자)</a></li>
+<li><a href="#increment-decrement-operator-증감연산자">increment/decrement operator (증감연산자)</a></li>
+<li><a href="#comparison-operator-비교-연산자-1">comparison operator (비교 연산자)</a></li>
+<li><a href="#typeof-연산자">typeof 연산자</a></li>
+<li><a href="#ternary-operator-삼항-연산자">ternary operator (삼항 연산자)</a></li>
+<li><a href="#delete-연산자">delete 연산자</a></li>
+<li><a href="#쉼표-연산자">쉼표 연산자</a></li>
+<li><a href="#instanceof-연산자">instanceof 연산자</a></li>
+<li><a href="#void-연산자">void 연산자</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
-<li><a href="#5-dealing-with-string"><strong>5. dealing with String</strong></a>
+<li><a href="#conditional-statements-조건문-if"><strong>conditional statements (조건문 if )</strong></a>
 <ul>
 <li>
 <ul>
 <li>
 <ul>
-<li><a href="#length">length</a></li>
-<li><a href="#slice-자르기">slice :자르기</a></li>
-<li><a href="#console-log">console.log()</a></li>
-<li><a href="#alert-과-prompt-사용해-보기">alert() 과 prompt() 사용해 보기</a></li>
+<li><a href="#if-문">if 문</a></li>
+<li><a href="#else-문">else 문</a></li>
+<li><a href="#else-if-문">else if 문</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
-<li><a href="#exercise-1"><strong>exercise 1</strong></a>
+<li><a href="#iteration-statements-반복문"><strong>iteration statements 반복문</strong></a>
 <ul>
 <li>
 <ul>
 <li>
 <ul>
-<li><a href="#두-수를-입력받아-4칙연산의-결과를-표시해-봅시다">두 수를 입력받아 4칙연산의 결과를 표시해 봅시다.</a></li>
-<li><a href="#bmi를-계산하는-프로그램을-작성해-봅시다">BMI를 계산하는 프로그램을 작성해 봅시다.</a></li>
-<li><a href="#화씨를-입력받아서-섭씨로-바꾸는-프로그램을-작성해-봅시다">화씨를 입력받아서 섭씨로 바꾸는 프로그램을 작성해 봅시다</a></li>
-</ul></li>
-<li><a href="#입력한-문자열의-길이를-알려주는-프로그램을-작성해-봅시다">입력한 문자열의 길이를 알려주는 프로그램을 작성해 봅시다.</a></li>
+<li><a href="#while">while</a></li>
+<li><a href="#for-문">for 문</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#5-if"><strong>5. If</strong></a>
+</ul></li>
+<li><a href="#array-배열"><strong>Array 배열</strong></a>
 <ul>
 <li>
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href="#if-기본-문법">if 기본 문법</a></li>
-<li><a href="#if-else">if + else</a></li>
-<li><a href="#if-else-if-else">if + else if + else</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li><a href="#6-while"><strong>6. While</strong></a>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#while-반복문">while 반복문</a></li>
-<li><a href="#예제">예제</a></li>
-</ul></li>
+<li><a href="#배열이란">배열이란?</a></li>
+<li><a href="#특징">특징</a></li>
+<li><a href="#배열-만들기-1">배열 만들기 1</a></li>
+<li><a href="#인덱스를-이용해서-배열의-원소-읽기">인덱스를 이용해서 배열의 원소 읽기</a></li>
+<li><a href="#배열의-타입-알아보기">배열의 타입 알아보기</a></li>
+<li><a href="#배열-만들기-2">배열 만들기 2</a></li>
+<li><a href="#배열의-길이-구하기">배열의 길이 구하기</a></li>
+<li><a href="#배열의-마지막-원소를-읽어-오려면">배열의 마지막 원소를 읽어 오려면?</a></li>
+<li><a href="#배열의-메소드들-1">배열의 메소드들 1</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -418,49 +430,7 @@
 
 <hr />
 
-<h2 id="1-showing-data-in-browser"><strong>1. showing data in browser</strong></h2>
-
-<hr />
-
-<pre><code class="language-javascript">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;body&gt;
-    &lt;h2&gt;Javascript_note&lt;/h2&gt;
-    &lt;p id=&quot;demo&quot;&gt;what time is it now ?&lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-
-</code></pre>
-
-<pre><code class="language-javascript">
-var p = document.getElementById('demo');
-var demo = document.getElementById('demo');
-demo.innerHTML = Date();
-
-</code></pre>
-
-<pre><code class="language-javascript">
-demo.style.color = &quot;red&quot;;
-demo.style.background = &quot;black&quot;;
-
-</code></pre>
-
-<pre><code class="language-javascript">
-var demo = document.getElementById('demo');
-var size = 10;
-function big() {
-    demo.style.fontSize = size + &quot;px&quot;;
-    size = size + 1;            
-}
-var tid = setInterval(big, 100);
-
-</code></pre>
-
-<hr />
-
-<h2 id="2-data-type"><strong>2. data type</strong></h2>
+<h2 id="2-data-type-자료형"><strong>2. data type (자료형)</strong></h2>
 
 <hr />
 
@@ -480,10 +450,11 @@ var tid = setInterval(big, 100);
 <li>Boolean :true and False</li>
 <li>Null : 값이 비어있다</li>
 <li>Undefined :값이 정의되지 않았다</li>
-<li>Object :</li>
+<li>symbol(new in ECMAScript 6)
+and Object :</li>
 </ul>
 
-<h5 id="number-type">Number type</h5>
+<h5 id="1-number-type-숫자">1. Number type (숫자)</h5>
 
 <ul>
 <li><p>ex)</p>
@@ -493,15 +464,34 @@ var secondNum = 10.00; // 소수점을 사용한 표현
 var thirdNum = 10e6;   // 10000000
 var fourthNum = 10e-6; // 0.00001
 </code></pre></li>
+
+<li><p>length</p>
+
+<pre><code>var a = &quot;hello&quot;
+a.length;
+</code></pre></li>
+
+<li><p>slice :자르기</p>
+
+<pre><code>var a = &quot;KheLLo&quot;
+a[0];
+a[1] = &quot;H&quot;; //안 됨
+
+
+a.slice(1,4);
+a.toUpperCase(); : 대문자로 바뀐
+a.toLowerCase(); : 소문자로 바뀐다
+
+</code></pre></li>
 </ul>
 
-<h5 id="string-문자열">String (문자열)</h5>
+<h5 id="2-string-문자열">2. String (문자열)</h5>
 
 <pre><code>&quot;I am String&quot;;
 &quot;Hello &quot; + &quot;world&quot;;
 </code></pre>
 
-<h5 id="boolean-불리언">Boolean (불리언)</h5>
+<h5 id="3-boolean-불리언">3. Boolean (불리언)</h5>
 
 <pre><code>true;
 false;
@@ -510,7 +500,7 @@ false;
 5 &gt; 5;
 </code></pre>
 
-<h5 id="the-typeof-operator-데이터유형을-알려주는-중요한-연산자">The typeof Operator: 데이터유형을 알려주는 중요한 연산자!</h5>
+<h5 id="4-the-typeof-operator-데이터유형을-알려주는-중요한-연산자">4. The typeof Operator: 데이터유형을 알려주는 중요한 연산자!</h5>
 
 <pre><code>typeof 10;        // number 타입
 typeof &quot;문자열&quot;;  // string 타입
@@ -520,7 +510,7 @@ typeof null;      // object 타입
 
 </code></pre>
 
-<h5 id="symbol-심볼">symbol (심볼)</h5>
+<h5 id="5-symbol-심볼">5. symbol (심볼)</h5>
 
 <ul>
 <li><p>심볼 타입은 ECMAScript 6부터 새롭게 추가된 타입이다.
@@ -533,7 +523,7 @@ var symObj = Object(sym);        // object 타입
 </code></pre></li>
 </ul>
 
-<h5 id="object-객체">object (객체)</h5>
+<h5 id="6-object-객체">6. object (객체)</h5>
 
 <ul>
 <li><p>자바스크립트의 기본 타입은 객체(object)이다. 객체(object)란 실생활에서 우리가 인식할 수 있는 사물로 이해할 수 있다. 객체는 여러 프로퍼티(property)나 메소드(method)를 같은 이름으로 묶어놓은 일종의 집합체이다.</p></li>
@@ -549,50 +539,213 @@ document.getElementById(&quot;result&quot;).innerHTML =
 
 <hr />
 
-<h2 id="3-variable"><strong>3. Variable</strong></h2>
+<h2 id="3-variable-변수"><strong>3. Variable (변수)</strong></h2>
 
 <hr />
 
-<blockquote>
-<p>JavaScript variables are containers for storing data values.</p>
+<h5 id="using-variables">Using Variables</h5>
 
-<p>변수 이름 잘 짓기 변수의 이름은 매우 중요합니다. 일반적으로 소문자로 시작, 영어, 숫자, _를 주로 사용합니다. 카멜 케이스나 스네이크 케이스</p>
-</blockquote>
+<pre><code>var x = 10;
+
+x + 5 ; // =&gt; 15
+
+x ; // =&gt; 10
+
+once we have created our variables,
+we can use their name as a substitute for their value elsewhere in our program.
+
+
+</code></pre>
+
+<h5 id="declaring-a-variable-without-a-vaue">Declaring a variable without a Vaue</h5>
+
+<pre><code>
+Creating a variable in JavaScript is called &quot;declaring&quot; a variable.
+
+1.var carName;
+After the declaration, the variable has no value (technically it has the value of undefined).
+
+
+To assign a value to the variable, use the equal sign:
+
+2. carName = &quot;Volvo&quot;;   // carName 를 Volvo 로 변경할때 var 없이 만든다 cos 먼저 선언을 했기 때문이다. 
+
+2. var carName = &quot;Volvo&quot;;
+
+
+</code></pre>
+
+<h5 id="changing-a-variable-s-value">Changing a Variable’s value</h5>
+
+<pre><code>
+var pokemon = charmander
+
+pokemon = heelo
+
+
+Notice that When you change the value of a variable, &quot;you don’t need to use the var keyword&quot;The var keyword is only needed for creating new variables.
+
+
+</code></pre>
+
+<h5 id="scopes">Scopes</h5>
 
 <ul>
-<li><p>How to crate Variablie there are two ways we tend to use</p>
+<li><p>ex 1-1</p>
 
-<pre><code>1. camelCase
+<pre><code>var greeting = &quot;Hello&quot;;
 
-&gt;&gt;&gt;numPeople
+function greetSomeone() {
+	var firstName = &quot;john&quot;
+	return greeting + &quot; &quot; + firstName;
+}
 
-2. PascalCase
+firstName; // = &gt; Error
 
-&gt;&gt;&gt;num_people
+
+Because we declared our name variable inside the scope of our greetSomeone function.
+
+
+</code></pre>
+
+<pre><code>
+&quot;But!!!!!!! if you do this it works well&quot;!!
+
+var greeting = &quot;Hello&quot;;
+var firstName = &quot;john&quot;
+
+function greetSomeone() {
+	firstName = &quot;JJ&quot;
+	return greeting + &quot; &quot;+ firstName;
+}
+
+
+firstNmae // = &gt; JJ
+
+Because you changed a variable the was defined in an outer scope
+
 </code></pre></li>
 </ul>
 
 <hr />
 
-<h2 id="4-operator"><strong>4.operator</strong></h2>
+<h2 id="4-operator-연산자"><strong>4.operator (연산자)</strong></h2>
 
 <hr />
 
-<h5 id="logical-operator-논리연산자">Logical operator (논리연산자)</h5>
+<h5 id="arithmetic-operator-산술-연산자">arithmetic operator (산술 연산자)</h5>
+
+<pre><code>+	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 더함.
+-	왼쪽 피연산자의 값에서 오른쪽 피연산자의 값을 뺌.
+*	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 곱함.
+/	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눔.
+%	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 나머지를 반환함
+
+</code></pre>
 
 <ul>
-<li>&amp;&amp;    &gt;&gt;&gt;논리식이 모두 참이면 참을 반환함. (논리 AND 연산)</li>
-<li>||    &gt;&gt;&gt;논리식 중에서 하나라도 참이면 참을 반환함. (논리 OR 연산)</li>
+<li><p>ex</p>
 
-<li><p>!   &gt;&gt;&gt;논리식의 결과가 참이면 거짓을, 거짓이면 참을 반환함. (논리 NOT 연산)</p>
+<pre><code>var x = 10, y = 4;
+document.write(x + y + &quot;&lt;br&gt;&quot;); // 14
+document.write(x - y + &quot;&lt;br&gt;&quot;); // 6
+document.write(x * y + &quot;&lt;br&gt;&quot;); // 40
+document.write(x / y + &quot;&lt;br&gt;&quot;); // 2.5
+document.write(x % y);          // 2
+
+</code></pre></li>
+</ul>
+
+<h5 id="assignment-operator-대입-연산자">assignment operator (대입 연산자)</h5>
+
+<pre><code>=	왼쪽 피연산자에 오른쪽 피연산자의 값을 대입함.
++=	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 더한 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+-=	왼쪽 피연산자의 값에서 오른쪽 피연산자의 값을 뺀 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+*=	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 곱한 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+/=	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+%=	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 나머지를 왼쪽
+피연산자에 대입함.
+
+</code></pre>
+
+<ul>
+<li><p>ex</p>
+
+<pre><code>var x = 10, y = 10, z = 10;
+x = x - 5;
+y -= 5; // y = y - 5 와 같은 표현임.
+z =- 5; // z = -5 와 같은 표현임.
+
+</code></pre></li>
+</ul>
+
+<h5 id="increment-and-decrement-operator-증감-연산자">increment and decrement operator ( 증감 연산자 )</h5>
+
+<pre><code>++x	먼저 피연산자의 값을 1 증가시킨 후에 해당 연산을 진행함.
+x++	먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 증가시킴.
+--x	먼저 피연산자의 값을 1 감소시킨 후에 해당 연산을 진행함.
+x--	먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 감소시킴.
+
+</code></pre>
+
+<ul>
+<li><p>ex</p>
+
+<pre><code>var x = 10, y = 10;
+document.write((++x - 3) + &quot;&lt;br&gt;&quot;); // x의 값을 우선 1 증가시킨 후에 3을 뺌.
+document.write(x + &quot;&lt;br&gt;&quot;);         // 11
+document.write((y++ - 3) + &quot;&lt;br&gt;&quot;); // 먼저 y에서 3을 뺀 후에 y의 값을 1 증가시킴.
+document.write(y);                  // 11
+</code></pre></li>
+</ul>
+
+<h5 id="comparison-operator-비교-연산자">comparison operator (비교 연산자)</h5>
+
+<pre><code>==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같으면 참을 반환함.
+===	왼쪽 피연산자와 오른쪽 피연산자의 값이 같고, 같은 타입이면 참을 반환함.
+!=	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않으면 참을 반환함.
+!==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않거나, 타입이 다르면 참을 반환함.
+&gt;	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크면 참을 반환함.
+&gt;=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크거나 같으면 참을 반환함.
+&lt;	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작으면 참을 반환함.
+&lt;=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작거나 같으면 참을 반환함.
+
+</code></pre>
+
+<ul>
+<li><p>ex</p>
+
+<pre><code>
+var x = 3, y = 5;
+var a = &quot;abc&quot;, b = &quot;bcd&quot;;
+document.write((x &gt; y) + &quot;&lt;br&gt;&quot;);  // y의 값이 x의 값보다 크므로 false
+document.write((a &lt;= b) + &quot;&lt;br&gt;&quot;); // 알파벳 순서상 'a'가 'b'보다 먼저 나오므로 'a'가 'b'보다 작음.
+document.write(x &lt; a);             // x의 값은 숫자이고 a의 값은 문자열이므로 비교할 수 없음.
+
+</code></pre></li>
+</ul>
+
+<h5 id="logical-operator-논리연산자">Logical operator (논리연산자)</h5>
 
 <pre><code>&amp;&amp; 는 and 
 
 || 는 or
 
 ! 는 Not
-</code></pre></li>
-</ul>
+</code></pre>
+
+<h5 id="bitwise-operator-비트-연산자">bitwise operator (비트 연산자)</h5>
+
+<pre><code>
+&amp;	대응되는 비트가 모두 1이면 1을 반환함. (비트 AND 연산)
+|	대응되는 비트 중에서 하나라도 1이면 1을 반환함. (비트 OR 연산)
+^	대응되는 비트가 서로 다르면 1을 반환함. (비트 XOR 연산)
+~	비트를 1이면 0으로, 0이면 1로 반전시킴. (비트 NOT 연산)
+&lt;&lt;	지정한 수만큼 비트를 전부 왼쪽으로 이동시킴. (left shift 연산)
+&gt;&gt;	부호를 유지하면서 지정한 수만큼 비트를 전부 오른쪽으로 이동시킴. (right shift 연산)
+&gt;&gt;&gt;	지정한 수만큼 비트를 전부 오른쪽으로 이동시키며, 새로운 비트는 전부 0이 됨.
+
+</code></pre>
 
 <h5 id="increment-decrement-operator-증감연산자">increment/decrement operator (증감연산자)</h5>
 
@@ -609,7 +762,7 @@ a--;
 </code></pre></li>
 </ul>
 
-<h5 id="comparison-operator-비교-연산자">comparison operator (비교 연산자)</h5>
+<h5 id="comparison-operator-비교-연산자-1">comparison operator (비교 연산자)</h5>
 
 <pre><code>==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같으면 참을 반환함.
 ===	왼쪽 피연산자와 오른쪽 피연산자의 값이 같고, 같은 타입이면 참을 반환함.
@@ -621,233 +774,473 @@ a--;
 &lt;=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작거나 같으면 참을 반환함.
 </code></pre>
 
-<hr />
+<h5 id="typeof-연산자">typeof 연산자</h5>
 
-<h2 id="5-dealing-with-string"><strong>5. dealing with String</strong></h2>
+<blockquote>
+<p>typeof 연산자는 피연산자의 타입을 반환한다.</p>
+</blockquote>
 
-<hr />
-
-<h5 id="length">length</h5>
-
-<pre><code>var a = &quot;hello&quot;
-a.length;
+<pre><code>숫자, NaN	&quot;number&quot;
+문자열	&quot;string&quot;
+true, false	&quot;boolean&quot;
+null	&quot;object&quot;
+undefined	&quot;undefined&quot;
+함수	&quot;function&quot;
+함수가 아닌 객체	&quot;object&quot;
 </code></pre>
-
-<h5 id="slice-자르기">slice :자르기</h5>
-
-<pre><code>var a = &quot;KheLLo&quot;
-a[0];
-a[1] = &quot;H&quot;; //안 됨
-
-
-a.slice(1,4);
-a.toUpperCase(); : 대문자로 바뀐
-a.toLowerCase(); : 소문자로 바뀐다
-
-</code></pre>
-
-<h5 id="console-log">console.log()</h5>
 
 <ul>
-<li><p>개발자 콘솔에 뭔가를 찍어주는 메서드입니다.</p>
+<li><p>ex</p>
 
-<pre><code>var a = 1;
-var b = &quot;더하기&quot;;
-var c = 2;
-console.log(a + &quot; &quot; + b + &quot; &quot; + c + &quot; = &quot; + a + c);
+<pre><code>typeof &quot;문자열&quot;   // string
+typeof 10         // number
+typeof NaN        // number
+typeof false      // boolean
+typeof undefined  // undefined
+typeof new Date() // object
+typeof null       // object
 </code></pre></li>
 </ul>
 
-<h5 id="alert-과-prompt-사용해-보기">alert() 과 prompt() 사용해 보기</h5>
+<h5 id="ternary-operator-삼항-연산자">ternary operator (삼항 연산자)</h5>
 
-<pre><code>var ans = prompt(&quot;How are you?&quot;);
-alert(ans);
-</code></pre>
+<blockquote>
+<p>삼항 연산자는 유일하게 피연산자를 세 개나 가지는 조건 연산자이다.</p>
+</blockquote>
 
-<hr />
+<ul>
+<li><p>ex</p>
 
-<h2 id="exercise-1"><strong>exercise 1</strong></h2>
+<pre><code>var x = 3, y = 5;
+var result = (x &gt; y) ? x : y   // x가 더 크면 x를, 그렇지 않으면 y를 반환함.
+document.write(&quot;둘 중에 더 큰 수는 &quot; + result + &quot;이다.&quot;);
 
-<hr />
+삼항 연산자는 짧은 if / else 문 대신 사용할 수 있으며, 코드를 간결하게 만들어 준다.
+</code></pre></li>
+</ul>
 
-<h5 id="두-수를-입력받아-4칙연산의-결과를-표시해-봅시다">두 수를 입력받아 4칙연산의 결과를 표시해 봅시다.</h5>
+<h5 id="delete-연산자">delete 연산자</h5>
 
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h2&gt;exercise1-1&lt;/h2&gt;
-    &lt;script&gt;
-        var s1 = prompt(&quot;input number&quot;);
-        var s2 = prompt(&quot;input number&quot;);
-        var n1 = Number(s1);
-        var n2 = Number(s2);
-        console.log(n1 + &quot; + &quot; + n2 + &quot; = &quot; + (n1 + n2));
-        console.log(n1 + &quot; - &quot; + n2 + &quot; = &quot; + (n1 - n2));
-        console.log(n1 + &quot; * &quot; + n2 + &quot; = &quot; + (n1 * n2));
-        console.log(n1 + &quot; / &quot; + n2 + &quot; = &quot; + (n1 / n2));
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<blockquote>
+<p>delete 연산자는 피연산자인 객체, 객체의 프로퍼티(property) 또는 배열의 요소(element) 등을 삭제해 준다.</p>
+</blockquote>
 
-<h5 id="bmi를-계산하는-프로그램을-작성해-봅시다">BMI를 계산하는 프로그램을 작성해 봅시다.</h5>
+<p>피연산자가 성공적으로 삭제되었을 경우에는 참(true)을 반환하고, 삭제하지 못했을 경우에는 거짓(false)을 반환한다.
+이 연산자는 피연산자가 단 하나뿐인 단항 연산자이며, 피연산자의 결합 방향은 오른쪽에서 왼쪽이다.</p>
 
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h2&gt;exercise2(BMI)&lt;/h2&gt;
-    &lt;!--(bmi 공식 몸무게(kg) / 키(m) * 키(m)  --&gt;
-    &lt;script&gt;
-        // 키를 입력받는다
-        var m1 = prompt(&quot;how tall are you?&quot;);
-        // 몸무게를 입력받는다
-        var k1 = prompt(&quot;how much do you weigh?&quot;);
-        // 숫자로 바꾼다
-        var m2 = Number(m1);
-        var k2 = Number(k1);
-        // 계산한다
-        var bmi = k2/m2*m2;
-        // 꾸민다
-        document.write(k2 +&quot;/&quot;+ m2 +&quot;*&quot;+ m2 +&quot;=&quot;+ (bmi));
-    &lt;/script&gt;
+<h5 id="쉼표-연산자">쉼표 연산자</h5>
 
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<blockquote>
+<p>쉼표 연산자를 for 문에서 사용하면, 루프마다 여러 변수를 동시에 갱신할 수 있다.</p>
 
-<h5 id="화씨를-입력받아서-섭씨로-바꾸는-프로그램을-작성해-봅시다">화씨를 입력받아서 섭씨로 바꾸는 프로그램을 작성해 봅시다</h5>
+<p>루프마다 i의 값은 1씩 증가하고, 동시에 j의 값은 1씩 감소함.</p>
+</blockquote>
 
-<pre><code>!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h2&gt;exercise3 섭씨를 화씨로 계산&lt;/h2&gt;
-    &lt;script&gt;
-        // (섭씨온도 × 1.8) + 32 = 화씨온도
-        // 섭씨를 입력받으십시오
-        var s1 = prompt(&quot;섭씨를 입력하세요&quot;);
-        // 섭씨를 숫자로바꾸십시오
-        var s2 = Number(s1);
-        // 값구하기
-        var c = (s2*1.8) + 32;
-        // 꾸미기
-        document.write((s2+&quot;*&quot;+ 1.8)+&quot;+&quot;+ 32 +&quot;=&quot;+ c);
-
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-<h4 id="입력한-문자열의-길이를-알려주는-프로그램을-작성해-봅시다">입력한 문자열의 길이를 알려주는 프로그램을 작성해 봅시다.</h4>
-
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h2&gt;exercise4 문자열 길이 알려주는 프로그램&lt;/h2&gt;
-    &lt;script&gt;
-        // 입력한 문자열의 길이를 알려주는 프로그램을 작성해 봅시다.
-        // 글자를 입력하세요
-        var s1 = prompt(&quot;글을 작성하시오 그러면 길이를 알려주겠소&quot;);
-        // 계산하세요
-        var result = s1.length;
-        document.write(&quot;입력한 글자수는 &quot; + result + &quot; 입니다 &quot;);
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-<hr />
-
-<h2 id="5-if"><strong>5. If</strong></h2>
-
-<hr />
-
-<h6 id="if-기본-문법">if 기본 문법</h6>
-
-<pre><code>if (조건식) {
-  //조건식이 참일 경우 실행될 구문
+<pre><code>for (var i = 0, j = 9; i &lt;= j; i++, j--) {
+    document.write(&quot;i의 값은 &quot; + i + &quot;이고, j의 값은 &quot; + j + &quot;이다.&lt;br&gt;&quot;);
 }
-{}는 생략할 수 있지만 꼭 쓰는 게 좋다.
-indent(들여쓰기)를 예쁘게 해야 한다. (필수!)
 </code></pre>
 
-<h6 id="if-else">if + else</h6>
+<ul>
+<li><p>ex</p>
 
 <pre><code>
-if (조건식) {
-  //조건식이 참일 경우 실행
-} else  {
-  //조건식이 거짓일 경우 실행
-}
+var arr = [1, 2, 3];          // 배열 생성
+delete arr[2];                // 배열의 원소 중 인덱스가 2인 요소를 삭제함.
+document.write(arr + &quot;&lt;br&gt;&quot;); // [1, 2, ]
+// 배열에 빈자리가 생긴 것으로 undefined 값으로 직접 설정된 것은 아님.
+document.write(arr[2] + &quot;&lt;br&gt;&quot;);
+// 배열의 요소를 삭제하는 것이지 배열의 길이까지 줄이는 것은 아님.
+document.write(arr.length);
+
+</code></pre></li>
+</ul>
+
+<h5 id="instanceof-연산자">instanceof 연산자</h5>
+
+<blockquote>
+<p>instanceof 연산자는 피연산자인 객체가 특정 객체의 인스턴스인지 아닌지를 확인해 준다.
+피연산자가 특정 객체의 인스턴스이면 참(true)을 반환하고, 특정 객체의 인스턴스가 아니면 거짓(false)을 반환한다.
+이 연산자는 두 개의 피연산자를 가지는 이항 연산자이며, 피연산자들의 결합 방향은 왼쪽에서 오른쪽이다.</p>
+</blockquote>
+
+<ul>
+<li><p>ex</p>
+
+<pre><code>var str = new String(&quot;이것은 문자열이다.&quot;);
+ 
+str instanceof Object;  // true
+str instanceof String;  // true
+str instanceof Array;   // false
+str instanceof Number;  // false
+str instanceof Boolean; // false
+
+</code></pre></li>
+</ul>
+
+<h5 id="void-연산자">void 연산자</h5>
+
+<blockquote>
+<p>void 연산자는 피연산자로 어떤 타입의 값이 오던지 상관없이 언제나 undefined 값만을 반환한다.
+이 연산자는 피연산자가 단 하나뿐인 단항 연산자이며, 피연산자의 결합 방향은 오른쪽에서 왼쪽이다.</p>
+</blockquote>
+
+<ul>
+<li><p>ex</p>
+
+<pre><code>&lt;a href=&quot;javascript:void(0)&quot;&gt;이 링크는 동작하지 않는다.&lt;/a&gt;
+ 
+&lt;a href=&quot;javascript:void(document.body.style.backgroundColor='yellow')&quot;&gt;
+이 링크도 동작하지 않지만, HTML 문서의 배경색을 바꿔준다.
+&lt;/a&gt;
+
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2 id="conditional-statements-조건문-if"><strong>conditional statements (조건문 if )</strong></h2>
+
+<hr />
+
+<pre><code>
+if 문
+if / else 문
+if / else if / else 문
+switch 문
 
 </code></pre>
 
-<h6 id="if-else-if-else">if + else if + else</h6>
+<h5 id="if-문">if 문</h5>
 
-<p>if (조건식1) {
-  //조건식이 참일 경우 실행
-} else if(조건식2)  {
-  //조건식1은 거짓이고 2는 참일 경우
+<pre><code>if (표현식) {
+    표현식의 결과가 참일 때 실행하고자 하는 실행문;
+}
+</code></pre>
+
+<ul>
+<li><p>ex</p>
+
+<pre><code>var x = 10, y = 20;
+if (x == y) {
+document.write(&quot;x와 y는 같다.&quot;);
+}
+if (x &lt; y) {
+document.write(&quot;x가 y보다 작다.&quot;);
+}
+if (x &gt; y) // 실행될 실행문이 한 줄뿐이라면 중괄호({})를 생략할 수 있음.
+document.write(&quot;x가 y보다 크다.&quot;);
+</code></pre></li>
+</ul>
+
+<h5 id="else-문">else 문</h5>
+
+<pre><code>
+if (표현식) {
+    표현식의 결과가 참일 때 실행하고자 하는 실행문;
 } else {
-  //거짓일 경우 실행
-}</p>
+    표현식의 결과가 거짓일 때 실행하고자 하는 실행문;
+}
+else 문을 사용하면 앞의 예제를 좀 더 직관적으로 표현할 수 있다.
 
-<hr />
+</code></pre>
 
-<h2 id="6-while"><strong>6. While</strong></h2>
+<ul>
+<li><p>ex</p>
 
-<hr />
+<pre><code>var x = 10, y = 20;
+if (x == y) {
+document.write(&quot;x와 y는 같다.&quot;);
+} else {
+if (x &lt; y)
+    document.write(&quot;x가 y보다 작다.&quot;);
+else // 실행될 실행문이 한 줄뿐이라면 중괄호({})를 생략할 수 있음.
+    document.write(&quot;x가 y보다 크다.&quot;);
+}
 
-<h6 id="while-반복문">while 반복문</h6>
+
+</code></pre></li>
+</ul>
+
+<h5 id="else-if-문">else if 문</h5>
 
 <pre><code>
-while(조건) {
-  console.log(&quot;참일때 실행됨&quot;);
-}
-var n = 1;
-while(n &lt;= 100) {    
-    console.log(&quot;Hi &quot; + n);
-    n++;
+if (표현식1) {
+    표현식1의 결과가 참일 때 실행하고자 하는 실행문;
+} else if (표현식2) {
+    표현식2의 결과가 참일 때 실행하고자 하는 실행문;
+} else {
+    표현식1의 결과도 거짓이고, 표현식2의 결과도 거짓일 때 실행하고자 하는 실행문;
 }
 
 </code></pre>
 
-<h6 id="예제">예제</h6>
+<ul>
+<li><p>ex</p>
+
+<pre><code>var x = 10, y = 20;
+if (x == y) {
+document.write(&quot;x와 y는 같다.&quot;);
+} else if (x &lt; y) {
+document.write(&quot;x가 y보다 작다.&quot;);
+} else { // x &gt; y인 경우
+document.write(&quot;x가 y보다 크다.&quot;);
+}
+
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2 id="iteration-statements-반복문"><strong>iteration statements 반복문</strong></h2>
+
+<hr />
+
+<pre><code>
+while 문
+do / while 문
+for 문
+for / in 문
+for / of 문
+
+</code></pre>
+
+<h5 id="while">while</h5>
+
+<pre><code>while (표현식) {
+    표현식의 결과가 참인 동안 반복적으로 실행하고자 하는 실행문;
+}
+</code></pre>
+
+<ul>
+<li>note</li>
+</ul>
+
+<blockquote>
+<p>while 문 만들때는 변수를 미리 만들어 줘야 한다.</p>
+</blockquote>
+
+<pre><code>var n ;
+var n = 0;
+var n = 1;
+
+</code></pre>
+
+<ul>
+<li><p>ex 1-1</p>
+
+<pre><code>var n = 1;
+while(n &lt;= 100) {    
+console.log(&quot;Hi &quot; + n);
+n++;
+}
+
+</code></pre></li>
+
+<li><p>ex 1-2</p>
 
 <pre><code>while 문을 사용해서 1에서 100까지의 합을 구해 봅시다.
 자주 사용하는 패턴
 var i = 0; // 1 변수 초기화
 while (i &lt;= 100) { // 2 변수 검사
-  console.log(i); // 3 코드 다하고나서 
-  i++; //  4 하나씩 증가
+console.log(i); // 3 코드 다하고나서 
+i++; //  4 하나씩 증가
 }
 
 그래서 for가 등장함
 위의 while 코드와 완전히 똑같음
 for (var i = 0; i &lt;= 100; i++) {
-  console.log(i);
+console.log(i);
 }
+</code></pre></li>
+
+<li><p>ex gugudan with while</p>
+
+<pre><code>
+&lt;script&gt;
+       
+    var strN = Number(prompt(&quot;input which gugudan&quot;));
+    var i = 1;
+    document.write(&quot;gugudan&quot; + strN + &quot;&lt;br&gt;&quot;);
+    while (i &lt; 10) {
+        document.write(strN + &quot; * &quot; + i + &quot; = &quot; + strN * i + &quot; &lt;br&gt; &quot; );
+        i++;
+    }
+   
+&lt;/script&gt;
+
+</code></pre></li>
+</ul>
+
+<h5 id="for-문">for 문</h5>
+
+<pre><code>for (초기식; 표현식; 증감식) {
+    표현식의 결과가 참인 동안 반복적으로 실행하고자 하는 실행문;
+}
+ 
 </code></pre>
+
+<ul>
+<li><p>ex 1-1</p>
+
+<pre><code>
+for (var i = 1; i &lt; 10; i++) {
+document.write(i + &quot;&lt;br&gt;&quot;);
+}
+
+</code></pre></li>
+
+<li><p>ex 1-2 gugudan with for</p>
+
+<pre><code>&lt;script&gt;
+    
+   var strN = Number(prompt(&quot;input which dan?&quot;));
+   document.write(&quot;gugudan&quot; + strN + &quot;&lt;br&gt;&quot;);
+   for (var i = 1; i &lt; 10; i++) {
+       document.write(strN + &quot; * &quot; + i + &quot; = &quot; + strN * i + &quot;&lt;br&gt;&quot;);
+   }
+    
+&lt;/script&gt;
+
+</code></pre></li>
+
+<li><p>ex 1-3 gugudan with button</p>
+
+<pre><code>
+&lt;P&gt;사용자가 2 이상, 9 이하가 아닌 값을 입력하는 경우 &quot;2이상, 9이하의 값만      입력할 수 있습니다.&quot;라는 메시지를 출력한다.&lt;/P&gt;
+&lt;script&gt;
+        
+    var strN;
+    while (true){
+        strN = Number(prompt(&quot;input which dan from 2 dan to 9 dan&quot;))
+        if (strN &lt; 2 || strN &gt; 9){
+            console.log(&quot;this is not available&quot;);
+        } else {
+            document.write(&quot;gugudan&quot; + strN + &quot;&lt;br&gt;&quot;); 
+            break;
+        }
+    }
+    for (i = 1; i &lt; 10; i ++){
+        document.write(strN + &quot; + &quot; + i + &quot; = &quot; + strN + i + &quot;&lt;br&gt;&quot;);
+    }
+        
+&lt;/script&gt;
+
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2 id="array-배열"><strong>Array 배열</strong></h2>
+
+<hr />
+
+<h5 id="배열이란">배열이란?</h5>
+
+<blockquote>
+<p>자바스크립트에서 배열(array)은 이름과 인덱스로 참조되는 정렬된 값의 집합으로 정의된다. 배열을 구성하는 각각의 값을 배열 요소(element)라고 하며, 배열에서의 위치를 가리키는 숫자를 인덱스(index)라고 한다.</p>
+</blockquote>
+
+<h5 id="특징">특징</h5>
+
+<blockquote>
+<p>배열 요소의 타입이 고정되어 있지 않으므로, 같은 배열에 있는 배열 요소끼리의 타입이 서로 다를 수도 있다. 배열 요소의 인덱스가 연속적이지 않아도 되며, 따라서 특정 배열 요소가 비어 있을 수도 있다.자바스크립트에서 배열은 Array 객체로 다뤄진다.</p>
+</blockquote>
+
+<h5 id="배열-만들기-1">배열 만들기 1</h5>
+
+<p>var scores = [50, 60, 70];
+console.log(scores);
+console.log(scores.length);</p>
+
+<h5 id="인덱스를-이용해서-배열의-원소-읽기">인덱스를 이용해서 배열의 원소 읽기</h5>
+
+<p>scores[0];
+scores[3];
+배열에 값 쓰기
+scores[0] = 100;
+scores[9] = 50;</p>
+
+<h5 id="배열의-타입-알아보기">배열의 타입 알아보기</h5>
+
+<p>typeof scores
+typeof scores[0]</p>
+
+<h5 id="배열-만들기-2">배열 만들기 2</h5>
+
+<p>var a = [];
+a[0] = 2;
+a[1] = 4;</p>
+
+<h5 id="배열의-길이-구하기">배열의 길이 구하기</h5>
+
+<p>scores.length;</p>
+
+<h5 id="배열의-마지막-원소를-읽어-오려면">배열의 마지막 원소를 읽어 오려면?</h5>
+
+<p>scores[scores.length - 1];
+문자열과 배열
+    •   문자열과 배열은 비슷한 성질을 많이 가지고 있습니다.
+    •   문자열: Immutable
+    •   배열: Mutable
+    •   배열의 속성과 메소드를 문자열에도 테스트해보세요.</p>
+
+<h5 id="배열의-메소드들-1">배열의 메소드들 1</h5>
+
+<ul>
+<li><p>push , pop</p>
+
+<pre><code>
+push(), pop()
+	•	push(value) : 배열의 뒤 쪽에 새로운 원소를 삽입합니다.
+	•	pop(): 배열의 마지막 원소를 빼서 변수에 넣어 줍니다. 이 때 변수의 길이는 1 감소합니다.
+
+</code></pre></li>
+
+<li><p>ex_push</p>
+
+<pre><code>var arr = [1,2,3,4,];
+arr.push(1);
+
+arr; // = &gt; [1,2,3,4,1]
+</code></pre></li>
+
+<li><p>ex_pop()</p>
+
+<pre><code>var arr = [1,2,3,4,];
+arr.pop();
+
+arr; // = &gt; [1,2,3]
+</code></pre></li>
+
+<li><p>unshift shift ,</p>
+
+<pre><code>unshift(), shift(), 
+	•	push, pop과 반대로 동작합니다.
+	•	unshift(value): 배열의 맨 앞에 새로운 값을 추가합니다.
+	•	shift(): 배열의 앞에서 값을 빼서 변수에 넣어 줍니다.
+</code></pre></li>
+
+<li><p>unshift</p>
+
+<pre><code>var arr = [1,2,3,4];
+
+arr.unshift(1);
+
+arr; // = &gt; [1,1,2,3,4,];
+
+</code></pre></li>
+
+<li><p>shift</p>
+
+<pre><code>var arr = [1,2,3,4];
+
+arr.shift();
+
+arr; // = &gt; [2,3,4,]
+
+</code></pre></li>
+</ul>
 
           </div>
 

@@ -76,7 +76,9 @@ b tag :평상시대로 굵게 읽는다.
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript/</guid>
-      <description>1. showing data in browser &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h2&amp;gt;Javascript_note&amp;lt;/h2&amp;gt; &amp;lt;p id=&amp;quot;demo&amp;quot;&amp;gt;what time is it now ?&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  var p = document.getElementById(&#39;demo&#39;); var demo = document.getElementById(&#39;demo&#39;); demo.innerHTML = Date();  demo.style.color = &amp;quot;red&amp;quot;; demo.style.background = &amp;quot;black&amp;quot;;  var demo = document.getElementById(&#39;demo&#39;); var size = 10; function big() { demo.style.fontSize = size + &amp;quot;px&amp;quot;; size = size + 1; } var tid = setInterval(big, 100);  2. data type 자료형이란?</description>
+      <description>2. data type (자료형) 자료형이란?  어떤 종류의 데이터를 사용하는 것이지 컴퓨터에게 알려주는 것 자료형마다 사용 가능한 연산자(Operator)를 따로 가지고 있습니다! 자료형이 같아야 연산을 할 수 있습니다!
+ 자료형의 종류  Number :숫자 String :문자 Boolean :true and False Null : 값이 비어있다 Undefined :값이 정의되지 않았다 symbol(new in ECMAScript 6) and Object :  1. Number type (숫자)  ex)
+var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10.</description>
     </item>
     
     <item>

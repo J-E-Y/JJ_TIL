@@ -10,54 +10,10 @@ toc: true
 type: docs
 ---
 
----
-## **1. showing data in browser**
----
-
-
-```javascript
-
-<!DOCTYPE html>
-<html>
-<body>
-    <h2>Javascript_note</h2>
-    <p id="demo">what time is it now ?</p>
-
-</body>
-</html>
-
-```
-
-```javascript
-
-var p = document.getElementById('demo');
-var demo = document.getElementById('demo');
-demo.innerHTML = Date();
-
-```
-
-```javascript
-
-demo.style.color = "red";
-demo.style.background = "black";
-
-```
-
-```javascript
-
-var demo = document.getElementById('demo');
-var size = 10;
-function big() {
-    demo.style.fontSize = size + "px";
-    size = size + 1;            
-}
-var tid = setInterval(big, 100);
-
-```
 
 
 ---
-## **2. data type**
+## **2. data type (자료형)**
 ---
 
 
@@ -74,11 +30,12 @@ var tid = setInterval(big, 100);
 - Boolean :true and False
 - Null : 값이 비어있다
 - Undefined :값이 정의되지 않았다
-- Object :
+- symbol(new in ECMAScript 6)
+and Object :
 
 
 
-##### Number type
+#####  1. Number type (숫자)
 
 
 * ex)
@@ -89,16 +46,38 @@ var thirdNum = 10e6;   // 10000000
 var fourthNum = 10e-6; // 0.00001
 ```
 
+* length
+
+```
+var a = "hello"
+a.length;
+```
 
 
-##### String (문자열)
+
+* slice :자르기 
+
+```
+var a = "KheLLo"
+a[0];
+a[1] = "H"; //안 됨
+
+
+a.slice(1,4);
+a.toUpperCase(); : 대문자로 바뀐
+a.toLowerCase(); : 소문자로 바뀐다
+
+```
+
+
+##### 2. String (문자열)
 
 ```
 "I am String";
 "Hello " + "world";
 ```
 
-##### Boolean (불리언)
+##### 3. Boolean (불리언)
 
 ```
 true;
@@ -108,7 +87,7 @@ false;
 5 > 5;
 ```
 
-##### The typeof Operator: 데이터유형을 알려주는 중요한 연산자!
+##### 4. The typeof Operator: 데이터유형을 알려주는 중요한 연산자!
 
 ```
 typeof 10;        // number 타입
@@ -119,7 +98,7 @@ typeof null;      // object 타입
 
 ```
 
-##### symbol (심볼)
+##### 5. symbol (심볼)
 
 * 심볼 타입은 ECMAScript 6부터 새롭게 추가된 타입이다.
 심볼은 유일하고 변경할 수 없는 타입으로, 객체의 프로퍼티를 위한 식별자로 사용할 수 있다.
@@ -131,7 +110,7 @@ var sym = Symbol("javascript");  // symbol 타입
 var symObj = Object(sym);        // object 타입
 ```
 
-##### object (객체)
+##### 6. object (객체)
 
 * 자바스크립트의 기본 타입은 객체(object)이다. 객체(object)란 실생활에서 우리가 인식할 수 있는 사물로 이해할 수 있다. 객체는 여러 프로퍼티(property)나 메소드(method)를 같은 이름으로 묶어놓은 일종의 집합체이다.
 
@@ -144,43 +123,211 @@ document.getElementById("result").innerHTML =
     "강아지의 이름은 " + dog.name + "이고, 나이는 " + dog.age + "살 이다.";
 ```
 
-
-
 ---
-## **3. Variable**
+## **3. Variable (변수)**
 ---
 
-> JavaScript variables are containers for storing data values.
-
->변수 이름 잘 짓기 변수의 이름은 매우 중요합니다. 일반적으로 소문자로 시작, 영어, 숫자, _를 주로 사용합니다. 카멜 케이스나 스네이크 케이스 
-
-
-* How to crate Variablie there are two ways we tend to use 
+##### Using Variables
 
 ```
-1. camelCase
+var x = 10;
 
->>>numPeople
+x + 5 ; // => 15
 
-2. PascalCase
+x ; // => 10
 
->>>num_people
+once we have created our variables,
+we can use their name as a substitute for their value elsewhere in our program.
+
+
 ```
 
 
+##### Declaring a variable without a Vaue
+
+
+
+
+```
+
+Creating a variable in JavaScript is called "declaring" a variable.
+
+1.var carName;
+After the declaration, the variable has no value (technically it has the value of undefined).
+
+
+To assign a value to the variable, use the equal sign:
+
+2. carName = "Volvo";   // carName 를 Volvo 로 변경할때 var 없이 만든다 cos 먼저 선언을 했기 때문이다. 
+
+2. var carName = "Volvo";
+
+
+```
+
+
+
+##### Changing a Variable’s value 
+
+
+```
+
+var pokemon = charmander
+
+pokemon = heelo
+
+
+Notice that When you change the value of a variable, "you don’t need to use the var keyword"The var keyword is only needed for creating new variables.
+
+
+```
+
+##### Scopes
+
+
+* ex 1-1
+
+```
+var greeting = "Hello";
+
+function greetSomeone() {
+	var firstName = "john"
+	return greeting + " " + firstName;
+}
+
+firstName; // = > Error
+
+
+Because we declared our name variable inside the scope of our greetSomeone function.
+
+
+```
+
+```
+
+"But!!!!!!! if you do this it works well"!!
+
+var greeting = "Hello";
+var firstName = "john"
+
+function greetSomeone() {
+	firstName = "JJ"
+	return greeting + " "+ firstName;
+}
+
+
+firstNmae // = > JJ
+
+Because you changed a variable the was defined in an outer scope
+
+```
+
+
 
 
 ---
-## **4.operator**
+## **4.operator (연산자)**
 ---
 
+
+##### arithmetic operator (산술 연산자)
+
+
+```
++	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 더함.
+-	왼쪽 피연산자의 값에서 오른쪽 피연산자의 값을 뺌.
+*	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 곱함.
+/	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눔.
+%	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 나머지를 반환함
+
+```
+* ex
+
+```
+var x = 10, y = 4;
+document.write(x + y + "<br>"); // 14
+document.write(x - y + "<br>"); // 6
+document.write(x * y + "<br>"); // 40
+document.write(x / y + "<br>"); // 2.5
+document.write(x % y);          // 2
+
+```
+
+#####  assignment operator (대입 연산자)
+
+
+```
+=	왼쪽 피연산자에 오른쪽 피연산자의 값을 대입함.
++=	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 더한 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+-=	왼쪽 피연산자의 값에서 오른쪽 피연산자의 값을 뺀 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+*=	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 곱한 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+/=	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+%=	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 나머지를 왼쪽
+피연산자에 대입함.
+
+```
+* ex
+
+
+```
+var x = 10, y = 10, z = 10;
+x = x - 5;
+y -= 5; // y = y - 5 와 같은 표현임.
+z =- 5; // z = -5 와 같은 표현임.
+
+```
+##### increment and decrement operator ( 증감 연산자 )
+
+```
+++x	먼저 피연산자의 값을 1 증가시킨 후에 해당 연산을 진행함.
+x++	먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 증가시킴.
+--x	먼저 피연산자의 값을 1 감소시킨 후에 해당 연산을 진행함.
+x--	먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 감소시킴.
+
+```
+
+* ex
+
+```
+var x = 10, y = 10;
+document.write((++x - 3) + "<br>"); // x의 값을 우선 1 증가시킨 후에 3을 뺌.
+document.write(x + "<br>");         // 11
+document.write((y++ - 3) + "<br>"); // 먼저 y에서 3을 뺀 후에 y의 값을 1 증가시킴.
+document.write(y);                  // 11
+```
+
+
+
+
+##### comparison operator (비교 연산자)
+
+
+```
+==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같으면 참을 반환함.
+===	왼쪽 피연산자와 오른쪽 피연산자의 값이 같고, 같은 타입이면 참을 반환함.
+!=	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않으면 참을 반환함.
+!==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않거나, 타입이 다르면 참을 반환함.
+>	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크면 참을 반환함.
+>=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크거나 같으면 참을 반환함.
+<	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작으면 참을 반환함.
+<=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작거나 같으면 참을 반환함.
+
+```
+
+* ex
+
+```
+
+var x = 3, y = 5;
+var a = "abc", b = "bcd";
+document.write((x > y) + "<br>");  // y의 값이 x의 값보다 크므로 false
+document.write((a <= b) + "<br>"); // 알파벳 순서상 'a'가 'b'보다 먼저 나오므로 'a'가 'b'보다 작음.
+document.write(x < a);             // x의 값은 숫자이고 a의 값은 문자열이므로 비교할 수 없음.
+
+```
 
 ##### Logical operator (논리연산자)
 
-
-* &&	>>>논리식이 모두 참이면 참을 반환함. (논리 AND 연산)
-* ||	>>>논리식 중에서 하나라도 참이면 참을 반환함. (논리 OR 연산)
-* !	  >>>논리식의 결과가 참이면 거짓을, 거짓이면 참을 반환함. (논리 NOT 연산)
 
 ```
 && 는 and 
@@ -190,6 +337,21 @@ document.getElementById("result").innerHTML =
 ! 는 Not
 ```
 
+
+##### bitwise operator (비트 연산자)
+
+
+```
+
+&	대응되는 비트가 모두 1이면 1을 반환함. (비트 AND 연산)
+|	대응되는 비트 중에서 하나라도 1이면 1을 반환함. (비트 OR 연산)
+^	대응되는 비트가 서로 다르면 1을 반환함. (비트 XOR 연산)
+~	비트를 1이면 0으로, 0이면 1로 반전시킴. (비트 NOT 연산)
+<<	지정한 수만큼 비트를 전부 왼쪽으로 이동시킴. (left shift 연산)
+>>	부호를 유지하면서 지정한 수만큼 비트를 전부 오른쪽으로 이동시킴. (right shift 연산)
+>>>	지정한 수만큼 비트를 전부 오른쪽으로 이동시키며, 새로운 비트는 전부 0이 됨.
+
+```
 ##### increment/decrement operator (증감연산자)
 
 * 증감 연산자는 피연산자를 1씩 증가 혹은 감소시킬 때 사용하는 연산자이다.이 연산자는 피연산자가 단 하나뿐인 단항 연산자이다.
@@ -218,220 +380,253 @@ a--;
 
 
 
----
-## **5. dealing with String**
----
 
-##### length
+##### typeof 연산자
 
-```
-var a = "hello"
-a.length;
-```
-
-
-
-##### slice :자르기 
+> typeof 연산자는 피연산자의 타입을 반환한다.
 
 ```
-var a = "KheLLo"
-a[0];
-a[1] = "H"; //안 됨
+숫자, NaN	"number"
+문자열	"string"
+true, false	"boolean"
+null	"object"
+undefined	"undefined"
+함수	"function"
+함수가 아닌 객체	"object"
+```
+
+* ex 
+
+```
+typeof "문자열"   // string
+typeof 10         // number
+typeof NaN        // number
+typeof false      // boolean
+typeof undefined  // undefined
+typeof new Date() // object
+typeof null       // object
+```
+
+##### ternary operator (삼항 연산자)
+
+>삼항 연산자는 유일하게 피연산자를 세 개나 가지는 조건 연산자이다.
+
+* ex
+
+```
+var x = 3, y = 5;
+var result = (x > y) ? x : y   // x가 더 크면 x를, 그렇지 않으면 y를 반환함.
+document.write("둘 중에 더 큰 수는 " + result + "이다.");
+
+삼항 연산자는 짧은 if / else 문 대신 사용할 수 있으며, 코드를 간결하게 만들어 준다.
+```
 
 
-a.slice(1,4);
-a.toUpperCase(); : 대문자로 바뀐
-a.toLowerCase(); : 소문자로 바뀐다
+##### delete 연산자
+
+>delete 연산자는 피연산자인 객체, 객체의 프로퍼티(property) 또는 배열의 요소(element) 등을 삭제해 준다.
+
+피연산자가 성공적으로 삭제되었을 경우에는 참(true)을 반환하고, 삭제하지 못했을 경우에는 거짓(false)을 반환한다.
+이 연산자는 피연산자가 단 하나뿐인 단항 연산자이며, 피연산자의 결합 방향은 오른쪽에서 왼쪽이다.
+
+
+
+##### 쉼표 연산자
+
+>쉼표 연산자를 for 문에서 사용하면, 루프마다 여러 변수를 동시에 갱신할 수 있다.
+
+
+> 루프마다 i의 값은 1씩 증가하고, 동시에 j의 값은 1씩 감소함. 
+
+```
+for (var i = 0, j = 9; i <= j; i++, j--) {
+    document.write("i의 값은 " + i + "이고, j의 값은 " + j + "이다.<br>");
+}
+```
+
+
+* ex
 
 ```
 
-##### console.log()
+var arr = [1, 2, 3];          // 배열 생성
+delete arr[2];                // 배열의 원소 중 인덱스가 2인 요소를 삭제함.
+document.write(arr + "<br>"); // [1, 2, ]
+// 배열에 빈자리가 생긴 것으로 undefined 값으로 직접 설정된 것은 아님.
+document.write(arr[2] + "<br>");
+// 배열의 요소를 삭제하는 것이지 배열의 길이까지 줄이는 것은 아님.
+document.write(arr.length);
 
-* 개발자 콘솔에 뭔가를 찍어주는 메서드입니다.
-
-```
-var a = 1;
-var b = "더하기";
-var c = 2;
-console.log(a + " " + b + " " + c + " = " + a + c);
-```
-
-
-##### alert() 과 prompt() 사용해 보기
-
-```
-var ans = prompt("How are you?");
-alert(ans);
-```
-
----
-## **exercise 1**
----
-
-##### 두 수를 입력받아 4칙연산의 결과를 표시해 봅시다.
-```
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
-<body>
-    <h2>exercise1-1</h2>
-    <script>
-        var s1 = prompt("input number");
-        var s2 = prompt("input number");
-        var n1 = Number(s1);
-        var n2 = Number(s2);
-        console.log(n1 + " + " + n2 + " = " + (n1 + n2));
-        console.log(n1 + " - " + n2 + " = " + (n1 - n2));
-        console.log(n1 + " * " + n2 + " = " + (n1 * n2));
-        console.log(n1 + " / " + n2 + " = " + (n1 / n2));
-    </script>
-</body>
-</html>
-```
-
-##### BMI를 계산하는 프로그램을 작성해 봅시다.
-```
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
-<body>
-    <h2>exercise2(BMI)</h2>
-    <!--(bmi 공식 몸무게(kg) / 키(m) * 키(m)  -->
-    <script>
-        // 키를 입력받는다
-        var m1 = prompt("how tall are you?");
-        // 몸무게를 입력받는다
-        var k1 = prompt("how much do you weigh?");
-        // 숫자로 바꾼다
-        var m2 = Number(m1);
-        var k2 = Number(k1);
-        // 계산한다
-        var bmi = k2/m2*m2;
-        // 꾸민다
-        document.write(k2 +"/"+ m2 +"*"+ m2 +"="+ (bmi));
-    </script>
-
-</body>
-</html>
-```
-
-##### 화씨를 입력받아서 섭씨로 바꾸는 프로그램을 작성해 봅시다
-```
-!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
-<body>
-    <h2>exercise3 섭씨를 화씨로 계산</h2>
-    <script>
-        // (섭씨온도 × 1.8) + 32 = 화씨온도
-        // 섭씨를 입력받으십시오
-        var s1 = prompt("섭씨를 입력하세요");
-        // 섭씨를 숫자로바꾸십시오
-        var s2 = Number(s1);
-        // 값구하기
-        var c = (s2*1.8) + 32;
-        // 꾸미기
-        document.write((s2+"*"+ 1.8)+"+"+ 32 +"="+ c);
-
-    </script>
-</body>
-</html>
-```
-#### 입력한 문자열의 길이를 알려주는 프로그램을 작성해 봅시다.
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h2>exercise4 문자열 길이 알려주는 프로그램</h2>
-    <script>
-        // 입력한 문자열의 길이를 알려주는 프로그램을 작성해 봅시다.
-        // 글자를 입력하세요
-        var s1 = prompt("글을 작성하시오 그러면 길이를 알려주겠소");
-        // 계산하세요
-        var result = s1.length;
-        document.write("입력한 글자수는 " + result + " 입니다 ");
-    </script>
-</body>
-</html>
 ```
 
 
 
+##### instanceof 연산자
 
----
-## **5. If**
----
+>instanceof 연산자는 피연산자인 객체가 특정 객체의 인스턴스인지 아닌지를 확인해 준다.
+피연산자가 특정 객체의 인스턴스이면 참(true)을 반환하고, 특정 객체의 인스턴스가 아니면 거짓(false)을 반환한다.
+이 연산자는 두 개의 피연산자를 가지는 이항 연산자이며, 피연산자들의 결합 방향은 왼쪽에서 오른쪽이다.
 
+* ex
 
+```
+var str = new String("이것은 문자열이다.");
  
-###### if 기본 문법
+str instanceof Object;  // true
+str instanceof String;  // true
+str instanceof Array;   // false
+str instanceof Number;  // false
+str instanceof Boolean; // false
 
 ```
-if (조건식) {
-  //조건식이 참일 경우 실행될 구문
+
+##### void 연산자
+
+>void 연산자는 피연산자로 어떤 타입의 값이 오던지 상관없이 언제나 undefined 값만을 반환한다.
+이 연산자는 피연산자가 단 하나뿐인 단항 연산자이며, 피연산자의 결합 방향은 오른쪽에서 왼쪽이다.
+
+* ex
+
+```
+<a href="javascript:void(0)">이 링크는 동작하지 않는다.</a>
+ 
+<a href="javascript:void(document.body.style.backgroundColor='yellow')">
+    이 링크도 동작하지 않지만, HTML 문서의 배경색을 바꿔준다.
+</a>
+
+```
+
+---
+## **conditional statements (조건문 if )**
+---
+
+```
+
+if 문
+if / else 문
+if / else if / else 문
+switch 문
+
+```
+ 
+##### if 문
+
+```
+if (표현식) {
+    표현식의 결과가 참일 때 실행하고자 하는 실행문;
 }
-{}는 생략할 수 있지만 꼭 쓰는 게 좋다.
-indent(들여쓰기)를 예쁘게 해야 한다. (필수!)
 ```
 
-###### if + else
+* ex
 
 ```
-
-if (조건식) {
-  //조건식이 참일 경우 실행
-} else  {
-  //조건식이 거짓일 경우 실행
+var x = 10, y = 20;
+if (x == y) {
+    document.write("x와 y는 같다.");
 }
+if (x < y) {
+    document.write("x가 y보다 작다.");
+}
+if (x > y) // 실행될 실행문이 한 줄뿐이라면 중괄호({})를 생략할 수 있음.
+    document.write("x가 y보다 크다.");
+```
+
+
+
+##### else 문
 
 ```
 
-###### if + else if + else
-
-if (조건식1) {
-  //조건식이 참일 경우 실행
-} else if(조건식2)  {
-  //조건식1은 거짓이고 2는 참일 경우
+if (표현식) {
+    표현식의 결과가 참일 때 실행하고자 하는 실행문;
 } else {
-  //거짓일 경우 실행
+    표현식의 결과가 거짓일 때 실행하고자 하는 실행문;
 }
-
-
-
-
-
-
----
-## **6. While**
----
-
-
-###### while 반복문
+else 문을 사용하면 앞의 예제를 좀 더 직관적으로 표현할 수 있다.
 
 ```
 
-while(조건) {
-  console.log("참일때 실행됨");
+
+* ex
+
+```
+var x = 10, y = 20;
+if (x == y) {
+    document.write("x와 y는 같다.");
+} else {
+    if (x < y)
+        document.write("x가 y보다 작다.");
+    else // 실행될 실행문이 한 줄뿐이라면 중괄호({})를 생략할 수 있음.
+        document.write("x가 y보다 크다.");
 }
+
+
+```
+
+##### else if 문
+
+```
+
+if (표현식1) {
+    표현식1의 결과가 참일 때 실행하고자 하는 실행문;
+} else if (표현식2) {
+    표현식2의 결과가 참일 때 실행하고자 하는 실행문;
+} else {
+    표현식1의 결과도 거짓이고, 표현식2의 결과도 거짓일 때 실행하고자 하는 실행문;
+}
+
+```
+
+* ex
+
+```
+var x = 10, y = 20;
+if (x == y) {
+    document.write("x와 y는 같다.");
+} else if (x < y) {
+    document.write("x가 y보다 작다.");
+} else { // x > y인 경우
+    document.write("x가 y보다 크다.");
+}
+
+```
+
+---
+## **iteration statements 반복문**
+---
+
+```
+
+while 문
+do / while 문
+for 문
+for / in 문
+for / of 문
+
+```
+
+##### while
+
+```
+while (표현식) {
+    표현식의 결과가 참인 동안 반복적으로 실행하고자 하는 실행문;
+}
+```
+
+* note
+
+> while 문 만들때는 변수를 미리 만들어 줘야 한다. 
+
+```
+var n ;
+var n = 0;
+var n = 1;
+
+```
+
+* ex 1-1
+
+```
 var n = 1;
 while(n <= 100) {    
     console.log("Hi " + n);
@@ -440,7 +635,9 @@ while(n <= 100) {
 
 ```
 
-###### 예제
+
+* ex 1-2
+
 
 ```
 while 문을 사용해서 1에서 100까지의 합을 구해 봅시다.
@@ -458,4 +655,204 @@ for (var i = 0; i <= 100; i++) {
 }
 ```
 
+* ex gugudan with while
+
+```
+
+    <script>
+       
+        var strN = Number(prompt("input which gugudan"));
+        var i = 1;
+        document.write("gugudan" + strN + "<br>");
+        while (i < 10) {
+            document.write(strN + " * " + i + " = " + strN * i + " <br> " );
+            i++;
+        }
+   
+    </script>
+
+```
+
+
+##### for 문
+
+
+```
+for (초기식; 표현식; 증감식) {
+    표현식의 결과가 참인 동안 반복적으로 실행하고자 하는 실행문;
+}
  
+```
+
+* ex 1-1
+
+```
+
+for (var i = 1; i < 10; i++) {
+    document.write(i + "<br>");
+}
+
+```
+
+* ex 1-2 gugudan with for
+
+```
+    <script>
+    
+       var strN = Number(prompt("input which dan?"));
+       document.write("gugudan" + strN + "<br>");
+       for (var i = 1; i < 10; i++) {
+           document.write(strN + " * " + i + " = " + strN * i + "<br>");
+       }
+    
+    </script>
+
+```
+
+* ex 1-3 gugudan with button
+
+
+```
+
+    <P>사용자가 2 이상, 9 이하가 아닌 값을 입력하는 경우 "2이상, 9이하의 값만      입력할 수 있습니다."라는 메시지를 출력한다.</P>
+    <script>
+        
+        var strN;
+        while (true){
+            strN = Number(prompt("input which dan from 2 dan to 9 dan"))
+            if (strN < 2 || strN > 9){
+                console.log("this is not available");
+            } else {
+                document.write("gugudan" + strN + "<br>"); 
+                break;
+            }
+        }
+        for (i = 1; i < 10; i ++){
+            document.write(strN + " + " + i + " = " + strN + i + "<br>");
+        }
+        
+    </script>
+
+```
+
+
+---
+## **Array 배열**
+---
+
+##### 배열이란?
+
+> 자바스크립트에서 배열(array)은 이름과 인덱스로 참조되는 정렬된 값의 집합으로 정의된다. 배열을 구성하는 각각의 값을 배열 요소(element)라고 하며, 배열에서의 위치를 가리키는 숫자를 인덱스(index)라고 한다.
+
+##### 특징
+
+>배열 요소의 타입이 고정되어 있지 않으므로, 같은 배열에 있는 배열 요소끼리의 타입이 서로 다를 수도 있다. 배열 요소의 인덱스가 연속적이지 않아도 되며, 따라서 특정 배열 요소가 비어 있을 수도 있다.자바스크립트에서 배열은 Array 객체로 다뤄진다.
+
+
+##### 배열 만들기 1
+
+var scores = [50, 60, 70];
+console.log(scores);
+console.log(scores.length);
+
+
+##### 인덱스를 이용해서 배열의 원소 읽기
+scores[0];
+scores[3];
+배열에 값 쓰기
+scores[0] = 100;
+scores[9] = 50;
+
+##### 배열의 타입 알아보기
+typeof scores
+typeof scores[0]
+
+##### 배열 만들기 2
+var a = [];
+a[0] = 2;
+a[1] = 4;
+
+##### 배열의 길이 구하기
+scores.length;
+
+##### 배열의 마지막 원소를 읽어 오려면?
+scores[scores.length - 1];
+문자열과 배열
+	•	문자열과 배열은 비슷한 성질을 많이 가지고 있습니다.
+	•	문자열: Immutable
+	•	배열: Mutable
+	•	배열의 속성과 메소드를 문자열에도 테스트해보세요.
+
+
+
+##### 배열의 메소드들 1
+
+
+* push , pop 
+
+```
+
+push(), pop()
+	•	push(value) : 배열의 뒤 쪽에 새로운 원소를 삽입합니다.
+	•	pop(): 배열의 마지막 원소를 빼서 변수에 넣어 줍니다. 이 때 변수의 길이는 1 감소합니다.
+
+```
+* ex_push
+
+```
+var arr = [1,2,3,4,];
+arr.push(1);
+
+arr; // = > [1,2,3,4,1]
+```
+
+* ex_pop()
+
+```
+var arr = [1,2,3,4,];
+arr.pop();
+
+arr; // = > [1,2,3]
+```
+
+
+* unshift shift , 
+
+```
+  unshift(), shift(), 
+	•	push, pop과 반대로 동작합니다.
+	•	unshift(value): 배열의 맨 앞에 새로운 값을 추가합니다.
+	•	shift(): 배열의 앞에서 값을 빼서 변수에 넣어 줍니다.
+```
+
+	
+* unshift	
+
+```
+var arr = [1,2,3,4];
+
+arr.unshift(1);
+
+arr; // = > [1,1,2,3,4,];
+
+```
+
+
+* shift 
+
+```
+var arr = [1,2,3,4];
+
+arr.shift();
+
+arr; // = > [2,3,4,]
+
+```
+
+
+
+
+
+
+
+
