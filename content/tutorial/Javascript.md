@@ -850,9 +850,217 @@ arr; // = > [2,3,4,]
 ```
 
 
+---
+## **function 함수**
+---
 
 
+##### 함수 만들기
+
+```
+function convertHeight(feet, inches) {
+  return (feet * 12 + inches) * 2.54
+}
+convertHeight(5, 10);
+ //= >>177.8
+
+(feet , inches) ==>> parameter ( 매개 변수) 
+(5,10)  ==>> argument ( 전달인자	)
+
+```
+
+##### 변수에 담아서 함수 사용하기
+
+```
+var ret = function convertHeight(feet, inches) {
+  return (feet * 12 + inches) * 2.54
+}
+ret(5, 10);
+177.8
+
+```
 
 
+##### 리턴값 없는 변수를 변수에 담으면 “undefind” 출력된다 .
+
+* ex 1-1 (console.log)
+
+```
+var foo = function () {
+	console.log(“I’m a foo”);
+}
+>>undefined
+```
+
+* ex 1-2 (return)
+
+```
+var foo = function () {
+	return(“I’m a foo”);
+}
+
+>> I’m a foo
+```
+
+##### return 을 break 로 사용하기 (return 으로 함수를 종료하는데 사용할 수 있다.)
+
+> (Option) 2중 루프를 한 번에 빠져 나가기
+- `break` 명령은 한 번에 한 루프만 빠져나갑니다.
+- 함수의 `return` 을 이용하면 2중 루프를 한 번에 종료할 수 있습니다. 
+
+
+* 종료하기 
+```
+var test1 = function (text) {
+            if (text === "exit") {
+                return;
+            }
+            console.log("실행");
+        }
+
+test1("exit") // => undefined
+```
+
+* 실행 하기 
+
+```
+var test1 = function (text) {
+            if (text === "exit") {
+                return;
+            }
+            console.log("실행");
+        }
+test1("oh""); // = > 실행 
+
+```
+
+##### 이중 loop 빠져 나가기 
+
+* ex (하나만 빠져 나가기 )
+
+```
+for (var i = 0; i < 10; i ++)  {
+	for (var j = 0; j < 10; j++) {
+		console.log(i , j );
+		if (j === 3 ) {
+		    break;
+
+		}
+	}
+}
+
+
+```
+
+* ex (이중 loop 빠져나간다 with function)
+
+
+```
+        var foo = function() {
+            for (var i = 0; i < 10; i ++)  {
+                for (var j = 0; j < 10; j++) {
+                    console.log(i , j );
+                    if (j === 3 ) {
+                        return;
+
+                    }
+                }
+            }
+         };
+         
+         foo();
+```
+
+
+##### 배열을 이용한 while 문 , for 문
+
+```
+// while loop
+    function sum (nums) {
+    var total = 0;
+    var i = 0;
+    while (i < nums.length) {
+        total = total + nums[i];
+        i++;
+    }
+    return total;
+}
+sum([2,3,5,1]);
+
+>> 11
+
+    
+```
+
+
+```
+// for loop
+  function sum (nums) {
+  	var total = 0 ;
+  	for (var i = 0 ; i < nums.length ; i = i + i ) {
+  	total = total + nums[i]
+  }
+	return total;
+}
+
+sum([2,3,5,1,]);
+
+>>11
+
+```
+
+
+---
+## **Objects 객체**
+---
+
+
+##### making objects 1 
+
+```  
+
+  var dog = {};
+
+  dog.name = "jj"
+  dog.color = "red"
+  dog.kind = "똥깨"
+  // >>> dog = {name = "jj", color ="red" , kind = "똥깨 "}
+
+
+```
+
+making objects 2 
+
+```
+var dog = {
+    name : "jj",
+    color : "red",
+    kind : "똥깨"
+}
+
+  // >>> dog = {name = "jj", color ="red" , kind = "똥깨 "}
+
+```
+
+##### 메소드
+
+* 객체에 속한 함수
+
+```
+var dog = {
+    name : "jj",
+    color : "red",
+    kind : "똥깨"
+}
+
+dog.eat = function(food) {
+    console.log(this.name + " ate delicious " + food +"...");
+};
+
+p1.eat("Beef");
+
+>> jj ate delicious Beef ...
+
+```
 
 
