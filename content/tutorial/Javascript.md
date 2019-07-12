@@ -13,7 +13,7 @@ type: docs
 
 
 ---
-## **2. data type (자료형)**
+## 1.data type**
 ---
 
 
@@ -124,7 +124,7 @@ document.getElementById("result").innerHTML =
 ```
 
 ---
-## **3. Variable (변수)**
+## **2.Variable**
 ---
 
 ##### Using Variables
@@ -250,7 +250,7 @@ Because you changed a variable the was defined in an outer scope
 
 
 ---
-## **4.operator (연산자)**
+## **3.operator**
 ---
 
 
@@ -521,7 +521,7 @@ str instanceof Boolean; // false
 ```
 
 ---
-## **conditional statements (조건문 if )**
+## **4.conditional statements**
 ---
 
 ```
@@ -616,7 +616,7 @@ if (x == y) {
 ```
 
 ---
-## **iteration statements 반복문**
+## **5.iteration statements**
 ---
 
 ```
@@ -761,7 +761,7 @@ for (var i = 1; i < 10; i++) {
 
 
 ---
-## **Array 배열**
+## **6. Array **
 ---
 
 ##### 배열이란?
@@ -894,7 +894,7 @@ arr; // = > [2,3,4,]
 
 
 ---
-## **function 함수**
+## **7.function**
 ---
 
 
@@ -1058,7 +1058,7 @@ sum([2,3,5,1,]);
 
 
 ---
-## **Objects 객체**
+## **8. Objects**
 ---
 
 

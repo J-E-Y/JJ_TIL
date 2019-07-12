@@ -2020,7 +2020,7 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;2-data-type-자료형&#34;&gt;&lt;strong&gt;2. data type (자료형)&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;1-data-type&#34;&gt;1.data type**&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -2129,7 +2129,7 @@ document.getElementById(&amp;quot;result&amp;quot;).innerHTML =
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;3-variable-변수&#34;&gt;&lt;strong&gt;3. Variable (변수)&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2-variable&#34;&gt;&lt;strong&gt;2.Variable&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -2244,7 +2244,7 @@ Because you changed a variable the was defined in an outer scope
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;4-operator-연산자&#34;&gt;&lt;strong&gt;4.operator (연산자)&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3-operator&#34;&gt;&lt;strong&gt;3.operator&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -2514,7 +2514,7 @@ str instanceof Boolean; // false
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;conditional-statements-조건문-if&#34;&gt;&lt;strong&gt;conditional statements (조건문 if )&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4-conditional-statements&#34;&gt;&lt;strong&gt;4.conditional statements&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -2607,7 +2607,7 @@ document.write(&amp;quot;x가 y보다 크다.&amp;quot;);
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;iteration-statements-반복문&#34;&gt;&lt;strong&gt;iteration statements 반복문&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5-iteration-statements&#34;&gt;&lt;strong&gt;5.iteration statements&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -2746,7 +2746,7 @@ document.write(i + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;array-배열&#34;&gt;&lt;strong&gt;Array 배열&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6-array&#34;&gt;**6. Array **&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -2871,7 +2871,7 @@ arr; // = &amp;gt; [2,3,4,]
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;function-함수&#34;&gt;&lt;strong&gt;function 함수&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;7-function&#34;&gt;&lt;strong&gt;7.function&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -3029,7 +3029,7 @@ sum([2,3,5,1,]);
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;objects-객체&#34;&gt;&lt;strong&gt;Objects 객체&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;8-objects&#34;&gt;&lt;strong&gt;8. Objects&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
