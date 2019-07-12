@@ -146,8 +146,6 @@ we can use their name as a substitute for their value elsewhere in our program.
 ##### Declaring a variable without a Vaue
 
 
-
-
 ```
 
 Creating a variable in JavaScript is called "declaring" a variable.
@@ -166,7 +164,6 @@ To assign a value to the variable, use the equal sign:
 ```
 
 
-
 ##### Changing a Variable’s value 
 
 
@@ -182,7 +179,15 @@ Notice that When you change the value of a variable, "you don’t need to use th
 
 ```
 
-##### Scopes
+##### variable scope 변수의 유효 범위
+
+
+* local variable 지역 변수
+
+>Variables declared inside a function body are in the Local scope.
+
+>지역 변수(local variable)란 함수 내에서 선언된 변수를 가리킨다.
+이러한 지역 변수는 변수가 선언된 함수 내에서만 유효하며, 함수가 종료되면 메모리에서 사라진다.함수의 매개변수 또한 함수 내에서 정의되는 지역 변수처럼 동작한다.
 
 
 * ex 1-1
@@ -195,13 +200,32 @@ function greetSomeone() {
 	return greeting + " " + firstName;
 }
 
+greetSomeone
 firstName; // = > Error
 
 
-Because we declared our name variable inside the scope of our greetSomeone function.
+Function(greetSomeone) is working but "firstName"" is Error Because we declared our name variable inside the scope of our greetSomeone function.
 
 
 ```
+
+
+
+
+
+* global variable  전역 변수
+
+
+
+>Variables declared outside a function body are in the global scope.
+
+
+>전역 변수(global variable)란 함수의 외부에서 선언된 변수를 가리킨다.
+이러한 전역 변수는 프로그램의 어느 영역에서나 접근할 수 있으며, 웹 페이지가 닫혀야만 메모리에서 사라진다.
+
+
+
+* ex 1-2
 
 ```
 
@@ -751,31 +775,49 @@ for (var i = 1; i < 10; i++) {
 
 ##### 배열 만들기 1
 
+```
 var scores = [50, 60, 70];
 console.log(scores);
 console.log(scores.length);
 
+```
 
 ##### 인덱스를 이용해서 배열의 원소 읽기
+
+```
 scores[0];
 scores[3];
 배열에 값 쓰기
 scores[0] = 100;
 scores[9] = 50;
 
+```
+
 ##### 배열의 타입 알아보기
+
+```
 typeof scores
 typeof scores[0]
 
+```
 ##### 배열 만들기 2
+
+```
 var a = [];
 a[0] = 2;
 a[1] = 4;
 
+```
+
 ##### 배열의 길이 구하기
+
+```
 scores.length;
 
+```
 ##### 배열의 마지막 원소를 읽어 오려면?
+
+```
 scores[scores.length - 1];
 문자열과 배열
 	•	문자열과 배열은 비슷한 성질을 많이 가지고 있습니다.
@@ -783,6 +825,7 @@ scores[scores.length - 1];
 	•	배열: Mutable
 	•	배열의 속성과 메소드를 문자열에도 테스트해보세요.
 
+```
 
 
 ##### 배열의 메소드들 1
@@ -976,6 +1019,8 @@ for (var i = 0; i < 10; i ++)  {
 
 ```
 // while loop
+    
+    
     function sum (nums) {
     var total = 0;
     var i = 0;
@@ -995,6 +1040,8 @@ sum([2,3,5,1]);
 
 ```
 // for loop
+  
+  
   function sum (nums) {
   	var total = 0 ;
   	for (var i = 0 ; i < nums.length ; i = i + i ) {
@@ -1015,10 +1062,10 @@ sum([2,3,5,1,]);
 ---
 
 
-##### making objects 1 
+##### making objects 
 
 ```  
-
+1.
   var dog = {};
 
   dog.name = "jj"
@@ -1027,12 +1074,8 @@ sum([2,3,5,1,]);
   // >>> dog = {name = "jj", color ="red" , kind = "똥깨 "}
 
 
-```
-
-making objects 2 
-
-```
-var dog = {
+2. 
+ var dog = {
     name : "jj",
     color : "red",
     kind : "똥깨"
@@ -1042,16 +1085,46 @@ var dog = {
 
 ```
 
+##### using objcets in Javascript 
+
+```
+var dog = {
+    name = "jj"
+    color = "red"
+    
+};
+
+we have two systems .
+
+1. 
+dog.name;
+dog["name"];
+
+결과갑 똑같다.
+>>>jj
+
+```
+
+
+##### changing objects 
+
+
+```
+1. it is changed
+
+dog.name = "john"
+
+2. it is added
+
+dog.food = "Banana"
+
+
+```
 ##### 메소드
 
 * 객체에 속한 함수
 
 ```
-var dog = {
-    name : "jj",
-    color : "red",
-    kind : "똥깨"
-}
 
 dog.eat = function(food) {
     console.log(this.name + " ate delicious " + food +"...");
@@ -1062,5 +1135,22 @@ p1.eat("Beef");
 >> jj ate delicious Beef ...
 
 ```
+
+#### this
+
+```
+
+메소드 안에서 사용시 함수를 소유한 객체를 가르킨다.
+
+var p2 = {};
+p2.name = "jj";
+p2.weight = 80;
+p2.say = function(word) {
+    console.log(this.name + " says, " + word);
+};
+
+```
+
+
 
 

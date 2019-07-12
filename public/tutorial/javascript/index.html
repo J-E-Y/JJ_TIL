@@ -338,7 +338,7 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
 <li><a href="#using-variables">Using Variables</a></li>
 <li><a href="#declaring-a-variable-without-a-vaue">Declaring a variable without a Vaue</a></li>
 <li><a href="#changing-a-variable-s-value">Changing a Variable’s value</a></li>
-<li><a href="#scopes">Scopes</a></li>
+<li><a href="#variable-scope-변수의-유효-범위">variable scope 변수의 유효 범위</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -427,9 +427,12 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
 <ul>
 <li>
 <ul>
-<li><a href="#making-objects-1">making objects 1</a></li>
+<li><a href="#making-objects">making objects</a></li>
+<li><a href="#using-objcets-in-javascript">using objcets in Javascript</a></li>
+<li><a href="#changing-objects">changing objects</a></li>
 <li><a href="#메소드">메소드</a></li>
 </ul></li>
+<li><a href="#this">this</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -614,7 +617,18 @@ Notice that When you change the value of a variable, &quot;you don’t need to u
 
 </code></pre>
 
-<h5 id="scopes">Scopes</h5>
+<h5 id="variable-scope-변수의-유효-범위">variable scope 변수의 유효 범위</h5>
+
+<ul>
+<li>local variable 지역 변수</li>
+</ul>
+
+<blockquote>
+<p>Variables declared inside a function body are in the Local scope.</p>
+
+<p>지역 변수(local variable)란 함수 내에서 선언된 변수를 가리킨다.
+이러한 지역 변수는 변수가 선언된 함수 내에서만 유효하며, 함수가 종료되면 메모리에서 사라진다.함수의 매개변수 또한 함수 내에서 정의되는 지역 변수처럼 동작한다.</p>
+</blockquote>
 
 <ul>
 <li><p>ex 1-1</p>
@@ -626,13 +640,27 @@ function greetSomeone() {
 	return greeting + &quot; &quot; + firstName;
 }
 
+greetSomeone
 firstName; // = &gt; Error
 
 
-Because we declared our name variable inside the scope of our greetSomeone function.
+Function(greetSomeone) is working but &quot;firstName&quot;&quot; is Error Because we declared our name variable inside the scope of our greetSomeone function.
 
 
-</code></pre>
+</code></pre></li>
+
+<li><p>global variable  전역 변수</p></li>
+</ul>
+
+<blockquote>
+<p>Variables declared outside a function body are in the global scope.</p>
+
+<p>전역 변수(global variable)란 함수의 외부에서 선언된 변수를 가리킨다.
+이러한 전역 변수는 프로그램의 어느 영역에서나 접근할 수 있으며, 웹 페이지가 닫혀야만 메모리에서 사라진다.</p>
+</blockquote>
+
+<ul>
+<li><p>ex 1-2</p>
 
 <pre><code>
 &quot;But!!!!!!! if you do this it works well&quot;!!
@@ -1175,41 +1203,53 @@ document.write(i + &quot;&lt;br&gt;&quot;);
 
 <h5 id="배열-만들기-1">배열 만들기 1</h5>
 
-<p>var scores = [50, 60, 70];
+<pre><code>var scores = [50, 60, 70];
 console.log(scores);
-console.log(scores.length);</p>
+console.log(scores.length);
+
+</code></pre>
 
 <h5 id="인덱스를-이용해서-배열의-원소-읽기">인덱스를 이용해서 배열의 원소 읽기</h5>
 
-<p>scores[0];
+<pre><code>scores[0];
 scores[3];
 배열에 값 쓰기
 scores[0] = 100;
-scores[9] = 50;</p>
+scores[9] = 50;
+
+</code></pre>
 
 <h5 id="배열의-타입-알아보기">배열의 타입 알아보기</h5>
 
-<p>typeof scores
-typeof scores[0]</p>
+<pre><code>typeof scores
+typeof scores[0]
+
+</code></pre>
 
 <h5 id="배열-만들기-2">배열 만들기 2</h5>
 
-<p>var a = [];
+<pre><code>var a = [];
 a[0] = 2;
-a[1] = 4;</p>
+a[1] = 4;
+
+</code></pre>
 
 <h5 id="배열의-길이-구하기">배열의 길이 구하기</h5>
 
-<p>scores.length;</p>
+<pre><code>scores.length;
+
+</code></pre>
 
 <h5 id="배열의-마지막-원소를-읽어-오려면">배열의 마지막 원소를 읽어 오려면?</h5>
 
-<p>scores[scores.length - 1];
+<pre><code>scores[scores.length - 1];
 문자열과 배열
-    •   문자열과 배열은 비슷한 성질을 많이 가지고 있습니다.
-    •   문자열: Immutable
-    •   배열: Mutable
-    •   배열의 속성과 메소드를 문자열에도 테스트해보세요.</p>
+	•	문자열과 배열은 비슷한 성질을 많이 가지고 있습니다.
+	•	문자열: Immutable
+	•	배열: Mutable
+	•	배열의 속성과 메소드를 문자열에도 테스트해보세요.
+
+</code></pre>
 
 <h5 id="배열의-메소드들-1">배열의 메소드들 1</h5>
 
@@ -1391,6 +1431,8 @@ test1(&quot;oh&quot;&quot;); // = &gt; 실행
 <h5 id="배열을-이용한-while-문-for-문">배열을 이용한 while 문 , for 문</h5>
 
 <pre><code>// while loop
+    
+    
     function sum (nums) {
     var total = 0;
     var i = 0;
@@ -1408,6 +1450,8 @@ sum([2,3,5,1]);
 </code></pre>
 
 <pre><code>// for loop
+  
+  
   function sum (nums) {
   	var total = 0 ;
   	for (var i = 0 ; i &lt; nums.length ; i = i + i ) {
@@ -1428,9 +1472,9 @@ sum([2,3,5,1,]);
 
 <hr />
 
-<h5 id="making-objects-1">making objects 1</h5>
+<h5 id="making-objects">making objects</h5>
 
-<pre><code>
+<pre><code>1.
   var dog = {};
 
   dog.name = &quot;jj&quot;
@@ -1439,11 +1483,8 @@ sum([2,3,5,1,]);
   // &gt;&gt;&gt; dog = {name = &quot;jj&quot;, color =&quot;red&quot; , kind = &quot;똥깨 &quot;}
 
 
-</code></pre>
-
-<p>making objects 2</p>
-
-<pre><code>var dog = {
+2. 
+ var dog = {
     name : &quot;jj&quot;,
     color : &quot;red&quot;,
     kind : &quot;똥깨&quot;
@@ -1453,17 +1494,44 @@ sum([2,3,5,1,]);
 
 </code></pre>
 
+<h5 id="using-objcets-in-javascript">using objcets in Javascript</h5>
+
+<pre><code>var dog = {
+    name = &quot;jj&quot;
+    color = &quot;red&quot;
+    
+};
+
+we have two systems .
+
+1. 
+dog.name;
+dog[&quot;name&quot;];
+
+결과갑 똑같다.
+&gt;&gt;&gt;jj
+
+</code></pre>
+
+<h5 id="changing-objects">changing objects</h5>
+
+<pre><code>1. it is changed
+
+dog.name = &quot;john&quot;
+
+2. it is added
+
+dog.food = &quot;Banana&quot;
+
+
+</code></pre>
+
 <h5 id="메소드">메소드</h5>
 
 <ul>
 <li><p>객체에 속한 함수</p>
 
-<pre><code>var dog = {
-name : &quot;jj&quot;,
-color : &quot;red&quot;,
-kind : &quot;똥깨&quot;
-}
-
+<pre><code>
 dog.eat = function(food) {
 console.log(this.name + &quot; ate delicious &quot; + food +&quot;...&quot;);
 };
@@ -1474,6 +1542,20 @@ p1.eat(&quot;Beef&quot;);
 
 </code></pre></li>
 </ul>
+
+<h4 id="this">this</h4>
+
+<pre><code>
+메소드 안에서 사용시 함수를 소유한 객체를 가르킨다.
+
+var p2 = {};
+p2.name = &quot;jj&quot;;
+p2.weight = 80;
+p2.say = function(word) {
+    console.log(this.name + &quot; says, &quot; + word);
+};
+
+</code></pre>
 
           </div>
 
