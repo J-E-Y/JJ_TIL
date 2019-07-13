@@ -13,7 +13,7 @@ type: docs
 
 
 ---
-## 1.data type**
+## 1.**data type**
 ---
 
 
@@ -250,7 +250,7 @@ Because you changed a variable the was defined in an outer scope
 
 
 ---
-## **3.operator**
+## **3.Operator**
 ---
 
 
@@ -521,7 +521,7 @@ str instanceof Boolean; // false
 ```
 
 ---
-## **4.conditional statements**
+## **4.Conditional**
 ---
 
 ```
@@ -616,7 +616,7 @@ if (x == y) {
 ```
 
 ---
-## **5.iteration statements**
+## **5.Loops**
 ---
 
 ```
@@ -761,7 +761,7 @@ for (var i = 1; i < 10; i++) {
 
 
 ---
-## **6. Array **
+## **6.Array**
 ---
 
 ##### 배열이란?
@@ -894,7 +894,7 @@ arr; // = > [2,3,4,]
 
 
 ---
-## **7.function**
+## **7.Function**
 ---
 
 
@@ -1058,7 +1058,7 @@ sum([2,3,5,1,]);
 
 
 ---
-## **8. Objects**
+## **8.Objects**
 ---
 
 

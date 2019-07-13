@@ -838,5 +838,12 @@ for count in range(line_count):
 
 ```
 
+---
+##  Python: List and Dict
+---
+
+
+
+
 
 

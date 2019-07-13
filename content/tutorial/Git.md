@@ -114,14 +114,28 @@ Git remote add origin "https://github.com/J-E-Y/test_2.git"
 
 ```
 
+---
+## Git : **Push**
+---
 
+```
 git push -u origin master  최종 깇허브에 올리기 
 git push -u origin master  
 git push -f origin master ( 강제로)
+
+```
+
+
+---
+## Git : **log**
+---
+
+
+```
 git log  기록 업데이트한 기록 확인
 
-Git —help 옵션을 볼수 있다. 
- 
+```
+
 
 
 

@@ -1015,6 +1015,12 @@ print(msg)
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;python-list-and-dict&#34;&gt;Python: List and Dict&lt;/h2&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     
@@ -1409,12 +1415,27 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;git push -u origin master  최종 깇허브에 올리기
-git push -u origin master&lt;br /&gt;
-git push -f origin master ( 강제로)
-git log  기록 업데이트한 기록 확인&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Git —help 옵션을 볼수 있다.&lt;/p&gt;
+&lt;h2 id=&#34;git-push&#34;&gt;Git : &lt;strong&gt;Push&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;git push -u origin master  최종 깇허브에 올리기 
+git push -u origin master  
+git push -f origin master ( 강제로)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-log&#34;&gt;Git : &lt;strong&gt;log&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;git log  기록 업데이트한 기록 확인
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -2020,7 +2041,7 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;1-data-type&#34;&gt;1.data type**&lt;/h2&gt;
+&lt;h2 id=&#34;1-data-type&#34;&gt;1.&lt;strong&gt;data type&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -2244,7 +2265,7 @@ Because you changed a variable the was defined in an outer scope
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;3-operator&#34;&gt;&lt;strong&gt;3.operator&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3-operator&#34;&gt;&lt;strong&gt;3.Operator&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -2514,7 +2535,7 @@ str instanceof Boolean; // false
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;4-conditional-statements&#34;&gt;&lt;strong&gt;4.conditional statements&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4-conditional&#34;&gt;&lt;strong&gt;4.Conditional&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -2607,7 +2628,7 @@ document.write(&amp;quot;x가 y보다 크다.&amp;quot;);
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;5-iteration-statements&#34;&gt;&lt;strong&gt;5.iteration statements&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5-loops&#34;&gt;&lt;strong&gt;5.Loops&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -2746,7 +2767,7 @@ document.write(i + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;6-array&#34;&gt;**6. Array **&lt;/h2&gt;
+&lt;h2 id=&#34;6-array&#34;&gt;&lt;strong&gt;6.Array&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -2871,7 +2892,7 @@ arr; // = &amp;gt; [2,3,4,]
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;7-function&#34;&gt;&lt;strong&gt;7.function&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;7-function&#34;&gt;&lt;strong&gt;7.Function&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -3029,7 +3050,7 @@ sum([2,3,5,1,]);
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;8-objects&#34;&gt;&lt;strong&gt;8. Objects&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;8-objects&#34;&gt;&lt;strong&gt;8.Objects&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
