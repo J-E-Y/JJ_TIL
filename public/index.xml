@@ -1018,9 +1018,86 @@ print(msg)
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;python-list-and-dict&#34;&gt;Python: List and Dict&lt;/h2&gt;
+&lt;h2 id=&#34;python-crawler&#34;&gt;Python: Crawler&lt;/h2&gt;
 
 &lt;hr /&gt;
+
+&lt;h5 id=&#34;1-변수만들어서-저장하기-data-text-모든-리소스-불러오기&#34;&gt;1. 변수만들어서 저장하기 data.text 모든 리소스 불러오기&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;
+url = &amp;quot;https://www.naver.com/&amp;quot;
+requests.get(url)
+data = requests.get(url)
+print(data.text)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;2-제대로-돌아가고-있는지-확인&#34;&gt;2. 제대로 돌아가고 있는지 확인&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;print (data.status_code)
+
+“””
+200
+“””
+
+200번대 - 정상
+300번대 - redirect
+400번대 - 리소스 오류
+500번대 - 소스코드 오류
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;3-test-해보기-만약-이게-맞다면-응답해라&#34;&gt;3. Test 해보기 만약 이게 맞다면 응답해라&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;
+if data.status_code == requests.codes.ok:
+    print(&amp;quot;work out”)
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;4-from-bs4-import-beautifulsoup-html를-해석해주는-역활&#34;&gt;4. From bs4 import BeautifulSoup HTML를 해석해주는 역활&lt;/h5&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;Parsing(파싱) text 파일을 우리가 원하는 것을 불러오기 위해서는       parsing 필요하다.이럴때 BeautifulSoup 이라는 order 필요.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;html = BeautifulSoup(data.text,&amp;quot;html.parser&amp;quot;)
+links = html.select(&amp;quot;.PM_CL_realtimeKeyword_list_base .ah_a”)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;나열방식이 틀림&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(1)     for index,keyword in enumerate ( links,start=1 ) :
+        print(index,keyword)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;1 &lt;sdsdsdsd&gt;
+2 &lt;sdsdsdsd&gt;
+3 &lt;sdsdsdss&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(2).   For keyword in links[:3]:
+       For keyword in links[::3]:
+       Print(keyword)
+
+
+
+(3)
+
+for link in links:
+    rank = link.select_one(&amp;quot;.ah_r&amp;quot;).text
+    keyword = link.select_one(&amp;quot;.ah_k&amp;quot;).text
+    print(rank,keyword,link.attrs[&amp;quot;href&amp;quot;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;1 왕종명 &lt;a href=&#34;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=%EC%99%95%EC%A2%85%EB%AA%85&amp;amp;sm=top_lve&amp;amp;ie=utf8&#34; target=&#34;_blank&#34;&gt;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=%EC%99%95%EC%A2%85%EB%AA%85&amp;amp;sm=top_lve&amp;amp;ie=utf8&lt;/a&gt;
+2 grn &lt;a href=&#34;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=grn&amp;amp;sm=top_lve&amp;amp;ie=utf8&#34; target=&#34;_blank&#34;&gt;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=grn&amp;amp;sm=top_lve&amp;amp;ie=utf8&lt;/a&gt;
+3 백예린 &lt;a href=&#34;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=%EB%B0%B1%EC%98%88%EB%A6%B0&amp;amp;sm=top_lve&amp;amp;ie=utf8&#34; target=&#34;_blank&#34;&gt;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=%EB%B0%B1%EC%98%88%EB%A6%B0&amp;amp;sm=top_lve&amp;amp;ie=utf8&lt;/a&gt;
+4 붐붐파워 &lt;a href=&#34;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=%EB%B6%90%EB%B6%90%ED%8C%8C%EC%9B%8C&amp;amp;sm=top_lve&amp;amp;ie=utf8&#34; target=&#34;_blank&#34;&gt;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=%EB%B6%90%EB%B6%90%ED%8C%8C%EC%9B%8C&amp;amp;sm=top_lve&amp;amp;ie=utf8&lt;/a&gt;
+5 2019 스타벅스 벚꽃 md &lt;a href=&#34;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=2019+%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4+%EB%B2%9A%EA%BD%83+md&amp;amp;sm=top_lve&amp;amp;ie=utf8&#34; target=&#34;_blank&#34;&gt;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=2019+%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4+%EB%B2%9A%EA%BD%83+md&amp;amp;sm=top_lve&amp;amp;ie=utf8&lt;/a&gt;
+6 나르샤 &lt;a href=&#34;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=%EB%82%98%EB%A5%B4%EC%83%A4&amp;amp;sm=top_lve&amp;amp;ie=utf8&#34; target=&#34;_blank&#34;&gt;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=%EB%82%98%EB%A5%B4%EC%83%A4&amp;amp;sm=top_lve&amp;amp;ie=utf8&lt;/a&gt;
+7 아소방 매트 &lt;a href=&#34;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=%EC%95%84%EC%86%8C%EB%B0%A9+%EB%A7%A4%ED%8A%B8&amp;amp;sm=top_lve&amp;amp;ie=utf8&#34; target=&#34;_blank&#34;&gt;http://search.naver.com/search.naver?where=nexearch&amp;amp;query=%EC%95%84%EC%86%8C%EB%B0%A9+%EB%A7%A4%ED%8A%B8&amp;amp;sm=top_lve&amp;amp;ie=utf8&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;rdquo;&amp;ldquo;&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
     

@@ -839,11 +839,98 @@ for count in range(line_count):
 ```
 
 ---
-##  Python: List and Dict
+##  Python: Crawler
 ---
 
 
+##### 1. 변수만들어서 저장하기 data.text 모든 리소스 불러오기
+
+```
+
+url = "https://www.naver.com/"
+requests.get(url)
+data = requests.get(url)
+print(data.text)
+
+```
+
+
+##### 2. 제대로 돌아가고 있는지 확인
+
+
+```
+print (data.status_code)
+
+“””
+200
+“””
+
+200번대 - 정상
+300번대 - redirect
+400번대 - 리소스 오류
+500번대 - 소스코드 오류
+```
 
 
 
+##### 3. Test 해보기 만약 이게 맞다면 응답해라
+
+```
+
+if data.status_code == requests.codes.ok:
+    print("work out”)
+
+
+```
+
+
+##### 4. From bs4 import BeautifulSoup HTML를 해석해주는 역활 
+
+
+```
+
+Parsing(파싱) text 파일을 우리가 원하는 것을 불러오기 위해서는       parsing 필요하다.이럴때 BeautifulSoup 이라는 order 필요.
+
+    html = BeautifulSoup(data.text,"html.parser")
+    links = html.select(".PM_CL_realtimeKeyword_list_base .ah_a”)
+
+
+
+ 나열방식이 틀림
+
+
+
+    (1)     for index,keyword in enumerate ( links,start=1 ) :
+            print(index,keyword)
+        
+1 <sdsdsdsd>
+2 <sdsdsdsd>
+3 <sdsdsdss>
+
+
+
+    (2).   For keyword in links[:3]:
+           For keyword in links[::3]:
+           Print(keyword)
+
+
+
+    (3)
+    
+    for link in links:
+        rank = link.select_one(".ah_r").text
+        keyword = link.select_one(".ah_k").text
+        print(rank,keyword,link.attrs["href"])
+
+    
+
+1 왕종명 http://search.naver.com/search.naver?where=nexearch&query=%EC%99%95%EC%A2%85%EB%AA%85&sm=top_lve&ie=utf8
+2 grn http://search.naver.com/search.naver?where=nexearch&query=grn&sm=top_lve&ie=utf8
+3 백예린 http://search.naver.com/search.naver?where=nexearch&query=%EB%B0%B1%EC%98%88%EB%A6%B0&sm=top_lve&ie=utf8
+4 붐붐파워 http://search.naver.com/search.naver?where=nexearch&query=%EB%B6%90%EB%B6%90%ED%8C%8C%EC%9B%8C&sm=top_lve&ie=utf8
+5 2019 스타벅스 벚꽃 md http://search.naver.com/search.naver?where=nexearch&query=2019+%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4+%EB%B2%9A%EA%BD%83+md&sm=top_lve&ie=utf8
+6 나르샤 http://search.naver.com/search.naver?where=nexearch&query=%EB%82%98%EB%A5%B4%EC%83%A4&sm=top_lve&ie=utf8
+7 아소방 매트 http://search.naver.com/search.naver?where=nexearch&query=%EC%95%84%EC%86%8C%EB%B0%A9+%EB%A7%A4%ED%8A%B8&sm=top_lve&ie=utf8
+
+"""
 
