@@ -27,16 +27,12 @@
   
     
   
-  <meta name="description" content="Git : pwd  print working Directory
- Git : ls  print working List
- Git :cd  go back to beginning
- Git :cd -  previous directory (or back)
- Git :init  Create an empty Git repository or reinitialize an existing one
- Git :clone  Clone a repository into a new directory
- Git :add .  Add all file contents to the index">
+  <meta name="description" content="if 1-1 areSameLength  2개의 문자열이 주어졌을 때, areSameLength는 문자열들의 길이가 같으면 true를, 아니면 false를 반환해야 합니다.
+function areSameLength(string1, string2) { if (string1.length === string2.length) { return true; } else { return false; } } areSameLength(&quot;they&quot;,&quot;hello&quot;);   if 1-2 isPasswordLongEnough  isPasswordLongEnough 함수는 문자열과 정수를 parameter로 입력받는 함수로, 여기서는 암호의 최소 요구 길이를 판단합니다. 문자열의 길이가 충분한지 여부를 반환해야 합니다.
+function isPasswordLongEnough(password, minimumLength) { // your code here if (password.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/tutorial/git/">
+  <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_side/">
 
   
 
@@ -108,7 +104,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/tutorial/git/">
+  <link rel="canonical" href="/tutorial/javascript_side/">
 
   
   
@@ -120,27 +116,22 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Home">
-  <meta property="og:url" content="/tutorial/git/">
-  <meta property="og:title" content="Git | Home">
-  <meta property="og:description" content="Git : pwd  print working Directory
- Git : ls  print working List
- Git :cd  go back to beginning
- Git :cd -  previous directory (or back)
- Git :init  Create an empty Git repository or reinitialize an existing one
- Git :clone  Clone a repository into a new directory
- Git :add .  Add all file contents to the index"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/tutorial/javascript_side/">
+  <meta property="og:title" content="algorithm | Home">
+  <meta property="og:description" content="if 1-1 areSameLength  2개의 문자열이 주어졌을 때, areSameLength는 문자열들의 길이가 같으면 true를, 아니면 false를 반환해야 합니다.
+function areSameLength(string1, string2) { if (string1.length === string2.length) { return true; } else { return false; } } areSameLength(&quot;they&quot;,&quot;hello&quot;);   if 1-2 isPasswordLongEnough  isPasswordLongEnough 함수는 문자열과 정수를 parameter로 입력받는 함수로, 여기서는 암호의 최소 요구 길이를 판단합니다. 문자열의 길이가 충분한지 여부를 반환해야 합니다.
+function isPasswordLongEnough(password, minimumLength) { // your code here if (password."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2019-04-29T00:00:00&#43;00:00">
   
-
   
 
   
 
-  <title>Git | Home</title>
+  
+
+  <title>algorithm | Home</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -284,7 +275,7 @@
     <a class="docs-toc-link" href="/tutorial/javascript/">Javascript</a>
     <ul class="nav docs-sidenav">
       
-      <li >
+      <li class="active">
         <a href="/tutorial/javascript_side/">algorithm</a>
       </li>
       
@@ -302,7 +293,7 @@
 
   </div>
   
-  <div class="docs-toc-item active">
+  <div class="docs-toc-item">
     <a class="docs-toc-link" href="/tutorial/git/">Git</a>
 
   </div>
@@ -332,22 +323,13 @@
 <ul>
 <li>
 <ul>
-<li><a href="#git-pwd">Git : <strong>pwd</strong></a></li>
-<li><a href="#git-ls">Git : <strong>ls</strong></a></li>
-<li><a href="#git-cd">Git :<strong>cd</strong></a></li>
-<li><a href="#git-cd-1">Git :<strong>cd -</strong></a></li>
-<li><a href="#git-init">Git :<strong>init</strong></a></li>
-<li><a href="#git-clone">Git :<strong>clone</strong></a></li>
-<li><a href="#git-add">Git :<strong>add .</strong></a></li>
-<li><a href="#git-add-1">Git : <strong>add</strong></a></li>
-<li><a href="#git-rm">Git :<strong>rm</strong></a></li>
-<li><a href="#git-rm-f">Git :<strong>rm -f</strong></a></li>
-<li><a href="#git-mkdir">Git :<strong>mkdir</strong></a></li>
-<li><a href="#git-touch">Git :<strong>touch</strong></a></li>
-<li><a href="#git-commit-m">Git :<strong>commit -m &ldquo;&rdquo;</strong></a></li>
-<li><a href="#git-remote-add-origin">Git :<strong>remote add origin&rdquo;&rdquo;</strong></a></li>
-<li><a href="#git-push">Git : <strong>Push</strong></a></li>
-<li><a href="#git-log">Git : <strong>log</strong></a></li>
+<li><a href="#if-1-1-aresamelength">if 1-1  areSameLength</a></li>
+<li><a href="#if-1-2-ispasswordlongenough">if 1-2 isPasswordLongEnough</a></li>
+<li><a href="#if-1-3-bouncer">if 1-3  bouncer</a></li>
+<li><a href="#if-1-4-getlargerstring">if 1-4 getLargerString</a></li>
+<li><a href="#if-1-5-iseven">if 1-5 isEven</a></li>
+<li><a href="#if-1-6-ispositive">if 1-6 isPositive</a></li>
+<li><a href="#if-1-7-bounceblacklist">if 1-7 bounceBlacklist</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -365,194 +347,163 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">Git</h1>
+          <h1 itemprop="name">algorithm</h1>
 
           <div class="article-style" itemprop="articleBody">
             
 
-<hr />
-
-<h2 id="git-pwd">Git : <strong>pwd</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>print working Directory</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-ls">Git : <strong>ls</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>print working List</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-cd">Git :<strong>cd</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>go back to beginning</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-cd-1">Git :<strong>cd -</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>previous directory (or back)</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-init">Git :<strong>init</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>Create an empty Git repository or reinitialize an existing one</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-clone">Git :<strong>clone</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>Clone a repository into a new directory</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-add">Git :<strong>add .</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>Add all file contents to the index</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-add-1">Git : <strong>add</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>one file add</p>
-</blockquote>
-
-<pre><code>git add jung.html
-</code></pre>
-
-<hr />
-
-<h2 id="git-rm">Git :<strong>rm</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>Remove files</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-rm-f">Git :<strong>rm -f</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>Remove files and directory</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-mkdir">Git :<strong>mkdir</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>create directory</p>
-</blockquote>
+<h2 id="if-1-1-aresamelength">if 1-1  areSameLength</h2>
 
 <ul>
-<li><p>ex</p>
+<li><p>2개의 문자열이 주어졌을 때, areSameLength는 문자열들의 길이가 같으면 true를, 아니면 false를 반환해야 합니다.</p>
 
-<pre><code>git mkdir jung
+<pre><code>function areSameLength(string1, string2) {
+	if (string1.length === string2.length) {
+	  return true;
+	} else {
+return false;
+}
+}
+
+
+areSameLength(&quot;they&quot;,&quot;hello&quot;);
 
 </code></pre></li>
 </ul>
 
-<hr />
-
-<h2 id="git-touch">Git :<strong>touch</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>create file</p>
-</blockquote>
+<h2 id="if-1-2-ispasswordlongenough">if 1-2 isPasswordLongEnough</h2>
 
 <ul>
-<li><p>ex</p>
+<li><p>isPasswordLongEnough 함수는 문자열과 정수를 parameter로 입력받는 함수로, 여기서는 암호의 최소 요구 길이를 판단합니다. 문자열의 길이가 충분한지 여부를 반환해야 합니다.</p>
 
-<pre><code>git touch jung.txt 
+<pre><code>function isPasswordLongEnough(password, minimumLength) {
+	// your code here
+	if (password.length &gt;minimumLength) {
+	  return true;
+	} else {
+	  return false;
+	}
+	// start solution
+
+	// end solution
+}
+
+isPasswordLongEnough('hello',5);
+
 </code></pre></li>
 </ul>
 
-<hr />
+<h2 id="if-1-3-bouncer">if 1-3  bouncer</h2>
 
-<h2 id="git-commit-m">Git :<strong>commit -m &ldquo;&rdquo;</strong></h2>
+<ul>
+<li><p>문자열의 형태로 이름, 정수 형태로 나이를 입력받는 bouncer 함수는, 주어진 나이에 따라 환영 메시지 혹은 거절 메시지를 리턴합니다.</p>
 
-<hr />
+<pre><code>function bouncer(name, age) {
+// This code is not right...I couldn't find it why 
+if (age &gt;= 21) {
+return 'Welcome,' +name+ '!';
+} else{
+return 'Go home,'  +name+ '.';
+}
+}  
 
-<blockquote>
-<p>write message into github</p>
-</blockquote>
 
-<hr />
+function bouncer(name, age) {
+// this code is right
+if (age &gt;= 21){
+return 'Welcome, ' +name+ '!'
+} else {
+return 'Go home, ' +name+ '.'
+}
+}
 
-<h2 id="git-remote-add-origin">Git :<strong>remote add origin&rdquo;&rdquo;</strong></h2>
+</code></pre></li>
+</ul>
 
-<hr />
+<h2 id="if-1-4-getlargerstring">if 1-4 getLargerString</h2>
 
-<blockquote>
-<p>link local to github</p>
-</blockquote>
+<ul>
+<li><p>두 문자열이 주어졌을 때, getLargerString 함수는 더 긴 문자열을 반환해야 합니다.</p>
 
-<pre><code>Git remote add origin &quot;https://github.com/J-E-Y/test_2.git&quot;
+<pre><code>
+function getLargerString(string1, string2) {
+	// your code here
+	// start solution
 
-</code></pre>
+	// end solution
+	if (string1.length &gt; string2.length) {
+	  return string1;
+	} else if (string1.length === string2.length){
+	  return string1;
+	} else {
+	  return string2; 
+	}
+}
 
-<hr />
+</code></pre></li>
+</ul>
 
-<h2 id="git-push">Git : <strong>Push</strong></h2>
+<h2 id="if-1-5-iseven">if 1-5 isEven</h2>
 
-<hr />
+<ul>
+<li><p>isEven 함수는 정수 하나를 입력받아 그 정수가 짝수인지 아닌지를 반환해야 합니다.</p>
 
-<pre><code>git push -u origin master  최종 깇허브에 올리기 
-git push -u origin master  
-git push -f origin master ( 강제로)
+<pre><code>function isEven(num) {
+	// your code here
+	// start solution
 
-</code></pre>
+	// end solution
+	if (num % 2 === 0 ){
+	  return true;
+	} else {
+	  return false;
+	}
+}
 
-<hr />
+isEven(22)
+</code></pre></li>
+</ul>
 
-<h2 id="git-log">Git : <strong>log</strong></h2>
+<h2 id="if-1-6-ispositive">if 1-6 isPositive</h2>
 
-<hr />
+<ul>
+<li><p>정수 하나가 주어졌을 때, <code>isPositive</code> 함수는 그 정수가 양수인지 아닌지를 반환해야 합니다.</p>
 
-<pre><code>git log  기록 업데이트한 기록 확인
+<pre><code>function isPositive(num) {
+	// your code here
+	// start solution
+  
+	// end solution
+	if (num &gt;= 0 ){
+	  return true;
+	} else {
+	  return false;
+	}
+};
 
-</code></pre>
+isPositive(42);
+</code></pre></li>
+</ul>
+
+<h2 id="if-1-7-bounceblacklist">if 1-7 bounceBlacklist</h2>
+
+<ul>
+<li><p>이전에 작성했던 <code>bounce</code> 함수에서 새로운 요구사항이 추가되었습니다. 특정 사람을 거절하는 기능입니다. &ldquo;Joe&rdquo;라는 사람은 우리의 블랙 리스트로, 이 사람은 나이에 관계없이 거절하기로 결정하였습니다. 기존의 <code>bounce</code>함수를 수정하여, &ldquo;Joe&rdquo;라는 사람은 무조건 거절 메시지를 보낼 수 있도록 작성하십시오.</p>
+
+<pre><code>??? it's not sovled out??
+
+function bouncerBlackList(name, age) {
+if (name === 'Joe') {
+return 'Go home,' + name + '!';
+}
+if ( age &gt; 20 ) {
+	return 'Welcome, ' + name + '!';
+} else {
+	return 'Go home, ' + name + '.';
+}  
+}
+</code></pre></li>
+</ul>
 
           </div>
 
@@ -561,7 +512,7 @@ git push -f origin master ( 강제로)
         </div>
 
         <div class="body-footer">
-          Last updated on Apr 29, 2019
+          Last updated on Jan 1, 0001
         </div>
 
       </article>

@@ -10,8 +10,6 @@ toc: true
 type: docs
 ---
 
-
-
 ---
 ## 1.**data type**
 ---

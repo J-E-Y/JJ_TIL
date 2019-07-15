@@ -217,12 +217,21 @@
   </url>
   
   <url>
+    <loc>/tutorial/javascript_notes/</loc>
+    <lastmod>1970-01-01T09:33:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/author/admin/</loc>
   </url>
   
   <url>
     <loc>/author/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tutorial/javascript_side/</loc>
   </url>
   
 </urlset>

@@ -90,5 +90,25 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
       <description>text</description>
     </item>
     
+    <item>
+      <title>Notes</title>
+      <link>/tutorial/javascript_notes/</link>
+      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      
+      <guid>/tutorial/javascript_notes/</guid>
+      <description> parseInt() 숫자로 바꾸는것 toString() 문자로 바꾸는것 </description>
+    </item>
+    
+    <item>
+      <title>algorithm</title>
+      <link>/tutorial/javascript_side/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/javascript_side/</guid>
+      <description>if 1-1 areSameLength  2개의 문자열이 주어졌을 때, areSameLength는 문자열들의 길이가 같으면 true를, 아니면 false를 반환해야 합니다.
+function areSameLength(string1, string2) { if (string1.length === string2.length) { return true; } else { return false; } } areSameLength(&amp;quot;they&amp;quot;,&amp;quot;hello&amp;quot;);   if 1-2 isPasswordLongEnough  isPasswordLongEnough 함수는 문자열과 정수를 parameter로 입력받는 함수로, 여기서는 암호의 최소 요구 길이를 판단합니다. 문자열의 길이가 충분한지 여부를 반환해야 합니다.
+function isPasswordLongEnough(password, minimumLength) { // your code here if (password.</description>
+    </item>
+    
   </channel>
 </rss>
