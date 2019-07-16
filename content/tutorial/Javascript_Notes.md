@@ -17,5 +17,8 @@ type: docs
 
 ## toString() 문자로 바꾸는것
 
+## String.repeat() 반복하는것 
+
+
 
   

@@ -136,8 +136,24 @@ git log  기록 업데이트한 기록 확인
 
 ```
 
+---
+## Git : **status**
+---
+
+```
+git 현재 진행 상태 보기
+```
+
+---
+## Git : **Add your github email and username to git**
+---
 
 
+```
+git config --global user.email "yourGitHub@email.com"
+git config --global user.name "yourGitHubusername"
+
+```
 
 
 

@@ -323,7 +323,7 @@ print(y)
 
 
 ---
-##  Python: if (conditional statements)
+##  Python: conditional
 ---
 
 

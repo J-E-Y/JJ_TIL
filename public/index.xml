@@ -513,7 +513,7 @@ print(y)
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;python-if-conditional-statements&#34;&gt;Python: if (conditional statements)&lt;/h2&gt;
+&lt;h2 id=&#34;python-conditional&#34;&gt;Python: conditional&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -1511,6 +1511,26 @@ git push -f origin master ( 강제로)
 &lt;hr /&gt;
 
 &lt;pre&gt;&lt;code&gt;git log  기록 업데이트한 기록 확인
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-status&#34;&gt;Git : &lt;strong&gt;status&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;git 현재 진행 상태 보기
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-add-your-github-email-and-username-to-git&#34;&gt;Git : &lt;strong&gt;Add your github email and username to git&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;git config --global user.email &amp;quot;yourGitHub@email.com&amp;quot;
+git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
 
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -3698,6 +3718,8 @@ Figure 1: A fancy pie chart.
 &lt;h2 id=&#34;parseint-숫자로-바꾸는것&#34;&gt;parseInt() 숫자로 바꾸는것&lt;/h2&gt;
 
 &lt;h2 id=&#34;tostring-문자로-바꾸는것&#34;&gt;toString() 문자로 바꾸는것&lt;/h2&gt;
+
+&lt;h2 id=&#34;string-repeat-반복하는것&#34;&gt;String.repeat() 반복하는것&lt;/h2&gt;
 </description>
     </item>
     
@@ -3709,7 +3731,11 @@ Figure 1: A fancy pie chart.
       <guid>/tutorial/javascript_side/</guid>
       <description>
 
-&lt;h2 id=&#34;if-1-1-aresamelength&#34;&gt;if 1-1  areSameLength&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-aresamelength&#34;&gt;Conditional : areSameLength&lt;/h2&gt;
+
+&lt;hr /&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;2개의 문자열이 주어졌을 때, areSameLength는 문자열들의 길이가 같으면 true를, 아니면 false를 반환해야 합니다.&lt;/p&gt;
@@ -3728,7 +3754,11 @@ areSameLength(&amp;quot;they&amp;quot;,&amp;quot;hello&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;if-1-2-ispasswordlongenough&#34;&gt;if 1-2 isPasswordLongEnough&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-ispasswordlongenough&#34;&gt;Conditional : isPasswordLongEnough&lt;/h2&gt;
+
+&lt;hr /&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;isPasswordLongEnough 함수는 문자열과 정수를 parameter로 입력받는 함수로, 여기서는 암호의 최소 요구 길이를 판단합니다. 문자열의 길이가 충분한지 여부를 반환해야 합니다.&lt;/p&gt;
@@ -3750,7 +3780,11 @@ isPasswordLongEnough(&#39;hello&#39;,5);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;if-1-3-bouncer&#34;&gt;if 1-3  bouncer&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-bouncer&#34;&gt;Conditional :  bouncer&lt;/h2&gt;
+
+&lt;hr /&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;문자열의 형태로 이름, 정수 형태로 나이를 입력받는 bouncer 함수는, 주어진 나이에 따라 환영 메시지 혹은 거절 메시지를 리턴합니다.&lt;/p&gt;
@@ -3777,7 +3811,11 @@ return &#39;Go home, &#39; +name+ &#39;.&#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;if-1-4-getlargerstring&#34;&gt;if 1-4 getLargerString&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-getlargerstring&#34;&gt;Conditional :  getLargerString&lt;/h2&gt;
+
+&lt;hr /&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;두 문자열이 주어졌을 때, getLargerString 함수는 더 긴 문자열을 반환해야 합니다.&lt;/p&gt;
@@ -3800,7 +3838,11 @@ function getLargerString(string1, string2) {
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;if-1-5-iseven&#34;&gt;if 1-5 isEven&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-1-5-iseven&#34;&gt;Conditional :  1-5 isEven&lt;/h2&gt;
+
+&lt;hr /&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;isEven 함수는 정수 하나를 입력받아 그 정수가 짝수인지 아닌지를 반환해야 합니다.&lt;/p&gt;
@@ -3821,7 +3863,11 @@ isEven(22)
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;if-1-6-ispositive&#34;&gt;if 1-6 isPositive&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-ispositive&#34;&gt;Conditional :  isPositive&lt;/h2&gt;
+
+&lt;hr /&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;정수 하나가 주어졌을 때, &lt;code&gt;isPositive&lt;/code&gt; 함수는 그 정수가 양수인지 아닌지를 반환해야 합니다.&lt;/p&gt;
@@ -3842,7 +3888,11 @@ isPositive(42);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;if-1-7-bounceblacklist&#34;&gt;if 1-7 bounceBlacklist&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-bounceblacklist&#34;&gt;Conditional :  bounceBlacklist&lt;/h2&gt;
+
+&lt;hr /&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;이전에 작성했던 &lt;code&gt;bounce&lt;/code&gt; 함수에서 새로운 요구사항이 추가되었습니다. 특정 사람을 거절하는 기능입니다. &amp;ldquo;Joe&amp;rdquo;라는 사람은 우리의 블랙 리스트로, 이 사람은 나이에 관계없이 거절하기로 결정하였습니다. 기존의 &lt;code&gt;bounce&lt;/code&gt;함수를 수정하여, &amp;ldquo;Joe&amp;rdquo;라는 사람은 무조건 거절 메시지를 보낼 수 있도록 작성하십시오.&lt;/p&gt;
@@ -3861,6 +3911,112 @@ if ( age &amp;gt; 20 ) {
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-scoretograde&#34;&gt;Conditional :  scoreToGrade&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;숫자 하나를 매개변수로 받아서, 그 점수에 상응하는 성적 등급을 나타내는 문자열을 반환하는 함수 &lt;code&gt;scoreToGrade&lt;/code&gt;를 작성하세요.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function scoreToGrade(score) {
+  if (score &amp;lt; 60){
+    return &#39;F&#39;;
+  } else if (score &amp;lt; 70) {
+    return &#39;D&#39;;
+  } else if (score &amp;lt; 80) {
+    return &#39;C&#39;;
+  } else if (score &amp;lt; 90) {
+    return &#39;B&#39;;
+  } else if (score &amp;lt; 100) {
+    return &#39;A&#39;;
+  }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-convertscoretogradewithplusandminus&#34;&gt;Conditional :  convertScoreToGradeWithPlusAndMinus&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;// Write a function called &amp;quot;convertScoreToGradeWithPlusAndMinus&amp;quot;.
+
+// Given a score, &amp;quot;convertScoreToGradeWithPlusAndMinus&amp;quot; returns a string representing the letter grade corresponding to the given score.
+
+// Notes:
+// * (100 - 90) --&amp;gt; &#39;A&#39;
+// * (89  - 80) --&amp;gt; &#39;B&#39;
+// * (79  - 70) --&amp;gt; &#39;C&#39;
+// * (69  - 60) --&amp;gt; &#39;D&#39;
+// * (59  -  0) --&amp;gt; &#39;F&#39;
+// * If the given score is greater than 100 or less than 0, it should return &#39;INVALID SCORE&#39;.
+// * If the score is between the 0 and 2 (inclusive) of a given range, return the letter with a &#39;-&#39;
+// * If the score is between the 8 and 9 (inclusive) of a given range, return the letter with a &#39;+&#39;
+// * There are is no F+ and there is no F-.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;function convertScoreToGradeWithPlusAndMinus(score) {
+  var output = &#39;&#39;;
+  var lastNum = score.toString().slice(-1);
+  if ((score &amp;gt; 100) &amp;amp;&amp;amp; (score &amp;lt; 50)) {
+    return &#39;INVALID SCORE&#39;;
+  } else if(score === 100) {
+    return &#39;A+&#39;;
+  } else if(score &amp;gt;= 90 &amp;amp;&amp;amp; score &amp;lt;= 99) {
+      output = output + &#39;A&#39;;
+  } else if(score &amp;gt;= 80 &amp;amp;&amp;amp; score &amp;lt;= 89) {
+      output = output + &#39;B&#39;;
+  } else if(score &amp;gt;= 70 &amp;amp;&amp;amp; score &amp;lt;= 79) {
+      output = output + &#39;C&#39;;
+  } else if(score &amp;gt;= 60 &amp;amp;&amp;amp; score &amp;lt;= 69) {
+      output = output + &#39;D&#39;;
+  } else if(score &amp;lt; 60) {
+      output = output + &#39;F&#39;;
+  }
+    if(parseInt(lastNum) &amp;lt;= 2 &amp;amp;&amp;amp; parseInt(lastNum) &amp;gt;= 0) { 
+    output = output + &#39;-&#39;;
+  } else if(parseInt(lastNum) &amp;gt;= 8 &amp;amp;&amp;amp; parseInt(lastNum) &amp;lt;= 9) {
+    output = output + &#39;+&#39;;
+  }
+  return output;
+}
+
+convertScoreToGradeWithPlusAndMinus(72)
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-scoretograde-1&#34;&gt;Conditional :  scoreToGrade&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;scoreToGrade` 함수를 수정하여 등급 글자 뒤에 +나 -를 붙이는 작업을 할 때, 반복되는 코드가 상당히 많았었다는 것을 눈치채셨나요? 반복되는 것이 많다는 것은, 훨씬 더 나은 방법이 있다는 분명한 신호입니다.
+
+`letter`와 `score`라는 두 전달인자를 받아서 다음과 같이 작동하는 도우미 함수 `letterGrade`를 작성하세요.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;function letterGrade(letter, score) {
+  var lastNum = score.toString().slice(-1);
+  if (score === 100) {
+    return &#39;A+&#39;;
+  } else if (parseInt(lastNum) &amp;lt;= 2 &amp;amp;&amp;amp; parseInt(lastNum) &amp;gt;= 0 ){
+    return letter + &#39;-&#39;;
+  } else if (parseInt(lastNum) &amp;gt;= 8 &amp;amp;&amp;amp; parseInt(lastNum)&amp;lt;= 9) {
+    return letter + &#39;+&#39;;
+  }else if (parseInt(lastNum) &amp;gt; 2  &amp;amp;&amp;amp; parseInt(lastNum)&amp;lt; 8 ) {
+    return letter;
+  }
+}
+
+letterGrade(&amp;quot;A&amp;quot;,50);
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
