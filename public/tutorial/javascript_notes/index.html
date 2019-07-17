@@ -27,7 +27,8 @@
   
     
   
-  <meta name="description" content=" parseInt() 숫자로 바꾸는것 toString() 문자로 바꾸는것 String.repeat() 반복하는것 ">
+  <meta name="description" content="parseInt() 숫자로 바꾸는것 toString() 문자로 바꾸는것 String.repeat() 반복하는것 sort() : 배열 정렬할때  var numbers = [20, 10, 9,8,7,6,5,4,3,2,1]; var x = function(a,b){ return a-b; } console.log(numbers.sort(x)); [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20] 순서반대 로 할려면 return a&#43;b; [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]   추가 설명 from 생활코딩 사전 sort()
+function sortNumber(a,b){ // 비교 대상인 a와 b가 인자로 전달된다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_notes/">
@@ -115,8 +116,9 @@
   
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_notes/">
-  <meta property="og:title" content="Notes | Home">
-  <meta property="og:description" content=" parseInt() 숫자로 바꾸는것 toString() 문자로 바꾸는것 String.repeat() 반복하는것 "><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:title" content="JS Notes | Home">
+  <meta property="og:description" content="parseInt() 숫자로 바꾸는것 toString() 문자로 바꾸는것 String.repeat() 반복하는것 sort() : 배열 정렬할때  var numbers = [20, 10, 9,8,7,6,5,4,3,2,1]; var x = function(a,b){ return a-b; } console.log(numbers.sort(x)); [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20] 순서반대 로 할려면 return a&#43;b; [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]   추가 설명 from 생활코딩 사전 sort()
+function sortNumber(a,b){ // 비교 대상인 a와 b가 인자로 전달된다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -128,7 +130,7 @@
 
   
 
-  <title>Notes | Home</title>
+  <title>JS Notes | Home</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -273,11 +275,11 @@
     <ul class="nav docs-sidenav">
       
       <li >
-        <a href="/tutorial/javascript_side/">algorithm</a>
+        <a href="/tutorial/javascript_side/">JS algorithm</a>
       </li>
       
       <li class="active">
-        <a href="/tutorial/javascript_notes/">Notes</a>
+        <a href="/tutorial/javascript_notes/">JS Notes</a>
       </li>
       
     </ul>
@@ -323,6 +325,9 @@
 <li><a href="#parseint-숫자로-바꾸는것">parseInt() 숫자로 바꾸는것</a></li>
 <li><a href="#tostring-문자로-바꾸는것">toString() 문자로 바꾸는것</a></li>
 <li><a href="#string-repeat-반복하는것">String.repeat() 반복하는것</a></li>
+<li><a href="#sort-배열-정렬할때">sort() : 배열 정렬할때</a></li>
+<li><a href="#function">function</a></li>
+<li><a href="#콜백">콜백</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -340,16 +345,144 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">Notes</h1>
+          <h1 itemprop="name">JS Notes</h1>
 
           <div class="article-style" itemprop="articleBody">
             
 
+<hr />
+
 <h2 id="parseint-숫자로-바꾸는것">parseInt() 숫자로 바꾸는것</h2>
+
+<hr />
+
+<hr />
 
 <h2 id="tostring-문자로-바꾸는것">toString() 문자로 바꾸는것</h2>
 
+<hr />
+
+<hr />
+
 <h2 id="string-repeat-반복하는것">String.repeat() 반복하는것</h2>
+
+<hr />
+
+<hr />
+
+<h2 id="sort-배열-정렬할때">sort() : 배열 정렬할때</h2>
+
+<hr />
+
+<pre><code>
+var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+var x = function(a,b){
+	return a-b;
+}
+
+console.log(numbers.sort(x));
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20]
+
+
+순서반대 로 할려면
+return a+b;
+
+[20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+</code></pre>
+
+<ul>
+<li><p>추가 설명 from 생활코딩 사전 sort()</p>
+
+<pre><code>function sortNumber(a,b){
+    // 비교 대상인 a와 b가 인자로 전달된다.
+    //alert('a :'+a+', b:'+b);
+    // a에서 b를 뺀 결과가 음수면 a가 b보다 작고, 0이면 같다.
+    // sort메소드는 return 값이 음수,양수,0인지에 따라서 순서를 정한다.
+    return a-b;
+}
+var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
+
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2 id="function">function</h2>
+
+<hr />
+
+<pre><code>함수를 변수, 매개변수 ,리턴값 으로 사욜할수 있다 이것을
+
+first-class value 
+first-class citizen
+first-class object
+
+라고 부른다. 
+
+</code></pre>
+
+<ul>
+<li><p>값으로써 쓰이는 함수 예제</p>
+
+<pre><code>function cal(mode){
+var funcs = {
+    'plus' : function(left, right){return left + right},
+    'minus' : function(left, right){return left - right}
+}
+return funcs[mode];
+}
+alert(cal('plus')(2,1));
+alert(cal('minus')(2,1));  
+</code></pre></li>
+
+<li><p>배열로서의 함수</p>
+
+<pre><code>
+var process = [
+function(input){ return input + 10;},
+function(input){ return input * input;},
+function(input){ return input / 2;}
+];
+var input = 1;
+for(var i = 0; i &lt; process.length; i++){
+input = process[i](input);
+}
+alert(input);
+
+</code></pre></li>
+</ul>
+
+<p><img src="/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.10.02 PM.png" alt="" /></p>
+
+<hr />
+
+<h2 id="콜백">콜백</h2>
+
+<hr />
+
+<ul>
+<li>장점</li>
+</ul>
+
+<blockquote>
+<p>원래의 내장메소드에 있는 기능을 콜백 으로 바꿔서 사용할수 있다.</p>
+
+<p>값으로 사용될 수 있는 특성을 이용하면 함수의 인자로 함수로 전달할 수 있다. 값으로 전달된 함수는 호출될 수 있기 때문에 이를 이용하면 함수의 동작을 완전히 바꿀 수 있다. 인자로 전달된 함수 sortNumber의 구현에 따라서 sort의 동작방법이 완전히 바뀌게 된다.</p>
+
+<p>ajax를 사용할때 제이 쿼리를 이용해서 콜백이 사용된다.</p>
+</blockquote>
+
+<pre><code>function sortNumber(a,b){
+    // 위의 예제와 비교해서 a와 b의 순서를 바꾸면 정렬순서가 반대가 된다.
+    return b-a;
+}
+var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
+</code></pre>
+
+<p><img src="/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.46.43 PM.png" alt="" /></p>
 
           </div>
 

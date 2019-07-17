@@ -91,16 +91,17 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
     </item>
     
     <item>
-      <title>Notes</title>
+      <title>JS Notes</title>
       <link>/tutorial/javascript_notes/</link>
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_notes/</guid>
-      <description> parseInt() 숫자로 바꾸는것 toString() 문자로 바꾸는것 String.repeat() 반복하는것 </description>
+      <description>parseInt() 숫자로 바꾸는것 toString() 문자로 바꾸는것 String.repeat() 반복하는것 sort() : 배열 정렬할때  var numbers = [20, 10, 9,8,7,6,5,4,3,2,1]; var x = function(a,b){ return a-b; } console.log(numbers.sort(x)); [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20] 순서반대 로 할려면 return a+b; [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]   추가 설명 from 생활코딩 사전 sort()
+function sortNumber(a,b){ // 비교 대상인 a와 b가 인자로 전달된다.</description>
     </item>
     
     <item>
-      <title>algorithm</title>
+      <title>JS algorithm</title>
       <link>/tutorial/javascript_side/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

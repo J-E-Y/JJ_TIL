@@ -1,5 +1,5 @@
 ---
-title: algorithm
+title: JS algorithm
 date: 2019-45
 draft: true
 menu:
@@ -290,5 +290,51 @@ function letterGrade(letter, score) {
 }
 
 letterGrade("A",50);
+
+```
+
+
+---
+## Loop:  countChars
+---
+
+
+* 문자열 하나와 글자 하나를 매개변수로 받는 함수 `countChars`를 작성하세요. 이 함수는 주어진 문자열에서 주어진 글자가 몇 개나 들어가 있는지를 세어서 숫자로 반환해야 합니다. 문자열의 첫번째 글자를 알아내려면, 다음과 같은 문법을 사용하면 됩니다.
+
+```
+
+function countChars(string, character) {
+  var result = string;
+  var count = 0;
+  var i = 0;
+  while ( i < string.length) {
+    if (result[i] === character) {
+      count = count + 1 ;
+    } 
+    result.slice(0,1);
+    i++
+  }
+  return count;
+}
+
+countChars("hello","h");
+
+```
+---
+## Loop:  repeatString
+---
+
+
+
+* 문자열을 n번 반복해보도록 합시다. 반복할 문자열 `string`과 그 문자열을 몇 번 반복하는지를 나타내는 숫자 `n`을 매개변수로 받는 함수 `repeatString`을 작성하세요.
+
+
+
+```
+function repeatString(string, num) {
+  return string.repeat(num);
+}
+
+repeatString("code",3);
 
 ```

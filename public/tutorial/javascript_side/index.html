@@ -117,7 +117,7 @@ function isPasswordLongEnough(password, minimumLength) { // your code here if (p
   
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_side/">
-  <meta property="og:title" content="algorithm | Home">
+  <meta property="og:title" content="JS algorithm | Home">
   <meta property="og:description" content="Conditional : areSameLength  2개의 문자열이 주어졌을 때, areSameLength는 문자열들의 길이가 같으면 true를, 아니면 false를 반환해야 합니다.
 function areSameLength(string1, string2) { if (string1.length === string2.length) { return true; } else { return false; } } areSameLength(&quot;they&quot;,&quot;hello&quot;);   Conditional : isPasswordLongEnough  isPasswordLongEnough 함수는 문자열과 정수를 parameter로 입력받는 함수로, 여기서는 암호의 최소 요구 길이를 판단합니다. 문자열의 길이가 충분한지 여부를 반환해야 합니다.
 function isPasswordLongEnough(password, minimumLength) { // your code here if (password."><meta property="og:image" content="/img/icon-192.png">
@@ -131,7 +131,7 @@ function isPasswordLongEnough(password, minimumLength) { // your code here if (p
 
   
 
-  <title>algorithm | Home</title>
+  <title>JS algorithm | Home</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -276,11 +276,11 @@ function isPasswordLongEnough(password, minimumLength) { // your code here if (p
     <ul class="nav docs-sidenav">
       
       <li class="active">
-        <a href="/tutorial/javascript_side/">algorithm</a>
+        <a href="/tutorial/javascript_side/">JS algorithm</a>
       </li>
       
       <li >
-        <a href="/tutorial/javascript_notes/">Notes</a>
+        <a href="/tutorial/javascript_notes/">JS Notes</a>
       </li>
       
     </ul>
@@ -333,6 +333,8 @@ function isPasswordLongEnough(password, minimumLength) { // your code here if (p
 <li><a href="#conditional-scoretograde">Conditional :  scoreToGrade</a></li>
 <li><a href="#conditional-convertscoretogradewithplusandminus">Conditional :  convertScoreToGradeWithPlusAndMinus</a></li>
 <li><a href="#conditional-scoretograde-1">Conditional :  scoreToGrade</a></li>
+<li><a href="#loop-countchars">Loop:  countChars</a></li>
+<li><a href="#loop-repeatstring">Loop:  repeatString</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -350,7 +352,7 @@ function isPasswordLongEnough(password, minimumLength) { // your code here if (p
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">algorithm</h1>
+          <h1 itemprop="name">JS algorithm</h1>
 
           <div class="article-style" itemprop="articleBody">
             
@@ -641,6 +643,53 @@ convertScoreToGradeWithPlusAndMinus(72)
 letterGrade(&quot;A&quot;,50);
 
 </code></pre>
+
+<hr />
+
+<h2 id="loop-countchars">Loop:  countChars</h2>
+
+<hr />
+
+<ul>
+<li><p>문자열 하나와 글자 하나를 매개변수로 받는 함수 <code>countChars</code>를 작성하세요. 이 함수는 주어진 문자열에서 주어진 글자가 몇 개나 들어가 있는지를 세어서 숫자로 반환해야 합니다. 문자열의 첫번째 글자를 알아내려면, 다음과 같은 문법을 사용하면 됩니다.</p>
+
+<pre><code>
+function countChars(string, character) {
+var result = string;
+var count = 0;
+var i = 0;
+while ( i &lt; string.length) {
+if (result[i] === character) {
+  count = count + 1 ;
+} 
+result.slice(0,1);
+i++
+}
+return count;
+}
+
+countChars(&quot;hello&quot;,&quot;h&quot;);
+
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2 id="loop-repeatstring">Loop:  repeatString</h2>
+
+<hr />
+
+<ul>
+<li><p>문자열을 n번 반복해보도록 합시다. 반복할 문자열 <code>string</code>과 그 문자열을 몇 번 반복하는지를 나타내는 숫자 <code>n</code>을 매개변수로 받는 함수 <code>repeatString</code>을 작성하세요.</p>
+
+<pre><code>function repeatString(string, num) {
+return string.repeat(num);
+}
+
+repeatString(&quot;code&quot;,3);
+
+</code></pre></li>
+</ul>
 
           </div>
 

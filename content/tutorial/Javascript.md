@@ -32,7 +32,6 @@ type: docs
 and Object :
 
 
-
 #####  1. Number type (숫자)
 
 
@@ -613,6 +612,72 @@ if (x == y) {
 
 ```
 
+
+
+
+* switch-case
+
+> if 와 else if를 반복적으로 써야 하는 상황을 피하게 해 줍니다.
+
+
+```
+var value;
+switch(value) {
+    case 값1:
+    //value == 값1일 경우 실행할 코드
+    break;
+    case 값2:
+    //value == 값2일 경우 실행할 코드
+    break;
+    //...
+    default:
+    //위쪽에 해당되지 않는 경우 실행할 코드
+}
+
+```
+
+>점수가 10점이면 A, 9점이면 B, 그 외에는 C를 출력하는 코드를 작성하세요.
+
+```
+if로 구현
+var score = prompt('점수를 입력하세요');
+if (score === 10) {
+    console.log('A');
+} else if (score == 9) {
+    console.log('B');
+} else {
+    console.log('C');
+}
+
+```
+
+
+```
+
+switch-case 로 구현
+var score = prompt('점수를 입력하세요');
+switch (score) {
+    case 10:
+    console.log('A);
+    break;
+    case 9:
+    console.log('B');
+    break;
+    default:
+    console.log('C');
+}
+
+```
+
+
+
+
+
+
+
+
+
+
 ---
 ## **5.Loops**
 ---
@@ -785,7 +850,11 @@ console.log(scores.length);
 ```
 scores[0];
 scores[3];
-배열에 값 쓰기
+```
+
+##### 배열에 값 쓰기
+
+```
 scores[0] = 100;
 scores[9] = 50;
 
@@ -829,16 +898,7 @@ scores[scores.length - 1];
 ##### 배열의 메소드들 1
 
 
-* push , pop 
-
-```
-
-push(), pop()
-	•	push(value) : 배열의 뒤 쪽에 새로운 원소를 삽입합니다.
-	•	pop(): 배열의 마지막 원소를 빼서 변수에 넣어 줍니다. 이 때 변수의 길이는 1 감소합니다.
-
-```
-* ex_push
+* push() 뒤어 붙이기 
 
 ```
 var arr = [1,2,3,4,];
@@ -847,7 +907,7 @@ arr.push(1);
 arr; // = > [1,2,3,4,1]
 ```
 
-* ex_pop()
+* pop() 뒤에 있는거 빼기 
 
 ```
 var arr = [1,2,3,4,];
@@ -857,17 +917,7 @@ arr; // = > [1,2,3]
 ```
 
 
-* unshift shift , 
-
-```
-  unshift(), shift(), 
-	•	push, pop과 반대로 동작합니다.
-	•	unshift(value): 배열의 맨 앞에 새로운 값을 추가합니다.
-	•	shift(): 배열의 앞에서 값을 빼서 변수에 넣어 줍니다.
-```
-
-	
-* unshift	
+* unshift()	 앞에 붙이기
 
 ```
 var arr = [1,2,3,4];
@@ -879,7 +929,7 @@ arr; // = > [1,1,2,3,4,];
 ```
 
 
-* shift 
+* shift()  앞에 있는거 빼기
 
 ```
 var arr = [1,2,3,4];
@@ -890,6 +940,124 @@ arr; // = > [2,3,4,]
 
 ```
 
+* concat() 더하기 
+
+```
+var arr = [1,2,3,4,5];
+
+arr.concat(6); 
+
+>>arr 
+[1,2,3,4,5,6]  
+기존에 있는 것은 변하지 않는다.
+변하게 하기위해서는 변수를 새로 만들기 !
+
+
+var arr = [1,2,3,4,5];
+
+arr.concat([6,7,8,9,10]);
+
+>>arr
+[1,2,3,4,5,6,7,8,9,10] 
+여러게를 더할수 있다.
+
+```
+
+
+* join() 문자열로 바꾸기 
+
+
+
+```
+var arr = [1,2,3,4,5,6]
+
+arr.join() ;
+
+>>arr
+["1","2","3","4","5","6"]
+문자열로 바꿔준다. 
+
+arr.join("");
+
+>>arr
+["123456"];
+문자열 다 붙인다.
+
+```
+* indaxtOf() ()<<원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다. 
+* lastIndaxtOf() ()<<원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다. 
+
+```
+
+
+var arr = [1,2,3,4,5];
+arr.indexOf[1];
+
+>>arr
+2
+
+arr.indexOf[100];
+>>arr
+-1
+없는 경우 -1를 호출한다. 
+
+EX) 
+var arr = [1,2,3,4,5,6]
+if (arr.indexOf(100) === -1 ) {
+만약 100이라는 원소가 arr 에 없으면 
+}
+
+```
+* slice()
+```
+var arr = [1, 2, 3, 4, 5];
+a.slice(0, 3);
+>>a;
+123
+원소는 변하지 않는다
+
+```
+
+* splice()
+
+
+```
+var arr = [1, 2, 3, 4, 5];
+a.splice(0, 3);
+>>a;
+123
+원소 값이 변한다. 
+```
+
+
+* split()
+
+>문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.
+
+
+```
+var s = "hello, world this is jj";
+s.split("");
+
+
+"h", "e", "l", "l", "o", ",", " ", "w", "o", "r", "l", "d", " ", "t", "h", "i", "s", " ", "i", "s", " ", "j", "j"
+```
+
+```
+
+var s = "hello, world this is jj";
+s.split(",");
+"hello", " world this is jj"
+콤마가 생겼다. 콤마의 기준으로 갈라진다.
+```
+
+```
+var s = "hello world t-h-i-s-i-s-j-j"
+s.split("-");
+
+"hello  world t", "h", "i", "s", "i", "s", "j", "j"
+- 기준으로 갈라진다. 
+```
 
 ---
 ## **7.Function**
