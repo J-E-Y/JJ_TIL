@@ -1533,6 +1533,41 @@ git push -f origin master ( 강제로)
 git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-branch&#34;&gt;Git : &lt;strong&gt;branch&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;
+`기능 변경을 하고 싶을 때 생성 및 사용`
+
+
+기능 변경하기
+이미 돌아가고 있는 프로그램에서 기능을 바꾸고 싶은 일이 생길 수 있습니다. 그럴 때 어떻게 해야 하나요? 보통 초보 개발자들은 주석을 활용합니다. 돌아가고 있는 부분을 삭제하면 아까우니까 주석 처리하고 개발합니다. 시간이 지나면 코드가 엉망진창으로 짜장짬뽕 믹싱이 되는데 이런 코드를 스파게티 코드라고 하죠. 이런 상황을 막기 위해서 브랜치를 사용할 수 있습니다.
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-merge&#34;&gt;Git : &lt;strong&gt;merge&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;한 브랜치의 내용을 다른 브랜치에 반영 (통합)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-checkout&#34;&gt;Git : &lt;strong&gt;checkout&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;저장소에서 특정 커밋이나 브랜치로 돌아가고 싶을 때 사용
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -3924,11 +3959,11 @@ alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;function&#34;&gt;function&lt;/h2&gt;
+&lt;h2 id=&#34;first-class-object&#34;&gt;first-class object()&lt;/h2&gt;
 
 &lt;hr /&gt;
 
-&lt;pre&gt;&lt;code&gt;함수를 변수, 매개변수 ,리턴값 으로 사욜할수 있다 이것을
+&lt;pre&gt;&lt;code&gt;함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을
 
 first-class value 
 first-class citizen
@@ -3998,6 +4033,60 @@ alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.46.43 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;dom-dom을-이용해서-html문서를-제어할수-있다&#34;&gt;Dom : Dom을 이용해서 HTML문서를 제어할수 있다&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&#34;dom-객체의-값-바꾸기&#34;&gt;DOM 객체의 값 바꾸기&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex1-1 document.getElementsByTagName()&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+document.getElementsByTagName() 
+&amp;gt;&amp;gt;html에 있는 tag name 을 가져오는 명령이다.
+
+var list = document.getElementsByTagName(&#39;h2&#39;) 
+&amp;gt;&amp;gt;모든 h2를 list 라는 변수에 담아오겠다. 
+
+태그 이름을 바꾸기 위해서는 
+
+a
+&amp;gt;&amp;gt; [h2,h2]
+
+a[0]
+&amp;gt;&amp;gt; &amp;lt;h2&amp;gt;hello 1&amp;lt;/h2&amp;gt;
+
+a[1]
+&amp;gt;&amp;gt; &amp;lt;h2&amp;gt;hello 2&amp;lt;/h2&amp;gt;
+이렇게 배열안에 들어가 있다. 
+
+a[1].innerHTML = &amp;quot;good morning&amp;quot;
+heelo 2 &amp;gt;&amp;gt; good morning 으로 바뀐다. 
+
+이것이 dom 의 역활 이다. 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ex1-2 document.getElementsById()&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var a = document.getElementsById(&amp;quot;main&amp;quot;)
+&amp;gt;&amp;gt; main 아이디 값의 tag를 가져와서  a 변수에 담는다
+
+a
+&amp;gt;&amp;gt; &amp;lt;p id = main&amp;gt;hello jj &amp;lt;/p&amp;gt;
+
+a.innerHTML = &amp;quot;hello John jung&amp;quot;
+
+a
+
+&amp;gt;&amp;gt;&amp;lt;p id = main&amp;gt;hello john jung&amp;lt;/p&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

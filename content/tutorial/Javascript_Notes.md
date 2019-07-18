@@ -62,10 +62,10 @@ alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
 
 
 ---
-## function 
+## first-class object()
 ---
 ```
-함수를 변수, 매개변수 ,리턴값 으로 사욜할수 있다 이것을
+함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을
 
 first-class value 
 first-class citizen
@@ -134,4 +134,59 @@ alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
 ```
 
 ![](/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.46.43 PM.png)
+
+
+
+---
+## Dom : Dom을 이용해서 HTML문서를 제어할수 있다
+---
+
+##### DOM 객체의 값 바꾸기
+
+* ex1-1 document.getElementsByTagName()
+
+```
+
+document.getElementsByTagName() 
+>>html에 있는 tag name 을 가져오는 명령이다.
+
+var list = document.getElementsByTagName('h2') 
+>>모든 h2를 list 라는 변수에 담아오겠다. 
+
+태그 이름을 바꾸기 위해서는 
+
+a
+>> [h2,h2]
+
+a[0]
+>> <h2>hello 1</h2>
+
+a[1]
+>> <h2>hello 2</h2>
+이렇게 배열안에 들어가 있다. 
+
+a[1].innerHTML = "good morning"
+heelo 2 >> good morning 으로 바뀐다. 
+
+이것이 dom 의 역활 이다. 
+
+```
+
+* ex1-2 document.getElementsById()
+
+
+```
+var a = document.getElementsById("main")
+>> main 아이디 값의 tag를 가져와서  a 변수에 담는다
+
+a
+>> <p id = main>hello jj </p>
+
+a.innerHTML = "hello John jung"
+
+a
+
+>><p id = main>hello john jung</p>
+
+```
 
