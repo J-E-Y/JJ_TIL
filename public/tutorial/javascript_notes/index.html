@@ -338,6 +338,7 @@ function sortNumber(a,b){ // 비교 대상인 a와 b가 인자로 전달된다."
 </ul></li>
 </ul></li>
 </ul></li>
+<li><a href="#버튼-만들기">버튼 만들기</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -547,6 +548,47 @@ a
 
 </code></pre></li>
 </ul>
+
+<hr />
+
+<h2 id="버튼-만들기">버튼 만들기</h2>
+
+<hr />
+
+<pre><code>&lt;body&gt;
+    &lt;h1&gt;함수를 이용해 버튼 만들기&lt;/h1&gt;
+    
+    
+    // 1.value 를 지정하기 in HTML
+    
+    
+    &lt;input id = &quot;input1&quot; type =&quot;text&quot;&gt;
+    &lt;button id =&quot;button1&quot;&gt;cilck&lt;/button&gt;
+    
+    
+    &lt;script&gt;
+    
+    // 2. 함수&amp;변수를 만들어서 준비한다 
+    
+        var ret = function(){
+            document.getElementById(&quot;input1&quot;);
+            console.log(input1.value);
+        }
+    
+        var button = document.getElementById(&quot;button1&quot;);
+        
+        
+    // 3 .입력받을 ID 값을 받는 함수를 연결해준다.
+       
+        button1.onclick = ret; 
+
+    /script&gt;
+    
+
+
+&lt;/body&gt;
+
+</code></pre>
 
           </div>
 

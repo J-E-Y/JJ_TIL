@@ -4087,6 +4087,47 @@ a
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;버튼-만들기&#34;&gt;버튼 만들기&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;함수를 이용해 버튼 만들기&amp;lt;/h1&amp;gt;
+    
+    
+    // 1.value 를 지정하기 in HTML
+    
+    
+    &amp;lt;input id = &amp;quot;input1&amp;quot; type =&amp;quot;text&amp;quot;&amp;gt;
+    &amp;lt;button id =&amp;quot;button1&amp;quot;&amp;gt;cilck&amp;lt;/button&amp;gt;
+    
+    
+    &amp;lt;script&amp;gt;
+    
+    // 2. 함수&amp;amp;변수를 만들어서 준비한다 
+    
+        var ret = function(){
+            document.getElementById(&amp;quot;input1&amp;quot;);
+            console.log(input1.value);
+        }
+    
+        var button = document.getElementById(&amp;quot;button1&amp;quot;);
+        
+        
+    // 3 .입력받을 ID 값을 받는 함수를 연결해준다.
+       
+        button1.onclick = ret; 
+
+    /script&amp;gt;
+    
+
+
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -4354,6 +4395,32 @@ if ( age &amp;gt; 20 ) {
 
 convertScoreToGradeWithPlusAndMinus(72)
 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-bouncerblacklist&#34;&gt;Conditional :  bouncerBlackList&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;bouncerBlackList&lt;/code&gt; 함수를 작성합니다.
+이전에 작성했던 &lt;code&gt;bounce&lt;/code&gt; 함수에서 새로운 요구사항이 추가되었습니다. 특정 사람을 거절하는 기능입니다. &amp;ldquo;Joe&amp;rdquo;라는 사람은 우리의 블랙 리스트로, 이 사람은 나이에 관계없이 거절하기로 결정하였습니다. 기존의 &lt;code&gt;bounce&lt;/code&gt;함수를 수정하여, &amp;ldquo;Joe&amp;rdquo;라는 사람은 무조건 거절 메시지를 보낼 수 있도록 작성하십시오.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;function bouncerBlackList(name, age) {
+	// your code here
+  // start solution
+  if (name === &#39;Joe&#39;){
+    return &#39;Go home Joe!&#39;
+  }
+  // end solution
+  if ( age &amp;gt; 20 ) {
+  	return &#39;Welcome, &#39; + name + &#39;!&#39;;
+  } else {
+  	return &#39;Go home, &#39; + name + &#39;.&#39;;
+  }
 
 &lt;/code&gt;&lt;/pre&gt;
 

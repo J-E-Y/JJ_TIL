@@ -264,6 +264,36 @@ convertScoreToGradeWithPlusAndMinus(72)
 ```
 
 
+---
+## Conditional :  bouncerBlackList
+---
+
+
+
+>`bouncerBlackList` 함수를 작성합니다.
+이전에 작성했던 `bounce` 함수에서 새로운 요구사항이 추가되었습니다. 특정 사람을 거절하는 기능입니다. "Joe"라는 사람은 우리의 블랙 리스트로, 이 사람은 나이에 관계없이 거절하기로 결정하였습니다. 기존의 `bounce`함수를 수정하여, "Joe"라는 사람은 무조건 거절 메시지를 보낼 수 있도록 작성하십시오.
+
+
+
+```
+function bouncerBlackList(name, age) {
+	// your code here
+  // start solution
+  if (name === 'Joe'){
+    return 'Go home Joe!'
+  }
+  // end solution
+  if ( age > 20 ) {
+  	return 'Welcome, ' + name + '!';
+  } else {
+  	return 'Go home, ' + name + '.';
+  }
+
+```
+
+
+
+
 
 ---
 ## Conditional :  scoreToGrade

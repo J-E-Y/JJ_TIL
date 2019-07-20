@@ -332,6 +332,7 @@ function isPasswordLongEnough(password, minimumLength) { // your code here if (p
 <li><a href="#conditional-bounceblacklist">Conditional :  bounceBlacklist</a></li>
 <li><a href="#conditional-scoretograde">Conditional :  scoreToGrade</a></li>
 <li><a href="#conditional-convertscoretogradewithplusandminus">Conditional :  convertScoreToGradeWithPlusAndMinus</a></li>
+<li><a href="#conditional-bouncerblacklist">Conditional :  bouncerBlackList</a></li>
 <li><a href="#conditional-scoretograde-1">Conditional :  scoreToGrade</a></li>
 <li><a href="#loop-countchars">Loop:  countChars</a></li>
 <li><a href="#loop-repeatstring">Loop:  repeatString</a></li>
@@ -613,6 +614,32 @@ if ( age &gt; 20 ) {
 
 convertScoreToGradeWithPlusAndMinus(72)
 
+
+</code></pre>
+
+<hr />
+
+<h2 id="conditional-bouncerblacklist">Conditional :  bouncerBlackList</h2>
+
+<hr />
+
+<blockquote>
+<p><code>bouncerBlackList</code> 함수를 작성합니다.
+이전에 작성했던 <code>bounce</code> 함수에서 새로운 요구사항이 추가되었습니다. 특정 사람을 거절하는 기능입니다. &ldquo;Joe&rdquo;라는 사람은 우리의 블랙 리스트로, 이 사람은 나이에 관계없이 거절하기로 결정하였습니다. 기존의 <code>bounce</code>함수를 수정하여, &ldquo;Joe&rdquo;라는 사람은 무조건 거절 메시지를 보낼 수 있도록 작성하십시오.</p>
+</blockquote>
+
+<pre><code>function bouncerBlackList(name, age) {
+	// your code here
+  // start solution
+  if (name === 'Joe'){
+    return 'Go home Joe!'
+  }
+  // end solution
+  if ( age &gt; 20 ) {
+  	return 'Welcome, ' + name + '!';
+  } else {
+  	return 'Go home, ' + name + '.';
+  }
 
 </code></pre>
 

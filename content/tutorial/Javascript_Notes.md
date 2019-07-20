@@ -190,3 +190,44 @@ a
 
 ```
 
+
+---
+## 버튼 만들기
+---
+
+
+```
+<body>
+    <h1>함수를 이용해 버튼 만들기</h1>
+    
+    
+    // 1.value 를 지정하기 in HTML
+    
+    
+    <input id = "input1" type ="text">
+    <button id ="button1">cilck</button>
+    
+    
+    <script>
+    
+    // 2. 함수&변수를 만들어서 준비한다 
+    
+        var ret = function(){
+            document.getElementById("input1");
+            console.log(input1.value);
+        }
+    
+        var button = document.getElementById("button1");
+        
+        
+    // 3 .입력받을 ID 값을 받는 함수를 연결해준다.
+       
+        button1.onclick = ret; 
+
+    /script>
+    
+
+
+</body>
+
+```
