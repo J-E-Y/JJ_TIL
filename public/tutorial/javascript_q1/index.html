@@ -27,16 +27,11 @@
   
     
   
-  <meta name="description" content="Git : pwd  print working Directory
- Git : ls  print working List
- Git :cd  go back to beginning
- Git :cd -  previous directory (or back)
- Git :init  Create an empty Git repository or reinitialize an existing one
- Git :clone  Clone a repository into a new directory
- Git :add .  Add all file contents to the index">
+  <meta name="description" content=" Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
+function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (age &lt; 21 ) { return false; } else { return true; } }   ">
 
   
-  <link rel="alternate" hreflang="en-us" href="/tutorial/git/">
+  <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_q1/">
 
   
 
@@ -108,7 +103,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/tutorial/git/">
+  <link rel="canonical" href="/tutorial/javascript_q1/">
 
   
   
@@ -120,27 +115,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Home">
-  <meta property="og:url" content="/tutorial/git/">
-  <meta property="og:title" content="Git | Home">
-  <meta property="og:description" content="Git : pwd  print working Directory
- Git : ls  print working List
- Git :cd  go back to beginning
- Git :cd -  previous directory (or back)
- Git :init  Create an empty Git repository or reinitialize an existing one
- Git :clone  Clone a repository into a new directory
- Git :add .  Add all file contents to the index"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/tutorial/javascript_q1/">
+  <meta property="og:title" content="JS Basic | Home">
+  <meta property="og:description" content=" Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
+function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (age &lt; 21 ) { return false; } else { return true; } }   "><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2019-04-29T00:00:00&#43;00:00">
   
-
   
 
   
 
-  <title>Git | Home</title>
+  
+
+  <title>JS Basic | Home</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -284,7 +273,7 @@
     <a class="docs-toc-link" href="/tutorial/javascript/">Javascript</a>
     <ul class="nav docs-sidenav">
       
-      <li >
+      <li class="active">
         <a href="/tutorial/javascript_q1/">JS Basic</a>
       </li>
       
@@ -306,7 +295,7 @@
 
   </div>
   
-  <div class="docs-toc-item active">
+  <div class="docs-toc-item">
     <a class="docs-toc-link" href="/tutorial/git/">Git</a>
 
   </div>
@@ -336,27 +325,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#git-pwd">Git : <strong>pwd</strong></a></li>
-<li><a href="#git-ls">Git : <strong>ls</strong></a></li>
-<li><a href="#git-cd">Git :<strong>cd</strong></a></li>
-<li><a href="#git-cd-1">Git :<strong>cd -</strong></a></li>
-<li><a href="#git-init">Git :<strong>init</strong></a></li>
-<li><a href="#git-clone">Git :<strong>clone</strong></a></li>
-<li><a href="#git-add">Git :<strong>add .</strong></a></li>
-<li><a href="#git-add-1">Git : <strong>add</strong></a></li>
-<li><a href="#git-rm">Git :<strong>rm</strong></a></li>
-<li><a href="#git-rm-f">Git :<strong>rm -f</strong></a></li>
-<li><a href="#git-mkdir">Git :<strong>mkdir</strong></a></li>
-<li><a href="#git-touch">Git :<strong>touch</strong></a></li>
-<li><a href="#git-commit-m">Git :<strong>commit -m &ldquo;&rdquo;</strong></a></li>
-<li><a href="#git-remote-add-origin">Git :<strong>remote add origin&rdquo;&rdquo;</strong></a></li>
-<li><a href="#git-push">Git : <strong>Push</strong></a></li>
-<li><a href="#git-log">Git : <strong>log</strong></a></li>
-<li><a href="#git-status">Git : <strong>status</strong></a></li>
-<li><a href="#git-add-your-github-email-and-username-to-git">Git : <strong>Add your github email and username to git</strong></a></li>
-<li><a href="#git-branch">Git : <strong>branch</strong></a></li>
-<li><a href="#git-merge">Git : <strong>merge</strong></a></li>
-<li><a href="#git-checkout">Git : <strong>checkout</strong></a></li>
+<li><a href="#conditional-isoldenoughtodrink">Conditional : isOldEnoughToDrink</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -374,249 +343,32 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">Git</h1>
+          <h1 itemprop="name">JS Basic</h1>
 
           <div class="article-style" itemprop="articleBody">
             
 
 <hr />
 
-<h2 id="git-pwd">Git : <strong>pwd</strong></h2>
+<h2 id="conditional-isoldenoughtodrink">Conditional : isOldEnoughToDrink</h2>
 
 <hr />
-
-<blockquote>
-<p>print working Directory</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-ls">Git : <strong>ls</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>print working List</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-cd">Git :<strong>cd</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>go back to beginning</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-cd-1">Git :<strong>cd -</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>previous directory (or back)</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-init">Git :<strong>init</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>Create an empty Git repository or reinitialize an existing one</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-clone">Git :<strong>clone</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>Clone a repository into a new directory</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-add">Git :<strong>add .</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>Add all file contents to the index</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-add-1">Git : <strong>add</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>one file add</p>
-</blockquote>
-
-<pre><code>git add jung.html
-</code></pre>
-
-<hr />
-
-<h2 id="git-rm">Git :<strong>rm</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>Remove files</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-rm-f">Git :<strong>rm -f</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>Remove files and directory</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-mkdir">Git :<strong>mkdir</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>create directory</p>
-</blockquote>
 
 <ul>
-<li><p>ex</p>
+<li><p>어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.</p>
 
-<pre><code>git mkdir jung
+<pre><code>function isOldEnoughToDrink(age) {
+// 여기에 코드를 작성하세요
+if (age &lt; 21 ) {
+return false;
+} else {
+return true;
+}
+}
+
 
 </code></pre></li>
 </ul>
-
-<hr />
-
-<h2 id="git-touch">Git :<strong>touch</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>create file</p>
-</blockquote>
-
-<ul>
-<li><p>ex</p>
-
-<pre><code>git touch jung.txt 
-</code></pre></li>
-</ul>
-
-<hr />
-
-<h2 id="git-commit-m">Git :<strong>commit -m &ldquo;&rdquo;</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>write message into github</p>
-</blockquote>
-
-<hr />
-
-<h2 id="git-remote-add-origin">Git :<strong>remote add origin&rdquo;&rdquo;</strong></h2>
-
-<hr />
-
-<blockquote>
-<p>link local to github</p>
-</blockquote>
-
-<pre><code>Git remote add origin &quot;https://github.com/J-E-Y/test_2.git&quot;
-
-</code></pre>
-
-<hr />
-
-<h2 id="git-push">Git : <strong>Push</strong></h2>
-
-<hr />
-
-<pre><code>git push -u origin master  최종 깇허브에 올리기 
-git push -u origin master  
-git push -f origin master ( 강제로)
-
-</code></pre>
-
-<hr />
-
-<h2 id="git-log">Git : <strong>log</strong></h2>
-
-<hr />
-
-<pre><code>git log  기록 업데이트한 기록 확인
-
-</code></pre>
-
-<hr />
-
-<h2 id="git-status">Git : <strong>status</strong></h2>
-
-<hr />
-
-<pre><code>git 현재 진행 상태 보기
-</code></pre>
-
-<hr />
-
-<h2 id="git-add-your-github-email-and-username-to-git">Git : <strong>Add your github email and username to git</strong></h2>
-
-<hr />
-
-<pre><code>git config --global user.email &quot;yourGitHub@email.com&quot;
-git config --global user.name &quot;yourGitHubusername&quot;
-
-</code></pre>
-
-<hr />
-
-<h2 id="git-branch">Git : <strong>branch</strong></h2>
-
-<hr />
-
-<pre><code>
-`기능 변경을 하고 싶을 때 생성 및 사용`
-
-
-기능 변경하기
-이미 돌아가고 있는 프로그램에서 기능을 바꾸고 싶은 일이 생길 수 있습니다. 그럴 때 어떻게 해야 하나요? 보통 초보 개발자들은 주석을 활용합니다. 돌아가고 있는 부분을 삭제하면 아까우니까 주석 처리하고 개발합니다. 시간이 지나면 코드가 엉망진창으로 짜장짬뽕 믹싱이 되는데 이런 코드를 스파게티 코드라고 하죠. 이런 상황을 막기 위해서 브랜치를 사용할 수 있습니다.
-
-
-</code></pre>
-
-<hr />
-
-<h2 id="git-merge">Git : <strong>merge</strong></h2>
-
-<hr />
-
-<pre><code>한 브랜치의 내용을 다른 브랜치에 반영 (통합)
-
-</code></pre>
-
-<hr />
-
-<h2 id="git-checkout">Git : <strong>checkout</strong></h2>
-
-<hr />
-
-<pre><code>저장소에서 특정 커밋이나 브랜치로 돌아가고 싶을 때 사용
-</code></pre>
 
           </div>
 
@@ -625,7 +377,7 @@ git config --global user.name &quot;yourGitHubusername&quot;
         </div>
 
         <div class="body-footer">
-          Last updated on Apr 29, 2019
+          Last updated on Jan 1, 0001
         </div>
 
       </article>
