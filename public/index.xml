@@ -4145,21 +4145,193 @@ a
 
 &lt;hr /&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;pre&gt;&lt;code&gt;function isOldEnoughToDrink(age) {
-// 여기에 코드를 작성하세요
-if (age &amp;lt; 21 ) {
-return false;
-} else {
-return true;
-}
+  // 여기에 코드를 작성하세요
+  if (age &amp;lt; 21 ) {
+    return false;
+  } else {
+    return true;
+  }
 }
 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-checkage&#34;&gt;Conditional : checkAge&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;이름과 나이를 파라미터로 받는 checkAge라는 함수는 두개 중 하나의 메시지를 리턴합니다.&lt;/p&gt;
+
+&lt;p&gt;만일 21살보다 적으면, Go home, {전달받은_이름}! 만일 21살이거나 더 나이가 많으면, Welcome, {전달받은_이름}! 을 리턴하세요. 쉼표와 공백, 느낌표까지 정확히 리턴해야 합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function checkAge(name, age) {
+  // 여기에 코드를 작성하세요
+  if (age &amp;gt;= 21){
+    return &#39;Welcome, &#39; + name+ &#39;!&#39;;
+  } else {
+    return &#39;Go home, &#39; + name+ &#39;!&#39;;
+  }
+};
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-equalsten&#34;&gt;Conditional : equalsTen&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;equalsTen&amp;rdquo;. (&amp;ldquo;equalsTen&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given a number, &amp;ldquo;equalsTen&amp;rdquo; returns whether or not the given number is 10. (&amp;ldquo;숫자가 주어졌을때, &amp;ldquo;equalsTen&amp;rdquo; 함수는 숫자가 10과 같은지 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;function equalsTen(num) {
+  // 여기에 코드를 작성하세요
+  if ( num !== 10){
+    return false;
+  }else if (num === 10 ){
+    return true;
+  }
+}
+
+equalsTen(10);
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-isgreaterthan&#34;&gt;Conditional : isGreaterThan&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;isGreaterThan&amp;rdquo;. (&amp;ldquo;isGreaterThan&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given 2 numbers, &amp;ldquo;isGreaterThan&amp;rdquo; returns whether num2 is greater than num1. (두 숫자가 주어졌을때, &amp;ldquo;isGreaterThan&amp;rdquo; 함수는 두번째 숫자(num2)가 첫번째 숫자(num1)보다 큰지 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function isGreaterThan(num1, num2) {
+  // 여기에 코드를 작성하세요
+  if ( num1 === num2 ){
+    return false;
+  } else if ( num1 &amp;lt; num2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+isGreaterThan(20,30)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-iseven&#34;&gt;Conditional : isEven&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;isEven&amp;rdquo;. (&amp;ldquo;isEven&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given a number, &amp;ldquo;isEven&amp;rdquo; returns whether it is even. (&amp;ldquo;숫자가 주어졌을때, &amp;ldquo;isEven&amp;rdquo; 함수는 주어진 숫자가 짝수인지 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;function isEven(num) {
+  // 여기에 코드를 작성하세요
+  if ( num % 2 === 0 ) {
+    return true;
+  } else {
+    return false;
+  }
+
+}
+
+isEven(21)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-isevenandgreaterthanten&#34;&gt;Conditional : isEvenAndGreaterThanTen&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;isEvenAndGreaterThanTen&amp;rdquo;. (&amp;ldquo;isEvenAndGreaterThanTen&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given a number, &amp;ldquo;isEvenAndGreaterThanTen&amp;rdquo; returns whether it is both even and greater than 10. (숫자가 주어졌을때, &amp;ldquo;isEvenAndGreaterThanTen&amp;rdquo; 함수는 주어진 숫자가 10보다 크고 짝수인지 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;function isEvenAndGreaterThanTen(num) {
+  // 여기에 코드를 작성하세요
+  if ( num % 2 === 0 &amp;amp;&amp;amp; num &amp;gt; 10 ){
+    return true;
+  } else {
+    return false;
+  }
+}
+isEvenAndGreaterThanTen(13);
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conditional-convertscoretograde&#34;&gt;Conditional : convertScoreToGrade&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;convertScoreToGrade&amp;rdquo;. (&amp;ldquo;convertScoreToGrade&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given a score, &amp;ldquo;convertScoreToGrade&amp;rdquo; returns a string representing the letter grade corresponding to the given score. (점수가 주어졌을때, &amp;ldquo;convertScoreToGrade&amp;rdquo; 함수는 주어진 점수와 대응하는 등급을 문자열로 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;Notes:
+
+(100 - 90) --&amp;gt; &#39;A&#39;
+(89 - 80) --&amp;gt; &#39;B&#39;
+(79 - 70) --&amp;gt; &#39;C&#39;
+(69 - 60) --&amp;gt; &#39;D&#39;
+(59 - 0) --&amp;gt; &#39;F&#39;
+If the given score is greater than 100 or less than 0, it should return &#39;INVALID SCORE&#39;. (만약 주어진 점수가 100을 초과하거나 0 미만이라면 &#39;INVALID SCORE&#39; 를 반환해야 합니다.)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;function convertScoreToGrade(score) {
+  // 여기에 코드를 작성하세요
+  if ( score &amp;gt; 100 || score &amp;lt; 0) {
+    return &amp;quot;INVALID SCORE&amp;quot;;
+  } else if ( score &amp;gt;= 90 ) {
+    return &amp;quot;A&amp;quot;;
+  } else if ( score &amp;gt;= 80 ) {
+    return &amp;quot;B&amp;quot;;
+  } else if ( score &amp;gt;= 70 ) {
+    return &amp;quot;C&amp;quot;;
+  } else if ( score &amp;gt;= 60 ) {
+    return &amp;quot;D&amp;quot;;
+  } else {
+   return &#39;F&#39;;
+  }
+}
+convertScoreToGrade(0);
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
