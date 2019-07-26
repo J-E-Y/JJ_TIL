@@ -217,7 +217,12 @@
   </url>
   
   <url>
-    <loc>/tutorial/javascript_notes/</loc>
+    <loc>/tutorial/javascript_dictionary/</loc>
+    <lastmod>1970-01-01T09:33:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/javascript_note/</loc>
     <lastmod>1970-01-01T09:33:39+09:00</lastmod>
   </url>
   
@@ -235,7 +240,7 @@
   </url>
   
   <url>
-    <loc>/tutorial/javascript_side/</loc>
+    <loc>/tutorial/javascript_algorithm/</loc>
   </url>
   
 </urlset>

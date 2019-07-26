@@ -31,7 +31,7 @@
 var stringName = &#39;coding everybody&#39;; alert(stringName.charAt(0)); // c alert(stringName.charAt(stringName.length-1)); // y alert(stringName.charAt(1000) == &#39;&#39;); // true   sort() : 배열 정렬할때 var numbers = [20, 10, 9,8,7,6,5,4,3,2,1]; var x = function(a,b){ return a-b; } console.log(numbers.sort(x)); [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20] 순서반대 로 할려면 return a&#43;b; [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]   추가 설명 from 생활코딩 사전 sort()">
 
   
-  <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_notes/">
+  <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_dictionary/">
 
   
 
@@ -103,7 +103,7 @@ var stringName = &#39;coding everybody&#39;; alert(stringName.charAt(0)); // c a
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/tutorial/javascript_notes/">
+  <link rel="canonical" href="/tutorial/javascript_dictionary/">
 
   
   
@@ -115,8 +115,8 @@ var stringName = &#39;coding everybody&#39;; alert(stringName.charAt(0)); // c a
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Home">
-  <meta property="og:url" content="/tutorial/javascript_notes/">
-  <meta property="og:title" content="JS Notes | Home">
+  <meta property="og:url" content="/tutorial/javascript_dictionary/">
+  <meta property="og:title" content="JS My_Dictionary | Home">
   <meta property="og:description" content="parseInt() 숫자로 바꾸는것 toString() 문자로 바꾸는것 String.repeat() 반복하는것 charAt(index) :인덱스에 있는 값을 리턴한다.  ex
 var stringName = &#39;coding everybody&#39;; alert(stringName.charAt(0)); // c alert(stringName.charAt(stringName.length-1)); // y alert(stringName.charAt(1000) == &#39;&#39;); // true   sort() : 배열 정렬할때 var numbers = [20, 10, 9,8,7,6,5,4,3,2,1]; var x = function(a,b){ return a-b; } console.log(numbers.sort(x)); [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20] 순서반대 로 할려면 return a&#43;b; [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]   추가 설명 from 생활코딩 사전 sort()"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
@@ -130,7 +130,7 @@ var stringName = &#39;coding everybody&#39;; alert(stringName.charAt(0)); // c a
 
   
 
-  <title>JS Notes | Home</title>
+  <title>JS My_Dictionary | Home</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -388,16 +388,20 @@ var stringName = &#39;coding everybody&#39;; alert(stringName.charAt(0)); // c a
     <a class="docs-toc-link" href="/tutorial/javascript/">Javascript</a>
     <ul class="nav docs-sidenav">
       
+      <li class="active">
+        <a href="/tutorial/javascript_dictionary/">JS My_Dictionary</a>
+      </li>
+      
       <li >
         <a href="/tutorial/javascript_q1/">JS Basic</a>
       </li>
       
       <li >
-        <a href="/tutorial/javascript_side/">JS algorithm</a>
+        <a href="/tutorial/javascript_algorithm/">JS algorithm</a>
       </li>
       
-      <li class="active">
-        <a href="/tutorial/javascript_notes/">JS Notes</a>
+      <li >
+        <a href="/tutorial/javascript_note/">JS Note</a>
       </li>
       
     </ul>
@@ -445,19 +449,6 @@ var stringName = &#39;coding everybody&#39;; alert(stringName.charAt(0)); // c a
 <li><a href="#string-repeat-반복하는것">String.repeat() 반복하는것</a></li>
 <li><a href="#charat-index-인덱스에-있는-값을-리턴한다">charAt(index) :인덱스에 있는 값을 리턴한다.</a></li>
 <li><a href="#sort-배열-정렬할때">sort() : 배열 정렬할때</a></li>
-<li><a href="#first-class-object">first-class object()</a></li>
-<li><a href="#콜백">콜백</a></li>
-<li><a href="#dom-dom을-이용해서-html문서를-제어할수-있다">Dom : Dom을 이용해서 HTML문서를 제어할수 있다</a>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#dom-객체의-값-바꾸기">DOM 객체의 값 바꾸기</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li><a href="#버튼-만들기">버튼 만들기</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -475,7 +466,7 @@ var stringName = &#39;coding everybody&#39;; alert(stringName.charAt(0)); // c a
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">JS Notes</h1>
+          <h1 itemprop="name">JS My_Dictionary</h1>
 
           <div class="article-style" itemprop="articleBody">
             
@@ -552,178 +543,6 @@ alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
 
 </code></pre></li>
 </ul>
-
-<hr />
-
-<h2 id="first-class-object">first-class object()</h2>
-
-<hr />
-
-<pre><code>함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을
-
-first-class value 
-first-class citizen
-first-class object
-
-라고 부른다. 
-
-</code></pre>
-
-<ul>
-<li><p>값으로써 쓰이는 함수 예제</p>
-
-<pre><code>function cal(mode){
-var funcs = {
-    'plus' : function(left, right){return left + right},
-    'minus' : function(left, right){return left - right}
-}
-return funcs[mode];
-}
-alert(cal('plus')(2,1));
-alert(cal('minus')(2,1));  
-</code></pre></li>
-
-<li><p>배열로서의 함수</p>
-
-<pre><code>
-var process = [
-function(input){ return input + 10;},
-function(input){ return input * input;},
-function(input){ return input / 2;}
-];
-var input = 1;
-for(var i = 0; i &lt; process.length; i++){
-input = process[i](input);
-}
-alert(input);
-
-</code></pre></li>
-</ul>
-
-<p><img src="/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.10.02 PM.png" alt="" /></p>
-
-<hr />
-
-<h2 id="콜백">콜백</h2>
-
-<hr />
-
-<ul>
-<li>장점</li>
-</ul>
-
-<blockquote>
-<p>원래의 내장메소드에 있는 기능을 콜백 으로 바꿔서 사용할수 있다.</p>
-
-<p>값으로 사용될 수 있는 특성을 이용하면 함수의 인자로 함수로 전달할 수 있다. 값으로 전달된 함수는 호출될 수 있기 때문에 이를 이용하면 함수의 동작을 완전히 바꿀 수 있다. 인자로 전달된 함수 sortNumber의 구현에 따라서 sort의 동작방법이 완전히 바뀌게 된다.</p>
-
-<p>ajax를 사용할때 제이 쿼리를 이용해서 콜백이 사용된다.</p>
-</blockquote>
-
-<pre><code>function sortNumber(a,b){
-    // 위의 예제와 비교해서 a와 b의 순서를 바꾸면 정렬순서가 반대가 된다.
-    return b-a;
-}
-var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
-alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
-</code></pre>
-
-<p><img src="/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.46.43 PM.png" alt="" /></p>
-
-<hr />
-
-<h2 id="dom-dom을-이용해서-html문서를-제어할수-있다">Dom : Dom을 이용해서 HTML문서를 제어할수 있다</h2>
-
-<hr />
-
-<h5 id="dom-객체의-값-바꾸기">DOM 객체의 값 바꾸기</h5>
-
-<ul>
-<li><p>ex1-1 document.getElementsByTagName()</p>
-
-<pre><code>
-document.getElementsByTagName() 
-&gt;&gt;html에 있는 tag name 을 가져오는 명령이다.
-
-var list = document.getElementsByTagName('h2') 
-&gt;&gt;모든 h2를 list 라는 변수에 담아오겠다. 
-
-태그 이름을 바꾸기 위해서는 
-
-a
-&gt;&gt; [h2,h2]
-
-a[0]
-&gt;&gt; &lt;h2&gt;hello 1&lt;/h2&gt;
-
-a[1]
-&gt;&gt; &lt;h2&gt;hello 2&lt;/h2&gt;
-이렇게 배열안에 들어가 있다. 
-
-a[1].innerHTML = &quot;good morning&quot;
-heelo 2 &gt;&gt; good morning 으로 바뀐다. 
-
-이것이 dom 의 역활 이다. 
-
-</code></pre></li>
-
-<li><p>ex1-2 document.getElementsById()</p>
-
-<pre><code>var a = document.getElementsById(&quot;main&quot;)
-&gt;&gt; main 아이디 값의 tag를 가져와서  a 변수에 담는다
-
-a
-&gt;&gt; &lt;p id = main&gt;hello jj &lt;/p&gt;
-
-a.innerHTML = &quot;hello John jung&quot;
-
-a
-
-&gt;&gt;&lt;p id = main&gt;hello john jung&lt;/p&gt;
-
-</code></pre></li>
-</ul>
-
-<hr />
-
-<h2 id="버튼-만들기">버튼 만들기</h2>
-
-<hr />
-
-<pre><code>&lt;body&gt;
-    &lt;h1&gt;함수를 이용해 버튼 만들기&lt;/h1&gt;
-    
-    
-    // 1.value 를 지정하기 in HTML
-    
-    
-    &lt;input id = &quot;input1&quot; type =&quot;text&quot;&gt;
-    &lt;button id =&quot;button1&quot;&gt;cilck&lt;/button&gt;
-    
-    
-    &lt;script&gt;
-    
-    // 2. 함수&amp;변수를 만들어서 준비한다 
-    
-        var ret = function(){
-            document.getElementById(&quot;input1&quot;);
-            console.log(input1.value);
-        }
-    
-        var button = document.getElementById(&quot;button1&quot;);
-        
-        
-    // 3 .입력받을 ID 값을 받는 함수를 연결해준다.
-       
-        button1.onclick = ret; 
-
-    /script&gt;
-    
-
-
-&lt;/body&gt;
-
-</code></pre>
 
           </div>
 

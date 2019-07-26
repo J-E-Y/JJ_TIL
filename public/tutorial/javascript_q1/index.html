@@ -389,16 +389,20 @@
     <a class="docs-toc-link" href="/tutorial/javascript/">Javascript</a>
     <ul class="nav docs-sidenav">
       
+      <li >
+        <a href="/tutorial/javascript_dictionary/">JS My_Dictionary</a>
+      </li>
+      
       <li class="active">
         <a href="/tutorial/javascript_q1/">JS Basic</a>
       </li>
       
       <li >
-        <a href="/tutorial/javascript_side/">JS algorithm</a>
+        <a href="/tutorial/javascript_algorithm/">JS algorithm</a>
       </li>
       
       <li >
-        <a href="/tutorial/javascript_notes/">JS Notes</a>
+        <a href="/tutorial/javascript_note/">JS Note</a>
       </li>
       
     </ul>
@@ -448,6 +452,16 @@
 <li><a href="#conditional-iseven">Conditional : isEven</a></li>
 <li><a href="#conditional-isevenandgreaterthanten">Conditional : isEvenAndGreaterThanTen</a></li>
 <li><a href="#conditional-convertscoretograde">Conditional : convertScoreToGrade</a></li>
+<li><a href="#conditional-or">Conditional : Or</a></li>
+<li><a href="#conditional-iseitherevenandlessthan9">Conditional : isEitherEvenAndLessThan9</a></li>
+<li><a href="#string-getfullname">string : getFullName</a></li>
+<li><a href="#string-getlengthofword">string : getLengthOfWord</a></li>
+<li><a href="#string-computeaveragelengthofwords">string : computeAverageLengthOfWords</a></li>
+<li><a href="#string-isoddlength">string : isOddLength</a></li>
+<li><a href="#string-isevenlength">string : isEvenLength</a></li>
+<li><a href="#string-repeatstring">string : repeatString</a></li>
+<li><a href="#string-findshortestofthreewords">string : findShortestOfThreeWords</a></li>
+<li><a href="#string-countcharacter">string : countCharacter</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -661,6 +675,272 @@ If the given score is greater than 100 or less than 0, it should return 'INVALID
   }
 }
 convertScoreToGrade(0);
+
+</code></pre>
+
+<hr />
+
+<h2 id="conditional-or">Conditional : Or</h2>
+
+<hr />
+
+<blockquote>
+<p>Write a function called &ldquo;or&rdquo;. (&ldquo;or&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given 2 boolean expressions, &ldquo;or&rdquo; returns true or false, corresponding to the || operator. (boolean 두개가 주어졌을때, &ldquo;or&rdquo; 함수는 || 연산자에 대응하는 true 나 false 를 반환합니다.)</p>
+</blockquote>
+
+<pre><code>Notes:
+
+Do not use the || operator. (|| 연산자를 사용하지 마세요.)
+Use ! and &amp;&amp; operators instead. (대신 ! 와 &amp;&amp; 연산자를 사용하세요.)
+</code></pre>
+
+<pre><code>function or(expression1, expression2) {
+  // 여기에 코드를 작성하세요
+  if ( expression1 !== false  ) {
+    return true;
+  } else if ( expression2 !== false ) {
+    return true;
+  } else {
+    return false;
+  }
+
+}
+
+</code></pre>
+
+<hr />
+
+<h2 id="conditional-iseitherevenandlessthan9">Conditional : isEitherEvenAndLessThan9</h2>
+
+<hr />
+
+<blockquote>
+<p>Write a function called &ldquo;isEitherEvenAndLessThan9&rdquo;. (&ldquo;isEitherEvenAndLessThan9&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given two numbers, &lsquo;isEitherEvenAndLessThan9&rsquo; returns whether at least one of them is even, and, both of them are less than 9. (숫자 두개가 주어졌을때, &lsquo;isEitherEvenAndLessThan9&rsquo; 함수는 2가지 조건을 검사합니다. 우선 두 숫자 중 적어도 하나가 짝수인지, 그리고 두 숫자 모두 9보다 작은지를 확인합니다. 두 조건을 모두 만족 했을 때만 true를 반환합니다.)</p>
+</blockquote>
+
+<pre><code>
+function isEitherEvenAndLessThan9(num1, num2) {
+  if ((num1 % 2 === 0 || num2 % 2 === 0) &amp;&amp; (num1 &lt; 9 &amp;&amp; num2 &lt; 9)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+</code></pre>
+
+<hr />
+
+<h2 id="string-getfullname">string : getFullName</h2>
+
+<hr />
+
+<blockquote>
+<p>Write a function called &ldquo;getFullName&rdquo;. (&ldquo;getFullName&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a first and a last name, &ldquo;getFullName&rdquo; returns a single string with the given first and last names separated by a single space. (이름과 성이 주어졌을때, &ldquo;getFullName&rdquo; 함수는 이름과 성이 띄어쓰기 하나를 사이에 둔 단일 문자열을 반환해야 합니다.)</p>
+</blockquote>
+
+<pre><code>
+function getFullName(firstName, lastName) {
+  // 여기에 코드를 작성하세요
+  let output = firstName + lastName;
+  return firstName + &quot; &quot; + lastName;
+}
+  
+getFullName('john','jung')
+
+</code></pre>
+
+<hr />
+
+<h2 id="string-getlengthofword">string : getLengthOfWord</h2>
+
+<hr />
+
+<blockquote>
+<p>Write a function called &ldquo;getLengthOfWord&rdquo;. (&ldquo;getLengthOfWord&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a word, &ldquo;getLengthOfWord&rdquo; returns the length of the given word. (단어가 주어졌을때, &ldquo;getLengthOfWord&rdquo; 함수는 단어의 길이를 반환해야 합니다.)</p>
+</blockquote>
+
+<pre><code>
+function getLengthOfWord(word) {
+  // 여기에 코드를 작성하세요
+  let count = word.length;
+  return count;
+}
+getLengthOfWord(&quot;hello&quot;)
+
+</code></pre>
+
+<hr />
+
+<h2 id="string-computeaveragelengthofwords">string : computeAverageLengthOfWords</h2>
+
+<hr />
+
+<blockquote>
+<p>Write a function called &ldquo;computeAverageLengthOfWords&rdquo;. (&ldquo;computeAverageLengthOfWords&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given two words, &ldquo;computeAverageLengthOfWords&rdquo; returns the average of their lengths. (두 단어가 주어졌을때, &ldquo;computeAverageLengthOfWords&rdquo; 함수는 두 단어 길이의 평균값을 반환합니다.)</p>
+</blockquote>
+
+<pre><code>function computeAverageLengthOfWords(word1, word2) {
+  // your code here
+  // count
+  var firstNum = word1.length;
+  var sceondNum = word2.length;
+  var ret = (firstNum + sceondNum) / 2;
+  return ret;
+  }
+  computeAverageLengthOfWords(&quot;whatIYouDoing?&quot;,&quot;this is JJ&quot;)
+
+
+</code></pre>
+
+<hr />
+
+<h2 id="string-isoddlength">string : isOddLength</h2>
+
+<hr />
+
+<blockquote>
+<p>Write a function called &ldquo;isOddLength&rdquo;. (&ldquo;isOddLength&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a word, &ldquo;isOddLength&rdquo; returns whether the length of the given word is odd. (단어가 주어졌을때, &ldquo;isOddLength&rdquo; 함수는 주어진 단어의 길이가 홀수인지 반환해야 합니다.)</p>
+</blockquote>
+
+<pre><code>function isOddLength(word) {
+  // your code here
+  let countNum = word.length;
+  if ( countNum % 2 !== 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+isOddLength(&quot;heeeee&quot;)
+</code></pre>
+
+<hr />
+
+<h2 id="string-isevenlength">string : isEvenLength</h2>
+
+<hr />
+
+<blockquote>
+<p>Write a function called &ldquo;isEvenLength&rdquo;. (&ldquo;isEvenLength&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a word, &ldquo;isEvenLength&rdquo; returns whether the length of the word is even. (단어가 주어졌을때, &ldquo;isEvenLength&rdquo; 함수는 주어진 단어의 길이가 짝수인지 반환해야 합니다.)</p>
+</blockquote>
+
+<pre><code>
+function isEvenLength(word) {
+  // your code here
+  var countNum = word.length;
+  if ( countNum % 2 === 0 ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+isEvenLength(&quot;hee&quot;)
+
+
+</code></pre>
+
+<hr />
+
+<h2 id="string-repeatstring">string : repeatString</h2>
+
+<hr />
+
+<blockquote>
+<p>Write a function called &ldquo;repeatString&rdquo;. (&ldquo;repeatString&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a string and a number, &ldquo;repeatString&rdquo; returns the given string repeated the given number of times. (문자열과 숫자가 주어졌을때, &ldquo;repeatString&rdquo; 함수는 주어진 문자열을 주어진 숫자만큼 반복하여 반환해야 합니다.)</p>
+</blockquote>
+
+<pre><code>
+function repeatString(string, num) {
+  // your code here
+ var repeatation = string.repeat(num) 
+ return repeatation;
+}
+
+repeatString(&quot;thewordofGod is the way&quot;,50)
+</code></pre>
+
+<hr />
+
+<h2 id="string-findshortestofthreewords">string : findShortestOfThreeWords</h2>
+
+<hr />
+
+<blockquote>
+<p>Write a function called &ldquo;findShortestOfThreeWords&rdquo;. (&ldquo;findShortestOfThreeWords&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given 3 strings, &ldquo;findShortestOfThreeWords&rdquo; returns the shortest of the given strings. (문자열 3개가 주어졌을때, &ldquo;findShortestOfThreeWords&rdquo; 함수는 주어진 문자열 중 가장 짧은 문자열을 반환해야 합니다.)</p>
+</blockquote>
+
+<pre><code>
+Notes:
+
+If there are ties, it should return the first word in the parameters list. (만약 동률이 있다면, 그 중 앞에 있는 문자열을 반환해야 합니다.)
+
+</code></pre>
+
+<pre><code>function findShortestOfThreeWords(word1, word2, word3) {
+  // your code here
+  if ( word1.length &lt; word2.length &amp;&amp; word3.length ) {
+    return word1;
+  } else if (word1.length === word2.length &amp;&amp; word3.length){
+    return word1;
+  } else if ( word2.length &lt; word1.length &amp;&amp; word3.length ){
+  return word2;
+  } else if ( word3.length &lt; word2.length &amp;&amp; word1.length ) {
+    return word3;
+  }
+}
+
+findShortestOfThreeWords(&quot;111&quot;,&quot;222&quot;,&quot;333333333&quot;)
+</code></pre>
+
+<hr />
+
+<h2 id="string-countcharacter">string : countCharacter</h2>
+
+<hr />
+
+<blockquote>
+<p>Write a function called &ldquo;countCharacter&rdquo;. (&ldquo;countCharacter&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a string input and a character, &ldquo;countCharacter&rdquo; returns the number of occurences of a given character in the given string. (문자열과 문자가 주어졌을때, &ldquo;countCharacter&rdquo; 함수는 주어진 문자열에서 주어진 문자가 몇개가 있는지를 반환해야 합니다.)</p>
+</blockquote>
+
+<pre><code>
+function countCharacter(str, char) {
+  // your code here
+  let countRet = 0;
+  for ( let i = 0; i &lt; str.length; i = i + 1 ) {
+    if ( str.charAt(i) === char ) {
+      countRet = countRet + 1 ;
+    }
+  }
+  return countRet;
+}
+
+countCharacter(&quot;hello&quot;, &quot;l&quot; );
+
+
 
 </code></pre>
 

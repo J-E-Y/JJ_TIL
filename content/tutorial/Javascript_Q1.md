@@ -5,7 +5,7 @@ draft: true
 menu:
   tutorial:
     parent: "Javascript"
-    weight: 10
+    weight: 11
 toc: true
 type: docs
 ---
@@ -172,10 +172,6 @@ isEvenAndGreaterThanTen(13);
 ---
 
 
-
-
-
-
 >Write a function called "convertScoreToGrade". ("convertScoreToGrade" 함수를 작성하세요.)
 
 >Given a score, "convertScoreToGrade" returns a string representing the letter grade corresponding to the given score. (점수가 주어졌을때, "convertScoreToGrade" 함수는 주어진 점수와 대응하는 등급을 문자열로 반환합니다.)
@@ -214,4 +210,288 @@ function convertScoreToGrade(score) {
 convertScoreToGrade(0);
 
 ```
+
+
+---
+## Conditional : Or
+---
+
+
+
+>Write a function called "or". ("or" 함수를 작성하세요.)
+
+>Given 2 boolean expressions, "or" returns true or false, corresponding to the || operator. (boolean 두개가 주어졌을때, "or" 함수는 || 연산자에 대응하는 true 나 false 를 반환합니다.)
+
+```
+Notes:
+
+Do not use the || operator. (|| 연산자를 사용하지 마세요.)
+Use ! and && operators instead. (대신 ! 와 && 연산자를 사용하세요.)
+```
+
+```
+function or(expression1, expression2) {
+  // 여기에 코드를 작성하세요
+  if ( expression1 !== false  ) {
+    return true;
+  } else if ( expression2 !== false ) {
+    return true;
+  } else {
+    return false;
+  }
+
+}
+
+```
+
+
+
+
+---
+## Conditional : isEitherEvenAndLessThan9
+---
+
+
+
+>Write a function called "isEitherEvenAndLessThan9". ("isEitherEvenAndLessThan9" 함수를 작성하세요.)
+
+>Given two numbers, 'isEitherEvenAndLessThan9' returns whether at least one of them is even, and, both of them are less than 9. (숫자 두개가 주어졌을때, 'isEitherEvenAndLessThan9' 함수는 2가지 조건을 검사합니다. 우선 두 숫자 중 적어도 하나가 짝수인지, 그리고 두 숫자 모두 9보다 작은지를 확인합니다. 두 조건을 모두 만족 했을 때만 true를 반환합니다.)
+
+
+
+```
+
+function isEitherEvenAndLessThan9(num1, num2) {
+  if ((num1 % 2 === 0 || num2 % 2 === 0) && (num1 < 9 && num2 < 9)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+```
+
+
+
+
+---
+## string : getFullName
+---
+
+
+
+>Write a function called "getFullName". ("getFullName" 함수를 작성하세요.)
+
+>Given a first and a last name, "getFullName" returns a single string with the given first and last names separated by a single space. (이름과 성이 주어졌을때, "getFullName" 함수는 이름과 성이 띄어쓰기 하나를 사이에 둔 단일 문자열을 반환해야 합니다.)
+
+
+```
+
+function getFullName(firstName, lastName) {
+  // 여기에 코드를 작성하세요
+  let output = firstName + lastName;
+  return firstName + " " + lastName;
+}
+  
+getFullName('john','jung')
+
+```
+
+
+
+---
+## string : getLengthOfWord
+---
+
+
+
+>Write a function called "getLengthOfWord". ("getLengthOfWord" 함수를 작성하세요.)
+
+>Given a word, "getLengthOfWord" returns the length of the given word. (단어가 주어졌을때, "getLengthOfWord" 함수는 단어의 길이를 반환해야 합니다.)
+
+
+```
+
+function getLengthOfWord(word) {
+  // 여기에 코드를 작성하세요
+  let count = word.length;
+  return count;
+}
+getLengthOfWord("hello")
+
+```
+
+
+---
+## string : computeAverageLengthOfWords
+---
+
+
+
+
+>Write a function called "computeAverageLengthOfWords". ("computeAverageLengthOfWords" 함수를 작성하세요.)
+
+>Given two words, "computeAverageLengthOfWords" returns the average of their lengths. (두 단어가 주어졌을때, "computeAverageLengthOfWords" 함수는 두 단어 길이의 평균값을 반환합니다.)
+
+
+
+```
+function computeAverageLengthOfWords(word1, word2) {
+  // your code here
+  // count
+  var firstNum = word1.length;
+  var sceondNum = word2.length;
+  var ret = (firstNum + sceondNum) / 2;
+  return ret;
+  }
+  computeAverageLengthOfWords("whatIYouDoing?","this is JJ")
+
+
+```
+
+
+---
+## string : isOddLength
+---
+
+
+>Write a function called "isOddLength". ("isOddLength" 함수를 작성하세요.)
+
+>Given a word, "isOddLength" returns whether the length of the given word is odd. (단어가 주어졌을때, "isOddLength" 함수는 주어진 단어의 길이가 홀수인지 반환해야 합니다.)
+
+
+```
+function isOddLength(word) {
+  // your code here
+  let countNum = word.length;
+  if ( countNum % 2 !== 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+isOddLength("heeeee")
+```
+
+
+---
+## string : isEvenLength
+---
+
+
+>Write a function called "isEvenLength". ("isEvenLength" 함수를 작성하세요.)
+
+>Given a word, "isEvenLength" returns whether the length of the word is even. (단어가 주어졌을때, "isEvenLength" 함수는 주어진 단어의 길이가 짝수인지 반환해야 합니다.)
+
+
+
+```
+
+function isEvenLength(word) {
+  // your code here
+  var countNum = word.length;
+  if ( countNum % 2 === 0 ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+isEvenLength("hee")
+
+
+```
+
+---
+## string : repeatString
+---
+
+
+
+>Write a function called "repeatString". ("repeatString" 함수를 작성하세요.)
+
+>Given a string and a number, "repeatString" returns the given string repeated the given number of times. (문자열과 숫자가 주어졌을때, "repeatString" 함수는 주어진 문자열을 주어진 숫자만큼 반복하여 반환해야 합니다.)
+
+
+```
+
+function repeatString(string, num) {
+  // your code here
+ var repeatation = string.repeat(num) 
+ return repeatation;
+}
+
+repeatString("thewordofGod is the way",50)
+```
+
+
+
+---
+## string : findShortestOfThreeWords
+---
+
+
+>Write a function called "findShortestOfThreeWords". ("findShortestOfThreeWords" 함수를 작성하세요.)
+
+>Given 3 strings, "findShortestOfThreeWords" returns the shortest of the given strings. (문자열 3개가 주어졌을때, "findShortestOfThreeWords" 함수는 주어진 문자열 중 가장 짧은 문자열을 반환해야 합니다.)
+
+```
+
+Notes:
+
+If there are ties, it should return the first word in the parameters list. (만약 동률이 있다면, 그 중 앞에 있는 문자열을 반환해야 합니다.)
+
+```
+```
+function findShortestOfThreeWords(word1, word2, word3) {
+  // your code here
+  if ( word1.length < word2.length && word3.length ) {
+    return word1;
+  } else if (word1.length === word2.length && word3.length){
+    return word1;
+  } else if ( word2.length < word1.length && word3.length ){
+  return word2;
+  } else if ( word3.length < word2.length && word1.length ) {
+    return word3;
+  }
+}
+
+findShortestOfThreeWords("111","222","333333333")
+```
+
+
+
+---
+## string : countCharacter
+---
+
+
+>Write a function called "countCharacter". ("countCharacter" 함수를 작성하세요.)
+
+>Given a string input and a character, "countCharacter" returns the number of occurences of a given character in the given string. (문자열과 문자가 주어졌을때, "countCharacter" 함수는 주어진 문자열에서 주어진 문자가 몇개가 있는지를 반환해야 합니다.)
+
+
+
+```
+
+function countCharacter(str, char) {
+  // your code here
+  let countRet = 0;
+  for ( let i = 0; i < str.length; i = i + 1 ) {
+    if ( str.charAt(i) === char ) {
+      countRet = countRet + 1 ;
+    }
+  }
+  return countRet;
+}
+
+countCharacter("hello", "l" );
+
+
+
+```
+
+
 
