@@ -12,15 +12,6 @@
     
     
     <item>
-      <title></title>
-      <link>/tutorial/python/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/python/</guid>
-      <description>Python: Operators  Arithmetic operators Assignment operators Comparison operators Logical operators  Arithmetic Operator           + Addition x + y   - Subtraction x - y   * Multiplication x * y   / Division x / y   % Modulus x % y   ** Exponentiation x ** y   // Floor division x // y    Assignment Operators           = x = 5 x = 5   += x += 3 x = x + 3   -= x -= 3 x = x - 3   *= x *= 3 x = x * 3   /= x /= 3 x = x / 3   %= x %= 3 x = x % 3   //= x //= 3 x = x // 3   **= x **= 3 x = x ** 3   &amp;amp;= x &amp;amp;= 3 x = x &amp;amp; 3    = x   ^= x ^= 3 x = x ^ 3   &amp;gt;&amp;gt;= x &amp;gt;&amp;gt;= 3 x = x &amp;gt;&amp;gt; 3   &amp;lt;&amp;lt;= x &amp;lt;&amp;lt;= 3 x = x &amp;lt;&amp;lt; 3    Comparison Operators           == Equal x == y   !</description>
-    </item>
-    
-    <item>
       <title>Bootstrap</title>
       <link>/tutorial/bootstrap/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -32,7 +23,7 @@
     </item>
     
     <item>
-      <title>CSS</title>
+      <title>Css</title>
       <link>/tutorial/css/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -57,7 +48,7 @@ Css: BoxModel { font-size:20px; text-align:center; text-decoration:none; : 밑�
     </item>
     
     <item>
-      <title>HTML( hyper text markup Language)</title>
+      <title>Html</title>
       <link>/tutorial/html/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -82,6 +73,15 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
     </item>
     
     <item>
+      <title>Python</title>
+      <link>/tutorial/python/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/python/</guid>
+      <description>Python: Operators  Arithmetic operators Assignment operators Comparison operators Logical operators  Arithmetic Operator           + Addition x + y   - Subtraction x - y   * Multiplication x * y   / Division x / y   % Modulus x % y   ** Exponentiation x ** y   // Floor division x // y    Assignment Operators           = x = 5 x = 5   += x += 3 x = x + 3   -= x -= 3 x = x - 3   *= x *= 3 x = x * 3   /= x /= 3 x = x / 3   %= x %= 3 x = x % 3   //= x //= 3 x = x // 3   **= x **= 3 x = x ** 3   &amp;amp;= x &amp;amp;= 3 x = x &amp;amp; 3    = x   ^= x ^= 3 x = x ^ 3   &amp;gt;&amp;gt;= x &amp;gt;&amp;gt;= 3 x = x &amp;gt;&amp;gt; 3   &amp;lt;&amp;lt;= x &amp;lt;&amp;lt;= 3 x = x &amp;lt;&amp;lt; 3    Comparison Operators           == Equal x == y   !</description>
+    </item>
+    
+    <item>
       <title>IT terminology</title>
       <link>/tutorial/it-terminology/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
@@ -97,7 +97,7 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
       
       <guid>/tutorial/javascript_dictionary/</guid>
       <description>parseInt() 숫자로 바꾸는것 toString() 문자로 바꾸는것 String.repeat() 반복하는것 charAt(index) :인덱스에 있는 값을 리턴한다.  ex
-var stringName = &#39;coding everybody&#39;; alert(stringName.charAt(0)); // c alert(stringName.charAt(stringName.length-1)); // y alert(stringName.charAt(1000) == &#39;&#39;); // true   sort() : 배열 정렬할때 var numbers = [20, 10, 9,8,7,6,5,4,3,2,1]; var x = function(a,b){ return a-b; } console.log(numbers.sort(x)); [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20] 순서반대 로 할려면 return a+b; [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]   추가 설명 from 생활코딩 사전 sort()</description>
+var stringName = &#39;coding everybody&#39;; alert(stringName.charAt(0)); // c alert(stringName.charAt(stringName.length-1)); // y alert(stringName.charAt(1000) == &#39;&#39;); // true   sort() : 배열 정렬할때  var numbers = [9,8,7,6,5,4,3,2,1]; alert(numbers.sort()); // array, [1,2,3,4,5,6,7,8,9] alert(numbers); // array, [1,2,3,4,5,6,7,8,9], 원본을 변경한다. alert(numbers.sort() === numbers); // boolean, true, 원본과 반환값이 같다. var numbers = [20, 10, 9,8,7,6,5,4,3,2,1]; //array, [1,10,2,20,3,4,5,6,7,8,9], 암시적으로 원소를 문자로 형변환 하기 때문에 10이 1뒤에 온다.</description>
     </item>
     
     <item>

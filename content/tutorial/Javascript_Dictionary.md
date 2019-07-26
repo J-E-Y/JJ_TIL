@@ -44,6 +44,20 @@ alert(stringName.charAt(1000) == ''); // true
 
 
 ```
+
+var numbers = [9,8,7,6,5,4,3,2,1];
+alert(numbers.sort()); // array, [1,2,3,4,5,6,7,8,9]
+alert(numbers); // array, [1,2,3,4,5,6,7,8,9], 원본을 변경한다. 
+alert(numbers.sort() === numbers); // boolean, true, 원본과 반환값이 같다.
+ 
+var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+//array, [1,10,2,20,3,4,5,6,7,8,9], 암시적으로 원소를 문자로 형변환 하기 때문에 10이 1뒤에 온다.
+alert(numbers.sort()); 
+
+```
+
+
+```
 var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
 var x = function(a,b){
 	return a-b;

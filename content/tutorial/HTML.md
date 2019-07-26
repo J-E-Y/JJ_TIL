@@ -1,5 +1,5 @@
 ---
-title: HTML( hyper text markup Language)
+title: Html
 date: 2019-04-29
 draft: true
 menu:
@@ -127,7 +127,7 @@ The paragraph goes here.
 this
 ```
 ---
-## html : `<Hr/>` tag
+## html : <Hr/> tag
 ---
 
 * Description

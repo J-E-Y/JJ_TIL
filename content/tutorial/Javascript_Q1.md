@@ -495,3 +495,87 @@ countCharacter("hello", "l" );
 
 
 
+---
+## string : areValidCredentials
+---
+
+
+
+
+>Write a function called "areValidCredentials". ("areValidCredentials" 함수를 작성하세요.)
+
+>Given a name and a password, "areValidCredentials", returns true if the name is longer than 3 characters, AND, the password is at least 8 characters long. Otherwise it returns false. (이름과 비밀번호가 주어졌을때, "areValidCredentials" 함수는 이름이 3글자이상 그리고 비밀번호가 8글자 이상이면 true를 반환합니다.)
+
+* ex1
+```
+function findMinLengthOfThreeWords(word1, word2, word3) {
+  // your code here
+  if (word1.length === (word2.length && word3.length)){
+    return word1.length
+  } else if (word1.length < (word2.length && word3.length)){
+    return word1.length;
+  } else if (word2.length < (word1.length && word3.length) ){
+    return word2.length;
+  } else if (word3.length < (word1.length && word2.length) ){
+    return word3.length;
+  }
+}
+
+findMinLengthOfThreeWords("111","2222","33333")
+```
+* ex2
+```
+
+function findMinLengthOfThreeWords(word1, word2, word3) {
+  var arr = [];
+  arr.push(word1, word2, word3);
+  arr.sort();
+  return arr[0].length;
+}
+findMinLengthOfThreeWords("dwdsdsdsdsdsdsdwd","ddwwd","wdwdwdsdsdwdwwd")
+
+```
+* ex3
+
+```
+function findMinLengthOfThreeWords(word1, word2, word3) {
+  // your code here
+  /* START SOLUTION */
+  words = [word1, word2, word3];
+  return words.sort()[0].length;
+  /* END SOLUTION */
+}
+
+```
+
+* ex4
+
+```
+
+function findMinLengthOfThreeWords(word1, word2, word3) {
+  return Math.min(word1.length, word2.length, word3.length)
+}
+```
+
+
+---
+## Math : computeAreaOfATriangle
+---
+
+
+
+
+
+>Given the base and height of a triangle, "computeAreaOfATriangle" returns its area. (삼각형의 밑변과 높이가 주어졌을때, "computeAreaOfATriangle" 함수는 삼각형의 넓이를 반환합니다.)
+
+
+```
+function computeAreaOfATriangle(base, height) {
+  // your code here
+  let ret = base * height / 2;
+  return ret;
+}
+
+```
+
+
