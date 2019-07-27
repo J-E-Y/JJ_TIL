@@ -5,7 +5,7 @@ draft: true
 menu:
   tutorial:
     parent: "Javascript"
-    weight: 10
+    weight: 9
 
 toc: true
 type: docs
