@@ -4170,7 +4170,7 @@ a
     </item>
     
     <item>
-      <title>JS Basic</title>
+      <title>JS Basic 1</title>
       <link>/tutorial/javascript_q1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4717,6 +4717,65 @@ return Math.min(word1.length, word2.length, word3.length)
   let ret = base * height / 2;
   return ret;
 }
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math-computeperimeterofacircle&#34;&gt;Math : computePerimeterOfACircle&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;computePerimeterOfACircle&amp;rdquo;. (&amp;ldquo;computePerimeterOfACircle&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given the radius of a circle, &amp;ldquo;computePerimeterOfACircle&amp;rdquo; returns its perimeter. (원의 반지름이 주어졌을때, &amp;ldquo;computePerimeterOfACircle&amp;rdquo; 함수는 원의 둘레를 반환하세요.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function computePerimeterOfACircle(radius) {
+  // your code here\
+  //원의 둘레 = 2 X 반지름 X 원주율 = 지름 X 원주율
+  let ret = radius * 2 * Math.PI;
+  return ret;
+}
+
+computePerimeterOfACircle(200);
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math-computeaverageofnumbers&#34;&gt;Math : computeAverageOfNumbers&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;computeAverageOfNumbers&amp;rdquo;. (&amp;ldquo;computeAverageOfNumbers&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array of numbers, &amp;ldquo;computeAverageOfNumbers&amp;rdquo; returns their average. (숫자이 배열이 주어졌을때, &amp;ldquo;computeAverageOfNumbers&amp;rdquo; 함수는 그들의 평균을 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+Notes:
+
+If given an empty array, it should return 0. (만약 빈배열이 주어졌다면, 0을 반환해야 합니다.)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;function computeAverageOfNumbers(nums) {
+  // your code here
+  let sum = 0;
+  if ( nums.length === 0 ) {
+    return 0;
+  }
+  for (let i = 0; i &amp;lt; nums.length; i = i + 1 ){
+    sum = sum + nums[i]
+  }
+  return sum / nums.length; 
+}
+computeAverageOfNumbers[1,2,3,4,5,6];
 
 &lt;/code&gt;&lt;/pre&gt;
 </description>

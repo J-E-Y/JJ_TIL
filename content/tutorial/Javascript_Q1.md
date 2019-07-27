@@ -1,11 +1,11 @@
 ---
-title: JS Basic
+title: JS Basic 1
 date: 2019-6
 draft: true
 menu:
   tutorial:
     parent: "Javascript"
-    weight: 11
+    weight: 10
 toc: true
 type: docs
 ---
@@ -563,9 +563,6 @@ function findMinLengthOfThreeWords(word1, word2, word3) {
 ---
 
 
-
-
-
 >Given the base and height of a triangle, "computeAreaOfATriangle" returns its area. (삼각형의 밑변과 높이가 주어졌을때, "computeAreaOfATriangle" 함수는 삼각형의 넓이를 반환합니다.)
 
 
@@ -575,6 +572,69 @@ function computeAreaOfATriangle(base, height) {
   let ret = base * height / 2;
   return ret;
 }
+
+```
+
+
+---
+## Math : computePerimeterOfACircle
+---
+
+
+>Write a function called "computePerimeterOfACircle". ("computePerimeterOfACircle" 함수를 작성하세요.)
+
+>Given the radius of a circle, "computePerimeterOfACircle" returns its perimeter. (원의 반지름이 주어졌을때, "computePerimeterOfACircle" 함수는 원의 둘레를 반환하세요.
+
+
+
+```
+
+function computePerimeterOfACircle(radius) {
+  // your code here\
+  //원의 둘레 = 2 X 반지름 X 원주율 = 지름 X 원주율
+  let ret = radius * 2 * Math.PI;
+  return ret;
+}
+
+computePerimeterOfACircle(200);
+
+
+```
+
+
+
+
+---
+## Math : computeAverageOfNumbers
+---
+
+
+
+>Write a function called "computeAverageOfNumbers". ("computeAverageOfNumbers" 함수를 작성하세요.)
+
+>Given an array of numbers, "computeAverageOfNumbers" returns their average. (숫자이 배열이 주어졌을때, "computeAverageOfNumbers" 함수는 그들의 평균을 반환합니다.)
+
+```
+
+Notes:
+
+If given an empty array, it should return 0. (만약 빈배열이 주어졌다면, 0을 반환해야 합니다.)
+
+```
+
+```
+function computeAverageOfNumbers(nums) {
+  // your code here
+  let sum = 0;
+  if ( nums.length === 0 ) {
+    return 0;
+  }
+  for (let i = 0; i < nums.length; i = i + 1 ){
+    sum = sum + nums[i]
+  }
+  return sum / nums.length; 
+}
+computeAverageOfNumbers[1,2,3,4,5,6];
 
 ```
 
