@@ -604,6 +604,48 @@ return object2;
 <li><p>Sceond</p>
 
 <pre><code>
+function removeOddValues(input) {
+	
+// 1. 결과를 담을 객체를 만듭니다. 
+	
+	let result = {};
+
+// 2. input 으로 받은 object 안에 key 를 모두 반복합니다. 
+  
+for (let key in input) {
+	  let value = input[key];
+	  let isNumber = typeof value === 'number';
+
+	  if (isNumber ) {
+	 
+// key의 해당 하는 value가 짝수인지 확인합니다.
+	 
+let isEven = value % 2 === 0;
+if (isEven) {
+	 
+// 만든 객체에 key, value를 추가합니다.
+	 
+result[key] = value;
+	    }
+}
+// 숫자가 아니면
+	
+else {
+	
+//만든 객체에 key, value 를 추가합니다.
+
+	result[key] = value;	
+}
+}
+return result;
+}
+
+removeOddValues({ a: 1, b: 2, c: 3, d: 'hello' })
+
+
+</code></pre>
+
+<pre><code>
 function removeOddValues(object) {
 //1. value 값을 판별하기 위해 key 값을 반복한다.
 for (let k in object) {

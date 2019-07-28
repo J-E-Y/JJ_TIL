@@ -126,17 +126,12 @@ The paragraph goes here.
 
 this
 ```
----
-## html : <Hr/> tag
----
 
-* Description
 
-> making line break with line
 
 
 ---
-## html : **&lt;hr/&gt;tag**
+## html : **&lt;hr&gt;tag**
 ---
 
 * Description

@@ -183,3 +183,21 @@ a
 </body>
 
 ```
+
+
+---
+## Is true == 1 and false == 0 in JavaScript?
+---
+
+```
+
+if (1 == 1)
+  document.write("oh!!! that's true");
+
+if (1 == true)
+  document.write("oh!!! that's true");
+
+if (0 == false)
+  document.write("oh!!! that's true");
+
+```

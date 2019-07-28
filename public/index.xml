@@ -665,21 +665,7 @@ this
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-hr-tag&#34;&gt;html : &lt;Hr/&gt; tag&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;making line break with line&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;html-lt-hr-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;hr/&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;html-lt-hr-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;hr&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -4166,6 +4152,24 @@ a
 &amp;lt;/body&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;is-true-1-and-false-0-in-javascript&#34;&gt;Is true == 1 and false == 0 in JavaScript?&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;
+if (1 == 1)
+  document.write(&amp;quot;oh!!! that&#39;s true&amp;quot;);
+
+if (1 == true)
+  document.write(&amp;quot;oh!!! that&#39;s true&amp;quot;);
+
+if (0 == false)
+  document.write(&amp;quot;oh!!! that&#39;s true&amp;quot;);
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -4778,6 +4782,41 @@ If given an empty array, it should return 0. (만약 빈배열이 주어졌다�
 computeAverageOfNumbers[1,2,3,4,5,6];
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;type-01-converttostring&#34;&gt;type : 01_convertToString&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;convertToString함수가 있습니다. 이 함수는 주어진 파라미터를 문자열의 형태로 변환합니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Note&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let output = convertToString(120);
+console.log(output); // --&amp;gt; &#39;120&#39;
+
+let output2 = convertToString(&#39;hello&#39;);
+console.log(output2); // --&amp;gt; &#39;hello&#39;
+
+let output3 = convertToString(true);
+console.log(output3); // --&amp;gt; &#39;true&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function convertToString(anything) {
+// 여기에 코드를 작성하세요
+return anything.toString();
+}
+
+convertToString(&#39;hello&#39;)
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -4916,6 +4955,48 @@ return object2;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Sceond&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function removeOddValues(input) {
+	
+// 1. 결과를 담을 객체를 만듭니다. 
+	
+	let result = {};
+
+// 2. input 으로 받은 object 안에 key 를 모두 반복합니다. 
+  
+for (let key in input) {
+	  let value = input[key];
+	  let isNumber = typeof value === &#39;number&#39;;
+
+	  if (isNumber ) {
+	 
+// key의 해당 하는 value가 짝수인지 확인합니다.
+	 
+let isEven = value % 2 === 0;
+if (isEven) {
+	 
+// 만든 객체에 key, value를 추가합니다.
+	 
+result[key] = value;
+	    }
+}
+// 숫자가 아니면
+	
+else {
+	
+//만든 객체에 key, value 를 추가합니다.
+
+	result[key] = value;	
+}
+}
+return result;
+}
+
+removeOddValues({ a: 1, b: 2, c: 3, d: &#39;hello&#39; })
+
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;
 function removeOddValues(object) {
