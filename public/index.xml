@@ -4808,12 +4808,74 @@ console.log(output3); // --&amp;gt; &#39;true&#39;
 function convertToString(anything) {
 // 여기에 코드를 작성하세요
 return anything.toString();
+// return &amp;quot;&amp;quot; + anything;
+// return String(anything);
 }
 
 convertToString(&#39;hello&#39;)
 
 
 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;type-02-converttonumber&#34;&gt;type : 02_convertToNumber&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;convertToNumber함수가 있습니다. 이 함수는 주어진 파라미터를 숫자의 형태로 변환합니다.&lt;/p&gt;
+
+&lt;p&gt;숫자로 변환할 수 없는 경우, NaN (Not a number) 이라는 결과가 나올것입니다. NaN은 숫자가 아님을 나타내는 특수한 값으로, 문자열이 아닙니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;note&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let output = isFalsy(&#39;hello&#39;);
+console.log(output); // --&amp;gt; false
+
+let output2 = isFalsy(0);
+console.log(output2); // --&amp;gt; true
+
+let output3 = isFalsy(true);
+console.log(output3); // --&amp;gt; false
+
+let output4 = isFalsy(undefined);
+console.log(output4); // --&amp;gt; true
+
+let output5 = isFalsy(NaN);
+console.log(output5); // --&amp;gt; true
+
+let output6 = isFalsy(&#39;&#39;);
+console.log(output6); // --&amp;gt; true
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function isFalsy(anything) {
+// 여기에 코드를 작성하세요
+if ( typeof anything === &#39;undefined&#39; ) {
+  return true;
+} else if (!anything) {
+  return true;
+} else if ( anything === null ) {
+  return true;
+} else if ( anything === 0 ) {
+  return true;
+} else if (anything === NaN ) {
+  return true;
+} else if ( anything === &#39;&#39; ) {
+  return true;
+} else {
+  return false;
+}
+} 
+
+isFalsy(&#39;hello&#39;);
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
