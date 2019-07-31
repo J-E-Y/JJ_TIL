@@ -3888,87 +3888,168 @@ Figure 1: A fancy pie chart.
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;parseint-숫자로-바꾸는것&#34;&gt;parseInt() 숫자로 바꾸는것&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;tostring-문자로-바꾸는것&#34;&gt;toString() 문자로 바꾸는것&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;string-repeat-반복하는것&#34;&gt;String.repeat() 반복하는것&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;charat-index-인덱스에-있는-값을-리턴한다&#34;&gt;charAt(index) :인덱스에 있는 값을 리턴한다.&lt;/h2&gt;
+&lt;h2 id=&#34;string&#34;&gt;&lt;strong&gt;String&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;toString() :문자로 바꾸는것&lt;/p&gt;&lt;/li&gt;
 
-&lt;pre&gt;&lt;code&gt;var stringName = &#39;coding everybody&#39;;
-alert(stringName.charAt(0)); // c
-alert(stringName.charAt(stringName.length-1)); // y
-alert(stringName.charAt(1000) == &#39;&#39;); // true
+&lt;li&gt;&lt;p&gt;String() :문자로 바꾸는것&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;str[index] 읽어서 찾아주는것 :immutable&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let str = &#39;CodeStates&#39;;
+
+str[0]; &amp;gt;&amp;gt; &#39;C&#39;
+
+but
+
+str[0] = &#39;G&#39; &amp;gt;&amp;gt; 바뀌지 않음.
+
+str = &#39;Codestates&#39;
+ 
+Note: index로 접근은 가능하지만 쓸수는 없음 (read-only);
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;li&gt;&lt;p&gt;toUpperCase() 소문자 대문자 바꿈:immutable&lt;/p&gt;
 
-&lt;h2 id=&#34;sort-배열-정렬할때&#34;&gt;sort() : 배열 정렬할때&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;let str = &#39;CodeStates&#39;;
 
-&lt;hr /&gt;
+str.toUpperCase(); &amp;gt;&amp;gt;&amp;quot;CODESTATES
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;toLowerCase() 대문자 소문자 바꿈:immutable&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let str = &amp;quot;CodeStates&amp;quot;;
+
+str.toLowerCase()
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;str.indexOf(serchValue); 찾기&lt;/p&gt;
+
+&lt;p&gt;````&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Blue Whale&amp;rdquo;indexOf(&amp;ldquo;Blue&amp;rdquo;); &amp;gt;&amp;gt;0
+&amp;ldquo;Blue Whale&amp;rdquo;.indexOf(&amp;ldquo;hello&amp;rdquo;); &amp;gt;&amp;gt;-1
+&amp;ldquo;Blue Whale&amp;rdquo;.indexOf(&amp;ldquo;Whale&amp;rdquo;); &amp;gt;&amp;gt;5&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;canal&amp;rdquo;.lastIndexOf(&amp;ldquo;a&amp;rdquo;) &amp;gt;&amp;gt; 3&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
-var numbers = [9,8,7,6,5,4,3,2,1];
+* string.repeat(숫자입력) 반복하는것 
+
+&amp;gt;ex
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;let chorus = &amp;lsquo;Because I&amp;rsquo;m happy&amp;rsquo;;&lt;/p&gt;
+
+&lt;p&gt;console.log(&amp;lsquo;Chorus lyrics for &amp;ldquo;Happy&amp;rdquo;: &amp;lsquo; + chorus.repeat(27));&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+* charAt(index) :인덱스에 있는 값을 리턴한다.
+
+
+&amp;gt; ex
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;var stringName = &amp;lsquo;coding everybody&amp;rsquo;;
+alert(stringName.charAt(0)); // c
+alert(stringName.charAt(stringName.length-1)); // y
+alert(stringName.charAt(1000) == &amp;ldquo;); // true&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+* sort() : 배열 정렬할때 
+
+&amp;gt;ex
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;var numbers = [9,8,7,6,5,4,3,2,1];
 alert(numbers.sort()); // array, [1,2,3,4,5,6,7,8,9]
-alert(numbers); // array, [1,2,3,4,5,6,7,8,9], 원본을 변경한다. 
-alert(numbers.sort() === numbers); // boolean, true, 원본과 반환값이 같다.
- 
-var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+alert(numbers); // array, [1,2,3,4,5,6,7,8,9], 원본을 변경한다.
+alert(numbers.sort() === numbers); // boolean, true, 원본과 반환값이 같다.&lt;/p&gt;
+
+&lt;p&gt;var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
 //array, [1,10,2,20,3,4,5,6,7,8,9], 암시적으로 원소를 문자로 형변환 하기 때문에 10이 1뒤에 온다.
-alert(numbers.sort()); 
+alert(numbers.sort());&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;gt; ex
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+&lt;p&gt;var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
 var x = function(a,b){
-	return a-b;
-}
+return a-b;
+}&lt;/p&gt;
 
-console.log(numbers.sort(x));
+&lt;p&gt;console.log(numbers.sort(x));&lt;/p&gt;
 
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20]
+&lt;p&gt;[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20]&lt;/p&gt;
 
+&lt;p&gt;순서반대 로 할려면
+return a+b;&lt;/p&gt;
 
-순서반대 로 할려면
-return a+b;
+&lt;p&gt;[20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]&lt;/p&gt;
 
-[20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+&lt;pre&gt;&lt;code&gt;
+
+&amp;gt;추가 설명 from 생활코딩 사전 sort()
+
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;추가 설명 from 생활코딩 사전 sort()&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function sortNumber(a,b){
+&lt;p&gt;function sortNumber(a,b){
     // 비교 대상인 a와 b가 인자로 전달된다.
-    //alert(&#39;a :&#39;+a+&#39;, b:&#39;+b);
+    //alert(&amp;lsquo;a :&amp;lsquo;+a+&amp;rsquo;, b:&amp;lsquo;+b);
     // a에서 b를 뺀 결과가 음수면 a가 b보다 작고, 0이면 같다.
     // sort메소드는 return 값이 음수,양수,0인지에 따라서 순서를 정한다.
     return a-b;
 }
 var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
-alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
+alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]&lt;/p&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;pre&gt;&lt;code&gt;
+
+
+
+
+
+
+
+---
+## **Number**
+---
+
+
+
+* parseInt() 숫자로 바꾸는것
+
+
+
+---
+## **Array**
+---
+
+
+* Array.isArray() :메서드는 인자가 Array인지 판별합니다.
+
+&amp;gt;ex
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Array.isArray([1, 2, 3]);  // true
+Array.isArray({foo: 123}); // false
+Array.isArray(&amp;lsquo;foobar&amp;rsquo;);   // false
+Array.isArray(undefined);  // false
+```&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -4191,17 +4272,21 @@ if (0 == false)
 &lt;p&gt;어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;function isOldEnoughToDrink(age) {
-  // 여기에 코드를 작성하세요
-  if (age &amp;lt; 21 ) {
-    return false;
-  } else {
-    return true;
-  }
+// 여기에 코드를 작성하세요
+if (age &amp;lt; 21 ) {
+return false;
+} else {
+return true;
+}
 }
 
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4215,17 +4300,21 @@ if (0 == false)
 &lt;p&gt;만일 21살보다 적으면, Go home, {전달받은_이름}! 만일 21살이거나 더 나이가 많으면, Welcome, {전달받은_이름}! 을 리턴하세요. 쉼표와 공백, 느낌표까지 정확히 리턴해야 합니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;
 function checkAge(name, age) {
-  // 여기에 코드를 작성하세요
-  if (age &amp;gt;= 21){
-    return &#39;Welcome, &#39; + name+ &#39;!&#39;;
-  } else {
-    return &#39;Go home, &#39; + name+ &#39;!&#39;;
-  }
+// 여기에 코드를 작성하세요
+if (age &amp;gt;= 21){
+return &#39;Welcome, &#39; + name+ &#39;!&#39;;
+} else {
+return &#39;Go home, &#39; + name+ &#39;!&#39;;
+}
 };
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4239,19 +4328,23 @@ function checkAge(name, age) {
 &lt;p&gt;Given a number, &amp;ldquo;equalsTen&amp;rdquo; returns whether or not the given number is 10. (&amp;ldquo;숫자가 주어졌을때, &amp;ldquo;equalsTen&amp;rdquo; 함수는 숫자가 10과 같은지 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;function equalsTen(num) {
-  // 여기에 코드를 작성하세요
-  if ( num !== 10){
-    return false;
-  }else if (num === 10 ){
-    return true;
-  }
+// 여기에 코드를 작성하세요
+if ( num !== 10){
+return false;
+}else if (num === 10 ){
+return true;
+}
 }
 
 equalsTen(10);
 
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4265,21 +4358,25 @@ equalsTen(10);
 &lt;p&gt;Given 2 numbers, &amp;ldquo;isGreaterThan&amp;rdquo; returns whether num2 is greater than num1. (두 숫자가 주어졌을때, &amp;ldquo;isGreaterThan&amp;rdquo; 함수는 두번째 숫자(num2)가 첫번째 숫자(num1)보다 큰지 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;
 function isGreaterThan(num1, num2) {
-  // 여기에 코드를 작성하세요
-  if ( num1 === num2 ){
-    return false;
-  } else if ( num1 &amp;lt; num2) {
-    return true;
-  } else {
-    return false;
-  }
+// 여기에 코드를 작성하세요
+if ( num1 === num2 ){
+return false;
+} else if ( num1 &amp;lt; num2) {
+return true;
+} else {
+return false;
+}
 }
 
 isGreaterThan(20,30)
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4293,19 +4390,23 @@ isGreaterThan(20,30)
 &lt;p&gt;Given a number, &amp;ldquo;isEven&amp;rdquo; returns whether it is even. (&amp;ldquo;숫자가 주어졌을때, &amp;ldquo;isEven&amp;rdquo; 함수는 주어진 숫자가 짝수인지 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;function isEven(num) {
-  // 여기에 코드를 작성하세요
-  if ( num % 2 === 0 ) {
-    return true;
-  } else {
-    return false;
-  }
+// 여기에 코드를 작성하세요
+if ( num % 2 === 0 ) {
+return true;
+} else {
+return false;
+}
 
 }
 
 isEven(21)
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4319,18 +4420,22 @@ isEven(21)
 &lt;p&gt;Given a number, &amp;ldquo;isEvenAndGreaterThanTen&amp;rdquo; returns whether it is both even and greater than 10. (숫자가 주어졌을때, &amp;ldquo;isEvenAndGreaterThanTen&amp;rdquo; 함수는 주어진 숫자가 10보다 크고 짝수인지 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;function isEvenAndGreaterThanTen(num) {
-  // 여기에 코드를 작성하세요
-  if ( num % 2 === 0 &amp;amp;&amp;amp; num &amp;gt; 10 ){
-    return true;
-  } else {
-    return false;
-  }
+// 여기에 코드를 작성하세요
+if ( num % 2 === 0 &amp;amp;&amp;amp; num &amp;gt; 10 ){
+return true;
+} else {
+return false;
+}
 }
 isEvenAndGreaterThanTen(13);
 
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4344,36 +4449,29 @@ isEvenAndGreaterThanTen(13);
 &lt;p&gt;Given a score, &amp;ldquo;convertScoreToGrade&amp;rdquo; returns a string representing the letter grade corresponding to the given score. (점수가 주어졌을때, &amp;ldquo;convertScoreToGrade&amp;rdquo; 함수는 주어진 점수와 대응하는 등급을 문자열로 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;Notes:
-
-(100 - 90) --&amp;gt; &#39;A&#39;
-(89 - 80) --&amp;gt; &#39;B&#39;
-(79 - 70) --&amp;gt; &#39;C&#39;
-(69 - 60) --&amp;gt; &#39;D&#39;
-(59 - 0) --&amp;gt; &#39;F&#39;
-If the given score is greater than 100 or less than 0, it should return &#39;INVALID SCORE&#39;. (만약 주어진 점수가 100을 초과하거나 0 미만이라면 &#39;INVALID SCORE&#39; 를 반환해야 합니다.)
-
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;function convertScoreToGrade(score) {
-  // 여기에 코드를 작성하세요
-  if ( score &amp;gt; 100 || score &amp;lt; 0) {
-    return &amp;quot;INVALID SCORE&amp;quot;;
-  } else if ( score &amp;gt;= 90 ) {
-    return &amp;quot;A&amp;quot;;
-  } else if ( score &amp;gt;= 80 ) {
-    return &amp;quot;B&amp;quot;;
-  } else if ( score &amp;gt;= 70 ) {
-    return &amp;quot;C&amp;quot;;
-  } else if ( score &amp;gt;= 60 ) {
-    return &amp;quot;D&amp;quot;;
-  } else {
-   return &#39;F&#39;;
-  }
+// 여기에 코드를 작성하세요
+if ( score &amp;gt; 100 || score &amp;lt; 0) {
+return &amp;quot;INVALID SCORE&amp;quot;;
+} else if ( score &amp;gt;= 90 ) {
+return &amp;quot;A&amp;quot;;
+} else if ( score &amp;gt;= 80 ) {
+return &amp;quot;B&amp;quot;;
+} else if ( score &amp;gt;= 70 ) {
+return &amp;quot;C&amp;quot;;
+} else if ( score &amp;gt;= 60 ) {
+return &amp;quot;D&amp;quot;;
+} else {
+return &#39;F&#39;;
+}
 }
 convertScoreToGrade(0);
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4387,25 +4485,23 @@ convertScoreToGrade(0);
 &lt;p&gt;Given 2 boolean expressions, &amp;ldquo;or&amp;rdquo; returns true or false, corresponding to the || operator. (boolean 두개가 주어졌을때, &amp;ldquo;or&amp;rdquo; 함수는 || 연산자에 대응하는 true 나 false 를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;Notes:
-
-Do not use the || operator. (|| 연산자를 사용하지 마세요.)
-Use ! and &amp;amp;&amp;amp; operators instead. (대신 ! 와 &amp;amp;&amp;amp; 연산자를 사용하세요.)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;function or(expression1, expression2) {
-  // 여기에 코드를 작성하세요
-  if ( expression1 !== false  ) {
-    return true;
-  } else if ( expression2 !== false ) {
-    return true;
-  } else {
-    return false;
-  }
+// 여기에 코드를 작성하세요
+if ( expression1 !== false  ) {
+return true;
+} else if ( expression2 !== false ) {
+return true;
+} else {
+return false;
+}
 
 }
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4419,17 +4515,21 @@ Use ! and &amp;amp;&amp;amp; operators instead. (대신 ! 와 &amp;amp;&amp;amp;
 &lt;p&gt;Given two numbers, &amp;lsquo;isEitherEvenAndLessThan9&amp;rsquo; returns whether at least one of them is even, and, both of them are less than 9. (숫자 두개가 주어졌을때, &amp;lsquo;isEitherEvenAndLessThan9&amp;rsquo; 함수는 2가지 조건을 검사합니다. 우선 두 숫자 중 적어도 하나가 짝수인지, 그리고 두 숫자 모두 9보다 작은지를 확인합니다. 두 조건을 모두 만족 했을 때만 true를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;
 function isEitherEvenAndLessThan9(num1, num2) {
-  if ((num1 % 2 === 0 || num2 % 2 === 0) &amp;amp;&amp;amp; (num1 &amp;lt; 9 &amp;amp;&amp;amp; num2 &amp;lt; 9)) {
-    return true;
-  } else {
-    return false;
-  }
+if ((num1 % 2 === 0 || num2 % 2 === 0) &amp;amp;&amp;amp; (num1 &amp;lt; 9 &amp;amp;&amp;amp; num2 &amp;lt; 9)) {
+return true;
+} else {
+return false;
+}
 }
 
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4443,16 +4543,20 @@ function isEitherEvenAndLessThan9(num1, num2) {
 &lt;p&gt;Given a first and a last name, &amp;ldquo;getFullName&amp;rdquo; returns a single string with the given first and last names separated by a single space. (이름과 성이 주어졌을때, &amp;ldquo;getFullName&amp;rdquo; 함수는 이름과 성이 띄어쓰기 하나를 사이에 둔 단일 문자열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;
 function getFullName(firstName, lastName) {
-  // 여기에 코드를 작성하세요
-  let output = firstName + lastName;
-  return firstName + &amp;quot; &amp;quot; + lastName;
+// 여기에 코드를 작성하세요
+let output = firstName + lastName;
+return firstName + &amp;quot; &amp;quot; + lastName;
 }
   
 getFullName(&#39;john&#39;,&#39;jung&#39;)
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4466,15 +4570,19 @@ getFullName(&#39;john&#39;,&#39;jung&#39;)
 &lt;p&gt;Given a word, &amp;ldquo;getLengthOfWord&amp;rdquo; returns the length of the given word. (단어가 주어졌을때, &amp;ldquo;getLengthOfWord&amp;rdquo; 함수는 단어의 길이를 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;
 function getLengthOfWord(word) {
-  // 여기에 코드를 작성하세요
-  let count = word.length;
-  return count;
+// 여기에 코드를 작성하세요
+let count = word.length;
+return count;
 }
 getLengthOfWord(&amp;quot;hello&amp;quot;)
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4488,18 +4596,22 @@ getLengthOfWord(&amp;quot;hello&amp;quot;)
 &lt;p&gt;Given two words, &amp;ldquo;computeAverageLengthOfWords&amp;rdquo; returns the average of their lengths. (두 단어가 주어졌을때, &amp;ldquo;computeAverageLengthOfWords&amp;rdquo; 함수는 두 단어 길이의 평균값을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;function computeAverageLengthOfWords(word1, word2) {
-  // your code here
-  // count
-  var firstNum = word1.length;
-  var sceondNum = word2.length;
-  var ret = (firstNum + sceondNum) / 2;
-  return ret;
-  }
-  computeAverageLengthOfWords(&amp;quot;whatIYouDoing?&amp;quot;,&amp;quot;this is JJ&amp;quot;)
+// your code here
+// count
+var firstNum = word1.length;
+var sceondNum = word2.length;
+var ret = (firstNum + sceondNum) / 2;
+return ret;
+}
+computeAverageLengthOfWords(&amp;quot;whatIYouDoing?&amp;quot;,&amp;quot;this is JJ&amp;quot;)
 
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4513,18 +4625,22 @@ getLengthOfWord(&amp;quot;hello&amp;quot;)
 &lt;p&gt;Given a word, &amp;ldquo;isOddLength&amp;rdquo; returns whether the length of the given word is odd. (단어가 주어졌을때, &amp;ldquo;isOddLength&amp;rdquo; 함수는 주어진 단어의 길이가 홀수인지 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;function isOddLength(word) {
-  // your code here
-  let countNum = word.length;
-  if ( countNum % 2 !== 0) {
-    return true;
-  } else {
-    return false;
-  }
+// your code here
+let countNum = word.length;
+if ( countNum % 2 !== 0) {
+return true;
+} else {
+return false;
+}
 }
 
 isOddLength(&amp;quot;heeeee&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4538,21 +4654,25 @@ isOddLength(&amp;quot;heeeee&amp;quot;)
 &lt;p&gt;Given a word, &amp;ldquo;isEvenLength&amp;rdquo; returns whether the length of the word is even. (단어가 주어졌을때, &amp;ldquo;isEvenLength&amp;rdquo; 함수는 주어진 단어의 길이가 짝수인지 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;
 function isEvenLength(word) {
-  // your code here
-  var countNum = word.length;
-  if ( countNum % 2 === 0 ) {
-    return true;
-  } else {
-    return false;
-  }
+// your code here
+var countNum = word.length;
+if ( countNum % 2 === 0 ) {
+return true;
+} else {
+return false;
+}
 }
 
 isEvenLength(&amp;quot;hee&amp;quot;)
 
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4566,15 +4686,19 @@ isEvenLength(&amp;quot;hee&amp;quot;)
 &lt;p&gt;Given a string and a number, &amp;ldquo;repeatString&amp;rdquo; returns the given string repeated the given number of times. (문자열과 숫자가 주어졌을때, &amp;ldquo;repeatString&amp;rdquo; 함수는 주어진 문자열을 주어진 숫자만큼 반복하여 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;
 function repeatString(string, num) {
-  // your code here
- var repeatation = string.repeat(num) 
- return repeatation;
+// your code here
+var repeatation = string.repeat(num) 
+return repeatation;
 }
 
 repeatString(&amp;quot;thewordofGod is the way&amp;quot;,50)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4586,30 +4710,29 @@ repeatString(&amp;quot;thewordofGod is the way&amp;quot;,50)
 &lt;p&gt;Write a function called &amp;ldquo;findShortestOfThreeWords&amp;rdquo;. (&amp;ldquo;findShortestOfThreeWords&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 
 &lt;p&gt;Given 3 strings, &amp;ldquo;findShortestOfThreeWords&amp;rdquo; returns the shortest of the given strings. (문자열 3개가 주어졌을때, &amp;ldquo;findShortestOfThreeWords&amp;rdquo; 함수는 주어진 문자열 중 가장 짧은 문자열을 반환해야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;If there are ties, it should return the first word in the parameters list. (만약 동률이 있다면, 그 중 앞에 있는 문자열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;
-Notes:
-
-If there are ties, it should return the first word in the parameters list. (만약 동률이 있다면, 그 중 앞에 있는 문자열을 반환해야 합니다.)
-
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;function findShortestOfThreeWords(word1, word2, word3) {
-  // your code here
-  if ( word1.length &amp;lt; word2.length &amp;amp;&amp;amp; word3.length ) {
-    return word1;
-  } else if (word1.length === word2.length &amp;amp;&amp;amp; word3.length){
-    return word1;
-  } else if ( word2.length &amp;lt; word1.length &amp;amp;&amp;amp; word3.length ){
-  return word2;
-  } else if ( word3.length &amp;lt; word2.length &amp;amp;&amp;amp; word1.length ) {
-    return word3;
-  }
+// your code here
+if ( word1.length &amp;lt; word2.length &amp;amp;&amp;amp; word3.length ) {
+return word1;
+} else if (word1.length === word2.length &amp;amp;&amp;amp; word3.length){
+return word1;
+} else if ( word2.length &amp;lt; word1.length &amp;amp;&amp;amp; word3.length ){
+return word2;
+} else if ( word3.length &amp;lt; word2.length &amp;amp;&amp;amp; word1.length ) {
+return word3;
+}
 }
 
 findShortestOfThreeWords(&amp;quot;111&amp;quot;,&amp;quot;222&amp;quot;,&amp;quot;333333333&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4623,23 +4746,27 @@ findShortestOfThreeWords(&amp;quot;111&amp;quot;,&amp;quot;222&amp;quot;,&amp;qu
 &lt;p&gt;Given a string input and a character, &amp;ldquo;countCharacter&amp;rdquo; returns the number of occurences of a given character in the given string. (문자열과 문자가 주어졌을때, &amp;ldquo;countCharacter&amp;rdquo; 함수는 주어진 문자열에서 주어진 문자가 몇개가 있는지를 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;
 function countCharacter(str, char) {
-  // your code here
-  let countRet = 0;
-  for ( let i = 0; i &amp;lt; str.length; i = i + 1 ) {
-    if ( str.charAt(i) === char ) {
-      countRet = countRet + 1 ;
-    }
-  }
-  return countRet;
+// your code here
+let countRet = 0;
+for ( let i = 0; i &amp;lt; str.length; i = i + 1 ) {
+if ( str.charAt(i) === char ) {
+  countRet = countRet + 1 ;
+}
+}
+return countRet;
 }
 
 countCharacter(&amp;quot;hello&amp;quot;, &amp;quot;l&amp;quot; );
 
 
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4654,6 +4781,8 @@ countCharacter(&amp;quot;hello&amp;quot;, &amp;quot;l&amp;quot; );
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;ex1&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;function findMinLengthOfThreeWords(word1, word2, word3) {
@@ -4716,13 +4845,17 @@ return Math.min(word1.length, word2.length, word3.length)
 &lt;p&gt;Given the base and height of a triangle, &amp;ldquo;computeAreaOfATriangle&amp;rdquo; returns its area. (삼각형의 밑변과 높이가 주어졌을때, &amp;ldquo;computeAreaOfATriangle&amp;rdquo; 함수는 삼각형의 넓이를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;function computeAreaOfATriangle(base, height) {
-  // your code here
-  let ret = base * height / 2;
-  return ret;
+// your code here
+let ret = base * height / 2;
+return ret;
 }
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4736,18 +4869,22 @@ return Math.min(word1.length, word2.length, word3.length)
 &lt;p&gt;Given the radius of a circle, &amp;ldquo;computePerimeterOfACircle&amp;rdquo; returns its perimeter. (원의 반지름이 주어졌을때, &amp;ldquo;computePerimeterOfACircle&amp;rdquo; 함수는 원의 둘레를 반환하세요.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;
 function computePerimeterOfACircle(radius) {
-  // your code here\
-  //원의 둘레 = 2 X 반지름 X 원주율 = 지름 X 원주율
-  let ret = radius * 2 * Math.PI;
-  return ret;
+// your code here\
+//원의 둘레 = 2 X 반지름 X 원주율 = 지름 X 원주율
+let ret = radius * 2 * Math.PI;
+return ret;
 }
 
 computePerimeterOfACircle(200);
 
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -4761,48 +4898,37 @@ computePerimeterOfACircle(200);
 &lt;p&gt;Given an array of numbers, &amp;ldquo;computeAverageOfNumbers&amp;rdquo; returns their average. (숫자이 배열이 주어졌을때, &amp;ldquo;computeAverageOfNumbers&amp;rdquo; 함수는 그들의 평균을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;
-Notes:
-
-If given an empty array, it should return 0. (만약 빈배열이 주어졌다면, 0을 반환해야 합니다.)
-
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;function computeAverageOfNumbers(nums) {
-  // your code here
-  let sum = 0;
-  if ( nums.length === 0 ) {
-    return 0;
-  }
-  for (let i = 0; i &amp;lt; nums.length; i = i + 1 ){
-    sum = sum + nums[i]
-  }
-  return sum / nums.length; 
+// your code here
+let sum = 0;
+if ( nums.length === 0 ) {
+return 0;
+}
+for (let i = 0; i &amp;lt; nums.length; i = i + 1 ){
+sum = sum + nums[i]
+}
+return sum / nums.length; 
 }
 computeAverageOfNumbers[1,2,3,4,5,6];
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;type-01-converttostring&#34;&gt;type : 01_convertToString&lt;/h2&gt;
+&lt;h2 id=&#34;type&#34;&gt;&lt;strong&gt;type&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;01_convertToString&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;convertToString함수가 있습니다. 이 함수는 주어진 파라미터를 문자열의 형태로 변환합니다.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Note&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;let output = convertToString(120);
-console.log(output); // --&amp;gt; &#39;120&#39;
-
-let output2 = convertToString(&#39;hello&#39;);
-console.log(output2); // --&amp;gt; &#39;hello&#39;
-
-let output3 = convertToString(true);
-console.log(output3); // --&amp;gt; &#39;true&#39;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
 function convertToString(anything) {
@@ -4820,11 +4946,7 @@ convertToString(&#39;hello&#39;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;type-02-converttonumber&#34;&gt;type : 02_convertToNumber&lt;/h2&gt;
-
-&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;02_convertToNumber&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;convertToNumber함수가 있습니다. 이 함수는 주어진 파라미터를 숫자의 형태로 변환합니다.&lt;/p&gt;
@@ -4832,28 +4954,30 @@ convertToString(&#39;hello&#39;)
 &lt;p&gt;숫자로 변환할 수 없는 경우, NaN (Not a number) 이라는 결과가 나올것입니다. NaN은 숫자가 아님을 나타내는 특수한 값으로, 문자열이 아닙니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;note&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+function convertToNumber(anything) {
+  anything = Number(anything);
+  
+  if(!anything){
+    return NaN;
+  }else{
+    return anything;
+  }
+}
+convertToNumber(&#39;hello&#39;)
 
-&lt;pre&gt;&lt;code&gt;let output = isFalsy(&#39;hello&#39;);
-console.log(output); // --&amp;gt; false
 
-let output2 = isFalsy(0);
-console.log(output2); // --&amp;gt; true
-
-let output3 = isFalsy(true);
-console.log(output3); // --&amp;gt; false
-
-let output4 = isFalsy(undefined);
-console.log(output4); // --&amp;gt; true
-
-let output5 = isFalsy(NaN);
-console.log(output5); // --&amp;gt; true
-
-let output6 = isFalsy(&#39;&#39;);
-console.log(output6); // --&amp;gt; true
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;03_isFalsy&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;isFalsy함수가 있습니다. falsy 값은, 거짓으로 취급되는 값을 의미합니다. 이 함수는 주어진 파라미터가 falsy값인지 아닌지를 평가합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
 function isFalsy(anything) {
@@ -4879,6 +5003,31 @@ isFalsy(&#39;hello&#39;);
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;04_getType&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;getType함수가 있습니다. 이 함수는 주어진 파라미터의 타입을 리턴합니다.&lt;/p&gt;
+
+&lt;p&gt;Note:
+배열을 넘길 경우, &amp;lsquo;object&amp;rsquo;라고 나올 수 있습니다. 배열과 객체는 어떻게 구분할 수 있을까요?
+배열과 객체를 구분하려면 Array.isArray 메소드를 사용하면 됩니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function getType(anything) {
+  // 여기에 코드를 작성하세요
+  // if 문을 사용해서 문자,숫자, boolean , arry, object 을 구분하는 것을 사용한다.
+  if (Array.isArray(anything) === true ) {
+    return &#39;array&#39;
+  } else 
+  return typeof anything;
+}
+
+
+getType([1,2,3,4])
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

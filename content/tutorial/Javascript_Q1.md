@@ -18,6 +18,9 @@ type: docs
 >어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
 
 
+* my_answer
+
+
 ```
 function isOldEnoughToDrink(age) {
   // 여기에 코드를 작성하세요
@@ -40,6 +43,9 @@ function isOldEnoughToDrink(age) {
 
 >만일 21살보다 적으면, Go home, {전달받은_이름}! 만일 21살이거나 더 나이가 많으면, Welcome, {전달받은_이름}! 을 리턴하세요. 쉼표와 공백, 느낌표까지 정확히 리턴해야 합니다.
 
+
+
+* my_answer
 
 ```
 
@@ -67,6 +73,9 @@ function checkAge(name, age) {
 
 
 
+
+* my_answer
+
 ```
 function equalsTen(num) {
   // 여기에 코드를 작성하세요
@@ -93,6 +102,9 @@ equalsTen(10);
 >Write a function called "isGreaterThan". ("isGreaterThan" 함수를 작성하세요.)
 
 >Given 2 numbers, "isGreaterThan" returns whether num2 is greater than num1. (두 숫자가 주어졌을때, "isGreaterThan" 함수는 두번째 숫자(num2)가 첫번째 숫자(num1)보다 큰지 반환해야 합니다.)
+
+
+* my_answer
 
 
 ```
@@ -124,6 +136,9 @@ isGreaterThan(20,30)
 >Given a number, "isEven" returns whether it is even. ("숫자가 주어졌을때, "isEven" 함수는 주어진 숫자가 짝수인지 반환합니다.)
 
 
+
+* my_answer
+
 ```
 function isEven(num) {
   // 여기에 코드를 작성하세요
@@ -150,7 +165,7 @@ isEven(21)
 >Given a number, "isEvenAndGreaterThanTen" returns whether it is both even and greater than 10. (숫자가 주어졌을때, "isEvenAndGreaterThanTen" 함수는 주어진 숫자가 10보다 크고 짝수인지 반환해야 합니다.)
 
 
-
+* my_answer
 
 ```
 function isEvenAndGreaterThanTen(num) {
@@ -176,19 +191,8 @@ isEvenAndGreaterThanTen(13);
 
 >Given a score, "convertScoreToGrade" returns a string representing the letter grade corresponding to the given score. (점수가 주어졌을때, "convertScoreToGrade" 함수는 주어진 점수와 대응하는 등급을 문자열로 반환합니다.)
 
-```
-Notes:
 
-(100 - 90) --> 'A'
-(89 - 80) --> 'B'
-(79 - 70) --> 'C'
-(69 - 60) --> 'D'
-(59 - 0) --> 'F'
-If the given score is greater than 100 or less than 0, it should return 'INVALID SCORE'. (만약 주어진 점수가 100을 초과하거나 0 미만이라면 'INVALID SCORE' 를 반환해야 합니다.)
-
-```
-
-
+* my_answer
 
 ```
 function convertScoreToGrade(score) {
@@ -222,12 +226,10 @@ convertScoreToGrade(0);
 
 >Given 2 boolean expressions, "or" returns true or false, corresponding to the || operator. (boolean 두개가 주어졌을때, "or" 함수는 || 연산자에 대응하는 true 나 false 를 반환합니다.)
 
-```
-Notes:
 
-Do not use the || operator. (|| 연산자를 사용하지 마세요.)
-Use ! and && operators instead. (대신 ! 와 && 연산자를 사용하세요.)
-```
+
+
+* my_answer
 
 ```
 function or(expression1, expression2) {
@@ -259,6 +261,8 @@ function or(expression1, expression2) {
 
 
 
+* my_answer
+
 ```
 
 function isEitherEvenAndLessThan9(num1, num2) {
@@ -286,6 +290,8 @@ function isEitherEvenAndLessThan9(num1, num2) {
 >Given a first and a last name, "getFullName" returns a single string with the given first and last names separated by a single space. (이름과 성이 주어졌을때, "getFullName" 함수는 이름과 성이 띄어쓰기 하나를 사이에 둔 단일 문자열을 반환해야 합니다.)
 
 
+* my_answer
+
 ```
 
 function getFullName(firstName, lastName) {
@@ -311,6 +317,8 @@ getFullName('john','jung')
 >Given a word, "getLengthOfWord" returns the length of the given word. (단어가 주어졌을때, "getLengthOfWord" 함수는 단어의 길이를 반환해야 합니다.)
 
 
+* my_answer
+
 ```
 
 function getLengthOfWord(word) {
@@ -334,6 +342,8 @@ getLengthOfWord("hello")
 
 >Given two words, "computeAverageLengthOfWords" returns the average of their lengths. (두 단어가 주어졌을때, "computeAverageLengthOfWords" 함수는 두 단어 길이의 평균값을 반환합니다.)
 
+
+* my_answer
 
 
 ```
@@ -361,6 +371,8 @@ function computeAverageLengthOfWords(word1, word2) {
 >Given a word, "isOddLength" returns whether the length of the given word is odd. (단어가 주어졌을때, "isOddLength" 함수는 주어진 단어의 길이가 홀수인지 반환해야 합니다.)
 
 
+* my_answer
+
 ```
 function isOddLength(word) {
   // your code here
@@ -386,6 +398,8 @@ isOddLength("heeeee")
 >Given a word, "isEvenLength" returns whether the length of the word is even. (단어가 주어졌을때, "isEvenLength" 함수는 주어진 단어의 길이가 짝수인지 반환해야 합니다.)
 
 
+
+* my_answer
 
 ```
 
@@ -414,6 +428,7 @@ isEvenLength("hee")
 
 >Given a string and a number, "repeatString" returns the given string repeated the given number of times. (문자열과 숫자가 주어졌을때, "repeatString" 함수는 주어진 문자열을 주어진 숫자만큼 반복하여 반환해야 합니다.)
 
+* my_answer
 
 ```
 
@@ -437,13 +452,12 @@ repeatString("thewordofGod is the way",50)
 
 >Given 3 strings, "findShortestOfThreeWords" returns the shortest of the given strings. (문자열 3개가 주어졌을때, "findShortestOfThreeWords" 함수는 주어진 문자열 중 가장 짧은 문자열을 반환해야 합니다.)
 
-```
+>If there are ties, it should return the first word in the parameters list. (만약 동률이 있다면, 그 중 앞에 있는 문자열을 반환해야 합니다.)
 
-Notes:
 
-If there are ties, it should return the first word in the parameters list. (만약 동률이 있다면, 그 중 앞에 있는 문자열을 반환해야 합니다.)
 
-```
+* my_answer
+
 ```
 function findShortestOfThreeWords(word1, word2, word3) {
   // your code here
@@ -472,7 +486,7 @@ findShortestOfThreeWords("111","222","333333333")
 
 >Given a string input and a character, "countCharacter" returns the number of occurences of a given character in the given string. (문자열과 문자가 주어졌을때, "countCharacter" 함수는 주어진 문자열에서 주어진 문자가 몇개가 있는지를 반환해야 합니다.)
 
-
+* my_answer
 
 ```
 
@@ -505,6 +519,10 @@ countCharacter("hello", "l" );
 >Write a function called "areValidCredentials". ("areValidCredentials" 함수를 작성하세요.)
 
 >Given a name and a password, "areValidCredentials", returns true if the name is longer than 3 characters, AND, the password is at least 8 characters long. Otherwise it returns false. (이름과 비밀번호가 주어졌을때, "areValidCredentials" 함수는 이름이 3글자이상 그리고 비밀번호가 8글자 이상이면 true를 반환합니다.)
+
+
+
+* my_answer
 
 * ex1
 ```
@@ -566,6 +584,8 @@ function findMinLengthOfThreeWords(word1, word2, word3) {
 >Given the base and height of a triangle, "computeAreaOfATriangle" returns its area. (삼각형의 밑변과 높이가 주어졌을때, "computeAreaOfATriangle" 함수는 삼각형의 넓이를 반환합니다.)
 
 
+* my_answer
+
 ```
 function computeAreaOfATriangle(base, height) {
   // your code here
@@ -586,6 +606,9 @@ function computeAreaOfATriangle(base, height) {
 >Given the radius of a circle, "computePerimeterOfACircle" returns its perimeter. (원의 반지름이 주어졌을때, "computePerimeterOfACircle" 함수는 원의 둘레를 반환하세요.
 
 
+
+
+* my_answer
 
 ```
 
@@ -614,13 +637,9 @@ computePerimeterOfACircle(200);
 
 >Given an array of numbers, "computeAverageOfNumbers" returns their average. (숫자이 배열이 주어졌을때, "computeAverageOfNumbers" 함수는 그들의 평균을 반환합니다.)
 
-```
 
-Notes:
 
-If given an empty array, it should return 0. (만약 빈배열이 주어졌다면, 0을 반환해야 합니다.)
-
-```
+* my_answer
 
 ```
 function computeAverageOfNumbers(nums) {
@@ -639,26 +658,18 @@ computeAverageOfNumbers[1,2,3,4,5,6];
 ```
 
 ---
-## type : 01_convertToString
+## **type**
 ---
+
+
+
+**01_convertToString**
 
 convertToString함수가 있습니다. 이 함수는 주어진 파라미터를 문자열의 형태로 변환합니다.
 
 
-* Note
 
-```
-let output = convertToString(120);
-console.log(output); // --> '120'
-
-let output2 = convertToString('hello');
-console.log(output2); // --> 'hello'
-
-let output3 = convertToString(true);
-console.log(output3); // --> 'true'
-```
-
-
+* my_answer
 
 ```
 
@@ -679,9 +690,7 @@ convertToString('hello')
 
 
 
----
-## type : 02_convertToNumber
----
+**02_convertToNumber**
 
 >convertToNumber함수가 있습니다. 이 함수는 주어진 파라미터를 숫자의 형태로 변환합니다.
 
@@ -689,29 +698,36 @@ convertToString('hello')
 >숫자로 변환할 수 없는 경우, NaN (Not a number) 이라는 결과가 나올것입니다. NaN은 숫자가 아님을 나타내는 특수한 값으로, 문자열이 아닙니다.
 
 
-* note
-
-```
-let output = isFalsy('hello');
-console.log(output); // --> false
-
-let output2 = isFalsy(0);
-console.log(output2); // --> true
-
-let output3 = isFalsy(true);
-console.log(output3); // --> false
-
-let output4 = isFalsy(undefined);
-console.log(output4); // --> true
-
-let output5 = isFalsy(NaN);
-console.log(output5); // --> true
-
-let output6 = isFalsy('');
-console.log(output6); // --> true
 
 ```
 
+function convertToNumber(anything) {
+  anything = Number(anything);
+  
+  if(!anything){
+    return NaN;
+  }else{
+    return anything;
+  }
+}
+convertToNumber('hello')
+
+
+
+```
+
+
+
+
+
+
+
+**03_isFalsy**
+
+>isFalsy함수가 있습니다. falsy 값은, 거짓으로 취급되는 값을 의미합니다. 이 함수는 주어진 파라미터가 falsy값인지 아닌지를 평가합니다.
+
+
+* my_answer
 
 ```
 
@@ -738,3 +754,29 @@ isFalsy('hello');
 
 ```
 
+
+**04_getType**
+
+
+>getType함수가 있습니다. 이 함수는 주어진 파라미터의 타입을 리턴합니다.
+
+>Note:
+>배열을 넘길 경우, 'object'라고 나올 수 있습니다. 배열과 객체는 어떻게 구분할 수 있을까요?
+배열과 객체를 구분하려면 Array.isArray 메소드를 사용하면 됩니다.
+
+
+```
+
+function getType(anything) {
+  // 여기에 코드를 작성하세요
+  // if 문을 사용해서 문자,숫자, boolean , arry, object 을 구분하는 것을 사용한다.
+  if (Array.isArray(anything) === true ) {
+    return 'array'
+  } else 
+  return typeof anything;
+}
+
+
+getType([1,2,3,4])
+
+```
