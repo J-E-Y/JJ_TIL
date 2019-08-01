@@ -65,7 +65,8 @@ str.toLowerCase()
 * str.indexOf(serchValue); 찾기 
 
 
-````
+```
+
 "Blue Whale"indexOf("Blue"); >>0
 "Blue Whale".indexOf("hello"); >>-1
 "Blue Whale".indexOf("Whale"); >>5
@@ -78,7 +79,7 @@ str.toLowerCase()
 
 * string.repeat(숫자입력) 반복하는것 
 
->ex
+> ex
 
 
 ```
@@ -139,6 +140,7 @@ console.log(numbers.sort(x));
 return a+b;
 
 [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
 ```
 
 
@@ -147,30 +149,24 @@ return a+b;
 
 
 ```
+
 function sortNumber(a,b){
-    // 비교 대상인 a와 b가 인자로 전달된다.
-    //alert('a :'+a+', b:'+b);
-    // a에서 b를 뺀 결과가 음수면 a가 b보다 작고, 0이면 같다.
-    // sort메소드는 return 값이 음수,양수,0인지에 따라서 순서를 정한다.
-    return a-b;
+// 비교 대상인 a와 b가 인자로 전달된다.
+//alert('a :'+a+', b:'+b);
+// a에서 b를 뺀 결과가 음수면 a가 b보다 작고, 0이면 같다.
+// sort메소드는 return 값이 음수,양수,0인지에 따라서 순서를 정한다.
+return a-b;
 }
 var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
 alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
 
+
 ```
-
-
-
-
-
-
 
 
 ---
 ## **Number**
 ---
-
-
 
 * parseInt() 숫자로 바꾸는것
 

@@ -3932,136 +3932,135 @@ str.toLowerCase()
 
 &lt;li&gt;&lt;p&gt;str.indexOf(serchValue); 찾기&lt;/p&gt;
 
-&lt;p&gt;````
-&amp;ldquo;Blue Whale&amp;rdquo;indexOf(&amp;ldquo;Blue&amp;rdquo;); &amp;gt;&amp;gt;0
-&amp;ldquo;Blue Whale&amp;rdquo;.indexOf(&amp;ldquo;hello&amp;rdquo;); &amp;gt;&amp;gt;-1
-&amp;ldquo;Blue Whale&amp;rdquo;.indexOf(&amp;ldquo;Whale&amp;rdquo;); &amp;gt;&amp;gt;5&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;canal&amp;rdquo;.lastIndexOf(&amp;ldquo;a&amp;rdquo;) &amp;gt;&amp;gt; 3&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;
+&amp;quot;Blue Whale&amp;quot;indexOf(&amp;quot;Blue&amp;quot;); &amp;gt;&amp;gt;0
+&amp;quot;Blue Whale&amp;quot;.indexOf(&amp;quot;hello&amp;quot;); &amp;gt;&amp;gt;-1
+&amp;quot;Blue Whale&amp;quot;.indexOf(&amp;quot;Whale&amp;quot;); &amp;gt;&amp;gt;5
 
-* string.repeat(숫자입력) 반복하는것 
 
-&amp;gt;ex
+&amp;quot;canal&amp;quot;.lastIndexOf(&amp;quot;a&amp;quot;) &amp;gt;&amp;gt; 3
 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;string.repeat(숫자입력) 반복하는것&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ex&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;let chorus = &#39;Because I&#39;m happy&#39;;
+
+console.log(&#39;Chorus lyrics for &amp;quot;Happy&amp;quot;: &#39; + chorus.repeat(27));
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;let chorus = &amp;lsquo;Because I&amp;rsquo;m happy&amp;rsquo;;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;charAt(index) :인덱스에 있는 값을 리턴한다.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;console.log(&amp;lsquo;Chorus lyrics for &amp;ldquo;Happy&amp;rdquo;: &amp;lsquo; + chorus.repeat(27));&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ex&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;
-* charAt(index) :인덱스에 있는 값을 리턴한다.
-
-
-&amp;gt; ex
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;var stringName = &amp;lsquo;coding everybody&amp;rsquo;;
+&lt;pre&gt;&lt;code&gt;var stringName = &#39;coding everybody&#39;;
 alert(stringName.charAt(0)); // c
 alert(stringName.charAt(stringName.length-1)); // y
-alert(stringName.charAt(1000) == &amp;ldquo;); // true&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-
-* sort() : 배열 정렬할때 
-
-
-&amp;gt;ex
+alert(stringName.charAt(1000) == &#39;&#39;); // true
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;var numbers = [9,8,7,6,5,4,3,2,1];
+&lt;ul&gt;
+&lt;li&gt;sort() : 배열 정렬할때&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ex&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+var numbers = [9,8,7,6,5,4,3,2,1];
 alert(numbers.sort()); // array, [1,2,3,4,5,6,7,8,9]
-alert(numbers); // array, [1,2,3,4,5,6,7,8,9], 원본을 변경한다.
-alert(numbers.sort() === numbers); // boolean, true, 원본과 반환값이 같다.&lt;/p&gt;
-
-&lt;p&gt;var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+alert(numbers); // array, [1,2,3,4,5,6,7,8,9], 원본을 변경한다. 
+alert(numbers.sort() === numbers); // boolean, true, 원본과 반환값이 같다.
+ 
+var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
 //array, [1,10,2,20,3,4,5,6,7,8,9], 암시적으로 원소를 문자로 형변환 하기 때문에 10이 1뒤에 온다.
-alert(numbers.sort());&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;gt; ex
-
+alert(numbers.sort()); 
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+&lt;blockquote&gt;
+&lt;p&gt;ex&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
 var x = function(a,b){
-return a-b;
-}&lt;/p&gt;
+	return a-b;
+}
 
-&lt;p&gt;console.log(numbers.sort(x));&lt;/p&gt;
+console.log(numbers.sort(x));
 
-&lt;p&gt;[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20]&lt;/p&gt;
-
-&lt;p&gt;순서반대 로 할려면
-return a+b;&lt;/p&gt;
-
-&lt;p&gt;[20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-
-&amp;gt;추가 설명 from 생활코딩 사전 sort()
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20]
 
 
+순서반대 로 할려면
+return a+b;
+
+[20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;function sortNumber(a,b){
-    // 비교 대상인 a와 b가 인자로 전달된다.
-    //alert(&amp;lsquo;a :&amp;lsquo;+a+&amp;rsquo;, b:&amp;lsquo;+b);
-    // a에서 b를 뺀 결과가 음수면 a가 b보다 작고, 0이면 같다.
-    // sort메소드는 return 값이 음수,양수,0인지에 따라서 순서를 정한다.
-    return a-b;
+&lt;blockquote&gt;
+&lt;p&gt;추가 설명 from 생활코딩 사전 sort()&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function sortNumber(a,b){
+// 비교 대상인 a와 b가 인자로 전달된다.
+//alert(&#39;a :&#39;+a+&#39;, b:&#39;+b);
+// a에서 b를 뺀 결과가 음수면 a가 b보다 작고, 0이면 같다.
+// sort메소드는 return 값이 음수,양수,0인지에 따라서 순서를 정한다.
+return a-b;
 }
 var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
-alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-
-
-
-
-
-
-
----
-## **Number**
----
-
-
-
-* parseInt() 숫자로 바꾸는것
-
-
-
----
-## **Array**
----
-
-
-* Array.isArray([]) :메서드는 인자가 Array인지 판별합니다.
-
-
-&amp;gt; () 안에 비워 있으면 실행되지 않는다. 
-
-&amp;gt;ex
+alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
 
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Array.isArray([]);  // true
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;number&#34;&gt;&lt;strong&gt;Number&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;parseInt() 숫자로 바꾸는것&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;array&#34;&gt;&lt;strong&gt;Array&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Array.isArray([]) :메서드는 인자가 Array인지 판별합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;() 안에 비워 있으면 실행되지 않는다.&lt;/p&gt;
+
+&lt;p&gt;ex&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;Array.isArray([]);  // true
 Array.isArray([1, 2, 3]);  // true
 Array.isArray({foo: 123}); // false
-Array.isArray(&amp;lsquo;foobar&amp;rsquo;);   // false
+Array.isArray(&#39;foobar&#39;);   // false
 Array.isArray(undefined);  // false
-```&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
