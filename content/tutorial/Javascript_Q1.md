@@ -765,6 +765,8 @@ isFalsy('hello');
 배열과 객체를 구분하려면 Array.isArray 메소드를 사용하면 됩니다.
 
 
+* my_answer
+
 ```
 
 function getType(anything) {
@@ -778,5 +780,157 @@ function getType(anything) {
 
 
 getType([1,2,3,4])
+
+```
+
+
+
+
+---
+## **object**
+---
+
+
+* 01_getProperty
+
+>파라미터로 객체와 키를 받는 getProperty함수가 있습니다. 이 함수는 주어진 객체와 키를 이용하여 속성값을 찾아 리턴합니다.
+만일 주어진 키가 객체의 속성에 없다면, undefined를 리턴하면 됩니다.
+
+
+* my_answer
+
+
+```
+
+function getProperty(obj, propertyName) {
+  return obj[propertyName];
+}
+let person = {
+  name: 'Steve',
+  age: 16
+};
+
+getProperty(person,"name");
+```
+
+
+
+* 02_addProperty
+
+
+>파라미터로 객체와 키를 받는 addProperty 함수가 있습니다. 이 함수는 주어진 객체에, 키 이름으로 속성을 만들고 값을 true로 설정합니다.
+
+
+
+* my_answer
+
+```
+function addProperty(obj, propertyName) {
+  // 여기에 코드를 작성하세요
+  return obj[propertyName] = true;
+  // return obj.propertyNmae = true; <<<is not working at all
+  }
+
+let john = {};
+
+addProperty(john,'isprogrammer');
+```
+
+
+* Q
+
+>obj[propertyName]를 이용했을 때는 테스트가 통과가 되고,
+obj.propertyName를 이용했을 때는 통과가 되지 않습니다.
+객체에 프로퍼티를 추가할 때 dot노테이션을 사용할 수 있는 걸로 알고있는데..이유가 뭘까요?
+
+
+* answer
+
+>. 으로 했을때는 바로 객체의 키로 접근하고 [ ] 으로 하면 변수로 접근합니다.
+addProperty(steve, 'isProgrammer'); 이라는 함수 호출 구문이 있다고 가정하면
+obj[propertyName] = true; 는 steve.isProgrammer = true; 이고
+obj.propertyName = true; 는 steve.propertyName = true; 입니다. 완전히 다른값이 나오죠?
+
+
+
+
+
+
+* 04_addObjectProperty
+
+
+>파라미터로 두 개의 객체와 키를 받는 addObjectProperty 함수가 있습니다. 이 함수는 주어진 첫번째 객체에, 키 이름으로 속성을 만드는데, 그 값은 두번째 객체로 설정합니다.
+객체의 키 값은 또다른 객체가 될 수 있음을 기억하세요.
+
+
+* my_answer
+
+
+```
+
+function addObjectProperty(obj1, propertyName, obj2) {
+  // 여기에 코드를 작성합니다.
+  obj1[propertyName] = obj2; 
+  return obj1;
+}
+let person1 = {
+  name: 'Joe',
+  role: 'Team Member'
+};
+let person2 = {
+  name: 'Steve',
+  role: 'CEO'
+};
+
+
+addObjectProperty(person1, 'manager', person2);
+
+
+```
+
+
+
+* 05_removeProperty
+
+
+>Write a function called "removeProperty". ("removeProperty" 함수를 작성하세요.)
+
+>Given an object and a key, "removeProperty" removes the given key from the given object. (객체와 키가 주어졌을때, "removeProperty" 함수는 주어진 키에 해당하는 객체의 속성값을 제거해야 합니다.)
+
+
+
+* my_answer
+
+
+
+```
+
+function removeProperty(obj, propertyName) {
+  // 여기에 코드를 작성하세요
+  delete obj[propertyName];
+}
+
+```
+
+
+* 06_isPersonOldEnoughToVote
+
+>Write a function called "isPersonOldEnoughToVote". ("isPersonOldEnoughToVote" 함수를 작성하세요.)
+
+>Given a "person" object, that contains an "age" property, "isPersonOldEnoughToVote" returns whether the given person is old enough to vote. ("age" 속성을 가지고 있는 "person" 객체가 주어졌을때, "isPersonOldEnoughToVote" 함수는 그 사람이 미국에서 합법적으로 투표를 할 수 있는 나이인지를 반환해야 합니다.)
+
+
+```
+
+function isPersonOldEnoughToVote(person) {
+  // your code here
+  // 1. if 사용해서 18세 이상일 경우 리턴 참
+  // 2. 아닐경우 거짓
+  if ( person.age >= 18 ) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 ```

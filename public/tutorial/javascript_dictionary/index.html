@@ -32,9 +32,8 @@
  str[index] 읽어서 찾아주는것 :immutable
 let str = &#39;CodeStates&#39;; str[0]; &gt;&gt; &#39;C&#39; but str[0] = &#39;G&#39; &gt;&gt; 바뀌지 않음. str = &#39;Codestates&#39; Note: index로 접근은 가능하지만 쓸수는 없음 (read-only);  toUpperCase() 소문자 대문자 바꿈:immutable
 let str = &#39;CodeStates&#39;; str.toUpperCase(); &gt;&gt;&quot;CODESTATES  toLowerCase() 대문자 소문자 바꿈:immutable
-let str = &quot;CodeStates&quot;; str.toLowerCase()  str.indexOf(serchValue); 찾기
-````
-&ldquo;Blue Whale&rdquo;indexOf(&ldquo;Blue&rdquo;); &gt;&gt;0 &ldquo;Blue Whale&rdquo;.indexOf(&ldquo;hello&rdquo;); &gt;&gt;-1 &ldquo;Blue Whale&rdquo;.">
+ let str = &quot;CodeStates&quot;; str.toLowerCase()  str.indexOf(serchValue); 찾기
+```` &ldquo;Blue Whale&rdquo;indexOf(&ldquo;Blue&rdquo;); &gt;&gt;0 &ldquo;Blue Whale&rdquo;.indexOf(&ldquo;hello&rdquo;); &gt;&gt;-1 &ldquo;Blue Whale&rdquo;.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_dictionary/">
@@ -128,9 +127,8 @@ let str = &quot;CodeStates&quot;; str.toLowerCase()  str.indexOf(serchValue); �
  str[index] 읽어서 찾아주는것 :immutable
 let str = &#39;CodeStates&#39;; str[0]; &gt;&gt; &#39;C&#39; but str[0] = &#39;G&#39; &gt;&gt; 바뀌지 않음. str = &#39;Codestates&#39; Note: index로 접근은 가능하지만 쓸수는 없음 (read-only);  toUpperCase() 소문자 대문자 바꿈:immutable
 let str = &#39;CodeStates&#39;; str.toUpperCase(); &gt;&gt;&quot;CODESTATES  toLowerCase() 대문자 소문자 바꿈:immutable
-let str = &quot;CodeStates&quot;; str.toLowerCase()  str.indexOf(serchValue); 찾기
-````
-&ldquo;Blue Whale&rdquo;indexOf(&ldquo;Blue&rdquo;); &gt;&gt;0 &ldquo;Blue Whale&rdquo;.indexOf(&ldquo;hello&rdquo;); &gt;&gt;-1 &ldquo;Blue Whale&rdquo;."><meta property="og:image" content="/img/icon-192.png">
+ let str = &quot;CodeStates&quot;; str.toLowerCase()  str.indexOf(serchValue); 찾기
+```` &ldquo;Blue Whale&rdquo;indexOf(&ldquo;Blue&rdquo;); &gt;&gt;0 &ldquo;Blue Whale&rdquo;.indexOf(&ldquo;hello&rdquo;); &gt;&gt;-1 &ldquo;Blue Whale&rdquo;."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -425,7 +423,8 @@ str.toUpperCase(); &gt;&gt;&quot;CODESTATES
 
 <li><p>toLowerCase() 대문자 소문자 바꿈:immutable</p>
 
-<pre><code>let str = &quot;CodeStates&quot;;
+<pre><code>
+let str = &quot;CodeStates&quot;;
 
 str.toLowerCase()
 
@@ -433,18 +432,19 @@ str.toLowerCase()
 
 <li><p>str.indexOf(serchValue); 찾기</p>
 
-<p>````</p>
-
-<p>&ldquo;Blue Whale&rdquo;indexOf(&ldquo;Blue&rdquo;); &gt;&gt;0
+<p>````
+&ldquo;Blue Whale&rdquo;indexOf(&ldquo;Blue&rdquo;); &gt;&gt;0
 &ldquo;Blue Whale&rdquo;.indexOf(&ldquo;hello&rdquo;); &gt;&gt;-1
 &ldquo;Blue Whale&rdquo;.indexOf(&ldquo;Whale&rdquo;); &gt;&gt;5</p>
 
 <p>&ldquo;canal&rdquo;.lastIndexOf(&ldquo;a&rdquo;) &gt;&gt; 3</p>
 
 <pre><code>
+
 * string.repeat(숫자입력) 반복하는것 
 
 &gt;ex
+
 
 </code></pre>
 
@@ -467,7 +467,9 @@ alert(stringName.charAt(stringName.length-1)); // y
 alert(stringName.charAt(1000) == &ldquo;); // true</p>
 
 <pre><code>
+
 * sort() : 배열 정렬할때 
+
 
 &gt;ex
 
@@ -484,6 +486,7 @@ alert(numbers.sort());</p>
 
 <pre><code>
 &gt; ex
+
 
 </code></pre>
 
@@ -504,6 +507,8 @@ return a+b;</p>
 <pre><code>
 
 &gt;추가 설명 from 생활코딩 사전 sort()
+
+
 
 </code></pre>
 
@@ -540,14 +545,18 @@ alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]</p>
 ---
 
 
-* Array.isArray() :메서드는 인자가 Array인지 판별합니다.
+* Array.isArray([]) :메서드는 인자가 Array인지 판별합니다.
+
+
+&gt; () 안에 비워 있으면 실행되지 않는다. 
 
 &gt;ex
 
 
 </code></pre>
 
-<p>Array.isArray([1, 2, 3]);  // true
+<p>Array.isArray([]);  // true
+Array.isArray([1, 2, 3]);  // true
 Array.isArray({foo: 123}); // false
 Array.isArray(&lsquo;foobar&rsquo;);   // false
 Array.isArray(undefined);  // false

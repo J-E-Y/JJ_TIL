@@ -3923,7 +3923,8 @@ str.toUpperCase(); &amp;gt;&amp;gt;&amp;quot;CODESTATES
 
 &lt;li&gt;&lt;p&gt;toLowerCase() 대문자 소문자 바꿈:immutable&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;let str = &amp;quot;CodeStates&amp;quot;;
+&lt;pre&gt;&lt;code&gt;
+let str = &amp;quot;CodeStates&amp;quot;;
 
 str.toLowerCase()
 
@@ -3931,18 +3932,19 @@ str.toLowerCase()
 
 &lt;li&gt;&lt;p&gt;str.indexOf(serchValue); 찾기&lt;/p&gt;
 
-&lt;p&gt;````&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Blue Whale&amp;rdquo;indexOf(&amp;ldquo;Blue&amp;rdquo;); &amp;gt;&amp;gt;0
+&lt;p&gt;````
+&amp;ldquo;Blue Whale&amp;rdquo;indexOf(&amp;ldquo;Blue&amp;rdquo;); &amp;gt;&amp;gt;0
 &amp;ldquo;Blue Whale&amp;rdquo;.indexOf(&amp;ldquo;hello&amp;rdquo;); &amp;gt;&amp;gt;-1
 &amp;ldquo;Blue Whale&amp;rdquo;.indexOf(&amp;ldquo;Whale&amp;rdquo;); &amp;gt;&amp;gt;5&lt;/p&gt;
 
 &lt;p&gt;&amp;ldquo;canal&amp;rdquo;.lastIndexOf(&amp;ldquo;a&amp;rdquo;) &amp;gt;&amp;gt; 3&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
+
 * string.repeat(숫자입력) 반복하는것 
 
 &amp;gt;ex
+
 
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -3965,7 +3967,9 @@ alert(stringName.charAt(stringName.length-1)); // y
 alert(stringName.charAt(1000) == &amp;ldquo;); // true&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
+
 * sort() : 배열 정렬할때 
+
 
 &amp;gt;ex
 
@@ -3982,6 +3986,7 @@ alert(numbers.sort());&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
 &amp;gt; ex
+
 
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -4002,6 +4007,8 @@ return a+b;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;
 
 &amp;gt;추가 설명 from 생활코딩 사전 sort()
+
+
 
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -4038,14 +4045,18 @@ alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]&lt;/p&gt;
 ---
 
 
-* Array.isArray() :메서드는 인자가 Array인지 판별합니다.
+* Array.isArray([]) :메서드는 인자가 Array인지 판별합니다.
+
+
+&amp;gt; () 안에 비워 있으면 실행되지 않는다. 
 
 &amp;gt;ex
 
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Array.isArray([1, 2, 3]);  // true
+&lt;p&gt;Array.isArray([]);  // true
+Array.isArray([1, 2, 3]);  // true
 Array.isArray({foo: 123}); // false
 Array.isArray(&amp;lsquo;foobar&amp;rsquo;);   // false
 Array.isArray(undefined);  // false
@@ -5014,18 +5025,169 @@ isFalsy(&#39;hello&#39;);
 배열과 객체를 구분하려면 Array.isArray 메소드를 사용하면 됩니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;
 function getType(anything) {
-  // 여기에 코드를 작성하세요
-  // if 문을 사용해서 문자,숫자, boolean , arry, object 을 구분하는 것을 사용한다.
-  if (Array.isArray(anything) === true ) {
-    return &#39;array&#39;
-  } else 
-  return typeof anything;
+// 여기에 코드를 작성하세요
+// if 문을 사용해서 문자,숫자, boolean , arry, object 을 구분하는 것을 사용한다.
+if (Array.isArray(anything) === true ) {
+return &#39;array&#39;
+} else 
+return typeof anything;
 }
 
 
 getType([1,2,3,4])
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;object&#34;&gt;&lt;strong&gt;object&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;01_getProperty&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;파라미터로 객체와 키를 받는 getProperty함수가 있습니다. 이 함수는 주어진 객체와 키를 이용하여 속성값을 찾아 리턴합니다.
+만일 주어진 키가 객체의 속성에 없다면, undefined를 리턴하면 됩니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function getProperty(obj, propertyName) {
+return obj[propertyName];
+}
+let person = {
+name: &#39;Steve&#39;,
+age: 16
+};
+
+getProperty(person,&amp;quot;name&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;02_addProperty&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;파라미터로 객체와 키를 받는 addProperty 함수가 있습니다. 이 함수는 주어진 객체에, 키 이름으로 속성을 만들고 값을 true로 설정합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function addProperty(obj, propertyName) {
+// 여기에 코드를 작성하세요
+return obj[propertyName] = true;
+// return obj.propertyNmae = true; &amp;lt;&amp;lt;&amp;lt;is not working at all
+}
+
+let john = {};
+
+addProperty(john,&#39;isprogrammer&#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Q&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;obj[propertyName]를 이용했을 때는 테스트가 통과가 되고,
+obj.propertyName를 이용했을 때는 통과가 되지 않습니다.
+객체에 프로퍼티를 추가할 때 dot노테이션을 사용할 수 있는 걸로 알고있는데..이유가 뭘까요?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;. 으로 했을때는 바로 객체의 키로 접근하고 [ ] 으로 하면 변수로 접근합니다.
+addProperty(steve, &amp;lsquo;isProgrammer&amp;rsquo;); 이라는 함수 호출 구문이 있다고 가정하면
+obj[propertyName] = true; 는 steve.isProgrammer = true; 이고
+obj.propertyName = true; 는 steve.propertyName = true; 입니다. 완전히 다른값이 나오죠?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;04_addObjectProperty&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;파라미터로 두 개의 객체와 키를 받는 addObjectProperty 함수가 있습니다. 이 함수는 주어진 첫번째 객체에, 키 이름으로 속성을 만드는데, 그 값은 두번째 객체로 설정합니다.
+객체의 키 값은 또다른 객체가 될 수 있음을 기억하세요.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function addObjectProperty(obj1, propertyName, obj2) {
+// 여기에 코드를 작성합니다.
+obj1[propertyName] = obj2; 
+return obj1;
+}
+let person1 = {
+name: &#39;Joe&#39;,
+role: &#39;Team Member&#39;
+};
+let person2 = {
+name: &#39;Steve&#39;,
+role: &#39;CEO&#39;
+};
+
+
+addObjectProperty(person1, &#39;manager&#39;, person2);
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;05_removeProperty&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;removeProperty&amp;rdquo;. (&amp;ldquo;removeProperty&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an object and a key, &amp;ldquo;removeProperty&amp;rdquo; removes the given key from the given object. (객체와 키가 주어졌을때, &amp;ldquo;removeProperty&amp;rdquo; 함수는 주어진 키에 해당하는 객체의 속성값을 제거해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function removeProperty(obj, propertyName) {
+// 여기에 코드를 작성하세요
+delete obj[propertyName];
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;06_isPersonOldEnoughToVote&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;isPersonOldEnoughToVote&amp;rdquo;. (&amp;ldquo;isPersonOldEnoughToVote&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given a &amp;ldquo;person&amp;rdquo; object, that contains an &amp;ldquo;age&amp;rdquo; property, &amp;ldquo;isPersonOldEnoughToVote&amp;rdquo; returns whether the given person is old enough to vote. (&amp;ldquo;age&amp;rdquo; 속성을 가지고 있는 &amp;ldquo;person&amp;rdquo; 객체가 주어졌을때, &amp;ldquo;isPersonOldEnoughToVote&amp;rdquo; 함수는 그 사람이 미국에서 합법적으로 투표를 할 수 있는 나이인지를 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function isPersonOldEnoughToVote(person) {
+  // your code here
+  // 1. if 사용해서 18세 이상일 경우 리턴 참
+  // 2. 아닐경우 거짓
+  if ( person.age &amp;gt;= 18 ) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 &lt;/code&gt;&lt;/pre&gt;
 </description>

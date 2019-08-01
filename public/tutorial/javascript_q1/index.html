@@ -378,6 +378,7 @@ function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (ag
 <li><a href="#math-computeperimeterofacircle">Math : computePerimeterOfACircle</a></li>
 <li><a href="#math-computeaverageofnumbers">Math : computeAverageOfNumbers</a></li>
 <li><a href="#type"><strong>type</strong></a></li>
+<li><a href="#object"><strong>object</strong></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1152,18 +1153,169 @@ isFalsy('hello');
 배열과 객체를 구분하려면 Array.isArray 메소드를 사용하면 됩니다.</p>
 </blockquote>
 
+<ul>
+<li><p>my_answer</p>
+
 <pre><code>
 function getType(anything) {
-  // 여기에 코드를 작성하세요
-  // if 문을 사용해서 문자,숫자, boolean , arry, object 을 구분하는 것을 사용한다.
-  if (Array.isArray(anything) === true ) {
-    return 'array'
-  } else 
-  return typeof anything;
+// 여기에 코드를 작성하세요
+// if 문을 사용해서 문자,숫자, boolean , arry, object 을 구분하는 것을 사용한다.
+if (Array.isArray(anything) === true ) {
+return 'array'
+} else 
+return typeof anything;
 }
 
 
 getType([1,2,3,4])
+
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2 id="object"><strong>object</strong></h2>
+
+<hr />
+
+<ul>
+<li>01_getProperty</li>
+</ul>
+
+<blockquote>
+<p>파라미터로 객체와 키를 받는 getProperty함수가 있습니다. 이 함수는 주어진 객체와 키를 이용하여 속성값을 찾아 리턴합니다.
+만일 주어진 키가 객체의 속성에 없다면, undefined를 리턴하면 됩니다.</p>
+</blockquote>
+
+<ul>
+<li><p>my_answer</p>
+
+<pre><code>
+function getProperty(obj, propertyName) {
+return obj[propertyName];
+}
+let person = {
+name: 'Steve',
+age: 16
+};
+
+getProperty(person,&quot;name&quot;);
+</code></pre></li>
+
+<li><p>02_addProperty</p></li>
+</ul>
+
+<blockquote>
+<p>파라미터로 객체와 키를 받는 addProperty 함수가 있습니다. 이 함수는 주어진 객체에, 키 이름으로 속성을 만들고 값을 true로 설정합니다.</p>
+</blockquote>
+
+<ul>
+<li><p>my_answer</p>
+
+<pre><code>function addProperty(obj, propertyName) {
+// 여기에 코드를 작성하세요
+return obj[propertyName] = true;
+// return obj.propertyNmae = true; &lt;&lt;&lt;is not working at all
+}
+
+let john = {};
+
+addProperty(john,'isprogrammer');
+</code></pre></li>
+
+<li><p>Q</p></li>
+</ul>
+
+<blockquote>
+<p>obj[propertyName]를 이용했을 때는 테스트가 통과가 되고,
+obj.propertyName를 이용했을 때는 통과가 되지 않습니다.
+객체에 프로퍼티를 추가할 때 dot노테이션을 사용할 수 있는 걸로 알고있는데..이유가 뭘까요?</p>
+</blockquote>
+
+<ul>
+<li>answer</li>
+</ul>
+
+<blockquote>
+<p>. 으로 했을때는 바로 객체의 키로 접근하고 [ ] 으로 하면 변수로 접근합니다.
+addProperty(steve, &lsquo;isProgrammer&rsquo;); 이라는 함수 호출 구문이 있다고 가정하면
+obj[propertyName] = true; 는 steve.isProgrammer = true; 이고
+obj.propertyName = true; 는 steve.propertyName = true; 입니다. 완전히 다른값이 나오죠?</p>
+</blockquote>
+
+<ul>
+<li>04_addObjectProperty</li>
+</ul>
+
+<blockquote>
+<p>파라미터로 두 개의 객체와 키를 받는 addObjectProperty 함수가 있습니다. 이 함수는 주어진 첫번째 객체에, 키 이름으로 속성을 만드는데, 그 값은 두번째 객체로 설정합니다.
+객체의 키 값은 또다른 객체가 될 수 있음을 기억하세요.</p>
+</blockquote>
+
+<ul>
+<li><p>my_answer</p>
+
+<pre><code>
+function addObjectProperty(obj1, propertyName, obj2) {
+// 여기에 코드를 작성합니다.
+obj1[propertyName] = obj2; 
+return obj1;
+}
+let person1 = {
+name: 'Joe',
+role: 'Team Member'
+};
+let person2 = {
+name: 'Steve',
+role: 'CEO'
+};
+
+
+addObjectProperty(person1, 'manager', person2);
+
+
+</code></pre></li>
+
+<li><p>05_removeProperty</p></li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;removeProperty&rdquo;. (&ldquo;removeProperty&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an object and a key, &ldquo;removeProperty&rdquo; removes the given key from the given object. (객체와 키가 주어졌을때, &ldquo;removeProperty&rdquo; 함수는 주어진 키에 해당하는 객체의 속성값을 제거해야 합니다.)</p>
+</blockquote>
+
+<ul>
+<li><p>my_answer</p>
+
+<pre><code>
+function removeProperty(obj, propertyName) {
+// 여기에 코드를 작성하세요
+delete obj[propertyName];
+}
+
+</code></pre></li>
+
+<li><p>06_isPersonOldEnoughToVote</p></li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;isPersonOldEnoughToVote&rdquo;. (&ldquo;isPersonOldEnoughToVote&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a &ldquo;person&rdquo; object, that contains an &ldquo;age&rdquo; property, &ldquo;isPersonOldEnoughToVote&rdquo; returns whether the given person is old enough to vote. (&ldquo;age&rdquo; 속성을 가지고 있는 &ldquo;person&rdquo; 객체가 주어졌을때, &ldquo;isPersonOldEnoughToVote&rdquo; 함수는 그 사람이 미국에서 합법적으로 투표를 할 수 있는 나이인지를 반환해야 합니다.)</p>
+</blockquote>
+
+<pre><code>
+function isPersonOldEnoughToVote(person) {
+  // your code here
+  // 1. if 사용해서 18세 이상일 경우 리턴 참
+  // 2. 아닐경우 거짓
+  if ( person.age &gt;= 18 ) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 </code></pre>
 

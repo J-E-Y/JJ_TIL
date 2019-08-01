@@ -101,9 +101,8 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
  str[index] 읽어서 찾아주는것 :immutable
 let str = &#39;CodeStates&#39;; str[0]; &amp;gt;&amp;gt; &#39;C&#39; but str[0] = &#39;G&#39; &amp;gt;&amp;gt; 바뀌지 않음. str = &#39;Codestates&#39; Note: index로 접근은 가능하지만 쓸수는 없음 (read-only);  toUpperCase() 소문자 대문자 바꿈:immutable
 let str = &#39;CodeStates&#39;; str.toUpperCase(); &amp;gt;&amp;gt;&amp;quot;CODESTATES  toLowerCase() 대문자 소문자 바꿈:immutable
-let str = &amp;quot;CodeStates&amp;quot;; str.toLowerCase()  str.indexOf(serchValue); 찾기
-````
-&amp;ldquo;Blue Whale&amp;rdquo;indexOf(&amp;ldquo;Blue&amp;rdquo;); &amp;gt;&amp;gt;0 &amp;ldquo;Blue Whale&amp;rdquo;.indexOf(&amp;ldquo;hello&amp;rdquo;); &amp;gt;&amp;gt;-1 &amp;ldquo;Blue Whale&amp;rdquo;.</description>
+ let str = &amp;quot;CodeStates&amp;quot;; str.toLowerCase()  str.indexOf(serchValue); 찾기
+```` &amp;ldquo;Blue Whale&amp;rdquo;indexOf(&amp;ldquo;Blue&amp;rdquo;); &amp;gt;&amp;gt;0 &amp;ldquo;Blue Whale&amp;rdquo;.indexOf(&amp;ldquo;hello&amp;rdquo;); &amp;gt;&amp;gt;-1 &amp;ldquo;Blue Whale&amp;rdquo;.</description>
     </item>
     
     <item>
