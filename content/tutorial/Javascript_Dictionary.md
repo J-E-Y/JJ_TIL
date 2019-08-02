@@ -168,7 +168,9 @@ alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
 ## **Number**
 ---
 
+
 * parseInt() 숫자로 바꾸는것
+
 
 
 
@@ -192,3 +194,116 @@ Array.isArray({foo: 123}); // false
 Array.isArray('foobar');   // false
 Array.isArray(undefined);  // false
 ```
+
+
+---
+## **object**
+---
+
+
+
+
+* Object.keys(객체)  : key 뽑기 into array
+* Object.values(객체) : value 뽑기 into array
+* Object.entries(객체) : 전체 뽑기 into array
+
+
+
+```
+let user = {
+  name: "John",
+  age: 30
+};
+Object.keys(person) = ["name", "age"]
+Object.values(person) = ["John", 30]
+Object.entries(person) = [ ["name","John"], ["age",30] ]
+
+```
+
+
+> 뽑은것들 변수에 담아서 배열 에 넣기  
+
+```
+let arrKey =  Object.keys(person);
+>>["name", "age"]
+
+let arrValues = Object.values(person);
+>> ["John", 30]
+
+let arrEntries = Object.entries(person);
+>>[ ["name","John"], ["age",30] ]
+
+```
+
+
+
+
+
+
+* `obj.key` or `obj[key]` 
+
+
+>for 문을 이용해 객체안에 있는 key value 뽑기
+
+
+>ex 키값 뽑기 
+
+```
+let person = { name : "john" , age : 33 } ; 
+
+for (let key in person) {
+	console.log(key);
+}
+
+>>name
+>>age
+
+```
+
+
+>ex value 뽑기 
+
+
+```
+
+let person = { name : "john" , age : 33 } ;
+
+for (let key in person) {
+	console.log(person[key]);
+}
+
+>>john
+>>33
+
+```
+
+
+
+
+
+
+
+
+ * delete object.property
+ * delete object['property']
+ 
+ 
+ > ex 
+ 
+ 
+ ```
+ 
+ var Employee = {
+  age: 28,
+  name: 'abc',
+  designation: 'developer'
+}
+
+console.log(delete Employee.name);   // returns true
+console.log(delete Employee.age);    // returns true
+
+// When trying to delete a property that does 
+// not exist, true is returned 
+console.log(delete Employee.salary); // returns true
+ 
+ ```

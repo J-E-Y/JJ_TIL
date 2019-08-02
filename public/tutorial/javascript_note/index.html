@@ -369,6 +369,13 @@ function cal(mode){ var funcs = { &#39;plus&#39; : function(left, right){return 
 </ul></li>
 <li><a href="#버튼-만들기">버튼 만들기</a></li>
 <li><a href="#is-true-1-and-false-0-in-javascript">Is true == 1 and false == 0 in JavaScript?</a></li>
+<li><a href="#객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</a>
+<ul>
+<li>
+<ul>
+<li><a href="#how-to-count-the-number-of-properties-of-the-javascript-object">How to Count the Number of Properties of the JavaScript Object</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -580,6 +587,125 @@ if (0 == false)
   document.write(&quot;oh!!! that's true&quot;);
 
 </code></pre>
+
+<hr />
+
+<h2 id="객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</h2>
+
+<hr />
+
+<h4 id="how-to-count-the-number-of-properties-of-the-javascript-object">How to Count the Number of Properties of the JavaScript Object</h4>
+
+<blockquote>
+<p>While working with JavaScript, I come across a requirement to count a number of properties in a JavaScript object. I found two ways to find the number of properties in an object. They are as follows:</p>
+</blockquote>
+
+<pre><code>Consider an object, &quot;cat,&quot; as demonstrated below:
+
+var cat = {
+    name: 'foo',
+    age: 9
+}
+</code></pre>
+
+<blockquote>
+<p>You can find a number of properties by iterating in a for loop and update counter, as shown in the below listing:</p>
+</blockquote>
+
+<pre><code>let count = 0;
+for (var c in cat) {
+    count = count + 1;
+}
+console.log(count);// 2
+
+</code></pre>
+
+<blockquote>
+<p>Above code will print &ldquo;2&rdquo; as the output.</p>
+
+<p>The above approach not only prints the object&rsquo;s own enumerable properties, but it also prints properties of objects to which it is linked. To further understand it, let us consider the below listing:</p>
+</blockquote>
+
+<pre><code>var animal = {
+    canRun: true
+}
+var cat = {
+    name: 'foo',
+    age: 9
+}
+cat.__proto__ = animal;
+
+</code></pre>
+
+<blockquote>
+<p>There are two objects, cat andanimal, and the cat object is linked to an animal object using the <strong>proto</strong> property. Now, when you use a for loop to iterate and count a number of properties, it will also count the enumerable properties of the animal object. Therefore, the code listing below will print &ldquo;3.&rdquo;</p>
+</blockquote>
+
+<pre><code>var animal = {
+    canRun: true
+}
+var cat = {
+    name: 'foo',
+    age: 9
+}
+cat.__proto__ = animal;
+let count = 0;
+for (var c in cat) {
+    count = count + 1;
+}
+console.log(count);// 3
+
+</code></pre>
+
+<blockquote>
+<p>A JavaScript for loop will iterate through all the linked properties of the object.</p>
+
+<p>To count the object&rsquo;s own enumerable properties, you may consider using another approach, Object.keys(), which only enumerates the object&rsquo;s own enumerable properties. It does not enumerate the object&rsquo;s linked properties.</p>
+
+<p>Moving forward, let us again consider the cat object which is linked to animal object and count the number of properties using Object.keys:</p>
+</blockquote>
+
+<pre><code>
+var animal = {
+    canRun: true
+}
+var cat = {
+    name: 'foo',
+    age: 9
+}
+cat.__proto__ = animal;
+var count = Object.keys(cat).length;
+console.log(count);
+
+</code></pre>
+
+<blockquote>
+<p>Now you will get &ldquo;2&rdquo; printed as the output.</p>
+
+<p>Object.keys only enumerates the object&rsquo;s own enumerable properties.</p>
+
+<p>If the object&rsquo;s property enumerable is set to false, then it is not a member of the Object.keys array. Let us again consider the cat object and set its name property enumerable to false.</p>
+</blockquote>
+
+<pre><code>var cat = {
+    name: 'foo',
+    age: 9
+}
+Object.defineProperty(cat, 'name', { enumerable: false });
+
+</code></pre>
+
+<blockquote>
+<p>Now, when you use Object.keys to find a number of properties, it will count only one.</p>
+</blockquote>
+
+<pre><code>var count = Object.keys(cat).length;
+console.log(count);  // print 1
+</code></pre>
+
+<blockquote>
+<p>In closing, these are the two ways that you can use to find the number of properties in a JavaScript object</p>
+</blockquote>
 
           </div>
 

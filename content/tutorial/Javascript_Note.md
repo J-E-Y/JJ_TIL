@@ -189,6 +189,7 @@ a
 ## Is true == 1 and false == 0 in JavaScript?
 ---
 
+
 ```
 
 if (1 == 1)
@@ -201,3 +202,116 @@ if (0 == false)
   document.write("oh!!! that's true");
 
 ```
+
+
+---
+## 객체 숫자 계산 하는 방법
+---
+
+#### How to Count the Number of Properties of the JavaScript Object
+
+>While working with JavaScript, I come across a requirement to count a number of properties in a JavaScript object. I found two ways to find the number of properties in an object. They are as follows:
+
+```
+Consider an object, "cat," as demonstrated below:
+
+var cat = {
+    name: 'foo',
+    age: 9
+}
+```
+
+>You can find a number of properties by iterating in a for loop and update counter, as shown in the below listing:
+
+```
+let count = 0;
+for (var c in cat) {
+    count = count + 1;
+}
+console.log(count);// 2
+
+```
+
+>Above code will print "2" as the output.
+
+>The above approach not only prints the object's own enumerable properties, but it also prints properties of objects to which it is linked. To further understand it, let us consider the below listing:
+
+```
+var animal = {
+    canRun: true
+}
+var cat = {
+    name: 'foo',
+    age: 9
+}
+cat.__proto__ = animal;
+
+```
+
+>There are two objects, cat andanimal, and the cat object is linked to an animal object using the __proto__ property. Now, when you use a for loop to iterate and count a number of properties, it will also count the enumerable properties of the animal object. Therefore, the code listing below will print "3."
+
+
+```
+var animal = {
+    canRun: true
+}
+var cat = {
+    name: 'foo',
+    age: 9
+}
+cat.__proto__ = animal;
+let count = 0;
+for (var c in cat) {
+    count = count + 1;
+}
+console.log(count);// 3
+
+```
+
+
+>A JavaScript for loop will iterate through all the linked properties of the object.
+
+>To count the object's own enumerable properties, you may consider using another approach, Object.keys(), which only enumerates the object's own enumerable properties. It does not enumerate the object's linked properties.
+
+>Moving forward, let us again consider the cat object which is linked to animal object and count the number of properties using Object.keys:
+
+
+```
+
+var animal = {
+    canRun: true
+}
+var cat = {
+    name: 'foo',
+    age: 9
+}
+cat.__proto__ = animal;
+var count = Object.keys(cat).length;
+console.log(count);
+
+```
+
+>Now you will get "2" printed as the output.
+
+>Object.keys only enumerates the object's own enumerable properties.
+
+>If the object's property enumerable is set to false, then it is not a member of the Object.keys array. Let us again consider the cat object and set its name property enumerable to false.
+
+```
+var cat = {
+    name: 'foo',
+    age: 9
+}
+Object.defineProperty(cat, 'name', { enumerable: false });
+
+```
+
+>Now, when you use Object.keys to find a number of properties, it will count only one.
+
+
+```
+var count = Object.keys(cat).length;
+console.log(count);  // print 1
+```
+
+>In closing, these are the two ways that you can use to find the number of properties in a JavaScript object

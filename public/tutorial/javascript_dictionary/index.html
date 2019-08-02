@@ -366,6 +366,7 @@ let str = &#39;CodeStates&#39;; str.toUpperCase(); &gt;&gt;&quot;CODESTATES  toL
 <li><a href="#string"><strong>String</strong></a></li>
 <li><a href="#number"><strong>Number</strong></a></li>
 <li><a href="#array"><strong>Array</strong></a></li>
+<li><a href="#object"><strong>object</strong></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -562,6 +563,106 @@ Array.isArray([1, 2, 3]);  // true
 Array.isArray({foo: 123}); // false
 Array.isArray('foobar');   // false
 Array.isArray(undefined);  // false
+</code></pre>
+
+<hr />
+
+<h2 id="object"><strong>object</strong></h2>
+
+<hr />
+
+<ul>
+<li>Object.keys(객체)  : key 뽑기 into array</li>
+<li>Object.values(객체) : value 뽑기 into array</li>
+
+<li><p>Object.entries(객체) : 전체 뽑기 into array</p>
+
+<pre><code>let user = {
+name: &quot;John&quot;,
+age: 30
+};
+Object.keys(person) = [&quot;name&quot;, &quot;age&quot;]
+Object.values(person) = [&quot;John&quot;, 30]
+Object.entries(person) = [ [&quot;name&quot;,&quot;John&quot;], [&quot;age&quot;,30] ]
+
+</code></pre></li>
+</ul>
+
+<blockquote>
+<p>뽑은것들 변수에 담아서 배열 에 넣기</p>
+</blockquote>
+
+<pre><code>let arrKey =  Object.keys(person);
+&gt;&gt;[&quot;name&quot;, &quot;age&quot;]
+
+let arrValues = Object.values(person);
+&gt;&gt; [&quot;John&quot;, 30]
+
+let arrEntries = Object.entries(person);
+&gt;&gt;[ [&quot;name&quot;,&quot;John&quot;], [&quot;age&quot;,30] ]
+
+</code></pre>
+
+<ul>
+<li><code>obj.key</code> or <code>obj[key]</code></li>
+</ul>
+
+<blockquote>
+<p>for 문을 이용해 객체안에 있는 key value 뽑기</p>
+
+<p>ex 키값 뽑기</p>
+</blockquote>
+
+<pre><code>let person = { name : &quot;john&quot; , age : 33 } ; 
+
+for (let key in person) {
+	console.log(key);
+}
+
+&gt;&gt;name
+&gt;&gt;age
+
+</code></pre>
+
+<blockquote>
+<p>ex value 뽑기</p>
+</blockquote>
+
+<pre><code>
+let person = { name : &quot;john&quot; , age : 33 } ;
+
+for (let key in person) {
+	console.log(person[key]);
+}
+
+&gt;&gt;john
+&gt;&gt;33
+
+</code></pre>
+
+<ul>
+<li>delete object.property</li>
+<li>delete object[&lsquo;property&rsquo;]</li>
+</ul>
+
+<blockquote>
+<p>ex</p>
+</blockquote>
+
+<pre><code> 
+ var Employee = {
+  age: 28,
+  name: 'abc',
+  designation: 'developer'
+}
+
+console.log(delete Employee.name);   // returns true
+console.log(delete Employee.age);    // returns true
+
+// When trying to delete a property that does 
+// not exist, true is returned 
+console.log(delete Employee.salary); // returns true
+ 
 </code></pre>
 
           </div>

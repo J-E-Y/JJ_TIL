@@ -4061,6 +4061,106 @@ Array.isArray({foo: 123}); // false
 Array.isArray(&#39;foobar&#39;);   // false
 Array.isArray(undefined);  // false
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;object&#34;&gt;&lt;strong&gt;object&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Object.keys(객체)  : key 뽑기 into array&lt;/li&gt;
+&lt;li&gt;Object.values(객체) : value 뽑기 into array&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Object.entries(객체) : 전체 뽑기 into array&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let user = {
+name: &amp;quot;John&amp;quot;,
+age: 30
+};
+Object.keys(person) = [&amp;quot;name&amp;quot;, &amp;quot;age&amp;quot;]
+Object.values(person) = [&amp;quot;John&amp;quot;, 30]
+Object.entries(person) = [ [&amp;quot;name&amp;quot;,&amp;quot;John&amp;quot;], [&amp;quot;age&amp;quot;,30] ]
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;뽑은것들 변수에 담아서 배열 에 넣기&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;let arrKey =  Object.keys(person);
+&amp;gt;&amp;gt;[&amp;quot;name&amp;quot;, &amp;quot;age&amp;quot;]
+
+let arrValues = Object.values(person);
+&amp;gt;&amp;gt; [&amp;quot;John&amp;quot;, 30]
+
+let arrEntries = Object.entries(person);
+&amp;gt;&amp;gt;[ [&amp;quot;name&amp;quot;,&amp;quot;John&amp;quot;], [&amp;quot;age&amp;quot;,30] ]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;obj.key&lt;/code&gt; or &lt;code&gt;obj[key]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;for 문을 이용해 객체안에 있는 key value 뽑기&lt;/p&gt;
+
+&lt;p&gt;ex 키값 뽑기&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;let person = { name : &amp;quot;john&amp;quot; , age : 33 } ; 
+
+for (let key in person) {
+	console.log(key);
+}
+
+&amp;gt;&amp;gt;name
+&amp;gt;&amp;gt;age
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ex value 뽑기&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+let person = { name : &amp;quot;john&amp;quot; , age : 33 } ;
+
+for (let key in person) {
+	console.log(person[key]);
+}
+
+&amp;gt;&amp;gt;john
+&amp;gt;&amp;gt;33
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;delete object.property&lt;/li&gt;
+&lt;li&gt;delete object[&amp;lsquo;property&amp;rsquo;]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ex&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt; 
+ var Employee = {
+  age: 28,
+  name: &#39;abc&#39;,
+  designation: &#39;developer&#39;
+}
+
+console.log(delete Employee.name);   // returns true
+console.log(delete Employee.age);    // returns true
+
+// When trying to delete a property that does 
+// not exist, true is returned 
+console.log(delete Employee.salary); // returns true
+ 
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -4261,6 +4361,125 @@ if (0 == false)
   document.write(&amp;quot;oh!!! that&#39;s true&amp;quot;);
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;객체-숫자-계산-하는-방법&#34;&gt;객체 숫자 계산 하는 방법&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;how-to-count-the-number-of-properties-of-the-javascript-object&#34;&gt;How to Count the Number of Properties of the JavaScript Object&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;While working with JavaScript, I come across a requirement to count a number of properties in a JavaScript object. I found two ways to find the number of properties in an object. They are as follows:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;Consider an object, &amp;quot;cat,&amp;quot; as demonstrated below:
+
+var cat = {
+    name: &#39;foo&#39;,
+    age: 9
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You can find a number of properties by iterating in a for loop and update counter, as shown in the below listing:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;let count = 0;
+for (var c in cat) {
+    count = count + 1;
+}
+console.log(count);// 2
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Above code will print &amp;ldquo;2&amp;rdquo; as the output.&lt;/p&gt;
+
+&lt;p&gt;The above approach not only prints the object&amp;rsquo;s own enumerable properties, but it also prints properties of objects to which it is linked. To further understand it, let us consider the below listing:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;var animal = {
+    canRun: true
+}
+var cat = {
+    name: &#39;foo&#39;,
+    age: 9
+}
+cat.__proto__ = animal;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;There are two objects, cat andanimal, and the cat object is linked to an animal object using the &lt;strong&gt;proto&lt;/strong&gt; property. Now, when you use a for loop to iterate and count a number of properties, it will also count the enumerable properties of the animal object. Therefore, the code listing below will print &amp;ldquo;3.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;var animal = {
+    canRun: true
+}
+var cat = {
+    name: &#39;foo&#39;,
+    age: 9
+}
+cat.__proto__ = animal;
+let count = 0;
+for (var c in cat) {
+    count = count + 1;
+}
+console.log(count);// 3
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A JavaScript for loop will iterate through all the linked properties of the object.&lt;/p&gt;
+
+&lt;p&gt;To count the object&amp;rsquo;s own enumerable properties, you may consider using another approach, Object.keys(), which only enumerates the object&amp;rsquo;s own enumerable properties. It does not enumerate the object&amp;rsquo;s linked properties.&lt;/p&gt;
+
+&lt;p&gt;Moving forward, let us again consider the cat object which is linked to animal object and count the number of properties using Object.keys:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+var animal = {
+    canRun: true
+}
+var cat = {
+    name: &#39;foo&#39;,
+    age: 9
+}
+cat.__proto__ = animal;
+var count = Object.keys(cat).length;
+console.log(count);
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Now you will get &amp;ldquo;2&amp;rdquo; printed as the output.&lt;/p&gt;
+
+&lt;p&gt;Object.keys only enumerates the object&amp;rsquo;s own enumerable properties.&lt;/p&gt;
+
+&lt;p&gt;If the object&amp;rsquo;s property enumerable is set to false, then it is not a member of the Object.keys array. Let us again consider the cat object and set its name property enumerable to false.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;var cat = {
+    name: &#39;foo&#39;,
+    age: 9
+}
+Object.defineProperty(cat, &#39;name&#39;, { enumerable: false });
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Now, when you use Object.keys to find a number of properties, it will count only one.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;var count = Object.keys(cat).length;
+console.log(count);  // print 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In closing, these are the two ways that you can use to find the number of properties in a JavaScript object&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
@@ -5189,6 +5408,111 @@ function isPersonOldEnoughToVote(person) {
 }
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;08_removeNumbersLargerThan&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;removeNumbersLargerThan&amp;rdquo;. (&amp;ldquo;removeNumbersLargerThan&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given a number and an object, &amp;ldquo;removeNumbersLargerThan&amp;rdquo; removes any properties whose values are numbers greater than the given number. (숫자와 객체가 주어졌을때, &amp;ldquo;removeNumbersLargerThan&amp;rdquo; 함수는 주어진 객체에서 주어진 숫자보다 큰 모든 숫자 속성을 제거합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let obj = {
+a: 8,
+b: 2,
+c: &#39;montana&#39;,
+d: 10,
+e: 4,
+f: 5
+}
+
+function removeNumbersLargerThan(num, obj) {
+// your code here
+for (let key in obj){
+if ( obj[key] &amp;gt; num ) {
+delete obj[key];
+}
+}
+return obj;
+}
+
+removeNumbersLargerThan(3,obj)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;09_removeOddValues&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;removeOddValues&amp;rdquo;. (&amp;ldquo;removeOddValues&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an object, &amp;ldquo;removeOddValues&amp;rdquo; removes any properties whose values are odd numbers. (객체가 주어졌을때, &amp;ldquo;removeOddValues&amp;rdquo; 함수는 주어진 객체의 속성값이 홀수인 속성을 모두 제거합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let obj = {
+a: 2,
+b: 3,
+c: 4,
+d: 7
+};
+function removeOddValues(obj) {
+// your code here
+// 1. value 을 불러온다
+// 2. value 홀수 있지 짝수 인지 구분한다.
+// 3. value 가 홀수 일때 삭제한다.
+for ( let key in obj ) {
+if ( obj[key] % 2 === 1 ) {
+  delete obj[key];
+}
+}
+return obj;
+}
+removeOddValues(obj)
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;10_countNumberOfKeys&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;countNumberOfKeys&amp;rdquo;. (&amp;ldquo;countNumberOfKeus&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an object, &amp;ldquo;countNumberOfKeys&amp;rdquo; returns how many properties the given object has. (객체가 주어졌을때, &amp;ldquo;countNumberOfKeys&amp;rdquo; 함수는 객체안에 있는 속성들의 갯수를 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function countNumberOfKeys(obj) {
+// 여기에 코드를 작성하세요
+// 1.숫자출력할 변수를 0으로 초기화한다.
+// 2.for 문을 이용해 객체를 나열한다.
+// 3. 나열한 객체를 변수안에 넣는다.
+let count = 0;
+for ( let key in obj ) {
+count = count + 1 ;
+}
+return count;
+}
+
+let obj = {
+a: 1,
+b: 2,
+c: 3,
+d: 4
+};
+countNumberOfKeys(obj)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
