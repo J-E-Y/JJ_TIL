@@ -1036,3 +1036,14 @@ let obj = {
 };
 countNumberOfKeys(obj)
 ```
+
+* Model Solutions
+
+```
+
+function countNumberOfKeys(obj) {
+  return Object.keys(obj).length;
+}
+
+
+```

@@ -5512,6 +5512,16 @@ d: 4
 };
 countNumberOfKeys(obj)
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Model Solutions&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function countNumberOfKeys(obj) {
+return Object.keys(obj).length;
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
