@@ -24,7 +24,7 @@
 #  weight = 40
 
 [[main]]
-  name = "Today J-E-Y Learned"
+  name = "Today I Learned"
   url = "tutorial/"
   weight = 5
 
