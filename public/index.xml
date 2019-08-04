@@ -5522,6 +5522,30 @@ return Object.keys(obj).length;
 
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;11_printObject&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;객체를 파라미터로 받는 printObject 함수는 객체 안에 정의된 키와 값 쌍을 조합한 문자열을 리턴합니다. 문자열은 한 줄에 하나의 키/값 쌍을 콜론(:) 및 공백문자와 함께 표시하며, 또다른 키/값 쌍 사이에는 줄바꿈 문자가 포함되어 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+let obj = { name: &#39;Steve&#39;, age: 13, sex: &#39;Male&#39; };
+
+function printObject(obj) {
+let ret = &amp;quot;&amp;quot;
+for ( let key in obj ) {
+ret = ret + key +&amp;quot;: &amp;quot; + obj[key]+ &amp;quot;\n&amp;quot;;
+}
+return ret;
+};
+printObject(obj);
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
