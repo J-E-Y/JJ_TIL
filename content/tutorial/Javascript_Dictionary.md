@@ -285,7 +285,7 @@ for (let key in person) {
 
 
  * delete object.property
- * delete object['property']
+ * delete object["property"]
  
  
  > ex 
@@ -307,3 +307,97 @@ console.log(delete Employee.age);    // returns true
 console.log(delete Employee.salary); // returns true
  
  ```
+ 
+ 
+ ---
+## **object and type **
+---
+
+
+* 01_removeStringValues
+
+
+> Write a function called "removeStringValues". ("removeStringValues" 함수를 작성하세요.)
+
+>Given an object, "removeStringValues" removes any properties on the given object whose values are strings. (객체가 주어졌을때, "removeStringValues" 함수는 속성값이 문자열인 모든 속성을 제거합니다.)
+ 
+
+
+```
+
+function removeStringValues(obj) {
+  // 여기에 코드를 작성하세요.
+  // 객체안에 있는 속성값이 문자열인지 판별한다.
+  // 문자열이라면 삭제한다.
+  for ( let prop in obj ) {
+    if ( typeof obj[prop] === "string" ) {
+      delete obj[prop]
+    }
+  }
+}
+
+
+
+```
+
+
+* 02_removeNumberValues
+
+> Write a function called "removeNumberValues". ("removeNumberValues" 함수를 작성하세요.)
+
+>Given an object, "removeNumberValues" removes any properties whose values are numbers. (객체가 주어졌을때, "removeNumberValues" 함수는 속성값이 숫자인 모든 속성을 제거합니다.)
+
+```
+let obj = {
+  a: 2,
+  b: 'remaining',
+  c: 4
+};
+function removeNumberValues(obj) {
+  // 여기에 코드를 작성하세요.
+  // prop 을 불러온다.
+  // 불러온 prop 값을 숫자인지 판별한다/
+  // 숫자이면 제거한다
+  for ( let prop in obj ) {
+    if ( typeof obj[prop] === "number" ) {
+      delete obj[prop]
+    }
+  } 
+  return obj;
+}
+
+removeNumberValues(obj);
+
+```
+
+* 03_removeArrayValues
+
+> Write a function called "removeArrayValues". ("removeArrayValues" 함수를 작성하세요.)
+
+>Given an object, "removeArrayValues" removes any properties whose values are arrays. (객체가 주어졌을때, "removeArrayValues" 함수는 속성값이 배열인 모든 속성을 제거합니다.)
+
+
+```
+
+let obj = {
+  a: [1, 3, 4],
+  b: 2,
+  c: ['hi', 'there']
+}
+function removeArrayValues(obj) {
+  // 여기에 코드를 작성하세요
+  // prop 값을 불러온다
+  // prop 값이 배열에 속하는지 판별한다
+  // 배열에 속하면 제거한다.
+  for ( let prop in obj ) {
+    if (Array.isArray(obj[prop])) {
+      delete obj[prop];
+    }
+  }
+  return obj
+}
+removeArrayValues(obj)
+
+
+
+```

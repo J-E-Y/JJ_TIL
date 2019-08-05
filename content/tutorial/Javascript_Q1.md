@@ -1071,3 +1071,77 @@ function printObject(obj) {
 printObject(obj);
 
 ```
+
+
+* 12_extends
+
+
+> Write a function called "extend". ("extend" 함수를 작성하세요.)
+
+>Given two objects, "extend" adds properties from the 2nd object to the 1st object. (객체 두개가 주어졌을때, "extend" 함수는 두번째 객체의 속성을 첫번째 객체에 추가해야 합니다.)
+
+>Add any keys that are not in the 1st object. (첫번째 객체에 없는 모든 키를 추가하세요.)
+
+>If the 1st object already has a given key, ignore it (do not overwrite the property value). (만약 첫번째 객체에 이미 있는 키라면, 값을 덮어쓰지 말고 무시하세요.)
+
+>Do not modify the 2nd object at all. (두번째 객체는 수정하지 마세요.)
+
+
+
+
+```
+et obj1 = {
+  a: 1,
+  b: 2
+};
+let obj2 = {
+  b: 4,
+  c: 3
+};
+
+function extend(obj1, obj2) {
+  // 여기에 코드를 작성하세요
+  // 1. obj2 의 key들을 반복합니다.
+  // 2. obj2 안에 있는 key 가  obj1 key 안에에 포함 되어있는지 if 문을 써서 확인한다.
+  // 4. 포함되어있지 않으면 ob1에 추가한다.
+  for ( let key in obj2 ) {
+      if (!( key in obj1 )) {
+        obj1[key] = obj2[key];
+      }
+    }
+  }
+  
+
+```
+
+
+* 13_countAllCharacters
+
+
+> Write a function called "countAllCharacters". ("countAllCharacters" 함수를 작성하세요")
+
+>Given a string, "countAllCharacters" returns an object where each key is a character in the given string. The value of each key should be how many times each character appeared in the given string. (문자열이 주어졌을때, "countAllCharacters" 함수는 주어진 문자열의 각각의 문자를 키로 가지는 객체를 반환합니다. 각 키의 값은 해당 문자가 주어진 문자열에서 몇번 나오는지를 나타냅니다.)
+
+
+
+```
+
+function countAllCharacters(str) {
+  let obj = {};
+  for (let i = 0; i < str.length; i++) { // input으로 받은 문자열에서 하나의 character씩 loop를 돕니다.
+    
+    if (obj[str[i]] === undefined) { 
+// 그런데 obj란 객체에 character가 들어 있지 않다면 새로운 문자열이기 때문에 객체에 char를 추가하고 0으로 만들어 줍니다.
+      obj[str[i]] = 0;
+    }
+    obj[str[i]]++;  // 그 이후 이 곳에서 char key의 value 값을 1 더해줍니다.
+  }
+  return obj;
+}
+
+let output = countAllCharacters('banana');
+console.log(output); // --> {b: 1, a: 3, n: 2}
+
+
+```
+
