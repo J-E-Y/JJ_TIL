@@ -246,7 +246,7 @@ arr[arr.length - 1] ;
 
 
 * Second
-arr.slice(-1)[0];
+arr.slice(-1);
 
 * Third
 arr.slice(-1).pop();
@@ -361,7 +361,7 @@ arr.join("");
 
 ```
 
-* indaxtOf() ()<<원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다. 
+* indexOf() ()<<원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다. 
 
 ```
 var array = [2, 9, 9];
@@ -373,49 +373,141 @@ array.indexOf(2, -3); // 0
 
 ```
 
-* lastIndaxtOf() ()<<원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다. 
+* lastIndexOf() ()<<원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다. 
+
+
+
+* slice() : `immutable`
+
+
+> Examples
+
+> Return a portion of an existing array
+
+```js
+
+var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
+var citrus = fruits.slice(1, 3);
+
+// fruits contains ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
+// citrus contains ['Orange','Lemon']
+
+```
+
+* splice() : `mutable`
+
+
+> Examples
+
+> 1 . Remove 0 (zero) elements from index 2, and insert "drum"
+
+
+```js
+
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2, 0, 'drum');
+
+// myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"] 
+// removed is [], no elements removed
+
+```
+
+> Remove 0 (zero) elements from index 2, and insert "drum" and "guitar"Section
+
+
+
+```js 
+
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2, 0, 'drum', 'guitar');
+
+// myFish is ["angel", "clown", "drum", "guitar", "mandarin", "sturgeon"] 
+// removed is [], no elements removed
+
+```
+
+> Remove 1 element from index 3
+
+```js
+
+var myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(3, 1);
+
+// removed is ["mandarin"]
+// myFish is ["angel", "clown", "drum", "sturgeon"]
 
 ```
 
 
-var arr = [1,2,3,4,5];
-arr.indexOf[1];
+> Remove 1 element from index 2, and insert "trumpet"
 
->>arr
-2
 
-arr.indexOf[100];
->>arr
--1
-없는 경우 -1를 호출한다. 
+```js 
 
-EX) 
-var arr = [1,2,3,4,5,6]
-if (arr.indexOf(100) === -1 ) {
-만약 100이라는 원소가 arr 에 없으면 
-}
+var myFish = ['angel', 'clown', 'drum', 'sturgeon'];
+var removed = myFish.splice(2, 1, 'trumpet');
 
-```
-* slice()
-```
-var arr = [1, 2, 3, 4, 5];
-a.slice(0, 3);
->>a;
-123
-원소는 변하지 않는다
+// myFish is ["angel", "clown", "trumpet", "sturgeon"]
+// removed is ["drum"]
 
 ```
 
-* splice()
+
+> Remove 2 elements from index 0, and insert "parrot", "anemone" and "blue"
+
+
+```js
+
+
+var myFish = ['angel', 'clown', 'trumpet', 'sturgeon'];
+var removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
+
+// myFish is ["parrot", "anemone", "blue", "trumpet", "sturgeon"] 
+// removed is ["angel", "clown"]
+
 
 
 ```
-var arr = [1, 2, 3, 4, 5];
-a.splice(0, 3);
->>a;
-123
-원소 값이 변한다. 
+
+> Remove 2 elements from index 2
+
+```js
+
+var myFish = ['parrot', 'anemone', 'blue', 'trumpet', 'sturgeon'];
+var removed = myFish.splice(2, 2);
+
+// myFish is ["parrot", "anemone", "sturgeon"] 
+// removed is ["blue", "trumpet"]
+
 ```
+
+> Remove 1 element from index -2
+
+```js 
+
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(-2, 1);
+
+// myFish is ["angel", "clown", "sturgeon"] 
+// removed is ["mandarin"]
+
+
+```
+
+
+
+> Remove all elements after index 2 (incl.)
+
+```js
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2);
+
+// myFish is ["angel", "clown"]
+// removed is ["mandarin", "sturgeon"]
+
+
+```
+
 
 
 * split()
@@ -550,12 +642,6 @@ for (let key in person) {
 ```
 
 
-
-
-
-
-
-
  * delete object.property
  * delete object["property"]
  
@@ -581,95 +667,4 @@ console.log(delete Employee.salary); // returns true
  ```
  
  
----
-## **object and type**
----
 
-
-* 01_removeStringValues
-
-
-> Write a function called "removeStringValues". ("removeStringValues" 함수를 작성하세요.)
-
->Given an object, "removeStringValues" removes any properties on the given object whose values are strings. (객체가 주어졌을때, "removeStringValues" 함수는 속성값이 문자열인 모든 속성을 제거합니다.)
- 
-
-
-```
-
-function removeStringValues(obj) {
-  // 여기에 코드를 작성하세요.
-  // 객체안에 있는 속성값이 문자열인지 판별한다.
-  // 문자열이라면 삭제한다.
-  for ( let prop in obj ) {
-    if ( typeof obj[prop] === "string" ) {
-      delete obj[prop]
-    }
-  }
-}
-
-
-
-```
-
-
-* 02_removeNumberValues
-
-> Write a function called "removeNumberValues". ("removeNumberValues" 함수를 작성하세요.)
-
->Given an object, "removeNumberValues" removes any properties whose values are numbers. (객체가 주어졌을때, "removeNumberValues" 함수는 속성값이 숫자인 모든 속성을 제거합니다.)
-
-```
-let obj = {
-  a: 2,
-  b: 'remaining',
-  c: 4
-};
-function removeNumberValues(obj) {
-  // 여기에 코드를 작성하세요.
-  // prop 을 불러온다.
-  // 불러온 prop 값을 숫자인지 판별한다/
-  // 숫자이면 제거한다
-  for ( let prop in obj ) {
-    if ( typeof obj[prop] === "number" ) {
-      delete obj[prop]
-    }
-  } 
-  return obj;
-}
-
-removeNumberValues(obj);
-
-```
-
-* 03_removeArrayValues
-
-> Write a function called "removeArrayValues". ("removeArrayValues" 함수를 작성하세요.)
-
->Given an object, "removeArrayValues" removes any properties whose values are arrays. (객체가 주어졌을때, "removeArrayValues" 함수는 속성값이 배열인 모든 속성을 제거합니다.)
-
-
-```
-
-let obj = {
-  a: [1, 3, 4],
-  b: 2,
-  c: ['hi', 'there']
-}
-function removeArrayValues(obj) {
-  // 여기에 코드를 작성하세요
-  // prop 값을 불러온다
-  // prop 값이 배열에 속하는지 판별한다
-  // 배열에 속하면 제거한다.
-  for ( let prop in obj ) {
-    if (Array.isArray(obj[prop])) {
-      delete obj[prop];
-    }
-  }
-  return obj
-}
-removeArrayValues(obj)
-
-
-
-```

@@ -4107,7 +4107,7 @@ arr[arr.length - 1] ;
 
 
 * Second
-arr.slice(-1)[0];
+arr.slice(-1);
 
 * Third
 arr.slice(-1).pop();
@@ -4210,7 +4210,7 @@ arr.join(&amp;quot;&amp;quot;);
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;indaxtOf() ()&amp;lt;&amp;lt;원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;indexOf() ()&amp;lt;&amp;lt;원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;var array = [2, 9, 9];
 array.indexOf(2);     // 0
@@ -4221,49 +4221,142 @@ array.indexOf(2, -3); // 0
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;lastIndaxtOf() ()&amp;lt;&amp;lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;lastIndexOf() ()&amp;lt;&amp;lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;li&gt;&lt;p&gt;slice() : &lt;code&gt;immutable&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-var arr = [1,2,3,4,5];
-arr.indexOf[1];
+&lt;blockquote&gt;
+&lt;p&gt;Examples&lt;/p&gt;
 
-&amp;gt;&amp;gt;arr
-2
+&lt;p&gt;Return a portion of an existing array&lt;/p&gt;
+&lt;/blockquote&gt;
 
-arr.indexOf[100];
-&amp;gt;&amp;gt;arr
--1
-없는 경우 -1를 호출한다. 
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var fruits = [&#39;Banana&#39;, &#39;Orange&#39;, &#39;Lemon&#39;, &#39;Apple&#39;, &#39;Mango&#39;];
+var citrus = fruits.slice(1, 3);
 
-EX) 
-var arr = [1,2,3,4,5,6]
-if (arr.indexOf(100) === -1 ) {
-만약 100이라는 원소가 arr 에 없으면 
-}
+// fruits contains [&#39;Banana&#39;, &#39;Orange&#39;, &#39;Lemon&#39;, &#39;Apple&#39;, &#39;Mango&#39;]
+// citrus contains [&#39;Orange&#39;,&#39;Lemon&#39;]
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;li&gt;&lt;p&gt;slice()&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;splice() : &lt;code&gt;mutable&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;var arr = [1, 2, 3, 4, 5];
-a.slice(0, 3);
-&amp;gt;&amp;gt;a;
-123
-원소는 변하지 않는다
+&lt;blockquote&gt;
+&lt;p&gt;Examples&lt;/p&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;p&gt;1 . Remove 0 (zero) elements from index 2, and insert &amp;ldquo;drum&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;li&gt;&lt;p&gt;splice()&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;];
+var removed = myFish.splice(2, 0, &#39;drum&#39;);
 
-&lt;pre&gt;&lt;code&gt;var arr = [1, 2, 3, 4, 5];
-a.splice(0, 3);
-&amp;gt;&amp;gt;a;
-123
-원소 값이 변한다. 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+// myFish is [&amp;quot;angel&amp;quot;, &amp;quot;clown&amp;quot;, &amp;quot;drum&amp;quot;, &amp;quot;mandarin&amp;quot;, &amp;quot;sturgeon&amp;quot;] 
+// removed is [], no elements removed
 
-&lt;li&gt;&lt;p&gt;split()&lt;/p&gt;&lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Remove 0 (zero) elements from index 2, and insert &amp;ldquo;drum&amp;rdquo; and &amp;ldquo;guitar&amp;rdquo;Section&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;];
+var removed = myFish.splice(2, 0, &#39;drum&#39;, &#39;guitar&#39;);
+
+// myFish is [&amp;quot;angel&amp;quot;, &amp;quot;clown&amp;quot;, &amp;quot;drum&amp;quot;, &amp;quot;guitar&amp;quot;, &amp;quot;mandarin&amp;quot;, &amp;quot;sturgeon&amp;quot;] 
+// removed is [], no elements removed
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Remove 1 element from index 3&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;drum&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;];
+var removed = myFish.splice(3, 1);
+
+// removed is [&amp;quot;mandarin&amp;quot;]
+// myFish is [&amp;quot;angel&amp;quot;, &amp;quot;clown&amp;quot;, &amp;quot;drum&amp;quot;, &amp;quot;sturgeon&amp;quot;]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Remove 1 element from index 2, and insert &amp;ldquo;trumpet&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;drum&#39;, &#39;sturgeon&#39;];
+var removed = myFish.splice(2, 1, &#39;trumpet&#39;);
+
+// myFish is [&amp;quot;angel&amp;quot;, &amp;quot;clown&amp;quot;, &amp;quot;trumpet&amp;quot;, &amp;quot;sturgeon&amp;quot;]
+// removed is [&amp;quot;drum&amp;quot;]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Remove 2 elements from index 0, and insert &amp;ldquo;parrot&amp;rdquo;, &amp;ldquo;anemone&amp;rdquo; and &amp;ldquo;blue&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+var myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;trumpet&#39;, &#39;sturgeon&#39;];
+var removed = myFish.splice(0, 2, &#39;parrot&#39;, &#39;anemone&#39;, &#39;blue&#39;);
+
+// myFish is [&amp;quot;parrot&amp;quot;, &amp;quot;anemone&amp;quot;, &amp;quot;blue&amp;quot;, &amp;quot;trumpet&amp;quot;, &amp;quot;sturgeon&amp;quot;] 
+// removed is [&amp;quot;angel&amp;quot;, &amp;quot;clown&amp;quot;]
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Remove 2 elements from index 2&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var myFish = [&#39;parrot&#39;, &#39;anemone&#39;, &#39;blue&#39;, &#39;trumpet&#39;, &#39;sturgeon&#39;];
+var removed = myFish.splice(2, 2);
+
+// myFish is [&amp;quot;parrot&amp;quot;, &amp;quot;anemone&amp;quot;, &amp;quot;sturgeon&amp;quot;] 
+// removed is [&amp;quot;blue&amp;quot;, &amp;quot;trumpet&amp;quot;]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Remove 1 element from index -2&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;];
+var removed = myFish.splice(-2, 1);
+
+// myFish is [&amp;quot;angel&amp;quot;, &amp;quot;clown&amp;quot;, &amp;quot;sturgeon&amp;quot;] 
+// removed is [&amp;quot;mandarin&amp;quot;]
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Remove all elements after index 2 (incl.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;];
+var removed = myFish.splice(2);
+
+// myFish is [&amp;quot;angel&amp;quot;, &amp;quot;clown&amp;quot;]
+// removed is [&amp;quot;mandarin&amp;quot;, &amp;quot;sturgeon&amp;quot;]
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;split()&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
@@ -4406,104 +4499,6 @@ console.log(delete Employee.age);    // returns true
 // not exist, true is returned 
 console.log(delete Employee.salary); // returns true
  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;object-and-type&#34;&gt;&lt;strong&gt;object and type&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;01_removeStringValues&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Write a function called &amp;ldquo;removeStringValues&amp;rdquo;. (&amp;ldquo;removeStringValues&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
-
-&lt;p&gt;Given an object, &amp;ldquo;removeStringValues&amp;rdquo; removes any properties on the given object whose values are strings. (객체가 주어졌을때, &amp;ldquo;removeStringValues&amp;rdquo; 함수는 속성값이 문자열인 모든 속성을 제거합니다.)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code&gt;
-function removeStringValues(obj) {
-  // 여기에 코드를 작성하세요.
-  // 객체안에 있는 속성값이 문자열인지 판별한다.
-  // 문자열이라면 삭제한다.
-  for ( let prop in obj ) {
-    if ( typeof obj[prop] === &amp;quot;string&amp;quot; ) {
-      delete obj[prop]
-    }
-  }
-}
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;02_removeNumberValues&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Write a function called &amp;ldquo;removeNumberValues&amp;rdquo;. (&amp;ldquo;removeNumberValues&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
-
-&lt;p&gt;Given an object, &amp;ldquo;removeNumberValues&amp;rdquo; removes any properties whose values are numbers. (객체가 주어졌을때, &amp;ldquo;removeNumberValues&amp;rdquo; 함수는 속성값이 숫자인 모든 속성을 제거합니다.)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code&gt;let obj = {
-  a: 2,
-  b: &#39;remaining&#39;,
-  c: 4
-};
-function removeNumberValues(obj) {
-  // 여기에 코드를 작성하세요.
-  // prop 을 불러온다.
-  // 불러온 prop 값을 숫자인지 판별한다/
-  // 숫자이면 제거한다
-  for ( let prop in obj ) {
-    if ( typeof obj[prop] === &amp;quot;number&amp;quot; ) {
-      delete obj[prop]
-    }
-  } 
-  return obj;
-}
-
-removeNumberValues(obj);
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;03_removeArrayValues&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Write a function called &amp;ldquo;removeArrayValues&amp;rdquo;. (&amp;ldquo;removeArrayValues&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
-
-&lt;p&gt;Given an object, &amp;ldquo;removeArrayValues&amp;rdquo; removes any properties whose values are arrays. (객체가 주어졌을때, &amp;ldquo;removeArrayValues&amp;rdquo; 함수는 속성값이 배열인 모든 속성을 제거합니다.)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code&gt;
-let obj = {
-  a: [1, 3, 4],
-  b: 2,
-  c: [&#39;hi&#39;, &#39;there&#39;]
-}
-function removeArrayValues(obj) {
-  // 여기에 코드를 작성하세요
-  // prop 값을 불러온다
-  // prop 값이 배열에 속하는지 판별한다
-  // 배열에 속하면 제거한다.
-  for ( let prop in obj ) {
-    if (Array.isArray(obj[prop])) {
-      delete obj[prop];
-    }
-  }
-  return obj
-}
-removeArrayValues(obj)
-
-
-
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
@@ -4824,6 +4819,14 @@ console.log(count);  // print 1
 &lt;blockquote&gt;
 &lt;p&gt;In closing, these are the two ways that you can use to find the number of properties in a JavaScript object&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;9-ways-to-remove-elements-from-a-javascript-array&#34;&gt;9 Ways to Remove Elements From A JavaScript Array&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://love2dev.com/blog/javascript-remove-from-array&#34; target=&#34;_blank&#34;&gt;This is link&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -6297,7 +6300,7 @@ getAllElementsButFirst([1,2,3,4])
 &lt;li&gt;model solution&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
 function getAllElementsButFirst(array) {
   return array.slice(1, array.length);
@@ -6316,7 +6319,7 @@ function getAllElementsButFirst(array) {
 &lt;li&gt;my_answer&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getAllElementsButLast(array) {
   // your code here
   // slice 를 이용해서 마지막 숫자를 삭제한다.
@@ -6341,7 +6344,7 @@ function getAllElementsButLast(array) {
 &lt;li&gt;my_answer&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function removeFromFront(arr) {
   // your code here
   // 메소드 사용해서 첫번째요소 자르기 
@@ -6363,7 +6366,7 @@ function removeFromFront(arr) {
 &lt;li&gt;my_answer&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function removeFromBack(arr) {
   // your code here
   //배열 메소드 이용해서 뒤에 있는거 자르기
@@ -6386,7 +6389,7 @@ function removeFromBack(arr) {
 &lt;li&gt;my_answer&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function removeFromBackOfNew(arr) {
   // your code here
   // 빈 배열을 만든다. 
@@ -6407,7 +6410,7 @@ function removeFromBackOfNew(arr) {
 &lt;li&gt;model solution&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;function removeFromBackOfNew(arr) {
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function removeFromBackOfNew(arr) {
   // your code here
   // 마지막 숫자를 뺀 배열값을 변수에 담는다.
   // 담은 변수를 출력한다.
@@ -6416,8 +6419,65 @@ function removeFromBackOfNew(arr) {
   
   }
 
+&lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;&lt;strong&gt;14_addToBackOfNew&lt;/strong&gt;&lt;/p&gt;
 
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;addToBackNew&amp;rdquo;. (&amp;ldquo;addToBackNew&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array and an element, &amp;ldquo;addToBackNew&amp;rdquo; returns a clone of the given array, with the given element added to the end. (배열과 요소가 주어졌을때, &amp;ldquo;addToBackNew&amp;rdquo; 함수는 주어진 배열의 복사본 끝에 주어진 요소가 추가된 배열을 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+function addToBackOfNew(arr, element) {
+  // your code here
+  arr = arr.concat(element);
+  return arr;
+  }
+  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;model soultion&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function addToBackOfNew(arr, element) {
+  const newArr = arr.slice();
+  newArr.push(element);
+  return newArr;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;18_getAllLetters&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;getAllLetters&amp;rdquo;. (&amp;ldquo;getAllLetters&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given a word, &amp;ldquo;getAllLetters&amp;rdquo; returns an array containing every character in the word. (단어가 주어졌을때, &amp;ldquo;getAllLetters&amp;rdquo; 함수는 주어진 단어에 포함된 모든 문자를 담고 있는 배열을 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function getAllLetters(str) {
+  // your code here
+  // 만약 빈문자 열이라면 빈 배열을 리턴한다.
+  // 만약 빈배열이 아니라면 문자를 split method 사용한다.
+  if ( str === &amp;quot;&amp;quot; ) {
+    return str = [];
+  } else {
+    return str.split(&amp;quot;&amp;quot;)
+  }
+}
 
 &lt;/code&gt;&lt;/pre&gt;
 </description>

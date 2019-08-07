@@ -1468,7 +1468,7 @@ getAllElementsButFirst([1,2,3,4])
 * model solution
 
 
-```JS 
+```js
 
 
 function getAllElementsButFirst(array) {
@@ -1485,7 +1485,7 @@ function getAllElementsButFirst(array) {
 
 * my_answer
 
-```JS
+```js
 
 function getAllElementsButLast(array) {
   // your code here
@@ -1507,7 +1507,7 @@ function getAllElementsButLast(array) {
 
 * my_answer
 
-```JS
+```js
 
 function removeFromFront(arr) {
   // your code here
@@ -1528,7 +1528,7 @@ function removeFromFront(arr) {
 
 * my_answer
 
-```JS
+```js
 
 function removeFromBack(arr) {
   // your code here
@@ -1550,7 +1550,7 @@ function removeFromBack(arr) {
 
 * my_answer
 
-```JS
+```js
 
 function removeFromBackOfNew(arr) {
   // your code here
@@ -1572,7 +1572,7 @@ function removeFromBackOfNew(arr) {
 * model solution
 
 
-```JS
+```js
 function removeFromBackOfNew(arr) {
   // your code here
   // 마지막 숫자를 뺀 배열값을 변수에 담는다.
@@ -1582,7 +1582,65 @@ function removeFromBackOfNew(arr) {
   
   }
 
+```
+
+**14_addToBackOfNew**
 
 
+>Write a function called "addToBackNew". ("addToBackNew" 함수를 작성하세요.)
+
+>Given an array and an element, "addToBackNew" returns a clone of the given array, with the given element added to the end. (배열과 요소가 주어졌을때, "addToBackNew" 함수는 주어진 배열의 복사본 끝에 주어진 요소가 추가된 배열을 반환합니다.)
+
+
+* my_answer
+
+```js
+
+
+function addToBackOfNew(arr, element) {
+  // your code here
+  arr = arr.concat(element);
+  return arr;
+  }
+  
+```
+
+
+* model soultion
+
+```js
+
+function addToBackOfNew(arr, element) {
+  const newArr = arr.slice();
+  newArr.push(element);
+  return newArr;
+}
 
 ```
+
+
+
+**18_getAllLetters**
+
+> Write a function called "getAllLetters". ("getAllLetters" 함수를 작성하세요.)
+
+>Given a word, "getAllLetters" returns an array containing every character in the word. (단어가 주어졌을때, "getAllLetters" 함수는 주어진 단어에 포함된 모든 문자를 담고 있는 배열을 반환합니다.)
+
+* my_answer
+
+```js
+function getAllLetters(str) {
+  // your code here
+  // 만약 빈문자 열이라면 빈 배열을 리턴한다.
+  // 만약 빈배열이 아니라면 문자를 split method 사용한다.
+  if ( str === "" ) {
+    return str = [];
+  } else {
+    return str.split("")
+  }
+}
+
+```
+
+
+
