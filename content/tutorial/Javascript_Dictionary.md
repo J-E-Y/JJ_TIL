@@ -179,6 +179,276 @@ alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
 ---
 
 
+
+* making array
+
+```
+1.
+let arr = [1, 2, 3, 4];
+
+2.
+
+let arr = [];
+arr[0] = 2;
+arr[1] = 4;
+
+
+```
+
+* reading array
+
+```
+
+let arr = [1, 2, 3, 4];
+
+arr[0]; 
+
+> 1
+
+
+arr[3];
+
+> 4
+
+```
+
+* writing 
+
+```
+let arr = [1, 2, 3, 4];
+
+arr[0] = 2;
+
+> [2,2,3,4]; 
+
+scores[9] = 50;
+
+인덱스가 없다면 마지막에 붙는다 
+>  [1, 2, 3, 4 ,50]
+```
+
+
+* Get the length from arr
+
+```
+let arr = [1, 2, 3, 4];
+arr.length;
+> 4
+
+```
+* Get the last item in an array
+
+```
+let arr = [1, 2, 3, 4] ;
+
+* First
+arr[arr.length - 1] ;
+
+
+* Second
+arr.slice(-1)[0];
+
+* Third
+arr.slice(-1).pop();
+
+```
+
+
+* push() 뒤어 붙이기 
+
+```
+var arr = [1,2,3,4,];
+arr.push(1);
+
+arr; // = > [1,2,3,4,1]
+```
+
+* pop() 뒤에 있는거 빼기 
+
+```
+var arr = [1,2,3,4,];
+arr.pop();
+
+arr; // = > [1,2,3]
+```
+
+
+* unshift()	 앞에 붙이기
+
+```
+var arr = [1,2,3,4];
+
+arr.unshift(1);
+
+arr; // = > [1,1,2,3,4,];
+
+```
+
+
+* shift()  앞에 있는거 빼기
+
+```
+var arr = [1,2,3,4];
+
+arr.shift();
+
+arr; // = > [2,3,4,]
+
+```
+
+* concat() 더하기 
+
+```
+1.
+
+
+Join two arrays:
+
+var hege = ["Cecilie", "Lone"];
+var stale = ["Emil", "Tobias", "Linus"];
+var children = hege.concat(stale);
+
+`변수에 담아야 한다` 왜냐하면 값이 변하지 않는다.
+출력하면
+console.log(children);
+
+> ["Cecilie", "Lone", "Emil", "Tobias", "Linus"]
+
+2.
+
+var arr = [1,2,3,4,5];
+
+arr.concat(6); 
+
+console.log(arr) 
+
+>> [1,2,3,4,5,]  
+
+기존에 있는 것은 변하지 않는다.
+변하게 하기위해서는 변수를 새로 만들기 !
+
+
+
+3. 
+arr.concat([6,7,8,9,10]);
+
+>>arr
+
+[1,2,3,4,5,6,7,8,9,10] 
+여러게를 더할수 있다.
+
+```
+
+
+* join() 문자열로 바꾸기 
+
+
+
+```
+var arr = [1,2,3,4,5,6]
+
+arr.join() ;
+
+>>arr
+["1","2","3","4","5","6"]
+문자열로 바꿔준다. 
+
+arr.join("");
+
+>>arr
+["123456"];
+문자열 다 붙인다.
+
+```
+
+* indaxtOf() ()<<원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다. 
+
+```
+var array = [2, 9, 9];
+array.indexOf(2);     // 0
+array.indexOf(7);     // -1
+array.indexOf(9, 2);  // 2
+array.indexOf(2, -1); // -1
+array.indexOf(2, -3); // 0
+
+```
+
+* lastIndaxtOf() ()<<원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다. 
+
+```
+
+
+var arr = [1,2,3,4,5];
+arr.indexOf[1];
+
+>>arr
+2
+
+arr.indexOf[100];
+>>arr
+-1
+없는 경우 -1를 호출한다. 
+
+EX) 
+var arr = [1,2,3,4,5,6]
+if (arr.indexOf(100) === -1 ) {
+만약 100이라는 원소가 arr 에 없으면 
+}
+
+```
+* slice()
+```
+var arr = [1, 2, 3, 4, 5];
+a.slice(0, 3);
+>>a;
+123
+원소는 변하지 않는다
+
+```
+
+* splice()
+
+
+```
+var arr = [1, 2, 3, 4, 5];
+a.splice(0, 3);
+>>a;
+123
+원소 값이 변한다. 
+```
+
+
+* split()
+
+>문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.
+
+
+```
+var s = "hello, world this is jj";
+s.split("");
+
+
+"h", "e", "l", "l", "o", ",", " ", "w", "o", "r", "l", "d", " ", "t", "h", "i", "s", " ", "i", "s", " ", "j", "j"
+```
+
+```
+
+var s = "hello, world this is jj";
+s.split(",");
+"hello", " world this is jj"
+콤마가 생겼다. 콤마의 기준으로 갈라진다.
+```
+
+```
+var s = "hello world t-h-i-s-i-s-j-j"
+s.split("-");
+
+"hello  world t", "h", "i", "s", "i", "s", "j", "j"
+- 기준으로 갈라진다. 
+```
+
+
+
 * Array.isArray([]) :메서드는 인자가 Array인지 판별합니다.
 
 
@@ -194,6 +464,8 @@ Array.isArray({foo: 123}); // false
 Array.isArray('foobar');   // false
 Array.isArray(undefined);  // false
 ```
+
+
 
 
 ---
@@ -309,8 +581,8 @@ console.log(delete Employee.salary); // returns true
  ```
  
  
- ---
-## **object and type **
+---
+## **object and type**
 ---
 
 

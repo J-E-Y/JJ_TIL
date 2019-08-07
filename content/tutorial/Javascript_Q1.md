@@ -21,7 +21,7 @@ type: docs
 * my_answer
 
 
-```
+```JS
 function isOldEnoughToDrink(age) {
   // 여기에 코드를 작성하세요
   if (age < 21 ) {
@@ -1145,3 +1145,444 @@ console.log(output); // --> {b: 1, a: 3, n: 2}
 
 ```
 
+---
+## **object and type**
+---
+
+
+**01_removeStringValues**
+
+
+> Write a function called "removeStringValues". ("removeStringValues" 함수를 작성하세요.)
+
+>Given an object, "removeStringValues" removes any properties on the given object whose values are strings. (객체가 주어졌을때, "removeStringValues" 함수는 속성값이 문자열인 모든 속성을 제거합니다.)
+ 
+
+* my_answer
+
+```JS
+
+function removeStringValues(obj) {
+  // 여기에 코드를 작성하세요.
+  // 객체안에 있는 속성값이 문자열인지 판별한다.
+  // 문자열이라면 삭제한다.
+  for ( let prop in obj ) {
+    if ( typeof obj[prop] === "string" ) {
+      delete obj[prop]
+    }
+  }
+}
+
+
+
+```
+
+
+**02_removeNumberValues**
+
+> Write a function called "removeNumberValues". ("removeNumberValues" 함수를 작성하세요.)
+
+>Given an object, "removeNumberValues" removes any properties whose values are numbers. (객체가 주어졌을때, "removeNumberValues" 함수는 속성값이 숫자인 모든 속성을 제거합니다.)
+
+```
+let obj = {
+  a: 2,
+  b: 'remaining',
+  c: 4
+};
+function removeNumberValues(obj) {
+  // 여기에 코드를 작성하세요.
+  // prop 을 불러온다.
+  // 불러온 prop 값을 숫자인지 판별한다/
+  // 숫자이면 제거한다
+  for ( let prop in obj ) {
+    if ( typeof obj[prop] === "number" ) {
+      delete obj[prop]
+    }
+  } 
+  return obj;
+}
+
+removeNumberValues(obj);
+
+```
+
+* 03_removeArrayValues
+
+> Write a function called "removeArrayValues". ("removeArrayValues" 함수를 작성하세요.)
+
+>Given an object, "removeArrayValues" removes any properties whose values are arrays. (객체가 주어졌을때, "removeArrayValues" 함수는 속성값이 배열인 모든 속성을 제거합니다.)
+
+
+```
+
+let obj = {
+  a: [1, 3, 4],
+  b: 2,
+  c: ['hi', 'there']
+}
+function removeArrayValues(obj) {
+  // 여기에 코드를 작성하세요
+  // prop 값을 불러온다
+  // prop 값이 배열에 속하는지 판별한다
+  // 배열에 속하면 제거한다.
+  for ( let prop in obj ) {
+    if (Array.isArray(obj[prop])) {
+      delete obj[prop];
+    }
+  }
+  return obj
+}
+removeArrayValues(obj)
+
+
+
+```
+
+
+
+
+---
+## **array**
+---
+
+
+
+* 01_getFirstElement
+
+
+> Write a function called "getFirstElement". ("getFirstElement" 함수를 작성하세요.)
+
+>Given an array, "getFirstElement" returns the first element of the given array. (배열이 주어졌을때, "getFirstElement" 함수는 주어진 배열의 첫번째 요소를 반환해야 합니다.)
+
+
+* my_answer
+
+```
+
+function getFirstElement(array) {
+  // 여기에 코드를 작성하세요.
+  // 배열을 0번째 숫자를 불러온다.
+  if ( array.length === 0 ) {
+    return undefined;
+  } else
+  return array[0];
+}
+
+```
+
+
+* 02_getLastElement
+
+> Write a function called "getLastElement". ("getLastElement" 함수를 작성하세요.)
+
+>Given an array, "getLastElement" returns the last element of the given array. (배열이 주어졌을때, "getLastElemeent" 함수는 주어진 배열의 마지막 요소를 반환해야 합니다.)
+
+
+* my_answer
+
+
+```
+
+function getLastElement(array) {
+  // 여기에 코드를 작성하세요
+  // 만약 배열의 길이가 0 이라면 undefinded 출력
+  // 아니라면 return 마지막 배열숫자 출력
+  if ( array.length === 0 ) {
+    return undefined;
+  } else {
+    let lastNum = array[array.length -1]
+    return lastNum;
+  }
+}
+
+```
+
+
+* 03_getNthElement
+
+> Write a function called "getNthElement". ("getNthElement" 함수를 작성하세요.)
+
+> Given an array and an integer, "getNthElement" returns the element at the given integer, within the given array. (배열과 숫자가 주어졌을때, "getNthElement" 함수는 주어진 배열에서 n번 인덱스의 요소를 반환해야 합니다.)
+
+
+```
+
+function getNthElement(array, n) {
+  // 여기에 코드를 작성하세요
+  // 만약 배열에 길이가 0보다 크면 코드 진행실행 아니면 undefinded
+  // 배열에 n번째 있는 숫자를 변수에 저장
+  // 배열안에 있는 n 번째의 숫자 출력
+  if ( array.length > 0 ) {
+    let ret = array[n];
+    return ret;
+  } else {
+    return undefined;
+  }
+}
+
+
+
+```
+
+* 04_addToFront
+
+> Write a function called "addToFront". ("addToFront" 함수를 작성하세요.)
+
+>Given an array and an element, "addToFront" adds the given element to the front of the given array, and returns the given array. (배열과 요소가 주어졌을때, "addToFront" 함수는 주어진 요소를 배열의 맨앞에 추가하고 주어진 배열을 반환해야 합니다.)
+
+
+* my_answer
+
+
+```
+
+
+function addToFront(arr, element) {
+  arr.unshift(element);
+  return arr;
+}
+
+
+
+
+```
+
+
+* 05_addToBack
+
+> Write a function called "addToBack". ("addToBack" 함수를 작성하세요.)
+
+>Given an array and an element, "addToBack" returns the given array with the given element added to the end. (배열과 요소가 주어졌을때, "addToBack" 함수는 주어진 요소를 배열의 맨뒤에 추가하고 주어진 배열을 반환해야 합니다.)
+
+
+* my_ answer
+
+
+```JS
+
+function addToBack(arr, element) {
+  // 여기에 코드를 작성하세요.
+  // push 사용해 element 값을 뒤에 추가한다.
+  arr.push(element);
+  return arr;
+}
+
+
+```
+
+
+
+
+* 06_joinArrays
+
+> Write a function called "joinArrays". ("joinArrays" 함수를 작성하세요.)
+
+>Given two arrays, "joinArrays" returns an array with the elements of "arr1" in order, followed by the elementsin "arr2". (두 배열이 주어졌을때, "joinArrays" 함수는 첫번째 배열(arr1)과 두번째 배열(arr2) 순서로 합쳐진 배열을 반환해야 합니다.)
+
+
+```
+function joinArrays(arr1, arr2) {
+  // your code here
+  // 변수를 만들어 배열1에 배열2를 집어넣는다.
+  // 출력한다.
+  let arrRet = arr1.concat(arr2);
+  return arrRet
+  
+}
+
+
+```
+
+* 07_getElementsAfter
+
+> Write a function called "getElementsAfter". ("getElementsAfter" 함수를 작성하세요.)
+
+>Given an array and an index, "getElementsAfter" returns a new array with all the elements after (but not including) the given index. (배열과 인덱스가 주어졌을때, "getElementsAfter" 함수는 주어진 배열의 인덱스 이후 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)
+
+
+
+```
+function getElementsAfter(array, n) {
+  // your code here
+  // 새로운 빈배열을 만든다.
+  // 초기값을 n+1을 한 for 문을 이용해 배열인덱스를 불러온다.
+  // 불러온 값을 새로운 배열에 push를 사용해 담는다.
+  // 출력한다.
+  let newArr = [];
+  for (let i = n + 1;  i < array.length; i = i + 1 ) {
+    newArr.push(array[i]);
+  }
+  return newArr;
+}
+getElementsAfter(['a', 'b', 'c', 'd', 'e'], 1);
+
+
+```
+
+
+* 08_getElementsUpTo
+
+> Write a function called "getElementsUpTo". ("getElementsUpTo" 함수를 작성하세요.)
+
+>Given an array and a index, "getElementsUpTo", returns an array with all the elements up until, but not including, the element at the given index. (배열과 인덱스가 주어졌을때, "getElementsUpTo" 함수는 주어진 배열의 인덱스 이전 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)
+
+* my_answer
+
+
+```JS
+
+function getElementsUpTo(array, n) {
+  let newArr = array.slice(0,n);
+  return newArr
+}
+getElementsUpTo(['a', 'b', 'c', 'd', 'e'], 3);
+
+
+```
+
+
+* 09_getAllElementsButFirst
+
+>Write a function called "getAllElementsButFirst". ("getAllElementsButFirst" 함수를 작성하세요.)
+
+>Given an array, "getAllElementsButFirst" returns an array with all the elements but the first. (배열이 주어졌을때, "getAllElementsButFirst" 함수는 첫번째 요소를 제외한 배열을 반환해야 합니다.)
+
+* my_answer
+
+```JS
+
+function getAllElementsButFirst(array) {
+  // your code here
+  // shift 를 이용해서 앞에 있는 요소를 뺀다.
+  // 그리고 기존에 배열을 출력한다. 
+  array.shift();
+  return array;
+}
+
+getAllElementsButFirst([1,2,3,4])
+
+
+```
+
+* model solution
+
+
+```JS 
+
+
+function getAllElementsButFirst(array) {
+  return array.slice(1, array.length);
+}
+```
+
+
+**10_getAllElementsButLast**
+
+>Write a function called "getAllElementsButLast". ("getAllElementsButLast" 함수를 작성하세요.)
+
+>Given an array, "getAllElementsButLast" returns an array with all the elements but the last. (배열이 주어졌을때, "getAllElementsButLast" 함수는 마지막 요소를 제외한 배열을 반환해야 합니다.)
+
+* my_answer
+
+```JS
+
+function getAllElementsButLast(array) {
+  // your code here
+  // slice 를 이용해서 마지막 숫자를 삭제한다.
+  // 출력한다.
+  array.pop()
+  return array
+}
+
+
+
+```
+**11_removeFromFront**
+
+>Write a function called "removeFromFront". ("removeFromFront" 함수를 작성하세요.)
+
+>Given an array, "removeFromFront" returns the given array with its first element removed. (배열이 주어졌을때, "removeFromFront" 함수는 첫번째 요소를 삭제한 주어진 배열을 반환해야 합니다.)
+
+
+* my_answer
+
+```JS
+
+function removeFromFront(arr) {
+  // your code here
+  // 메소드 사용해서 첫번째요소 자르기 
+  arr.shift();
+  return arr;
+}
+
+```
+
+
+**12_removeFromBack**
+
+>Write a function called "removeFromBack". ("removeFromBack" 함수를 작성하세요.)
+
+>Given an array, "removeFromBack" returns the given array with its last element removed. (배열이 주어졌을때, "removeFromBack" 함수는 마지막 요소를 삭제한 주어진 배열을 반환해야 합니다.)
+
+
+* my_answer
+
+```JS
+
+function removeFromBack(arr) {
+  // your code here
+  //배열 메소드 이용해서 뒤에 있는거 자르기
+  arr.pop();
+  return arr;
+}
+
+
+```
+
+**13_removeFromBackOfNew**
+
+>Write a function called "removeFromBackOfNew". ("removeFromBackOfNew" 함수를 작성하세요.)
+
+>Given an array, "removeFromBackOfNew" returns a new array containing all but the last element of the given array. (배열이 주어졌을때, "removeFromBackOfNew" 함수는 마지막 요소를 제외한 모든 요소를 가지고 있는 새로운 배열을 반환해야 합니다.)
+
+
+
+* my_answer
+
+```JS
+
+function removeFromBackOfNew(arr) {
+  // your code here
+  // 빈 배열을 만든다. 
+  // 배열을 가져오는데 length를 이용해 마지막숫자를 뺀수를 가져온다
+  // 가져온 숫자를 새로운 배열에 넣는다. 
+  // arrNew 를 출력한다. 
+  let arrNew = [];
+  for (let i = 0; i < arr.length -1; i = i + 1 ) {
+    arrNew.push(arr[i]);
+  }
+  return arrNew
+  }
+
+
+```
+
+
+* model solution
+
+
+```JS
+function removeFromBackOfNew(arr) {
+  // your code here
+  // 마지막 숫자를 뺀 배열값을 변수에 담는다.
+  // 담은 변수를 출력한다.
+  let sliced = arr.slice(0,arr.length-1)
+  return sliced; 
+  
+  }
+
+
+
+
+```

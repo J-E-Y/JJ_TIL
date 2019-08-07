@@ -367,7 +367,7 @@ let str = &#39;CodeStates&#39;; str.toUpperCase(); &gt;&gt;&quot;CODESTATES  toL
 <li><a href="#number"><strong>Number</strong></a></li>
 <li><a href="#array"><strong>Array</strong></a></li>
 <li><a href="#object"><strong>object</strong></a></li>
-<li><a href="#object-and-type">**object and type **</a></li>
+<li><a href="#object-and-type"><strong>object and type</strong></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -550,6 +550,252 @@ alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
 <hr />
 
 <ul>
+<li><p>making array</p>
+
+<pre><code>1.
+let arr = [1, 2, 3, 4];
+
+2.
+
+let arr = [];
+arr[0] = 2;
+arr[1] = 4;
+
+
+</code></pre></li>
+
+<li><p>reading array</p>
+
+<pre><code>
+let arr = [1, 2, 3, 4];
+
+arr[0]; 
+
+&gt; 1
+
+
+arr[3];
+
+&gt; 4
+
+</code></pre></li>
+
+<li><p>writing</p>
+
+<pre><code>let arr = [1, 2, 3, 4];
+
+arr[0] = 2;
+
+&gt; [2,2,3,4]; 
+
+scores[9] = 50;
+
+인덱스가 없다면 마지막에 붙는다 
+&gt;  [1, 2, 3, 4 ,50]
+</code></pre></li>
+
+<li><p>Get the length from arr</p>
+
+<pre><code>let arr = [1, 2, 3, 4];
+arr.length;
+&gt; 4
+
+</code></pre></li>
+
+<li><p>Get the last item in an array</p>
+
+<pre><code>let arr = [1, 2, 3, 4] ;
+
+* First
+arr[arr.length - 1] ;
+
+
+* Second
+arr.slice(-1)[0];
+
+* Third
+arr.slice(-1).pop();
+
+</code></pre></li>
+
+<li><p>push() 뒤어 붙이기</p>
+
+<pre><code>var arr = [1,2,3,4,];
+arr.push(1);
+
+arr; // = &gt; [1,2,3,4,1]
+</code></pre></li>
+
+<li><p>pop() 뒤에 있는거 빼기</p>
+
+<pre><code>var arr = [1,2,3,4,];
+arr.pop();
+
+arr; // = &gt; [1,2,3]
+</code></pre></li>
+
+<li><p>unshift()  앞에 붙이기</p>
+
+<pre><code>var arr = [1,2,3,4];
+
+arr.unshift(1);
+
+arr; // = &gt; [1,1,2,3,4,];
+
+</code></pre></li>
+
+<li><p>shift()  앞에 있는거 빼기</p>
+
+<pre><code>var arr = [1,2,3,4];
+
+arr.shift();
+
+arr; // = &gt; [2,3,4,]
+
+</code></pre></li>
+
+<li><p>concat() 더하기</p>
+
+<pre><code>1.
+
+
+Join two arrays:
+
+var hege = [&quot;Cecilie&quot;, &quot;Lone&quot;];
+var stale = [&quot;Emil&quot;, &quot;Tobias&quot;, &quot;Linus&quot;];
+var children = hege.concat(stale);
+
+`변수에 담아야 한다` 왜냐하면 값이 변하지 않는다.
+출력하면
+console.log(children);
+
+&gt; [&quot;Cecilie&quot;, &quot;Lone&quot;, &quot;Emil&quot;, &quot;Tobias&quot;, &quot;Linus&quot;]
+
+2.
+
+var arr = [1,2,3,4,5];
+
+arr.concat(6); 
+
+console.log(arr) 
+
+&gt;&gt; [1,2,3,4,5,]  
+
+기존에 있는 것은 변하지 않는다.
+변하게 하기위해서는 변수를 새로 만들기 !
+
+
+
+3. 
+arr.concat([6,7,8,9,10]);
+
+&gt;&gt;arr
+
+[1,2,3,4,5,6,7,8,9,10] 
+여러게를 더할수 있다.
+
+</code></pre></li>
+
+<li><p>join() 문자열로 바꾸기</p>
+
+<pre><code>var arr = [1,2,3,4,5,6]
+
+arr.join() ;
+
+&gt;&gt;arr
+[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;]
+문자열로 바꿔준다. 
+
+arr.join(&quot;&quot;);
+
+&gt;&gt;arr
+[&quot;123456&quot;];
+문자열 다 붙인다.
+
+</code></pre></li>
+
+<li><p>indaxtOf() ()&lt;&lt;원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다.</p>
+
+<pre><code>var array = [2, 9, 9];
+array.indexOf(2);     // 0
+array.indexOf(7);     // -1
+array.indexOf(9, 2);  // 2
+array.indexOf(2, -1); // -1
+array.indexOf(2, -3); // 0
+
+</code></pre></li>
+
+<li><p>lastIndaxtOf() ()&lt;&lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.</p>
+
+<pre><code>
+
+var arr = [1,2,3,4,5];
+arr.indexOf[1];
+
+&gt;&gt;arr
+2
+
+arr.indexOf[100];
+&gt;&gt;arr
+-1
+없는 경우 -1를 호출한다. 
+
+EX) 
+var arr = [1,2,3,4,5,6]
+if (arr.indexOf(100) === -1 ) {
+만약 100이라는 원소가 arr 에 없으면 
+}
+
+</code></pre></li>
+
+<li><p>slice()</p>
+
+<pre><code>var arr = [1, 2, 3, 4, 5];
+a.slice(0, 3);
+&gt;&gt;a;
+123
+원소는 변하지 않는다
+
+</code></pre></li>
+
+<li><p>splice()</p>
+
+<pre><code>var arr = [1, 2, 3, 4, 5];
+a.splice(0, 3);
+&gt;&gt;a;
+123
+원소 값이 변한다. 
+</code></pre></li>
+
+<li><p>split()</p></li>
+</ul>
+
+<blockquote>
+<p>문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.</p>
+</blockquote>
+
+<pre><code>var s = &quot;hello, world this is jj&quot;;
+s.split(&quot;&quot;);
+
+
+&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;, &quot;,&quot;, &quot; &quot;, &quot;w&quot;, &quot;o&quot;, &quot;r&quot;, &quot;l&quot;, &quot;d&quot;, &quot; &quot;, &quot;t&quot;, &quot;h&quot;, &quot;i&quot;, &quot;s&quot;, &quot; &quot;, &quot;i&quot;, &quot;s&quot;, &quot; &quot;, &quot;j&quot;, &quot;j&quot;
+</code></pre>
+
+<pre><code>
+var s = &quot;hello, world this is jj&quot;;
+s.split(&quot;,&quot;);
+&quot;hello&quot;, &quot; world this is jj&quot;
+콤마가 생겼다. 콤마의 기준으로 갈라진다.
+</code></pre>
+
+<pre><code>var s = &quot;hello world t-h-i-s-i-s-j-j&quot;
+s.split(&quot;-&quot;);
+
+&quot;hello  world t&quot;, &quot;h&quot;, &quot;i&quot;, &quot;s&quot;, &quot;i&quot;, &quot;s&quot;, &quot;j&quot;, &quot;j&quot;
+- 기준으로 갈라진다. 
+</code></pre>
+
+<ul>
 <li>Array.isArray([]) :메서드는 인자가 Array인지 판별합니다.</li>
 </ul>
 
@@ -668,7 +914,7 @@ console.log(delete Employee.salary); // returns true
 
 <hr />
 
-<h2 id="object-and-type">**object and type **</h2>
+<h2 id="object-and-type"><strong>object and type</strong></h2>
 
 <hr />
 

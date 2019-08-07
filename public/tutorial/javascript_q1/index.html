@@ -28,8 +28,7 @@
     
   
   <meta name="description" content="Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
-  my_answer
-function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (age &lt; 21 ) { return false; } else { return true; } }   Conditional : checkAge  이름과 나이를 파라미터로 받는 checkAge라는 함수는 두개 중 하나의 메시지를 리턴합니다.
+  my_answer  function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (age &lt; 21 ) { return false; } else { return true; } }  Conditional : checkAge  이름과 나이를 파라미터로 받는 checkAge라는 함수는 두개 중 하나의 메시지를 리턴합니다.
 만일 21살보다 적으면, Go home, {전달받은_이름}!">
 
   
@@ -120,8 +119,7 @@ function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (ag
   <meta property="og:url" content="/tutorial/javascript_q1/">
   <meta property="og:title" content="JS Basic 1 | Home">
   <meta property="og:description" content="Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
-  my_answer
-function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (age &lt; 21 ) { return false; } else { return true; } }   Conditional : checkAge  이름과 나이를 파라미터로 받는 checkAge라는 함수는 두개 중 하나의 메시지를 리턴합니다.
+  my_answer  function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (age &lt; 21 ) { return false; } else { return true; } }  Conditional : checkAge  이름과 나이를 파라미터로 받는 checkAge라는 함수는 두개 중 하나의 메시지를 리턴합니다.
 만일 21살보다 적으면, Go home, {전달받은_이름}!"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
@@ -379,6 +377,8 @@ function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (ag
 <li><a href="#math-computeaverageofnumbers">Math : computeAverageOfNumbers</a></li>
 <li><a href="#type"><strong>type</strong></a></li>
 <li><a href="#object"><strong>object</strong></a></li>
+<li><a href="#object-and-type"><strong>object and type</strong></a></li>
+<li><a href="#array"><strong>array</strong></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -412,20 +412,20 @@ function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (ag
 </blockquote>
 
 <ul>
-<li><p>my_answer</p>
-
-<pre><code>function isOldEnoughToDrink(age) {
-// 여기에 코드를 작성하세요
-if (age &lt; 21 ) {
-return false;
-} else {
-return true;
-}
-}
-
-
-</code></pre></li>
+<li>my_answer</li>
 </ul>
+
+<pre><code class="language-JS">function isOldEnoughToDrink(age) {
+  // 여기에 코드를 작성하세요
+  if (age &lt; 21 ) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+
+</code></pre>
 
 <hr />
 
@@ -1522,6 +1522,467 @@ function countAllCharacters(str) {
 
 let output = countAllCharacters('banana');
 console.log(output); // --&gt; {b: 1, a: 3, n: 2}
+
+
+</code></pre>
+
+<hr />
+
+<h2 id="object-and-type"><strong>object and type</strong></h2>
+
+<hr />
+
+<p><strong>01_removeStringValues</strong></p>
+
+<blockquote>
+<p>Write a function called &ldquo;removeStringValues&rdquo;. (&ldquo;removeStringValues&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an object, &ldquo;removeStringValues&rdquo; removes any properties on the given object whose values are strings. (객체가 주어졌을때, &ldquo;removeStringValues&rdquo; 함수는 속성값이 문자열인 모든 속성을 제거합니다.)</p>
+</blockquote>
+
+<ul>
+<li>my_answer</li>
+</ul>
+
+<pre><code class="language-JS">
+function removeStringValues(obj) {
+  // 여기에 코드를 작성하세요.
+  // 객체안에 있는 속성값이 문자열인지 판별한다.
+  // 문자열이라면 삭제한다.
+  for ( let prop in obj ) {
+    if ( typeof obj[prop] === &quot;string&quot; ) {
+      delete obj[prop]
+    }
+  }
+}
+
+
+
+</code></pre>
+
+<p><strong>02_removeNumberValues</strong></p>
+
+<blockquote>
+<p>Write a function called &ldquo;removeNumberValues&rdquo;. (&ldquo;removeNumberValues&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an object, &ldquo;removeNumberValues&rdquo; removes any properties whose values are numbers. (객체가 주어졌을때, &ldquo;removeNumberValues&rdquo; 함수는 속성값이 숫자인 모든 속성을 제거합니다.)</p>
+</blockquote>
+
+<pre><code>let obj = {
+  a: 2,
+  b: 'remaining',
+  c: 4
+};
+function removeNumberValues(obj) {
+  // 여기에 코드를 작성하세요.
+  // prop 을 불러온다.
+  // 불러온 prop 값을 숫자인지 판별한다/
+  // 숫자이면 제거한다
+  for ( let prop in obj ) {
+    if ( typeof obj[prop] === &quot;number&quot; ) {
+      delete obj[prop]
+    }
+  } 
+  return obj;
+}
+
+removeNumberValues(obj);
+
+</code></pre>
+
+<ul>
+<li>03_removeArrayValues</li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;removeArrayValues&rdquo;. (&ldquo;removeArrayValues&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an object, &ldquo;removeArrayValues&rdquo; removes any properties whose values are arrays. (객체가 주어졌을때, &ldquo;removeArrayValues&rdquo; 함수는 속성값이 배열인 모든 속성을 제거합니다.)</p>
+</blockquote>
+
+<pre><code>
+let obj = {
+  a: [1, 3, 4],
+  b: 2,
+  c: ['hi', 'there']
+}
+function removeArrayValues(obj) {
+  // 여기에 코드를 작성하세요
+  // prop 값을 불러온다
+  // prop 값이 배열에 속하는지 판별한다
+  // 배열에 속하면 제거한다.
+  for ( let prop in obj ) {
+    if (Array.isArray(obj[prop])) {
+      delete obj[prop];
+    }
+  }
+  return obj
+}
+removeArrayValues(obj)
+
+
+
+</code></pre>
+
+<hr />
+
+<h2 id="array"><strong>array</strong></h2>
+
+<hr />
+
+<ul>
+<li>01_getFirstElement</li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;getFirstElement&rdquo;. (&ldquo;getFirstElement&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array, &ldquo;getFirstElement&rdquo; returns the first element of the given array. (배열이 주어졌을때, &ldquo;getFirstElement&rdquo; 함수는 주어진 배열의 첫번째 요소를 반환해야 합니다.)</p>
+</blockquote>
+
+<ul>
+<li><p>my_answer</p>
+
+<pre><code>
+function getFirstElement(array) {
+// 여기에 코드를 작성하세요.
+// 배열을 0번째 숫자를 불러온다.
+if ( array.length === 0 ) {
+return undefined;
+} else
+return array[0];
+}
+
+</code></pre></li>
+
+<li><p>02_getLastElement</p></li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;getLastElement&rdquo;. (&ldquo;getLastElement&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array, &ldquo;getLastElement&rdquo; returns the last element of the given array. (배열이 주어졌을때, &ldquo;getLastElemeent&rdquo; 함수는 주어진 배열의 마지막 요소를 반환해야 합니다.)</p>
+</blockquote>
+
+<ul>
+<li><p>my_answer</p>
+
+<pre><code>
+function getLastElement(array) {
+// 여기에 코드를 작성하세요
+// 만약 배열의 길이가 0 이라면 undefinded 출력
+// 아니라면 return 마지막 배열숫자 출력
+if ( array.length === 0 ) {
+return undefined;
+} else {
+let lastNum = array[array.length -1]
+return lastNum;
+}
+}
+
+</code></pre></li>
+
+<li><p>03_getNthElement</p></li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;getNthElement&rdquo;. (&ldquo;getNthElement&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array and an integer, &ldquo;getNthElement&rdquo; returns the element at the given integer, within the given array. (배열과 숫자가 주어졌을때, &ldquo;getNthElement&rdquo; 함수는 주어진 배열에서 n번 인덱스의 요소를 반환해야 합니다.)</p>
+</blockquote>
+
+<pre><code>
+function getNthElement(array, n) {
+  // 여기에 코드를 작성하세요
+  // 만약 배열에 길이가 0보다 크면 코드 진행실행 아니면 undefinded
+  // 배열에 n번째 있는 숫자를 변수에 저장
+  // 배열안에 있는 n 번째의 숫자 출력
+  if ( array.length &gt; 0 ) {
+    let ret = array[n];
+    return ret;
+  } else {
+    return undefined;
+  }
+}
+
+
+
+</code></pre>
+
+<ul>
+<li>04_addToFront</li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;addToFront&rdquo;. (&ldquo;addToFront&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array and an element, &ldquo;addToFront&rdquo; adds the given element to the front of the given array, and returns the given array. (배열과 요소가 주어졌을때, &ldquo;addToFront&rdquo; 함수는 주어진 요소를 배열의 맨앞에 추가하고 주어진 배열을 반환해야 합니다.)</p>
+</blockquote>
+
+<ul>
+<li><p>my_answer</p>
+
+<pre><code>
+
+function addToFront(arr, element) {
+arr.unshift(element);
+return arr;
+}
+
+
+
+
+</code></pre></li>
+
+<li><p>05_addToBack</p></li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;addToBack&rdquo;. (&ldquo;addToBack&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array and an element, &ldquo;addToBack&rdquo; returns the given array with the given element added to the end. (배열과 요소가 주어졌을때, &ldquo;addToBack&rdquo; 함수는 주어진 요소를 배열의 맨뒤에 추가하고 주어진 배열을 반환해야 합니다.)</p>
+</blockquote>
+
+<ul>
+<li>my_ answer</li>
+</ul>
+
+<pre><code class="language-JS">
+function addToBack(arr, element) {
+  // 여기에 코드를 작성하세요.
+  // push 사용해 element 값을 뒤에 추가한다.
+  arr.push(element);
+  return arr;
+}
+
+
+</code></pre>
+
+<ul>
+<li>06_joinArrays</li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;joinArrays&rdquo;. (&ldquo;joinArrays&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given two arrays, &ldquo;joinArrays&rdquo; returns an array with the elements of &ldquo;arr1&rdquo; in order, followed by the elementsin &ldquo;arr2&rdquo;. (두 배열이 주어졌을때, &ldquo;joinArrays&rdquo; 함수는 첫번째 배열(arr1)과 두번째 배열(arr2) 순서로 합쳐진 배열을 반환해야 합니다.)</p>
+</blockquote>
+
+<pre><code>function joinArrays(arr1, arr2) {
+  // your code here
+  // 변수를 만들어 배열1에 배열2를 집어넣는다.
+  // 출력한다.
+  let arrRet = arr1.concat(arr2);
+  return arrRet
+  
+}
+
+
+</code></pre>
+
+<ul>
+<li>07_getElementsAfter</li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;getElementsAfter&rdquo;. (&ldquo;getElementsAfter&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array and an index, &ldquo;getElementsAfter&rdquo; returns a new array with all the elements after (but not including) the given index. (배열과 인덱스가 주어졌을때, &ldquo;getElementsAfter&rdquo; 함수는 주어진 배열의 인덱스 이후 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)</p>
+</blockquote>
+
+<pre><code>function getElementsAfter(array, n) {
+  // your code here
+  // 새로운 빈배열을 만든다.
+  // 초기값을 n+1을 한 for 문을 이용해 배열인덱스를 불러온다.
+  // 불러온 값을 새로운 배열에 push를 사용해 담는다.
+  // 출력한다.
+  let newArr = [];
+  for (let i = n + 1;  i &lt; array.length; i = i + 1 ) {
+    newArr.push(array[i]);
+  }
+  return newArr;
+}
+getElementsAfter(['a', 'b', 'c', 'd', 'e'], 1);
+
+
+</code></pre>
+
+<ul>
+<li>08_getElementsUpTo</li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;getElementsUpTo&rdquo;. (&ldquo;getElementsUpTo&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array and a index, &ldquo;getElementsUpTo&rdquo;, returns an array with all the elements up until, but not including, the element at the given index. (배열과 인덱스가 주어졌을때, &ldquo;getElementsUpTo&rdquo; 함수는 주어진 배열의 인덱스 이전 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)</p>
+</blockquote>
+
+<ul>
+<li>my_answer</li>
+</ul>
+
+<pre><code class="language-JS">
+function getElementsUpTo(array, n) {
+  let newArr = array.slice(0,n);
+  return newArr
+}
+getElementsUpTo(['a', 'b', 'c', 'd', 'e'], 3);
+
+
+</code></pre>
+
+<ul>
+<li>09_getAllElementsButFirst</li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;getAllElementsButFirst&rdquo;. (&ldquo;getAllElementsButFirst&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array, &ldquo;getAllElementsButFirst&rdquo; returns an array with all the elements but the first. (배열이 주어졌을때, &ldquo;getAllElementsButFirst&rdquo; 함수는 첫번째 요소를 제외한 배열을 반환해야 합니다.)</p>
+</blockquote>
+
+<ul>
+<li>my_answer</li>
+</ul>
+
+<pre><code class="language-JS">
+function getAllElementsButFirst(array) {
+  // your code here
+  // shift 를 이용해서 앞에 있는 요소를 뺀다.
+  // 그리고 기존에 배열을 출력한다. 
+  array.shift();
+  return array;
+}
+
+getAllElementsButFirst([1,2,3,4])
+
+
+</code></pre>
+
+<ul>
+<li>model solution</li>
+</ul>
+
+<pre><code class="language-JS">
+
+function getAllElementsButFirst(array) {
+  return array.slice(1, array.length);
+}
+</code></pre>
+
+<p><strong>10_getAllElementsButLast</strong></p>
+
+<blockquote>
+<p>Write a function called &ldquo;getAllElementsButLast&rdquo;. (&ldquo;getAllElementsButLast&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array, &ldquo;getAllElementsButLast&rdquo; returns an array with all the elements but the last. (배열이 주어졌을때, &ldquo;getAllElementsButLast&rdquo; 함수는 마지막 요소를 제외한 배열을 반환해야 합니다.)</p>
+</blockquote>
+
+<ul>
+<li>my_answer</li>
+</ul>
+
+<pre><code class="language-JS">
+function getAllElementsButLast(array) {
+  // your code here
+  // slice 를 이용해서 마지막 숫자를 삭제한다.
+  // 출력한다.
+  array.pop()
+  return array
+}
+
+
+
+</code></pre>
+
+<p><strong>11_removeFromFront</strong></p>
+
+<blockquote>
+<p>Write a function called &ldquo;removeFromFront&rdquo;. (&ldquo;removeFromFront&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array, &ldquo;removeFromFront&rdquo; returns the given array with its first element removed. (배열이 주어졌을때, &ldquo;removeFromFront&rdquo; 함수는 첫번째 요소를 삭제한 주어진 배열을 반환해야 합니다.)</p>
+</blockquote>
+
+<ul>
+<li>my_answer</li>
+</ul>
+
+<pre><code class="language-JS">
+function removeFromFront(arr) {
+  // your code here
+  // 메소드 사용해서 첫번째요소 자르기 
+  arr.shift();
+  return arr;
+}
+
+</code></pre>
+
+<p><strong>12_removeFromBack</strong></p>
+
+<blockquote>
+<p>Write a function called &ldquo;removeFromBack&rdquo;. (&ldquo;removeFromBack&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array, &ldquo;removeFromBack&rdquo; returns the given array with its last element removed. (배열이 주어졌을때, &ldquo;removeFromBack&rdquo; 함수는 마지막 요소를 삭제한 주어진 배열을 반환해야 합니다.)</p>
+</blockquote>
+
+<ul>
+<li>my_answer</li>
+</ul>
+
+<pre><code class="language-JS">
+function removeFromBack(arr) {
+  // your code here
+  //배열 메소드 이용해서 뒤에 있는거 자르기
+  arr.pop();
+  return arr;
+}
+
+
+</code></pre>
+
+<p><strong>13_removeFromBackOfNew</strong></p>
+
+<blockquote>
+<p>Write a function called &ldquo;removeFromBackOfNew&rdquo;. (&ldquo;removeFromBackOfNew&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an array, &ldquo;removeFromBackOfNew&rdquo; returns a new array containing all but the last element of the given array. (배열이 주어졌을때, &ldquo;removeFromBackOfNew&rdquo; 함수는 마지막 요소를 제외한 모든 요소를 가지고 있는 새로운 배열을 반환해야 합니다.)</p>
+</blockquote>
+
+<ul>
+<li>my_answer</li>
+</ul>
+
+<pre><code class="language-JS">
+function removeFromBackOfNew(arr) {
+  // your code here
+  // 빈 배열을 만든다. 
+  // 배열을 가져오는데 length를 이용해 마지막숫자를 뺀수를 가져온다
+  // 가져온 숫자를 새로운 배열에 넣는다. 
+  // arrNew 를 출력한다. 
+  let arrNew = [];
+  for (let i = 0; i &lt; arr.length -1; i = i + 1 ) {
+    arrNew.push(arr[i]);
+  }
+  return arrNew
+  }
+
+
+</code></pre>
+
+<ul>
+<li>model solution</li>
+</ul>
+
+<pre><code class="language-JS">function removeFromBackOfNew(arr) {
+  // your code here
+  // 마지막 숫자를 뺀 배열값을 변수에 담는다.
+  // 담은 변수를 출력한다.
+  let sliced = arr.slice(0,arr.length-1)
+  return sliced; 
+  
+  }
+
+
 
 
 </code></pre>

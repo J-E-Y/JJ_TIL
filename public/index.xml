@@ -4046,6 +4046,252 @@ alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
 &lt;hr /&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;making array&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1.
+let arr = [1, 2, 3, 4];
+
+2.
+
+let arr = [];
+arr[0] = 2;
+arr[1] = 4;
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;reading array&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+let arr = [1, 2, 3, 4];
+
+arr[0]; 
+
+&amp;gt; 1
+
+
+arr[3];
+
+&amp;gt; 4
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;writing&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let arr = [1, 2, 3, 4];
+
+arr[0] = 2;
+
+&amp;gt; [2,2,3,4]; 
+
+scores[9] = 50;
+
+인덱스가 없다면 마지막에 붙는다 
+&amp;gt;  [1, 2, 3, 4 ,50]
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Get the length from arr&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let arr = [1, 2, 3, 4];
+arr.length;
+&amp;gt; 4
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Get the last item in an array&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let arr = [1, 2, 3, 4] ;
+
+* First
+arr[arr.length - 1] ;
+
+
+* Second
+arr.slice(-1)[0];
+
+* Third
+arr.slice(-1).pop();
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;push() 뒤어 붙이기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4,];
+arr.push(1);
+
+arr; // = &amp;gt; [1,2,3,4,1]
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;pop() 뒤에 있는거 빼기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4,];
+arr.pop();
+
+arr; // = &amp;gt; [1,2,3]
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;unshift()  앞에 붙이기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4];
+
+arr.unshift(1);
+
+arr; // = &amp;gt; [1,1,2,3,4,];
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;shift()  앞에 있는거 빼기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4];
+
+arr.shift();
+
+arr; // = &amp;gt; [2,3,4,]
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;concat() 더하기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1.
+
+
+Join two arrays:
+
+var hege = [&amp;quot;Cecilie&amp;quot;, &amp;quot;Lone&amp;quot;];
+var stale = [&amp;quot;Emil&amp;quot;, &amp;quot;Tobias&amp;quot;, &amp;quot;Linus&amp;quot;];
+var children = hege.concat(stale);
+
+`변수에 담아야 한다` 왜냐하면 값이 변하지 않는다.
+출력하면
+console.log(children);
+
+&amp;gt; [&amp;quot;Cecilie&amp;quot;, &amp;quot;Lone&amp;quot;, &amp;quot;Emil&amp;quot;, &amp;quot;Tobias&amp;quot;, &amp;quot;Linus&amp;quot;]
+
+2.
+
+var arr = [1,2,3,4,5];
+
+arr.concat(6); 
+
+console.log(arr) 
+
+&amp;gt;&amp;gt; [1,2,3,4,5,]  
+
+기존에 있는 것은 변하지 않는다.
+변하게 하기위해서는 변수를 새로 만들기 !
+
+
+
+3. 
+arr.concat([6,7,8,9,10]);
+
+&amp;gt;&amp;gt;arr
+
+[1,2,3,4,5,6,7,8,9,10] 
+여러게를 더할수 있다.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;join() 문자열로 바꾸기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4,5,6]
+
+arr.join() ;
+
+&amp;gt;&amp;gt;arr
+[&amp;quot;1&amp;quot;,&amp;quot;2&amp;quot;,&amp;quot;3&amp;quot;,&amp;quot;4&amp;quot;,&amp;quot;5&amp;quot;,&amp;quot;6&amp;quot;]
+문자열로 바꿔준다. 
+
+arr.join(&amp;quot;&amp;quot;);
+
+&amp;gt;&amp;gt;arr
+[&amp;quot;123456&amp;quot;];
+문자열 다 붙인다.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;indaxtOf() ()&amp;lt;&amp;lt;원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var array = [2, 9, 9];
+array.indexOf(2);     // 0
+array.indexOf(7);     // -1
+array.indexOf(9, 2);  // 2
+array.indexOf(2, -1); // -1
+array.indexOf(2, -3); // 0
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;lastIndaxtOf() ()&amp;lt;&amp;lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+
+var arr = [1,2,3,4,5];
+arr.indexOf[1];
+
+&amp;gt;&amp;gt;arr
+2
+
+arr.indexOf[100];
+&amp;gt;&amp;gt;arr
+-1
+없는 경우 -1를 호출한다. 
+
+EX) 
+var arr = [1,2,3,4,5,6]
+if (arr.indexOf(100) === -1 ) {
+만약 100이라는 원소가 arr 에 없으면 
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;slice()&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1, 2, 3, 4, 5];
+a.slice(0, 3);
+&amp;gt;&amp;gt;a;
+123
+원소는 변하지 않는다
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;splice()&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1, 2, 3, 4, 5];
+a.splice(0, 3);
+&amp;gt;&amp;gt;a;
+123
+원소 값이 변한다. 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;split()&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;var s = &amp;quot;hello, world this is jj&amp;quot;;
+s.split(&amp;quot;&amp;quot;);
+
+
+&amp;quot;h&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;,&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;w&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;r&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;t&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;j&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;
+var s = &amp;quot;hello, world this is jj&amp;quot;;
+s.split(&amp;quot;,&amp;quot;);
+&amp;quot;hello&amp;quot;, &amp;quot; world this is jj&amp;quot;
+콤마가 생겼다. 콤마의 기준으로 갈라진다.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;var s = &amp;quot;hello world t-h-i-s-i-s-j-j&amp;quot;
+s.split(&amp;quot;-&amp;quot;);
+
+&amp;quot;hello  world t&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;j&amp;quot;
+- 기준으로 갈라진다. 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
 &lt;li&gt;Array.isArray([]) :메서드는 인자가 Array인지 판별합니다.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -4164,7 +4410,7 @@ console.log(delete Employee.salary); // returns true
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;object-and-type&#34;&gt;**object and type **&lt;/h2&gt;
+&lt;h2 id=&#34;object-and-type&#34;&gt;&lt;strong&gt;object and type&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -4600,20 +4846,20 @@ console.log(count);  // print 1
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function isOldEnoughToDrink(age) {
-// 여기에 코드를 작성하세요
-if (age &amp;lt; 21 ) {
-return false;
-} else {
-return true;
-}
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;function isOldEnoughToDrink(age) {
+  // 여기에 코드를 작성하세요
+  if (age &amp;lt; 21 ) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr /&gt;
 
@@ -5710,6 +5956,467 @@ function countAllCharacters(str) {
 
 let output = countAllCharacters(&#39;banana&#39;);
 console.log(output); // --&amp;gt; {b: 1, a: 3, n: 2}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;object-and-type&#34;&gt;&lt;strong&gt;object and type&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;01_removeStringValues&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;removeStringValues&amp;rdquo;. (&amp;ldquo;removeStringValues&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an object, &amp;ldquo;removeStringValues&amp;rdquo; removes any properties on the given object whose values are strings. (객체가 주어졌을때, &amp;ldquo;removeStringValues&amp;rdquo; 함수는 속성값이 문자열인 모든 속성을 제거합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+function removeStringValues(obj) {
+  // 여기에 코드를 작성하세요.
+  // 객체안에 있는 속성값이 문자열인지 판별한다.
+  // 문자열이라면 삭제한다.
+  for ( let prop in obj ) {
+    if ( typeof obj[prop] === &amp;quot;string&amp;quot; ) {
+      delete obj[prop]
+    }
+  }
+}
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;02_removeNumberValues&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;removeNumberValues&amp;rdquo;. (&amp;ldquo;removeNumberValues&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an object, &amp;ldquo;removeNumberValues&amp;rdquo; removes any properties whose values are numbers. (객체가 주어졌을때, &amp;ldquo;removeNumberValues&amp;rdquo; 함수는 속성값이 숫자인 모든 속성을 제거합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;let obj = {
+  a: 2,
+  b: &#39;remaining&#39;,
+  c: 4
+};
+function removeNumberValues(obj) {
+  // 여기에 코드를 작성하세요.
+  // prop 을 불러온다.
+  // 불러온 prop 값을 숫자인지 판별한다/
+  // 숫자이면 제거한다
+  for ( let prop in obj ) {
+    if ( typeof obj[prop] === &amp;quot;number&amp;quot; ) {
+      delete obj[prop]
+    }
+  } 
+  return obj;
+}
+
+removeNumberValues(obj);
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;03_removeArrayValues&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;removeArrayValues&amp;rdquo;. (&amp;ldquo;removeArrayValues&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an object, &amp;ldquo;removeArrayValues&amp;rdquo; removes any properties whose values are arrays. (객체가 주어졌을때, &amp;ldquo;removeArrayValues&amp;rdquo; 함수는 속성값이 배열인 모든 속성을 제거합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+let obj = {
+  a: [1, 3, 4],
+  b: 2,
+  c: [&#39;hi&#39;, &#39;there&#39;]
+}
+function removeArrayValues(obj) {
+  // 여기에 코드를 작성하세요
+  // prop 값을 불러온다
+  // prop 값이 배열에 속하는지 판별한다
+  // 배열에 속하면 제거한다.
+  for ( let prop in obj ) {
+    if (Array.isArray(obj[prop])) {
+      delete obj[prop];
+    }
+  }
+  return obj
+}
+removeArrayValues(obj)
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;array&#34;&gt;&lt;strong&gt;array&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;01_getFirstElement&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;getFirstElement&amp;rdquo;. (&amp;ldquo;getFirstElement&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array, &amp;ldquo;getFirstElement&amp;rdquo; returns the first element of the given array. (배열이 주어졌을때, &amp;ldquo;getFirstElement&amp;rdquo; 함수는 주어진 배열의 첫번째 요소를 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function getFirstElement(array) {
+// 여기에 코드를 작성하세요.
+// 배열을 0번째 숫자를 불러온다.
+if ( array.length === 0 ) {
+return undefined;
+} else
+return array[0];
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;02_getLastElement&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;getLastElement&amp;rdquo;. (&amp;ldquo;getLastElement&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array, &amp;ldquo;getLastElement&amp;rdquo; returns the last element of the given array. (배열이 주어졌을때, &amp;ldquo;getLastElemeent&amp;rdquo; 함수는 주어진 배열의 마지막 요소를 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function getLastElement(array) {
+// 여기에 코드를 작성하세요
+// 만약 배열의 길이가 0 이라면 undefinded 출력
+// 아니라면 return 마지막 배열숫자 출력
+if ( array.length === 0 ) {
+return undefined;
+} else {
+let lastNum = array[array.length -1]
+return lastNum;
+}
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;03_getNthElement&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;getNthElement&amp;rdquo;. (&amp;ldquo;getNthElement&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array and an integer, &amp;ldquo;getNthElement&amp;rdquo; returns the element at the given integer, within the given array. (배열과 숫자가 주어졌을때, &amp;ldquo;getNthElement&amp;rdquo; 함수는 주어진 배열에서 n번 인덱스의 요소를 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+function getNthElement(array, n) {
+  // 여기에 코드를 작성하세요
+  // 만약 배열에 길이가 0보다 크면 코드 진행실행 아니면 undefinded
+  // 배열에 n번째 있는 숫자를 변수에 저장
+  // 배열안에 있는 n 번째의 숫자 출력
+  if ( array.length &amp;gt; 0 ) {
+    let ret = array[n];
+    return ret;
+  } else {
+    return undefined;
+  }
+}
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;04_addToFront&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;addToFront&amp;rdquo;. (&amp;ldquo;addToFront&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array and an element, &amp;ldquo;addToFront&amp;rdquo; adds the given element to the front of the given array, and returns the given array. (배열과 요소가 주어졌을때, &amp;ldquo;addToFront&amp;rdquo; 함수는 주어진 요소를 배열의 맨앞에 추가하고 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+
+function addToFront(arr, element) {
+arr.unshift(element);
+return arr;
+}
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;05_addToBack&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;addToBack&amp;rdquo;. (&amp;ldquo;addToBack&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array and an element, &amp;ldquo;addToBack&amp;rdquo; returns the given array with the given element added to the end. (배열과 요소가 주어졌을때, &amp;ldquo;addToBack&amp;rdquo; 함수는 주어진 요소를 배열의 맨뒤에 추가하고 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_ answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+function addToBack(arr, element) {
+  // 여기에 코드를 작성하세요.
+  // push 사용해 element 값을 뒤에 추가한다.
+  arr.push(element);
+  return arr;
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;06_joinArrays&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;joinArrays&amp;rdquo;. (&amp;ldquo;joinArrays&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given two arrays, &amp;ldquo;joinArrays&amp;rdquo; returns an array with the elements of &amp;ldquo;arr1&amp;rdquo; in order, followed by the elementsin &amp;ldquo;arr2&amp;rdquo;. (두 배열이 주어졌을때, &amp;ldquo;joinArrays&amp;rdquo; 함수는 첫번째 배열(arr1)과 두번째 배열(arr2) 순서로 합쳐진 배열을 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;function joinArrays(arr1, arr2) {
+  // your code here
+  // 변수를 만들어 배열1에 배열2를 집어넣는다.
+  // 출력한다.
+  let arrRet = arr1.concat(arr2);
+  return arrRet
+  
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;07_getElementsAfter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;getElementsAfter&amp;rdquo;. (&amp;ldquo;getElementsAfter&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array and an index, &amp;ldquo;getElementsAfter&amp;rdquo; returns a new array with all the elements after (but not including) the given index. (배열과 인덱스가 주어졌을때, &amp;ldquo;getElementsAfter&amp;rdquo; 함수는 주어진 배열의 인덱스 이후 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;function getElementsAfter(array, n) {
+  // your code here
+  // 새로운 빈배열을 만든다.
+  // 초기값을 n+1을 한 for 문을 이용해 배열인덱스를 불러온다.
+  // 불러온 값을 새로운 배열에 push를 사용해 담는다.
+  // 출력한다.
+  let newArr = [];
+  for (let i = n + 1;  i &amp;lt; array.length; i = i + 1 ) {
+    newArr.push(array[i]);
+  }
+  return newArr;
+}
+getElementsAfter([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;], 1);
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;08_getElementsUpTo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;getElementsUpTo&amp;rdquo;. (&amp;ldquo;getElementsUpTo&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array and a index, &amp;ldquo;getElementsUpTo&amp;rdquo;, returns an array with all the elements up until, but not including, the element at the given index. (배열과 인덱스가 주어졌을때, &amp;ldquo;getElementsUpTo&amp;rdquo; 함수는 주어진 배열의 인덱스 이전 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+function getElementsUpTo(array, n) {
+  let newArr = array.slice(0,n);
+  return newArr
+}
+getElementsUpTo([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;], 3);
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;09_getAllElementsButFirst&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;getAllElementsButFirst&amp;rdquo;. (&amp;ldquo;getAllElementsButFirst&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array, &amp;ldquo;getAllElementsButFirst&amp;rdquo; returns an array with all the elements but the first. (배열이 주어졌을때, &amp;ldquo;getAllElementsButFirst&amp;rdquo; 함수는 첫번째 요소를 제외한 배열을 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+function getAllElementsButFirst(array) {
+  // your code here
+  // shift 를 이용해서 앞에 있는 요소를 뺀다.
+  // 그리고 기존에 배열을 출력한다. 
+  array.shift();
+  return array;
+}
+
+getAllElementsButFirst([1,2,3,4])
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;model solution&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+
+function getAllElementsButFirst(array) {
+  return array.slice(1, array.length);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;10_getAllElementsButLast&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;getAllElementsButLast&amp;rdquo;. (&amp;ldquo;getAllElementsButLast&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array, &amp;ldquo;getAllElementsButLast&amp;rdquo; returns an array with all the elements but the last. (배열이 주어졌을때, &amp;ldquo;getAllElementsButLast&amp;rdquo; 함수는 마지막 요소를 제외한 배열을 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+function getAllElementsButLast(array) {
+  // your code here
+  // slice 를 이용해서 마지막 숫자를 삭제한다.
+  // 출력한다.
+  array.pop()
+  return array
+}
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;11_removeFromFront&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;removeFromFront&amp;rdquo;. (&amp;ldquo;removeFromFront&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array, &amp;ldquo;removeFromFront&amp;rdquo; returns the given array with its first element removed. (배열이 주어졌을때, &amp;ldquo;removeFromFront&amp;rdquo; 함수는 첫번째 요소를 삭제한 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+function removeFromFront(arr) {
+  // your code here
+  // 메소드 사용해서 첫번째요소 자르기 
+  arr.shift();
+  return arr;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;12_removeFromBack&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;removeFromBack&amp;rdquo;. (&amp;ldquo;removeFromBack&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array, &amp;ldquo;removeFromBack&amp;rdquo; returns the given array with its last element removed. (배열이 주어졌을때, &amp;ldquo;removeFromBack&amp;rdquo; 함수는 마지막 요소를 삭제한 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+function removeFromBack(arr) {
+  // your code here
+  //배열 메소드 이용해서 뒤에 있는거 자르기
+  arr.pop();
+  return arr;
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;13_removeFromBackOfNew&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;removeFromBackOfNew&amp;rdquo;. (&amp;ldquo;removeFromBackOfNew&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array, &amp;ldquo;removeFromBackOfNew&amp;rdquo; returns a new array containing all but the last element of the given array. (배열이 주어졌을때, &amp;ldquo;removeFromBackOfNew&amp;rdquo; 함수는 마지막 요소를 제외한 모든 요소를 가지고 있는 새로운 배열을 반환해야 합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+function removeFromBackOfNew(arr) {
+  // your code here
+  // 빈 배열을 만든다. 
+  // 배열을 가져오는데 length를 이용해 마지막숫자를 뺀수를 가져온다
+  // 가져온 숫자를 새로운 배열에 넣는다. 
+  // arrNew 를 출력한다. 
+  let arrNew = [];
+  for (let i = 0; i &amp;lt; arr.length -1; i = i + 1 ) {
+    arrNew.push(arr[i]);
+  }
+  return arrNew
+  }
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;model solution&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;function removeFromBackOfNew(arr) {
+  // your code here
+  // 마지막 숫자를 뺀 배열값을 변수에 담는다.
+  // 담은 변수를 출력한다.
+  let sliced = arr.slice(0,arr.length-1)
+  return sliced; 
+  
+  }
+
+
 
 
 &lt;/code&gt;&lt;/pre&gt;
