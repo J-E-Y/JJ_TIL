@@ -54,6 +54,21 @@ function getAllWords(str) {
 
 * String() :문자로 바꾸는것 
 
+> String(object)
+
+>String, 이 함수는 변환하려는 객체의 toString() 메소드를 사용하는 것과 동일함
+
+> ex
+
+```js
+var t = [1,2,3];
+
+console.log(String(t)); 
+
+>>"1,2,3"
+
+```
+
 * str[index] 읽어서 찾아주는것 :immutable
 
 

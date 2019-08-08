@@ -3929,8 +3929,26 @@ function getAllWords(str) {
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;String() :문자로 바꾸는것&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;String() :문자로 바꾸는것&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;blockquote&gt;
+&lt;p&gt;String(object)&lt;/p&gt;
+
+&lt;p&gt;String, 이 함수는 변환하려는 객체의 toString() 메소드를 사용하는 것과 동일함&lt;/p&gt;
+
+&lt;p&gt;ex&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var t = [1,2,3];
+
+console.log(String(t)); 
+
+&amp;gt;&amp;gt;&amp;quot;1,2,3&amp;quot;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;str[index] 읽어서 찾아주는것 :immutable&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;let str = &#39;CodeStates&#39;;
@@ -4729,7 +4747,7 @@ alert(input);
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;콜백&#34;&gt;콜백&lt;/h2&gt;
+&lt;h2 id=&#34;callback&#34;&gt;Callback&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -4847,24 +4865,6 @@ a
 
 
 &amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;is-true-1-and-false-0-in-javascript&#34;&gt;Is true == 1 and false == 0 in JavaScript?&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code&gt;
-if (1 == 1)
-  document.write(&amp;quot;oh!!! that&#39;s true&amp;quot;);
-
-if (1 == true)
-  document.write(&amp;quot;oh!!! that&#39;s true&amp;quot;);
-
-if (0 == false)
-  document.write(&amp;quot;oh!!! that&#39;s true&amp;quot;);
 
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -4994,6 +4994,45 @@ console.log(count);  // print 1
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://love2dev.com/blog/javascript-remove-from-array&#34; target=&#34;_blank&#34;&gt;This is link&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;array-문자열-빼기&#34;&gt;Array : 문자열 빼기&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;var newArray = [];
+  for (let i = 0; i &amp;lt; arr.length; i++) {
+    if (typeof(arr[i]) === &amp;lsquo;string&amp;rsquo;) {
+      newArray.push(arr[i]);
+    }
+  }&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;반복문-순서&#34;&gt;반복문 순서&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt; 반복문
+
+1. let i = 0  처음에 실행
+
+2. i &amp;lt; 4 조건을 검사  
+
+3. 반복할 내용 돌리고
+
+4. i = i + 1 마지막으로  실행한다. 
+  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;how-to-find-the-sum-of-an-array-of-numbers&#34;&gt;How to find the sum of an array of numbers&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers&#34; target=&#34;_blank&#34;&gt;this is link&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -6644,6 +6683,104 @@ function addToBackOfNew(arr, element) {
   } else {
     return str.split(&amp;quot;&amp;quot;)
   }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;19_getAllWords&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;getAllWords&amp;rdquo;. (&amp;ldquo;getAllWords&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given a sentence, &amp;ldquo;getAllWords&amp;rdquo; returns an array containing every word in the sentence. (문장이 주어졌을때, &amp;ldquo;getAllWords&amp;rdquo; 함수는 주어진 문장에 포함된 모든 단어를 담고 있는 배열을 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt; 
+ 
+ function getAllWords(str) {
+  if (str === &#39;&#39;) {
+    return [];
+  } else {
+    return str.split(&#39; &#39;);
+  }
+}
+
+ 
+ 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;21_removeElement&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;removeElement&amp;rdquo;. (&amp;ldquo;removeElement&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array of elements, and a &amp;ldquo;discarder&amp;rdquo; parameter, &amp;ldquo;removeElement&amp;rdquo; returns an array containing the items in the given array that do not match the &amp;ldquo;discarder&amp;rdquo; parameter. (배열과 &amp;ldquo;discarder&amp;rdquo; 매개변수가 주어졌을때, &amp;ldquo;removeElement&amp;rdquo; 함수는 주어진 배열에서 &amp;ldquo;discarder&amp;rdquo; 매개변수와 일치하지 않는 모든 요소를 포함하는 배열을 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+unction removeElement(array, discarder) {
+  // your code here
+   /* 
+  1. 빈배열이면 빈배열을 반환
+  2. 새로운 빈배열을 만든다. newArr
+  3. 모든 element를 조사한다.
+  4. element가 discarder와 다르다면 newArr에 push로 넣는다.
+  5. 위에경우가 아니라면 newArr을 반환
+   */
+
+  if ( array === [] ) {
+    return [];
+  }
+  let newArr = [];
+  for (let i = 0; i &amp;lt; array.length; i = i + 1 ) {
+    if ( discarder !== array[i] ) {
+      newArr.push(array[i])
+    } 
+  }
+  return newArr;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;22_keep&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;keep&amp;rdquo;. (&amp;ldquo;keep&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array and a keeper element, &amp;ldquo;keep&amp;rdquo; returns an array containing the items that match the given keeper element. (배열과 &amp;ldquo;keeper&amp;rdquo; 매개변수가 주어졌을때, &amp;ldquo;keep&amp;rdquo; 함수는 &amp;ldquo;keeper&amp;rdquo; 매개변수와 일치하는 모든 요소&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function keep(array, keeper) {
+  // your code here
+  // 만약 배열이 비워있다면 빈배열 리턴
+  // 새로운 빈배열을 만든다.
+  // for 문을 사용해 배열을 조사
+  // 만약 keeper라는 매개변수가 있는지 조사
+  // 만약 있다면 push를 사용해 새로운 배열에 투입
+  // 새로운 배열 출력
+  if ( array === []) {
+    return [];
+  }
+  let newArr = [];
+  for ( let i = 0; i &amp;lt; array.length; i = i + 1 ) {
+    if ( array[i] === keeper ) {
+      newArr.push(array[i]);
+    }
+  }
+  return newArr;
 }
 
 &lt;/code&gt;&lt;/pre&gt;

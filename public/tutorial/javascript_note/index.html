@@ -356,7 +356,7 @@ function cal(mode){ var funcs = { &#39;plus&#39; : function(left, right){return 
 <li>
 <ul>
 <li><a href="#first-class-object">first-class object()</a></li>
-<li><a href="#콜백">콜백</a></li>
+<li><a href="#callback">Callback</a></li>
 <li><a href="#dom-dom을-이용해서-html문서를-제어할수-있다">Dom : Dom을 이용해서 HTML문서를 제어할수 있다</a>
 <ul>
 <li>
@@ -368,7 +368,6 @@ function cal(mode){ var funcs = { &#39;plus&#39; : function(left, right){return 
 </ul></li>
 </ul></li>
 <li><a href="#버튼-만들기">버튼 만들기</a></li>
-<li><a href="#is-true-1-and-false-0-in-javascript">Is true == 1 and false == 0 in JavaScript?</a></li>
 <li><a href="#객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</a>
 <ul>
 <li>
@@ -377,6 +376,9 @@ function cal(mode){ var funcs = { &#39;plus&#39; : function(left, right){return 
 </ul></li>
 </ul></li>
 <li><a href="#9-ways-to-remove-elements-from-a-javascript-array">9 Ways to Remove Elements From A JavaScript Array</a></li>
+<li><a href="#array-문자열-빼기">Array : 문자열 빼기</a></li>
+<li><a href="#반복문-순서">반복문 순서</a></li>
+<li><a href="#how-to-find-the-sum-of-an-array-of-numbers">How to find the sum of an array of numbers</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -450,7 +452,7 @@ alert(input);
 
 <hr />
 
-<h2 id="콜백">콜백</h2>
+<h2 id="callback">Callback</h2>
 
 <hr />
 
@@ -568,24 +570,6 @@ a
 
 
 &lt;/body&gt;
-
-</code></pre>
-
-<hr />
-
-<h2 id="is-true-1-and-false-0-in-javascript">Is true == 1 and false == 0 in JavaScript?</h2>
-
-<hr />
-
-<pre><code>
-if (1 == 1)
-  document.write(&quot;oh!!! that's true&quot;);
-
-if (1 == true)
-  document.write(&quot;oh!!! that's true&quot;);
-
-if (0 == false)
-  document.write(&quot;oh!!! that's true&quot;);
 
 </code></pre>
 
@@ -715,6 +699,45 @@ console.log(count);  // print 1
 <hr />
 
 <p><a href="https://love2dev.com/blog/javascript-remove-from-array" target="_blank">This is link</a></p>
+
+<hr />
+
+<h2 id="array-문자열-빼기">Array : 문자열 빼기</h2>
+
+<hr />
+
+<p>var newArray = [];
+  for (let i = 0; i &lt; arr.length; i++) {
+    if (typeof(arr[i]) === &lsquo;string&rsquo;) {
+      newArray.push(arr[i]);
+    }
+  }</p>
+
+<hr />
+
+<h2 id="반복문-순서">반복문 순서</h2>
+
+<hr />
+
+<pre><code> 반복문
+
+1. let i = 0  처음에 실행
+
+2. i &lt; 4 조건을 검사  
+
+3. 반복할 내용 돌리고
+
+4. i = i + 1 마지막으로  실행한다. 
+  
+</code></pre>
+
+<hr />
+
+<h2 id="how-to-find-the-sum-of-an-array-of-numbers">How to find the sum of an array of numbers</h2>
+
+<hr />
+
+<p><a href="https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers" target="_blank">this is link</a></p>
 
           </div>
 

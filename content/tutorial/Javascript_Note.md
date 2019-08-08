@@ -65,7 +65,7 @@ alert(input);
 
 
 ---
-## 콜백
+## Callback
 ---
 
 * 장점 
@@ -185,23 +185,6 @@ a
 ```
 
 
----
-## Is true == 1 and false == 0 in JavaScript?
----
-
-
-```
-
-if (1 == 1)
-  document.write("oh!!! that's true");
-
-if (1 == true)
-  document.write("oh!!! that's true");
-
-if (0 == false)
-  document.write("oh!!! that's true");
-
-```
 
 
 ---
@@ -323,3 +306,43 @@ console.log(count);  // print 1
 
 [This is link](https://love2dev.com/blog/javascript-remove-from-array)
 
+
+
+
+---
+## Array : 문자열 빼기
+---
+
+
+var newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof(arr[i]) === 'string') {
+      newArray.push(arr[i]);
+    } 
+  }
+  
+  
+
+---
+## 반복문 순서 
+---
+
+```
+ 반복문
+
+1. let i = 0  처음에 실행
+
+2. i < 4 조건을 검사  
+
+3. 반복할 내용 돌리고
+
+4. i = i + 1 마지막으로  실행한다. 
+  
+```  
+
+
+---
+## How to find the sum of an array of numbers
+---
+
+[this is link](https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers)

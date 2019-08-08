@@ -1642,5 +1642,104 @@ function getAllLetters(str) {
 
 ```
 
+ 
+ 
+ **19_getAllWords**
+ 
+> Write a function called "getAllWords". ("getAllWords" 함수를 작성하세요.)
 
+>Given a sentence, "getAllWords" returns an array containing every word in the sentence. (문장이 주어졌을때, "getAllWords" 함수는 주어진 문장에 포함된 모든 단어를 담고 있는 배열을 반환합니다.)
+ 
+ 
+ 
+ * my_answer
+ 
+ ```js
+ 
+ 
+ function getAllWords(str) {
+  if (str === '') {
+    return [];
+  } else {
+    return str.split(' ');
+  }
+}
+
+ 
+ 
+ 
+ ```
+
+
+
+
+
+**21_removeElement** 
+
+
+> Write a function called "removeElement". ("removeElement" 함수를 작성하세요.)
+
+>Given an array of elements, and a "discarder" parameter, "removeElement" returns an array containing the items in the given array that do not match the "discarder" parameter. (배열과 "discarder" 매개변수가 주어졌을때, "removeElement" 함수는 주어진 배열에서 "discarder" 매개변수와 일치하지 않는 모든 요소를 포함하는 배열을 반환합니다.)
+
+
+* my_answer
+
+```js
+
+
+unction removeElement(array, discarder) {
+  // your code here
+   /* 
+  1. 빈배열이면 빈배열을 반환
+  2. 새로운 빈배열을 만든다. newArr
+  3. 모든 element를 조사한다.
+  4. element가 discarder와 다르다면 newArr에 push로 넣는다.
+  5. 위에경우가 아니라면 newArr을 반환
+   */
+
+  if ( array === [] ) {
+    return [];
+  }
+  let newArr = [];
+  for (let i = 0; i < array.length; i = i + 1 ) {
+    if ( discarder !== array[i] ) {
+      newArr.push(array[i])
+    } 
+  }
+  return newArr;
+}
+```
+
+
+
+**22_keep**
+
+> Write a function called "keep". ("keep" 함수를 작성하세요.)
+
+>Given an array and a keeper element, "keep" returns an array containing the items that match the given keeper element. (배열과 "keeper" 매개변수가 주어졌을때, "keep" 함수는 "keeper" 매개변수와 일치하는 모든 요소
+
+* my_answer
+
+```js
+function keep(array, keeper) {
+  // your code here
+  // 만약 배열이 비워있다면 빈배열 리턴
+  // 새로운 빈배열을 만든다.
+  // for 문을 사용해 배열을 조사
+  // 만약 keeper라는 매개변수가 있는지 조사
+  // 만약 있다면 push를 사용해 새로운 배열에 투입
+  // 새로운 배열 출력
+  if ( array === []) {
+    return [];
+  }
+  let newArr = [];
+  for ( let i = 0; i < array.length; i = i + 1 ) {
+    if ( array[i] === keeper ) {
+      newArr.push(array[i]);
+    }
+  }
+  return newArr;
+}
+
+```
 
