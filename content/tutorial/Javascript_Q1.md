@@ -1743,3 +1743,90 @@ function keep(array, keeper) {
 
 ```
 
+
+---
+## **Array & object**
+---
+
+
+**01_getElementOfArrayProperty**
+
+>Write a function called "getElementOfArrayProperty". ("getElementOfArrayProperty" 함수를 작성하세요.)
+
+>Given an object, a key, and a numerical index, "getElementOfArrayProperty" returns the value of the element at the given index of the array located within the given object at the given key. (객체와 키, 그리고 숫자로된 인덱스값이 주어졌을때, "getElementOfArrayProperty" 함수는 주어진 키에 위치한 배열의 인덱스에 해당하는 값을 반환합니다.)
+
+
+* my_asnswer
+
+```js
+
+function getElementOfArrayProperty(obj, key, index) {
+  // your code here
+ 
+   if (!Array.isArray(obj[key])){
+    return undefined;
+  } 
+  return obj[key][index]; 
+} 
+let obj = {
+  key: ['Jamil', 'Albrey']
+};
+
+getElementOfArrayProperty(obj,'key',0);
+
+
+```
+
+
+**02_select**
+
+
+>Write a function called "select". ("select" 함수를 작성하세요.)
+
+>Given an array and an object, "select" returns a new object whose properties are those in the given object AND whose keys are present in the given array. (배열과 객체가 주어졌을때, "select" 함수는 주어진 객체의 키값 중 주어진 배열에 포함된 키값만을 속성으로 가지는 새로운 배열을 반환합니다.)
+
+
+
+```js
+
+function select(arr, obj) {
+  // your code here
+  let newObj = {};
+  for (let key in obj ) {
+    for (let i = 0; i < arr.length; i = i + 1 ) {
+      if (key === arr[i] ) {
+       newObj[key] = obj[key]
+      }
+
+    }
+
+  } 
+  return newObj;
+}
+
+
+```
+
+**04_getNthElementOfProperty**
+
+> Write a function called "getNthElementOfProperty". ("getNthElementOfProperty" 함수를 작성하세요.)
+
+>Given an object and a key, "getNthElementOfProperty" returns the nth element of an array located at the given key. (객체와 키가 주어졌을때, "getNthElementOfProperty" 함수는 주어진 키에 위차한 배열의 n번째 요소를 반환합니다.)
+
+
+* my_answer
+
+```js
+
+function getNthElementOfProperty(obj, key, n) {
+  // your code here
+  // 만약 주어진 키에 위차하는 속성값이 배열이 아니라면 undefinded 
+  // 만약 그게 아니라면 주어진 키값의 인덱스 번호 리턴
+  if ( !Array.isArray(obj[key])) {
+    return undefined;
+  } else {
+    return obj[key][n];
+  }
+}
+
+```

@@ -27,9 +27,8 @@
   
     
   
-  <meta name="description" content="first-class object() 함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을 first-class value first-class citizen first-class object 라고 부른다.   값으로써 쓰이는 함수 예제
-function cal(mode){ var funcs = { &#39;plus&#39; : function(left, right){return left &#43; right}, &#39;minus&#39; : function(left, right){return left - right} } return funcs[mode]; } alert(cal(&#39;plus&#39;)(2,1)); alert(cal(&#39;minus&#39;)(2,1));  배열로서의 함수
- var process = [ function(input){ return input &#43; 10;}, function(input){ return input * input;}, function(input){ return input / 2;} ]; var input = 1; for(var i = 0; i &lt; process.">
+  <meta name="description" content="dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
+  Example1  var obj = {steve:1, bob:2}; var steve = &#39;bob&#39;; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[steve]); // 2   Example2  var obj = {steve:1, bob:2}; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[&#39;bob&#39;]); // 2  first-class object() 함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을 first-class value first-class citizen first-class object 라고 부른다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_note/">
@@ -118,9 +117,8 @@ function cal(mode){ var funcs = { &#39;plus&#39; : function(left, right){return 
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_note/">
   <meta property="og:title" content="JS Note | Home">
-  <meta property="og:description" content="first-class object() 함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을 first-class value first-class citizen first-class object 라고 부른다.   값으로써 쓰이는 함수 예제
-function cal(mode){ var funcs = { &#39;plus&#39; : function(left, right){return left &#43; right}, &#39;minus&#39; : function(left, right){return left - right} } return funcs[mode]; } alert(cal(&#39;plus&#39;)(2,1)); alert(cal(&#39;minus&#39;)(2,1));  배열로서의 함수
- var process = [ function(input){ return input &#43; 10;}, function(input){ return input * input;}, function(input){ return input / 2;} ]; var input = 1; for(var i = 0; i &lt; process."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
+  Example1  var obj = {steve:1, bob:2}; var steve = &#39;bob&#39;; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[steve]); // 2   Example2  var obj = {steve:1, bob:2}; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[&#39;bob&#39;]); // 2  first-class object() 함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을 first-class value first-class citizen first-class object 라고 부른다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -355,6 +353,7 @@ function cal(mode){ var funcs = { &#39;plus&#39; : function(left, right){return 
 <ul>
 <li>
 <ul>
+<li><a href="#dot-notation-and-braket-notation">dot notation and  braket notation ?</a></li>
 <li><a href="#first-class-object">first-class object()</a></li>
 <li><a href="#callback">Callback</a></li>
 <li><a href="#dom-dom을-이용해서-html문서를-제어할수-있다">Dom : Dom을 이용해서 HTML문서를 제어할수 있다</a>
@@ -400,6 +399,43 @@ function cal(mode){ var funcs = { &#39;plus&#39; : function(left, right){return 
 
           <div class="article-style" itemprop="articleBody">
             
+
+<hr />
+
+<h2 id="dot-notation-and-braket-notation">dot notation and  braket notation ?</h2>
+
+<hr />
+
+<blockquote>
+<p>다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???</p>
+</blockquote>
+
+<ul>
+<li>Example1</li>
+</ul>
+
+<pre><code class="language-js">var obj = {steve:1, bob:2};
+var steve = 'bob';
+
+console.log(obj.steve);    // 1
+console.log(obj['steve']); // also 1
+console.log(obj[steve]);   // 2
+
+</code></pre>
+
+<ul>
+<li>Example2</li>
+</ul>
+
+<pre><code class="language-js">var obj = {steve:1, bob:2};
+
+console.log(obj.steve);    // 1
+console.log(obj['steve']); // also 1
+console.log(obj['bob']);   // 2
+
+
+
+</code></pre>
 
 <hr />
 

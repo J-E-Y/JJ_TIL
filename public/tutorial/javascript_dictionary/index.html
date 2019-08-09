@@ -902,13 +902,41 @@ array.indexOf(2, -3); // 0
 </code></pre></li>
 
 <li><p>lastIndexOf() ()&lt;&lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.</p></li>
-
-<li><p>slice() : <code>immutable</code></p></li>
 </ul>
 
 <blockquote>
-<p>Examples</p>
+<p>example</p>
+</blockquote>
 
+<pre><code class="language-js">var anyString = 'Brave new world';
+
+console.log('The index of the first w from the beginning is ' + anyString.indexOf('w'));
+// logs 8
+console.log('The index of the first w from the end is ' + anyString.lastIndexOf('w')); 
+// logs 10
+console.log('The index of &quot;new&quot; from the beginning is ' + anyString.indexOf('new'));
+// logs 6
+console.log('The index of &quot;new&quot; from the end is ' + anyString.lastIndexOf('new'));
+// logs 6
+
+</code></pre>
+
+<ul>
+<li>slice() : <code>immutable</code></li>
+</ul>
+
+<blockquote>
+<p><code>tip</code> 복제할수 있는 기능도 있다.</p>
+</blockquote>
+
+<pre><code>let obj1 = [1,2,3,4,5,6];
+let obj2 = obj1.slice();
+
+&gt;&gt; obj2 = [1,2,3,4,5,6 ];
+
+</code></pre>
+
+<blockquote>
 <p>Return a portion of an existing array</p>
 </blockquote>
 
@@ -926,9 +954,7 @@ var citrus = fruits.slice(1, 3);
 </ul>
 
 <blockquote>
-<p>Examples</p>
-
-<p>1 . Remove 0 (zero) elements from index 2, and insert &ldquo;drum&rdquo;</p>
+<p>Remove 0 (zero) elements from index 2, and insert &ldquo;drum&rdquo;</p>
 </blockquote>
 
 <pre><code class="language-js">

@@ -4407,13 +4407,41 @@ array.indexOf(2, -3); // 0
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;lastIndexOf() ()&amp;lt;&amp;lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;slice() : &lt;code&gt;immutable&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Examples&lt;/p&gt;
+&lt;p&gt;example&lt;/p&gt;
+&lt;/blockquote&gt;
 
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var anyString = &#39;Brave new world&#39;;
+
+console.log(&#39;The index of the first w from the beginning is &#39; + anyString.indexOf(&#39;w&#39;));
+// logs 8
+console.log(&#39;The index of the first w from the end is &#39; + anyString.lastIndexOf(&#39;w&#39;)); 
+// logs 10
+console.log(&#39;The index of &amp;quot;new&amp;quot; from the beginning is &#39; + anyString.indexOf(&#39;new&#39;));
+// logs 6
+console.log(&#39;The index of &amp;quot;new&amp;quot; from the end is &#39; + anyString.lastIndexOf(&#39;new&#39;));
+// logs 6
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;slice() : &lt;code&gt;immutable&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;tip&lt;/code&gt; 복제할수 있는 기능도 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;let obj1 = [1,2,3,4,5,6];
+let obj2 = obj1.slice();
+
+&amp;gt;&amp;gt; obj2 = [1,2,3,4,5,6 ];
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
 &lt;p&gt;Return a portion of an existing array&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -4431,9 +4459,7 @@ var citrus = fruits.slice(1, 3);
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Examples&lt;/p&gt;
-
-&lt;p&gt;1 . Remove 0 (zero) elements from index 2, and insert &amp;ldquo;drum&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Remove 0 (zero) elements from index 2, and insert &amp;ldquo;drum&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
@@ -4695,6 +4721,43 @@ console.log(delete Employee.salary); // returns true
       
       <guid>/tutorial/javascript_note/</guid>
       <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;dot-notation-and-braket-notation&#34;&gt;dot notation and  braket notation ?&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Example1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var obj = {steve:1, bob:2};
+var steve = &#39;bob&#39;;
+
+console.log(obj.steve);    // 1
+console.log(obj[&#39;steve&#39;]); // also 1
+console.log(obj[steve]);   // 2
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Example2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var obj = {steve:1, bob:2};
+
+console.log(obj.steve);    // 1
+console.log(obj[&#39;steve&#39;]); // also 1
+console.log(obj[&#39;bob&#39;]);   // 2
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr /&gt;
 
@@ -6781,6 +6844,95 @@ unction removeElement(array, discarder) {
     }
   }
   return newArr;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;array-object&#34;&gt;&lt;strong&gt;Array &amp;amp; object&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;01_getElementOfArrayProperty&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;getElementOfArrayProperty&amp;rdquo;. (&amp;ldquo;getElementOfArrayProperty&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an object, a key, and a numerical index, &amp;ldquo;getElementOfArrayProperty&amp;rdquo; returns the value of the element at the given index of the array located within the given object at the given key. (객체와 키, 그리고 숫자로된 인덱스값이 주어졌을때, &amp;ldquo;getElementOfArrayProperty&amp;rdquo; 함수는 주어진 키에 위치한 배열의 인덱스에 해당하는 값을 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_asnswer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function getElementOfArrayProperty(obj, key, index) {
+  // your code here
+ 
+   if (!Array.isArray(obj[key])){
+    return undefined;
+  } 
+  return obj[key][index]; 
+} 
+let obj = {
+  key: [&#39;Jamil&#39;, &#39;Albrey&#39;]
+};
+
+getElementOfArrayProperty(obj,&#39;key&#39;,0);
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;02_select&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;select&amp;rdquo;. (&amp;ldquo;select&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an array and an object, &amp;ldquo;select&amp;rdquo; returns a new object whose properties are those in the given object AND whose keys are present in the given array. (배열과 객체가 주어졌을때, &amp;ldquo;select&amp;rdquo; 함수는 주어진 객체의 키값 중 주어진 배열에 포함된 키값만을 속성으로 가지는 새로운 배열을 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function select(arr, obj) {
+  // your code here
+  let newObj = {};
+  for (let key in obj ) {
+    for (let i = 0; i &amp;lt; arr.length; i = i + 1 ) {
+      if (key === arr[i] ) {
+       newObj[key] = obj[key]
+      }
+
+    }
+
+  } 
+  return newObj;
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;04_getNthElementOfProperty&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;getNthElementOfProperty&amp;rdquo;. (&amp;ldquo;getNthElementOfProperty&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given an object and a key, &amp;ldquo;getNthElementOfProperty&amp;rdquo; returns the nth element of an array located at the given key. (객체와 키가 주어졌을때, &amp;ldquo;getNthElementOfProperty&amp;rdquo; 함수는 주어진 키에 위차한 배열의 n번째 요소를 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;my_answer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function getNthElementOfProperty(obj, key, n) {
+  // your code here
+  // 만약 주어진 키에 위차하는 속성값이 배열이 아니라면 undefinded 
+  // 만약 그게 아니라면 주어진 키값의 인덱스 번호 리턴
+  if ( !Array.isArray(obj[key])) {
+    return undefined;
+  } else {
+    return obj[key][n];
+  }
 }
 
 &lt;/code&gt;&lt;/pre&gt;

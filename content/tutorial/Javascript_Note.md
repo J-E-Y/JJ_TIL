@@ -13,6 +13,39 @@ type: docs
 ---
 
 
+
+---
+## dot notation and  braket notation ?
+---
+
+>다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
+
+
+* Example1
+
+``` js
+var obj = {steve:1, bob:2};
+var steve = 'bob';
+
+console.log(obj.steve);    // 1
+console.log(obj['steve']); // also 1
+console.log(obj[steve]);   // 2
+
+```
+
+* Example2
+
+```js
+var obj = {steve:1, bob:2};
+
+console.log(obj.steve);    // 1
+console.log(obj['steve']); // also 1
+console.log(obj['bob']);   // 2
+
+
+
+```
+
 ---
 ## first-class object()
 ---

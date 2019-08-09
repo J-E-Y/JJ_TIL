@@ -555,11 +555,33 @@ array.indexOf(2, -3); // 0
 * lastIndexOf() ()<<원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다. 
 
 
+> example
+
+```js
+var anyString = 'Brave new world';
+
+console.log('The index of the first w from the beginning is ' + anyString.indexOf('w'));
+// logs 8
+console.log('The index of the first w from the end is ' + anyString.lastIndexOf('w')); 
+// logs 10
+console.log('The index of "new" from the beginning is ' + anyString.indexOf('new'));
+// logs 6
+console.log('The index of "new" from the end is ' + anyString.lastIndexOf('new'));
+// logs 6
+
+```
 
 * slice() : `immutable`
 
+>`tip` 복제할수 있는 기능도 있다.
 
-> Examples
+```
+let obj1 = [1,2,3,4,5,6];
+let obj2 = obj1.slice();
+
+>> obj2 = [1,2,3,4,5,6 ];
+
+```
 
 > Return a portion of an existing array
 
@@ -576,9 +598,11 @@ var citrus = fruits.slice(1, 3);
 * splice() : `mutable`
 
 
-> Examples
 
-> 1 . Remove 0 (zero) elements from index 2, and insert "drum"
+
+
+
+> Remove 0 (zero) elements from index 2, and insert "drum"
 
 
 ```js

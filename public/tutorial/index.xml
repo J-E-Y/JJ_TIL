@@ -107,9 +107,8 @@ example
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>first-class object() 함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을 first-class value first-class citizen first-class object 라고 부른다.   값으로써 쓰이는 함수 예제
-function cal(mode){ var funcs = { &#39;plus&#39; : function(left, right){return left + right}, &#39;minus&#39; : function(left, right){return left - right} } return funcs[mode]; } alert(cal(&#39;plus&#39;)(2,1)); alert(cal(&#39;minus&#39;)(2,1));  배열로서의 함수
- var process = [ function(input){ return input + 10;}, function(input){ return input * input;}, function(input){ return input / 2;} ]; var input = 1; for(var i = 0; i &amp;lt; process.</description>
+      <description>dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
+  Example1  var obj = {steve:1, bob:2}; var steve = &#39;bob&#39;; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[steve]); // 2   Example2  var obj = {steve:1, bob:2}; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[&#39;bob&#39;]); // 2  first-class object() 함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을 first-class value first-class citizen first-class object 라고 부른다.</description>
     </item>
     
     <item>
