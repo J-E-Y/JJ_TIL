@@ -12,6 +12,13 @@ type: docs
 
 ---
 
+---
+## for ( let key in obj ) { }
+---
+> how key works ? 
+
+* 객체의 키를 key 에 넣어준다고 생각하시면 될 것 같습니다.
+
 
 
 ---

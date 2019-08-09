@@ -4724,6 +4724,20 @@ console.log(delete Employee.salary); // returns true
 
 &lt;hr /&gt;
 
+&lt;h2 id=&#34;for-let-key-in-obj&#34;&gt;for ( let key in obj ) { }&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;how key works ?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;객체의 키를 key 에 넣어준다고 생각하시면 될 것 같습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;dot-notation-and-braket-notation&#34;&gt;dot notation and  braket notation ?&lt;/h2&gt;
 
 &lt;hr /&gt;
