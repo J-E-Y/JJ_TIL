@@ -7149,7 +7149,7 @@ return object;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-&lt;li&gt;my_answer&lt;/li&gt;
+&lt;li&gt;my_code&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
@@ -7189,6 +7189,62 @@ unction firstCharacter (string) {
 
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;longestWord&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;sing the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &amp;lsquo;LongestWord&amp;rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)&lt;/p&gt;
+
+&lt;p&gt;If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요. 문장은 빈 문자열이 아닙니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;my_code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+// It&#39;s used by sort() 
+
+function longestWord(string) {
+
+// 1. 주어진 문장을 배열로 만들기(split)
+let tmp = string.split(&#39; &#39;);
+//let sorted_tmp =[];
+// [&#39;I&#39;,&#39;love&#39;,&#39;codestates&#39;];
+// 2. sort() 사용 =&amp;gt; 성능 떨어짐
+let x = function(a,b){
+return b.length-a.length;
+};
+// 3. 0번째 요소 출력
+return tmp.sort(x)[0];
+}
+
+////////////////////////////////////////////////////////
+
+// It&#39;s used by reudce(1)
+
+function longestWord(string) {
+ 
+let tmp = string.split(&#39; &#39;);
+let max = tmp[0];
+for(let i =1;i&amp;lt;tmp.length;i++){
+if(tmp[i].length&amp;gt;max.length){
+ max = tmp[i];
+}
+}
+return max;
+}
+
+
+/////////////////////////////////////////////////////////
+
+// It&#39;s used by reudce(2) 화살표
+
+function longestWord(string) {
+
+return string.split(&#39; &#39;).reduce((acc,cur)=&amp;gt; acc.length&amp;lt;cur.length? cur:acc);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

@@ -198,7 +198,7 @@ function removeOddValues(object) {
 
 > Attention! In test case 5 userinput is one space input char as ' ', please do not get confused with '', empty string (주의사항! 테스트 케이스 5 에서 주는 입력값은 띄어쓰기 한개(' ') 입니다. 빈 문자열('') 과 혼동하지 마세요.)
 
-* my_answer
+* my_code
 
 
 ```js
@@ -238,4 +238,63 @@ unction firstCharacter (string) {
 }
 
 
+```
+
+
+
+
+
+**longestWord**
+
+
+> sing the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, 'LongestWord' 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
+
+>If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요. 문장은 빈 문자열이 아닙니다.)
+
+
+* my_code
+
+```
+
+// It's used by sort() 
+
+function longestWord(string) {
+
+ // 1. 주어진 문장을 배열로 만들기(split)
+ let tmp = string.split(' ');
+ //let sorted_tmp =[];
+ // ['I','love','codestates'];
+ // 2. sort() 사용 => 성능 떨어짐
+ let x = function(a,b){
+   return b.length-a.length;
+ };
+ // 3. 0번째 요소 출력
+ return tmp.sort(x)[0];
+}
+
+////////////////////////////////////////////////////////
+
+// It's used by reudce(1)
+
+function longestWord(string) {
+ 
+ let tmp = string.split(' ');
+ let max = tmp[0];
+ for(let i =1;i<tmp.length;i++){
+   if(tmp[i].length>max.length){
+     max = tmp[i];
+   }
+ }
+ return max;
+}
+
+
+/////////////////////////////////////////////////////////
+
+// It's used by reudce(2) 화살표
+
+function longestWord(string) {
+
+return string.split(' ').reduce((acc,cur)=> acc.length<cur.length? cur:acc);
+}
 ```
