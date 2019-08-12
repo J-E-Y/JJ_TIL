@@ -27,8 +27,8 @@
   
     
   
-  <meta name="description" content="for ( let key in obj ) { }  how key works ?
-  객체의 키를 key 에 넣어준다고 생각하시면 될 것 같습니다.  dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
+  <meta name="description" content="for ( let 변수 in obj ) { }  how propo works ?
+  객체의 키를 변수에 넣어준다고 생각각하면 됩니다.  dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
   Example1  var obj = {steve:1, bob:2}; var steve = &#39;bob&#39;; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[steve]); // 2   Example2  var obj = {steve:1, bob:2}; console.">
 
   
@@ -118,8 +118,8 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_note/">
   <meta property="og:title" content="JS Note | Home">
-  <meta property="og:description" content="for ( let key in obj ) { }  how key works ?
-  객체의 키를 key 에 넣어준다고 생각하시면 될 것 같습니다.  dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
+  <meta property="og:description" content="for ( let 변수 in obj ) { }  how propo works ?
+  객체의 키를 변수에 넣어준다고 생각각하면 됩니다.  dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
   Example1  var obj = {steve:1, bob:2}; var steve = &#39;bob&#39;; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[steve]); // 2   Example2  var obj = {steve:1, bob:2}; console."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
@@ -336,7 +336,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#for-let-key-in-obj">for ( let key in obj ) { }</a></li>
+<li><a href="#for-let-변수-in-obj">for ( let 변수 in obj ) { }</a></li>
 <li><a href="#dot-notation-and-braket-notation">dot notation and  braket notation ?</a></li>
 <li><a href="#first-class-object">first-class object()</a></li>
 <li><a href="#callback">Callback</a></li>
@@ -358,10 +358,8 @@
 <li><a href="#how-to-count-the-number-of-properties-of-the-javascript-object">How to Count the Number of Properties of the JavaScript Object</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#9-ways-to-remove-elements-from-a-javascript-array">9 Ways to Remove Elements From A JavaScript Array</a></li>
-<li><a href="#array-문자열-빼기">Array : 문자열 빼기</a></li>
-<li><a href="#반복문-순서">반복문 순서</a></li>
-<li><a href="#how-to-find-the-sum-of-an-array-of-numbers">How to find the sum of an array of numbers</a></li>
+<li><a href="#iteration-statements"><strong>iteration statements</strong></a></li>
+<li><a href="#array"><strong>array</strong></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -386,16 +384,16 @@
 
 <hr />
 
-<h2 id="for-let-key-in-obj">for ( let key in obj ) { }</h2>
+<h2 id="for-let-변수-in-obj">for ( let 변수 in obj ) { }</h2>
 
 <hr />
 
 <blockquote>
-<p>how key works ?</p>
+<p>how propo works ?</p>
 </blockquote>
 
 <ul>
-<li>객체의 키를 key 에 넣어준다고 생각하시면 될 것 같습니다.</li>
+<li>객체의 키를  변수에  넣어준다고 생각각하면 됩니다.</li>
 </ul>
 
 <hr />
@@ -728,30 +726,15 @@ console.log(count);  // print 1
 
 <hr />
 
-<h2 id="9-ways-to-remove-elements-from-a-javascript-array">9 Ways to Remove Elements From A JavaScript Array</h2>
+<hr />
 
 <hr />
 
-<p><a href="https://love2dev.com/blog/javascript-remove-from-array" target="_blank">This is link</a></p>
+<h2 id="iteration-statements"><strong>iteration statements</strong></h2>
 
 <hr />
 
-<h2 id="array-문자열-빼기">Array : 문자열 빼기</h2>
-
-<hr />
-
-<p>var newArray = [];
-  for (let i = 0; i &lt; arr.length; i++) {
-    if (typeof(arr[i]) === &lsquo;string&rsquo;) {
-      newArray.push(arr[i]);
-    }
-  }</p>
-
-<hr />
-
-<h2 id="반복문-순서">반복문 순서</h2>
-
-<hr />
+<p><strong>반복문 순서</strong></p>
 
 <pre><code> 반복문
 
@@ -765,13 +748,64 @@ console.log(count);  // print 1
   
 </code></pre>
 
+<p><strong>For Loop</strong></p>
+
+<pre><code class="language-js">
+// 요소를 불러오기 위해 i 라는 변수를 지정한다. 
+// 불러오는 두가지 방법이 있다.
+
+1.
+
+for ( let i = 0; i &lt; obj[key].length; i = i + 1 )
+
+2.
+
+for(var i in obj[key])
+
+
+</code></pre>
+
 <hr />
 
-<h2 id="how-to-find-the-sum-of-an-array-of-numbers">How to find the sum of an array of numbers</h2>
+<h2 id="array"><strong>array</strong></h2>
 
 <hr />
 
-<p><a href="https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers" target="_blank">this is link</a></p>
+<p><strong>Get the last item in an array</strong></p>
+
+<pre><code>let arr = [1, 2, 3, 4] ;
+
+* First
+arr[arr.length - 1] ;
+
+
+* Second
+arr.slice(-1);
+
+* Third
+arr.slice(-1).pop();
+
+</code></pre>
+
+<p><strong>배열안에 있는 문자열 빼는 방법</strong></p>
+
+<pre><code>
+var newArray = [];
+  for (let i = 0; i &lt; arr.length; i++) {
+    if (typeof(arr[i]) === 'string') {
+      newArray.push(arr[i]);
+    } 
+  }
+
+</code></pre>
+
+<p><strong>How to find the sum of an array of numbers</strong></p>
+
+<p><a href="https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers" target="_blank">This is link</a></p>
+
+<p><strong>9 Ways to Remove Elements From A JavaScript Array</strong></p>
+
+<p><a href="https://love2dev.com/blog/javascript-remove-from-array" target="_blank">This is link</a></p>
 
           </div>
 

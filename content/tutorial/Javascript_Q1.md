@@ -1830,3 +1830,92 @@ function getNthElementOfProperty(obj, key, n) {
 }
 
 ```
+
+
+**05_getLastElementOfProperty**
+
+
+* Question
+
+> Write a function called "getLastElementOfProperty". ("getLastElementOfProperty" 함수를 작성하세요.)
+
+>Given an object and a key, "getLastElementOfProperty" returns the last element of an array located at the given key. (객체와 키가 주어졌을때, "getLastElementOfProperty" 함수는 주어진 키에 위치한 배열의 마지막 요소를 반환합니다.)
+
+
+* My_Solution
+
+```js
+function getLastElementOfProperty(obj, key) {
+  
+  // 1. 만약 key의 값에 prop 배열이 아니라면 undefined 출력
+  // 2. 배열에 있는 마지막 요소 pop 메소드 이용해서 빼서 변수안에 넣기
+  // 3. 변수 리턴 
+
+  if (!Array.isArray(obj[key])) {
+    return undefined;
+    } else {
+      let lastNum = obj[key].pop()
+      return lastNum
+  } 
+}
+
+```
+
+* modle_Solution
+
+```js
+
+// 1.마지막 배열에 요소 가져오기 위해 length - 1 이라는 방법을 썻다.
+
+function getLastElementOfProperty(obj, key) {
+  let prop = obj[key];
+  if (!Array.isArray(prop)) {
+    return undefined
+  }
+
+  return prop[prop.length - 1]
+}
+
+```
+
+
+**07_getAllButLastElementOfProperty**
+
+* Question 
+
+> Write a function called "getAllButLastElementOfProperty". ("getAllButLastElementOfProperty" 함수를 작성하세요.)
+
+>Given an object and a key, "getAllButLastElementOfProperty" returns an array containing all but the last element of the array located at the given key. (객체와 키가 주어졌을때, "getAllButLastElementOfProperty" 함수는 주어진 키에 위치하는 배열의 마지막 요소를 제외한 배열을 반환합니다.)
+
+
+** My_Solution 
+
+
+```js
+
+function getAllButLastElementOfProperty(obj, key) {
+  
+  
+  // 1.마지막에 출력할 arr 빈배열 생성
+  // 2.만약 key의 값의 prop 가 배열이 아니라면 빈배열 리턴
+  // 3.만약 key의 값의 prop 의 길이가 0 과 같이 않다면 빈배열 리턴
+  // 4.선언된 arr 안에 obj[key] 값을 넣는다.
+  // 5.pop()메소드 사용해 마지막 요소 제거
+  // 6.arr 리턴
+
+
+  let arr = [];
+  if (!Array.isArray(obj[key])) {
+    return [];
+  } else if ( obj[key].length === 0 ) {
+    return [];
+  } else {
+    arr = obj[key];
+    arr.pop()
+  }
+  return arr;
+}
+
+```
+
+

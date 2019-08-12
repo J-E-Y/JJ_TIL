@@ -13,11 +13,11 @@ type: docs
 ---
 
 ---
-## for ( let key in obj ) { }
+## for ( let 변수 in obj ) { }
 ---
-> how key works ? 
+> how propo works ? 
 
-* 객체의 키를 key 에 넣어준다고 생각하시면 될 것 같습니다.
+* 객체의 키를  변수에  넣어준다고 생각각하면 됩니다.
 
 
 
@@ -341,31 +341,21 @@ console.log(count);  // print 1
 
 
 ---
-## 9 Ways to Remove Elements From A JavaScript Array
----
-
-[This is link](https://love2dev.com/blog/javascript-remove-from-array)
-
-
-
-
----
-## Array : 문자열 빼기
+## 
 ---
 
 
-var newArray = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (typeof(arr[i]) === 'string') {
-      newArray.push(arr[i]);
-    } 
-  }
-  
-  
+
+
+
 
 ---
-## 반복문 순서 
+## **iteration statements** 
 ---
+
+
+
+**반복문 순서**
 
 ```
  반복문
@@ -381,8 +371,72 @@ var newArray = [];
 ```  
 
 
+
+
+**For Loop**
+
+```js
+
+// 요소를 불러오기 위해 i 라는 변수를 지정한다. 
+// 불러오는 두가지 방법이 있다.
+
+1.
+
+for ( let i = 0; i < obj[key].length; i = i + 1 )
+
+2.
+
+for(var i in obj[key])
+
+
+```
+
+
 ---
-## How to find the sum of an array of numbers
+## **array** 
 ---
 
-[this is link](https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers)
+**Get the last item in an array**
+
+```
+let arr = [1, 2, 3, 4] ;
+
+* First
+arr[arr.length - 1] ;
+
+
+* Second
+arr.slice(-1);
+
+* Third
+arr.slice(-1).pop();
+
+```
+
+
+
+**배열안에 있는 문자열 빼는 방법**
+
+
+```
+
+var newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof(arr[i]) === 'string') {
+      newArray.push(arr[i]);
+    } 
+  }
+
+```
+
+**How to find the sum of an array of numbers**
+
+[This is link](https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers)
+
+
+
+**9 Ways to Remove Elements From A JavaScript Array**
+
+[This is link](https://love2dev.com/blog/javascript-remove-from-array)
+
+

@@ -107,8 +107,8 @@ example
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>for ( let key in obj ) { }  how key works ?
-  객체의 키를 key 에 넣어준다고 생각하시면 될 것 같습니다.  dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
+      <description>for ( let 변수 in obj ) { }  how propo works ?
+  객체의 키를 변수에 넣어준다고 생각각하면 됩니다.  dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
   Example1  var obj = {steve:1, bob:2}; var steve = &#39;bob&#39;; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[steve]); // 2   Example2  var obj = {steve:1, bob:2}; console.</description>
     </item>
     
