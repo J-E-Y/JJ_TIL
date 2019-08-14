@@ -1,5 +1,5 @@
 ---
-title: JS My_Dictionary
+title: 1.My_dictionary
 date: 2019
 draft: true
 menu:
@@ -18,11 +18,84 @@ type: docs
 ---
 
 
-* toString() :문자로 바꾸는것 
 
-> `Tip`배열에 담겨있는 문자열을 꺼낼때도 사용
+**str[index]**
 
-> example
+`immutable`
+
+> 1.글자 하나하나 가져오기
+
+> 2. index로 접근은 가능하지만 쓸 수는 없음 (read-only)
+
+> 3. + 연산자를 쓸수 있음.
+
+> 4. length 쓸수 있음.
+
+
+
+```
+let str = 'CodeStates';
+
+str[0]; >> 'C'
+
+but
+
+str[0] = 'G' >> 바뀌지 않음.
+
+str = 'Codestates'
+ 
+```
+
+**str..toUpperCase()** 
+
+`immutable`
+
+> 소문자를 대문자로 바꿈
+
+```
+let str = 'CodeStates';
+
+str.toUpperCase(); >>"CODESTATES
+
+```
+
+**str.toLowerCase()**
+
+`immutable`
+
+
+>대문자 소문자 바꿈
+
+
+```
+
+let str = "CodeStates";
+
+str.toLowerCase()
+
+```
+
+
+
+
+**num.toString()** 
+
+> 1.숫자를 문자로 바꾸는것 
+
+```js
+
+let num = 10;
+
+num.toString();    
+
+>> '10'
+
+```
+
+
+
+> 2.`Tip`배열에 담겨있는 문자열을 꺼낼때도 사용
+
 
 
 ```js
@@ -52,13 +125,15 @@ function getAllWords(str) {
 
 ```
 
-* String() :문자로 바꾸는것 
 
-> String(object)
+**String(obj)** 
+
+>숫자를 문자로 바꾸는것 
+
 
 >String, 이 함수는 변환하려는 객체의 toString() 메소드를 사용하는 것과 동일함
 
-> ex
+
 
 ```js
 var t = [1,2,3];
@@ -69,47 +144,45 @@ console.log(String(t));
 
 ```
 
-* str[index] 읽어서 찾아주는것 :immutable
+
+
+**str.split()**
+
+
+>문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.
 
 
 ```
-let str = 'CodeStates';
+var s = "hello, world this is jj";
+s.split("");
 
-str[0]; >> 'C'
 
-but
-
-str[0] = 'G' >> 바뀌지 않음.
-
-str = 'Codestates'
- 
-Note: index로 접근은 가능하지만 쓸수는 없음 (read-only);
+"h", "e", "l", "l", "o", ",", " ", "w", "o", "r", "l", "d", " ", "t", "h", "i", "s", " ", "i", "s", " ", "j", "j"
+```
 
 ```
 
-* toUpperCase() 소문자 대문자 바꿈:immutable
-
-
-```
-let str = 'CodeStates';
-
-str.toUpperCase(); >>"CODESTATES
-
+var s = "hello, world this is jj";
+s.split(",");
+"hello", " world this is jj"
+콤마가 생겼다. 콤마의 기준으로 갈라진다.
 ```
 
-* toLowerCase() 대문자 소문자 바꿈:immutable
-
-
 ```
+var s = "hello world t-h-i-s-i-s-j-j"
+s.split("-");
 
-let str = "CodeStates";
-
-str.toLowerCase()
-
+"hello  world t", "h", "i", "s", "i", "s", "j", "j"
+- 기준으로 갈라진다. 
 ```
 
 
-* str.indexOf(serchValue); 찾기 
+
+
+**str.indexOf(serchValue)** 
+
+
+> 찾기 
 
 
 ```
@@ -124,19 +197,21 @@ str.toLowerCase()
 ```
 
 
-* string.repeat(숫자입력) 반복하는것 
+* str.repeat(숫자입력) 반복하는것 
 
-> ex
+>
 
 
 ```
-let chorus = 'Because I'm happy';
+let str = 'Because I'm happy';
 
 console.log('Chorus lyrics for "Happy": ' + chorus.repeat(27));
 
 ```
 
-* charAt(index) :인덱스에 있는 값을 리턴한다.
+**strcharAt(index)** 
+
+>인덱스에 있는 값을 리턴한다.
 
 
 > ex
@@ -151,24 +226,140 @@ alert(stringName.charAt(1000) == ''); // true
 ```
 
 
-* sort() : 배열 정렬할때 
+
+---
+## **Number**
+---
+
+
+* parseInt() 숫자로 바꾸는것
+
+
+
+
+
+---
+## **Math_method**
+---
+
+**Math.max()**
+**Math.min()**
+
+> 큰수,작은수 가져오기
+
+
+> EX 큰수 가져오기 
+
+```js
+
+Math.max(10, 20);   //  20
+Math.max(-10, -20); // -10
+Math.max(-10, 20);  //  20
+```
+
+> reduce 사용해서 큰수 가져오기
+
+```js
+
+var arr = [1,2,3];
+var max = arr.reduce(function(a, b) {
+    return Math.max(a, b);
+});
+```
+
+
+>  spread operator  사용해서 큰수 가져오기 
+
+```js
+
+var arr = [1, 2, 3];
+var max = Math.max(...arr);
+
+```
+
+
+---
+## **Array**
+---
+
+
+**Array.isArray()**
+
+>메서드는 인자가 Array인지 판별합니다.
+
+
+> () 안에 비워 있으면 실행되지 않는다. 
+
+
+```
+Array.isArray([]);  // true
+Array.isArray([1, 2, 3]);  // true
+Array.isArray({foo: 123}); // false
+Array.isArray('foobar');   // false
+Array.isArray(undefined);  // false
+```
+
+
+
+**arr.indexOf(seachElement)** 
+
+
+>`immutable`
+
+> str.indexOf 랑 똑같다.
+
+> element 존재 확인 할때 유용
+
+> 발견되지 않으면 -1  표시 
+
+> ()<<원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다. 
+> 비슷한 목적을 가진 메소드로는 includes,find가 있음
+
+```js
+
+var array = [2, 9, 9];
+array.indexOf(2);     // 0
+array.indexOf(7);     // -1
+array.indexOf(9, 2);  // 2
+array.indexOf(2, -1); // -1
+array.indexOf(2, -3); // 0
+
+```
+
+**arr.lastIndexOf(seachElement)** 
+
+> ()<<원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다. 
+
+
+```js
+var anyString = 'Brave new world';
+
+console.log('The index of the first w from the beginning is ' + anyString.indexOf('w'));
+// logs 8
+console.log('The index of the first w from the end is ' + anyString.lastIndexOf('w')); 
+// logs 10
+console.log('The index of "new" from the beginning is ' + anyString.indexOf('new'));
+// logs 6
+console.log('The index of "new" from the end is ' + anyString.lastIndexOf('new'));
+// logs 6
+
+```
+
+
+**arr.sort(sortfunc)**
+
 
 > `mutable`
 
-> Description
+>1.배열을 정렬한다.
+
+>2.알파벳 순서로 정렬한다.
+
+>3.숫자의 경우 암시적으로 문자열로 형변환 하기 때문에 숫자 1이 숫자 10보다 먼저 나온다.
+
+>4.sortfunc 로 비교 대상인 두개의 인자를 전달하는데, 리턴 값에 따라서 선후를 판단한다.
 
 
-```
-
-1.배열을 정렬한다.
-
-2.알파벳 순서로 정렬한다.
-
-3.숫자의 경우 암시적으로 문자열로 형변환 하기 때문에 숫자 1이 숫자 10보다 먼저 나온다.
-
-4.sortfunc 로 비교 대상인 두개의 인자를 전달하는데, 리턴 값에 따라서 선후를 판단한다.
-
-```
 
 > Example 1
 
@@ -343,97 +534,12 @@ return a - b;
 ```
 
 
----
-## **Number**
----
 
+**arr.push(newElement)**
 
-* parseInt() 숫자로 바꾸는것
+>`mutable`
 
-
-
-
----
-## **Array**
----
-
-
-
-* making array
-
-```
-1.
-let arr = [1, 2, 3, 4];
-
-2.
-
-let arr = [];
-arr[0] = 2;
-arr[1] = 4;
-
-
-```
-
-* reading array
-
-```
-
-let arr = [1, 2, 3, 4];
-
-arr[0]; 
-
-> 1
-
-
-arr[3];
-
-> 4
-
-```
-
-* writing 
-
-```
-let arr = [1, 2, 3, 4];
-
-arr[0] = 2;
-
-> [2,2,3,4]; 
-
-scores[9] = 50;
-
-인덱스가 없다면 마지막에 붙는다 
->  [1, 2, 3, 4 ,50]
-```
-
-
-* Get the length from arr
-
-```
-let arr = [1, 2, 3, 4];
-arr.length;
-> 4
-
-```
-* Get the last item in an array
-
-```
-let arr = [1, 2, 3, 4] ;
-
-* First
-arr[arr.length - 1] ;
-
-
-* Second
-arr.slice(-1);
-
-* Third
-arr.slice(-1).pop();
-
-```
-
-
-* push() 뒤어 붙이기 
+>마지막 배열에 추가 
 
 ```
 var arr = [1,2,3,4,];
@@ -442,9 +548,15 @@ arr.push(1);
 arr; // = > [1,2,3,4,1]
 ```
 
-* pop() 뒤에 있는거 빼기 
+**arr.pop()** 
 
-```
+>`mutable`
+
+> 뒤에 있는배열 제거 
+
+
+
+```js
 var arr = [1,2,3,4,];
 arr.pop();
 
@@ -452,7 +564,9 @@ arr; // = > [1,2,3]
 ```
 
 
-* unshift()	 앞에 붙이기
+**arr.unshift()**	 
+
+> 앞에 붙이기
 
 ```
 var arr = [1,2,3,4];
@@ -464,7 +578,9 @@ arr; // = > [1,1,2,3,4,];
 ```
 
 
-* shift()  앞에 있는거 빼기
+**arr.shift()**  
+
+>앞에 있는거 빼기
 
 ```
 var arr = [1,2,3,4];
@@ -475,7 +591,175 @@ arr; // = > [2,3,4,]
 
 ```
 
-* concat() 더하기 
+
+**arr.slice(bein,end)**
+
+> `immutable`
+> 문자열의 특정구간을 검색
+
+
+
+
+* `tip` 복제할수 있는 기능도 있다.
+
+```js
+let obj1 = [1,2,3,4,5,6];
+let obj2 = obj1.slice();
+
+>> obj2 = [1,2,3,4,5,6 ];
+
+```
+
+* 2번째 인덱스 부터 가져온다
+
+```js
+var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
+var myFruits = fruits.slice(2);
+
+myFruits = ["Lemon", "Apple", "Mango"]
+
+
+```
+
+
+* Return a portion of an existing array
+
+```js
+
+var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
+var citrus = fruits.slice(1, 3);
+
+// fruits contains ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
+// citrus contains ['Orange','Lemon']
+
+```
+
+
+
+**arr.splice(start,deleteCount,"itme1",...")**
+
+>`mutable`
+
+> 중간에 element 를 삭제 할수 있는 방법이 이거뿐
+
+
+
+
+
+* Remove 0 (zero) elements from index 2, and insert "drum"
+
+
+```js
+
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2, 0, 'drum');
+
+// myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"] 
+// removed is [], no elements removed
+
+```
+
+* Remove 0 (zero) elements from index 2, and insert "drum" and "guitar"Section
+
+
+
+```js 
+
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2, 0, 'drum', 'guitar');
+
+// myFish is ["angel", "clown", "drum", "guitar", "mandarin", "sturgeon"] 
+// removed is [], no elements removed
+
+```
+
+* Remove 1 element from index 3
+
+```js
+
+var myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(3, 1);
+
+// removed is ["mandarin"]
+// myFish is ["angel", "clown", "drum", "sturgeon"]
+
+```
+
+
+* Remove 1 element from index 2, and insert "trumpet"
+
+
+```js 
+
+var myFish = ['angel', 'clown', 'drum', 'sturgeon'];
+var removed = myFish.splice(2, 1, 'trumpet');
+
+// myFish is ["angel", "clown", "trumpet", "sturgeon"]
+// removed is ["drum"]
+
+```
+
+
+* Remove 2 elements from index 0, and insert "parrot", "anemone" and "blue"
+
+
+```js
+
+
+var myFish = ['angel', 'clown', 'trumpet', 'sturgeon'];
+var removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
+
+// myFish is ["parrot", "anemone", "blue", "trumpet", "sturgeon"] 
+// removed is ["angel", "clown"]
+
+
+
+```
+
+* Remove 2 elements from index 2
+
+```js
+
+var myFish = ['parrot', 'anemone', 'blue', 'trumpet', 'sturgeon'];
+var removed = myFish.splice(2, 2);
+
+// myFish is ["parrot", "anemone", "sturgeon"] 
+// removed is ["blue", "trumpet"]
+
+```
+
+* Remove 1 element from index -2
+
+```js 
+
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(-2, 1);
+
+// myFish is ["angel", "clown", "sturgeon"] 
+// removed is ["mandarin"]
+
+
+```
+
+
+
+* Remove all elements after index 2 (incl.)
+
+```js
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2);
+
+// myFish is ["angel", "clown"]
+// removed is ["mandarin", "sturgeon"]
+
+
+```
+
+
+
+**concat()** 
+
+> 더하기 
 
 ```
 1.
@@ -519,260 +803,202 @@ arr.concat([6,7,8,9,10]);
 ```
 
 
-* join() 문자열로 바꾸기 
 
 
 
-```
-var arr = [1,2,3,4,5,6]
+**arr.forEach()**
 
-arr.join() ;
+> `immutable`
 
->>arr
-["1","2","3","4","5","6"]
-문자열로 바꿔준다. 
+> 배열에 길이 만큼 반복 실행하는 용도! 
 
-arr.join("");
+>forEach()는 주어진 callback을 배열에 있는 각 요소에 대해 오름차순으로 한 번씩 실행합니다
 
->>arr
-["123456"];
-문자열 다 붙인다.
-
-```
-
-* indexOf() ()<<원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다. 
-
-```
-var array = [2, 9, 9];
-array.indexOf(2);     // 0
-array.indexOf(7);     // -1
-array.indexOf(9, 2);  // 2
-array.indexOf(2, -1); // -1
-array.indexOf(2, -3); // 0
-
-```
-
-* lastIndexOf() ()<<원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다. 
-
-
-> example
-
-```js
-var anyString = 'Brave new world';
-
-console.log('The index of the first w from the beginning is ' + anyString.indexOf('w'));
-// logs 8
-console.log('The index of the first w from the end is ' + anyString.lastIndexOf('w')); 
-// logs 10
-console.log('The index of "new" from the beginning is ' + anyString.indexOf('new'));
-// logs 6
-console.log('The index of "new" from the end is ' + anyString.lastIndexOf('new'));
-// logs 6
-
-```
-
-* slice() : `immutable`
-
->`tip` 복제할수 있는 기능도 있다.
-
-```
-let obj1 = [1,2,3,4,5,6];
-let obj2 = obj1.slice();
-
->> obj2 = [1,2,3,4,5,6 ];
-
-```
-
-> Return a portion of an existing array
-
-```js
-
-var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
-var citrus = fruits.slice(1, 3);
-
-// fruits contains ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
-// citrus contains ['Orange','Lemon']
-
-```
-
-* splice() : `mutable`
-
-
-
-
-
-
-> Remove 0 (zero) elements from index 2, and insert "drum"
 
 
 ```js
+var array1 = ['a', 'b', 'c'];
 
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(2, 0, 'drum');
+array1.forEach(function(element) {
+  console.log(element);
+});
 
-// myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"] 
-// removed is [], no elements removed
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+
 
 ```
 
-> Remove 0 (zero) elements from index 2, and insert "drum" and "guitar"Section
+
+> 3가지 인자값을 싱행 할수 있다. 
+
+* 요소 값
+* 요소 인덱스
+* 순회 중인 배열
 
 
+```
+function logArrayElements(element, index, array) {
+  console.log('a[' + index + '] = ' + element);
+}
 
-```js 
-
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(2, 0, 'drum', 'guitar');
-
-// myFish is ["angel", "clown", "drum", "guitar", "mandarin", "sturgeon"] 
-// removed is [], no elements removed
+// Notice that index 2 is skipped since there is no item at
+// that position in the array.
+[2, 5, , 9].forEach(logArrayElements);
+// logs:
+// a[0] = 2
+// a[1] = 5
+// a[3] = 9
 
 ```
 
-> Remove 1 element from index 3
+
+**arr.map()**
+
+> `immutable`
+
+> callback 내에서 리턴이 필요하다.
+
+> 기존배열과 길이가 같고 , 형태가 다른 배열을 만들때 유용
+
+
+* 배열에 있는 값 각 각  100으로나누고 싶다?
 
 ```js
 
-var myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(3, 1);
+let arr = [100 ,200 ,500 ];
 
-// removed is ["mandarin"]
-// myFish is ["angel", "clown", "drum", "sturgeon"]
+let newArr = arr.map(function(cur,idx,arr){
+return cur / 100;
+})
+
+>>newArr = [1, 2, 5]
+
 
 ```
-
-
-> Remove 1 element from index 2, and insert "trumpet"
-
-
-```js 
-
-var myFish = ['angel', 'clown', 'drum', 'sturgeon'];
-var removed = myFish.splice(2, 1, 'trumpet');
-
-// myFish is ["angel", "clown", "trumpet", "sturgeon"]
-// removed is ["drum"]
-
-```
-
-
-> Remove 2 elements from index 0, and insert "parrot", "anemone" and "blue"
-
+* 배열 안에있는 것을 다른 형태로 출력 하고 싶다.?(길이)
 
 ```js
 
 
-var myFish = ['angel', 'clown', 'trumpet', 'sturgeon'];
-var removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
+arr2 = ["code","states"];
 
-// myFish is ["parrot", "anemone", "blue", "trumpet", "sturgeon"] 
-// removed is ["angel", "clown"]
+let newArr2 = arr2.map(function(cur){
+	return cur.length
+});
 
-
+>> newArr2 = [4, 6]
 
 ```
 
-> Remove 2 elements from index 2
+**arr.filter()**
+
+> 걸러주는 역활 한다. 
+
+> return 필요
+
+
 
 ```js
 
-var myFish = ['parrot', 'anemone', 'blue', 'trumpet', 'sturgeon'];
-var removed = myFish.splice(2, 2);
+let arr = [1,2,3,4,5,6];
 
-// myFish is ["parrot", "anemone", "sturgeon"] 
-// removed is ["blue", "trumpet"]
+newArr = arr.filter(function(cur,index,arr2){
 
-```
+	return cur < 2;
+})
 
-> Remove 1 element from index -2
 
-```js 
+newArr = [1];
 
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(-2, 1);
-
-// myFish is ["angel", "clown", "sturgeon"] 
-// removed is ["mandarin"]
 
 
 ```
 
 
+**arr.reduce(callback,[,initalValue])**
 
-> Remove all elements after index 2 (incl.)
+>`immutable`
+
+> return value :  최종 누적값
+
+>모든 element 값을 누적해 하나의 결과로 리턴할 때 유용
+
+>The reducer function takes four arguments:
+
+>Accumulator (acc)
+
+>Current Value (cur)
+
+>Current Index (idx)
+
+>Source Array (src)
+
+
+* 배열안에 있는 값을 각 각 더하고 싶을때 ?
 
 ```js
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(2);
+let arr = [1, 2, 3, 4];
 
-// myFish is ["angel", "clown"]
-// removed is ["mandarin", "sturgeon"]
+let count = arr.reduce(function(acc.cur){
+  return acc + cur;
+  // 1 + 2 + 3 + 4
+});
 
+conunt => 10
+
+```
+
+
+
+* 초기값 5 를 넣고 더했을때
+
+```js
+
+let arr = [1, 2, 3, 4];
+
+let count = arr.reduce(function(acc.cur) {
+  return acc + cur;
+  //5 + 1 + 2 + 3 + 4
+},5);
+
+
+count = >> 15
 
 ```
 
 
 
-* split()
-
->문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.
 
 
-```
-var s = "hello, world this is jj";
-s.split("");
+**arr.join(separator)** 
+
+>`immutable`
+
+> 배열의 원소를 결합해서 하나의 문자열로 만든다.
+> 공백이 있는 곳에  요소를 더할수 있다.
 
 
-"h", "e", "l", "l", "o", ",", " ", "w", "o", "r", "l", "d", " ", "t", "h", "i", "s", " ", "i", "s", " ", "j", "j"
-```
+```js
 
-```
+let arr = ["welcome","coding","everybody"];
+arr.join(" ");
+"welcome coding everybody"
 
-var s = "hello, world this is jj";
-s.split(",");
-"hello", " world this is jj"
-콤마가 생겼다. 콤마의 기준으로 갈라진다.
-```
+arr.join(" hi ")
+"welcome hi coding hi everybody"
 
 ```
-var s = "hello world t-h-i-s-i-s-j-j"
-s.split("-");
-
-"hello  world t", "h", "i", "s", "i", "s", "j", "j"
-- 기준으로 갈라진다. 
-```
-
-
-
-* Array.isArray([]) :메서드는 인자가 Array인지 판별합니다.
-
-
-> () 안에 비워 있으면 실행되지 않는다. 
-
->ex
-
-
-```
-Array.isArray([]);  // true
-Array.isArray([1, 2, 3]);  // true
-Array.isArray({foo: 123}); // false
-Array.isArray('foobar');   // false
-Array.isArray(undefined);  // false
-```
-
-
-
-
 ---
 ## **object**
 ---
 
 
 
-
-* Object.keys(객체)  : key 뽑기 into array
-* Object.values(객체) : value 뽑기 into array
-* Object.entries(객체) : 전체 뽑기 into array
+* Object.keys(객체)  : `key` 뽑기 into array
+* Object.values(객체) : `value` 뽑기 into array
+* Object.entries(객체) : `전체`뽑기 into array
 
 
 

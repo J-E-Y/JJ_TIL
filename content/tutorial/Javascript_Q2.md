@@ -190,6 +190,11 @@ function removeOddValues(object) {
 
 ```
 
+
+---
+## week 3
+---
+
 **firstCharacter**
 
 
@@ -297,4 +302,7 @@ function longestWord(string) {
 
 return string.split(' ').reduce((acc,cur)=> acc.length<cur.length? cur:acc);
 }
+
 ```
+
+

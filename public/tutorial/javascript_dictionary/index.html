@@ -27,9 +27,18 @@
   
     
   
-  <meta name="description" content="String  toString() :문자로 바꾸는것   Tip배열에 담겨있는 문자열을 꺼낼때도 사용
-example
- arr = [&quot;this is john&quot;]; //이문자를 꺼내기 위해서는 toString(); let words = arr.toString(); &gt;words &gt; &quot;this is john&quot; function getAllWords(str) { // your code here // toString 를 사용해 배열에 있는 문자를 꺼내서 새로운 변수에 담는다 // 변수에 담긴 문자를 나누는 메소드를 사용해 새로운 변수에 또 담는다. // 변수를 출력한다. if ( str === &quot;&quot; ) { let arr = []; return arr; } else { let words = str.">
+  <meta name="description" content="String str[index]
+immutable
+ 1.글자 하나하나 가져오기
+ index로 접근은 가능하지만 쓸 수는 없음 (read-only)
+  연산자를 쓸수 있음.  length 쓸수 있음.
+   let str = &#39;CodeStates&#39;; str[0]; &gt;&gt; &#39;C&#39; but str[0] = &#39;G&#39; &gt;&gt; 바뀌지 않음. str = &#39;Codestates&#39;  str..toUpperCase()
+immutable
+ 소문자를 대문자로 바꿈
+ let str = &#39;CodeStates&#39;; str.toUpperCase(); &gt;&gt;&quot;CODESTATES  str.toLowerCase()
+immutable
+ 대문자 소문자 바꿈
+  let str = &quot;CodeStates&quot;; str.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_dictionary/">
@@ -117,10 +126,19 @@ example
   
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_dictionary/">
-  <meta property="og:title" content="JS My_Dictionary | Home">
-  <meta property="og:description" content="String  toString() :문자로 바꾸는것   Tip배열에 담겨있는 문자열을 꺼낼때도 사용
-example
- arr = [&quot;this is john&quot;]; //이문자를 꺼내기 위해서는 toString(); let words = arr.toString(); &gt;words &gt; &quot;this is john&quot; function getAllWords(str) { // your code here // toString 를 사용해 배열에 있는 문자를 꺼내서 새로운 변수에 담는다 // 변수에 담긴 문자를 나누는 메소드를 사용해 새로운 변수에 또 담는다. // 변수를 출력한다. if ( str === &quot;&quot; ) { let arr = []; return arr; } else { let words = str."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:title" content="1.My_dictionary | Home">
+  <meta property="og:description" content="String str[index]
+immutable
+ 1.글자 하나하나 가져오기
+ index로 접근은 가능하지만 쓸 수는 없음 (read-only)
+  연산자를 쓸수 있음.  length 쓸수 있음.
+   let str = &#39;CodeStates&#39;; str[0]; &gt;&gt; &#39;C&#39; but str[0] = &#39;G&#39; &gt;&gt; 바뀌지 않음. str = &#39;Codestates&#39;  str..toUpperCase()
+immutable
+ 소문자를 대문자로 바꿈
+ let str = &#39;CodeStates&#39;; str.toUpperCase(); &gt;&gt;&quot;CODESTATES  str.toLowerCase()
+immutable
+ 대문자 소문자 바꿈
+  let str = &quot;CodeStates&quot;; str."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -132,7 +150,7 @@ example
 
   
 
-  <title>JS My_Dictionary | Home</title>
+  <title>1.My_dictionary | Home</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -277,7 +295,7 @@ example
     <ul class="nav docs-sidenav">
       
       <li class="active">
-        <a href="/tutorial/javascript_dictionary/">JS My_Dictionary</a>
+        <a href="/tutorial/javascript_dictionary/">1.My_dictionary</a>
       </li>
       
       <li >
@@ -338,6 +356,7 @@ example
 <ul>
 <li><a href="#string"><strong>String</strong></a></li>
 <li><a href="#number"><strong>Number</strong></a></li>
+<li><a href="#math-method"><strong>Math_method</strong></a></li>
 <li><a href="#array"><strong>Array</strong></a></li>
 <li><a href="#object"><strong>object</strong></a></li>
 </ul></li>
@@ -357,7 +376,7 @@ example
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">JS My_Dictionary</h1>
+          <h1 itemprop="name">1.My_dictionary</h1>
 
           <div class="article-style" itemprop="articleBody">
             
@@ -368,14 +387,82 @@ example
 
 <hr />
 
-<ul>
-<li>toString() :문자로 바꾸는것</li>
-</ul>
+<p><strong>str[index]</strong></p>
+
+<p><code>immutable</code></p>
 
 <blockquote>
-<p><code>Tip</code>배열에 담겨있는 문자열을 꺼낼때도 사용</p>
+<p>1.글자 하나하나 가져오기</p>
 
-<p>example</p>
+<ol>
+<li><p>index로 접근은 가능하지만 쓸 수는 없음 (read-only)</p></li>
+
+<li><ul>
+<li>연산자를 쓸수 있음.</li>
+</ul></li>
+
+<li><p>length 쓸수 있음.</p></li>
+</ol>
+</blockquote>
+
+<pre><code>let str = 'CodeStates';
+
+str[0]; &gt;&gt; 'C'
+
+but
+
+str[0] = 'G' &gt;&gt; 바뀌지 않음.
+
+str = 'Codestates'
+ 
+</code></pre>
+
+<p><strong>str..toUpperCase()</strong></p>
+
+<p><code>immutable</code></p>
+
+<blockquote>
+<p>소문자를 대문자로 바꿈</p>
+</blockquote>
+
+<pre><code>let str = 'CodeStates';
+
+str.toUpperCase(); &gt;&gt;&quot;CODESTATES
+
+</code></pre>
+
+<p><strong>str.toLowerCase()</strong></p>
+
+<p><code>immutable</code></p>
+
+<blockquote>
+<p>대문자 소문자 바꿈</p>
+</blockquote>
+
+<pre><code>
+let str = &quot;CodeStates&quot;;
+
+str.toLowerCase()
+
+</code></pre>
+
+<p><strong>num.toString()</strong></p>
+
+<blockquote>
+<p>1.숫자를 문자로 바꾸는것</p>
+</blockquote>
+
+<pre><code class="language-js">
+let num = 10;
+
+num.toString();    
+
+&gt;&gt; '10'
+
+</code></pre>
+
+<blockquote>
+<p>2.<code>Tip</code>배열에 담겨있는 문자열을 꺼낼때도 사용</p>
 </blockquote>
 
 <pre><code class="language-js">arr = [&quot;this is john&quot;]; //이문자를 꺼내기 위해서는 toString();
@@ -404,16 +491,12 @@ function getAllWords(str) {
 
 </code></pre>
 
-<ul>
-<li>String() :문자로 바꾸는것</li>
-</ul>
+<p><strong>String(obj)</strong></p>
 
 <blockquote>
-<p>String(object)</p>
+<p>숫자를 문자로 바꾸는것</p>
 
 <p>String, 이 함수는 변환하려는 객체의 toString() 메소드를 사용하는 것과 동일함</p>
-
-<p>ex</p>
 </blockquote>
 
 <pre><code class="language-js">var t = [1,2,3];
@@ -424,41 +507,38 @@ console.log(String(t));
 
 </code></pre>
 
-<ul>
-<li><p>str[index] 읽어서 찾아주는것 :immutable</p>
+<p><strong>str.split()</strong></p>
 
-<pre><code>let str = 'CodeStates';
+<blockquote>
+<p>문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.</p>
+</blockquote>
 
-str[0]; &gt;&gt; 'C'
+<pre><code>var s = &quot;hello, world this is jj&quot;;
+s.split(&quot;&quot;);
 
-but
 
-str[0] = 'G' &gt;&gt; 바뀌지 않음.
-
-str = 'Codestates'
- 
-Note: index로 접근은 가능하지만 쓸수는 없음 (read-only);
-
-</code></pre></li>
-
-<li><p>toUpperCase() 소문자 대문자 바꿈:immutable</p>
-
-<pre><code>let str = 'CodeStates';
-
-str.toUpperCase(); &gt;&gt;&quot;CODESTATES
-
-</code></pre></li>
-
-<li><p>toLowerCase() 대문자 소문자 바꿈:immutable</p>
+&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;, &quot;,&quot;, &quot; &quot;, &quot;w&quot;, &quot;o&quot;, &quot;r&quot;, &quot;l&quot;, &quot;d&quot;, &quot; &quot;, &quot;t&quot;, &quot;h&quot;, &quot;i&quot;, &quot;s&quot;, &quot; &quot;, &quot;i&quot;, &quot;s&quot;, &quot; &quot;, &quot;j&quot;, &quot;j&quot;
+</code></pre>
 
 <pre><code>
-let str = &quot;CodeStates&quot;;
+var s = &quot;hello, world this is jj&quot;;
+s.split(&quot;,&quot;);
+&quot;hello&quot;, &quot; world this is jj&quot;
+콤마가 생겼다. 콤마의 기준으로 갈라진다.
+</code></pre>
 
-str.toLowerCase()
+<pre><code>var s = &quot;hello world t-h-i-s-i-s-j-j&quot;
+s.split(&quot;-&quot;);
 
-</code></pre></li>
+&quot;hello  world t&quot;, &quot;h&quot;, &quot;i&quot;, &quot;s&quot;, &quot;i&quot;, &quot;s&quot;, &quot;j&quot;, &quot;j&quot;
+- 기준으로 갈라진다. 
+</code></pre>
 
-<li><p>str.indexOf(serchValue); 찾기</p>
+<p><strong>str.indexOf(serchValue)</strong></p>
+
+<blockquote>
+<p>찾기</p>
+</blockquote>
 
 <pre><code>
 &quot;Blue Whale&quot;indexOf(&quot;Blue&quot;); &gt;&gt;0
@@ -468,26 +548,26 @@ str.toLowerCase()
 
 &quot;canal&quot;.lastIndexOf(&quot;a&quot;) &gt;&gt; 3
 
-</code></pre></li>
+</code></pre>
 
-<li><p>string.repeat(숫자입력) 반복하는것</p></li>
+<ul>
+<li>str.repeat(숫자입력) 반복하는것</li>
 </ul>
 
 <blockquote>
-<p>ex</p>
 </blockquote>
 
-<pre><code>let chorus = 'Because I'm happy';
+<pre><code>let str = 'Because I'm happy';
 
 console.log('Chorus lyrics for &quot;Happy&quot;: ' + chorus.repeat(27));
 
 </code></pre>
 
-<ul>
-<li>charAt(index) :인덱스에 있는 값을 리턴한다.</li>
-</ul>
+<p><strong>strcharAt(index)</strong></p>
 
 <blockquote>
+<p>인덱스에 있는 값을 리턴한다.</p>
+
 <p>ex</p>
 </blockquote>
 
@@ -498,28 +578,136 @@ alert(stringName.charAt(1000) == ''); // true
 
 </code></pre>
 
+<hr />
+
+<h2 id="number"><strong>Number</strong></h2>
+
+<hr />
+
 <ul>
-<li>sort() : 배열 정렬할때</li>
+<li>parseInt() 숫자로 바꾸는것</li>
 </ul>
+
+<hr />
+
+<h2 id="math-method"><strong>Math_method</strong></h2>
+
+<hr />
+
+<p><strong>Math.max()</strong>
+<strong>Math.min()</strong></p>
+
+<blockquote>
+<p>큰수,작은수 가져오기</p>
+
+<p>EX 큰수 가져오기</p>
+</blockquote>
+
+<pre><code class="language-js">
+Math.max(10, 20);   //  20
+Math.max(-10, -20); // -10
+Math.max(-10, 20);  //  20
+</code></pre>
+
+<blockquote>
+<p>reduce 사용해서 큰수 가져오기</p>
+</blockquote>
+
+<pre><code class="language-js">
+var arr = [1,2,3];
+var max = arr.reduce(function(a, b) {
+    return Math.max(a, b);
+});
+</code></pre>
+
+<blockquote>
+<p>spread operator  사용해서 큰수 가져오기</p>
+</blockquote>
+
+<pre><code class="language-js">
+var arr = [1, 2, 3];
+var max = Math.max(...arr);
+
+</code></pre>
+
+<hr />
+
+<h2 id="array"><strong>Array</strong></h2>
+
+<hr />
+
+<p><strong>Array.isArray()</strong></p>
+
+<blockquote>
+<p>메서드는 인자가 Array인지 판별합니다.</p>
+
+<p>() 안에 비워 있으면 실행되지 않는다.</p>
+</blockquote>
+
+<pre><code>Array.isArray([]);  // true
+Array.isArray([1, 2, 3]);  // true
+Array.isArray({foo: 123}); // false
+Array.isArray('foobar');   // false
+Array.isArray(undefined);  // false
+</code></pre>
+
+<p><strong>arr.indexOf(seachElement)</strong></p>
+
+<blockquote>
+<p><code>immutable</code></p>
+
+<p>str.indexOf 랑 똑같다.</p>
+
+<p>element 존재 확인 할때 유용</p>
+
+<p>발견되지 않으면 -1  표시</p>
+
+<p>()&lt;&lt;원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다.
+비슷한 목적을 가진 메소드로는 includes,find가 있음</p>
+</blockquote>
+
+<pre><code class="language-js">
+var array = [2, 9, 9];
+array.indexOf(2);     // 0
+array.indexOf(7);     // -1
+array.indexOf(9, 2);  // 2
+array.indexOf(2, -1); // -1
+array.indexOf(2, -3); // 0
+
+</code></pre>
+
+<p><strong>arr.lastIndexOf(seachElement)</strong></p>
+
+<blockquote>
+<p>()&lt;&lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.</p>
+</blockquote>
+
+<pre><code class="language-js">var anyString = 'Brave new world';
+
+console.log('The index of the first w from the beginning is ' + anyString.indexOf('w'));
+// logs 8
+console.log('The index of the first w from the end is ' + anyString.lastIndexOf('w')); 
+// logs 10
+console.log('The index of &quot;new&quot; from the beginning is ' + anyString.indexOf('new'));
+// logs 6
+console.log('The index of &quot;new&quot; from the end is ' + anyString.lastIndexOf('new'));
+// logs 6
+
+</code></pre>
+
+<p><strong>arr.sort(sortfunc)</strong></p>
 
 <blockquote>
 <p><code>mutable</code></p>
 
-<p>Description</p>
-</blockquote>
+<p>1.배열을 정렬한다.</p>
 
-<pre><code>
-1.배열을 정렬한다.
+<p>2.알파벳 순서로 정렬한다.</p>
 
-2.알파벳 순서로 정렬한다.
+<p>3.숫자의 경우 암시적으로 문자열로 형변환 하기 때문에 숫자 1이 숫자 10보다 먼저 나온다.</p>
 
-3.숫자의 경우 암시적으로 문자열로 형변환 하기 때문에 숫자 1이 숫자 10보다 먼저 나온다.
+<p>4.sortfunc 로 비교 대상인 두개의 인자를 전달하는데, 리턴 값에 따라서 선후를 판단한다.</p>
 
-4.sortfunc 로 비교 대상인 두개의 인자를 전달하는데, 리턴 값에 따라서 선후를 판단한다.
-
-</code></pre>
-
-<blockquote>
 <p>Example 1</p>
 </blockquote>
 
@@ -690,108 +878,39 @@ return a - b;
 
 </code></pre>
 
-<hr />
+<p><strong>arr.push(newElement)</strong></p>
 
-<h2 id="number"><strong>Number</strong></h2>
+<blockquote>
+<p><code>mutable</code></p>
 
-<hr />
-
-<ul>
-<li>parseInt() 숫자로 바꾸는것</li>
-</ul>
-
-<hr />
-
-<h2 id="array"><strong>Array</strong></h2>
-
-<hr />
-
-<ul>
-<li><p>making array</p>
-
-<pre><code>1.
-let arr = [1, 2, 3, 4];
-
-2.
-
-let arr = [];
-arr[0] = 2;
-arr[1] = 4;
-
-
-</code></pre></li>
-
-<li><p>reading array</p>
-
-<pre><code>
-let arr = [1, 2, 3, 4];
-
-arr[0]; 
-
-&gt; 1
-
-
-arr[3];
-
-&gt; 4
-
-</code></pre></li>
-
-<li><p>writing</p>
-
-<pre><code>let arr = [1, 2, 3, 4];
-
-arr[0] = 2;
-
-&gt; [2,2,3,4]; 
-
-scores[9] = 50;
-
-인덱스가 없다면 마지막에 붙는다 
-&gt;  [1, 2, 3, 4 ,50]
-</code></pre></li>
-
-<li><p>Get the length from arr</p>
-
-<pre><code>let arr = [1, 2, 3, 4];
-arr.length;
-&gt; 4
-
-</code></pre></li>
-
-<li><p>Get the last item in an array</p>
-
-<pre><code>let arr = [1, 2, 3, 4] ;
-
-* First
-arr[arr.length - 1] ;
-
-
-* Second
-arr.slice(-1);
-
-* Third
-arr.slice(-1).pop();
-
-</code></pre></li>
-
-<li><p>push() 뒤어 붙이기</p>
+<p>마지막 배열에 추가</p>
+</blockquote>
 
 <pre><code>var arr = [1,2,3,4,];
 arr.push(1);
 
 arr; // = &gt; [1,2,3,4,1]
-</code></pre></li>
+</code></pre>
 
-<li><p>pop() 뒤에 있는거 빼기</p>
+<p><strong>arr.pop()</strong></p>
 
-<pre><code>var arr = [1,2,3,4,];
+<blockquote>
+<p><code>mutable</code></p>
+
+<p>뒤에 있는배열 제거</p>
+</blockquote>
+
+<pre><code class="language-js">var arr = [1,2,3,4,];
 arr.pop();
 
 arr; // = &gt; [1,2,3]
-</code></pre></li>
+</code></pre>
 
-<li><p>unshift()  앞에 붙이기</p>
+<p><strong>arr.unshift()</strong></p>
+
+<blockquote>
+<p>앞에 붙이기</p>
+</blockquote>
 
 <pre><code>var arr = [1,2,3,4];
 
@@ -799,9 +918,13 @@ arr.unshift(1);
 
 arr; // = &gt; [1,1,2,3,4,];
 
-</code></pre></li>
+</code></pre>
 
-<li><p>shift()  앞에 있는거 빼기</p>
+<p><strong>arr.shift()</strong></p>
+
+<blockquote>
+<p>앞에 있는거 빼기</p>
+</blockquote>
 
 <pre><code>var arr = [1,2,3,4];
 
@@ -809,9 +932,172 @@ arr.shift();
 
 arr; // = &gt; [2,3,4,]
 
-</code></pre></li>
+</code></pre>
 
-<li><p>concat() 더하기</p>
+<p><strong>arr.slice(bein,end)</strong></p>
+
+<blockquote>
+<p><code>immutable</code>
+문자열의 특정구간을 검색</p>
+</blockquote>
+
+<ul>
+<li><code>tip</code> 복제할수 있는 기능도 있다.</li>
+</ul>
+
+<pre><code class="language-js">let obj1 = [1,2,3,4,5,6];
+let obj2 = obj1.slice();
+
+&gt;&gt; obj2 = [1,2,3,4,5,6 ];
+
+</code></pre>
+
+<ul>
+<li>2번째 인덱스 부터 가져온다</li>
+</ul>
+
+<pre><code class="language-js">var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
+var myFruits = fruits.slice(2);
+
+myFruits = [&quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;]
+
+
+</code></pre>
+
+<ul>
+<li>Return a portion of an existing array</li>
+</ul>
+
+<pre><code class="language-js">
+var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
+var citrus = fruits.slice(1, 3);
+
+// fruits contains ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
+// citrus contains ['Orange','Lemon']
+
+</code></pre>
+
+<p><strong>arr.splice(start,deleteCount,&ldquo;itme1&rdquo;,&hellip;&ldquo;)</strong></p>
+
+<blockquote>
+<p><code>mutable</code></p>
+
+<p>중간에 element 를 삭제 할수 있는 방법이 이거뿐</p>
+</blockquote>
+
+<ul>
+<li>Remove 0 (zero) elements from index 2, and insert &ldquo;drum&rdquo;</li>
+</ul>
+
+<pre><code class="language-js">
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2, 0, 'drum');
+
+// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;mandarin&quot;, &quot;sturgeon&quot;] 
+// removed is [], no elements removed
+
+</code></pre>
+
+<ul>
+<li>Remove 0 (zero) elements from index 2, and insert &ldquo;drum&rdquo; and &ldquo;guitar&rdquo;Section</li>
+</ul>
+
+<pre><code class="language-js">
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2, 0, 'drum', 'guitar');
+
+// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;guitar&quot;, &quot;mandarin&quot;, &quot;sturgeon&quot;] 
+// removed is [], no elements removed
+
+</code></pre>
+
+<ul>
+<li>Remove 1 element from index 3</li>
+</ul>
+
+<pre><code class="language-js">
+var myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(3, 1);
+
+// removed is [&quot;mandarin&quot;]
+// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;sturgeon&quot;]
+
+</code></pre>
+
+<ul>
+<li>Remove 1 element from index 2, and insert &ldquo;trumpet&rdquo;</li>
+</ul>
+
+<pre><code class="language-js">
+var myFish = ['angel', 'clown', 'drum', 'sturgeon'];
+var removed = myFish.splice(2, 1, 'trumpet');
+
+// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;trumpet&quot;, &quot;sturgeon&quot;]
+// removed is [&quot;drum&quot;]
+
+</code></pre>
+
+<ul>
+<li>Remove 2 elements from index 0, and insert &ldquo;parrot&rdquo;, &ldquo;anemone&rdquo; and &ldquo;blue&rdquo;</li>
+</ul>
+
+<pre><code class="language-js">
+
+var myFish = ['angel', 'clown', 'trumpet', 'sturgeon'];
+var removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
+
+// myFish is [&quot;parrot&quot;, &quot;anemone&quot;, &quot;blue&quot;, &quot;trumpet&quot;, &quot;sturgeon&quot;] 
+// removed is [&quot;angel&quot;, &quot;clown&quot;]
+
+
+
+</code></pre>
+
+<ul>
+<li>Remove 2 elements from index 2</li>
+</ul>
+
+<pre><code class="language-js">
+var myFish = ['parrot', 'anemone', 'blue', 'trumpet', 'sturgeon'];
+var removed = myFish.splice(2, 2);
+
+// myFish is [&quot;parrot&quot;, &quot;anemone&quot;, &quot;sturgeon&quot;] 
+// removed is [&quot;blue&quot;, &quot;trumpet&quot;]
+
+</code></pre>
+
+<ul>
+<li>Remove 1 element from index -2</li>
+</ul>
+
+<pre><code class="language-js">
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(-2, 1);
+
+// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;sturgeon&quot;] 
+// removed is [&quot;mandarin&quot;]
+
+
+</code></pre>
+
+<ul>
+<li>Remove all elements after index 2 (incl.)</li>
+</ul>
+
+<pre><code class="language-js">var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2);
+
+// myFish is [&quot;angel&quot;, &quot;clown&quot;]
+// removed is [&quot;mandarin&quot;, &quot;sturgeon&quot;]
+
+
+</code></pre>
+
+<p><strong>concat()</strong></p>
+
+<blockquote>
+<p>더하기</p>
+</blockquote>
 
 <pre><code>1.
 
@@ -851,241 +1137,190 @@ arr.concat([6,7,8,9,10]);
 [1,2,3,4,5,6,7,8,9,10] 
 여러게를 더할수 있다.
 
+</code></pre>
+
+<p><strong>arr.forEach()</strong></p>
+
+<blockquote>
+<p><code>immutable</code></p>
+
+<p>배열에 길이 만큼 반복 실행하는 용도!</p>
+
+<p>forEach()는 주어진 callback을 배열에 있는 각 요소에 대해 오름차순으로 한 번씩 실행합니다</p>
+</blockquote>
+
+<pre><code class="language-js">var array1 = ['a', 'b', 'c'];
+
+array1.forEach(function(element) {
+  console.log(element);
+});
+
+// expected output: &quot;a&quot;
+// expected output: &quot;b&quot;
+// expected output: &quot;c&quot;
+
+
+</code></pre>
+
+<blockquote>
+<p>3가지 인자값을 싱행 할수 있다.</p>
+</blockquote>
+
+<ul>
+<li>요소 값</li>
+<li>요소 인덱스</li>
+
+<li><p>순회 중인 배열</p>
+
+<pre><code>function logArrayElements(element, index, array) {
+console.log('a[' + index + '] = ' + element);
+}
+
+// Notice that index 2 is skipped since there is no item at
+// that position in the array.
+[2, 5, , 9].forEach(logArrayElements);
+// logs:
+// a[0] = 2
+// a[1] = 5
+// a[3] = 9
+
 </code></pre></li>
-
-<li><p>join() 문자열로 바꾸기</p>
-
-<pre><code>var arr = [1,2,3,4,5,6]
-
-arr.join() ;
-
-&gt;&gt;arr
-[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;]
-문자열로 바꿔준다. 
-
-arr.join(&quot;&quot;);
-
-&gt;&gt;arr
-[&quot;123456&quot;];
-문자열 다 붙인다.
-
-</code></pre></li>
-
-<li><p>indexOf() ()&lt;&lt;원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다.</p>
-
-<pre><code>var array = [2, 9, 9];
-array.indexOf(2);     // 0
-array.indexOf(7);     // -1
-array.indexOf(9, 2);  // 2
-array.indexOf(2, -1); // -1
-array.indexOf(2, -3); // 0
-
-</code></pre></li>
-
-<li><p>lastIndexOf() ()&lt;&lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.</p></li>
 </ul>
 
+<p><strong>arr.map()</strong></p>
+
 <blockquote>
-<p>example</p>
+<p><code>immutable</code></p>
+
+<p>callback 내에서 리턴이 필요하다.</p>
+
+<p>기존배열과 길이가 같고 , 형태가 다른 배열을 만들때 유용</p>
 </blockquote>
-
-<pre><code class="language-js">var anyString = 'Brave new world';
-
-console.log('The index of the first w from the beginning is ' + anyString.indexOf('w'));
-// logs 8
-console.log('The index of the first w from the end is ' + anyString.lastIndexOf('w')); 
-// logs 10
-console.log('The index of &quot;new&quot; from the beginning is ' + anyString.indexOf('new'));
-// logs 6
-console.log('The index of &quot;new&quot; from the end is ' + anyString.lastIndexOf('new'));
-// logs 6
-
-</code></pre>
 
 <ul>
-<li>slice() : <code>immutable</code></li>
+<li>배열에 있는 값 각 각  100으로나누고 싶다?</li>
 </ul>
 
-<blockquote>
-<p><code>tip</code> 복제할수 있는 기능도 있다.</p>
-</blockquote>
-
-<pre><code>let obj1 = [1,2,3,4,5,6];
-let obj2 = obj1.slice();
-
-&gt;&gt; obj2 = [1,2,3,4,5,6 ];
-
-</code></pre>
-
-<blockquote>
-<p>Return a portion of an existing array</p>
-</blockquote>
-
 <pre><code class="language-js">
-var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
-var citrus = fruits.slice(1, 3);
+let arr = [100 ,200 ,500 ];
 
-// fruits contains ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
-// citrus contains ['Orange','Lemon']
+let newArr = arr.map(function(cur,idx,arr){
+return cur / 100;
+})
 
-</code></pre>
-
-<ul>
-<li>splice() : <code>mutable</code></li>
-</ul>
-
-<blockquote>
-<p>Remove 0 (zero) elements from index 2, and insert &ldquo;drum&rdquo;</p>
-</blockquote>
-
-<pre><code class="language-js">
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(2, 0, 'drum');
-
-// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;mandarin&quot;, &quot;sturgeon&quot;] 
-// removed is [], no elements removed
-
-</code></pre>
-
-<blockquote>
-<p>Remove 0 (zero) elements from index 2, and insert &ldquo;drum&rdquo; and &ldquo;guitar&rdquo;Section</p>
-</blockquote>
-
-<pre><code class="language-js">
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(2, 0, 'drum', 'guitar');
-
-// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;guitar&quot;, &quot;mandarin&quot;, &quot;sturgeon&quot;] 
-// removed is [], no elements removed
-
-</code></pre>
-
-<blockquote>
-<p>Remove 1 element from index 3</p>
-</blockquote>
-
-<pre><code class="language-js">
-var myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(3, 1);
-
-// removed is [&quot;mandarin&quot;]
-// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;sturgeon&quot;]
-
-</code></pre>
-
-<blockquote>
-<p>Remove 1 element from index 2, and insert &ldquo;trumpet&rdquo;</p>
-</blockquote>
-
-<pre><code class="language-js">
-var myFish = ['angel', 'clown', 'drum', 'sturgeon'];
-var removed = myFish.splice(2, 1, 'trumpet');
-
-// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;trumpet&quot;, &quot;sturgeon&quot;]
-// removed is [&quot;drum&quot;]
-
-</code></pre>
-
-<blockquote>
-<p>Remove 2 elements from index 0, and insert &ldquo;parrot&rdquo;, &ldquo;anemone&rdquo; and &ldquo;blue&rdquo;</p>
-</blockquote>
-
-<pre><code class="language-js">
-
-var myFish = ['angel', 'clown', 'trumpet', 'sturgeon'];
-var removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
-
-// myFish is [&quot;parrot&quot;, &quot;anemone&quot;, &quot;blue&quot;, &quot;trumpet&quot;, &quot;sturgeon&quot;] 
-// removed is [&quot;angel&quot;, &quot;clown&quot;]
-
-
-
-</code></pre>
-
-<blockquote>
-<p>Remove 2 elements from index 2</p>
-</blockquote>
-
-<pre><code class="language-js">
-var myFish = ['parrot', 'anemone', 'blue', 'trumpet', 'sturgeon'];
-var removed = myFish.splice(2, 2);
-
-// myFish is [&quot;parrot&quot;, &quot;anemone&quot;, &quot;sturgeon&quot;] 
-// removed is [&quot;blue&quot;, &quot;trumpet&quot;]
-
-</code></pre>
-
-<blockquote>
-<p>Remove 1 element from index -2</p>
-</blockquote>
-
-<pre><code class="language-js">
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(-2, 1);
-
-// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;sturgeon&quot;] 
-// removed is [&quot;mandarin&quot;]
-
-
-</code></pre>
-
-<blockquote>
-<p>Remove all elements after index 2 (incl.)</p>
-</blockquote>
-
-<pre><code class="language-js">var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(2);
-
-// myFish is [&quot;angel&quot;, &quot;clown&quot;]
-// removed is [&quot;mandarin&quot;, &quot;sturgeon&quot;]
+&gt;&gt;newArr = [1, 2, 5]
 
 
 </code></pre>
 
 <ul>
-<li>split()</li>
+<li>배열 안에있는 것을 다른 형태로 출력 하고 싶다.?(길이)</li>
 </ul>
 
+<pre><code class="language-js">
+
+arr2 = [&quot;code&quot;,&quot;states&quot;];
+
+let newArr2 = arr2.map(function(cur){
+	return cur.length
+});
+
+&gt;&gt; newArr2 = [4, 6]
+
+</code></pre>
+
+<p><strong>arr.filter()</strong></p>
+
 <blockquote>
-<p>문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.</p>
+<p>걸러주는 역활 한다.</p>
+
+<p>return 필요</p>
 </blockquote>
 
-<pre><code>var s = &quot;hello, world this is jj&quot;;
-s.split(&quot;&quot;);
+<pre><code class="language-js">
+let arr = [1,2,3,4,5,6];
+
+newArr = arr.filter(function(cur,index,arr2){
+
+	return cur &lt; 2;
+})
 
 
-&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;, &quot;,&quot;, &quot; &quot;, &quot;w&quot;, &quot;o&quot;, &quot;r&quot;, &quot;l&quot;, &quot;d&quot;, &quot; &quot;, &quot;t&quot;, &quot;h&quot;, &quot;i&quot;, &quot;s&quot;, &quot; &quot;, &quot;i&quot;, &quot;s&quot;, &quot; &quot;, &quot;j&quot;, &quot;j&quot;
+newArr = [1];
+
+
+
 </code></pre>
 
-<pre><code>
-var s = &quot;hello, world this is jj&quot;;
-s.split(&quot;,&quot;);
-&quot;hello&quot;, &quot; world this is jj&quot;
-콤마가 생겼다. 콤마의 기준으로 갈라진다.
-</code></pre>
+<p><strong>arr.reduce(callback,[,initalValue])</strong></p>
 
-<pre><code>var s = &quot;hello world t-h-i-s-i-s-j-j&quot;
-s.split(&quot;-&quot;);
+<blockquote>
+<p><code>immutable</code></p>
 
-&quot;hello  world t&quot;, &quot;h&quot;, &quot;i&quot;, &quot;s&quot;, &quot;i&quot;, &quot;s&quot;, &quot;j&quot;, &quot;j&quot;
-- 기준으로 갈라진다. 
+<p>return value :  최종 누적값</p>
+
+<p>모든 element 값을 누적해 하나의 결과로 리턴할 때 유용</p>
+
+<p>The reducer function takes four arguments:</p>
+
+<p>Accumulator (acc)</p>
+
+<p>Current Value (cur)</p>
+
+<p>Current Index (idx)</p>
+
+<p>Source Array (src)</p>
+</blockquote>
+
+<ul>
+<li>배열안에 있는 값을 각 각 더하고 싶을때 ?</li>
+</ul>
+
+<pre><code class="language-js">let arr = [1, 2, 3, 4];
+
+let count = arr.reduce(function(acc.cur){
+  return acc + cur;
+  // 1 + 2 + 3 + 4
+});
+
+conunt =&gt; 10
+
 </code></pre>
 
 <ul>
-<li>Array.isArray([]) :메서드는 인자가 Array인지 판별합니다.</li>
+<li>초기값 5 를 넣고 더했을때</li>
 </ul>
 
-<blockquote>
-<p>() 안에 비워 있으면 실행되지 않는다.</p>
+<pre><code class="language-js">
+let arr = [1, 2, 3, 4];
 
-<p>ex</p>
+let count = arr.reduce(function(acc.cur) {
+  return acc + cur;
+  //5 + 1 + 2 + 3 + 4
+},5);
+
+
+count = &gt;&gt; 15
+
+</code></pre>
+
+<p><strong>arr.join(separator)</strong></p>
+
+<blockquote>
+<p><code>immutable</code></p>
+
+<p>배열의 원소를 결합해서 하나의 문자열로 만든다.
+공백이 있는 곳에  요소를 더할수 있다.</p>
 </blockquote>
 
-<pre><code>Array.isArray([]);  // true
-Array.isArray([1, 2, 3]);  // true
-Array.isArray({foo: 123}); // false
-Array.isArray('foobar');   // false
-Array.isArray(undefined);  // false
+<pre><code class="language-js">
+let arr = [&quot;welcome&quot;,&quot;coding&quot;,&quot;everybody&quot;];
+arr.join(&quot; &quot;);
+&quot;welcome coding everybody&quot;
+
+arr.join(&quot; hi &quot;)
+&quot;welcome hi coding hi everybody&quot;
+
 </code></pre>
 
 <hr />
@@ -1095,10 +1330,10 @@ Array.isArray(undefined);  // false
 <hr />
 
 <ul>
-<li>Object.keys(객체)  : key 뽑기 into array</li>
-<li>Object.values(객체) : value 뽑기 into array</li>
+<li>Object.keys(객체)  : <code>key</code> 뽑기 into array</li>
+<li>Object.values(객체) : <code>value</code> 뽑기 into array</li>
 
-<li><p>Object.entries(객체) : 전체 뽑기 into array</p>
+<li><p>Object.entries(객체) : <code>전체</code>뽑기 into array</p>
 
 <pre><code>let user = {
 name: &quot;John&quot;,

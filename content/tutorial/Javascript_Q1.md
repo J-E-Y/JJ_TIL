@@ -1619,6 +1619,33 @@ function addToBackOfNew(arr, element) {
 ```
 
 
+**16_joinArrayOfArrays**
+
+>Write a function called "joinArrayOfArrays". ("joinArrayOfArrays" 함수를 작성하세요.)
+
+>Given an array of arrays, "joinArrayOfArrays" returns a single array containing the elements of the nested arrays. (배열들의 배열이 주어졌을때, "joinArrayOfArrays" 함수는 배열들의 요소를 모두 담고 있는 단일 배열을 반환합니다.)
+
+
+> it is used by reduce and concat
+
+```js
+
+function joinArrayOfArrays(arr) {
+
+  output = arr.reduce(function(acc,cur) {
+    return acc.concat(cur); 
+    })
+    return output;
+  }
+
+
+```
+
+
+* My_Soultion 
+
+
+
 
 **18_getAllLetters**
 
@@ -1742,6 +1769,307 @@ function keep(array, keeper) {
 }
 
 ```
+
+**23_findSmallestElement**
+
+
+> Write a function called "findSmallestElement". ("findSmallestElement" 함수를 작성하세요.)
+
+>Given an array of numbers, "findSmallestElement" returns the smallest number within the given array. (숫자의 배열이 주어졌을때, "findSmallestElement" 함수는 주어진 배열에서 가장 작은 수를 반환합니다.)
+
+
+
+* My_solution
+
+
+* It is used by sort();
+
+```js
+
+
+
+function findSmallestElement(arr) {
+
+  만약 arr 비워있다면 빈배열 리턴
+  메소드 slice()이용해 복사 
+  복사한 배열을 sort()를 이용해 작은숫자가 앞으로 올수 있도록 정렬
+  0번째 있는 요소 출력
+
+
+  if ( arr.length === 0 ){ 
+    return 0;
+  }
+  let newArr = arr.slice();
+  let sortArr = function(a,b) {
+    return a-b;
+  }
+  newArr.sort(sortArr); 
+  return newArr[0];
+}
+
+```
+
+> It is used by reudce and if 
+
+
+```js
+
+function findSmallestElement(arr) {
+  if (arr.length < 1) {  // satisfies Notes requirement
+    return 0;
+  }
+  var newNum = arr[0];  // create number placeholder (start with first number of array)
+  for (let i in arr) {  // iterate thru array
+    if (arr[i] < newNum) {  // if element is larger than current placeholder number
+      newNum = arr[i];  // make that element the new placeholder number
+    }
+  }
+  return newNum;
+}
+
+```
+
+> 2.It is used by reudce and if ????? 
+
+```js
+
+function findSmallestElement(arr) {
+  
+  if(arr.length === 0) {
+    return 0;
+  } else {
+    var smallestNum = arr.reduce(function(a,b) {
+      return a < b ? a: b;
+    });
+    return smallestNum;
+  }
+}
+```
+
+
+> 1.it is used by reudce and Math method
+
+```js
+function findSmallestElement(arr) {
+
+  if ( arr.length === 0 ) {
+    return 0;
+  }
+
+  output = arr.reduce(function(acc,cur){
+    return Math.min(acc,cur);
+
+  })  
+  return output;
+}
+```
+
+
+> 2it is used by reudce and Math method
+
+```js
+
+function findSmallestElement(arr) {
+
+  if ( arr.length === 0 ) {
+    return 0;
+  }
+
+  return Math.min(...arr);
+}
+```
+
+
+
+**24_computeSumOfAllElements**
+
+> Write a function called "computeSumOfAllElements". ("computeSumOfAllElements" 함수를 작성하세요.)
+
+>Given an array of numbers, "computeSumOfAllElements" returns the sum of all the elements in the given array. (숫자의 배열이 주어졌을때, "computeSumOfAllElements" 함수는 주어진 배열의 모든 요소의 합을 반환합니다.)
+
+
+* My_Solution
+
+
+
+```js
+function computeSumOfAllElements(arr) {
+  
+  // your code here.
+  // 빈 배열을 만든다.
+  // count 변수 초기화 한해서 만든다.
+  // arr 안에 값들을 조사한다.
+  // count 변수안에 조사한 값들을 더해서 넣는다.
+  let sum = 0;
+  for ( let i = 0; i < arr.length; i = i + 1 ) {
+    sum = sum + arr[i];
+  }
+  return sum
+}
+
+```
+
+> it used by reduce 
+
+```js
+
+
+function computeSumOfAllElements(arr) {
+  if ( arr.length === 0 ) {
+    return 0;
+  }
+  return arr.reduce(function(acc,val){
+    return acc + val;
+  })
+  
+}
+
+```
+
+
+
+**25_computeProductOfAllElements**
+
+
+>Write a function called "computeProductOfAllElements". ("computeProductOfAllElements" 함수를 작성하세요.)
+
+>Given an array of numbers, "computeProductOfAllElements" returns the products of all the elements in the given array. (숫자의 배열이 주어졌을때, "computeProductOfAllElements" 함수는 주어진 배열의 모든 요소의 곱을 반환합니다.)
+
+
+
+
+
+
+* My_Solution
+
+
+```js
+
+
+
+
+function computeProductOfAllElements(arr) {
+  
+  // 먄약 배열이 비워있다면 0 리턴;
+  // 0으로 된 마지막에 출력할 변수 생성;
+  // for 문을 사용해 배열안에 있는 요소 조사
+  // 생성한 변수 안에 조사한 요소들을 곱셈하여 넣는다.
+  // 변수 출려
+  
+  if ( arr.length === 0 ) {
+    return 0;
+  }
+  let ret = 1;
+  for ( let i = 0; i < arr.length; i = i + 1 ) {
+    ret = ret * arr[i];
+  } 
+  return ret;
+}
+```
+
+* It is used by redcue method
+
+```js
+function computeProductOfAllElements(arr) {
+    
+    
+    if ( arr.length === 0 ) {
+    return 0;
+  }
+  return arr.reduce(function(acc,cur) {
+    return acc * cur;
+  })
+
+}
+
+
+```
+
+
+**26_getLengthOfLongestElement**
+
+
+>Write a function called "getLengthOfLongestElement". ("getLengthOfLongestElement" 함수를 작성하세요.)
+
+>Given an array, "getLengthOfLongestElement" returns the length of the longest string in the given array. (배열이 주어졌을때, "getLengthOfLongestElement" 함수는 주어진 배열에서 가장 긴 문자열의 길이를 반환합니다.)
+
+
+* My_Solution
+
+> it is used by sort()
+
+```js
+
+
+function getLengthOfLongestElement(arr) {
+
+  if ( arr.length === 0 ){
+    return 0;
+  } 
+  sortArr = function (a, b) { 
+    return b.length - a.length;
+    }
+    let ret = arr.sort(sortArr)[0]
+    return ret.length;
+}
+
+```
+
+> It is used by for loop and if
+
+```js
+
+function getLengthOfLongestElement(arr) {
+  
+  if ( arr.length === 0 ) {
+    return 0;
+  } 
+
+  let lgth = 0; // => 3  =>5
+  let longest;  // =>"one" => "three" 
+  
+  for ( let i = 0; i < arr.length; i = i + 1) {
+    if(arr[i].length > lgth) {
+      // 첫번째 요소는 "one" 길이는 3 > 0
+      // 두번째 요소는 "two" 길이는 3 > 3 : 실행이 안됨
+      // 세번째 요소는 "three" 길이는 5 > 3 : 실행되면서 최종적으로 longest변수에 "three"가 담긴다. 
+        lgth = arr[i].length;
+        longest = arr[i].length;
+    }      
+  } 
+  return longest;
+}
+
+
+```
+
+
+
+> it is used by reduce method
+
+>comment
+
+>return a.length or return b.length 하면 안되는 이유. length를 리턴에 넣으면 다음  a 와 b.length의 길이를 비교하기 때문에 안되는거더라구요. 그래서 함수 밖에 붙여주면 숫자로 반환되는 거구요.
+
+```js
+
+
+
+function getLengthOfLongestElement(arr) {
+
+ 
+ return arr.reduce(function(a,b) {
+      if (a.length >= b.length) {
+        return a;
+      } else {
+        return b;
+      }
+  }).length
+}
+```
+
+
+
 
 
 ---
@@ -1917,5 +2245,74 @@ function getAllButLastElementOfProperty(obj, key) {
 }
 
 ```
+
+
+**08_getProductOfAllElementsAtProperty**
+
+
+>Write a function called "getProductOfAllElementsAtProperty". ("getProductOfAllElementsAtProperty" 함수를 작성하세요.)
+
+>Given an object and a key, "getProductOfAllElementsAtProperty" returns the product of all the elements in the array located at the given key. (객체와 키가 주어졌을때, "getProductOfAllElementsAtProperty" 함수는 주어진 키에 위치한 배열의 요소의 곱을 반환합니다.)
+
+* My_soultion 
+
+>It is used by for 
+
+```js
+
+
+
+
+function getProductOfAllElementsAtProperty(obj, key) {
+  // 1. arr 변수 만들어 key값의 prop 값을 넣는다
+  // 2. 곱한값을 담을 sum 이라는 변수 생성 
+  // 3. 만약 key의 prop 배열이 아니라면 0을 리턴
+  // 4. 만약 key의 prop 길이가 0 과 같다면  0;
+  // 5. for 문사용해 arr안에 있는 숫자를 곱한값을 sum 안에 저장
+  // 6. sum 출력 
+  
+  
+  let arr = obj[key];
+  let sum = 1;
+  if ( !Array.isArray(obj[key])) {
+    return 0;
+  } else if ( obj[key].length === 0 ) {
+    return 0;
+  }
+  for ( let n = 0 ; n < arr.length ; n = n + 1 ) {
+    sum = sum * arr[n];
+  }
+  return sum;
+}
+
+
+
+```
+
+> It is used by reduce
+
+
+```js
+
+
+function getProductOfAllElementsAtProperty(obj, key) {
+  if (! Array.isArray(obj[key] )) {
+    return 0; 
+  } else if ( obj[key].length === 0 ){
+    return 0;
+  }
+  let arr = obj[key];
+  return arr.reduce(function(acc,cur) {
+    return acc * cur;
+  }) 
+}
+
+```
+
+
+
+
+
+
 
 
