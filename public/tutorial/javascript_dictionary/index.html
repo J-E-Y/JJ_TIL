@@ -1093,26 +1093,23 @@ var removed = myFish.splice(2);
 
 </code></pre>
 
-<p><strong>concat()</strong></p>
+<p><strong>arr.concat(arr)</strong></p>
 
 <blockquote>
-<p>더하기</p>
+<p><code>immutable</code>
+더하기</p>
 </blockquote>
 
-<pre><code>1.
+<pre><code class="language-js">1.
+
+let letters = ['a', 'b', 'c'];
+let numbers = [1, 2, 3];
+
+letters.concat(numbers);
 
 
-Join two arrays:
+// result in ['a', 'b', 'c', 1, 2, 3]
 
-var hege = [&quot;Cecilie&quot;, &quot;Lone&quot;];
-var stale = [&quot;Emil&quot;, &quot;Tobias&quot;, &quot;Linus&quot;];
-var children = hege.concat(stale);
-
-`변수에 담아야 한다` 왜냐하면 값이 변하지 않는다.
-출력하면
-console.log(children);
-
-&gt; [&quot;Cecilie&quot;, &quot;Lone&quot;, &quot;Emil&quot;, &quot;Tobias&quot;, &quot;Linus&quot;]
 
 2.
 
@@ -1130,6 +1127,7 @@ console.log(arr)
 
 
 3. 
+
 arr.concat([6,7,8,9,10]);
 
 &gt;&gt;arr

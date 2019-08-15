@@ -11,384 +11,425 @@ type: docs
 ---
 
 
----
-## Conditional : isOldEnoughToDrink
----
 
-* 어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
+
+## isOdd
+
+>Write a function called isOdd. ("isOdd" 함수를 작성하세요.)
+
+>Given an integer, isOdd returns whether the integer is odd or not. (숫자가 주어졌을때, "isOdd" 함수는 주어진 숫자가 홀수 인지 아닌지를 반환합니다.)
+
+* My_Soultion
+
 
 
 ```
-function isOldEnoughToDrink(age) {
-  // 여기에 코드를 작성하세요
-  if (age < 21 ) {
-    return false;
-  } else {
+function isOdd(num) {
+  // your code here
+  // 파라미터를 2로 나누었을때의 나머지를 판별별
+  // 나머지가 1인경우, true를 리턴
+  // 나머지가 0인경우, false를 리턴
+  if (num % 2 === 1 ) {
     return true;
-  }
-}
-
-
-
-```
-
-
-
-
----
-## Conditional : areSameLength
----
-
-* 2개의 문자열이 주어졌을 때, areSameLength는 문자열들의 길이가 같으면 true를, 아니면 false를 반환해야 합니다.
-
-```
-function areSameLength(string1, string2) {
-	if (string1.length === string2.length) {
-	  return true;
-	} else {
+  } else {
     return false;
   }
 }
 
-
-areSameLength("they","hello");
-
 ```
 
+**sum**
 
+>Summation to n: Let's implement the function sum that takes a single parameter n, and computes the sum of all integers up to n starting from 0, e.g.:
 
----
-## Conditional : isPasswordLongEnough
----
+>(n까지의 총 합: n을 매개변수로 받아 0 부터 n 까지 모든 수의 총 합을 반환하는 함수를 작성하세요.)
 
-* isPasswordLongEnough 함수는 문자열과 정수를 parameter로 입력받는 함수로, 여기서는 암호의 최소 요구 길이를 판단합니다. 문자열의 길이가 충분한지 여부를 반환해야 합니다.
+* My_Soultion
 
-```
-function isPasswordLongEnough(password, minimumLength) {
-	// your code here
-	if (password.length >minimumLength) {
-	  return true;
-	} else {
-	  return false;
-	}
-	// start solution
-
-	// end solution
-}
-
-isPasswordLongEnough('hello',5);
-
-```
----
-## Conditional :  bouncer
----
-
-* 문자열의 형태로 이름, 정수 형태로 나이를 입력받는 bouncer 함수는, 주어진 나이에 따라 환영 메시지 혹은 거절 메시지를 리턴합니다.
 
 
 ```
-function bouncer(name, age) {
-  // This code is not right...I couldn't find it why 
-  if (age >= 21) {
-    return 'Welcome,' +name+ '!';
-  } else{
-    return 'Go home,'  +name+ '.';
+function sum(n) {
+  let result = 0;
+  //반복문을 이용하여 0부터 n까지의 숫자를 더하여 출력
+  for (let i = 0; i <= n; i++) {
+    result = result + i;
   }
-}  
-
-
-function bouncer(name, age) {
-  // this code is right
-  if (age >= 21){
-    return 'Welcome, ' +name+ '!'
-  } else {
-    return 'Go home, ' +name+ '.'
-  }
-}
-
-```
----
-## Conditional :  getLargerString
----
-
-* 두 문자열이 주어졌을 때, getLargerString 함수는 더 긴 문자열을 반환해야 합니다.
-
-
-```
-
-function getLargerString(string1, string2) {
-	// your code here
-	// start solution
-
-	// end solution
-	if (string1.length > string2.length) {
-	  return string1;
-	} else if (string1.length === string2.length){
-	  return string1;
-	} else {
-	  return string2; 
-	}
-}
-
-```
----
-## Conditional :  1-5 isEven
----
-
-
-* isEven 함수는 정수 하나를 입력받아 그 정수가 짝수인지 아닌지를 반환해야 합니다.
-
-
-
-```
-function isEven(num) {
-	// your code here
-	// start solution
-
-	// end solution
-	if (num % 2 === 0 ){
-	  return true;
-	} else {
-	  return false;
-	}
-}
-
-isEven(22)
-```
-
-
-
----
-## Conditional :  isPositive
----
-
-
-* 정수 하나가 주어졌을 때, `isPositive` 함수는 그 정수가 양수인지 아닌지를 반환해야 합니다.
-
-
-```
-function isPositive(num) {
-	// your code here
-	// start solution
+  return result;
   
-	// end solution
-	if (num >= 0 ){
-	  return true;
-	} else {
-	  return false;
-	}
-};
-
-isPositive(42);
-```
-
----
-## Conditional :  bounceBlacklist
----
-
-
-* 이전에 작성했던 `bounce` 함수에서 새로운 요구사항이 추가되었습니다. 특정 사람을 거절하는 기능입니다. "Joe"라는 사람은 우리의 블랙 리스트로, 이 사람은 나이에 관계없이 거절하기로 결정하였습니다. 기존의 `bounce`함수를 수정하여, "Joe"라는 사람은 무조건 거절 메시지를 보낼 수 있도록 작성하십시오.
-
-
-```
-??? it's not sovled out??
-
-function bouncerBlackList(name, age) {
-  if (name === 'Joe') {
-    return 'Go home,' + name + '!';
-  }
-  if ( age > 20 ) {
-  	return 'Welcome, ' + name + '!';
-  } else {
-  	return 'Go home, ' + name + '.';
-  }  
+  // your code here
 }
-```
-
----
-## Conditional :  scoreToGrade
----
-
-
-
-숫자 하나를 매개변수로 받아서, 그 점수에 상응하는 성적 등급을 나타내는 문자열을 반환하는 함수 `scoreToGrade`를 작성하세요.
-
+sum(3);
+sum(4);
 
 ```
-function scoreToGrade(score) {
-  if (score < 60){
-    return 'F';
-  } else if (score < 70) {
-    return 'D';
-  } else if (score < 80) {
-    return 'C';
-  } else if (score < 90) {
-    return 'B';
-  } else if (score < 100) {
-    return 'A';
+## onlyEvenElements
+
+
+>Given an array of numbers, onlyEvenElements returns a new array of just the even numbers. (숫자로 이루어진 배열이 주어졌을때, "onlyEvenElements" 함수는 주어진 배열에 있는 짝수로만으로 이루어진 새로운 배열을 반환해야 합니다.)
+
+* My_Soultion
+
+
+```
+
+function onlyEvenElements(arr) {
+  //짝수값을 입력받을 빈배열을 선언한다.
+  let result = [];
+  //입력받은 배열안에 있는는 값을 판별하기위해 불러온다.
+  for (let i = 0; i < arr.length; i++) {
+    //값이 짝수인지를 if 문을 써서 판별한다. 
+    if (arr[i] % 2 === 0) {
+      //값이이 짝수인경우 빈배열에 집어넣는다.
+      result.push(arr[i]);
+    }
   }
+  return result;
+  // your code here
 }
 
-```
-
-
----
-## Conditional :  convertScoreToGradeWithPlusAndMinus
----
-
-```
-// Write a function called "convertScoreToGradeWithPlusAndMinus".
-
-// Given a score, "convertScoreToGradeWithPlusAndMinus" returns a string representing the letter grade corresponding to the given score.
-
-// Notes:
-// * (100 - 90) --> 'A'
-// * (89  - 80) --> 'B'
-// * (79  - 70) --> 'C'
-// * (69  - 60) --> 'D'
-// * (59  -  0) --> 'F'
-// * If the given score is greater than 100 or less than 0, it should return 'INVALID SCORE'.
-// * If the score is between the 0 and 2 (inclusive) of a given range, return the letter with a '-'
-// * If the score is between the 8 and 9 (inclusive) of a given range, return the letter with a '+'
-// * There are is no F+ and there is no F-.
 
 ```
 
+## removeOddValues
+
+>Write a function removeOddValues that takes an object as an argument and returns an object with all key/value pairs removed for which the value holds an odd number. ("removeOddValues" 함수를 작성하세요. 객체가 주어졌을때, "removeOddValues" 함수는 주어진 객체의 key/value 페어 중 value 가 홀수 숫자인 페어가 제거된 객체를 반환하세요.)
+
+>You'll need to use the "typeof" operator to first check that the values are numbers: (value가 숫자인지 확인하기 위하서는 "typeof" 연산자를 먼저 사용해야 합니다.)
+
+* My_Soultion
+
+> first 
 
 ```
-function convertScoreToGradeWithPlusAndMinus(score) {
-  var output = '';
-  var lastNum = score.toString().slice(-1);
-  if ((score > 100) && (score < 50)) {
-    return 'INVALID SCORE';
-  } else if(score === 100) {
-    return 'A+';
-  } else if(score >= 90 && score <= 99) {
-      output = output + 'A';
-  } else if(score >= 80 && score <= 89) {
-      output = output + 'B';
-  } else if(score >= 70 && score <= 79) {
-      output = output + 'C';
-  } else if(score >= 60 && score <= 69) {
-      output = output + 'D';
-  } else if(score < 60) {
-      output = output + 'F';
-  }
-    if(parseInt(lastNum) <= 2 && parseInt(lastNum) >= 0) { 
-    output = output + '-';
-  } else if(parseInt(lastNum) >= 8 && parseInt(lastNum) <= 9) {
-    output = output + '+';
-  }
-  return output;
-}
-
-convertScoreToGradeWithPlusAndMinus(72)
-
-
-```
-
-
----
-## Conditional :  bouncerBlackList
----
-
-
-
->`bouncerBlackList` 함수를 작성합니다.
-이전에 작성했던 `bounce` 함수에서 새로운 요구사항이 추가되었습니다. 특정 사람을 거절하는 기능입니다. "Joe"라는 사람은 우리의 블랙 리스트로, 이 사람은 나이에 관계없이 거절하기로 결정하였습니다. 기존의 `bounce`함수를 수정하여, "Joe"라는 사람은 무조건 거절 메시지를 보낼 수 있도록 작성하십시오.
-
-
-
-```
-function bouncerBlackList(name, age) {
-	// your code here
-  // start solution
-  if (name === 'Joe'){
-    return 'Go home Joe!'
-  }
-  // end solution
-  if ( age > 20 ) {
-  	return 'Welcome, ' + name + '!';
-  } else {
-  	return 'Go home, ' + name + '.';
-  }
-
-```
-
-
-
-
-
----
-## Conditional :  scoreToGrade
----
-
-```
-scoreToGrade` 함수를 수정하여 등급 글자 뒤에 +나 -를 붙이는 작업을 할 때, 반복되는 코드가 상당히 많았었다는 것을 눈치채셨나요? 반복되는 것이 많다는 것은, 훨씬 더 나은 방법이 있다는 분명한 신호입니다.
-
-`letter`와 `score`라는 두 전달인자를 받아서 다음과 같이 작동하는 도우미 함수 `letterGrade`를 작성하세요.
-```
-
-```
-function letterGrade(letter, score) {
-  var lastNum = score.toString().slice(-1);
-  if (score === 100) {
-    return 'A+';
-  } else if (parseInt(lastNum) <= 2 && parseInt(lastNum) >= 0 ){
-    return letter + '-';
-  } else if (parseInt(lastNum) >= 8 && parseInt(lastNum)<= 9) {
-    return letter + '+';
-  }else if (parseInt(lastNum) > 2  && parseInt(lastNum)< 8 ) {
-    return letter;
-  }
-}
-
-letterGrade("A",50);
-
-```
-
-
----
-## Loop:  countChars
----
-
-
-* 문자열 하나와 글자 하나를 매개변수로 받는 함수 `countChars`를 작성하세요. 이 함수는 주어진 문자열에서 주어진 글자가 몇 개나 들어가 있는지를 세어서 숫자로 반환해야 합니다. 문자열의 첫번째 글자를 알아내려면, 다음과 같은 문법을 사용하면 됩니다.
-
-```
-
-function countChars(string, character) {
-  var result = string;
-  var count = 0;
-  var i = 0;
-  while ( i < string.length) {
-    if (result[i] === character) {
-      count = count + 1 ;
+function removeOddValues(object) {
+  // 1.홀수숫자인 페어가가 아닌 값들을 입력받을을 빈 객체를를 만든다.
+  let object2 = {};
+  // 2. value 값들을 판별하기 위해 키값을 반복시킨다.
+  for (let k in object) {
+  // 3. value 값이 숫자이고 짝수이면 빈객체에 대입한다. 
+    if (typeof(object[k]) === 'number' && object[k] % 2 === 0) {
+      object2[k] = object[k];
+  //4. value 값이 문자형이면 객체에 대입한다. 
+    } else if ( typeof(object[k]) === "string" ) {
+      object2[k] = object[k];
     } 
-    result.slice(0,1);
-    i++
   }
-  return count;
+  return object2;
+  // your code here
 }
 
-countChars("hello","h");
-
 ```
----
-## Loop:  repeatString
----
 
 
-
-* 문자열을 n번 반복해보도록 합시다. 반복할 문자열 `string`과 그 문자열을 몇 번 반복하는지를 나타내는 숫자 `n`을 매개변수로 받는 함수 `repeatString`을 작성하세요.
-
+> Sceond 
 
 
 ```
-function repeatString(string, num) {
-  return string.repeat(num);
+
+function removeOddValues(input) {
+	
+// 1. 결과를 담을 객체를 만듭니다. 
+	
+  	let result = {};
+
+// 2. input 으로 받은 object 안에 key 를 모두 반복합니다. 
+  
+  for (let key in input) {
+	  let value = input[key];
+	  let isNumber = typeof value === 'number';
+
+	  if (isNumber ) {
+	 
+// key의 해당 하는 value가 짝수인지 확인합니다.
+	 
+    let isEven = value % 2 === 0;
+    if (isEven) {
+	 
+// 만든 객체에 key, value를 추가합니다.
+	 
+    result[key] = value;
+	    }
+   }
+// 숫자가 아니면
+	
+    else {
+	
+//만든 객체에 key, value 를 추가합니다.
+
+  	result[key] = value;	
+    }
+  }
+  return result;
 }
 
-repeatString("code",3);
+removeOddValues({ a: 1, b: 2, c: 3, d: 'hello' })
+
+
+```
+
+
+
+> third
+
+```
+
+function removeOddValues(object) {
+  //1. value 값을 판별하기 위해 key 값을 반복한다.
+  for (let k in object) {
+  //2. value 값이 숫자이고 홀수이면 삭제한다. 
+    if (typeof(object[k]) === 'number' && object[k] % 2 === 1) {
+    delete object[k];
+     }
+  }
+  return object;
+  }
+
+```
+
+
+## firstCharacter
+
+> In this exercise, a string is passed to a method and a new string has to be returned with the first character of each word in the string (문자열이 주어졌을때, "firstCharacter" 함수는 문자열의 각 단어 첫글자들로 이루어진 문자열을 반환하여야 합니다.)
+
+
+> Attention! In test case 5 userinput is one space input char as ' ', please do not get confused with '', empty string (주의사항! 테스트 케이스 5 에서 주는 입력값은 띄어쓰기 한개(' ') 입니다. 빈 문자열('') 과 혼동하지 마세요.)
+
+
+* My_Soultion
+
+
+```js
+
+unction firstCharacter (string) {
+ // Your code here
+ 
+ 
+ // for문 이용
+ 
+ let output = [];
+ let temp_arr = [];
+
+ // 1. split으로 단어로 나눠서 배열 만들기
+ 
+ temp_arr = string.split(' ');
+ // 2. 각 인덱스의 첫번째 문자를 배열 output 에 담기
+ for(let i=0;i<temp_arr.length;i++){
+   output.push(temp_arr[i][0]);
+ }
+ 
+ // 4. 출력
+ return output.join('');
+ 
+ 
+ 
+ ////////////////////////////////////////////////////////////////////////
+ 
+ // 2. Reduce 이용
+ return string.split(' ').reduce(function(acc,cur){
+   return acc+cur[0];
+ 
+ },'');
+ 
+ // 3. Reduce이용 2
+ return string.split(' ').reduce( (acc,cur)=>acc+cur[0] ,'');
+}
+
+
+```
+
+
+
+
+
+## longestWord
+
+
+> sing the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, 'LongestWord' 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
+
+>If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요. 문장은 빈 문자열이 아닙니다.)
+
+
+* My_Soultion
+
+
+```
+
+// It's used by sort() 
+
+function longestWord(string) {
+
+ // 1. 주어진 문장을 배열로 만들기(split)
+ let tmp = string.split(' ');
+ //let sorted_tmp =[];
+ // ['I','love','codestates'];
+ // 2. sort() 사용 => 성능 떨어짐
+ let x = function(a,b){
+   return b.length-a.length;
+ };
+ // 3. 0번째 요소 출력
+ return tmp.sort(x)[0];
+}
+
+////////////////////////////////////////////////////////
+
+// It's used by reudce(1)
+
+function longestWord(string) {
+ 
+ let tmp = string.split(' ');
+ let max = tmp[0];
+ for(let i =1;i<tmp.length;i++){
+   if(tmp[i].length>max.length){
+     max = tmp[i];
+   }
+ }
+ return max;
+}
+
+
+/////////////////////////////////////////////////////////
+
+// It's used by reudce(2) 화살표
+
+function longestWord(string) {
+
+return string.split(' ').reduce((acc,cur)=> acc.length<cur.length? cur:acc);
+}
+
+```
+
+
+## convertArrayToObject1
+
+* Question
+
+>Write a function 'transformFirstAndLast' that takes in an array, and returns an object with: (배열을 입력으로 받고 다음 조건에 만족하는 객체를 반환하는 함수 'transformFirstAndLast' 함수를 작성하세요.)
+
+>the first element of the array as the object's key, and (1. 배열의 첫번째 요소를 객체의 키로 가집니다.)
+the last element of the array as that key's value. (2. 배열의 마지막 요소를 해당 키의 값으로 가집니다.)
+
+
+
+
+* My_Soultion
+
+
+```js
+
+function transformFirstAndLast(array) {
+  // your code here
+
+  // 1. 마지막으로 출력할 객체를 만든다.
+  // 2. 배열의 첫번째 요소를 가져와 변수에 담는다.
+  // 3. 배열의 마지막 요소를 가져와 변수에 담는다.
+  // 4. 객체안에 첫번째 요소를 키로 설정한다.
+  // 5. 객체안에 마지막 요소를 prop 설정한다. 
+
+  let ret = {};
+  ret[array[0]] = array[array.length -1 ];
+  return ret;
+}
+
+
+
+```
+
+
+## convertObjectToArray1
+
+* Question
+
+
+>Write a function called "getAllKeys" which returns an array of all the input object's keys. (객체를 입력으로 받고 해당 객체의 키들을 배열로 반환하는 "getAllKeys" 함수를 작성하세요.)
+
+
+
+* My_Soultion
+
+
+```js
+
+
+function getAllKeys(obj) {
+// your code here
+
+// 1. 마지막에 출력할 새로운 배열을 만든다
+// 2. for in key 값을 가져온다. 
+// 3. 가져온 값을 새로 만든 배열에 넣는다.
+let arr = [];
+for ( key in obj ) {
+  arr.push(key);
+}
+return arr;
+}
+
+
+```
+
+## convertArrayToObject2
+
+
+* Question 
+
+
+> Write a function 'fromListToObject' which takes in an array of arrays, and returns an object with each pair of elements in the array as a key-value pair. (2차원 배열을 입력으로 받고 배열안에 있는 배열의 요소 페어를 키-값 페어로 가지는 객체를 반환하는 함수 'fromListToObject' 함수를 작성하세요.)
+
+
+
+* My_Soultion
+
+
+```js
+function fromListToObject(array) {
+  // your code here
+  
+  //  1. output 할 빈객체를 생성한다.  
+  //  2. for 문으로 배열 안에 있는 배열을 조사한다.
+  //  3. 배열안에 있는 배열의 0번째 를 키값 1번째를 prop 에 넣는다.
+ 
+  
+  let obj = {};
+
+  for ( let i = 0; i < array.length; i = i + 1 ) {
+    obj[array[i][0]] = array[i][1];
+    }
+    return obj
+}
+
+
+
+```
+
+
+## convertObjectToArray2
+
+
+* Questoin
+
+>Write a function called "listAllValues" which returns an array of all the input object's values. (객체를 입력으로 받고 해당 객체의 값들을 배열로 반환하는 "listAllValues" 함수를 작성하세요.)
+
+
+* My_Soultion
+
+
+```js
+function listAllValues(obj) {
+  // your code here
+  
+  // 1. output 할 빈 배열을 생셩
+  // 2. for in prop 값을 조사
+  // 3. prop 값을 빈배열에 넣는다. 
+  // 4. output 출력한다. 
+  
+  let arr = [];
+  for ( prop in obj ) {
+    arr.push(obj[prop]);
+  } 
+  return arr;
+}
+
+
+
 
 ```

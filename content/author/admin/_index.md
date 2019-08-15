@@ -36,7 +36,7 @@ social:
   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/J-E-Y
 superuser: true
 user_groups:
 - Researchers

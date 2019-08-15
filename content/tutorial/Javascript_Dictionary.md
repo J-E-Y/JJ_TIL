@@ -757,25 +757,22 @@ var removed = myFish.splice(2);
 
 
 
-**concat()** 
+**arr.concat(arr)** 
 
+> `immutable`
 > 더하기 
 
-```
+```js
 1.
 
+let letters = ['a', 'b', 'c'];
+let numbers = [1, 2, 3];
 
-Join two arrays:
+letters.concat(numbers);
 
-var hege = ["Cecilie", "Lone"];
-var stale = ["Emil", "Tobias", "Linus"];
-var children = hege.concat(stale);
 
-`변수에 담아야 한다` 왜냐하면 값이 변하지 않는다.
-출력하면
-console.log(children);
+// result in ['a', 'b', 'c', 1, 2, 3]
 
-> ["Cecilie", "Lone", "Emil", "Tobias", "Linus"]
 
 2.
 
@@ -793,6 +790,7 @@ console.log(arr)
 
 
 3. 
+
 arr.concat([6,7,8,9,10]);
 
 >>arr

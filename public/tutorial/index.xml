@@ -151,9 +151,10 @@ function isOdd(num) { // your code here // 파라미터를 2로 나누었을때�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
-function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (age &amp;lt; 21 ) { return false; } else { return true; } }   Conditional : areSameLength  2개의 문자열이 주어졌을 때, areSameLength는 문자열들의 길이가 같으면 true를, 아니면 false를 반환해야 합니다.
-function areSameLength(string1, string2) { if (string1.</description>
+      <description>isOdd  Write a function called isOdd. (&amp;ldquo;isOdd&amp;rdquo; 함수를 작성하세요.)
+Given an integer, isOdd returns whether the integer is odd or not. (숫자가 주어졌을때, &amp;ldquo;isOdd&amp;rdquo; 함수는 주어진 숫자가 홀수 인지 아닌지를 반환합니다.)
+  My_Soultion
+function isOdd(num) { // your code here // 파라미터를 2로 나누었을때의 나머지를 판별별 // 나머지가 1인경우, true를 리턴 // 나머지가 0인경우, false를 리턴 if (num % 2 === 1 ) { return true; } else { return false; } }   sum</description>
     </item>
     
   </channel>

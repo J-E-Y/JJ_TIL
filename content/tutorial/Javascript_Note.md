@@ -340,10 +340,6 @@ console.log(count);  // print 1
 >In closing, these are the two ways that you can use to find the number of properties in a JavaScript object
 
 
----
-## 
----
-
 
 
 

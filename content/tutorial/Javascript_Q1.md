@@ -2069,6 +2069,65 @@ function getLengthOfLongestElement(arr) {
 ```
 
 
+**28_filterOddLengthWords**
+
+
+> Write a function called "filterOddLengthWords". ("filterOddLengthWords" 함수를 작성하세요.)
+
+>Given an array of string, "filterOddLengthWords" returns an array containing only the elements of the given array whose lengths are odd numbers. (문자열의 배열이 주어졌을때, "filterOddLengthWords" 함수는 주어진 배열의 요소 중 문자열의 길이가 홀수인 문자열만을 요소로 가지는 배열을 반환합니다.)
+
+
+* My_Soultion
+
+
+```js
+
+
+
+unction filterOddLengthWords(words) {
+
+  // it passed test
+  // it's good to practice useing filter 
+
+  // your code here
+  // output 빈 배열을 만든다.
+  // for 문을 이용해 배열안에 있는 요소를 조사한다.
+  // 만약 배열안에 있는 각각의 요소가 홀수라면 ture
+  // ture 인 값을 output 배열에 넣는다.
+  // 넣은 값을 출력한다.
+  
+  let output = [];
+  for  ( let i = 0; i < words.length; i = i + 1 ) {
+    if ( words[i].length % 2 !== 0 ) { 
+      output.push(words[i]);
+    }
+  }
+  return output;
+}
+
+
+```
+
+* modle_Soultion
+
+
+```js
+
+
+
+// input: an array of strings
+// output: return an array containing only the elements of the given array whose lengths are odd numbers
+
+function filterOddLengthWords(arr) {  // HoF
+  return arr.filter(function(i) {  // filters each even length elements to its own array
+    return i.length % 2 !== 0;
+  });
+}
+
+
+```
+
+
 
 
 
@@ -2160,6 +2219,63 @@ function getNthElementOfProperty(obj, key, n) {
 ```
 
 
+
+**03_getElementsLessThan100AtProperty**
+
+
+> Write a function called "getElementsLessThan100AtProperty". ("getElementsLessThan100AtProperty" 함수를 작성하세요.)
+
+>Given an object and a key, "getElementsLessThan100AtProperty" returns an array containing all the elements of the array located at the given key that are less than 100. (객체와 키값이 주어졌을때, "getElementsLessThan100AtProperty" 함수는 주어진 키에 위치하는 배열에서 100 보다 작은 값으로만 이루어진 배열을 반환합니다.)
+
+
+```js
+
+function getElementsLessThan100AtProperty(obj, key) {
+  for (let prop in obj) {
+    if (! Array.isArray(obj[key])){
+    return [];
+    } else if ( !prop in obj ) {
+      return [];
+    }
+  }
+    let retArr = [];
+    for ( let prop2 in obj ) {
+    for ( let i = 0; i < obj[prop2].length; i = i + 1) {
+      if ( obj[prop2][i] < 100 ) {
+
+        retArr.push(obj[prop2][i]);
+      }
+
+  }
+    }
+    return retArr;
+  }
+
+
+
+```
+
+
+
+* My_Re_Soultion
+
+```js
+
+
+function getElementsLessThan100AtProperty(obj, key) {
+
+  if ( ! Array.isArray(obj[key])) {
+    return [];
+  } else {
+  return obj[key].filter(cur => cur < 100);
+
+  }
+}
+
+```
+
+
+
 **05_getLastElementOfProperty**
 
 
@@ -2203,6 +2319,76 @@ function getLastElementOfProperty(obj, key) {
 
   return prop[prop.length - 1]
 }
+
+```
+
+
+
+**06_getSquaredElementsAtProperty**
+
+
+> Write a function called "getSquaredElementsAtProperty". ("getSquaredElementsAtProperty" 함수를 작성하세요.)
+
+>Given an object and a key, "getSquaredElementsAtProperty" returns an array containing all the squared elements of the array located at the given key. (객체와 키가 주어졌을때, "getSquaredElementsAtProperty" 함수는 주어진 키에 위치하는 배열의 요소들의 제곱을 요소로 가지는 배열을 반환합니다.)
+
+
+* My_Soultion
+
+```js
+
+
+function getSquaredElementsAtProperty(obj, key) {
+
+
+  
+  // 1. 만약 주어진 key 의 값이 배열이 아니라면 빈배열 출력
+  // 2. 만약 주어진 key 의 값이 길이가 0 같이 않다면 빈배열
+  // 3. 마지막에 출력할 새로운 변수 생성
+  // 4. 곱셈할 값을 넣기 위한 새로운 변수 또 생성 
+  // 5. 배열안에 있는 요소들 곱하기
+  // 6. 곱한값을 arr 이라는배열에 넣는다.    
+
+
+ if (!Array.isArray(obj[key])) {
+    return [];
+ } else if (obj[key].length === 0 ){
+   return [];
+ }
+  let arr = [];
+  let conut;
+  for ( let i = 0; i < obj[key].length; i = i + 1 ) {
+    conut = obj[key][i]*obj[key][i];
+    arr.push(conut);
+  }
+ return arr;
+}
+
+```
+
+
+* other Soultion
+
+```js
+
+
+
+function getSquaredElementsAtProperty(obj, key) {
+  var arr = [];
+  if(Array.isArray(obj[key])){
+    for(var i in obj[key]){
+      var squared =obj[key][i]*obj[key][i];
+      arr.push(squared);
+    }
+  }
+  return arr;
+}
+
+var obj = {
+  key: [2, 1, 5]
+};
+var output = getSquaredElementsAtProperty(obj, 'key');
+console.log(output);
+
 
 ```
 
@@ -2308,6 +2494,7 @@ function getProductOfAllElementsAtProperty(obj, key) {
 }
 
 ```
+
 
 
 
