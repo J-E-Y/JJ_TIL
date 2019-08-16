@@ -433,3 +433,114 @@ function listAllValues(obj) {
 
 
 ```
+
+
+**convertArrayToObject3**
+
+
+* Question
+
+> Write a function called "transformEmployeeData" that transforms some employee data from one format to another. (사원들의 정보를 다른 형태로 변형 할 수 있는 함수 "transformEmployeeData" 함수를 작성하세요.)
+
+>The argument will look something like this: (사원들의 정보는 아래와 같은 배열로 주어질 수 있습니다.)
+
+
+
+* My_Soultion
+
+```js
+
+function transformEmployeeData(array) {
+
+  // 1. 맨 위 배열을 루프 데이터 가져온다.
+  // 2. 가지고온 배열을 또 루프 를 돌려서 가져온다.
+  // 3. 가지고온 배열을 0번째는 obj key 1번째는 value
+  // 4. 만든 obj 를 배열에 푸시 
+  
+  
+  let arr = [];
+  
+  for ( let i = 0; i < array.length; i = i + 1 ) {
+    let data = {};
+    for ( let n = 0; n < array[i].length; n = n + 1 ) {
+      data[array[i][n][0]] = array[i][n][1];
+    }
+    arr.push(data);
+  }
+  return arr;
+
+
+```
+
+
+* other_Soultion
+
+
+```js
+
+
+
+
+
+function transformEmployeeData(array) {
+  // your code here
+ // [key] start: firstName - last: role
+ // return [{}] index0 key; index1 value;
+  
+ // 배열 안에 객체가 들어가 있는 것을 반환해야하니까
+ // 빈배열 선언하고 빈 객체 선언 해서 빈 객체에 값 넣고
+ //그 객체를 빈 배열에 넣어주고
+ // 최종적으로 return 그 배열 해 주면 됨
+
+  let result = [];
+
+  for (let i of array){ // 여기서 i 는 [['firstName', 'Joe'], ['lastName', 'Blow'], ['age', 42], ['role', 'clerk']]
+    let obj = {};
+   for (let j of i){ // 여기서 j는 ['firstName', 'Joe']
+     obj[j[0]] = j[1]; // j의 0번 elemente 'firstName' , 1번 element 'Joe'
+    // obj[array[j][0]] = array[j][1];
+   }
+   result.push(obj);
+  }
+
+return result;
+}
+
+
+```
+
+
+**greetCustomers**
+
+* Qutestion 
+
+>Write a function called "greetCustomer". ("greetCustomer" 함수를 작성하세요.)
+
+>Given a name, "greetCustomer" returns a greeting based on how many times that customer has visited the restaurant. Please refer to the customerData object. (고객들의 방문 횟수를 가지고 있는 객체와 이름이 주어졌을때, "greetCustomer" 함수는 손님이 몇번 방문했는지에 따라 다른 인삿말을 반환합니다. customerData 객체를 참고해 주세요.)
+
+* My_Soultion
+
+```js
+
+function greetCustomer(customerData, firstName) {
+  let greeting = '';
+  // your code here
+
+  // 1 . 객체의 속성의 객체의 속성값 접근한다.
+  // 2.  객체의 속성의 객체의 속성값이 undefinded 이라면 1 greeting 대입
+  // 3.  객체의 속성의 객체의 속성값이 1 이라면 2  greeting 대입
+  // 4.  객체의 속성의 객체의 속성값이 1 보다 크다면 3 greeting 대입
+
+    if (!customerData[firstName]) {
+        greeting = `Welcome! Is this your first time?`;
+    } else if (customerData[firstName].visits === 1  ) {;
+        greeting = `Welcome back, ${firstName}! We're glad you liked us the first time!`
+    } else if ( customerData[firstName].visits > 1 ) {
+        greeting =  `Welcome back, ${firstName}! So glad to see you again!`;
+    }
+    return greeting;
+}
+
+```
+
+

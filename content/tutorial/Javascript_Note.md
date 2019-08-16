@@ -366,6 +366,33 @@ console.log(count);  // print 1
   
 ```  
 
+**difference bewteen for in or  for of**
+
+* for in
+
+```js
+
+let list = [4, 5, 6];
+
+for (let i in list) {
+   console.log(i); // "0", "1", "2",
+}
+
+```
+
+* for of 
+
+>for of 는  `for (let i = 0; i < arr.length; i = i + 1 ) { }` 쓰는 것이랑  동일하다 
+
+
+```js
+
+let list = [4, 5, 6];
+
+for (let i of list) {
+   console.log(i); // "4", "5", "6"
+}
+```
 
 
 
@@ -386,6 +413,10 @@ for(var i in obj[key])
 
 
 ```
+
+
+
+
 
 
 ---
