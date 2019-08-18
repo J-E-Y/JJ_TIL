@@ -148,19 +148,31 @@ console.log(String(t));
 
 **str.split()**
 
+>`immtuable`
 
 >문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.
 
+> 문자열을 배열로 만들때 유용
+
+
+```js
+let str = "hello, world this is jj";
+
+1.str.split();
+["hello, world this is jj"]
+
+
+2. str.split("");
+["hello", "world", "this", "is", "jj"]
+
+
+3. str.split(" ");
+["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d", " ", "t", "h", "i", "s", " ", "i", "s", " ", "j", "j"]
 
 ```
-var s = "hello, world this is jj";
-s.split("");
 
 
-"h", "e", "l", "l", "o", ",", " ", "w", "o", "r", "l", "d", " ", "t", "h", "i", "s", " ", "i", "s", " ", "j", "j"
-```
-
-```
+```js
 
 var s = "hello, world this is jj";
 s.split(",");
@@ -227,6 +239,20 @@ alert(stringName.charAt(1000) == ''); // true
 
 
 
+**str.replace()**
+
+>`immtable`
+
+>값을 찾아서 원하는 값으로 바꿔준다 
+
+
+```js
+str = "john jung"
+let newStr = str.replace(john,jj);
+
+> "jj jung"
+
+```
 ---
 ## **Number**
 ---
@@ -261,10 +287,15 @@ Math.max(-10, 20);  //  20
 
 ```js
 
-var arr = [1,2,3];
-var max = arr.reduce(function(a, b) {
+let arr = [1,2,3];
+let max = arr.reduce(function(a, b) {
     return Math.max(a, b);
 });
+
+
+console.log(max)
+>3
+
 ```
 
 
@@ -272,8 +303,11 @@ var max = arr.reduce(function(a, b) {
 
 ```js
 
-var arr = [1, 2, 3];
-var max = Math.max(...arr);
+let arr = [1, 2, 3];
+let max = Math.max(...arr);
+
+console.log(max)
+>3
 
 ```
 
@@ -638,7 +672,7 @@ var citrus = fruits.slice(1, 3);
 
 **arr.splice(start,deleteCount,"itme1",...")**
 
->`mutable`
+>`immutable`
 
 > 중간에 element 를 삭제 할수 있는 방법이 이거뿐
 

@@ -905,6 +905,83 @@ function greetCustomer(customerData, firstName) {
 
 </code></pre>
 
+<p><strong>convertDoubleSpaceToSingle</strong></p>
+
+<ul>
+<li>Question</li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;convertDoubleSpaceToSingle&rdquo;. (&ldquo;convertDoubleSpaceToSingle&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a string, &ldquo;convertDoubleSpaceToSingle&rdquo; returns the passed in string, with all the double spaces converted to single spaces. (문자열이 주어졌을때, &ldquo;convertDoubleSpaceToSingle&rdquo; 함수는 주어진 문자열에 있는 띄어쓰기 두개(double spaces)를 띄어쓰기 한개(single space)로 변환한 뒤 해당 문자열을 반환합니다.)</p>
+</blockquote>
+
+<ul>
+<li>My_Soultion</li>
+</ul>
+
+<pre><code class="language-js">
+function convertDoubleSpaceToSingle(str) {
+  
+  // 1. 문자열을 split() 를 사용해서 str 변수에 배열로 저장한다.
+  // 2. reduce 를 사용해서 배열에 담긴 문자의 single space로 만들어 출력한다. 
+
+  let strArr = str.split(&quot;  &quot;);
+  let output = strArr.join(&quot; &quot;);
+  return output;
+}
+
+
+// Refactoing
+
+function convertDoubleSpaceToSingle(str) {
+  return str.split(&quot;  &quot;).join(&quot; &quot;);
+
+}
+
+
+</code></pre>
+
+<ul>
+<li>other_Soultion</li>
+</ul>
+
+<pre><code class="language-js">
+function convertDoubleSpaceToSingle(str) {
+  return str.replace( /  +/g,' ');
+}
+잘되긴 하는데.... ㅡ,.ㅡ
+
+/ +/g 부분이 이해가 가지 않습니다...............
+/(빈칸 두개)+/g 를 찾아서 ' '로 바꿔준다는 것 같습니다.
+
+</code></pre>
+
+<ul>
+<li>other_Soultion</li>
+</ul>
+
+<pre><code class="language-js">
+function convertDoubleSpaceToSingle(str) {
+
+var array = str.split(' '); // 문자열 배열 만들기  [ 'string', '', 'with', '', 'double', '', 'spaces' ]
+
+for (i = 0; i&lt;=array.length; i++) { // for 문을 이용해 배열 접근 
+  if (array[i] === '') { //만약 각각의 요소가 '' 와 같다면
+    array.splice(i,1); // splice 접근해서 삭제 
+  }
+}
+
+return array.join(' '); // 각각의 문자열을 join ' ' 를 나눠서 출력 
+
+}
+
+
+
+
+</code></pre>
+
           </div>
 
           

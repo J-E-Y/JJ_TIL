@@ -543,4 +543,81 @@ function greetCustomer(customerData, firstName) {
 
 ```
 
+**convertDoubleSpaceToSingle**
 
+* Question
+
+> Write a function called "convertDoubleSpaceToSingle". ("convertDoubleSpaceToSingle" 함수를 작성하세요.)
+
+>Given a string, "convertDoubleSpaceToSingle" returns the passed in string, with all the double spaces converted to single spaces. (문자열이 주어졌을때, "convertDoubleSpaceToSingle" 함수는 주어진 문자열에 있는 띄어쓰기 두개(double spaces)를 띄어쓰기 한개(single space)로 변환한 뒤 해당 문자열을 반환합니다.)
+
+
+
+* My_Soultion
+
+
+```js
+
+function convertDoubleSpaceToSingle(str) {
+  
+  // 1. 문자열을 split() 를 사용해서 str 변수에 배열로 저장한다.
+  // 2. reduce 를 사용해서 배열에 담긴 문자의 single space로 만들어 출력한다. 
+
+  let strArr = str.split("  ");
+  let output = strArr.join(" ");
+  return output;
+}
+
+
+// Refactoing
+
+function convertDoubleSpaceToSingle(str) {
+  return str.split("  ").join(" ");
+
+}
+
+
+```
+
+
+
+* other_Soultion
+
+
+```js
+
+function convertDoubleSpaceToSingle(str) {
+  return str.replace( /  +/g,' ');
+}
+잘되긴 하는데.... ㅡ,.ㅡ
+
+/ +/g 부분이 이해가 가지 않습니다...............
+/(빈칸 두개)+/g 를 찾아서 ' '로 바꿔준다는 것 같습니다.
+
+```
+
+
+
+
+* other_Soultion
+
+```js
+
+function convertDoubleSpaceToSingle(str) {
+
+var array = str.split(' '); // 문자열 배열 만들기  [ 'string', '', 'with', '', 'double', '', 'spaces' ]
+
+for (i = 0; i<=array.length; i++) { // for 문을 이용해 배열 접근 
+  if (array[i] === '') { //만약 각각의 요소가 '' 와 같다면
+    array.splice(i,1); // splice 접근해서 삭제 
+  }
+}
+
+return array.join(' '); // 각각의 문자열을 join ' ' 를 나눠서 출력 
+
+}
+
+
+
+
+```
