@@ -231,12 +231,12 @@
   </url>
   
   <url>
-    <loc>/author/</loc>
-    <priority>0</priority>
+    <loc>/tutorial/javascript_q1/</loc>
   </url>
   
   <url>
-    <loc>/tutorial/javascript_q1/</loc>
+    <loc>/author/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

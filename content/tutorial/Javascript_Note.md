@@ -1,5 +1,5 @@
 ---
-title: JS Note
+title: Notes
 date: 2019
 draft: true
 menu:
@@ -12,9 +12,18 @@ type: docs
 
 ---
 
----
-## for ( let 변수 in obj ) { }
----
+![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
+ 
+
+
+# Today What I Learn ?
+![](/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png)
+
+
+
+
+### for ( let 변수 in obj ) { }
+
 > how propo works ? 
 
 * 객체의 키를  변수에  넣어준다고 생각각하면 됩니다.
@@ -22,8 +31,8 @@ type: docs
 
 
 ---
-## dot notation and  braket notation ?
----
+### dot notation and  braket notation ?
+
 
 >다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
 
@@ -54,7 +63,7 @@ console.log(obj['bob']);   // 2
 ```
 
 ---
-## first-class object()
+### first-class object()
 ---
 ```
 함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을
@@ -105,7 +114,7 @@ alert(input);
 
 
 ---
-## Callback
+### Callback
 ---
 
 * 장점 
@@ -130,7 +139,7 @@ alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
 
 
 ---
-## Dom : Dom을 이용해서 HTML문서를 제어할수 있다
+### Dom : Dom을 이용해서 HTML문서를 제어할수 있다
 ---
 
 ##### DOM 객체의 값 바꾸기
@@ -184,7 +193,7 @@ a
 
 
 ---
-## 버튼 만들기
+### 버튼 만들기
 ---
 
 
@@ -228,7 +237,7 @@ a
 
 
 ---
-## 객체 숫자 계산 하는 방법
+### 객체 숫자 계산 하는 방법
 ---
 
 #### How to Count the Number of Properties of the JavaScript Object
@@ -346,7 +355,7 @@ console.log(count);  // print 1
 
 
 ---
-## **iteration statements** 
+### iteration statements
 ---
 
 
@@ -420,7 +429,7 @@ for(var i in obj[key])
 
 
 ---
-## **array** 
+### array 
 ---
 
 **Get the last item in an array**
@@ -466,4 +475,6 @@ var newArray = [];
 
 [This is link](https://love2dev.com/blog/javascript-remove-from-array)
 
+**JavaScript Arrays: slice vs splice**
 
+[This is link](https://wsvincent.com/javascript-array-slice-vs-splice/)

@@ -1,5 +1,5 @@
 ---
-title: 1.My_dictionary
+title: 1. Dictionary
 date: 2019
 draft: true
 menu:
@@ -12,6 +12,8 @@ type: docs
 
 ---
 
+![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
+ 
 
 ---
 ## **String** 
@@ -221,7 +223,7 @@ console.log('Chorus lyrics for "Happy": ' + chorus.repeat(27));
 
 ```
 
-**strcharAt(index)** 
+**str.charAt(index)** 
 
 >인덱스에 있는 값을 리턴한다.
 
@@ -242,6 +244,7 @@ alert(stringName.charAt(1000) == ''); // true
 **str.replace()**
 
 >`immtable`
+
 
 >값을 찾아서 원하는 값으로 바꿔준다 
 
@@ -315,6 +318,23 @@ console.log(max)
 ---
 ## **Array**
 ---
+
+**Notes** 
+
+* 특이사항
+
+```
+ 1. 기존에 arr 를 새로운 newArr 라는 변수를 지정해 쓰는 경우에
+ 만약 newArr 를 바꾸면 기존의 arr 까지 바뀌게 된다. 
+ 
+ 2. 그런데 만약 새로운 newArr 라는 변수에 arr.slice() 로 copy 한 것을 저장하여 쓰게 된다면 기존에 arr 값이 변하지 않는다. 
+ 
+ SumUp
+
+기존에 arr 에 영향을 주지 않으려면 array 를 copy해서 써라! 
+ 
+```
+
 
 
 **Array.isArray()**
@@ -600,6 +620,8 @@ arr; // = > [1,2,3]
 
 **arr.unshift()**	 
 
+
+>`mutable`
 > 앞에 붙이기
 
 ```
@@ -668,11 +690,21 @@ var citrus = fruits.slice(1, 3);
 
 ```
 
+* 만약 fruits.slice(1,`0`)
+
+```js
+var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
+
+fruits.slice(1, 0);
+
+>> []  << 값이 사라진다. 
+```
+
 
 
 **arr.splice(start,deleteCount,"itme1",...")**
 
->`immutable`
+>`mutable`
 
 > 중간에 element 를 삭제 할수 있는 방법이 이거뿐
 
@@ -1022,6 +1054,54 @@ arr.join(" hi ")
 "welcome hi coding hi everybody"
 
 ```
+
+
+**arr.every()**
+
+>every() 메서드는 배열 안의 모든 요소가 주어진 판별 함수를 통과하는지 테스트합니다.
+
+
+>다음 예는 배열의 모든 요소가 10보다 더 큰지 테스트합니다.
+
+```js
+function isBigEnough(element, index, array) {
+  return element >= 10;
+}
+[12, 5, 8, 130, 44].every(isBigEnough);   // false
+[12, 54, 18, 130, 44].every(isBigEnough); // true
+```
+
+> 화살표 함수 사용
+
+```js
+
+[12, 5, 8, 130, 44].every(elem => elem >= 10); // false
+[12, 54, 18, 130, 44].every(elem => elem >= 10); // true
+
+
+```
+
+
+**arr.some()**
+
+
+> 하나라도 조건이 맞으면 true  반환한다. 
+
+```js
+var array = [1, 2, 3, 5];
+
+var even = function(element) {
+  // checks whether an element is even
+  return element % 2 === 0;
+};
+
+console.log(array.some(even));
+// expected output: true
+
+
+
+```
+
 ---
 ## **object**
 ---

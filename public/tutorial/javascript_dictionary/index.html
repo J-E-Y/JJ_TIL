@@ -126,7 +126,7 @@ immutable
   
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_dictionary/">
-  <meta property="og:title" content="1.My_dictionary | Home">
+  <meta property="og:title" content="1. Dictionary | Home">
   <meta property="og:description" content="String str[index]
 immutable
  1.글자 하나하나 가져오기
@@ -150,7 +150,7 @@ immutable
 
   
 
-  <title>1.My_dictionary | Home</title>
+  <title>1. Dictionary | Home</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -295,15 +295,15 @@ immutable
     <ul class="nav docs-sidenav">
       
       <li class="active">
-        <a href="/tutorial/javascript_dictionary/">1.My_dictionary</a>
+        <a href="/tutorial/javascript_dictionary/">1. Dictionary</a>
       </li>
       
       <li >
-        <a href="/tutorial/javascript_q1/">JS Basic 1</a>
+        <a href="/tutorial/javascript_q1/">2. Basic_Daliy_Coding</a>
       </li>
       
       <li >
-        <a href="/tutorial/javascript_q2/">JS Basic 2</a>
+        <a href="/tutorial/javascript_q2/">Crucial_Points</a>
       </li>
       
       <li >
@@ -311,7 +311,7 @@ immutable
       </li>
       
       <li >
-        <a href="/tutorial/javascript_note/">JS Note</a>
+        <a href="/tutorial/javascript_note/">Notes</a>
       </li>
       
     </ul>
@@ -376,10 +376,12 @@ immutable
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">1.My_dictionary</h1>
+          <h1 itemprop="name">1. Dictionary</h1>
 
           <div class="article-style" itemprop="articleBody">
             
+
+<p><img src="/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png" alt="" /></p>
 
 <hr />
 
@@ -575,7 +577,7 @@ console.log('Chorus lyrics for &quot;Happy&quot;: ' + chorus.repeat(27));
 
 </code></pre>
 
-<p><strong>strcharAt(index)</strong></p>
+<p><strong>str.charAt(index)</strong></p>
 
 <blockquote>
 <p>인덱스에 있는 값을 리턴한다.</p>
@@ -670,6 +672,23 @@ console.log(max)
 <h2 id="array"><strong>Array</strong></h2>
 
 <hr />
+
+<p><strong>Notes</strong></p>
+
+<ul>
+<li><p>특이사항</p>
+
+<pre><code>1. 기존에 arr 를 새로운 newArr 라는 변수를 지정해 쓰는 경우에
+만약 newArr 를 바꾸면 기존의 arr 까지 바뀌게 된다. 
+ 
+2. 그런데 만약 새로운 newArr 라는 변수에 arr.slice() 로 copy 한 것을 저장하여 쓰게 된다면 기존에 arr 값이 변하지 않는다. 
+ 
+SumUp
+
+기존에 arr 에 영향을 주지 않으려면 array 를 copy해서 써라! 
+ 
+</code></pre></li>
+</ul>
 
 <p><strong>Array.isArray()</strong></p>
 
@@ -944,7 +963,8 @@ arr; // = &gt; [1,2,3]
 <p><strong>arr.unshift()</strong></p>
 
 <blockquote>
-<p>앞에 붙이기</p>
+<p><code>mutable</code>
+앞에 붙이기</p>
 </blockquote>
 
 <pre><code>var arr = [1,2,3,4];
@@ -1012,10 +1032,21 @@ var citrus = fruits.slice(1, 3);
 
 </code></pre>
 
+<ul>
+<li>만약 fruits.slice(1,<code>0</code>)</li>
+</ul>
+
+<pre><code class="language-js">var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
+
+fruits.slice(1, 0);
+
+&gt;&gt; []  &lt;&lt; 값이 사라진다. 
+</code></pre>
+
 <p><strong>arr.splice(start,deleteCount,&ldquo;itme1&rdquo;,&hellip;&ldquo;)</strong></p>
 
 <blockquote>
-<p><code>immutable</code></p>
+<p><code>mutable</code></p>
 
 <p>중간에 element 를 삭제 할수 있는 방법이 이거뿐</p>
 </blockquote>
@@ -1353,6 +1384,52 @@ arr.join(&quot; &quot;);
 
 arr.join(&quot; hi &quot;)
 &quot;welcome hi coding hi everybody&quot;
+
+</code></pre>
+
+<p><strong>arr.every()</strong></p>
+
+<blockquote>
+<p>every() 메서드는 배열 안의 모든 요소가 주어진 판별 함수를 통과하는지 테스트합니다.</p>
+
+<p>다음 예는 배열의 모든 요소가 10보다 더 큰지 테스트합니다.</p>
+</blockquote>
+
+<pre><code class="language-js">function isBigEnough(element, index, array) {
+  return element &gt;= 10;
+}
+[12, 5, 8, 130, 44].every(isBigEnough);   // false
+[12, 54, 18, 130, 44].every(isBigEnough); // true
+</code></pre>
+
+<blockquote>
+<p>화살표 함수 사용</p>
+</blockquote>
+
+<pre><code class="language-js">
+[12, 5, 8, 130, 44].every(elem =&gt; elem &gt;= 10); // false
+[12, 54, 18, 130, 44].every(elem =&gt; elem &gt;= 10); // true
+
+
+</code></pre>
+
+<p><strong>arr.some()</strong></p>
+
+<blockquote>
+<p>하나라도 조건이 맞으면 true  반환한다.</p>
+</blockquote>
+
+<pre><code class="language-js">var array = [1, 2, 3, 5];
+
+var even = function(element) {
+  // checks whether an element is even
+  return element % 2 === 0;
+};
+
+console.log(array.some(even));
+// expected output: true
+
+
 
 </code></pre>
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TIL (Today I learned ) on Home</title>
+    <title>Today I learned on Home</title>
     <link>/tutorial/</link>
-    <description>Recent content in TIL (Today I learned ) on Home</description>
+    <description>Recent content in Today I learned on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -91,7 +91,7 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
     </item>
     
     <item>
-      <title>1.My_dictionary</title>
+      <title>1. Dictionary</title>
       <link>/tutorial/javascript_dictionary/</link>
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
@@ -111,38 +111,39 @@ immutable
     </item>
     
     <item>
-      <title>JS Note</title>
+      <title>Notes</title>
       <link>/tutorial/javascript_note/</link>
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>for ( let 변수 in obj ) { }  how propo works ?
+      <description>Today What I Learn ? for ( let 변수 in obj ) { }  how propo works ?
   객체의 키를 변수에 넣어준다고 생각각하면 됩니다.  dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
   Example1  var obj = {steve:1, bob:2}; var steve = &#39;bob&#39;; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[steve]); // 2   Example2  var obj = {steve:1, bob:2}; console.</description>
     </item>
     
     <item>
-      <title>JS Basic 1</title>
+      <title>2. Basic_Daliy_Coding</title>
       <link>/tutorial/javascript_q1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q1/</guid>
-      <description>Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
-  my_answer  function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (age &amp;lt; 21 ) { return false; } else { return true; } }  Conditional : checkAge  이름과 나이를 파라미터로 받는 checkAge라는 함수는 두개 중 하나의 메시지를 리턴합니다.
-만일 21살보다 적으면, Go home, {전달받은_이름}!</description>
+      <description>&amp;mdash;
+Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
+  my_answer  function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (age &amp;lt; 21 ) { return false; } else { return true; } }  Conditional : checkAge  이름과 나이를 파라미터로 받는 checkAge라는 함수는 두개 중 하나의 메시지를 리턴합니다.</description>
     </item>
     
     <item>
-      <title>JS Basic 2</title>
+      <title>Crucial_Points</title>
       <link>/tutorial/javascript_q2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q2/</guid>
-      <description>Week 1 isOdd
- Write a function called isOdd. (&amp;ldquo;isOdd&amp;rdquo; 함수를 작성하세요.)
-Given an integer, isOdd returns whether the integer is odd or not. (숫자가 주어졌을때, &amp;ldquo;isOdd&amp;rdquo; 함수는 주어진 숫자가 홀수 인지 아닌지를 반환합니다.)
-  my_answer
-function isOdd(num) { // your code here // 파라미터를 2로 나누었을때의 나머지를 판별별 // 나머지가 1인경우, true를 리턴 // 나머지가 0인경우, false를 리턴 if (num % 2 === 1 ) { return true; } else { return false; } }   sum</description>
+      <description>Scope 스코프란?
+ 자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.
+스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.
+ 전역_스코프
+let greeting = &#39;Hello John&#39; // 박에서 변수가 선언됨 function marcusHello () { console.log(greeting) } console.log(greeting) // &#39;Hello John!&#39; sayHello() // &#39;Hello John!&#39;  지역_스코프
+function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨 console.log(greeting) } marcusHello() // &#39;Hello John!!&#39; console.log(x) // Error, hello is not defined  Closure  description   클로저는 독립적인 (자유) 변수를 가리키는 함수이다.</description>
     </item>
     
     <item>

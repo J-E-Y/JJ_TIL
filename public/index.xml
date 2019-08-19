@@ -1091,6 +1091,8 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
       <guid>/tutorial/javascript/</guid>
       <description>
 
+&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;h2 id=&#34;1-data-type&#34;&gt;1.&lt;strong&gt;data type&lt;/strong&gt;&lt;/h2&gt;
@@ -3879,12 +3881,14 @@ Figure 1: A fancy pie chart.
     </item>
     
     <item>
-      <title>1.My_dictionary</title>
+      <title>1. Dictionary</title>
       <link>/tutorial/javascript_dictionary/</link>
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_dictionary/</guid>
       <description>
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -4080,7 +4084,7 @@ console.log(&#39;Chorus lyrics for &amp;quot;Happy&amp;quot;: &#39; + chorus.rep
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;strcharAt(index)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;str.charAt(index)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;인덱스에 있는 값을 리턴한다.&lt;/p&gt;
@@ -4175,6 +4179,23 @@ console.log(max)
 &lt;h2 id=&#34;array&#34;&gt;&lt;strong&gt;Array&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;특이사항&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. 기존에 arr 를 새로운 newArr 라는 변수를 지정해 쓰는 경우에
+만약 newArr 를 바꾸면 기존의 arr 까지 바뀌게 된다. 
+ 
+2. 그런데 만약 새로운 newArr 라는 변수에 arr.slice() 로 copy 한 것을 저장하여 쓰게 된다면 기존에 arr 값이 변하지 않는다. 
+ 
+SumUp
+
+기존에 arr 에 영향을 주지 않으려면 array 를 copy해서 써라! 
+ 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Array.isArray()&lt;/strong&gt;&lt;/p&gt;
 
@@ -4449,7 +4470,8 @@ arr; // = &amp;gt; [1,2,3]
 &lt;p&gt;&lt;strong&gt;arr.unshift()&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;앞에 붙이기&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mutable&lt;/code&gt;
+앞에 붙이기&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4];
@@ -4517,10 +4539,21 @@ var citrus = fruits.slice(1, 3);
 
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;ul&gt;
+&lt;li&gt;만약 fruits.slice(1,&lt;code&gt;0&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var fruits = [&#39;Banana&#39;, &#39;Orange&#39;, &#39;Lemon&#39;, &#39;Apple&#39;, &#39;Mango&#39;];
+
+fruits.slice(1, 0);
+
+&amp;gt;&amp;gt; []  &amp;lt;&amp;lt; 값이 사라진다. 
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;&lt;strong&gt;arr.splice(start,deleteCount,&amp;ldquo;itme1&amp;rdquo;,&amp;hellip;&amp;ldquo;)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;immutable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mutable&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;중간에 element 를 삭제 할수 있는 방법이 이거뿐&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -4861,6 +4894,52 @@ arr.join(&amp;quot; hi &amp;quot;)
 
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;&lt;strong&gt;arr.every()&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;every() 메서드는 배열 안의 모든 요소가 주어진 판별 함수를 통과하는지 테스트합니다.&lt;/p&gt;
+
+&lt;p&gt;다음 예는 배열의 모든 요소가 10보다 더 큰지 테스트합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function isBigEnough(element, index, array) {
+  return element &amp;gt;= 10;
+}
+[12, 5, 8, 130, 44].every(isBigEnough);   // false
+[12, 54, 18, 130, 44].every(isBigEnough); // true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;화살표 함수 사용&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+[12, 5, 8, 130, 44].every(elem =&amp;gt; elem &amp;gt;= 10); // false
+[12, 54, 18, 130, 44].every(elem =&amp;gt; elem &amp;gt;= 10); // true
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;arr.some()&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;하나라도 조건이 맞으면 true  반환한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var array = [1, 2, 3, 5];
+
+var even = function(element) {
+  // checks whether an element is even
+  return element % 2 === 0;
+};
+
+console.log(array.some(even));
+// expected output: true
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;hr /&gt;
 
 &lt;h2 id=&#34;object&#34;&gt;&lt;strong&gt;object&lt;/strong&gt;&lt;/h2&gt;
@@ -4964,18 +5043,20 @@ console.log(delete Employee.salary); // returns true
     </item>
     
     <item>
-      <title>JS Note</title>
+      <title>Notes</title>
       <link>/tutorial/javascript_note/</link>
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
       <description>
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;for-let-변수-in-obj&#34;&gt;for ( let 변수 in obj ) { }&lt;/h2&gt;
+&lt;h1 id=&#34;today-what-i-learn&#34;&gt;Today What I Learn ?&lt;/h1&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;for-let-변수-in-obj&#34;&gt;for ( let 변수 in obj ) { }&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;how propo works ?&lt;/p&gt;
@@ -4987,9 +5068,7 @@ console.log(delete Employee.salary); // returns true
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;dot-notation-and-braket-notation&#34;&gt;dot notation and  braket notation ?&lt;/h2&gt;
-
-&lt;hr /&gt;
+&lt;h3 id=&#34;dot-notation-and-braket-notation&#34;&gt;dot notation and  braket notation ?&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???&lt;/p&gt;
@@ -5024,7 +5103,7 @@ console.log(obj[&#39;bob&#39;]);   // 2
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;first-class-object&#34;&gt;first-class object()&lt;/h2&gt;
+&lt;h3 id=&#34;first-class-object&#34;&gt;first-class object()&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -5073,7 +5152,7 @@ alert(input);
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;callback&#34;&gt;Callback&lt;/h2&gt;
+&lt;h3 id=&#34;callback&#34;&gt;Callback&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -5101,7 +5180,7 @@ alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;dom-dom을-이용해서-html문서를-제어할수-있다&#34;&gt;Dom : Dom을 이용해서 HTML문서를 제어할수 있다&lt;/h2&gt;
+&lt;h3 id=&#34;dom-dom을-이용해서-html문서를-제어할수-있다&#34;&gt;Dom : Dom을 이용해서 HTML문서를 제어할수 있다&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -5155,7 +5234,7 @@ a
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;버튼-만들기&#34;&gt;버튼 만들기&lt;/h2&gt;
+&lt;h3 id=&#34;버튼-만들기&#34;&gt;버튼 만들기&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -5196,7 +5275,7 @@ a
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;객체-숫자-계산-하는-방법&#34;&gt;객체 숫자 계산 하는 방법&lt;/h2&gt;
+&lt;h3 id=&#34;객체-숫자-계산-하는-방법&#34;&gt;객체 숫자 계산 하는 방법&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -5315,7 +5394,7 @@ console.log(count);  // print 1
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;iteration-statements&#34;&gt;&lt;strong&gt;iteration statements&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;iteration-statements&#34;&gt;iteration statements&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -5383,7 +5462,7 @@ for(var i in obj[key])
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;array&#34;&gt;&lt;strong&gt;array&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;array&#34;&gt;array&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -5422,18 +5501,22 @@ var newArray = [];
 &lt;p&gt;&lt;strong&gt;9 Ways to Remove Elements From A JavaScript Array&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://love2dev.com/blog/javascript-remove-from-array&#34; target=&#34;_blank&#34;&gt;This is link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;JavaScript Arrays: slice vs splice&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wsvincent.com/javascript-array-slice-vs-splice/&#34; target=&#34;_blank&#34;&gt;This is link&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>JS Basic 1</title>
+      <title>2. Basic_Daliy_Coding</title>
       <link>/tutorial/javascript_q1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q1/</guid>
       <description>
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&amp;mdash;&lt;/p&gt;
 
 &lt;h2 id=&#34;conditional-isoldenoughtodrink&#34;&gt;Conditional : isOldEnoughToDrink&lt;/h2&gt;
 
@@ -7921,304 +8004,109 @@ function getProductOfAllElementsAtProperty(obj, key) {
     </item>
     
     <item>
-      <title>JS Basic 2</title>
+      <title>Crucial_Points</title>
       <link>/tutorial/javascript_q2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q2/</guid>
       <description>
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;week-1&#34;&gt;Week 1&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;isOdd&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;scope&#34;&gt;Scope&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;스코프란?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Write a function called isOdd. (&amp;ldquo;isOdd&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+&lt;p&gt;자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.&lt;/p&gt;
 
-&lt;p&gt;Given an integer, isOdd returns whether the integer is odd or not. (숫자가 주어졌을때, &amp;ldquo;isOdd&amp;rdquo; 함수는 주어진 숫자가 홀수 인지 아닌지를 반환합니다.)&lt;/p&gt;
+&lt;p&gt;스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;전역_스코프&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;function isOdd(num) {
-// your code here
-// 파라미터를 2로 나누었을때의 나머지를 판별별
-// 나머지가 1인경우, true를 리턴
-// 나머지가 0인경우, false를 리턴
-if (num % 2 === 1 ) {
-return true;
-} else {
-return false;
-}
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let greeting = &#39;Hello John&#39; // 박에서 변수가 선언됨
+
+function marcusHello () {
+  console.log(greeting)
 }
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+console.log(greeting) // &#39;Hello John!&#39; 
 
-&lt;p&gt;&lt;strong&gt;sum&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Summation to n: Let&amp;rsquo;s implement the function sum that takes a single parameter n, and computes the sum of all integers up to n starting from 0, e.g.:&lt;/p&gt;
-
-&lt;p&gt;(n까지의 총 합: n을 매개변수로 받아 0 부터 n 까지 모든 수의 총 합을 반환하는 함수를 작성하세요.)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function sum(n) {
-let result = 0;
-//반복문을 이용하여 0부터 n까지의 숫자를 더하여 출력
-for (let i = 0; i &amp;lt;= n; i++) {
-result = result + i;
-}
-return result;
-  
-// your code here
-}
-sum(3);
-sum(4);
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;onlyEvenElements&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Given an array of numbers, onlyEvenElements returns a new array of just the even numbers. (숫자로 이루어진 배열이 주어졌을때, &amp;ldquo;onlyEvenElements&amp;rdquo; 함수는 주어진 배열에 있는 짝수로만으로 이루어진 새로운 배열을 반환해야 합니다.)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-function onlyEvenElements(arr) {
-//짝수값을 입력받을 빈배열을 선언한다.
-let result = [];
-//입력받은 배열안에 있는는 값을 판별하기위해 불러온다.
-for (let i = 0; i &amp;lt; arr.length; i++) {
-//값이 짝수인지를 if 문을 써서 판별한다. 
-if (arr[i] % 2 === 0) {
-  //값이이 짝수인경우 빈배열에 집어넣는다.
-  result.push(arr[i]);
-}
-}
-return result;
-// your code here
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;removeOddValues&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Write a function removeOddValues that takes an object as an argument and returns an object with all key/value pairs removed for which the value holds an odd number. (&amp;ldquo;removeOddValues&amp;rdquo; 함수를 작성하세요. 객체가 주어졌을때, &amp;ldquo;removeOddValues&amp;rdquo; 함수는 주어진 객체의 key/value 페어 중 value 가 홀수 숫자인 페어가 제거된 객체를 반환하세요.)&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;ll need to use the &amp;ldquo;typeof&amp;rdquo; operator to first check that the values are numbers: (value가 숫자인지 확인하기 위하서는 &amp;ldquo;typeof&amp;rdquo; 연산자를 먼저 사용해야 합니다.)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;my_answer&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;first&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function removeOddValues(object) {
-// 1.홀수숫자인 페어가가 아닌 값들을 입력받을을 빈 객체를를 만든다.
-let object2 = {};
-// 2. value 값들을 판별하기 위해 키값을 반복시킨다.
-for (let k in object) {
-// 3. value 값이 숫자이고 짝수이면 빈객체에 대입한다. 
-if (typeof(object[k]) === &#39;number&#39; &amp;amp;&amp;amp; object[k] % 2 === 0) {
-  object2[k] = object[k];
-//4. value 값이 문자형이면 객체에 대입한다. 
-} else if ( typeof(object[k]) === &amp;quot;string&amp;quot; ) {
-  object2[k] = object[k];
-} 
-}
-return object2;
-// your code here
-}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Sceond&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-function removeOddValues(input) {
-	
-// 1. 결과를 담을 객체를 만듭니다. 
-	
-	let result = {};
-
-// 2. input 으로 받은 object 안에 key 를 모두 반복합니다. 
-  
-for (let key in input) {
-	  let value = input[key];
-	  let isNumber = typeof value === &#39;number&#39;;
-
-	  if (isNumber ) {
-	 
-// key의 해당 하는 value가 짝수인지 확인합니다.
-	 
-let isEven = value % 2 === 0;
-if (isEven) {
-	 
-// 만든 객체에 key, value를 추가합니다.
-	 
-result[key] = value;
-	    }
-}
-// 숫자가 아니면
-	
-else {
-	
-//만든 객체에 key, value 를 추가합니다.
-
-	result[key] = value;	
-}
-}
-return result;
-}
-
-removeOddValues({ a: 1, b: 2, c: 3, d: &#39;hello&#39; })
-
+sayHello() // &#39;Hello John!&#39; 
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;
-function removeOddValues(object) {
-//1. value 값을 판별하기 위해 key 값을 반복한다.
-for (let k in object) {
-//2. value 값이 숫자이고 홀수이면 삭제한다. 
-if (typeof(object[k]) === &#39;number&#39; &amp;amp;&amp;amp; object[k] % 2 === 1) {
-delete object[k];
- }
-}
-return object;
+&lt;p&gt;&lt;strong&gt;지역_스코프&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function marcusHello () {
+  
+  let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨
+  console.log(greeting)
 }
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+marcusHello() // &#39;Hello John!!&#39;
+
+console.log(x) // Error, hello is not defined
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;closure&#34;&gt;Closure&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;description&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;week-3&#34;&gt;week 3&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;firstCharacter&lt;/strong&gt;&lt;/p&gt;
-
 &lt;blockquote&gt;
-&lt;p&gt;In this exercise, a string is passed to a method and a new string has to be returned with the first character of each word in the string (문자열이 주어졌을때, &amp;ldquo;firstCharacter&amp;rdquo; 함수는 문자열의 각 단어 첫글자들로 이루어진 문자열을 반환하여야 합니다.)&lt;/p&gt;
+&lt;p&gt;클로저는 독립적인 (자유) 변수를 가리키는 함수이다. 또는, 클로저 안에 정의된 함수는 만들어진 환경을 ‘기억한다’.&lt;/p&gt;
 
-&lt;p&gt;Attention! In test case 5 userinput is one space input char as &amp;lsquo; &amp;lsquo;, please do not get confused with &amp;ldquo;, empty string (주의사항! 테스트 케이스 5 에서 주는 입력값은 띄어쓰기 한개(&amp;rsquo; &amp;lsquo;) 입니다. 빈 문자열(&amp;rdquo;) 과 혼동하지 마세요.)&lt;/p&gt;
+&lt;p&gt;내부함수는 외부함수의 지역변수에 접근 할 수 있는데 외부함수의 실행이 끝나서 외부함수가 소멸된 이후에도 내부함수가 외부함수의 변수에 접근 할 수 있다. 이러한 메커니즘을 클로저라고 한다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-&lt;li&gt;my_code&lt;/li&gt;
+&lt;li&gt;일반적인 함수&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-unction firstCharacter (string) {
- // Your code here
- 
- 
- // for문 이용
- 
- let output = [];
- let temp_arr = [];
+let addTo = function (passed) {
 
- // 1. split으로 단어로 나눠서 배열 만들기
- 
- temp_arr = string.split(&#39; &#39;);
- // 2. 각 인덱스의 첫번째 문자를 배열 output 에 담기
- for(let i=0;i&amp;lt;temp_arr.length;i++){
-   output.push(temp_arr[i][0]);
- }
- 
- // 4. 출력
- return output.join(&#39;&#39;);
- 
- 
- 
- ////////////////////////////////////////////////////////////////////////
- 
- // 2. Reduce 이용
- return string.split(&#39; &#39;).reduce(function(acc,cur){
-   return acc+cur[0];
- 
- },&#39;&#39;);
- 
- // 3. Reduce이용 2
- return string.split(&#39; &#39;).reduce( (acc,cur)=&amp;gt;acc+cur[0] ,&#39;&#39;);
-}
+	let inner = 2;
+	return passed + inner; 3 + 2 
 
+};
+
+console.log( addTo(3) ) //  5
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;longestWord&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;sing the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &amp;lsquo;LongestWord&amp;rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)&lt;/p&gt;
-
-&lt;p&gt;If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요. 문장은 빈 문자열이 아닙니다.)&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;my_code&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-// It&#39;s used by sort() 
-
-function longestWord(string) {
-
-// 1. 주어진 문장을 배열로 만들기(split)
-let tmp = string.split(&#39; &#39;);
-//let sorted_tmp =[];
-// [&#39;I&#39;,&#39;love&#39;,&#39;codestates&#39;];
-// 2. sort() 사용 =&amp;gt; 성능 떨어짐
-let x = function(a,b){
-return b.length-a.length;
-};
-// 3. 0번째 요소 출력
-return tmp.sort(x)[0];
-}
-
-////////////////////////////////////////////////////////
-
-// It&#39;s used by reudce(1)
-
-function longestWord(string) {
- 
-let tmp = string.split(&#39; &#39;);
-let max = tmp[0];
-for(let i =1;i&amp;lt;tmp.length;i++){
-if(tmp[i].length&amp;gt;max.length){
- max = tmp[i];
-}
-}
-return max;
-}
-
-
-/////////////////////////////////////////////////////////
-
-// It&#39;s used by reudce(2) 화살표
-
-function longestWord(string) {
-
-return string.split(&#39; &#39;).reduce((acc,cur)=&amp;gt; acc.length&amp;lt;cur.length? cur:acc);
-}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;이것이 클로저&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let passed = 3;  // 함수 밖에 변수를 선언한다 
+
+let addTo = function () { //  parameter 를 외부에서가져온다. 
+
+	let inner = 2;
+	return passed + inner; 3 + 2  // 
+
+};
+
+console.log( addTo() ) //  5
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -8229,6 +8117,8 @@ return string.split(&#39; &#39;).reduce((acc,cur)=&amp;gt; acc.length&amp;lt;cur
       
       <guid>/tutorial/javascript_algorithm/</guid>
       <description>
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;isodd&#34;&gt;isOdd&lt;/h2&gt;
 

@@ -1,5 +1,5 @@
 ---
-title: JS Basic 1
+title: 2. Basic_Daliy_Coding
 date: 2019-6
 draft: true
 menu:
@@ -11,7 +11,10 @@ type: docs
 ---
 
 
----
+
+![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)---
+
+
 ## Conditional : isOldEnoughToDrink
 ---
 
