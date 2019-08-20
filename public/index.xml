@@ -502,6 +502,15 @@ git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
 
 &lt;pre&gt;&lt;code&gt;저장소에서 특정 커밋이나 브랜치로 돌아가고 싶을 때 사용
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-diff&#34;&gt;Git : &lt;strong&gt;diff&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -1095,7 +1104,7 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;1-data-type&#34;&gt;1.&lt;strong&gt;data type&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;1-data-type&#34;&gt;&lt;strong&gt;1.data type&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -8105,6 +8114,35 @@ let addTo = function () { //  parameter 를 외부에서가져온다.
 console.log( addTo() ) //  5
 
 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;커링-currying&#34;&gt;##커링 (currying)&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;호출된 함수의 매개변수로 동적으로 새로운 함수를 생성하여 반환하는 패턴을 커링이라 한다.&lt;/p&gt;
+
+&lt;p&gt;호출하는 함수의 인자값이 비슷하다면 커링을 사용하는 것이 효율적이다.&lt;/p&gt;
+
+&lt;p&gt;클로저를 이용해 함수의 인자를 미리 등록해두는 것&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function func(a) {
+    return function(b) { // 내부 함수, 즉 클로저인 익명 함수 반환
+        return a + b;
+    }
+}
+var currying = func(5);
+var result = currying(5); 
+console.log(result);
+// 또는 아래처럼 호출
+var result2 = func(5)(7); 
+console.log(result2);
+
+https://mylife365.tistory.com/320 
 
 &lt;/code&gt;&lt;/pre&gt;
 </description>

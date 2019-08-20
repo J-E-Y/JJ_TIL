@@ -188,6 +188,14 @@ git config --global user.name "yourGitHubusername"
 저장소에서 특정 커밋이나 브랜치로 돌아가고 싶을 때 사용
 ```
 
+---
+## Git : **diff**  
+---
+
+```
+
+```
+
 
 
 

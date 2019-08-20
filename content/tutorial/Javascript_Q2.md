@@ -100,6 +100,36 @@ console.log( addTo() ) //  5
 
 
 ```
+---
+##커링 (currying)
+---
+
+> 호출된 함수의 매개변수로 동적으로 새로운 함수를 생성하여 반환하는 패턴을 커링이라 한다.
+
+>호출하는 함수의 인자값이 비슷하다면 커링을 사용하는 것이 효율적이다.
+
+> 클로저를 이용해 함수의 인자를 미리 등록해두는 것
+
+```js
+
+function func(a) {
+    return function(b) { // 내부 함수, 즉 클로저인 익명 함수 반환
+        return a + b;
+    }
+}
+var currying = func(5);
+var result = currying(5); 
+console.log(result);
+// 또는 아래처럼 호출
+var result2 = func(5)(7); 
+console.log(result2);
+
+https://mylife365.tistory.com/320 
+
+```
+
+
+
 
 
 
