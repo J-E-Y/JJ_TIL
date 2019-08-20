@@ -14,20 +14,182 @@ type: docs
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
  
-
-
 # Today What I Learn ?
+
 ![](/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png)
 
+---
 
 
 
-### for ( let 변수 in obj ) { }
 
-> how propo works ? 
 
-* 객체의 키를  변수에  넣어준다고 생각각하면 됩니다.
 
+
+
+
+
+---
+### in 에 관해서
+---
+
+```js
+
+
+obj = {a:1,b:2}; // obj 객체가 있다.
+
+let obj2 = "a" in obj; //  obj 안에 a라는 키값이 있는지 확인한다. 
+
+console.log(obj2) // >> true << true or false 로 값을 나타낸다.  
+
+
+
+```
+
+
+
+
+---
+### prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법
+---
+
+
+
+
+
+```js
+
+// prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다
+
+function objFunc(para) { // 객체를 담고있는 함수를 먼저 만든다.
+      this.age = para; // key 는 name / property는 para  < 아직 모른다.
+    }
+
+    let newObj = new objFunc(33); // para 값이 33이 됨 따라서 info1 = { age:33 }
+    newObj.name = "John"; //  // 함수안에 infor1 객체안에 키값이랑 property 를 추가한다.
+
+newObj //>> objFunc = { age: 33 , name: "John" } name = "john" 이 추가됬다. 
+
+// prototype 을 사용해서 추가하기
+
+objFunc.prototype.text = function() { // 처음함수에 prototype을 넣는다.  그다음에 text라는 키값을 지정한다. 이키값은 함수이기도 하다. 그래서 키이면서도 함수인 text()가 실행되면 return값이 출력된다.  
+	return "this is the stroy what I want to say to " + newObj.name; 
+}
+
+newObj.text(); // "this is the stroy what I want to say to john"
+
+
+```
+
+
+
+
+
+---
+### 객체안에 담겨있는 function 사용하기
+---
+
+```js
+
+  // 객체를 만들고 속성값에 text 내용을 출력할 함수를 만든다. 
+  
+ // 이름을 몇번 집어넣을지 num 라는 것을 Array(num+1)를 통해 만들고 join 메소드를 이용해 " " 띄어쓰기를 한후 text 를 출력한다.
+
+obj1 = {
+      name1 : "john",
+      name2: "tim",
+      funcSum: function (num) {
+        return "They are " + this.name1 + " and the" +
+        Array(num + 1).join(" " + this.name2);     
+      }
+    };
+
+let massage = obj1.funcSum(2) //  객체안에 있는 속성인 funcSum(2) 호출한다.
+
+console.log(massage) // >> "They are john and the tim tim"
+
+```
+
+
+---
+### 함수가 객체의 키값으로 사용 
+---
+
+```js
+
+// 객체와 함수를 이용한다.
+// 장점 객체안에 키값을 자유롭게 사용할수 있다.
+
+let funcGood = function (elem) {
+      return elem + " is good man!";
+    };
+    let obj1 = { name: funcGood };
+    
+
+obj1.name("John") // >> john is good man!
+
+// 만약 obj.name 이 다른 기능을 가지고있는 함수를 대입하면..
+
+let funcBad = function (elem) {
+      return elem + " is good bad!";
+    };
+
+obj.name = funcBad 
+
+// 기존에 있던 obj.name 기능은 사라지고 obj.name 의 기능은
+
+obj.name("john") // john is good bad!
+
+
+```
+
+---
+### key 배열 출력 - Object.keys, for in 문
+---
+
+```js
+
+var arr = [];
+arr["a"] = 20;
+arr["b"] = 10;
+arr["c"] = 30;
+arr["d"] = 40;
+
+arr = [a: 20, b: 10, c: 30, d: 40];
+
+
+console.log(arr);    
+console.log(arr.length);  // 헉 키값으로 된 array는 length가 0??
+// jquery each문으로 안돌아간다.
+$.each(arr, function(index, el) {
+	console.log(el);
+});
+
+ // key만 출력
+console.log(Object.keys(arr)) // ["a", "b", "c", "d" ] 
+// for in으로 출력하자
+
+for (var i in arr) {  // in 연산자는 상속계통을 모두 검색하여 맴버가 존재하는지 확인한다. (반복문중 가장 느리다.)
+	if (arr.hasOwnProperty(i)) {   // hasOwnProperty를 통해 해당 객체의 맴버인지 확인을 한다.
+		console.log(arr[i]);
+	}
+}
+//------------------------------------------------------------------------------------------------------
+//  key array length 키 배열 사이즈  얻는 사용자함수
+function arraySize(obj) {
+	var size = 0, key;
+	for (key in obj) {
+		if (obj.hasOwnProperty(key)) {
+			size++;
+		}
+	}
+	return size;
+};	
+console.log(arraySize(arr));  // 4
+
+
+출처: https://mylife365.tistory.com/286?category=624212 [변화에 적응하기]
+```
 
 
 ---

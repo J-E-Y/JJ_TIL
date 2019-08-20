@@ -116,9 +116,7 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? for ( let 변수 in obj ) { }  how propo works ?
-  객체의 키를 변수에 넣어준다고 생각각하면 됩니다.  dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
-  Example1  var obj = {steve:1, bob:2}; var steve = &#39;bob&#39;; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[steve]); // 2   Example2  var obj = {steve:1, bob:2}; console.</description>
+      <description>Today What I Learn ? in 에 관해서 obj = {a:1,b:2}; // obj 객체가 있다. let obj2 = &amp;quot;a&amp;quot; in obj; // obj 안에 a라는 키값이 있는지 확인한다. console.log(obj2) // &amp;gt;&amp;gt; true &amp;lt;&amp;lt; true or false 로 값을 나타낸다.  prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법 // prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다 function objFunc(para) { // 객체를 담고있는 함수를 먼저 만든다. this.age = para; // key 는 name / property는 para &amp;lt; 아직 모른다.</description>
     </item>
     
     <item>
@@ -142,8 +140,8 @@ Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하�
  자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.
 스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.
  전역_스코프
-let greeting = &#39;Hello John&#39; // 박에서 변수가 선언됨 function marcusHello () { console.log(greeting) } console.log(greeting) // &#39;Hello John!&#39; sayHello() // &#39;Hello John!&#39;  지역_스코프
-function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨 console.log(greeting) } marcusHello() // &#39;Hello John!!&#39; console.log(x) // Error, hello is not defined  Closure  description   클로저는 독립적인 (자유) 변수를 가리키는 함수이다.</description>
+let greeting = &#39;Hello John&#39; // 외부에서 변수가 선언됨 function marcusHello () { console.log(greeting) } console.log(greeting) // &#39;Hello John!&#39; sayHello() // &#39;Hello John!&#39;  지역_스코프
+function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨 console.log(greeting) } marcusHello() // &#39;Hello John!!&#39; console.log(x) // Error, hello is not defined  let name = &amp;quot;john&amp;quot;; function showName() { let name = &amp;quot;jj&amp;quot;; // 2.</description>
     </item>
     
     <item>

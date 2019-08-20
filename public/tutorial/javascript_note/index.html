@@ -27,9 +27,7 @@
   
     
   
-  <meta name="description" content="Today What I Learn ? for ( let 변수 in obj ) { }  how propo works ?
-  객체의 키를 변수에 넣어준다고 생각각하면 됩니다.  dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
-  Example1  var obj = {steve:1, bob:2}; var steve = &#39;bob&#39;; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[steve]); // 2   Example2  var obj = {steve:1, bob:2}; console.">
+  <meta name="description" content="Today What I Learn ? in 에 관해서 obj = {a:1,b:2}; // obj 객체가 있다. let obj2 = &quot;a&quot; in obj; // obj 안에 a라는 키값이 있는지 확인한다. console.log(obj2) // &gt;&gt; true &lt;&lt; true or false 로 값을 나타낸다.  prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법 // prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다 function objFunc(para) { // 객체를 담고있는 함수를 먼저 만든다. this.age = para; // key 는 name / property는 para &lt; 아직 모른다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_note/">
@@ -118,9 +116,7 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_note/">
   <meta property="og:title" content="Notes | Home">
-  <meta property="og:description" content="Today What I Learn ? for ( let 변수 in obj ) { }  how propo works ?
-  객체의 키를 변수에 넣어준다고 생각각하면 됩니다.  dot notation and braket notation ?  다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
-  Example1  var obj = {steve:1, bob:2}; var steve = &#39;bob&#39;; console.log(obj.steve); // 1 console.log(obj[&#39;steve&#39;]); // also 1 console.log(obj[steve]); // 2   Example2  var obj = {steve:1, bob:2}; console."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Today What I Learn ? in 에 관해서 obj = {a:1,b:2}; // obj 객체가 있다. let obj2 = &quot;a&quot; in obj; // obj 안에 a라는 키값이 있는지 확인한다. console.log(obj2) // &gt;&gt; true &lt;&lt; true or false 로 값을 나타낸다.  prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법 // prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다 function objFunc(para) { // 객체를 담고있는 함수를 먼저 만든다. this.age = para; // key 는 name / property는 para &lt; 아직 모른다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -200,6 +196,25 @@
           <a class="nav-link" href="/tutorial/">
             
             <span>Today I Learned</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
             
           </a>
         </li>
@@ -357,7 +372,11 @@
 <ul>
 <li>
 <ul>
-<li><a href="#for-let-변수-in-obj">for ( let 변수 in obj ) { }</a></li>
+<li><a href="#in-에-관해서">in 에 관해서</a></li>
+<li><a href="#prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법">prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법</a></li>
+<li><a href="#객체안에-담겨있는-function-사용하기">객체안에 담겨있는 function 사용하기</a></li>
+<li><a href="#함수가-객체의-키값으로-사용">함수가 객체의 키값으로 사용</a></li>
+<li><a href="#key-배열-출력-object-keys-for-in-문">key 배열 출력 - Object.keys, for in 문</a></li>
 <li><a href="#dot-notation-and-braket-notation">dot notation and  braket notation ?</a></li>
 <li><a href="#first-class-object">first-class object()</a></li>
 <li><a href="#callback">Callback</a></li>
@@ -404,15 +423,162 @@
 
 <p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png" alt="" /></p>
 
-<h3 id="for-let-변수-in-obj">for ( let 변수 in obj ) { }</h3>
+<hr />
 
-<blockquote>
-<p>how propo works ?</p>
-</blockquote>
+<hr />
 
-<ul>
-<li>객체의 키를  변수에  넣어준다고 생각각하면 됩니다.</li>
-</ul>
+<h3 id="in-에-관해서">in 에 관해서</h3>
+
+<hr />
+
+<pre><code class="language-js">
+
+obj = {a:1,b:2}; // obj 객체가 있다.
+
+let obj2 = &quot;a&quot; in obj; //  obj 안에 a라는 키값이 있는지 확인한다. 
+
+console.log(obj2) // &gt;&gt; true &lt;&lt; true or false 로 값을 나타낸다.  
+
+
+
+</code></pre>
+
+<hr />
+
+<h3 id="prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법">prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법</h3>
+
+<hr />
+
+<pre><code class="language-js">
+// prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다
+
+function objFunc(para) { // 객체를 담고있는 함수를 먼저 만든다.
+      this.age = para; // key 는 name / property는 para  &lt; 아직 모른다.
+    }
+
+    let newObj = new objFunc(33); // para 값이 33이 됨 따라서 info1 = { age:33 }
+    newObj.name = &quot;John&quot;; //  // 함수안에 infor1 객체안에 키값이랑 property 를 추가한다.
+
+newObj //&gt;&gt; objFunc = { age: 33 , name: &quot;John&quot; } name = &quot;john&quot; 이 추가됬다. 
+
+// prototype 을 사용해서 추가하기
+
+objFunc.prototype.text = function() { // 처음함수에 prototype을 넣는다.  그다음에 text라는 키값을 지정한다. 이키값은 함수이기도 하다. 그래서 키이면서도 함수인 text()가 실행되면 return값이 출력된다.  
+	return &quot;this is the stroy what I want to say to &quot; + newObj.name; 
+}
+
+newObj.text(); // &quot;this is the stroy what I want to say to john&quot;
+
+
+</code></pre>
+
+<hr />
+
+<h3 id="객체안에-담겨있는-function-사용하기">객체안에 담겨있는 function 사용하기</h3>
+
+<hr />
+
+<pre><code class="language-js">
+  // 객체를 만들고 속성값에 text 내용을 출력할 함수를 만든다. 
+  
+ // 이름을 몇번 집어넣을지 num 라는 것을 Array(num+1)를 통해 만들고 join 메소드를 이용해 &quot; &quot; 띄어쓰기를 한후 text 를 출력한다.
+
+obj1 = {
+      name1 : &quot;john&quot;,
+      name2: &quot;tim&quot;,
+      funcSum: function (num) {
+        return &quot;They are &quot; + this.name1 + &quot; and the&quot; +
+        Array(num + 1).join(&quot; &quot; + this.name2);     
+      }
+    };
+
+let massage = obj1.funcSum(2) //  객체안에 있는 속성인 funcSum(2) 호출한다.
+
+console.log(massage) // &gt;&gt; &quot;They are john and the tim tim&quot;
+
+</code></pre>
+
+<hr />
+
+<h3 id="함수가-객체의-키값으로-사용">함수가 객체의 키값으로 사용</h3>
+
+<hr />
+
+<pre><code class="language-js">
+// 객체와 함수를 이용한다.
+// 장점 객체안에 키값을 자유롭게 사용할수 있다.
+
+let funcGood = function (elem) {
+      return elem + &quot; is good man!&quot;;
+    };
+    let obj1 = { name: funcGood };
+    
+
+obj1.name(&quot;John&quot;) // &gt;&gt; john is good man!
+
+// 만약 obj.name 이 다른 기능을 가지고있는 함수를 대입하면..
+
+let funcBad = function (elem) {
+      return elem + &quot; is good bad!&quot;;
+    };
+
+obj.name = funcBad 
+
+// 기존에 있던 obj.name 기능은 사라지고 obj.name 의 기능은
+
+obj.name(&quot;john&quot;) // john is good bad!
+
+
+</code></pre>
+
+<hr />
+
+<h3 id="key-배열-출력-object-keys-for-in-문">key 배열 출력 - Object.keys, for in 문</h3>
+
+<hr />
+
+<pre><code class="language-js">
+var arr = [];
+arr[&quot;a&quot;] = 20;
+arr[&quot;b&quot;] = 10;
+arr[&quot;c&quot;] = 30;
+arr[&quot;d&quot;] = 40;
+
+arr = [a: 20, b: 10, c: 30, d: 40];
+
+
+console.log(arr);    
+console.log(arr.length);  // 헉 키값으로 된 array는 length가 0??
+// jquery each문으로 안돌아간다.
+$.each(arr, function(index, el) {
+	console.log(el);
+});
+
+ // key만 출력
+console.log(Object.keys(arr)) // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot; ] 
+// for in으로 출력하자
+
+for (var i in arr) {  // in 연산자는 상속계통을 모두 검색하여 맴버가 존재하는지 확인한다. (반복문중 가장 느리다.)
+	if (arr.hasOwnProperty(i)) {   // hasOwnProperty를 통해 해당 객체의 맴버인지 확인을 한다.
+		console.log(arr[i]);
+	}
+}
+//------------------------------------------------------------------------------------------------------
+//  key array length 키 배열 사이즈  얻는 사용자함수
+function arraySize(obj) {
+	var size = 0, key;
+	for (key in obj) {
+		if (obj.hasOwnProperty(key)) {
+			size++;
+		}
+	}
+	return size;
+};	
+console.log(arraySize(arr));  // 4
+
+
+출처: https://mylife365.tistory.com/286?category=624212 [변화에 적응하기]
+</code></pre>
 
 <hr />
 
