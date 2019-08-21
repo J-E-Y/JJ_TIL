@@ -8750,7 +8750,41 @@ https://mylife365.tistory.com/320
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;isodd&#34;&gt;isOdd&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;question&#34;&gt;Question&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;convertObjectToArray3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;convertObjectToList&amp;rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &amp;ldquo;convertObjectToList&amp;rdquo;를 작성하세요.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;my-soultion&#34;&gt;My_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function convertObjectToList(obj) {
+  // your code here
+  
+  // 1. 마지막에 출력할 빈배열을 만든다. 
+  // 2. for 문을 사용해서 객체안에 있는 key와 prop 값에 전근한다. 
+  // 3. push 사용해 접근한 key값은 0번째 값에 넣고 prop 값은 1번째 값에 넣는다. 
+  // 4. arr 리턴한다. 
+
+  let arr = [];
+  for ( let key in obj ) {
+    arr.push([key,obj[key]]);
+  }  
+ return arr;
+}
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;isodd&#34;&gt;isOdd&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called isOdd. (&amp;ldquo;isOdd&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -9355,11 +9389,9 @@ for (i = 0; i&amp;lt;=array.length; i++) { // for 문을 이용해 배열 접근
   }
 }
 
-return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 나눠서 출력 
+return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 나눠서 출력 
 
 }
-
-
 
 
 &lt;/code&gt;&lt;/pre&gt;

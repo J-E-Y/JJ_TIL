@@ -10,10 +10,45 @@ toc: true
 type: docs
 ---
 
-
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 
-## isOdd
+
+--------------------------------------------------------------------
+
+
+### Question
+
+* convertObjectToArray3
+
+> Write a function called "convertObjectToList" which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 "convertObjectToList"를 작성하세요.)
+
+
+### My_Soultion
+
+```js
+function convertObjectToList(obj) {
+  // your code here
+  
+  // 1. 마지막에 출력할 빈배열을 만든다. 
+  // 2. for 문을 사용해서 객체안에 있는 key와 prop 값에 전근한다. 
+  // 3. push 사용해 접근한 key값은 0번째 값에 넣고 prop 값은 1번째 값에 넣는다. 
+  // 4. arr 리턴한다. 
+
+  let arr = [];
+  for ( let key in obj ) {
+    arr.push([key,obj[key]]);
+  }  
+ return arr;
+}
+
+
+
+
+```
+
+
+
+### isOdd
 
 >Write a function called isOdd. ("isOdd" 함수를 작성하세요.)
 
@@ -613,11 +648,9 @@ for (i = 0; i<=array.length; i++) { // for 문을 이용해 배열 접근
   }
 }
 
-return array.join(' '); // 각각의 문자열을 join ' ' 를 나눠서 출력 
+return array.join(' '); // 각각의 문자열을 join ' ' 를 나눠서 출력 
 
 }
-
-
 
 
 ```

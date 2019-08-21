@@ -150,10 +150,8 @@ function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>isOdd  Write a function called isOdd. (&amp;ldquo;isOdd&amp;rdquo; 함수를 작성하세요.)
-Given an integer, isOdd returns whether the integer is odd or not. (숫자가 주어졌을때, &amp;ldquo;isOdd&amp;rdquo; 함수는 주어진 숫자가 홀수 인지 아닌지를 반환합니다.)
-  My_Soultion
-function isOdd(num) { // your code here // 파라미터를 2로 나누었을때의 나머지를 판별별 // 나머지가 1인경우, true를 리턴 // 나머지가 0인경우, false를 리턴 if (num % 2 === 1 ) { return true; } else { return false; } }   sum</description>
+      <description>Question  convertObjectToArray3   Write a function called &amp;ldquo;convertObjectToList&amp;rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &amp;ldquo;convertObjectToList&amp;rdquo;를 작성하세요.)
+ My_Soultion function convertObjectToList(obj) { // your code here // 1. 마지막에 출력할 빈배열을 만든다. // 2. for 문을 사용해서 객체안에 있는 key와 prop 값에 전근한다. // 3. push 사용해 접근한 key값은 0번째 값에 넣고 prop 값은 1번째 값에 넣는다.</description>
     </item>
     
   </channel>
