@@ -261,8 +261,19 @@ let newStr = str.replace(john,jj);
 ---
 
 
-* parseInt() 숫자로 바꾸는것
+**parseInt(string, radix)**
 
+>숫자로 바꾸는것
+
+**Number()**
+
+>숫자로 바꾸는것 
+
+
+
+**parseFloat(value)**
+
+> 소수점 나타내기 
 
 
 
@@ -270,6 +281,53 @@ let newStr = str.replace(john,jj);
 ---
 ## **Math_method**
 ---
+
+
+**Math.Floor(x)**
+
+
+
+
+```js
+
+//함수는 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환합니다
+
+Math.floor( 45.95); //  45
+Math.floor( 45.05); //  45
+Math.floor(  4   ); //   4
+Math.floor(-45.05); // -46  // 마이너스 는 값을 1 올려준다. 
+Math.floor(-45.95); // -46
+Math.floor(45.95) //   45 
+```
+
+
+
+**Math.abs(x)**
+
+
+
+
+```js
+// 함수는 주어진 숫자의 절대값을 반환합니다
+
+
+Math.abs('-1');     // 1
+Math.abs(-2);       // 2
+Math.abs(null);     // 0
+Math.abs('');       // 0
+Math.abs([]);       // 0
+Math.abs([2]);      // 2
+Math.abs([1,2]);    // NaN
+Math.abs({});       // NaN
+Math.abs('string'); // NaN
+Math.abs();         // NaN
+```
+
+
+
+
+
+
 
 **Math.max()**
 **Math.min()**

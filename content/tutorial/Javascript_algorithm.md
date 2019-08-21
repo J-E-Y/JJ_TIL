@@ -18,6 +18,120 @@ type: docs
 
 ### Question
 
+
+* getStringLength
+
+
+> Write a function called "getStringLength". ("getStringLength" 함수를 작성하세요.)
+
+>Given a string, "getStringLength" returns the length of the given string. (문자열이 주어졌을때, "getStringLength" 함수는 주어진 문자열의 길이를 반환합니다.)
+
+>Do NOT use any native 'length' methods. (- 'length' 메소드를 사용하지 마세요.)
+
+
+
+
+
+### My_Soultion
+
+```js
+
+function getStringLength(string) {
+  // your code here
+
+  // 1. count 변수를 만들어 초기값을 지정한다. 
+  // 2. while loop를 이용해 string[count] 값을 지정해 조건문을 만든다. 
+  // 3. 참이면 count 에 1씩 증가시킨다. 그러면 조건문에 인덱스 번호가 넘어가면 조건문이 문자의 길이만큼 값이 count 에 저장된다. 
+
+  let count = 0;
+
+  while (string[count]) {
+    count = count + 1;
+  };
+  return count;
+};
+
+
+```
+
+
+
+
+
+### Question
+
+* getIndexOf
+
+>Write a function called "getIndexOf". ("getIndexOf" 함수를 작성하세요.)
+
+>Given a character and a string, "getIndexOf" returns the first position of the given character in the given string. (문자와 문자열이 주어졌을때, "getIndexOf" 함수는 주어진 문자열에서 주어진 문자가 나타나는 첫번째 위치를 반환합니다.)
+
+
+
+### My_Soultion
+
+
+```js
+function getIndexOf(char, str) {
+
+      for (let i = 0; i < str.length;  i = i + 1 ) {
+          if ( str[i] === char ) {  //  만약 str 에 있는 문자들중에 char 같다면 
+            return i;  // 리턴 인덱스 번호 
+          } 
+        }
+      return -1; //  아니면 -1  반환
+    }
+
+
+
+```
+
+
+
+
+
+
+
+### Question
+
+* calculateBillTotal
+
+> Write a function called "calculateBillTotal". ("calculateBillTotal" 함수를 작성하세요.)
+
+>Given the pre tax and pre tip amount of a meal, "calculateBillTotal" returns the total amount due after tax and tip. (팁과 세금을 제외한 식사값이 주어졌을때, "calculateBillTotal" 함수는 팁과 세금이 포함된 총 식사값을 반환합니다.)
+
+>Assume that sales tax is 9.5% and tip is 15%. (- 세금은 9.5% 팁은 15% 로 계산하세요.)
+>Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)
+
+### My_Soultion
+
+```js
+
+function calculateBillTotal(preTaxAndTipAmount) {
+  // your code here
+
+  // 1. salesTax 변수를 만들고 주어진 값의 0.095 곱한 값을 대입
+  // 2. tip 변수를 만들고 주어진 값의 0.15 를 곱한 값을 대입
+  // 3. 모든값을 더한후 리턴  
+ 
+
+  let salesTax = preTaxAndTipAmount * 0.095;
+  let tip = preTaxAndTipAmount * 0.15;
+
+  return preTaxAndTipAmount + salesTax + tip;
+}
+
+
+
+
+```
+
+
+
+* calculateBillTotal
+
+### Question
+
 * convertObjectToArray3
 
 > Write a function called "convertObjectToList" which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 "convertObjectToList"를 작성하세요.)

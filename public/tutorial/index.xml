@@ -150,8 +150,10 @@ function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Question  convertObjectToArray3   Write a function called &amp;ldquo;convertObjectToList&amp;rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &amp;ldquo;convertObjectToList&amp;rdquo;를 작성하세요.)
- My_Soultion function convertObjectToList(obj) { // your code here // 1. 마지막에 출력할 빈배열을 만든다. // 2. for 문을 사용해서 객체안에 있는 key와 prop 값에 전근한다. // 3. push 사용해 접근한 key값은 0번째 값에 넣고 prop 값은 1번째 값에 넣는다.</description>
+      <description>Question  getStringLength   Write a function called &amp;ldquo;getStringLength&amp;rdquo;. (&amp;ldquo;getStringLength&amp;rdquo; 함수를 작성하세요.)
+Given a string, &amp;ldquo;getStringLength&amp;rdquo; returns the length of the given string. (문자열이 주어졌을때, &amp;ldquo;getStringLength&amp;rdquo; 함수는 주어진 문자열의 길이를 반환합니다.)
+Do NOT use any native &amp;lsquo;length&amp;rsquo; methods. (- &amp;lsquo;length&amp;rsquo; 메소드를 사용하지 마세요.)
+ My_Soultion function getStringLength(string) { // your code here // 1. count 변수를 만들어 초기값을 지정한다. // 2. while loop를 이용해 string[count] 값을 지정해 조건문을 만든다.</description>
     </item>
     
   </channel>
