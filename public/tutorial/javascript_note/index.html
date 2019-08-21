@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Today What I Learn ? in 에 관해서 obj = {a:1,b:2}; // obj 객체가 있다. let obj2 = &quot;a&quot; in obj; // obj 안에 a라는 키값이 있는지 확인한다. console.log(obj2) // &gt;&gt; true &lt;&lt; true or false 로 값을 나타낸다.  prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법 // prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다 function objFunc(para) { // 객체를 담고있는 함수를 먼저 만든다. this.age = para; // key 는 name / property는 para &lt; 아직 모른다.">
+  <meta name="description" content="Today What I Learn ? 현재 시간,날짜 || 년도 불러오기 let a = new Date() a &gt; // Tue Aug 20 2019 15:14:58 GMT&#43;0900 (Korean Standard Time) let b = (a.getFullYear()); b &gt; // 2019  let currentDate = new Date() // Date() 라는 함수가 이미저장되어있다. currentDate  in 에 관해서 obj = {a:1,b:2}; // obj 객체가 있다. let obj2 = &quot;a&quot; in obj; // obj 안에 a라는 키값이 있는지 확인한다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_note/">
@@ -116,7 +116,7 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_note/">
   <meta property="og:title" content="Notes | Home">
-  <meta property="og:description" content="Today What I Learn ? in 에 관해서 obj = {a:1,b:2}; // obj 객체가 있다. let obj2 = &quot;a&quot; in obj; // obj 안에 a라는 키값이 있는지 확인한다. console.log(obj2) // &gt;&gt; true &lt;&lt; true or false 로 값을 나타낸다.  prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법 // prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다 function objFunc(para) { // 객체를 담고있는 함수를 먼저 만든다. this.age = para; // key 는 name / property는 para &lt; 아직 모른다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Today What I Learn ? 현재 시간,날짜 || 년도 불러오기 let a = new Date() a &gt; // Tue Aug 20 2019 15:14:58 GMT&#43;0900 (Korean Standard Time) let b = (a.getFullYear()); b &gt; // 2019  let currentDate = new Date() // Date() 라는 함수가 이미저장되어있다. currentDate  in 에 관해서 obj = {a:1,b:2}; // obj 객체가 있다. let obj2 = &quot;a&quot; in obj; // obj 안에 a라는 키값이 있는지 확인한다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -368,10 +368,12 @@
 
       <nav id="TableOfContents">
 <ul>
-<li><a href="#today-what-i-learn">Today What I Learn ?</a>
+<li>
 <ul>
 <li>
 <ul>
+<li><a href="#today-what-i-learn">Today What I Learn ?</a></li>
+<li><a href="#현재-시간-날짜-년도-불러오기">현재 시간,날짜  || 년도 불러오기</a></li>
 <li><a href="#in-에-관해서">in 에 관해서</a></li>
 <li><a href="#prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법">prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법</a></li>
 <li><a href="#객체안에-담겨있는-function-사용하기">객체안에 담겨있는 function 사용하기</a></li>
@@ -393,8 +395,8 @@
 <li><a href="#how-to-count-the-number-of-properties-of-the-javascript-object">How to Count the Number of Properties of the JavaScript Object</a></li>
 </ul></li>
 <li><a href="#iteration-statements">iteration statements</a></li>
-<li><a href="#array">array</a></li>
 </ul></li>
+<li><a href="#array"><strong>Array</strong></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -419,11 +421,32 @@
 
 <p><img src="/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png" alt="" /></p>
 
-<h1 id="today-what-i-learn">Today What I Learn ?</h1>
+<h3 id="today-what-i-learn">Today What I Learn ?</h3>
 
 <p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png" alt="" /></p>
 
 <hr />
+
+<hr />
+
+<h3 id="현재-시간-날짜-년도-불러오기">현재 시간,날짜  || 년도 불러오기</h3>
+
+<hr />
+
+<pre><code class="language-js">let a = new Date()
+
+a &gt; // Tue Aug 20 2019 15:14:58 GMT+0900 (Korean Standard Time)
+
+let b = (a.getFullYear());
+
+b &gt; // 2019 
+</code></pre>
+
+<pre><code class="language-js">
+let currentDate = new Date() // Date() 라는 함수가 이미저장되어있다. 
+currentDate 
+
+</code></pre>
 
 <hr />
 
@@ -976,13 +999,26 @@ for(var i in obj[key])
 
 <hr />
 
-<h3 id="array">array</h3>
+<h2 id="array"><strong>Array</strong></h2>
 
 <hr />
 
+<p><strong>Notes</strong></p>
+
+<pre><code class="language-js"> 1. 기존에 arr 를 새로운 newArr 라는 변수를 지정해 쓰는 경우에
+ 만약 newArr 를 바꾸면 기존의 arr 까지 바뀌게 된다. 
+ 
+ 2. 그런데 만약 새로운 newArr 라는 변수에 arr.slice() 로 copy 한 것을 저장하여 쓰게 된다면 기존에 arr 값이 변하지 않는다. 
+ 
+SumUp
+
+기존에 arr 에 영향을 주지 않으려면 array 를 copy해서 써라! 
+ 
+</code></pre>
+
 <p><strong>Get the last item in an array</strong></p>
 
-<pre><code>let arr = [1, 2, 3, 4] ;
+<pre><code class="language-js">let arr = [1, 2, 3, 4] ;
 
 * First
 arr[arr.length - 1] ;

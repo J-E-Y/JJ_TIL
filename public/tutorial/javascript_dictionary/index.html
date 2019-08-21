@@ -711,22 +711,18 @@ console.log(max)
 
 <hr />
 
-<p><strong>Notes</strong></p>
+<p><strong>arr.includes()</strong></p>
 
-<ul>
-<li><p>특이사항</p>
+<pre><code class="language-js">
+arr = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;];
 
-<pre><code>1. 기존에 arr 를 새로운 newArr 라는 변수를 지정해 쓰는 경우에
-만약 newArr 를 바꾸면 기존의 arr 까지 바뀌게 된다. 
- 
-2. 그런데 만약 새로운 newArr 라는 변수에 arr.slice() 로 copy 한 것을 저장하여 쓰게 된다면 기존에 arr 값이 변하지 않는다. 
- 
-SumUp
+arr.includes(&quot;a&quot;); 
+// true
 
-기존에 arr 에 영향을 주지 않으려면 array 를 copy해서 써라! 
- 
-</code></pre></li>
-</ul>
+arr.includes(&quot;f&quot;);
+//false
+
+</code></pre>
 
 <p><strong>Array.isArray()</strong></p>
 

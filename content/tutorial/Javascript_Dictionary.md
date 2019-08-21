@@ -319,21 +319,23 @@ console.log(max)
 ## **Array**
 ---
 
-**Notes** 
 
-* 특이사항
+**arr.includes()**
+
+
+```js
+
+arr = ["a","b","c","d"];
+
+arr.includes("a"); 
+// true
+
+arr.includes("f");
+//false
 
 ```
- 1. 기존에 arr 를 새로운 newArr 라는 변수를 지정해 쓰는 경우에
- 만약 newArr 를 바꾸면 기존의 arr 까지 바뀌게 된다. 
- 
- 2. 그런데 만약 새로운 newArr 라는 변수에 arr.slice() 로 copy 한 것을 저장하여 쓰게 된다면 기존에 arr 값이 변하지 않는다. 
- 
- SumUp
 
-기존에 arr 에 영향을 주지 않으려면 array 를 copy해서 써라! 
- 
-```
+
 
 
 

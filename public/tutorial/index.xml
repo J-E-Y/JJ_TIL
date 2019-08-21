@@ -116,7 +116,7 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? in 에 관해서 obj = {a:1,b:2}; // obj 객체가 있다. let obj2 = &amp;quot;a&amp;quot; in obj; // obj 안에 a라는 키값이 있는지 확인한다. console.log(obj2) // &amp;gt;&amp;gt; true &amp;lt;&amp;lt; true or false 로 값을 나타낸다.  prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법 // prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다 function objFunc(para) { // 객체를 담고있는 함수를 먼저 만든다. this.age = para; // key 는 name / property는 para &amp;lt; 아직 모른다.</description>
+      <description>Today What I Learn ? 현재 시간,날짜 || 년도 불러오기 let a = new Date() a &amp;gt; // Tue Aug 20 2019 15:14:58 GMT+0900 (Korean Standard Time) let b = (a.getFullYear()); b &amp;gt; // 2019  let currentDate = new Date() // Date() 라는 함수가 이미저장되어있다. currentDate  in 에 관해서 obj = {a:1,b:2}; // obj 객체가 있다. let obj2 = &amp;quot;a&amp;quot; in obj; // obj 안에 a라는 키값이 있는지 확인한다.</description>
     </item>
     
     <item>

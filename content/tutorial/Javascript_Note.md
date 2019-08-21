@@ -14,7 +14,7 @@ type: docs
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
  
-# Today What I Learn ?
+### Today What I Learn ?
 
 ![](/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png)
 
@@ -22,9 +22,28 @@ type: docs
 
 
 
+---
+### 현재 시간,날짜  || 년도 불러오기
+---
+
+```js
+let a = new Date()
+
+a > // Tue Aug 20 2019 15:14:58 GMT+0900 (Korean Standard Time)
+
+let b = (a.getFullYear());
+
+b > // 2019 
+```
 
 
 
+```js
+
+let currentDate = new Date() // Date() 라는 함수가 이미저장되어있다. 
+currentDate 
+
+```
 
 
 
@@ -45,6 +64,7 @@ console.log(obj2) // >> true << true or false 로 값을 나타낸다.
 
 
 ```
+
 
 
 
@@ -591,12 +611,30 @@ for(var i in obj[key])
 
 
 ---
-### array 
+## **Array**
 ---
+
+**Notes** 
+
+
+```js
+ 1. 기존에 arr 를 새로운 newArr 라는 변수를 지정해 쓰는 경우에
+ 만약 newArr 를 바꾸면 기존의 arr 까지 바뀌게 된다. 
+ 
+ 2. 그런데 만약 새로운 newArr 라는 변수에 arr.slice() 로 copy 한 것을 저장하여 쓰게 된다면 기존에 arr 값이 변하지 않는다. 
+ 
+SumUp
+
+기존에 arr 에 영향을 주지 않으려면 array 를 copy해서 써라! 
+ 
+```
+
+
+
 
 **Get the last item in an array**
 
-```
+```js
 let arr = [1, 2, 3, 4] ;
 
 * First
