@@ -27,12 +27,10 @@
   
     
   
-  <meta name="description" content="Scope 스코프란?
- 자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.
-스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.
- 전역_스코프
-let greeting = &#39;Hello John&#39; // 외부에서 변수가 선언됨 function marcusHello () { console.log(greeting) } console.log(greeting) // &#39;Hello John!&#39; sayHello() // &#39;Hello John!&#39;  지역_스코프
-function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨 console.log(greeting) } marcusHello() // &#39;Hello John!!&#39; console.log(x) // Error, hello is not defined  let name = &quot;john&quot;; function showName() { let name = &quot;jj&quot;; // 2.">
+  <meta name="description" content="Scope 객체 지향 프로그래밍
+function Car(band,name,color) { // 인스턴스가 만들어 질때 실행될 코드들... } // new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. // Car 라는 class 만들어 낼때 class는 2가지를 갖게 된다. // 1. 속성 : band,name,color , currentFuel,maxSpeed // 2. 메소드 : refuel() ,setSpeed(), drive()  Closure 1.클로저란?
+ 함수는 함수를 리턴할수 있다.그것을 고차함수라고 하는데 그것을 클로저라 부른다. 한마디로 외부함수의 변수에 접근할수 있는 함수를 클로저라 부른다.
+ 특징">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_q2/">
@@ -121,12 +119,10 @@ function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변�
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_q2/">
   <meta property="og:title" content="Crucial_Points | Home">
-  <meta property="og:description" content="Scope 스코프란?
- 자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.
-스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.
- 전역_스코프
-let greeting = &#39;Hello John&#39; // 외부에서 변수가 선언됨 function marcusHello () { console.log(greeting) } console.log(greeting) // &#39;Hello John!&#39; sayHello() // &#39;Hello John!&#39;  지역_스코프
-function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨 console.log(greeting) } marcusHello() // &#39;Hello John!!&#39; console.log(x) // Error, hello is not defined  let name = &quot;john&quot;; function showName() { let name = &quot;jj&quot;; // 2."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Scope 객체 지향 프로그래밍
+function Car(band,name,color) { // 인스턴스가 만들어 질때 실행될 코드들... } // new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. // Car 라는 class 만들어 낼때 class는 2가지를 갖게 된다. // 1. 속성 : band,name,color , currentFuel,maxSpeed // 2. 메소드 : refuel() ,setSpeed(), drive()  Closure 1.클로저란?
+ 함수는 함수를 리턴할수 있다.그것을 고차함수라고 하는데 그것을 클로저라 부른다. 한마디로 외부함수의 변수에 접근할수 있는 함수를 클로저라 부른다.
+ 특징"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   
@@ -379,9 +375,9 @@ function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변�
 <ul>
 <li>
 <ul>
-<li><a href="#scope">Scope</a></li>
-<li><a href="#closure">Closure</a>
+<li><a href="#scope">Scope</a>
 <ul>
+<li><a href="#closure">Closure</a></li>
 <li><a href="#커링-currying">커링 (currying)</a></li>
 </ul></li>
 </ul></li>
@@ -414,82 +410,106 @@ function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변�
 
 <hr />
 
-<p><strong>스코프란?</strong></p>
+<p><strong>객체 지향 프로그래밍</strong></p>
+
+<pre><code class="language-js">
+function Car(band,name,color) {
+    // 인스턴스가 만들어 질때  실행될 코드들... 
+}
+
+// new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. 
+
+
+// Car 라는 class 만들어 낼때 class는 2가지를 갖게 된다.
+
+// 1. 속성  : band,name,color , currentFuel,maxSpeed
+// 2. 메소드  : refuel() ,setSpeed(), drive()
+
+
+</code></pre>
+
+<hr />
+
+<h3 id="closure">Closure</h3>
+
+<hr />
+
+<p><strong>1.클로저란?</strong></p>
 
 <blockquote>
-<p>자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.</p>
-
-<p>스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.</p>
+<p>함수는 함수를 리턴할수 있다.그것을 고차함수라고 하는데 그것을 클로저라 부른다. 한마디로 <code>외부함수의 변수에 접근할수 있는 함수</code>를  <code>클로저</code>라 부른다.</p>
 </blockquote>
 
-<p><strong>전역_스코프</strong></p>
+<p><strong>특징</strong></p>
 
-<pre><code class="language-js">let greeting = 'Hello John' // 외부에서 변수가 선언됨
-
-function marcusHello () {
-  console.log(greeting)
-}
-
-console.log(greeting) // 'Hello John!' 
-
-sayHello() // 'Hello John!' 
-
-</code></pre>
-
-<p><strong>지역_스코프</strong></p>
+<blockquote>
+<p>클로저 함수의 장점은 지역변수 외부 함수의 변수 전역 변수 에 접근이 가능하다는 점이다 !</p>
+</blockquote>
 
 <pre><code class="language-js">
-function marcusHello () {
-  
-  let greeting = 'Hello John!' // 안에서 변수가 선언됨
-  console.log(greeting)
+function foo() {
+  return function() {
+        return 2 
+    }
 }
 
-marcusHello() // 'Hello John!!'
-
-console.log(x) // Error, hello is not defined
+foo() // f
+// 2 가 반환되지 않고 
+//f &lt;&lt; 함수 자체가 리턴된다 
 
 </code></pre>
+
+<p>**클로저예제1 : 함수 이용해서 템플릿 함수 만들기 **</p>
 
 <pre><code class="language-js">
-let name = &quot;john&quot;;
-
-function showName() { 
-  let name = &quot;jj&quot;; // 2. 지역변수 &lt;&lt; showName함수에서만 접근 가능
-  console.log(name); // 2. jj
+function htmlMark(tag) {
+    let stratTag = &quot;&lt;&quot; + tag + &quot;&gt;&quot; ; 
+    let endTag = &quot;&lt;&quot; + tag + &quot;&gt;&quot; ;
+      return function(content) {     //  클로저 함수 사용 
+        return stratTag + content + endTag;
+    }
 }
 
-console.log(name); // 1.jj &lt;&lt; 전역변수 가져옴
-showname()         // 2.
-console.log(name)  // 3. john &lt;&lt; 여전히 전역 변수 john
+htmlMark(&quot;h1&quot;)(&quot;JJ&quot;); // 커링 사용해서 출력 tag : &quot;h1&quot; content:&quot;JJ&quot;
+// &gt;&gt;&gt; &lt;h1&gt;JJ&lt;h1&gt;
 
+let h1Tag = htmlMark(&quot;h1&quot;); // 변수에 tag:&quot;h1&quot;담아서 지정하고 출력 
 
+h1Tag(&quot;JJ&quot;)  //  content : &quot;JJ&quot;
+// &gt;&gt;&gt; &lt;h1&gt;JJ&lt;h1&gt;
+</code></pre>
 
+<p>**클로저예제 2 : 클로저 모튤 패턴 **</p>
 
+<pre><code class="language-js">
+// 두 카운터가 각기 다른 privateCount 를 다루면서, privareCounter 을 밖에 노출시키지 않는 것이 장점이다. 
 
-let name = &quot;john&quot;;
+function makeCounter() {
+	let privateCounter = 0; 
 
-function showName() {
-  name = &quot;jj&quot;; // name 이 전역변수로 바뀜 cos let 없기 때문에 외부에서 변수 가져왔다. 
-  console.log(name); //   jj 
-}
+	let obj = {
+	  plus : function() {
+		  privateCounter = privateCounter + 1;
+	  },	
+	  minus: function() {
+		  privateCounter = privateCounter - 1;
+	  },
+	  getValue: function() {
+		  return privateCounter;
+	  }
+  }
+  return obj;
+};
 
-console.log(name); // 1. john &lt;&lt; 전역변수 가져옴
-showName()         // 2. 
-console.log(name)  // 3. jj 함수가 실행된 뒤에는 함수안에 있는 name = jj 를 가져와서 리턴한다. 왜냐하면 jj 가 전역 변수로 바뀌었기 때문이다. 
+let count1 = makeCounter() // 함수를 변수에 지정한다. 
+count1.plus() // obj key값을 실행시키면 propo 값인 함수가 실행되면서 기존에 privateCounter 0 이였던 것을 1 증가시킨다. 
+
+coun1.getValue() //  obj key값인 getValue() 함수를 실행시키면 지금까지 plus 하고 minus한 값을 출력 할수 있게 코드가 짜여 있다. 
 
 
 </code></pre>
 
-<hr />
-
-<h2 id="closure">Closure</h2>
-
-<hr />
-
-<ul>
-<li>description</li>
-</ul>
+<p><strong>2.클로저란?</strong></p>
 
 <blockquote>
 <p>클로저는 독립적인 (자유) 변수를 가리키는 함수이다. 또는, 클로저 안에 정의된 함수는 만들어진 환경을 ‘기억한다’.</p>
@@ -497,9 +517,7 @@ console.log(name)  // 3. jj 함수가 실행된 뒤에는 함수안에 있는 na
 <p>내부함수는 외부함수의 지역변수에 접근 할 수 있는데 외부함수의 실행이 끝나서 외부함수가 소멸된 이후에도 내부함수가 외부함수의 변수에 접근 할 수 있다. 이러한 메커니즘을 클로저라고 한다.</p>
 </blockquote>
 
-<ul>
-<li>일반적인 함수</li>
-</ul>
+<p><strong>일반적인 함수</strong></p>
 
 <pre><code class="language-js">
 let addTo = function (passed) {
@@ -513,9 +531,7 @@ console.log( addTo(3) ) //  5
 
 </code></pre>
 
-<ul>
-<li>이것이 클로저</li>
-</ul>
+<p><strong>이것이 클로저</strong></p>
 
 <pre><code class="language-js">
 let passed = 3;  // 함수 밖에 변수를 선언한다 
@@ -530,6 +546,8 @@ let addTo = function () { //  parameter 를 외부에서가져온다.
 console.log( addTo() ) //  5
 
 </code></pre>
+
+<p><strong>1.추가설명</strong></p>
 
 <pre><code class="language-js">// 클로저(closure)는 내부함수가 외부함수의 맥락(context)에 접근할 수 있는 것을 가르킨다.
 // 자바스크립트에서 함수는 일급객체이다. 함수를 호출했을때 리턴되는 함수(클로저)를 참조하고 있는 것이다.
@@ -576,6 +594,8 @@ console.log(next());
 출처: https://mylife365.tistory.com/108?category=624212 [변화에 적응하기]
 
 </code></pre>
+
+<p><strong>추가설명 &amp; 코드를 작성할때 많이 격는 어려움</strong></p>
 
 <pre><code class="language-js">3. 클로저(Closure)
 
@@ -944,6 +964,73 @@ var result2 = func(5)(7);
 console.log(result2);
 
 https://mylife365.tistory.com/320 
+
+</code></pre>
+
+<p><strong>스코프란?</strong></p>
+
+<blockquote>
+<p>자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.</p>
+
+<p>스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.</p>
+</blockquote>
+
+<p><strong>전역_스코프</strong></p>
+
+<pre><code class="language-js">let greeting = 'Hello John' // 외부에서 변수가 선언됨
+
+function marcusHello () {
+  console.log(greeting)
+}
+
+console.log(greeting) // 'Hello John!' 
+
+sayHello() // 'Hello John!' 
+
+</code></pre>
+
+<p><strong>지역_스코프</strong></p>
+
+<pre><code class="language-js">
+function marcusHello () {
+  
+  let greeting = 'Hello John!' // 안에서 변수가 선언됨
+  console.log(greeting)
+}
+
+marcusHello() // 'Hello John!!'
+
+console.log(x) // Error, hello is not defined
+
+</code></pre>
+
+<pre><code class="language-js">
+let name = &quot;john&quot;;
+
+function showName() { 
+  let name = &quot;jj&quot;; // 2. 지역변수 &lt;&lt; showName함수에서만 접근 가능
+  console.log(name); // 2. jj
+}
+
+console.log(name); // 1.jj &lt;&lt; 전역변수 가져옴
+showname()         // 2.
+console.log(name)  // 3. john &lt;&lt; 여전히 전역 변수 john
+
+
+
+
+
+let name = &quot;john&quot;;
+
+function showName() {
+  name = &quot;jj&quot;; // name 이 전역변수로 바뀜 cos let 없기 때문에 외부에서 변수 가져왔다. 
+  console.log(name); //   jj 
+}
+
+console.log(name); // 1. john &lt;&lt; 전역변수 가져옴
+showName()         // 2. 
+console.log(name)  // 3. jj 함수가 실행된 뒤에는 함수안에 있는 name = jj 를 가져와서 리턴한다. 왜냐하면 jj 가 전역 변수로 바뀌었기 때문이다. 
+
 
 </code></pre>
 

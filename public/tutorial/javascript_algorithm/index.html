@@ -27,10 +27,9 @@
   
     
   
-  <meta name="description" content="Question  getStringLength   Write a function called &ldquo;getStringLength&rdquo;. (&ldquo;getStringLength&rdquo; 함수를 작성하세요.)
-Given a string, &ldquo;getStringLength&rdquo; returns the length of the given string. (문자열이 주어졌을때, &ldquo;getStringLength&rdquo; 함수는 주어진 문자열의 길이를 반환합니다.)
-Do NOT use any native &lsquo;length&rsquo; methods. (- &lsquo;length&rsquo; 메소드를 사용하지 마세요.)
- My_Soultion function getStringLength(string) { // your code here // 1. count 변수를 만들어 초기값을 지정한다. // 2. while loop를 이용해 string[count] 값을 지정해 조건문을 만든다.">
+  <meta name="description" content="Question  Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, &lsquo;primeMover(n)&rsquo; 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)
+For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)
+ My_Soultion let primeMover = function(n) { // your code here let arr = [1]; for ( let i = 1; i &lt;100; i&#43;&#43;) { for ( let j = 2; j &lt; 100; j&#43;&#43; ) { if (j % i !">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_algorithm/">
@@ -119,10 +118,9 @@ Do NOT use any native &lsquo;length&rsquo; methods. (- &lsquo;length&rsquo; 메�
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_algorithm/">
   <meta property="og:title" content="JS algorithm | Home">
-  <meta property="og:description" content="Question  getStringLength   Write a function called &ldquo;getStringLength&rdquo;. (&ldquo;getStringLength&rdquo; 함수를 작성하세요.)
-Given a string, &ldquo;getStringLength&rdquo; returns the length of the given string. (문자열이 주어졌을때, &ldquo;getStringLength&rdquo; 함수는 주어진 문자열의 길이를 반환합니다.)
-Do NOT use any native &lsquo;length&rsquo; methods. (- &lsquo;length&rsquo; 메소드를 사용하지 마세요.)
- My_Soultion function getStringLength(string) { // your code here // 1. count 변수를 만들어 초기값을 지정한다. // 2. while loop를 이용해 string[count] 값을 지정해 조건문을 만든다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Question  Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, &lsquo;primeMover(n)&rsquo; 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)
+For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)
+ My_Soultion let primeMover = function(n) { // your code here let arr = [1]; for ( let i = 1; i &lt;100; i&#43;&#43;) { for ( let j = 2; j &lt; 100; j&#43;&#43; ) { if (j % i !"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   
@@ -381,15 +379,23 @@ Do NOT use any native &lsquo;length&rsquo; methods. (- &lsquo;length&rsquo; 메�
 <li><a href="#my-soultion">My_Soultion</a></li>
 <li><a href="#question-1">Question</a></li>
 <li><a href="#my-soultion-1">My_Soultion</a></li>
+<li><a href="#others-soultion">Others_Soultion</a></li>
 <li><a href="#question-2">Question</a></li>
 <li><a href="#my-soultion-2">My_Soultion</a></li>
 <li><a href="#question-3">Question</a></li>
 <li><a href="#my-soultion-3">My_Soultion</a></li>
+<li><a href="#question-4">Question</a></li>
+<li><a href="#my-soultion-4">My_Soultion</a></li>
+<li><a href="#question-5">Question</a></li>
+<li><a href="#my-soultion-5">My_Soultion</a></li>
 <li><a href="#isodd">isOdd</a></li>
 </ul></li>
 <li><a href="#onlyevenelements">onlyEvenElements</a></li>
 <li><a href="#removeoddvalues">removeOddValues</a></li>
-<li><a href="#firstcharacter">firstCharacter</a></li>
+<li><a href="#firstcharacter">firstCharacter</a>
+<ul>
+<li><a href="#question-6">Question</a></li>
+</ul></li>
 <li><a href="#longestword">longestWord</a></li>
 <li><a href="#convertarraytoobject1">convertArrayToObject1</a></li>
 <li><a href="#convertobjecttoarray1">convertObjectToArray1</a></li>
@@ -423,6 +429,87 @@ Do NOT use any native &lsquo;length&rsquo; methods. (- &lsquo;length&rsquo; 메�
 
 <h3 id="question">Question</h3>
 
+<blockquote>
+<p>Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, &lsquo;primeMover(n)&rsquo; 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)</p>
+
+<p>For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+let primeMover = function(n) {
+  // your code here
+
+
+  let arr = [1];
+  for ( let i = 1; i &lt;100; i++) {
+    for ( let j = 2; j &lt; 100; j++ ) {
+      if (j % i !== 0 ) {
+       arr.push(j);
+      }
+    }
+  }
+  return arr[n];
+}
+
+
+</code></pre>
+
+<ul>
+<li>primeMover</li>
+</ul>
+
+<h3 id="question-1">Question</h3>
+
+<ul>
+<li>isOddWithoutModulo</li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;isOddWithoutModulo&rdquo;. (&ldquo;isOddWithoutModulo&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a number, &ldquo;isOddWithoutModulo&rdquo; returns whether the passed in number is odd. (숫자가 주어졌을때, &ldquo;isOddWithoutModulo&rdquo; 함수는 주어진 숫자가 홀수인지를 반환합니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-1">My_Soultion</h3>
+
+<pre><code class="language-js">
+// 2. it is used by Math.floor 
+
+function isOddWithoutModulo(num) { // floor 메소드로 참과 거짓을 출력할뿐만 아니라 정수로 만든다. 그것을 2로 나눠서 2로 다시 곱한값이 기존에 값과 일치하지 않는다면 홀수이므로 true 반환
+  
+  return Math.floor(num / 2) * 2 !== num;  
+
+</code></pre>
+
+<h3 id="others-soultion">Others_Soultion</h3>
+
+<pre><code class="language-js">
+function isOddWithoutModulo(num) {
+   // 예를 들어, num이 -17이라고 가정합니다. 
+   num = Math.abs(num);
+// num은 절대값이 되어 17이됩니다. 이를 통해 파라미터에 들어올 모든 음수를 커버할 수 있을 겁니다. 
+   if( num === 0 )  // num은 현재 17로 0이 아니기 때문에 그 다음 else if로 넘어가게 됩니다. 
+       return false;
+   else if(num === 1) // num은 현재 17로 1이 아니기 때문에 그 다음 else로 넘어가게 됩니다. 
+       return true;
+   else { // 보통 홀수인지 아닌지를 판별하기 위해서 2로 나누었을 대 나머지값을 확인하는 방법을 씁니다. 
+// 그 방법을 풀어보면 17 -2 -2 -2 -2 -2 -2...... 하여 0 혹은 1이 될 때까지 뻰다는 것을 의미합니다. 
+       return isOddWithoutModulo(num-2); // 이 부분은 바로 위의 설명이 적용되는 부분입니다. 
+// 자바스크립트는 재귀함수가 가능하여 함수 안에서 자기 자신을 호출할 수 있습니다.
+// 이를테면 num이 17이었다면 위의 구문을 통해 다시  isOddWithoutModulo(17-2)를 호출하는 것입니다. 
+// 위의 과정을 다시 반복하게 되면 isOddWithoutModulo(15) --&gt; isOddWithoutModulo(13) --&gt; isOddWithoutModulo(11).... 
+// num이 0 혹은 1이 되어 if와 else if 구문에 걸려 return될 때까지 반복됩니다. 
+   }
+}
+
+
+</code></pre>
+
+<h3 id="question-2">Question</h3>
+
 <ul>
 <li>getStringLength</li>
 </ul>
@@ -435,7 +522,7 @@ Do NOT use any native &lsquo;length&rsquo; methods. (- &lsquo;length&rsquo; 메�
 <p>Do NOT use any native &lsquo;length&rsquo; methods. (- &lsquo;length&rsquo; 메소드를 사용하지 마세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion">My_Soultion</h3>
+<h3 id="my-soultion-2">My_Soultion</h3>
 
 <pre><code class="language-js">
 function getStringLength(string) {
@@ -456,7 +543,7 @@ function getStringLength(string) {
 
 </code></pre>
 
-<h3 id="question-1">Question</h3>
+<h3 id="question-3">Question</h3>
 
 <ul>
 <li>getIndexOf</li>
@@ -468,7 +555,7 @@ function getStringLength(string) {
 <p>Given a character and a string, &ldquo;getIndexOf&rdquo; returns the first position of the given character in the given string. (문자와 문자열이 주어졌을때, &ldquo;getIndexOf&rdquo; 함수는 주어진 문자열에서 주어진 문자가 나타나는 첫번째 위치를 반환합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-1">My_Soultion</h3>
+<h3 id="my-soultion-3">My_Soultion</h3>
 
 <pre><code class="language-js">function getIndexOf(char, str) {
 
@@ -484,7 +571,7 @@ function getStringLength(string) {
 
 </code></pre>
 
-<h3 id="question-2">Question</h3>
+<h3 id="question-4">Question</h3>
 
 <ul>
 <li>calculateBillTotal</li>
@@ -499,7 +586,7 @@ function getStringLength(string) {
 Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-2">My_Soultion</h3>
+<h3 id="my-soultion-4">My_Soultion</h3>
 
 <pre><code class="language-js">
 function calculateBillTotal(preTaxAndTipAmount) {
@@ -525,7 +612,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 <li>calculateBillTotal</li>
 </ul>
 
-<h3 id="question-3">Question</h3>
+<h3 id="question-5">Question</h3>
 
 <ul>
 <li>convertObjectToArray3</li>
@@ -535,7 +622,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 <p>Write a function called &ldquo;convertObjectToList&rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &ldquo;convertObjectToList&rdquo;를 작성하세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-3">My_Soultion</h3>
+<h3 id="my-soultion-5">My_Soultion</h3>
 
 <pre><code class="language-js">function convertObjectToList(obj) {
   // your code here
@@ -784,6 +871,77 @@ unction firstCharacter (string) {
  // 3. Reduce이용 2
  return string.split(' ').reduce( (acc,cur)=&gt;acc+cur[0] ,'');
 }
+
+
+
+
+</code></pre>
+
+<h3 id="question-6">Question</h3>
+
+<ul>
+<li>dashInsert</li>
+</ul>
+
+<blockquote>
+<p>Have the function DashInsert insert dashes (&lsquo;-&rsquo;) between each two odd numbers in str. (문자열이 주어졌을때, &lsquo;DashInsert&rsquo; 함수는 문자열에 있는 두 홀수 사이에 대시(&lsquo;-&rsquo;)를 추가하여 반환합니다.)</p>
+
+<p>For example: if str is 454793 the output should be 4547-9-3. (예시: 주어진 문자열이 454793 이라면 결과값은 4547-9-3 입니다.) Don&rsquo;t count zero as an odd number. (0 을 홀수로 간주하지 마세요.)</p>
+</blockquote>
+
+<pre><code class="language-js">
+// 1/for 문
+
+
+function DashInsert(string) {
+ 
+
+
+ let output = [];
+ let tmp=string.split('');
+ for(let i=0;i&lt;tmp.length;i++){
+   //홀수가 연속해서 나올때 =&gt; i번째와 '-'을 넣는다.
+   if(tmp[i]%2 &amp;&amp; tmp[i+1]%2){// 1,3
+     output.push(tmp[i],'-');//1,-,3
+   }else{
+     output.push(tmp[i]);
+   }
+ }
+ return output.join('');
+ }
+
+///////////////////////////////////////////////////////////////////
+
+reduce 
+
+function DashInsert(string) {
+ 
+ let output = '';
+ let tmp = string.split('');
+ output = tmp.reduce(function(acc,cur){
+   if((acc)%2===1 &amp;&amp; (cur)%2===1) return acc+'-'+cur;
+   else return acc+cur;
+ });
+ return output;
+
+}
+
+
+////////////////////////////////////////////////////////////////////
+
+// 2.splice
+
+function DashInsert(string) {
+  let arr = string.split('');
+  for (let i = 0; i &lt; arr.length; i++) {
+    if ( arr[i] % 2 === 1 &amp;&amp; arr[i + 1] % 2 === 1) {
+      arr.splice(i +1,0,'-');
+    }
+  }
+  return arr.join('');
+}
+
+
 
 
 </code></pre>

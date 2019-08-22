@@ -362,6 +362,8 @@ console.log(max)
 
 >  spread operator  사용해서 큰수 가져오기 
 
+> arr 로 큰수를 가져오기 위해서는 ... 을 써야 Math.max() << 안에 들어간다. 
+
 ```js
 
 let arr = [1, 2, 3];

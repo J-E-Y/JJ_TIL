@@ -18,6 +18,106 @@ type: docs
 
 ### Question
 
+>Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, 'primeMover(n)' 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)
+
+>For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)
+
+### My_Soultion
+
+
+```js
+
+
+let primeMover = function(n) {
+  // your code here
+
+
+  let arr = [1];
+  for ( let i = 1; i <100; i++) {
+    for ( let j = 2; j < 100; j++ ) {
+      if (j % i !== 0 ) {
+       arr.push(j);
+      }
+    }
+  }
+  return arr[n];
+}
+
+
+```
+
+
+
+
+
+
+
+
+* primeMover
+
+
+
+
+### Question
+
+* isOddWithoutModulo
+
+
+
+> Write a function called "isOddWithoutModulo". ("isOddWithoutModulo" 함수를 작성하세요.)
+
+>Given a number, "isOddWithoutModulo" returns whether the passed in number is odd. (숫자가 주어졌을때, "isOddWithoutModulo" 함수는 주어진 숫자가 홀수인지를 반환합니다.)
+
+
+### My_Soultion 
+
+
+```js
+
+// 2. it is used by Math.floor 
+
+function isOddWithoutModulo(num) { // floor 메소드로 참과 거짓을 출력할뿐만 아니라 정수로 만든다. 그것을 2로 나눠서 2로 다시 곱한값이 기존에 값과 일치하지 않는다면 홀수이므로 true 반환
+  
+  return Math.floor(num / 2) * 2 !== num;  
+
+```
+
+
+
+### Others_Soultion
+
+```js
+
+function isOddWithoutModulo(num) {
+   // 예를 들어, num이 -17이라고 가정합니다. 
+   num = Math.abs(num);
+// num은 절대값이 되어 17이됩니다. 이를 통해 파라미터에 들어올 모든 음수를 커버할 수 있을 겁니다. 
+   if( num === 0 )  // num은 현재 17로 0이 아니기 때문에 그 다음 else if로 넘어가게 됩니다. 
+       return false;
+   else if(num === 1) // num은 현재 17로 1이 아니기 때문에 그 다음 else로 넘어가게 됩니다. 
+       return true;
+   else { // 보통 홀수인지 아닌지를 판별하기 위해서 2로 나누었을 대 나머지값을 확인하는 방법을 씁니다. 
+// 그 방법을 풀어보면 17 -2 -2 -2 -2 -2 -2...... 하여 0 혹은 1이 될 때까지 뻰다는 것을 의미합니다. 
+       return isOddWithoutModulo(num-2); // 이 부분은 바로 위의 설명이 적용되는 부분입니다. 
+// 자바스크립트는 재귀함수가 가능하여 함수 안에서 자기 자신을 호출할 수 있습니다.
+// 이를테면 num이 17이었다면 위의 구문을 통해 다시  isOddWithoutModulo(17-2)를 호출하는 것입니다. 
+// 위의 과정을 다시 반복하게 되면 isOddWithoutModulo(15) --> isOddWithoutModulo(13) --> isOddWithoutModulo(11).... 
+// num이 0 혹은 1이 되어 if와 else if 구문에 걸려 return될 때까지 반복됩니다. 
+   }
+}
+
+
+```
+
+
+
+
+
+
+
+
+### Question
+
 
 * getStringLength
 
@@ -385,8 +485,80 @@ unction firstCharacter (string) {
 }
 
 
+
+
 ```
 
+### Question
+
+* dashInsert
+
+
+>Have the function DashInsert insert dashes ('-') between each two odd numbers in str. (문자열이 주어졌을때, 'DashInsert' 함수는 문자열에 있는 두 홀수 사이에 대시('-')를 추가하여 반환합니다.)
+
+>For example: if str is 454793 the output should be 4547-9-3. (예시: 주어진 문자열이 454793 이라면 결과값은 4547-9-3 입니다.) Don't count zero as an odd number. (0 을 홀수로 간주하지 마세요.)
+
+
+
+
+
+```js
+
+// 1/for 문
+
+
+function DashInsert(string) {
+ 
+
+
+ let output = [];
+ let tmp=string.split('');
+ for(let i=0;i<tmp.length;i++){
+   //홀수가 연속해서 나올때 => i번째와 '-'을 넣는다.
+   if(tmp[i]%2 && tmp[i+1]%2){// 1,3
+     output.push(tmp[i],'-');//1,-,3
+   }else{
+     output.push(tmp[i]);
+   }
+ }
+ return output.join('');
+ }
+
+///////////////////////////////////////////////////////////////////
+
+reduce 
+
+function DashInsert(string) {
+ 
+ let output = '';
+ let tmp = string.split('');
+ output = tmp.reduce(function(acc,cur){
+   if((acc)%2===1 && (cur)%2===1) return acc+'-'+cur;
+   else return acc+cur;
+ });
+ return output;
+
+}
+
+
+////////////////////////////////////////////////////////////////////
+
+// 2.splice
+
+function DashInsert(string) {
+  let arr = string.split('');
+  for (let i = 0; i < arr.length; i++) {
+    if ( arr[i] % 2 === 1 && arr[i + 1] % 2 === 1) {
+      arr.splice(i +1,0,'-');
+    }
+  }
+  return arr.join('');
+}
+
+
+
+
+```
 
 
 

@@ -4216,6 +4216,8 @@ console.log(max)
 
 &lt;blockquote&gt;
 &lt;p&gt;spread operator  사용해서 큰수 가져오기&lt;/p&gt;
+
+&lt;p&gt;arr 로 큰수를 가져오기 위해서는 &amp;hellip; 을 써야 Math.max() &amp;lt;&amp;lt; 안에 들어간다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
@@ -5106,6 +5108,73 @@ console.log(delete Employee.salary); // returns true
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;parameter-지정하는-법&#34;&gt;parameter 지정하는 법&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code&gt;ES6&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function timeToGoHome(distance, speed = 20 ) { 
+
+	return distance + speed;
+}
+
+timeToGoHome(10);
+
+// 30
+
+timeToGoHome(10,10); // 두번째 값인 지정했던 speed 값이 변한다. 
+
+// 20
+
+
+
+ // 만약 첫번째 값을 지정하고 출력하고 싶다면
+
+function timeToGoHome(distance = 20, speed) { 
+
+timeToGoHome(undefined,20) ;
+// 40
+ 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;getmaxnum-함수-만들기&#34;&gt;getMaxNum 함수 만들기&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function getMaxNums(...nums) {
+	console.log(nums);
+}
+
+getMaxNums(1,2,3,4,5);  // nums 는 arr로 출력된다. 따라서 
+// &amp;gt;&amp;gt;&amp;gt;(5) [1, 2, 3, 4, 5]
+
+
+
+let getMaxNum = function(...nums) {
+	
+	return nums.reduce(function(acc,curr) {
+		if ( acc &amp;gt; curr ) {
+		  return acc;	
+		} else {
+		  return curr;
+		}
+	 })
+}
+
+getMaxNum(1,2,3,4,5) //  Math.max(5,4,3,2,1)  &amp;gt;&amp;gt; 5같다
+
+// &amp;gt;&amp;gt; 5 출력 
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr /&gt;
 
@@ -8249,82 +8318,106 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;스코프란?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;객체 지향 프로그래밍&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function Car(band,name,color) {
+    // 인스턴스가 만들어 질때  실행될 코드들... 
+}
+
+// new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. 
+
+
+// Car 라는 class 만들어 낼때 class는 2가지를 갖게 된다.
+
+// 1. 속성  : band,name,color , currentFuel,maxSpeed
+// 2. 메소드  : refuel() ,setSpeed(), drive()
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;closure&#34;&gt;Closure&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;1.클로저란?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.&lt;/p&gt;
-
-&lt;p&gt;스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.&lt;/p&gt;
+&lt;p&gt;함수는 함수를 리턴할수 있다.그것을 고차함수라고 하는데 그것을 클로저라 부른다. 한마디로 &lt;code&gt;외부함수의 변수에 접근할수 있는 함수&lt;/code&gt;를  &lt;code&gt;클로저&lt;/code&gt;라 부른다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;전역_스코프&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;특징&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let greeting = &#39;Hello John&#39; // 외부에서 변수가 선언됨
-
-function marcusHello () {
-  console.log(greeting)
-}
-
-console.log(greeting) // &#39;Hello John!&#39; 
-
-sayHello() // &#39;Hello John!&#39; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;지역_스코프&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;클로저 함수의 장점은 지역변수 외부 함수의 변수 전역 변수 에 접근이 가능하다는 점이다 !&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-function marcusHello () {
-  
-  let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨
-  console.log(greeting)
+function foo() {
+  return function() {
+        return 2 
+    }
 }
 
-marcusHello() // &#39;Hello John!!&#39;
-
-console.log(x) // Error, hello is not defined
+foo() // f
+// 2 가 반환되지 않고 
+//f &amp;lt;&amp;lt; 함수 자체가 리턴된다 
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;**클로저예제1 : 함수 이용해서 템플릿 함수 만들기 **&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-let name = &amp;quot;john&amp;quot;;
-
-function showName() { 
-  let name = &amp;quot;jj&amp;quot;; // 2. 지역변수 &amp;lt;&amp;lt; showName함수에서만 접근 가능
-  console.log(name); // 2. jj
+function htmlMark(tag) {
+    let stratTag = &amp;quot;&amp;lt;&amp;quot; + tag + &amp;quot;&amp;gt;&amp;quot; ; 
+    let endTag = &amp;quot;&amp;lt;&amp;quot; + tag + &amp;quot;&amp;gt;&amp;quot; ;
+      return function(content) {     //  클로저 함수 사용 
+        return stratTag + content + endTag;
+    }
 }
 
-console.log(name); // 1.jj &amp;lt;&amp;lt; 전역변수 가져옴
-showname()         // 2.
-console.log(name)  // 3. john &amp;lt;&amp;lt; 여전히 전역 변수 john
+htmlMark(&amp;quot;h1&amp;quot;)(&amp;quot;JJ&amp;quot;); // 커링 사용해서 출력 tag : &amp;quot;h1&amp;quot; content:&amp;quot;JJ&amp;quot;
+// &amp;gt;&amp;gt;&amp;gt; &amp;lt;h1&amp;gt;JJ&amp;lt;h1&amp;gt;
 
+let h1Tag = htmlMark(&amp;quot;h1&amp;quot;); // 변수에 tag:&amp;quot;h1&amp;quot;담아서 지정하고 출력 
 
+h1Tag(&amp;quot;JJ&amp;quot;)  //  content : &amp;quot;JJ&amp;quot;
+// &amp;gt;&amp;gt;&amp;gt; &amp;lt;h1&amp;gt;JJ&amp;lt;h1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;**클로저예제 2 : 클로저 모튤 패턴 **&lt;/p&gt;
 
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 두 카운터가 각기 다른 privateCount 를 다루면서, privareCounter 을 밖에 노출시키지 않는 것이 장점이다. 
 
-let name = &amp;quot;john&amp;quot;;
+function makeCounter() {
+	let privateCounter = 0; 
 
-function showName() {
-  name = &amp;quot;jj&amp;quot;; // name 이 전역변수로 바뀜 cos let 없기 때문에 외부에서 변수 가져왔다. 
-  console.log(name); //   jj 
-}
+	let obj = {
+	  plus : function() {
+		  privateCounter = privateCounter + 1;
+	  },	
+	  minus: function() {
+		  privateCounter = privateCounter - 1;
+	  },
+	  getValue: function() {
+		  return privateCounter;
+	  }
+  }
+  return obj;
+};
 
-console.log(name); // 1. john &amp;lt;&amp;lt; 전역변수 가져옴
-showName()         // 2. 
-console.log(name)  // 3. jj 함수가 실행된 뒤에는 함수안에 있는 name = jj 를 가져와서 리턴한다. 왜냐하면 jj 가 전역 변수로 바뀌었기 때문이다. 
+let count1 = makeCounter() // 함수를 변수에 지정한다. 
+count1.plus() // obj key값을 실행시키면 propo 값인 함수가 실행되면서 기존에 privateCounter 0 이였던 것을 1 증가시킨다. 
+
+coun1.getValue() //  obj key값인 getValue() 함수를 실행시키면 지금까지 plus 하고 minus한 값을 출력 할수 있게 코드가 짜여 있다. 
 
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;closure&#34;&gt;Closure&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;description&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2.클로저란?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;클로저는 독립적인 (자유) 변수를 가리키는 함수이다. 또는, 클로저 안에 정의된 함수는 만들어진 환경을 ‘기억한다’.&lt;/p&gt;
@@ -8332,9 +8425,7 @@ console.log(name)  // 3. jj 함수가 실행된 뒤에는 함수안에 있는 na
 &lt;p&gt;내부함수는 외부함수의 지역변수에 접근 할 수 있는데 외부함수의 실행이 끝나서 외부함수가 소멸된 이후에도 내부함수가 외부함수의 변수에 접근 할 수 있다. 이러한 메커니즘을 클로저라고 한다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;일반적인 함수&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;일반적인 함수&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 let addTo = function (passed) {
@@ -8348,9 +8439,7 @@ console.log( addTo(3) ) //  5
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;이것이 클로저&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;이것이 클로저&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 let passed = 3;  // 함수 밖에 변수를 선언한다 
@@ -8365,6 +8454,8 @@ let addTo = function () { //  parameter 를 외부에서가져온다.
 console.log( addTo() ) //  5
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;1.추가설명&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 클로저(closure)는 내부함수가 외부함수의 맥락(context)에 접근할 수 있는 것을 가르킨다.
 // 자바스크립트에서 함수는 일급객체이다. 함수를 호출했을때 리턴되는 함수(클로저)를 참조하고 있는 것이다.
@@ -8411,6 +8502,8 @@ console.log(next());
 출처: https://mylife365.tistory.com/108?category=624212 [변화에 적응하기]
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;추가설명 &amp;amp; 코드를 작성할때 많이 격는 어려움&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;3. 클로저(Closure)
 
@@ -8781,6 +8874,73 @@ console.log(result2);
 https://mylife365.tistory.com/320 
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;스코프란?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.&lt;/p&gt;
+
+&lt;p&gt;스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;전역_스코프&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let greeting = &#39;Hello John&#39; // 외부에서 변수가 선언됨
+
+function marcusHello () {
+  console.log(greeting)
+}
+
+console.log(greeting) // &#39;Hello John!&#39; 
+
+sayHello() // &#39;Hello John!&#39; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;지역_스코프&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function marcusHello () {
+  
+  let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨
+  console.log(greeting)
+}
+
+marcusHello() // &#39;Hello John!!&#39;
+
+console.log(x) // Error, hello is not defined
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let name = &amp;quot;john&amp;quot;;
+
+function showName() { 
+  let name = &amp;quot;jj&amp;quot;; // 2. 지역변수 &amp;lt;&amp;lt; showName함수에서만 접근 가능
+  console.log(name); // 2. jj
+}
+
+console.log(name); // 1.jj &amp;lt;&amp;lt; 전역변수 가져옴
+showname()         // 2.
+console.log(name)  // 3. john &amp;lt;&amp;lt; 여전히 전역 변수 john
+
+
+
+
+
+let name = &amp;quot;john&amp;quot;;
+
+function showName() {
+  name = &amp;quot;jj&amp;quot;; // name 이 전역변수로 바뀜 cos let 없기 때문에 외부에서 변수 가져왔다. 
+  console.log(name); //   jj 
+}
+
+console.log(name); // 1. john &amp;lt;&amp;lt; 전역변수 가져옴
+showName()         // 2. 
+console.log(name)  // 3. jj 함수가 실행된 뒤에는 함수안에 있는 name = jj 를 가져와서 리턴한다. 왜냐하면 jj 가 전역 변수로 바뀌었기 때문이다. 
+
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -8798,6 +8958,87 @@ https://mylife365.tistory.com/320
 
 &lt;h3 id=&#34;question&#34;&gt;Question&lt;/h3&gt;
 
+&lt;blockquote&gt;
+&lt;p&gt;Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, &amp;lsquo;primeMover(n)&amp;rsquo; 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)&lt;/p&gt;
+
+&lt;p&gt;For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;my-soultion&#34;&gt;My_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+let primeMover = function(n) {
+  // your code here
+
+
+  let arr = [1];
+  for ( let i = 1; i &amp;lt;100; i++) {
+    for ( let j = 2; j &amp;lt; 100; j++ ) {
+      if (j % i !== 0 ) {
+       arr.push(j);
+      }
+    }
+  }
+  return arr[n];
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;primeMover&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;question-1&#34;&gt;Question&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;isOddWithoutModulo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;isOddWithoutModulo&amp;rdquo;. (&amp;ldquo;isOddWithoutModulo&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given a number, &amp;ldquo;isOddWithoutModulo&amp;rdquo; returns whether the passed in number is odd. (숫자가 주어졌을때, &amp;ldquo;isOddWithoutModulo&amp;rdquo; 함수는 주어진 숫자가 홀수인지를 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;my-soultion-1&#34;&gt;My_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 2. it is used by Math.floor 
+
+function isOddWithoutModulo(num) { // floor 메소드로 참과 거짓을 출력할뿐만 아니라 정수로 만든다. 그것을 2로 나눠서 2로 다시 곱한값이 기존에 값과 일치하지 않는다면 홀수이므로 true 반환
+  
+  return Math.floor(num / 2) * 2 !== num;  
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;others-soultion&#34;&gt;Others_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function isOddWithoutModulo(num) {
+   // 예를 들어, num이 -17이라고 가정합니다. 
+   num = Math.abs(num);
+// num은 절대값이 되어 17이됩니다. 이를 통해 파라미터에 들어올 모든 음수를 커버할 수 있을 겁니다. 
+   if( num === 0 )  // num은 현재 17로 0이 아니기 때문에 그 다음 else if로 넘어가게 됩니다. 
+       return false;
+   else if(num === 1) // num은 현재 17로 1이 아니기 때문에 그 다음 else로 넘어가게 됩니다. 
+       return true;
+   else { // 보통 홀수인지 아닌지를 판별하기 위해서 2로 나누었을 대 나머지값을 확인하는 방법을 씁니다. 
+// 그 방법을 풀어보면 17 -2 -2 -2 -2 -2 -2...... 하여 0 혹은 1이 될 때까지 뻰다는 것을 의미합니다. 
+       return isOddWithoutModulo(num-2); // 이 부분은 바로 위의 설명이 적용되는 부분입니다. 
+// 자바스크립트는 재귀함수가 가능하여 함수 안에서 자기 자신을 호출할 수 있습니다.
+// 이를테면 num이 17이었다면 위의 구문을 통해 다시  isOddWithoutModulo(17-2)를 호출하는 것입니다. 
+// 위의 과정을 다시 반복하게 되면 isOddWithoutModulo(15) --&amp;gt; isOddWithoutModulo(13) --&amp;gt; isOddWithoutModulo(11).... 
+// num이 0 혹은 1이 되어 if와 else if 구문에 걸려 return될 때까지 반복됩니다. 
+   }
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;question-2&#34;&gt;Question&lt;/h3&gt;
+
 &lt;ul&gt;
 &lt;li&gt;getStringLength&lt;/li&gt;
 &lt;/ul&gt;
@@ -8810,7 +9051,7 @@ https://mylife365.tistory.com/320
 &lt;p&gt;Do NOT use any native &amp;lsquo;length&amp;rsquo; methods. (- &amp;lsquo;length&amp;rsquo; 메소드를 사용하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-2&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getStringLength(string) {
@@ -8831,7 +9072,7 @@ function getStringLength(string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-1&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-3&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;getIndexOf&lt;/li&gt;
@@ -8843,7 +9084,7 @@ function getStringLength(string) {
 &lt;p&gt;Given a character and a string, &amp;ldquo;getIndexOf&amp;rdquo; returns the first position of the given character in the given string. (문자와 문자열이 주어졌을때, &amp;ldquo;getIndexOf&amp;rdquo; 함수는 주어진 문자열에서 주어진 문자가 나타나는 첫번째 위치를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-1&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-3&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function getIndexOf(char, str) {
 
@@ -8859,7 +9100,7 @@ function getStringLength(string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-2&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-4&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;calculateBillTotal&lt;/li&gt;
@@ -8874,7 +9115,7 @@ function getStringLength(string) {
 Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-2&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-4&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function calculateBillTotal(preTaxAndTipAmount) {
@@ -8900,7 +9141,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 &lt;li&gt;calculateBillTotal&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;question-3&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-5&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;convertObjectToArray3&lt;/li&gt;
@@ -8910,7 +9151,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 &lt;p&gt;Write a function called &amp;ldquo;convertObjectToList&amp;rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &amp;ldquo;convertObjectToList&amp;rdquo;를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-3&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-5&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function convertObjectToList(obj) {
   // your code here
@@ -9159,6 +9400,77 @@ unction firstCharacter (string) {
  // 3. Reduce이용 2
  return string.split(&#39; &#39;).reduce( (acc,cur)=&amp;gt;acc+cur[0] ,&#39;&#39;);
 }
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;question-6&#34;&gt;Question&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;dashInsert&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Have the function DashInsert insert dashes (&amp;lsquo;-&amp;rsquo;) between each two odd numbers in str. (문자열이 주어졌을때, &amp;lsquo;DashInsert&amp;rsquo; 함수는 문자열에 있는 두 홀수 사이에 대시(&amp;lsquo;-&amp;rsquo;)를 추가하여 반환합니다.)&lt;/p&gt;
+
+&lt;p&gt;For example: if str is 454793 the output should be 4547-9-3. (예시: 주어진 문자열이 454793 이라면 결과값은 4547-9-3 입니다.) Don&amp;rsquo;t count zero as an odd number. (0 을 홀수로 간주하지 마세요.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 1/for 문
+
+
+function DashInsert(string) {
+ 
+
+
+ let output = [];
+ let tmp=string.split(&#39;&#39;);
+ for(let i=0;i&amp;lt;tmp.length;i++){
+   //홀수가 연속해서 나올때 =&amp;gt; i번째와 &#39;-&#39;을 넣는다.
+   if(tmp[i]%2 &amp;amp;&amp;amp; tmp[i+1]%2){// 1,3
+     output.push(tmp[i],&#39;-&#39;);//1,-,3
+   }else{
+     output.push(tmp[i]);
+   }
+ }
+ return output.join(&#39;&#39;);
+ }
+
+///////////////////////////////////////////////////////////////////
+
+reduce 
+
+function DashInsert(string) {
+ 
+ let output = &#39;&#39;;
+ let tmp = string.split(&#39;&#39;);
+ output = tmp.reduce(function(acc,cur){
+   if((acc)%2===1 &amp;amp;&amp;amp; (cur)%2===1) return acc+&#39;-&#39;+cur;
+   else return acc+cur;
+ });
+ return output;
+
+}
+
+
+////////////////////////////////////////////////////////////////////
+
+// 2.splice
+
+function DashInsert(string) {
+  let arr = string.split(&#39;&#39;);
+  for (let i = 0; i &amp;lt; arr.length; i++) {
+    if ( arr[i] % 2 === 1 &amp;amp;&amp;amp; arr[i + 1] % 2 === 1) {
+      arr.splice(i +1,0,&#39;-&#39;);
+    }
+  }
+  return arr.join(&#39;&#39;);
+}
+
+
 
 
 &lt;/code&gt;&lt;/pre&gt;

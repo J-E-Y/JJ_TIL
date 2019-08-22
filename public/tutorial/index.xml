@@ -116,7 +116,8 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? 현재 시간,날짜 || 년도 불러오기 let a = new Date() a &amp;gt; // Tue Aug 20 2019 15:14:58 GMT+0900 (Korean Standard Time) let b = (a.getFullYear()); b &amp;gt; // 2019  let currentDate = new Date() // Date() 라는 함수가 이미저장되어있다. currentDate  in 에 관해서 obj = {a:1,b:2}; // obj 객체가 있다. let obj2 = &amp;quot;a&amp;quot; in obj; // obj 안에 a라는 키값이 있는지 확인한다.</description>
+      <description>Today What I Learn ? parameter 지정하는 법 ES6
+function timeToGoHome(distance, speed = 20 ) { return distance + speed; } timeToGoHome(10); // 30 timeToGoHome(10,10); // 두번째 값인 지정했던 speed 값이 변한다. // 20 // 만약 첫번째 값을 지정하고 출력하고 싶다면 function timeToGoHome(distance = 20, speed) { timeToGoHome(undefined,20) ; // 40  getMaxNum 함수 만들기 function getMaxNums(...nums) { console.log(nums); } getMaxNums(1,2,3,4,5); // nums 는 arr로 출력된다. 따라서 // &amp;gt;&amp;gt;&amp;gt;(5) [1, 2, 3, 4, 5] let getMaxNum = function(.</description>
     </item>
     
     <item>
@@ -136,12 +137,10 @@ Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q2/</guid>
-      <description>Scope 스코프란?
- 자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.
-스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.
- 전역_스코프
-let greeting = &#39;Hello John&#39; // 외부에서 변수가 선언됨 function marcusHello () { console.log(greeting) } console.log(greeting) // &#39;Hello John!&#39; sayHello() // &#39;Hello John!&#39;  지역_스코프
-function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨 console.log(greeting) } marcusHello() // &#39;Hello John!!&#39; console.log(x) // Error, hello is not defined  let name = &amp;quot;john&amp;quot;; function showName() { let name = &amp;quot;jj&amp;quot;; // 2.</description>
+      <description>Scope 객체 지향 프로그래밍
+function Car(band,name,color) { // 인스턴스가 만들어 질때 실행될 코드들... } // new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. // Car 라는 class 만들어 낼때 class는 2가지를 갖게 된다. // 1. 속성 : band,name,color , currentFuel,maxSpeed // 2. 메소드 : refuel() ,setSpeed(), drive()  Closure 1.클로저란?
+ 함수는 함수를 리턴할수 있다.그것을 고차함수라고 하는데 그것을 클로저라 부른다. 한마디로 외부함수의 변수에 접근할수 있는 함수를 클로저라 부른다.
+ 특징</description>
     </item>
     
     <item>
@@ -150,10 +149,9 @@ function marcusHello () { let greeting = &#39;Hello John!&#39; // 안에서 변�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Question  getStringLength   Write a function called &amp;ldquo;getStringLength&amp;rdquo;. (&amp;ldquo;getStringLength&amp;rdquo; 함수를 작성하세요.)
-Given a string, &amp;ldquo;getStringLength&amp;rdquo; returns the length of the given string. (문자열이 주어졌을때, &amp;ldquo;getStringLength&amp;rdquo; 함수는 주어진 문자열의 길이를 반환합니다.)
-Do NOT use any native &amp;lsquo;length&amp;rsquo; methods. (- &amp;lsquo;length&amp;rsquo; 메소드를 사용하지 마세요.)
- My_Soultion function getStringLength(string) { // your code here // 1. count 변수를 만들어 초기값을 지정한다. // 2. while loop를 이용해 string[count] 값을 지정해 조건문을 만든다.</description>
+      <description>Question  Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, &amp;lsquo;primeMover(n)&amp;rsquo; 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)
+For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)
+ My_Soultion let primeMover = function(n) { // your code here let arr = [1]; for ( let i = 1; i &amp;lt;100; i++) { for ( let j = 2; j &amp;lt; 100; j++ ) { if (j % i !</description>
     </item>
     
   </channel>

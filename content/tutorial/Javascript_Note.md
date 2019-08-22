@@ -22,6 +22,80 @@ type: docs
 
 
 
+
+---
+### parameter 지정하는 법 
+---
+
+`ES6`
+
+```js
+
+function timeToGoHome(distance, speed = 20 ) { 
+
+	return distance + speed;
+}
+
+timeToGoHome(10);
+
+// 30
+
+timeToGoHome(10,10); // 두번째 값인 지정했던 speed 값이 변한다. 
+
+// 20
+
+
+
+ // 만약 첫번째 값을 지정하고 출력하고 싶다면
+
+function timeToGoHome(distance = 20, speed) { 
+
+timeToGoHome(undefined,20) ;
+// 40
+ 
+
+```
+
+
+
+
+
+
+
+---
+### getMaxNum 함수 만들기 
+---
+
+```js
+
+function getMaxNums(...nums) {
+	console.log(nums);
+}
+
+getMaxNums(1,2,3,4,5);  // nums 는 arr로 출력된다. 따라서 
+// >>>(5) [1, 2, 3, 4, 5]
+
+
+
+let getMaxNum = function(...nums) {
+	
+	return nums.reduce(function(acc,curr) {
+		if ( acc > curr ) {
+		  return acc;	
+		} else {
+		  return curr;
+		}
+	 })
+}
+
+getMaxNum(1,2,3,4,5) //  Math.max(5,4,3,2,1)  >> 5같다
+
+// >> 5 출력 
+
+```
+
+
+
 ---
 ### 현재 시간,날짜  || 년도 불러오기
 ---
