@@ -261,20 +261,80 @@ let newStr = str.replace(john,jj);
 ---
 
 
-**parseInt(string, radix)**
 
->숫자로 바꾸는것
-
-**Number()**
-
->숫자로 바꾸는것 
+**num.toFixed( digits )**
 
 
+```js
+// 소수점 지정하는것 
+
+var numObj = 12345.6789;
+
+numObj.toFixed();       // Returns '12346': note rounding, no fractional part
+numObj.toFixed(1);      // Returns '12345.7': note rounding
+numObj.toFixed(6);      // Returns '12345.678900': note added zeros
+
+```
+
+
+
+**parseInt(value)** 
+```js
+// 정수로 파싱 한다. 
+// 만약 Number 는 숫자로 만 변환해준다면 이메소드는 바로 15를 출력하게 해준다. 
+// parseInt 는 집법 변환 할때도 쓰인다. 
+
+
+parseInt(string, radix);
+
+parseInt('0xF', 16);  // 15   >> 16진수는 f까지 있으니까 f 가15니까 
+parseInt('F', 16);  // 15   
+parseInt('17', 8);  // 15   10진법으로 전환해서 
+parseInt(15,99 10); // 15
+Number("15.123")
+
+// 15.123
+
+parseInt("15.123"")
+ 
+// 15
+
+```
 
 **parseFloat(value)**
 
-> 소수점 나타내기 
 
+```js
+
+parseFlaot("15.123")
+
+// 15.123
+
+```
+
+
+
+**Number.isInteger(value)**
+
+```js
+
+// 정수인지 아닌지 판단하는 것
+
+Number.isInteger(0);         // true
+Number.isInteger(1);         // true
+Number.isInteger(-100000);   // true
+Number.isInteger(99999999999999999999999); // true
+
+Number.isInteger(0.1);       // false
+Number.isInteger(Math.PI);   // false
+
+Number.isInteger(NaN);       // false
+Number.isInteger(Infinity);  // false
+Number.isInteger(-Infinity); // false
+Number.isInteger('10');      // false
+
+
+```
 
 
 
@@ -283,21 +343,55 @@ let newStr = str.replace(john,jj);
 ---
 
 
-**Math.Floor(x)**
+**Math.random()**
+
+```js
+// arguments :  없음
+// return value :  0 과 1 사이의 난수를 반환한다. 
+
+Math.random(); // 0.7915594421190384  // 콘솔에 찍으면 막 나온다. 
+Math.random(); // 0.12480720616017948 // 난수가 반환이 되는 것이다. 
+Math.random(); // 0.014493108986906034
+
+// 이것을 이용해 특정 범이의 정수 리턴하기
+// 사용자가 원하는 정수를 출력하는 함수 만들기
+
+Math.random(); // 0.014493108986906034 //   // 0 과 1 사이의 숫자들 
+
+Math.random() * 10 // >>8.031510209216247    // 0  ~ 10 까지 
+Math.random() * 109 // >>50.031510209216247  // 0 ~ 109 까지 
+Math.random() * 20 // >>14.031510209216247   // 0 ~ 20 까지 
+Math.random() * 5 // >>2.031510209216247     // 0 ~ 5 까지 
 
 
+function getRandomInt(num) {
+	return Math.floor(Math.random() * num );
+}
+
+getRandomInt(10); // >> 6
+getRandomInt(100); // >> 50
+getRandomInt(20); // >> 15
+getRandomInt(7); // >> 5
+
+```
+
+
+**Math.floor(x)**
 
 
 ```js
 
-//함수는 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환합니다
+// 반환값(Return)
+// number, 정수
 
-Math.floor( 45.95); //  45
-Math.floor( 45.05); //  45
-Math.floor(  4   ); //   4
-Math.floor(-45.05); // -46  // 마이너스 는 값을 1 올려준다. 
-Math.floor(-45.95); // -46
-Math.floor(45.95) //   45 
+//예제(Example)
+
+
+Math.floor(5.12323); // number, 5
+Math.floor(5.912321); // number, 5
+Math.floor(5); // number, 5
+Math.floor(-5.121323); // number, -6
+Math.floor(-5.923213); // number, -6
 ```
 
 
@@ -305,14 +399,13 @@ Math.floor(45.95) //   45
 **Math.abs(x)**
 
 
-
-
 ```js
-// 함수는 주어진 숫자의 절대값을 반환합니다
 
+// 함수는 주어진 숫자의 절대값을 반환합니다
+// 소수점을 없애는 것은 안된다. 
 
 Math.abs('-1');     // 1
-Math.abs(-2);       // 2
+Math.abs(-2);       // 2`
 Math.abs(null);     // 0
 Math.abs('');       // 0
 Math.abs([]);       // 0
@@ -322,10 +415,6 @@ Math.abs({});       // NaN
 Math.abs('string'); // NaN
 Math.abs();         // NaN
 ```
-
-
-
-
 
 
 
@@ -768,117 +857,31 @@ fruits.slice(1, 0);
 
 >`mutable`
 
+
+> 배열 중간에 원소 추가, 삭제
+
 > 중간에 element 를 삭제 할수 있는 방법이 이거뿐
 
-
-
-
-
-* Remove 0 (zero) elements from index 2, and insert "drum"
-
-
 ```js
 
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(2, 0, 'drum');
-
-// myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"] 
-// removed is [], no elements removed
-
-```
-
-* Remove 0 (zero) elements from index 2, and insert "drum" and "guitar"Section
-
-
-
-```js 
-
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(2, 0, 'drum', 'guitar');
-
-// myFish is ["angel", "clown", "drum", "guitar", "mandarin", "sturgeon"] 
-// removed is [], no elements removed
-
-```
-
-* Remove 1 element from index 3
-
-```js
-
-var myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(3, 1);
-
-// removed is ["mandarin"]
-// myFish is ["angel", "clown", "drum", "sturgeon"]
-
-```
-
-
-* Remove 1 element from index 2, and insert "trumpet"
-
-
-```js 
-
-var myFish = ['angel', 'clown', 'drum', 'sturgeon'];
-var removed = myFish.splice(2, 1, 'trumpet');
-
-// myFish is ["angel", "clown", "trumpet", "sturgeon"]
-// removed is ["drum"]
-
-```
-
-
-* Remove 2 elements from index 0, and insert "parrot", "anemone" and "blue"
-
-
-```js
-
-
-var myFish = ['angel', 'clown', 'trumpet', 'sturgeon'];
-var removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
-
-// myFish is ["parrot", "anemone", "blue", "trumpet", "sturgeon"] 
-// removed is ["angel", "clown"]
-
-
-
-```
-
-* Remove 2 elements from index 2
-
-```js
-
-var myFish = ['parrot', 'anemone', 'blue', 'trumpet', 'sturgeon'];
-var removed = myFish.splice(2, 2);
-
-// myFish is ["parrot", "anemone", "sturgeon"] 
-// removed is ["blue", "trumpet"]
-
-```
-
-* Remove 1 element from index -2
-
-```js 
-
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(-2, 1);
-
-// myFish is ["angel", "clown", "sturgeon"] 
-// removed is ["mandarin"]
-
-
-```
-
-
-
-* Remove all elements after index 2 (incl.)
-
-```js
-var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
-var removed = myFish.splice(2);
-
-// myFish is ["angel", "clown"]
-// removed is ["mandarin", "sturgeon"]
+var array = [1,2,3,4,5];
+// 배열 중간에 원소 삭제 
+// array.splice(인덱스, 인덱스부터 삭제할 원소개수)
+var o = array.splice(2, 1);  
+console.log(array); // [1, 2, 4, 5]
+console.log(o); // [3]  // 삭제된 원소 반환
+// 배열 중간에 원소 추가 
+// array.splice(인덱스, 인덱스부터 삭제할 원소개수(추가시 0), 추가할 원소 ...)
+o = array.splice(3, 0, 99, 99, 99);  
+console.log(array); // [1, 2, 4, 99, 99, 99, 5]
+console.log(o); // []
+/*
+array.unshift();  // 첫번째 원소 추가
+array.shift();     // 첫번째 원소 삭제
+array.push();    // 마지막 원소 추가
+array.pop();      // 마지막 원소 삭제
+array.join();      // 배열의 모든 원소를 문자열로 변환하고 연결(+)한 결과 반환
+*/      
 
 
 ```
