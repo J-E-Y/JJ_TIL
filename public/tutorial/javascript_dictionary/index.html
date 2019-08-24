@@ -27,18 +27,11 @@
   
     
   
-  <meta name="description" content="String str[index]
+  <meta name="description" content="String str.match(regexp)
 immutable
- 1.글자 하나하나 가져오기
- index로 접근은 가능하지만 쓸 수는 없음 (read-only)
-  연산자를 쓸수 있음.  length 쓸수 있음.
-   let str = &#39;CodeStates&#39;; str[0]; &gt;&gt; &#39;C&#39; but str[0] = &#39;G&#39; &gt;&gt; 바뀌지 않음. str = &#39;Codestates&#39;  str..toUpperCase()
+// 문자열안에 있는 알파벳 뽑기. let str = &quot;abcdefgh23j2k4h6l3h1uiui24h4324jk3jh4k3h24&quot; let alphabet = str.match(/[a-zA-Z]/g); // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;j&quot;, &quot;k&quot;, &quot;h&quot;, &quot;l&quot;, &quot;h&quot;, &quot;u&quot;, &quot;i&quot;, &quot;u&quot;, &quot;i&quot;, &quot;h&quot;, &quot;j&quot;, &quot;k&quot;, &quot;j&quot;, &quot;h&quot;, &quot;k&quot;, &quot;h&quot;]  str[index]
 immutable
- 소문자를 대문자로 바꿈
- let str = &#39;CodeStates&#39;; str.toUpperCase(); &gt;&gt;&quot;CODESTATES  str.toLowerCase()
-immutable
- 대문자 소문자 바꿈
-  let str = &quot;CodeStates&quot;; str.">
+// 1.글자 하나하나 가져오기 // 2. index로 접근은 가능하지만 쓸 수는 없음 (read-only) // 3. &#43; 연산자를 쓸수 있음. // 4. length 쓸수 있음. // let str = &#39;CodeStates&#39;; // str[0]; &gt;&gt; &#39;C&#39; // but // str[0] = &#39;G&#39; &gt;&gt; 바뀌지 않음.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_dictionary/">
@@ -127,18 +120,11 @@ immutable
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_dictionary/">
   <meta property="og:title" content="1. Dictionary | Home">
-  <meta property="og:description" content="String str[index]
+  <meta property="og:description" content="String str.match(regexp)
 immutable
- 1.글자 하나하나 가져오기
- index로 접근은 가능하지만 쓸 수는 없음 (read-only)
-  연산자를 쓸수 있음.  length 쓸수 있음.
-   let str = &#39;CodeStates&#39;; str[0]; &gt;&gt; &#39;C&#39; but str[0] = &#39;G&#39; &gt;&gt; 바뀌지 않음. str = &#39;Codestates&#39;  str..toUpperCase()
+// 문자열안에 있는 알파벳 뽑기. let str = &quot;abcdefgh23j2k4h6l3h1uiui24h4324jk3jh4k3h24&quot; let alphabet = str.match(/[a-zA-Z]/g); // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;j&quot;, &quot;k&quot;, &quot;h&quot;, &quot;l&quot;, &quot;h&quot;, &quot;u&quot;, &quot;i&quot;, &quot;u&quot;, &quot;i&quot;, &quot;h&quot;, &quot;j&quot;, &quot;k&quot;, &quot;j&quot;, &quot;h&quot;, &quot;k&quot;, &quot;h&quot;]  str[index]
 immutable
- 소문자를 대문자로 바꿈
- let str = &#39;CodeStates&#39;; str.toUpperCase(); &gt;&gt;&quot;CODESTATES  str.toLowerCase()
-immutable
- 대문자 소문자 바꿈
-  let str = &quot;CodeStates&quot;; str."><meta property="og:image" content="/img/icon-192.png">
+// 1.글자 하나하나 가져오기 // 2. index로 접근은 가능하지만 쓸 수는 없음 (read-only) // 3. &#43; 연산자를 쓸수 있음. // 4. length 쓸수 있음. // let str = &#39;CodeStates&#39;; // str[0]; &gt;&gt; &#39;C&#39; // but // str[0] = &#39;G&#39; &gt;&gt; 바뀌지 않음."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -427,33 +413,44 @@ immutable
 
 <hr />
 
+<p><strong>str.match(regexp)</strong></p>
+
+<p><code>immutable</code></p>
+
+<pre><code class="language-js">
+// 문자열안에 있는 알파벳 뽑기.
+
+let str = &quot;abcdefgh23j2k4h6l3h1uiui24h4324jk3jh4k3h24&quot;
+
+let alphabet = str.match(/[a-zA-Z]/g);
+
+// [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;j&quot;, &quot;k&quot;, &quot;h&quot;, &quot;l&quot;, &quot;h&quot;, &quot;u&quot;, &quot;i&quot;, &quot;u&quot;, &quot;i&quot;, &quot;h&quot;, &quot;j&quot;, &quot;k&quot;, &quot;j&quot;, &quot;h&quot;, &quot;k&quot;, &quot;h&quot;]
+
+
+</code></pre>
+
 <p><strong>str[index]</strong></p>
 
 <p><code>immutable</code></p>
 
-<blockquote>
-<p>1.글자 하나하나 가져오기</p>
+<pre><code class="language-js">
+// 1.글자 하나하나 가져오기
 
-<ol>
-<li><p>index로 접근은 가능하지만 쓸 수는 없음 (read-only)</p></li>
+// 2. index로 접근은 가능하지만 쓸 수는 없음 (read-only)
 
-<li><ul>
-<li>연산자를 쓸수 있음.</li>
-</ul></li>
+// 3. + 연산자를 쓸수 있음.
 
-<li><p>length 쓸수 있음.</p></li>
-</ol>
-</blockquote>
+// 4. length 쓸수 있음.
 
-<pre><code>let str = 'CodeStates';
+// let str = 'CodeStates';
 
-str[0]; &gt;&gt; 'C'
+// str[0]; &gt;&gt; 'C'
 
-but
+// but
 
-str[0] = 'G' &gt;&gt; 바뀌지 않음.
+// str[0] = 'G' &gt;&gt; 바뀌지 않음.
 
-str = 'Codestates'
+// str = 'Codestates'
  
 </code></pre>
 

@@ -19,32 +19,49 @@ type: docs
 ## **String** 
 ---
 
+**str.match(regexp)**
+
+`immutable`
+
+
+```js
+
+// 문자열안에 있는 알파벳 뽑기.
+
+let str = "abcdefgh23j2k4h6l3h1uiui24h4324jk3jh4k3h24"
+
+let alphabet = str.match(/[a-zA-Z]/g);
+
+// ["a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "h", "l", "h", "u", "i", "u", "i", "h", "j", "k", "j", "h", "k", "h"]
+
+
+```
 
 
 **str[index]**
 
 `immutable`
 
-> 1.글자 하나하나 가져오기
 
-> 2. index로 접근은 가능하지만 쓸 수는 없음 (read-only)
+```js
 
-> 3. + 연산자를 쓸수 있음.
+// 1.글자 하나하나 가져오기
 
-> 4. length 쓸수 있음.
+// 2. index로 접근은 가능하지만 쓸 수는 없음 (read-only)
 
+// 3. + 연산자를 쓸수 있음.
 
+// 4. length 쓸수 있음.
 
-```
-let str = 'CodeStates';
+// let str = 'CodeStates';
 
-str[0]; >> 'C'
+// str[0]; >> 'C'
 
-but
+// but
 
-str[0] = 'G' >> 바뀌지 않음.
+// str[0] = 'G' >> 바뀌지 않음.
 
-str = 'Codestates'
+// str = 'Codestates'
  
 ```
 
