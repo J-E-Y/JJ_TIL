@@ -5121,6 +5121,89 @@ console.log(delete Employee.salary); // returns true
 
 &lt;hr /&gt;
 
+&lt;h3 id=&#34;d-or-d-차이점&#34;&gt;\d or \d+  차이점&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code&gt;imutable&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 둘다 숫자를 뽑는 역활을 한다. 
+
+// \d 는 모든 숫자를 각각 배열로 나눠서 출력하낟.  
+
+let str = &amp;quot;123f456f789 10&amp;quot;;
+str.match(/\d+/g);
+
+// [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;, &amp;quot;5&amp;quot;, &amp;quot;6&amp;quot;, &amp;quot;7&amp;quot;, &amp;quot;8&amp;quot;, &amp;quot;9&amp;quot;, &amp;quot;1&amp;quot;, &amp;quot;0&amp;quot;]
+
+
+
+
+// \d+ 숫자가 나란히 붙어있는 것으로 나뉜다. 
+let str = &amp;quot;123f456f789 10&amp;quot;;
+str.match(/\d/g);
+
+// [&amp;quot;123&amp;quot;, &amp;quot;456&amp;quot;, &amp;quot;789&amp;quot;, &amp;quot;10&amp;quot;]
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;extract-numbers-from-a-string-javascript&#34;&gt;Extract numbers from a string-Javascript&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var string = &amp;quot;border-radius:10px 20px 30px 40px&amp;quot;;
+var numbers = string.match(/\d+/g).map(Number); 
+
+console.log(numbers);
+
+// [10, 20, 30, 40]
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;making-guid&#34;&gt;Making_GUID&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+JavaScript
+Its easy to make GUIDs in JavaScript. Below is code to get strings that look like GUIDs. This code just random GUIDs they are not claimed to be unique. Don&#39;t use these if its very important.
+
+function S4() {
+    return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+}
+ 
+// then to call it, plus stitch in &#39;4&#39; in the third group
+guid = (S4() + S4() + &amp;quot;-&amp;quot; + S4() + &amp;quot;-4&amp;quot; + S4().substr(0,3) + &amp;quot;-&amp;quot; + S4() + &amp;quot;-&amp;quot; + S4() + S4() + S4()).toLowerCase();
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;할당-연산자&#34;&gt;할당 연산자&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 3 가지가 똑같은 것이다.  할당연산자
+
+count = count + 1 
+coutt+= 
+count++
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;parameter-지정하는-법&#34;&gt;parameter 지정하는 법&lt;/h3&gt;
 
 &lt;hr /&gt;

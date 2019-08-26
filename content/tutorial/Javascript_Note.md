@@ -21,6 +21,101 @@ type: docs
 ---
 
 
+---
+### \d or \d+  차이점  
+---
+
+
+`imutable`
+
+```js
+
+// 둘다 숫자를 뽑는 역활을 한다. 
+
+// \d 는 모든 숫자를 각각 배열로 나눠서 출력하낟.  
+
+let str = "123f456f789 10";
+str.match(/\d+/g);
+
+// ["1", "2", "3", "4", "5", "6", "7", "8", "9", "1", "0"]
+
+
+
+
+// \d+ 숫자가 나란히 붙어있는 것으로 나뉜다. 
+let str = "123f456f789 10";
+str.match(/\d/g);
+
+// ["123", "456", "789", "10"]
+
+
+
+```
+
+
+
+
+---
+### Extract numbers from a string-Javascript
+---
+
+
+```js
+var string = "border-radius:10px 20px 30px 40px";
+var numbers = string.match(/\d+/g).map(Number); 
+
+console.log(numbers);
+
+// [10, 20, 30, 40]
+
+
+
+
+```
+
+
+
+---
+### Making_GUID
+---
+
+
+```js
+
+JavaScript
+Its easy to make GUIDs in JavaScript. Below is code to get strings that look like GUIDs. This code just random GUIDs they are not claimed to be unique. Don't use these if its very important.
+
+function S4() {
+    return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+}
+ 
+// then to call it, plus stitch in '4' in the third group
+guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
+
+
+```
+
+
+
+
+
+
+
+---
+### 할당 연산자
+---
+
+```js
+// 3 가지가 똑같은 것이다.  할당연산자
+
+count = count + 1 
+coutt+= 
+count++
+
+```
+
+
+
 
 
 ---

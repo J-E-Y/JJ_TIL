@@ -27,8 +27,8 @@
   
     
   
-  <meta name="description" content="Today What I Learn ? parameter 지정하는 법 ES6
-function timeToGoHome(distance, speed = 20 ) { return distance &#43; speed; } timeToGoHome(10); // 30 timeToGoHome(10,10); // 두번째 값인 지정했던 speed 값이 변한다. // 20 // 만약 첫번째 값을 지정하고 출력하고 싶다면 function timeToGoHome(distance = 20, speed) { timeToGoHome(undefined,20) ; // 40  getMaxNum 함수 만들기 function getMaxNums(...nums) { console.log(nums); } getMaxNums(1,2,3,4,5); // nums 는 arr로 출력된다. 따라서 // &gt;&gt;&gt;(5) [1, 2, 3, 4, 5] let getMaxNum = function(.">
+  <meta name="description" content="Today What I Learn ? \d or \d&#43; 차이점 imutable
+// 둘다 숫자를 뽑는 역활을 한다. // \d 는 모든 숫자를 각각 배열로 나눠서 출력하낟. let str = &quot;123f456f789 10&quot;; str.match(/\d&#43;/g); // [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;1&quot;, &quot;0&quot;] // \d&#43; 숫자가 나란히 붙어있는 것으로 나뉜다. let str = &quot;123f456f789 10&quot;; str.match(/\d/g); // [&quot;123&quot;, &quot;456&quot;, &quot;789&quot;, &quot;10&quot;]  Extract numbers from a string-Javascript var string = &quot;border-radius:10px 20px 30px 40px&quot;; var numbers = string.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_note/">
@@ -117,8 +117,8 @@ function timeToGoHome(distance, speed = 20 ) { return distance &#43; speed; } ti
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_note/">
   <meta property="og:title" content="Notes | Home">
-  <meta property="og:description" content="Today What I Learn ? parameter 지정하는 법 ES6
-function timeToGoHome(distance, speed = 20 ) { return distance &#43; speed; } timeToGoHome(10); // 30 timeToGoHome(10,10); // 두번째 값인 지정했던 speed 값이 변한다. // 20 // 만약 첫번째 값을 지정하고 출력하고 싶다면 function timeToGoHome(distance = 20, speed) { timeToGoHome(undefined,20) ; // 40  getMaxNum 함수 만들기 function getMaxNums(...nums) { console.log(nums); } getMaxNums(1,2,3,4,5); // nums 는 arr로 출력된다. 따라서 // &gt;&gt;&gt;(5) [1, 2, 3, 4, 5] let getMaxNum = function(."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Today What I Learn ? \d or \d&#43; 차이점 imutable
+// 둘다 숫자를 뽑는 역활을 한다. // \d 는 모든 숫자를 각각 배열로 나눠서 출력하낟. let str = &quot;123f456f789 10&quot;; str.match(/\d&#43;/g); // [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;1&quot;, &quot;0&quot;] // \d&#43; 숫자가 나란히 붙어있는 것으로 나뉜다. let str = &quot;123f456f789 10&quot;; str.match(/\d/g); // [&quot;123&quot;, &quot;456&quot;, &quot;789&quot;, &quot;10&quot;]  Extract numbers from a string-Javascript var string = &quot;border-radius:10px 20px 30px 40px&quot;; var numbers = string."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -375,6 +375,10 @@ function timeToGoHome(distance, speed = 20 ) { return distance &#43; speed; } ti
 <li>
 <ul>
 <li><a href="#today-what-i-learn">Today What I Learn ?</a></li>
+<li><a href="#d-or-d-차이점">\d or \d+  차이점</a></li>
+<li><a href="#extract-numbers-from-a-string-javascript">Extract numbers from a string-Javascript</a></li>
+<li><a href="#making-guid">Making_GUID</a></li>
+<li><a href="#할당-연산자">할당 연산자</a></li>
 <li><a href="#parameter-지정하는-법">parameter 지정하는 법</a></li>
 <li><a href="#getmaxnum-함수-만들기">getMaxNum 함수 만들기</a></li>
 <li><a href="#현재-시간-날짜-년도-불러오기">현재 시간,날짜  || 년도 불러오기</a></li>
@@ -430,6 +434,89 @@ function timeToGoHome(distance, speed = 20 ) { return distance &#43; speed; } ti
 <p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png" alt="" /></p>
 
 <hr />
+
+<hr />
+
+<h3 id="d-or-d-차이점">\d or \d+  차이점</h3>
+
+<hr />
+
+<p><code>imutable</code></p>
+
+<pre><code class="language-js">
+// 둘다 숫자를 뽑는 역활을 한다. 
+
+// \d 는 모든 숫자를 각각 배열로 나눠서 출력하낟.  
+
+let str = &quot;123f456f789 10&quot;;
+str.match(/\d+/g);
+
+// [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;1&quot;, &quot;0&quot;]
+
+
+
+
+// \d+ 숫자가 나란히 붙어있는 것으로 나뉜다. 
+let str = &quot;123f456f789 10&quot;;
+str.match(/\d/g);
+
+// [&quot;123&quot;, &quot;456&quot;, &quot;789&quot;, &quot;10&quot;]
+
+
+
+</code></pre>
+
+<hr />
+
+<h3 id="extract-numbers-from-a-string-javascript">Extract numbers from a string-Javascript</h3>
+
+<hr />
+
+<pre><code class="language-js">var string = &quot;border-radius:10px 20px 30px 40px&quot;;
+var numbers = string.match(/\d+/g).map(Number); 
+
+console.log(numbers);
+
+// [10, 20, 30, 40]
+
+
+
+
+</code></pre>
+
+<hr />
+
+<h3 id="making-guid">Making_GUID</h3>
+
+<hr />
+
+<pre><code class="language-js">
+JavaScript
+Its easy to make GUIDs in JavaScript. Below is code to get strings that look like GUIDs. This code just random GUIDs they are not claimed to be unique. Don't use these if its very important.
+
+function S4() {
+    return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+}
+ 
+// then to call it, plus stitch in '4' in the third group
+guid = (S4() + S4() + &quot;-&quot; + S4() + &quot;-4&quot; + S4().substr(0,3) + &quot;-&quot; + S4() + &quot;-&quot; + S4() + S4() + S4()).toLowerCase();
+
+
+</code></pre>
+
+<hr />
+
+<h3 id="할당-연산자">할당 연산자</h3>
+
+<hr />
+
+<pre><code class="language-js">// 3 가지가 똑같은 것이다.  할당연산자
+
+count = count + 1 
+coutt+= 
+count++
+
+</code></pre>
 
 <hr />
 
