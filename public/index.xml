@@ -5121,6 +5121,21 @@ console.log(delete Employee.salary); // returns true
 
 &lt;hr /&gt;
 
+&lt;h3 id=&#34;랜덤-숫자-원하는-수대로-뽑기&#34;&gt;랜덤 숫자 원하는 수대로 뽑기&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// for 문을 이용한 랜덤 숫자 원하는수대로 뽑기 
+for ( let i = 0 ; i &amp;lt;= 30; i = i + 1 ) { 
+  String(Math.random().toFixed(i).split(&#39;&#39;).slice(2).join(&#39;&#39;)) // slice(2) 를 이용해 0과 . 을 제거한 나머지 숫자들을 출력한다.  
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;d-or-d-차이점&#34;&gt;\d or \d+  차이점&lt;/h3&gt;
 
 &lt;hr /&gt;
@@ -5128,7 +5143,7 @@ console.log(delete Employee.salary); // returns true
 &lt;p&gt;&lt;code&gt;imutable&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 둘다 숫자를 뽑는 역활을 한다. 
+// 정규식 표현으로 둘다 숫자를 뽑는 역활을 한다. 
 
 // \d 는 모든 숫자를 각각 배열로 나눠서 출력하낟.  
 

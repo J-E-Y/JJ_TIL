@@ -109,8 +109,8 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? \d or \d+ 차이점 imutable
-// 둘다 숫자를 뽑는 역활을 한다. // \d 는 모든 숫자를 각각 배열로 나눠서 출력하낟. let str = &amp;quot;123f456f789 10&amp;quot;; str.match(/\d+/g); // [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;, &amp;quot;5&amp;quot;, &amp;quot;6&amp;quot;, &amp;quot;7&amp;quot;, &amp;quot;8&amp;quot;, &amp;quot;9&amp;quot;, &amp;quot;1&amp;quot;, &amp;quot;0&amp;quot;] // \d+ 숫자가 나란히 붙어있는 것으로 나뉜다. let str = &amp;quot;123f456f789 10&amp;quot;; str.match(/\d/g); // [&amp;quot;123&amp;quot;, &amp;quot;456&amp;quot;, &amp;quot;789&amp;quot;, &amp;quot;10&amp;quot;]  Extract numbers from a string-Javascript var string = &amp;quot;border-radius:10px 20px 30px 40px&amp;quot;; var numbers = string.</description>
+      <description>Today What I Learn ? 랜덤 숫자 원하는 수대로 뽑기 // for 문을 이용한 랜덤 숫자 원하는수대로 뽑기 for ( let i = 0 ; i &amp;lt;= 30; i = i + 1 ) { String(Math.random().toFixed(i).split(&#39;&#39;).slice(2).join(&#39;&#39;)) // slice(2) 를 이용해 0과 . 을 제거한 나머지 숫자들을 출력한다. }  \d or \d+ 차이점 imutable
+// 정규식 표현으로 둘다 숫자를 뽑는 역활을 한다. // \d 는 모든 숫자를 각각 배열로 나눠서 출력하낟.</description>
     </item>
     
     <item>
