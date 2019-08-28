@@ -836,6 +836,37 @@ console.log(max)
 
 <hr />
 
+<p><strong>arr.reverse()</strong></p>
+
+<pre><code class="language-js">
+let arr = [1, 2, 3];
+
+arr.reverse();  // [3, 2, 1]
+
+</code></pre>
+
+<p><strong>arr.fill()</strong></p>
+
+<pre><code class="language-js">
+// fill 메서드는 value, start, end의 3개 인자를 가집니다
+
+[1, 2, 3].fill(4);        // 4 로 채울것이다.
+ // [4, 4, 4]           
+[1, 2, 3].fill(4, 1);    // 4 로 채울건데 1번째 부터 쭉 
+// [1, 4, 4]
+[1, 2, 3].fill(4, 1, 2);   // 4 로 채울건데 1번쨰 부터 2번째까지   
+//[1, 4, 3]
+[1,2,3,4,5,6,7,8,9,10].fill(4, 3, 6); // 4 로 채울건데 3번째 부터 6번째 까지 (5 번째 까지 채워짐) 
+// [1, 2, 3, 4, 4, 4, 7, 8, 9, 10]
+[1, 2, 3].fill(4, 3, 3);  // 4 로 채울건데 3번째 부터 3번까지 값이 없다. 
+// [1, 2, 3]
+
+
+
+
+
+</code></pre>
+
 <p><strong>arr.includes()</strong></p>
 
 <pre><code class="language-js">

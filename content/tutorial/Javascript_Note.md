@@ -21,6 +21,89 @@ type: docs
 ---
 
 
+---
+### block 스코프와 function 스코프의 차이
+---
+
+
+```js
+
+// block 스코프
+
+for (let i = 0;  i < 5; i = i + 1) {
+	console.log(i); //  0,1,2,3,4  출력된다. 
+}
+
+console.log(i) //  ReferenceError 출력 이유 : i라는 변수는 block let = i 선언되었을때 i 의 변수는  block 안에 제한 되기 때문이다.
+
+
+// 
+for (var i = 0;  i < 5; i = i + 1) {
+	console.log(i); //  0,1,2,3,4  출력된다. 
+}
+console.log(i) // 5   이유: var 변수를 지정했을때 block의 범위를 넘어선다. 
+
+```
+
+```js
+
+// fucntion 스코프 
+
+```
+
+**var or let 변수를 사용한 함수중 어던것이 에러??**
+
+![](/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 4.41.59 PM.png)
+
+
+
+```js
+
+function greetSomeone (firstName ) { 
+  let time = "night";
+  
+  if (time === "night") {         
+    let greeting = "Good Night"; ////////// let greeting block 안에 갇혀 있다. 이 block 를 벗어나는 순간 효력을 잃는 다. 
+  }
+  
+  
+  return greeting + ' ' + firstName;  ///  greeting 실행되지 않는다 
+}
+
+greetSomeone('steve');
+
+```
+
+---
+### var and let and const 
+---
+
+![](/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 5.37.46 PM.png)
+
+
+---
+###  **Strict Mode**
+---
+
+
+```js
+
+
+// 변수를 안전하게 쓰기위한 “use strict”
+
+`use strict` //  처음 시작에 이렇게 달아둔다.
+
+function showAge() {
+  arr = [1234];     //  선언되지 않는 변수가 실행되지 않게 해준다. 
+console.log(arr);
+}
+
+
+```
+
+
+
+
 
 ---
 ### 랜덤 숫자 원하는 수대로 뽑기 

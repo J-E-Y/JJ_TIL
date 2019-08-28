@@ -4328,6 +4328,37 @@ console.log(max)
 
 &lt;hr /&gt;
 
+&lt;p&gt;&lt;strong&gt;arr.reverse()&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let arr = [1, 2, 3];
+
+arr.reverse();  // [3, 2, 1]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;arr.fill()&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// fill 메서드는 value, start, end의 3개 인자를 가집니다
+
+[1, 2, 3].fill(4);        // 4 로 채울것이다.
+ // [4, 4, 4]           
+[1, 2, 3].fill(4, 1);    // 4 로 채울건데 1번째 부터 쭉 
+// [1, 4, 4]
+[1, 2, 3].fill(4, 1, 2);   // 4 로 채울건데 1번쨰 부터 2번째까지   
+//[1, 4, 3]
+[1,2,3,4,5,6,7,8,9,10].fill(4, 3, 6); // 4 로 채울건데 3번째 부터 6번째 까지 (5 번째 까지 채워짐) 
+// [1, 2, 3, 4, 4, 4, 7, 8, 9, 10]
+[1, 2, 3].fill(4, 3, 3);  // 4 로 채울건데 3번째 부터 3번까지 값이 없다. 
+// [1, 2, 3]
+
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;&lt;strong&gt;arr.includes()&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
@@ -5118,6 +5149,83 @@ console.log(delete Employee.salary); // returns true
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;block-스코프와-function-스코프의-차이&#34;&gt;block 스코프와 function 스코프의 차이&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// block 스코프
+
+for (let i = 0;  i &amp;lt; 5; i = i + 1) {
+	console.log(i); //  0,1,2,3,4  출력된다. 
+}
+
+console.log(i) //  ReferenceError 출력 이유 : i라는 변수는 block let = i 선언되었을때 i 의 변수는  block 안에 제한 되기 때문이다.
+
+
+// 
+for (var i = 0;  i &amp;lt; 5; i = i + 1) {
+	console.log(i); //  0,1,2,3,4  출력된다. 
+}
+console.log(i) // 5   이유: var 변수를 지정했을때 block의 범위를 넘어선다. 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// fucntion 스코프 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;var or let 변수를 사용한 함수중 어던것이 에러??&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 4.41.59 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function greetSomeone (firstName ) { 
+  let time = &amp;quot;night&amp;quot;;
+  
+  if (time === &amp;quot;night&amp;quot;) {         
+    let greeting = &amp;quot;Good Night&amp;quot;; ////////// let greeting block 안에 갇혀 있다. 이 block 를 벗어나는 순간 효력을 잃는 다. 
+  }
+  
+  
+  return greeting + &#39; &#39; + firstName;  ///  greeting 실행되지 않는다 
+}
+
+greetSomeone(&#39;steve&#39;);
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;var-and-let-and-const&#34;&gt;var and let and const&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 5.37.46 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;strict-mode&#34;&gt;&lt;strong&gt;Strict Mode&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+// 변수를 안전하게 쓰기위한 “use strict”
+
+`use strict` //  처음 시작에 이렇게 달아둔다.
+
+function showAge() {
+  arr = [1234];     //  선언되지 않는 변수가 실행되지 않게 해준다. 
+console.log(arr);
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr /&gt;
 
