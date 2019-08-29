@@ -129,10 +129,9 @@ Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q2/</guid>
-      <description>Scope 객체 지향 프로그래밍
-function Car(band,name,color) { // 인스턴스가 만들어 질때 실행될 코드들... } // new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. // Car 라는 class 만들어 낼때 class는 2가지를 갖게 된다. // 1. 속성 : band,name,color , currentFuel,maxSpeed // 2. 메소드 : refuel() ,setSpeed(), drive()  Closure 1.클로저란?
- 함수는 함수를 리턴할수 있다.그것을 고차함수라고 하는데 그것을 클로저라 부른다. 한마디로 외부함수의 변수에 접근할수 있는 함수를 클로저라 부른다.
- 특징</description>
+      <description>This call() and apply()
+function foo () { consoel.log(this); // 여기서 this 는 window } foo(); // window foo.call(); // window foo.apply(); // window  ex
+function identify() { return this.name; } function speak() { var greeting = &amp;quot;hello, I am &amp;quot; + identify.call(this); console.log(greet; } var me = { name : &amp;quot;jj&amp;quot;}; var you = {name : &amp;quot;Tim&amp;quot;}; // 호출 identify.call(me) // identify함수를 호출한다. return 값의 있는 this 는 me가 된다 // &amp;quot;jj&amp;quot; speak.</description>
     </item>
     
     <item>

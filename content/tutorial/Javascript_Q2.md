@@ -12,14 +12,57 @@ type: docs
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 
----
-## Scope 
----
 
 
 
-**객체 지향 프로그래밍**
+### This
 
+
+
+**call() and apply()**
+
+```js
+function foo () {
+  consoel.log(this); //  여기서 this 는 window
+}
+
+foo(); // window
+foo.call(); // window
+foo.apply(); // window
+```
+
+**ex**
+
+```js
+
+
+function identify() {
+	return this.name;
+}
+function speak() {
+	var greeting = "hello, I am " + identify.call(this);
+	console.log(greet;
+}
+var me = { name : "jj"};
+var you = {name : "Tim"};
+
+// 호출
+
+identify.call(me) // identify함수를 호출한다. return 값의 있는  this 는 me가 된다
+// "jj"
+	
+speak.call(you) // speak 함수를 호출한다. return 값의 있는  identify 함수가호출된다 마지막으로 this는 you 가 된다.
+
+// hello, I am Tim
+	
+	
+```
+
+
+
+
+
+### Class : 객체지향 프로그래밍
 
 ```js
 
@@ -35,8 +78,50 @@ function Car(band,name,color) {
 // 1. 속성  : band,name,color , currentFuel,maxSpeed
 // 2. 메소드  : refuel() ,setSpeed(), drive()
 
+```
+**ex**
+
+```js
+
+// 1. 클라스 함수 와 인스턴스 생성 
+
+function Car(brand,name,color) { // Car() 는 클라스
+	
+	this.what_brand = brand; // 여기서 this 는 인자값이 드러갈 변수이름 (avante)
+	this.what_name = name;	
+	this.what_color = color;
+}
+
+// 2. 클라스 함수를 변수에 담고 파라미터 들어갈 값들 넣는다. 
+
+let avante = new Car("GM","avante","black"); // 변수를 만든다 (인스턴스값으로 들어갈 )
+
+// 3. 추가로 인스턴스를 생성 
+
+Car.prototype.what_drive = function () { // Car() 인스턴스 생성 그리고 function 는 인스턴스 값  
+    console.log(this.name + "가 운전을 합니다. ");
+}
+
+
+avante.what_name // 인스턴스 값 출력
+// "avante"
+avante.what_brand
+// "GM"
+avante.what_color
+// "black"
+
+avante.what_drive  // 새로 생성한 what_drive 출력 
+// jj 가 운전을 합니다. 
+
+`tip`
+
+let arr = [1,2,3,4,5]     // 배열 만들기 
+let arr = new Array(1,2,3,4,5) // 배열 만들기  // Array클라스 안에 (인자값들) 
+
+
 
 ```
+
 
 
 
@@ -63,6 +148,7 @@ function foo() {
 }
 
 foo() // f
+
 // 2 가 반환되지 않고 
 //f << 함수 자체가 리턴된다 
 
@@ -541,6 +627,8 @@ dan5.calculate();
 
 dan5.setMaxDan(2)  
 dan5.calculate();  
+
+
 //실행결과
 /*
 5*1=5  
@@ -554,6 +642,7 @@ dan5.calculate();
 5*1=5  
 5*2=10  
 */
+
 [예제 18] 캡슐화 후
 
 하지만 위의 코드와 같이 var키워드를 통하여 내부 변수를 선언하게 되면 내부 변수 maxDan이 외부에서 직접 접근이 되지 않고 오직 클로저를 통해서만 접근이 가능합니다. 즉, 사용자가 임의로 값을 바꿀수 없고 개발자가 만들어놓은 길(클로저)을 통해서만 값을 바꿔 줄수 있습니다. 아쉬운 점은 캡슐화를 하게되면 클로저를 prototype 맴버로 등록하지 못해 공용 메소드로 사용할 수 있는 이점은 사라집니다. 하지만, 별도의 부모 객체를 정의해서 공용 메소드나 상수 들을 위치시키고 이를 상속받는 방식으로 보완할 수 있습니다.
