@@ -189,6 +189,8 @@ The <div> tag is generally used to group elements together.
 ## html : **&lt;span&gt;tag**
 ---
 
+`height 와 width 저거용이 안된다.`
+
 * Description
 
 > The HTML &lt;span&gt; tag defines a generic inline container in an HTML document. This tag is also commonly referred to as the <&lt;span&gt; element.

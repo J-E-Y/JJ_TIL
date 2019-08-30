@@ -22,6 +22,10 @@ type: docs
 **call() and apply()**
 
 ```js
+// call(),apply()  첫번째 인자가 this 이다. 
+
+
+
 function foo () {
   consoel.log(this); //  여기서 this 는 window
 }
@@ -29,12 +33,14 @@ function foo () {
 foo(); // window
 foo.call(); // window
 foo.apply(); // window
+
 ```
 
 **ex**
 
 ```js
 
+// 사용방법 
 
 function identify() {
 	return this.name;
@@ -55,10 +61,43 @@ speak.call(you) // speak 함수를 호출한다. return 값의 있는  identify 
 
 // hello, I am Tim
 	
-	
 ```
 
+**call() 과 apply() 의 차이 **
 
+> this 값을 넘겨주는 방식이 틀림
+
+```js
+
+// call() and apply()  사용해서 함수안에있는 parameter 사용하기 
+
+
+var obj = { 
+val : 0
+}; 
+
+var add = function  ( x , y ) {
+	this.val = x + y ;   //  리턴값이 출력되는 것이 아니라 this값이 obj 가 됨으로 obj.val =  2 +3 // 이것을 해주기 위해  add.call(obj,2,3); or add.apply(obj,[2,3]);
+
+add.call(obj,2,3);  // 5 동일다. 
+add.apply(obj,[2,3]); // 5  동일하다. 
+	
+// arr 안에 가장 큰수를 가져오는 방법 apply() 메소드 써서 가져올수 있다.
+
+let arr = [1,2,3,4,5,6];
+Math.max.apply(null,arr);
+
+// 6
+
+	
+}
+
+
+
+
+
+
+```
 
 
 

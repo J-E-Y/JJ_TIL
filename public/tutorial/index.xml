@@ -130,8 +130,8 @@ Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하�
       
       <guid>/tutorial/javascript_q2/</guid>
       <description>This call() and apply()
-function foo () { consoel.log(this); // 여기서 this 는 window } foo(); // window foo.call(); // window foo.apply(); // window  ex
-function identify() { return this.name; } function speak() { var greeting = &amp;quot;hello, I am &amp;quot; + identify.call(this); console.log(greet; } var me = { name : &amp;quot;jj&amp;quot;}; var you = {name : &amp;quot;Tim&amp;quot;}; // 호출 identify.call(me) // identify함수를 호출한다. return 값의 있는 this 는 me가 된다 // &amp;quot;jj&amp;quot; speak.</description>
+// call(),apply() 첫번째 인자가 this 이다. function foo () { consoel.log(this); // 여기서 this 는 window } foo(); // window foo.call(); // window foo.apply(); // window  ex
+// 사용방법 function identify() { return this.name; } function speak() { var greeting = &amp;quot;hello, I am &amp;quot; + identify.call(this); console.log(greet; } var me = { name : &amp;quot;jj&amp;quot;}; var you = {name : &amp;quot;Tim&amp;quot;}; // 호출 identify.</description>
     </item>
     
     <item>
