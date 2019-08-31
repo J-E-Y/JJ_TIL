@@ -19,6 +19,29 @@ type: docs
 ## **String** 
 ---
 
+
+**str.includes()**
+
+```js
+
+// true or false 를 반환한다. 
+// if 문에 넣어 쓴다. 
+
+let str = 'To be, or not to be, that is the question.';
+
+console.log(str.includes('To be'));       // true
+console.log(str.includes('question'));    // true
+console.log(str.includes('nonexistent')); // false
+console.log(str.includes('To be', 1));    // false
+console.log(str.includes('TO BE'));       // false
+console.log(str.includes('')) 
+
+
+```
+
+
+
+
 **str.match(regexp)**
 
 `immutable`
@@ -641,6 +664,43 @@ console.log('The index of "new" from the end is ' + anyString.lastIndexOf('new')
 
 
 
+```js
+
+strArr = ["all", "before", "hello", "world"]
+
+// a 가 크면 리턴 1  작은수부터 정렬
+strArr.sort(function(a,b){
+	if (a > b) {
+	return 1;
+} else if (a === b){
+	return 0;
+} else {
+	return -1;
+}
+})
+
+
+// a 가 작으면 리턴  큰수부터 정렬
+
+strArr.sort(function(a,b){
+	if (a > b) {
+	return -1;
+} else if (a === b){
+	return 0;
+} else {
+	return 1;
+}
+})
+
+
+
+
+```
+
+
+
+
+
 > Example 1
 
 ```
@@ -1081,6 +1141,30 @@ return cur / 100;
 
 
 ```
+
+* 배열안에 모든 요소를 숫자로 바꾸기
+
+```js
+
+
+
+// 더 간단하게 해결할 수 있는 방법
+['1', '2', '3'].map(Number); // [1, 2,3]
+
+
+// 아래 라인을 보시면...
+['1', '2', '3'].map(parseInt);
+// 결과를 [1, 2, 3] 으로 기대할 수 있습니다.
+// 그러나 실제 결과는 [1, NaN, NaN] 입니다.
+
+// 그러나 `parseInt`와 달리 float이나 지수표현도 반환합니다.
+
+['1.1', '2.2e2', '3e300'].map(Number); // [1.1, 220, 3e+300]
+
+
+```
+
+
 * 배열 안에있는 것을 다른 형태로 출력 하고 싶다.?(길이)
 
 ```js
@@ -1095,6 +1179,8 @@ let newArr2 = arr2.map(function(cur){
 >> newArr2 = [4, 6]
 
 ```
+
+
 
 **arr.filter()**
 

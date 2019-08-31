@@ -189,7 +189,8 @@ The <div> tag is generally used to group elements together.
 ## html : **&lt;span&gt;tag**
 ---
 
-`height 와 width 저거용이 안된다.`
+
+> `height 와 width 적용이 안된다.` 하지만 Disply 사용해서 적용할수 있다 
 
 * Description
 
