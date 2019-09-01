@@ -28,8 +28,7 @@
     
   
   <meta name="description" content="&mdash;
-Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
-  my_answer  function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (age &lt; 21 ) { return false; } else { return true; } }  Conditional : checkAge  이름과 나이를 파라미터로 받는 checkAge라는 함수는 두개 중 하나의 메시지를 리턴합니다.">
+Question  firstCharacter  My_Soultion function firstCharacter (string) { // Your code here // 1. for문 이용 let output = []; let temp_arr = []; // 1. split으로 단어로 나눠서 배열 만들기 temp_arr = string.split(&#39; &#39;); // 2. 각 인덱스의 첫번째 문자를 배열 output 에 담기 for(let i=0;i&lt;temp_arr.length;i&#43;&#43;){ output.push(temp_arr[i][0]); } // 4. 출력 return output.join(&#39;&#39;); //////////////////////////////////////////////////////////////////////// // 2. Reduce 이용 return string.split(&#39; &#39;).reduce(function(acc,cur){ return acc&#43;cur[0]; },&#39;&#39;); // 3. Reduce이용 2 return string.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_q1/">
@@ -119,8 +118,7 @@ Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하�
   <meta property="og:url" content="/tutorial/javascript_q1/">
   <meta property="og:title" content="2. Basic_Daliy_Coding | Home">
   <meta property="og:description" content="&mdash;
-Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
-  my_answer  function isOldEnoughToDrink(age) { // 여기에 코드를 작성하세요 if (age &lt; 21 ) { return false; } else { return true; } }  Conditional : checkAge  이름과 나이를 파라미터로 받는 checkAge라는 함수는 두개 중 하나의 메시지를 리턴합니다."><meta property="og:image" content="/img/icon-192.png">
+Question  firstCharacter  My_Soultion function firstCharacter (string) { // Your code here // 1. for문 이용 let output = []; let temp_arr = []; // 1. split으로 단어로 나눠서 배열 만들기 temp_arr = string.split(&#39; &#39;); // 2. 각 인덱스의 첫번째 문자를 배열 output 에 담기 for(let i=0;i&lt;temp_arr.length;i&#43;&#43;){ output.push(temp_arr[i][0]); } // 4. 출력 return output.join(&#39;&#39;); //////////////////////////////////////////////////////////////////////// // 2. Reduce 이용 return string.split(&#39; &#39;).reduce(function(acc,cur){ return acc&#43;cur[0]; },&#39;&#39;); // 3. Reduce이용 2 return string."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   
@@ -373,6 +371,11 @@ Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하�
 <ul>
 <li>
 <ul>
+<li>
+<ul>
+<li><a href="#question">Question</a></li>
+<li><a href="#my-soultion">My_Soultion</a></li>
+</ul></li>
 <li><a href="#conditional-isoldenoughtodrink">Conditional : isOldEnoughToDrink</a></li>
 <li><a href="#conditional-checkage">Conditional : checkAge</a></li>
 <li><a href="#conditional-equalsten">Conditional : equalsTen</a></li>
@@ -422,6 +425,54 @@ Conditional : isOldEnoughToDrink  어떤 숫자, 이 경우에는 연령이 하�
             
 
 <p><img src="/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png" alt="" />&mdash;</p>
+
+<h3 id="question">Question</h3>
+
+<ul>
+<li>firstCharacter</li>
+</ul>
+
+<h3 id="my-soultion">My_Soultion</h3>
+
+<pre><code class="language-js">
+function firstCharacter (string) {
+ // Your code here
+ 
+ 
+ // 1. for문 이용
+ 
+ let output = [];
+ let temp_arr = [];
+
+ // 1. split으로 단어로 나눠서 배열 만들기
+ 
+ temp_arr = string.split(' ');
+ // 2. 각 인덱스의 첫번째 문자를 배열 output 에 담기
+ for(let i=0;i&lt;temp_arr.length;i++){
+   output.push(temp_arr[i][0]);
+ }
+ 
+ // 4. 출력
+ return output.join('');
+ 
+ 
+ 
+ ////////////////////////////////////////////////////////////////////////
+ 
+ // 2. Reduce 이용
+ return string.split(' ').reduce(function(acc,cur){
+   return acc+cur[0];
+ 
+ },'');
+ 
+ // 3. Reduce이용 2
+ return string.split(' ').reduce( (acc,cur)=&gt;acc+cur[0] ,'');
+}
+
+
+
+
+</code></pre>
 
 <h2 id="conditional-isoldenoughtodrink">Conditional : isOldEnoughToDrink</h2>
 

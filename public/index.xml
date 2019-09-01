@@ -6276,6 +6276,54 @@ var newArray = [];
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&amp;mdash;&lt;/p&gt;
 
+&lt;h3 id=&#34;question&#34;&gt;Question&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;firstCharacter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;my-soultion&#34;&gt;My_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function firstCharacter (string) {
+ // Your code here
+ 
+ 
+ // 1. for문 이용
+ 
+ let output = [];
+ let temp_arr = [];
+
+ // 1. split으로 단어로 나눠서 배열 만들기
+ 
+ temp_arr = string.split(&#39; &#39;);
+ // 2. 각 인덱스의 첫번째 문자를 배열 output 에 담기
+ for(let i=0;i&amp;lt;temp_arr.length;i++){
+   output.push(temp_arr[i][0]);
+ }
+ 
+ // 4. 출력
+ return output.join(&#39;&#39;);
+ 
+ 
+ 
+ ////////////////////////////////////////////////////////////////////////
+ 
+ // 2. Reduce 이용
+ return string.split(&#39; &#39;).reduce(function(acc,cur){
+   return acc+cur[0];
+ 
+ },&#39;&#39;);
+ 
+ // 3. Reduce이용 2
+ return string.split(&#39; &#39;).reduce( (acc,cur)=&amp;gt;acc+cur[0] ,&#39;&#39;);
+}
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;conditional-isoldenoughtodrink&#34;&gt;Conditional : isOldEnoughToDrink&lt;/h2&gt;
 
 &lt;hr /&gt;

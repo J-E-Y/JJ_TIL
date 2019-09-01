@@ -11,8 +11,64 @@ type: docs
 ---
 
 
-
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)---
+
+
+### Question
+
+* firstCharacter
+
+
+
+
+### My_Soultion
+
+
+```js
+
+function firstCharacter (string) {
+ // Your code here
+ 
+ 
+ // 1. for문 이용
+ 
+ let output = [];
+ let temp_arr = [];
+
+ // 1. split으로 단어로 나눠서 배열 만들기
+ 
+ temp_arr = string.split(' ');
+ // 2. 각 인덱스의 첫번째 문자를 배열 output 에 담기
+ for(let i=0;i<temp_arr.length;i++){
+   output.push(temp_arr[i][0]);
+ }
+ 
+ // 4. 출력
+ return output.join('');
+ 
+ 
+ 
+ ////////////////////////////////////////////////////////////////////////
+ 
+ // 2. Reduce 이용
+ return string.split(' ').reduce(function(acc,cur){
+   return acc+cur[0];
+ 
+ },'');
+ 
+ // 3. Reduce이용 2
+ return string.split(' ').reduce( (acc,cur)=>acc+cur[0] ,'');
+}
+
+
+
+
+```
+
+
+
+
+
 
 
 ## Conditional : isOldEnoughToDrink
