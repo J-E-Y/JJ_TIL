@@ -118,7 +118,8 @@ immutable
       
       <guid>/tutorial/javascript_q1/</guid>
       <description>&amp;mdash;
-Question  firstCharacter  My_Soultion function firstCharacter (string) { // Your code here // 1. for문 이용 let output = []; let temp_arr = []; // 1. split으로 단어로 나눠서 배열 만들기 temp_arr = string.split(&#39; &#39;); // 2. 각 인덱스의 첫번째 문자를 배열 output 에 담기 for(let i=0;i&amp;lt;temp_arr.length;i++){ output.push(temp_arr[i][0]); } // 4. 출력 return output.join(&#39;&#39;); //////////////////////////////////////////////////////////////////////// // 2. Reduce 이용 return string.split(&#39; &#39;).reduce(function(acc,cur){ return acc+cur[0]; },&#39;&#39;); // 3. Reduce이용 2 return string.</description>
+Question  longestWord   Using the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &amp;lsquo;LongestWord&amp;rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
+If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요.</description>
     </item>
     
     <item>

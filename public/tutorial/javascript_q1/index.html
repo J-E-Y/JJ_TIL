@@ -28,7 +28,8 @@
     
   
   <meta name="description" content="&mdash;
-Question  firstCharacter  My_Soultion function firstCharacter (string) { // Your code here // 1. for문 이용 let output = []; let temp_arr = []; // 1. split으로 단어로 나눠서 배열 만들기 temp_arr = string.split(&#39; &#39;); // 2. 각 인덱스의 첫번째 문자를 배열 output 에 담기 for(let i=0;i&lt;temp_arr.length;i&#43;&#43;){ output.push(temp_arr[i][0]); } // 4. 출력 return output.join(&#39;&#39;); //////////////////////////////////////////////////////////////////////// // 2. Reduce 이용 return string.split(&#39; &#39;).reduce(function(acc,cur){ return acc&#43;cur[0]; },&#39;&#39;); // 3. Reduce이용 2 return string.">
+Question  longestWord   Using the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &lsquo;LongestWord&rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
+If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_q1/">
@@ -118,7 +119,8 @@ Question  firstCharacter  My_Soultion function firstCharacter (string) { // Your
   <meta property="og:url" content="/tutorial/javascript_q1/">
   <meta property="og:title" content="2. Basic_Daliy_Coding | Home">
   <meta property="og:description" content="&mdash;
-Question  firstCharacter  My_Soultion function firstCharacter (string) { // Your code here // 1. for문 이용 let output = []; let temp_arr = []; // 1. split으로 단어로 나눠서 배열 만들기 temp_arr = string.split(&#39; &#39;); // 2. 각 인덱스의 첫번째 문자를 배열 output 에 담기 for(let i=0;i&lt;temp_arr.length;i&#43;&#43;){ output.push(temp_arr[i][0]); } // 4. 출력 return output.join(&#39;&#39;); //////////////////////////////////////////////////////////////////////// // 2. Reduce 이용 return string.split(&#39; &#39;).reduce(function(acc,cur){ return acc&#43;cur[0]; },&#39;&#39;); // 3. Reduce이용 2 return string."><meta property="og:image" content="/img/icon-192.png">
+Question  longestWord   Using the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &lsquo;LongestWord&rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
+If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   
@@ -375,6 +377,8 @@ Question  firstCharacter  My_Soultion function firstCharacter (string) { // Your
 <ul>
 <li><a href="#question">Question</a></li>
 <li><a href="#my-soultion">My_Soultion</a></li>
+<li><a href="#question-1">Question</a></li>
+<li><a href="#my-soultion-1">My_Soultion</a></li>
 </ul></li>
 <li><a href="#conditional-isoldenoughtodrink">Conditional : isOldEnoughToDrink</a></li>
 <li><a href="#conditional-checkage">Conditional : checkAge</a></li>
@@ -429,10 +433,71 @@ Question  firstCharacter  My_Soultion function firstCharacter (string) { // Your
 <h3 id="question">Question</h3>
 
 <ul>
+<li>longestWord</li>
+</ul>
+
+<blockquote>
+<p>Using the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &lsquo;LongestWord&rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)</p>
+
+<p>If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요. 문장은 빈 문자열이 아닙니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion">My_Soultion</h3>
+
+<pre><code class="language-js">
+// It's used by sort() 
+
+function longestWord(string) {
+
+ // 1. 주어진 문장을 배열로 만들기(split)
+ let tmp = string.split(' ');
+ //let sorted_tmp =[];
+ // ['I','love','codestates'];
+ // 2. sort() 사용 =&gt; 성능 떨어짐
+ let x = function(a,b){
+   return b.length-a.length;
+ };
+ // 3. 0번째 요소 출력
+ return tmp.sort(x)[0];
+}
+
+////////////////////////////////////////////////////////
+
+// It's used by reudce(1)
+
+function longestWord(string) {
+ 
+ let tmp = string.split(' ');
+ let max = tmp[0];
+ for(let i =1;i&lt;tmp.length;i++){
+   if(tmp[i].length&gt;max.length){
+     max = tmp[i];
+   }
+ }
+ return max;
+}
+
+
+/////////////////////////////////////////////////////////
+
+// It's used by reudce(2) 화살표
+
+function longestWord(string) {
+
+return string.split(' ').reduce((acc,cur)=&gt; acc.length&lt;cur.length? cur:acc);
+}
+
+
+
+</code></pre>
+
+<h3 id="question-1">Question</h3>
+
+<ul>
 <li>firstCharacter</li>
 </ul>
 
-<h3 id="my-soultion">My_Soultion</h3>
+<h3 id="my-soultion-1">My_Soultion</h3>
 
 <pre><code class="language-js">
 function firstCharacter (string) {
