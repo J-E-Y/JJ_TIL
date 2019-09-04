@@ -16,7 +16,331 @@ type: docs
 --------------------------------------------------------------------
 
 
+
+
+
+
+
+
+### Question 
+
+* range
+
+> Complete the below function called range that takes two integers as parameters, start and end, and returns an array containing all the whole numbers between them starting with start and up to end (you can use a any loop)
+
+> After you write your function, you can test it using the above inputs to make sure that it behaves correctly.
+ 
+
+
+```js
+
+function range(start, end) {
+  // YOUR CODE HERE
+  
+  
+    
+  // 만약 strat 와 end 같다면 && 만약 strat 가 end 보다 작으면 [] 반환
+  // for 문을 사용해 start 를 초기값으로 지정하고 end 보다 작을때까지 숫자 반환
+  
+  let arr = [];
+  
+  if ( start === end || start >= end ) {
+    return [];
+  } else { 
+    for ( let i = start; i < end; i = i + 1 ) {
+      arr.push(i);
+    }
+  }
+  return arr;
+  }
+
+range(0, 4); // => [0, 1, 2, 3]
+range(2, 7); // => [2, 3, 4, 5, 6]
+range(10, 10); // => []
+range(10, 2); // => []
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+### Question 
+
+* longestName
+
+
+> Given the following array of people, write a function that, when passed people as a parameter, returns the person (that is, your function should return an object) with the longest name (first, middle & last).
+You can re-use getFullName function.
+
+
+### My_Soution
+
+
+
+```js
+
+var people = [
+  {name: {first: "Alyssa", middle: "P.", last: "Hacker"}, age: 26},
+  {name: {first: "Ben", last: "Bitdiddle"}, age: 34},
+  {name: {first: "Eva", middle: "Lu", last: "Ator"}, age: 40},
+  {name: {first: "Lem", middle: "E.", last: "Tweakit"}, age: 45},
+  {name: {first: "Louis", last: "Reasoner"}, age: 21}
+];
+
+
+function longestName(people) {
+  // TODO: Your code here
+  // 심플하게 객체에 있는 키값을 prop  가져와 함친다. 
+  return Object.values(people[0].name).join(' ');
+ 
+
+}
+
+longestName(people); //"Alyssa P. Hacker"
+
+
+```
+
+ ### Question
+
+* hammingDistance
+
+> have the function `HammingDistance(strArr)` take the array of strings stored in `strArr`, which will only contain two strings of equal length andreturn the Hamming distance between them.
+The Hamming distance is the number of positions where the corresponding characters are different.
+
+
+
+```js
+For example:
+if `strArr` is `["coder", "codec"]` then your program should return 1.
+
+```
+
+
+### My_Soultion
+
+
+```js
+
+
+function hammingDistance(strArr) {
+  // YOUR CODE HERE
+
+  // count 변수에 0으로 초기화를 시켜놓는다.
+  // arr1 변수를 만들어 strArr 첫번째 값을 넣어둔다.
+  // arr2 변수를 많들어 strArr 두번째 값을 넣어둔다. 
+  // while 문 이용해 arr1각각char arr2각각 Char 와 같이 않다면 count에 plus 1 증가 
+  // 출력 count ;
+
+
+  let count = 0;
+
+  let str1 = strArr[0];
+  let str2 = strArr[1];
+  
+  for (let i = 0; i < str1.length; i = i + 1 ) {
+    if ( str1[i] !== str2[i] ) {
+      count = count +  1;
+    }
+  }
+
+  return count;
+}
+
+hammingDistance(["coder", "codec"]); // => 1
+hammingDistance(["10011", "10100"]); // => 3
+hammingDistance(["helloworld", "worldhello"]); // => 8
+
+
+
+
+```
+
+
+
+### Other_Soultion
+
+
+```js
+
+
+strArr[0][0] !== strArr[1][0] count++
+strArr[0][1] !== strArr[1][1] count++
+strArr[0][2] !== strArr[1][2] count++
+strArr[0][3] !== strArr[1][3] count++
+strArr[0][4] !== strArr[1][4] count++
+
+
+// 위를 잘 참고하여...구현해본다!
+// 각각 비교하면서 다른 값을 배열에 담아 개수를 리턴한다.
+
+
+
+function hammingDistance(strArr) {
+  return strArr[0].split('').filter((char, i) => char !== strArr[1][i]).length;
+}
+
+hammingDistance(["coder", "codec"]); // => 1
+hammingDistance(["10011", "10100"]); // => 3
+hammingDistance(["helloworld", "worldhello"]); // => 8
+console.log(hammingDistance(["coder", "codec"]))
+
+
+```
+
+
+
+
+
+
+
+### Question 
+
+
+* getFullName
+
+
+>Write a function called 'getFullName' that takes in an object which has this structure:
+
+
+### My_Soultion
+
+```js
+
+function getFullName(obj) {
+  // YOUR CODE HERE
+  //  변수를 만들어 person에 있는 키의 값들을 가져와서 조합시킨다. 
+  // 변수를 출력한다. 
+  
+  
+let fullName = person.name.first + " " + person.name.middle + " " + person.name.last;  
+
+  return fullName;
+}
+
+var person = {
+  name : {
+    first : "Alyssa",
+    middle: "P.",
+    last: "Hacker"
+  },
+  age : 26
+};
+getFullName(person); //"Alyssa P. Hacker"
+
+var personB = {
+  name: {
+    first: "Ben",
+    last: "Bitdiddle"
+  },
+  age: 34
+};
+getFullName(personB); //"Ben Bitdiddle"
+
+
+```
+
+
+
+### Other_Soultion
+
+```js
+
+
+//함수 아래 케이스에 맞게 name값에 접근하여 fullName을 만든다.
+//하나하나 따로 뽑기보다는 value를 배열로 받아서 합치는게 편하다 :)
+
+function getFullName(obj) {
+  return Object.values(obj.name).join(' ')
+}
+
+
+```
+
+
+
+
+
+### Question 
+
+
+* billTotal
+
+>Write a function called billTotal that can be used to calculate the total to be paid at a restaurant -- including tip and tax -- given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!
+
+
+### My_Soultion
+
+
+```js
+
+
+- input: a number representing the cost of food and drinks
+- output: a number representing that cost plus an additional 15% tip and tax of 9.5%
+
+
+function billTotal(subtotal) {
+  // YOUR CODE HERE
+
+  // tip 15% = * 0.15
+  // tax 9.5% = * 0.095
+  
+  // tip을 얼마 냈는지 조사후 변수에 저장
+  // tax를 얼마나 냈는지 조사후 변수에 저장
+  // tip & tax & subtotal 더한값을 출력
+  
+  let tip = subtotal * 0.15
+  let tax = subtotal * 0.095
+  
+  return subtotal + tip + tax;
+}
+
+billTotal(10.00); // => 12.45
+
+
+
+```
+
+### Other_Soultion
+
+
+
+```js
+
+// 뭐 단순하게...팁 15%, 세금 9.5% 더해주면 된다고 한다 :)
+
+function billTotal(subtotal) {
+  return (subtotal * 1.15 + subtotal * 0.095)
+}
+
+billTotal(10.00); // => 12.45
+
+
+
+
+
+```
+
+
+
+
+
+
 ### Question
+
+
+* primeMover
+
+
 
 >Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, 'primeMover(n)' 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)
 
@@ -51,9 +375,6 @@ let primeMover = function(n) {
 
 
 
-
-
-* primeMover
 
 
 

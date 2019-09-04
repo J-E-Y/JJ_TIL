@@ -117,8 +117,7 @@ immutable
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q1/</guid>
-      <description>&amp;mdash;
-Question  longestWord   Using the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &amp;lsquo;LongestWord&amp;rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
+      <description>Question  longestWord   Using the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &amp;lsquo;LongestWord&amp;rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
 If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요.</description>
     </item>
     
@@ -139,9 +138,9 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Question  Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, &amp;lsquo;primeMover(n)&amp;rsquo; 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)
-For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)
- My_Soultion let primeMover = function(n) { // your code here let arr = [1]; for ( let i = 1; i &amp;lt;100; i++) { for ( let j = 2; j &amp;lt; 100; j++ ) { if (j % i !</description>
+      <description>Question  range   Complete the below function called range that takes two integers as parameters, start and end, and returns an array containing all the whole numbers between them starting with start and up to end (you can use a any loop)
+After you write your function, you can test it using the above inputs to make sure that it behaves correctly.
+ function range(start, end) { // YOUR CODE HERE // 만약 strat 와 end 같다면 &amp;amp;&amp;amp; 만약 strat 가 end 보다 작으면 [] 반환 // for 문을 사용해 start 를 초기값으로 지정하고 end 보다 작을때까지 숫자 반환 let arr = []; if ( start === end || start &amp;gt;= end ) { return []; } else { for ( let i = start; i &amp;lt; end; i = i + 1 ) { arr.</description>
     </item>
     
   </channel>
