@@ -5244,6 +5244,24 @@ console.log(delete Employee.salary); // returns true
 
 &lt;hr /&gt;
 
+&lt;h3 id=&#34;get-current-data-time-in-js&#34;&gt;Get Current Data &amp;amp; Time in JS&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+var today = new Date(); // Data 가져온다. 
+var date = today.getFullYear()+&#39;-&#39;+(today.getMonth()+1)+&#39;-&#39;+today.getDate(); // 날짜
+var time = today.getHours() + &amp;quot;:&amp;quot; + today.getMinutes() + &amp;quot;:&amp;quot; + today.getSeconds(); // 시간 
+
+var dateTime = date+&#39; &#39;+time;  
+
+dateTime // 2019-9-5 13:2:48&amp;quot;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
 &lt;h3 id=&#34;block-스코프와-function-스코프의-차이&#34;&gt;block 스코프와 function 스코프의 차이&lt;/h3&gt;
 
 &lt;hr /&gt;

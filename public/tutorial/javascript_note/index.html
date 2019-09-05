@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Today What I Learn ? block 스코프와 function 스코프의 차이 // block 스코프 for (let i = 0; i &lt; 5; i = i &#43; 1) { console.log(i); // 0,1,2,3,4 출력된다. } console.log(i) // ReferenceError 출력 이유 : i라는 변수는 block let = i 선언되었을때 i 의 변수는 block 안에 제한 되기 때문이다. // for (var i = 0; i &lt; 5; i = i &#43; 1) { console.log(i); // 0,1,2,3,4 출력된다.">
+  <meta name="description" content="Today What I Learn ? Get Current Data &amp; Time in JS var today = new Date(); // Data 가져온다. var date = today.getFullYear()&#43;&#39;-&#39;&#43;(today.getMonth()&#43;1)&#43;&#39;-&#39;&#43;today.getDate(); // 날짜 var time = today.getHours() &#43; &quot;:&quot; &#43; today.getMinutes() &#43; &quot;:&quot; &#43; today.getSeconds(); // 시간 var dateTime = date&#43;&#39; &#39;&#43;time; dateTime // 2019-9-5 13:2:48&quot;  block 스코프와 function 스코프의 차이 // block 스코프 for (let i = 0; i &lt; 5; i = i &#43; 1) { console.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_note/">
@@ -116,7 +116,7 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_note/">
   <meta property="og:title" content="Notes | Home">
-  <meta property="og:description" content="Today What I Learn ? block 스코프와 function 스코프의 차이 // block 스코프 for (let i = 0; i &lt; 5; i = i &#43; 1) { console.log(i); // 0,1,2,3,4 출력된다. } console.log(i) // ReferenceError 출력 이유 : i라는 변수는 block let = i 선언되었을때 i 의 변수는 block 안에 제한 되기 때문이다. // for (var i = 0; i &lt; 5; i = i &#43; 1) { console.log(i); // 0,1,2,3,4 출력된다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Today What I Learn ? Get Current Data &amp; Time in JS var today = new Date(); // Data 가져온다. var date = today.getFullYear()&#43;&#39;-&#39;&#43;(today.getMonth()&#43;1)&#43;&#39;-&#39;&#43;today.getDate(); // 날짜 var time = today.getHours() &#43; &quot;:&quot; &#43; today.getMinutes() &#43; &quot;:&quot; &#43; today.getSeconds(); // 시간 var dateTime = date&#43;&#39; &#39;&#43;time; dateTime // 2019-9-5 13:2:48&quot;  block 스코프와 function 스코프의 차이 // block 스코프 for (let i = 0; i &lt; 5; i = i &#43; 1) { console."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -373,6 +373,7 @@
 <li>
 <ul>
 <li><a href="#today-what-i-learn">Today What I Learn ?</a></li>
+<li><a href="#get-current-data-time-in-js">Get Current Data &amp; Time in JS</a></li>
 <li><a href="#block-스코프와-function-스코프의-차이">block 스코프와 function 스코프의 차이</a></li>
 <li><a href="#var-and-let-and-const">var and let and const</a></li>
 <li><a href="#strict-mode"><strong>Strict Mode</strong></a></li>
@@ -436,6 +437,24 @@
 <p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png" alt="" /></p>
 
 <hr />
+
+<hr />
+
+<h3 id="get-current-data-time-in-js">Get Current Data &amp; Time in JS</h3>
+
+<hr />
+
+<pre><code class="language-js">
+
+var today = new Date(); // Data 가져온다. 
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate(); // 날짜
+var time = today.getHours() + &quot;:&quot; + today.getMinutes() + &quot;:&quot; + today.getSeconds(); // 시간 
+
+var dateTime = date+' '+time;  
+
+dateTime // 2019-9-5 13:2:48&quot;
+
+</code></pre>
 
 <hr />
 

@@ -108,7 +108,7 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? block 스코프와 function 스코프의 차이 // block 스코프 for (let i = 0; i &amp;lt; 5; i = i + 1) { console.log(i); // 0,1,2,3,4 출력된다. } console.log(i) // ReferenceError 출력 이유 : i라는 변수는 block let = i 선언되었을때 i 의 변수는 block 안에 제한 되기 때문이다. // for (var i = 0; i &amp;lt; 5; i = i + 1) { console.log(i); // 0,1,2,3,4 출력된다.</description>
+      <description>Today What I Learn ? Get Current Data &amp;amp; Time in JS var today = new Date(); // Data 가져온다. var date = today.getFullYear()+&#39;-&#39;+(today.getMonth()+1)+&#39;-&#39;+today.getDate(); // 날짜 var time = today.getHours() + &amp;quot;:&amp;quot; + today.getMinutes() + &amp;quot;:&amp;quot; + today.getSeconds(); // 시간 var dateTime = date+&#39; &#39;+time; dateTime // 2019-9-5 13:2:48&amp;quot;  block 스코프와 function 스코프의 차이 // block 스코프 for (let i = 0; i &amp;lt; 5; i = i + 1) { console.</description>
     </item>
     
     <item>

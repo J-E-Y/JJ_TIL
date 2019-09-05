@@ -22,6 +22,26 @@ type: docs
 
 
 ---
+### Get Current Data & Time in JS
+---
+
+
+
+```js
+
+
+var today = new Date(); // Data 가져온다. 
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate(); // 날짜
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(); // 시간 
+
+var dateTime = date+' '+time;  
+
+dateTime // 2019-9-5 13:2:48"
+
+```
+
+
+---
 ### block 스코프와 function 스코프의 차이
 ---
 
