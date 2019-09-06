@@ -127,9 +127,7 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q2/</guid>
-      <description>This call() and apply()
-// call(),apply() 첫번째 인자가 this 이다. function foo () { consoel.log(this); // 여기서 this 는 window } foo(); // window foo.call(); // window foo.apply(); // window  ex
-// 사용방법 function identify() { return this.name; } function speak() { var greeting = &amp;quot;hello, I am &amp;quot; + identify.call(this); console.log(greet; } var me = { name : &amp;quot;jj&amp;quot;}; var you = {name : &amp;quot;Tim&amp;quot;}; // 호출 identify.</description>
+      <description>Dom &amp;lt;!-- div 안에 element 를 추가하는 방법 3가지 --&amp;gt; &amp;lt;!-- HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; let comments = document.querySelector(&amp;quot;#comments&amp;quot;); comments.innerHTML = &amp;quot;&amp;lt;span&amp;gt;아메리카노&amp;lt;span&amp;gt;&amp;quot;; &amp;lt;/script&amp;gt; // 2. // &amp;lt;!-- HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; let comments = document.querySelector(&amp;quot;#comments&amp;quot;); let newElement = document.createElement(&amp;quot;span&amp;quot;); // element 생성 newElement.innerHTML = &amp;quot;아메리카노&amp;quot;; // 생성된 element 안에 미리 써준다. comments.appendChild(newElement); // 집어넣을 comments태그 안에 생성된 elemment를 집어넣는다. &amp;lt;/script&amp;gt; &amp;lt;!-- HTML --&amp;gt; &amp;lt;!</description>
     </item>
     
     <item>

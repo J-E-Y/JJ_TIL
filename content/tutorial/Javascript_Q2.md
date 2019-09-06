@@ -14,6 +14,89 @@ type: docs
 
 
 
+### Dom
+
+
+
+
+```html
+
+
+
+<!-- div 안에 element 를 추가하는 방법 3가지  -->
+
+  
+  
+  <!-- HTML -->
+  <div id = "comments">커피메뉴판</div>
+  
+  <script>
+
+  let comments = document.querySelector("#comments");
+  comments.innerHTML = "<span>아메리카노<span>";
+
+  </script>
+  // 2.
+
+  // <!-- HTML -->
+  <div id = "comments">커피메뉴판</div> 
+
+  <script>
+  let comments = document.querySelector("#comments");
+  let newElement = document.createElement("span"); // element 생성
+  newElement.innerHTML = "아메리카노"; //  생성된 element  안에 미리 써준다.
+  comments.appendChild(newElement); // 집어넣을 comments태그 안에 생성된 elemment를 집어넣는다.
+</script>
+  
+  
+  
+  <!-- HTML -->
+<!-- template 테그를 미리 만들어 놓는다. in HTML 안에  -->
+  
+  <template id = "cloneTem">
+  
+    <div>새로운 커피매뉴판</div>
+    <span>아메리카노</span>
+    <span>flat_Write</span>
+    <spand>라때</spand>
+  
+  </template> 
+  
+  <div id = "comments">커피메뉴판</div>  // 
+  
+  <script>
+
+  let comments = document.querySelector("#comments"); // 집어넣장소가져온다
+  let template = document.querySelector("#cloneTem"); // 
+  
+  // 새로운 변수를 만들어 template 에있는 모든 content 를 복사해서 집어넣는다. 
+  let newComment = document.importNode(template.content,true);  
+
+  comments.innerHTML = "" // 집어넣을 공간을 싹다 지운다 // 커피 메뉴판 날라간다.
+  comments.appendChild(newComment) 
+</script>  
+  
+   <!-- 결과  -->
+<!-- element 와 id 값이 기존에 elemment 로 바뀌었다  -->
+  <div id = "comments">
+  
+  <div>새로운 커피매뉴판</div>
+  <span>아메리카노</span>
+  <span>flat_Write</span>
+  <spand>라때</spand>
+
+  </div>   
+
+
+
+
+
+
+```
+
+
+
+
 
 ### This
 

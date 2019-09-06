@@ -8900,6 +8900,82 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
+&lt;h3 id=&#34;dom&#34;&gt;Dom&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+
+&amp;lt;!-- div 안에 element 를 추가하는 방법 3가지  --&amp;gt;
+
+  
+  
+  &amp;lt;!-- HTML --&amp;gt;
+  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt;
+  
+  &amp;lt;script&amp;gt;
+
+  let comments = document.querySelector(&amp;quot;#comments&amp;quot;);
+  comments.innerHTML = &amp;quot;&amp;lt;span&amp;gt;아메리카노&amp;lt;span&amp;gt;&amp;quot;;
+
+  &amp;lt;/script&amp;gt;
+  // 2.
+
+  // &amp;lt;!-- HTML --&amp;gt;
+  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; 
+
+  &amp;lt;script&amp;gt;
+  let comments = document.querySelector(&amp;quot;#comments&amp;quot;);
+  let newElement = document.createElement(&amp;quot;span&amp;quot;); // element 생성
+  newElement.innerHTML = &amp;quot;아메리카노&amp;quot;; //  생성된 element  안에 미리 써준다.
+  comments.appendChild(newElement); // 집어넣을 comments태그 안에 생성된 elemment를 집어넣는다.
+&amp;lt;/script&amp;gt;
+  
+  
+  
+  &amp;lt;!-- HTML --&amp;gt;
+&amp;lt;!-- template 테그를 미리 만들어 놓는다. in HTML 안에  --&amp;gt;
+  
+  &amp;lt;template id = &amp;quot;cloneTem&amp;quot;&amp;gt;
+  
+    &amp;lt;div&amp;gt;새로운 커피매뉴판&amp;lt;/div&amp;gt;
+    &amp;lt;span&amp;gt;아메리카노&amp;lt;/span&amp;gt;
+    &amp;lt;span&amp;gt;flat_Write&amp;lt;/span&amp;gt;
+    &amp;lt;spand&amp;gt;라때&amp;lt;/spand&amp;gt;
+  
+  &amp;lt;/template&amp;gt; 
+  
+  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt;  // 
+  
+  &amp;lt;script&amp;gt;
+
+  let comments = document.querySelector(&amp;quot;#comments&amp;quot;); // 집어넣장소가져온다
+  let template = document.querySelector(&amp;quot;#cloneTem&amp;quot;); // 
+  
+  // 새로운 변수를 만들어 template 에있는 모든 content 를 복사해서 집어넣는다. 
+  let newComment = document.importNode(template.content,true);  
+
+  comments.innerHTML = &amp;quot;&amp;quot; // 집어넣을 공간을 싹다 지운다 // 커피 메뉴판 날라간다.
+  comments.appendChild(newComment) 
+&amp;lt;/script&amp;gt;  
+  
+   &amp;lt;!-- 결과  --&amp;gt;
+&amp;lt;!-- element 와 id 값이 기존에 elemment 로 바뀌었다  --&amp;gt;
+  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;
+  
+  &amp;lt;div&amp;gt;새로운 커피매뉴판&amp;lt;/div&amp;gt;
+  &amp;lt;span&amp;gt;아메리카노&amp;lt;/span&amp;gt;
+  &amp;lt;span&amp;gt;flat_Write&amp;lt;/span&amp;gt;
+  &amp;lt;spand&amp;gt;라때&amp;lt;/spand&amp;gt;
+
+  &amp;lt;/div&amp;gt;   
+
+
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h3 id=&#34;this&#34;&gt;This&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;call() and apply()&lt;/strong&gt;&lt;/p&gt;
