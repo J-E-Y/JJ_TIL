@@ -18,8 +18,6 @@ type: docs
 
 
 
-
-
 ### Question
 
 * longestWord
