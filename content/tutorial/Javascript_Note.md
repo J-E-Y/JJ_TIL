@@ -21,6 +21,32 @@ type: docs
 ---
 
 
+
+
+
+
+### JS/HTML script 위치 
+
+```js
+
+
+//Html 파일에서 script 를 head 안에 넣으면 script 안에 써있는 코드들이 실행이 안된다 !
+
+//하지만 script 안에 있는 코드들을 실행 시키려면 
+
+
+window.onload = function () { } // 실행하고싶은 코드넣으면 실행할수 있다. 
+
+
+
+```
+
+
+
+
+
+
+
 ### JS/HTML insertBefore()
 
 ```js
