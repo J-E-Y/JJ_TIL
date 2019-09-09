@@ -9845,6 +9845,77 @@ console.log(name)  // 3. jj 함수가 실행된 뒤에는 함수안에 있는 na
 &lt;h3 id=&#34;question&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
+&lt;li&gt;offLineMinimum&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Have the function &lt;code&gt;offLineMinimum(strArr)&lt;/code&gt; take the strArr parameter being passed which will be an array of integers ranging from 1&amp;hellip;n and the letter &amp;ldquo;E&amp;rdquo; and return the correct subset based on the following rules.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+The input will be in the following format: `[&amp;quot;I&amp;quot;,&amp;quot;I&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;I&amp;quot;,...,&amp;quot;E&amp;quot;,...,&amp;quot;I&amp;quot;]` where the I&#39;s stand for integers and the E means take out the smallest integer currently in the whole set.
+When finished, your program should return that new set with integers separated by commas.
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;my-soultion&#34;&gt;MY_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// this is not Correct
+
+
+function offLineMinimum(strArr) {
+  // YOUR CODE HERE
+
+  
+
+// strArr 접근해서 E 를 발견하면 E전까지의 숫자중 가장작은수 는 새로운 변수에 저장
+// 첫번째로 작은수와 첫번째로 발견한 E 제거
+
+// 다시 strArr 에 접근해서 E 를 발견하면 E 전까지의 숫자웅 가장 작은 수는 새로운 변수에 저장 
+// 첫번째로 작은수와 첫번째로 발견한 E 제거
+
+// 배열안에 담긴 작은수들을 toSting() 로 출력
+
+
+// strArr = [&amp;quot;5&amp;quot;,&amp;quot;4&amp;quot;,&amp;quot;6&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;7&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;3&amp;quot;,&amp;quot;2&amp;quot;]
+
+num = &amp;quot;&amp;quot;;
+let ret = [];
+for ( let i = 0; i &amp;lt; strArr.length; i = i + 1 ) {
+  if ( strArr[i] === &amp;quot;E&amp;quot;) {
+      
+    
+    let newArr = strArr.slice(0,strArr.indexOf(&amp;quot;E&amp;quot;)) // [&amp;quot;5&amp;quot;,&amp;quot;4&amp;quot;,&amp;quot;6&amp;quot;] 가져온다 
+    
+    strArr.splice(i,1); // strArr 안에 E 를 뺀다.
+    num = num + Math.min(...newArr).toString()
+    strArr.splice(strArr.indexOf(num),1);
+    
+    // 첫번째 strArr = [&amp;quot;5&amp;quot;,6&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;7&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;3&amp;quot;,&amp;quot;2&amp;quot;]
+    // 두번째 strArr = [&amp;quot;5&amp;quot;, &amp;quot;6&amp;quot;, &amp;quot;1&amp;quot;, &amp;quot;7&amp;quot;, &amp;quot;E&amp;quot;, &amp;quot;3&amp;quot;]
+    // 마지막 ????
+    }
+    
+  }
+  return num.split(&#39;&#39;).join();
+
+
+}
+
+offLineMinimum([&amp;quot;1&amp;quot;,&amp;quot;2&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;3&amp;quot;]); // =&amp;gt; &#39;1,2&#39;
+offLineMinimum([&amp;quot;4&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;2&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;3&amp;quot;,&amp;quot;E&amp;quot;]); // =&amp;gt; &#39;4,1,2,3&#39;
+offLineMinimum([&amp;quot;5&amp;quot;,&amp;quot;4&amp;quot;,&amp;quot;6&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;7&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;3&amp;quot;,&amp;quot;2&amp;quot;]) // == &amp;gt; 
+`4,1,5`
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;question-1&#34;&gt;Question&lt;/h3&gt;
+
+&lt;ul&gt;
 &lt;li&gt;range&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -9884,7 +9955,7 @@ range(10, 2); // =&amp;gt; []
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-1&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-2&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;longestName&lt;/li&gt;
@@ -9936,7 +10007,7 @@ if `strArr` is `[&amp;quot;coder&amp;quot;, &amp;quot;codec&amp;quot;]` then you
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-1&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10001,7 +10072,7 @@ console.log(hammingDistance([&amp;quot;coder&amp;quot;, &amp;quot;codec&amp;quot
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-2&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-3&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;getFullName&lt;/li&gt;
@@ -10011,7 +10082,7 @@ console.log(hammingDistance([&amp;quot;coder&amp;quot;, &amp;quot;codec&amp;quot
 &lt;p&gt;Write a function called &amp;lsquo;getFullName&amp;rsquo; that takes in an object which has this structure:&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-1&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-2&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getFullName(obj) {
@@ -10061,7 +10132,7 @@ function getFullName(obj) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-3&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-4&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;billTotal&lt;/li&gt;
@@ -10071,7 +10142,7 @@ function getFullName(obj) {
 &lt;p&gt;Write a function called billTotal that can be used to calculate the total to be paid at a restaurant &amp;ndash; including tip and tax &amp;ndash; given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-2&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-3&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10118,7 +10189,7 @@ billTotal(10.00); // =&amp;gt; 12.45
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-4&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-5&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;primeMover&lt;/li&gt;
@@ -10130,7 +10201,7 @@ billTotal(10.00); // =&amp;gt; 12.45
 &lt;p&gt;For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-3&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-4&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10152,7 +10223,7 @@ let primeMover = function(n) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-5&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-6&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;isOddWithoutModulo&lt;/li&gt;
@@ -10164,7 +10235,7 @@ let primeMover = function(n) {
 &lt;p&gt;Given a number, &amp;ldquo;isOddWithoutModulo&amp;rdquo; returns whether the passed in number is odd. (숫자가 주어졌을때, &amp;ldquo;isOddWithoutModulo&amp;rdquo; 함수는 주어진 숫자가 홀수인지를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-4&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-5&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // 2. it is used by Math.floor 
@@ -10199,7 +10270,7 @@ function isOddWithoutModulo(num) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-6&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-7&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;getStringLength&lt;/li&gt;
@@ -10213,7 +10284,7 @@ function isOddWithoutModulo(num) {
 &lt;p&gt;Do NOT use any native &amp;lsquo;length&amp;rsquo; methods. (- &amp;lsquo;length&amp;rsquo; 메소드를 사용하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-5&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-6&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getStringLength(string) {
@@ -10234,7 +10305,7 @@ function getStringLength(string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-7&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-8&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;getIndexOf&lt;/li&gt;
@@ -10246,7 +10317,7 @@ function getStringLength(string) {
 &lt;p&gt;Given a character and a string, &amp;ldquo;getIndexOf&amp;rdquo; returns the first position of the given character in the given string. (문자와 문자열이 주어졌을때, &amp;ldquo;getIndexOf&amp;rdquo; 함수는 주어진 문자열에서 주어진 문자가 나타나는 첫번째 위치를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-6&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-7&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function getIndexOf(char, str) {
 
@@ -10262,7 +10333,7 @@ function getStringLength(string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-8&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-9&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;calculateBillTotal&lt;/li&gt;
@@ -10277,7 +10348,7 @@ function getStringLength(string) {
 Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-7&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-8&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function calculateBillTotal(preTaxAndTipAmount) {
@@ -10303,7 +10374,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 &lt;li&gt;calculateBillTotal&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;question-9&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-10&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;convertObjectToArray3&lt;/li&gt;
@@ -10313,7 +10384,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 &lt;p&gt;Write a function called &amp;ldquo;convertObjectToList&amp;rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &amp;ldquo;convertObjectToList&amp;rdquo;를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-8&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-9&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function convertObjectToList(obj) {
   // your code here
@@ -10568,7 +10639,7 @@ unction firstCharacter (string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-10&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-11&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;dashInsert&lt;/li&gt;

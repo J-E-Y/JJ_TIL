@@ -136,9 +136,8 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Question  range   Complete the below function called range that takes two integers as parameters, start and end, and returns an array containing all the whole numbers between them starting with start and up to end (you can use a any loop)
-After you write your function, you can test it using the above inputs to make sure that it behaves correctly.
- function range(start, end) { // YOUR CODE HERE // 만약 strat 와 end 같다면 &amp;amp;&amp;amp; 만약 strat 가 end 보다 작으면 [] 반환 // for 문을 사용해 start 를 초기값으로 지정하고 end 보다 작을때까지 숫자 반환 let arr = []; if ( start === end || start &amp;gt;= end ) { return []; } else { for ( let i = start; i &amp;lt; end; i = i + 1 ) { arr.</description>
+      <description>Question  offLineMinimum   Have the function offLineMinimum(strArr) take the strArr parameter being passed which will be an array of integers ranging from 1&amp;hellip;n and the letter &amp;ldquo;E&amp;rdquo; and return the correct subset based on the following rules.
+ The input will be in the following format: `[&amp;quot;I&amp;quot;,&amp;quot;I&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;I&amp;quot;,...,&amp;quot;E&amp;quot;,...,&amp;quot;I&amp;quot;]` where the I&#39;s stand for integers and the E means take out the smallest integer currently in the whole set. When finished, your program should return that new set with integers separated by commas.</description>
     </item>
     
   </channel>

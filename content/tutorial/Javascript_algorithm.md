@@ -17,6 +17,80 @@ type: docs
 
 
 
+### Question
+
+
+* offLineMinimum
+
+
+
+>Have the function `offLineMinimum(strArr)` take the strArr parameter being passed which will be an array of integers ranging from 1...n and the letter "E" and return the correct subset based on the following rules.
+
+```js
+
+The input will be in the following format: `["I","I","E","I",...,"E",...,"I"]` where the I's stand for integers and the E means take out the smallest integer currently in the whole set.
+When finished, your program should return that new set with integers separated by commas.
+
+
+```
+
+
+### MY_Soultion 
+
+```js
+
+// this is not Correct
+
+
+function offLineMinimum(strArr) {
+  // YOUR CODE HERE
+
+  
+
+// strArr 접근해서 E 를 발견하면 E전까지의 숫자중 가장작은수 는 새로운 변수에 저장
+// 첫번째로 작은수와 첫번째로 발견한 E 제거
+
+// 다시 strArr 에 접근해서 E 를 발견하면 E 전까지의 숫자웅 가장 작은 수는 새로운 변수에 저장 
+// 첫번째로 작은수와 첫번째로 발견한 E 제거
+
+// 배열안에 담긴 작은수들을 toSting() 로 출력
+
+
+// strArr = ["5","4","6","E","1","7","E","E","3","2"]
+
+num = "";
+let ret = [];
+for ( let i = 0; i < strArr.length; i = i + 1 ) {
+  if ( strArr[i] === "E") {
+      
+    
+    let newArr = strArr.slice(0,strArr.indexOf("E")) // ["5","4","6"] 가져온다 
+    
+    strArr.splice(i,1); // strArr 안에 E 를 뺀다.
+    num = num + Math.min(...newArr).toString()
+    strArr.splice(strArr.indexOf(num),1);
+    
+    // 첫번째 strArr = ["5",6","1","7","E","E","3","2"]
+    // 두번째 strArr = ["5", "6", "1", "7", "E", "3"]
+    // 마지막 ????
+    }
+    
+  }
+  return num.split('').join();
+
+
+}
+
+offLineMinimum(["1","2","E","E","3"]); // => '1,2'
+offLineMinimum(["4","E","1","E","2","E","3","E"]); // => '4,1,2,3'
+offLineMinimum(["5","4","6","E","1","7","E","E","3","2"]) // == > 
+`4,1,5`
+
+
+
+```
+
+
 
 
 
