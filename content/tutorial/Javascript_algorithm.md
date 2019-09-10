@@ -38,49 +38,69 @@ When finished, your program should return that new set with integers separated b
 ### MY_Soultion 
 
 ```js
-
-// this is not Correct
-
-
 function offLineMinimum(strArr) {
-  // YOUR CODE HERE
 
+
+  let numArr=[];
+  let resultArr=[];
+   
+  // ["5","4","6","E","1","7","E","E","3","2"]
   
-
-// strArr 접근해서 E 를 발견하면 E전까지의 숫자중 가장작은수 는 새로운 변수에 저장
-// 첫번째로 작은수와 첫번째로 발견한 E 제거
-
-// 다시 strArr 에 접근해서 E 를 발견하면 E 전까지의 숫자웅 가장 작은 수는 새로운 변수에 저장 
-// 첫번째로 작은수와 첫번째로 발견한 E 제거
-
-// 배열안에 담긴 작은수들을 toSting() 로 출력
-
-
-// strArr = ["5","4","6","E","1","7","E","E","3","2"]
-
-num = "";
-let ret = [];
-for ( let i = 0; i < strArr.length; i = i + 1 ) {
-  if ( strArr[i] === "E") {
+  for(let i=0; i< strArr.length; i++){
+    // 만약 E와 같지 않다면 
+    if (strArr[i] !== 'E') {
+      // 이코드는 7번 실행된다 왜냐하면 E 가 3개만 있기 때문이다. 
       
+      numArr.push(strArr[i]);
     
-    let newArr = strArr.slice(0,strArr.indexOf("E")) // ["5","4","6"] 가져온다 
-    
-    strArr.splice(i,1); // strArr 안에 E 를 뺀다.
-    num = num + Math.min(...newArr).toString()
-    strArr.splice(strArr.indexOf(num),1);
-    
-    // 첫번째 strArr = ["5",6","1","7","E","E","3","2"]
-    // 두번째 strArr = ["5", "6", "1", "7", "E", "3"]
-    // 마지막 ????
-    }
-    
+     
+      //   (1) ["5"]
+      //   (2) ["5", "4"]
+      //   (3) ["5", "4", "6"]
+      //   (4) ["5", "6", "1"]
+      //   (5) ["5", "6", "1", "7"]
+      //   (6) ["6", "7", "3"]
+      //   (7) ["6", "7", "3", "2"]   
+      
+      
+      
+      // // 만약 E와 같다면 
+    } else if(strArr[i] === 'E') {
+      
+      
+       let smallNum = numArr.reduce(function(acc,curr){
+          
+         // 첫번째 "E" 나오면  numArr = ["5","4",6] 작은수 => "4"
+         // 두번째 "E" 나오면  numArr =  ["5", "6", "1", "7"] 작은수 => "1"
+         // 세번째 "E" 나오면  numArr = ["5","6","7"]  작은수 => "5"
+
+         // smallNum = ["4","1","5"] 3번에 담긴다 가장 작은수들이 coz E를 3번 찾았기 때문에
+         
+         if(acc < curr){
+           return acc;
+         } else {
+           return curr;
+         }
+       });
+
+      // 첫번째 "E" 나오면 smallNum = "4" 
+      // 두번째 "E" 나오면 smallNum = "1"
+      // 세번째 "E" 나오면 smallNum = "7"
+
+      // resultArr 에 ["4","1","7"]; 담긴다.
+       resultArr.push(smallNum); 
+       
+       // 첫번째 "E" 나오면 ["5","4","6"].splice(1,1) // "4" 삭제됨
+       // 두번째 "E" 나오면 ["5", "6", "1", "7"].splice(2,1) // "1" 삭제됨
+       // 세번째 "E" 나오면 ["5","6","7"].splice(0,1) // "5" // "5" 삭제됨  
+       numArr.splice(numArr.indexOf(smallNum),1); 
+   }
   }
-  return num.split('').join();
+    return resultArr.join(','); // 마지막으로 "4,1,5" =>>,나눠서 함친다.
+ }
 
 
-}
-
+ 
 offLineMinimum(["1","2","E","E","3"]); // => '1,2'
 offLineMinimum(["4","E","1","E","2","E","3","E"]); // => '4,1,2,3'
 offLineMinimum(["5","4","6","E","1","7","E","E","3","2"]) // == > 
@@ -90,6 +110,48 @@ offLineMinimum(["5","4","6","E","1","7","E","E","3","2"]) // == >
 
 ```
 
+
+### other_Soultion
+
+
+
+```js
+
+
+
+function offLineMinimum(strArr) {
+  
+   
+  // ** offLinMininum은 배열에서 'E' 가 나오기 이전까지의 숫자들로 숫자의 set을 만들고 e가 등장 할 때 마다 숫자 set 중 가장 작은 수를 가지고와 리턴할 문자열에 포함시켜주는 함수이다.
+
+    // 배열에서 'E'가 나오기 이전까지의 숫자들로 숫자의 Set을 만든다. --> numberSet
+    // 배열에서 'E'가 등장하면, numberSet을 분류(작은 수~큰 수)하고 numberSet의 0번째 값(가장 작은 수)을 가지고와 result에 넣어준다.
+    // 그리고 numberSet의 0번째 값은 제거해준다.
+    // 그래야 다음 번에 'E'가 등장하면 그 요소를 제외한 나머지 값들 중에서 최소값을 구할 수 있기 때문이다.
+
+    let numberSet=[];
+    let result=[];
+
+    for (let i = 0 ; i < strArr.length ; i++) {
+        if (strArr[i] !== 'E') {
+            numberSet.push(Number(strArr[i]));
+        }
+        else if (strArr[i] === 'E') {
+            numberSet.sort();
+            result.push(numberSet[0]);
+            numberSet.shift();
+        }
+    }
+
+    return result.join();
+}
+
+
+
+
+
+
+```
 
 
 
