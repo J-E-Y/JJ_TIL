@@ -522,264 +522,192 @@ git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
       <guid>/tutorial/html/</guid>
       <description>
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;html-lt-strong-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;strong&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Note&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;what&amp;rsquo;s the difference bewteen &amp;lt;strong&amp;gt; tag and &amp;lt;b&amp;gt; ?&lt;/p&gt;
-
-&lt;p&gt;strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다.&lt;/p&gt;
-
-&lt;p&gt;b tag :평상시대로 굵게 읽는다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Emphasized text goes here&amp;lt;/strong&amp;gt; but not here&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Sample Output&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Emphasized text goes here but not here
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;lt-strong-gt&#34;&gt;&amp;lt;strong&amp;gt;&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-h1-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;h1&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+/*
+
+The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. 
+
+
+
+Note 
+
+what&#39;s the difference bewteen strong tag and b tag ?
+
+strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. 
+
+b tag :평상시대로 굵게 읽는다.
+
+*/
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;lt-h1-gt&#34;&gt;&amp;lt;h1&amp;gt;&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--  
 
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &lt;strong&gt;&amp;lt;h1&amp;gt;tag&lt;/strong&gt; tag defines the highest level or most important heading in the HTML document. This tag is also commonly referred to as the &lt;strong&gt;&amp;lt;h1&amp;gt;tag&lt;/strong&gt; element.&lt;/p&gt;
-&lt;/blockquote&gt;
+The HTML &amp;lt;h1&amp;gt; tag defines the highest level or most important heading in the HTML document. This tag is also commonly referred to as the &amp;lt;h1&amp;gt; element.
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+--&amp;gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+
+
+&amp;lt;!--  Syntax--&amp;gt;
+
+
+&amp;lt;body&amp;gt;
 &amp;lt;h1&amp;gt;Heading 1 goes here&amp;lt;/h1&amp;gt;
 &amp;lt;/body&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;p&gt;Sample Output&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Heading 1 goes here
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;html-lt-br-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;br&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;lt-br-gt&#34;&gt;&amp;lt;br&amp;gt;&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;br&amp;gt;tag defines a line break within text in the HTML document. This tag is also commonly referred to as the &amp;lt;&amp;lt;br&amp;gt; element.&lt;/p&gt;
-&lt;/blockquote&gt;
+&amp;lt;!-- The HTML &amp;lt;br&amp;gt; tag defines a line break within text in the HTML document. This tag is also commonly referred to as the &amp;lt;br&amp;gt; element.--&amp;gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&amp;lt;!-- Syntax --&amp;gt;
+
+
+
 &amp;lt;body&amp;gt;
 &amp;lt;p&amp;gt;The paragraph starts here&amp;lt;br&amp;gt;
 and ends on the next line.&amp;lt;/p&amp;gt;
 &amp;lt;/body&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Sample Output&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;The paragraph starts here
-and ends on the next line.
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;nbsp-making-space&#34;&gt;&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;  (making space)&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-nbsp-making-space&#34;&gt;html : &lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;  (making space)&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+/*
+HTML will only display one space between words, no matter how many times you press the space bar. To force an extra space to show up, type `&amp;amp;nbsp;` in the area where you want to force the space.
+
+*/
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;lt-p-gt&#34;&gt;&amp;lt;p&amp;gt;&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!---
+The HTML &amp;lt;p&amp;gt; tag defines a paragraph in the HTML document. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.--&amp;gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;HTML will only display one space between words, no matter how many times you press the space bar. To force an extra space to show up, type &lt;code&gt;&amp;amp;nbsp;&lt;/code&gt; in the area where you want to force the space.&lt;/p&gt;
-&lt;/blockquote&gt;
+* syntax
 
-&lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-p-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;p&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;p&amp;gt; tag defines a paragraph in the HTML document. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;syntax&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;body&amp;gt;
 &amp;lt;p&amp;gt;The paragraph goes here.&amp;lt;/p&amp;gt;
 &amp;lt;/body&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;output&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;this 
 
-The paragraph goes here.
+&lt;/code&gt;&lt;/pre&gt;
 
-this
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;lt-hr-gt&#34;&gt;&amp;lt;hr&amp;gt;&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-hr-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;hr&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
 
-&lt;hr /&gt;
+The HTML &amp;lt;hr&amp;gt; tag defines a thematic break between paragraphs in HTML5, and a horizontal rule in HTML 4.01. This tag is also commonly referred to as the &amp;lt;hr&amp;gt; element.
 
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
+* Note
 
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;hr/&amp;gt; tag defines a thematic break between paragraphs in HTML5, and a horizontal rule in HTML 4.01. This tag is also commonly referred to as the &amp;lt;hr/&amp;gt; element.&lt;/p&gt;
-&lt;/blockquote&gt;
+The HTML &amp;lt;hr&amp;gt; element makes line bewteen two paragraphs.
 
-&lt;ul&gt;
-&lt;li&gt;Note&lt;/li&gt;
-&lt;/ul&gt;
+* Syntax
 
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;hr/&amp;gt; element makes line bewteen two paragraphs.&lt;/p&gt;
-&lt;/blockquote&gt;
+--&amp;gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;body&amp;gt;
 &amp;lt;p&amp;gt;This is the first paragraph.&amp;lt;/p&amp;gt;
 &amp;lt;hr&amp;gt;
 &amp;lt;p&amp;gt;This is the second paragraph.&amp;lt;/p&amp;gt;
 &amp;lt;/body&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;lt-div-gt&#34;&gt;&amp;lt;div&amp;gt;&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-div-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;div&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
 
-&lt;hr /&gt;
+The HTML &amp;lt;p&amp;gt; tag defines a generic container in an HTML document that is generally used to group elements. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.
 
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
+* Note
+ 
+The HTML &amp;lt;p&amp;gt; element is found within the &amp;lt;body&amp;gt; tag.
+The &amp;lt;div&amp;gt; tag is generally used to group elements together.
 
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;p&amp;gt; tag defines a generic container in an HTML document that is generally used to group elements. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.&lt;/p&gt;
-&lt;/blockquote&gt;
+&amp;lt;p&amp;gt; :element is a block-level element.
 
-&lt;ul&gt;
-&lt;li&gt;Note&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;p&amp;gt; element is found within the &lt;body&gt; tag.
-The &lt;div&gt; tag is generally used to group elements together.
-&amp;lt;p&amp;gt;&amp;lt;p&amp;gt; :element is a block-level element.&lt;/p&gt;
+* Syntax
 
-&lt;p&gt;The &amp;lt;p&amp;gt; element is a block-level element.&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+--&amp;gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&amp;lt;body&amp;gt;
 
 &amp;lt;div&amp;gt;
-&amp;lt;div&amp;gt;this is the type of elemnt &amp;lt;/div&amp;gt;
+  &amp;lt;div&amp;gt;this is the type of elemnt &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 
 &amp;lt;/body&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;lt-span-gt&#34;&gt;&amp;lt;span&amp;gt;&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-span-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;span&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
 
-&lt;hr /&gt;
+`height 와 width 적용이 안된다.` 하지만 Disply 사용해서 적용할수 있다 
 
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;height 와 width 적용이 안된다.&lt;/code&gt; 하지만 Disply 사용해서 적용할수 있다&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
+The HTML &amp;lt;span&amp;gt; tag defines a generic inline container in an HTML document. This tag is also commonly referred to as the &amp;lt;span&amp;gt; element.
 
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;span&amp;gt; tag defines a generic inline container in an HTML document. This tag is also commonly referred to as the &amp;lt;&amp;lt;span&amp;gt; element.&lt;/p&gt;
-&lt;/blockquote&gt;
+Note
 
-&lt;ul&gt;
-&lt;li&gt;Note&lt;/li&gt;
-&lt;/ul&gt;
+&amp;lt;span&amp;gt;  tag is is generally used for styling purposes when there is no other element to use.
+&amp;lt;span&amp;gt;  tag is a inline-level element
+&amp;lt;span&amp;gt; tag does not inherently represent anything
 
-&lt;blockquote&gt;
-&lt;p&gt;&amp;lt;span&amp;gt; tag is is generally used for styling purposes when there is no other element to use.
-&amp;lt;span&amp;gt; tag is a inline-level element
-&amp;lt;span&amp;gt; tag does not inherently represent anything&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;p&gt;Syntax&lt;/p&gt;
+Syntax
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+--&amp;gt;
+
+&amp;lt;body&amp;gt;
 &amp;lt;p&amp;gt;&amp;lt;span&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
 &amp;lt;/body&amp;gt;
-
 
 &amp;lt;body&amp;gt;
 &amp;lt;p&amp;gt;&amp;lt;span class=&amp;quot;red_text&amp;quot;&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
@@ -787,221 +715,203 @@ The &lt;div&gt; tag is generally used to group elements together.
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;html-lt-nav-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;nav&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;lt-nav-gt&#34;&gt;&amp;lt;nav&amp;gt;&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
 
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;nav&amp;gt; tag is an HTML5 element that defines a section with navigation links in the HTML document. This tag is also commonly referred to as the &amp;lt;nav&amp;gt; element. It is used to define a block of navigation links, either within the current document or to other documents&lt;/p&gt;
-&lt;/blockquote&gt;
+The HTML &amp;lt;nav&amp;gt; tag is an HTML5 element that defines a section with navigation links in the HTML document. This tag is also commonly referred to as the &amp;lt;nav&amp;gt; element. It is used to define a block of navigation links, either within the current document or to other documents
 
-&lt;ul&gt;
-&lt;li&gt;Note&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;The &lt;nav&gt; tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: &amp;lt;header&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;section&amp;gt;, &amp;lt;aside&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;footer&amp;gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+* Note
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+ The &amp;lt;nav&amp;gt; tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: &amp;lt;header&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;section&amp;gt;, &amp;lt;aside&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;footer&amp;gt;.
 
-&lt;pre&gt;&lt;code&gt;
+
+* Syntax
+
+--&amp;gt;
+
+
+
 &amp;lt;body&amp;gt;
 &amp;lt;nav&amp;gt;
-&amp;lt;ul&amp;gt;
-&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section1/index.html&amp;quot;&amp;gt;Section1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section2/index.html&amp;quot;&amp;gt;Section2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section3/index.html&amp;quot;&amp;gt;Section3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section1/index.html&amp;quot;&amp;gt;Section1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section2/index.html&amp;quot;&amp;gt;Section2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section3/index.html&amp;quot;&amp;gt;Section3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
 &amp;lt;/nav&amp;gt;
 &amp;lt;/body&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;lt-ul-gt-부모태그&#34;&gt;&amp;lt;ul&amp;gt; (부모태그)&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-ul-gt-tag-부모태그&#34;&gt;html : &lt;strong&gt;&amp;lt;ul&amp;gt;tag&lt;/strong&gt; (부모태그)&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
 
-&lt;hr /&gt;
+* Description
 
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
+The HTML &amp;lt;ul&amp;gt; tag defines an unordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ul&amp;gt; element.
 
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;ul&amp;gt; tag defines an unordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ul&amp;gt; element.&lt;/p&gt;
-&lt;/blockquote&gt;
+* Note
 
-&lt;ul&gt;
-&lt;li&gt;Note&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;ul&amp;gt; element is found within the &lt;body&gt; tag.
-The &amp;lt;ul&amp;gt; tag is made up of &lt;li&gt; tags.
+The HTML &amp;lt;ul&amp;gt; element is found within the &amp;lt;body&amp;gt; tag.
+The &amp;lt;ul&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags.
 Use the &amp;lt;ul&amp;gt; tag when the list items have no numerical ordering.
-You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu lists.&lt;/p&gt;
-&lt;/blockquote&gt;
+You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu lists.
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+* Syntax
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+
+--&amp;gt;
+
+
+&amp;lt;body&amp;gt;
 &amp;lt;ul&amp;gt;
-&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
 &amp;lt;/ul&amp;gt;
 &amp;lt;/body&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Sample Output&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;* First item
-* Second item
-* Third item
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;lt-li-gt-부모태그&#34;&gt;&amp;lt;li&amp;gt;(부모태그)&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-li-gt-tag-부모태그&#34;&gt;html : &lt;strong&gt;&amp;lt;li&amp;gt;tag&lt;/strong&gt; (부모태그)&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
 
-&lt;hr /&gt;
+* Description
 
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
+&amp;gt;The HTML &amp;lt;li&amp;gt; tag defines a list item in &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt; in the HTML document. This tag is also commonly referred to as the &amp;lt;li&amp;gt; element.
 
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;li&amp;gt; tag defines a list item in &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt; in the HTML document. This tag is also commonly referred to as the &amp;lt;li&amp;gt; element.&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
+* Syntax
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+--&amp;gt;
+
+
+&amp;lt;body&amp;gt;
 &amp;lt;ul&amp;gt;
-&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
 &amp;lt;/ul&amp;gt;
 &amp;lt;/body&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;li&gt;&lt;p&gt;Sample Output 1&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
-&amp;lt;ol&amp;gt;
-&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
-&amp;lt;/ol&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Sample Output 2&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
-&amp;lt;menu type=&amp;quot;toolbar&amp;quot;&amp;gt;
-&amp;lt;li&amp;gt;
-&amp;lt;menu label=&amp;quot;File&amp;quot;&amp;gt;
-  &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;new()&amp;quot;&amp;gt;New&amp;lt;/button&amp;gt;
-  &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;save()&amp;quot;&amp;gt;Save&amp;lt;/button&amp;gt;
-&amp;lt;/menu&amp;gt;
-&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;
-&amp;lt;menu label=&amp;quot;Edit&amp;quot;&amp;gt;
-  &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;copy()&amp;quot;&amp;gt;Copy&amp;lt;/button&amp;gt;
-  &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;paste()&amp;quot;&amp;gt;Paste&amp;lt;/button&amp;gt;
-&amp;lt;/menu&amp;gt;
-&amp;lt;/li&amp;gt;
-&amp;lt;/menu&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Note&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The &amp;lt;li&amp;gt; tag is used within &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt;.
-You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;html-lt-ol-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;ol&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &amp;lt;ol&amp;gt; tag defines an ordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ol&amp;gt; element.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
-&amp;lt;ol&amp;gt;
-&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
-&amp;lt;/ol&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Sample Output&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
+&lt;p&gt;&lt;body&gt;
 &lt;ol&gt;
-&lt;li&gt;First item&lt;/li&gt;
-&lt;li&gt;Second item&lt;/li&gt;
-&lt;li&gt;Third item&lt;/li&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/body&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Note&lt;/li&gt;
+&lt;li&gt;Sample Output 2&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;The &amp;lt;ol&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags.
+&lt;p&gt;&lt;body&gt;
+&lt;menu type=&#34;toolbar&#34;&gt;
+  &lt;li&gt;
+    &lt;menu label=&#34;File&#34;&gt;
+      &lt;button type=&#34;button&#34; onclick=&#34;new()&#34;&gt;New&lt;/button&gt;
+      &lt;button type=&#34;button&#34; onclick=&#34;save()&#34;&gt;Save&lt;/button&gt;
+    &lt;/menu&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;menu label=&#34;Edit&#34;&gt;
+      &lt;button type=&#34;button&#34; onclick=&#34;copy()&#34;&gt;Copy&lt;/button&gt;
+      &lt;button type=&#34;button&#34; onclick=&#34;paste()&#34;&gt;Paste&lt;/button&gt;
+    &lt;/menu&gt;
+  &lt;/li&gt;
+&lt;/menu&gt;
+&lt;/body&gt;&lt;/p&gt;
+
+&lt;!--
+* Note
+
+The &lt;li&gt; tag is used within &lt;ol&gt;, &lt;ul&gt; or &lt;menu&gt;.
+You can nest &lt;ol, &lt;ul&gt; and &lt;menu&gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
+
+--&gt;
+
+&lt;pre&gt;&lt;code&gt;
+---
+## html : **&amp;amp;lt;ol&amp;amp;gt;tag** 
+---
+
+
+```html
+
+&amp;lt;!--
+
+* Description
+
+&amp;gt;The HTML &amp;lt;ol&amp;gt; tag defines an ordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ol&amp;gt; element.
+
+* Syntax
+
+--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;body&amp;gt;
+&amp;lt;ol&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+&amp;lt;!--
+
+* Note
+
+The &amp;lt;ol&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags. 
 Use the &amp;lt;ol&amp;gt; tag when the list items have numeric, meaningful ordering.
-You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists.&lt;/p&gt;
-&lt;/blockquote&gt;
+You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists.
+
+--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;container&#34;&gt;container&lt;/h3&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-container&#34;&gt;html : &lt;strong&gt;container&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
 
-&lt;hr /&gt;
+* Description
 
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
+In HTML, the container is the area enclosed by the beginning and ending tags. For example &amp;lt; HTML &amp;gt; encloses an entire document while other tags may enclose a single word, paragraph, or other elements. In HTML code, all container must have a start and stop tag to close the container. Without a stop tag the start tag will apply to the entire document.
+ 
 
-&lt;p&gt;In HTML, the container is the area enclosed by the beginning and ending tags. For example &amp;lt; HTML &amp;gt; encloses an entire document while other tags may enclose a single word, paragraph, or other elements. In HTML code, all container must have a start and stop tag to close the container. Without a stop tag the start tag will apply to the entire document.&lt;/p&gt;
+--&amp;gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;html&amp;gt;
+
+```html
+
+
+
+
+&amp;lt;html&amp;gt;
   &amp;lt;head&amp;gt;
     ...
   &amp;lt;/head&amp;gt;
@@ -1011,47 +921,49 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
     &amp;lt;/div&amp;gt;
   &amp;lt;/body&amp;gt;
 &amp;lt;/html&amp;gt;
+
+
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;note&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The container div, and sometimes content div, are almost always used to allow for more sophisticated CSS styling. The body tag is special in some ways. Browsers don&amp;rsquo;t treat it like a normal div; its position and dimensions are tied to the browser window.&lt;/p&gt;
-
-&lt;p&gt;But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.&lt;/p&gt;
-
-&lt;p&gt;Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can&amp;rsquo;t go on the outside of the body, allowing for content on the outside of a border.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;html-cashing&#34;&gt;html : &lt;strong&gt;cashing&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;파일을 따로 만든후 저장해놓는것&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;how to use it?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;lt;link rel=&amp;ldquo;stylesheet&amp;rdquo; href=“파일이름&amp;rdquo;&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Sample Output&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+ * note
+ 
+ The container div, and sometimes content div, are almost always used to allow for more sophisticated CSS styling. The body tag is special in some ways. Browsers don&#39;t treat it like a normal div; its position and dimensions are tied to the browser window.
+
+But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.
+
+Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can&#39;t go on the outside of the body, allowing for content on the outside of a border.
+
+
+--&amp;gt;
+
+
+
+### cashing 
+---
+
+
+```html
+
+&amp;lt;!--
+
+* Description
+
+파일을 따로 만든후 저장해놓는것
+
+
+* how to use it? 
+
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=“파일이름&amp;quot;&amp;gt;
+
+
+* Sample Output
+
+--&amp;gt;
+
+
 &amp;lt;!doctype html&amp;gt;
 
 &amp;lt;html&amp;gt;
@@ -1061,25 +973,22 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;html-lt-form-gt&#34;&gt;html : &lt;strong&gt;&amp;lt;form&amp;gt;&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;lt-form-gt&#34;&gt;&amp;lt;form&amp;gt;&lt;/h3&gt;
 
 &lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The HTML &lt;code&gt;&amp;lt;form&amp;gt; tag&lt;/code&gt; is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; element.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Syntax&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;!--
+
+* Description
+
+The HTML `&amp;lt;form&amp;gt; tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `&amp;lt;form&amp;gt;` element.
+
+* Syntax
+
+--&amp;gt;
+
 &amp;lt;body&amp;gt;
   &amp;lt;form action=&amp;quot;&amp;quot; method=&amp;quot;get&amp;quot;&amp;gt;
     Company: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;company&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
@@ -9959,6 +9868,48 @@ console.log(name)  // 3. jj 함수가 실행된 뒤에는 함수안에 있는 na
 &lt;h3 id=&#34;question&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
+&lt;li&gt;sumDigits&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;sumDigits&amp;rdquo;. (&amp;ldquo;sumDigits&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
+
+&lt;p&gt;Given a number, &amp;ldquo;sumDigits&amp;rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &amp;ldquo;sumDigits&amp;rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let output = sumDigits(1148);
+console.log(output); // --&amp;gt; 14
+If the number is negative, the first digit should count as negative. (만약 숫자가 음수라면, 첫번째 자릿수는 음수로 고려되어야 합니다.)
+
+let output = sumDigits(-316);
+console.log(output); // --&amp;gt; 4
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;my-soultion&#34;&gt;My_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function sumDigits(num) {
+  let sum = 0;
+  let stringNumArr = num.toString().split(&#39;&#39;);
+
+  for (let i = 0; i &amp;lt; stringNumArr.length; i++) {
+    if (stringNumArr[0] === &#39;-&#39; &amp;amp;&amp;amp; i === 1) {
+      sum = sum - Number(stringNumArr[1]);
+    } else if (stringNumArr[i] !== &#39;-&#39;) {
+      sum = sum + Number(stringNumArr[i]);
+    }
+  }
+
+  return sum;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;question-1&#34;&gt;Question&lt;/h3&gt;
+
+&lt;ul&gt;
 &lt;li&gt;offLineMinimum&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -9973,7 +9924,7 @@ When finished, your program should return that new set with integers separated b
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion&#34;&gt;MY_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-1&#34;&gt;MY_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function offLineMinimum(strArr) {
 
@@ -10084,7 +10035,7 @@ function offLineMinimum(strArr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-1&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-2&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;range&lt;/li&gt;
@@ -10126,7 +10077,7 @@ range(10, 2); // =&amp;gt; []
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-2&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-3&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;longestName&lt;/li&gt;
@@ -10178,7 +10129,7 @@ if `strArr` is `[&amp;quot;coder&amp;quot;, &amp;quot;codec&amp;quot;]` then you
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-1&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-2&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10243,7 +10194,7 @@ console.log(hammingDistance([&amp;quot;coder&amp;quot;, &amp;quot;codec&amp;quot
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-3&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-4&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;getFullName&lt;/li&gt;
@@ -10253,7 +10204,7 @@ console.log(hammingDistance([&amp;quot;coder&amp;quot;, &amp;quot;codec&amp;quot
 &lt;p&gt;Write a function called &amp;lsquo;getFullName&amp;rsquo; that takes in an object which has this structure:&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-2&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-3&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getFullName(obj) {
@@ -10303,7 +10254,7 @@ function getFullName(obj) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-4&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-5&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;billTotal&lt;/li&gt;
@@ -10313,7 +10264,7 @@ function getFullName(obj) {
 &lt;p&gt;Write a function called billTotal that can be used to calculate the total to be paid at a restaurant &amp;ndash; including tip and tax &amp;ndash; given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-3&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-4&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10360,7 +10311,7 @@ billTotal(10.00); // =&amp;gt; 12.45
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-5&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-6&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;primeMover&lt;/li&gt;
@@ -10372,7 +10323,7 @@ billTotal(10.00); // =&amp;gt; 12.45
 &lt;p&gt;For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-4&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-5&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10394,7 +10345,7 @@ let primeMover = function(n) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-6&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-7&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;isOddWithoutModulo&lt;/li&gt;
@@ -10406,7 +10357,7 @@ let primeMover = function(n) {
 &lt;p&gt;Given a number, &amp;ldquo;isOddWithoutModulo&amp;rdquo; returns whether the passed in number is odd. (숫자가 주어졌을때, &amp;ldquo;isOddWithoutModulo&amp;rdquo; 함수는 주어진 숫자가 홀수인지를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-5&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-6&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // 2. it is used by Math.floor 
@@ -10441,7 +10392,7 @@ function isOddWithoutModulo(num) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-7&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-8&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;getStringLength&lt;/li&gt;
@@ -10455,7 +10406,7 @@ function isOddWithoutModulo(num) {
 &lt;p&gt;Do NOT use any native &amp;lsquo;length&amp;rsquo; methods. (- &amp;lsquo;length&amp;rsquo; 메소드를 사용하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-6&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-7&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getStringLength(string) {
@@ -10476,7 +10427,7 @@ function getStringLength(string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-8&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-9&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;getIndexOf&lt;/li&gt;
@@ -10488,7 +10439,7 @@ function getStringLength(string) {
 &lt;p&gt;Given a character and a string, &amp;ldquo;getIndexOf&amp;rdquo; returns the first position of the given character in the given string. (문자와 문자열이 주어졌을때, &amp;ldquo;getIndexOf&amp;rdquo; 함수는 주어진 문자열에서 주어진 문자가 나타나는 첫번째 위치를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-7&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-8&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function getIndexOf(char, str) {
 
@@ -10504,7 +10455,7 @@ function getStringLength(string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-9&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-10&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;calculateBillTotal&lt;/li&gt;
@@ -10519,7 +10470,7 @@ function getStringLength(string) {
 Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-8&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-9&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function calculateBillTotal(preTaxAndTipAmount) {
@@ -10545,7 +10496,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 &lt;li&gt;calculateBillTotal&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;question-10&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-11&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;convertObjectToArray3&lt;/li&gt;
@@ -10555,7 +10506,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 &lt;p&gt;Write a function called &amp;ldquo;convertObjectToList&amp;rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &amp;ldquo;convertObjectToList&amp;rdquo;를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-9&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-10&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function convertObjectToList(obj) {
   // your code here
@@ -10810,7 +10761,7 @@ unction firstCharacter (string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-11&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-12&#34;&gt;Question&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;dashInsert&lt;/li&gt;

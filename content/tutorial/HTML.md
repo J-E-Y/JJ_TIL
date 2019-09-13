@@ -10,141 +10,140 @@ toc: true
 type: docs
 ---
 
----
-##  html : **&lt;strong&gt;tag**
----
+![](/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png)
 
-* Description
 
->The HTML &lt;strong&gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. 
-
-* Note 
-
->what's the difference bewteen &lt;strong&gt; tag and &lt;b&gt; ?
-
->strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. 
-
->b tag :평상시대로 굵게 읽는다.
-
-* Syntax
-
-```
-<body>
-<p><strong>Emphasized text goes here</strong> but not here</p>
-</body>
-
-```
-* Sample Output
-
-```
-Emphasized text goes here but not here
-```
-
----
-## html : **&lt;h1&gt;tag**
+### &lt;strong&gt;
 ---
 
-* Description
+```js
 
->The HTML **&lt;h1&gt;tag** tag defines the highest level or most important heading in the HTML document. This tag is also commonly referred to as the **&lt;h1&gt;tag** element.
+/*
 
-* Syntax
+The HTML <strong> tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. 
+
+
+
+Note 
+
+what's the difference bewteen strong tag and b tag ?
+
+strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. 
+
+b tag :평상시대로 굵게 읽는다.
+
+*/
 
 ```
+
+
+### &lt;h1&gt;
+---
+
+```html
+
+<!--  
+
+The HTML <h1> tag defines the highest level or most important heading in the HTML document. This tag is also commonly referred to as the <h1> element.
+
+-->
+
+
+
+<!--  Syntax-->
+
+
 <body>
 <h1>Heading 1 goes here</h1>
 </body>
 
-```
-Sample Output
 
 ```
-Heading 1 goes here
-```
 
----
-## html : **&lt;br&gt;tag**
+
+
+
+### &lt;br&gt;
 ---
  
-* Description
+```html
 
-> The HTML &lt;br&gt;tag defines a line break within text in the HTML document. This tag is also commonly referred to as the <&lt;br&gt; element.
 
-* Syntax
+<!-- The HTML <br> tag defines a line break within text in the HTML document. This tag is also commonly referred to as the <br> element.-->
 
-```
+
+<!-- Syntax -->
+
+
 
 <body>
 <p>The paragraph starts here<br>
 and ends on the next line.</p>
 </body>
 
-```
-
-* Sample Output
 
 
 ```
-The paragraph starts here
-and ends on the next line.
 
-```
 
----
-## html : `&nbsp;`  (making space)
+
+### `&nbsp;`  (making space)
 ---
  
  
-* Description
+```js
 
->HTML will only display one space between words, no matter how many times you press the space bar. To force an extra space to show up, type `&nbsp;` in the area where you want to force the space.
+/*
+HTML will only display one space between words, no matter how many times you press the space bar. To force an extra space to show up, type `&nbsp;` in the area where you want to force the space.
 
+*/
+
+```
+
+### &lt;p&gt;
 ---
-## html : **&lt;p&gt;tag**
----
 
-* Description
 
->The HTML &lt;p&gt; tag defines a paragraph in the HTML document. This tag is also commonly referred to as the &lt;p&gt; element.
+```html 
 
+<!---
+The HTML <p> tag defines a paragraph in the HTML document. This tag is also commonly referred to as the <p> element.-->
 
 * syntax
 
-```
+
 <body>
 <p>The paragraph goes here.</p>
 </body>
 
-```
 
-* output
 
-```
-this 
 
-The paragraph goes here.
-
-this
 ```
 
 
 
 
----
-## html : **&lt;hr&gt;tag**
+
+### &lt;hr&gt;
 ---
 
-* Description
 
->The HTML &lt;hr/&gt; tag defines a thematic break between paragraphs in HTML5, and a horizontal rule in HTML 4.01. This tag is also commonly referred to as the &lt;hr/&gt; element.
+```html
+
+<!--
+
+The HTML <hr> tag defines a thematic break between paragraphs in HTML5, and a horizontal rule in HTML 4.01. This tag is also commonly referred to as the <hr> element.
 
 * Note
 
-> The HTML &lt;hr/&gt; element makes line bewteen two paragraphs.
+The HTML <hr> element makes line bewteen two paragraphs.
 
 * Syntax
 
-```
+-->
+
+
 <body>
 <p>This is the first paragraph.</p>
 <hr>
@@ -154,26 +153,30 @@ this
 ```
 
 
----
-## html : **&lt;div&gt;tag**
+
+### &lt;div&gt;
 ---
 
-* Description
 
-> The HTML &lt;p&gt; tag defines a generic container in an HTML document that is generally used to group elements. This tag is also commonly referred to as the &lt;p&gt; element.
+```html
+
+<!--
+
+The HTML <p> tag defines a generic container in an HTML document that is generally used to group elements. This tag is also commonly referred to as the <p> element.
 
 * Note
  
->The HTML &lt;p&gt; element is found within the <body> tag.
+The HTML <p> element is found within the <body> tag.
 The <div> tag is generally used to group elements together.
-&lt;p&gt;&lt;p&gt; :element is a block-level element.
 
-> The &lt;p&gt; element is a block-level element.
+<p> :element is a block-level element.
 
 
 * Syntax
 
-```
+
+-->
+
 <body>
 
 <div>
@@ -185,31 +188,33 @@ The <div> tag is generally used to group elements together.
 ```
 
 
+
+### &lt;span&gt;
 ---
-## html : **&lt;span&gt;tag**
----
+
+```html
+
+<!--
+
+`height 와 width 적용이 안된다.` 하지만 Disply 사용해서 적용할수 있다 
 
 
-> `height 와 width 적용이 안된다.` 하지만 Disply 사용해서 적용할수 있다 
+The HTML <span> tag defines a generic inline container in an HTML document. This tag is also commonly referred to as the <span> element.
 
-* Description
+Note
 
-> The HTML &lt;span&gt; tag defines a generic inline container in an HTML document. This tag is also commonly referred to as the <&lt;span&gt; element.
-
-* Note
-
-> &lt;span&gt; tag is is generally used for styling purposes when there is no other element to use.
-> &lt;span&gt; tag is a inline-level element
-> &lt;span&gt; tag does not inherently represent anything
+<span>  tag is is generally used for styling purposes when there is no other element to use.
+<span>  tag is a inline-level element
+<span> tag does not inherently represent anything
 
 
 Syntax
 
-```
+-->
+
 <body>
 <p><span>Span text goes here</span> and not here</p>
 </body>
-
 
 <body>
 <p><span class="red_text">Span text goes here</span> and not here</p>
@@ -217,25 +222,28 @@ Syntax
 
 ```
 
+
+### &lt;nav&gt;
 ---
-## html : **&lt;nav&gt;tag**
----
 
 
-* Description
+```html
 
-> The HTML &lt;nav&gt; tag is an HTML5 element that defines a section with navigation links in the HTML document. This tag is also commonly referred to as the &lt;nav&gt; element. It is used to define a block of navigation links, either within the current document or to other documents
+<!--
+
+The HTML <nav> tag is an HTML5 element that defines a section with navigation links in the HTML document. This tag is also commonly referred to as the <nav> element. It is used to define a block of navigation links, either within the current document or to other documents
 
 
 * Note
 
->The <nav> tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: &lt;header&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, &lt;nav&gt;, &lt;footer&gt;.
+ The <nav> tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: <header>, <main>, <article>, <section>, <aside>, <nav>, <footer>.
 
 
 * Syntax
 
+-->
 
-```
+
 
 <body>
 <nav>
@@ -251,25 +259,32 @@ Syntax
 
 
 
----
-## html : **&lt;ul&gt;tag** (부모태그)
+
+### &lt;ul&gt; (부모태그)
 ---
 
+
+```html
+
+<!--
 
 * Description
 
->The HTML &lt;ul&gt; tag defines an unordered list in the HTML document. This tag is also commonly referred to as the &lt;ul&gt; element.
+The HTML <ul> tag defines an unordered list in the HTML document. This tag is also commonly referred to as the <ul> element.
 
 * Note
 
-> The HTML &lt;ul&gt; element is found within the <body> tag.
-The &lt;ul&gt; tag is made up of <li> tags.
-Use the &lt;ul&gt; tag when the list items have no numerical ordering.
-You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.
+The HTML <ul> element is found within the <body> tag.
+The <ul> tag is made up of <li> tags.
+Use the <ul> tag when the list items have no numerical ordering.
+You can nest <ol>, <ul> and <ul>menu lists.
 
 * Syntax
 
-```
+
+-->
+
+
 <body>
 <ul>
   <li>First item</li>
@@ -278,30 +293,30 @@ You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.
 </ul>
 </body>
 
-```
 
-* Sample Output
 
 
 ```
-* First item
-* Second item
-* Third item
 
-```
 
+### &lt;li&gt;(부모태그)
 ---
-## html : **&lt;li&gt;tag** (부모태그)
----
+
+
+```html
+
+<!--
 
 * Description
 
->The HTML &lt;li&gt; tag defines a list item in &lt;ol&gt;, &lt;ul&gt; or &lt;menu&gt; in the HTML document. This tag is also commonly referred to as the &lt;li&gt; element.
+>The HTML <li> tag defines a list item in <ol>, <ul> or <menu> in the HTML document. This tag is also commonly referred to as the <li> element.
 
 
 * Syntax
 
-```
+-->
+
+
 <body>
 <ul>
   <li>First item</li>
@@ -312,9 +327,7 @@ You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.
 
 ```
 
-* Sample Output 1
 
-```
 <body>
 <ol>
   <li>First item</li>
@@ -323,12 +336,11 @@ You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.
 </ol>
 </body>
 
-```
 
 
 * Sample Output 2
 
-```
+
 <body>
 <menu type="toolbar">
   <li>
@@ -346,25 +358,37 @@ You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.
 </menu>
 </body>
 
-```
+<!--
 * Note
 
->The &lt;li&gt; tag is used within &lt;ol&gt;, &lt;ul&gt; or &lt;menu&gt;.
-You can nest &lt;ol, &lt;ul> and &lt;menu&gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
+The <li> tag is used within <ol>, <ul> or <menu>.
+You can nest <ol, <ul> and <menu> lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
 
+-->
+
+```
 
 ---
 ## html : **&lt;ol&gt;tag** 
 ---
 
 
+```html
+
+<!--
+
 * Description
 
->The HTML &lt;ol&gt; tag defines an ordered list in the HTML document. This tag is also commonly referred to as the &lt;ol&gt; element.
+>The HTML <ol> tag defines an ordered list in the HTML document. This tag is also commonly referred to as the <ol> element.
 
 * Syntax
 
+-->
+
 ```
+
+```html
+
 <body>
 <ol>
   <li>First item</li>
@@ -373,33 +397,40 @@ You can nest &lt;ol, &lt;ul> and &lt;menu&gt; lists. (자식태그) li 태그는
 </ol>
 </body>
 
-```
 
-* Sample Output
+<!--
 
- >1. First item
- >1. Second item
- >2. Third item
- 
- 
 * Note
 
->The &lt;ol&gt; tag is made up of &lt;li&gt; tags. 
->Use the &lt;ol&gt; tag when the list items have numeric, meaningful ordering.
->You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;menu&gt; lists.
+The <ol> tag is made up of <li> tags. 
+Use the <ol> tag when the list items have numeric, meaningful ordering.
+You can nest <ol>, <ul> and <menu> lists.
 
+-->
 
+```
+
+### container 
 ---
-## html : **container** 
----
 
+
+```html
+
+<!--
 
 * Description
 
 In HTML, the container is the area enclosed by the beginning and ending tags. For example < HTML > encloses an entire document while other tags may enclose a single word, paragraph, or other elements. In HTML code, all container must have a start and stop tag to close the container. Without a stop tag the start tag will apply to the entire document.
  
 
+-->
+
+
 ```html
+
+
+
+
 <html>
   <head>
     ...
@@ -410,37 +441,49 @@ In HTML, the container is the area enclosed by the beginning and ending tags. Fo
     </div>
   </body>
 </html>
+
+
 ```
 
- 
+```html
+
+<!--
+
  * note
  
- >The container div, and sometimes content div, are almost always used to allow for more sophisticated CSS styling. The body tag is special in some ways. Browsers don't treat it like a normal div; its position and dimensions are tied to the browser window.
+ The container div, and sometimes content div, are almost always used to allow for more sophisticated CSS styling. The body tag is special in some ways. Browsers don't treat it like a normal div; its position and dimensions are tied to the browser window.
 
->But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.
+But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.
 
->Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can't go on the outside of the body, allowing for content on the outside of a border.
+Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can't go on the outside of the body, allowing for content on the outside of a border.
 
 
+-->
+
+
+
+### cashing 
 ---
-## html : **cashing** 
----
 
+
+```html
+
+<!--
 
 * Description
 
-> 파일을 따로 만든후 저장해놓는것
+파일을 따로 만든후 저장해놓는것
 
 
 * how to use it? 
 
-> &lt;link rel="stylesheet" href=“파일이름"&gt;
+<link rel="stylesheet" href=“파일이름">
 
 
 * Sample Output
 
+-->
 
-```html
 
 <!doctype html>
 
@@ -452,21 +495,22 @@ In HTML, the container is the area enclosed by the beginning and ending tags. Fo
 ```
 
 
-
+### &lt;form&gt;
 ---
-##  html : **&lt;form&gt;**
----
-
-
-* Description
-
->The HTML `<form> tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `<form>` element.
-
-* Syntax
-
 
 
 ```html
+
+
+<!--
+
+* Description
+
+The HTML `<form> tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `<form>` element.
+
+* Syntax
+
+-->
 
 <body>
   <form action="" method="get">
@@ -477,6 +521,7 @@ In HTML, the container is the area enclosed by the beginning and ending tags. Fo
 </body>
 
 ```
+
 Sample Output
 
 ![](/tutorial/HTML_files/Screen Shot 2019-06-01 at 9.40.42 PM.png)

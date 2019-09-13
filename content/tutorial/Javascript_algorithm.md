@@ -16,6 +16,57 @@ type: docs
 --------------------------------------------------------------------
 
 
+### Question
+
+
+* sumDigits
+
+
+> Write a function called "sumDigits". ("sumDigits" 함수를 작성하세요.)
+
+>Given a number, "sumDigits" returns the sum of all its digits. (숫자가 주어졌을때, "sumDigits" 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)
+
+```js
+
+let output = sumDigits(1148);
+console.log(output); // --> 14
+If the number is negative, the first digit should count as negative. (만약 숫자가 음수라면, 첫번째 자릿수는 음수로 고려되어야 합니다.)
+
+let output = sumDigits(-316);
+console.log(output); // --> 4
+
+```
+
+
+
+### My_Soultion
+
+
+```js
+
+function sumDigits(num) {
+  let sum = 0;
+  let stringNumArr = num.toString().split('');
+
+  for (let i = 0; i < stringNumArr.length; i++) {
+    if (stringNumArr[0] === '-' && i === 1) {
+      sum = sum - Number(stringNumArr[1]);
+    } else if (stringNumArr[i] !== '-') {
+      sum = sum + Number(stringNumArr[i]);
+    }
+  }
+
+  return sum;
+}
+
+```
+
+
+
+
+
+
+
 
 ### Question
 
@@ -150,6 +201,9 @@ function offLineMinimum(strArr) {
 
 
 ```
+
+
+
 
 
 

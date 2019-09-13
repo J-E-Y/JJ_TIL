@@ -53,12 +53,7 @@ Css: BoxModel { font-size:20px; text-align:center; text-decoration:none; : 밑�
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/html/</guid>
-      <description>html : &amp;lt;strong&amp;gt;tag  Description   The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser.
-  Note   what&amp;rsquo;s the difference bewteen &amp;lt;strong&amp;gt; tag and &amp;lt;b&amp;gt; ?
-strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다.
-b tag :평상시대로 굵게 읽는다.
-  Syntax
-&amp;lt;body&amp;gt; &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Emphasized text goes here&amp;lt;/strong&amp;gt; but not here&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt;  Sample Output</description>
+      <description>&amp;lt;strong&amp;gt; /* The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. Note what&#39;s the difference bewteen strong tag and b tag ? strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. b tag :평상시대로 굵게 읽는다. */  &amp;lt;h1&amp;gt; &amp;lt;!-- The HTML &amp;lt;h1&amp;gt; tag defines the highest level or most important heading in the HTML document.</description>
     </item>
     
     <item>
@@ -136,8 +131,9 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Question  offLineMinimum   Have the function offLineMinimum(strArr) take the strArr parameter being passed which will be an array of integers ranging from 1&amp;hellip;n and the letter &amp;ldquo;E&amp;rdquo; and return the correct subset based on the following rules.
- The input will be in the following format: `[&amp;quot;I&amp;quot;,&amp;quot;I&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;I&amp;quot;,...,&amp;quot;E&amp;quot;,...,&amp;quot;I&amp;quot;]` where the I&#39;s stand for integers and the E means take out the smallest integer currently in the whole set. When finished, your program should return that new set with integers separated by commas.</description>
+      <description>Question  sumDigits   Write a function called &amp;ldquo;sumDigits&amp;rdquo;. (&amp;ldquo;sumDigits&amp;rdquo; 함수를 작성하세요.)
+Given a number, &amp;ldquo;sumDigits&amp;rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &amp;ldquo;sumDigits&amp;rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)
+ let output = sumDigits(1148); console.log(output); // --&amp;gt; 14 If the number is negative, the first digit should count as negative. (만약 숫자가 음수라면, 첫번째 자릿수는 음수로 고려되어야 합니다.) let output = sumDigits(-316); console.log(output); // --&amp;gt; 4  My_Soultion function sumDigits(num) { let sum = 0; let stringNumArr = num.</description>
     </item>
     
   </channel>

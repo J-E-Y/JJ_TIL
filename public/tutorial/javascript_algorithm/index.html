@@ -27,8 +27,9 @@
   
     
   
-  <meta name="description" content="Question  offLineMinimum   Have the function offLineMinimum(strArr) take the strArr parameter being passed which will be an array of integers ranging from 1&hellip;n and the letter &ldquo;E&rdquo; and return the correct subset based on the following rules.
- The input will be in the following format: `[&quot;I&quot;,&quot;I&quot;,&quot;E&quot;,&quot;I&quot;,...,&quot;E&quot;,...,&quot;I&quot;]` where the I&#39;s stand for integers and the E means take out the smallest integer currently in the whole set. When finished, your program should return that new set with integers separated by commas.">
+  <meta name="description" content="Question  sumDigits   Write a function called &ldquo;sumDigits&rdquo;. (&ldquo;sumDigits&rdquo; 함수를 작성하세요.)
+Given a number, &ldquo;sumDigits&rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &ldquo;sumDigits&rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)
+ let output = sumDigits(1148); console.log(output); // --&gt; 14 If the number is negative, the first digit should count as negative. (만약 숫자가 음수라면, 첫번째 자릿수는 음수로 고려되어야 합니다.) let output = sumDigits(-316); console.log(output); // --&gt; 4  My_Soultion function sumDigits(num) { let sum = 0; let stringNumArr = num.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_algorithm/">
@@ -117,8 +118,9 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_algorithm/">
   <meta property="og:title" content="JS algorithm | Home">
-  <meta property="og:description" content="Question  offLineMinimum   Have the function offLineMinimum(strArr) take the strArr parameter being passed which will be an array of integers ranging from 1&hellip;n and the letter &ldquo;E&rdquo; and return the correct subset based on the following rules.
- The input will be in the following format: `[&quot;I&quot;,&quot;I&quot;,&quot;E&quot;,&quot;I&quot;,...,&quot;E&quot;,...,&quot;I&quot;]` where the I&#39;s stand for integers and the E means take out the smallest integer currently in the whole set. When finished, your program should return that new set with integers separated by commas."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Question  sumDigits   Write a function called &ldquo;sumDigits&rdquo;. (&ldquo;sumDigits&rdquo; 함수를 작성하세요.)
+Given a number, &ldquo;sumDigits&rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &ldquo;sumDigits&rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)
+ let output = sumDigits(1148); console.log(output); // --&gt; 14 If the number is negative, the first digit should count as negative. (만약 숫자가 음수라면, 첫번째 자릿수는 음수로 고려되어야 합니다.) let output = sumDigits(-316); console.log(output); // --&gt; 4  My_Soultion function sumDigits(num) { let sum = 0; let stringNumArr = num."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   
@@ -374,39 +376,41 @@
 <li>
 <ul>
 <li><a href="#question">Question</a></li>
-<li><a href="#my-soultion">MY_Soultion</a></li>
-<li><a href="#other-soultion">other_Soultion</a></li>
+<li><a href="#my-soultion">My_Soultion</a></li>
 <li><a href="#question-1">Question</a></li>
+<li><a href="#my-soultion-1">MY_Soultion</a></li>
+<li><a href="#other-soultion">other_Soultion</a></li>
 <li><a href="#question-2">Question</a></li>
-<li><a href="#my-soution">My_Soution</a></li>
-<li><a href="#my-soultion-1">My_Soultion</a></li>
-<li><a href="#other-soultion-1">Other_Soultion</a></li>
 <li><a href="#question-3">Question</a></li>
+<li><a href="#my-soution">My_Soution</a></li>
 <li><a href="#my-soultion-2">My_Soultion</a></li>
-<li><a href="#other-soultion-2">Other_Soultion</a></li>
+<li><a href="#other-soultion-1">Other_Soultion</a></li>
 <li><a href="#question-4">Question</a></li>
 <li><a href="#my-soultion-3">My_Soultion</a></li>
-<li><a href="#other-soultion-3">Other_Soultion</a></li>
+<li><a href="#other-soultion-2">Other_Soultion</a></li>
 <li><a href="#question-5">Question</a></li>
 <li><a href="#my-soultion-4">My_Soultion</a></li>
+<li><a href="#other-soultion-3">Other_Soultion</a></li>
 <li><a href="#question-6">Question</a></li>
 <li><a href="#my-soultion-5">My_Soultion</a></li>
-<li><a href="#others-soultion">Others_Soultion</a></li>
 <li><a href="#question-7">Question</a></li>
 <li><a href="#my-soultion-6">My_Soultion</a></li>
+<li><a href="#others-soultion">Others_Soultion</a></li>
 <li><a href="#question-8">Question</a></li>
 <li><a href="#my-soultion-7">My_Soultion</a></li>
 <li><a href="#question-9">Question</a></li>
 <li><a href="#my-soultion-8">My_Soultion</a></li>
 <li><a href="#question-10">Question</a></li>
 <li><a href="#my-soultion-9">My_Soultion</a></li>
+<li><a href="#question-11">Question</a></li>
+<li><a href="#my-soultion-10">My_Soultion</a></li>
 <li><a href="#isodd">isOdd</a></li>
 </ul></li>
 <li><a href="#onlyevenelements">onlyEvenElements</a></li>
 <li><a href="#removeoddvalues">removeOddValues</a></li>
 <li><a href="#firstcharacter">firstCharacter</a>
 <ul>
-<li><a href="#question-11">Question</a></li>
+<li><a href="#question-12">Question</a></li>
 </ul></li>
 <li><a href="#longestword">longestWord</a></li>
 <li><a href="#convertarraytoobject1">convertArrayToObject1</a></li>
@@ -442,6 +446,48 @@
 <h3 id="question">Question</h3>
 
 <ul>
+<li>sumDigits</li>
+</ul>
+
+<blockquote>
+<p>Write a function called &ldquo;sumDigits&rdquo;. (&ldquo;sumDigits&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a number, &ldquo;sumDigits&rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &ldquo;sumDigits&rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)</p>
+</blockquote>
+
+<pre><code class="language-js">
+let output = sumDigits(1148);
+console.log(output); // --&gt; 14
+If the number is negative, the first digit should count as negative. (만약 숫자가 음수라면, 첫번째 자릿수는 음수로 고려되어야 합니다.)
+
+let output = sumDigits(-316);
+console.log(output); // --&gt; 4
+
+</code></pre>
+
+<h3 id="my-soultion">My_Soultion</h3>
+
+<pre><code class="language-js">
+function sumDigits(num) {
+  let sum = 0;
+  let stringNumArr = num.toString().split('');
+
+  for (let i = 0; i &lt; stringNumArr.length; i++) {
+    if (stringNumArr[0] === '-' &amp;&amp; i === 1) {
+      sum = sum - Number(stringNumArr[1]);
+    } else if (stringNumArr[i] !== '-') {
+      sum = sum + Number(stringNumArr[i]);
+    }
+  }
+
+  return sum;
+}
+
+</code></pre>
+
+<h3 id="question-1">Question</h3>
+
+<ul>
 <li>offLineMinimum</li>
 </ul>
 
@@ -456,7 +502,7 @@ When finished, your program should return that new set with integers separated b
 
 </code></pre>
 
-<h3 id="my-soultion">MY_Soultion</h3>
+<h3 id="my-soultion-1">MY_Soultion</h3>
 
 <pre><code class="language-js">function offLineMinimum(strArr) {
 
@@ -567,7 +613,7 @@ function offLineMinimum(strArr) {
 
 </code></pre>
 
-<h3 id="question-1">Question</h3>
+<h3 id="question-2">Question</h3>
 
 <ul>
 <li>range</li>
@@ -609,7 +655,7 @@ range(10, 2); // =&gt; []
 
 </code></pre>
 
-<h3 id="question-2">Question</h3>
+<h3 id="question-3">Question</h3>
 
 <ul>
 <li>longestName</li>
@@ -661,7 +707,7 @@ if `strArr` is `[&quot;coder&quot;, &quot;codec&quot;]` then your program should
 
 </code></pre>
 
-<h3 id="my-soultion-1">My_Soultion</h3>
+<h3 id="my-soultion-2">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -726,7 +772,7 @@ console.log(hammingDistance([&quot;coder&quot;, &quot;codec&quot;]))
 
 </code></pre>
 
-<h3 id="question-3">Question</h3>
+<h3 id="question-4">Question</h3>
 
 <ul>
 <li>getFullName</li>
@@ -736,7 +782,7 @@ console.log(hammingDistance([&quot;coder&quot;, &quot;codec&quot;]))
 <p>Write a function called &lsquo;getFullName&rsquo; that takes in an object which has this structure:</p>
 </blockquote>
 
-<h3 id="my-soultion-2">My_Soultion</h3>
+<h3 id="my-soultion-3">My_Soultion</h3>
 
 <pre><code class="language-js">
 function getFullName(obj) {
@@ -786,7 +832,7 @@ function getFullName(obj) {
 
 </code></pre>
 
-<h3 id="question-4">Question</h3>
+<h3 id="question-5">Question</h3>
 
 <ul>
 <li>billTotal</li>
@@ -796,7 +842,7 @@ function getFullName(obj) {
 <p>Write a function called billTotal that can be used to calculate the total to be paid at a restaurant &ndash; including tip and tax &ndash; given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!</p>
 </blockquote>
 
-<h3 id="my-soultion-3">My_Soultion</h3>
+<h3 id="my-soultion-4">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -843,7 +889,7 @@ billTotal(10.00); // =&gt; 12.45
 
 </code></pre>
 
-<h3 id="question-5">Question</h3>
+<h3 id="question-6">Question</h3>
 
 <ul>
 <li>primeMover</li>
@@ -855,7 +901,7 @@ billTotal(10.00); // =&gt; 12.45
 <p>For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-4">My_Soultion</h3>
+<h3 id="my-soultion-5">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -877,7 +923,7 @@ let primeMover = function(n) {
 
 </code></pre>
 
-<h3 id="question-6">Question</h3>
+<h3 id="question-7">Question</h3>
 
 <ul>
 <li>isOddWithoutModulo</li>
@@ -889,7 +935,7 @@ let primeMover = function(n) {
 <p>Given a number, &ldquo;isOddWithoutModulo&rdquo; returns whether the passed in number is odd. (숫자가 주어졌을때, &ldquo;isOddWithoutModulo&rdquo; 함수는 주어진 숫자가 홀수인지를 반환합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-5">My_Soultion</h3>
+<h3 id="my-soultion-6">My_Soultion</h3>
 
 <pre><code class="language-js">
 // 2. it is used by Math.floor 
@@ -924,7 +970,7 @@ function isOddWithoutModulo(num) {
 
 </code></pre>
 
-<h3 id="question-7">Question</h3>
+<h3 id="question-8">Question</h3>
 
 <ul>
 <li>getStringLength</li>
@@ -938,7 +984,7 @@ function isOddWithoutModulo(num) {
 <p>Do NOT use any native &lsquo;length&rsquo; methods. (- &lsquo;length&rsquo; 메소드를 사용하지 마세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-6">My_Soultion</h3>
+<h3 id="my-soultion-7">My_Soultion</h3>
 
 <pre><code class="language-js">
 function getStringLength(string) {
@@ -959,7 +1005,7 @@ function getStringLength(string) {
 
 </code></pre>
 
-<h3 id="question-8">Question</h3>
+<h3 id="question-9">Question</h3>
 
 <ul>
 <li>getIndexOf</li>
@@ -971,7 +1017,7 @@ function getStringLength(string) {
 <p>Given a character and a string, &ldquo;getIndexOf&rdquo; returns the first position of the given character in the given string. (문자와 문자열이 주어졌을때, &ldquo;getIndexOf&rdquo; 함수는 주어진 문자열에서 주어진 문자가 나타나는 첫번째 위치를 반환합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-7">My_Soultion</h3>
+<h3 id="my-soultion-8">My_Soultion</h3>
 
 <pre><code class="language-js">function getIndexOf(char, str) {
 
@@ -987,7 +1033,7 @@ function getStringLength(string) {
 
 </code></pre>
 
-<h3 id="question-9">Question</h3>
+<h3 id="question-10">Question</h3>
 
 <ul>
 <li>calculateBillTotal</li>
@@ -1002,7 +1048,7 @@ function getStringLength(string) {
 Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-8">My_Soultion</h3>
+<h3 id="my-soultion-9">My_Soultion</h3>
 
 <pre><code class="language-js">
 function calculateBillTotal(preTaxAndTipAmount) {
@@ -1028,7 +1074,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 <li>calculateBillTotal</li>
 </ul>
 
-<h3 id="question-10">Question</h3>
+<h3 id="question-11">Question</h3>
 
 <ul>
 <li>convertObjectToArray3</li>
@@ -1038,7 +1084,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 <p>Write a function called &ldquo;convertObjectToList&rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &ldquo;convertObjectToList&rdquo;를 작성하세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-9">My_Soultion</h3>
+<h3 id="my-soultion-10">My_Soultion</h3>
 
 <pre><code class="language-js">function convertObjectToList(obj) {
   // your code here
@@ -1293,7 +1339,7 @@ unction firstCharacter (string) {
 
 </code></pre>
 
-<h3 id="question-11">Question</h3>
+<h3 id="question-12">Question</h3>
 
 <ul>
 <li>dashInsert</li>
