@@ -367,7 +367,7 @@ You can nest <ol, <ul> and <menu> lists. (자식태그) li 태그는 반드시 �
 ```
 
 ---
-## html : **&lt;ol&gt;tag** 
+## ol
 ---
 
 
@@ -409,7 +409,46 @@ You can nest <ol>, <ul> and <menu> lists.
 
 
 
-## container 
+
+## &lt;form&gt;
+---
+
+
+```html
+
+
+<!--
+
+* Description
+
+The HTML `<form> tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `<form>` element.
+
+* Syntax
+
+-->
+
+<body>
+  <form action="" method="get">
+    Company: <input type="text" name="company"><br>
+    Address: <input type="text" name="address"><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+
+```
+
+Sample Output
+
+![](/tutorial/HTML_files/Screen Shot 2019-06-01 at 9.40.42 PM.png)
+
+
+
+
+
+
+
+## &lt;container&gt;
 ---
 
 
@@ -490,39 +529,5 @@ Plus, content, like a copyright notice for example, can go on the outside of the
 <link rel="stylesheet" href="style.css">
 
 ```
-
-
-
-## &lt;form&gt;
----
-
-
-```html
-
-
-<!--
-
-* Description
-
-The HTML `<form> tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `<form>` element.
-
-* Syntax
-
--->
-
-<body>
-  <form action="" method="get">
-    Company: <input type="text" name="company"><br>
-    Address: <input type="text" name="address"><br>
-    <input type="submit" value="Submit">
-  </form>
-</body>
-
-
-```
-
-Sample Output
-
-![](/tutorial/HTML_files/Screen Shot 2019-06-01 at 9.40.42 PM.png)
 
 

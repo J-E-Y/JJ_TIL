@@ -853,7 +853,7 @@ You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;html-lt-ol-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;ol&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;ol&#34;&gt;ol&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -892,7 +892,38 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;container&#34;&gt;container&lt;/h2&gt;
+&lt;h2 id=&#34;lt-form-gt&#34;&gt;&amp;lt;form&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;!--
+
+* Description
+
+The HTML `&amp;lt;form&amp;gt; tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `&amp;lt;form&amp;gt;` element.
+
+* Syntax
+
+--&amp;gt;
+
+&amp;lt;body&amp;gt;
+  &amp;lt;form action=&amp;quot;&amp;quot; method=&amp;quot;get&amp;quot;&amp;gt;
+    Company: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;company&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+    Address: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;address&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+    &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Submit&amp;quot;&amp;gt;
+  &amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sample Output&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-06-01 at 9.40.42 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lt-container-gt&#34;&gt;&amp;lt;container&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -968,37 +999,6 @@ Plus, content, like a copyright notice for example, can go on the outside of the
 &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;style.css&amp;quot;&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-form-gt&#34;&gt;&amp;lt;form&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-
-&amp;lt;!--
-
-* Description
-
-The HTML `&amp;lt;form&amp;gt; tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `&amp;lt;form&amp;gt;` element.
-
-* Syntax
-
---&amp;gt;
-
-&amp;lt;body&amp;gt;
-  &amp;lt;form action=&amp;quot;&amp;quot; method=&amp;quot;get&amp;quot;&amp;gt;
-    Company: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;company&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
-    Address: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;address&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
-    &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Submit&amp;quot;&amp;gt;
-  &amp;lt;/form&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Sample Output&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-06-01 at 9.40.42 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
