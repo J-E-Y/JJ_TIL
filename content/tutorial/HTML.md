@@ -260,7 +260,7 @@ The HTML <nav> tag is an HTML5 element that defines a section with navigation li
 
 
 
-## &lt;ul&gt; (부모태그)
+## &lt;ul&gt;
 ---
 
 
@@ -270,6 +270,7 @@ The HTML <nav> tag is an HTML5 element that defines a section with navigation li
 
 * Description
 
+(부모태그)
 The HTML <ul> tag defines an unordered list in the HTML document. This tag is also commonly referred to as the <ul> element.
 
 * Note
@@ -297,7 +298,7 @@ You can nest <ol>, <ul> and <ul>menu lists.
 ```
 
 
-## &lt;li&gt;(부모태그)
+## &lt;li&gt;
 ---
 
 
@@ -307,7 +308,9 @@ You can nest <ol>, <ul> and <ul>menu lists.
 
 * Description
 
->The HTML <li> tag defines a list item in <ol>, <ul> or <menu> in the HTML document. This tag is also commonly referred to as the <li> element.
+
+(부모태그)
+The HTML <li> tag defines a list item in <ol>, <ul> or <menu> in the HTML document. This tag is also commonly referred to as the <li> element.
 
 
 * Syntax
@@ -367,7 +370,7 @@ You can nest <ol, <ul> and <menu> lists. (자식태그) li 태그는 반드시 �
 ```
 
 ---
-## ol
+## &lt;ol&gt;
 ---
 
 
@@ -376,8 +379,8 @@ You can nest <ol, <ul> and <menu> lists. (자식태그) li 태그는 반드시 �
 <!--
 
 * Description
-
->The HTML <ol> tag defines an ordered list in the HTML document. This tag is also commonly referred to as the <ol> element.
+(자식태그)
+The HTML <ol> tag defines an ordered list in the HTML document. This tag is also commonly referred to as the <ol> element.
 
 * Syntax
 

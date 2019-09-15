@@ -98,33 +98,33 @@
       <guid>/tutorial/css/</guid>
       <description>
 
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-15 at 5.21.03 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lt-style-gt&#34;&gt;&amp;lt;style&amp;gt;&lt;/h2&gt;
+
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;css-lt-style-gt-tag&#34;&gt;Css: &lt;strong&gt;&amp;lt;style&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+/*syntax*/
 
-&lt;hr /&gt;
+&amp;lt;style&amp;gt;
 
-&lt;ul&gt;
-&lt;li&gt;Syntax&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;a {
+a {
   color:red
   }
+
+&amp;lt;/style&amp;gt;
+
+
+
+&amp;lt;dd&amp;gt;a :  selector(선택자)&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;{Color:red}; : declaration (선언)&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;{Color} :  property (속성)&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;{Color:red} : property value (속성값)&amp;lt;/dd&amp;gt;
+
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Note&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;dd&gt;a :  selector(선택자)&lt;/dd&gt;
-&lt;dd&gt;{Color:red}; : declaration (선언)&lt;/dd&gt;
-&lt;dd&gt;{Color} :  property (속성)&lt;/dd&gt;
-&lt;dd&gt;{Color:red} : property value (속성값)&lt;/dd&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;css-boxmodel&#34;&gt;Css: &lt;strong&gt;BoxModel&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;boxmodel&#34;&gt;BoxModel&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -146,17 +146,13 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;css-wrapper&#34;&gt;Css: &lt;strong&gt;wrapper&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;wrapper&#34;&gt;wrapper&lt;/h2&gt;
 
 &lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Most basic example&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+/* Most basic example */ 
+
 #wrapper {
     width: 500px;
     margin: 0 auto;
@@ -169,27 +165,27 @@ Display:inline; : 부분화면을 이용해라 (inline element)
         Piece of text inside a 500px width div centered on the page
     &amp;lt;/div&amp;gt;
 &amp;lt;/body&amp;gt;
+
+&amp;lt;!-- * How the principle works
+
+Create your wrapper and assign it a certain width. Then apply an automatic horizontal margin to it by using `margin: 0 auto;` or `margin-left: auto;` `margin-right: auto;.` The automatic margins make sure your element is centered.
+--&amp;gt;
+
+
+
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;How the principle works&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Create your wrapper and assign it a certain width. Then apply an automatic horizontal margin to it by using &lt;code&gt;margin: 0 auto;&lt;/code&gt; or &lt;code&gt;margin-left: auto;&lt;/code&gt; &lt;code&gt;margin-right: auto;.&lt;/code&gt; The automatic margins make sure your element is centered.&lt;/p&gt;
+&lt;h2 id=&#34;media-queries&#34;&gt;media queries&lt;/h2&gt;
 
 &lt;hr /&gt;
-
-&lt;h2 id=&#34;css-media-queries&#34;&gt;Css: &lt;strong&gt;@media queries&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;@media(max-width:800px) :  screen width &amp;lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;@media(min-width:800px)  : screen width  &amp;gt; 800px스크린이 800px 보다 클때 명령을 내린다.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+/* @media(max-width:800px) :  screen width &amp;lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.
+
+@media(min-width:800px)  : screen width  &amp;gt; 800px스크린이 800px 보다 클때 명령을 내린다.
+*/
+
+
     @media(max-width:800px) {
     p {
         font-size: 1px
@@ -201,56 +197,56 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;css-grid-template-columns&#34;&gt;Css: &lt;strong&gt;grid-template-columns&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;grid-template-columns&#34;&gt;grid-template-columns&lt;/h2&gt;
 
 &lt;hr /&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Defines the columns of a grid container. You can specify the width of a column by using a keyword (like auto) or a length (like 10px). The number of columns is determined by the number of values defined in the space-separated list.&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;grid-template-columns: none;&lt;/li&gt;
-&lt;/ul&gt;
+&amp;lt;style&amp;gt; 
 
-&lt;blockquote&gt;
-&lt;p&gt;No columns are defined, so you only have one.&lt;/p&gt;
-&lt;/blockquote&gt;
+
+a { grid-template-columns: none; } 
+
+&amp;lt;/style&amp;gt;
+
+
+/*No columns are defined, so you only have one.*/
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/test1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;grid-template-columns: auto auto auto;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+&amp;lt;style&amp;gt;
+a {grid-template-columns: auto auto auto;}
+&amp;lt;/style&amp;gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;You can use the keyword auto so that each column resizes itself automatically.
-&lt;img src=&#34;/tutorial/CSS_files/test2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+/*You can use the keyword auto so that each column resizes itself automatically.*/
 
-&lt;ul&gt;
-&lt;li&gt;grid-template-columns: 80px auto 1rem;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;You can mix the units.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/test2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;&amp;lt;style&amp;gt;
+a {grid-template-columns: 80px auto 1rem; }
+&amp;lt;/style&amp;gt;
+
+/*You can mix the units.
+*/
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/test3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;grid-template-columns: 40px 1fr 2fr;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;&amp;lt;style&amp;gt;
+a {grid-template-columns: 40px 1fr 2fr; }
+&amp;lt;/style&amp;gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;You can use the fr flex unit to distribute the remaining space across all flex columns.&lt;/p&gt;
-&lt;/blockquote&gt;
+/*You can use the fr flex unit to distribute the remaining space across all flex columns.
+*/
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/test4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
@@ -748,7 +744,7 @@ The HTML &amp;lt;nav&amp;gt; tag is an HTML5 element that defines a section with
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;lt-ul-gt-부모태그&#34;&gt;&amp;lt;ul&amp;gt; (부모태그)&lt;/h2&gt;
+&lt;h2 id=&#34;lt-ul-gt&#34;&gt;&amp;lt;ul&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -757,6 +753,7 @@ The HTML &amp;lt;nav&amp;gt; tag is an HTML5 element that defines a section with
 
 * Description
 
+(부모태그)
 The HTML &amp;lt;ul&amp;gt; tag defines an unordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ul&amp;gt; element.
 
 * Note
@@ -783,7 +780,7 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu l
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;lt-li-gt-부모태그&#34;&gt;&amp;lt;li&amp;gt;(부모태그)&lt;/h2&gt;
+&lt;h2 id=&#34;lt-li-gt&#34;&gt;&amp;lt;li&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -792,7 +789,9 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu l
 
 * Description
 
-&amp;gt;The HTML &amp;lt;li&amp;gt; tag defines a list item in &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt; in the HTML document. This tag is also commonly referred to as the &amp;lt;li&amp;gt; element.
+
+(부모태그)
+The HTML &amp;lt;li&amp;gt; tag defines a list item in &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt; in the HTML document. This tag is also commonly referred to as the &amp;lt;li&amp;gt; element.
 
 
 * Syntax
@@ -853,7 +852,7 @@ You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;ol&#34;&gt;ol&lt;/h2&gt;
+&lt;h2 id=&#34;lt-ol-gt&#34;&gt;&amp;lt;ol&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -861,8 +860,8 @@ You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자
 &amp;lt;!--
 
 * Description
-
-&amp;gt;The HTML &amp;lt;ol&amp;gt; tag defines an ordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ol&amp;gt; element.
+(자식태그)
+The HTML &amp;lt;ol&amp;gt; tag defines an ordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ol&amp;gt; element.
 
 * Syntax
 

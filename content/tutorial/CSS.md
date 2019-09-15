@@ -10,28 +10,40 @@ toc: true
 type: docs
 ---
 
----
-##  Css: **&lt;style&gt;tag**
----
 
-* Syntax
+
+![](/tutorial/CSS_files/Screen Shot 2019-09-15 at 5.21.03 PM.png)
+
+
+## &lt;style&gt; 
+---
 
 ```css
+
+/*syntax*/
+
+<style>
+
 a {
   color:red
   }
-```
 
-* Note
+</style>
+
+
 
 <dd>a :  selector(선택자)</dd>
 <dd>{Color:red}; : declaration (선언)</dd>
 <dd>{Color} :  property (속성)</dd>
 <dd>{Color:red} : property value (속성값)</dd>
 
+```
 
----
-##  Css: **BoxModel**
+
+
+
+
+## BoxModel
 ---
 
 ```css
@@ -54,15 +66,17 @@ Display:inline; : 부분화면을 이용해라 (inline element)
 ```
 
 
+
+## wrapper
 ---
-## Css: **wrapper** 
----
 
 
 
-* Most basic example 
+
 
 ```css
+
+/* Most basic example */ 
 
 #wrapper {
     width: 500px;
@@ -77,25 +91,33 @@ Display:inline; : 부분화면을 이용해라 (inline element)
         Piece of text inside a 500px width div centered on the page
     </div>
 </body>
-```
 
-* How the principle works
+<!-- * How the principle works
 
 Create your wrapper and assign it a certain width. Then apply an automatic horizontal margin to it by using `margin: 0 auto;` or `margin-left: auto;` `margin-right: auto;.` The automatic margins make sure your element is centered.
+-->
 
 
 
+```
+
+
+
+
+
+## media queries
 ---
-##  Css: **@media queries**
----
 
 
-* @media(max-width:800px) :  screen width < 800px 스크린이 800px 보다 작을때 명령을 내린다.
-
-* @media(min-width:800px)  : screen width  > 800px스크린이 800px 보다 클때 명령을 내린다.
 
 
 ```css
+
+/* @media(max-width:800px) :  screen width < 800px 스크린이 800px 보다 작을때 명령을 내린다.
+
+@media(min-width:800px)  : screen width  > 800px스크린이 800px 보다 클때 명령을 내린다.
+*/
+
 
     @media(max-width:800px) {
     p {
@@ -108,37 +130,63 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 
 ```
 
+
+## grid-template-columns
 ---
-##  Css: **grid-template-columns**
----
 
-
-* Description
-
-> Defines the columns of a grid container. You can specify the width of a column by using a keyword (like auto) or a length (like 10px). The number of columns is determined by the number of values defined in the space-separated list.
+```css
 
 
 
-* grid-template-columns: none;
+<style> 
 
->No columns are defined, so you only have one.
+
+a { grid-template-columns: none; } 
+
+</style>
+
+
+/*No columns are defined, so you only have one.*/
+
+```
 
 ![](/tutorial/HTML_files/test1.png)
 
-* grid-template-columns: auto auto auto;
 
->You can use the keyword auto so that each column resizes itself automatically.
+
+```css
+
+<style>
+a {grid-template-columns: auto auto auto;}
+</style>
+
+/*You can use the keyword auto so that each column resizes itself automatically.*/
+
+```
+
 ![](/tutorial/CSS_files/test2.png)
 
 
-* grid-template-columns: 80px auto 1rem;
+```css
+<style>
+a {grid-template-columns: 80px auto 1rem; }
+</style>
 
->You can mix the units.
-
+/*You can mix the units.
+*/
+```
 ![](/tutorial/CSS_files/test3.png)
 
-* grid-template-columns: 40px 1fr 2fr;
+```css
+<style>
+a {grid-template-columns: 40px 1fr 2fr; }
+</style>
 
->You can use the fr flex unit to distribute the remaining space across all flex columns.
+/*You can use the fr flex unit to distribute the remaining space across all flex columns.
+*/
+
+```
+
+
 
 ![](/tutorial/CSS_files/test4.png)
