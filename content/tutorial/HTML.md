@@ -13,7 +13,7 @@ type: docs
 ![](/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png)
 
 
-### &lt;strong&gt;
+## &lt;strong&gt;
 ---
 
 ```js
@@ -37,7 +37,7 @@ b tag :평상시대로 굵게 읽는다.
 ```
 
 
-### &lt;h1&gt;
+## &lt;h1&gt;
 ---
 
 ```html
@@ -63,7 +63,7 @@ The HTML <h1> tag defines the highest level or most important heading in the HTM
 
 
 
-### &lt;br&gt;
+## &lt;br&gt;
 ---
  
 ```html
@@ -87,7 +87,7 @@ and ends on the next line.</p>
 
 
 
-### `&nbsp;`  (making space)
+## `&nbsp;`  (making space)
 ---
  
  
@@ -100,7 +100,7 @@ HTML will only display one space between words, no matter how many times you pre
 
 ```
 
-### &lt;p&gt;
+## &lt;p&gt;
 ---
 
 
@@ -125,7 +125,7 @@ The HTML <p> tag defines a paragraph in the HTML document. This tag is also comm
 
 
 
-### &lt;hr&gt;
+## &lt;hr&gt;
 ---
 
 
@@ -154,7 +154,7 @@ The HTML <hr> element makes line bewteen two paragraphs.
 
 
 
-### &lt;div&gt;
+## &lt;div&gt;
 ---
 
 
@@ -189,7 +189,7 @@ The <div> tag is generally used to group elements together.
 
 
 
-### &lt;span&gt;
+## &lt;span&gt;
 ---
 
 ```html
@@ -223,7 +223,7 @@ Syntax
 ```
 
 
-### &lt;nav&gt;
+## &lt;nav&gt;
 ---
 
 
@@ -260,7 +260,7 @@ The HTML <nav> tag is an HTML5 element that defines a section with navigation li
 
 
 
-### &lt;ul&gt; (부모태그)
+## &lt;ul&gt; (부모태그)
 ---
 
 
@@ -294,12 +294,10 @@ You can nest <ol>, <ul> and <ul>menu lists.
 </body>
 
 
-
-
 ```
 
 
-### &lt;li&gt;(부모태그)
+## &lt;li&gt;(부모태그)
 ---
 
 
@@ -325,7 +323,7 @@ You can nest <ol>, <ul> and <ul>menu lists.
 </ul>
 </body>
 
-```
+
 
 
 <body>
@@ -385,9 +383,8 @@ You can nest <ol, <ul> and <menu> lists. (자식태그) li 태그는 반드시 �
 
 -->
 
-```
 
-```html
+
 
 <body>
 <ol>
@@ -410,7 +407,9 @@ You can nest <ol>, <ul> and <menu> lists.
 
 ```
 
-### container 
+
+
+## container 
 ---
 
 
@@ -426,26 +425,21 @@ In HTML, the container is the area enclosed by the beginning and ending tags. Fo
 -->
 
 
-```html
-
-
-
 
 <html>
   <head>
-    ...
+    
   </head>
   <body>
     <div id="container">
-      ...
+      
     </div>
   </body>
 </html>
 
 
-```
 
-```html
+
 
 <!--
 
@@ -460,9 +454,12 @@ Plus, content, like a copyright notice for example, can go on the outside of the
 
 -->
 
+```
 
 
-### cashing 
+
+
+## cashing 
 ---
 
 
@@ -495,7 +492,8 @@ Plus, content, like a copyright notice for example, can go on the outside of the
 ```
 
 
-### &lt;form&gt;
+
+## &lt;form&gt;
 ---
 
 
@@ -519,6 +517,7 @@ The HTML `<form> tag` is used to create a form on a web page that has interactiv
     <input type="submit" value="Submit">
   </form>
 </body>
+
 
 ```
 

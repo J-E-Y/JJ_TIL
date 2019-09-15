@@ -524,7 +524,7 @@ git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;lt-strong-gt&#34;&gt;&amp;lt;strong&amp;gt;&lt;/h3&gt;
+&lt;h2 id=&#34;lt-strong-gt&#34;&gt;&amp;lt;strong&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -547,7 +547,7 @@ b tag :평상시대로 굵게 읽는다.
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;lt-h1-gt&#34;&gt;&amp;lt;h1&amp;gt;&lt;/h3&gt;
+&lt;h2 id=&#34;lt-h1-gt&#34;&gt;&amp;lt;h1&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -570,7 +570,7 @@ The HTML &amp;lt;h1&amp;gt; tag defines the highest level or most important head
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;lt-br-gt&#34;&gt;&amp;lt;br&amp;gt;&lt;/h3&gt;
+&lt;h2 id=&#34;lt-br-gt&#34;&gt;&amp;lt;br&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -592,7 +592,7 @@ and ends on the next line.&amp;lt;/p&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;nbsp-making-space&#34;&gt;&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;  (making space)&lt;/h3&gt;
+&lt;h2 id=&#34;nbsp-making-space&#34;&gt;&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;  (making space)&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -604,7 +604,7 @@ HTML will only display one space between words, no matter how many times you pre
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;lt-p-gt&#34;&gt;&amp;lt;p&amp;gt;&lt;/h3&gt;
+&lt;h2 id=&#34;lt-p-gt&#34;&gt;&amp;lt;p&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -624,7 +624,7 @@ The HTML &amp;lt;p&amp;gt; tag defines a paragraph in the HTML document. This ta
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;lt-hr-gt&#34;&gt;&amp;lt;hr&amp;gt;&lt;/h3&gt;
+&lt;h2 id=&#34;lt-hr-gt&#34;&gt;&amp;lt;hr&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -650,7 +650,7 @@ The HTML &amp;lt;hr&amp;gt; element makes line bewteen two paragraphs.
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;lt-div-gt&#34;&gt;&amp;lt;div&amp;gt;&lt;/h3&gt;
+&lt;h2 id=&#34;lt-div-gt&#34;&gt;&amp;lt;div&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -682,7 +682,7 @@ The &amp;lt;div&amp;gt; tag is generally used to group elements together.
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;lt-span-gt&#34;&gt;&amp;lt;span&amp;gt;&lt;/h3&gt;
+&lt;h2 id=&#34;lt-span-gt&#34;&gt;&amp;lt;span&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -715,7 +715,7 @@ Syntax
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;lt-nav-gt&#34;&gt;&amp;lt;nav&amp;gt;&lt;/h3&gt;
+&lt;h2 id=&#34;lt-nav-gt&#34;&gt;&amp;lt;nav&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -748,7 +748,7 @@ The HTML &amp;lt;nav&amp;gt; tag is an HTML5 element that defines a section with
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;lt-ul-gt-부모태그&#34;&gt;&amp;lt;ul&amp;gt; (부모태그)&lt;/h3&gt;
+&lt;h2 id=&#34;lt-ul-gt-부모태그&#34;&gt;&amp;lt;ul&amp;gt; (부모태그)&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -781,11 +781,9 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu l
 &amp;lt;/body&amp;gt;
 
 
-
-
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;lt-li-gt-부모태그&#34;&gt;&amp;lt;li&amp;gt;(부모태그)&lt;/h3&gt;
+&lt;h2 id=&#34;lt-li-gt-부모태그&#34;&gt;&amp;lt;li&amp;gt;(부모태그)&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -810,53 +808,56 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu l
 &amp;lt;/ul&amp;gt;
 &amp;lt;/body&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;body&gt;
-&lt;ol&gt;
-  &lt;li&gt;First item&lt;/li&gt;
-  &lt;li&gt;Second item&lt;/li&gt;
-  &lt;li&gt;Third item&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/body&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Sample Output 2&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;p&gt;&lt;body&gt;
-&lt;menu type=&#34;toolbar&#34;&gt;
-  &lt;li&gt;
-    &lt;menu label=&#34;File&#34;&gt;
-      &lt;button type=&#34;button&#34; onclick=&#34;new()&#34;&gt;New&lt;/button&gt;
-      &lt;button type=&#34;button&#34; onclick=&#34;save()&#34;&gt;Save&lt;/button&gt;
-    &lt;/menu&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;menu label=&#34;Edit&#34;&gt;
-      &lt;button type=&#34;button&#34; onclick=&#34;copy()&#34;&gt;Copy&lt;/button&gt;
-      &lt;button type=&#34;button&#34; onclick=&#34;paste()&#34;&gt;Paste&lt;/button&gt;
-    &lt;/menu&gt;
-  &lt;/li&gt;
-&lt;/menu&gt;
-&lt;/body&gt;&lt;/p&gt;
+&amp;lt;body&amp;gt;
+&amp;lt;ol&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;/body&amp;gt;
 
-&lt;!--
+
+
+* Sample Output 2
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;menu type=&amp;quot;toolbar&amp;quot;&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;menu label=&amp;quot;File&amp;quot;&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;new()&amp;quot;&amp;gt;New&amp;lt;/button&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;save()&amp;quot;&amp;gt;Save&amp;lt;/button&amp;gt;
+    &amp;lt;/menu&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;menu label=&amp;quot;Edit&amp;quot;&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;copy()&amp;quot;&amp;gt;Copy&amp;lt;/button&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;paste()&amp;quot;&amp;gt;Paste&amp;lt;/button&amp;gt;
+    &amp;lt;/menu&amp;gt;
+  &amp;lt;/li&amp;gt;
+&amp;lt;/menu&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;!--
 * Note
 
-The &lt;li&gt; tag is used within &lt;ol&gt;, &lt;ul&gt; or &lt;menu&gt;.
-You can nest &lt;ol, &lt;ul&gt; and &lt;menu&gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
+The &amp;lt;li&amp;gt; tag is used within &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt;.
+You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
 
---&gt;
+--&amp;gt;
 
-&lt;pre&gt;&lt;code&gt;
----
-## html : **&amp;amp;lt;ol&amp;amp;gt;tag** 
----
+&lt;/code&gt;&lt;/pre&gt;
 
+&lt;hr /&gt;
 
-```html
+&lt;h2 id=&#34;html-lt-ol-gt-tag&#34;&gt;html : &lt;strong&gt;&amp;lt;ol&amp;gt;tag&lt;/strong&gt;&lt;/h2&gt;
 
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
 &amp;lt;!--
 
 * Description
@@ -867,9 +868,9 @@ You can nest &lt;ol, &lt;ul&gt; and &lt;menu&gt; lists. (자식태그) li 태그
 
 --&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+
 &amp;lt;body&amp;gt;
 &amp;lt;ol&amp;gt;
   &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
@@ -891,7 +892,7 @@ You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lis
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;container&#34;&gt;container&lt;/h3&gt;
+&lt;h2 id=&#34;container&#34;&gt;container&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -906,26 +907,22 @@ In HTML, the container is the area enclosed by the beginning and ending tags. Fo
 --&amp;gt;
 
 
-```html
-
-
-
 
 &amp;lt;html&amp;gt;
   &amp;lt;head&amp;gt;
-    ...
+    
   &amp;lt;/head&amp;gt;
   &amp;lt;body&amp;gt;
     &amp;lt;div id=&amp;quot;container&amp;quot;&amp;gt;
-      ...
+      
     &amp;lt;/div&amp;gt;
   &amp;lt;/body&amp;gt;
 &amp;lt;/html&amp;gt;
 
 
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+
 &amp;lt;!--
 
  * note
@@ -939,14 +936,13 @@ Plus, content, like a copyright notice for example, can go on the outside of the
 
 --&amp;gt;
 
+&lt;/code&gt;&lt;/pre&gt;
 
+&lt;h2 id=&#34;cashing&#34;&gt;cashing&lt;/h2&gt;
 
-### cashing 
----
+&lt;hr /&gt;
 
-
-```html
-
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
 &amp;lt;!--
 
 * Description
@@ -973,7 +969,7 @@ Plus, content, like a copyright notice for example, can go on the outside of the
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;lt-form-gt&#34;&gt;&amp;lt;form&amp;gt;&lt;/h3&gt;
+&lt;h2 id=&#34;lt-form-gt&#34;&gt;&amp;lt;form&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -996,6 +992,7 @@ The HTML `&amp;lt;form&amp;gt; tag` is used to create a form on a web page that 
     &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Submit&amp;quot;&amp;gt;
   &amp;lt;/form&amp;gt;
 &amp;lt;/body&amp;gt;
+
 
 &lt;/code&gt;&lt;/pre&gt;
 

@@ -370,8 +370,6 @@
 <ul>
 <li>
 <ul>
-<li>
-<ul>
 <li><a href="#lt-strong-gt">&lt;strong&gt;</a></li>
 <li><a href="#lt-h1-gt">&lt;h1&gt;</a></li>
 <li><a href="#lt-br-gt">&lt;br&gt;</a></li>
@@ -383,9 +381,10 @@
 <li><a href="#lt-nav-gt">&lt;nav&gt;</a></li>
 <li><a href="#lt-ul-gt-부모태그">&lt;ul&gt; (부모태그)</a></li>
 <li><a href="#lt-li-gt-부모태그">&lt;li&gt;(부모태그)</a></li>
+<li><a href="#html-lt-ol-gt-tag">html : <strong>&lt;ol&gt;tag</strong></a></li>
 <li><a href="#container">container</a></li>
+<li><a href="#cashing">cashing</a></li>
 <li><a href="#lt-form-gt">&lt;form&gt;</a></li>
-</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -410,7 +409,7 @@
 
 <p><img src="/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png" alt="" /></p>
 
-<h3 id="lt-strong-gt">&lt;strong&gt;</h3>
+<h2 id="lt-strong-gt">&lt;strong&gt;</h2>
 
 <hr />
 
@@ -433,7 +432,7 @@ b tag :평상시대로 굵게 읽는다.
 
 </code></pre>
 
-<h3 id="lt-h1-gt">&lt;h1&gt;</h3>
+<h2 id="lt-h1-gt">&lt;h1&gt;</h2>
 
 <hr />
 
@@ -456,7 +455,7 @@ The HTML &lt;h1&gt; tag defines the highest level or most important heading in t
 
 </code></pre>
 
-<h3 id="lt-br-gt">&lt;br&gt;</h3>
+<h2 id="lt-br-gt">&lt;br&gt;</h2>
 
 <hr />
 
@@ -478,7 +477,7 @@ and ends on the next line.&lt;/p&gt;
 
 </code></pre>
 
-<h3 id="nbsp-making-space"><code>&amp;nbsp;</code>  (making space)</h3>
+<h2 id="nbsp-making-space"><code>&amp;nbsp;</code>  (making space)</h2>
 
 <hr />
 
@@ -490,7 +489,7 @@ HTML will only display one space between words, no matter how many times you pre
 
 </code></pre>
 
-<h3 id="lt-p-gt">&lt;p&gt;</h3>
+<h2 id="lt-p-gt">&lt;p&gt;</h2>
 
 <hr />
 
@@ -510,7 +509,7 @@ The HTML &lt;p&gt; tag defines a paragraph in the HTML document. This tag is als
 
 </code></pre>
 
-<h3 id="lt-hr-gt">&lt;hr&gt;</h3>
+<h2 id="lt-hr-gt">&lt;hr&gt;</h2>
 
 <hr />
 
@@ -536,7 +535,7 @@ The HTML &lt;hr&gt; element makes line bewteen two paragraphs.
 
 </code></pre>
 
-<h3 id="lt-div-gt">&lt;div&gt;</h3>
+<h2 id="lt-div-gt">&lt;div&gt;</h2>
 
 <hr />
 
@@ -568,7 +567,7 @@ The &lt;div&gt; tag is generally used to group elements together.
 
 </code></pre>
 
-<h3 id="lt-span-gt">&lt;span&gt;</h3>
+<h2 id="lt-span-gt">&lt;span&gt;</h2>
 
 <hr />
 
@@ -601,7 +600,7 @@ Syntax
 
 </code></pre>
 
-<h3 id="lt-nav-gt">&lt;nav&gt;</h3>
+<h2 id="lt-nav-gt">&lt;nav&gt;</h2>
 
 <hr />
 
@@ -634,7 +633,7 @@ The HTML &lt;nav&gt; tag is an HTML5 element that defines a section with navigat
 
 </code></pre>
 
-<h3 id="lt-ul-gt-부모태그">&lt;ul&gt; (부모태그)</h3>
+<h2 id="lt-ul-gt-부모태그">&lt;ul&gt; (부모태그)</h2>
 
 <hr />
 
@@ -667,11 +666,9 @@ You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.
 &lt;/body&gt;
 
 
-
-
 </code></pre>
 
-<h3 id="lt-li-gt-부모태그">&lt;li&gt;(부모태그)</h3>
+<h2 id="lt-li-gt-부모태그">&lt;li&gt;(부모태그)</h2>
 
 <hr />
 
@@ -696,53 +693,56 @@ You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;ul&gt;menu lists.
 &lt;/ul&gt;
 &lt;/body&gt;
 
-</code></pre>
 
-<p><body>
-<ol>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-</ol>
-</body></p>
 
-<ul>
-<li>Sample Output 2</li>
-</ul>
 
-<p><body>
-<menu type="toolbar">
-  <li>
-    <menu label="File">
-      <button type="button" onclick="new()">New</button>
-      <button type="button" onclick="save()">Save</button>
-    </menu>
-  </li>
-  <li>
-    <menu label="Edit">
-      <button type="button" onclick="copy()">Copy</button>
-      <button type="button" onclick="paste()">Paste</button>
-    </menu>
-  </li>
-</menu>
-</body></p>
+&lt;body&gt;
+&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/body&gt;
 
-<!--
+
+
+* Sample Output 2
+
+
+&lt;body&gt;
+&lt;menu type=&quot;toolbar&quot;&gt;
+  &lt;li&gt;
+    &lt;menu label=&quot;File&quot;&gt;
+      &lt;button type=&quot;button&quot; onclick=&quot;new()&quot;&gt;New&lt;/button&gt;
+      &lt;button type=&quot;button&quot; onclick=&quot;save()&quot;&gt;Save&lt;/button&gt;
+    &lt;/menu&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;menu label=&quot;Edit&quot;&gt;
+      &lt;button type=&quot;button&quot; onclick=&quot;copy()&quot;&gt;Copy&lt;/button&gt;
+      &lt;button type=&quot;button&quot; onclick=&quot;paste()&quot;&gt;Paste&lt;/button&gt;
+    &lt;/menu&gt;
+  &lt;/li&gt;
+&lt;/menu&gt;
+&lt;/body&gt;
+
+&lt;!--
 * Note
 
-The <li> tag is used within <ol>, <ul> or <menu>.
-You can nest <ol, <ul> and <menu> lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
+The &lt;li&gt; tag is used within &lt;ol&gt;, &lt;ul&gt; or &lt;menu&gt;.
+You can nest &lt;ol, &lt;ul&gt; and &lt;menu&gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
 
--->
+--&gt;
 
-<pre><code>
----
-## html : **&amp;lt;ol&amp;gt;tag** 
----
+</code></pre>
 
+<hr />
 
-```html
+<h2 id="html-lt-ol-gt-tag">html : <strong>&lt;ol&gt;tag</strong></h2>
 
+<hr />
+
+<pre><code class="language-html">
 &lt;!--
 
 * Description
@@ -753,9 +753,9 @@ You can nest <ol, <ul> and <menu> lists. (자식태그) li 태그는 반드시 �
 
 --&gt;
 
-</code></pre>
 
-<pre><code class="language-html">
+
+
 &lt;body&gt;
 &lt;ol&gt;
   &lt;li&gt;First item&lt;/li&gt;
@@ -777,7 +777,7 @@ You can nest &lt;ol&gt;, &lt;ul&gt; and &lt;menu&gt; lists.
 
 </code></pre>
 
-<h3 id="container">container</h3>
+<h2 id="container">container</h2>
 
 <hr />
 
@@ -792,26 +792,22 @@ In HTML, the container is the area enclosed by the beginning and ending tags. Fo
 --&gt;
 
 
-```html
-
-
-
 
 &lt;html&gt;
   &lt;head&gt;
-    ...
+    
   &lt;/head&gt;
   &lt;body&gt;
     &lt;div id=&quot;container&quot;&gt;
-      ...
+      
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 
 
-</code></pre>
 
-<pre><code class="language-html">
+
+
 &lt;!--
 
  * note
@@ -825,14 +821,13 @@ Plus, content, like a copyright notice for example, can go on the outside of the
 
 --&gt;
 
+</code></pre>
 
+<h2 id="cashing">cashing</h2>
 
-### cashing 
----
+<hr />
 
-
-```html
-
+<pre><code class="language-html">
 &lt;!--
 
 * Description
@@ -859,7 +854,7 @@ Plus, content, like a copyright notice for example, can go on the outside of the
 
 </code></pre>
 
-<h3 id="lt-form-gt">&lt;form&gt;</h3>
+<h2 id="lt-form-gt">&lt;form&gt;</h2>
 
 <hr />
 
@@ -882,6 +877,7 @@ The HTML `&lt;form&gt; tag` is used to create a form on a web page that has inte
     &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
   &lt;/form&gt;
 &lt;/body&gt;
+
 
 </code></pre>
 
