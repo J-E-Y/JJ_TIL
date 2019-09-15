@@ -1351,15 +1351,19 @@ function removeStringValues(obj) {
 
 
 ```
+### Question
 
-
-**02_removeNumberValues**
+## removeNumberValues
 
 > Write a function called "removeNumberValues". ("removeNumberValues" 함수를 작성하세요.)
 
 >Given an object, "removeNumberValues" removes any properties whose values are numbers. (객체가 주어졌을때, "removeNumberValues" 함수는 속성값이 숫자인 모든 속성을 제거합니다.)
 
-```
+
+## My_Soultion
+
+
+```js
 let obj = {
   a: 2,
   b: 'remaining',
@@ -1382,14 +1386,19 @@ removeNumberValues(obj);
 
 ```
 
-* 03_removeArrayValues
+### Question
+
+## removeArrayValues
 
 > Write a function called "removeArrayValues". ("removeArrayValues" 함수를 작성하세요.)
 
 >Given an object, "removeArrayValues" removes any properties whose values are arrays. (객체가 주어졌을때, "removeArrayValues" 함수는 속성값이 배열인 모든 속성을 제거합니다.)
 
 
-```
+
+### My_Soultion
+
+```js
 
 let obj = {
   a: [1, 3, 4],
@@ -1417,13 +1426,10 @@ removeArrayValues(obj)
 
 
 
----
-## **array**
----
+### Question
 
 
-
-* 01_getFirstElement
+## getFirstElement
 
 
 > Write a function called "getFirstElement". ("getFirstElement" 함수를 작성하세요.)
@@ -1446,8 +1452,9 @@ function getFirstElement(array) {
 
 ```
 
+### Question
 
-* 02_getLastElement
+## getLastElement
 
 > Write a function called "getLastElement". ("getLastElement" 함수를 작성하세요.)
 
@@ -1472,14 +1479,16 @@ function getLastElement(array) {
 }
 
 ```
+### Question
 
-
-* 03_getNthElement
+## getNthElement
 
 > Write a function called "getNthElement". ("getNthElement" 함수를 작성하세요.)
 
 > Given an array and an integer, "getNthElement" returns the element at the given integer, within the given array. (배열과 숫자가 주어졌을때, "getNthElement" 함수는 주어진 배열에서 n번 인덱스의 요소를 반환해야 합니다.)
 
+
+### My_Soultion
 
 ```
 
@@ -1500,7 +1509,9 @@ function getNthElement(array, n) {
 
 ```
 
-* 04_addToFront
+### Question
+
+## addToFront
 
 > Write a function called "addToFront". ("addToFront" 함수를 작성하세요.)
 
@@ -1522,16 +1533,16 @@ function addToFront(arr, element) {
 
 
 ```
+### Question
 
-
-* 05_addToBack
+## addToBack
 
 > Write a function called "addToBack". ("addToBack" 함수를 작성하세요.)
 
 >Given an array and an element, "addToBack" returns the given array with the given element added to the end. (배열과 요소가 주어졌을때, "addToBack" 함수는 주어진 요소를 배열의 맨뒤에 추가하고 주어진 배열을 반환해야 합니다.)
 
 
-* my_ answer
+### My_Soultion
 
 
 ```JS
@@ -1547,14 +1558,17 @@ function addToBack(arr, element) {
 ```
 
 
+### Question
 
-
-* 06_joinArrays
+## joinArrays
 
 > Write a function called "joinArrays". ("joinArrays" 함수를 작성하세요.)
 
 >Given two arrays, "joinArrays" returns an array with the elements of "arr1" in order, followed by the elementsin "arr2". (두 배열이 주어졌을때, "joinArrays" 함수는 첫번째 배열(arr1)과 두번째 배열(arr2) 순서로 합쳐진 배열을 반환해야 합니다.)
 
+
+
+### My_soultion
 
 ```
 function joinArrays(arr1, arr2) {
@@ -1569,11 +1583,18 @@ function joinArrays(arr1, arr2) {
 
 ```
 
-* 07_getElementsAfter
+
+### Question
+
+
+## getElementsAfter
 
 > Write a function called "getElementsAfter". ("getElementsAfter" 함수를 작성하세요.)
 
 >Given an array and an index, "getElementsAfter" returns a new array with all the elements after (but not including) the given index. (배열과 인덱스가 주어졌을때, "getElementsAfter" 함수는 주어진 배열의 인덱스 이후 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)
+
+
+### My_Soultion
 
 
 
@@ -1595,8 +1616,9 @@ getElementsAfter(['a', 'b', 'c', 'd', 'e'], 1);
 
 ```
 
+### Question
 
-* 08_getElementsUpTo
+## getElementsUpTo
 
 > Write a function called "getElementsUpTo". ("getElementsUpTo" 함수를 작성하세요.)
 
@@ -1616,8 +1638,9 @@ getElementsUpTo(['a', 'b', 'c', 'd', 'e'], 3);
 
 ```
 
+### Question
 
-* 09_getAllElementsButFirst
+## getAllElementsButFirst
 
 >Write a function called "getAllElementsButFirst". ("getAllElementsButFirst" 함수를 작성하세요.)
 
@@ -1640,7 +1663,7 @@ getAllElementsButFirst([1,2,3,4])
 
 ```
 
-* model solution
+### model solution
 
 
 ```js
@@ -1652,7 +1675,9 @@ function getAllElementsButFirst(array) {
 ```
 
 
-**10_getAllElementsButLast**
+### Question
+
+## getAllElementsButLast
 
 >Write a function called "getAllElementsButLast". ("getAllElementsButLast" 함수를 작성하세요.)
 
@@ -1673,7 +1698,11 @@ function getAllElementsButLast(array) {
 
 
 ```
-**11_removeFromFront**
+
+### Question
+
+
+## removeFromFront
 
 >Write a function called "removeFromFront". ("removeFromFront" 함수를 작성하세요.)
 
@@ -1692,9 +1721,9 @@ function removeFromFront(arr) {
 }
 
 ```
+### Question
 
-
-**12_removeFromBack**
+## removeFromBack
 
 >Write a function called "removeFromBack". ("removeFromBack" 함수를 작성하세요.)
 
@@ -1715,7 +1744,9 @@ function removeFromBack(arr) {
 
 ```
 
-**13_removeFromBackOfNew**
+### Question
+
+## removeFromBackOfNew
 
 >Write a function called "removeFromBackOfNew". ("removeFromBackOfNew" 함수를 작성하세요.)
 
@@ -1744,7 +1775,7 @@ function removeFromBackOfNew(arr) {
 ```
 
 
-* model solution
+### model solution
 
 
 ```js
@@ -1759,7 +1790,9 @@ function removeFromBackOfNew(arr) {
 
 ```
 
-**14_addToBackOfNew**
+### Question
+
+## addToBackOfNew
 
 
 >Write a function called "addToBackNew". ("addToBackNew" 함수를 작성하세요.)
@@ -1781,7 +1814,7 @@ function addToBackOfNew(arr, element) {
 ```
 
 
-* model soultion
+### model soultion
 
 ```js
 
@@ -1793,8 +1826,9 @@ function addToBackOfNew(arr, element) {
 
 ```
 
+### Question
 
-**16_joinArrayOfArrays**
+## joinArrayOfArrays
 
 >Write a function called "joinArrayOfArrays". ("joinArrayOfArrays" 함수를 작성하세요.)
 
@@ -1802,6 +1836,8 @@ function addToBackOfNew(arr, element) {
 
 
 > it is used by reduce and concat
+
+### My_Soultion
 
 ```js
 
@@ -1816,13 +1852,9 @@ function joinArrayOfArrays(arr) {
 
 ```
 
+### Question
 
-* My_Soultion 
-
-
-
-
-**18_getAllLetters**
+## getAllLetters
 
 > Write a function called "getAllLetters". ("getAllLetters" 함수를 작성하세요.)
 
@@ -1844,9 +1876,9 @@ function getAllLetters(str) {
 
 ```
 
+### Question
  
- 
- **19_getAllWords**
+## getAllWords
  
 > Write a function called "getAllWords". ("getAllWords" 함수를 작성하세요.)
 
@@ -1854,9 +1886,9 @@ function getAllLetters(str) {
  
  
  
- ### My_Soultion
+### My_Soultion
  
- ```js
+```js
  
  
  function getAllWords(str) {
@@ -1867,16 +1899,13 @@ function getAllLetters(str) {
   }
 }
 
- 
- 
- 
- ```
+```
 
 
 
+### Question
 
-
-**21_removeElement** 
+## removeElement
 
 
 > Write a function called "removeElement". ("removeElement" 함수를 작성하세요.)
@@ -1913,8 +1942,9 @@ unction removeElement(array, discarder) {
 ```
 
 
+### Question
 
-**22_keep**
+## keep
 
 > Write a function called "keep". ("keep" 함수를 작성하세요.)
 
@@ -1945,7 +1975,11 @@ function keep(array, keeper) {
 
 ```
 
-**23_findSmallestElement**
+
+### Question
+
+
+## findSmallestElement
 
 
 > Write a function called "findSmallestElement". ("findSmallestElement" 함수를 작성하세요.)
@@ -1954,12 +1988,12 @@ function keep(array, keeper) {
 
 
 
-* My_solution
+### My_solution
 
 
-* It is used by sort();
 
 ```js
+// It is used by sort();
 
 
 
@@ -1984,10 +2018,11 @@ function findSmallestElement(arr) {
 
 ```
 
-> It is used by reudce and if 
 
 
 ```js
+
+// It is used by reudce and if 
 
 function findSmallestElement(arr) {
   if (arr.length < 1) {  // satisfies Notes requirement
@@ -2004,9 +2039,11 @@ function findSmallestElement(arr) {
 
 ```
 
-> 2.It is used by reudce and if ????? 
 
 ```js
+
+// It is used by reudce and if ????? 
+
 
 function findSmallestElement(arr) {
   
@@ -2022,9 +2059,11 @@ function findSmallestElement(arr) {
 ```
 
 
-> 1.it is used by reudce and Math method
 
 ```js
+
+// it is used by reudce and Math method
+
 function findSmallestElement(arr) {
 
   if ( arr.length === 0 ) {
@@ -2040,9 +2079,10 @@ function findSmallestElement(arr) {
 ```
 
 
-> 2it is used by reudce and Math method
 
 ```js
+
+// it is used by reudce and Math method
 
 function findSmallestElement(arr) {
 
@@ -2055,15 +2095,16 @@ function findSmallestElement(arr) {
 ```
 
 
+### Question
 
-**24_computeSumOfAllElements**
+## computeSumOfAllElements
 
 > Write a function called "computeSumOfAllElements". ("computeSumOfAllElements" 함수를 작성하세요.)
 
 >Given an array of numbers, "computeSumOfAllElements" returns the sum of all the elements in the given array. (숫자의 배열이 주어졌을때, "computeSumOfAllElements" 함수는 주어진 배열의 모든 요소의 합을 반환합니다.)
 
 
-* My_Solution
+### My_Solution
 
 
 
@@ -2084,9 +2125,9 @@ function computeSumOfAllElements(arr) {
 
 ```
 
-> it used by reduce 
 
 ```js
+// it used by reduce 
 
 
 function computeSumOfAllElements(arr) {
@@ -2103,7 +2144,8 @@ function computeSumOfAllElements(arr) {
 
 
 
-**25_computeProductOfAllElements**
+### Question
+## computeProductOfAllElements
 
 
 >Write a function called "computeProductOfAllElements". ("computeProductOfAllElements" 함수를 작성하세요.)
@@ -2115,7 +2157,7 @@ function computeSumOfAllElements(arr) {
 
 
 
-* My_Solution
+### My_Solution
 
 
 ```js
@@ -2142,9 +2184,11 @@ function computeProductOfAllElements(arr) {
 }
 ```
 
-* It is used by redcue method
 
 ```js
+
+
+// It is used by redcue method
 function computeProductOfAllElements(arr) {
     
     
@@ -2160,8 +2204,9 @@ function computeProductOfAllElements(arr) {
 
 ```
 
+### Question
 
-**26_getLengthOfLongestElement**
+## getLengthOfLongestElement
 
 
 >Write a function called "getLengthOfLongestElement". ("getLengthOfLongestElement" 함수를 작성하세요.)
@@ -2169,11 +2214,12 @@ function computeProductOfAllElements(arr) {
 >Given an array, "getLengthOfLongestElement" returns the length of the longest string in the given array. (배열이 주어졌을때, "getLengthOfLongestElement" 함수는 주어진 배열에서 가장 긴 문자열의 길이를 반환합니다.)
 
 
-* My_Solution
+### My_Solution
 
-> it is used by sort()
 
 ```js
+
+// it is used by sort()
 
 
 function getLengthOfLongestElement(arr) {
@@ -2190,9 +2236,11 @@ function getLengthOfLongestElement(arr) {
 
 ```
 
-> It is used by for loop and if
 
 ```js
+
+// It is used by for loop and if
+
 
 function getLengthOfLongestElement(arr) {
   
@@ -2220,15 +2268,23 @@ function getLengthOfLongestElement(arr) {
 
 
 
-> it is used by reduce method
-
->comment
-
->return a.length or return b.length 하면 안되는 이유. length를 리턴에 넣으면 다음  a 와 b.length의 길이를 비교하기 때문에 안되는거더라구요. 그래서 함수 밖에 붙여주면 숫자로 반환되는 거구요.
-
 ```js
 
 
+
+/*
+
+
+it is used by reduce method
+
+comment
+
+return a.length or return b.length 하면 안되는 이유. length를 리턴에 넣으면 다음  a 와 b.length의 길이를 비교하기 때문에 안되는거더라구요. 그래서 함수 밖에 붙여주면 숫자로 반환되는 거구요.
+
+
+
+
+*/
 
 function getLengthOfLongestElement(arr) {
 
@@ -2243,8 +2299,10 @@ function getLengthOfLongestElement(arr) {
 }
 ```
 
+### Question
 
-**28_filterOddLengthWords**
+
+## filterOddLengthWords
 
 
 > Write a function called "filterOddLengthWords". ("filterOddLengthWords" 함수를 작성하세요.)
@@ -2252,7 +2310,7 @@ function getLengthOfLongestElement(arr) {
 >Given an array of string, "filterOddLengthWords" returns an array containing only the elements of the given array whose lengths are odd numbers. (문자열의 배열이 주어졌을때, "filterOddLengthWords" 함수는 주어진 배열의 요소 중 문자열의 길이가 홀수인 문자열만을 요소로 가지는 배열을 반환합니다.)
 
 
-* My_Soultion
+### My_Soultion
 
 
 ```js
@@ -2282,8 +2340,7 @@ unction filterOddLengthWords(words) {
 
 
 ```
-
-* modle_Soultion
+### modle_Soultion
 
 
 ```js
@@ -2306,19 +2363,17 @@ function filterOddLengthWords(arr) {  // HoF
 
 
 
----
-## **Array & object**
----
 
+### Question
 
-**01_getElementOfArrayProperty**
+## getElementOfArrayProperty
 
 >Write a function called "getElementOfArrayProperty". ("getElementOfArrayProperty" 함수를 작성하세요.)
 
 >Given an object, a key, and a numerical index, "getElementOfArrayProperty" returns the value of the element at the given index of the array located within the given object at the given key. (객체와 키, 그리고 숫자로된 인덱스값이 주어졌을때, "getElementOfArrayProperty" 함수는 주어진 키에 위치한 배열의 인덱스에 해당하는 값을 반환합니다.)
 
 
-* my_asnswer
+### My_Soultion 
 
 ```js
 
@@ -2339,15 +2394,17 @@ getElementOfArrayProperty(obj,'key',0);
 
 ```
 
+### Question
 
-**02_select**
+
+## select
 
 
 >Write a function called "select". ("select" 함수를 작성하세요.)
 
 >Given an array and an object, "select" returns a new object whose properties are those in the given object AND whose keys are present in the given array. (배열과 객체가 주어졌을때, "select" 함수는 주어진 객체의 키값 중 주어진 배열에 포함된 키값만을 속성으로 가지는 새로운 배열을 반환합니다.)
 
-
+### My_Soultion
 
 ```js
 
@@ -2369,7 +2426,9 @@ function select(arr, obj) {
 
 ```
 
-**04_getNthElementOfProperty**
+### Question
+
+## getNthElementOfProperty
 
 > Write a function called "getNthElementOfProperty". ("getNthElementOfProperty" 함수를 작성하세요.)
 
@@ -2394,13 +2453,17 @@ function getNthElementOfProperty(obj, key, n) {
 ```
 
 
+### Question
 
-**03_getElementsLessThan100AtProperty**
+## getElementsLessThan100AtProperty
 
 
 > Write a function called "getElementsLessThan100AtProperty". ("getElementsLessThan100AtProperty" 함수를 작성하세요.)
 
 >Given an object and a key, "getElementsLessThan100AtProperty" returns an array containing all the elements of the array located at the given key that are less than 100. (객체와 키값이 주어졌을때, "getElementsLessThan100AtProperty" 함수는 주어진 키에 위치하는 배열에서 100 보다 작은 값으로만 이루어진 배열을 반환합니다.)
+
+
+### MY_Soultion
 
 
 ```js
@@ -2432,7 +2495,7 @@ function getElementsLessThan100AtProperty(obj, key) {
 
 
 
-* My_Re_Soultion
+### My_Re_Soultion
 
 ```js
 
@@ -2449,19 +2512,17 @@ function getElementsLessThan100AtProperty(obj, key) {
 
 ```
 
+### Question
 
+## getLastElementOfProperty
 
-**05_getLastElementOfProperty**
-
-
-* Question
 
 > Write a function called "getLastElementOfProperty". ("getLastElementOfProperty" 함수를 작성하세요.)
 
 >Given an object and a key, "getLastElementOfProperty" returns the last element of an array located at the given key. (객체와 키가 주어졌을때, "getLastElementOfProperty" 함수는 주어진 키에 위치한 배열의 마지막 요소를 반환합니다.)
 
 
-* My_Solution
+### My_Solution
 
 ```js
 function getLastElementOfProperty(obj, key) {
@@ -2480,7 +2541,7 @@ function getLastElementOfProperty(obj, key) {
 
 ```
 
-* modle_Solution
+### modle_Solution
 
 ```js
 
@@ -2497,9 +2558,9 @@ function getLastElementOfProperty(obj, key) {
 
 ```
 
+### Question
 
-
-**06_getSquaredElementsAtProperty**
+## getSquaredElementsAtProperty
 
 
 > Write a function called "getSquaredElementsAtProperty". ("getSquaredElementsAtProperty" 함수를 작성하세요.)
@@ -2507,7 +2568,7 @@ function getLastElementOfProperty(obj, key) {
 >Given an object and a key, "getSquaredElementsAtProperty" returns an array containing all the squared elements of the array located at the given key. (객체와 키가 주어졌을때, "getSquaredElementsAtProperty" 함수는 주어진 키에 위치하는 배열의 요소들의 제곱을 요소로 가지는 배열을 반환합니다.)
 
 
-* My_Soultion
+### My_Soultion
 
 ```js
 
@@ -2541,7 +2602,7 @@ function getSquaredElementsAtProperty(obj, key) {
 ```
 
 
-* other Soultion
+### other Soultion
 
 ```js
 
@@ -2566,18 +2627,18 @@ console.log(output);
 
 
 ```
+### Question
+
+## getAllButLastElementOfProperty
 
 
-**07_getAllButLastElementOfProperty**
-
-* Question 
 
 > Write a function called "getAllButLastElementOfProperty". ("getAllButLastElementOfProperty" 함수를 작성하세요.)
 
 >Given an object and a key, "getAllButLastElementOfProperty" returns an array containing all but the last element of the array located at the given key. (객체와 키가 주어졌을때, "getAllButLastElementOfProperty" 함수는 주어진 키에 위치하는 배열의 마지막 요소를 제외한 배열을 반환합니다.)
 
 
-** My_Solution 
+### My_Solution 
 
 
 ```js
@@ -2607,20 +2668,21 @@ function getAllButLastElementOfProperty(obj, key) {
 
 ```
 
+### Question
 
-**08_getProductOfAllElementsAtProperty**
+## getProductOfAllElementsAtProperty
 
 
 >Write a function called "getProductOfAllElementsAtProperty". ("getProductOfAllElementsAtProperty" 함수를 작성하세요.)
 
 >Given an object and a key, "getProductOfAllElementsAtProperty" returns the product of all the elements in the array located at the given key. (객체와 키가 주어졌을때, "getProductOfAllElementsAtProperty" 함수는 주어진 키에 위치한 배열의 요소의 곱을 반환합니다.)
 
-* My_soultion 
+### My_soultion 
 
->It is used by for 
 
 ```js
 
+// It is used by for 
 
 
 
@@ -2650,11 +2712,11 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 ```
 
-> It is used by reduce
 
 
 ```js
 
+// It is used by reduce
 
 function getProductOfAllElementsAtProperty(obj, key) {
   if (! Array.isArray(obj[key] )) {

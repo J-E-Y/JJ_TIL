@@ -7595,7 +7595,9 @@ function removeStringValues(obj) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;02_removeNumberValues&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-36&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;removenumbervalues&#34;&gt;removeNumberValues&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;removeNumberValues&amp;rdquo;. (&amp;ldquo;removeNumberValues&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7603,7 +7605,9 @@ function removeStringValues(obj) {
 &lt;p&gt;Given an object, &amp;ldquo;removeNumberValues&amp;rdquo; removes any properties whose values are numbers. (객체가 주어졌을때, &amp;ldquo;removeNumberValues&amp;rdquo; 함수는 속성값이 숫자인 모든 속성을 제거합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;let obj = {
+&lt;h2 id=&#34;my-soultion-34&#34;&gt;My_Soultion&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let obj = {
   a: 2,
   b: &#39;remaining&#39;,
   c: 4
@@ -7625,9 +7629,9 @@ removeNumberValues(obj);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;03_removeArrayValues&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;question-37&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;removearrayvalues&#34;&gt;removeArrayValues&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;removeArrayValues&amp;rdquo;. (&amp;ldquo;removeArrayValues&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7635,7 +7639,9 @@ removeNumberValues(obj);
 &lt;p&gt;Given an object, &amp;ldquo;removeArrayValues&amp;rdquo; removes any properties whose values are arrays. (객체가 주어졌을때, &amp;ldquo;removeArrayValues&amp;rdquo; 함수는 속성값이 배열인 모든 속성을 제거합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;h3 id=&#34;my-soultion-35&#34;&gt;My_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 let obj = {
   a: [1, 3, 4],
   b: 2,
@@ -7659,15 +7665,9 @@ removeArrayValues(obj)
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
+&lt;h3 id=&#34;question-38&#34;&gt;Question&lt;/h3&gt;
 
-&lt;h2 id=&#34;array&#34;&gt;&lt;strong&gt;array&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;01_getFirstElement&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;getfirstelement&#34;&gt;getFirstElement&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getFirstElement&amp;rdquo;. (&amp;ldquo;getFirstElement&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7675,7 +7675,7 @@ removeArrayValues(obj)
 &lt;p&gt;Given an array, &amp;ldquo;getFirstElement&amp;rdquo; returns the first element of the given array. (배열이 주어졌을때, &amp;ldquo;getFirstElement&amp;rdquo; 함수는 주어진 배열의 첫번째 요소를 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-34&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-36&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;
 function getFirstElement(array) {
@@ -7689,9 +7689,9 @@ function getFirstElement(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;02_getLastElement&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;question-39&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getlastelement&#34;&gt;getLastElement&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getLastElement&amp;rdquo;. (&amp;ldquo;getLastElement&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7699,7 +7699,7 @@ function getFirstElement(array) {
 &lt;p&gt;Given an array, &amp;ldquo;getLastElement&amp;rdquo; returns the last element of the given array. (배열이 주어졌을때, &amp;ldquo;getLastElemeent&amp;rdquo; 함수는 주어진 배열의 마지막 요소를 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-35&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-37&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;
 function getLastElement(array) {
@@ -7716,15 +7716,17 @@ function getLastElement(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;03_getNthElement&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;question-40&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getnthelement&#34;&gt;getNthElement&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getNthElement&amp;rdquo;. (&amp;ldquo;getNthElement&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 
 &lt;p&gt;Given an array and an integer, &amp;ldquo;getNthElement&amp;rdquo; returns the element at the given integer, within the given array. (배열과 숫자가 주어졌을때, &amp;ldquo;getNthElement&amp;rdquo; 함수는 주어진 배열에서 n번 인덱스의 요소를 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;h3 id=&#34;my-soultion-38&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;
 function getNthElement(array, n) {
@@ -7744,9 +7746,9 @@ function getNthElement(array, n) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;04_addToFront&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;question-41&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;addtofront&#34;&gt;addToFront&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;addToFront&amp;rdquo;. (&amp;ldquo;addToFront&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7754,7 +7756,7 @@ function getNthElement(array, n) {
 &lt;p&gt;Given an array and an element, &amp;ldquo;addToFront&amp;rdquo; adds the given element to the front of the given array, and returns the given array. (배열과 요소가 주어졌을때, &amp;ldquo;addToFront&amp;rdquo; 함수는 주어진 요소를 배열의 맨앞에 추가하고 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-36&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-39&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;
 
@@ -7768,9 +7770,9 @@ function addToFront(arr, element) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;05_addToBack&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;question-42&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;addtoback&#34;&gt;addToBack&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;addToBack&amp;rdquo;. (&amp;ldquo;addToBack&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7778,9 +7780,7 @@ function addToFront(arr, element) {
 &lt;p&gt;Given an array and an element, &amp;ldquo;addToBack&amp;rdquo; returns the given array with the given element added to the end. (배열과 요소가 주어졌을때, &amp;ldquo;addToBack&amp;rdquo; 함수는 주어진 요소를 배열의 맨뒤에 추가하고 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;my_ answer&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-40&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
 function addToBack(arr, element) {
@@ -7793,15 +7793,17 @@ function addToBack(arr, element) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;06_joinArrays&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;question-43&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;joinarrays&#34;&gt;joinArrays&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;joinArrays&amp;rdquo;. (&amp;ldquo;joinArrays&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 
 &lt;p&gt;Given two arrays, &amp;ldquo;joinArrays&amp;rdquo; returns an array with the elements of &amp;ldquo;arr1&amp;rdquo; in order, followed by the elementsin &amp;ldquo;arr2&amp;rdquo;. (두 배열이 주어졌을때, &amp;ldquo;joinArrays&amp;rdquo; 함수는 첫번째 배열(arr1)과 두번째 배열(arr2) 순서로 합쳐진 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;h3 id=&#34;my-soultion-41&#34;&gt;My_soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;function joinArrays(arr1, arr2) {
   // your code here
@@ -7815,15 +7817,17 @@ function addToBack(arr, element) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;07_getElementsAfter&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;question-44&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getelementsafter&#34;&gt;getElementsAfter&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getElementsAfter&amp;rdquo;. (&amp;ldquo;getElementsAfter&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 
 &lt;p&gt;Given an array and an index, &amp;ldquo;getElementsAfter&amp;rdquo; returns a new array with all the elements after (but not including) the given index. (배열과 인덱스가 주어졌을때, &amp;ldquo;getElementsAfter&amp;rdquo; 함수는 주어진 배열의 인덱스 이후 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;h3 id=&#34;my-soultion-42&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;function getElementsAfter(array, n) {
   // your code here
@@ -7842,9 +7846,9 @@ getElementsAfter([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;08_getElementsUpTo&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;question-45&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getelementsupto&#34;&gt;getElementsUpTo&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getElementsUpTo&amp;rdquo;. (&amp;ldquo;getElementsUpTo&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7852,7 +7856,7 @@ getElementsAfter([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39
 &lt;p&gt;Given an array and a index, &amp;ldquo;getElementsUpTo&amp;rdquo;, returns an array with all the elements up until, but not including, the element at the given index. (배열과 인덱스가 주어졌을때, &amp;ldquo;getElementsUpTo&amp;rdquo; 함수는 주어진 배열의 인덱스 이전 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-37&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-43&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
 function getElementsUpTo(array, n) {
@@ -7864,9 +7868,9 @@ getElementsUpTo([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;09_getAllElementsButFirst&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;question-46&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getallelementsbutfirst&#34;&gt;getAllElementsButFirst&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getAllElementsButFirst&amp;rdquo;. (&amp;ldquo;getAllElementsButFirst&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7874,7 +7878,7 @@ getElementsUpTo([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;
 &lt;p&gt;Given an array, &amp;ldquo;getAllElementsButFirst&amp;rdquo; returns an array with all the elements but the first. (배열이 주어졌을때, &amp;ldquo;getAllElementsButFirst&amp;rdquo; 함수는 첫번째 요소를 제외한 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-38&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-44&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
 function getAllElementsButFirst(array) {
@@ -7890,9 +7894,7 @@ getAllElementsButFirst([1,2,3,4])
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;model solution&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;model-solution&#34;&gt;model solution&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -7901,7 +7903,9 @@ function getAllElementsButFirst(array) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;10_getAllElementsButLast&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-47&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getallelementsbutlast&#34;&gt;getAllElementsButLast&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getAllElementsButLast&amp;rdquo;. (&amp;ldquo;getAllElementsButLast&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7909,7 +7913,7 @@ function getAllElementsButFirst(array) {
 &lt;p&gt;Given an array, &amp;ldquo;getAllElementsButLast&amp;rdquo; returns an array with all the elements but the last. (배열이 주어졌을때, &amp;ldquo;getAllElementsButLast&amp;rdquo; 함수는 마지막 요소를 제외한 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-39&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-45&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getAllElementsButLast(array) {
@@ -7924,7 +7928,9 @@ function getAllElementsButLast(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;11_removeFromFront&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-48&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;removefromfront&#34;&gt;removeFromFront&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;removeFromFront&amp;rdquo;. (&amp;ldquo;removeFromFront&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7932,7 +7938,7 @@ function getAllElementsButLast(array) {
 &lt;p&gt;Given an array, &amp;ldquo;removeFromFront&amp;rdquo; returns the given array with its first element removed. (배열이 주어졌을때, &amp;ldquo;removeFromFront&amp;rdquo; 함수는 첫번째 요소를 삭제한 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-40&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-46&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function removeFromFront(arr) {
@@ -7944,7 +7950,9 @@ function removeFromFront(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;12_removeFromBack&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-49&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;removefromback&#34;&gt;removeFromBack&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;removeFromBack&amp;rdquo;. (&amp;ldquo;removeFromBack&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7952,7 +7960,7 @@ function removeFromFront(arr) {
 &lt;p&gt;Given an array, &amp;ldquo;removeFromBack&amp;rdquo; returns the given array with its last element removed. (배열이 주어졌을때, &amp;ldquo;removeFromBack&amp;rdquo; 함수는 마지막 요소를 삭제한 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-41&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-47&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function removeFromBack(arr) {
@@ -7965,7 +7973,9 @@ function removeFromBack(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;13_removeFromBackOfNew&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-50&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;removefrombackofnew&#34;&gt;removeFromBackOfNew&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;removeFromBackOfNew&amp;rdquo;. (&amp;ldquo;removeFromBackOfNew&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -7973,7 +7983,7 @@ function removeFromBack(arr) {
 &lt;p&gt;Given an array, &amp;ldquo;removeFromBackOfNew&amp;rdquo; returns a new array containing all but the last element of the given array. (배열이 주어졌을때, &amp;ldquo;removeFromBackOfNew&amp;rdquo; 함수는 마지막 요소를 제외한 모든 요소를 가지고 있는 새로운 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-42&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-48&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function removeFromBackOfNew(arr) {
@@ -7992,9 +8002,7 @@ function removeFromBackOfNew(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;model solution&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;model-solution-1&#34;&gt;model solution&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function removeFromBackOfNew(arr) {
   // your code here
@@ -8007,7 +8015,9 @@ function removeFromBackOfNew(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;14_addToBackOfNew&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-51&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;addtobackofnew&#34;&gt;addToBackOfNew&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;addToBackNew&amp;rdquo;. (&amp;ldquo;addToBackNew&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8015,7 +8025,7 @@ function removeFromBackOfNew(arr) {
 &lt;p&gt;Given an array and an element, &amp;ldquo;addToBackNew&amp;rdquo; returns a clone of the given array, with the given element added to the end. (배열과 요소가 주어졌을때, &amp;ldquo;addToBackNew&amp;rdquo; 함수는 주어진 배열의 복사본 끝에 주어진 요소가 추가된 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-43&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-49&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -8027,9 +8037,7 @@ function addToBackOfNew(arr, element) {
   
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;model soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;model-soultion&#34;&gt;model soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function addToBackOfNew(arr, element) {
@@ -8040,7 +8048,9 @@ function addToBackOfNew(arr, element) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;16_joinArrayOfArrays&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-52&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;joinarrayofarrays&#34;&gt;joinArrayOfArrays&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;joinArrayOfArrays&amp;rdquo;. (&amp;ldquo;joinArrayOfArrays&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8049,6 +8059,8 @@ function addToBackOfNew(arr, element) {
 
 &lt;p&gt;it is used by reduce and concat&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;h3 id=&#34;my-soultion-50&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function joinArrayOfArrays(arr) {
@@ -8062,11 +8074,9 @@ function joinArrayOfArrays(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;question-53&#34;&gt;Question&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;18_getAllLetters&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;getallletters&#34;&gt;getAllLetters&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getAllLetters&amp;rdquo;. (&amp;ldquo;getAllLetters&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8074,7 +8084,7 @@ function joinArrayOfArrays(arr) {
 &lt;p&gt;Given a word, &amp;ldquo;getAllLetters&amp;rdquo; returns an array containing every character in the word. (단어가 주어졌을때, &amp;ldquo;getAllLetters&amp;rdquo; 함수는 주어진 단어에 포함된 모든 문자를 담고 있는 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-44&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-51&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function getAllLetters(str) {
   // your code here
@@ -8089,7 +8099,9 @@ function joinArrayOfArrays(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;19_getAllWords&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-54&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getallwords&#34;&gt;getAllWords&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getAllWords&amp;rdquo;. (&amp;ldquo;getAllWords&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8097,7 +8109,7 @@ function joinArrayOfArrays(arr) {
 &lt;p&gt;Given a sentence, &amp;ldquo;getAllWords&amp;rdquo; returns an array containing every word in the sentence. (문장이 주어졌을때, &amp;ldquo;getAllWords&amp;rdquo; 함수는 주어진 문장에 포함된 모든 단어를 담고 있는 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;### My_Soultion&lt;/p&gt;
+&lt;h3 id=&#34;my-soultion-52&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt; 
  
@@ -8109,12 +8121,11 @@ function joinArrayOfArrays(arr) {
   }
 }
 
- 
- 
- 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;21_removeElement&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-55&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;removeelement&#34;&gt;removeElement&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;removeElement&amp;rdquo;. (&amp;ldquo;removeElement&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8122,7 +8133,7 @@ function joinArrayOfArrays(arr) {
 &lt;p&gt;Given an array of elements, and a &amp;ldquo;discarder&amp;rdquo; parameter, &amp;ldquo;removeElement&amp;rdquo; returns an array containing the items in the given array that do not match the &amp;ldquo;discarder&amp;rdquo; parameter. (배열과 &amp;ldquo;discarder&amp;rdquo; 매개변수가 주어졌을때, &amp;ldquo;removeElement&amp;rdquo; 함수는 주어진 배열에서 &amp;ldquo;discarder&amp;rdquo; 매개변수와 일치하지 않는 모든 요소를 포함하는 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-45&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-53&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -8149,7 +8160,9 @@ unction removeElement(array, discarder) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;22_keep&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-56&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;keep&#34;&gt;keep&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;keep&amp;rdquo;. (&amp;ldquo;keep&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8157,7 +8170,7 @@ unction removeElement(array, discarder) {
 &lt;p&gt;Given an array and a keeper element, &amp;ldquo;keep&amp;rdquo; returns an array containing the items that match the given keeper element. (배열과 &amp;ldquo;keeper&amp;rdquo; 매개변수가 주어졌을때, &amp;ldquo;keep&amp;rdquo; 함수는 &amp;ldquo;keeper&amp;rdquo; 매개변수와 일치하는 모든 요소&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-46&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-54&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function keep(array, keeper) {
   // your code here
@@ -8181,7 +8194,9 @@ unction removeElement(array, discarder) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;23_findSmallestElement&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-57&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;findsmallestelement&#34;&gt;findSmallestElement&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;findSmallestElement&amp;rdquo;. (&amp;ldquo;findSmallestElement&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8189,13 +8204,10 @@ unction removeElement(array, discarder) {
 &lt;p&gt;Given an array of numbers, &amp;ldquo;findSmallestElement&amp;rdquo; returns the smallest number within the given array. (숫자의 배열이 주어졌을때, &amp;ldquo;findSmallestElement&amp;rdquo; 함수는 주어진 배열에서 가장 작은 수를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;My_solution&lt;/p&gt;&lt;/li&gt;
+&lt;h3 id=&#34;my-solution&#34;&gt;My_solution&lt;/h3&gt;
 
-&lt;li&gt;&lt;p&gt;It is used by sort();&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// It is used by sort();
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
 
 function findSmallestElement(arr) {
@@ -8219,11 +8231,9 @@ function findSmallestElement(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;It is used by reudce and if&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// It is used by reudce and if 
+
 function findSmallestElement(arr) {
   if (arr.length &amp;lt; 1) {  // satisfies Notes requirement
     return 0;
@@ -8239,11 +8249,10 @@ function findSmallestElement(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;2.It is used by reudce and if ?????&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// It is used by reudce and if ????? 
+
+
 function findSmallestElement(arr) {
   
   if(arr.length === 0) {
@@ -8257,11 +8266,10 @@ function findSmallestElement(arr) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;1.it is used by reudce and Math method&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// it is used by reudce and Math method
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function findSmallestElement(arr) {
+function findSmallestElement(arr) {
 
   if ( arr.length === 0 ) {
     return 0;
@@ -8275,11 +8283,9 @@ function findSmallestElement(arr) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;2it is used by reudce and Math method&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// it is used by reudce and Math method
+
 function findSmallestElement(arr) {
 
   if ( arr.length === 0 ) {
@@ -8290,7 +8296,9 @@ function findSmallestElement(arr) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;24_computeSumOfAllElements&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-58&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;computesumofallelements&#34;&gt;computeSumOfAllElements&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;computeSumOfAllElements&amp;rdquo;. (&amp;ldquo;computeSumOfAllElements&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8298,9 +8306,7 @@ function findSmallestElement(arr) {
 &lt;p&gt;Given an array of numbers, &amp;ldquo;computeSumOfAllElements&amp;rdquo; returns the sum of all the elements in the given array. (숫자의 배열이 주어졌을때, &amp;ldquo;computeSumOfAllElements&amp;rdquo; 함수는 주어진 배열의 모든 요소의 합을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Solution&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-solution-1&#34;&gt;My_Solution&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function computeSumOfAllElements(arr) {
   
@@ -8318,11 +8324,8 @@ function findSmallestElement(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;it used by reduce&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// it used by reduce 
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
 function computeSumOfAllElements(arr) {
   if ( arr.length === 0 ) {
@@ -8336,7 +8339,9 @@ function computeSumOfAllElements(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;25_computeProductOfAllElements&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-59&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;computeproductofallelements&#34;&gt;computeProductOfAllElements&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;computeProductOfAllElements&amp;rdquo;. (&amp;ldquo;computeProductOfAllElements&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8344,9 +8349,7 @@ function computeSumOfAllElements(arr) {
 &lt;p&gt;Given an array of numbers, &amp;ldquo;computeProductOfAllElements&amp;rdquo; returns the products of all the elements in the given array. (숫자의 배열이 주어졌을때, &amp;ldquo;computeProductOfAllElements&amp;rdquo; 함수는 주어진 배열의 모든 요소의 곱을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Solution&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-solution-2&#34;&gt;My_Solution&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -8371,11 +8374,10 @@ function computeProductOfAllElements(arr) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;It is used by redcue method&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function computeProductOfAllElements(arr) {
+// It is used by redcue method
+function computeProductOfAllElements(arr) {
     
     
     if ( arr.length === 0 ) {
@@ -8390,7 +8392,9 @@ function computeProductOfAllElements(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;26_getLengthOfLongestElement&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-60&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getlengthoflongestelement&#34;&gt;getLengthOfLongestElement&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getLengthOfLongestElement&amp;rdquo;. (&amp;ldquo;getLengthOfLongestElement&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8398,15 +8402,11 @@ function computeProductOfAllElements(arr) {
 &lt;p&gt;Given an array, &amp;ldquo;getLengthOfLongestElement&amp;rdquo; returns the length of the longest string in the given array. (배열이 주어졌을때, &amp;ldquo;getLengthOfLongestElement&amp;rdquo; 함수는 주어진 배열에서 가장 긴 문자열의 길이를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Solution&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;it is used by sort()&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&#34;my-solution-3&#34;&gt;My_Solution&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// it is used by sort()
+
 
 function getLengthOfLongestElement(arr) {
 
@@ -8422,11 +8422,10 @@ function getLengthOfLongestElement(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;It is used by for loop and if&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// It is used by for loop and if
+
+
 function getLengthOfLongestElement(arr) {
   
   if ( arr.length === 0 ) {
@@ -8451,16 +8450,22 @@ function getLengthOfLongestElement(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;it is used by reduce method&lt;/p&gt;
-
-&lt;p&gt;comment&lt;/p&gt;
-
-&lt;p&gt;return a.length or return b.length 하면 안되는 이유. length를 리턴에 넣으면 다음  a 와 b.length의 길이를 비교하기 때문에 안되는거더라구요. 그래서 함수 밖에 붙여주면 숫자로 반환되는 거구요.&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
+
+/*
+
+
+it is used by reduce method
+
+comment
+
+return a.length or return b.length 하면 안되는 이유. length를 리턴에 넣으면 다음  a 와 b.length의 길이를 비교하기 때문에 안되는거더라구요. 그래서 함수 밖에 붙여주면 숫자로 반환되는 거구요.
+
+
+
+
+*/
 
 function getLengthOfLongestElement(arr) {
 
@@ -8475,7 +8480,9 @@ function getLengthOfLongestElement(arr) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;28_filterOddLengthWords&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-61&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;filteroddlengthwords&#34;&gt;filterOddLengthWords&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;filterOddLengthWords&amp;rdquo;. (&amp;ldquo;filterOddLengthWords&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8483,9 +8490,7 @@ function getLengthOfLongestElement(arr) {
 &lt;p&gt;Given an array of string, &amp;ldquo;filterOddLengthWords&amp;rdquo; returns an array containing only the elements of the given array whose lengths are odd numbers. (문자열의 배열이 주어졌을때, &amp;ldquo;filterOddLengthWords&amp;rdquo; 함수는 주어진 배열의 요소 중 문자열의 길이가 홀수인 문자열만을 요소로 가지는 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-55&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -8514,9 +8519,7 @@ unction filterOddLengthWords(words) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;modle_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;modle-soultion&#34;&gt;modle_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -8533,13 +8536,9 @@ function filterOddLengthWords(arr) {  // HoF
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
+&lt;h3 id=&#34;question-62&#34;&gt;Question&lt;/h3&gt;
 
-&lt;h2 id=&#34;array-object&#34;&gt;&lt;strong&gt;Array &amp;amp; object&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;01_getElementOfArrayProperty&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;getelementofarrayproperty&#34;&gt;getElementOfArrayProperty&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getElementOfArrayProperty&amp;rdquo;. (&amp;ldquo;getElementOfArrayProperty&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8547,9 +8546,7 @@ function filterOddLengthWords(arr) {  // HoF
 &lt;p&gt;Given an object, a key, and a numerical index, &amp;ldquo;getElementOfArrayProperty&amp;rdquo; returns the value of the element at the given index of the array located within the given object at the given key. (객체와 키, 그리고 숫자로된 인덱스값이 주어졌을때, &amp;ldquo;getElementOfArrayProperty&amp;rdquo; 함수는 주어진 키에 위치한 배열의 인덱스에 해당하는 값을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;my_asnswer&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-56&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getElementOfArrayProperty(obj, key, index) {
@@ -8569,13 +8566,17 @@ getElementOfArrayProperty(obj,&#39;key&#39;,0);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;02_select&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-63&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;select&#34;&gt;select&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;select&amp;rdquo;. (&amp;ldquo;select&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 
 &lt;p&gt;Given an array and an object, &amp;ldquo;select&amp;rdquo; returns a new object whose properties are those in the given object AND whose keys are present in the given array. (배열과 객체가 주어졌을때, &amp;ldquo;select&amp;rdquo; 함수는 주어진 객체의 키값 중 주어진 배열에 포함된 키값만을 속성으로 가지는 새로운 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;h3 id=&#34;my-soultion-57&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function select(arr, obj) {
@@ -8596,7 +8597,9 @@ function select(arr, obj) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;04_getNthElementOfProperty&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-64&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getnthelementofproperty&#34;&gt;getNthElementOfProperty&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getNthElementOfProperty&amp;rdquo;. (&amp;ldquo;getNthElementOfProperty&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8604,7 +8607,7 @@ function select(arr, obj) {
 &lt;p&gt;Given an object and a key, &amp;ldquo;getNthElementOfProperty&amp;rdquo; returns the nth element of an array located at the given key. (객체와 키가 주어졌을때, &amp;ldquo;getNthElementOfProperty&amp;rdquo; 함수는 주어진 키에 위차한 배열의 n번째 요소를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-47&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-58&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getNthElementOfProperty(obj, key, n) {
@@ -8620,13 +8623,17 @@ function getNthElementOfProperty(obj, key, n) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;03_getElementsLessThan100AtProperty&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-65&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getelementslessthan100atproperty&#34;&gt;getElementsLessThan100AtProperty&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getElementsLessThan100AtProperty&amp;rdquo;. (&amp;ldquo;getElementsLessThan100AtProperty&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 
 &lt;p&gt;Given an object and a key, &amp;ldquo;getElementsLessThan100AtProperty&amp;rdquo; returns an array containing all the elements of the array located at the given key that are less than 100. (객체와 키값이 주어졌을때, &amp;ldquo;getElementsLessThan100AtProperty&amp;rdquo; 함수는 주어진 키에 위치하는 배열에서 100 보다 작은 값으로만 이루어진 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;h3 id=&#34;my-soultion-59&#34;&gt;MY_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getElementsLessThan100AtProperty(obj, key) {
@@ -8654,9 +8661,7 @@ function getElementsLessThan100AtProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Re_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-re-soultion&#34;&gt;My_Re_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -8672,11 +8677,9 @@ function getElementsLessThan100AtProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;05_getLastElementOfProperty&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-66&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Question&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;getlastelementofproperty&#34;&gt;getLastElementOfProperty&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getLastElementOfProperty&amp;rdquo;. (&amp;ldquo;getLastElementOfProperty&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8684,9 +8687,7 @@ function getElementsLessThan100AtProperty(obj, key) {
 &lt;p&gt;Given an object and a key, &amp;ldquo;getLastElementOfProperty&amp;rdquo; returns the last element of an array located at the given key. (객체와 키가 주어졌을때, &amp;ldquo;getLastElementOfProperty&amp;rdquo; 함수는 주어진 키에 위치한 배열의 마지막 요소를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Solution&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-solution-4&#34;&gt;My_Solution&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function getLastElementOfProperty(obj, key) {
   
@@ -8704,9 +8705,7 @@ function getElementsLessThan100AtProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;modle_Solution&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;modle-solution&#34;&gt;modle_Solution&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // 1.마지막 배열에 요소 가져오기 위해 length - 1 이라는 방법을 썻다.
@@ -8722,7 +8721,9 @@ function getLastElementOfProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;06_getSquaredElementsAtProperty&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-67&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getsquaredelementsatproperty&#34;&gt;getSquaredElementsAtProperty&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getSquaredElementsAtProperty&amp;rdquo;. (&amp;ldquo;getSquaredElementsAtProperty&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8730,9 +8731,7 @@ function getLastElementOfProperty(obj, key) {
 &lt;p&gt;Given an object and a key, &amp;ldquo;getSquaredElementsAtProperty&amp;rdquo; returns an array containing all the squared elements of the array located at the given key. (객체와 키가 주어졌을때, &amp;ldquo;getSquaredElementsAtProperty&amp;rdquo; 함수는 주어진 키에 위치하는 배열의 요소들의 제곱을 요소로 가지는 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-60&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -8764,9 +8763,7 @@ function getSquaredElementsAtProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;other Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;other-soultion&#34;&gt;other Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -8791,11 +8788,9 @@ console.log(output);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;07_getAllButLastElementOfProperty&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-68&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Question&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;getallbutlastelementofproperty&#34;&gt;getAllButLastElementOfProperty&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getAllButLastElementOfProperty&amp;rdquo;. (&amp;ldquo;getAllButLastElementOfProperty&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8803,7 +8798,7 @@ console.log(output);
 &lt;p&gt;Given an object and a key, &amp;ldquo;getAllButLastElementOfProperty&amp;rdquo; returns an array containing all but the last element of the array located at the given key. (객체와 키가 주어졌을때, &amp;ldquo;getAllButLastElementOfProperty&amp;rdquo; 함수는 주어진 키에 위치하는 배열의 마지막 요소를 제외한 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;** My_Solution&lt;/p&gt;
+&lt;h3 id=&#34;my-solution-5&#34;&gt;My_Solution&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getAllButLastElementOfProperty(obj, key) {
@@ -8831,7 +8826,9 @@ function getAllButLastElementOfProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;08_getProductOfAllElementsAtProperty&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-69&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;getproductofallelementsatproperty&#34;&gt;getProductOfAllElementsAtProperty&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getProductOfAllElementsAtProperty&amp;rdquo;. (&amp;ldquo;getProductOfAllElementsAtProperty&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -8839,15 +8836,10 @@ function getAllButLastElementOfProperty(obj, key) {
 &lt;p&gt;Given an object and a key, &amp;ldquo;getProductOfAllElementsAtProperty&amp;rdquo; returns the product of all the elements in the array located at the given key. (객체와 키가 주어졌을때, &amp;ldquo;getProductOfAllElementsAtProperty&amp;rdquo; 함수는 주어진 키에 위치한 배열의 요소의 곱을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_soultion&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;It is used by for&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&#34;my-soultion-61&#34;&gt;My_soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// It is used by for 
 
 
 
@@ -8877,11 +8869,8 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;It is used by reduce&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// It is used by reduce
 
 function getProductOfAllElementsAtProperty(obj, key) {
   if (! Array.isArray(obj[key] )) {
