@@ -1,11 +1,11 @@
 ---
-title: JS algorithm
+title: 3.Coding_level_2
 date: 2019-45
 draft: true
 menu:
   tutorial:
     parent: "Javascript"
-    weight: 12
+    weight: 11
 toc: true
 type: docs
 ---

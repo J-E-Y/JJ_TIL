@@ -235,8 +235,7 @@
   </url>
   
   <url>
-    <loc>/author/</loc>
-    <priority>0</priority>
+    <loc>/tutorial/javascript_algorithm/</loc>
   </url>
   
   <url>
@@ -244,7 +243,8 @@
   </url>
   
   <url>
-    <loc>/tutorial/javascript_algorithm/</loc>
+    <loc>/author/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

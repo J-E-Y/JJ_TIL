@@ -1,11 +1,11 @@
 ---
-title: Crucial_Points
+title: 4.Dictionary
 date: 2019-6
 draft: true
 menu:
   tutorial:
     parent: "Javascript"
-    weight: 11
+    weight: 12
 toc: true
 type: docs
 ---

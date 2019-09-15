@@ -1,5 +1,5 @@
 ---
-title: 2. Basic_Daliy_Coding
+title: 2.Coding_level_1 
 date: 2019-6
 draft: true
 menu:
