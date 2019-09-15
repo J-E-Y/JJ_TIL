@@ -1331,18 +1331,18 @@ console.log(array.some(even));
 ```
 
 ---
-## **object**
+## **Object**
 ---
 
 
 
-* Object.keys(객체)  : `key` 뽑기 into array
-* Object.values(객체) : `value` 뽑기 into array
-* Object.entries(객체) : `전체`뽑기 into array
+**Object.keys(객체)  : `key` 뽑기 into array**
+**Object.values(객체) : `value` 뽑기 into array**
+**Object.entries(객체) : `전체`뽑기 into array**
 
 
 
-```
+```js
 let user = {
   name: "John",
   age: 30
@@ -1356,7 +1356,7 @@ Object.entries(person) = [ ["name","John"], ["age",30] ]
 
 > 뽑은것들 변수에 담아서 배열 에 넣기  
 
-```
+```js
 let arrKey =  Object.keys(person);
 >>["name", "age"]
 
@@ -1373,7 +1373,7 @@ let arrEntries = Object.entries(person);
 
 
 
-* `obj.key` or `obj[key]` 
+**`obj.key` or `obj[key]** 
 
 
 >for 문을 이용해 객체안에 있는 key value 뽑기
@@ -1381,7 +1381,7 @@ let arrEntries = Object.entries(person);
 
 >ex 키값 뽑기 
 
-```
+```js
 let person = { name : "john" , age : 33 } ; 
 
 for (let key in person) {
@@ -1411,7 +1411,8 @@ for (let key in person) {
 ```
 
 
- * delete object.property
+**delete object.property**
+ 
  
 ```js
 

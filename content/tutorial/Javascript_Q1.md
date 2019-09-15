@@ -17,10 +17,9 @@ type: docs
 
 
 
-
 ### Question
 
-* longestWord
+## longestWord
 
 > Using the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, 'LongestWord' 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
 
@@ -84,15 +83,11 @@ return string.split(' ').reduce((acc,cur)=> acc.length<cur.length? cur:acc);
 
 
 
-
-
-
-
-
 ### Question
 
-* firstCharacter
+## firstCharacter
 
+> In this exercise, a string is passed to a method and a new string has to be returned with the first character of each word in the string (문자열이 주어졌을때, "firstCharacter" 함수는 문자열의 각 단어 첫글자들로 이루어진 문자열을 반환하여야 합니다.)
 
 
 
@@ -144,15 +139,15 @@ function firstCharacter (string) {
 
 
 
+### Question
 
+## isOldEnoughToDrink
 
-## Conditional : isOldEnoughToDrink
----
 
 >어떤 숫자, 이 경우에는 연령이 하나 주어졌을 때, isOldEnoughToDrink 함수는 주어진 연령의 사람이 미국에서 합법적으로 술을 마실 수 있는지의 여부를 반환해야 합니다.
 
 
-* my_answer
+## My_Soultion
 
 
 ```JS
@@ -168,10 +163,10 @@ function isOldEnoughToDrink(age) {
 
 ```
 
----
-## Conditional : checkAge 
----
 
+### Question  
+
+## checkAge
 
 >이름과 나이를 파라미터로 받는 checkAge라는 함수는 두개 중 하나의 메시지를 리턴합니다.
 
@@ -179,7 +174,7 @@ function isOldEnoughToDrink(age) {
 
 
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -197,9 +192,10 @@ function checkAge(name, age) {
 
 
 
----
-## Conditional : equalsTen
----
+### Question 
+
+## equalsTen
+
 
 >Write a function called "equalsTen". ("equalsTen" 함수를 작성하세요.)
 
@@ -208,7 +204,7 @@ function checkAge(name, age) {
 
 
 
-* my_answer
+### My_Soultion
 
 ```
 function equalsTen(num) {
@@ -228,9 +224,9 @@ equalsTen(10);
 
 
 
----
-## Conditional : isGreaterThan
----
+### Question 
+
+## isGreaterThan
 
 
 >Write a function called "isGreaterThan". ("isGreaterThan" 함수를 작성하세요.)
@@ -238,7 +234,7 @@ equalsTen(10);
 >Given 2 numbers, "isGreaterThan" returns whether num2 is greater than num1. (두 숫자가 주어졌을때, "isGreaterThan" 함수는 두번째 숫자(num2)가 첫번째 숫자(num1)보다 큰지 반환해야 합니다.)
 
 
-* my_answer
+### My_Soultion
 
 
 ```
@@ -260,9 +256,9 @@ isGreaterThan(20,30)
 
 
 
----
-## Conditional : isEven
----
+### Question 
+
+## isEven
 
 
 >Write a function called "isEven". ("isEven" 함수를 작성하세요.)
@@ -271,7 +267,7 @@ isGreaterThan(20,30)
 
 
 
-* my_answer
+### My_Soultion
 
 ```
 function isEven(num) {
@@ -290,16 +286,17 @@ isEven(21)
 
 
 
----
-## Conditional : isEvenAndGreaterThanTen
----
+### Question 
+
+## isEvenAndGreaterThanTen
+
 
 >Write a function called "isEvenAndGreaterThanTen". ("isEvenAndGreaterThanTen" 함수를 작성하세요.)
 
 >Given a number, "isEvenAndGreaterThanTen" returns whether it is both even and greater than 10. (숫자가 주어졌을때, "isEvenAndGreaterThanTen" 함수는 주어진 숫자가 10보다 크고 짝수인지 반환해야 합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```
 function isEvenAndGreaterThanTen(num) {
@@ -316,9 +313,9 @@ isEvenAndGreaterThanTen(13);
 ```
 
 
----
-## Conditional : convertScoreToGrade
----
+### Question 
+
+## convertScoreToGrade
 
 
 >Write a function called "convertScoreToGrade". ("convertScoreToGrade" 함수를 작성하세요.)
@@ -326,7 +323,7 @@ isEvenAndGreaterThanTen(13);
 >Given a score, "convertScoreToGrade" returns a string representing the letter grade corresponding to the given score. (점수가 주어졌을때, "convertScoreToGrade" 함수는 주어진 점수와 대응하는 등급을 문자열로 반환합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```
 function convertScoreToGrade(score) {
@@ -350,9 +347,10 @@ convertScoreToGrade(0);
 ```
 
 
----
-## Conditional : Or
----
+### Question 
+
+### Or
+
 
 
 
@@ -363,7 +361,7 @@ convertScoreToGrade(0);
 
 
 
-* my_answer
+### My_Soultion
 
 ```
 function or(expression1, expression2) {
@@ -382,10 +380,10 @@ function or(expression1, expression2) {
 
 
 
+### Question 
 
----
-## Conditional : isEitherEvenAndLessThan9
----
+## isEitherEvenAndLessThan9
+
 
 
 
@@ -395,7 +393,7 @@ function or(expression1, expression2) {
 
 
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -414,7 +412,7 @@ function isEitherEvenAndLessThan9(num1, num2) {
 
 
 ---
-## string : getFullName
+### Question : getFullName
 ---
 
 
@@ -424,7 +422,7 @@ function isEitherEvenAndLessThan9(num1, num2) {
 >Given a first and a last name, "getFullName" returns a single string with the given first and last names separated by a single space. (이름과 성이 주어졌을때, "getFullName" 함수는 이름과 성이 띄어쓰기 하나를 사이에 둔 단일 문자열을 반환해야 합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -440,9 +438,11 @@ getFullName('john','jung')
 
 
 
----
-## string : getLengthOfWord
----
+
+### Question 
+
+## getLengthOfWord
+
 
 
 
@@ -451,7 +451,7 @@ getFullName('john','jung')
 >Given a word, "getLengthOfWord" returns the length of the given word. (단어가 주어졌을때, "getLengthOfWord" 함수는 단어의 길이를 반환해야 합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -465,9 +465,10 @@ getLengthOfWord("hello")
 ```
 
 
----
-## string : computeAverageLengthOfWords
----
+
+### Question 
+
+## computeAverageLengthOfWords
 
 
 
@@ -477,7 +478,7 @@ getLengthOfWord("hello")
 >Given two words, "computeAverageLengthOfWords" returns the average of their lengths. (두 단어가 주어졌을때, "computeAverageLengthOfWords" 함수는 두 단어 길이의 평균값을 반환합니다.)
 
 
-* my_answer
+### My_Soultion
 
 
 ```
@@ -495,9 +496,11 @@ function computeAverageLengthOfWords(word1, word2) {
 ```
 
 
----
-## string : isOddLength
----
+
+### Question 
+
+## isOddLength
+
 
 
 >Write a function called "isOddLength". ("isOddLength" 함수를 작성하세요.)
@@ -505,7 +508,7 @@ function computeAverageLengthOfWords(word1, word2) {
 >Given a word, "isOddLength" returns whether the length of the given word is odd. (단어가 주어졌을때, "isOddLength" 함수는 주어진 단어의 길이가 홀수인지 반환해야 합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```
 function isOddLength(word) {
@@ -522,9 +525,11 @@ isOddLength("heeeee")
 ```
 
 
----
-## string : isEvenLength
----
+
+### Question 
+
+## isEvenLength
+
 
 
 >Write a function called "isEvenLength". ("isEvenLength" 함수를 작성하세요.)
@@ -533,7 +538,7 @@ isOddLength("heeeee")
 
 
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -552,9 +557,11 @@ isEvenLength("hee")
 
 ```
 
----
-## string : repeatString
----
+
+### Question 
+
+## repeatString
+
 
 
 
@@ -562,7 +569,7 @@ isEvenLength("hee")
 
 >Given a string and a number, "repeatString" returns the given string repeated the given number of times. (문자열과 숫자가 주어졌을때, "repeatString" 함수는 주어진 문자열을 주어진 숫자만큼 반복하여 반환해야 합니다.)
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -577,9 +584,11 @@ repeatString("thewordofGod is the way",50)
 
 
 
----
-## string : findShortestOfThreeWords
----
+
+### Question 
+
+## findShortestOfThreeWords
+
 
 
 >Write a function called "findShortestOfThreeWords". ("findShortestOfThreeWords" 함수를 작성하세요.)
@@ -590,7 +599,7 @@ repeatString("thewordofGod is the way",50)
 
 
 
-* my_answer
+### My_Soultion
 
 ```
 function findShortestOfThreeWords(word1, word2, word3) {
@@ -611,16 +620,18 @@ findShortestOfThreeWords("111","222","333333333")
 
 
 
----
-## string : countCharacter
----
+
+### Question 
+
+## countCharacter
+
 
 
 >Write a function called "countCharacter". ("countCharacter" 함수를 작성하세요.)
 
 >Given a string input and a character, "countCharacter" returns the number of occurences of a given character in the given string. (문자열과 문자가 주어졌을때, "countCharacter" 함수는 주어진 문자열에서 주어진 문자가 몇개가 있는지를 반환해야 합니다.)
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -643,9 +654,11 @@ countCharacter("hello", "l" );
 
 
 
----
-## string : areValidCredentials
----
+
+### Question
+
+## areValidCredentials
+
 
 
 
@@ -656,7 +669,7 @@ countCharacter("hello", "l" );
 
 
 
-* my_answer
+### My_Soultion
 
 * ex1
 ```
@@ -710,15 +723,17 @@ function findMinLengthOfThreeWords(word1, word2, word3) {
 ```
 
 
----
-## Math : computeAreaOfATriangle
----
+
+### Question 
+
+## computeAreaOfATriangle
+
 
 
 >Given the base and height of a triangle, "computeAreaOfATriangle" returns its area. (삼각형의 밑변과 높이가 주어졌을때, "computeAreaOfATriangle" 함수는 삼각형의 넓이를 반환합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```
 function computeAreaOfATriangle(base, height) {
@@ -730,9 +745,11 @@ function computeAreaOfATriangle(base, height) {
 ```
 
 
----
-## Math : computePerimeterOfACircle
----
+
+### Question 
+
+## computePerimeterOfACircle
+
 
 
 >Write a function called "computePerimeterOfACircle". ("computePerimeterOfACircle" 함수를 작성하세요.)
@@ -742,7 +759,7 @@ function computeAreaOfATriangle(base, height) {
 
 
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -761,9 +778,11 @@ computePerimeterOfACircle(200);
 
 
 
----
-## Math : computeAverageOfNumbers
----
+
+### Question 
+
+## computeAverageOfNumbers
+
 
 
 
@@ -773,7 +792,7 @@ computePerimeterOfACircle(200);
 
 
 
-* my_answer
+### My_Soultion
 
 ```
 function computeAverageOfNumbers(nums) {
@@ -791,19 +810,17 @@ computeAverageOfNumbers[1,2,3,4,5,6];
 
 ```
 
----
-## **type**
----
+
+### Question
 
 
-
-**01_convertToString**
+## convertToString
 
 convertToString함수가 있습니다. 이 함수는 주어진 파라미터를 문자열의 형태로 변환합니다.
 
 
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -821,10 +838,10 @@ convertToString('hello')
 
 ```
 
+### Question
 
 
-
-**02_convertToNumber**
+## convertToNumber
 
 >convertToNumber함수가 있습니다. 이 함수는 주어진 파라미터를 숫자의 형태로 변환합니다.
 
@@ -832,6 +849,7 @@ convertToString('hello')
 >숫자로 변환할 수 없는 경우, NaN (Not a number) 이라는 결과가 나올것입니다. NaN은 숫자가 아님을 나타내는 특수한 값으로, 문자열이 아닙니다.
 
 
+### My_Soution
 
 ```
 
@@ -852,16 +870,16 @@ convertToNumber('hello')
 
 
 
+### Question
 
 
 
-
-**03_isFalsy**
+## isFalsy
 
 >isFalsy함수가 있습니다. falsy 값은, 거짓으로 취급되는 값을 의미합니다. 이 함수는 주어진 파라미터가 falsy값인지 아닌지를 평가합니다.
 
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -888,8 +906,10 @@ isFalsy('hello');
 
 ```
 
+### Question
 
-**04_getType**
+
+## getType
 
 
 >getType함수가 있습니다. 이 함수는 주어진 파라미터의 타입을 리턴합니다.
@@ -899,7 +919,7 @@ isFalsy('hello');
 배열과 객체를 구분하려면 Array.isArray 메소드를 사용하면 됩니다.
 
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -920,18 +940,15 @@ getType([1,2,3,4])
 
 
 
----
-## **object**
----
+### Question
 
-
-* 01_getProperty
+## getProperty
 
 >파라미터로 객체와 키를 받는 getProperty함수가 있습니다. 이 함수는 주어진 객체와 키를 이용하여 속성값을 찾아 리턴합니다.
 만일 주어진 키가 객체의 속성에 없다면, undefined를 리턴하면 됩니다.
 
 
-* my_answer
+### My_Soultion
 
 
 ```
@@ -947,18 +964,18 @@ let person = {
 getProperty(person,"name");
 ```
 
+### Question
 
-
-* 02_addProperty
+## addProperty
 
 
 >파라미터로 객체와 키를 받는 addProperty 함수가 있습니다. 이 함수는 주어진 객체에, 키 이름으로 속성을 만들고 값을 true로 설정합니다.
 
 
 
-* my_answer
+### My_Soultion
 
-```
+```js
 function addProperty(obj, propertyName) {
   // 여기에 코드를 작성하세요
   return obj[propertyName] = true;
@@ -968,12 +985,15 @@ function addProperty(obj, propertyName) {
 let john = {};
 
 addProperty(john,'isprogrammer');
-```
 
 
-* Q
 
->obj[propertyName]를 이용했을 때는 테스트가 통과가 되고,
+/*
+
+
+Questoin
+
+obj[propertyName]를 이용했을 때는 테스트가 통과가 되고,
 obj.propertyName를 이용했을 때는 통과가 되지 않습니다.
 객체에 프로퍼티를 추가할 때 dot노테이션을 사용할 수 있는 걸로 알고있는데..이유가 뭘까요?
 
@@ -988,19 +1008,30 @@ obj.propertyName = true; 는 steve.propertyName = true; 입니다. 완전히 다
 
 
 
+*/
 
 
-* 04_addObjectProperty
+```
+
+
+
+
+
+
+
+### Question
+
+## addObjectProperty
 
 
 >파라미터로 두 개의 객체와 키를 받는 addObjectProperty 함수가 있습니다. 이 함수는 주어진 첫번째 객체에, 키 이름으로 속성을 만드는데, 그 값은 두번째 객체로 설정합니다.
 객체의 키 값은 또다른 객체가 될 수 있음을 기억하세요.
 
 
-* my_answer
+### My_Soultion
 
 
-```
+```js
 
 function addObjectProperty(obj1, propertyName, obj2) {
   // 여기에 코드를 작성합니다.
@@ -1022,9 +1053,9 @@ addObjectProperty(person1, 'manager', person2);
 
 ```
 
+### Question
 
-
-* 05_removeProperty
+## removeProperty
 
 
 >Write a function called "removeProperty". ("removeProperty" 함수를 작성하세요.)
@@ -1033,7 +1064,7 @@ addObjectProperty(person1, 'manager', person2);
 
 
 
-* my_answer
+### My_Soultion
 
 
 
@@ -1045,9 +1076,9 @@ function removeProperty(obj, propertyName) {
 }
 
 ```
+### Question
 
-
-* 06_isPersonOldEnoughToVote
+## isPersonOldEnoughToVote
 
 >Write a function called "isPersonOldEnoughToVote". ("isPersonOldEnoughToVote" 함수를 작성하세요.)
 
@@ -1070,15 +1101,16 @@ function isPersonOldEnoughToVote(person) {
 ```
 
 
+### Question
 
-* 08_removeNumbersLargerThan
+## removeNumbersLargerThan
 
 
 >Write a function called "removeNumbersLargerThan". ("removeNumbersLargerThan" 함수를 작성하세요.)
 
 >Given a number and an object, "removeNumbersLargerThan" removes any properties whose values are numbers greater than the given number. (숫자와 객체가 주어졌을때, "removeNumbersLargerThan" 함수는 주어진 객체에서 주어진 숫자보다 큰 모든 숫자 속성을 제거합니다.)
 
-* my_answer
+### My_Soultion
 
 ```
 let obj = {
@@ -1105,9 +1137,9 @@ removeNumbersLargerThan(3,obj)
 ```
 
 
+### Question
 
-
-* 09_removeOddValues
+## removeOddValues
 
 
 >Write a function called "removeOddValues". ("removeOddValues" 함수를 작성하세요.)
@@ -1115,8 +1147,10 @@ removeNumbersLargerThan(3,obj)
 >Given an object, "removeOddValues" removes any properties whose values are odd numbers. (객체가 주어졌을때, "removeOddValues" 함수는 주어진 객체의 속성값이 홀수인 속성을 모두 제거합니다.)
 
 
-* my_answer
-```
+### My_Soultion
+
+
+```js
 let obj = {
   a: 2,
   b: 3,
@@ -1140,16 +1174,19 @@ function removeOddValues(obj) {
 
 ```
 
-* 10_countNumberOfKeys
+
+### Question
+
+## countNumberOfKeys
 
 >Write a function called "countNumberOfKeys". ("countNumberOfKeus" 함수를 작성하세요.)
 
 >Given an object, "countNumberOfKeys" returns how many properties the given object has. (객체가 주어졌을때, "countNumberOfKeys" 함수는 객체안에 있는 속성들의 갯수를 반환합니다.)
 
 
-* my_answer
+### My_Soultion
 
-```
+```js
 function countNumberOfKeys(obj) {
   // 여기에 코드를 작성하세요
   // 1.숫자출력할 변수를 0으로 초기화한다.
@@ -1171,25 +1208,28 @@ let obj = {
 countNumberOfKeys(obj)
 ```
 
-* Model Solutions
 
-```
+
+```js
+
+// * Model Solutions
 
 function countNumberOfKeys(obj) {
   return Object.keys(obj).length;
 }
 
 
-```
+```js
 
+### Question
 
-* 11_printObject
+## printObject
 
 >객체를 파라미터로 받는 printObject 함수는 객체 안에 정의된 키와 값 쌍을 조합한 문자열을 리턴합니다. 문자열은 한 줄에 하나의 키/값 쌍을 콜론(:) 및 공백문자와 함께 표시하며, 또다른 키/값 쌍 사이에는 줄바꿈 문자가 포함되어 있습니다.
 
 
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -1207,7 +1247,9 @@ printObject(obj);
 ```
 
 
-* 12_extends
+### Question
+
+## extends
 
 
 > Write a function called "extend". ("extend" 함수를 작성하세요.)
@@ -1221,9 +1263,9 @@ printObject(obj);
 >Do not modify the 2nd object at all. (두번째 객체는 수정하지 마세요.)
 
 
+### My_Soultion
 
-
-```
+```js
 et obj1 = {
   a: 1,
   b: 2
@@ -1248,8 +1290,9 @@ function extend(obj1, obj2) {
 
 ```
 
+### Question
 
-* 13_countAllCharacters
+## countAllCharacters
 
 
 > Write a function called "countAllCharacters". ("countAllCharacters" 함수를 작성하세요")
@@ -1258,7 +1301,7 @@ function extend(obj1, obj2) {
 
 
 
-```
+```js
 
 function countAllCharacters(str) {
   let obj = {};
@@ -1279,12 +1322,10 @@ console.log(output); // --> {b: 1, a: 3, n: 2}
 
 ```
 
----
-## **object and type**
----
 
+### Question
 
-**01_removeStringValues**
+## removeStringValues
 
 
 > Write a function called "removeStringValues". ("removeStringValues" 함수를 작성하세요.)
@@ -1292,7 +1333,7 @@ console.log(output); // --> {b: 1, a: 3, n: 2}
 >Given an object, "removeStringValues" removes any properties on the given object whose values are strings. (객체가 주어졌을때, "removeStringValues" 함수는 속성값이 문자열인 모든 속성을 제거합니다.)
  
 
-* my_answer
+### My_Soultion
 
 ```JS
 
@@ -1390,7 +1431,7 @@ removeArrayValues(obj)
 >Given an array, "getFirstElement" returns the first element of the given array. (배열이 주어졌을때, "getFirstElement" 함수는 주어진 배열의 첫번째 요소를 반환해야 합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```
 
@@ -1413,7 +1454,7 @@ function getFirstElement(array) {
 >Given an array, "getLastElement" returns the last element of the given array. (배열이 주어졌을때, "getLastElemeent" 함수는 주어진 배열의 마지막 요소를 반환해야 합니다.)
 
 
-* my_answer
+### My_Soultion
 
 
 ```
@@ -1466,7 +1507,7 @@ function getNthElement(array, n) {
 >Given an array and an element, "addToFront" adds the given element to the front of the given array, and returns the given array. (배열과 요소가 주어졌을때, "addToFront" 함수는 주어진 요소를 배열의 맨앞에 추가하고 주어진 배열을 반환해야 합니다.)
 
 
-* my_answer
+### My_Soultion
 
 
 ```
@@ -1561,7 +1602,7 @@ getElementsAfter(['a', 'b', 'c', 'd', 'e'], 1);
 
 >Given an array and a index, "getElementsUpTo", returns an array with all the elements up until, but not including, the element at the given index. (배열과 인덱스가 주어졌을때, "getElementsUpTo" 함수는 주어진 배열의 인덱스 이전 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)
 
-* my_answer
+### My_Soultion
 
 
 ```JS
@@ -1582,7 +1623,7 @@ getElementsUpTo(['a', 'b', 'c', 'd', 'e'], 3);
 
 >Given an array, "getAllElementsButFirst" returns an array with all the elements but the first. (배열이 주어졌을때, "getAllElementsButFirst" 함수는 첫번째 요소를 제외한 배열을 반환해야 합니다.)
 
-* my_answer
+### My_Soultion
 
 ```JS
 
@@ -1617,7 +1658,7 @@ function getAllElementsButFirst(array) {
 
 >Given an array, "getAllElementsButLast" returns an array with all the elements but the last. (배열이 주어졌을때, "getAllElementsButLast" 함수는 마지막 요소를 제외한 배열을 반환해야 합니다.)
 
-* my_answer
+### My_Soultion
 
 ```js
 
@@ -1639,7 +1680,7 @@ function getAllElementsButLast(array) {
 >Given an array, "removeFromFront" returns the given array with its first element removed. (배열이 주어졌을때, "removeFromFront" 함수는 첫번째 요소를 삭제한 주어진 배열을 반환해야 합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```js
 
@@ -1660,7 +1701,7 @@ function removeFromFront(arr) {
 >Given an array, "removeFromBack" returns the given array with its last element removed. (배열이 주어졌을때, "removeFromBack" 함수는 마지막 요소를 삭제한 주어진 배열을 반환해야 합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```js
 
@@ -1682,7 +1723,7 @@ function removeFromBack(arr) {
 
 
 
-* my_answer
+### My_Soultion
 
 ```js
 
@@ -1726,7 +1767,7 @@ function removeFromBackOfNew(arr) {
 >Given an array and an element, "addToBackNew" returns a clone of the given array, with the given element added to the end. (배열과 요소가 주어졌을때, "addToBackNew" 함수는 주어진 배열의 복사본 끝에 주어진 요소가 추가된 배열을 반환합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```js
 
@@ -1787,7 +1828,7 @@ function joinArrayOfArrays(arr) {
 
 >Given a word, "getAllLetters" returns an array containing every character in the word. (단어가 주어졌을때, "getAllLetters" 함수는 주어진 단어에 포함된 모든 문자를 담고 있는 배열을 반환합니다.)
 
-* my_answer
+### My_Soultion
 
 ```js
 function getAllLetters(str) {
@@ -1813,7 +1854,7 @@ function getAllLetters(str) {
  
  
  
- * my_answer
+ ### My_Soultion
  
  ```js
  
@@ -1843,7 +1884,7 @@ function getAllLetters(str) {
 >Given an array of elements, and a "discarder" parameter, "removeElement" returns an array containing the items in the given array that do not match the "discarder" parameter. (배열과 "discarder" 매개변수가 주어졌을때, "removeElement" 함수는 주어진 배열에서 "discarder" 매개변수와 일치하지 않는 모든 요소를 포함하는 배열을 반환합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```js
 
@@ -1879,7 +1920,7 @@ unction removeElement(array, discarder) {
 
 >Given an array and a keeper element, "keep" returns an array containing the items that match the given keeper element. (배열과 "keeper" 매개변수가 주어졌을때, "keep" 함수는 "keeper" 매개변수와 일치하는 모든 요소
 
-* my_answer
+### My_Soultion
 
 ```js
 function keep(array, keeper) {
@@ -2335,7 +2376,7 @@ function select(arr, obj) {
 >Given an object and a key, "getNthElementOfProperty" returns the nth element of an array located at the given key. (객체와 키가 주어졌을때, "getNthElementOfProperty" 함수는 주어진 키에 위차한 배열의 n번째 요소를 반환합니다.)
 
 
-* my_answer
+### My_Soultion
 
 ```js
 

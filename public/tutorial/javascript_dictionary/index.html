@@ -380,7 +380,7 @@ immutable
 <li><a href="#number"><strong>Number</strong></a></li>
 <li><a href="#math-method"><strong>Math_method</strong></a></li>
 <li><a href="#array"><strong>Array</strong></a></li>
-<li><a href="#object"><strong>object</strong></a></li>
+<li><a href="#object"><strong>Object</strong></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1631,32 +1631,29 @@ console.log(array.some(even));
 
 <hr />
 
-<h2 id="object"><strong>object</strong></h2>
+<h2 id="object"><strong>Object</strong></h2>
 
 <hr />
 
-<ul>
-<li>Object.keys(객체)  : <code>key</code> 뽑기 into array</li>
-<li>Object.values(객체) : <code>value</code> 뽑기 into array</li>
+<p><strong>Object.keys(객체)  : <code>key</code> 뽑기 into array</strong>
+<strong>Object.values(객체) : <code>value</code> 뽑기 into array</strong>
+<strong>Object.entries(객체) : <code>전체</code>뽑기 into array</strong></p>
 
-<li><p>Object.entries(객체) : <code>전체</code>뽑기 into array</p>
-
-<pre><code>let user = {
-name: &quot;John&quot;,
-age: 30
+<pre><code class="language-js">let user = {
+  name: &quot;John&quot;,
+  age: 30
 };
 Object.keys(person) = [&quot;name&quot;, &quot;age&quot;]
 Object.values(person) = [&quot;John&quot;, 30]
 Object.entries(person) = [ [&quot;name&quot;,&quot;John&quot;], [&quot;age&quot;,30] ]
 
-</code></pre></li>
-</ul>
+</code></pre>
 
 <blockquote>
 <p>뽑은것들 변수에 담아서 배열 에 넣기</p>
 </blockquote>
 
-<pre><code>let arrKey =  Object.keys(person);
+<pre><code class="language-js">let arrKey =  Object.keys(person);
 &gt;&gt;[&quot;name&quot;, &quot;age&quot;]
 
 let arrValues = Object.values(person);
@@ -1667,9 +1664,7 @@ let arrEntries = Object.entries(person);
 
 </code></pre>
 
-<ul>
-<li><code>obj.key</code> or <code>obj[key]</code></li>
-</ul>
+<p><strong><code>obj.key</code> or `obj[key]</strong></p>
 
 <blockquote>
 <p>for 문을 이용해 객체안에 있는 key value 뽑기</p>
@@ -1677,7 +1672,7 @@ let arrEntries = Object.entries(person);
 <p>ex 키값 뽑기</p>
 </blockquote>
 
-<pre><code>let person = { name : &quot;john&quot; , age : 33 } ; 
+<pre><code class="language-js">let person = { name : &quot;john&quot; , age : 33 } ; 
 
 for (let key in person) {
 	console.log(key);
@@ -1704,9 +1699,7 @@ for (let key in person) {
 
 </code></pre>
 
-<ul>
-<li>delete object.property</li>
-</ul>
+<p><strong>delete object.property</strong></p>
 
 <pre><code class="language-js">
 
