@@ -877,7 +877,7 @@ return a - b;
 
 **arr.push(newElement)**
 
->`mutable`
+`mutable`
 
 >마지막 배열에 추가 
 
@@ -906,8 +906,8 @@ arr; // = > [1,2,3]
 
 **arr.unshift()**	 
 
+`mutable`
 
->`mutable`
 > 앞에 붙이기
 
 ```
@@ -921,6 +921,8 @@ arr; // = > [1,1,2,3,4,];
 
 
 **arr.shift()**  
+
+`mutable`
 
 >앞에 있는거 빼기
 
@@ -1025,12 +1027,12 @@ array.join();      // 배열의 모든 원소를 문자열로 변환하고 연�
 
 **arr.concat(arr)** 
 
-> `immutable`
+`immutable`
+
 > 더하기 
 
 ```js
 1.
-
 let letters = ['a', 'b', 'c'];
 let numbers = [1, 2, 3];
 
@@ -1410,25 +1412,27 @@ for (let key in person) {
 
 
  * delete object.property
- * delete object["property"]
  
- 
- > ex
- 
- 
- ```
- 
- var Employee = {
-  age: 28,
-  name: 'abc',
-  designation: 'developer'
+```js
+
+
+let Employee = {
+  firstname: "John",
+  lastname: "Doe"
 }
 
-console.log(delete Employee.name);   // returns true
-console.log(delete Employee.age);    // returns true
 
-// When trying to delete a property that does 
-// not exist, true is returned 
-console.log(delete Employee.salary); // returns true
+
+delete Employee.firstname; // 삭제명령
+delete Employee["firstname"] // 삭제명령
+
+console.log(Employee);
+
+// 삭제됨
+let Employee = {
+  lastname: "Doe"
+}
+
  
- ```
+```
+

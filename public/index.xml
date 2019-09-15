@@ -1011,8 +1011,6 @@ Plus, content, like a copyright notice for example, can go on the outside of the
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
 &lt;h2 id=&#34;1-data-type&#34;&gt;&lt;strong&gt;1.data type&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
@@ -4590,9 +4588,9 @@ return a - b;
 
 &lt;p&gt;&lt;strong&gt;arr.push(newElement)&lt;/strong&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;mutable&lt;/code&gt;&lt;/p&gt;
 
+&lt;blockquote&gt;
 &lt;p&gt;마지막 배열에 추가&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -4618,9 +4616,10 @@ arr; // = &amp;gt; [1,2,3]
 
 &lt;p&gt;&lt;strong&gt;arr.unshift()&lt;/strong&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;code&gt;mutable&lt;/code&gt;&lt;/p&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;mutable&lt;/code&gt;
-앞에 붙이기&lt;/p&gt;
+&lt;p&gt;앞에 붙이기&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4];
@@ -4632,6 +4631,8 @@ arr; // = &amp;gt; [1,1,2,3,4,];
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;arr.shift()&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mutable&lt;/code&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;앞에 있는거 빼기&lt;/p&gt;
@@ -4734,13 +4735,13 @@ array.join();      // 배열의 모든 원소를 문자열로 변환하고 연�
 
 &lt;p&gt;&lt;strong&gt;arr.concat(arr)&lt;/strong&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;code&gt;immutable&lt;/code&gt;&lt;/p&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;immutable&lt;/code&gt;
-더하기&lt;/p&gt;
+&lt;p&gt;더하기&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;1.
-
 let letters = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
 let numbers = [1, 2, 3];
 
@@ -5106,26 +5107,27 @@ for (let key in person) {
 
 &lt;ul&gt;
 &lt;li&gt;delete object.property&lt;/li&gt;
-&lt;li&gt;delete object[&amp;ldquo;property&amp;rdquo;]&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;ex&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
-&lt;pre&gt;&lt;code&gt; 
- var Employee = {
-  age: 28,
-  name: &#39;abc&#39;,
-  designation: &#39;developer&#39;
+let Employee = {
+  firstname: &amp;quot;John&amp;quot;,
+  lastname: &amp;quot;Doe&amp;quot;
 }
 
-console.log(delete Employee.name);   // returns true
-console.log(delete Employee.age);    // returns true
 
-// When trying to delete a property that does 
-// not exist, true is returned 
-console.log(delete Employee.salary); // returns true
+
+delete Employee.firstname; // 삭제명령
+delete Employee[&amp;quot;firstname&amp;quot;] // 삭제명령
+
+console.log(Employee);
+
+// 삭제됨
+let Employee = {
+  lastname: &amp;quot;Doe&amp;quot;
+}
+
  
 &lt;/code&gt;&lt;/pre&gt;
 </description>

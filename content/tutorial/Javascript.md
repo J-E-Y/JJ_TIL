@@ -12,7 +12,7 @@ type: docs
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 
----
+
 ## **1.data type**
 ---
 

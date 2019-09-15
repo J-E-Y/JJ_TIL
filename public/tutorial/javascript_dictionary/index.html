@@ -1187,9 +1187,9 @@ return a - b;
 
 <p><strong>arr.push(newElement)</strong></p>
 
-<blockquote>
 <p><code>mutable</code></p>
 
+<blockquote>
 <p>마지막 배열에 추가</p>
 </blockquote>
 
@@ -1215,9 +1215,10 @@ arr; // = &gt; [1,2,3]
 
 <p><strong>arr.unshift()</strong></p>
 
+<p><code>mutable</code></p>
+
 <blockquote>
-<p><code>mutable</code>
-앞에 붙이기</p>
+<p>앞에 붙이기</p>
 </blockquote>
 
 <pre><code>var arr = [1,2,3,4];
@@ -1229,6 +1230,8 @@ arr; // = &gt; [1,1,2,3,4,];
 </code></pre>
 
 <p><strong>arr.shift()</strong></p>
+
+<p><code>mutable</code></p>
 
 <blockquote>
 <p>앞에 있는거 빼기</p>
@@ -1331,13 +1334,13 @@ array.join();      // 배열의 모든 원소를 문자열로 변환하고 연�
 
 <p><strong>arr.concat(arr)</strong></p>
 
+<p><code>immutable</code></p>
+
 <blockquote>
-<p><code>immutable</code>
-더하기</p>
+<p>더하기</p>
 </blockquote>
 
 <pre><code class="language-js">1.
-
 let letters = ['a', 'b', 'c'];
 let numbers = [1, 2, 3];
 
@@ -1703,26 +1706,27 @@ for (let key in person) {
 
 <ul>
 <li>delete object.property</li>
-<li>delete object[&ldquo;property&rdquo;]</li>
 </ul>
 
-<blockquote>
-<p>ex</p>
-</blockquote>
+<pre><code class="language-js">
 
-<pre><code> 
- var Employee = {
-  age: 28,
-  name: 'abc',
-  designation: 'developer'
+let Employee = {
+  firstname: &quot;John&quot;,
+  lastname: &quot;Doe&quot;
 }
 
-console.log(delete Employee.name);   // returns true
-console.log(delete Employee.age);    // returns true
 
-// When trying to delete a property that does 
-// not exist, true is returned 
-console.log(delete Employee.salary); // returns true
+
+delete Employee.firstname; // 삭제명령
+delete Employee[&quot;firstname&quot;] // 삭제명령
+
+console.log(Employee);
+
+// 삭제됨
+let Employee = {
+  lastname: &quot;Doe&quot;
+}
+
  
 </code></pre>
 
