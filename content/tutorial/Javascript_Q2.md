@@ -1,11 +1,11 @@
 ---
-title: 4.Dictionary_level_2
+title: 2.Dictionary_level_2
 date: 2019-6
 draft: true
 menu:
   tutorial:
     parent: "Javascript"
-    weight: 12
+    weight: 10
 toc: true
 type: docs
 ---

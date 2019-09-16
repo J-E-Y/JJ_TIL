@@ -1,11 +1,11 @@
 ---
-title: 2.Coding_level_1 
+title: 3.Coding_level_1 
 date: 2019-6
 draft: true
 menu:
   tutorial:
     parent: "Javascript"
-    weight: 12
+    weight: 11
 toc: true
 type: docs
 ---

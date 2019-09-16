@@ -1337,7 +1337,9 @@ console.log(array.some(even));
 
 
 **Object.keys(객체)  : `key` 뽑기 into array**
+
 **Object.values(객체) : `value` 뽑기 into array**
+
 **Object.entries(객체) : `전체`뽑기 into array**
 
 
