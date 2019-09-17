@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Today What I Learn ? 버튼누르면 새로운 글 추가  HTML  &lt;button id=&quot;clickbtn&quot;&gt;new_tweet&lt;/button&gt; &lt;div id=&quot;comments&quot;&gt;&lt;/div&gt;   JS  var DATA = [ { user: &#39;ingikim&#39;, message: &#39;Welcome to Code States #codestates&#39;, created_at: &#39;2019-01-03 12:30:20&#39; }, { user: &#39;satya&#39;, message: &#39;this is test message #pair #programming&#39;, created_at: &#39;2019-01-04 18:30:20&#39; }, { user: &#39;sundar&#39;, message: &#39;code now! #work #hard&#39;, created_at: &#39;2019-01-05 07:30:20&#39; }, { user: &#39;steve&#39;, message: &#39;Stay hungry, and stay foolish&#39;, created_at: &#39;2015-01-03 12:30:20&#39; }, { user: &#39;tim&#39;, message: &#39;education for real world&#39;, created_at: &#39;2019-01-04 18:30:20&#39; } ]; var randomUser = [&#39;ingikim&#39;, &#39;satya&#39;, &#39;sundar&#39;, &#39;steve&#39;, &#39;tim&#39;, &#39;jeff&#39;]; var randomMessage = [ &#39;이 헌법공포 당시의 국회의원의 임기는 제1항에 의한 국회의 최초의 집회일 전일까지로 한다.">
+  <meta name="description" content="Today What I Learn ? 버튼 엔터키 작동 및 입력창 커서유지시키기 &lt;h1&gt;this is coffee machine&lt;h1&gt; &lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt; &lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt; &lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt; &lt;ol id = &quot;list&quot;&gt; &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt; &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt; &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt; &lt;ol&gt;  // 버튼을 누르면 list 가 추가되는데 사용자를 위하여 엔터로 control 할수 있게 하고 커서가 계속 입력창에 깜빡이게 하는 방법이다. let coffeeList = document.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_note/">
@@ -116,7 +116,7 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_note/">
   <meta property="og:title" content="5. Notes | Home">
-  <meta property="og:description" content="Today What I Learn ? 버튼누르면 새로운 글 추가  HTML  &lt;button id=&quot;clickbtn&quot;&gt;new_tweet&lt;/button&gt; &lt;div id=&quot;comments&quot;&gt;&lt;/div&gt;   JS  var DATA = [ { user: &#39;ingikim&#39;, message: &#39;Welcome to Code States #codestates&#39;, created_at: &#39;2019-01-03 12:30:20&#39; }, { user: &#39;satya&#39;, message: &#39;this is test message #pair #programming&#39;, created_at: &#39;2019-01-04 18:30:20&#39; }, { user: &#39;sundar&#39;, message: &#39;code now! #work #hard&#39;, created_at: &#39;2019-01-05 07:30:20&#39; }, { user: &#39;steve&#39;, message: &#39;Stay hungry, and stay foolish&#39;, created_at: &#39;2015-01-03 12:30:20&#39; }, { user: &#39;tim&#39;, message: &#39;education for real world&#39;, created_at: &#39;2019-01-04 18:30:20&#39; } ]; var randomUser = [&#39;ingikim&#39;, &#39;satya&#39;, &#39;sundar&#39;, &#39;steve&#39;, &#39;tim&#39;, &#39;jeff&#39;]; var randomMessage = [ &#39;이 헌법공포 당시의 국회의원의 임기는 제1항에 의한 국회의 최초의 집회일 전일까지로 한다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Today What I Learn ? 버튼 엔터키 작동 및 입력창 커서유지시키기 &lt;h1&gt;this is coffee machine&lt;h1&gt; &lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt; &lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt; &lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt; &lt;ol id = &quot;list&quot;&gt; &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt; &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt; &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt; &lt;ol&gt;  // 버튼을 누르면 list 가 추가되는데 사용자를 위하여 엔터로 control 할수 있게 하고 커서가 계속 입력창에 깜빡이게 하는 방법이다. let coffeeList = document."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -373,6 +373,10 @@
 <li>
 <ul>
 <li><a href="#today-what-i-learn">Today What I Learn ?</a></li>
+<li><a href="#버튼-엔터키-작동-및-입력창-커서유지시키기">버튼 엔터키 작동 및 입력창 커서유지시키기</a></li>
+<li><a href="#addeventlistener-사용하기">addEventListener 사용하기</a></li>
+<li><a href="#onclick-동작하는-원리">onclick 동작하는 원리</a></li>
+<li><a href="#js-html-textcontent-와-value-의-차이점">JS/HTML textContent 와 value 의 차이점</a></li>
 <li><a href="#버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</a></li>
 <li><a href="#js-html-script-위치">JS/HTML script 위치</a></li>
 <li><a href="#js-html-insertbefore">JS/HTML insertBefore()</a></li>
@@ -441,6 +445,134 @@
 <p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png" alt="" /></p>
 
 <hr />
+
+<h3 id="버튼-엔터키-작동-및-입력창-커서유지시키기">버튼 엔터키 작동 및 입력창 커서유지시키기</h3>
+
+<pre><code class="language-html">
+
+&lt;h1&gt;this is coffee machine&lt;h1&gt;
+&lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt;
+&lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt;
+&lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt;
+&lt;ol id = &quot;list&quot;&gt;
+  &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt;
+  &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt;
+  &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt;
+&lt;ol&gt;
+
+</code></pre>
+
+<pre><code class="language-js"> 
+// 버튼을 누르면 list 가 추가되는데 사용자를 위하여 엔터로 control 할수 있게 하고 커서가 계속 입력창에 깜빡이게 하는 방법이다. 
+
+let coffeeList = document.querySelector(&quot;#list&quot;);
+let coffeeInput = document.querySelector(&quot;#input&quot;);
+let add = document.querySelector(&quot;#btn&quot;);
+// form tag를 만들어 input 과 btn tags 를 넣는다.  
+  let form = document.createElement(&quot;form&quot;);
+  document.body.appendChild(form);
+  form.appendChild(coffeeInput);
+  form.appendChild(add);
+
+// form tag에 이벤트를 발생시킨다. 
+// form 과 &quot;submit&quot; 의 기본동작은 엔터를 첬을때 새로고침 or 다른페이지로 넘어가게 되어있다. 
+// 그것을 막기 위해서 function(event) 설정하고  event.preventDefalut() 넣어주면 된다. 
+
+form.addEventListener('submit',function(event){
+    event.preventDefault();
+  let newList = document.createElement(&quot;li&quot;);  
+  newList.setAttribute(&quot;class&quot;,&quot;new-list&quot;);
+  coffeeList.appendChild(newList);
+  newList.textContent = coffeeInput.value;
+  coffeeInput.focus(); // input tag 에 함수를 넣는다. 입력후 계속 입력할수 있게 해준다. 
+  
+})
+
+
+
+
+</code></pre>
+
+<h3 id="addeventlistener-사용하기">addEventListener 사용하기</h3>
+
+<pre><code class="language-html">&lt;h1&gt;this is coffee machine&lt;h1&gt;
+&lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt;
+&lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt;
+&lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt;
+&lt;ol id = &quot;list&quot;&gt;
+  &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt;
+  &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt;
+  &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt;
+&lt;ol&gt;
+
+
+</code></pre>
+
+<pre><code class="language-js">
+// 1. addEventListener
+// 버튼을 누르면 menu 버튼이 한글로 바뀜
+
+let xxx = document.querySelector(&quot;#btn&quot;);
+let menu = document.querySelector(&quot;#menu&quot;);
+
+xxx.addEventListener('click', function(){
+  menu.innerHTML = &quot;메뉴&quot;;
+})
+
+// 2 addEventListener 
+// 버튼 누르면 리스트가 추가된다. 
+
+let coffeeList = document.querySelector(&quot;#list&quot;);
+let coffeeInput = document.querySelector(&quot;#input&quot;);
+let add = document.querySelector(&quot;#btn&quot;);
+
+add.addEventListener('click',function(){
+  let newList = document.createElement(&quot;li&quot;)
+  newList.setAttribute(&quot;class&quot;,&quot;new-list&quot;);
+  coffeeList.appendChild(newList);
+  newList.textContent = coffeeInput.value;
+})
+
+
+
+</code></pre>
+
+<h3 id="onclick-동작하는-원리">onclick 동작하는 원리</h3>
+
+<pre><code class="language-html">
+
+&lt;h1&gt;this is coffee machine&lt;h1&gt;
+&lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt;
+&lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt;
+&lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt;
+&lt;ol id = &quot;list&quot;&gt;
+  &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt;
+  &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt;
+  &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt;
+&lt;ol&gt;
+</code></pre>
+
+<pre><code class="language-js">
+// 1. onlick 동작하는원리 
+// menu 버튼을 누르면 menu 가 red 로 변함  
+
+let xxx = document.querySelector(&quot;#btn&quot;);
+
+xxx.onclick = function() {
+  document.querySelector(&quot;#menu&quot;).style.background=&quot;red&quot;;
+}
+
+
+</code></pre>
+
+<h3 id="js-html-textcontent-와-value-의-차이점">JS/HTML textContent 와 value 의 차이점</h3>
+
+<pre><code class="language-js">
+tag 안에 들어가는 글자내용은  textcontent 이고
+input 안에 들어가있는 글자내용은 value 이다 
+
+
+</code></pre>
 
 <h3 id="버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</h3>
 

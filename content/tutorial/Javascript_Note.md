@@ -18,7 +18,167 @@ type: docs
 
 ![](/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png)
 
----
+
+
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
+### 버튼 엔터키 작동 및 입력창 커서유지시키기 
+
+
+```html
+
+
+<h1>this is coffee machine<h1>
+<div id = "menu">menu</div>
+<input id = "input" type="text" placeholder = "what drink?">
+<button id = "btn">order</button>
+<ol id = "list">
+  <li class = "americano">americano</li>
+  <li class = "latte">latte</li>
+  <li class = "flatWhite">flatWhite</li>
+<ol>
+
+```
+
+
+
+
+```js
+ 
+// 버튼을 누르면 list 가 추가되는데 사용자를 위하여 엔터로 control 할수 있게 하고 커서가 계속 입력창에 깜빡이게 하는 방법이다. 
+
+let coffeeList = document.querySelector("#list");
+let coffeeInput = document.querySelector("#input");
+let add = document.querySelector("#btn");
+// form tag를 만들어 input 과 btn tags 를 넣는다.  
+  let form = document.createElement("form");
+  document.body.appendChild(form);
+  form.appendChild(coffeeInput);
+  form.appendChild(add);
+
+// form tag에 이벤트를 발생시킨다. 
+// form 과 "submit" 의 기본동작은 엔터를 첬을때 새로고침 or 다른페이지로 넘어가게 되어있다. 
+// 그것을 막기 위해서 function(event) 설정하고  event.preventDefalut() 넣어주면 된다. 
+
+form.addEventListener('submit',function(event){
+    event.preventDefault();
+  let newList = document.createElement("li");  
+  newList.setAttribute("class","new-list");
+  coffeeList.appendChild(newList);
+  newList.textContent = coffeeInput.value;
+  coffeeInput.focus(); // input tag 에 함수를 넣는다. 입력후 계속 입력할수 있게 해준다. 
+  
+})
+
+
+
+
+```
+
+
+
+
+
+
+### addEventListener 사용하기 
+
+
+
+```html
+<h1>this is coffee machine<h1>
+<div id = "menu">menu</div>
+<input id = "input" type="text" placeholder = "what drink?">
+<button id = "btn">order</button>
+<ol id = "list">
+  <li class = "americano">americano</li>
+  <li class = "latte">latte</li>
+  <li class = "flatWhite">flatWhite</li>
+<ol>
+
+
+```
+
+```js
+
+// 1. addEventListener
+// 버튼을 누르면 menu 버튼이 한글로 바뀜
+
+let xxx = document.querySelector("#btn");
+let menu = document.querySelector("#menu");
+
+xxx.addEventListener('click', function(){
+  menu.innerHTML = "메뉴";
+})
+
+// 2 addEventListener 
+// 버튼 누르면 리스트가 추가된다. 
+
+let coffeeList = document.querySelector("#list");
+let coffeeInput = document.querySelector("#input");
+let add = document.querySelector("#btn");
+
+add.addEventListener('click',function(){
+  let newList = document.createElement("li")
+  newList.setAttribute("class","new-list");
+  coffeeList.appendChild(newList);
+  newList.textContent = coffeeInput.value;
+})
+
+
+
+```
+
+
+
+### onclick 동작하는 원리 
+
+```html
+
+
+<h1>this is coffee machine<h1>
+<div id = "menu">menu</div>
+<input id = "input" type="text" placeholder = "what drink?">
+<button id = "btn">order</button>
+<ol id = "list">
+  <li class = "americano">americano</li>
+  <li class = "latte">latte</li>
+  <li class = "flatWhite">flatWhite</li>
+<ol>
+```
+
+
+```js
+
+// 1. onlick 동작하는원리 
+// menu 버튼을 누르면 menu 가 red 로 변함  
+
+let xxx = document.querySelector("#btn");
+
+xxx.onclick = function() {
+  document.querySelector("#menu").style.background="red";
+}
+
+
+```
+
+
+
+### JS/HTML textContent 와 value 의 차이점 
+
+```js
+
+tag 안에 들어가는 글자내용은  textcontent 이고
+input 안에 들어가있는 글자내용은 value 이다 
+
+
+```
 
 
 
