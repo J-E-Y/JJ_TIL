@@ -24,6 +24,23 @@ type: docs
 
 
 
+### e.target 과 e.target.parentNode 의 차이 
+
+
+
+* e.target === 클릭된애
+* e.target.parentNode === 클릭된애 부모태그 
+* e.target.parentNode.parentNode === 클릭된애 부모의 부모태그
+
+
+### event.target 과 currentTarget 의 차이점
+
+
+* event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고
+* event.currentTarget 은 addEventListener 를발생시키는 대상 
+
+
+
 
 
 

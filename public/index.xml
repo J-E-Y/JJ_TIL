@@ -5144,6 +5144,21 @@ let Employee = {
 
 &lt;hr /&gt;
 
+&lt;h3 id=&#34;e-target-과-e-target-parentnode-의-차이&#34;&gt;e.target 과 e.target.parentNode 의 차이&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;e.target === 클릭된애&lt;/li&gt;
+&lt;li&gt;e.target.parentNode === 클릭된애 부모태그&lt;/li&gt;
+&lt;li&gt;e.target.parentNode.parentNode === 클릭된애 부모의 부모태그&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;event-target-과-currenttarget-의-차이점&#34;&gt;event.target 과 currentTarget 의 차이점&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고&lt;/li&gt;
+&lt;li&gt;event.currentTarget 은 addEventListener 를발생시키는 대상&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&#34;버튼-엔터키-작동-및-입력창-커서유지시키기&#34;&gt;버튼 엔터키 작동 및 입력창 커서유지시키기&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
