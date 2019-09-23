@@ -134,8 +134,7 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 ## Grid
 ---
 
-![](/tutorial/HTML_files/test1.png)
-
+![](/tutorial/CSS_files/Screen Shot 2019-09-23 at 11.52.20 AM.png)
 
 
 ```html
