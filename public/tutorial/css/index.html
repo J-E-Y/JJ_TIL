@@ -374,7 +374,7 @@
 <li><a href="#boxmodel">BoxModel</a></li>
 <li><a href="#wrapper">wrapper</a></li>
 <li><a href="#media-queries">media queries</a></li>
-<li><a href="#grid-template-columns">grid-template-columns</a></li>
+<li><a href="#grid">Grid</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -496,58 +496,95 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 
 </code></pre>
 
-<h2 id="grid-template-columns">grid-template-columns</h2>
+<h2 id="grid">Grid</h2>
 
 <hr />
 
-<pre><code class="language-css">
-
-
-&lt;style&gt; 
-
-
-a { grid-template-columns: none; } 
-
-&lt;/style&gt;
-
-
-/*No columns are defined, so you only have one.*/
-
-</code></pre>
-
 <p><img src="/tutorial/HTML_files/test1.png" alt="" /></p>
 
-<pre><code class="language-css">
-&lt;style&gt;
-a {grid-template-columns: auto auto auto;}
-&lt;/style&gt;
+<pre><code class="language-html">
 
-/*You can use the keyword auto so that each column resizes itself automatically.*/
+&lt;div class = &quot;container&quot;&gt;
 
-</code></pre>
+&lt;div calss = &quot;child1&quot;&gt;1&lt;/div&gt;
+&lt;div calss = &quot;child2&quot;&gt;2&lt;/div&gt;
+&lt;div calss = &quot;child3&quot;&gt;3&lt;/div&gt;
+&lt;div calss = &quot;child4&quot;&gt;4&lt;/div&gt;
+&lt;div calss = &quot;child5&quot;&gt;5&lt;/div&gt;
+&lt;div calss = &quot;child6&quot;&gt;6&lt;/div&gt;
+&lt;div calss = &quot;child7&quot;&gt;7&lt;/div&gt;
+&lt;div calss = &quot;child8&quot;&gt;8&lt;/div&gt;
+&lt;div calss = &quot;child9&quot;&gt;9&lt;/div&gt;
 
-<p><img src="/tutorial/CSS_files/test2.png" alt="" /></p>
+&lt;div&gt;
 
-<pre><code class="language-css">&lt;style&gt;
-a {grid-template-columns: 80px auto 1rem; }
-&lt;/style&gt;
-
-/*You can mix the units.
-*/
-</code></pre>
-
-<p><img src="/tutorial/CSS_files/test3.png" alt="" /></p>
-
-<pre><code class="language-css">&lt;style&gt;
-a {grid-template-columns: 40px 1fr 2fr; }
-&lt;/style&gt;
-
-/*You can use the fr flex unit to distribute the remaining space across all flex columns.
-*/
 
 </code></pre>
 
-<p><img src="/tutorial/CSS_files/test4.png" alt="" /></p>
+<ul>
+<li>HTML</li>
+</ul>
+
+<pre><code class="language-js">
+.container {
+  
+  display: grid;  // 처음 시작을 지정해준다. 
+  grid-template-columns: 40% 60%; // 위에 있는 그림이 4대 6으로 나뉜다.  
+  grid-template-columns: 4fr 6fr;  //  4대 6으로 나뉜다. 
+  grid-gap:1rem; // 사이마다 공간을 줄때 4fr 6fr 로 쓰는것을 권장한다. % 로 사용하면 여백이 뒤에 생기기 때문.. 
+  
+  grid-template-columns: repeat(3, 1fr); // 이것은  1fr 이 세번 반복 
+  grid-template-columns: 1fr 1fr 1fr; // 이것과 동일하다. 
+
+  grid-template-columns: 200px 1fr; // 200 픽셀로 왼쪽 것을 고정하고 오른쪽 것을 늘리는 것이다. 
+
+  grid-auto-rows: 200px; // 200 픽셀 씩 모두 통일
+  grid-auto-rows: minmax(200px,auto); // 이것은 동일한데 content 늘어나면 같이 같이 늘어난다. 
+
+}
+
+</code></pre>
+
+<ul>
+<li>Css</li>
+</ul>
+
+<pre><code class="language-js">
+// 1번칸 늘리기 
+
+.child1 {
+  
+  grid-column: 1/4 // 열에서 1부터 4까지 차지한다. 
+
+}
+
+</code></pre>
+
+<p><img src="/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.44.12 AM.png" alt="" /></p>
+
+<pre><code class="language-js">
+// 4번칸 밑으로 늘리기 
+
+ gird-column:3; // 3번 열부터 시작해라 
+ gird-row :2/4; // 2번부터 4버까지 차지하라 
+ 
+
+
+</code></pre>
+
+<p><img src="/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.45.18 AM.png" alt="" /></p>
+
+<pre><code class="language-js">
+// 9번칸을 4번안에 집어넣는다. 
+  
+ gird-colum:3;
+ gird-row:3/5;
+ 
+
+
+</code></pre>
+
+<p><img src="/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.47.05 AM.png" alt="" /></p>
 
           </div>
 

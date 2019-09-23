@@ -131,62 +131,97 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 ```
 
 
-## grid-template-columns
+## Grid
 ---
-
-```css
-
-
-
-<style> 
-
-
-a { grid-template-columns: none; } 
-
-</style>
-
-
-/*No columns are defined, so you only have one.*/
-
-```
 
 ![](/tutorial/HTML_files/test1.png)
 
 
 
-```css
+```html
 
-<style>
-a {grid-template-columns: auto auto auto;}
-</style>
 
-/*You can use the keyword auto so that each column resizes itself automatically.*/
+<div class = "container">
+
+<div calss = "child1">1</div>
+<div calss = "child2">2</div>
+<div calss = "child3">3</div>
+<div calss = "child4">4</div>
+<div calss = "child5">5</div>
+<div calss = "child6">6</div>
+<div calss = "child7">7</div>
+<div calss = "child8">8</div>
+<div calss = "child9">9</div>
+
+<div>
+
 
 ```
 
-![](/tutorial/CSS_files/test2.png)
+* HTML
 
+```js
 
-```css
-<style>
-a {grid-template-columns: 80px auto 1rem; }
-</style>
+.container {
+  
+  display: grid;  // 처음 시작을 지정해준다. 
+  grid-template-columns: 40% 60%; // 위에 있는 그림이 4대 6으로 나뉜다.  
+  grid-template-columns: 4fr 6fr;  //  4대 6으로 나뉜다. 
+  grid-gap:1rem; // 사이마다 공간을 줄때 4fr 6fr 로 쓰는것을 권장한다. % 로 사용하면 여백이 뒤에 생기기 때문.. 
+  
+  grid-template-columns: repeat(3, 1fr); // 이것은  1fr 이 세번 반복 
+  grid-template-columns: 1fr 1fr 1fr; // 이것과 동일하다. 
 
-/*You can mix the units.
-*/
+  grid-template-columns: 200px 1fr; // 200 픽셀로 왼쪽 것을 고정하고 오른쪽 것을 늘리는 것이다. 
+
+  grid-auto-rows: 200px; // 200 픽셀 씩 모두 통일
+  grid-auto-rows: minmax(200px,auto); // 이것은 동일한데 content 늘어나면 같이 같이 늘어난다. 
+
+}
+
 ```
-![](/tutorial/CSS_files/test3.png)
 
-```css
-<style>
-a {grid-template-columns: 40px 1fr 2fr; }
-</style>
+* Css
 
-/*You can use the fr flex unit to distribute the remaining space across all flex columns.
-*/
+
+```js
+
+// 1번칸 늘리기 
+
+.child1 {
+  
+  grid-column: 1/4 // 열에서 1부터 4까지 차지한다. 
+
+}
 
 ```
 
+![](/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.44.12 AM.png)
+
+```js
+
+// 4번칸 밑으로 늘리기 
+
+ gird-column:3; // 3번 열부터 시작해라 
+ gird-row :2/4; // 2번부터 4버까지 차지하라 
+ 
 
 
-![](/tutorial/CSS_files/test4.png)
+```
+![](/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.45.18 AM.png)
+
+
+
+
+```js
+
+// 9번칸을 4번안에 집어넣는다. 
+  
+ gird-colum:3;
+ gird-row:3/5;
+ 
+
+
+```
+
+![](/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.47.05 AM.png)

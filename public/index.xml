@@ -197,58 +197,95 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;grid-template-columns&#34;&gt;grid-template-columns&lt;/h2&gt;
+&lt;h2 id=&#34;grid&#34;&gt;Grid&lt;/h2&gt;
 
 &lt;hr /&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-
-
-&amp;lt;style&amp;gt; 
-
-
-a { grid-template-columns: none; } 
-
-&amp;lt;/style&amp;gt;
-
-
-/*No columns are defined, so you only have one.*/
-
-&lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/test1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-&amp;lt;style&amp;gt;
-a {grid-template-columns: auto auto auto;}
-&amp;lt;/style&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
 
-/*You can use the keyword auto so that each column resizes itself automatically.*/
+&amp;lt;div class = &amp;quot;container&amp;quot;&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;
+&amp;lt;div calss = &amp;quot;child1&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child2&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child3&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child4&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child5&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child6&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child7&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child8&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child9&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/test2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&amp;lt;div&amp;gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;&amp;lt;style&amp;gt;
-a {grid-template-columns: 80px auto 1rem; }
-&amp;lt;/style&amp;gt;
-
-/*You can mix the units.
-*/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/test3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;&amp;lt;style&amp;gt;
-a {grid-template-columns: 40px 1fr 2fr; }
-&amp;lt;/style&amp;gt;
-
-/*You can use the fr flex unit to distribute the remaining space across all flex columns.
-*/
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/test4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+.container {
+  
+  display: grid;  // 처음 시작을 지정해준다. 
+  grid-template-columns: 40% 60%; // 위에 있는 그림이 4대 6으로 나뉜다.  
+  grid-template-columns: 4fr 6fr;  //  4대 6으로 나뉜다. 
+  grid-gap:1rem; // 사이마다 공간을 줄때 4fr 6fr 로 쓰는것을 권장한다. % 로 사용하면 여백이 뒤에 생기기 때문.. 
+  
+  grid-template-columns: repeat(3, 1fr); // 이것은  1fr 이 세번 반복 
+  grid-template-columns: 1fr 1fr 1fr; // 이것과 동일하다. 
+
+  grid-template-columns: 200px 1fr; // 200 픽셀로 왼쪽 것을 고정하고 오른쪽 것을 늘리는 것이다. 
+
+  grid-auto-rows: 200px; // 200 픽셀 씩 모두 통일
+  grid-auto-rows: minmax(200px,auto); // 이것은 동일한데 content 늘어나면 같이 같이 늘어난다. 
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Css&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 1번칸 늘리기 
+
+.child1 {
+  
+  grid-column: 1/4 // 열에서 1부터 4까지 차지한다. 
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.44.12 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 4번칸 밑으로 늘리기 
+
+ gird-column:3; // 3번 열부터 시작해라 
+ gird-row :2/4; // 2번부터 4버까지 차지하라 
+ 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.45.18 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 9번칸을 4번안에 집어넣는다. 
+  
+ gird-colum:3;
+ gird-row:3/5;
+ 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.47.05 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -5146,18 +5183,20 @@ let Employee = {
 
 &lt;h3 id=&#34;e-target-과-e-target-parentnode-의-차이&#34;&gt;e.target 과 e.target.parentNode 의 차이&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;e.target === 클릭된애&lt;/li&gt;
-&lt;li&gt;e.target.parentNode === 클릭된애 부모태그&lt;/li&gt;
-&lt;li&gt;e.target.parentNode.parentNode === 클릭된애 부모의 부모태그&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+* e.target === 클릭된애
+* e.target.parentNode === 클릭된애 부모태그 
+* e.target.parentNode.parentNode === 클릭된애 부모의 부모태그
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;event-target-과-currenttarget-의-차이점&#34;&gt;event.target 과 currentTarget 의 차이점&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고&lt;/li&gt;
-&lt;li&gt;event.currentTarget 은 addEventListener 를발생시키는 대상&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+* event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고
+* event.currentTarget 은 addEventListener 를발생시키는 대상 
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;버튼-엔터키-작동-및-입력창-커서유지시키기&#34;&gt;버튼 엔터키 작동 및 입력창 커서유지시키기&lt;/h3&gt;
 

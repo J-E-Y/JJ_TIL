@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Today What I Learn ? e.target 과 e.target.parentNode 의 차이  e.target === 클릭된애 e.target.parentNode === 클릭된애 부모태그 e.target.parentNode.parentNode === 클릭된애 부모의 부모태그  event.target 과 currentTarget 의 차이점  event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고 event.currentTarget 은 addEventListener 를발생시키는 대상  버튼 엔터키 작동 및 입력창 커서유지시키기 &lt;h1&gt;this is coffee machine&lt;h1&gt; &lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt; &lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt; &lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt; &lt;ol id = &quot;list&quot;&gt; &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt; &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt; &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt; &lt;ol&gt;  // 버튼을 누르면 list 가 추가되는데 사용자를 위하여 엔터로 control 할수 있게 하고 커서가 계속 입력창에 깜빡이게 하는 방법이다.">
+  <meta name="description" content="Today What I Learn ? e.target 과 e.target.parentNode 의 차이 * e.target === 클릭된애 * e.target.parentNode === 클릭된애 부모태그 * e.target.parentNode.parentNode === 클릭된애 부모의 부모태그  event.target 과 currentTarget 의 차이점 * event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고 * event.currentTarget 은 addEventListener 를발생시키는 대상  버튼 엔터키 작동 및 입력창 커서유지시키기 &lt;h1&gt;this is coffee machine&lt;h1&gt; &lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt; &lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_note/">
@@ -116,7 +116,7 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_note/">
   <meta property="og:title" content="5. Notes | Home">
-  <meta property="og:description" content="Today What I Learn ? e.target 과 e.target.parentNode 의 차이  e.target === 클릭된애 e.target.parentNode === 클릭된애 부모태그 e.target.parentNode.parentNode === 클릭된애 부모의 부모태그  event.target 과 currentTarget 의 차이점  event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고 event.currentTarget 은 addEventListener 를발생시키는 대상  버튼 엔터키 작동 및 입력창 커서유지시키기 &lt;h1&gt;this is coffee machine&lt;h1&gt; &lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt; &lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt; &lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt; &lt;ol id = &quot;list&quot;&gt; &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt; &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt; &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt; &lt;ol&gt;  // 버튼을 누르면 list 가 추가되는데 사용자를 위하여 엔터로 control 할수 있게 하고 커서가 계속 입력창에 깜빡이게 하는 방법이다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Today What I Learn ? e.target 과 e.target.parentNode 의 차이 * e.target === 클릭된애 * e.target.parentNode === 클릭된애 부모태그 * e.target.parentNode.parentNode === 클릭된애 부모의 부모태그  event.target 과 currentTarget 의 차이점 * event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고 * event.currentTarget 은 addEventListener 를발생시키는 대상  버튼 엔터키 작동 및 입력창 커서유지시키기 &lt;h1&gt;this is coffee machine&lt;h1&gt; &lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt; &lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -450,18 +450,20 @@
 
 <h3 id="e-target-과-e-target-parentnode-의-차이">e.target 과 e.target.parentNode 의 차이</h3>
 
-<ul>
-<li>e.target === 클릭된애</li>
-<li>e.target.parentNode === 클릭된애 부모태그</li>
-<li>e.target.parentNode.parentNode === 클릭된애 부모의 부모태그</li>
-</ul>
+<pre><code class="language-js">
+* e.target === 클릭된애
+* e.target.parentNode === 클릭된애 부모태그 
+* e.target.parentNode.parentNode === 클릭된애 부모의 부모태그
+
+</code></pre>
 
 <h3 id="event-target-과-currenttarget-의-차이점">event.target 과 currentTarget 의 차이점</h3>
 
-<ul>
-<li>event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고</li>
-<li>event.currentTarget 은 addEventListener 를발생시키는 대상</li>
-</ul>
+<pre><code class="language-js">
+* event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고
+* event.currentTarget 은 addEventListener 를발생시키는 대상 
+
+</code></pre>
 
 <h3 id="버튼-엔터키-작동-및-입력창-커서유지시키기">버튼 엔터키 작동 및 입력창 커서유지시키기</h3>
 
