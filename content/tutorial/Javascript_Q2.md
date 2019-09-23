@@ -26,22 +26,27 @@ type: docs
 <!-- div 안에 element 를 추가하는 방법 3가지  -->
 
   
-  
-  <!-- HTML -->
+
+  <!-- 첫번째 방법 HTML -->
   <div id = "comments">커피메뉴판</div>
   
   <script>
-
+  // innerHTML 로 tag 까지 같이 한번에 집어넣는다 
   let comments = document.querySelector("#comments");
   comments.innerHTML = "<span>아메리카노<span>";
 
   </script>
-  // 2.
+  
+  
+  
 
-  // <!-- HTML -->
+  <!-- 두번째 방법 HTML -->
   <div id = "comments">커피메뉴판</div> 
 
   <script>
+  
+  // element 를 생성해서 집어넣을때는 appendChild 로 집어넣는다. 
+  
   let comments = document.querySelector("#comments");
   let newElement = document.createElement("span"); // element 생성
   newElement.innerHTML = "아메리카노"; //  생성된 element  안에 미리 써준다.
@@ -50,9 +55,8 @@ type: docs
   
   
   
-  <!-- HTML -->
-<!-- template 테그를 미리 만들어 놓는다. in HTML 안에  -->
-  
+  <!-- 세번째 방법 HTML -->
+
   <template id = "cloneTem">
   
     <div>새로운 커피매뉴판</div>
@@ -62,9 +66,13 @@ type: docs
   
   </template> 
   
-  <div id = "comments">커피메뉴판</div>  // 
+  <div id = "comments">커피메뉴판</div>  
+  
+  
+  
   
   <script>
+// 미리 HTML 안에 만들어 놓고 importNode 와 appendChild 사용해서 기존에 있는 template 의 등록한다. 
 
   let comments = document.querySelector("#comments"); // 집어넣장소가져온다
   let template = document.querySelector("#cloneTem"); // 
@@ -74,9 +82,12 @@ type: docs
 
   comments.innerHTML = "" // 집어넣을 공간을 싹다 지운다 // 커피 메뉴판 날라간다.
   comments.appendChild(newComment) 
-</script>  
   
-   <!-- 결과  -->
+</script>  
+
+
+
+<!-- HTML 결과  -->
 <!-- element 와 id 값이 기존에 elemment 로 바뀌었다  -->
   <div id = "comments">
   
@@ -86,8 +97,6 @@ type: docs
   <spand>라때</spand>
 
   </div>   
-
-
 
 
 
