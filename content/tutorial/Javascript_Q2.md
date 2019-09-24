@@ -72,7 +72,7 @@ type: docs
   
   
   <script>
-// 미리 HTML 안에 만들어 놓고 importNode 와 appendChild 사용해서 기존에 있는 template 의 등록한다. 
+// 미리 HTML 안에 만들어 놓고 importNode 와 appendChild 사용해서 기존에 있는 template 의 등록한다. 그러먼 id="comments"에 있는 div 안에 cloneTem 안에 있는 내용들이 담긴다. 
 
   let comments = document.querySelector("#comments"); // 집어넣장소가져온다
   let template = document.querySelector("#cloneTem"); // 

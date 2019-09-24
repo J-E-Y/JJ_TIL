@@ -37,13 +37,14 @@
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/git/</guid>
-      <description>Git : pwd  print working Directory
- Git : ls  print working List
- Git :cd  go back to beginning
- Git :cd -  previous directory (or back)
- Git :init  Create an empty Git repository or reinitialize an existing one
- Git :clone  Clone a repository into a new directory
- Git :add .  Add all file contents to the index</description>
+      <description>__
+new Learning __
+branch 충돌 방지하기  merge 하는 중 출돌이 존재할수 있다.
+master branch 와 develop branch와 내용이 다를경우 master branch 에서 통합을 한다.
+merge 하는 순간 conflict 가 발생 한다.
+git은 병합한 코드가 무엇이 다른지 코드안에 표시가 되게 한다. 그리고 그분은에 들어가서 HAED 부분을 선택할지 develop 부분을 선택할지 직접 수동으로 코드를 삭제해서 결정을 하고 저장한다.
+git add . 하고 다시 git merge develop 한다.
+그럼 병합이 된것이다.</description>
     </item>
     
     <item>
