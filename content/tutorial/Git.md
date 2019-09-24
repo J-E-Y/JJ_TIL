@@ -44,7 +44,7 @@ __
 
 > git branch 만 확인하면 master branch 만 남아있다. 
 
-
+> git push  로 마무리 
 
 ---
 ## git : Branch

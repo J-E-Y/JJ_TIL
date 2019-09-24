@@ -330,6 +330,8 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 &lt;p&gt;develop 는 필요없기 떄문 git branch -d develop 명령으로 삭제한다.&lt;/p&gt;
 
 &lt;p&gt;git branch 만 확인하면 master branch 만 남아있다.&lt;/p&gt;
+
+&lt;p&gt;git push  로 마무리&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
