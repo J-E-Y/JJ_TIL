@@ -124,6 +124,88 @@ a {
 
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h2 id=&#34;스크롤-만들기&#34;&gt;스크롤 만들기&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--Vertical scroll bar in div which is a child of css grid column --&amp;gt;
+
+&amp;lt;div class=&amp;quot;A&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;B&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;C&amp;quot;&amp;gt;search&amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;quot;D&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 먼제 부모 tag 에 grid 명령과 max-hight 을 준다. 
+
+.A {
+  max-height: 300px; /* matters */
+  display: grid; /* matters */
+  overflow: hidden; /* matters */
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+html, body, .A {
+  height: 100%; /* matters */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.A {
+  max-height: 300px; /* matters */
+  display: grid; /* matters */
+  overflow: hidden; /* matters */
+}
+
+.B {
+  display: grid; /* matters */
+  overflow-y: auto; /* matters */
+}
+
+.D {
+  overflow-y: scroll; /* matters */
+}
+
+.C {
+  padding: 10px;
+  background-color: #07f;
+}
+
+.E {
+  padding: 10px;
+  background-color: #eee;
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-25 at 8.37.27 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;boxmodel&#34;&gt;BoxModel&lt;/h2&gt;
 
 &lt;hr /&gt;

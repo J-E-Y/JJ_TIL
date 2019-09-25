@@ -43,6 +43,100 @@ a {
 
 
 
+## 스크롤 만들기 
+
+
+```html
+
+<!--Vertical scroll bar in div which is a child of css grid column -->
+
+<div class="A">
+  <div class="B">
+    <div class="C">search</div>
+    <div class="D">
+      <div class="E">1</div>
+      <div class="E">2</div>
+      <div class="E">3</div>
+      <div class="E">4</div>
+      <div class="E">5</div>
+      <div class="E">6</div>
+      <div class="E">7</div>
+      <div class="E">8</div>
+      <div class="E">9</div>
+      <div class="E">10</div>
+      <div class="E">11</div>
+      <div class="E">12</div>
+      <div class="E">10</div>
+      <div class="E">11</div>
+      <div class="E">12</div>
+      <div class="E">10</div>
+      <div class="E">11</div>
+      <div class="E">12</div>
+    </div>
+  </div>
+</div>
+
+```
+
+
+```js
+// 먼제 부모 tag 에 grid 명령과 max-hight 을 준다. 
+
+.A {
+  max-height: 300px; /* matters */
+  display: grid; /* matters */
+  overflow: hidden; /* matters */
+}
+
+
+```
+
+```css
+
+html, body, .A {
+  height: 100%; /* matters */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.A {
+  max-height: 300px; /* matters */
+  display: grid; /* matters */
+  overflow: hidden; /* matters */
+}
+
+.B {
+  display: grid; /* matters */
+  overflow-y: auto; /* matters */
+}
+
+.D {
+  overflow-y: scroll; /* matters */
+}
+
+.C {
+  padding: 10px;
+  background-color: #07f;
+}
+
+.E {
+  padding: 10px;
+  background-color: #eee;
+}
+
+
+```
+
+
+![](/tutorial/CSS_files/Screen Shot 2019-09-25 at 8.37.27 PM.png)
+
+
+
+
+
+
+
 ## BoxModel
 ---
 
