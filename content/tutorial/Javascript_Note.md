@@ -24,6 +24,54 @@ type: docs
 
 
 
+### checkbox 안에 있는 value 값 얻기 
+
+
+```html
+
+
+
+<div class = "container">
+    
+    <input type="checkbox" class ="checks" value ="뜨거워"> hot
+    <input type="checkbox" class ="checks" value ="추워"> clod
+    <a href="#" onclick="submitFun();return false;">ok </a>
+
+</div>
+<script>
+	
+
+
+	function submitFun() {
+		
+
+		var checks = document.getElementsByClassName('checks')
+		var str = "";
+		
+
+		for (let i = 0; i < checks.length; i++ ){
+
+			if (checks[i].checked === true ) {
+ 				str += checks[i].value + "";
+ 			}
+ 		}
+ 		alert(str);
+	}
+
+
+
+
+
+
+</script>
+
+
+```
+
+
+
+
+
 ### e.target 과 e.target.parentNode 의 차이 
 
 

@@ -5436,6 +5436,48 @@ let Employee = {
 
 &lt;hr /&gt;
 
+&lt;h3 id=&#34;checkbox-안에-있는-value-값-얻기&#34;&gt;checkbox 안에 있는 value 값 얻기&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+
+&amp;lt;div class = &amp;quot;container&amp;quot;&amp;gt;
+    
+    &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;뜨거워&amp;quot;&amp;gt; hot
+    &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;추워&amp;quot;&amp;gt; clod
+    &amp;lt;a href=&amp;quot;#&amp;quot; onclick=&amp;quot;submitFun();return false;&amp;quot;&amp;gt;ok &amp;lt;/a&amp;gt;
+
+&amp;lt;/div&amp;gt;
+&amp;lt;script&amp;gt;
+	
+
+
+	function submitFun() {
+		
+
+		var checks = document.getElementsByClassName(&#39;checks&#39;)
+		var str = &amp;quot;&amp;quot;;
+		
+
+		for (let i = 0; i &amp;lt; checks.length; i++ ){
+
+			if (checks[i].checked === true ) {
+ 				str += checks[i].value + &amp;quot;&amp;quot;;
+ 			}
+ 		}
+ 		alert(str);
+	}
+
+
+
+
+
+
+&amp;lt;/script&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h3 id=&#34;e-target-과-e-target-parentnode-의-차이&#34;&gt;e.target 과 e.target.parentNode 의 차이&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;

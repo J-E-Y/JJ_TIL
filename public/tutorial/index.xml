@@ -103,7 +103,7 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? e.target 과 e.target.parentNode 의 차이 * e.target === 클릭된애 * e.target.parentNode === 클릭된애 부모태그 * e.target.parentNode.parentNode === 클릭된애 부모의 부모태그  event.target 과 currentTarget 의 차이점 * event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고 * event.currentTarget 은 addEventListener 를발생시키는 대상  버튼 엔터키 작동 및 입력창 커서유지시키기 &amp;lt;h1&amp;gt;this is coffee machine&amp;lt;h1&amp;gt; &amp;lt;div id = &amp;quot;menu&amp;quot;&amp;gt;menu&amp;lt;/div&amp;gt; &amp;lt;input id = &amp;quot;input&amp;quot; type=&amp;quot;text&amp;quot; placeholder = &amp;quot;what drink?</description>
+      <description>Today What I Learn ? checkbox 안에 있는 value 값 얻기 &amp;lt;div class = &amp;quot;container&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;뜨거워&amp;quot;&amp;gt; hot &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;추워&amp;quot;&amp;gt; clod &amp;lt;a href=&amp;quot;#&amp;quot; onclick=&amp;quot;submitFun();return false;&amp;quot;&amp;gt;ok &amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; function submitFun() { var checks = document.getElementsByClassName(&#39;checks&#39;) var str = &amp;quot;&amp;quot;; for (let i = 0; i &amp;lt; checks.length; i++ ){ if (checks[i].checked === true ) { str += checks[i].value + &amp;quot;&amp;quot;; } } alert(str); } &amp;lt;/script&amp;gt;  e.</description>
     </item>
     
     <item>
