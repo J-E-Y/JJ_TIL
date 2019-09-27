@@ -10,8 +10,6 @@ toc: true
 type: docs
 ---
 
-
-
 ![](/tutorial/CSS_files/Screen Shot 2019-09-15 at 5.21.03 PM.png)
 
 
@@ -38,6 +36,27 @@ a {
 <dd>{Color:red} : property value (속성값)</dd>
 
 ```
+
+
+
+
+## hover 버튼 클릭시 마우스 손가락 변형
+
+
+
+```css
+
+button.hover {
+
+ cursor: pointer;
+}
+
+
+
+```
+
+
+
 
 
 

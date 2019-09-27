@@ -124,6 +124,18 @@ a {
 
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h2 id=&#34;hover-버튼-클릭시-마우스-손가락-변형&#34;&gt;hover 버튼 클릭시 마우스 손가락 변형&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+button.hover {
+
+ cursor: pointer;
+}
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;스크롤-만들기&#34;&gt;스크롤 만들기&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
