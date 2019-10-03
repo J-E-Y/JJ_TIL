@@ -5448,6 +5448,28 @@ let Employee = {
 
 &lt;hr /&gt;
 
+&lt;h2 id=&#34;피보나치-수열&#34;&gt;피보나치 수열&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+ function fibonacci(num){
+      var a = 1, b = 0, temp;
+
+        document.write(b + &amp;quot;, &amp;quot;);
+
+        for(var i = num; i &amp;gt;= 1; i--){
+            temp = a;
+            a = a + b;
+            b = temp;
+            if(i == 1) document.write(b);
+            else document.write(b + &amp;quot;, &amp;quot;);
+      }
+    }
+
+    fibonacci(15);
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h3 id=&#34;checkbox-안에-있는-value-값-얻기&#34;&gt;checkbox 안에 있는 value 값 얻기&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;

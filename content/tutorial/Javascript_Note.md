@@ -24,6 +24,31 @@ type: docs
 
 
 
+## 피보나치 수열
+
+```js
+
+
+ function fibonacci(num){
+      var a = 1, b = 0, temp;
+
+        document.write(b + ", ");
+
+        for(var i = num; i >= 1; i--){
+            temp = a;
+            a = a + b;
+            b = temp;
+            if(i == 1) document.write(b);
+            else document.write(b + ", ");
+      }
+    }
+
+    fibonacci(15);
+
+```
+
+
+
 ### checkbox 안에 있는 value 값 얻기 
 
 
