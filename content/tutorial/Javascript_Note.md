@@ -26,8 +26,11 @@ type: docs
 
 ## 피보나치 수열
 
+
+
 ```js
 
+// 함수사용해서 피보나치 수열 만들기 
 
  function fibonacci(num){
       var a = 1, b = 0, temp;
@@ -45,7 +48,25 @@ type: docs
 
     fibonacci(15);
 
+
+// for 문을 사용해서 피보나치 수열 만들기 
+
+
+var num = 15;
+var a = 1, b = 0, temp;
+
+document.write(b + ", ");
+
+for(var i = num; i >= 1; i--){
+temp = a;
+a = a + b;
+b = temp;
+if(i == 1) document.write(b);
+else document.write(b + ", ");
+}
+
 ```
+
 
 
 

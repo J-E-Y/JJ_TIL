@@ -103,7 +103,7 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? 피보나치 수열 function fibonacci(num){ var a = 1, b = 0, temp; document.write(b + &amp;quot;, &amp;quot;); for(var i = num; i &amp;gt;= 1; i--){ temp = a; a = a + b; b = temp; if(i == 1) document.write(b); else document.write(b + &amp;quot;, &amp;quot;); } } fibonacci(15);  checkbox 안에 있는 value 값 얻기 &amp;lt;div class = &amp;quot;container&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;뜨거워&amp;quot;&amp;gt; hot &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;추워&amp;quot;&amp;gt; clod &amp;lt;a href=&amp;quot;#&amp;quot; onclick=&amp;quot;submitFun();return false;&amp;quot;&amp;gt;ok &amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; function submitFun() { var checks = document.</description>
+      <description>Today What I Learn ? 피보나치 수열 // 함수사용해서 피보나치 수열 만들기 function fibonacci(num){ var a = 1, b = 0, temp; document.write(b + &amp;quot;, &amp;quot;); for(var i = num; i &amp;gt;= 1; i--){ temp = a; a = a + b; b = temp; if(i == 1) document.write(b); else document.write(b + &amp;quot;, &amp;quot;); } } fibonacci(15); // for 문을 사용해서 피보나치 수열 만들기 var num = 15; var a = 1, b = 0, temp; document.</description>
     </item>
     
     <item>
