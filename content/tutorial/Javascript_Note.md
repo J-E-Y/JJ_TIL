@@ -40,6 +40,9 @@ type: docs
 // 5-1 = 4  네번째 피보나치 수열에 있는 3은  숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. 
 
 
+// fib(n) 함수는 
+// n 번째의 피보나치 수열에 숫자를 출력한다. 
+
 
 function fib(n) {    // n = 10 
     if (n <= 1) {    // 만약 n 이 0 과 1 이라면 
@@ -53,6 +56,33 @@ function fib(n) {    // n = 10
 fib(10) // ==> 55 
 
 ```
+
+
+
+
+```js
+
+//fib(n) 함수는 
+// 20번째 까지 피보나치 수열을 출력해낸다. 
+
+
+function fib(n) {
+    if ( n <= 1 ) {
+        return n;
+    } else {
+        return fib(n - 1) + fib(n - 2);
+    }
+}
+
+let  tmp = '';
+
+for(let i = 0; i < 20; i++){
+    tmp += fib(i) + " " 
+}
+
+
+```
+
 
 
 ```js

@@ -103,7 +103,7 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? 피보나치 수열 // 피보나치 수열 // 0 1 1 2 3 5 8 13 21 34 ...... // 점화식표현은 ==&amp;gt; f(n) = f(n-1) + f(n-2) // 5번째 숫자는? = f(n-1) + f(n-2) // n = 5 // 5-1 = 4 네번째 피보나치 수열에 있는 3은 숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. function fib(n) { // n = 10 if (n &amp;lt;= 1) { // 만약 n 이 0 과 1 이라면 return n; // 그것을 그냥 바로 출력해라 } else { // 만약 그게 아니라면 return fib(n-2) + fib(n-1); // 피보나치 수열에 8번째수와 + 9번째 수의 합을 리턴한다.</description>
+      <description>Today What I Learn ? 피보나치 수열 // 피보나치 수열 // 0 1 1 2 3 5 8 13 21 34 ...... // 점화식표현은 ==&amp;gt; f(n) = f(n-1) + f(n-2) // 5번째 숫자는? = f(n-1) + f(n-2) // n = 5 // 5-1 = 4 네번째 피보나치 수열에 있는 3은 숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. // fib(n) 함수는 // n 번째의 피보나치 수열에 숫자를 출력한다.</description>
     </item>
     
     <item>

@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Today What I Learn ? 피보나치 수열 // 피보나치 수열 // 0 1 1 2 3 5 8 13 21 34 ...... // 점화식표현은 ==&gt; f(n) = f(n-1) &#43; f(n-2) // 5번째 숫자는? = f(n-1) &#43; f(n-2) // n = 5 // 5-1 = 4 네번째 피보나치 수열에 있는 3은 숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. function fib(n) { // n = 10 if (n &lt;= 1) { // 만약 n 이 0 과 1 이라면 return n; // 그것을 그냥 바로 출력해라 } else { // 만약 그게 아니라면 return fib(n-2) &#43; fib(n-1); // 피보나치 수열에 8번째수와 &#43; 9번째 수의 합을 리턴한다.">
+  <meta name="description" content="Today What I Learn ? 피보나치 수열 // 피보나치 수열 // 0 1 1 2 3 5 8 13 21 34 ...... // 점화식표현은 ==&gt; f(n) = f(n-1) &#43; f(n-2) // 5번째 숫자는? = f(n-1) &#43; f(n-2) // n = 5 // 5-1 = 4 네번째 피보나치 수열에 있는 3은 숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. // fib(n) 함수는 // n 번째의 피보나치 수열에 숫자를 출력한다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_note/">
@@ -116,7 +116,7 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_note/">
   <meta property="og:title" content="5. Notes | Home">
-  <meta property="og:description" content="Today What I Learn ? 피보나치 수열 // 피보나치 수열 // 0 1 1 2 3 5 8 13 21 34 ...... // 점화식표현은 ==&gt; f(n) = f(n-1) &#43; f(n-2) // 5번째 숫자는? = f(n-1) &#43; f(n-2) // n = 5 // 5-1 = 4 네번째 피보나치 수열에 있는 3은 숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. function fib(n) { // n = 10 if (n &lt;= 1) { // 만약 n 이 0 과 1 이라면 return n; // 그것을 그냥 바로 출력해라 } else { // 만약 그게 아니라면 return fib(n-2) &#43; fib(n-1); // 피보나치 수열에 8번째수와 &#43; 9번째 수의 합을 리턴한다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Today What I Learn ? 피보나치 수열 // 피보나치 수열 // 0 1 1 2 3 5 8 13 21 34 ...... // 점화식표현은 ==&gt; f(n) = f(n-1) &#43; f(n-2) // 5번째 숫자는? = f(n-1) &#43; f(n-2) // n = 5 // 5-1 = 4 네번째 피보나치 수열에 있는 3은 숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. // fib(n) 함수는 // n 번째의 피보나치 수열에 숫자를 출력한다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -465,6 +465,9 @@
 // 5-1 = 4  네번째 피보나치 수열에 있는 3은  숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. 
 
 
+// fib(n) 함수는 
+// n 번째의 피보나치 수열에 숫자를 출력한다. 
+
 
 function fib(n) {    // n = 10 
     if (n &lt;= 1) {    // 만약 n 이 0 과 1 이라면 
@@ -476,6 +479,28 @@ function fib(n) {    // n = 10
 }
 
 fib(10) // ==&gt; 55 
+
+</code></pre>
+
+<pre><code class="language-js">
+//fib(n) 함수는 
+// 20번째 까지 피보나치 수열을 출력해낸다. 
+
+
+function fib(n) {
+    if ( n &lt;= 1 ) {
+        return n;
+    } else {
+        return fib(n - 1) + fib(n - 2);
+    }
+}
+
+let  tmp = '';
+
+for(let i = 0; i &lt; 20; i++){
+    tmp += fib(i) + &quot; &quot; 
+}
+
 
 </code></pre>
 
