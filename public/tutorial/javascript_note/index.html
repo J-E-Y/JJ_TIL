@@ -374,11 +374,12 @@
 <ul>
 <li><a href="#today-what-i-learn">Today What I Learn ?</a></li>
 </ul></li>
-<li><a href="#피보나치-수열">피보나치 수열</a>
-<ul>
+<li><a href="#피보나치-수열">피보나치 수열</a></li>
 <li><a href="#checkbox-안에-있는-value-값-얻기">checkbox 안에 있는 value 값 얻기</a></li>
-<li><a href="#e-target-과-e-target-parentnode-의-차이">e.target 과 e.target.parentNode 의 차이</a></li>
+<li><a href="#e-target-과-e-target-parentnode-의-차이">e.target 과 e.target.parentNode 의 차이</a>
+<ul>
 <li><a href="#event-target-과-currenttarget-의-차이점">event.target 과 currentTarget 의 차이점</a></li>
+</ul></li>
 <li><a href="#버튼-엔터키-작동-및-입력창-커서유지시키기">버튼 엔터키 작동 및 입력창 커서유지시키기</a></li>
 <li><a href="#addeventlistener-사용하기">addEventListener 사용하기</a></li>
 <li><a href="#onclick-동작하는-원리">onclick 동작하는 원리</a></li>
@@ -389,8 +390,9 @@
 <li><a href="#js-html랜덤글자-가져오기">JS/HTML랜덤글자 가져오기</a></li>
 <li><a href="#get-current-data-time-in-js">Get Current Data &amp; Time in JS</a></li>
 <li><a href="#block-스코프와-function-스코프의-차이">block 스코프와 function 스코프의 차이</a></li>
+<li><a href="#var-or-let-변수를-사용한-함수중-어던것이-에러">var or let 변수를 사용한 함수중 어던것이 에러??</a></li>
 <li><a href="#var-and-let-and-const">var and let and const</a></li>
-<li><a href="#strict-mode"><strong>Strict Mode</strong></a></li>
+<li><a href="#strict-mode">Strict Mode</a></li>
 <li><a href="#랜덤-숫자-원하는-수대로-뽑기">랜덤 숫자 원하는 수대로 뽑기</a></li>
 <li><a href="#d-or-d-차이점">\d or \d+  차이점</a></li>
 <li><a href="#extract-numbers-from-a-string-javascript">Extract numbers from a string-Javascript</a></li>
@@ -407,18 +409,10 @@
 <li><a href="#dot-notation-and-braket-notation">dot notation and  braket notation ?</a></li>
 <li><a href="#first-class-object">first-class object()</a></li>
 <li><a href="#callback">Callback</a></li>
-<li><a href="#dom-dom을-이용해서-html문서를-제어할수-있다">Dom : Dom을 이용해서 HTML문서를 제어할수 있다</a>
-<ul>
-<li>
-<ul>
-<li><a href="#dom-객체의-값-바꾸기">DOM 객체의 값 바꾸기</a></li>
-</ul></li>
-</ul></li>
+<li><a href="#dom-이란">Dom 이란 ?</a></li>
 <li><a href="#버튼-만들기">버튼 만들기</a></li>
 <li><a href="#객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</a>
 <ul>
-<li><a href="#how-to-count-the-number-of-properties-of-the-javascript-object">How to Count the Number of Properties of the JavaScript Object</a></li>
-</ul></li>
 <li><a href="#iteration-statements">iteration statements</a></li>
 </ul></li>
 <li><a href="#array"><strong>Array</strong></a></li>
@@ -545,7 +539,7 @@ else document.write(b + &quot;, &quot;);
 
 </code></pre>
 
-<h3 id="checkbox-안에-있는-value-값-얻기">checkbox 안에 있는 value 값 얻기</h3>
+<h2 id="checkbox-안에-있는-value-값-얻기">checkbox 안에 있는 value 값 얻기</h2>
 
 <pre><code class="language-html">
 
@@ -587,7 +581,7 @@ else document.write(b + &quot;, &quot;);
 
 </code></pre>
 
-<h3 id="e-target-과-e-target-parentnode-의-차이">e.target 과 e.target.parentNode 의 차이</h3>
+<h2 id="e-target-과-e-target-parentnode-의-차이">e.target 과 e.target.parentNode 의 차이</h2>
 
 <pre><code class="language-js">
 * e.target === 클릭된애
@@ -604,7 +598,7 @@ else document.write(b + &quot;, &quot;);
 
 </code></pre>
 
-<h3 id="버튼-엔터키-작동-및-입력창-커서유지시키기">버튼 엔터키 작동 및 입력창 커서유지시키기</h3>
+<h2 id="버튼-엔터키-작동-및-입력창-커서유지시키기">버튼 엔터키 작동 및 입력창 커서유지시키기</h2>
 
 <pre><code class="language-html">
 
@@ -651,7 +645,7 @@ form.addEventListener('submit',function(event){
 
 </code></pre>
 
-<h3 id="addeventlistener-사용하기">addEventListener 사용하기</h3>
+<h2 id="addeventlistener-사용하기">addEventListener 사용하기</h2>
 
 <pre><code class="language-html">&lt;h1&gt;this is coffee machine&lt;h1&gt;
 &lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt;
@@ -695,7 +689,7 @@ add.addEventListener('click',function(){
 
 </code></pre>
 
-<h3 id="onclick-동작하는-원리">onclick 동작하는 원리</h3>
+<h2 id="onclick-동작하는-원리">onclick 동작하는 원리</h2>
 
 <pre><code class="language-html">
 
@@ -723,7 +717,7 @@ xxx.onclick = function() {
 
 </code></pre>
 
-<h3 id="js-html-textcontent-와-value-의-차이점">JS/HTML textContent 와 value 의 차이점</h3>
+<h2 id="js-html-textcontent-와-value-의-차이점">JS/HTML textContent 와 value 의 차이점</h2>
 
 <pre><code class="language-js">
 tag 안에 들어가는 글자내용은  textcontent 이고
@@ -732,7 +726,7 @@ input 안에 들어가있는 글자내용은 value 이다
 
 </code></pre>
 
-<h3 id="버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</h3>
+<h2 id="버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</h2>
 
 <ul>
 <li>HTML</li>
@@ -846,7 +840,7 @@ randomTweet();
 
 </code></pre>
 
-<h3 id="js-html-script-위치">JS/HTML script 위치</h3>
+<h2 id="js-html-script-위치">JS/HTML script 위치</h2>
 
 <pre><code class="language-js">
 
@@ -861,7 +855,7 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 </code></pre>
 
-<h3 id="js-html-insertbefore">JS/HTML insertBefore()</h3>
+<h2 id="js-html-insertbefore">JS/HTML insertBefore()</h2>
 
 <pre><code class="language-js">
 // html
@@ -905,11 +899,7 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 </code></pre>
 
-<hr />
-
-<h3 id="js-html랜덤글자-가져오기">JS/HTML랜덤글자 가져오기</h3>
-
-<hr />
+<h2 id="js-html랜덤글자-가져오기">JS/HTML랜덤글자 가져오기</h2>
 
 <pre><code class="language-js">
 var randomUser = ['ingikim', 'satya', 'sundar', 'steve', 'tim', 'jeff'];
@@ -948,11 +938,7 @@ function generateNewTweet() {
 
 </code></pre>
 
-<hr />
-
-<h3 id="get-current-data-time-in-js">Get Current Data &amp; Time in JS</h3>
-
-<hr />
+<h2 id="get-current-data-time-in-js">Get Current Data &amp; Time in JS</h2>
 
 <pre><code class="language-js">
 
@@ -966,11 +952,7 @@ dateTime // 2019-9-5 13:2:48&quot;
 
 </code></pre>
 
-<hr />
-
-<h3 id="block-스코프와-function-스코프의-차이">block 스코프와 function 스코프의 차이</h3>
-
-<hr />
+<h2 id="block-스코프와-function-스코프의-차이">block 스코프와 function 스코프의 차이</h2>
 
 <pre><code class="language-js">
 // block 스코프
@@ -990,12 +972,7 @@ console.log(i) // 5   이유: var 변수를 지정했을때 block의 범위를 �
 
 </code></pre>
 
-<pre><code class="language-js">
-// fucntion 스코프 
-
-</code></pre>
-
-<p><strong>var or let 변수를 사용한 함수중 어던것이 에러??</strong></p>
+<h2 id="var-or-let-변수를-사용한-함수중-어던것이-에러">var or let 변수를 사용한 함수중 어던것이 에러??</h2>
 
 <p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 4.41.59 PM.png" alt="" /></p>
 
@@ -1015,19 +992,11 @@ greetSomeone('steve');
 
 </code></pre>
 
-<hr />
-
-<h3 id="var-and-let-and-const">var and let and const</h3>
-
-<hr />
+<h2 id="var-and-let-and-const">var and let and const</h2>
 
 <p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 5.37.46 PM.png" alt="" /></p>
 
-<hr />
-
-<h3 id="strict-mode"><strong>Strict Mode</strong></h3>
-
-<hr />
+<h2 id="strict-mode">Strict Mode</h2>
 
 <pre><code class="language-js">
 
@@ -1043,11 +1012,7 @@ console.log(arr);
 
 </code></pre>
 
-<hr />
-
-<h3 id="랜덤-숫자-원하는-수대로-뽑기">랜덤 숫자 원하는 수대로 뽑기</h3>
-
-<hr />
+<h2 id="랜덤-숫자-원하는-수대로-뽑기">랜덤 숫자 원하는 수대로 뽑기</h2>
 
 <pre><code class="language-js">
 // for 문을 이용한 랜덤 숫자 원하는수대로 뽑기 
@@ -1058,15 +1023,11 @@ for ( let i = 0 ; i &lt;= 30; i = i + 1 ) {
 
 </code></pre>
 
-<hr />
-
-<h3 id="d-or-d-차이점">\d or \d+  차이점</h3>
-
-<hr />
-
-<p><code>imutable</code></p>
+<h2 id="d-or-d-차이점">\d or \d+  차이점</h2>
 
 <pre><code class="language-js">
+// 둘다 `imutable`  이다 
+
 // 정규식 표현으로 둘다 숫자를 뽑는 역활을 한다. 
 
 // \d 는 모든 숫자를 각각 배열로 나눠서 출력하낟.  
@@ -1089,11 +1050,7 @@ str.match(/\d/g);
 
 </code></pre>
 
-<hr />
-
-<h3 id="extract-numbers-from-a-string-javascript">Extract numbers from a string-Javascript</h3>
-
-<hr />
+<h2 id="extract-numbers-from-a-string-javascript">Extract numbers from a string-Javascript</h2>
 
 <pre><code class="language-js">var string = &quot;border-radius:10px 20px 30px 40px&quot;;
 var numbers = string.match(/\d+/g).map(Number); 
@@ -1104,14 +1061,9 @@ console.log(numbers);
 
 
 
-
 </code></pre>
 
-<hr />
-
-<h3 id="making-guid">Making_GUID</h3>
-
-<hr />
+<h2 id="making-guid">Making_GUID</h2>
 
 <pre><code class="language-js">
 JavaScript
@@ -1127,11 +1079,7 @@ guid = (S4() + S4() + &quot;-&quot; + S4() + &quot;-4&quot; + S4().substr(0,3) +
 
 </code></pre>
 
-<hr />
-
-<h3 id="할당-연산자">할당 연산자</h3>
-
-<hr />
+<h2 id="할당-연산자">할당 연산자</h2>
 
 <pre><code class="language-js">// 3 가지가 똑같은 것이다.  할당연산자
 
@@ -1141,11 +1089,7 @@ count++
 
 </code></pre>
 
-<hr />
-
-<h3 id="parameter-지정하는-법">parameter 지정하는 법</h3>
-
-<hr />
+<h2 id="parameter-지정하는-법">parameter 지정하는 법</h2>
 
 <p><code>ES6</code></p>
 
@@ -1175,11 +1119,7 @@ timeToGoHome(undefined,20) ;
 
 </code></pre>
 
-<hr />
-
-<h3 id="getmaxnum-함수-만들기">getMaxNum 함수 만들기</h3>
-
-<hr />
+<h2 id="getmaxnum-함수-만들기">getMaxNum 함수 만들기</h2>
 
 <pre><code class="language-js">
 function getMaxNums(...nums) {
@@ -1208,11 +1148,7 @@ getMaxNum(1,2,3,4,5) //  Math.max(5,4,3,2,1)  &gt;&gt; 5같다
 
 </code></pre>
 
-<hr />
-
-<h3 id="현재-시간-날짜-년도-불러오기">현재 시간,날짜  || 년도 불러오기</h3>
-
-<hr />
+<h2 id="현재-시간-날짜-년도-불러오기">현재 시간,날짜  || 년도 불러오기</h2>
 
 <pre><code class="language-js">let a = new Date()
 
@@ -1229,11 +1165,7 @@ currentDate
 
 </code></pre>
 
-<hr />
-
-<h3 id="in-에-관해서">in 에 관해서</h3>
-
-<hr />
+<h2 id="in-에-관해서">in 에 관해서</h2>
 
 <pre><code class="language-js">
 
@@ -1247,11 +1179,7 @@ console.log(obj2) // &gt;&gt; true &lt;&lt; true or false 로 값을 나타낸�
 
 </code></pre>
 
-<hr />
-
-<h3 id="prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법">prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법</h3>
-
-<hr />
+<h2 id="prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법">prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법</h2>
 
 <pre><code class="language-js">
 // prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다
@@ -1276,11 +1204,7 @@ newObj.text(); // &quot;this is the stroy what I want to say to john&quot;
 
 </code></pre>
 
-<hr />
-
-<h3 id="객체안에-담겨있는-function-사용하기">객체안에 담겨있는 function 사용하기</h3>
-
-<hr />
+<h2 id="객체안에-담겨있는-function-사용하기">객체안에 담겨있는 function 사용하기</h2>
 
 <pre><code class="language-js">
   // 객체를 만들고 속성값에 text 내용을 출력할 함수를 만든다. 
@@ -1302,11 +1226,7 @@ console.log(massage) // &gt;&gt; &quot;They are john and the tim tim&quot;
 
 </code></pre>
 
-<hr />
-
-<h3 id="함수가-객체의-키값으로-사용">함수가 객체의 키값으로 사용</h3>
-
-<hr />
+<h2 id="함수가-객체의-키값으로-사용">함수가 객체의 키값으로 사용</h2>
 
 <pre><code class="language-js">
 // 객체와 함수를 이용한다.
@@ -1335,11 +1255,7 @@ obj.name(&quot;john&quot;) // john is good bad!
 
 </code></pre>
 
-<hr />
-
-<h3 id="key-배열-출력-object-keys-for-in-문">key 배열 출력 - Object.keys, for in 문</h3>
-
-<hr />
+<h2 id="key-배열-출력-object-keys-for-in-문">key 배열 출력 - Object.keys, for in 문</h2>
 
 <pre><code class="language-js">
 var arr = [];
@@ -1384,48 +1300,39 @@ console.log(arraySize(arr));  // 4
 출처: https://mylife365.tistory.com/286?category=624212 [변화에 적응하기]
 </code></pre>
 
-<hr />
+<h2 id="dot-notation-and-braket-notation">dot notation and  braket notation ?</h2>
 
-<h3 id="dot-notation-and-braket-notation">dot notation and  braket notation ?</h3>
+<pre><code class="language-js">
 
-<blockquote>
-<p>다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???</p>
-</blockquote>
+// 다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
 
-<ul>
-<li>Example1</li>
-</ul>
 
-<pre><code class="language-js">var obj = {steve:1, bob:2};
+// Example1
+
+
+var obj = {steve:1, bob:2};
 var steve = 'bob';
 
 console.log(obj.steve);    // 1
 console.log(obj['steve']); // also 1
 console.log(obj[steve]);   // 2
 
-</code></pre>
 
-<ul>
-<li>Example2</li>
-</ul>
+// Example2
 
-<pre><code class="language-js">var obj = {steve:1, bob:2};
+
+var obj = {steve:1, bob:2};
 
 console.log(obj.steve);    // 1
 console.log(obj['steve']); // also 1
 console.log(obj['bob']);   // 2
 
 
-
 </code></pre>
 
-<hr />
+<h2 id="first-class-object">first-class object()</h2>
 
-<h3 id="first-class-object">first-class object()</h3>
-
-<hr />
-
-<pre><code>함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을
+<pre><code class="language-js">함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을
 
 first-class value 
 first-class citizen
@@ -1433,60 +1340,57 @@ first-class object
 
 라고 부른다. 
 
-</code></pre>
+// 값으로써 쓰이는 함수 예제
 
-<ul>
-<li><p>값으로써 쓰이는 함수 예제</p>
 
-<pre><code>function cal(mode){
-var funcs = {
-    'plus' : function(left, right){return left + right},
-    'minus' : function(left, right){return left - right}
-}
-return funcs[mode];
+
+function cal(mode){
+    var funcs = {
+        'plus' : function(left, right){return left + right},
+        'minus' : function(left, right){return left - right}
+    }
+    return funcs[mode];
 }
 alert(cal('plus')(2,1));
 alert(cal('minus')(2,1));  
-</code></pre></li>
 
-<li><p>배열로서의 함수</p>
 
-<pre><code>
+// 배열로서의 함수
+
 var process = [
-function(input){ return input + 10;},
-function(input){ return input * input;},
-function(input){ return input / 2;}
+    function(input){ return input + 10;},
+    function(input){ return input * input;},
+    function(input){ return input / 2;}
 ];
 var input = 1;
 for(var i = 0; i &lt; process.length; i++){
-input = process[i](input);
+    input = process[i](input);
 }
 alert(input);
 
-</code></pre></li>
-</ul>
+</code></pre>
 
 <p><img src="/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.10.02 PM.png" alt="" /></p>
 
-<hr />
+<h2 id="callback">Callback</h2>
 
-<h3 id="callback">Callback</h3>
+<pre><code class="language-js">
 
-<hr />
 
-<ul>
-<li>장점</li>
-</ul>
+// 장점 
 
-<blockquote>
-<p>원래의 내장메소드에 있는 기능을 콜백 으로 바꿔서 사용할수 있다.</p>
 
-<p>값으로 사용될 수 있는 특성을 이용하면 함수의 인자로 함수로 전달할 수 있다. 값으로 전달된 함수는 호출될 수 있기 때문에 이를 이용하면 함수의 동작을 완전히 바꿀 수 있다. 인자로 전달된 함수 sortNumber의 구현에 따라서 sort의 동작방법이 완전히 바뀌게 된다.</p>
+/*
+원래의 내장메소드에 있는 기능을 콜백 으로 바꿔서 사용할수 있다.
 
-<p>ajax를 사용할때 제이 쿼리를 이용해서 콜백이 사용된다.</p>
-</blockquote>
+값으로 사용될 수 있는 특성을 이용하면 함수의 인자로 함수로 전달할 수 있다. 값으로 전달된 함수는 호출될 수 있기 때문에 이를 이용하면 함수의 동작을 완전히 바꿀 수 있다. 인자로 전달된 함수 sortNumber의 구현에 따라서 sort의 동작방법이 완전히 바뀌게 된다.
 
-<pre><code>function sortNumber(a,b){
+ajax를 사용할때 제이 쿼리를 이용해서 콜백이 사용된다. 
+
+
+*/
+
+function sortNumber(a,b){
     // 위의 예제와 비교해서 a와 b의 순서를 바꾸면 정렬순서가 반대가 된다.
     return b-a;
 }
@@ -1496,18 +1400,18 @@ alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
 
 <p><img src="/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.46.43 PM.png" alt="" /></p>
 
-<hr />
+<h2 id="dom-이란">Dom 이란 ?</h2>
 
-<h3 id="dom-dom을-이용해서-html문서를-제어할수-있다">Dom : Dom을 이용해서 HTML문서를 제어할수 있다</h3>
+<pre><code class="language-js">
+// Dom을 이용해서 HTML문서를 제어할수 있다
 
-<hr />
+// DOM 객체의 값 바꾸기
 
-<h5 id="dom-객체의-값-바꾸기">DOM 객체의 값 바꾸기</h5>
+// ex1-1 document.getElementsByTagName()
 
-<ul>
-<li><p>ex1-1 document.getElementsByTagName()</p>
 
-<pre><code>
+
+
 document.getElementsByTagName() 
 &gt;&gt;html에 있는 tag name 을 가져오는 명령이다.
 
@@ -1531,11 +1435,12 @@ heelo 2 &gt;&gt; good morning 으로 바뀐다.
 
 이것이 dom 의 역활 이다. 
 
-</code></pre></li>
 
-<li><p>ex1-2 document.getElementsById()</p>
 
-<pre><code>var a = document.getElementsById(&quot;main&quot;)
+// ex1-2 document.getElementsById()
+
+
+var a = document.getElementsById(&quot;main&quot;)
 &gt;&gt; main 아이디 값의 tag를 가져와서  a 변수에 담는다
 
 a
@@ -1547,16 +1452,11 @@ a
 
 &gt;&gt;&lt;p id = main&gt;hello john jung&lt;/p&gt;
 
-</code></pre></li>
-</ul>
+</code></pre>
 
-<hr />
+<h2 id="버튼-만들기">버튼 만들기</h2>
 
-<h3 id="버튼-만들기">버튼 만들기</h3>
-
-<hr />
-
-<pre><code>&lt;body&gt;
+<pre><code class="language-js">&lt;body&gt;
     &lt;h1&gt;함수를 이용해 버튼 만들기&lt;/h1&gt;
     
     
@@ -1591,31 +1491,27 @@ a
 
 </code></pre>
 
-<hr />
+<h2 id="객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</h2>
 
-<h3 id="객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</h3>
+<pre><code class="language-js">
+// How to Count the Number of Properties of the JavaScript Object
 
-<hr />
+// While working with JavaScript, I come across a requirement to count a number of properties in a JavaScript object. I found two ways to find the number of properties in an object. They are as follows:
 
-<h4 id="how-to-count-the-number-of-properties-of-the-javascript-object">How to Count the Number of Properties of the JavaScript Object</h4>
 
-<blockquote>
-<p>While working with JavaScript, I come across a requirement to count a number of properties in a JavaScript object. I found two ways to find the number of properties in an object. They are as follows:</p>
-</blockquote>
 
-<pre><code>Consider an object, &quot;cat,&quot; as demonstrated below:
+
+Consider an object, &quot;cat,&quot; as demonstrated below:
 
 var cat = {
     name: 'foo',
     age: 9
 }
-</code></pre>
 
-<blockquote>
-<p>You can find a number of properties by iterating in a for loop and update counter, as shown in the below listing:</p>
-</blockquote>
 
-<pre><code>let count = 0;
+// You can find a number of properties by iterating in a for loop and update counter, as shown in the below listing:
+
+let count = 0;
 for (var c in cat) {
     count = count + 1;
 }

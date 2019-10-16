@@ -27,9 +27,9 @@
   
     
   
-  <meta name="description" content="Question  sumDigits   Write a function called &ldquo;sumDigits&rdquo;. (&ldquo;sumDigits&rdquo; 함수를 작성하세요.)
+  <meta name="description" content="Question sumDigits  Write a function called &ldquo;sumDigits&rdquo;. (&ldquo;sumDigits&rdquo; 함수를 작성하세요.)
 Given a number, &ldquo;sumDigits&rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &ldquo;sumDigits&rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)
- let output = sumDigits(1148); console.log(output); // --&gt; 14 If the number is negative, the first digit should count as negative. (만약 숫자가 음수라면, 첫번째 자릿수는 음수로 고려되어야 합니다.) let output = sumDigits(-316); console.log(output); // --&gt; 4  My_Soultion function sumDigits(num) { let sum = 0; let stringNumArr = num.">
+ My_Soultion function sumDigits(num) { let sum = 0; let stringNumArr = num.toString().split(&#39;&#39;); for (let i = 0; i &lt; stringNumArr.length; i&#43;&#43;) { if (stringNumArr[0] === &#39;-&#39; &amp;&amp; i === 1) { sum = sum - Number(stringNumArr[1]); } else if (stringNumArr[i] !">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_algorithm/">
@@ -118,9 +118,9 @@ Given a number, &ldquo;sumDigits&rdquo; returns the sum of all its digits. (숫�
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_algorithm/">
   <meta property="og:title" content="4.Coding_level_2 | Home">
-  <meta property="og:description" content="Question  sumDigits   Write a function called &ldquo;sumDigits&rdquo;. (&ldquo;sumDigits&rdquo; 함수를 작성하세요.)
+  <meta property="og:description" content="Question sumDigits  Write a function called &ldquo;sumDigits&rdquo;. (&ldquo;sumDigits&rdquo; 함수를 작성하세요.)
 Given a number, &ldquo;sumDigits&rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &ldquo;sumDigits&rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)
- let output = sumDigits(1148); console.log(output); // --&gt; 14 If the number is negative, the first digit should count as negative. (만약 숫자가 음수라면, 첫번째 자릿수는 음수로 고려되어야 합니다.) let output = sumDigits(-316); console.log(output); // --&gt; 4  My_Soultion function sumDigits(num) { let sum = 0; let stringNumArr = num."><meta property="og:image" content="/img/icon-192.png">
+ My_Soultion function sumDigits(num) { let sum = 0; let stringNumArr = num.toString().split(&#39;&#39;); for (let i = 0; i &lt; stringNumArr.length; i&#43;&#43;) { if (stringNumArr[0] === &#39;-&#39; &amp;&amp; i === 1) { sum = sum - Number(stringNumArr[1]); } else if (stringNumArr[i] !"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   
@@ -376,47 +376,147 @@ Given a number, &ldquo;sumDigits&rdquo; returns the sum of all its digits. (숫�
 <li>
 <ul>
 <li><a href="#question">Question</a></li>
+</ul></li>
+<li><a href="#sumdigits">sumDigits</a>
+<ul>
 <li><a href="#my-soultion">My_Soultion</a></li>
 <li><a href="#question-1">Question</a></li>
-<li><a href="#my-soultion-1">MY_Soultion</a></li>
+</ul></li>
+<li><a href="#offlineminimum">offLineMinimum</a>
+<ul>
+<li><a href="#my-soultion-1">My_Soultion</a></li>
 <li><a href="#other-soultion">other_Soultion</a></li>
 <li><a href="#question-2">Question</a></li>
+</ul></li>
+<li><a href="#range">range</a>
+<ul>
+<li><a href="#my-soultion-2">My_soultion</a></li>
 <li><a href="#question-3">Question</a></li>
+</ul></li>
+<li><a href="#longestname">longestName</a>
+<ul>
 <li><a href="#my-soution">My_Soution</a></li>
-<li><a href="#my-soultion-2">My_Soultion</a></li>
+</ul></li>
+<li><a href="#hammingdistance">hammingDistance</a>
+<ul>
+<li><a href="#my-soultion-3">My_Soultion</a></li>
 <li><a href="#other-soultion-1">Other_Soultion</a></li>
 <li><a href="#question-4">Question</a></li>
-<li><a href="#my-soultion-3">My_Soultion</a></li>
+</ul></li>
+<li><a href="#getfullname">getFullName</a>
+<ul>
+<li><a href="#my-soultion-4">My_Soultion</a></li>
 <li><a href="#other-soultion-2">Other_Soultion</a></li>
 <li><a href="#question-5">Question</a></li>
-<li><a href="#my-soultion-4">My_Soultion</a></li>
+</ul></li>
+<li><a href="#billtotal">billTotal</a>
+<ul>
+<li><a href="#my-soultion-5">My_Soultion</a></li>
 <li><a href="#other-soultion-3">Other_Soultion</a></li>
 <li><a href="#question-6">Question</a></li>
-<li><a href="#my-soultion-5">My_Soultion</a></li>
-<li><a href="#question-7">Question</a></li>
+</ul></li>
+<li><a href="#primemover">primeMover</a>
+<ul>
 <li><a href="#my-soultion-6">My_Soultion</a></li>
+<li><a href="#question-7">Question</a></li>
+</ul></li>
+<li><a href="#isoddwithoutmodulo">isOddWithoutModulo</a>
+<ul>
+<li><a href="#my-soultion-7">My_Soultion</a></li>
 <li><a href="#others-soultion">Others_Soultion</a></li>
 <li><a href="#question-8">Question</a></li>
-<li><a href="#my-soultion-7">My_Soultion</a></li>
-<li><a href="#question-9">Question</a></li>
-<li><a href="#my-soultion-8">My_Soultion</a></li>
-<li><a href="#question-10">Question</a></li>
-<li><a href="#my-soultion-9">My_Soultion</a></li>
-<li><a href="#question-11">Question</a></li>
-<li><a href="#my-soultion-10">My_Soultion</a></li>
-<li><a href="#isodd">isOdd</a></li>
 </ul></li>
-<li><a href="#onlyevenelements">onlyEvenElements</a></li>
-<li><a href="#removeoddvalues">removeOddValues</a></li>
-<li><a href="#firstcharacter">firstCharacter</a>
+<li><a href="#getstringlength">getStringLength</a>
 <ul>
+<li><a href="#my-soultion-8">My_Soultion</a></li>
+<li><a href="#question-9">Question</a></li>
+</ul></li>
+<li><a href="#getindexof">getIndexOf</a>
+<ul>
+<li><a href="#my-soultion-9">My_Soultion</a></li>
+<li><a href="#question-10">Question</a></li>
+</ul></li>
+<li><a href="#calculatebilltotal">calculateBillTotal</a>
+<ul>
+<li><a href="#my-soultion-10">My_Soultion</a></li>
+<li><a href="#question-11">Question</a></li>
+</ul></li>
+<li><a href="#convertobjecttoarray3">convertObjectToArray3</a>
+<ul>
+<li><a href="#my-soultion-11">My_Soultion</a></li>
 <li><a href="#question-12">Question</a></li>
 </ul></li>
-<li><a href="#longestword">longestWord</a></li>
-<li><a href="#convertarraytoobject1">convertArrayToObject1</a></li>
-<li><a href="#convertobjecttoarray1">convertObjectToArray1</a></li>
-<li><a href="#convertarraytoobject2">convertArrayToObject2</a></li>
-<li><a href="#convertobjecttoarray2">convertObjectToArray2</a></li>
+<li><a href="#isodd">isOdd</a>
+<ul>
+<li><a href="#my-soultion-12">My_Soultion</a></li>
+<li><a href="#question-13">Question</a></li>
+</ul></li>
+<li><a href="#sum">sum</a>
+<ul>
+<li><a href="#my-soultion-13">My_Soultion</a></li>
+<li><a href="#question-14">Question</a></li>
+</ul></li>
+<li><a href="#onlyevenelements">onlyEvenElements</a>
+<ul>
+<li><a href="#my-soultion-14">My_Soultion</a></li>
+<li><a href="#question-15">Question</a></li>
+</ul></li>
+<li><a href="#removeoddvalues">removeOddValues</a>
+<ul>
+<li><a href="#my-soultion-15">My_Soultion</a></li>
+<li><a href="#question-16">Question</a></li>
+</ul></li>
+<li><a href="#firstcharacter">firstCharacter</a>
+<ul>
+<li><a href="#my-soultion-16">My_Soultion</a></li>
+<li><a href="#question-17">Question</a></li>
+</ul></li>
+<li><a href="#dashinsert">dashInsert</a>
+<ul>
+<li><a href="#question-18">Question</a></li>
+</ul></li>
+<li><a href="#longestword">longestWord</a>
+<ul>
+<li><a href="#my-soultion-17">My_Soultion</a></li>
+<li><a href="#question-19">Question</a></li>
+</ul></li>
+<li><a href="#convertarraytoobject1">convertArrayToObject1</a>
+<ul>
+<li><a href="#my-soultion-18">My_Soultion</a></li>
+<li><a href="#question-20">Question</a></li>
+</ul></li>
+<li><a href="#convertobjecttoarray1">convertObjectToArray1</a>
+<ul>
+<li><a href="#my-soultion-19">My_Soultion</a></li>
+<li><a href="#question-21">Question</a></li>
+</ul></li>
+<li><a href="#convertarraytoobject2">convertArrayToObject2</a>
+<ul>
+<li><a href="#my-soultion-20">My_Soultion</a></li>
+<li><a href="#questoin">Questoin</a></li>
+</ul></li>
+<li><a href="#convertobjecttoarray2">convertObjectToArray2</a>
+<ul>
+<li><a href="#my-soultion-21">My_Soultion</a></li>
+<li><a href="#question-22">Question</a></li>
+</ul></li>
+<li><a href="#convertarraytoobject3">convertArrayToObject3</a>
+<ul>
+<li><a href="#my-soultion-22">My_Soultion</a></li>
+<li><a href="#other-soultion-4">other_Soultion</a></li>
+<li><a href="#qutestion">Qutestion</a></li>
+</ul></li>
+<li><a href="#greetcustomers">greetCustomers</a>
+<ul>
+<li><a href="#my-soultion-23">My_Soultion</a></li>
+<li><a href="#question-23">Question</a></li>
+</ul></li>
+<li><a href="#convertdoublespacetosingle">convertDoubleSpaceToSingle</a>
+<ul>
+<li><a href="#my-soultion-24">My_Soultion</a></li>
+<li><a href="#other-soultion-5">other_Soultion</a></li>
+<li><a href="#other-soultion-6">other_Soultion</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -445,25 +545,13 @@ Given a number, &ldquo;sumDigits&rdquo; returns the sum of all its digits. (숫�
 
 <h3 id="question">Question</h3>
 
-<ul>
-<li>sumDigits</li>
-</ul>
+<h2 id="sumdigits">sumDigits</h2>
 
 <blockquote>
 <p>Write a function called &ldquo;sumDigits&rdquo;. (&ldquo;sumDigits&rdquo; 함수를 작성하세요.)</p>
 
 <p>Given a number, &ldquo;sumDigits&rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &ldquo;sumDigits&rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)</p>
 </blockquote>
-
-<pre><code class="language-js">
-let output = sumDigits(1148);
-console.log(output); // --&gt; 14
-If the number is negative, the first digit should count as negative. (만약 숫자가 음수라면, 첫번째 자릿수는 음수로 고려되어야 합니다.)
-
-let output = sumDigits(-316);
-console.log(output); // --&gt; 4
-
-</code></pre>
 
 <h3 id="my-soultion">My_Soultion</h3>
 
@@ -487,24 +575,19 @@ function sumDigits(num) {
 
 <h3 id="question-1">Question</h3>
 
-<ul>
-<li>offLineMinimum</li>
-</ul>
+<h2 id="offlineminimum">offLineMinimum</h2>
 
 <blockquote>
 <p>Have the function <code>offLineMinimum(strArr)</code> take the strArr parameter being passed which will be an array of integers ranging from 1&hellip;n and the letter &ldquo;E&rdquo; and return the correct subset based on the following rules.</p>
+
+<p>The input will be in the following format: <code>[&quot;I&quot;,&quot;I&quot;,&quot;E&quot;,&quot;I&quot;,...,&quot;E&quot;,...,&quot;I&quot;]</code> where the I&rsquo;s stand for integers and the E means take out the smallest integer currently in the whole set.
+When finished, your program should return that new set with integers separated by commas.</p>
 </blockquote>
 
+<h3 id="my-soultion-1">My_Soultion</h3>
+
 <pre><code class="language-js">
-The input will be in the following format: `[&quot;I&quot;,&quot;I&quot;,&quot;E&quot;,&quot;I&quot;,...,&quot;E&quot;,...,&quot;I&quot;]` where the I's stand for integers and the E means take out the smallest integer currently in the whole set.
-When finished, your program should return that new set with integers separated by commas.
-
-
-</code></pre>
-
-<h3 id="my-soultion-1">MY_Soultion</h3>
-
-<pre><code class="language-js">function offLineMinimum(strArr) {
+function offLineMinimum(strArr) {
 
 
   let numArr=[];
@@ -584,7 +667,7 @@ offLineMinimum([&quot;5&quot;,&quot;4&quot;,&quot;6&quot;,&quot;E&quot;,&quot;1&
 function offLineMinimum(strArr) {
   
    
-  // ** offLinMininum은 배열에서 'E' 가 나오기 이전까지의 숫자들로 숫자의 set을 만들고 e가 등장 할 때 마다 숫자 set 중 가장 작은 수를 가지고와 리턴할 문자열에 포함시켜주는 함수이다.
+// offLinMininum은 배열에서 'E' 가 나오기 이전까지의 숫자들로 숫자의 set을 만들고 e가 등장 할 때 마다 숫자 set 중 가장 작은 수를 가지고와 리턴할 문자열에 포함시켜주는 함수이다.
 
     // 배열에서 'E'가 나오기 이전까지의 숫자들로 숫자의 Set을 만든다. --&gt; numberSet
     // 배열에서 'E'가 등장하면, numberSet을 분류(작은 수~큰 수)하고 numberSet의 0번째 값(가장 작은 수)을 가지고와 result에 넣어준다.
@@ -615,15 +698,15 @@ function offLineMinimum(strArr) {
 
 <h3 id="question-2">Question</h3>
 
-<ul>
-<li>range</li>
-</ul>
+<h2 id="range">range</h2>
 
 <blockquote>
 <p>Complete the below function called range that takes two integers as parameters, start and end, and returns an array containing all the whole numbers between them starting with start and up to end (you can use a any loop)</p>
 
 <p>After you write your function, you can test it using the above inputs to make sure that it behaves correctly.</p>
 </blockquote>
+
+<h3 id="my-soultion-2">My_soultion</h3>
 
 <pre><code class="language-js">
 function range(start, end) {
@@ -657,9 +740,7 @@ range(10, 2); // =&gt; []
 
 <h3 id="question-3">Question</h3>
 
-<ul>
-<li>longestName</li>
-</ul>
+<h2 id="longestname">longestName</h2>
 
 <blockquote>
 <p>Given the following array of people, write a function that, when passed people as a parameter, returns the person (that is, your function should return an object) with the longest name (first, middle &amp; last).
@@ -693,9 +774,7 @@ longestName(people); //&quot;Alyssa P. Hacker&quot;
 
 <p>### Question</p>
 
-<ul>
-<li>hammingDistance</li>
-</ul>
+<h2 id="hammingdistance">hammingDistance</h2>
 
 <blockquote>
 <p>have the function <code>HammingDistance(strArr)</code> take the array of strings stored in <code>strArr</code>, which will only contain two strings of equal length andreturn the Hamming distance between them.
@@ -707,7 +786,7 @@ if `strArr` is `[&quot;coder&quot;, &quot;codec&quot;]` then your program should
 
 </code></pre>
 
-<h3 id="my-soultion-2">My_Soultion</h3>
+<h3 id="my-soultion-3">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -774,15 +853,13 @@ console.log(hammingDistance([&quot;coder&quot;, &quot;codec&quot;]))
 
 <h3 id="question-4">Question</h3>
 
-<ul>
-<li>getFullName</li>
-</ul>
+<h2 id="getfullname">getFullName</h2>
 
 <blockquote>
 <p>Write a function called &lsquo;getFullName&rsquo; that takes in an object which has this structure:</p>
 </blockquote>
 
-<h3 id="my-soultion-3">My_Soultion</h3>
+<h3 id="my-soultion-4">My_Soultion</h3>
 
 <pre><code class="language-js">
 function getFullName(obj) {
@@ -834,15 +911,13 @@ function getFullName(obj) {
 
 <h3 id="question-5">Question</h3>
 
-<ul>
-<li>billTotal</li>
-</ul>
+<h2 id="billtotal">billTotal</h2>
 
 <blockquote>
 <p>Write a function called billTotal that can be used to calculate the total to be paid at a restaurant &ndash; including tip and tax &ndash; given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!</p>
 </blockquote>
 
-<h3 id="my-soultion-4">My_Soultion</h3>
+<h3 id="my-soultion-5">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -891,9 +966,7 @@ billTotal(10.00); // =&gt; 12.45
 
 <h3 id="question-6">Question</h3>
 
-<ul>
-<li>primeMover</li>
-</ul>
+<h2 id="primemover">primeMover</h2>
 
 <blockquote>
 <p>Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, &lsquo;primeMover(n)&rsquo; 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)</p>
@@ -901,7 +974,7 @@ billTotal(10.00); // =&gt; 12.45
 <p>For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-5">My_Soultion</h3>
+<h3 id="my-soultion-6">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -925,9 +998,7 @@ let primeMover = function(n) {
 
 <h3 id="question-7">Question</h3>
 
-<ul>
-<li>isOddWithoutModulo</li>
-</ul>
+<h2 id="isoddwithoutmodulo">isOddWithoutModulo</h2>
 
 <blockquote>
 <p>Write a function called &ldquo;isOddWithoutModulo&rdquo;. (&ldquo;isOddWithoutModulo&rdquo; 함수를 작성하세요.)</p>
@@ -935,7 +1006,7 @@ let primeMover = function(n) {
 <p>Given a number, &ldquo;isOddWithoutModulo&rdquo; returns whether the passed in number is odd. (숫자가 주어졌을때, &ldquo;isOddWithoutModulo&rdquo; 함수는 주어진 숫자가 홀수인지를 반환합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-6">My_Soultion</h3>
+<h3 id="my-soultion-7">My_Soultion</h3>
 
 <pre><code class="language-js">
 // 2. it is used by Math.floor 
@@ -972,9 +1043,7 @@ function isOddWithoutModulo(num) {
 
 <h3 id="question-8">Question</h3>
 
-<ul>
-<li>getStringLength</li>
-</ul>
+<h2 id="getstringlength">getStringLength</h2>
 
 <blockquote>
 <p>Write a function called &ldquo;getStringLength&rdquo;. (&ldquo;getStringLength&rdquo; 함수를 작성하세요.)</p>
@@ -984,7 +1053,7 @@ function isOddWithoutModulo(num) {
 <p>Do NOT use any native &lsquo;length&rsquo; methods. (- &lsquo;length&rsquo; 메소드를 사용하지 마세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-7">My_Soultion</h3>
+<h3 id="my-soultion-8">My_Soultion</h3>
 
 <pre><code class="language-js">
 function getStringLength(string) {
@@ -1007,9 +1076,7 @@ function getStringLength(string) {
 
 <h3 id="question-9">Question</h3>
 
-<ul>
-<li>getIndexOf</li>
-</ul>
+<h2 id="getindexof">getIndexOf</h2>
 
 <blockquote>
 <p>Write a function called &ldquo;getIndexOf&rdquo;. (&ldquo;getIndexOf&rdquo; 함수를 작성하세요.)</p>
@@ -1017,7 +1084,7 @@ function getStringLength(string) {
 <p>Given a character and a string, &ldquo;getIndexOf&rdquo; returns the first position of the given character in the given string. (문자와 문자열이 주어졌을때, &ldquo;getIndexOf&rdquo; 함수는 주어진 문자열에서 주어진 문자가 나타나는 첫번째 위치를 반환합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-8">My_Soultion</h3>
+<h3 id="my-soultion-9">My_Soultion</h3>
 
 <pre><code class="language-js">function getIndexOf(char, str) {
 
@@ -1035,9 +1102,7 @@ function getStringLength(string) {
 
 <h3 id="question-10">Question</h3>
 
-<ul>
-<li>calculateBillTotal</li>
-</ul>
+<h2 id="calculatebilltotal">calculateBillTotal</h2>
 
 <blockquote>
 <p>Write a function called &ldquo;calculateBillTotal&rdquo;. (&ldquo;calculateBillTotal&rdquo; 함수를 작성하세요.)</p>
@@ -1048,7 +1113,7 @@ function getStringLength(string) {
 Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-9">My_Soultion</h3>
+<h3 id="my-soultion-10">My_Soultion</h3>
 
 <pre><code class="language-js">
 function calculateBillTotal(preTaxAndTipAmount) {
@@ -1070,21 +1135,15 @@ function calculateBillTotal(preTaxAndTipAmount) {
 
 </code></pre>
 
-<ul>
-<li>calculateBillTotal</li>
-</ul>
-
 <h3 id="question-11">Question</h3>
 
-<ul>
-<li>convertObjectToArray3</li>
-</ul>
+<h2 id="convertobjecttoarray3">convertObjectToArray3</h2>
 
 <blockquote>
 <p>Write a function called &ldquo;convertObjectToList&rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &ldquo;convertObjectToList&rdquo;를 작성하세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-10">My_Soultion</h3>
+<h3 id="my-soultion-11">My_Soultion</h3>
 
 <pre><code class="language-js">function convertObjectToList(obj) {
   // your code here
@@ -1106,7 +1165,9 @@ function calculateBillTotal(preTaxAndTipAmount) {
 
 </code></pre>
 
-<h3 id="isodd">isOdd</h3>
+<h3 id="question-12">Question</h3>
+
+<h2 id="isodd">isOdd</h2>
 
 <blockquote>
 <p>Write a function called isOdd. (&ldquo;isOdd&rdquo; 함수를 작성하세요.)</p>
@@ -1114,25 +1175,26 @@ function calculateBillTotal(preTaxAndTipAmount) {
 <p>Given an integer, isOdd returns whether the integer is odd or not. (숫자가 주어졌을때, &ldquo;isOdd&rdquo; 함수는 주어진 숫자가 홀수 인지 아닌지를 반환합니다.)</p>
 </blockquote>
 
-<ul>
-<li><p>My_Soultion</p>
+<h3 id="my-soultion-12">My_Soultion</h3>
 
-<pre><code>function isOdd(num) {
-// your code here
-// 파라미터를 2로 나누었을때의 나머지를 판별별
-// 나머지가 1인경우, true를 리턴
-// 나머지가 0인경우, false를 리턴
-if (num % 2 === 1 ) {
-return true;
-} else {
-return false;
+<pre><code class="language-js">
+function isOdd(num) {
+  // your code here
+  // 파라미터를 2로 나누었을때의 나머지를 판별별
+  // 나머지가 1인경우, true를 리턴
+  // 나머지가 0인경우, false를 리턴
+  if (num % 2 === 1 ) {
+    return true;
+  } else {
+    return false;
+  }
 }
-}
 
-</code></pre></li>
-</ul>
+</code></pre>
 
-<p><strong>sum</strong></p>
+<h3 id="question-13">Question</h3>
+
+<h2 id="sum">sum</h2>
 
 <blockquote>
 <p>Summation to n: Let&rsquo;s implement the function sum that takes a single parameter n, and computes the sum of all integers up to n starting from 0, e.g.:</p>
@@ -1140,24 +1202,24 @@ return false;
 <p>(n까지의 총 합: n을 매개변수로 받아 0 부터 n 까지 모든 수의 총 합을 반환하는 함수를 작성하세요.)</p>
 </blockquote>
 
-<ul>
-<li><p>My_Soultion</p>
+<h3 id="my-soultion-13">My_Soultion</h3>
 
-<pre><code>function sum(n) {
-let result = 0;
-//반복문을 이용하여 0부터 n까지의 숫자를 더하여 출력
-for (let i = 0; i &lt;= n; i++) {
-result = result + i;
-}
-return result;
+<pre><code class="language-js">function sum(n) {
+  let result = 0;
+  //반복문을 이용하여 0부터 n까지의 숫자를 더하여 출력
+  for (let i = 0; i &lt;= n; i++) {
+    result = result + i;
+  }
+  return result;
   
-// your code here
+  // your code here
 }
 sum(3);
 sum(4);
 
-</code></pre></li>
-</ul>
+</code></pre>
+
+<h3 id="question-14">Question</h3>
 
 <h2 id="onlyevenelements">onlyEvenElements</h2>
 
@@ -1165,28 +1227,28 @@ sum(4);
 <p>Given an array of numbers, onlyEvenElements returns a new array of just the even numbers. (숫자로 이루어진 배열이 주어졌을때, &ldquo;onlyEvenElements&rdquo; 함수는 주어진 배열에 있는 짝수로만으로 이루어진 새로운 배열을 반환해야 합니다.)</p>
 </blockquote>
 
-<ul>
-<li><p>My_Soultion</p>
+<h3 id="my-soultion-14">My_Soultion</h3>
 
-<pre><code>
+<pre><code class="language-js">
 function onlyEvenElements(arr) {
-//짝수값을 입력받을 빈배열을 선언한다.
-let result = [];
-//입력받은 배열안에 있는는 값을 판별하기위해 불러온다.
-for (let i = 0; i &lt; arr.length; i++) {
-//값이 짝수인지를 if 문을 써서 판별한다. 
-if (arr[i] % 2 === 0) {
-  //값이이 짝수인경우 빈배열에 집어넣는다.
-  result.push(arr[i]);
-}
-}
-return result;
-// your code here
+  //짝수값을 입력받을 빈배열을 선언한다.
+  let result = [];
+  //입력받은 배열안에 있는는 값을 판별하기위해 불러온다.
+  for (let i = 0; i &lt; arr.length; i++) {
+    //값이 짝수인지를 if 문을 써서 판별한다. 
+    if (arr[i] % 2 === 0) {
+      //값이이 짝수인경우 빈배열에 집어넣는다.
+      result.push(arr[i]);
+    }
+  }
+  return result;
+  // your code here
 }
 
 
-</code></pre></li>
-</ul>
+</code></pre>
+
+<h3 id="question-15">Question</h3>
 
 <h2 id="removeoddvalues">removeOddValues</h2>
 
@@ -1196,15 +1258,12 @@ return result;
 <p>You&rsquo;ll need to use the &ldquo;typeof&rdquo; operator to first check that the values are numbers: (value가 숫자인지 확인하기 위하서는 &ldquo;typeof&rdquo; 연산자를 먼저 사용해야 합니다.)</p>
 </blockquote>
 
-<ul>
-<li>My_Soultion</li>
-</ul>
+<h3 id="my-soultion-15">My_Soultion</h3>
 
-<blockquote>
-<p>first</p>
-</blockquote>
+<pre><code class="language-js">
+// first 
 
-<pre><code>function removeOddValues(object) {
+function removeOddValues(object) {
   // 1.홀수숫자인 페어가가 아닌 값들을 입력받을을 빈 객체를를 만든다.
   let object2 = {};
   // 2. value 값들을 판별하기 위해 키값을 반복시킨다.
@@ -1221,13 +1280,10 @@ return result;
   // your code here
 }
 
-</code></pre>
 
-<blockquote>
-<p>Sceond</p>
-</blockquote>
 
-<pre><code>
+// Sceond 
+
 function removeOddValues(input) {
 	
 // 1. 결과를 담을 객체를 만듭니다. 
@@ -1267,13 +1323,11 @@ function removeOddValues(input) {
 removeOddValues({ a: 1, b: 2, c: 3, d: 'hello' })
 
 
-</code></pre>
 
-<blockquote>
-<p>third</p>
-</blockquote>
 
-<pre><code>
+//third
+
+
 function removeOddValues(object) {
   //1. value 값을 판별하기 위해 key 값을 반복한다.
   for (let k in object) {
@@ -1287,6 +1341,8 @@ function removeOddValues(object) {
 
 </code></pre>
 
+<h3 id="question-16">Question</h3>
+
 <h2 id="firstcharacter">firstCharacter</h2>
 
 <blockquote>
@@ -1295,9 +1351,7 @@ function removeOddValues(object) {
 <p>Attention! In test case 5 userinput is one space input char as &lsquo; &lsquo;, please do not get confused with &ldquo;, empty string (주의사항! 테스트 케이스 5 에서 주는 입력값은 띄어쓰기 한개(&rsquo; &lsquo;) 입니다. 빈 문자열(&rdquo;) 과 혼동하지 마세요.)</p>
 </blockquote>
 
-<ul>
-<li>My_Soultion</li>
-</ul>
+<h3 id="my-soultion-16">My_Soultion</h3>
 
 <pre><code class="language-js">
 unction firstCharacter (string) {
@@ -1339,11 +1393,9 @@ unction firstCharacter (string) {
 
 </code></pre>
 
-<h3 id="question-12">Question</h3>
+<h3 id="question-17">Question</h3>
 
-<ul>
-<li>dashInsert</li>
-</ul>
+<h2 id="dashinsert">dashInsert</h2>
 
 <blockquote>
 <p>Have the function DashInsert insert dashes (&lsquo;-&rsquo;) between each two odd numbers in str. (문자열이 주어졌을때, &lsquo;DashInsert&rsquo; 함수는 문자열에 있는 두 홀수 사이에 대시(&lsquo;-&rsquo;)를 추가하여 반환합니다.)</p>
@@ -1374,7 +1426,7 @@ function DashInsert(string) {
 
 ///////////////////////////////////////////////////////////////////
 
-reduce 
+// 1. reduce 
 
 function DashInsert(string) {
  
@@ -1408,6 +1460,8 @@ function DashInsert(string) {
 
 </code></pre>
 
+<h3 id="question-18">Question</h3>
+
 <h2 id="longestword">longestWord</h2>
 
 <blockquote>
@@ -1416,24 +1470,23 @@ function DashInsert(string) {
 <p>If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요. 문장은 빈 문자열이 아닙니다.)</p>
 </blockquote>
 
-<ul>
-<li><p>My_Soultion</p>
+<h3 id="my-soultion-17">My_Soultion</h3>
 
-<pre><code>
+<pre><code class="language-js">
 // It's used by sort() 
 
 function longestWord(string) {
 
-// 1. 주어진 문장을 배열로 만들기(split)
-let tmp = string.split(' ');
-//let sorted_tmp =[];
-// ['I','love','codestates'];
-// 2. sort() 사용 =&gt; 성능 떨어짐
-let x = function(a,b){
-return b.length-a.length;
-};
-// 3. 0번째 요소 출력
-return tmp.sort(x)[0];
+ // 1. 주어진 문장을 배열로 만들기(split)
+ let tmp = string.split(' ');
+ //let sorted_tmp =[];
+ // ['I','love','codestates'];
+ // 2. sort() 사용 =&gt; 성능 떨어짐
+ let x = function(a,b){
+   return b.length-a.length;
+ };
+ // 3. 0번째 요소 출력
+ return tmp.sort(x)[0];
 }
 
 ////////////////////////////////////////////////////////
@@ -1442,14 +1495,14 @@ return tmp.sort(x)[0];
 
 function longestWord(string) {
  
-let tmp = string.split(' ');
-let max = tmp[0];
-for(let i =1;i&lt;tmp.length;i++){
-if(tmp[i].length&gt;max.length){
- max = tmp[i];
-}
-}
-return max;
+ let tmp = string.split(' ');
+ let max = tmp[0];
+ for(let i =1;i&lt;tmp.length;i++){
+   if(tmp[i].length&gt;max.length){
+     max = tmp[i];
+   }
+ }
+ return max;
 }
 
 
@@ -1462,14 +1515,11 @@ function longestWord(string) {
 return string.split(' ').reduce((acc,cur)=&gt; acc.length&lt;cur.length? cur:acc);
 }
 
-</code></pre></li>
-</ul>
+</code></pre>
+
+<h3 id="question-19">Question</h3>
 
 <h2 id="convertarraytoobject1">convertArrayToObject1</h2>
-
-<ul>
-<li>Question</li>
-</ul>
 
 <blockquote>
 <p>Write a function &lsquo;transformFirstAndLast&rsquo; that takes in an array, and returns an object with: (배열을 입력으로 받고 다음 조건에 만족하는 객체를 반환하는 함수 &lsquo;transformFirstAndLast&rsquo; 함수를 작성하세요.)</p>
@@ -1478,9 +1528,7 @@ return string.split(' ').reduce((acc,cur)=&gt; acc.length&lt;cur.length? cur:acc
 the last element of the array as that key&rsquo;s value. (2. 배열의 마지막 요소를 해당 키의 값으로 가집니다.)</p>
 </blockquote>
 
-<ul>
-<li>My_Soultion</li>
-</ul>
+<h3 id="my-soultion-18">My_Soultion</h3>
 
 <pre><code class="language-js">
 function transformFirstAndLast(array) {
@@ -1501,19 +1549,15 @@ function transformFirstAndLast(array) {
 
 </code></pre>
 
-<h2 id="convertobjecttoarray1">convertObjectToArray1</h2>
+<h3 id="question-20">Question</h3>
 
-<ul>
-<li>Question</li>
-</ul>
+<h2 id="convertobjecttoarray1">convertObjectToArray1</h2>
 
 <blockquote>
 <p>Write a function called &ldquo;getAllKeys&rdquo; which returns an array of all the input object&rsquo;s keys. (객체를 입력으로 받고 해당 객체의 키들을 배열로 반환하는 &ldquo;getAllKeys&rdquo; 함수를 작성하세요.)</p>
 </blockquote>
 
-<ul>
-<li>My_Soultion</li>
-</ul>
+<h3 id="my-soultion-19">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -1533,21 +1577,18 @@ return arr;
 
 </code></pre>
 
-<h2 id="convertarraytoobject2">convertArrayToObject2</h2>
+<h3 id="question-21">Question</h3>
 
-<ul>
-<li>Question</li>
-</ul>
+<h2 id="convertarraytoobject2">convertArrayToObject2</h2>
 
 <blockquote>
 <p>Write a function &lsquo;fromListToObject&rsquo; which takes in an array of arrays, and returns an object with each pair of elements in the array as a key-value pair. (2차원 배열을 입력으로 받고 배열안에 있는 배열의 요소 페어를 키-값 페어로 가지는 객체를 반환하는 함수 &lsquo;fromListToObject&rsquo; 함수를 작성하세요.)</p>
 </blockquote>
 
-<ul>
-<li>My_Soultion</li>
-</ul>
+<h3 id="my-soultion-20">My_Soultion</h3>
 
-<pre><code class="language-js">function fromListToObject(array) {
+<pre><code class="language-js">
+function fromListToObject(array) {
   // your code here
   
   //  1. output 할 빈객체를 생성한다.  
@@ -1567,21 +1608,18 @@ return arr;
 
 </code></pre>
 
-<h2 id="convertobjecttoarray2">convertObjectToArray2</h2>
+<h3 id="questoin">Questoin</h3>
 
-<ul>
-<li>Questoin</li>
-</ul>
+<h2 id="convertobjecttoarray2">convertObjectToArray2</h2>
 
 <blockquote>
 <p>Write a function called &ldquo;listAllValues&rdquo; which returns an array of all the input object&rsquo;s values. (객체를 입력으로 받고 해당 객체의 값들을 배열로 반환하는 &ldquo;listAllValues&rdquo; 함수를 작성하세요.)</p>
 </blockquote>
 
-<ul>
-<li>My_Soultion</li>
-</ul>
+<h3 id="my-soultion-21">My_Soultion</h3>
 
-<pre><code class="language-js">function listAllValues(obj) {
+<pre><code class="language-js">
+function listAllValues(obj) {
   // your code here
   
   // 1. output 할 빈 배열을 생셩
@@ -1601,11 +1639,9 @@ return arr;
 
 </code></pre>
 
-<p><strong>convertArrayToObject3</strong></p>
+<h3 id="question-22">Question</h3>
 
-<ul>
-<li>Question</li>
-</ul>
+<h2 id="convertarraytoobject3">convertArrayToObject3</h2>
 
 <blockquote>
 <p>Write a function called &ldquo;transformEmployeeData&rdquo; that transforms some employee data from one format to another. (사원들의 정보를 다른 형태로 변형 할 수 있는 함수 &ldquo;transformEmployeeData&rdquo; 함수를 작성하세요.)</p>
@@ -1613,9 +1649,7 @@ return arr;
 <p>The argument will look something like this: (사원들의 정보는 아래와 같은 배열로 주어질 수 있습니다.)</p>
 </blockquote>
 
-<ul>
-<li>My_Soultion</li>
-</ul>
+<h3 id="my-soultion-22">My_Soultion</h3>
 
 <pre><code class="language-js">
 function transformEmployeeData(array) {
@@ -1640,9 +1674,7 @@ function transformEmployeeData(array) {
 
 </code></pre>
 
-<ul>
-<li>other_Soultion</li>
-</ul>
+<h3 id="other-soultion-4">other_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -1650,7 +1682,8 @@ function transformEmployeeData(array) {
 
 
 function transformEmployeeData(array) {
-  // your code here
+ 
+ // your code here
  // [key] start: firstName - last: role
  // return [{}] index0 key; index1 value;
   
@@ -1676,11 +1709,9 @@ return result;
 
 </code></pre>
 
-<p><strong>greetCustomers</strong></p>
+<h3 id="qutestion">Qutestion</h3>
 
-<ul>
-<li>Qutestion</li>
-</ul>
+<h2 id="greetcustomers">greetCustomers</h2>
 
 <blockquote>
 <p>Write a function called &ldquo;greetCustomer&rdquo;. (&ldquo;greetCustomer&rdquo; 함수를 작성하세요.)</p>
@@ -1688,9 +1719,7 @@ return result;
 <p>Given a name, &ldquo;greetCustomer&rdquo; returns a greeting based on how many times that customer has visited the restaurant. Please refer to the customerData object. (고객들의 방문 횟수를 가지고 있는 객체와 이름이 주어졌을때, &ldquo;greetCustomer&rdquo; 함수는 손님이 몇번 방문했는지에 따라 다른 인삿말을 반환합니다. customerData 객체를 참고해 주세요.)</p>
 </blockquote>
 
-<ul>
-<li>My_Soultion</li>
-</ul>
+<h3 id="my-soultion-23">My_Soultion</h3>
 
 <pre><code class="language-js">
 function greetCustomer(customerData, firstName) {
@@ -1714,11 +1743,9 @@ function greetCustomer(customerData, firstName) {
 
 </code></pre>
 
-<p><strong>convertDoubleSpaceToSingle</strong></p>
+<h3 id="question-23">Question</h3>
 
-<ul>
-<li>Question</li>
-</ul>
+<h2 id="convertdoublespacetosingle">convertDoubleSpaceToSingle</h2>
 
 <blockquote>
 <p>Write a function called &ldquo;convertDoubleSpaceToSingle&rdquo;. (&ldquo;convertDoubleSpaceToSingle&rdquo; 함수를 작성하세요.)</p>
@@ -1726,9 +1753,7 @@ function greetCustomer(customerData, firstName) {
 <p>Given a string, &ldquo;convertDoubleSpaceToSingle&rdquo; returns the passed in string, with all the double spaces converted to single spaces. (문자열이 주어졌을때, &ldquo;convertDoubleSpaceToSingle&rdquo; 함수는 주어진 문자열에 있는 띄어쓰기 두개(double spaces)를 띄어쓰기 한개(single space)로 변환한 뒤 해당 문자열을 반환합니다.)</p>
 </blockquote>
 
-<ul>
-<li>My_Soultion</li>
-</ul>
+<h3 id="my-soultion-24">My_Soultion</h3>
 
 <pre><code class="language-js">
 function convertDoubleSpaceToSingle(str) {
@@ -1752,9 +1777,7 @@ function convertDoubleSpaceToSingle(str) {
 
 </code></pre>
 
-<ul>
-<li>other_Soultion</li>
-</ul>
+<h3 id="other-soultion-5">other_Soultion</h3>
 
 <pre><code class="language-js">
 function convertDoubleSpaceToSingle(str) {
@@ -1767,9 +1790,7 @@ function convertDoubleSpaceToSingle(str) {
 
 </code></pre>
 
-<ul>
-<li>other_Soultion</li>
-</ul>
+<h3 id="other-soultion-6">other_Soultion</h3>
 
 <pre><code class="language-js">
 function convertDoubleSpaceToSingle(str) {

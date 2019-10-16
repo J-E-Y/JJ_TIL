@@ -19,23 +19,12 @@ type: docs
 ### Question
 
 
-* sumDigits
+## sumDigits
 
 
 > Write a function called "sumDigits". ("sumDigits" 함수를 작성하세요.)
 
 >Given a number, "sumDigits" returns the sum of all its digits. (숫자가 주어졌을때, "sumDigits" 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)
-
-```js
-
-let output = sumDigits(1148);
-console.log(output); // --> 14
-If the number is negative, the first digit should count as negative. (만약 숫자가 음수라면, 첫번째 자릿수는 음수로 고려되어야 합니다.)
-
-let output = sumDigits(-316);
-console.log(output); // --> 4
-
-```
 
 
 
@@ -71,24 +60,24 @@ function sumDigits(num) {
 ### Question
 
 
-* offLineMinimum
+## offLineMinimum
 
 
 
 >Have the function `offLineMinimum(strArr)` take the strArr parameter being passed which will be an array of integers ranging from 1...n and the letter "E" and return the correct subset based on the following rules.
 
-```js
 
-The input will be in the following format: `["I","I","E","I",...,"E",...,"I"]` where the I's stand for integers and the E means take out the smallest integer currently in the whole set.
+> The input will be in the following format: `["I","I","E","I",...,"E",...,"I"]` where the I's stand for integers and the E means take out the smallest integer currently in the whole set.
 When finished, your program should return that new set with integers separated by commas.
 
 
-```
 
 
-### MY_Soultion 
+
+### My_Soultion 
 
 ```js
+
 function offLineMinimum(strArr) {
 
 
@@ -173,7 +162,7 @@ offLineMinimum(["5","4","6","E","1","7","E","E","3","2"]) // == >
 function offLineMinimum(strArr) {
   
    
-  // ** offLinMininum은 배열에서 'E' 가 나오기 이전까지의 숫자들로 숫자의 set을 만들고 e가 등장 할 때 마다 숫자 set 중 가장 작은 수를 가지고와 리턴할 문자열에 포함시켜주는 함수이다.
+// offLinMininum은 배열에서 'E' 가 나오기 이전까지의 숫자들로 숫자의 set을 만들고 e가 등장 할 때 마다 숫자 set 중 가장 작은 수를 가지고와 리턴할 문자열에 포함시켜주는 함수이다.
 
     // 배열에서 'E'가 나오기 이전까지의 숫자들로 숫자의 Set을 만든다. --> numberSet
     // 배열에서 'E'가 등장하면, numberSet을 분류(작은 수~큰 수)하고 numberSet의 0번째 값(가장 작은 수)을 가지고와 result에 넣어준다.
@@ -212,12 +201,14 @@ function offLineMinimum(strArr) {
 
 ### Question 
 
-* range
+## range
 
 > Complete the below function called range that takes two integers as parameters, start and end, and returns an array containing all the whole numbers between them starting with start and up to end (you can use a any loop)
 
 > After you write your function, you can test it using the above inputs to make sure that it behaves correctly.
  
+ 
+### My_soultion
 
 
 ```js
@@ -263,7 +254,7 @@ range(10, 2); // => []
 
 ### Question 
 
-* longestName
+## longestName
 
 
 > Given the following array of people, write a function that, when passed people as a parameter, returns the person (that is, your function should return an object) with the longest name (first, middle & last).
@@ -300,7 +291,7 @@ longestName(people); //"Alyssa P. Hacker"
 
  ### Question
 
-* hammingDistance
+## hammingDistance
 
 > have the function `HammingDistance(strArr)` take the array of strings stored in `strArr`, which will only contain two strings of equal length andreturn the Hamming distance between them.
 The Hamming distance is the number of positions where the corresponding characters are different.
@@ -394,7 +385,7 @@ console.log(hammingDistance(["coder", "codec"]))
 ### Question 
 
 
-* getFullName
+## getFullName
 
 
 >Write a function called 'getFullName' that takes in an object which has this structure:
@@ -461,7 +452,7 @@ function getFullName(obj) {
 ### Question 
 
 
-* billTotal
+## billTotal
 
 >Write a function called billTotal that can be used to calculate the total to be paid at a restaurant -- including tip and tax -- given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!
 
@@ -526,13 +517,14 @@ billTotal(10.00); // => 12.45
 ### Question
 
 
-* primeMover
+## primeMover
 
 
 
 >Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, 'primeMover(n)' 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)
 
 >For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)
+
 
 ### My_Soultion
 
@@ -563,13 +555,9 @@ let primeMover = function(n) {
 
 
 
-
-
-
-
 ### Question
 
-* isOddWithoutModulo
+## isOddWithoutModulo
 
 
 
@@ -622,13 +610,10 @@ function isOddWithoutModulo(num) {
 
 
 
-
-
-
 ### Question
 
 
-* getStringLength
+## getStringLength
 
 
 > Write a function called "getStringLength". ("getStringLength" 함수를 작성하세요.)
@@ -669,7 +654,7 @@ function getStringLength(string) {
 
 ### Question
 
-* getIndexOf
+## getIndexOf
 
 >Write a function called "getIndexOf". ("getIndexOf" 함수를 작성하세요.)
 
@@ -699,11 +684,9 @@ function getIndexOf(char, str) {
 
 
 
-
-
 ### Question
 
-* calculateBillTotal
+## calculateBillTotal
 
 > Write a function called "calculateBillTotal". ("calculateBillTotal" 함수를 작성하세요.)
 
@@ -711,6 +694,9 @@ function getIndexOf(char, str) {
 
 >Assume that sales tax is 9.5% and tip is 15%. (- 세금은 9.5% 팁은 15% 로 계산하세요.)
 >Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)
+
+
+
 
 ### My_Soultion
 
@@ -737,13 +723,15 @@ function calculateBillTotal(preTaxAndTipAmount) {
 
 
 
-* calculateBillTotal
+
 
 ### Question
 
-* convertObjectToArray3
+## convertObjectToArray3
 
 > Write a function called "convertObjectToList" which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 "convertObjectToList"를 작성하세요.)
+
+
 
 
 ### My_Soultion
@@ -770,18 +758,20 @@ function convertObjectToList(obj) {
 ```
 
 
+### Question
 
-### isOdd
+## isOdd
 
 >Write a function called isOdd. ("isOdd" 함수를 작성하세요.)
 
 >Given an integer, isOdd returns whether the integer is odd or not. (숫자가 주어졌을때, "isOdd" 함수는 주어진 숫자가 홀수 인지 아닌지를 반환합니다.)
 
-* My_Soultion
+
+### My_Soultion
 
 
+```js
 
-```
 function isOdd(num) {
   // your code here
   // 파라미터를 2로 나누었을때의 나머지를 판별별
@@ -796,17 +786,20 @@ function isOdd(num) {
 
 ```
 
-**sum**
+### Question
+
+## sum
 
 >Summation to n: Let's implement the function sum that takes a single parameter n, and computes the sum of all integers up to n starting from 0, e.g.:
 
 >(n까지의 총 합: n을 매개변수로 받아 0 부터 n 까지 모든 수의 총 합을 반환하는 함수를 작성하세요.)
 
-* My_Soultion
+
+### My_Soultion
 
 
 
-```
+```js
 function sum(n) {
   let result = 0;
   //반복문을 이용하여 0부터 n까지의 숫자를 더하여 출력
@@ -821,15 +814,20 @@ sum(3);
 sum(4);
 
 ```
+
+### Question
+
+
 ## onlyEvenElements
 
 
 >Given an array of numbers, onlyEvenElements returns a new array of just the even numbers. (숫자로 이루어진 배열이 주어졌을때, "onlyEvenElements" 함수는 주어진 배열에 있는 짝수로만으로 이루어진 새로운 배열을 반환해야 합니다.)
 
-* My_Soultion
+
+### My_Soultion
 
 
-```
+```js
 
 function onlyEvenElements(arr) {
   //짝수값을 입력받을 빈배열을 선언한다.
@@ -849,17 +847,24 @@ function onlyEvenElements(arr) {
 
 ```
 
+
+### Question
+
 ## removeOddValues
 
 >Write a function removeOddValues that takes an object as an argument and returns an object with all key/value pairs removed for which the value holds an odd number. ("removeOddValues" 함수를 작성하세요. 객체가 주어졌을때, "removeOddValues" 함수는 주어진 객체의 key/value 페어 중 value 가 홀수 숫자인 페어가 제거된 객체를 반환하세요.)
 
 >You'll need to use the "typeof" operator to first check that the values are numbers: (value가 숫자인지 확인하기 위하서는 "typeof" 연산자를 먼저 사용해야 합니다.)
 
-* My_Soultion
 
-> first 
+### My_Soultion
 
-```
+ 
+
+```js
+
+// first 
+
 function removeOddValues(object) {
   // 1.홀수숫자인 페어가가 아닌 값들을 입력받을을 빈 객체를를 만든다.
   let object2 = {};
@@ -877,13 +882,9 @@ function removeOddValues(object) {
   // your code here
 }
 
-```
 
 
-> Sceond 
-
-
-```
+// Sceond 
 
 function removeOddValues(input) {
 	
@@ -924,13 +925,10 @@ function removeOddValues(input) {
 removeOddValues({ a: 1, b: 2, c: 3, d: 'hello' })
 
 
-```
 
 
+//third
 
-> third
-
-```
 
 function removeOddValues(object) {
   //1. value 값을 판별하기 위해 key 값을 반복한다.
@@ -946,6 +944,9 @@ function removeOddValues(object) {
 ```
 
 
+
+### Question
+
 ## firstCharacter
 
 > In this exercise, a string is passed to a method and a new string has to be returned with the first character of each word in the string (문자열이 주어졌을때, "firstCharacter" 함수는 문자열의 각 단어 첫글자들로 이루어진 문자열을 반환하여야 합니다.)
@@ -954,7 +955,7 @@ function removeOddValues(object) {
 > Attention! In test case 5 userinput is one space input char as ' ', please do not get confused with '', empty string (주의사항! 테스트 케이스 5 에서 주는 입력값은 띄어쓰기 한개(' ') 입니다. 빈 문자열('') 과 혼동하지 마세요.)
 
 
-* My_Soultion
+### My_Soultion
 
 
 ```js
@@ -1000,7 +1001,7 @@ unction firstCharacter (string) {
 
 ### Question
 
-* dashInsert
+## dashInsert
 
 
 >Have the function DashInsert insert dashes ('-') between each two odd numbers in str. (문자열이 주어졌을때, 'DashInsert' 함수는 문자열에 있는 두 홀수 사이에 대시('-')를 추가하여 반환합니다.)
@@ -1035,7 +1036,7 @@ function DashInsert(string) {
 
 ///////////////////////////////////////////////////////////////////
 
-reduce 
+// 1. reduce 
 
 function DashInsert(string) {
  
@@ -1071,6 +1072,7 @@ function DashInsert(string) {
 
 
 
+### Question 
 
 ## longestWord
 
@@ -1080,10 +1082,10 @@ function DashInsert(string) {
 >If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요. 문장은 빈 문자열이 아닙니다.)
 
 
-* My_Soultion
+### My_Soultion
 
 
-```
+```js 
 
 // It's used by sort() 
 
@@ -1130,9 +1132,11 @@ return string.split(' ').reduce((acc,cur)=> acc.length<cur.length? cur:acc);
 ```
 
 
+### Question
+
+
 ## convertArrayToObject1
 
-* Question
 
 >Write a function 'transformFirstAndLast' that takes in an array, and returns an object with: (배열을 입력으로 받고 다음 조건에 만족하는 객체를 반환하는 함수 'transformFirstAndLast' 함수를 작성하세요.)
 
@@ -1141,8 +1145,7 @@ the last element of the array as that key's value. (2. 배열의 마지막 요�
 
 
 
-
-* My_Soultion
+### My_Soultion
 
 
 ```js
@@ -1166,16 +1169,17 @@ function transformFirstAndLast(array) {
 ```
 
 
+### Question
+
 ## convertObjectToArray1
 
-* Question
 
 
 >Write a function called "getAllKeys" which returns an array of all the input object's keys. (객체를 입력으로 받고 해당 객체의 키들을 배열로 반환하는 "getAllKeys" 함수를 작성하세요.)
 
 
 
-* My_Soultion
+### My_Soultion
 
 
 ```js
@@ -1197,20 +1201,23 @@ return arr;
 
 ```
 
+### Question 
+
+
 ## convertArrayToObject2
 
 
-* Question 
 
 
 > Write a function 'fromListToObject' which takes in an array of arrays, and returns an object with each pair of elements in the array as a key-value pair. (2차원 배열을 입력으로 받고 배열안에 있는 배열의 요소 페어를 키-값 페어로 가지는 객체를 반환하는 함수 'fromListToObject' 함수를 작성하세요.)
 
 
 
-* My_Soultion
+### My_Soultion
 
 
 ```js
+
 function fromListToObject(array) {
   // your code here
   
@@ -1232,18 +1239,21 @@ function fromListToObject(array) {
 ```
 
 
+### Questoin
+
+
 ## convertObjectToArray2
 
 
-* Questoin
 
 >Write a function called "listAllValues" which returns an array of all the input object's values. (객체를 입력으로 받고 해당 객체의 값들을 배열로 반환하는 "listAllValues" 함수를 작성하세요.)
 
 
-* My_Soultion
+### My_Soultion
 
 
 ```js
+
 function listAllValues(obj) {
   // your code here
   
@@ -1265,10 +1275,12 @@ function listAllValues(obj) {
 ```
 
 
-**convertArrayToObject3**
 
 
-* Question
+### Question
+
+## convertArrayToObject3
+
 
 > Write a function called "transformEmployeeData" that transforms some employee data from one format to another. (사원들의 정보를 다른 형태로 변형 할 수 있는 함수 "transformEmployeeData" 함수를 작성하세요.)
 
@@ -1276,7 +1288,7 @@ function listAllValues(obj) {
 
 
 
-* My_Soultion
+### My_Soultion
 
 ```js
 
@@ -1303,7 +1315,7 @@ function transformEmployeeData(array) {
 ```
 
 
-* other_Soultion
+### other_Soultion
 
 
 ```js
@@ -1313,7 +1325,8 @@ function transformEmployeeData(array) {
 
 
 function transformEmployeeData(array) {
-  // your code here
+ 
+ // your code here
  // [key] start: firstName - last: role
  // return [{}] index0 key; index1 value;
   
@@ -1340,15 +1353,17 @@ return result;
 ```
 
 
-**greetCustomers**
 
-* Qutestion 
+### Qutestion 
+
+## greetCustomers
+
 
 >Write a function called "greetCustomer". ("greetCustomer" 함수를 작성하세요.)
 
 >Given a name, "greetCustomer" returns a greeting based on how many times that customer has visited the restaurant. Please refer to the customerData object. (고객들의 방문 횟수를 가지고 있는 객체와 이름이 주어졌을때, "greetCustomer" 함수는 손님이 몇번 방문했는지에 따라 다른 인삿말을 반환합니다. customerData 객체를 참고해 주세요.)
 
-* My_Soultion
+### My_Soultion
 
 ```js
 
@@ -1373,9 +1388,11 @@ function greetCustomer(customerData, firstName) {
 
 ```
 
-**convertDoubleSpaceToSingle**
 
-* Question
+### Question
+
+## convertDoubleSpaceToSingle
+
 
 > Write a function called "convertDoubleSpaceToSingle". ("convertDoubleSpaceToSingle" 함수를 작성하세요.)
 
@@ -1383,7 +1400,7 @@ function greetCustomer(customerData, firstName) {
 
 
 
-* My_Soultion
+### My_Soultion
 
 
 ```js
@@ -1411,7 +1428,7 @@ function convertDoubleSpaceToSingle(str) {
 
 
 
-* other_Soultion
+### other_Soultion
 
 
 ```js
@@ -1429,7 +1446,7 @@ function convertDoubleSpaceToSingle(str) {
 
 
 
-* other_Soultion
+### other_Soultion
 
 ```js
 

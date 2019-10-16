@@ -130,7 +130,7 @@ else document.write(b + ", ");
 
 
 
-### checkbox 안에 있는 value 값 얻기 
+## checkbox 안에 있는 value 값 얻기 
 
 
 ```html
@@ -178,7 +178,7 @@ else document.write(b + ", ");
 
 
 
-### e.target 과 e.target.parentNode 의 차이 
+## e.target 과 e.target.parentNode 의 차이 
 
 
 ```js
@@ -205,7 +205,7 @@ else document.write(b + ", ");
 
 
 
-### 버튼 엔터키 작동 및 입력창 커서유지시키기 
+## 버튼 엔터키 작동 및 입력창 커서유지시키기 
 
 
 ```html
@@ -263,7 +263,7 @@ form.addEventListener('submit',function(event){
 
 
 
-### addEventListener 사용하기 
+## addEventListener 사용하기 
 
 
 
@@ -313,7 +313,7 @@ add.addEventListener('click',function(){
 
 
 
-### onclick 동작하는 원리 
+## onclick 동작하는 원리 
 
 ```html
 
@@ -346,7 +346,7 @@ xxx.onclick = function() {
 
 
 
-### JS/HTML textContent 와 value 의 차이점 
+## JS/HTML textContent 와 value 의 차이점 
 
 ```js
 
@@ -358,7 +358,7 @@ input 안에 들어가있는 글자내용은 value 이다
 
 
 
-### 버튼누르면 새로운 글 추가 
+## 버튼누르면 새로운 글 추가 
 
 
 * HTML
@@ -477,7 +477,7 @@ randomTweet();
 
 
 
-### JS/HTML script 위치 
+## JS/HTML script 위치 
 
 ```js
 
@@ -499,7 +499,7 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 
 
-### JS/HTML insertBefore()
+## JS/HTML insertBefore()
 
 ```js
 
@@ -548,9 +548,9 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 
 
----
-### JS/HTML랜덤글자 가져오기
----
+
+## JS/HTML랜덤글자 가져오기
+
 
 
 ```js
@@ -592,9 +592,9 @@ function generateNewTweet() {
 ```
 
 
----
-### Get Current Data & Time in JS
----
+
+## Get Current Data & Time in JS
+
 
 
 
@@ -612,9 +612,8 @@ dateTime // 2019-9-5 13:2:48"
 ```
 
 
----
-### block 스코프와 function 스코프의 차이
----
+## block 스코프와 function 스코프의 차이
+
 
 
 ```js
@@ -636,13 +635,9 @@ console.log(i) // 5   이유: var 변수를 지정했을때 block의 범위를 �
 
 ```
 
-```js
 
-// fucntion 스코프 
 
-```
-
-**var or let 변수를 사용한 함수중 어던것이 에러??**
+## var or let 변수를 사용한 함수중 어던것이 에러??
 
 ![](/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 4.41.59 PM.png)
 
@@ -665,16 +660,16 @@ greetSomeone('steve');
 
 ```
 
----
-### var and let and const 
----
+
+## var and let and const 
+
 
 ![](/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 5.37.46 PM.png)
 
 
----
-###  **Strict Mode**
----
+
+##  Strict Mode
+
 
 
 ```js
@@ -696,9 +691,9 @@ console.log(arr);
 
 
 
----
-### 랜덤 숫자 원하는 수대로 뽑기 
----
+
+## 랜덤 숫자 원하는 수대로 뽑기 
+
 
 ```js
 
@@ -713,14 +708,13 @@ for ( let i = 0 ; i <= 30; i = i + 1 ) {
 
 
 
----
-### \d or \d+  차이점  
----
 
+## \d or \d+  차이점  
 
-`imutable`
 
 ```js
+
+// 둘다 `imutable`  이다 
 
 // 정규식 표현으로 둘다 숫자를 뽑는 역활을 한다. 
 
@@ -747,9 +741,9 @@ str.match(/\d/g);
 
 
 
----
-### Extract numbers from a string-Javascript
----
+
+## Extract numbers from a string-Javascript
+
 
 
 ```js
@@ -762,14 +756,13 @@ console.log(numbers);
 
 
 
-
 ```
 
 
 
----
-### Making_GUID
----
+
+## Making_GUID
+
 
 
 ```js
@@ -793,9 +786,9 @@ guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + 
 
 
 
----
-### 할당 연산자
----
+
+## 할당 연산자
+
 
 ```js
 // 3 가지가 똑같은 것이다.  할당연산자
@@ -810,9 +803,9 @@ count++
 
 
 
----
-### parameter 지정하는 법 
----
+
+## parameter 지정하는 법 
+
 
 `ES6`
 
@@ -849,9 +842,9 @@ timeToGoHome(undefined,20) ;
 
 
 
----
-### getMaxNum 함수 만들기 
----
+
+## getMaxNum 함수 만들기 
+
 
 ```js
 
@@ -883,9 +876,9 @@ getMaxNum(1,2,3,4,5) //  Math.max(5,4,3,2,1)  >> 5같다
 
 
 
----
-### 현재 시간,날짜  || 년도 불러오기
----
+
+## 현재 시간,날짜  || 년도 불러오기
+
 
 ```js
 let a = new Date()
@@ -909,9 +902,9 @@ currentDate
 
 
 
----
-### in 에 관해서
----
+
+## in 에 관해서
+
 
 ```js
 
@@ -930,9 +923,9 @@ console.log(obj2) // >> true << true or false 로 값을 나타낸다.
 
 
 
----
-### prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법
----
+
+## prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법
+
 
 
 
@@ -966,9 +959,9 @@ newObj.text(); // "this is the stroy what I want to say to john"
 
 
 
----
-### 객체안에 담겨있는 function 사용하기
----
+
+## 객체안에 담겨있는 function 사용하기
+
 
 ```js
 
@@ -992,9 +985,9 @@ console.log(massage) // >> "They are john and the tim tim"
 ```
 
 
----
-### 함수가 객체의 키값으로 사용 
----
+
+## 함수가 객체의 키값으로 사용 
+
 
 ```js
 
@@ -1024,9 +1017,9 @@ obj.name("john") // john is good bad!
 
 ```
 
----
-### key 배열 출력 - Object.keys, for in 문
----
+
+## key 배열 출력 - Object.keys, for in 문
+
 
 ```js
 
@@ -1073,16 +1066,20 @@ console.log(arraySize(arr));  // 4
 ```
 
 
----
-### dot notation and  braket notation ?
+
+## dot notation and  braket notation ?
 
 
->다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
+
+```js
 
 
-* Example1
+// 다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
 
-``` js
+
+// Example1
+
+
 var obj = {steve:1, bob:2};
 var steve = 'bob';
 
@@ -1090,11 +1087,10 @@ console.log(obj.steve);    // 1
 console.log(obj['steve']); // also 1
 console.log(obj[steve]);   // 2
 
-```
 
-* Example2
+// Example2
 
-```js
+
 var obj = {steve:1, bob:2};
 
 console.log(obj.steve);    // 1
@@ -1102,13 +1098,14 @@ console.log(obj['steve']); // also 1
 console.log(obj['bob']);   // 2
 
 
-
 ```
 
----
-### first-class object()
----
-```
+
+## first-class object()
+
+
+
+```js
 함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을
 
 first-class value 
@@ -1117,13 +1114,10 @@ first-class object
 
 라고 부른다. 
 
-```
+// 값으로써 쓰이는 함수 예제
 
 
-* 값으로써 쓰이는 함수 예제
 
-
-```
 function cal(mode){
     var funcs = {
         'plus' : function(left, right){return left + right},
@@ -1133,12 +1127,9 @@ function cal(mode){
 }
 alert(cal('plus')(2,1));
 alert(cal('minus')(2,1));  
-```
 
 
-* 배열로서의 함수
-
-```
+// 배열로서의 함수
 
 var process = [
     function(input){ return input + 10;},
@@ -1156,19 +1147,27 @@ alert(input);
 
 
 
----
-### Callback
----
 
-* 장점 
+## Callback
 
-> 원래의 내장메소드에 있는 기능을 콜백 으로 바꿔서 사용할수 있다.
 
->값으로 사용될 수 있는 특성을 이용하면 함수의 인자로 함수로 전달할 수 있다. 값으로 전달된 함수는 호출될 수 있기 때문에 이를 이용하면 함수의 동작을 완전히 바꿀 수 있다. 인자로 전달된 함수 sortNumber의 구현에 따라서 sort의 동작방법이 완전히 바뀌게 된다.
+```js
 
->ajax를 사용할때 제이 쿼리를 이용해서 콜백이 사용된다. 
 
-```
+
+// 장점 
+
+
+/*
+원래의 내장메소드에 있는 기능을 콜백 으로 바꿔서 사용할수 있다.
+
+값으로 사용될 수 있는 특성을 이용하면 함수의 인자로 함수로 전달할 수 있다. 값으로 전달된 함수는 호출될 수 있기 때문에 이를 이용하면 함수의 동작을 완전히 바꿀 수 있다. 인자로 전달된 함수 sortNumber의 구현에 따라서 sort의 동작방법이 완전히 바뀌게 된다.
+
+ajax를 사용할때 제이 쿼리를 이용해서 콜백이 사용된다. 
+
+
+*/
+
 function sortNumber(a,b){
     // 위의 예제와 비교해서 a와 b의 순서를 바꾸면 정렬순서가 반대가 된다.
     return b-a;
@@ -1181,15 +1180,19 @@ alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
 
 
 
----
-### Dom : Dom을 이용해서 HTML문서를 제어할수 있다
----
 
-##### DOM 객체의 값 바꾸기
+## Dom 이란 ? 
 
-* ex1-1 document.getElementsByTagName()
+```js
 
-```
+// Dom을 이용해서 HTML문서를 제어할수 있다
+
+// DOM 객체의 값 바꾸기
+
+// ex1-1 document.getElementsByTagName()
+
+
+
 
 document.getElementsByTagName() 
 >>html에 있는 tag name 을 가져오는 명령이다.
@@ -1214,12 +1217,11 @@ heelo 2 >> good morning 으로 바뀐다.
 
 이것이 dom 의 역활 이다. 
 
-```
-
-* ex1-2 document.getElementsById()
 
 
-```
+// ex1-2 document.getElementsById()
+
+
 var a = document.getElementsById("main")
 >> main 아이디 값의 tag를 가져와서  a 변수에 담는다
 
@@ -1235,12 +1237,12 @@ a
 ```
 
 
----
-### 버튼 만들기
----
+
+## 버튼 만들기
 
 
-```
+
+```js
 <body>
     <h1>함수를 이용해 버튼 만들기</h1>
     
@@ -1278,27 +1280,29 @@ a
 
 
 
+## 객체 숫자 계산 하는 방법
 
----
-### 객체 숫자 계산 하는 방법
----
 
-#### How to Count the Number of Properties of the JavaScript Object
 
->While working with JavaScript, I come across a requirement to count a number of properties in a JavaScript object. I found two ways to find the number of properties in an object. They are as follows:
+```js
 
-```
+// How to Count the Number of Properties of the JavaScript Object
+
+// While working with JavaScript, I come across a requirement to count a number of properties in a JavaScript object. I found two ways to find the number of properties in an object. They are as follows:
+
+
+
+
 Consider an object, "cat," as demonstrated below:
 
 var cat = {
     name: 'foo',
     age: 9
 }
-```
 
->You can find a number of properties by iterating in a for loop and update counter, as shown in the below listing:
 
-```
+// You can find a number of properties by iterating in a for loop and update counter, as shown in the below listing:
+
 let count = 0;
 for (var c in cat) {
     count = count + 1;

@@ -601,7 +601,7 @@ repeatString("thewordofGod is the way",50)
 
 ### My_Soultion
 
-```
+```js
 function findShortestOfThreeWords(word1, word2, word3) {
   // your code here
   if ( word1.length < word2.length && word3.length ) {
@@ -625,15 +625,13 @@ findShortestOfThreeWords("111","222","333333333")
 
 ## countCharacter
 
-
-
 >Write a function called "countCharacter". ("countCharacter" 함수를 작성하세요.)
 
 >Given a string input and a character, "countCharacter" returns the number of occurences of a given character in the given string. (문자열과 문자가 주어졌을때, "countCharacter" 함수는 주어진 문자열에서 주어진 문자가 몇개가 있는지를 반환해야 합니다.)
 
 ### My_Soultion
 
-```
+```js
 
 function countCharacter(str, char) {
   // your code here
@@ -672,7 +670,8 @@ countCharacter("hello", "l" );
 ### My_Soultion
 
 * ex1
-```
+
+```js
 function findMinLengthOfThreeWords(word1, word2, word3) {
   // your code here
   if (word1.length === (word2.length && word3.length)){
@@ -687,9 +686,11 @@ function findMinLengthOfThreeWords(word1, word2, word3) {
 }
 
 findMinLengthOfThreeWords("111","2222","33333")
+
 ```
 * ex2
-```
+
+```js
 
 function findMinLengthOfThreeWords(word1, word2, word3) {
   var arr = [];
@@ -702,7 +703,8 @@ findMinLengthOfThreeWords("dwdsdsdsdsdsdsdwd","ddwwd","wdwdwdsdsdwdwwd")
 ```
 * ex3
 
-```
+```js
+
 function findMinLengthOfThreeWords(word1, word2, word3) {
   // your code here
   /* START SOLUTION */
@@ -715,7 +717,7 @@ function findMinLengthOfThreeWords(word1, word2, word3) {
 
 * ex4
 
-```
+```js
 
 function findMinLengthOfThreeWords(word1, word2, word3) {
   return Math.min(word1.length, word2.length, word3.length)
@@ -735,7 +737,8 @@ function findMinLengthOfThreeWords(word1, word2, word3) {
 
 ### My_Soultion
 
-```
+```js
+
 function computeAreaOfATriangle(base, height) {
   // your code here
   let ret = base * height / 2;
@@ -784,8 +787,6 @@ computePerimeterOfACircle(200);
 ## computeAverageOfNumbers
 
 
-
-
 >Write a function called "computeAverageOfNumbers". ("computeAverageOfNumbers" 함수를 작성하세요.)
 
 >Given an array of numbers, "computeAverageOfNumbers" returns their average. (숫자이 배열이 주어졌을때, "computeAverageOfNumbers" 함수는 그들의 평균을 반환합니다.)
@@ -816,13 +817,13 @@ computeAverageOfNumbers[1,2,3,4,5,6];
 
 ## convertToString
 
-convertToString함수가 있습니다. 이 함수는 주어진 파라미터를 문자열의 형태로 변환합니다.
+> convertToString함수가 있습니다. 이 함수는 주어진 파라미터를 문자열의 형태로 변환합니다.
 
 
 
 ### My_Soultion
 
-```
+```js
 
 function convertToString(anything) {
   // 여기에 코드를 작성하세요
@@ -851,7 +852,7 @@ convertToString('hello')
 
 ### My_Soution
 
-```
+```js
 
 function convertToNumber(anything) {
   anything = Number(anything);
@@ -881,7 +882,7 @@ convertToNumber('hello')
 
 ### My_Soultion
 
-```
+```js
 
 function isFalsy(anything) {
   // 여기에 코드를 작성하세요
@@ -975,6 +976,8 @@ getProperty(person,"name");
 
 ### My_Soultion
 
+
+
 ```js
 function addProperty(obj, propertyName) {
   // 여기에 코드를 작성하세요
@@ -988,27 +991,29 @@ addProperty(john,'isprogrammer');
 
 
 
+
+// Questoin
+
+
 /*
-
-
-Questoin
-
 obj[propertyName]를 이용했을 때는 테스트가 통과가 되고,
 obj.propertyName를 이용했을 때는 통과가 되지 않습니다.
 객체에 프로퍼티를 추가할 때 dot노테이션을 사용할 수 있는 걸로 알고있는데..이유가 뭘까요?
 
 
-* answer
+answer
 
->. 으로 했을때는 바로 객체의 키로 접근하고 [ ] 으로 하면 변수로 접근합니다.
+으로 했을때는 바로 객체의 키로 접근하고 [ ] 으로 하면 변수로 접근합니다.
 addProperty(steve, 'isProgrammer'); 이라는 함수 호출 구문이 있다고 가정하면
 obj[propertyName] = true; 는 steve.isProgrammer = true; 이고
-obj.propertyName = true; 는 steve.propertyName = true; 입니다. 완전히 다른값이 나오죠?
-
-
-
+obj.propertyName = true; 는 steve.propertyName = true; 입니다. 완전히 다른값이 
+나오죠?
 
 */
+
+
+
+
 
 
 ```
@@ -1068,7 +1073,7 @@ addObjectProperty(person1, 'manager', person2);
 
 
 
-```
+```js
 
 function removeProperty(obj, propertyName) {
   // 여기에 코드를 작성하세요
@@ -1076,6 +1081,8 @@ function removeProperty(obj, propertyName) {
 }
 
 ```
+
+
 ### Question
 
 ## isPersonOldEnoughToVote
@@ -1085,7 +1092,7 @@ function removeProperty(obj, propertyName) {
 >Given a "person" object, that contains an "age" property, "isPersonOldEnoughToVote" returns whether the given person is old enough to vote. ("age" 속성을 가지고 있는 "person" 객체가 주어졌을때, "isPersonOldEnoughToVote" 함수는 그 사람이 미국에서 합법적으로 투표를 할 수 있는 나이인지를 반환해야 합니다.)
 
 
-```
+```js
 
 function isPersonOldEnoughToVote(person) {
   // your code here
@@ -1112,7 +1119,7 @@ function isPersonOldEnoughToVote(person) {
 
 ### My_Soultion
 
-```
+```js
 let obj = {
   a: 8,
   b: 2,
@@ -1206,11 +1213,8 @@ let obj = {
   d: 4
 };
 countNumberOfKeys(obj)
-```
 
 
-
-```js
 
 // * Model Solutions
 
@@ -1218,8 +1222,10 @@ function countNumberOfKeys(obj) {
   return Object.keys(obj).length;
 }
 
+```
 
-```js
+
+
 
 ### Question
 
@@ -1266,6 +1272,7 @@ printObject(obj);
 ### My_Soultion
 
 ```js
+
 et obj1 = {
   a: 1,
   b: 2
@@ -1276,10 +1283,12 @@ let obj2 = {
 };
 
 function extend(obj1, obj2) {
+
   // 여기에 코드를 작성하세요
   // 1. obj2 의 key들을 반복합니다.
   // 2. obj2 안에 있는 key 가  obj1 key 안에에 포함 되어있는지 if 문을 써서 확인한다.
   // 4. 포함되어있지 않으면 ob1에 추가한다.
+  
   for ( let key in obj2 ) {
       if (!( key in obj1 )) {
         obj1[key] = obj2[key];
@@ -1335,7 +1344,7 @@ console.log(output); // --> {b: 1, a: 3, n: 2}
 
 ### My_Soultion
 
-```JS
+```js
 
 function removeStringValues(obj) {
   // 여기에 코드를 작성하세요.
@@ -1351,6 +1360,8 @@ function removeStringValues(obj) {
 
 
 ```
+
+
 ### Question
 
 ## removeNumberValues
@@ -1364,11 +1375,14 @@ function removeStringValues(obj) {
 
 
 ```js
+
 let obj = {
   a: 2,
   b: 'remaining',
   c: 4
 };
+
+
 function removeNumberValues(obj) {
   // 여기에 코드를 작성하세요.
   // prop 을 불러온다.
@@ -1385,6 +1399,8 @@ function removeNumberValues(obj) {
 removeNumberValues(obj);
 
 ```
+
+
 
 ### Question
 
@@ -1439,7 +1455,7 @@ removeArrayValues(obj)
 
 ### My_Soultion
 
-```
+```js
 
 function getFirstElement(array) {
   // 여기에 코드를 작성하세요.
@@ -1456,6 +1472,7 @@ function getFirstElement(array) {
 
 ## getLastElement
 
+
 > Write a function called "getLastElement". ("getLastElement" 함수를 작성하세요.)
 
 >Given an array, "getLastElement" returns the last element of the given array. (배열이 주어졌을때, "getLastElemeent" 함수는 주어진 배열의 마지막 요소를 반환해야 합니다.)
@@ -1464,7 +1481,7 @@ function getFirstElement(array) {
 ### My_Soultion
 
 
-```
+```js
 
 function getLastElement(array) {
   // 여기에 코드를 작성하세요
@@ -1479,6 +1496,8 @@ function getLastElement(array) {
 }
 
 ```
+
+
 ### Question
 
 ## getNthElement
@@ -1490,7 +1509,9 @@ function getLastElement(array) {
 
 ### My_Soultion
 
-```
+
+
+```js
 
 function getNthElement(array, n) {
   // 여기에 코드를 작성하세요
@@ -1521,7 +1542,7 @@ function getNthElement(array, n) {
 ### My_Soultion
 
 
-```
+```js
 
 
 function addToFront(arr, element) {
@@ -1530,9 +1551,10 @@ function addToFront(arr, element) {
 }
 
 
-
-
 ```
+
+
+
 ### Question
 
 ## addToBack
@@ -1545,7 +1567,7 @@ function addToFront(arr, element) {
 ### My_Soultion
 
 
-```JS
+```js
 
 function addToBack(arr, element) {
   // 여기에 코드를 작성하세요.
@@ -1570,7 +1592,8 @@ function addToBack(arr, element) {
 
 ### My_soultion
 
-```
+```js
+
 function joinArrays(arr1, arr2) {
   // your code here
   // 변수를 만들어 배열1에 배열2를 집어넣는다.
@@ -1598,7 +1621,8 @@ function joinArrays(arr1, arr2) {
 
 
 
-```
+```js
+
 function getElementsAfter(array, n) {
   // your code here
   // 새로운 빈배열을 만든다.
@@ -1627,7 +1651,7 @@ getElementsAfter(['a', 'b', 'c', 'd', 'e'], 1);
 ### My_Soultion
 
 
-```JS
+```js
 
 function getElementsUpTo(array, n) {
   let newArr = array.slice(0,n);
@@ -1648,7 +1672,7 @@ getElementsUpTo(['a', 'b', 'c', 'd', 'e'], 3);
 
 ### My_Soultion
 
-```JS
+```js
 
 function getAllElementsButFirst(array) {
   // your code here
@@ -1683,6 +1707,8 @@ function getAllElementsButFirst(array) {
 
 >Given an array, "getAllElementsButLast" returns an array with all the elements but the last. (배열이 주어졌을때, "getAllElementsButLast" 함수는 마지막 요소를 제외한 배열을 반환해야 합니다.)
 
+
+
 ### My_Soultion
 
 ```js
@@ -1698,6 +1724,8 @@ function getAllElementsButLast(array) {
 
 
 ```
+
+
 
 ### Question
 
@@ -2677,7 +2705,7 @@ function getAllButLastElementOfProperty(obj, key) {
 
 >Given an object and a key, "getProductOfAllElementsAtProperty" returns the product of all the elements in the array located at the given key. (객체와 키가 주어졌을때, "getProductOfAllElementsAtProperty" 함수는 주어진 키에 위치한 배열의 요소의 곱을 반환합니다.)
 
-### My_soultion 
+### My_soultion
 
 
 ```js
@@ -2685,8 +2713,8 @@ function getAllButLastElementOfProperty(obj, key) {
 // It is used by for 
 
 
-
 function getProductOfAllElementsAtProperty(obj, key) {
+
   // 1. arr 변수 만들어 key값의 prop 값을 넣는다
   // 2. 곱한값을 담을 sum 이라는 변수 생성 
   // 3. 만약 key의 prop 배열이 아니라면 0을 리턴
@@ -2707,7 +2735,6 @@ function getProductOfAllElementsAtProperty(obj, key) {
   }
   return sum;
 }
-
 
 
 ```

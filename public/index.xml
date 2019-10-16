@@ -5541,7 +5541,7 @@ else document.write(b + &amp;quot;, &amp;quot;);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;checkbox-안에-있는-value-값-얻기&#34;&gt;checkbox 안에 있는 value 값 얻기&lt;/h3&gt;
+&lt;h2 id=&#34;checkbox-안에-있는-value-값-얻기&#34;&gt;checkbox 안에 있는 value 값 얻기&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
 
@@ -5583,7 +5583,7 @@ else document.write(b + &amp;quot;, &amp;quot;);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;e-target-과-e-target-parentnode-의-차이&#34;&gt;e.target 과 e.target.parentNode 의 차이&lt;/h3&gt;
+&lt;h2 id=&#34;e-target-과-e-target-parentnode-의-차이&#34;&gt;e.target 과 e.target.parentNode 의 차이&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 * e.target === 클릭된애
@@ -5600,7 +5600,7 @@ else document.write(b + &amp;quot;, &amp;quot;);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;버튼-엔터키-작동-및-입력창-커서유지시키기&#34;&gt;버튼 엔터키 작동 및 입력창 커서유지시키기&lt;/h3&gt;
+&lt;h2 id=&#34;버튼-엔터키-작동-및-입력창-커서유지시키기&#34;&gt;버튼 엔터키 작동 및 입력창 커서유지시키기&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
 
@@ -5647,7 +5647,7 @@ form.addEventListener(&#39;submit&#39;,function(event){
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;addeventlistener-사용하기&#34;&gt;addEventListener 사용하기&lt;/h3&gt;
+&lt;h2 id=&#34;addeventlistener-사용하기&#34;&gt;addEventListener 사용하기&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h1&amp;gt;this is coffee machine&amp;lt;h1&amp;gt;
 &amp;lt;div id = &amp;quot;menu&amp;quot;&amp;gt;menu&amp;lt;/div&amp;gt;
@@ -5691,7 +5691,7 @@ add.addEventListener(&#39;click&#39;,function(){
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;onclick-동작하는-원리&#34;&gt;onclick 동작하는 원리&lt;/h3&gt;
+&lt;h2 id=&#34;onclick-동작하는-원리&#34;&gt;onclick 동작하는 원리&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
 
@@ -5719,7 +5719,7 @@ xxx.onclick = function() {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;js-html-textcontent-와-value-의-차이점&#34;&gt;JS/HTML textContent 와 value 의 차이점&lt;/h3&gt;
+&lt;h2 id=&#34;js-html-textcontent-와-value-의-차이점&#34;&gt;JS/HTML textContent 와 value 의 차이점&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 tag 안에 들어가는 글자내용은  textcontent 이고
@@ -5728,7 +5728,7 @@ input 안에 들어가있는 글자내용은 value 이다
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;버튼누르면-새로운-글-추가&#34;&gt;버튼누르면 새로운 글 추가&lt;/h3&gt;
+&lt;h2 id=&#34;버튼누르면-새로운-글-추가&#34;&gt;버튼누르면 새로운 글 추가&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;HTML&lt;/li&gt;
@@ -5842,7 +5842,7 @@ randomTweet();
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;js-html-script-위치&#34;&gt;JS/HTML script 위치&lt;/h3&gt;
+&lt;h2 id=&#34;js-html-script-위치&#34;&gt;JS/HTML script 위치&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -5857,7 +5857,7 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;js-html-insertbefore&#34;&gt;JS/HTML insertBefore()&lt;/h3&gt;
+&lt;h2 id=&#34;js-html-insertbefore&#34;&gt;JS/HTML insertBefore()&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // html
@@ -5901,11 +5901,7 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;js-html랜덤글자-가져오기&#34;&gt;JS/HTML랜덤글자 가져오기&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;js-html랜덤글자-가져오기&#34;&gt;JS/HTML랜덤글자 가져오기&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 var randomUser = [&#39;ingikim&#39;, &#39;satya&#39;, &#39;sundar&#39;, &#39;steve&#39;, &#39;tim&#39;, &#39;jeff&#39;];
@@ -5944,11 +5940,7 @@ function generateNewTweet() {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;get-current-data-time-in-js&#34;&gt;Get Current Data &amp;amp; Time in JS&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;get-current-data-time-in-js&#34;&gt;Get Current Data &amp;amp; Time in JS&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -5962,11 +5954,7 @@ dateTime // 2019-9-5 13:2:48&amp;quot;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;block-스코프와-function-스코프의-차이&#34;&gt;block 스코프와 function 스코프의 차이&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;block-스코프와-function-스코프의-차이&#34;&gt;block 스코프와 function 스코프의 차이&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // block 스코프
@@ -5986,12 +5974,7 @@ console.log(i) // 5   이유: var 변수를 지정했을때 block의 범위를 �
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// fucntion 스코프 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;var or let 변수를 사용한 함수중 어던것이 에러??&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;var-or-let-변수를-사용한-함수중-어던것이-에러&#34;&gt;var or let 변수를 사용한 함수중 어던것이 에러??&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 4.41.59 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -6011,19 +5994,11 @@ greetSomeone(&#39;steve&#39;);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;var-and-let-and-const&#34;&gt;var and let and const&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;var-and-let-and-const&#34;&gt;var and let and const&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 5.37.46 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;strict-mode&#34;&gt;&lt;strong&gt;Strict Mode&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;strict-mode&#34;&gt;Strict Mode&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -6039,11 +6014,7 @@ console.log(arr);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;랜덤-숫자-원하는-수대로-뽑기&#34;&gt;랜덤 숫자 원하는 수대로 뽑기&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;랜덤-숫자-원하는-수대로-뽑기&#34;&gt;랜덤 숫자 원하는 수대로 뽑기&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // for 문을 이용한 랜덤 숫자 원하는수대로 뽑기 
@@ -6054,15 +6025,11 @@ for ( let i = 0 ; i &amp;lt;= 30; i = i + 1 ) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;d-or-d-차이점&#34;&gt;\d or \d+  차이점&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;code&gt;imutable&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;d-or-d-차이점&#34;&gt;\d or \d+  차이점&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 둘다 `imutable`  이다 
+
 // 정규식 표현으로 둘다 숫자를 뽑는 역활을 한다. 
 
 // \d 는 모든 숫자를 각각 배열로 나눠서 출력하낟.  
@@ -6085,11 +6052,7 @@ str.match(/\d/g);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;extract-numbers-from-a-string-javascript&#34;&gt;Extract numbers from a string-Javascript&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;extract-numbers-from-a-string-javascript&#34;&gt;Extract numbers from a string-Javascript&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var string = &amp;quot;border-radius:10px 20px 30px 40px&amp;quot;;
 var numbers = string.match(/\d+/g).map(Number); 
@@ -6100,14 +6063,9 @@ console.log(numbers);
 
 
 
-
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;making-guid&#34;&gt;Making_GUID&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;making-guid&#34;&gt;Making_GUID&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 JavaScript
@@ -6123,11 +6081,7 @@ guid = (S4() + S4() + &amp;quot;-&amp;quot; + S4() + &amp;quot;-4&amp;quot; + S4
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;할당-연산자&#34;&gt;할당 연산자&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;할당-연산자&#34;&gt;할당 연산자&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 3 가지가 똑같은 것이다.  할당연산자
 
@@ -6137,11 +6091,7 @@ count++
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;parameter-지정하는-법&#34;&gt;parameter 지정하는 법&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;parameter-지정하는-법&#34;&gt;parameter 지정하는 법&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;ES6&lt;/code&gt;&lt;/p&gt;
 
@@ -6171,11 +6121,7 @@ timeToGoHome(undefined,20) ;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;getmaxnum-함수-만들기&#34;&gt;getMaxNum 함수 만들기&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;getmaxnum-함수-만들기&#34;&gt;getMaxNum 함수 만들기&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getMaxNums(...nums) {
@@ -6204,11 +6150,7 @@ getMaxNum(1,2,3,4,5) //  Math.max(5,4,3,2,1)  &amp;gt;&amp;gt; 5같다
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;현재-시간-날짜-년도-불러오기&#34;&gt;현재 시간,날짜  || 년도 불러오기&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;현재-시간-날짜-년도-불러오기&#34;&gt;현재 시간,날짜  || 년도 불러오기&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let a = new Date()
 
@@ -6225,11 +6167,7 @@ currentDate
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;in-에-관해서&#34;&gt;in 에 관해서&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;in-에-관해서&#34;&gt;in 에 관해서&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -6243,11 +6181,7 @@ console.log(obj2) // &amp;gt;&amp;gt; true &amp;lt;&amp;lt; true or false 로 �
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법&#34;&gt;prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법&#34;&gt;prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다
@@ -6272,11 +6206,7 @@ newObj.text(); // &amp;quot;this is the stroy what I want to say to john&amp;quo
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;객체안에-담겨있는-function-사용하기&#34;&gt;객체안에 담겨있는 function 사용하기&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;객체안에-담겨있는-function-사용하기&#34;&gt;객체안에 담겨있는 function 사용하기&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
   // 객체를 만들고 속성값에 text 내용을 출력할 함수를 만든다. 
@@ -6298,11 +6228,7 @@ console.log(massage) // &amp;gt;&amp;gt; &amp;quot;They are john and the tim tim
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;함수가-객체의-키값으로-사용&#34;&gt;함수가 객체의 키값으로 사용&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;함수가-객체의-키값으로-사용&#34;&gt;함수가 객체의 키값으로 사용&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // 객체와 함수를 이용한다.
@@ -6331,11 +6257,7 @@ obj.name(&amp;quot;john&amp;quot;) // john is good bad!
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;key-배열-출력-object-keys-for-in-문&#34;&gt;key 배열 출력 - Object.keys, for in 문&lt;/h3&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;key-배열-출력-object-keys-for-in-문&#34;&gt;key 배열 출력 - Object.keys, for in 문&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 var arr = [];
@@ -6380,48 +6302,39 @@ console.log(arraySize(arr));  // 4
 출처: https://mylife365.tistory.com/286?category=624212 [변화에 적응하기]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;dot-notation-and-braket-notation&#34;&gt;dot notation and  braket notation ?&lt;/h2&gt;
 
-&lt;h3 id=&#34;dot-notation-and-braket-notation&#34;&gt;dot notation and  braket notation ?&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???&lt;/p&gt;
-&lt;/blockquote&gt;
+// 다른점은 dot notation 을 쓴것과 braket notation을 쓴것인데 이게 왜 다를까요???
 
-&lt;ul&gt;
-&lt;li&gt;Example1&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var obj = {steve:1, bob:2};
+// Example1
+
+
+var obj = {steve:1, bob:2};
 var steve = &#39;bob&#39;;
 
 console.log(obj.steve);    // 1
 console.log(obj[&#39;steve&#39;]); // also 1
 console.log(obj[steve]);   // 2
 
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Example2&lt;/li&gt;
-&lt;/ul&gt;
+// Example2
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var obj = {steve:1, bob:2};
+
+var obj = {steve:1, bob:2};
 
 console.log(obj.steve);    // 1
 console.log(obj[&#39;steve&#39;]); // also 1
 console.log(obj[&#39;bob&#39;]);   // 2
 
 
-
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;first-class-object&#34;&gt;first-class object()&lt;/h2&gt;
 
-&lt;h3 id=&#34;first-class-object&#34;&gt;first-class object()&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code&gt;함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;함수를 변수, 매개변수 ,리턴값 으로 사용할수 있다 이것을
 
 first-class value 
 first-class citizen
@@ -6429,60 +6342,57 @@ first-class object
 
 라고 부른다. 
 
-&lt;/code&gt;&lt;/pre&gt;
+// 값으로써 쓰이는 함수 예제
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;값으로써 쓰이는 함수 예제&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;function cal(mode){
-var funcs = {
-    &#39;plus&#39; : function(left, right){return left + right},
-    &#39;minus&#39; : function(left, right){return left - right}
-}
-return funcs[mode];
+
+function cal(mode){
+    var funcs = {
+        &#39;plus&#39; : function(left, right){return left + right},
+        &#39;minus&#39; : function(left, right){return left - right}
+    }
+    return funcs[mode];
 }
 alert(cal(&#39;plus&#39;)(2,1));
 alert(cal(&#39;minus&#39;)(2,1));  
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;배열로서의 함수&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;
+// 배열로서의 함수
+
 var process = [
-function(input){ return input + 10;},
-function(input){ return input * input;},
-function(input){ return input / 2;}
+    function(input){ return input + 10;},
+    function(input){ return input * input;},
+    function(input){ return input / 2;}
 ];
 var input = 1;
 for(var i = 0; i &amp;lt; process.length; i++){
-input = process[i](input);
+    input = process[i](input);
 }
 alert(input);
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.10.02 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;callback&#34;&gt;Callback&lt;/h2&gt;
 
-&lt;h3 id=&#34;callback&#34;&gt;Callback&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
-&lt;hr /&gt;
 
-&lt;ul&gt;
-&lt;li&gt;장점&lt;/li&gt;
-&lt;/ul&gt;
+// 장점 
 
-&lt;blockquote&gt;
-&lt;p&gt;원래의 내장메소드에 있는 기능을 콜백 으로 바꿔서 사용할수 있다.&lt;/p&gt;
 
-&lt;p&gt;값으로 사용될 수 있는 특성을 이용하면 함수의 인자로 함수로 전달할 수 있다. 값으로 전달된 함수는 호출될 수 있기 때문에 이를 이용하면 함수의 동작을 완전히 바꿀 수 있다. 인자로 전달된 함수 sortNumber의 구현에 따라서 sort의 동작방법이 완전히 바뀌게 된다.&lt;/p&gt;
+/*
+원래의 내장메소드에 있는 기능을 콜백 으로 바꿔서 사용할수 있다.
 
-&lt;p&gt;ajax를 사용할때 제이 쿼리를 이용해서 콜백이 사용된다.&lt;/p&gt;
-&lt;/blockquote&gt;
+값으로 사용될 수 있는 특성을 이용하면 함수의 인자로 함수로 전달할 수 있다. 값으로 전달된 함수는 호출될 수 있기 때문에 이를 이용하면 함수의 동작을 완전히 바꿀 수 있다. 인자로 전달된 함수 sortNumber의 구현에 따라서 sort의 동작방법이 완전히 바뀌게 된다.
 
-&lt;pre&gt;&lt;code&gt;function sortNumber(a,b){
+ajax를 사용할때 제이 쿼리를 이용해서 콜백이 사용된다. 
+
+
+*/
+
+function sortNumber(a,b){
     // 위의 예제와 비교해서 a와 b의 순서를 바꾸면 정렬순서가 반대가 된다.
     return b-a;
 }
@@ -6492,18 +6402,18 @@ alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.46.43 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;dom-이란&#34;&gt;Dom 이란 ?&lt;/h2&gt;
 
-&lt;h3 id=&#34;dom-dom을-이용해서-html문서를-제어할수-있다&#34;&gt;Dom : Dom을 이용해서 HTML문서를 제어할수 있다&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// Dom을 이용해서 HTML문서를 제어할수 있다
 
-&lt;hr /&gt;
+// DOM 객체의 값 바꾸기
 
-&lt;h5 id=&#34;dom-객체의-값-바꾸기&#34;&gt;DOM 객체의 값 바꾸기&lt;/h5&gt;
+// ex1-1 document.getElementsByTagName()
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex1-1 document.getElementsByTagName()&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;
+
+
 document.getElementsByTagName() 
 &amp;gt;&amp;gt;html에 있는 tag name 을 가져오는 명령이다.
 
@@ -6527,11 +6437,12 @@ heelo 2 &amp;gt;&amp;gt; good morning 으로 바뀐다.
 
 이것이 dom 의 역활 이다. 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;ex1-2 document.getElementsById()&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;var a = document.getElementsById(&amp;quot;main&amp;quot;)
+// ex1-2 document.getElementsById()
+
+
+var a = document.getElementsById(&amp;quot;main&amp;quot;)
 &amp;gt;&amp;gt; main 아이디 값의 tag를 가져와서  a 변수에 담는다
 
 a
@@ -6543,16 +6454,11 @@ a
 
 &amp;gt;&amp;gt;&amp;lt;p id = main&amp;gt;hello john jung&amp;lt;/p&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;버튼-만들기&#34;&gt;버튼 만들기&lt;/h2&gt;
 
-&lt;h3 id=&#34;버튼-만들기&#34;&gt;버튼 만들기&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;&amp;lt;body&amp;gt;
     &amp;lt;h1&amp;gt;함수를 이용해 버튼 만들기&amp;lt;/h1&amp;gt;
     
     
@@ -6587,31 +6493,27 @@ a
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;객체-숫자-계산-하는-방법&#34;&gt;객체 숫자 계산 하는 방법&lt;/h2&gt;
 
-&lt;h3 id=&#34;객체-숫자-계산-하는-방법&#34;&gt;객체 숫자 계산 하는 방법&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// How to Count the Number of Properties of the JavaScript Object
 
-&lt;hr /&gt;
+// While working with JavaScript, I come across a requirement to count a number of properties in a JavaScript object. I found two ways to find the number of properties in an object. They are as follows:
 
-&lt;h4 id=&#34;how-to-count-the-number-of-properties-of-the-javascript-object&#34;&gt;How to Count the Number of Properties of the JavaScript Object&lt;/h4&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;While working with JavaScript, I come across a requirement to count a number of properties in a JavaScript object. I found two ways to find the number of properties in an object. They are as follows:&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;Consider an object, &amp;quot;cat,&amp;quot; as demonstrated below:
+
+Consider an object, &amp;quot;cat,&amp;quot; as demonstrated below:
 
 var cat = {
     name: &#39;foo&#39;,
     age: 9
 }
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;You can find a number of properties by iterating in a for loop and update counter, as shown in the below listing:&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;let count = 0;
+// You can find a number of properties by iterating in a for loop and update counter, as shown in the below listing:
+
+let count = 0;
 for (var c in cat) {
     count = count + 1;
 }
@@ -6996,7 +6898,7 @@ var newArray = [];
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;dom&#34;&gt;Dom&lt;/h3&gt;
+&lt;h2 id=&#34;dom&#34;&gt;Dom&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
 
@@ -7078,28 +6980,9 @@ var newArray = [];
 
 
 
-
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;this&#34;&gt;This&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;call() and apply()&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// call(),apply()  첫번째 인자가 this 이다. 
-
-
-
-function foo () {
-  consoel.log(this); //  여기서 this 는 window
-}
-
-foo(); // window
-foo.call(); // window
-foo.apply(); // window
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;ex&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;call&#34;&gt;call()&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // 사용방법 
@@ -7109,29 +6992,26 @@ function identify() {
 }
 function speak() {
 	var greeting = &amp;quot;hello, I am &amp;quot; + identify.call(this);
-	console.log(greet;
+	console.log(greet);
 }
 var me = { name : &amp;quot;jj&amp;quot;};
 var you = {name : &amp;quot;Tim&amp;quot;};
 
 // 호출
-
 identify.call(me) // identify함수를 호출한다. return 값의 있는  this 는 me가 된다
+
+
 // &amp;quot;jj&amp;quot;
-	
 speak.call(you) // speak 함수를 호출한다. return 값의 있는  identify 함수가호출된다 마지막으로 this는 you 가 된다.
 
 // hello, I am Tim
 	
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;**call() 과 apply() 의 차이 **&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;this 값을 넘겨주는 방식이 틀림&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h2 id=&#34;call-과-apply-의-차이&#34;&gt;call() 과 apply() 의 차이&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// this 값을 넘겨주는 방식이 틀림
 // call() and apply()  사용해서 함수안에있는 parameter 사용하기 
 
 
@@ -7156,15 +7036,14 @@ Math.max.apply(null,arr);
 }
 
 
-
-
-
-
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;class-객체지향-프로그래밍&#34;&gt;Class : 객체지향 프로그래밍&lt;/h3&gt;
+&lt;h2 id=&#34;class-객체지향-프로그래밍&#34;&gt;Class : 객체지향 프로그래밍&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+
+
 function Car(band,name,color) {
     // 인스턴스가 만들어 질때  실행될 코드들... 
 }
@@ -7177,11 +7056,11 @@ function Car(band,name,color) {
 // 1. 속성  : band,name,color , currentFuel,maxSpeed
 // 2. 메소드  : refuel() ,setSpeed(), drive()
 
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;ex&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// ex
+
+
 // 1. 클라스 함수 와 인스턴스 생성 
 
 function Car(brand,name,color) { // Car() 는 클라스
@@ -7221,25 +7100,19 @@ let arr = new Array(1,2,3,4,5) // 배열 만들기  // Array클라스 안에 (�
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;closure&#34;&gt;Closure&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;1.클로저란?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;함수는 함수를 리턴할수 있다.그것을 고차함수라고 하는데 그것을 클로저라 부른다. 한마디로 &lt;code&gt;외부함수의 변수에 접근할수 있는 함수&lt;/code&gt;를  &lt;code&gt;클로저&lt;/code&gt;라 부른다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;특징&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;클로저 함수의 장점은 지역변수 외부 함수의 변수 전역 변수 에 접근이 가능하다는 점이다 !&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h2 id=&#34;closure-1&#34;&gt;Closure 1&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 1.클로저란?
+
+함수는 함수를 리턴할수 있다.그것을 고차함수라고 하는데 그것을 클로저라 부른다. 한마디로 `외부함수의 변수에 접근할수 있는 함수`를  `클로저`라 부른다. 
+
+// 2.특징 ?
+
+// 클로저 함수의 장점은 지역변수 외부 함수의 변수 전역 변수 에 접근이 가능하다는 점이다 !
+
+
+
 function foo() {
   return function() {
         return 2 
@@ -7251,11 +7124,10 @@ foo() // f
 // 2 가 반환되지 않고 
 //f &amp;lt;&amp;lt; 함수 자체가 리턴된다 
 
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;**클로저예제1 : 함수 이용해서 템플릿 함수 만들기 **&lt;/p&gt;
+// 클로저예제1 : 함수 이용해서 템플릿 함수 만들기
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
 function htmlMark(tag) {
     let stratTag = &amp;quot;&amp;lt;&amp;quot; + tag + &amp;quot;&amp;gt;&amp;quot; ; 
     let endTag = &amp;quot;&amp;lt;&amp;quot; + tag + &amp;quot;&amp;gt;&amp;quot; ;
@@ -7271,11 +7143,12 @@ let h1Tag = htmlMark(&amp;quot;h1&amp;quot;); // 변수에 tag:&amp;quot;h1&amp;
 
 h1Tag(&amp;quot;JJ&amp;quot;)  //  content : &amp;quot;JJ&amp;quot;
 // &amp;gt;&amp;gt;&amp;gt; &amp;lt;h1&amp;gt;JJ&amp;lt;h1&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;**클로저예제 2 : 클로저 모튤 패턴 **&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+// 클로저예제 2 : 클로저 모튤 패턴 
+
+
 // 두 카운터가 각기 다른 privateCount 를 다루면서, privareCounter 을 밖에 노출시키지 않는 것이 장점이다. 
 
 function makeCounter() {
@@ -7303,17 +7176,17 @@ coun1.getValue() //  obj key값인 getValue() 함수를 실행시키면 지금�
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;2.클로저란?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;클로저는 독립적인 (자유) 변수를 가리키는 함수이다. 또는, 클로저 안에 정의된 함수는 만들어진 환경을 ‘기억한다’.&lt;/p&gt;
-
-&lt;p&gt;내부함수는 외부함수의 지역변수에 접근 할 수 있는데 외부함수의 실행이 끝나서 외부함수가 소멸된 이후에도 내부함수가 외부함수의 변수에 접근 할 수 있다. 이러한 메커니즘을 클로저라고 한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;일반적인 함수&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;closure-2&#34;&gt;Closure 2&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+//클로저는 독립적인 (자유) 변수를 가리키는 함수이다. 또는, 클로저 안에 정의된 함수는 만들어진 환경을 ‘기억한다’.
+
+// 내부함수는 외부함수의 지역변수에 접근 할 수 있는데 외부함수의 실행이 끝나서 외부함수가 소멸된 이후에도 내부함수가 외부함수의 변수에 접근 할 수 있다. 이러한 메커니즘을 클로저라고 한다.
+
+
+// 일반적인 함수
+
+
 let addTo = function (passed) {
 
 	let inner = 2;
@@ -7323,11 +7196,9 @@ let addTo = function (passed) {
 
 console.log( addTo(3) ) //  5
 
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;이것이 클로저&lt;/strong&gt;&lt;/p&gt;
+//이것이 클로저
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 let passed = 3;  // 함수 밖에 변수를 선언한다 
 
 let addTo = function () { //  parameter 를 외부에서가져온다. 
@@ -7341,9 +7212,10 @@ console.log( addTo() ) //  5
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;1.추가설명&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;closure-3&#34;&gt;Closure 3&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 클로저(closure)는 내부함수가 외부함수의 맥락(context)에 접근할 수 있는 것을 가르킨다.
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 클로저(closure)는 내부함수가 외부함수의 맥락(context)에 접근할 수 있는 것을 가르킨다.
 // 자바스크립트에서 함수는 일급객체이다. 함수를 호출했을때 리턴되는 함수(클로저)를 참조하고 있는 것이다.
 // 즉 반환되는 내부함수가 클로저이다.
  
@@ -7389,13 +7261,21 @@ console.log(next());
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;추가설명 &amp;amp; 코드를 작성할때 많이 격는 어려움&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;closure-4&#34;&gt;Closure 4&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;3. 클로저(Closure)
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 추가설명 &amp;amp; 코드를 작성할때 많이 격는 어려움
+
+
+
+
+/*
 
 클로저는 JavaScript의 유효범위 체인을 이용하여 이미 생명 주기가 끝난 외부 함수의 변수를 참조하는 방법입니다. 외부 함수가 종료되더라도 내부함수가 실행되는 상태면 내부함수에서 참조하는 외부함수는 닫히지 못하고 내부함수에 의해서 닫히게 되어 클로저라 불리 웁니다. 따라서 클로저란 외부에서 내부 변수에 접근할 수 있도록 하는 함수입니다.
 
 내부 변수는 하나의 클로저에만 종속될 필요는 없으며 외부 함수가 실행 될 때마다 새로운 유효범위 체인과 새로운 내부 변수를 생성합니다. 또, 클로저가 참조하는 내부 변수는 실제 내부 변수의 복사본이 아닌 그 내부 변수를 직접 참조합니다.
+
+*/
 
 function outerFunc(){  
     var a= 0;
@@ -7441,27 +7321,45 @@ var out2 = outerFunc();
 out.innerFunc1();  
 out.innerFunc2();  
 out2.innerFunc1();  
-out2.innerFunc2();  
+out2.innerFunc2();
+
+
 //실행결과
+
 /*
 a = 1  
 a = 3  
 a = 1  
 a = 3  
 */
+
+
+/* 
+
 [예제 8] 클로저의 상호작용, 서로 다른 객체
 
 위의 코드는 클로저의 예제 코드이며 그 중 좌측 코드는 서로 다른 클로저가 같은 내부 변수를 참조하고 있다는 것을 보여주고 있습니다. 서로 다른 클로저 innerFunc1과 innerFunc2가 내부 변수 a를 참조하고 a의 값을 바꿔주고 있습니다. 실행 결과를 보면 내부 변수 a의 메모리를 같이 공유한다는 것을 알 수 있습니다.
 
 우측 코드는 같은 함수를 쓰지만 서로 다른 객체로 내부 변수를 참조하는 모습입니다. 외부 함수가 여러 번 실행되면서 서로 다른 객체가 생성되고 객체가 생성될 때 마다 서로 다른 내부 변수가 생성되어 보기엔 같은 내부 변수 a로 보이지만 서로 다른 내부 변수를 참조합니다.
 
-3.1 클로저의 사용이유
+*/
+
+
+// 클로저의 사용이유
+
+
+
+/*
+
 클로저를 사용하게 되면 전역변수의 오,남용이 없는 깔끔한 스크립트를 작성 할 수 있습니다. 같은 변수를 사용하고자 할 때 전역 변수가 아닌 클로저를 통해 같은 내부 변수를 참조하게 되면 전역변수의 오남용을 줄일 수 있습니다. 또한, 클로저는 JavaScript에 적합한 방식의 스크립트를 구성하고 다양한 JavaScript의 디자인 패턴을 적용할 수 있습니다. 그의 대표적인 예로 모듈 패턴을 말 할 수 있는데 모듈 패턴의 자세한 내용은 [Javascript : 함수(function) 다시 보기]을 참고 하시면 될 것 같습니다. 마지막으로 함수 내부의 함수를 이용해 함수 내부변수 또는 함수에 접근 함으로써 JavaScript에 없는 class의 역할을 대신해 비공개 속성/함수, 공개 속성/함수에 접근을 함으로 class를 구현하는 근거 입니다.
 
-3.2 클로저 사용시 주의할 점
-클로저를 사용할 때 주의해야 할 점이 여럿 있습니다. 제가 알려드리고 싶은 주의 점은 다음과 같습니다.
+*/
 
-for 문 클로저는 상위 함수의 변수를 참조할 때 자신의 생성될 때가 아닌 내부 변수의 최종 값을 참조합니다.
+
+// 3.2 클로저 사용시 주의할 점
+// 클로저를 사용할 때 주의해야 할 점이 여럿 있습니다. 제가 알려드리고 싶은 주의 점은 다음과 같습니다.
+
+// for 문 클로저는 상위 함수의 변수를 참조할 때 자신의 생성될 때가 아닌 내부 변수의 최종 값을 참조합니다.
 
 &amp;lt;body&amp;gt;  
     &amp;lt;script&amp;gt;
@@ -7479,15 +7377,19 @@ for 문 클로저는 상위 함수의 변수를 참조할 때 자신의 생성�
 &amp;lt;button&amp;gt;2번째 버튼&amp;lt;/button&amp;gt;  
 &amp;lt;button&amp;gt;3번째 버튼&amp;lt;/button&amp;gt;  
 &amp;lt;/body&amp;gt;  
+
+
 //실행결과
+
 /*
 1번째 버튼은 4번째 버튼입니다  
 2번째 버튼은 4번째 버튼입니다  
 3번째 버튼은 4번째 버튼입니다  
 */
-[예제 9] for문안의 클로저
 
-위의 코드는 각각의 버튼에 이벤트를 걸어 클릭된 버튼이 몇 번째 버튼인지를 알기 위한 예제 입니다. 하지만, 실행 결과 값은 바라던 결과가 나오지 않습니다. 위의 클로저인 클릭 이벤트가 참조 하는 변수 i의 값이 버튼이 클릭될 때의 값이 아닌 for 구문을 다 돌고 난후 i의 값 4를 참조하기 때문에 모두 4라는 결과가 나옵니다.
+// [예제 9] for문안의 클로저
+
+// 위의 코드는 각각의 버튼에 이벤트를 걸어 클릭된 버튼이 몇 번째 버튼인지를 알기 위한 예제 입니다. 하지만, 실행 결과 값은 바라던 결과가 나오지 않습니다. 위의 클로저인 클릭 이벤트가 참조 하는 변수 i의 값이 버튼이 클릭될 때의 값이 아닌 for 구문을 다 돌고 난후 i의 값 4를 참조하기 때문에 모두 4라는 결과가 나옵니다.
 
 &amp;lt;body&amp;gt;  
     &amp;lt;script&amp;gt;
@@ -7507,18 +7409,21 @@ for 문 클로저는 상위 함수의 변수를 참조할 때 자신의 생성�
 &amp;lt;button&amp;gt;1번째 버튼&amp;lt;/button&amp;gt;  
 &amp;lt;button&amp;gt;2번째 버튼&amp;lt;/button&amp;gt;  
 &amp;lt;button&amp;gt;3번째 버튼&amp;lt;/button&amp;gt;  
-&amp;lt;/body&amp;gt;  
+&amp;lt;/body&amp;gt;
+
+
 //실행결과
 /*
 1번째 버튼은 1번째 버튼입니다  
 2번째 버튼은 2번째 버튼입니다  
 3번째 버튼은 3번째 버튼입니다  
 */
-[예제 10] 예제9 해결법 : 중첩클로저
 
-위의 예제 코드를 통해 중첩 된 클로저를 사용하는 것 만으로 위와 같은 문제를 피하여 원하는 값이 나옵니다.
+// [예제 10] 예제9 해결법 : 중첩클로저
 
-성능문제 클로저가 필요하지 않는 부분에서 클로저를 사용하는 것은 처리 속도와 메모리 면에서 좋은 방법이 아닙니다.
+// 위의 예제 코드를 통해 중첩 된 클로저를 사용하는 것 만으로 위와 같은 문제를 피하여 원하는 값이 나옵니다.
+
+// 성능문제 클로저가 필요하지 않는 부분에서 클로저를 사용하는 것은 처리 속도와 메모리 면에서 좋은 방법이 아닙니다.
 
 function MyObject(inputname) {  
     this.name = inputname;
@@ -7531,13 +7436,16 @@ function MyObject(inputname) {
 }
 var obj= new MyObject(&amp;quot;서&amp;quot;);  
 console.log(obj.getName());  
+
+
 //실행결과
 /*
 서
 */
-[예제 11] 클로저의 오남용
 
-위의 코드와 같은 함수 내부의 클로저 구현은 함수의 객체가 생성될 때마다 클로저가 생성되는 결과를 가져옵니다. 같은 구동을하는 클로저가 객체마다 생성이 된다면 쓸데없이 메모리를 쓸데없이 차지하게 되는데, 이를 클로저의 오남용이라고 합니다. 클로저의 오남용은 성능 문제 면에서 안 좋은 결과를 가져옵니다.
+// [예제 11] 클로저의 오남용
+
+// 위의 코드와 같은 함수 내부의 클로저 구현은 함수의 객체가 생성될 때마다 클로저가 생성되는 결과를 가져옵니다. 같은 구동을하는 클로저가 객체마다 생성이 된다면 쓸데없이 메모리를 쓸데없이 차지하게 되는데, 이를 클로저의 오남용이라고 합니다. 클로저의 오남용은 성능 문제 면에서 안 좋은 결과를 가져옵니다.
 
 function MyObject(inputname) {  
     this.name = inputname;
@@ -7550,15 +7458,18 @@ MyObject.prototype.setName =   function(rename) {
 };
 var obj= new MyObject(&amp;quot;서&amp;quot;);  
 console.log(obj.getName());  
+
 //실행결과
 /*
 서
 */
-[예제 12] prototype객체를 이용한 클로저 생성
 
-클로저를 위의 코드와 같이 prototype객체에 생성하게 되면 객체가 아무리 생성되어도 클로저를 한 번만 생성하고 여러 객체에서 쓸 수 있게 되어 메모리의 낭비를 줄입니다.
 
-this와 arguments객체 클로저를 통해서는 외부함수의 this객체와 arguments객체를 참조하지 못합니다.
+// [예제 12] prototype객체를 이용한 클로저 생성
+
+// 클로저를 위의 코드와 같이 prototype객체에 생성하게 되면 객체가 아무리 생성되어도 클로저를 한 번만 생성하고 여러 객체에서 쓸 수 있게 되어 메모리의 낭비를 줄입니다.
+
+// this와 arguments객체 클로저를 통해서는 외부함수의 this객체와 arguments객체를 참조하지 못합니다.
 
 function f1(){  
     function f2(){
@@ -7573,6 +7484,7 @@ exam();
 /*
 undefined  
 */
+
 function f1(){  
     var a= arguments[0];
     function f2(){
@@ -7582,13 +7494,16 @@ function f1(){
 }
 var exam = f1(1);  
 exam();  
+
 //실행결과
 /*
 1  
 */
-[예제 13] arguments객체 참조
 
-위의 좌측코드같이 클로저를 통해 arguments객체를 참조하게 되면 undefined라는 실행결과가 나옵니다. 즉, arguments객체는 참조가 불가능하며 굳이 참조하고 싶다면 오른쪽 코드와 같이 새로운 내부 변수에 arguments객체의 값을 넣고 그 변수를 참조 하거나 매개변수를 만들어 매개 변수를 참조하여야 합니다.
+
+// [예제 13] arguments객체 참조
+
+// 위의 좌측코드같이 클로저를 통해 arguments객체를 참조하게 되면 undefined라는 실행결과가 나옵니다. 즉, arguments객체는 참조가 불가능하며 굳이 참조하고 싶다면 오른쪽 코드와 같이 새로운 내부 변수에 arguments객체의 값을 넣고 그 변수를 참조 하거나 매개변수를 만들어 매개 변수를 참조하여야 합니다.
 
 Function 생성자
 
@@ -7604,11 +7519,12 @@ exam();
 /*
 20  
 */
-[예제 14] Function생성자로 선언된 클로저
 
-위의 코드와 같이 클로저가 Function생성자로 생성된 경우 전역에서 생성된 것으로 인지합니다. 클로저 function2를 통하여 내부 변수 a를 참조하려고 했지만 원했던 결과와 달리 전역 변수 a가 참조 됩니다.
+// [예제 14] Function생성자로 선언된 클로저
 
-순환참조
+// 위의 코드와 같이 클로저가 Function생성자로 생성된 경우 전역에서 생성된 것으로 인지합니다. 클로저 function2를 통하여 내부 변수 a를 참조하려고 했지만 원했던 결과와 달리 전역 변수 a가 참조 됩니다.
+
+
 
 function outerFunc(){  
     var outer_val = {};
@@ -7619,9 +7535,11 @@ function outerFunc(){
     outer_val.values = innerFunc;
     return innerFunc;
 }
-[예제 15] 인위적 순환참조
 
-위의 코드는 의도적으로 클로저의 순환참조를 만든 예제 코드입니다. 내부 객체 outerval의 속성 값 values 에 내부 함수 innerFunc를 참조하게 만들고 내부 함수 innerFunc는 내부 객체 outerval을 호출 하고 있습니다. 위와 같은 순환 참조는 서로를 참조 하면서 영원히 끝나지 않는 호출로 인하여 메모리 누수를 야기합니다.
+
+// [예제 15] 인위적 순환참조
+
+// 위의 코드는 의도적으로 클로저의 순환참조를 만든 예제 코드입니다. 내부 객체 outerval의 속성 값 values 에 내부 함수 innerFunc를 참조하게 만들고 내부 함수 innerFunc는 내부 객체 outerval을 호출 하고 있습니다. 위와 같은 순환 참조는 서로를 참조 하면서 영원히 끝나지 않는 호출로 인하여 메모리 누수를 야기합니다.
 
 function outerFunc(){  
     var outer_val = {};
@@ -7631,11 +7549,12 @@ function outerFunc(){
     outer_val.values = innerFunc;
     return innerFunc;
 }
-[예제 16] 의도치 않은 순환참조
 
-그렇다면 위 코드같이 서로를 참조를 하지 않게 되면 순환참조가 끊어질까요? 아닙니다. JavaScript의 클로저는 특별한 문법을 쓰지 않고도 암묵적으로 생기는 특성을 가지고 있습니다. 이는 클로저를 쉽게 만들도록 해주지만 클로저가 사용되는 곳을 사용자가 식별하기 어렵게 만들기도 합니다. 그렇게 되면 내부 함수의 innerFunc는 암묵적으로 상위 함수의 내부 객체인 outer_val을 참조하게 되고 이로인해 의도치 않게 순환참조가 만들어집니다. 이런 의도치 않은 순환참조는 메모리 누수를 야기합니다.
+// [예제 16] 의도치 않은 순환참조
 
-이 같은 의도치 않은 순환참조는 객체가 제거될 때 명시적으로 null값으로 초기화 해 주거나 try-catch-finally구문으로 해결합니다. 또는 더 글라스 크락포드가 제시한 purge함수를 쓰게 되면 순환참조를 해결할 수 있습니다. 아래는 purge함수 입니다.
+// 그렇다면 위 코드같이 서로를 참조를 하지 않게 되면 순환참조가 끊어질까요? 아닙니다. JavaScript의 클로저는 특별한 문법을 쓰지 않고도 암묵적으로 생기는 특성을 가지고 있습니다. 이는 클로저를 쉽게 만들도록 해주지만 클로저가 사용되는 곳을 사용자가 식별하기 어렵게 만들기도 합니다. 그렇게 되면 내부 함수의 innerFunc는 암묵적으로 상위 함수의 내부 객체인 outer_val을 참조하게 되고 이로인해 의도치 않게 순환참조가 만들어집니다. 이런 의도치 않은 순환참조는 메모리 누수를 야기합니다.
+
+// 이 같은 의도치 않은 순환참조는 객체가 제거될 때 명시적으로 null값으로 초기화 해 주거나 try-catch-finally구문으로 해결합니다. 또는 더 글라스 크락포드가 제시한 purge함수를 쓰게 되면 순환참조를 해결할 수 있습니다. 아래는 purge함수 입니다.
 
 function purge(d) {  
     var a = d.attributes, i, l, n;
@@ -7655,10 +7574,12 @@ function purge(d) {
         }
     }
 }
-[더글라스 크락포드의 purge함수]
 
-3.3 캡슐화
-캡슐화란 간단하게 말하면 객체의 자료화 행위를 하나로 묶고, 실제 구현 내용을 외부에 감추는 겁니다. 즉, 외부에서 볼 때는 실제 하는 것이 아닌 추상화 되어 보이게 하는 것으로 정보은닉에 쓰입니다. JavaScript는 이와 같은 캡슐화를 클로저를 사용하여 구현합니다.
+
+// [더글라스 크락포드의 purge함수]
+
+// 3.3 캡슐화
+//캡슐화란 간단하게 말하면 객체의 자료화 행위를 하나로 묶고, 실제 구현 내용을 외부에 감추는 겁니다. 즉, 외부에서 볼 때는 실제 하는 것이 아닌 추상화 되어 보이게 하는 것으로 정보은닉에 쓰입니다. JavaScript는 이와 같은 캡슐화를 클로저를 사용하여 구현합니다.
 
 function Gugudan(dan){  
     this.maxDan=3;
@@ -7686,9 +7607,10 @@ dan5.calculate();
 5*1=5  
 5*2=10  
 */
-[예제 17] 캡슐화 전
 
-위의 코드는 JavaScript 캡슐화 하기 전의 코드입니다. 내부 변수를 this객체로 바인딩 하여 선언하게 되면 내부 변수 maxDan에 대하여 외부에서 직접 접근이 가능합니다. 이런식의 소스코드 구현은 사용자가 임의로 바꿔선 안될 값들이 외부에 공개가 되면서 보안문제에 안좋은 결과를 가져옵니다.
+// [예제 17] 캡슐화 전
+
+// 위의 코드는 JavaScript 캡슐화 하기 전의 코드입니다. 내부 변수를 this객체로 바인딩 하여 선언하게 되면 내부 변수 maxDan에 대하여 외부에서 직접 접근이 가능합니다. 이런식의 소스코드 구현은 사용자가 임의로 바꿔선 안될 값들이 외부에 공개가 되면서 보안문제에 안좋은 결과를 가져옵니다.
 
 function Gugudan(dan){  
     var maxDan=3;
@@ -7725,29 +7647,24 @@ dan5.calculate();
 5*2=10  
 */
 
-[예제 18] 캡슐화 후
+// [예제 18] 캡슐화 후
 
-하지만 위의 코드와 같이 var키워드를 통하여 내부 변수를 선언하게 되면 내부 변수 maxDan이 외부에서 직접 접근이 되지 않고 오직 클로저를 통해서만 접근이 가능합니다. 즉, 사용자가 임의로 값을 바꿀수 없고 개발자가 만들어놓은 길(클로저)을 통해서만 값을 바꿔 줄수 있습니다. 아쉬운 점은 캡슐화를 하게되면 클로저를 prototype 맴버로 등록하지 못해 공용 메소드로 사용할 수 있는 이점은 사라집니다. 하지만, 별도의 부모 객체를 정의해서 공용 메소드나 상수 들을 위치시키고 이를 상속받는 방식으로 보완할 수 있습니다.
+// 하지만 위의 코드와 같이 var키워드를 통하여 내부 변수를 선언하게 되면 내부 변수 maxDan이 외부에서 직접 접근이 되지 않고 오직 클로저를 통해서만 접근이 가능합니다. 즉, 사용자가 임의로 값을 바꿀수 없고 개발자가 만들어놓은 길(클로저)을 통해서만 값을 바꿔 줄수 있습니다. 아쉬운 점은 캡슐화를 하게되면 클로저를 prototype 맴버로 등록하지 못해 공용 메소드로 사용할 수 있는 이점은 사라집니다. 하지만, 별도의 부모 객체를 정의해서 공용 메소드나 상수 들을 위치시키고 이를 상속받는 방식으로 보완할 수 있습니다.
 
 
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;커링-currying&#34;&gt;커링 (currying)&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;호출된 함수의 매개변수로 동적으로 새로운 함수를 생성하여 반환하는 패턴을 커링이라 한다.&lt;/p&gt;
-
-&lt;p&gt;호출하는 함수의 인자값이 비슷하다면 커링을 사용하는 것이 효율적이다.&lt;/p&gt;
-
-&lt;p&gt;클로저를 이용해 함수의 인자를 미리 등록해두는 것&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h2 id=&#34;커링-currying&#34;&gt;커링 (currying)&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 호출된 함수의 매개변수로 동적으로 새로운 함수를 생성하여 반환하는 패턴을 커링이라 한다.
+
+// 호출하는 함수의 인자값이 비슷하다면 커링을 사용하는 것이 효율적이다.
+
+// 클로저를 이용해 함수의 인자를 미리 등록해두는 것
+
+
 function func(a) {
     return function(b) { // 내부 함수, 즉 클로저인 익명 함수 반환
         return a + b;
@@ -7756,6 +7673,7 @@ function func(a) {
 var currying = func(5);
 var result = currying(5); 
 console.log(result);
+
 // 또는 아래처럼 호출
 var result2 = func(5)(7); 
 console.log(result2);
@@ -7764,17 +7682,17 @@ https://mylife365.tistory.com/320
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;스코프란?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;스코프란&#34;&gt;스코프란?&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.
+//스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.
 
-&lt;p&gt;스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;전역_스코프&lt;/strong&gt;&lt;/p&gt;
+// 전역_스코프
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let greeting = &#39;Hello John&#39; // 외부에서 변수가 선언됨
+
+let greeting = &#39;Hello John&#39; // 외부에서 변수가 선언됨
 
 function marcusHello () {
   console.log(greeting)
@@ -7784,11 +7702,11 @@ console.log(greeting) // &#39;Hello John!&#39;
 
 sayHello() // &#39;Hello John!&#39; 
 
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;지역_스코프&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 지역_스코프
+
+
 function marcusHello () {
   
   let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨
@@ -7799,9 +7717,7 @@ marcusHello() // &#39;Hello John!!&#39;
 
 console.log(x) // Error, hello is not defined
 
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 let name = &amp;quot;john&amp;quot;;
 
 function showName() { 
@@ -8348,7 +8264,7 @@ repeatString(&amp;quot;thewordofGod is the way&amp;quot;,50)
 
 &lt;h3 id=&#34;my-soultion-17&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;function findShortestOfThreeWords(word1, word2, word3) {
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function findShortestOfThreeWords(word1, word2, word3) {
   // your code here
   if ( word1.length &amp;lt; word2.length &amp;amp;&amp;amp; word3.length ) {
     return word1;
@@ -8376,7 +8292,7 @@ findShortestOfThreeWords(&amp;quot;111&amp;quot;,&amp;quot;222&amp;quot;,&amp;qu
 
 &lt;h3 id=&#34;my-soultion-18&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function countCharacter(str, char) {
   // your code here
   let countRet = 0;
@@ -8407,57 +8323,65 @@ countCharacter(&amp;quot;hello&amp;quot;, &amp;quot;l&amp;quot; );
 &lt;h3 id=&#34;my-soultion-19&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex1&lt;/p&gt;
+&lt;li&gt;ex1&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;function findMinLengthOfThreeWords(word1, word2, word3) {
-// your code here
-if (word1.length === (word2.length &amp;amp;&amp;amp; word3.length)){
-return word1.length
-} else if (word1.length &amp;lt; (word2.length &amp;amp;&amp;amp; word3.length)){
-return word1.length;
-} else if (word2.length &amp;lt; (word1.length &amp;amp;&amp;amp; word3.length) ){
-return word2.length;
-} else if (word3.length &amp;lt; (word1.length &amp;amp;&amp;amp; word2.length) ){
-return word3.length;
-}
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function findMinLengthOfThreeWords(word1, word2, word3) {
+  // your code here
+  if (word1.length === (word2.length &amp;amp;&amp;amp; word3.length)){
+    return word1.length
+  } else if (word1.length &amp;lt; (word2.length &amp;amp;&amp;amp; word3.length)){
+    return word1.length;
+  } else if (word2.length &amp;lt; (word1.length &amp;amp;&amp;amp; word3.length) ){
+    return word2.length;
+  } else if (word3.length &amp;lt; (word1.length &amp;amp;&amp;amp; word2.length) ){
+    return word3.length;
+  }
 }
 
 findMinLengthOfThreeWords(&amp;quot;111&amp;quot;,&amp;quot;2222&amp;quot;,&amp;quot;33333&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;ex2&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;ul&gt;
+&lt;li&gt;ex2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function findMinLengthOfThreeWords(word1, word2, word3) {
-var arr = [];
-arr.push(word1, word2, word3);
-arr.sort();
-return arr[0].length;
+  var arr = [];
+  arr.push(word1, word2, word3);
+  arr.sort();
+  return arr[0].length;
 }
 findMinLengthOfThreeWords(&amp;quot;dwdsdsdsdsdsdsdwd&amp;quot;,&amp;quot;ddwwd&amp;quot;,&amp;quot;wdwdwdsdsdwdwwd&amp;quot;)
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;li&gt;&lt;p&gt;ex3&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function findMinLengthOfThreeWords(word1, word2, word3) {
-// your code here
-/* START SOLUTION */
-words = [word1, word2, word3];
-return words.sort()[0].length;
-/* END SOLUTION */
-}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ex4&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-function findMinLengthOfThreeWords(word1, word2, word3) {
-return Math.min(word1.length, word2.length, word3.length)
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;ex3&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function findMinLengthOfThreeWords(word1, word2, word3) {
+  // your code here
+  /* START SOLUTION */
+  words = [word1, word2, word3];
+  return words.sort()[0].length;
+  /* END SOLUTION */
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ex4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function findMinLengthOfThreeWords(word1, word2, word3) {
+  return Math.min(word1.length, word2.length, word3.length)
+}
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;question-19&#34;&gt;Question&lt;/h3&gt;
 
@@ -8469,7 +8393,8 @@ return Math.min(word1.length, word2.length, word3.length)
 
 &lt;h3 id=&#34;my-soultion-20&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;function computeAreaOfATriangle(base, height) {
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function computeAreaOfATriangle(base, height) {
   // your code here
   let ret = base * height / 2;
   return ret;
@@ -8533,11 +8458,13 @@ computeAverageOfNumbers[1,2,3,4,5,6];
 
 &lt;h2 id=&#34;converttostring&#34;&gt;convertToString&lt;/h2&gt;
 
+&lt;blockquote&gt;
 &lt;p&gt;convertToString함수가 있습니다. 이 함수는 주어진 파라미터를 문자열의 형태로 변환합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&#34;my-soultion-23&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function convertToString(anything) {
   // 여기에 코드를 작성하세요
   return anything.toString();
@@ -8564,7 +8491,7 @@ convertToString(&#39;hello&#39;)
 
 &lt;h3 id=&#34;my-soution&#34;&gt;My_Soution&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function convertToNumber(anything) {
   anything = Number(anything);
   
@@ -8590,7 +8517,7 @@ convertToNumber(&#39;hello&#39;)
 
 &lt;h3 id=&#34;my-soultion-24&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function isFalsy(anything) {
   // 여기에 코드를 작성하세요
    if ( typeof anything === &#39;undefined&#39; ) {
@@ -8688,27 +8615,29 @@ addProperty(john,&#39;isprogrammer&#39;);
 
 
 
+
+// Questoin
+
+
 /*
-
-
-Questoin
-
 obj[propertyName]를 이용했을 때는 테스트가 통과가 되고,
 obj.propertyName를 이용했을 때는 통과가 되지 않습니다.
 객체에 프로퍼티를 추가할 때 dot노테이션을 사용할 수 있는 걸로 알고있는데..이유가 뭘까요?
 
 
-* answer
+answer
 
-&amp;gt;. 으로 했을때는 바로 객체의 키로 접근하고 [ ] 으로 하면 변수로 접근합니다.
+으로 했을때는 바로 객체의 키로 접근하고 [ ] 으로 하면 변수로 접근합니다.
 addProperty(steve, &#39;isProgrammer&#39;); 이라는 함수 호출 구문이 있다고 가정하면
 obj[propertyName] = true; 는 steve.isProgrammer = true; 이고
-obj.propertyName = true; 는 steve.propertyName = true; 입니다. 완전히 다른값이 나오죠?
-
-
-
+obj.propertyName = true; 는 steve.propertyName = true; 입니다. 완전히 다른값이 
+나오죠?
 
 */
+
+
+
+
 
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -8757,7 +8686,7 @@ addObjectProperty(person1, &#39;manager&#39;, person2);
 
 &lt;h3 id=&#34;my-soultion-29&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function removeProperty(obj, propertyName) {
   // 여기에 코드를 작성하세요
   delete obj[propertyName];
@@ -8775,7 +8704,7 @@ function removeProperty(obj, propertyName) {
 &lt;p&gt;Given a &amp;ldquo;person&amp;rdquo; object, that contains an &amp;ldquo;age&amp;rdquo; property, &amp;ldquo;isPersonOldEnoughToVote&amp;rdquo; returns whether the given person is old enough to vote. (&amp;ldquo;age&amp;rdquo; 속성을 가지고 있는 &amp;ldquo;person&amp;rdquo; 객체가 주어졌을때, &amp;ldquo;isPersonOldEnoughToVote&amp;rdquo; 함수는 그 사람이 미국에서 합법적으로 투표를 할 수 있는 나이인지를 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function isPersonOldEnoughToVote(person) {
   // your code here
   // 1. if 사용해서 18세 이상일 경우 리턴 참
@@ -8801,7 +8730,7 @@ function isPersonOldEnoughToVote(person) {
 
 &lt;h3 id=&#34;my-soultion-30&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;let obj = {
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let obj = {
   a: 8,
   b: 2,
   c: &#39;montana&#39;,
@@ -8890,62 +8819,60 @@ let obj = {
   d: 4
 };
 countNumberOfKeys(obj)
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+
 // * Model Solutions
 
 function countNumberOfKeys(obj) {
   return Object.keys(obj).length;
 }
 
-
-```js
-
-### Question
-
-## printObject
-
-&amp;gt;객체를 파라미터로 받는 printObject 함수는 객체 안에 정의된 키와 값 쌍을 조합한 문자열을 리턴합니다. 문자열은 한 줄에 하나의 키/값 쌍을 콜론(:) 및 공백문자와 함께 표시하며, 또다른 키/값 쌍 사이에는 줄바꿈 문자가 포함되어 있습니다.
-
-
-
-### My_Soultion
-
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;let obj = { name: &amp;lsquo;Steve&amp;rsquo;, age: 13, sex: &amp;lsquo;Male&amp;rsquo; };&lt;/p&gt;
+&lt;h3 id=&#34;question-34&#34;&gt;Question&lt;/h3&gt;
 
-&lt;p&gt;function printObject(obj) {
-  let ret = &amp;ldquo;&amp;rdquo;
+&lt;h2 id=&#34;printobject&#34;&gt;printObject&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;객체를 파라미터로 받는 printObject 함수는 객체 안에 정의된 키와 값 쌍을 조합한 문자열을 리턴합니다. 문자열은 한 줄에 하나의 키/값 쌍을 콜론(:) 및 공백문자와 함께 표시하며, 또다른 키/값 쌍 사이에는 줄바꿈 문자가 포함되어 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;my-soultion-33&#34;&gt;My_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;
+let obj = { name: &#39;Steve&#39;, age: 13, sex: &#39;Male&#39; };
+
+function printObject(obj) {
+  let ret = &amp;quot;&amp;quot;
   for ( let key in obj ) {
-    ret = ret + key +&amp;rdquo;: &amp;ldquo; + obj[key]+ &amp;ldquo;\n&amp;rdquo;;
+    ret = ret + key +&amp;quot;: &amp;quot; + obj[key]+ &amp;quot;\n&amp;quot;;
   }
   return ret;
 };
-printObject(obj);&lt;/p&gt;
+printObject(obj);
 
-&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-### Question
+&lt;h3 id=&#34;question-35&#34;&gt;Question&lt;/h3&gt;
 
-## extends
+&lt;h2 id=&#34;extends&#34;&gt;extends&lt;/h2&gt;
 
+&lt;blockquote&gt;
+&lt;p&gt;Write a function called &amp;ldquo;extend&amp;rdquo;. (&amp;ldquo;extend&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 
-&amp;gt; Write a function called &amp;quot;extend&amp;quot;. (&amp;quot;extend&amp;quot; 함수를 작성하세요.)
+&lt;p&gt;Given two objects, &amp;ldquo;extend&amp;rdquo; adds properties from the 2nd object to the 1st object. (객체 두개가 주어졌을때, &amp;ldquo;extend&amp;rdquo; 함수는 두번째 객체의 속성을 첫번째 객체에 추가해야 합니다.)&lt;/p&gt;
 
-&amp;gt;Given two objects, &amp;quot;extend&amp;quot; adds properties from the 2nd object to the 1st object. (객체 두개가 주어졌을때, &amp;quot;extend&amp;quot; 함수는 두번째 객체의 속성을 첫번째 객체에 추가해야 합니다.)
+&lt;p&gt;Add any keys that are not in the 1st object. (첫번째 객체에 없는 모든 키를 추가하세요.)&lt;/p&gt;
 
-&amp;gt;Add any keys that are not in the 1st object. (첫번째 객체에 없는 모든 키를 추가하세요.)
+&lt;p&gt;If the 1st object already has a given key, ignore it (do not overwrite the property value). (만약 첫번째 객체에 이미 있는 키라면, 값을 덮어쓰지 말고 무시하세요.)&lt;/p&gt;
 
-&amp;gt;If the 1st object already has a given key, ignore it (do not overwrite the property value). (만약 첫번째 객체에 이미 있는 키라면, 값을 덮어쓰지 말고 무시하세요.)
+&lt;p&gt;Do not modify the 2nd object at all. (두번째 객체는 수정하지 마세요.)&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&amp;gt;Do not modify the 2nd object at all. (두번째 객체는 수정하지 마세요.)
+&lt;h3 id=&#34;my-soultion-34&#34;&gt;My_Soultion&lt;/h3&gt;
 
-
-### My_Soultion
-
-```js
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 et obj1 = {
   a: 1,
   b: 2
@@ -8956,10 +8883,12 @@ let obj2 = {
 };
 
 function extend(obj1, obj2) {
+
   // 여기에 코드를 작성하세요
   // 1. obj2 의 key들을 반복합니다.
   // 2. obj2 안에 있는 key 가  obj1 key 안에에 포함 되어있는지 if 문을 써서 확인한다.
   // 4. 포함되어있지 않으면 ob1에 추가한다.
+  
   for ( let key in obj2 ) {
       if (!( key in obj1 )) {
         obj1[key] = obj2[key];
@@ -8970,7 +8899,7 @@ function extend(obj1, obj2) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-34&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-36&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;countallcharacters&#34;&gt;countAllCharacters&lt;/h2&gt;
 
@@ -9000,7 +8929,7 @@ console.log(output); // --&amp;gt; {b: 1, a: 3, n: 2}
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-35&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-37&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;removestringvalues&#34;&gt;removeStringValues&lt;/h2&gt;
 
@@ -9010,9 +8939,9 @@ console.log(output); // --&amp;gt; {b: 1, a: 3, n: 2}
 &lt;p&gt;Given an object, &amp;ldquo;removeStringValues&amp;rdquo; removes any properties on the given object whose values are strings. (객체가 주어졌을때, &amp;ldquo;removeStringValues&amp;rdquo; 함수는 속성값이 문자열인 모든 속성을 제거합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-33&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-35&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function removeStringValues(obj) {
   // 여기에 코드를 작성하세요.
   // 객체안에 있는 속성값이 문자열인지 판별한다.
@@ -9028,7 +8957,7 @@ function removeStringValues(obj) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-36&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-38&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;removenumbervalues&#34;&gt;removeNumberValues&lt;/h2&gt;
 
@@ -9038,13 +8967,16 @@ function removeStringValues(obj) {
 &lt;p&gt;Given an object, &amp;ldquo;removeNumberValues&amp;rdquo; removes any properties whose values are numbers. (객체가 주어졌을때, &amp;ldquo;removeNumberValues&amp;rdquo; 함수는 속성값이 숫자인 모든 속성을 제거합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;my-soultion-34&#34;&gt;My_Soultion&lt;/h2&gt;
+&lt;h2 id=&#34;my-soultion-36&#34;&gt;My_Soultion&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let obj = {
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let obj = {
   a: 2,
   b: &#39;remaining&#39;,
   c: 4
 };
+
+
 function removeNumberValues(obj) {
   // 여기에 코드를 작성하세요.
   // prop 을 불러온다.
@@ -9062,7 +8994,7 @@ removeNumberValues(obj);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-37&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-39&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;removearrayvalues&#34;&gt;removeArrayValues&lt;/h2&gt;
 
@@ -9072,7 +9004,7 @@ removeNumberValues(obj);
 &lt;p&gt;Given an object, &amp;ldquo;removeArrayValues&amp;rdquo; removes any properties whose values are arrays. (객체가 주어졌을때, &amp;ldquo;removeArrayValues&amp;rdquo; 함수는 속성값이 배열인 모든 속성을 제거합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-35&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-37&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 let obj = {
@@ -9098,7 +9030,7 @@ removeArrayValues(obj)
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-38&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-40&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getfirstelement&#34;&gt;getFirstElement&lt;/h2&gt;
 
@@ -9108,9 +9040,9 @@ removeArrayValues(obj)
 &lt;p&gt;Given an array, &amp;ldquo;getFirstElement&amp;rdquo; returns the first element of the given array. (배열이 주어졌을때, &amp;ldquo;getFirstElement&amp;rdquo; 함수는 주어진 배열의 첫번째 요소를 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-36&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-38&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getFirstElement(array) {
   // 여기에 코드를 작성하세요.
   // 배열을 0번째 숫자를 불러온다.
@@ -9122,7 +9054,7 @@ function getFirstElement(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-39&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-41&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getlastelement&#34;&gt;getLastElement&lt;/h2&gt;
 
@@ -9132,9 +9064,9 @@ function getFirstElement(array) {
 &lt;p&gt;Given an array, &amp;ldquo;getLastElement&amp;rdquo; returns the last element of the given array. (배열이 주어졌을때, &amp;ldquo;getLastElemeent&amp;rdquo; 함수는 주어진 배열의 마지막 요소를 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-37&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-39&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getLastElement(array) {
   // 여기에 코드를 작성하세요
   // 만약 배열의 길이가 0 이라면 undefinded 출력
@@ -9149,7 +9081,7 @@ function getLastElement(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-40&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-42&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getnthelement&#34;&gt;getNthElement&lt;/h2&gt;
 
@@ -9159,9 +9091,9 @@ function getLastElement(array) {
 &lt;p&gt;Given an array and an integer, &amp;ldquo;getNthElement&amp;rdquo; returns the element at the given integer, within the given array. (배열과 숫자가 주어졌을때, &amp;ldquo;getNthElement&amp;rdquo; 함수는 주어진 배열에서 n번 인덱스의 요소를 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-38&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-40&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getNthElement(array, n) {
   // 여기에 코드를 작성하세요
   // 만약 배열에 길이가 0보다 크면 코드 진행실행 아니면 undefinded
@@ -9179,7 +9111,7 @@ function getNthElement(array, n) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-41&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-43&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;addtofront&#34;&gt;addToFront&lt;/h2&gt;
 
@@ -9189,9 +9121,9 @@ function getNthElement(array, n) {
 &lt;p&gt;Given an array and an element, &amp;ldquo;addToFront&amp;rdquo; adds the given element to the front of the given array, and returns the given array. (배열과 요소가 주어졌을때, &amp;ldquo;addToFront&amp;rdquo; 함수는 주어진 요소를 배열의 맨앞에 추가하고 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-39&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-41&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
 function addToFront(arr, element) {
   arr.unshift(element);
@@ -9199,11 +9131,9 @@ function addToFront(arr, element) {
 }
 
 
-
-
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-42&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-44&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;addtoback&#34;&gt;addToBack&lt;/h2&gt;
 
@@ -9213,9 +9143,9 @@ function addToFront(arr, element) {
 &lt;p&gt;Given an array and an element, &amp;ldquo;addToBack&amp;rdquo; returns the given array with the given element added to the end. (배열과 요소가 주어졌을때, &amp;ldquo;addToBack&amp;rdquo; 함수는 주어진 요소를 배열의 맨뒤에 추가하고 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-40&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-42&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function addToBack(arr, element) {
   // 여기에 코드를 작성하세요.
   // push 사용해 element 값을 뒤에 추가한다.
@@ -9226,7 +9156,7 @@ function addToBack(arr, element) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-43&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-45&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;joinarrays&#34;&gt;joinArrays&lt;/h2&gt;
 
@@ -9236,9 +9166,10 @@ function addToBack(arr, element) {
 &lt;p&gt;Given two arrays, &amp;ldquo;joinArrays&amp;rdquo; returns an array with the elements of &amp;ldquo;arr1&amp;rdquo; in order, followed by the elementsin &amp;ldquo;arr2&amp;rdquo;. (두 배열이 주어졌을때, &amp;ldquo;joinArrays&amp;rdquo; 함수는 첫번째 배열(arr1)과 두번째 배열(arr2) 순서로 합쳐진 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-41&#34;&gt;My_soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-43&#34;&gt;My_soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;function joinArrays(arr1, arr2) {
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function joinArrays(arr1, arr2) {
   // your code here
   // 변수를 만들어 배열1에 배열2를 집어넣는다.
   // 출력한다.
@@ -9250,7 +9181,7 @@ function addToBack(arr, element) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-44&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-46&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getelementsafter&#34;&gt;getElementsAfter&lt;/h2&gt;
 
@@ -9260,9 +9191,10 @@ function addToBack(arr, element) {
 &lt;p&gt;Given an array and an index, &amp;ldquo;getElementsAfter&amp;rdquo; returns a new array with all the elements after (but not including) the given index. (배열과 인덱스가 주어졌을때, &amp;ldquo;getElementsAfter&amp;rdquo; 함수는 주어진 배열의 인덱스 이후 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-42&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-44&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;function getElementsAfter(array, n) {
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function getElementsAfter(array, n) {
   // your code here
   // 새로운 빈배열을 만든다.
   // 초기값을 n+1을 한 for 문을 이용해 배열인덱스를 불러온다.
@@ -9279,7 +9211,7 @@ getElementsAfter([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-45&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-47&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getelementsupto&#34;&gt;getElementsUpTo&lt;/h2&gt;
 
@@ -9289,9 +9221,9 @@ getElementsAfter([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39
 &lt;p&gt;Given an array and a index, &amp;ldquo;getElementsUpTo&amp;rdquo;, returns an array with all the elements up until, but not including, the element at the given index. (배열과 인덱스가 주어졌을때, &amp;ldquo;getElementsUpTo&amp;rdquo; 함수는 주어진 배열의 인덱스 이전 요소들을 (자신은 포함하지 않고) 새로운 배열로 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-43&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-45&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getElementsUpTo(array, n) {
   let newArr = array.slice(0,n);
   return newArr
@@ -9301,7 +9233,7 @@ getElementsUpTo([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-46&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-48&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getallelementsbutfirst&#34;&gt;getAllElementsButFirst&lt;/h2&gt;
 
@@ -9311,9 +9243,9 @@ getElementsUpTo([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;
 &lt;p&gt;Given an array, &amp;ldquo;getAllElementsButFirst&amp;rdquo; returns an array with all the elements but the first. (배열이 주어졌을때, &amp;ldquo;getAllElementsButFirst&amp;rdquo; 함수는 첫번째 요소를 제외한 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-44&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-46&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-JS&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getAllElementsButFirst(array) {
   // your code here
   // shift 를 이용해서 앞에 있는 요소를 뺀다.
@@ -9336,7 +9268,7 @@ function getAllElementsButFirst(array) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-47&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-49&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getallelementsbutlast&#34;&gt;getAllElementsButLast&lt;/h2&gt;
 
@@ -9346,7 +9278,7 @@ function getAllElementsButFirst(array) {
 &lt;p&gt;Given an array, &amp;ldquo;getAllElementsButLast&amp;rdquo; returns an array with all the elements but the last. (배열이 주어졌을때, &amp;ldquo;getAllElementsButLast&amp;rdquo; 함수는 마지막 요소를 제외한 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-45&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-47&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getAllElementsButLast(array) {
@@ -9361,7 +9293,7 @@ function getAllElementsButLast(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-48&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-50&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;removefromfront&#34;&gt;removeFromFront&lt;/h2&gt;
 
@@ -9371,7 +9303,7 @@ function getAllElementsButLast(array) {
 &lt;p&gt;Given an array, &amp;ldquo;removeFromFront&amp;rdquo; returns the given array with its first element removed. (배열이 주어졌을때, &amp;ldquo;removeFromFront&amp;rdquo; 함수는 첫번째 요소를 삭제한 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-46&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-48&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function removeFromFront(arr) {
@@ -9383,7 +9315,7 @@ function removeFromFront(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-49&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-51&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;removefromback&#34;&gt;removeFromBack&lt;/h2&gt;
 
@@ -9393,7 +9325,7 @@ function removeFromFront(arr) {
 &lt;p&gt;Given an array, &amp;ldquo;removeFromBack&amp;rdquo; returns the given array with its last element removed. (배열이 주어졌을때, &amp;ldquo;removeFromBack&amp;rdquo; 함수는 마지막 요소를 삭제한 주어진 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-47&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-49&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function removeFromBack(arr) {
@@ -9406,7 +9338,7 @@ function removeFromBack(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-50&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-52&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;removefrombackofnew&#34;&gt;removeFromBackOfNew&lt;/h2&gt;
 
@@ -9416,7 +9348,7 @@ function removeFromBack(arr) {
 &lt;p&gt;Given an array, &amp;ldquo;removeFromBackOfNew&amp;rdquo; returns a new array containing all but the last element of the given array. (배열이 주어졌을때, &amp;ldquo;removeFromBackOfNew&amp;rdquo; 함수는 마지막 요소를 제외한 모든 요소를 가지고 있는 새로운 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-48&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-50&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function removeFromBackOfNew(arr) {
@@ -9448,7 +9380,7 @@ function removeFromBackOfNew(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-51&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-53&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;addtobackofnew&#34;&gt;addToBackOfNew&lt;/h2&gt;
 
@@ -9458,7 +9390,7 @@ function removeFromBackOfNew(arr) {
 &lt;p&gt;Given an array and an element, &amp;ldquo;addToBackNew&amp;rdquo; returns a clone of the given array, with the given element added to the end. (배열과 요소가 주어졌을때, &amp;ldquo;addToBackNew&amp;rdquo; 함수는 주어진 배열의 복사본 끝에 주어진 요소가 추가된 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-49&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-51&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -9481,7 +9413,7 @@ function addToBackOfNew(arr, element) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-52&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-54&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;joinarrayofarrays&#34;&gt;joinArrayOfArrays&lt;/h2&gt;
 
@@ -9493,7 +9425,7 @@ function addToBackOfNew(arr, element) {
 &lt;p&gt;it is used by reduce and concat&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-50&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-52&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function joinArrayOfArrays(arr) {
@@ -9507,7 +9439,7 @@ function joinArrayOfArrays(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-53&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-55&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getallletters&#34;&gt;getAllLetters&lt;/h2&gt;
 
@@ -9517,7 +9449,7 @@ function joinArrayOfArrays(arr) {
 &lt;p&gt;Given a word, &amp;ldquo;getAllLetters&amp;rdquo; returns an array containing every character in the word. (단어가 주어졌을때, &amp;ldquo;getAllLetters&amp;rdquo; 함수는 주어진 단어에 포함된 모든 문자를 담고 있는 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-51&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-53&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function getAllLetters(str) {
   // your code here
@@ -9532,7 +9464,7 @@ function joinArrayOfArrays(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-54&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-56&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getallwords&#34;&gt;getAllWords&lt;/h2&gt;
 
@@ -9542,7 +9474,7 @@ function joinArrayOfArrays(arr) {
 &lt;p&gt;Given a sentence, &amp;ldquo;getAllWords&amp;rdquo; returns an array containing every word in the sentence. (문장이 주어졌을때, &amp;ldquo;getAllWords&amp;rdquo; 함수는 주어진 문장에 포함된 모든 단어를 담고 있는 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-52&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-54&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt; 
  
@@ -9556,7 +9488,7 @@ function joinArrayOfArrays(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-55&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-57&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;removeelement&#34;&gt;removeElement&lt;/h2&gt;
 
@@ -9566,7 +9498,7 @@ function joinArrayOfArrays(arr) {
 &lt;p&gt;Given an array of elements, and a &amp;ldquo;discarder&amp;rdquo; parameter, &amp;ldquo;removeElement&amp;rdquo; returns an array containing the items in the given array that do not match the &amp;ldquo;discarder&amp;rdquo; parameter. (배열과 &amp;ldquo;discarder&amp;rdquo; 매개변수가 주어졌을때, &amp;ldquo;removeElement&amp;rdquo; 함수는 주어진 배열에서 &amp;ldquo;discarder&amp;rdquo; 매개변수와 일치하지 않는 모든 요소를 포함하는 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-53&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-55&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -9593,7 +9525,7 @@ unction removeElement(array, discarder) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-56&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-58&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;keep&#34;&gt;keep&lt;/h2&gt;
 
@@ -9603,7 +9535,7 @@ unction removeElement(array, discarder) {
 &lt;p&gt;Given an array and a keeper element, &amp;ldquo;keep&amp;rdquo; returns an array containing the items that match the given keeper element. (배열과 &amp;ldquo;keeper&amp;rdquo; 매개변수가 주어졌을때, &amp;ldquo;keep&amp;rdquo; 함수는 &amp;ldquo;keeper&amp;rdquo; 매개변수와 일치하는 모든 요소&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-54&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-56&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function keep(array, keeper) {
   // your code here
@@ -9627,7 +9559,7 @@ unction removeElement(array, discarder) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-57&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-59&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;findsmallestelement&#34;&gt;findSmallestElement&lt;/h2&gt;
 
@@ -9729,7 +9661,7 @@ function findSmallestElement(arr) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-58&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-60&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;computesumofallelements&#34;&gt;computeSumOfAllElements&lt;/h2&gt;
 
@@ -9772,7 +9704,7 @@ function computeSumOfAllElements(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-59&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-61&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;computeproductofallelements&#34;&gt;computeProductOfAllElements&lt;/h2&gt;
 
@@ -9825,7 +9757,7 @@ function computeProductOfAllElements(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-60&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-62&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getlengthoflongestelement&#34;&gt;getLengthOfLongestElement&lt;/h2&gt;
 
@@ -9913,7 +9845,7 @@ function getLengthOfLongestElement(arr) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-61&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-63&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;filteroddlengthwords&#34;&gt;filterOddLengthWords&lt;/h2&gt;
 
@@ -9923,7 +9855,7 @@ function getLengthOfLongestElement(arr) {
 &lt;p&gt;Given an array of string, &amp;ldquo;filterOddLengthWords&amp;rdquo; returns an array containing only the elements of the given array whose lengths are odd numbers. (문자열의 배열이 주어졌을때, &amp;ldquo;filterOddLengthWords&amp;rdquo; 함수는 주어진 배열의 요소 중 문자열의 길이가 홀수인 문자열만을 요소로 가지는 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-55&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-57&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -9969,7 +9901,7 @@ function filterOddLengthWords(arr) {  // HoF
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-62&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-64&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getelementofarrayproperty&#34;&gt;getElementOfArrayProperty&lt;/h2&gt;
 
@@ -9979,7 +9911,7 @@ function filterOddLengthWords(arr) {  // HoF
 &lt;p&gt;Given an object, a key, and a numerical index, &amp;ldquo;getElementOfArrayProperty&amp;rdquo; returns the value of the element at the given index of the array located within the given object at the given key. (객체와 키, 그리고 숫자로된 인덱스값이 주어졌을때, &amp;ldquo;getElementOfArrayProperty&amp;rdquo; 함수는 주어진 키에 위치한 배열의 인덱스에 해당하는 값을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-56&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-58&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getElementOfArrayProperty(obj, key, index) {
@@ -9999,7 +9931,7 @@ getElementOfArrayProperty(obj,&#39;key&#39;,0);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-63&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-65&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;select&#34;&gt;select&lt;/h2&gt;
 
@@ -10009,7 +9941,7 @@ getElementOfArrayProperty(obj,&#39;key&#39;,0);
 &lt;p&gt;Given an array and an object, &amp;ldquo;select&amp;rdquo; returns a new object whose properties are those in the given object AND whose keys are present in the given array. (배열과 객체가 주어졌을때, &amp;ldquo;select&amp;rdquo; 함수는 주어진 객체의 키값 중 주어진 배열에 포함된 키값만을 속성으로 가지는 새로운 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-57&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-59&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function select(arr, obj) {
@@ -10030,7 +9962,7 @@ function select(arr, obj) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-64&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-66&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getnthelementofproperty&#34;&gt;getNthElementOfProperty&lt;/h2&gt;
 
@@ -10040,7 +9972,7 @@ function select(arr, obj) {
 &lt;p&gt;Given an object and a key, &amp;ldquo;getNthElementOfProperty&amp;rdquo; returns the nth element of an array located at the given key. (객체와 키가 주어졌을때, &amp;ldquo;getNthElementOfProperty&amp;rdquo; 함수는 주어진 키에 위차한 배열의 n번째 요소를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-58&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-60&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getNthElementOfProperty(obj, key, n) {
@@ -10056,7 +9988,7 @@ function getNthElementOfProperty(obj, key, n) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-65&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-67&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getelementslessthan100atproperty&#34;&gt;getElementsLessThan100AtProperty&lt;/h2&gt;
 
@@ -10066,7 +9998,7 @@ function getNthElementOfProperty(obj, key, n) {
 &lt;p&gt;Given an object and a key, &amp;ldquo;getElementsLessThan100AtProperty&amp;rdquo; returns an array containing all the elements of the array located at the given key that are less than 100. (객체와 키값이 주어졌을때, &amp;ldquo;getElementsLessThan100AtProperty&amp;rdquo; 함수는 주어진 키에 위치하는 배열에서 100 보다 작은 값으로만 이루어진 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-59&#34;&gt;MY_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-61&#34;&gt;MY_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getElementsLessThan100AtProperty(obj, key) {
@@ -10110,7 +10042,7 @@ function getElementsLessThan100AtProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-66&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-68&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getlastelementofproperty&#34;&gt;getLastElementOfProperty&lt;/h2&gt;
 
@@ -10154,7 +10086,7 @@ function getLastElementOfProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-67&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-69&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getsquaredelementsatproperty&#34;&gt;getSquaredElementsAtProperty&lt;/h2&gt;
 
@@ -10164,7 +10096,7 @@ function getLastElementOfProperty(obj, key) {
 &lt;p&gt;Given an object and a key, &amp;ldquo;getSquaredElementsAtProperty&amp;rdquo; returns an array containing all the squared elements of the array located at the given key. (객체와 키가 주어졌을때, &amp;ldquo;getSquaredElementsAtProperty&amp;rdquo; 함수는 주어진 키에 위치하는 배열의 요소들의 제곱을 요소로 가지는 배열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-60&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-62&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10221,7 +10153,7 @@ console.log(output);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-68&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-70&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getallbutlastelementofproperty&#34;&gt;getAllButLastElementOfProperty&lt;/h2&gt;
 
@@ -10259,7 +10191,7 @@ function getAllButLastElementOfProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-69&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-71&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getproductofallelementsatproperty&#34;&gt;getProductOfAllElementsAtProperty&lt;/h2&gt;
 
@@ -10269,14 +10201,14 @@ function getAllButLastElementOfProperty(obj, key) {
 &lt;p&gt;Given an object and a key, &amp;ldquo;getProductOfAllElementsAtProperty&amp;rdquo; returns the product of all the elements in the array located at the given key. (객체와 키가 주어졌을때, &amp;ldquo;getProductOfAllElementsAtProperty&amp;rdquo; 함수는 주어진 키에 위치한 배열의 요소의 곱을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-61&#34;&gt;My_soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-63&#34;&gt;My_soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // It is used by for 
 
 
-
 function getProductOfAllElementsAtProperty(obj, key) {
+
   // 1. arr 변수 만들어 key값의 prop 값을 넣는다
   // 2. 곱한값을 담을 sum 이라는 변수 생성 
   // 3. 만약 key의 prop 배열이 아니라면 0을 리턴
@@ -10297,7 +10229,6 @@ function getProductOfAllElementsAtProperty(obj, key) {
   }
   return sum;
 }
-
 
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -10335,25 +10266,13 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 &lt;h3 id=&#34;question&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;sumDigits&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;sumdigits&#34;&gt;sumDigits&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;sumDigits&amp;rdquo;. (&amp;ldquo;sumDigits&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 
 &lt;p&gt;Given a number, &amp;ldquo;sumDigits&amp;rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &amp;ldquo;sumDigits&amp;rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-let output = sumDigits(1148);
-console.log(output); // --&amp;gt; 14
-If the number is negative, the first digit should count as negative. (만약 숫자가 음수라면, 첫번째 자릿수는 음수로 고려되어야 합니다.)
-
-let output = sumDigits(-316);
-console.log(output); // --&amp;gt; 4
-
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;my-soultion&#34;&gt;My_Soultion&lt;/h3&gt;
 
@@ -10377,24 +10296,19 @@ function sumDigits(num) {
 
 &lt;h3 id=&#34;question-1&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;offLineMinimum&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;offlineminimum&#34;&gt;offLineMinimum&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Have the function &lt;code&gt;offLineMinimum(strArr)&lt;/code&gt; take the strArr parameter being passed which will be an array of integers ranging from 1&amp;hellip;n and the letter &amp;ldquo;E&amp;rdquo; and return the correct subset based on the following rules.&lt;/p&gt;
+
+&lt;p&gt;The input will be in the following format: &lt;code&gt;[&amp;quot;I&amp;quot;,&amp;quot;I&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;I&amp;quot;,...,&amp;quot;E&amp;quot;,...,&amp;quot;I&amp;quot;]&lt;/code&gt; where the I&amp;rsquo;s stand for integers and the E means take out the smallest integer currently in the whole set.
+When finished, your program should return that new set with integers separated by commas.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;h3 id=&#34;my-soultion-1&#34;&gt;My_Soultion&lt;/h3&gt;
+
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-The input will be in the following format: `[&amp;quot;I&amp;quot;,&amp;quot;I&amp;quot;,&amp;quot;E&amp;quot;,&amp;quot;I&amp;quot;,...,&amp;quot;E&amp;quot;,...,&amp;quot;I&amp;quot;]` where the I&#39;s stand for integers and the E means take out the smallest integer currently in the whole set.
-When finished, your program should return that new set with integers separated by commas.
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;my-soultion-1&#34;&gt;MY_Soultion&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function offLineMinimum(strArr) {
+function offLineMinimum(strArr) {
 
 
   let numArr=[];
@@ -10474,7 +10388,7 @@ offLineMinimum([&amp;quot;5&amp;quot;,&amp;quot;4&amp;quot;,&amp;quot;6&amp;quot
 function offLineMinimum(strArr) {
   
    
-  // ** offLinMininum은 배열에서 &#39;E&#39; 가 나오기 이전까지의 숫자들로 숫자의 set을 만들고 e가 등장 할 때 마다 숫자 set 중 가장 작은 수를 가지고와 리턴할 문자열에 포함시켜주는 함수이다.
+// offLinMininum은 배열에서 &#39;E&#39; 가 나오기 이전까지의 숫자들로 숫자의 set을 만들고 e가 등장 할 때 마다 숫자 set 중 가장 작은 수를 가지고와 리턴할 문자열에 포함시켜주는 함수이다.
 
     // 배열에서 &#39;E&#39;가 나오기 이전까지의 숫자들로 숫자의 Set을 만든다. --&amp;gt; numberSet
     // 배열에서 &#39;E&#39;가 등장하면, numberSet을 분류(작은 수~큰 수)하고 numberSet의 0번째 값(가장 작은 수)을 가지고와 result에 넣어준다.
@@ -10505,15 +10419,15 @@ function offLineMinimum(strArr) {
 
 &lt;h3 id=&#34;question-2&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;range&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;range&#34;&gt;range&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Complete the below function called range that takes two integers as parameters, start and end, and returns an array containing all the whole numbers between them starting with start and up to end (you can use a any loop)&lt;/p&gt;
 
 &lt;p&gt;After you write your function, you can test it using the above inputs to make sure that it behaves correctly.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;h3 id=&#34;my-soultion-2&#34;&gt;My_soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function range(start, end) {
@@ -10547,9 +10461,7 @@ range(10, 2); // =&amp;gt; []
 
 &lt;h3 id=&#34;question-3&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;longestName&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;longestname&#34;&gt;longestName&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Given the following array of people, write a function that, when passed people as a parameter, returns the person (that is, your function should return an object) with the longest name (first, middle &amp;amp; last).
@@ -10583,9 +10495,7 @@ longestName(people); //&amp;quot;Alyssa P. Hacker&amp;quot;
 
 &lt;p&gt;### Question&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;hammingDistance&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;hammingdistance&#34;&gt;hammingDistance&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;have the function &lt;code&gt;HammingDistance(strArr)&lt;/code&gt; take the array of strings stored in &lt;code&gt;strArr&lt;/code&gt;, which will only contain two strings of equal length andreturn the Hamming distance between them.
@@ -10597,7 +10507,7 @@ if `strArr` is `[&amp;quot;coder&amp;quot;, &amp;quot;codec&amp;quot;]` then you
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-2&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-3&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10664,15 +10574,13 @@ console.log(hammingDistance([&amp;quot;coder&amp;quot;, &amp;quot;codec&amp;quot
 
 &lt;h3 id=&#34;question-4&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;getFullName&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;getfullname&#34;&gt;getFullName&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;lsquo;getFullName&amp;rsquo; that takes in an object which has this structure:&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-3&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-4&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getFullName(obj) {
@@ -10724,15 +10632,13 @@ function getFullName(obj) {
 
 &lt;h3 id=&#34;question-5&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;billTotal&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;billtotal&#34;&gt;billTotal&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called billTotal that can be used to calculate the total to be paid at a restaurant &amp;ndash; including tip and tax &amp;ndash; given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-4&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-5&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10781,9 +10687,7 @@ billTotal(10.00); // =&amp;gt; 12.45
 
 &lt;h3 id=&#34;question-6&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;primeMover&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;primemover&#34;&gt;primeMover&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, &amp;lsquo;primeMover(n)&amp;rsquo; 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)&lt;/p&gt;
@@ -10791,7 +10695,7 @@ billTotal(10.00); // =&amp;gt; 12.45
 &lt;p&gt;For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-5&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-6&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10815,9 +10719,7 @@ let primeMover = function(n) {
 
 &lt;h3 id=&#34;question-7&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;isOddWithoutModulo&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;isoddwithoutmodulo&#34;&gt;isOddWithoutModulo&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;isOddWithoutModulo&amp;rdquo;. (&amp;ldquo;isOddWithoutModulo&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -10825,7 +10727,7 @@ let primeMover = function(n) {
 &lt;p&gt;Given a number, &amp;ldquo;isOddWithoutModulo&amp;rdquo; returns whether the passed in number is odd. (숫자가 주어졌을때, &amp;ldquo;isOddWithoutModulo&amp;rdquo; 함수는 주어진 숫자가 홀수인지를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-6&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-7&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // 2. it is used by Math.floor 
@@ -10862,9 +10764,7 @@ function isOddWithoutModulo(num) {
 
 &lt;h3 id=&#34;question-8&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;getStringLength&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;getstringlength&#34;&gt;getStringLength&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getStringLength&amp;rdquo;. (&amp;ldquo;getStringLength&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -10874,7 +10774,7 @@ function isOddWithoutModulo(num) {
 &lt;p&gt;Do NOT use any native &amp;lsquo;length&amp;rsquo; methods. (- &amp;lsquo;length&amp;rsquo; 메소드를 사용하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-7&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-8&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getStringLength(string) {
@@ -10897,9 +10797,7 @@ function getStringLength(string) {
 
 &lt;h3 id=&#34;question-9&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;getIndexOf&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;getindexof&#34;&gt;getIndexOf&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getIndexOf&amp;rdquo;. (&amp;ldquo;getIndexOf&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -10907,7 +10805,7 @@ function getStringLength(string) {
 &lt;p&gt;Given a character and a string, &amp;ldquo;getIndexOf&amp;rdquo; returns the first position of the given character in the given string. (문자와 문자열이 주어졌을때, &amp;ldquo;getIndexOf&amp;rdquo; 함수는 주어진 문자열에서 주어진 문자가 나타나는 첫번째 위치를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-8&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-9&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function getIndexOf(char, str) {
 
@@ -10925,9 +10823,7 @@ function getStringLength(string) {
 
 &lt;h3 id=&#34;question-10&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;calculateBillTotal&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;calculatebilltotal&#34;&gt;calculateBillTotal&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;calculateBillTotal&amp;rdquo;. (&amp;ldquo;calculateBillTotal&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -10938,7 +10834,7 @@ function getStringLength(string) {
 Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-9&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-10&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function calculateBillTotal(preTaxAndTipAmount) {
@@ -10960,21 +10856,15 @@ function calculateBillTotal(preTaxAndTipAmount) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;calculateBillTotal&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;h3 id=&#34;question-11&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;convertObjectToArray3&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;convertobjecttoarray3&#34;&gt;convertObjectToArray3&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;convertObjectToList&amp;rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &amp;ldquo;convertObjectToList&amp;rdquo;를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-10&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-11&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function convertObjectToList(obj) {
   // your code here
@@ -10996,7 +10886,9 @@ function calculateBillTotal(preTaxAndTipAmount) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;isodd&#34;&gt;isOdd&lt;/h3&gt;
+&lt;h3 id=&#34;question-12&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;isodd&#34;&gt;isOdd&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called isOdd. (&amp;ldquo;isOdd&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -11004,25 +10896,26 @@ function calculateBillTotal(preTaxAndTipAmount) {
 &lt;p&gt;Given an integer, isOdd returns whether the integer is odd or not. (숫자가 주어졌을때, &amp;ldquo;isOdd&amp;rdquo; 함수는 주어진 숫자가 홀수 인지 아닌지를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;My_Soultion&lt;/p&gt;
+&lt;h3 id=&#34;my-soultion-12&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;function isOdd(num) {
-// your code here
-// 파라미터를 2로 나누었을때의 나머지를 판별별
-// 나머지가 1인경우, true를 리턴
-// 나머지가 0인경우, false를 리턴
-if (num % 2 === 1 ) {
-return true;
-} else {
-return false;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function isOdd(num) {
+  // your code here
+  // 파라미터를 2로 나누었을때의 나머지를 판별별
+  // 나머지가 1인경우, true를 리턴
+  // 나머지가 0인경우, false를 리턴
+  if (num % 2 === 1 ) {
+    return true;
+  } else {
+    return false;
+  }
 }
-}
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;sum&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-13&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;sum&#34;&gt;sum&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Summation to n: Let&amp;rsquo;s implement the function sum that takes a single parameter n, and computes the sum of all integers up to n starting from 0, e.g.:&lt;/p&gt;
@@ -11030,24 +10923,24 @@ return false;
 &lt;p&gt;(n까지의 총 합: n을 매개변수로 받아 0 부터 n 까지 모든 수의 총 합을 반환하는 함수를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;My_Soultion&lt;/p&gt;
+&lt;h3 id=&#34;my-soultion-13&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;function sum(n) {
-let result = 0;
-//반복문을 이용하여 0부터 n까지의 숫자를 더하여 출력
-for (let i = 0; i &amp;lt;= n; i++) {
-result = result + i;
-}
-return result;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function sum(n) {
+  let result = 0;
+  //반복문을 이용하여 0부터 n까지의 숫자를 더하여 출력
+  for (let i = 0; i &amp;lt;= n; i++) {
+    result = result + i;
+  }
+  return result;
   
-// your code here
+  // your code here
 }
 sum(3);
 sum(4);
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;question-14&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;onlyevenelements&#34;&gt;onlyEvenElements&lt;/h2&gt;
 
@@ -11055,28 +10948,28 @@ sum(4);
 &lt;p&gt;Given an array of numbers, onlyEvenElements returns a new array of just the even numbers. (숫자로 이루어진 배열이 주어졌을때, &amp;ldquo;onlyEvenElements&amp;rdquo; 함수는 주어진 배열에 있는 짝수로만으로 이루어진 새로운 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;My_Soultion&lt;/p&gt;
+&lt;h3 id=&#34;my-soultion-14&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function onlyEvenElements(arr) {
-//짝수값을 입력받을 빈배열을 선언한다.
-let result = [];
-//입력받은 배열안에 있는는 값을 판별하기위해 불러온다.
-for (let i = 0; i &amp;lt; arr.length; i++) {
-//값이 짝수인지를 if 문을 써서 판별한다. 
-if (arr[i] % 2 === 0) {
-  //값이이 짝수인경우 빈배열에 집어넣는다.
-  result.push(arr[i]);
-}
-}
-return result;
-// your code here
+  //짝수값을 입력받을 빈배열을 선언한다.
+  let result = [];
+  //입력받은 배열안에 있는는 값을 판별하기위해 불러온다.
+  for (let i = 0; i &amp;lt; arr.length; i++) {
+    //값이 짝수인지를 if 문을 써서 판별한다. 
+    if (arr[i] % 2 === 0) {
+      //값이이 짝수인경우 빈배열에 집어넣는다.
+      result.push(arr[i]);
+    }
+  }
+  return result;
+  // your code here
 }
 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;question-15&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;removeoddvalues&#34;&gt;removeOddValues&lt;/h2&gt;
 
@@ -11086,15 +10979,12 @@ return result;
 &lt;p&gt;You&amp;rsquo;ll need to use the &amp;ldquo;typeof&amp;rdquo; operator to first check that the values are numbers: (value가 숫자인지 확인하기 위하서는 &amp;ldquo;typeof&amp;rdquo; 연산자를 먼저 사용해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-15&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;first&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// first 
 
-&lt;pre&gt;&lt;code&gt;function removeOddValues(object) {
+function removeOddValues(object) {
   // 1.홀수숫자인 페어가가 아닌 값들을 입력받을을 빈 객체를를 만든다.
   let object2 = {};
   // 2. value 값들을 판별하기 위해 키값을 반복시킨다.
@@ -11111,13 +11001,10 @@ return result;
   // your code here
 }
 
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Sceond&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;
+// Sceond 
+
 function removeOddValues(input) {
 	
 // 1. 결과를 담을 객체를 만듭니다. 
@@ -11157,13 +11044,11 @@ function removeOddValues(input) {
 removeOddValues({ a: 1, b: 2, c: 3, d: &#39;hello&#39; })
 
 
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;third&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;pre&gt;&lt;code&gt;
+//third
+
+
 function removeOddValues(object) {
   //1. value 값을 판별하기 위해 key 값을 반복한다.
   for (let k in object) {
@@ -11177,6 +11062,8 @@ function removeOddValues(object) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h3 id=&#34;question-16&#34;&gt;Question&lt;/h3&gt;
+
 &lt;h2 id=&#34;firstcharacter&#34;&gt;firstCharacter&lt;/h2&gt;
 
 &lt;blockquote&gt;
@@ -11185,9 +11072,7 @@ function removeOddValues(object) {
 &lt;p&gt;Attention! In test case 5 userinput is one space input char as &amp;lsquo; &amp;lsquo;, please do not get confused with &amp;ldquo;, empty string (주의사항! 테스트 케이스 5 에서 주는 입력값은 띄어쓰기 한개(&amp;rsquo; &amp;lsquo;) 입니다. 빈 문자열(&amp;rdquo;) 과 혼동하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-16&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 unction firstCharacter (string) {
@@ -11229,11 +11114,9 @@ unction firstCharacter (string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-12&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-17&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;dashInsert&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;dashinsert&#34;&gt;dashInsert&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Have the function DashInsert insert dashes (&amp;lsquo;-&amp;rsquo;) between each two odd numbers in str. (문자열이 주어졌을때, &amp;lsquo;DashInsert&amp;rsquo; 함수는 문자열에 있는 두 홀수 사이에 대시(&amp;lsquo;-&amp;rsquo;)를 추가하여 반환합니다.)&lt;/p&gt;
@@ -11264,7 +11147,7 @@ function DashInsert(string) {
 
 ///////////////////////////////////////////////////////////////////
 
-reduce 
+// 1. reduce 
 
 function DashInsert(string) {
  
@@ -11298,6 +11181,8 @@ function DashInsert(string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h3 id=&#34;question-18&#34;&gt;Question&lt;/h3&gt;
+
 &lt;h2 id=&#34;longestword&#34;&gt;longestWord&lt;/h2&gt;
 
 &lt;blockquote&gt;
@@ -11306,24 +11191,23 @@ function DashInsert(string) {
 &lt;p&gt;If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요. 문장은 빈 문자열이 아닙니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;My_Soultion&lt;/p&gt;
+&lt;h3 id=&#34;my-soultion-17&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // It&#39;s used by sort() 
 
 function longestWord(string) {
 
-// 1. 주어진 문장을 배열로 만들기(split)
-let tmp = string.split(&#39; &#39;);
-//let sorted_tmp =[];
-// [&#39;I&#39;,&#39;love&#39;,&#39;codestates&#39;];
-// 2. sort() 사용 =&amp;gt; 성능 떨어짐
-let x = function(a,b){
-return b.length-a.length;
-};
-// 3. 0번째 요소 출력
-return tmp.sort(x)[0];
+ // 1. 주어진 문장을 배열로 만들기(split)
+ let tmp = string.split(&#39; &#39;);
+ //let sorted_tmp =[];
+ // [&#39;I&#39;,&#39;love&#39;,&#39;codestates&#39;];
+ // 2. sort() 사용 =&amp;gt; 성능 떨어짐
+ let x = function(a,b){
+   return b.length-a.length;
+ };
+ // 3. 0번째 요소 출력
+ return tmp.sort(x)[0];
 }
 
 ////////////////////////////////////////////////////////
@@ -11332,14 +11216,14 @@ return tmp.sort(x)[0];
 
 function longestWord(string) {
  
-let tmp = string.split(&#39; &#39;);
-let max = tmp[0];
-for(let i =1;i&amp;lt;tmp.length;i++){
-if(tmp[i].length&amp;gt;max.length){
- max = tmp[i];
-}
-}
-return max;
+ let tmp = string.split(&#39; &#39;);
+ let max = tmp[0];
+ for(let i =1;i&amp;lt;tmp.length;i++){
+   if(tmp[i].length&amp;gt;max.length){
+     max = tmp[i];
+   }
+ }
+ return max;
 }
 
 
@@ -11352,14 +11236,11 @@ function longestWord(string) {
 return string.split(&#39; &#39;).reduce((acc,cur)=&amp;gt; acc.length&amp;lt;cur.length? cur:acc);
 }
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;question-19&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;convertarraytoobject1&#34;&gt;convertArrayToObject1&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Question&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function &amp;lsquo;transformFirstAndLast&amp;rsquo; that takes in an array, and returns an object with: (배열을 입력으로 받고 다음 조건에 만족하는 객체를 반환하는 함수 &amp;lsquo;transformFirstAndLast&amp;rsquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -11368,9 +11249,7 @@ return string.split(&#39; &#39;).reduce((acc,cur)=&amp;gt; acc.length&amp;lt;cur
 the last element of the array as that key&amp;rsquo;s value. (2. 배열의 마지막 요소를 해당 키의 값으로 가집니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-18&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function transformFirstAndLast(array) {
@@ -11391,19 +11270,15 @@ function transformFirstAndLast(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;convertobjecttoarray1&#34;&gt;convertObjectToArray1&lt;/h2&gt;
+&lt;h3 id=&#34;question-20&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Question&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;convertobjecttoarray1&#34;&gt;convertObjectToArray1&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;getAllKeys&amp;rdquo; which returns an array of all the input object&amp;rsquo;s keys. (객체를 입력으로 받고 해당 객체의 키들을 배열로 반환하는 &amp;ldquo;getAllKeys&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-19&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -11423,21 +11298,18 @@ return arr;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;convertarraytoobject2&#34;&gt;convertArrayToObject2&lt;/h2&gt;
+&lt;h3 id=&#34;question-21&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Question&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;convertarraytoobject2&#34;&gt;convertArrayToObject2&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function &amp;lsquo;fromListToObject&amp;rsquo; which takes in an array of arrays, and returns an object with each pair of elements in the array as a key-value pair. (2차원 배열을 입력으로 받고 배열안에 있는 배열의 요소 페어를 키-값 페어로 가지는 객체를 반환하는 함수 &amp;lsquo;fromListToObject&amp;rsquo; 함수를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-20&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function fromListToObject(array) {
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function fromListToObject(array) {
   // your code here
   
   //  1. output 할 빈객체를 생성한다.  
@@ -11457,21 +11329,18 @@ return arr;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;convertobjecttoarray2&#34;&gt;convertObjectToArray2&lt;/h2&gt;
+&lt;h3 id=&#34;questoin&#34;&gt;Questoin&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Questoin&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;convertobjecttoarray2&#34;&gt;convertObjectToArray2&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;listAllValues&amp;rdquo; which returns an array of all the input object&amp;rsquo;s values. (객체를 입력으로 받고 해당 객체의 값들을 배열로 반환하는 &amp;ldquo;listAllValues&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-21&#34;&gt;My_Soultion&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function listAllValues(obj) {
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function listAllValues(obj) {
   // your code here
   
   // 1. output 할 빈 배열을 생셩
@@ -11491,11 +11360,9 @@ return arr;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;convertArrayToObject3&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-22&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Question&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;convertarraytoobject3&#34;&gt;convertArrayToObject3&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;transformEmployeeData&amp;rdquo; that transforms some employee data from one format to another. (사원들의 정보를 다른 형태로 변형 할 수 있는 함수 &amp;ldquo;transformEmployeeData&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -11503,9 +11370,7 @@ return arr;
 &lt;p&gt;The argument will look something like this: (사원들의 정보는 아래와 같은 배열로 주어질 수 있습니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-22&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function transformEmployeeData(array) {
@@ -11530,9 +11395,7 @@ function transformEmployeeData(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;other_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;other-soultion-4&#34;&gt;other_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -11540,7 +11403,8 @@ function transformEmployeeData(array) {
 
 
 function transformEmployeeData(array) {
-  // your code here
+ 
+ // your code here
  // [key] start: firstName - last: role
  // return [{}] index0 key; index1 value;
   
@@ -11566,11 +11430,9 @@ return result;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;greetCustomers&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;qutestion&#34;&gt;Qutestion&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Qutestion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;greetcustomers&#34;&gt;greetCustomers&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;greetCustomer&amp;rdquo;. (&amp;ldquo;greetCustomer&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -11578,9 +11440,7 @@ return result;
 &lt;p&gt;Given a name, &amp;ldquo;greetCustomer&amp;rdquo; returns a greeting based on how many times that customer has visited the restaurant. Please refer to the customerData object. (고객들의 방문 횟수를 가지고 있는 객체와 이름이 주어졌을때, &amp;ldquo;greetCustomer&amp;rdquo; 함수는 손님이 몇번 방문했는지에 따라 다른 인삿말을 반환합니다. customerData 객체를 참고해 주세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-23&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function greetCustomer(customerData, firstName) {
@@ -11604,11 +11464,9 @@ function greetCustomer(customerData, firstName) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;convertDoubleSpaceToSingle&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;question-23&#34;&gt;Question&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Question&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;convertdoublespacetosingle&#34;&gt;convertDoubleSpaceToSingle&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;convertDoubleSpaceToSingle&amp;rdquo;. (&amp;ldquo;convertDoubleSpaceToSingle&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
@@ -11616,9 +11474,7 @@ function greetCustomer(customerData, firstName) {
 &lt;p&gt;Given a string, &amp;ldquo;convertDoubleSpaceToSingle&amp;rdquo; returns the passed in string, with all the double spaces converted to single spaces. (문자열이 주어졌을때, &amp;ldquo;convertDoubleSpaceToSingle&amp;rdquo; 함수는 주어진 문자열에 있는 띄어쓰기 두개(double spaces)를 띄어쓰기 한개(single space)로 변환한 뒤 해당 문자열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;My_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;my-soultion-24&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function convertDoubleSpaceToSingle(str) {
@@ -11642,9 +11498,7 @@ function convertDoubleSpaceToSingle(str) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;other_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;other-soultion-5&#34;&gt;other_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function convertDoubleSpaceToSingle(str) {
@@ -11657,9 +11511,7 @@ function convertDoubleSpaceToSingle(str) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;other_Soultion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;other-soultion-6&#34;&gt;other_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function convertDoubleSpaceToSingle(str) {
