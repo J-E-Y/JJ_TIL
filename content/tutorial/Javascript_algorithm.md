@@ -25,7 +25,7 @@ type: docs
 > Write a function called "sumDigits". ("sumDigits" 함수를 작성하세요.)
 
 >Given a number, "sumDigits" returns the sum of all its digits. (숫자가 주어졌을때, "sumDigits" 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)
-
+k
 
 
 ### My_Soultion

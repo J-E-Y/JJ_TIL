@@ -10271,7 +10271,8 @@ function getProductOfAllElementsAtProperty(obj, key) {
 &lt;blockquote&gt;
 &lt;p&gt;Write a function called &amp;ldquo;sumDigits&amp;rdquo;. (&amp;ldquo;sumDigits&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 
-&lt;p&gt;Given a number, &amp;ldquo;sumDigits&amp;rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &amp;ldquo;sumDigits&amp;rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)&lt;/p&gt;
+&lt;p&gt;Given a number, &amp;ldquo;sumDigits&amp;rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &amp;ldquo;sumDigits&amp;rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)
+k&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3 id=&#34;my-soultion&#34;&gt;My_Soultion&lt;/h3&gt;
