@@ -16,6 +16,77 @@ type: docs
 --------------------------------------------------------------------
 
 
+
+### Question
+
+## getTeenager
+
+>Write a function, `getTeenager`, that takes in an array of information, salesTeam, and returns an array that lists the full names of each member of the sales team that is a teenager.
+
+```js
+Make sure the first and last names are separated by a space.
+
+Notes:
+- moving through each element of the array.
+- check if they are a teenager (< 20).
+- if they're a teenager, store their full name, separated by a space into the array.
+
+* * *
+
+- output: an array that lists the full names of each member of the sales team that is a teenager
+
+```
+
+
+### My_Soultion
+
+
+```js
+
+
+function getTeenager(salesTeam) {
+  let teenager = [];
+
+  
+  for(let i=0; i < salesTeam.length; i++) {
+    let fullName = salesTeam[i].name.first + ' ' + salesTeam[i].name.last;
+    if(salesTeam[i].age < 20) {
+      teenager.push(fullName)
+
+    }
+  }
+  return teenager;
+}
+
+
+```
+
+### other_Soultion
+
+
+
+```js
+
+
+function getTeenager(salesTeam) {
+  // your code here
+  let teenager = salesTeam.filter(function(ele){
+    return ele.age < 20;
+  });
+  let result = [];
+  teenager.forEach(function(ele){
+    result.push(`${ele.name.first} ${ele.name.last}`);
+  });
+  return result;
+}
+
+
+
+
+```
+
+
+
 ### Question
 
 

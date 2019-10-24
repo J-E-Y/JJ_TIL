@@ -103,7 +103,7 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? 피보나치 수열 // 피보나치 수열 // 0 1 1 2 3 5 8 13 21 34 ...... // 점화식표현은 ==&amp;gt; f(n) = f(n-1) + f(n-2) // 5번째 숫자는? = f(n-1) + f(n-2) // n = 5 // 5-1 = 4 네번째 피보나치 수열에 있는 3은 숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. // fib(n) 함수는 // n 번째의 피보나치 수열에 숫자를 출력한다.</description>
+      <description>Today What I Learn ? data fliter 와 foreach 로 다루기 var salesTeam = [ { &amp;quot;name&amp;quot;: { &amp;quot;first&amp;quot;: &amp;quot;Bruce&amp;quot;, &amp;quot;last&amp;quot;: &amp;quot;Wayne&amp;quot; }, &amp;quot;age&amp;quot;: 10, &amp;quot;sales&amp;quot;: &amp;quot;$2314&amp;quot; }, { &amp;quot;name&amp;quot;: { &amp;quot;first&amp;quot;: &amp;quot;Alvaro&amp;quot;, &amp;quot;last&amp;quot;: &amp;quot;Angelos&amp;quot; }, &amp;quot;age&amp;quot;: 55, &amp;quot;sales&amp;quot;: &amp;quot;$1668&amp;quot; }, { &amp;quot;name&amp;quot;: { &amp;quot;first&amp;quot;: &amp;quot;Alvaro&amp;quot;, &amp;quot;last&amp;quot;: &amp;quot;Angelos&amp;quot; }, &amp;quot;age&amp;quot;: 15, &amp;quot;sales&amp;quot;: &amp;quot;$1668&amp;quot; } ]; // age 가 20 아래인 것만 teenager 에 담기 // filter 사용 let teenager = salesTeam.</description>
     </item>
     
     <item>
@@ -131,9 +131,8 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Question sumDigits  Write a function called &amp;ldquo;sumDigits&amp;rdquo;. (&amp;ldquo;sumDigits&amp;rdquo; 함수를 작성하세요.)
-Given a number, &amp;ldquo;sumDigits&amp;rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &amp;ldquo;sumDigits&amp;rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.) k
- My_Soultion function sumDigits(num) { let sum = 0; let stringNumArr = num.toString().split(&#39;&#39;); for (let i = 0; i &amp;lt; stringNumArr.length; i++) { if (stringNumArr[0] === &#39;-&#39; &amp;amp;&amp;amp; i === 1) { sum = sum - Number(stringNumArr[1]); } else if (stringNumArr[i] !</description>
+      <description>Question getTeenager  Write a function, getTeenager, that takes in an array of information, salesTeam, and returns an array that lists the full names of each member of the sales team that is a teenager.
+ Make sure the first and last names are separated by a space. Notes: - moving through each element of the array. - check if they are a teenager (&amp;lt; 20). - if they&#39;re a teenager, store their full name, separated by a space into the array.</description>
     </item>
     
   </channel>

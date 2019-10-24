@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Today What I Learn ? 피보나치 수열 // 피보나치 수열 // 0 1 1 2 3 5 8 13 21 34 ...... // 점화식표현은 ==&gt; f(n) = f(n-1) &#43; f(n-2) // 5번째 숫자는? = f(n-1) &#43; f(n-2) // n = 5 // 5-1 = 4 네번째 피보나치 수열에 있는 3은 숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. // fib(n) 함수는 // n 번째의 피보나치 수열에 숫자를 출력한다.">
+  <meta name="description" content="Today What I Learn ? data fliter 와 foreach 로 다루기 var salesTeam = [ { &quot;name&quot;: { &quot;first&quot;: &quot;Bruce&quot;, &quot;last&quot;: &quot;Wayne&quot; }, &quot;age&quot;: 10, &quot;sales&quot;: &quot;$2314&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 55, &quot;sales&quot;: &quot;$1668&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 15, &quot;sales&quot;: &quot;$1668&quot; } ]; // age 가 20 아래인 것만 teenager 에 담기 // filter 사용 let teenager = salesTeam.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_note/">
@@ -116,7 +116,7 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_note/">
   <meta property="og:title" content="5. Notes | Home">
-  <meta property="og:description" content="Today What I Learn ? 피보나치 수열 // 피보나치 수열 // 0 1 1 2 3 5 8 13 21 34 ...... // 점화식표현은 ==&gt; f(n) = f(n-1) &#43; f(n-2) // 5번째 숫자는? = f(n-1) &#43; f(n-2) // n = 5 // 5-1 = 4 네번째 피보나치 수열에 있는 3은 숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. // fib(n) 함수는 // n 번째의 피보나치 수열에 숫자를 출력한다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Today What I Learn ? data fliter 와 foreach 로 다루기 var salesTeam = [ { &quot;name&quot;: { &quot;first&quot;: &quot;Bruce&quot;, &quot;last&quot;: &quot;Wayne&quot; }, &quot;age&quot;: 10, &quot;sales&quot;: &quot;$2314&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 55, &quot;sales&quot;: &quot;$1668&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 15, &quot;sales&quot;: &quot;$1668&quot; } ]; // age 가 20 아래인 것만 teenager 에 담기 // filter 사용 let teenager = salesTeam."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -374,6 +374,7 @@
 <ul>
 <li><a href="#today-what-i-learn">Today What I Learn ?</a></li>
 </ul></li>
+<li><a href="#data-fliter-와-foreach-로-다루기">data fliter 와 foreach 로 다루기</a></li>
 <li><a href="#피보나치-수열">피보나치 수열</a></li>
 <li><a href="#checkbox-안에-있는-value-값-얻기">checkbox 안에 있는 value 값 얻기</a></li>
 <li><a href="#e-target-과-e-target-parentnode-의-차이">e.target 과 e.target.parentNode 의 차이</a>
@@ -445,6 +446,57 @@
 <p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png" alt="" /></p>
 
 <hr />
+
+<h2 id="data-fliter-와-foreach-로-다루기">data fliter 와 foreach 로 다루기</h2>
+
+<pre><code class="language-js">var salesTeam = [
+  {
+    &quot;name&quot;: {
+      &quot;first&quot;: &quot;Bruce&quot;,
+      &quot;last&quot;: &quot;Wayne&quot;
+    },
+    &quot;age&quot;: 10,
+    &quot;sales&quot;: &quot;$2314&quot;
+  },
+  {
+    &quot;name&quot;: {
+      &quot;first&quot;: &quot;Alvaro&quot;,
+      &quot;last&quot;: &quot;Angelos&quot;
+    },
+    &quot;age&quot;: 55,
+    &quot;sales&quot;: &quot;$1668&quot;
+  },
+  {
+    &quot;name&quot;: {
+      &quot;first&quot;: &quot;Alvaro&quot;,
+      &quot;last&quot;: &quot;Angelos&quot;
+    },
+    &quot;age&quot;: 15,
+    &quot;sales&quot;: &quot;$1668&quot;
+  }
+];
+
+
+// age 가 20 아래인 것만 teenager 에 담기 
+// filter 사용
+let teenager = salesTeam.filter(function(ele){
+    return ele.age &lt; 20;
+  });
+
+// 뽑은거 안에서 fullNmae 가져오기
+// foreach 사용
+
+  let result = [];
+  teenager.forEach(function(ele){
+    result.push(`${ele.name.first} ${ele.name.last}`); // 
+  });
+
+
+
+
+
+
+</code></pre>
 
 <h2 id="피보나치-수열">피보나치 수열</h2>
 
