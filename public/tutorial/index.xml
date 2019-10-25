@@ -131,8 +131,7 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Question getTeenager  Write a function, getTeenager, that takes in an array of information, salesTeam, and returns an array that lists the full names of each member of the sales team that is a teenager.
- Make sure the first and last names are separated by a space. Notes: - moving through each element of the array. - check if they are a teenager (&amp;lt; 20). - if they&#39;re a teenager, store their full name, separated by a space into the array.</description>
+      <description>Question unique Return a duplicate-free version of the collection. You don&#39;t need to care about non-primitive type elements. Array will be contained only primitive type values. (string, number, boolean)  My_Soultion unction unique(array) { // your code here let newArr = [] for (let i = 0; i &amp;lt; array.length; i ++ ) { if (!newArr.includes(array[i])){ newArr.push(array[i]); } } return newArr; } // 1. other_Soultion // function unique(array) { // // your code here // return array.</description>
     </item>
     
   </channel>

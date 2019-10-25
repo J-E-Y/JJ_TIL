@@ -13,7 +13,347 @@ type: docs
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 
 
---------------------------------------------------------------------
+------------------------------------------------------------------
+
+
+
+
+### Question
+
+
+## unique
+
+
+```js
+
+Return a duplicate-free version of the collection.
+You don't need to care about non-primitive type elements.
+Array will be contained only primitive type values. (string, number, boolean)
+
+
+```
+
+
+### My_Soultion
+
+
+
+```js
+unction unique(array) {
+  // your code here
+
+
+  let newArr = []
+
+  for (let i = 0; i < array.length; i ++ ) {
+    if (!newArr.includes(array[i])){
+      newArr.push(array[i]);
+    }
+  }
+    return newArr;
+  }
+
+
+  // 1. other_Soultion
+
+  // function unique(array) {
+  //   // your code here
+  //   return array.reduce(function(acc, curr){
+  //     if(!acc.includes(curr)){
+  //       acc.push(curr);
+  //       return acc;
+  //     } else {
+  //       return acc;
+  //     }
+  //   }, []);
+  // }
+
+
+
+
+
+ // 2. other_Soultion
+
+//  function unique(array) {
+//   // your code here
+//   return Array.from(new Set(array))
+// }
+
+
+
+
+
+
+```
+
+
+
+
+### Question
+
+## tenThousandClub
+
+
+```js
+
+# tenThousandClub
+
+Write a function, tenThousandClub, that takes in an array of information, salesTeam, and returns an array that lists the full names of each member of the sales team that has sales greater than $10,000.
+Make sure the first and last names are separated by a space.
+
+Hint: I recommend you write a helper function, salesToNumber, that converts the sales string to a number.
+Feel free to look up parseInt() and slice() on MDN if you don't remember how they work.
+
+- output: an array that lists the full names of each member of 10,000 club
+
+
+```
+
+
+
+
+### My_Soultion
+
+
+```js
+
+
+function tenThousandClub(salesTeam){
+  // your code here
+
+  // function salesToNumber(salesString){
+  //   //get rid of dollar sign:
+  //   let number = salesString.split('').splice(1)
+  //   return parseInt(number.join(''));
+  // }
+  let newobj = salesTeam.filter(function(ele){
+    return salesToNumber(ele.sales) >= 10000; 
+  }).map(function(ele){
+    return `${ele.name.first} ${ele.name.last}`;
+  });
+  return newobj;
+}
+
+
+// "$1234"  string to Number 숫자로 바꾸기 바꾸기 
+
+// it's me
+function salesToNumber(salesString){
+  //get rid of dollar sign:
+  let number = salesString.split('').splice(1)
+  return parseInt(number.join(''));
+}
+
+
+// other's
+
+// function salesToNumber(salesString){
+//   //get rid of dollar sign:
+//   return Number(salesString.slice(1));
+// }
+
+// other's
+
+// function salesToNumber(obj){
+//   return Number.parseInt(obj.sales.slice(1));
+// }
+
+
+
+```
+
+
+
+
+
+
+### Question
+
+## sumConsecutives
+
+
+```js
+
+
+You are given a list/array which contains only integers (positive and negative). Your job is to sum only the numbers that are the same and consecutive. The result should be one list.
+
+Examples:
+[1,4,4,4,0,4,3,3,1] should return [1,12,0,4,6,1]
+
+So as you can see sum of consecutives 1 is 1
+sum of 3 consecutives 4 is 12
+sum of 0... and
+sum of 2 consecutives 3 is 6 ...
+
+[1,1,7,7,3] should return [2,14,3]
+[-5,-5,7,7,12,0] should return [-10,14,12,0]
+
+- output: an reduced array
+
+```
+
+
+
+### My_Soultion
+
+
+```js
+
+function sumConsecutives(s) {
+    // your code here
+
+
+    //[1,4,4,4,0,4,3,3,1] should return [1,12,0,4,6,1]
+  
+    let ret = []; // 마지막에 출력할  result 배열을 만든다. 
+    let sum = 0;  // sum 이라는 것을 0 으로 초기화 시킨다. 
+
+    for(let i = 0; i < s.length; i++) {
+
+        // 첫번째 loop sum =  0 + 1 
+        // 두번째 loop sum = 0 + 4 
+        // 3번째 loop sum = 4 + 4 // 초기화 되지 않은 sum 과 다음에 나오르 4 를 합한다. 
+       
+        
+        sum = sum + s[i];  
+       
+       
+        // 첫번째 loop 
+        // 만약 0번째있는 숫자 1과  1번째의 숫자4가 같지 않다면 
+        // 조건문 1 을 ret 에 집어넣는다 [1]
+        //  조건문  sum 이라는 것을 다시 0으로 초기화 한다.
+        // 두번째 loop  
+        // 1번째 있는 4와 2번째 있는 4와 같으므로 조건문에 해당이 안된다. 
+        // sum 이 초기화 되지 않은채 위로 올라간다.   
+
+        if(s[i] !== s[i + 1]) {
+            ret.push(sum)  //  위에있는 sum 을 우선 채우고 
+            sum = 0;    //  sum 을 다시 초기화 한다. 
+        }
+    }
+     
+    return ret;
+}
+
+
+```
+
+
+
+
+### Question
+
+## oldest
+
+
+```js
+
+# oldest
+
+Write a function, oldest, that takes in an array of information, salesTeam, and returns a sentence with the person's first and last name, e.g. "The oldest student is Tina Fey".
+
+If there is a tie for the oldest student, return the student whose name appears first in the salesTeam array.
+
+- output: a string value with name of oldest person
+
+```
+
+
+### My_Soultion
+
+
+```js
+
+
+function oldest(salesTeam){
+ 
+  // 먼저 배열안에 객체에 접근해서 모든 나이를 뽑아서 배열어 넣는다..
+  // 나이중에 가장 높은 숫자를 변수에 담는다.
+  // 변수에 담긴 가장 높은 숫자와 배열안에 객체에 나이가 같다면 first name  과 last name 을 가져온다. 
+  
+  var ageArr = salesTeam.map(function(ele){
+    return ele.age;
+  })
+  var max = ageArr.reduce(function(a,c){
+    return Math.max(a,c);
+  });
+  var fullName = [];
+  salesTeam.forEach(function(ele){
+    if ( ele.age === max) {
+      fullName.push(`${ele.name.first} ${ele.name.last}`)
+    }
+  })
+  return "The oldest student is " + fullName.join(" ");
+}
+
+
+
+```
+
+
+
+
+
+### Question
+
+## isAgeDiverse
+
+
+```js
+
+You will be given an array of objects representing data related to their age and total sales.
+
+Your task is to return:
+- `true` if members from all of the following age groups: teens, twenties, thirties, forties, fifties, sixties, seventies, eighties.
+- `false` otherwise.
+
+Your function should return true as there is at least one member from each age group.
+
+- output: a boolean value representing whether the age range is diverse
+
+
+
+```
+
+
+### My_Soultion
+
+
+
+```js
+
+var isAgeDiverse = function(list) {
+  
+  // group 이 10-80 까지 는 true 리턴
+  // 아니라면 false 리턴 
+  
+  var ageArr = list.map(function(ele){
+    return ele.age; // [26, 55, 29, 53, 19, 25, 26]
+  });
+    for (let i = 0; i < ageArr.length; i = i + 1 ) {
+      if (ageArr[i] >= 10 && ageArr[i] < 90) {
+      return true;
+    } else {
+    return false;
+    }
+  };
+};
+
+  // other code here
+  // 팀원이 10대~80대 면 true를 반환해라.
+  // function filtering(el){  // 클로져를 써보자
+  //   return el.age >= 10 && el.age < 90 
+  // }
+  // // every를 써서 모두가 맞는지 확인한다.
+  // return list.every(filterin
+
+
+
+```
+
+
+
+
 
 
 
