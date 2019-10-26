@@ -13,8 +13,216 @@ type: docs
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 
 
-------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
+### Question
+
+## billTotal
+
+> Write a function called billTotal that can be used to calculate the total to be paid at a restaurant -- including tip and tax -- given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!
+
+```js
+- input: a number representing the cost of food and drinks
+- output: a number representing that cost plus an additional 15% tip and tax of 9.5%
+
+```
+
+### My_Soultion
+
+
+
+```js
+
+
+function billTotal(subtotal) {
+  // YOUR CODE HERE
+
+  // tip 15% = * 0.15
+  // tax 9.5% = * 0.095
+  
+  // tip을 얼마 냈는지 조사후 변수에 저장
+  // tax를 얼마나 냈는지 조사후 변수에 저장
+  // tip & tax & subtotal 더한값을 출력
+  
+  let tip = subtotal * 0.15
+  let tax = subtotal * 0.095
+  
+  return subtotal + tip + tax;
+}
+
+billTotal(10.00); // => 12.45
+
+
+```
+
+
+
+
+### Question
+
+
+## multiplyBetween
+
+
+> Write a function called "multiplyBetween". ("multiplyBetween" 함수를 작성하세요.)
+
+> Given 2 integers, "multiplyBetween" returns the product between the two given integers, beginning at num1, and excluding num2. (두 정수가 주어졌을때, "multiplyBetween" 함수는 첫번째 숫자부터 두번째 숫자 전까지 모든 수를 곱한 값을 반환합니다.)
+
+```js
+
+let output = multiplyBetween(2, 5);
+console.log(output); // --> 24
+
+```
+
+### My_Soultion
+
+
+
+```js
+function multiplyBetween(num1, num2) {
+  // your code here
+	let arr = [];
+    if (num2 < num1 || num1 === num2 ) {
+    return 0;
+  	} else {
+	  
+	  while( num1 < num2 ) {
+		arr.push(num1);
+		num1 = num1 + 1;
+      	
+     }
+  }
+console.log(arr);
+  return arr.reduce(function(acc,cur){
+      return acc * cur;
+  })
+}
+
+
+```
+
+
+
+
+### Question
+
+## computeSquareRoot
+
+> Write a function called "computeSquareRoot". ("computeSquareRoot" 함수를 작성하세요.)
+
+>Given a number, "computeSquareRoot" returns its square root. (숫자가 주어졌을때, "computeSquareRoot" 함수는 해당 수의 제곱근 값을 반환합니다.)
+
+```js
+let output = computeSquareRoot(9);
+console.log(output); // --> 3
+
+
+```
+> Do not use Math.sqrt(); for this problem. Instead, use this iterative way of solving the problem: (Math.sqrt()를 사용하지 말고, 아래 링크에서 나온 방법을 통해 해결하세요.)
+
+
+
+### My_Soultion
+
+```js
+
+unction computeSquareRoot(num) {
+  
+  let square = 1;
+  let i = 0;
+  
+  while(true){
+      i = i + 1
+      
+      square = (num / square + square) / 2;
+      if(i=== num + 1) { 
+       break;
+      }
+  } 
+  return Number(square.toFixed());
+}
+
+
+/*
+- doc 파일에 있는 내용 정리
+5 / 2 = 2.5 -> 다음줄 2.5에 5/2를 대입
+(2 + 2.5) / 2 = 2.25 ->(2+ (5/2)) / 2 = 2.25 = x + (num/x) / 2
+5 / 2.25 = 2.222...
+(2.25 + 2.222...) / 2 = 2.36111...
+5 / 2.236111... = result
+*/
+
+/* !질문란
+9를 넣으면 3이 나오지만,
+4를 넣으면 2.000000000000002 이 계속나오길래
+.toFixed()를 이용해서 소수점을 제거하여 결과값은 잘나오는데
+테스트는 계속 fail로 나옵니다ㅠㅠ
+toFixed()를 지우면 4를 넣었을시만 통과가 안되구요!
+어떻게 해야할까요?ㅠㅠ
+*/
+
+
+// 처음에 square를 1로 선언해주셨는데, square는 단순히 1이 아닌, 
+// 저희가 input으로 받은 값보다 같거나 작은 제곱수 중 가장 큰 값을 만들 수 있는 수가 되어야할 것 같습니다.
+
+// 예를들어 5가 주어졌을 때 5보다 작은 제곱수는 4 square는 2
+// 10이라면 10보다 작은 제곱수는 9 square는 3이 되어야할 것 같습니다.
+
+
+```
+
+
+
+
+### Question
+
+## modulo
+
+>Write a function called "modulo". ("modulo" 함수를 작성하세요.)
+
+>Given 2 numbers, "modulo" returns the remainder after dividing num1 by num2. (두 숫자가 주어졌을때, "modulo" 함수는 첫번째 수를 두번째 수로 나눴을때 나머지 값을 반환합니다.)
+
+```js
+
+
+let output = modulo(25, 4);
+console.log(output); // --> 1
+
+
+```
+
+
+### My_Soultion
+
+
+```js
+
+function modulo(num1, num2) {
+    // num1 = 25 num2 = 4
+  
+  if (isNaN(num2) || num2 === 0) {
+    return NaN;
+  }
+
+  // plusMinus 변수는 만약 첫번째 숫자가 plus 이면 마지막에 플러스를 마이너스를 표시하기 위해
+  // 미리 변수를 지정해둔다.
+  // 만약 num1 이 0보다 크면 plusMinus = 1
+  // 만약 num2 가 0 보다 작으면 plusMinus = -1
+  let plusMinus = num1 > 0 ? 1 : -1; //  이부분이 이해가 안됨. 
+
+  num1 = Math.abs(num1);
+  num2 = Math.abs(num2);
+
+  while (num1 >= num2) {  // 25 >= 4
+    num1 = num1 - num2; //  24 - 4 계속 빼면 = num1 = 1 
+  }
+  return num1 * plusMinus;  // 1 * plusMinus ( 1 ) 
+}
+
+
+
+```
 
 
 

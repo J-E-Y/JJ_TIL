@@ -106,9 +106,30 @@ function fib(n) {    // n = 10
     }
 }
 
-fib(10) // ==> 55 
+fib(10) // ==> 55
+
+
+function fib(n) {
+ 
+	if (n === 0 ) { // n 이 0 이면 0을 출력하고 그만  
+	return 0;      
+	}
+	if (n === 1 ) { // n 이 1 이면 1을 출력하고 그만 
+	return 1;
+}
+
+
+return fib(n-1) + fib(n-2) 
+	
+}
+
+
+
 
 ```
+
+
+
 
 
 
@@ -129,7 +150,7 @@ function fib(n) {
 
 let  tmp = '';
 
-for(let i = 0; i < 20; i++){
+for(let i = 0; i < 20; i++){ // 20번째 까지 
     tmp += fib(i) + " " 
 }
 
@@ -145,27 +166,30 @@ for(let i = 0; i < 20; i++){
 
 // 함수사용해서 피보나치 수열 만들기 
 
- function fibonacci(num){
-      var a = 1, b = 0, temp;
-
-        document.write(b + ", ");
-
-        for(var i = num; i >= 1; i--){
+function fibonacci(num){
+    var a = 1 
+	  var b = 0
+	  var temp;
+	  
+	  for(var i = num; i >= 1; i--){
             temp = a;
             a = a + b;
             b = temp;
-            if(i == 1) document.write(b);
-            else document.write(b + ", ");
-      }
-    }
-
-    fibonacci(15);
+            
+			if(i === 1) {
+			console.log(b);
+            }	else {
+			console.log(b);
+      			
+   		 }
+        }
+}
 
 
 // for 문을 사용해서 피보나치 수열 만들기 
 
 
-var num = 15;
+var num = 15;  // 몇번째까지 
 var a = 1, b = 0, temp;
 
 document.write(b + ", ");
@@ -174,8 +198,11 @@ for(var i = num; i >= 1; i--){
 temp = a;
 a = a + b;
 b = temp;
-if(i == 1) document.write(b);
-else document.write(b + ", ");
+if(i == 1) {
+document.write(b);
+} else {
+document.write(b + ", ");
+}
 }
 
 ```
