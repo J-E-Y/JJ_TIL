@@ -19,9 +19,20 @@ type: docs
 ![](/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png)
 
 
-
 ------------------------------------------------------------------
 
+
+
+## falsy 와 trythy
+
+```js
+
+undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
+(NaN : Not a Number)
+
+위에 적힌 데이터가 아닌 모든 데이터는 trye로 취급(truthy)
+
+```
 
 ## data fliter 와 foreach 로 다루기 
 

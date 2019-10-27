@@ -5448,6 +5448,16 @@ let Employee = {
 
 &lt;hr /&gt;
 
+&lt;h2 id=&#34;falsy-와-trythy&#34;&gt;falsy 와 trythy&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
+(NaN : Not a Number)
+
+위에 적힌 데이터가 아닌 모든 데이터는 trye로 취급(truthy)
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;data-fliter-와-foreach-로-다루기&#34;&gt;data fliter 와 foreach 로 다루기&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var salesTeam = [
