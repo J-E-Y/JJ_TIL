@@ -6487,6 +6487,29 @@ alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.46.43 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 콜백 함수를 사용해서 함수 사용해기 
+
+// first = element
+// second = index
+// third = array
+
+function foo(first,second,third) {
+	if ( first &amp;gt; second ) {
+		console.log(first);
+	} else {
+		console.log(second);  
+	}
+}
+
+function forEach(arr,test) {
+	for (let i = 0; i &amp;lt; arr.length; i = i + 1 ) {
+		foo(arr[i],i,arr); // 함수
+    	}
+	}
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;dom-이란&#34;&gt;Dom 이란 ?&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;

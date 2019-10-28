@@ -23,6 +23,10 @@ type: docs
 
 
 
+
+
+
+
 ## falsy 와 trythy
 
 ```js
@@ -1268,6 +1272,34 @@ alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
 ```
 
 ![](/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.46.43 PM.png)
+
+
+
+```js
+
+// 콜백 함수를 사용해서 함수 사용해기 
+
+// first = element
+// second = index
+// third = array
+
+function foo(first,second,third) {
+	if ( first > second ) {
+		console.log(first);
+	} else {
+		console.log(second);  
+	}
+}
+
+function forEach(arr,test) {
+	for (let i = 0; i < arr.length; i = i + 1 ) {
+		foo(arr[i],i,arr); // 함수
+    	}
+	}
+
+```
+
+
 
 
 
