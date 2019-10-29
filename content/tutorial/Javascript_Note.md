@@ -26,6 +26,17 @@ type: docs
 
 
 
+##  every 와 some 의 차이점
+
+
+
+
+>every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다
+
+
+
+
+
 
 ## falsy 와 trythy
 

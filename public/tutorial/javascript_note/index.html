@@ -27,7 +27,8 @@
   
     
   
-  <meta name="description" content="Today What I Learn ? falsy 와 trythy undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy) (NaN : Not a Number) 위에 적힌 데이터가 아닌 모든 데이터는 trye로 취급(truthy)  data fliter 와 foreach 로 다루기 var salesTeam = [ { &quot;name&quot;: { &quot;first&quot;: &quot;Bruce&quot;, &quot;last&quot;: &quot;Wayne&quot; }, &quot;age&quot;: 10, &quot;sales&quot;: &quot;$2314&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 55, &quot;sales&quot;: &quot;$1668&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 15, &quot;sales&quot;: &quot;$1668&quot; } ]; // age 가 20 아래인 것만 teenager 에 담기 // filter 사용 let teenager = salesTeam.">
+  <meta name="description" content="Today What I Learn ? every 와 some 의 차이점  every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다
+ falsy 와 trythy undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy) (NaN : Not a Number) 위에 적힌 데이터가 아닌 모든 데이터는 trye로 취급(truthy)  data fliter 와 foreach 로 다루기 var salesTeam = [ { &quot;name&quot;: { &quot;first&quot;: &quot;Bruce&quot;, &quot;last&quot;: &quot;Wayne&quot; }, &quot;age&quot;: 10, &quot;sales&quot;: &quot;$2314&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 55, &quot;sales&quot;: &quot;$1668&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 15, &quot;sales&quot;: &quot;$1668&quot; } ]; // age 가 20 아래인 것만 teenager 에 담기 // filter 사용 let teenager = salesTeam.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_note/">
@@ -116,7 +117,8 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_note/">
   <meta property="og:title" content="5. Notes | Home">
-  <meta property="og:description" content="Today What I Learn ? falsy 와 trythy undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy) (NaN : Not a Number) 위에 적힌 데이터가 아닌 모든 데이터는 trye로 취급(truthy)  data fliter 와 foreach 로 다루기 var salesTeam = [ { &quot;name&quot;: { &quot;first&quot;: &quot;Bruce&quot;, &quot;last&quot;: &quot;Wayne&quot; }, &quot;age&quot;: 10, &quot;sales&quot;: &quot;$2314&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 55, &quot;sales&quot;: &quot;$1668&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 15, &quot;sales&quot;: &quot;$1668&quot; } ]; // age 가 20 아래인 것만 teenager 에 담기 // filter 사용 let teenager = salesTeam."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Today What I Learn ? every 와 some 의 차이점  every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다
+ falsy 와 trythy undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy) (NaN : Not a Number) 위에 적힌 데이터가 아닌 모든 데이터는 trye로 취급(truthy)  data fliter 와 foreach 로 다루기 var salesTeam = [ { &quot;name&quot;: { &quot;first&quot;: &quot;Bruce&quot;, &quot;last&quot;: &quot;Wayne&quot; }, &quot;age&quot;: 10, &quot;sales&quot;: &quot;$2314&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 55, &quot;sales&quot;: &quot;$1668&quot; }, { &quot;name&quot;: { &quot;first&quot;: &quot;Alvaro&quot;, &quot;last&quot;: &quot;Angelos&quot; }, &quot;age&quot;: 15, &quot;sales&quot;: &quot;$1668&quot; } ]; // age 가 20 아래인 것만 teenager 에 담기 // filter 사용 let teenager = salesTeam."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="1970-01-01T09:33:39&#43;09:00">
@@ -374,6 +376,7 @@
 <ul>
 <li><a href="#today-what-i-learn">Today What I Learn ?</a></li>
 </ul></li>
+<li><a href="#every-와-some-의-차이점">every 와 some 의 차이점</a></li>
 <li><a href="#falsy-와-trythy">falsy 와 trythy</a></li>
 <li><a href="#data-fliter-와-foreach-로-다루기">data fliter 와 foreach 로 다루기</a></li>
 <li><a href="#피보나치-수열">피보나치 수열</a></li>
@@ -447,6 +450,12 @@
 <p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-19 at 8.22.08 PM.png" alt="" /></p>
 
 <hr />
+
+<h2 id="every-와-some-의-차이점">every 와 some 의 차이점</h2>
+
+<blockquote>
+<p>every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다</p>
+</blockquote>
 
 <h2 id="falsy-와-trythy">falsy 와 trythy</h2>
 
