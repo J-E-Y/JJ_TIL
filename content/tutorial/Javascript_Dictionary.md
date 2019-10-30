@@ -19,7 +19,6 @@ type: docs
 ## **String** 
 ---
 
-
 **str.includes()**
 
 ```js
@@ -1072,7 +1071,7 @@ arr.concat([6,7,8,9,10]);
 
 
 
-**arr.forEach()**
+**arr.forEach(callbackFunction(element, index, array)**
 
 > `immutable`
 
@@ -1120,7 +1119,7 @@ function logArrayElements(element, index, array) {
 ```
 
 
-**arr.map()**
+**arr.map(callbackFunction(element, index, array)**
 
 > `immutable`
 
@@ -1184,7 +1183,7 @@ let newArr2 = arr2.map(function(cur){
 
 
 
-**arr.filter()**
+**arr.filter(callbackFunction(element, index, array)**
 
 > 걸러주는 역활 한다. 
 
