@@ -103,7 +103,9 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? 자바스크립트 javascript forEach, for of, for in 의 차이 Array_method // array.forEach (callback(callbackFunction(element, index, array) // 리턴값 없다 // forEach 로 배열의 합 구하기 function test(){ var testArray = [1,2,3,4,5]; var sum = 0; function getSum(value){ sum = sum + value; } testArray.forEach(getSum); // forEach(getSum) that&#39;s all console.log(sum); } test() // 15 // array.fliter(callbackFunction(element, index, array) // 조건문을 통과하 것을 새로운 배열로 만드는 역활 //리턴값 있다.</description>
+      <description>Today What I Learn ? 자바스크립트 javascript forEach, for of, for in 의 차이  basic for문과 for in은 반복변수에 index를 리턴하지만
+forEach 와 for of 는 해당 값을 리턴하기 때문이죠.
+ const array = [&#39;가&#39;,&#39;나&#39;,&#39;다&#39;,&#39;라&#39;]; // for for(let i=0; i&amp;lt;array.length; i++){ console.log(array[i]); } // 가 나 다 라 //forEach array.forEach(function(j){ console.log(array[j]); }); // console.log(array[j]) // undefined // console.log(j) // 가 나 다 라 // for of for (let k of array){ console.</description>
     </item>
     
     <item>
@@ -131,8 +133,7 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Question billTotal  Write a function called billTotal that can be used to calculate the total to be paid at a restaurant &amp;ndash; including tip and tax &amp;ndash; given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!
- - input: a number representing the cost of food and drinks - output: a number representing that cost plus an additional 15% tip and tax of 9.</description>
+      <description>Question reduce // 각 항목에 대해 iterator(accumulator, item)를 반복적으로 호출하여, Reduces an array to a single value by repetitively calling // 하나의 값으로 줄입니다. accumulator는 누적값으로, 이전 iterator 호출의 반환값이어야 합니다. // // reduce에 대한 세번째 argument로 초기값을 전달 할 수 있습니다. // 만일 초기값이 전달되지 않으면, 첫번재 element가 accumulator로 사용되며, iterator에 전달되지 않습니다. // 즉, 초기값이 전달되지 않은 경우, iterator는 두번째 element로부터 시작합니다. // // 예제: // const numbers = [1,2,3]; // const sum = _.</description>
     </item>
     
   </channel>

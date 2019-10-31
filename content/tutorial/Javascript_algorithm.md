@@ -17,6 +17,65 @@ type: docs
 
 ### Question
 
+## reduce
+
+```js
+
+// 각 항목에 대해 iterator(accumulator, item)를 반복적으로 호출하여, Reduces an array to a single value by repetitively calling
+  // 하나의 값으로 줄입니다. accumulator는 누적값으로, 이전 iterator 호출의 반환값이어야 합니다.
+  //
+  // reduce에 대한 세번째 argument로 초기값을 전달 할 수 있습니다.
+  // 만일 초기값이 전달되지 않으면, 첫번재 element가 accumulator로 사용되며, iterator에 전달되지 않습니다.
+  // 즉, 초기값이 전달되지 않은 경우, iterator는 두번째 element로부터 시작합니다.
+  //
+  // 예제:
+  //   const numbers = [1,2,3];
+  //   const sum = _.reduce(numbers, function(total, number){
+  //     return total + number;
+  //   }, 0); // 6이 리턴됩니다
+  //
+  //   const identity = _.reduce([5], function(total, number){
+  //     return total + number * number;
+  //   }); // 5가 리턴됩니다, 전달한 iterator와 관계없이, 첫번째 element가 즉시 사용됩니다.
+  
+
+
+```
+
+
+### My_Soultion
+
+```js
+
+
+
+  _.reduce = function(collection, iterator, accumulator) {
+     
+     // 1. 내가 생각 방법
+      let i=0;
+      if (accumulator === undefined) {
+        accumulator = collection[0];
+        i++;
+      }
+      for(i; i<collection.length; i++) {
+        accumulator = iterator(accumulator, collection[i]);
+      }
+      return accumulator;
+    }
+  // accumulator가 undefined면 : accumulator에게 첫 번째 collection값을 넣고,
+  // 그 후 i++를 통해 collection[0]이 아닌 collection[1]부터 iterator가 돌아감
+  // 
+```
+
+
+
+
+
+
+
+
+### Question
+
 ## billTotal
 
 > Write a function called billTotal that can be used to calculate the total to be paid at a restaurant -- including tip and tax -- given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!
