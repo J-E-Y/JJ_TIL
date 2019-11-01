@@ -103,9 +103,9 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? 자바스크립트 javascript forEach, for of, for in 의 차이  basic for문과 for in은 반복변수에 index를 리턴하지만
+      <description>Today What I Learn ? 다차원에 있는 배열 하나로 만들기 var nestedArray = [1, [2], [3, [[[4]]]]]; nestedArray.join().split(&#39;,&#39;).map(Number); // [1, 2, 3, 4]  자바스크립트 javascript forEach, for of, for in 의 차이  basic for문과 for in은 반복변수에 index를 리턴하지만
 forEach 와 for of 는 해당 값을 리턴하기 때문이죠.
- const array = [&#39;가&#39;,&#39;나&#39;,&#39;다&#39;,&#39;라&#39;]; // for for(let i=0; i&amp;lt;array.length; i++){ console.log(array[i]); } // 가 나 다 라 //forEach array.forEach(function(j){ console.log(array[j]); }); // console.log(array[j]) // undefined // console.log(j) // 가 나 다 라 // for of for (let k of array){ console.</description>
+ const array = [&#39;가&#39;,&#39;나&#39;,&#39;다&#39;,&#39;라&#39;]; // for for(let i=0; i&amp;lt;array.length; i++){ console.log(array[i]); } // 가 나 다 라 //forEach array.</description>
     </item>
     
     <item>

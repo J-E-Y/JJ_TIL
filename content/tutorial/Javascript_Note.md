@@ -23,6 +23,23 @@ type: docs
 
 
 
+
+## 다차원에 있는 배열 하나로 만들기 
+
+```js
+
+var nestedArray = [1, [2], [3, [[[4]]]]];
+
+nestedArray.join().split(',').map(Number);
+
+// [1, 2, 3, 4]
+
+
+```
+
+
+
+
 ## 자바스크립트 javascript forEach, for of, for in 의 차이
 
 
