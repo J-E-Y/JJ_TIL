@@ -23,6 +23,52 @@ type: docs
 
 
 
+## array shuffle 함수 만들기 
+
+
+```js
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+// Used like so
+var arr = [2, 11, 37, 42];
+arr = shuffle(arr);
+console.log(arr);
+
+
+
+
+// Another one
+
+function shuffle(array) {
+    
+    let copy = array.slice();
+    copy.sort(function(a, b){
+      return Math.random() - 0.5;
+    })
+    return copy;
+  };
+
+
+```
+
+
 
 ## 다차원에 있는 배열 하나로 만들기 
 

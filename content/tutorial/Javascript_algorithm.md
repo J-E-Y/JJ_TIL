@@ -15,6 +15,58 @@ type: docs
 
 -----------------------------------------------------------------------------
 
+
+### Qeustion
+
+
+## contains 함수 만들기 
+
+
+### My_Soultoin
+
+
+```js
+  //배열 또는 객체가 주어진 값을 포함하는지 체크합니다. (`===` 연산자를 사용해서 판단합니다.)
+
+  _.contains = function(collection, target) {
+ 
+
+    for (let i in collection ) {
+      if (collection[i] === target ){
+        return true
+        } 
+      }
+      return false;
+  }
+
+    // 다른 깔끔한 방법
+    // each 방법을 써서..
+
+    if (Array.isArray(collection)) {
+       for (let i = 0; i < collection.length; i ++  ) {
+         if (collection[i] === target) {  
+           return true;
+         } else {
+           return false;
+         }
+       }
+     } else {
+       for (let prop in collection) {
+         if (collection[prop] === target) { 
+           return true;
+         } else {  
+           return false;
+         }
+       }
+     } 
+      
+
+
+
+```
+
+
+
 ### Question
 
 ## reduce
