@@ -16,6 +16,43 @@ type: docs
 -----------------------------------------------------------------------------
 
 
+
+### Qeustion
+
+
+## every 함수 만들기
+
+
+### My_Soultion
+
+```js
+
+// 모든 element가 iterator에 의해 truthy한지 체크합니다.
+  function every(collection, iterator) {
+  
+  // function every(collection,iterator)
+  // collection.every(terator(value, key, collection)) ???
+  
+    if(iterator === undefined) { // 이것을 왜하는지 ?
+      for(let i = 0 ; i < collection.length ; i++) {
+        if(Boolean(collection[i]) === false) {
+          return false;
+        }  
+      }
+    } else if (iterator) { // 이것은 왜? 
+      for (let j = 0 ; j < collection.length ; j++) {
+        if (Boolean(iterator(collection[j])) === false) {
+          return false;
+        }
+      }
+    } return true;
+  };
+
+
+
+
+```
+
 ### Qeustion
 
 
