@@ -16,6 +16,45 @@ type: docs
 -----------------------------------------------------------------------------
 
 
+### Qeustion
+
+
+## some 함수 만들기 
+
+
+## My_Soultion
+
+```js
+
+
+  // element가 하나라도 iterator에 의해 truthy한지 체크합니다.
+  // iterator가 없다면, element 그 자체가 truthy한지 체크하세요.
+function some(collection, iterator) {
+
+    if(iterator === undefined) { // 이것을 왜하는지 ?
+      for(let i = 0 ; i < collection.length ; i++) {
+        if(Boolean(collection[i]) === true) {
+          return true;
+        }  
+      }
+    } else if (iterator) { // 이것은 왜? 
+      for (let j = 0 ; j < collection.length ; j++) {
+        if (Boolean(iterator(collection[j])) === true) {
+          return true;
+        }
+      }
+    } return false;
+  };
+
+
+
+
+
+
+```
+
+
+
 
 ### Qeustion
 

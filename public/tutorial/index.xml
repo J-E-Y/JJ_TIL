@@ -103,7 +103,7 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? array shuffle 함수 만들기 function shuffle(array) { var currentIndex = array.length, temporaryValue, randomIndex; // While there remain elements to shuffle... while (0 !== currentIndex) { // Pick a remaining element... randomIndex = Math.floor(Math.random() * currentIndex); currentIndex -= 1; // And swap it with the current element. temporaryValue = array[currentIndex]; array[currentIndex] = array[randomIndex]; array[randomIndex] = temporaryValue; } return array; } // Used like so var arr = [2, 11, 37, 42]; arr = shuffle(arr); console.</description>
+      <description>Today What I Learn ? 재귀 // 재귀는 항상 탈출 조건을 만들어야 한다.  array shuffle 함수 만들기 function shuffle(array) { var currentIndex = array.length, temporaryValue, randomIndex; // While there remain elements to shuffle... while (0 !== currentIndex) { // Pick a remaining element... randomIndex = Math.floor(Math.random() * currentIndex); currentIndex -= 1; // And swap it with the current element. temporaryValue = array[currentIndex]; array[currentIndex] = array[randomIndex]; array[randomIndex] = temporaryValue; } return array; } // Used like so var arr = [2, 11, 37, 42]; arr = shuffle(arr); console.</description>
     </item>
     
     <item>
@@ -131,7 +131,7 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Qeustion every 함수 만들기 My_Soultion // 모든 element가 iterator에 의해 truthy한지 체크합니다. function every(collection, iterator) { // function every(collection,iterator) // collection.every(terator(value, key, collection)) ??? if(iterator === undefined) { // 이것을 왜하는지 ? for(let i = 0 ; i &amp;lt; collection.length ; i++) { if(Boolean(collection[i]) === false) { return false; } } } else if (iterator) { // 이것은 왜? for (let j = 0 ; j &amp;lt; collection.length ; j++) { if (Boolean(iterator(collection[j])) === false) { return false; } } } return true; };  Qeustion contains 함수 만들기 My_Soultoin //배열 또는 객체가 주어진 값을 포함하는지 체크합니다.</description>
+      <description>Qeustion some 함수 만들기 My_Soultion // element가 하나라도 iterator에 의해 truthy한지 체크합니다. // iterator가 없다면, element 그 자체가 truthy한지 체크하세요. function some(collection, iterator) { if(iterator === undefined) { // 이것을 왜하는지 ? for(let i = 0 ; i &amp;lt; collection.length ; i++) { if(Boolean(collection[i]) === true) { return true; } } } else if (iterator) { // 이것은 왜? for (let j = 0 ; j &amp;lt; collection.length ; j++) { if (Boolean(iterator(collection[j])) === true) { return true; } } } return false; };  Qeustion every 함수 만들기 My_Soultion // 모든 element가 iterator에 의해 truthy한지 체크합니다.</description>
     </item>
     
   </channel>
