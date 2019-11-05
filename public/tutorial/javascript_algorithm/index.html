@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Qeustion some 함수 만들기 My_Soultion // element가 하나라도 iterator에 의해 truthy한지 체크합니다. // iterator가 없다면, element 그 자체가 truthy한지 체크하세요. function some(collection, iterator) { if(iterator === undefined) { // 이것을 왜하는지 ? for(let i = 0 ; i &lt; collection.length ; i&#43;&#43;) { if(Boolean(collection[i]) === true) { return true; } } } else if (iterator) { // 이것은 왜? for (let j = 0 ; j &lt; collection.length ; j&#43;&#43;) { if (Boolean(iterator(collection[j])) === true) { return true; } } } return false; };  Qeustion every 함수 만들기 My_Soultion // 모든 element가 iterator에 의해 truthy한지 체크합니다.">
+  <meta name="description" content="Qeustion 갹채를 함쳐주는 함수 만들기 My_Souliton extend = function(obj, ...objs) { //객체를 합쳐주는 함수를 만들어보자 for (let i = 0; i &lt; objs.length; i &#43;&#43; ) { for (let prop in objs[i] ) { obj[prop] = objs[i][prop]; } } return obj; } // other_Soultion for(let i = 0; i &lt; arguments.length; i&#43;&#43;) { for(let key in arguments[i]) { obj[key] = arguments[i][key] } } return obj; };  Qeustion some 함수 만들기 My_Soultion // element가 하나라도 iterator에 의해 truthy한지 체크합니다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_algorithm/">
@@ -116,7 +116,7 @@
   <meta property="og:site_name" content="Home">
   <meta property="og:url" content="/tutorial/javascript_algorithm/">
   <meta property="og:title" content="4.Coding_level_2 | Home">
-  <meta property="og:description" content="Qeustion some 함수 만들기 My_Soultion // element가 하나라도 iterator에 의해 truthy한지 체크합니다. // iterator가 없다면, element 그 자체가 truthy한지 체크하세요. function some(collection, iterator) { if(iterator === undefined) { // 이것을 왜하는지 ? for(let i = 0 ; i &lt; collection.length ; i&#43;&#43;) { if(Boolean(collection[i]) === true) { return true; } } } else if (iterator) { // 이것은 왜? for (let j = 0 ; j &lt; collection.length ; j&#43;&#43;) { if (Boolean(iterator(collection[j])) === true) { return true; } } } return false; };  Qeustion every 함수 만들기 My_Soultion // 모든 element가 iterator에 의해 truthy한지 체크합니다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Qeustion 갹채를 함쳐주는 함수 만들기 My_Souliton extend = function(obj, ...objs) { //객체를 합쳐주는 함수를 만들어보자 for (let i = 0; i &lt; objs.length; i &#43;&#43; ) { for (let prop in objs[i] ) { obj[prop] = objs[i][prop]; } } return obj; } // other_Soultion for(let i = 0; i &lt; arguments.length; i&#43;&#43;) { for(let key in arguments[i]) { obj[key] = arguments[i][key] } } return obj; };  Qeustion some 함수 만들기 My_Soultion // element가 하나라도 iterator에 의해 truthy한지 체크합니다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   
@@ -373,15 +373,20 @@
 <ul>
 <li><a href="#qeustion">Qeustion</a></li>
 </ul></li>
+<li><a href="#갹채를-함쳐주는-함수-만들기">갹채를 함쳐주는 함수 만들기</a>
+<ul>
+<li><a href="#my-souliton">My_Souliton</a></li>
+<li><a href="#qeustion-1">Qeustion</a></li>
+</ul></li>
 <li><a href="#some-함수-만들기">some 함수 만들기</a></li>
 <li><a href="#my-soultion">My_Soultion</a>
 <ul>
-<li><a href="#qeustion-1">Qeustion</a></li>
+<li><a href="#qeustion-2">Qeustion</a></li>
 </ul></li>
 <li><a href="#every-함수-만들기">every 함수 만들기</a>
 <ul>
 <li><a href="#my-soultion-1">My_Soultion</a></li>
-<li><a href="#qeustion-2">Qeustion</a></li>
+<li><a href="#qeustion-3">Qeustion</a></li>
 </ul></li>
 <li><a href="#contains-함수-만들기">contains 함수 만들기</a>
 <ul>
@@ -612,6 +617,39 @@
 
 <h3 id="qeustion">Qeustion</h3>
 
+<h2 id="갹채를-함쳐주는-함수-만들기">갹채를 함쳐주는 함수 만들기</h2>
+
+<h3 id="my-souliton">My_Souliton</h3>
+
+<pre><code class="language-js">
+extend = function(obj, ...objs) {
+  
+    //객체를 합쳐주는 함수를 만들어보자
+  
+    for (let i = 0; i &lt; objs.length; i ++ ) {
+      for (let prop in objs[i] ) {
+        obj[prop] = objs[i][prop];
+      }
+    }
+    return obj;
+  }
+
+
+
+// other_Soultion
+
+
+    for(let i = 0; i &lt; arguments.length; i++) {
+      for(let key in arguments[i]) {
+      obj[key] = arguments[i][key]
+      }
+    } return obj;
+  };
+
+</code></pre>
+
+<h3 id="qeustion-1">Qeustion</h3>
+
 <h2 id="some-함수-만들기">some 함수 만들기</h2>
 
 <h2 id="my-soultion">My_Soultion</h2>
@@ -644,7 +682,7 @@ function some(collection, iterator) {
 
 </code></pre>
 
-<h3 id="qeustion-1">Qeustion</h3>
+<h3 id="qeustion-2">Qeustion</h3>
 
 <h2 id="every-함수-만들기">every 함수 만들기</h2>
 
@@ -677,7 +715,7 @@ function some(collection, iterator) {
 
 </code></pre>
 
-<h3 id="qeustion-2">Qeustion</h3>
+<h3 id="qeustion-3">Qeustion</h3>
 
 <h2 id="contains-함수-만들기">contains 함수 만들기</h2>
 

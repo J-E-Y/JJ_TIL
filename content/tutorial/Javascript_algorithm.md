@@ -16,6 +16,47 @@ type: docs
 -----------------------------------------------------------------------------
 
 
+
+
+
+### Qeustion
+
+
+## 갹채를 함쳐주는 함수 만들기
+
+
+### My_Souliton
+
+```js
+
+extend = function(obj, ...objs) {
+  
+    //객체를 합쳐주는 함수를 만들어보자
+  
+    for (let i = 0; i < objs.length; i ++ ) {
+      for (let prop in objs[i] ) {
+        obj[prop] = objs[i][prop];
+      }
+    }
+    return obj;
+  }
+
+
+
+// other_Soultion
+
+
+    for(let i = 0; i < arguments.length; i++) {
+      for(let key in arguments[i]) {
+      obj[key] = arguments[i][key]
+      }
+    } return obj;
+  };
+
+```
+
+
+
 ### Qeustion
 
 
