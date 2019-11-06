@@ -18,6 +18,38 @@ type: docs
 
 
 
+### Qeustion
+
+
+## 갹채를 함쳐주는 함수 만들기 2(key 덮어쓰지 않기 )
+
+
+## My_Soultion
+
+```js
+ // extend와 비슷하지만, 이번엔 이미 존재하는 key에 대해 값을 덮어쓰기 하지 않습니다.
+  function defaults (obj,...objs) {
+    
+    for (let i = 0; i < objs.length; i ++ ) {
+      for (let prop in objs[i]){
+        // 만약 기존에있는 obj 의 키값이 새로 더해진 obj 에 없다면 
+        if (!(prop in obj)) { 
+          // 기존에 있는 obj 의 push 해준다. 
+          obj[prop] = objs[i][prop];
+        }
+      }
+    }
+    return obj;
+  }
+
+
+
+
+```
+
+
+
+
 
 ### Qeustion
 
