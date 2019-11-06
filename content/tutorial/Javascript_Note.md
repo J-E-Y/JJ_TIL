@@ -40,15 +40,58 @@ type: docs
 
 
 
-## 재귀 
+## How to check if element has any children in Javascript?
+
 
 
 ```js
 
-// 재귀는 항상 탈출 조건을 만들어야 한다. 
+if (element.firstChild) {
+    // It has at least one
+}
 
+if (element.hasChildNodes()) {
+    // It has at least one
+}
 
+if (element.childNodes.length > 0) { // Or just `if (element.childNodes.length)`
+    // It has at least one
+}
 
+if (element.children.length > 0) { // Or just `if (element.children.length)`
+    // It has at least one element as a child
+}
+
+if (element.firstElementChild) {
+    // It has at least one element as a child
+}
+
+var hasChildElements, child;
+hasChildElements = false;
+for (child = element.firstChild; child; child = child.nextSibling) {
+    if (child.nodeType == 1) { // 1 == Element
+        hasChildElements = true;
+        break;
+    }
+}
+
+function hasChildElement(elm) {
+    var child, rv;
+
+    if (elm.children) {
+        // Supports `children`
+        rv = elm.children.length !== 0;
+    } else {
+        // The hard way...
+        rv = false;
+        for (child = element.firstChild; !rv && child; child = child.nextSibling) {
+            if (child.nodeType == 1) { // 1 == Element
+                rv = true;
+            }
+        }
+    }
+    return rv;
+}
 
 
 
