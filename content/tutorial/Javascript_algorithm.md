@@ -13,7 +13,61 @@ type: docs
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 
 
------------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+
+
+
+
+### Qeustion
+
+
+## 최대 한번만 호출할 수 있는 함수 만들기 
+
+
+### My_Soultion
+
+```js
+ 
+  function once(func) {
+ 
+    // ... agrgs 사용한 함수 
+
+    var alreadyCalled = false;
+    let result;
+    return function(...args) {
+      if (!alreadyCalled) {
+        alreadyCalled = true;
+        result = func(...args);
+      }
+      return result;
+    };
+  };
+
+
+// this 와 arguments 와 apply 를 사용한 함수 
+
+    let alreadyCalled = false;
+
+    let result;
+
+  
+    return function() {
+      if(alreadyCalled) {
+        return result 
+    } else {
+        alreadyCalled = true 
+        return result = func.apply(this, arguments);
+      }
+    }
+  };
+
+
+
+```
+
+
+
 
 
 

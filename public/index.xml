@@ -10654,9 +10654,53 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 &lt;h3 id=&#34;qeustion&#34;&gt;Qeustion&lt;/h3&gt;
 
+&lt;h2 id=&#34;최대-한번만-호출할-수-있는-함수-만들기&#34;&gt;최대 한번만 호출할 수 있는 함수 만들기&lt;/h2&gt;
+
+&lt;h3 id=&#34;my-soultion&#34;&gt;My_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt; 
+  function once(func) {
+ 
+    // ... agrgs 사용한 함수 
+
+    var alreadyCalled = false;
+    let result;
+    return function(...args) {
+      if (!alreadyCalled) {
+        alreadyCalled = true;
+        result = func(...args);
+      }
+      return result;
+    };
+  };
+
+
+// this 와 arguments 와 apply 를 사용한 함수 
+
+    let alreadyCalled = false;
+
+    let result;
+
+  
+    return function() {
+      if(alreadyCalled) {
+        return result 
+    } else {
+        alreadyCalled = true 
+        return result = func.apply(this, arguments);
+      }
+    }
+  };
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;qeustion-1&#34;&gt;Qeustion&lt;/h3&gt;
+
 &lt;h2 id=&#34;갹채를-함쳐주는-함수-만들기-2-key-덮어쓰지-않기&#34;&gt;갹채를 함쳐주는 함수 만들기 2(key 덮어쓰지 않기 )&lt;/h2&gt;
 
-&lt;h2 id=&#34;my-soultion&#34;&gt;My_Soultion&lt;/h2&gt;
+&lt;h2 id=&#34;my-soultion-1&#34;&gt;My_Soultion&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt; // extend와 비슷하지만, 이번엔 이미 존재하는 key에 대해 값을 덮어쓰기 하지 않습니다.
   function defaults (obj,...objs) {
@@ -10678,7 +10722,7 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;qeustion-1&#34;&gt;Qeustion&lt;/h3&gt;
+&lt;h3 id=&#34;qeustion-2&#34;&gt;Qeustion&lt;/h3&gt;
 
 &lt;h2 id=&#34;갹채를-함쳐주는-함수-만들기&#34;&gt;갹채를 함쳐주는 함수 만들기&lt;/h2&gt;
 
@@ -10711,11 +10755,11 @@ extend = function(obj, ...objs) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;qeustion-2&#34;&gt;Qeustion&lt;/h3&gt;
+&lt;h3 id=&#34;qeustion-3&#34;&gt;Qeustion&lt;/h3&gt;
 
 &lt;h2 id=&#34;some-함수-만들기&#34;&gt;some 함수 만들기&lt;/h2&gt;
 
-&lt;h2 id=&#34;my-soultion-1&#34;&gt;My_Soultion&lt;/h2&gt;
+&lt;h2 id=&#34;my-soultion-2&#34;&gt;My_Soultion&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10745,11 +10789,11 @@ function some(collection, iterator) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;qeustion-3&#34;&gt;Qeustion&lt;/h3&gt;
+&lt;h3 id=&#34;qeustion-4&#34;&gt;Qeustion&lt;/h3&gt;
 
 &lt;h2 id=&#34;every-함수-만들기&#34;&gt;every 함수 만들기&lt;/h2&gt;
 
-&lt;h3 id=&#34;my-soultion-2&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-3&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // 모든 element가 iterator에 의해 truthy한지 체크합니다.
@@ -10778,7 +10822,7 @@ function some(collection, iterator) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;qeustion-4&#34;&gt;Qeustion&lt;/h3&gt;
+&lt;h3 id=&#34;qeustion-5&#34;&gt;Qeustion&lt;/h3&gt;
 
 &lt;h2 id=&#34;contains-함수-만들기&#34;&gt;contains 함수 만들기&lt;/h2&gt;
 
@@ -10849,7 +10893,7 @@ function some(collection, iterator) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-3&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-4&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10885,7 +10929,7 @@ function some(collection, iterator) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-4&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-5&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -10926,7 +10970,7 @@ console.log(output); // --&amp;gt; 24
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-5&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-6&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function multiplyBetween(num1, num2) {
   // your code here
@@ -10970,7 +11014,7 @@ console.log(output); // --&amp;gt; 3
 &lt;p&gt;Do not use Math.sqrt(); for this problem. Instead, use this iterative way of solving the problem: (Math.sqrt()를 사용하지 말고, 아래 링크에서 나온 방법을 통해 해결하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-6&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-7&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 unction computeSquareRoot(num) {
@@ -11036,7 +11080,7 @@ console.log(output); // --&amp;gt; 1
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-7&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-8&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function modulo(num1, num2) {
@@ -11077,7 +11121,7 @@ Array will be contained only primitive type values. (string, number, boolean)
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-8&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-9&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;unction unique(array) {
   // your code here
@@ -11144,7 +11188,7 @@ Feel free to look up parseInt() and slice() on MDN if you don&#39;t remember how
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-9&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-10&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -11215,7 +11259,7 @@ sum of 2 consecutives 3 is 6 ...
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-10&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-11&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function sumConsecutives(s) {
@@ -11272,7 +11316,7 @@ If there is a tie for the oldest student, return the student whose name appears 
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-11&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-12&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -11320,7 +11364,7 @@ Your function should return true as there is at least one member from each age g
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-12&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-13&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 var isAgeDiverse = function(list) {
@@ -11373,7 +11417,7 @@ Notes:
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-13&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-14&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -11426,7 +11470,7 @@ function getTeenager(salesTeam) {
 k&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-14&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-15&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function sumDigits(num) {
@@ -11457,7 +11501,7 @@ function sumDigits(num) {
 When finished, your program should return that new set with integers separated by commas.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-15&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-16&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function offLineMinimum(strArr) {
@@ -11579,7 +11623,7 @@ function offLineMinimum(strArr) {
 &lt;p&gt;After you write your function, you can test it using the above inputs to make sure that it behaves correctly.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-16&#34;&gt;My_soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-17&#34;&gt;My_soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function range(start, end) {
@@ -11659,7 +11703,7 @@ if `strArr` is `[&amp;quot;coder&amp;quot;, &amp;quot;codec&amp;quot;]` then you
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;my-soultion-17&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-18&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -11732,7 +11776,7 @@ console.log(hammingDistance([&amp;quot;coder&amp;quot;, &amp;quot;codec&amp;quot
 &lt;p&gt;Write a function called &amp;lsquo;getFullName&amp;rsquo; that takes in an object which has this structure:&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-18&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-19&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getFullName(obj) {
@@ -11790,7 +11834,7 @@ function getFullName(obj) {
 &lt;p&gt;Write a function called billTotal that can be used to calculate the total to be paid at a restaurant &amp;ndash; including tip and tax &amp;ndash; given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-19&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-20&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -11847,7 +11891,7 @@ billTotal(10.00); // =&amp;gt; 12.45
 &lt;p&gt;For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-20&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-21&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -11879,7 +11923,7 @@ let primeMover = function(n) {
 &lt;p&gt;Given a number, &amp;ldquo;isOddWithoutModulo&amp;rdquo; returns whether the passed in number is odd. (숫자가 주어졌을때, &amp;ldquo;isOddWithoutModulo&amp;rdquo; 함수는 주어진 숫자가 홀수인지를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-21&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-22&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // 2. it is used by Math.floor 
@@ -11926,7 +11970,7 @@ function isOddWithoutModulo(num) {
 &lt;p&gt;Do NOT use any native &amp;lsquo;length&amp;rsquo; methods. (- &amp;lsquo;length&amp;rsquo; 메소드를 사용하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-22&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-23&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function getStringLength(string) {
@@ -11957,7 +12001,7 @@ function getStringLength(string) {
 &lt;p&gt;Given a character and a string, &amp;ldquo;getIndexOf&amp;rdquo; returns the first position of the given character in the given string. (문자와 문자열이 주어졌을때, &amp;ldquo;getIndexOf&amp;rdquo; 함수는 주어진 문자열에서 주어진 문자가 나타나는 첫번째 위치를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-23&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-24&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function getIndexOf(char, str) {
 
@@ -11986,7 +12030,7 @@ function getStringLength(string) {
 Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-24&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-25&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function calculateBillTotal(preTaxAndTipAmount) {
@@ -12016,7 +12060,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 &lt;p&gt;Write a function called &amp;ldquo;convertObjectToList&amp;rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &amp;ldquo;convertObjectToList&amp;rdquo;를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-25&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-26&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function convertObjectToList(obj) {
   // your code here
@@ -12048,7 +12092,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 &lt;p&gt;Given an integer, isOdd returns whether the integer is odd or not. (숫자가 주어졌을때, &amp;ldquo;isOdd&amp;rdquo; 함수는 주어진 숫자가 홀수 인지 아닌지를 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-26&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-27&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function isOdd(num) {
@@ -12075,7 +12119,7 @@ function isOdd(num) {
 &lt;p&gt;(n까지의 총 합: n을 매개변수로 받아 0 부터 n 까지 모든 수의 총 합을 반환하는 함수를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-27&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-28&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function sum(n) {
   let result = 0;
@@ -12100,7 +12144,7 @@ sum(4);
 &lt;p&gt;Given an array of numbers, onlyEvenElements returns a new array of just the even numbers. (숫자로 이루어진 배열이 주어졌을때, &amp;ldquo;onlyEvenElements&amp;rdquo; 함수는 주어진 배열에 있는 짝수로만으로 이루어진 새로운 배열을 반환해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-28&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-29&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function onlyEvenElements(arr) {
@@ -12131,7 +12175,7 @@ function onlyEvenElements(arr) {
 &lt;p&gt;You&amp;rsquo;ll need to use the &amp;ldquo;typeof&amp;rdquo; operator to first check that the values are numbers: (value가 숫자인지 확인하기 위하서는 &amp;ldquo;typeof&amp;rdquo; 연산자를 먼저 사용해야 합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-29&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-30&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // first 
@@ -12224,7 +12268,7 @@ function removeOddValues(object) {
 &lt;p&gt;Attention! In test case 5 userinput is one space input char as &amp;lsquo; &amp;lsquo;, please do not get confused with &amp;ldquo;, empty string (주의사항! 테스트 케이스 5 에서 주는 입력값은 띄어쓰기 한개(&amp;rsquo; &amp;lsquo;) 입니다. 빈 문자열(&amp;rdquo;) 과 혼동하지 마세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-30&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-31&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 unction firstCharacter (string) {
@@ -12343,7 +12387,7 @@ function DashInsert(string) {
 &lt;p&gt;If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요. 문장은 빈 문자열이 아닙니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-31&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-32&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // It&#39;s used by sort() 
@@ -12401,7 +12445,7 @@ return string.split(&#39; &#39;).reduce((acc,cur)=&amp;gt; acc.length&amp;lt;cur
 the last element of the array as that key&amp;rsquo;s value. (2. 배열의 마지막 요소를 해당 키의 값으로 가집니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-32&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-33&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function transformFirstAndLast(array) {
@@ -12430,7 +12474,7 @@ function transformFirstAndLast(array) {
 &lt;p&gt;Write a function called &amp;ldquo;getAllKeys&amp;rdquo; which returns an array of all the input object&amp;rsquo;s keys. (객체를 입력으로 받고 해당 객체의 키들을 배열로 반환하는 &amp;ldquo;getAllKeys&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-33&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-34&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -12458,7 +12502,7 @@ return arr;
 &lt;p&gt;Write a function &amp;lsquo;fromListToObject&amp;rsquo; which takes in an array of arrays, and returns an object with each pair of elements in the array as a key-value pair. (2차원 배열을 입력으로 받고 배열안에 있는 배열의 요소 페어를 키-값 페어로 가지는 객체를 반환하는 함수 &amp;lsquo;fromListToObject&amp;rsquo; 함수를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-34&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-35&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function fromListToObject(array) {
@@ -12489,7 +12533,7 @@ function fromListToObject(array) {
 &lt;p&gt;Write a function called &amp;ldquo;listAllValues&amp;rdquo; which returns an array of all the input object&amp;rsquo;s values. (객체를 입력으로 받고 해당 객체의 값들을 배열로 반환하는 &amp;ldquo;listAllValues&amp;rdquo; 함수를 작성하세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-35&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-36&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function listAllValues(obj) {
@@ -12522,7 +12566,7 @@ function listAllValues(obj) {
 &lt;p&gt;The argument will look something like this: (사원들의 정보는 아래와 같은 배열로 주어질 수 있습니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-36&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-37&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function transformEmployeeData(array) {
@@ -12592,7 +12636,7 @@ return result;
 &lt;p&gt;Given a name, &amp;ldquo;greetCustomer&amp;rdquo; returns a greeting based on how many times that customer has visited the restaurant. Please refer to the customerData object. (고객들의 방문 횟수를 가지고 있는 객체와 이름이 주어졌을때, &amp;ldquo;greetCustomer&amp;rdquo; 함수는 손님이 몇번 방문했는지에 따라 다른 인삿말을 반환합니다. customerData 객체를 참고해 주세요.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-37&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-38&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function greetCustomer(customerData, firstName) {
@@ -12626,7 +12670,7 @@ function greetCustomer(customerData, firstName) {
 &lt;p&gt;Given a string, &amp;ldquo;convertDoubleSpaceToSingle&amp;rdquo; returns the passed in string, with all the double spaces converted to single spaces. (문자열이 주어졌을때, &amp;ldquo;convertDoubleSpaceToSingle&amp;rdquo; 함수는 주어진 문자열에 있는 띄어쓰기 두개(double spaces)를 띄어쓰기 한개(single space)로 변환한 뒤 해당 문자열을 반환합니다.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soultion-38&#34;&gt;My_Soultion&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultion-39&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function convertDoubleSpaceToSingle(str) {
