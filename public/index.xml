@@ -10759,7 +10759,7 @@ extend = function(obj, ...objs) {
 
 &lt;h2 id=&#34;some-함수-만들기&#34;&gt;some 함수 만들기&lt;/h2&gt;
 
-&lt;h2 id=&#34;my-soultion-2&#34;&gt;My_Soultion&lt;/h2&gt;
+&lt;h3 id=&#34;my-soultion-2&#34;&gt;My_Soultion&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
