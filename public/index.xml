@@ -5448,6 +5448,16 @@ let Employee = {
 
 &lt;hr /&gt;
 
+&lt;h2 id=&#34;immutably-rename-object-keys-in-javascript&#34;&gt;Immutably Rename Object Keys in Javascript&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+obj = { name: &#39;Bobo&#39; }
+obj.somethingElse = obj.name
+delete obj.name
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;unll-과-undefined-의-차이점&#34;&gt;Unll 과 undefined 의 차이점&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
@@ -12106,6 +12116,21 @@ function isOdd(num) {
     return false;
   }
 }
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;my-refactoring-code&#34;&gt;My_Refactoring code&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function isOdd(num) {
+  // your code here
+
+  // 만약 num  % 2 의 나머지수가  0 이면 짝수 return false;
+  // 그게 아니라면 true 리턴
+  return num % 2 === 0 ? false : true;
+}
+
+
 
 &lt;/code&gt;&lt;/pre&gt;
 

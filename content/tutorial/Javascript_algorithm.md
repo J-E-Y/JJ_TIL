@@ -1719,6 +1719,23 @@ function isOdd(num) {
 
 ```
 
+### My_Refactoring code
+
+```js
+
+function isOdd(num) {
+  // your code here
+
+  // 만약 num  % 2 의 나머지수가  0 이면 짝수 return false;
+  // 그게 아니라면 true 리턴
+  return num % 2 === 0 ? false : true;
+}
+
+
+
+```
+
+
 ### Question
 
 ## sum

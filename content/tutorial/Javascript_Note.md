@@ -22,7 +22,16 @@ type: docs
 ------------------------------------------------------------------
 
 
+## Immutably Rename Object Keys in Javascript
 
+```js
+
+obj = { name: 'Bobo' }
+obj.somethingElse = obj.name
+delete obj.name
+
+
+```
 
 
 ## Unll 과 undefined 의 차이점
