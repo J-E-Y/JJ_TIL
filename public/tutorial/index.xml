@@ -131,7 +131,7 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Qeustion 최대 한번만 호출할 수 있는 함수 만들기 My_Soultion function once(func) { // ... agrgs 사용한 함수 var alreadyCalled = false; let result; return function(...args) { if (!alreadyCalled) { alreadyCalled = true; result = func(...args); } return result; }; }; // this 와 arguments 와 apply 를 사용한 함수 let alreadyCalled = false; let result; return function() { if(alreadyCalled) { return result } else { alreadyCalled = true return result = func.</description>
+      <description>Qeustion delay 함수 만들기 My_Soultion // 주어진 시간 (밀리초) 동안 함수를 지연한 다음 제공된 argument로 함수를 호출합니다. // // 원래 함수에 대한 argument는 wait parameter 뒤에 전달됩니다. // 예를 들어, 다음을 호출할 경우 // _.delay(someFunction, 500, &#39;a&#39;, &#39;b&#39;); // someFunction(&#39;a&#39;, &#39;b&#39;) 은 500ms 이후에 호출됩니다. _.delay = function(func, wait, ...args) { setTimeout(function(){ return func(...args); } ,wait); };  Qeustion 최대 한번만 호출할 수 있는 함수 만들기 My_Soultion function once(func) { // .</description>
     </item>
     
   </channel>

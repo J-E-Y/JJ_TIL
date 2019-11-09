@@ -16,6 +16,37 @@ type: docs
 ---------------------------------------------------------------------------
 
 
+### Qeustion
+
+
+## delay 함수 만들기 
+
+### My_Soultion
+
+```js
+
+
+
+  // 주어진 시간 (밀리초) 동안 함수를 지연한 다음 제공된 argument로 함수를 호출합니다.
+  //
+  // 원래 함수에 대한 argument는 wait parameter 뒤에 전달됩니다.
+  // 예를 들어, 다음을 호출할 경우
+  // _.delay(someFunction, 500, 'a', 'b');
+  // someFunction('a', 'b') 은 500ms 이후에 호출됩니다.
+
+
+  _.delay = function(func, wait, ...args) {
+
+      setTimeout(function(){
+        return func(...args);
+      } ,wait);
+
+  };
+
+
+
+
+```
 
 
 

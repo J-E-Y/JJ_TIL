@@ -25,6 +25,6 @@ fit
 
 # second
 
-You can also embed plots. See Figure \@ref(fig:pie) for example:
+You can also embed plots. See Figure 
 
 
