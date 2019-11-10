@@ -10651,6 +10651,76 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 &lt;h3 id=&#34;qeustion&#34;&gt;Qeustion&lt;/h3&gt;
 
+&lt;blockquote&gt;
+&lt;p&gt;다차원 배열을 가져와서, 1차원 배열로 변환합니다.&lt;/p&gt;
+
+&lt;p&gt;새 배열에는 다차원 배열의 모든 요소가 포함되어야 합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;my-soution&#34;&gt;My_Soution&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+
+ // for 문을이용한 것 
+
+function flatten (nestedArray) {
+    //[1, [2], [3, [[[4]]]]]
+    //oneflat([1, [2], [3, [[[4]]]]])
+    // result = [1, 2, 3, [[[4]]]]
+    // result = [1, 2, 3, 4]
+    let oneflat = function(array) {
+      let resultArr = []
+      for (let i in array) {
+        if (Array.isArray(array[i])) {
+          resultArr = resultArr.concat(array[i]);
+        } else {
+          resultArr.push(array[i]);
+        }
+      }
+      return resultArr;
+    }
+    let isinArr = function(array) {
+      for (let i in array) {
+        if (Array.isArray(array[i])) {
+          return true;
+        }
+      }
+      return false;
+    }
+    while(isinArr(nestedArray)) {
+      nestedArray = oneflat(nestedArray);
+    }
+    return nestedArray;
+  };
+
+
+
+function flatten (nestedArray, result) {
+
+
+     // 재귀를 이용한것 
+
+     result = [];
+     function flatarr(nestedArray) {
+       for(let i = 0; i &amp;lt; nestedArray.length; i++) {
+         if(!Array.isArray(nestedArray[i])) {
+           result = result.concat(nestedArray[i])
+         } else {
+           flatarr(nestedArray[i]);
+         }
+       }
+     } flatarr(nestedArray);
+     return result;
+   };
+ 
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;qeustion-1&#34;&gt;Qeustion&lt;/h3&gt;
+
 &lt;h2 id=&#34;delay-함수-만들기&#34;&gt;delay 함수 만들기&lt;/h2&gt;
 
 &lt;h3 id=&#34;my-soultion&#34;&gt;My_Soultion&lt;/h3&gt;
@@ -10679,7 +10749,7 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;qeustion-1&#34;&gt;Qeustion&lt;/h3&gt;
+&lt;h3 id=&#34;qeustion-2&#34;&gt;Qeustion&lt;/h3&gt;
 
 &lt;h2 id=&#34;최대-한번만-호출할-수-있는-함수-만들기&#34;&gt;최대 한번만 호출할 수 있는 함수 만들기&lt;/h2&gt;
 
@@ -10723,7 +10793,7 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;qeustion-2&#34;&gt;Qeustion&lt;/h3&gt;
+&lt;h3 id=&#34;qeustion-3&#34;&gt;Qeustion&lt;/h3&gt;
 
 &lt;h2 id=&#34;갹채를-함쳐주는-함수-만들기-2-key-덮어쓰지-않기&#34;&gt;갹채를 함쳐주는 함수 만들기 2(key 덮어쓰지 않기 )&lt;/h2&gt;
 
@@ -10749,7 +10819,7 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;qeustion-3&#34;&gt;Qeustion&lt;/h3&gt;
+&lt;h3 id=&#34;qeustion-4&#34;&gt;Qeustion&lt;/h3&gt;
 
 &lt;h2 id=&#34;갹채를-함쳐주는-함수-만들기&#34;&gt;갹채를 함쳐주는 함수 만들기&lt;/h2&gt;
 
@@ -10782,7 +10852,7 @@ extend = function(obj, ...objs) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;qeustion-4&#34;&gt;Qeustion&lt;/h3&gt;
+&lt;h3 id=&#34;qeustion-5&#34;&gt;Qeustion&lt;/h3&gt;
 
 &lt;h2 id=&#34;some-함수-만들기&#34;&gt;some 함수 만들기&lt;/h2&gt;
 
@@ -10816,7 +10886,7 @@ function some(collection, iterator) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;qeustion-5&#34;&gt;Qeustion&lt;/h3&gt;
+&lt;h3 id=&#34;qeustion-6&#34;&gt;Qeustion&lt;/h3&gt;
 
 &lt;h2 id=&#34;every-함수-만들기&#34;&gt;every 함수 만들기&lt;/h2&gt;
 
@@ -10849,7 +10919,7 @@ function some(collection, iterator) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;qeustion-6&#34;&gt;Qeustion&lt;/h3&gt;
+&lt;h3 id=&#34;qeustion-7&#34;&gt;Qeustion&lt;/h3&gt;
 
 &lt;h2 id=&#34;contains-함수-만들기&#34;&gt;contains 함수 만들기&lt;/h2&gt;
 
@@ -11691,7 +11761,7 @@ range(10, 2); // =&amp;gt; []
 You can re-use getFullName function.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;my-soution&#34;&gt;My_Soution&lt;/h3&gt;
+&lt;h3 id=&#34;my-soution-1&#34;&gt;My_Soution&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 var people = [

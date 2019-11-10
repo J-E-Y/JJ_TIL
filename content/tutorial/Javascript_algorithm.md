@@ -15,6 +15,78 @@ type: docs
 
 ---------------------------------------------------------------------------
 
+### Qeustion
+
+> 다차원 배열을 가져와서, 1차원 배열로 변환합니다.
+
+> 새 배열에는 다차원 배열의 모든 요소가 포함되어야 합니다.
+
+
+## My_Soution
+
+```js
+
+
+
+ // for 문을이용한 것 
+
+function flatten (nestedArray) {
+    //[1, [2], [3, [[[4]]]]]
+    //oneflat([1, [2], [3, [[[4]]]]])
+    // result = [1, 2, 3, [[[4]]]]
+    // result = [1, 2, 3, 4]
+    let oneflat = function(array) {
+      let resultArr = []
+      for (let i in array) {
+        if (Array.isArray(array[i])) {
+          resultArr = resultArr.concat(array[i]);
+        } else {
+          resultArr.push(array[i]);
+        }
+      }
+      return resultArr;
+    }
+    let isinArr = function(array) {
+      for (let i in array) {
+        if (Array.isArray(array[i])) {
+          return true;
+        }
+      }
+      return false;
+    }
+    while(isinArr(nestedArray)) {
+      nestedArray = oneflat(nestedArray);
+    }
+    return nestedArray;
+  };
+
+
+
+function flatten (nestedArray, result) {
+
+
+     // 재귀를 이용한것 
+
+     result = [];
+     function flatarr(nestedArray) {
+       for(let i = 0; i < nestedArray.length; i++) {
+         if(!Array.isArray(nestedArray[i])) {
+           result = result.concat(nestedArray[i])
+         } else {
+           flatarr(nestedArray[i]);
+         }
+       }
+     } flatarr(nestedArray);
+     return result;
+   };
+ 
+
+
+
+```
+
+
+
 
 ### Qeustion
 
