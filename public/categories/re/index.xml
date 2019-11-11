@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>re on JohnJung</title>
+    <link>/categories/re/</link>
+    <description>Recent content in re on JohnJung</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jul 2019 21:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="/categories/re/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>down</title>
+      <link>/post/downre/</link>
+      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/post/downre/</guid>
+      <description> sdsd Tsd &amp;gt; this is link http://rmarkdown.rstudio.com.
+ sdsdsecond sd
+ </description>
+    </item>
+    
+  </channel>
+</rss>

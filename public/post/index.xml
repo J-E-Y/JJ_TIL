@@ -6,10 +6,19 @@
     <description>Recent content in Posts on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>down</title>
+      <link>/post/downre/</link>
+      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/post/downre/</guid>
+      <description> frist  second  </description>
+    </item>
     
     <item>
       <title>Academic: the website builder for Hugo</title>
