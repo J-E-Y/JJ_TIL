@@ -131,9 +131,9 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Qeustion  다차원 배열을 가져와서, 1차원 배열로 변환합니다.
-새 배열에는 다차원 배열의 모든 요소가 포함되어야 합니다.
- My_Soution // for 문을이용한 것 function flatten (nestedArray) { //[1, [2], [3, [[[4]]]]] //oneflat([1, [2], [3, [[[4]]]]]) // result = [1, 2, 3, [[[4]]]] // result = [1, 2, 3, 4] let oneflat = function(array) { let resultArr = [] for (let i in array) { if (Array.isArray(array[i])) { resultArr = resultArr.concat(array[i]); } else { resultArr.</description>
+      <description>Question  using the JavaScript language, have the function firstReverse(str) take the str parameter being passed and return the string in reversed order.
+(firstReverse(str) 함수를 작성하세요. 문자열(str)이 주어졌을때, firstReverse(str) 함수는 주어진 문자열을 역순으로 반환합니다.)
+ firstReverse My_Soultion function firstReverse(str) { // code here ... :) // str = &amp;quot;code&amp;quot; // str.split(&#39;&#39;) // [&amp;quot;c&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;] // str.split(&#39;&#39;).reverse(); //[&amp;quot;e&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;c&amp;quot;] // str.split(&#39;&#39;).reverse().join(&#39;&#39;) // &amp;quot;edoc&amp;quot; return str.split(&#39;&#39;).reverse().join(&#39;&#39;); }  Question  Using the JavaScript language, have the function ABCheck(str) take the str parameter being passed and return the true if the characters a and b are separated by exactly 3 places anywhere in the string at least once Otherwise return the false.</description>
     </item>
     
   </channel>

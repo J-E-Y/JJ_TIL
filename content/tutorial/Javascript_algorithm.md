@@ -15,20 +15,133 @@ type: docs
 
 ---------------------------------------------------------------------------
 
+
+### Question 
+
+> using the JavaScript language, have the function firstReverse(str) take the str parameter being passed and return the string in reversed order. 
+
+> (firstReverse(str) 함수를 작성하세요. 문자열(str)이 주어졌을때, firstReverse(str) 함수는 주어진 문자열을 역순으로 반환합니다.)
+
+## firstReverse
+
+### My_Soultion
+
+
+
+
+```js
+function firstReverse(str) {
+  // code here ... :)
+  // str = "code"
+  // str.split('') // ["c", "o", "d", "e"]
+  // str.split('').reverse(); //["e", "d", "o", "c"]
+  // str.split('').reverse().join('') // "edoc"
+  return str.split('').reverse().join('');
+
+}
+
+
+
+
+```
+
+
+
+
+
+
+### Question
+
+> Using the JavaScript language, have the function ABCheck(str) take the str parameter being passed and return the true if the characters a and b are separated by exactly 3 places anywhere in the string at least once Otherwise return the false. 
+
+> (ABCheck(str) 함수를 작성하세요. 문자열(str)이 주어졌을때, ABCheck(str) 주어진 문자열에서 함수는 문자 a 와 b 사이가 문자열 안에서 한번이라도 정확히 3글자 떨어져 있으면 true를 반환하고 그렇지 않은 경우는 모두 false 를 반환합니다.)
+
+
+### My_Soultion
+
+
+```js
+
+function ABCheck(str) {
+  // code goes here
+
+  // lane Borrowed // true otherwise false;
+  
+  // 대문자를 소문자로 바꾼다. 
+  // str 의 각chr 를 접근한다. 
+  // a 를 발견하면 인덱스 번호를 착출한다 변수에 담는다. .
+  // b 를 발견하면 인덱스 번호를 착출한다 변수에 담는다/
+  // 만약 a 와 b
+  if (str === undefined) {
+    return false;
+  }
+  str = str.toLowerCase();
+  for (let i = 0; i < str.length; i ++ ) {
+    if (str[i] === "a" && str[i + 4] === "b") {
+      return true;
+    } else if (str[i] === "b" && str[i + 4] === "a" ) {
+      return true;
+    }
+  }
+  return false;
+}
+
+
+
+```
+
+
+
+
+
+
+
+
+### Question
+
+## filteredArray
+
+>return a new array that all elements passed testFunction without using filter method (filter 메소드를 사용하지 않고 testFunction 함수를 통과하는 요소로만 이루어진 배열을 반환하는 함수를 작성하세요.)
+
+### My_Soultion
+
+
+```js
+
+function filteredArray (array, testFunction) {
+ 
+  let result = []; // 출력할 빈 배열을 만든다. 
+
+  for (let i = 0; i < array.length; i ++ ) {
+  // loop 를 돌면서 testFunction 안에 parameter 를 넣었을때 동작한다면
+    if (testFunction(array[i])){
+    // 그값을 새로운  array 넣어서 저장한다. 
+      result.push(array[i])
+    }
+  }
+  return result;
+}
+
+
+
+
+```
+
+
 ### Qeustion
 
 > 다차원 배열을 가져와서, 1차원 배열로 변환합니다.
 
 > 새 배열에는 다차원 배열의 모든 요소가 포함되어야 합니다.
 
+## flatten 함수 만들기 
 
-## My_Soution
+### My_Soution
+
 
 ```js
 
-
-
- // for 문을이용한 것 
+// for 문을이용한 것 
 
 function flatten (nestedArray) {
     //[1, [2], [3, [[[4]]]]]
@@ -92,6 +205,7 @@ function flatten (nestedArray, result) {
 
 
 ## delay 함수 만들기 
+
 
 ### My_Soultion
 
