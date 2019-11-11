@@ -243,12 +243,20 @@
   </url>
   
   <url>
+    <loc>/courses/example/</loc>
+  </url>
+  
+  <url>
     <loc>/author/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/courses/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/example/example/</loc>
   </url>
   
 </urlset>

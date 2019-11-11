@@ -11,3 +11,5 @@ type: docs
 ---
 
 text
+[A post]({{< ref "/courses/example/example.md" >}})
+

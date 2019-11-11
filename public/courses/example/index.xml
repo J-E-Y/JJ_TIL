@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JohnJung</title>
+    <link>/courses/example/</link>
+    <description>Recent content on JohnJung</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/courses/example/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example Page 1</title>
+      <link>/courses/example/example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/example/example/</guid>
+      <description>In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:
+Tip 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim.</description>
+    </item>
+    
+  </channel>
+</rss>

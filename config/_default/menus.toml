@@ -10,7 +10,8 @@
   
   
 [[main_right]]
-  name = "Technical Terms"
+  name = "Courses"
+  #name = "Technical Terms"
   url = "courses"
   weight = 20
   
