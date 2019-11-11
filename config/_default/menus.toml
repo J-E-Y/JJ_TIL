@@ -29,10 +29,14 @@
   weight = 30
 
 [[main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 60
+ name = "Contact"
+ url = "#contact"
+ weight = 60
 
+[[main_right]]
+  name = "Teaching"
+  url = "courses"
+  weight = 70
 
 #[[main]]
 #  name = "talks"

@@ -4044,8 +4044,8 @@ for link in links:
       <description>
 
 
-&lt;div id=&#34;first&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;first&lt;/h1&gt;
+&lt;div id=&#34;firstsd&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;firstsd&lt;/h1&gt;
 &lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see
 &amp;gt; this is link &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
@@ -12935,6 +12935,15 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
 
 &lt;/code&gt;&lt;/pre&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Courses</title>
+      <link>/courses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/</guid>
+      <description></description>
     </item>
     
   </channel>
