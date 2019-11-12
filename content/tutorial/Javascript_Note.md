@@ -21,8 +21,15 @@ type: docs
 
 ------------------------------------------------------------------
 
+###  this is R I learned 
+
+## {{< list_categories >}}
+
+
 
 ## Immutably Rename Object Keys in Javascript
+
+
 
 ```js
 

@@ -5471,6 +5471,14 @@ let Employee = {
 
 &lt;hr /&gt;
 
+&lt;h3 id=&#34;this-is-r-i-learned&#34;&gt;this is R I learned&lt;/h3&gt;
+
+&lt;h2 id=&#34;hahahugoshortcode-s0-hbhb&#34;&gt;&lt;ul class=&#34;list-unstyled&#34;&gt;
+  
+  &lt;li&gt;&lt;a href=&#34;/categories/r/&#34;&gt;R&lt;/a&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;&lt;/h2&gt;
+
 &lt;h2 id=&#34;immutably-rename-object-keys-in-javascript&#34;&gt;Immutably Rename Object Keys in Javascript&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
