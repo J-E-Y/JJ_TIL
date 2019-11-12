@@ -15,6 +15,10 @@ type: docs
 ---
 
 
+
+
+
+
 * Description
 
 >Create responsive images by adding an `.img-fluid` class to the `<img>` tag. The image will then scale nicely to the parent element.

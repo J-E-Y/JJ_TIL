@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/courses/poli450/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/poli450/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/poli450/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/poli450/diff/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/talk/example/</loc>
     <lastmod>2030-06-01T13:00:00+09:00</lastmod>
   </url>
@@ -67,6 +87,11 @@
   
   <url>
     <loc>/tutorial/python/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -264,7 +289,7 @@
   </url>
   
   <url>
-    <loc>/courses/</loc>
+    <loc>/courses/poli450/syllabus/</loc>
   </url>
   
 </urlset>
