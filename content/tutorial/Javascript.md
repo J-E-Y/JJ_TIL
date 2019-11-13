@@ -12,6 +12,7 @@ type: docs
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 
+# this is why I want to 
 
 ## **1.data type**
 ---

@@ -15,6 +15,104 @@ type: docs
 
 ---------------------------------------------------------------------------
 
+### Question
+
+>convert nested (2-dimensional) array to flatten array! (2차원 배열을 1차원 배열로 전환하세요.)
+
+```js
+flatten([1,2,[3],[4]]); // [1,2,3,4]
+
+```
+
+### My_Soultion
+
+```js
+function flatten (array){
+  //your solution here
+  
+  // 1. 재귀함수 사용 
+  let ret = []; // 새로운 배열은 만든다. 
+
+   // 재귀함수
+    function filtered(array) {
+      // (1).array 의 각각의 요소에 접근한다.  [1,2,[11,25,21,34],[4]]
+      // (5). array 의 각각의 요소에 접근한다. [11,25,21,34]
+      for(let i = 0 ; i < array.length; i ++ ) {
+        // (2)만약 요소가 array 안에 array 가아니면  [1,2]
+        // (6)만약 요소가 array 안에 array 가 아니면 [11,25,21,34]
+        if (!Array.isArray(array[i])){
+          // (3)새로만든 배열안에 합친다. ret = [1,2]
+          // (7)새로만든 배열안에 합친다. ret = [1,2,11,25,21,34]
+          ret = ret.concat(array[i]);
+          // (4)만약 array 안에 array 가 발견되면
+          // array는 array안에 있는 array로 담기고
+          // filtered(array) 가 실행된다.  
+        } else {
+          filtered(array[i]);
+        }
+      }
+    }
+    filtered(array);
+  return ret;
+  }
+  
+  // reduece 사용해서 풀기
+   
+   return array.reduce(function(accu,curr){
+     return accu.concat(curr)
+   },[]);
+  }
+  
+
+
+
+```
+
+### Question 
+
+
+## bugInApple
+
+> Find out "B"(Bug) in a lot of "A"(Apple). (수많은 "A"(Apple) 사이에서 "B"(Bug)를 찾으세요.)
+
+>There will always be one bug in apple, not need to consider the situation that without bug or more than one bugs. (사과(apple) 사이에는 언제나 항상 한개의 벌레(bug)가 있으므로 벌레가 없는 경우나 한개 이상인 경우는 고려하지 않으셔도 됩니다.)
+
+```js
+
+//Note: 2-dimesional Array will be input. (노트: 2차원 배열이 매개변수로 주어집니다.)
+
+input:
+
+[["A","A","A","A","A"],["A","B","A","A","A"],["A","A","A","A","A"],["A","A","A","A","A"],["A","A","A","A","A"]]
+
+output:
+[1,1]
+
+```
+
+### My_Soultion
+
+```js
+
+let bugInApple = function(array) {
+ var location = [];
+  for ( var i = 0; i < array.length ; i++) {
+    for ( var j = 0; j < array[i].length ; j++) {
+      if (array[i][j] === "B") {
+        location.push(i);
+        location.push(j);
+      }
+     }
+  }
+  return location;
+}
+
+
+```
+
+
+
+
 
 ### Question 
 

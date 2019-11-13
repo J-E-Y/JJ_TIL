@@ -1,20 +1,41 @@
 ---
 title: Html
+subtitle: 'write here:rocket:' 
 date: 2019-04-29
 draft: true
+
 menu:
   tutorial:
-    name: Html
-    weight: 2
+    name: HTML
+    weight: 1
 toc: true
 type: docs
+tags:
+- this
+title: this is what I want;
+summary: write hsdere in frist page
+url_code: '#'
+url_dataset: '#'
+url_pdf: http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf
+url_poster: '#'
+url_project: ""
+url_slides: ""
+url_source: '#'
+url_video: '#'
 ---
+
 
 ![](/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png)
 
 
+
+
+
 ## &lt;strong&gt;
 ---
+
+
+
 
 ```js
 
