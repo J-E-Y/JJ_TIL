@@ -1,199 +1,113 @@
 ---
-title: Writing technical content in Academic
-date: 2019-07-12
-math: true
-diagram: true
-markup: mmark
+authors:
+- admin
+date: "2016-04-20T00:00:00+09:00"
+draft: false
+gallery_item:
+- album: gallery
+  caption: Default
+  image: theme-default.png
+- album: gallery
+  caption: Ocean
+  image: theme-ocean.png
+- album: gallery
+  caption: Forest
+  image: theme-forest.png
+- album: gallery
+  caption: Dark
+  image: theme-dark.png
+- album: gallery
+  caption: Apogee
+  image: theme-apogee.png
+- album: gallery
+  caption: 1950s
+  image: theme-1950s.png
+- album: gallery
+  caption: Coffee theme with Playfair font
+  image: theme-coffee-playfair.png
+- album: gallery
+  caption: Cupcake
+  image: theme-cupcake.png
 image:
-  placement: 3
-  caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
+  focal_point: ""
+  preview_only: false
+lastmod: "2019-04-17T00:00:00+09:00"
+subtitle: 'Create a beautifully simple website in under 10 minutes :rocket:'
+summary: Create a beautifully simple website in under 10 minutes.
+tags:
+- Academic
+title: 'Academic: the website builder for Hugo'
 ---
 
-Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.
+**Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 _widgets_, _themes_, and _language packs_ included!**
 
-**Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.**
+[Check out the latest **demo**](https://academic-demo.netlify.com/) of what you'll get in less than 10 minutes, or [view the **showcase**](https://sourcethemes.com/academic/#expo) of personal, project, and business sites.
 
-On this page, you'll find some examples of the types of technical content that can be rendered with Academic.
+- [**Setup Academic**](#install)
+- [**Get Started**](https://sourcethemes.com/academic/docs/get-started/)
+- [View the documentation](https://sourcethemes.com/academic/docs/)
+- [Ask a question](http://discuss.gohugo.io/)
+- [Request a feature or report a bug](https://github.com/gcushen/hugo-academic/issues)
+- Updating? View the [Update Guide](https://sourcethemes.com/academic/docs/update/) and [Release Notes](https://sourcethemes.com/academic/updates/)
+- Support development of Academic:
+  - [Donate a coffee](https://paypal.me/cushen)
+  - [Become a backer on Patreon](https://www.patreon.com/cushen)
+  - [Decorate your laptop or journal with an Academic sticker](https://www.redbubble.com/people/neutreno/works/34387919-academic)
+  - [Wear the T-shirt](https://academic.threadless.com/)
 
-## Examples
+[![Screenshot](https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png)](https://github.com/gcushen/hugo-academic/)
 
-### Code
+**Key features:**
 
-Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the `highlight` option in your `config/_default/params.toml` file.
+- **Page builder** - Create *anything* with [**widgets**](https://sourcethemes.com/academic/docs/page-builder/) and [**elements**](https://sourcethemes.com/academic/docs/writing-markdown-latex/)
+- **Edit any type of content** - Blog posts, publications, talks, slides, projects, and more!
+- **Create content** in [**Markdown**](https://sourcethemes.com/academic/docs/writing-markdown-latex/), [**Jupyter**](https://sourcethemes.com/academic/docs/jupyter/), or [**RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
+- **Plugin System** - Fully customizable [**color** and **font themes**](https://sourcethemes.com/academic/themes/)
+- **Display Code and Math** - Code highlighting and [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics) supported
+- **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more!
+- **Beautiful Site** - Simple and refreshing one page design
+- **Industry-Leading SEO** - Help get your website found on search engines and social media
+- **Media Galleries** - Display your images and videos with captions in a customizable gallery
+- **Mobile Friendly** - Look amazing on every screen with a mobile friendly version of your site
+- **Multi-language** - 15+ language packs including English, 中文, and Português
+- **Multi-user** - Each author gets their own profile page
+- **Privacy Pack** - Assists with GDPR
+- **Stand Out** - Bring your site to life with animation, parallax backgrounds, and scroll effects
+- **One-Click Deployment** - No servers. No databases. Only files.
 
-    ```python
-    import pandas as pd
-    data = pd.read_csv("data.csv")
-    data.head()
-    ```
+## Color Themes
 
-renders as
+Academic comes with **day (light) and night (dark) mode** built-in. Click the sun/moon icon in the top right of the [Demo](https://academic-demo.netlify.com/) to see it in action!
 
-```python
-import pandas as pd
-data = pd.read_csv("data.csv")
-data.head()
-```
+Choose a stunning color and font theme for your site. Themes are fully customizable and include:
 
-### Math
+{{< gallery >}}
 
-Academic supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the `math` option in your `config/_default/params.toml` file and adding `markup: mmark` to your page front matter.
+## Ecosystem
 
-To render *inline* or *block* math, wrap your LaTeX math with `$$...$$`.
+* **[Academic Admin](https://github.com/sourcethemes/academic-admin):** An admin tool to import publications from BibTeX or import assets for an offline site
+* **[Academic Scripts](https://github.com/sourcethemes/academic-scripts):** Scripts to help migrate content to new versions of Academic
 
-Example **math block**:
+## Install
 
-```tex
-$$\gamma_{n} = \frac{ 
-\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
-\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
-{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-```
+You can choose from one of the following four methods to install:
 
-renders as
+* [**one-click install using your web browser (recommended)**](https://sourcethemes.com/academic/docs/install/#install-with-web-browser)
+* [install on your computer using **Git** with the Command Prompt/Terminal app](https://sourcethemes.com/academic/docs/install/#install-with-git)
+* [install on your computer by downloading the **ZIP files**](https://sourcethemes.com/academic/docs/install/#install-with-zip)
+* [install on your computer with **RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
 
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
+Then [personalize and deploy your new site](https://sourcethemes.com/academic/docs/get-started/).
 
-Example **inline math** `$$\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2$$` renders as $$\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2$$ .
+## Updating
 
-Example **multi-line math** using the `\\` math linebreak:
+[View the Update Guide](https://sourcethemes.com/academic/docs/update/).
 
-```tex
-$$f(k;p_0^*) = \begin{cases} p_0^* & \text{if }k=1, \\
-1-p_0^* & \text {if }k=0.\end{cases}$$
-```
+Feel free to *star* the project on [Github](https://github.com/gcushen/hugo-academic/) to help keep track of [updates](https://sourcethemes.com/academic/updates).
 
-renders as
+## License
 
-$$f(k;p_0^*) = \begin{cases} p_0^* & \text{if }k=1, \\
-1-p_0^* & \text {if }k=0.\end{cases}$$
+Copyright 2016-present [George Cushen](https://georgecushen.com).
 
-### Diagrams
-
-Academic supports a Markdown extension for diagrams. You can enable this feature by toggling the `diagram` option in your `config/_default/params.toml` file or by adding `diagram: true` to your page front matter.
-
-An example **flowchart**:
-
-    ```mermaid
-    graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
-    ```
-
-renders as
-
-```mermaid
-graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
-```
-
-An example **sequence diagram**:
-
-    ```mermaid
-    sequenceDiagram
-      participant Alice
-      participant Bob
-      Alice->John: Hello John, how are you?
-      loop Healthcheck
-          John->John: Fight against hypochondria
-      end
-      Note right of John: Rational thoughts <br/>prevail...
-      John-->Alice: Great!
-      John->Bob: How about you?
-      Bob-->John: Jolly good!
-    ```
-
-renders as
-
-```mermaid
-sequenceDiagram
-  participant Alice
-  participant Bob
-  Alice->John: Hello John, how are you?
-  loop Healthcheck
-      John->John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts <br/>prevail...
-  John-->Alice: Great!
-  John->Bob: How about you?
-  Bob-->John: Jolly good!
-```
-
-An example **Gantt diagram**:
-
-    ```mermaid
-    gantt
-      dateFormat  YYYY-MM-DD
-      section Section
-      A task           :a1, 2014-01-01, 30d
-      Another task     :after a1  , 20d
-      section Another
-      Task in sec      :2014-01-12  , 12d
-      another task      : 24d
-    ```
-
-renders as
-
-```mermaid
-gantt
-  dateFormat  YYYY-MM-DD
-  section Section
-  A task           :a1, 2014-01-01, 30d
-  Another task     :after a1  , 20d
-  section Another
-  Task in sec      :2014-01-12  , 12d
-  another task      : 24d
-```
-
-### Todo lists
-
-You can even write your todo lists in Academic too:
-
-```markdown
-- [x] Write math example
-- [x] Write diagram example
-- [ ] Do something else
-```
-
-renders as
-
-- [x] Write math example
-- [x] Write diagram example
-- [ ] Do something else
-
-### Tables
-
-Represent your data in tables:
-
-```markdown
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-```
-
-renders as
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-### Asides
-
-Academic supports a Markdown extension for asides, also referred to as *notices* or *hints*. By prefixing a paragraph with `A>`, it will render as an aside. You can enable this feature by adding `markup: mmark` to your page front matter, or alternatively using the [*Alert* shortcode](https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts).
-
-```markdown
-A> A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-```
-
-renders as
-
-A> A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-
-### Did you find this page helpful? Consider sharing it 🙌
+Released under the [MIT](https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md) license.
