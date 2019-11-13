@@ -6,10 +6,19 @@
     <description>Recent content in Categories on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>post1</title>
+      <link>/categories/post1/</link>
+      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/categories/post1/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>R</title>

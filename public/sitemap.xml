@@ -39,23 +39,23 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/post/downre/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ta/</loc>
+    <loc>/categories/</loc>
+    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/post1/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -76,8 +76,9 @@
   </url>
   
   <url>
-    <loc>/tutorial/html/</loc>
+    <loc>/tags/html/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -91,6 +92,12 @@
   </url>
   
   <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/courses/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
@@ -101,9 +108,13 @@
   </url>
   
   <url>
-    <loc>/tags/java/</loc>
+    <loc>/tutorial/html/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tutorial/html2/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -140,14 +151,14 @@
   </url>
   
   <url>
-    <loc>/tags/source-themes/</loc>
-    <lastmod>2019-04-07T00:00:00+09:00</lastmod>
+    <loc>/authors/admin/</loc>
+    <lastmod>2019-04-17T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
-    <lastmod>2019-04-17T00:00:00+09:00</lastmod>
+    <loc>/tags/kkk/</loc>
+    <lastmod>2019-04-07T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -202,14 +213,14 @@
   </url>
   
   <url>
-    <loc>/tags/academic/</loc>
+    <loc>/post/getting-started/</loc>
     <lastmod>2019-04-17T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/getting-started/</loc>
+    <loc>/tags/academic/</loc>
     <lastmod>2019-04-17T00:00:00+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -224,8 +235,8 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <loc>/tags/source-themes/</loc>
+    <lastmod>2015-09-01T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   

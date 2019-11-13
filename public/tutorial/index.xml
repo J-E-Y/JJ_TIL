@@ -48,21 +48,12 @@ git add . 하고 다시 git merge develop 한다.
     </item>
     
     <item>
-      <title>Html</title>
-      <link>/tutorial/html/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/html/</guid>
-      <description>&amp;lt;strong&amp;gt; /* The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. Note what&#39;s the difference bewteen strong tag and b tag ? strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. b tag :평상시대로 굵게 읽는다. */  &amp;lt;h1&amp;gt; &amp;lt;!-- The HTML &amp;lt;h1&amp;gt; tag defines the highest level or most important heading in the HTML document.</description>
-    </item>
-    
-    <item>
       <title>Javascript</title>
       <link>/tutorial/javascript/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript/</guid>
-      <description>1.data type 자료형이란?  어떤 종류의 데이터를 사용하는 것이지 컴퓨터에게 알려주는 것 자료형마다 사용 가능한 연산자(Operator)를 따로 가지고 있습니다! 자료형이 같아야 연산을 할 수 있습니다!
+      <description>this is why I want to 1.data type 자료형이란?  어떤 종류의 데이터를 사용하는 것이지 컴퓨터에게 알려주는 것 자료형마다 사용 가능한 연산자(Operator)를 따로 가지고 있습니다! 자료형이 같아야 연산을 할 수 있습니다!
  자료형의 종류  Number :숫자 String :문자 Boolean :true and False Null : 값이 비어있다 Undefined :값이 정의되지 않았다 symbol(new in ECMAScript 6) and Object :  1. Number type (숫자)  ex)
 var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10.</description>
     </item>
@@ -74,6 +65,24 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
       
       <guid>/tutorial/python/</guid>
       <description>Python: Operators  Arithmetic operators Assignment operators Comparison operators Logical operators  Arithmetic Operator           + Addition x + y   - Subtraction x - y   * Multiplication x * y   / Division x / y   % Modulus x % y   ** Exponentiation x ** y   // Floor division x // y    Assignment Operators           = x = 5 x = 5   += x += 3 x = x + 3   -= x -= 3 x = x - 3   *= x *= 3 x = x * 3   /= x /= 3 x = x / 3   %= x %= 3 x = x % 3   //= x //= 3 x = x // 3   **= x **= 3 x = x ** 3   &amp;amp;= x &amp;amp;= 3 x = x &amp;amp; 3    = x   ^= x ^= 3 x = x ^ 3   &amp;gt;&amp;gt;= x &amp;gt;&amp;gt;= 3 x = x &amp;gt;&amp;gt; 3   &amp;lt;&amp;lt;= x &amp;lt;&amp;lt;= 3 x = x &amp;lt;&amp;lt; 3    Comparison Operators           == Equal x == y   !</description>
+    </item>
+    
+    <item>
+      <title>this is what I want;</title>
+      <link>/tutorial/html/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/html/</guid>
+      <description>write hsdere in frist page</description>
+    </item>
+    
+    <item>
+      <title>this is what I want;</title>
+      <link>/tutorial/html2/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/html2/</guid>
+      <description>write hsdere in frist page</description>
     </item>
     
     <item>

@@ -131,7 +131,7 @@
     </item>
     
     <item>
-      <title>down</title>
+      <title>11111</title>
       <link>/post/downre/</link>
       <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
       
@@ -928,497 +928,6 @@ git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
     </item>
     
     <item>
-      <title>Html</title>
-      <link>/tutorial/html/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/html/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;lt-strong-gt&#34;&gt;&amp;lt;strong&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-/*
-
-The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. 
-
-
-
-Note 
-
-what&#39;s the difference bewteen strong tag and b tag ?
-
-strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. 
-
-b tag :평상시대로 굵게 읽는다.
-
-*/
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-h1-gt&#34;&gt;&amp;lt;h1&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--  
-
-The HTML &amp;lt;h1&amp;gt; tag defines the highest level or most important heading in the HTML document. This tag is also commonly referred to as the &amp;lt;h1&amp;gt; element.
-
---&amp;gt;
-
-
-
-&amp;lt;!--  Syntax--&amp;gt;
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;h1&amp;gt;Heading 1 goes here&amp;lt;/h1&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-br-gt&#34;&gt;&amp;lt;br&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-
-&amp;lt;!-- The HTML &amp;lt;br&amp;gt; tag defines a line break within text in the HTML document. This tag is also commonly referred to as the &amp;lt;br&amp;gt; element.--&amp;gt;
-
-
-&amp;lt;!-- Syntax --&amp;gt;
-
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;The paragraph starts here&amp;lt;br&amp;gt;
-and ends on the next line.&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;nbsp-making-space&#34;&gt;&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;  (making space)&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-/*
-HTML will only display one space between words, no matter how many times you press the space bar. To force an extra space to show up, type `&amp;amp;nbsp;` in the area where you want to force the space.
-
-*/
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-p-gt&#34;&gt;&amp;lt;p&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!---
-The HTML &amp;lt;p&amp;gt; tag defines a paragraph in the HTML document. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.--&amp;gt;
-
-* syntax
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;The paragraph goes here.&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-hr-gt&#34;&gt;&amp;lt;hr&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-The HTML &amp;lt;hr&amp;gt; tag defines a thematic break between paragraphs in HTML5, and a horizontal rule in HTML 4.01. This tag is also commonly referred to as the &amp;lt;hr&amp;gt; element.
-
-* Note
-
-The HTML &amp;lt;hr&amp;gt; element makes line bewteen two paragraphs.
-
-* Syntax
-
---&amp;gt;
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;This is the first paragraph.&amp;lt;/p&amp;gt;
-&amp;lt;hr&amp;gt;
-&amp;lt;p&amp;gt;This is the second paragraph.&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-div-gt&#34;&gt;&amp;lt;div&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-The HTML &amp;lt;p&amp;gt; tag defines a generic container in an HTML document that is generally used to group elements. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.
-
-* Note
- 
-The HTML &amp;lt;p&amp;gt; element is found within the &amp;lt;body&amp;gt; tag.
-The &amp;lt;div&amp;gt; tag is generally used to group elements together.
-
-&amp;lt;p&amp;gt; :element is a block-level element.
-
-
-* Syntax
-
-
---&amp;gt;
-
-&amp;lt;body&amp;gt;
-
-&amp;lt;div&amp;gt;
-  &amp;lt;div&amp;gt;this is the type of elemnt &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-span-gt&#34;&gt;&amp;lt;span&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-`height 와 width 적용이 안된다.` 하지만 Disply 사용해서 적용할수 있다 
-
-
-The HTML &amp;lt;span&amp;gt; tag defines a generic inline container in an HTML document. This tag is also commonly referred to as the &amp;lt;span&amp;gt; element.
-
-Note
-
-&amp;lt;span&amp;gt;  tag is is generally used for styling purposes when there is no other element to use.
-&amp;lt;span&amp;gt;  tag is a inline-level element
-&amp;lt;span&amp;gt; tag does not inherently represent anything
-
-
-Syntax
-
---&amp;gt;
-
-&amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;span&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;span class=&amp;quot;red_text&amp;quot;&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-nav-gt&#34;&gt;&amp;lt;nav&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-The HTML &amp;lt;nav&amp;gt; tag is an HTML5 element that defines a section with navigation links in the HTML document. This tag is also commonly referred to as the &amp;lt;nav&amp;gt; element. It is used to define a block of navigation links, either within the current document or to other documents
-
-
-* Note
-
- The &amp;lt;nav&amp;gt; tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: &amp;lt;header&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;section&amp;gt;, &amp;lt;aside&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;footer&amp;gt;.
-
-
-* Syntax
-
---&amp;gt;
-
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;nav&amp;gt;
-  &amp;lt;ul&amp;gt;
-    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section1/index.html&amp;quot;&amp;gt;Section1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section2/index.html&amp;quot;&amp;gt;Section2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section3/index.html&amp;quot;&amp;gt;Section3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-  &amp;lt;/ul&amp;gt;
-&amp;lt;/nav&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-ul-gt&#34;&gt;&amp;lt;ul&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-* Description
-
-(부모태그)
-The HTML &amp;lt;ul&amp;gt; tag defines an unordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ul&amp;gt; element.
-
-* Note
-
-The HTML &amp;lt;ul&amp;gt; element is found within the &amp;lt;body&amp;gt; tag.
-The &amp;lt;ul&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags.
-Use the &amp;lt;ul&amp;gt; tag when the list items have no numerical ordering.
-You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu lists.
-
-* Syntax
-
-
---&amp;gt;
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;ul&amp;gt;
-  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-li-gt&#34;&gt;&amp;lt;li&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-* Description
-
-
-(부모태그)
-The HTML &amp;lt;li&amp;gt; tag defines a list item in &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt; in the HTML document. This tag is also commonly referred to as the &amp;lt;li&amp;gt; element.
-
-
-* Syntax
-
---&amp;gt;
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;ul&amp;gt;
-  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;ol&amp;gt;
-  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
-&amp;lt;/ol&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-
-* Sample Output 2
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;menu type=&amp;quot;toolbar&amp;quot;&amp;gt;
-  &amp;lt;li&amp;gt;
-    &amp;lt;menu label=&amp;quot;File&amp;quot;&amp;gt;
-      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;new()&amp;quot;&amp;gt;New&amp;lt;/button&amp;gt;
-      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;save()&amp;quot;&amp;gt;Save&amp;lt;/button&amp;gt;
-    &amp;lt;/menu&amp;gt;
-  &amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;
-    &amp;lt;menu label=&amp;quot;Edit&amp;quot;&amp;gt;
-      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;copy()&amp;quot;&amp;gt;Copy&amp;lt;/button&amp;gt;
-      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;paste()&amp;quot;&amp;gt;Paste&amp;lt;/button&amp;gt;
-    &amp;lt;/menu&amp;gt;
-  &amp;lt;/li&amp;gt;
-&amp;lt;/menu&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&amp;lt;!--
-* Note
-
-The &amp;lt;li&amp;gt; tag is used within &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt;.
-You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
-
---&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;lt-ol-gt&#34;&gt;&amp;lt;ol&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-* Description
-(자식태그)
-The HTML &amp;lt;ol&amp;gt; tag defines an ordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ol&amp;gt; element.
-
-* Syntax
-
---&amp;gt;
-
-
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;ol&amp;gt;
-  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
-&amp;lt;/ol&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-&amp;lt;!--
-
-* Note
-
-The &amp;lt;ol&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags. 
-Use the &amp;lt;ol&amp;gt; tag when the list items have numeric, meaningful ordering.
-You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists.
-
---&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-form-gt&#34;&gt;&amp;lt;form&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-
-&amp;lt;!--
-
-* Description
-
-The HTML `&amp;lt;form&amp;gt; tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `&amp;lt;form&amp;gt;` element.
-
-* Syntax
-
---&amp;gt;
-
-&amp;lt;body&amp;gt;
-  &amp;lt;form action=&amp;quot;&amp;quot; method=&amp;quot;get&amp;quot;&amp;gt;
-    Company: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;company&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
-    Address: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;address&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
-    &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Submit&amp;quot;&amp;gt;
-  &amp;lt;/form&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Sample Output&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-06-01 at 9.40.42 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;lt-container-gt&#34;&gt;&amp;lt;container&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-* Description
-
-In HTML, the container is the area enclosed by the beginning and ending tags. For example &amp;lt; HTML &amp;gt; encloses an entire document while other tags may enclose a single word, paragraph, or other elements. In HTML code, all container must have a start and stop tag to close the container. Without a stop tag the start tag will apply to the entire document.
- 
-
---&amp;gt;
-
-
-
-&amp;lt;html&amp;gt;
-  &amp;lt;head&amp;gt;
-    
-  &amp;lt;/head&amp;gt;
-  &amp;lt;body&amp;gt;
-    &amp;lt;div id=&amp;quot;container&amp;quot;&amp;gt;
-      
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-
-
-
-
-
-&amp;lt;!--
-
- * note
- 
- The container div, and sometimes content div, are almost always used to allow for more sophisticated CSS styling. The body tag is special in some ways. Browsers don&#39;t treat it like a normal div; its position and dimensions are tied to the browser window.
-
-But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.
-
-Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can&#39;t go on the outside of the body, allowing for content on the outside of a border.
-
-
---&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;cashing&#34;&gt;cashing&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-* Description
-
-파일을 따로 만든후 저장해놓는것
-
-
-* how to use it? 
-
-&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=“파일이름&amp;quot;&amp;gt;
-
-
-* Sample Output
-
---&amp;gt;
-
-
-&amp;lt;!doctype html&amp;gt;
-
-&amp;lt;html&amp;gt;
-&amp;lt;title&amp;gt;web1 - Son&amp;lt;/title&amp;gt;
-&amp;lt;meta charset=&amp;quot;ut-8&amp;quot;&amp;gt;
-&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;style.css&amp;quot;&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Javascript</title>
       <link>/tutorial/javascript/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -1427,6 +936,8 @@ Plus, content, like a copyright notice for example, can go on the outside of the
       <description>
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;this-is-why-i-want-to&#34;&gt;this is why I want to&lt;/h1&gt;
 
 &lt;h2 id=&#34;1-data-type&#34;&gt;&lt;strong&gt;1.data type&lt;/strong&gt;&lt;/h2&gt;
 
@@ -3745,6 +3256,507 @@ for link in links:
     </item>
     
     <item>
+      <title>this is what I want;</title>
+      <link>/tutorial/html/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/html/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lt-strong-gt&#34;&gt;&amp;lt;strong&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+/*
+
+The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. 
+
+
+
+Note 
+
+what&#39;s the difference bewteen strong tag and b tag ?
+
+strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. 
+
+b tag :평상시대로 굵게 읽는다.
+
+*/
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-h1-gt&#34;&gt;&amp;lt;h1&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--  
+
+The HTML &amp;lt;h1&amp;gt; tag defines the highest level or most important heading in the HTML document. This tag is also commonly referred to as the &amp;lt;h1&amp;gt; element.
+
+--&amp;gt;
+
+
+
+&amp;lt;!--  Syntax--&amp;gt;
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;h1&amp;gt;Heading 1 goes here&amp;lt;/h1&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-br-gt&#34;&gt;&amp;lt;br&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;!-- The HTML &amp;lt;br&amp;gt; tag defines a line break within text in the HTML document. This tag is also commonly referred to as the &amp;lt;br&amp;gt; element.--&amp;gt;
+
+
+&amp;lt;!-- Syntax --&amp;gt;
+
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;The paragraph starts here&amp;lt;br&amp;gt;
+and ends on the next line.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;nbsp-making-space&#34;&gt;&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;  (making space)&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+/*
+HTML will only display one space between words, no matter how many times you press the space bar. To force an extra space to show up, type `&amp;amp;nbsp;` in the area where you want to force the space.
+
+*/
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-p-gt&#34;&gt;&amp;lt;p&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!---
+The HTML &amp;lt;p&amp;gt; tag defines a paragraph in the HTML document. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.--&amp;gt;
+
+* syntax
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;The paragraph goes here.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-hr-gt&#34;&gt;&amp;lt;hr&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+The HTML &amp;lt;hr&amp;gt; tag defines a thematic break between paragraphs in HTML5, and a horizontal rule in HTML 4.01. This tag is also commonly referred to as the &amp;lt;hr&amp;gt; element.
+
+* Note
+
+The HTML &amp;lt;hr&amp;gt; element makes line bewteen two paragraphs.
+
+* Syntax
+
+--&amp;gt;
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;This is the first paragraph.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;p&amp;gt;This is the second paragraph.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-div-gt&#34;&gt;&amp;lt;div&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+The HTML &amp;lt;p&amp;gt; tag defines a generic container in an HTML document that is generally used to group elements. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.
+
+* Note
+ 
+The HTML &amp;lt;p&amp;gt; element is found within the &amp;lt;body&amp;gt; tag.
+The &amp;lt;div&amp;gt; tag is generally used to group elements together.
+
+&amp;lt;p&amp;gt; :element is a block-level element.
+
+
+* Syntax
+
+
+--&amp;gt;
+
+&amp;lt;body&amp;gt;
+
+&amp;lt;div&amp;gt;
+  &amp;lt;div&amp;gt;this is the type of elemnt &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-span-gt&#34;&gt;&amp;lt;span&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+`height 와 width 적용이 안된다.` 하지만 Disply 사용해서 적용할수 있다 
+
+
+The HTML &amp;lt;span&amp;gt; tag defines a generic inline container in an HTML document. This tag is also commonly referred to as the &amp;lt;span&amp;gt; element.
+
+Note
+
+&amp;lt;span&amp;gt;  tag is is generally used for styling purposes when there is no other element to use.
+&amp;lt;span&amp;gt;  tag is a inline-level element
+&amp;lt;span&amp;gt; tag does not inherently represent anything
+
+
+Syntax
+
+--&amp;gt;
+
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;span&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;span class=&amp;quot;red_text&amp;quot;&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-nav-gt&#34;&gt;&amp;lt;nav&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+The HTML &amp;lt;nav&amp;gt; tag is an HTML5 element that defines a section with navigation links in the HTML document. This tag is also commonly referred to as the &amp;lt;nav&amp;gt; element. It is used to define a block of navigation links, either within the current document or to other documents
+
+
+* Note
+
+ The &amp;lt;nav&amp;gt; tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: &amp;lt;header&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;section&amp;gt;, &amp;lt;aside&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;footer&amp;gt;.
+
+
+* Syntax
+
+--&amp;gt;
+
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;nav&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section1/index.html&amp;quot;&amp;gt;Section1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section2/index.html&amp;quot;&amp;gt;Section2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section3/index.html&amp;quot;&amp;gt;Section3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+&amp;lt;/nav&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-ul-gt&#34;&gt;&amp;lt;ul&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+* Description
+
+(부모태그)
+The HTML &amp;lt;ul&amp;gt; tag defines an unordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ul&amp;gt; element.
+
+* Note
+
+The HTML &amp;lt;ul&amp;gt; element is found within the &amp;lt;body&amp;gt; tag.
+The &amp;lt;ul&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags.
+Use the &amp;lt;ul&amp;gt; tag when the list items have no numerical ordering.
+You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu lists.
+
+* Syntax
+
+
+--&amp;gt;
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-li-gt&#34;&gt;&amp;lt;li&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+* Description
+
+
+(부모태그)
+The HTML &amp;lt;li&amp;gt; tag defines a list item in &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt; in the HTML document. This tag is also commonly referred to as the &amp;lt;li&amp;gt; element.
+
+
+* Syntax
+
+--&amp;gt;
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;ol&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+
+* Sample Output 2
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;menu type=&amp;quot;toolbar&amp;quot;&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;menu label=&amp;quot;File&amp;quot;&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;new()&amp;quot;&amp;gt;New&amp;lt;/button&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;save()&amp;quot;&amp;gt;Save&amp;lt;/button&amp;gt;
+    &amp;lt;/menu&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;menu label=&amp;quot;Edit&amp;quot;&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;copy()&amp;quot;&amp;gt;Copy&amp;lt;/button&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;paste()&amp;quot;&amp;gt;Paste&amp;lt;/button&amp;gt;
+    &amp;lt;/menu&amp;gt;
+  &amp;lt;/li&amp;gt;
+&amp;lt;/menu&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;!--
+* Note
+
+The &amp;lt;li&amp;gt; tag is used within &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt;.
+You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
+
+--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;lt-ol-gt&#34;&gt;&amp;lt;ol&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+* Description
+(자식태그)
+The HTML &amp;lt;ol&amp;gt; tag defines an ordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ol&amp;gt; element.
+
+* Syntax
+
+--&amp;gt;
+
+
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;ol&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+&amp;lt;!--
+
+* Note
+
+The &amp;lt;ol&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags. 
+Use the &amp;lt;ol&amp;gt; tag when the list items have numeric, meaningful ordering.
+You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists.
+
+--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-form-gt&#34;&gt;&amp;lt;form&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;!--
+
+* Description
+
+The HTML `&amp;lt;form&amp;gt; tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `&amp;lt;form&amp;gt;` element.
+
+* Syntax
+
+--&amp;gt;
+
+&amp;lt;body&amp;gt;
+  &amp;lt;form action=&amp;quot;&amp;quot; method=&amp;quot;get&amp;quot;&amp;gt;
+    Company: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;company&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+    Address: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;address&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+    &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Submit&amp;quot;&amp;gt;
+  &amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sample Output&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-06-01 at 9.40.42 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lt-container-gt&#34;&gt;&amp;lt;container&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+* Description
+
+In HTML, the container is the area enclosed by the beginning and ending tags. For example &amp;lt; HTML &amp;gt; encloses an entire document while other tags may enclose a single word, paragraph, or other elements. In HTML code, all container must have a start and stop tag to close the container. Without a stop tag the start tag will apply to the entire document.
+ 
+
+--&amp;gt;
+
+
+
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;div id=&amp;quot;container&amp;quot;&amp;gt;
+      
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+
+
+
+
+&amp;lt;!--
+
+ * note
+ 
+ The container div, and sometimes content div, are almost always used to allow for more sophisticated CSS styling. The body tag is special in some ways. Browsers don&#39;t treat it like a normal div; its position and dimensions are tied to the browser window.
+
+But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.
+
+Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can&#39;t go on the outside of the body, allowing for content on the outside of a border.
+
+
+--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;cashing&#34;&gt;cashing&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+* Description
+
+파일을 따로 만든후 저장해놓는것
+
+
+* how to use it? 
+
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=“파일이름&amp;quot;&amp;gt;
+
+
+* Sample Output
+
+--&amp;gt;
+
+
+&amp;lt;!doctype html&amp;gt;
+
+&amp;lt;html&amp;gt;
+&amp;lt;title&amp;gt;web1 - Son&amp;lt;/title&amp;gt;
+&amp;lt;meta charset=&amp;quot;ut-8&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;style.css&amp;quot;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>this is what I want;</title>
+      <link>/tutorial/html2/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/html2/</guid>
+      <description>&lt;p&gt;this is weoo&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>IT terminology</title>
       <link>/tutorial/it-terminology/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
@@ -3824,7 +3836,7 @@ for link in links:
     </item>
     
     <item>
-      <title>Academic: the website builder for Hugo</title>
+      <title>22</title>
       <link>/post/getting-started/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0900</pubDate>
       
@@ -4167,7 +4179,7 @@ for link in links:
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
+      <title>333</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
