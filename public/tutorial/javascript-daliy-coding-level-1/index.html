@@ -1,0 +1,3254 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.2.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="John Jung">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="write here:rocket:">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/tutorial/javascript-daliy-coding-level-1/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/tutorial/javascript-daliy-coding-level-1/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="JohnJung">
+  <meta property="og:url" content="/tutorial/javascript-daliy-coding-level-1/">
+  <meta property="og:title" content="Daliy_Coding_Level_2 | JohnJung">
+  <meta property="og:description" content="write here:rocket:"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-11-14T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-11-14T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Daliy_Coding_Level_2 | JohnJung</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">JohnJung</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/displayDocs">
+          
+          <span>Technical Documents</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tutorial/">
+          
+          <span>Today I Learned</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+          
+          <span>Posts</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+          
+          <span>Projects</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+          
+          <span>Contact</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/git/">1.Git</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/html/">2.Html</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/css/">3.Css</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/bootstrap/">4.Bootstrap</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/python/">4.Python</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/javascript_q1/">3.Javascript</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tutorial/javascript_q1/">x Coding_level_1</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript_dictionary/">x Dictionary_level_1</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript_note/">x Notes</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript_algorithm/">xCoding_level_2</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript_q2/">xDictionary_level_2</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/javascript/">5.Javascript</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tutorial/javascript-my-mdn/">My_MDN</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript-daliy-coding-level-1/">Daliy_Coding_Level_1</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/javascript-daliy-coding-level-1/">5.javascript</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/tutorial/javascript-daliy-coding-level-1/">Daliy_Coding_Level_2</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/it-terminology/">Technical terms</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/">Today I Learned</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#question">Question</a></li>
+<li><a href="#my-soultion">My_Soultion</a></li>
+<li><a href="#question-1">Question</a></li>
+</ul></li>
+<li><a href="#buginapple">bugInApple</a>
+<ul>
+<li><a href="#my-soultion-1">My_Soultion</a></li>
+<li><a href="#question-2">Question</a></li>
+</ul></li>
+<li><a href="#firstreverse">firstReverse</a>
+<ul>
+<li><a href="#my-soultion-2">My_Soultion</a></li>
+<li><a href="#question-3">Question</a></li>
+<li><a href="#my-soultion-3">My_Soultion</a></li>
+<li><a href="#question-4">Question</a></li>
+</ul></li>
+<li><a href="#filteredarray">filteredArray</a>
+<ul>
+<li><a href="#my-soultion-4">My_Soultion</a></li>
+<li><a href="#qeustion">Qeustion</a></li>
+</ul></li>
+<li><a href="#flatten-함수-만들기">flatten 함수 만들기</a>
+<ul>
+<li><a href="#my-soution">My_Soution</a></li>
+<li><a href="#qeustion-1">Qeustion</a></li>
+</ul></li>
+<li><a href="#delay-함수-만들기">delay 함수 만들기</a>
+<ul>
+<li><a href="#my-soultion-5">My_Soultion</a></li>
+<li><a href="#qeustion-2">Qeustion</a></li>
+</ul></li>
+<li><a href="#최대-한번만-호출할-수-있는-함수-만들기">최대 한번만 호출할 수 있는 함수 만들기</a>
+<ul>
+<li><a href="#my-soultion-6">My_Soultion</a></li>
+<li><a href="#qeustion-3">Qeustion</a></li>
+</ul></li>
+<li><a href="#갹채를-함쳐주는-함수-만들기-2-key-덮어쓰지-않기">갹채를 함쳐주는 함수 만들기 2(key 덮어쓰지 않기 )</a></li>
+<li><a href="#my-soultion-7">My_Soultion</a>
+<ul>
+<li><a href="#qeustion-4">Qeustion</a></li>
+</ul></li>
+<li><a href="#갹채를-함쳐주는-함수-만들기">갹채를 함쳐주는 함수 만들기</a>
+<ul>
+<li><a href="#my-souliton">My_Souliton</a></li>
+<li><a href="#qeustion-5">Qeustion</a></li>
+</ul></li>
+<li><a href="#some-함수-만들기">some 함수 만들기</a>
+<ul>
+<li><a href="#my-soultion-8">My_Soultion</a></li>
+<li><a href="#qeustion-6">Qeustion</a></li>
+</ul></li>
+<li><a href="#every-함수-만들기">every 함수 만들기</a>
+<ul>
+<li><a href="#my-soultion-9">My_Soultion</a></li>
+<li><a href="#qeustion-7">Qeustion</a></li>
+</ul></li>
+<li><a href="#contains-함수-만들기">contains 함수 만들기</a>
+<ul>
+<li><a href="#my-soultoin">My_Soultoin</a></li>
+<li><a href="#question-5">Question</a></li>
+</ul></li>
+<li><a href="#reduce">reduce</a>
+<ul>
+<li><a href="#my-soultion-10">My_Soultion</a></li>
+<li><a href="#question-6">Question</a></li>
+</ul></li>
+<li><a href="#billtotal">billTotal</a>
+<ul>
+<li><a href="#my-soultion-11">My_Soultion</a></li>
+<li><a href="#question-7">Question</a></li>
+</ul></li>
+<li><a href="#multiplybetween">multiplyBetween</a>
+<ul>
+<li><a href="#my-soultion-12">My_Soultion</a></li>
+<li><a href="#question-8">Question</a></li>
+</ul></li>
+<li><a href="#computesquareroot">computeSquareRoot</a>
+<ul>
+<li><a href="#my-soultion-13">My_Soultion</a></li>
+<li><a href="#question-9">Question</a></li>
+</ul></li>
+<li><a href="#modulo">modulo</a>
+<ul>
+<li><a href="#my-soultion-14">My_Soultion</a></li>
+<li><a href="#question-10">Question</a></li>
+</ul></li>
+<li><a href="#unique">unique</a>
+<ul>
+<li><a href="#my-soultion-15">My_Soultion</a></li>
+<li><a href="#question-11">Question</a></li>
+</ul></li>
+<li><a href="#tenthousandclub">tenThousandClub</a>
+<ul>
+<li><a href="#my-soultion-16">My_Soultion</a></li>
+<li><a href="#question-12">Question</a></li>
+</ul></li>
+<li><a href="#sumconsecutives">sumConsecutives</a>
+<ul>
+<li><a href="#my-soultion-17">My_Soultion</a></li>
+<li><a href="#question-13">Question</a></li>
+</ul></li>
+<li><a href="#oldest">oldest</a>
+<ul>
+<li><a href="#my-soultion-18">My_Soultion</a></li>
+<li><a href="#question-14">Question</a></li>
+</ul></li>
+<li><a href="#isagediverse">isAgeDiverse</a>
+<ul>
+<li><a href="#my-soultion-19">My_Soultion</a></li>
+<li><a href="#question-15">Question</a></li>
+</ul></li>
+<li><a href="#getteenager">getTeenager</a>
+<ul>
+<li><a href="#my-soultion-20">My_Soultion</a></li>
+<li><a href="#other-soultion">other_Soultion</a></li>
+<li><a href="#question-16">Question</a></li>
+</ul></li>
+<li><a href="#sumdigits">sumDigits</a>
+<ul>
+<li><a href="#my-soultion-21">My_Soultion</a></li>
+<li><a href="#question-17">Question</a></li>
+</ul></li>
+<li><a href="#offlineminimum">offLineMinimum</a>
+<ul>
+<li><a href="#my-soultion-22">My_Soultion</a></li>
+<li><a href="#other-soultion-1">other_Soultion</a></li>
+<li><a href="#question-18">Question</a></li>
+</ul></li>
+<li><a href="#range">range</a>
+<ul>
+<li><a href="#my-soultion-23">My_soultion</a></li>
+<li><a href="#question-19">Question</a></li>
+</ul></li>
+<li><a href="#longestname">longestName</a>
+<ul>
+<li><a href="#my-soution-1">My_Soution</a></li>
+</ul></li>
+<li><a href="#hammingdistance">hammingDistance</a>
+<ul>
+<li><a href="#my-soultion-24">My_Soultion</a></li>
+<li><a href="#other-soultion-2">Other_Soultion</a></li>
+<li><a href="#question-20">Question</a></li>
+</ul></li>
+<li><a href="#getfullname">getFullName</a>
+<ul>
+<li><a href="#my-soultion-25">My_Soultion</a></li>
+<li><a href="#other-soultion-3">Other_Soultion</a></li>
+<li><a href="#question-21">Question</a></li>
+</ul></li>
+<li><a href="#billtotal-1">billTotal</a>
+<ul>
+<li><a href="#my-soultion-26">My_Soultion</a></li>
+<li><a href="#other-soultion-4">Other_Soultion</a></li>
+<li><a href="#question-22">Question</a></li>
+</ul></li>
+<li><a href="#primemover">primeMover</a>
+<ul>
+<li><a href="#my-soultion-27">My_Soultion</a></li>
+<li><a href="#question-23">Question</a></li>
+</ul></li>
+<li><a href="#isoddwithoutmodulo">isOddWithoutModulo</a>
+<ul>
+<li><a href="#my-soultion-28">My_Soultion</a></li>
+<li><a href="#others-soultion">Others_Soultion</a></li>
+<li><a href="#question-24">Question</a></li>
+</ul></li>
+<li><a href="#getstringlength">getStringLength</a>
+<ul>
+<li><a href="#my-soultion-29">My_Soultion</a></li>
+<li><a href="#question-25">Question</a></li>
+</ul></li>
+<li><a href="#getindexof">getIndexOf</a>
+<ul>
+<li><a href="#my-soultion-30">My_Soultion</a></li>
+<li><a href="#question-26">Question</a></li>
+</ul></li>
+<li><a href="#calculatebilltotal">calculateBillTotal</a>
+<ul>
+<li><a href="#my-soultion-31">My_Soultion</a></li>
+<li><a href="#question-27">Question</a></li>
+</ul></li>
+<li><a href="#convertobjecttoarray3">convertObjectToArray3</a>
+<ul>
+<li><a href="#my-soultion-32">My_Soultion</a></li>
+<li><a href="#question-28">Question</a></li>
+</ul></li>
+<li><a href="#isodd">isOdd</a>
+<ul>
+<li><a href="#my-soultion-33">My_Soultion</a></li>
+<li><a href="#my-refactoring-code">My_Refactoring code</a></li>
+<li><a href="#question-29">Question</a></li>
+</ul></li>
+<li><a href="#sum">sum</a>
+<ul>
+<li><a href="#my-soultion-34">My_Soultion</a></li>
+<li><a href="#question-30">Question</a></li>
+</ul></li>
+<li><a href="#onlyevenelements">onlyEvenElements</a>
+<ul>
+<li><a href="#my-soultion-35">My_Soultion</a></li>
+<li><a href="#question-31">Question</a></li>
+</ul></li>
+<li><a href="#removeoddvalues">removeOddValues</a>
+<ul>
+<li><a href="#my-soultion-36">My_Soultion</a></li>
+<li><a href="#question-32">Question</a></li>
+</ul></li>
+<li><a href="#firstcharacter">firstCharacter</a>
+<ul>
+<li><a href="#my-soultion-37">My_Soultion</a></li>
+<li><a href="#question-33">Question</a></li>
+</ul></li>
+<li><a href="#dashinsert">dashInsert</a>
+<ul>
+<li><a href="#question-34">Question</a></li>
+</ul></li>
+<li><a href="#longestword">longestWord</a>
+<ul>
+<li><a href="#my-soultion-38">My_Soultion</a></li>
+<li><a href="#question-35">Question</a></li>
+</ul></li>
+<li><a href="#convertarraytoobject1">convertArrayToObject1</a>
+<ul>
+<li><a href="#my-soultion-39">My_Soultion</a></li>
+<li><a href="#question-36">Question</a></li>
+</ul></li>
+<li><a href="#convertobjecttoarray1">convertObjectToArray1</a>
+<ul>
+<li><a href="#my-soultion-40">My_Soultion</a></li>
+<li><a href="#question-37">Question</a></li>
+</ul></li>
+<li><a href="#convertarraytoobject2">convertArrayToObject2</a>
+<ul>
+<li><a href="#my-soultion-41">My_Soultion</a></li>
+<li><a href="#questoin">Questoin</a></li>
+</ul></li>
+<li><a href="#convertobjecttoarray2">convertObjectToArray2</a>
+<ul>
+<li><a href="#my-soultion-42">My_Soultion</a></li>
+<li><a href="#question-38">Question</a></li>
+</ul></li>
+<li><a href="#convertarraytoobject3">convertArrayToObject3</a>
+<ul>
+<li><a href="#my-soultion-43">My_Soultion</a></li>
+<li><a href="#other-soultion-5">other_Soultion</a></li>
+<li><a href="#qutestion">Qutestion</a></li>
+</ul></li>
+<li><a href="#greetcustomers">greetCustomers</a>
+<ul>
+<li><a href="#my-soultion-44">My_Soultion</a></li>
+<li><a href="#question-39">Question</a></li>
+</ul></li>
+<li><a href="#convertdoublespacetosingle">convertDoubleSpaceToSingle</a>
+<ul>
+<li><a href="#my-soultion-45">My_Soultion</a></li>
+<li><a href="#other-soultion-6">other_Soultion</a></li>
+<li><a href="#other-soultion-7">other_Soultion</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Daliy_Coding_Level_2</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<h3 id="question">Question</h3>
+
+<blockquote>
+<p>convert nested (2-dimensional) array to flatten array! (2차원 배열을 1차원 배열로 전환하세요.)</p>
+</blockquote>
+
+<pre><code class="language-js">flatten([1,2,[3],[4]]); // [1,2,3,4]
+
+</code></pre>
+
+<h3 id="my-soultion">My_Soultion</h3>
+
+<pre><code class="language-js">function flatten (array){
+  //your solution here
+  
+  // 1. 재귀함수 사용 
+  let ret = []; // 새로운 배열은 만든다. 
+
+   // 재귀함수
+    function filtered(array) {
+      // (1).array 의 각각의 요소에 접근한다.  [1,2,[11,25,21,34],[4]]
+      // (5). array 의 각각의 요소에 접근한다. [11,25,21,34]
+      for(let i = 0 ; i &lt; array.length; i ++ ) {
+        // (2)만약 요소가 array 안에 array 가아니면  [1,2]
+        // (6)만약 요소가 array 안에 array 가 아니면 [11,25,21,34]
+        if (!Array.isArray(array[i])){
+          // (3)새로만든 배열안에 합친다. ret = [1,2]
+          // (7)새로만든 배열안에 합친다. ret = [1,2,11,25,21,34]
+          ret = ret.concat(array[i]);
+          // (4)만약 array 안에 array 가 발견되면
+          // array는 array안에 있는 array로 담기고
+          // filtered(array) 가 실행된다.  
+        } else {
+          filtered(array[i]);
+        }
+      }
+    }
+    filtered(array);
+  return ret;
+  }
+  
+  // reduece 사용해서 풀기
+   
+   return array.reduce(function(accu,curr){
+     return accu.concat(curr)
+   },[]);
+  }
+  
+
+
+
+</code></pre>
+
+<h3 id="question-1">Question</h3>
+
+<h2 id="buginapple">bugInApple</h2>
+
+<blockquote>
+<p>Find out &ldquo;B&rdquo;(Bug) in a lot of &ldquo;A&rdquo;(Apple). (수많은 &ldquo;A&rdquo;(Apple) 사이에서 &ldquo;B&rdquo;(Bug)를 찾으세요.)</p>
+
+<p>There will always be one bug in apple, not need to consider the situation that without bug or more than one bugs. (사과(apple) 사이에는 언제나 항상 한개의 벌레(bug)가 있으므로 벌레가 없는 경우나 한개 이상인 경우는 고려하지 않으셔도 됩니다.)</p>
+</blockquote>
+
+<pre><code class="language-js">
+//Note: 2-dimesional Array will be input. (노트: 2차원 배열이 매개변수로 주어집니다.)
+
+input:
+
+[[&quot;A&quot;,&quot;A&quot;,&quot;A&quot;,&quot;A&quot;,&quot;A&quot;],[&quot;A&quot;,&quot;B&quot;,&quot;A&quot;,&quot;A&quot;,&quot;A&quot;],[&quot;A&quot;,&quot;A&quot;,&quot;A&quot;,&quot;A&quot;,&quot;A&quot;],[&quot;A&quot;,&quot;A&quot;,&quot;A&quot;,&quot;A&quot;,&quot;A&quot;],[&quot;A&quot;,&quot;A&quot;,&quot;A&quot;,&quot;A&quot;,&quot;A&quot;]]
+
+output:
+[1,1]
+
+</code></pre>
+
+<h3 id="my-soultion-1">My_Soultion</h3>
+
+<pre><code class="language-js">
+let bugInApple = function(array) {
+ var location = [];
+  for ( var i = 0; i &lt; array.length ; i++) {
+    for ( var j = 0; j &lt; array[i].length ; j++) {
+      if (array[i][j] === &quot;B&quot;) {
+        location.push(i);
+        location.push(j);
+      }
+     }
+  }
+  return location;
+}
+
+
+</code></pre>
+
+<h3 id="question-2">Question</h3>
+
+<blockquote>
+<p>using the JavaScript language, have the function firstReverse(str) take the str parameter being passed and return the string in reversed order.</p>
+
+<p>(firstReverse(str) 함수를 작성하세요. 문자열(str)이 주어졌을때, firstReverse(str) 함수는 주어진 문자열을 역순으로 반환합니다.)</p>
+</blockquote>
+
+<h2 id="firstreverse">firstReverse</h2>
+
+<h3 id="my-soultion-2">My_Soultion</h3>
+
+<pre><code class="language-js">function firstReverse(str) {
+  // code here ... :)
+  // str = &quot;code&quot;
+  // str.split('') // [&quot;c&quot;, &quot;o&quot;, &quot;d&quot;, &quot;e&quot;]
+  // str.split('').reverse(); //[&quot;e&quot;, &quot;d&quot;, &quot;o&quot;, &quot;c&quot;]
+  // str.split('').reverse().join('') // &quot;edoc&quot;
+  return str.split('').reverse().join('');
+
+}
+
+
+
+
+</code></pre>
+
+<h3 id="question-3">Question</h3>
+
+<blockquote>
+<p>Using the JavaScript language, have the function ABCheck(str) take the str parameter being passed and return the true if the characters a and b are separated by exactly 3 places anywhere in the string at least once Otherwise return the false.</p>
+
+<p>(ABCheck(str) 함수를 작성하세요. 문자열(str)이 주어졌을때, ABCheck(str) 주어진 문자열에서 함수는 문자 a 와 b 사이가 문자열 안에서 한번이라도 정확히 3글자 떨어져 있으면 true를 반환하고 그렇지 않은 경우는 모두 false 를 반환합니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-3">My_Soultion</h3>
+
+<pre><code class="language-js">
+function ABCheck(str) {
+  // code goes here
+
+  // lane Borrowed // true otherwise false;
+  
+  // 대문자를 소문자로 바꾼다. 
+  // str 의 각chr 를 접근한다. 
+  // a 를 발견하면 인덱스 번호를 착출한다 변수에 담는다. .
+  // b 를 발견하면 인덱스 번호를 착출한다 변수에 담는다/
+  // 만약 a 와 b
+  if (str === undefined) {
+    return false;
+  }
+  str = str.toLowerCase();
+  for (let i = 0; i &lt; str.length; i ++ ) {
+    if (str[i] === &quot;a&quot; &amp;&amp; str[i + 4] === &quot;b&quot;) {
+      return true;
+    } else if (str[i] === &quot;b&quot; &amp;&amp; str[i + 4] === &quot;a&quot; ) {
+      return true;
+    }
+  }
+  return false;
+}
+
+
+
+</code></pre>
+
+<h3 id="question-4">Question</h3>
+
+<h2 id="filteredarray">filteredArray</h2>
+
+<blockquote>
+<p>return a new array that all elements passed testFunction without using filter method (filter 메소드를 사용하지 않고 testFunction 함수를 통과하는 요소로만 이루어진 배열을 반환하는 함수를 작성하세요.)</p>
+</blockquote>
+
+<h3 id="my-soultion-4">My_Soultion</h3>
+
+<pre><code class="language-js">
+function filteredArray (array, testFunction) {
+ 
+  let result = []; // 출력할 빈 배열을 만든다. 
+
+  for (let i = 0; i &lt; array.length; i ++ ) {
+  // loop 를 돌면서 testFunction 안에 parameter 를 넣었을때 동작한다면
+    if (testFunction(array[i])){
+    // 그값을 새로운  array 넣어서 저장한다. 
+      result.push(array[i])
+    }
+  }
+  return result;
+}
+
+
+
+
+</code></pre>
+
+<h3 id="qeustion">Qeustion</h3>
+
+<blockquote>
+<p>다차원 배열을 가져와서, 1차원 배열로 변환합니다.</p>
+
+<p>새 배열에는 다차원 배열의 모든 요소가 포함되어야 합니다.</p>
+</blockquote>
+
+<h2 id="flatten-함수-만들기">flatten 함수 만들기</h2>
+
+<h3 id="my-soution">My_Soution</h3>
+
+<pre><code class="language-js">
+// for 문을이용한 것 
+
+function flatten (nestedArray) {
+    //[1, [2], [3, [[[4]]]]]
+    //oneflat([1, [2], [3, [[[4]]]]])
+    // result = [1, 2, 3, [[[4]]]]
+    // result = [1, 2, 3, 4]
+    let oneflat = function(array) {
+      let resultArr = []
+      for (let i in array) {
+        if (Array.isArray(array[i])) {
+          resultArr = resultArr.concat(array[i]);
+        } else {
+          resultArr.push(array[i]);
+        }
+      }
+      return resultArr;
+    }
+    let isinArr = function(array) {
+      for (let i in array) {
+        if (Array.isArray(array[i])) {
+          return true;
+        }
+      }
+      return false;
+    }
+    while(isinArr(nestedArray)) {
+      nestedArray = oneflat(nestedArray);
+    }
+    return nestedArray;
+  };
+
+
+
+function flatten (nestedArray, result) {
+
+
+     // 재귀를 이용한것 
+
+     result = [];
+     function flatarr(nestedArray) {
+       for(let i = 0; i &lt; nestedArray.length; i++) {
+         if(!Array.isArray(nestedArray[i])) {
+           result = result.concat(nestedArray[i])
+         } else {
+           flatarr(nestedArray[i]);
+         }
+       }
+     } flatarr(nestedArray);
+     return result;
+   };
+ 
+
+
+
+</code></pre>
+
+<h3 id="qeustion-1">Qeustion</h3>
+
+<h2 id="delay-함수-만들기">delay 함수 만들기</h2>
+
+<h3 id="my-soultion-5">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+
+  // 주어진 시간 (밀리초) 동안 함수를 지연한 다음 제공된 argument로 함수를 호출합니다.
+  //
+  // 원래 함수에 대한 argument는 wait parameter 뒤에 전달됩니다.
+  // 예를 들어, 다음을 호출할 경우
+  // _.delay(someFunction, 500, 'a', 'b');
+  // someFunction('a', 'b') 은 500ms 이후에 호출됩니다.
+
+
+  _.delay = function(func, wait, ...args) {
+
+      setTimeout(function(){
+        return func(...args);
+      } ,wait);
+
+  };
+
+
+
+
+</code></pre>
+
+<h3 id="qeustion-2">Qeustion</h3>
+
+<h2 id="최대-한번만-호출할-수-있는-함수-만들기">최대 한번만 호출할 수 있는 함수 만들기</h2>
+
+<h3 id="my-soultion-6">My_Soultion</h3>
+
+<pre><code class="language-js"> 
+  function once(func) {
+ 
+    // ... agrgs 사용한 함수 
+
+    var alreadyCalled = false;
+    let result;
+    return function(...args) {
+      if (!alreadyCalled) {
+        alreadyCalled = true;
+        result = func(...args);
+      }
+      return result;
+    };
+  };
+
+
+// this 와 arguments 와 apply 를 사용한 함수 
+
+    let alreadyCalled = false;
+
+    let result;
+
+  
+    return function() {
+      if(alreadyCalled) {
+        return result 
+    } else {
+        alreadyCalled = true 
+        return result = func.apply(this, arguments);
+      }
+    }
+  };
+
+
+
+</code></pre>
+
+<h3 id="qeustion-3">Qeustion</h3>
+
+<h2 id="갹채를-함쳐주는-함수-만들기-2-key-덮어쓰지-않기">갹채를 함쳐주는 함수 만들기 2(key 덮어쓰지 않기 )</h2>
+
+<h2 id="my-soultion-7">My_Soultion</h2>
+
+<pre><code class="language-js"> // extend와 비슷하지만, 이번엔 이미 존재하는 key에 대해 값을 덮어쓰기 하지 않습니다.
+  function defaults (obj,...objs) {
+    
+    for (let i = 0; i &lt; objs.length; i ++ ) {
+      for (let prop in objs[i]){
+        // 만약 기존에있는 obj 의 키값이 새로 더해진 obj 에 없다면 
+        if (!(prop in obj)) { 
+          // 기존에 있는 obj 의 push 해준다. 
+          obj[prop] = objs[i][prop];
+        }
+      }
+    }
+    return obj;
+  }
+
+
+
+
+</code></pre>
+
+<h3 id="qeustion-4">Qeustion</h3>
+
+<h2 id="갹채를-함쳐주는-함수-만들기">갹채를 함쳐주는 함수 만들기</h2>
+
+<h3 id="my-souliton">My_Souliton</h3>
+
+<pre><code class="language-js">
+extend = function(obj, ...objs) {
+  
+    //객체를 합쳐주는 함수를 만들어보자
+  
+    for (let i = 0; i &lt; objs.length; i ++ ) {
+      for (let prop in objs[i] ) {
+        obj[prop] = objs[i][prop];
+      }
+    }
+    return obj;
+  }
+
+
+
+// other_Soultion
+
+
+    for(let i = 0; i &lt; arguments.length; i++) {
+      for(let key in arguments[i]) {
+      obj[key] = arguments[i][key]
+      }
+    } return obj;
+  };
+
+</code></pre>
+
+<h3 id="qeustion-5">Qeustion</h3>
+
+<h2 id="some-함수-만들기">some 함수 만들기</h2>
+
+<h3 id="my-soultion-8">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+  // element가 하나라도 iterator에 의해 truthy한지 체크합니다.
+  // iterator가 없다면, element 그 자체가 truthy한지 체크하세요.
+function some(collection, iterator) {
+
+    if(iterator === undefined) { // 이것을 왜하는지 ?
+      for(let i = 0 ; i &lt; collection.length ; i++) {
+        if(Boolean(collection[i]) === true) {
+          return true;
+        }  
+      }
+    } else if (iterator) { // 이것은 왜? 
+      for (let j = 0 ; j &lt; collection.length ; j++) {
+        if (Boolean(iterator(collection[j])) === true) {
+          return true;
+        }
+      }
+    } return false;
+  };
+
+
+
+
+
+
+</code></pre>
+
+<h3 id="qeustion-6">Qeustion</h3>
+
+<h2 id="every-함수-만들기">every 함수 만들기</h2>
+
+<h3 id="my-soultion-9">My_Soultion</h3>
+
+<pre><code class="language-js">
+// 모든 element가 iterator에 의해 truthy한지 체크합니다.
+  function every(collection, iterator) {
+  
+  // function every(collection,iterator)
+  // collection.every(terator(value, key, collection)) ???
+  
+    if(iterator === undefined) { // 이것을 왜하는지 ?
+      for(let i = 0 ; i &lt; collection.length ; i++) {
+        if(Boolean(collection[i]) === false) {
+          return false;
+        }  
+      }
+    } else if (iterator) { // 이것은 왜? 
+      for (let j = 0 ; j &lt; collection.length ; j++) {
+        if (Boolean(iterator(collection[j])) === false) {
+          return false;
+        }
+      }
+    } return true;
+  };
+
+
+
+
+</code></pre>
+
+<h3 id="qeustion-7">Qeustion</h3>
+
+<h2 id="contains-함수-만들기">contains 함수 만들기</h2>
+
+<h3 id="my-soultoin">My_Soultoin</h3>
+
+<pre><code class="language-js">  //배열 또는 객체가 주어진 값을 포함하는지 체크합니다. (`===` 연산자를 사용해서 판단합니다.)
+
+  _.contains = function(collection, target) {
+ 
+
+    for (let i in collection ) {
+      if (collection[i] === target ){
+        return true
+        } 
+      }
+      return false;
+  }
+
+    // 다른 깔끔한 방법
+    // each 방법을 써서..
+
+    if (Array.isArray(collection)) {
+       for (let i = 0; i &lt; collection.length; i ++  ) {
+         if (collection[i] === target) {  
+           return true;
+         } else {
+           return false;
+         }
+       }
+     } else {
+       for (let prop in collection) {
+         if (collection[prop] === target) { 
+           return true;
+         } else {  
+           return false;
+         }
+       }
+     } 
+      
+
+
+
+</code></pre>
+
+<h3 id="question-5">Question</h3>
+
+<h2 id="reduce">reduce</h2>
+
+<pre><code class="language-js">
+// 각 항목에 대해 iterator(accumulator, item)를 반복적으로 호출하여, Reduces an array to a single value by repetitively calling
+  // 하나의 값으로 줄입니다. accumulator는 누적값으로, 이전 iterator 호출의 반환값이어야 합니다.
+  //
+  // reduce에 대한 세번째 argument로 초기값을 전달 할 수 있습니다.
+  // 만일 초기값이 전달되지 않으면, 첫번재 element가 accumulator로 사용되며, iterator에 전달되지 않습니다.
+  // 즉, 초기값이 전달되지 않은 경우, iterator는 두번째 element로부터 시작합니다.
+  //
+  // 예제:
+  //   const numbers = [1,2,3];
+  //   const sum = _.reduce(numbers, function(total, number){
+  //     return total + number;
+  //   }, 0); // 6이 리턴됩니다
+  //
+  //   const identity = _.reduce([5], function(total, number){
+  //     return total + number * number;
+  //   }); // 5가 리턴됩니다, 전달한 iterator와 관계없이, 첫번째 element가 즉시 사용됩니다.
+  
+
+
+</code></pre>
+
+<h3 id="my-soultion-10">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+
+  _.reduce = function(collection, iterator, accumulator) {
+     
+     // 1. 내가 생각 방법
+      let i=0;
+      if (accumulator === undefined) {
+        accumulator = collection[0];
+        i++;
+      }
+      for(i; i&lt;collection.length; i++) {
+        accumulator = iterator(accumulator, collection[i]);
+      }
+      return accumulator;
+    }
+  // accumulator가 undefined면 : accumulator에게 첫 번째 collection값을 넣고,
+  // 그 후 i++를 통해 collection[0]이 아닌 collection[1]부터 iterator가 돌아감
+  // 
+</code></pre>
+
+<h3 id="question-6">Question</h3>
+
+<h2 id="billtotal">billTotal</h2>
+
+<blockquote>
+<p>Write a function called billTotal that can be used to calculate the total to be paid at a restaurant &ndash; including tip and tax &ndash; given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!</p>
+</blockquote>
+
+<pre><code class="language-js">- input: a number representing the cost of food and drinks
+- output: a number representing that cost plus an additional 15% tip and tax of 9.5%
+
+</code></pre>
+
+<h3 id="my-soultion-11">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+function billTotal(subtotal) {
+  // YOUR CODE HERE
+
+  // tip 15% = * 0.15
+  // tax 9.5% = * 0.095
+  
+  // tip을 얼마 냈는지 조사후 변수에 저장
+  // tax를 얼마나 냈는지 조사후 변수에 저장
+  // tip &amp; tax &amp; subtotal 더한값을 출력
+  
+  let tip = subtotal * 0.15
+  let tax = subtotal * 0.095
+  
+  return subtotal + tip + tax;
+}
+
+billTotal(10.00); // =&gt; 12.45
+
+
+</code></pre>
+
+<h3 id="question-7">Question</h3>
+
+<h2 id="multiplybetween">multiplyBetween</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;multiplyBetween&rdquo;. (&ldquo;multiplyBetween&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given 2 integers, &ldquo;multiplyBetween&rdquo; returns the product between the two given integers, beginning at num1, and excluding num2. (두 정수가 주어졌을때, &ldquo;multiplyBetween&rdquo; 함수는 첫번째 숫자부터 두번째 숫자 전까지 모든 수를 곱한 값을 반환합니다.)</p>
+</blockquote>
+
+<pre><code class="language-js">
+let output = multiplyBetween(2, 5);
+console.log(output); // --&gt; 24
+
+</code></pre>
+
+<h3 id="my-soultion-12">My_Soultion</h3>
+
+<pre><code class="language-js">function multiplyBetween(num1, num2) {
+  // your code here
+	let arr = [];
+    if (num2 &lt; num1 || num1 === num2 ) {
+    return 0;
+  	} else {
+	  
+	  while( num1 &lt; num2 ) {
+		arr.push(num1);
+		num1 = num1 + 1;
+      	
+     }
+  }
+console.log(arr);
+  return arr.reduce(function(acc,cur){
+      return acc * cur;
+  })
+}
+
+
+</code></pre>
+
+<h3 id="question-8">Question</h3>
+
+<h2 id="computesquareroot">computeSquareRoot</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;computeSquareRoot&rdquo;. (&ldquo;computeSquareRoot&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a number, &ldquo;computeSquareRoot&rdquo; returns its square root. (숫자가 주어졌을때, &ldquo;computeSquareRoot&rdquo; 함수는 해당 수의 제곱근 값을 반환합니다.)</p>
+</blockquote>
+
+<pre><code class="language-js">let output = computeSquareRoot(9);
+console.log(output); // --&gt; 3
+
+
+</code></pre>
+
+<blockquote>
+<p>Do not use Math.sqrt(); for this problem. Instead, use this iterative way of solving the problem: (Math.sqrt()를 사용하지 말고, 아래 링크에서 나온 방법을 통해 해결하세요.)</p>
+</blockquote>
+
+<h3 id="my-soultion-13">My_Soultion</h3>
+
+<pre><code class="language-js">
+unction computeSquareRoot(num) {
+  
+  let square = 1;
+  let i = 0;
+  
+  while(true){
+      i = i + 1
+      
+      square = (num / square + square) / 2;
+      if(i=== num + 1) { 
+       break;
+      }
+  } 
+  return Number(square.toFixed());
+}
+
+
+/*
+- doc 파일에 있는 내용 정리
+5 / 2 = 2.5 -&gt; 다음줄 2.5에 5/2를 대입
+(2 + 2.5) / 2 = 2.25 -&gt;(2+ (5/2)) / 2 = 2.25 = x + (num/x) / 2
+5 / 2.25 = 2.222...
+(2.25 + 2.222...) / 2 = 2.36111...
+5 / 2.236111... = result
+*/
+
+/* !질문란
+9를 넣으면 3이 나오지만,
+4를 넣으면 2.000000000000002 이 계속나오길래
+.toFixed()를 이용해서 소수점을 제거하여 결과값은 잘나오는데
+테스트는 계속 fail로 나옵니다ㅠㅠ
+toFixed()를 지우면 4를 넣었을시만 통과가 안되구요!
+어떻게 해야할까요?ㅠㅠ
+*/
+
+
+// 처음에 square를 1로 선언해주셨는데, square는 단순히 1이 아닌, 
+// 저희가 input으로 받은 값보다 같거나 작은 제곱수 중 가장 큰 값을 만들 수 있는 수가 되어야할 것 같습니다.
+
+// 예를들어 5가 주어졌을 때 5보다 작은 제곱수는 4 square는 2
+// 10이라면 10보다 작은 제곱수는 9 square는 3이 되어야할 것 같습니다.
+
+
+</code></pre>
+
+<h3 id="question-9">Question</h3>
+
+<h2 id="modulo">modulo</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;modulo&rdquo;. (&ldquo;modulo&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given 2 numbers, &ldquo;modulo&rdquo; returns the remainder after dividing num1 by num2. (두 숫자가 주어졌을때, &ldquo;modulo&rdquo; 함수는 첫번째 수를 두번째 수로 나눴을때 나머지 값을 반환합니다.)</p>
+</blockquote>
+
+<pre><code class="language-js">
+
+let output = modulo(25, 4);
+console.log(output); // --&gt; 1
+
+
+</code></pre>
+
+<h3 id="my-soultion-14">My_Soultion</h3>
+
+<pre><code class="language-js">
+function modulo(num1, num2) {
+    // num1 = 25 num2 = 4
+  
+  if (isNaN(num2) || num2 === 0) {
+    return NaN;
+  }
+
+  // plusMinus 변수는 만약 첫번째 숫자가 plus 이면 마지막에 플러스를 마이너스를 표시하기 위해
+  // 미리 변수를 지정해둔다.
+  // 만약 num1 이 0보다 크면 plusMinus = 1
+  // 만약 num2 가 0 보다 작으면 plusMinus = -1
+  let plusMinus = num1 &gt; 0 ? 1 : -1; //  이부분이 이해가 안됨. 
+
+  num1 = Math.abs(num1);
+  num2 = Math.abs(num2);
+
+  while (num1 &gt;= num2) {  // 25 &gt;= 4
+    num1 = num1 - num2; //  24 - 4 계속 빼면 = num1 = 1 
+  }
+  return num1 * plusMinus;  // 1 * plusMinus ( 1 ) 
+}
+
+
+
+</code></pre>
+
+<h3 id="question-10">Question</h3>
+
+<h2 id="unique">unique</h2>
+
+<pre><code class="language-js">
+Return a duplicate-free version of the collection.
+You don't need to care about non-primitive type elements.
+Array will be contained only primitive type values. (string, number, boolean)
+
+
+</code></pre>
+
+<h3 id="my-soultion-15">My_Soultion</h3>
+
+<pre><code class="language-js">unction unique(array) {
+  // your code here
+
+
+  let newArr = []
+
+  for (let i = 0; i &lt; array.length; i ++ ) {
+    if (!newArr.includes(array[i])){
+      newArr.push(array[i]);
+    }
+  }
+    return newArr;
+  }
+
+
+  // 1. other_Soultion
+
+  // function unique(array) {
+  //   // your code here
+  //   return array.reduce(function(acc, curr){
+  //     if(!acc.includes(curr)){
+  //       acc.push(curr);
+  //       return acc;
+  //     } else {
+  //       return acc;
+  //     }
+  //   }, []);
+  // }
+
+
+
+
+
+ // 2. other_Soultion
+
+//  function unique(array) {
+//   // your code here
+//   return Array.from(new Set(array))
+// }
+
+
+
+
+
+
+</code></pre>
+
+<h3 id="question-11">Question</h3>
+
+<h2 id="tenthousandclub">tenThousandClub</h2>
+
+<pre><code class="language-js">
+# tenThousandClub
+
+Write a function, tenThousandClub, that takes in an array of information, salesTeam, and returns an array that lists the full names of each member of the sales team that has sales greater than $10,000.
+Make sure the first and last names are separated by a space.
+
+Hint: I recommend you write a helper function, salesToNumber, that converts the sales string to a number.
+Feel free to look up parseInt() and slice() on MDN if you don't remember how they work.
+
+- output: an array that lists the full names of each member of 10,000 club
+
+
+</code></pre>
+
+<h3 id="my-soultion-16">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+function tenThousandClub(salesTeam){
+  // your code here
+
+  // function salesToNumber(salesString){
+  //   //get rid of dollar sign:
+  //   let number = salesString.split('').splice(1)
+  //   return parseInt(number.join(''));
+  // }
+  let newobj = salesTeam.filter(function(ele){
+    return salesToNumber(ele.sales) &gt;= 10000; 
+  }).map(function(ele){
+    return `${ele.name.first} ${ele.name.last}`;
+  });
+  return newobj;
+}
+
+
+// &quot;$1234&quot;  string to Number 숫자로 바꾸기 바꾸기 
+
+// it's me
+function salesToNumber(salesString){
+  //get rid of dollar sign:
+  let number = salesString.split('').splice(1)
+  return parseInt(number.join(''));
+}
+
+
+// other's
+
+// function salesToNumber(salesString){
+//   //get rid of dollar sign:
+//   return Number(salesString.slice(1));
+// }
+
+// other's
+
+// function salesToNumber(obj){
+//   return Number.parseInt(obj.sales.slice(1));
+// }
+
+
+
+</code></pre>
+
+<h3 id="question-12">Question</h3>
+
+<h2 id="sumconsecutives">sumConsecutives</h2>
+
+<pre><code class="language-js">
+
+You are given a list/array which contains only integers (positive and negative). Your job is to sum only the numbers that are the same and consecutive. The result should be one list.
+
+Examples:
+[1,4,4,4,0,4,3,3,1] should return [1,12,0,4,6,1]
+
+So as you can see sum of consecutives 1 is 1
+sum of 3 consecutives 4 is 12
+sum of 0... and
+sum of 2 consecutives 3 is 6 ...
+
+[1,1,7,7,3] should return [2,14,3]
+[-5,-5,7,7,12,0] should return [-10,14,12,0]
+
+- output: an reduced array
+
+</code></pre>
+
+<h3 id="my-soultion-17">My_Soultion</h3>
+
+<pre><code class="language-js">
+function sumConsecutives(s) {
+    // your code here
+
+
+    //[1,4,4,4,0,4,3,3,1] should return [1,12,0,4,6,1]
+  
+    let ret = []; // 마지막에 출력할  result 배열을 만든다. 
+    let sum = 0;  // sum 이라는 것을 0 으로 초기화 시킨다. 
+
+    for(let i = 0; i &lt; s.length; i++) {
+
+        // 첫번째 loop sum =  0 + 1 
+        // 두번째 loop sum = 0 + 4 
+        // 3번째 loop sum = 4 + 4 // 초기화 되지 않은 sum 과 다음에 나오르 4 를 합한다. 
+       
+        
+        sum = sum + s[i];  
+       
+       
+        // 첫번째 loop 
+        // 만약 0번째있는 숫자 1과  1번째의 숫자4가 같지 않다면 
+        // 조건문 1 을 ret 에 집어넣는다 [1]
+        //  조건문  sum 이라는 것을 다시 0으로 초기화 한다.
+        // 두번째 loop  
+        // 1번째 있는 4와 2번째 있는 4와 같으므로 조건문에 해당이 안된다. 
+        // sum 이 초기화 되지 않은채 위로 올라간다.   
+
+        if(s[i] !== s[i + 1]) {
+            ret.push(sum)  //  위에있는 sum 을 우선 채우고 
+            sum = 0;    //  sum 을 다시 초기화 한다. 
+        }
+    }
+     
+    return ret;
+}
+
+
+</code></pre>
+
+<h3 id="question-13">Question</h3>
+
+<h2 id="oldest">oldest</h2>
+
+<pre><code class="language-js">
+# oldest
+
+Write a function, oldest, that takes in an array of information, salesTeam, and returns a sentence with the person's first and last name, e.g. &quot;The oldest student is Tina Fey&quot;.
+
+If there is a tie for the oldest student, return the student whose name appears first in the salesTeam array.
+
+- output: a string value with name of oldest person
+
+</code></pre>
+
+<h3 id="my-soultion-18">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+function oldest(salesTeam){
+ 
+  // 먼저 배열안에 객체에 접근해서 모든 나이를 뽑아서 배열어 넣는다..
+  // 나이중에 가장 높은 숫자를 변수에 담는다.
+  // 변수에 담긴 가장 높은 숫자와 배열안에 객체에 나이가 같다면 first name  과 last name 을 가져온다. 
+  
+  var ageArr = salesTeam.map(function(ele){
+    return ele.age;
+  })
+  var max = ageArr.reduce(function(a,c){
+    return Math.max(a,c);
+  });
+  var fullName = [];
+  salesTeam.forEach(function(ele){
+    if ( ele.age === max) {
+      fullName.push(`${ele.name.first} ${ele.name.last}`)
+    }
+  })
+  return &quot;The oldest student is &quot; + fullName.join(&quot; &quot;);
+}
+
+
+
+</code></pre>
+
+<h3 id="question-14">Question</h3>
+
+<h2 id="isagediverse">isAgeDiverse</h2>
+
+<pre><code class="language-js">
+You will be given an array of objects representing data related to their age and total sales.
+
+Your task is to return:
+- `true` if members from all of the following age groups: teens, twenties, thirties, forties, fifties, sixties, seventies, eighties.
+- `false` otherwise.
+
+Your function should return true as there is at least one member from each age group.
+
+- output: a boolean value representing whether the age range is diverse
+
+
+
+</code></pre>
+
+<h3 id="my-soultion-19">My_Soultion</h3>
+
+<pre><code class="language-js">
+var isAgeDiverse = function(list) {
+  
+  // group 이 10-80 까지 는 true 리턴
+  // 아니라면 false 리턴 
+  
+  var ageArr = list.map(function(ele){
+    return ele.age; // [26, 55, 29, 53, 19, 25, 26]
+  });
+    for (let i = 0; i &lt; ageArr.length; i = i + 1 ) {
+      if (ageArr[i] &gt;= 10 &amp;&amp; ageArr[i] &lt; 90) {
+      return true;
+    } else {
+    return false;
+    }
+  };
+};
+
+  // other code here
+  // 팀원이 10대~80대 면 true를 반환해라.
+  // function filtering(el){  // 클로져를 써보자
+  //   return el.age &gt;= 10 &amp;&amp; el.age &lt; 90 
+  // }
+  // // every를 써서 모두가 맞는지 확인한다.
+  // return list.every(filterin
+
+
+
+</code></pre>
+
+<h3 id="question-15">Question</h3>
+
+<h2 id="getteenager">getTeenager</h2>
+
+<blockquote>
+<p>Write a function, <code>getTeenager</code>, that takes in an array of information, salesTeam, and returns an array that lists the full names of each member of the sales team that is a teenager.</p>
+</blockquote>
+
+<pre><code class="language-js">Make sure the first and last names are separated by a space.
+
+Notes:
+- moving through each element of the array.
+- check if they are a teenager (&lt; 20).
+- if they're a teenager, store their full name, separated by a space into the array.
+
+* * *
+
+- output: an array that lists the full names of each member of the sales team that is a teenager
+
+</code></pre>
+
+<h3 id="my-soultion-20">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+function getTeenager(salesTeam) {
+  let teenager = [];
+
+  
+  for(let i=0; i &lt; salesTeam.length; i++) {
+    let fullName = salesTeam[i].name.first + ' ' + salesTeam[i].name.last;
+    if(salesTeam[i].age &lt; 20) {
+      teenager.push(fullName)
+
+    }
+  }
+  return teenager;
+}
+
+
+</code></pre>
+
+<h3 id="other-soultion">other_Soultion</h3>
+
+<pre><code class="language-js">
+
+function getTeenager(salesTeam) {
+  // your code here
+  let teenager = salesTeam.filter(function(ele){
+    return ele.age &lt; 20;
+  });
+  let result = [];
+  teenager.forEach(function(ele){
+    result.push(`${ele.name.first} ${ele.name.last}`);
+  });
+  return result;
+}
+
+
+
+
+</code></pre>
+
+<h3 id="question-16">Question</h3>
+
+<h2 id="sumdigits">sumDigits</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;sumDigits&rdquo;. (&ldquo;sumDigits&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a number, &ldquo;sumDigits&rdquo; returns the sum of all its digits. (숫자가 주어졌을때, &ldquo;sumDigits&rdquo; 함수는 숫자의 각 자리수를 모두 더한 값을 반환합니다.)
+k</p>
+</blockquote>
+
+<h3 id="my-soultion-21">My_Soultion</h3>
+
+<pre><code class="language-js">
+function sumDigits(num) {
+  let sum = 0;
+  let stringNumArr = num.toString().split('');
+
+  for (let i = 0; i &lt; stringNumArr.length; i++) {
+    if (stringNumArr[0] === '-' &amp;&amp; i === 1) {
+      sum = sum - Number(stringNumArr[1]);
+    } else if (stringNumArr[i] !== '-') {
+      sum = sum + Number(stringNumArr[i]);
+    }
+  }
+
+  return sum;
+}
+
+</code></pre>
+
+<h3 id="question-17">Question</h3>
+
+<h2 id="offlineminimum">offLineMinimum</h2>
+
+<blockquote>
+<p>Have the function <code>offLineMinimum(strArr)</code> take the strArr parameter being passed which will be an array of integers ranging from 1&hellip;n and the letter &ldquo;E&rdquo; and return the correct subset based on the following rules.</p>
+
+<p>The input will be in the following format: <code>[&quot;I&quot;,&quot;I&quot;,&quot;E&quot;,&quot;I&quot;,...,&quot;E&quot;,...,&quot;I&quot;]</code> where the I&rsquo;s stand for integers and the E means take out the smallest integer currently in the whole set.
+When finished, your program should return that new set with integers separated by commas.</p>
+</blockquote>
+
+<h3 id="my-soultion-22">My_Soultion</h3>
+
+<pre><code class="language-js">
+function offLineMinimum(strArr) {
+
+
+  let numArr=[];
+  let resultArr=[];
+   
+  // [&quot;5&quot;,&quot;4&quot;,&quot;6&quot;,&quot;E&quot;,&quot;1&quot;,&quot;7&quot;,&quot;E&quot;,&quot;E&quot;,&quot;3&quot;,&quot;2&quot;]
+  
+  for(let i=0; i&lt; strArr.length; i++){
+    // 만약 E와 같지 않다면 
+    if (strArr[i] !== 'E') {
+      // 이코드는 7번 실행된다 왜냐하면 E 가 3개만 있기 때문이다. 
+      
+      numArr.push(strArr[i]);
+    
+     
+      //   (1) [&quot;5&quot;]
+      //   (2) [&quot;5&quot;, &quot;4&quot;]
+      //   (3) [&quot;5&quot;, &quot;4&quot;, &quot;6&quot;]
+      //   (4) [&quot;5&quot;, &quot;6&quot;, &quot;1&quot;]
+      //   (5) [&quot;5&quot;, &quot;6&quot;, &quot;1&quot;, &quot;7&quot;]
+      //   (6) [&quot;6&quot;, &quot;7&quot;, &quot;3&quot;]
+      //   (7) [&quot;6&quot;, &quot;7&quot;, &quot;3&quot;, &quot;2&quot;]   
+      
+      
+      
+      // // 만약 E와 같다면 
+    } else if(strArr[i] === 'E') {
+      
+      
+       let smallNum = numArr.reduce(function(acc,curr){
+          
+         // 첫번째 &quot;E&quot; 나오면  numArr = [&quot;5&quot;,&quot;4&quot;,6] 작은수 =&gt; &quot;4&quot;
+         // 두번째 &quot;E&quot; 나오면  numArr =  [&quot;5&quot;, &quot;6&quot;, &quot;1&quot;, &quot;7&quot;] 작은수 =&gt; &quot;1&quot;
+         // 세번째 &quot;E&quot; 나오면  numArr = [&quot;5&quot;,&quot;6&quot;,&quot;7&quot;]  작은수 =&gt; &quot;5&quot;
+
+         // smallNum = [&quot;4&quot;,&quot;1&quot;,&quot;5&quot;] 3번에 담긴다 가장 작은수들이 coz E를 3번 찾았기 때문에
+         
+         if(acc &lt; curr){
+           return acc;
+         } else {
+           return curr;
+         }
+       });
+
+      // 첫번째 &quot;E&quot; 나오면 smallNum = &quot;4&quot; 
+      // 두번째 &quot;E&quot; 나오면 smallNum = &quot;1&quot;
+      // 세번째 &quot;E&quot; 나오면 smallNum = &quot;7&quot;
+
+      // resultArr 에 [&quot;4&quot;,&quot;1&quot;,&quot;7&quot;]; 담긴다.
+       resultArr.push(smallNum); 
+       
+       // 첫번째 &quot;E&quot; 나오면 [&quot;5&quot;,&quot;4&quot;,&quot;6&quot;].splice(1,1) // &quot;4&quot; 삭제됨
+       // 두번째 &quot;E&quot; 나오면 [&quot;5&quot;, &quot;6&quot;, &quot;1&quot;, &quot;7&quot;].splice(2,1) // &quot;1&quot; 삭제됨
+       // 세번째 &quot;E&quot; 나오면 [&quot;5&quot;,&quot;6&quot;,&quot;7&quot;].splice(0,1) // &quot;5&quot; // &quot;5&quot; 삭제됨  
+       numArr.splice(numArr.indexOf(smallNum),1); 
+   }
+  }
+    return resultArr.join(','); // 마지막으로 &quot;4,1,5&quot; =&gt;&gt;,나눠서 함친다.
+ }
+
+
+ 
+offLineMinimum([&quot;1&quot;,&quot;2&quot;,&quot;E&quot;,&quot;E&quot;,&quot;3&quot;]); // =&gt; '1,2'
+offLineMinimum([&quot;4&quot;,&quot;E&quot;,&quot;1&quot;,&quot;E&quot;,&quot;2&quot;,&quot;E&quot;,&quot;3&quot;,&quot;E&quot;]); // =&gt; '4,1,2,3'
+offLineMinimum([&quot;5&quot;,&quot;4&quot;,&quot;6&quot;,&quot;E&quot;,&quot;1&quot;,&quot;7&quot;,&quot;E&quot;,&quot;E&quot;,&quot;3&quot;,&quot;2&quot;]) // == &gt; 
+`4,1,5`
+
+
+
+</code></pre>
+
+<h3 id="other-soultion-1">other_Soultion</h3>
+
+<pre><code class="language-js">
+
+
+function offLineMinimum(strArr) {
+  
+   
+// offLinMininum은 배열에서 'E' 가 나오기 이전까지의 숫자들로 숫자의 set을 만들고 e가 등장 할 때 마다 숫자 set 중 가장 작은 수를 가지고와 리턴할 문자열에 포함시켜주는 함수이다.
+
+    // 배열에서 'E'가 나오기 이전까지의 숫자들로 숫자의 Set을 만든다. --&gt; numberSet
+    // 배열에서 'E'가 등장하면, numberSet을 분류(작은 수~큰 수)하고 numberSet의 0번째 값(가장 작은 수)을 가지고와 result에 넣어준다.
+    // 그리고 numberSet의 0번째 값은 제거해준다.
+    // 그래야 다음 번에 'E'가 등장하면 그 요소를 제외한 나머지 값들 중에서 최소값을 구할 수 있기 때문이다.
+
+    let numberSet=[];
+    let result=[];
+
+    for (let i = 0 ; i &lt; strArr.length ; i++) {
+        if (strArr[i] !== 'E') {
+            numberSet.push(Number(strArr[i]));
+        }
+        else if (strArr[i] === 'E') {
+            numberSet.sort();
+            result.push(numberSet[0]);
+            numberSet.shift();
+        }
+    }
+
+    return result.join();
+}
+
+
+
+
+</code></pre>
+
+<h3 id="question-18">Question</h3>
+
+<h2 id="range">range</h2>
+
+<blockquote>
+<p>Complete the below function called range that takes two integers as parameters, start and end, and returns an array containing all the whole numbers between them starting with start and up to end (you can use a any loop)</p>
+
+<p>After you write your function, you can test it using the above inputs to make sure that it behaves correctly.</p>
+</blockquote>
+
+<h3 id="my-soultion-23">My_soultion</h3>
+
+<pre><code class="language-js">
+function range(start, end) {
+  // YOUR CODE HERE
+  
+  
+    
+  // 만약 strat 와 end 같다면 &amp;&amp; 만약 strat 가 end 보다 작으면 [] 반환
+  // for 문을 사용해 start 를 초기값으로 지정하고 end 보다 작을때까지 숫자 반환
+  
+  let arr = [];
+  
+  if ( start === end || start &gt;= end ) {
+    return [];
+  } else { 
+    for ( let i = start; i &lt; end; i = i + 1 ) {
+      arr.push(i);
+    }
+  }
+  return arr;
+  }
+
+range(0, 4); // =&gt; [0, 1, 2, 3]
+range(2, 7); // =&gt; [2, 3, 4, 5, 6]
+range(10, 10); // =&gt; []
+range(10, 2); // =&gt; []
+
+
+
+</code></pre>
+
+<h3 id="question-19">Question</h3>
+
+<h2 id="longestname">longestName</h2>
+
+<blockquote>
+<p>Given the following array of people, write a function that, when passed people as a parameter, returns the person (that is, your function should return an object) with the longest name (first, middle &amp; last).
+You can re-use getFullName function.</p>
+</blockquote>
+
+<h3 id="my-soution-1">My_Soution</h3>
+
+<pre><code class="language-js">
+var people = [
+  {name: {first: &quot;Alyssa&quot;, middle: &quot;P.&quot;, last: &quot;Hacker&quot;}, age: 26},
+  {name: {first: &quot;Ben&quot;, last: &quot;Bitdiddle&quot;}, age: 34},
+  {name: {first: &quot;Eva&quot;, middle: &quot;Lu&quot;, last: &quot;Ator&quot;}, age: 40},
+  {name: {first: &quot;Lem&quot;, middle: &quot;E.&quot;, last: &quot;Tweakit&quot;}, age: 45},
+  {name: {first: &quot;Louis&quot;, last: &quot;Reasoner&quot;}, age: 21}
+];
+
+
+function longestName(people) {
+  // TODO: Your code here
+  // 심플하게 객체에 있는 키값을 prop  가져와 함친다. 
+  return Object.values(people[0].name).join(' ');
+ 
+
+}
+
+longestName(people); //&quot;Alyssa P. Hacker&quot;
+
+
+</code></pre>
+
+<p>### Question</p>
+
+<h2 id="hammingdistance">hammingDistance</h2>
+
+<blockquote>
+<p>have the function <code>HammingDistance(strArr)</code> take the array of strings stored in <code>strArr</code>, which will only contain two strings of equal length andreturn the Hamming distance between them.
+The Hamming distance is the number of positions where the corresponding characters are different.</p>
+</blockquote>
+
+<pre><code class="language-js">For example:
+if `strArr` is `[&quot;coder&quot;, &quot;codec&quot;]` then your program should return 1.
+
+</code></pre>
+
+<h3 id="my-soultion-24">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+function hammingDistance(strArr) {
+  // YOUR CODE HERE
+
+  // count 변수에 0으로 초기화를 시켜놓는다.
+  // arr1 변수를 만들어 strArr 첫번째 값을 넣어둔다.
+  // arr2 변수를 많들어 strArr 두번째 값을 넣어둔다. 
+  // while 문 이용해 arr1각각char arr2각각 Char 와 같이 않다면 count에 plus 1 증가 
+  // 출력 count ;
+
+
+  let count = 0;
+
+  let str1 = strArr[0];
+  let str2 = strArr[1];
+  
+  for (let i = 0; i &lt; str1.length; i = i + 1 ) {
+    if ( str1[i] !== str2[i] ) {
+      count = count +  1;
+    }
+  }
+
+  return count;
+}
+
+hammingDistance([&quot;coder&quot;, &quot;codec&quot;]); // =&gt; 1
+hammingDistance([&quot;10011&quot;, &quot;10100&quot;]); // =&gt; 3
+hammingDistance([&quot;helloworld&quot;, &quot;worldhello&quot;]); // =&gt; 8
+
+
+
+
+</code></pre>
+
+<h3 id="other-soultion-2">Other_Soultion</h3>
+
+<pre><code class="language-js">
+
+strArr[0][0] !== strArr[1][0] count++
+strArr[0][1] !== strArr[1][1] count++
+strArr[0][2] !== strArr[1][2] count++
+strArr[0][3] !== strArr[1][3] count++
+strArr[0][4] !== strArr[1][4] count++
+
+
+// 위를 잘 참고하여...구현해본다!
+// 각각 비교하면서 다른 값을 배열에 담아 개수를 리턴한다.
+
+
+
+function hammingDistance(strArr) {
+  return strArr[0].split('').filter((char, i) =&gt; char !== strArr[1][i]).length;
+}
+
+hammingDistance([&quot;coder&quot;, &quot;codec&quot;]); // =&gt; 1
+hammingDistance([&quot;10011&quot;, &quot;10100&quot;]); // =&gt; 3
+hammingDistance([&quot;helloworld&quot;, &quot;worldhello&quot;]); // =&gt; 8
+console.log(hammingDistance([&quot;coder&quot;, &quot;codec&quot;]))
+
+
+</code></pre>
+
+<h3 id="question-20">Question</h3>
+
+<h2 id="getfullname">getFullName</h2>
+
+<blockquote>
+<p>Write a function called &lsquo;getFullName&rsquo; that takes in an object which has this structure:</p>
+</blockquote>
+
+<h3 id="my-soultion-25">My_Soultion</h3>
+
+<pre><code class="language-js">
+function getFullName(obj) {
+  // YOUR CODE HERE
+  //  변수를 만들어 person에 있는 키의 값들을 가져와서 조합시킨다. 
+  // 변수를 출력한다. 
+  
+  
+let fullName = person.name.first + &quot; &quot; + person.name.middle + &quot; &quot; + person.name.last;  
+
+  return fullName;
+}
+
+var person = {
+  name : {
+    first : &quot;Alyssa&quot;,
+    middle: &quot;P.&quot;,
+    last: &quot;Hacker&quot;
+  },
+  age : 26
+};
+getFullName(person); //&quot;Alyssa P. Hacker&quot;
+
+var personB = {
+  name: {
+    first: &quot;Ben&quot;,
+    last: &quot;Bitdiddle&quot;
+  },
+  age: 34
+};
+getFullName(personB); //&quot;Ben Bitdiddle&quot;
+
+
+</code></pre>
+
+<h3 id="other-soultion-3">Other_Soultion</h3>
+
+<pre><code class="language-js">
+
+//함수 아래 케이스에 맞게 name값에 접근하여 fullName을 만든다.
+//하나하나 따로 뽑기보다는 value를 배열로 받아서 합치는게 편하다 :)
+
+function getFullName(obj) {
+  return Object.values(obj.name).join(' ')
+}
+
+
+</code></pre>
+
+<h3 id="question-21">Question</h3>
+
+<h2 id="billtotal-1">billTotal</h2>
+
+<blockquote>
+<p>Write a function called billTotal that can be used to calculate the total to be paid at a restaurant &ndash; including tip and tax &ndash; given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!</p>
+</blockquote>
+
+<h3 id="my-soultion-26">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+- input: a number representing the cost of food and drinks
+- output: a number representing that cost plus an additional 15% tip and tax of 9.5%
+
+
+function billTotal(subtotal) {
+  // YOUR CODE HERE
+
+  // tip 15% = * 0.15
+  // tax 9.5% = * 0.095
+  
+  // tip을 얼마 냈는지 조사후 변수에 저장
+  // tax를 얼마나 냈는지 조사후 변수에 저장
+  // tip &amp; tax &amp; subtotal 더한값을 출력
+  
+  let tip = subtotal * 0.15
+  let tax = subtotal * 0.095
+  
+  return subtotal + tip + tax;
+}
+
+billTotal(10.00); // =&gt; 12.45
+
+
+
+</code></pre>
+
+<h3 id="other-soultion-4">Other_Soultion</h3>
+
+<pre><code class="language-js">
+// 뭐 단순하게...팁 15%, 세금 9.5% 더해주면 된다고 한다 :)
+
+function billTotal(subtotal) {
+  return (subtotal * 1.15 + subtotal * 0.095)
+}
+
+billTotal(10.00); // =&gt; 12.45
+
+
+
+
+
+</code></pre>
+
+<h3 id="question-22">Question</h3>
+
+<h2 id="primemover">primeMover</h2>
+
+<blockquote>
+<p>Have the function primeMover(n) return the n-th prime number. The range will be from 1 to 5 * 10^4; (숫자(n)가 주어졌을때, &lsquo;primeMover(n)&rsquo; 함수는 num 번째 소수를 반환합니다. 범위는 1에서 50,000 입니다.)</p>
+
+<p>For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-27">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+let primeMover = function(n) {
+  // your code here
+
+
+  let arr = [1];
+  for ( let i = 1; i &lt;100; i++) {
+    for ( let j = 2; j &lt; 100; j++ ) {
+      if (j % i !== 0 ) {
+       arr.push(j);
+      }
+    }
+  }
+  return arr[n];
+}
+
+
+</code></pre>
+
+<h3 id="question-23">Question</h3>
+
+<h2 id="isoddwithoutmodulo">isOddWithoutModulo</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;isOddWithoutModulo&rdquo;. (&ldquo;isOddWithoutModulo&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a number, &ldquo;isOddWithoutModulo&rdquo; returns whether the passed in number is odd. (숫자가 주어졌을때, &ldquo;isOddWithoutModulo&rdquo; 함수는 주어진 숫자가 홀수인지를 반환합니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-28">My_Soultion</h3>
+
+<pre><code class="language-js">
+// 2. it is used by Math.floor 
+
+function isOddWithoutModulo(num) { // floor 메소드로 참과 거짓을 출력할뿐만 아니라 정수로 만든다. 그것을 2로 나눠서 2로 다시 곱한값이 기존에 값과 일치하지 않는다면 홀수이므로 true 반환
+  
+  return Math.floor(num / 2) * 2 !== num;  
+
+</code></pre>
+
+<h3 id="others-soultion">Others_Soultion</h3>
+
+<pre><code class="language-js">
+function isOddWithoutModulo(num) {
+   // 예를 들어, num이 -17이라고 가정합니다. 
+   num = Math.abs(num);
+// num은 절대값이 되어 17이됩니다. 이를 통해 파라미터에 들어올 모든 음수를 커버할 수 있을 겁니다. 
+   if( num === 0 )  // num은 현재 17로 0이 아니기 때문에 그 다음 else if로 넘어가게 됩니다. 
+       return false;
+   else if(num === 1) // num은 현재 17로 1이 아니기 때문에 그 다음 else로 넘어가게 됩니다. 
+       return true;
+   else { // 보통 홀수인지 아닌지를 판별하기 위해서 2로 나누었을 대 나머지값을 확인하는 방법을 씁니다. 
+// 그 방법을 풀어보면 17 -2 -2 -2 -2 -2 -2...... 하여 0 혹은 1이 될 때까지 뻰다는 것을 의미합니다. 
+       return isOddWithoutModulo(num-2); // 이 부분은 바로 위의 설명이 적용되는 부분입니다. 
+// 자바스크립트는 재귀함수가 가능하여 함수 안에서 자기 자신을 호출할 수 있습니다.
+// 이를테면 num이 17이었다면 위의 구문을 통해 다시  isOddWithoutModulo(17-2)를 호출하는 것입니다. 
+// 위의 과정을 다시 반복하게 되면 isOddWithoutModulo(15) --&gt; isOddWithoutModulo(13) --&gt; isOddWithoutModulo(11).... 
+// num이 0 혹은 1이 되어 if와 else if 구문에 걸려 return될 때까지 반복됩니다. 
+   }
+}
+
+
+</code></pre>
+
+<h3 id="question-24">Question</h3>
+
+<h2 id="getstringlength">getStringLength</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;getStringLength&rdquo;. (&ldquo;getStringLength&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a string, &ldquo;getStringLength&rdquo; returns the length of the given string. (문자열이 주어졌을때, &ldquo;getStringLength&rdquo; 함수는 주어진 문자열의 길이를 반환합니다.)</p>
+
+<p>Do NOT use any native &lsquo;length&rsquo; methods. (- &lsquo;length&rsquo; 메소드를 사용하지 마세요.)</p>
+</blockquote>
+
+<h3 id="my-soultion-29">My_Soultion</h3>
+
+<pre><code class="language-js">
+function getStringLength(string) {
+  // your code here
+
+  // 1. count 변수를 만들어 초기값을 지정한다. 
+  // 2. while loop를 이용해 string[count] 값을 지정해 조건문을 만든다. 
+  // 3. 참이면 count 에 1씩 증가시킨다. 그러면 조건문에 인덱스 번호가 넘어가면 조건문이 문자의 길이만큼 값이 count 에 저장된다. 
+
+  let count = 0;
+
+  while (string[count]) {
+    count = count + 1;
+  };
+  return count;
+};
+
+
+</code></pre>
+
+<h3 id="question-25">Question</h3>
+
+<h2 id="getindexof">getIndexOf</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;getIndexOf&rdquo;. (&ldquo;getIndexOf&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a character and a string, &ldquo;getIndexOf&rdquo; returns the first position of the given character in the given string. (문자와 문자열이 주어졌을때, &ldquo;getIndexOf&rdquo; 함수는 주어진 문자열에서 주어진 문자가 나타나는 첫번째 위치를 반환합니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-30">My_Soultion</h3>
+
+<pre><code class="language-js">function getIndexOf(char, str) {
+
+      for (let i = 0; i &lt; str.length;  i = i + 1 ) {
+          if ( str[i] === char ) {  //  만약 str 에 있는 문자들중에 char 같다면 
+            return i;  // 리턴 인덱스 번호 
+          } 
+        }
+      return -1; //  아니면 -1  반환
+    }
+
+
+
+</code></pre>
+
+<h3 id="question-26">Question</h3>
+
+<h2 id="calculatebilltotal">calculateBillTotal</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;calculateBillTotal&rdquo;. (&ldquo;calculateBillTotal&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given the pre tax and pre tip amount of a meal, &ldquo;calculateBillTotal&rdquo; returns the total amount due after tax and tip. (팁과 세금을 제외한 식사값이 주어졌을때, &ldquo;calculateBillTotal&rdquo; 함수는 팁과 세금이 포함된 총 식사값을 반환합니다.)</p>
+
+<p>Assume that sales tax is 9.5% and tip is 15%. (- 세금은 9.5% 팁은 15% 로 계산하세요.)
+Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)</p>
+</blockquote>
+
+<h3 id="my-soultion-31">My_Soultion</h3>
+
+<pre><code class="language-js">
+function calculateBillTotal(preTaxAndTipAmount) {
+  // your code here
+
+  // 1. salesTax 변수를 만들고 주어진 값의 0.095 곱한 값을 대입
+  // 2. tip 변수를 만들고 주어진 값의 0.15 를 곱한 값을 대입
+  // 3. 모든값을 더한후 리턴  
+ 
+
+  let salesTax = preTaxAndTipAmount * 0.095;
+  let tip = preTaxAndTipAmount * 0.15;
+
+  return preTaxAndTipAmount + salesTax + tip;
+}
+
+
+
+
+</code></pre>
+
+<h3 id="question-27">Question</h3>
+
+<h2 id="convertobjecttoarray3">convertObjectToArray3</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;convertObjectToList&rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &ldquo;convertObjectToList&rdquo;를 작성하세요.)</p>
+</blockquote>
+
+<h3 id="my-soultion-32">My_Soultion</h3>
+
+<pre><code class="language-js">function convertObjectToList(obj) {
+  // your code here
+  
+  // 1. 마지막에 출력할 빈배열을 만든다. 
+  // 2. for 문을 사용해서 객체안에 있는 key와 prop 값에 전근한다. 
+  // 3. push 사용해 접근한 key값은 0번째 값에 넣고 prop 값은 1번째 값에 넣는다. 
+  // 4. arr 리턴한다. 
+
+  let arr = [];
+  for ( let key in obj ) {
+    arr.push([key,obj[key]]);
+  }  
+ return arr;
+}
+
+
+
+
+</code></pre>
+
+<h3 id="question-28">Question</h3>
+
+<h2 id="isodd">isOdd</h2>
+
+<blockquote>
+<p>Write a function called isOdd. (&ldquo;isOdd&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given an integer, isOdd returns whether the integer is odd or not. (숫자가 주어졌을때, &ldquo;isOdd&rdquo; 함수는 주어진 숫자가 홀수 인지 아닌지를 반환합니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-33">My_Soultion</h3>
+
+<pre><code class="language-js">
+function isOdd(num) {
+  // your code here
+  // 파라미터를 2로 나누었을때의 나머지를 판별별
+  // 나머지가 1인경우, true를 리턴
+  // 나머지가 0인경우, false를 리턴
+  if (num % 2 === 1 ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+</code></pre>
+
+<h3 id="my-refactoring-code">My_Refactoring code</h3>
+
+<pre><code class="language-js">
+function isOdd(num) {
+  // your code here
+
+  // 만약 num  % 2 의 나머지수가  0 이면 짝수 return false;
+  // 그게 아니라면 true 리턴
+  return num % 2 === 0 ? false : true;
+}
+
+
+
+</code></pre>
+
+<h3 id="question-29">Question</h3>
+
+<h2 id="sum">sum</h2>
+
+<blockquote>
+<p>Summation to n: Let&rsquo;s implement the function sum that takes a single parameter n, and computes the sum of all integers up to n starting from 0, e.g.:</p>
+
+<p>(n까지의 총 합: n을 매개변수로 받아 0 부터 n 까지 모든 수의 총 합을 반환하는 함수를 작성하세요.)</p>
+</blockquote>
+
+<h3 id="my-soultion-34">My_Soultion</h3>
+
+<pre><code class="language-js">function sum(n) {
+  let result = 0;
+  //반복문을 이용하여 0부터 n까지의 숫자를 더하여 출력
+  for (let i = 0; i &lt;= n; i++) {
+    result = result + i;
+  }
+  return result;
+  
+  // your code here
+}
+sum(3);
+sum(4);
+
+</code></pre>
+
+<h3 id="question-30">Question</h3>
+
+<h2 id="onlyevenelements">onlyEvenElements</h2>
+
+<blockquote>
+<p>Given an array of numbers, onlyEvenElements returns a new array of just the even numbers. (숫자로 이루어진 배열이 주어졌을때, &ldquo;onlyEvenElements&rdquo; 함수는 주어진 배열에 있는 짝수로만으로 이루어진 새로운 배열을 반환해야 합니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-35">My_Soultion</h3>
+
+<pre><code class="language-js">
+function onlyEvenElements(arr) {
+  //짝수값을 입력받을 빈배열을 선언한다.
+  let result = [];
+  //입력받은 배열안에 있는는 값을 판별하기위해 불러온다.
+  for (let i = 0; i &lt; arr.length; i++) {
+    //값이 짝수인지를 if 문을 써서 판별한다. 
+    if (arr[i] % 2 === 0) {
+      //값이이 짝수인경우 빈배열에 집어넣는다.
+      result.push(arr[i]);
+    }
+  }
+  return result;
+  // your code here
+}
+
+
+</code></pre>
+
+<h3 id="question-31">Question</h3>
+
+<h2 id="removeoddvalues">removeOddValues</h2>
+
+<blockquote>
+<p>Write a function removeOddValues that takes an object as an argument and returns an object with all key/value pairs removed for which the value holds an odd number. (&ldquo;removeOddValues&rdquo; 함수를 작성하세요. 객체가 주어졌을때, &ldquo;removeOddValues&rdquo; 함수는 주어진 객체의 key/value 페어 중 value 가 홀수 숫자인 페어가 제거된 객체를 반환하세요.)</p>
+
+<p>You&rsquo;ll need to use the &ldquo;typeof&rdquo; operator to first check that the values are numbers: (value가 숫자인지 확인하기 위하서는 &ldquo;typeof&rdquo; 연산자를 먼저 사용해야 합니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-36">My_Soultion</h3>
+
+<pre><code class="language-js">
+// first 
+
+function removeOddValues(object) {
+  // 1.홀수숫자인 페어가가 아닌 값들을 입력받을을 빈 객체를를 만든다.
+  let object2 = {};
+  // 2. value 값들을 판별하기 위해 키값을 반복시킨다.
+  for (let k in object) {
+  // 3. value 값이 숫자이고 짝수이면 빈객체에 대입한다. 
+    if (typeof(object[k]) === 'number' &amp;&amp; object[k] % 2 === 0) {
+      object2[k] = object[k];
+  //4. value 값이 문자형이면 객체에 대입한다. 
+    } else if ( typeof(object[k]) === &quot;string&quot; ) {
+      object2[k] = object[k];
+    } 
+  }
+  return object2;
+  // your code here
+}
+
+
+
+// Sceond 
+
+function removeOddValues(input) {
+	
+// 1. 결과를 담을 객체를 만듭니다. 
+	
+  	let result = {};
+
+// 2. input 으로 받은 object 안에 key 를 모두 반복합니다. 
+  
+  for (let key in input) {
+	  let value = input[key];
+	  let isNumber = typeof value === 'number';
+
+	  if (isNumber ) {
+	 
+// key의 해당 하는 value가 짝수인지 확인합니다.
+	 
+    let isEven = value % 2 === 0;
+    if (isEven) {
+	 
+// 만든 객체에 key, value를 추가합니다.
+	 
+    result[key] = value;
+	    }
+   }
+// 숫자가 아니면
+	
+    else {
+	
+//만든 객체에 key, value 를 추가합니다.
+
+  	result[key] = value;	
+    }
+  }
+  return result;
+}
+
+removeOddValues({ a: 1, b: 2, c: 3, d: 'hello' })
+
+
+
+
+//third
+
+
+function removeOddValues(object) {
+  //1. value 값을 판별하기 위해 key 값을 반복한다.
+  for (let k in object) {
+  //2. value 값이 숫자이고 홀수이면 삭제한다. 
+    if (typeof(object[k]) === 'number' &amp;&amp; object[k] % 2 === 1) {
+    delete object[k];
+     }
+  }
+  return object;
+  }
+
+</code></pre>
+
+<h3 id="question-32">Question</h3>
+
+<h2 id="firstcharacter">firstCharacter</h2>
+
+<blockquote>
+<p>In this exercise, a string is passed to a method and a new string has to be returned with the first character of each word in the string (문자열이 주어졌을때, &ldquo;firstCharacter&rdquo; 함수는 문자열의 각 단어 첫글자들로 이루어진 문자열을 반환하여야 합니다.)</p>
+
+<p>Attention! In test case 5 userinput is one space input char as &lsquo; &lsquo;, please do not get confused with &ldquo;, empty string (주의사항! 테스트 케이스 5 에서 주는 입력값은 띄어쓰기 한개(&rsquo; &lsquo;) 입니다. 빈 문자열(&rdquo;) 과 혼동하지 마세요.)</p>
+</blockquote>
+
+<h3 id="my-soultion-37">My_Soultion</h3>
+
+<pre><code class="language-js">
+unction firstCharacter (string) {
+ // Your code here
+ 
+ 
+ // for문 이용
+ 
+ let output = [];
+ let temp_arr = [];
+
+ // 1. split으로 단어로 나눠서 배열 만들기
+ 
+ temp_arr = string.split(' ');
+ // 2. 각 인덱스의 첫번째 문자를 배열 output 에 담기
+ for(let i=0;i&lt;temp_arr.length;i++){
+   output.push(temp_arr[i][0]);
+ }
+ 
+ // 4. 출력
+ return output.join('');
+ 
+ 
+ 
+ ////////////////////////////////////////////////////////////////////////
+ 
+ // 2. Reduce 이용
+ return string.split(' ').reduce(function(acc,cur){
+   return acc+cur[0];
+ 
+ },'');
+ 
+ // 3. Reduce이용 2
+ return string.split(' ').reduce( (acc,cur)=&gt;acc+cur[0] ,'');
+}
+
+
+
+
+</code></pre>
+
+<h3 id="question-33">Question</h3>
+
+<h2 id="dashinsert">dashInsert</h2>
+
+<blockquote>
+<p>Have the function DashInsert insert dashes (&lsquo;-&rsquo;) between each two odd numbers in str. (문자열이 주어졌을때, &lsquo;DashInsert&rsquo; 함수는 문자열에 있는 두 홀수 사이에 대시(&lsquo;-&rsquo;)를 추가하여 반환합니다.)</p>
+
+<p>For example: if str is 454793 the output should be 4547-9-3. (예시: 주어진 문자열이 454793 이라면 결과값은 4547-9-3 입니다.) Don&rsquo;t count zero as an odd number. (0 을 홀수로 간주하지 마세요.)</p>
+</blockquote>
+
+<pre><code class="language-js">
+// 1/for 문
+
+
+function DashInsert(string) {
+ 
+
+
+ let output = [];
+ let tmp=string.split('');
+ for(let i=0;i&lt;tmp.length;i++){
+   //홀수가 연속해서 나올때 =&gt; i번째와 '-'을 넣는다.
+   if(tmp[i]%2 &amp;&amp; tmp[i+1]%2){// 1,3
+     output.push(tmp[i],'-');//1,-,3
+   }else{
+     output.push(tmp[i]);
+   }
+ }
+ return output.join('');
+ }
+
+///////////////////////////////////////////////////////////////////
+
+// 1. reduce 
+
+function DashInsert(string) {
+ 
+ let output = '';
+ let tmp = string.split('');
+ output = tmp.reduce(function(acc,cur){
+   if((acc)%2===1 &amp;&amp; (cur)%2===1) return acc+'-'+cur;
+   else return acc+cur;
+ });
+ return output;
+
+}
+
+
+////////////////////////////////////////////////////////////////////
+
+// 2.splice
+
+function DashInsert(string) {
+  let arr = string.split('');
+  for (let i = 0; i &lt; arr.length; i++) {
+    if ( arr[i] % 2 === 1 &amp;&amp; arr[i + 1] % 2 === 1) {
+      arr.splice(i +1,0,'-');
+    }
+  }
+  return arr.join('');
+}
+
+
+
+
+</code></pre>
+
+<h3 id="question-34">Question</h3>
+
+<h2 id="longestword">longestWord</h2>
+
+<blockquote>
+<p>sing the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &lsquo;LongestWord&rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)</p>
+
+<p>If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요. 문장은 빈 문자열이 아닙니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-38">My_Soultion</h3>
+
+<pre><code class="language-js">
+// It's used by sort() 
+
+function longestWord(string) {
+
+ // 1. 주어진 문장을 배열로 만들기(split)
+ let tmp = string.split(' ');
+ //let sorted_tmp =[];
+ // ['I','love','codestates'];
+ // 2. sort() 사용 =&gt; 성능 떨어짐
+ let x = function(a,b){
+   return b.length-a.length;
+ };
+ // 3. 0번째 요소 출력
+ return tmp.sort(x)[0];
+}
+
+////////////////////////////////////////////////////////
+
+// It's used by reudce(1)
+
+function longestWord(string) {
+ 
+ let tmp = string.split(' ');
+ let max = tmp[0];
+ for(let i =1;i&lt;tmp.length;i++){
+   if(tmp[i].length&gt;max.length){
+     max = tmp[i];
+   }
+ }
+ return max;
+}
+
+
+/////////////////////////////////////////////////////////
+
+// It's used by reudce(2) 화살표
+
+function longestWord(string) {
+
+return string.split(' ').reduce((acc,cur)=&gt; acc.length&lt;cur.length? cur:acc);
+}
+
+</code></pre>
+
+<h3 id="question-35">Question</h3>
+
+<h2 id="convertarraytoobject1">convertArrayToObject1</h2>
+
+<blockquote>
+<p>Write a function &lsquo;transformFirstAndLast&rsquo; that takes in an array, and returns an object with: (배열을 입력으로 받고 다음 조건에 만족하는 객체를 반환하는 함수 &lsquo;transformFirstAndLast&rsquo; 함수를 작성하세요.)</p>
+
+<p>the first element of the array as the object&rsquo;s key, and (1. 배열의 첫번째 요소를 객체의 키로 가집니다.)
+the last element of the array as that key&rsquo;s value. (2. 배열의 마지막 요소를 해당 키의 값으로 가집니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-39">My_Soultion</h3>
+
+<pre><code class="language-js">
+function transformFirstAndLast(array) {
+  // your code here
+
+  // 1. 마지막으로 출력할 객체를 만든다.
+  // 2. 배열의 첫번째 요소를 가져와 변수에 담는다.
+  // 3. 배열의 마지막 요소를 가져와 변수에 담는다.
+  // 4. 객체안에 첫번째 요소를 키로 설정한다.
+  // 5. 객체안에 마지막 요소를 prop 설정한다. 
+
+  let ret = {};
+  ret[array[0]] = array[array.length -1 ];
+  return ret;
+}
+
+
+
+</code></pre>
+
+<h3 id="question-36">Question</h3>
+
+<h2 id="convertobjecttoarray1">convertObjectToArray1</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;getAllKeys&rdquo; which returns an array of all the input object&rsquo;s keys. (객체를 입력으로 받고 해당 객체의 키들을 배열로 반환하는 &ldquo;getAllKeys&rdquo; 함수를 작성하세요.)</p>
+</blockquote>
+
+<h3 id="my-soultion-40">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+function getAllKeys(obj) {
+// your code here
+
+// 1. 마지막에 출력할 새로운 배열을 만든다
+// 2. for in key 값을 가져온다. 
+// 3. 가져온 값을 새로 만든 배열에 넣는다.
+let arr = [];
+for ( key in obj ) {
+  arr.push(key);
+}
+return arr;
+}
+
+
+</code></pre>
+
+<h3 id="question-37">Question</h3>
+
+<h2 id="convertarraytoobject2">convertArrayToObject2</h2>
+
+<blockquote>
+<p>Write a function &lsquo;fromListToObject&rsquo; which takes in an array of arrays, and returns an object with each pair of elements in the array as a key-value pair. (2차원 배열을 입력으로 받고 배열안에 있는 배열의 요소 페어를 키-값 페어로 가지는 객체를 반환하는 함수 &lsquo;fromListToObject&rsquo; 함수를 작성하세요.)</p>
+</blockquote>
+
+<h3 id="my-soultion-41">My_Soultion</h3>
+
+<pre><code class="language-js">
+function fromListToObject(array) {
+  // your code here
+  
+  //  1. output 할 빈객체를 생성한다.  
+  //  2. for 문으로 배열 안에 있는 배열을 조사한다.
+  //  3. 배열안에 있는 배열의 0번째 를 키값 1번째를 prop 에 넣는다.
+ 
+  
+  let obj = {};
+
+  for ( let i = 0; i &lt; array.length; i = i + 1 ) {
+    obj[array[i][0]] = array[i][1];
+    }
+    return obj
+}
+
+
+
+</code></pre>
+
+<h3 id="questoin">Questoin</h3>
+
+<h2 id="convertobjecttoarray2">convertObjectToArray2</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;listAllValues&rdquo; which returns an array of all the input object&rsquo;s values. (객체를 입력으로 받고 해당 객체의 값들을 배열로 반환하는 &ldquo;listAllValues&rdquo; 함수를 작성하세요.)</p>
+</blockquote>
+
+<h3 id="my-soultion-42">My_Soultion</h3>
+
+<pre><code class="language-js">
+function listAllValues(obj) {
+  // your code here
+  
+  // 1. output 할 빈 배열을 생셩
+  // 2. for in prop 값을 조사
+  // 3. prop 값을 빈배열에 넣는다. 
+  // 4. output 출력한다. 
+  
+  let arr = [];
+  for ( prop in obj ) {
+    arr.push(obj[prop]);
+  } 
+  return arr;
+}
+
+
+
+
+</code></pre>
+
+<h3 id="question-38">Question</h3>
+
+<h2 id="convertarraytoobject3">convertArrayToObject3</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;transformEmployeeData&rdquo; that transforms some employee data from one format to another. (사원들의 정보를 다른 형태로 변형 할 수 있는 함수 &ldquo;transformEmployeeData&rdquo; 함수를 작성하세요.)</p>
+
+<p>The argument will look something like this: (사원들의 정보는 아래와 같은 배열로 주어질 수 있습니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-43">My_Soultion</h3>
+
+<pre><code class="language-js">
+function transformEmployeeData(array) {
+
+  // 1. 맨 위 배열을 루프 데이터 가져온다.
+  // 2. 가지고온 배열을 또 루프 를 돌려서 가져온다.
+  // 3. 가지고온 배열을 0번째는 obj key 1번째는 value
+  // 4. 만든 obj 를 배열에 푸시 
+  
+  
+  let arr = [];
+  
+  for ( let i = 0; i &lt; array.length; i = i + 1 ) {
+    let data = {};
+    for ( let n = 0; n &lt; array[i].length; n = n + 1 ) {
+      data[array[i][n][0]] = array[i][n][1];
+    }
+    arr.push(data);
+  }
+  return arr;
+
+
+</code></pre>
+
+<h3 id="other-soultion-5">other_Soultion</h3>
+
+<pre><code class="language-js">
+
+
+
+
+function transformEmployeeData(array) {
+ 
+ // your code here
+ // [key] start: firstName - last: role
+ // return [{}] index0 key; index1 value;
+  
+ // 배열 안에 객체가 들어가 있는 것을 반환해야하니까
+ // 빈배열 선언하고 빈 객체 선언 해서 빈 객체에 값 넣고
+ //그 객체를 빈 배열에 넣어주고
+ // 최종적으로 return 그 배열 해 주면 됨
+
+  let result = [];
+
+  for (let i of array){ // 여기서 i 는 [['firstName', 'Joe'], ['lastName', 'Blow'], ['age', 42], ['role', 'clerk']]
+    let obj = {};
+   for (let j of i){ // 여기서 j는 ['firstName', 'Joe']
+     obj[j[0]] = j[1]; // j의 0번 elemente 'firstName' , 1번 element 'Joe'
+    // obj[array[j][0]] = array[j][1];
+   }
+   result.push(obj);
+  }
+
+return result;
+}
+
+
+</code></pre>
+
+<h3 id="qutestion">Qutestion</h3>
+
+<h2 id="greetcustomers">greetCustomers</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;greetCustomer&rdquo;. (&ldquo;greetCustomer&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a name, &ldquo;greetCustomer&rdquo; returns a greeting based on how many times that customer has visited the restaurant. Please refer to the customerData object. (고객들의 방문 횟수를 가지고 있는 객체와 이름이 주어졌을때, &ldquo;greetCustomer&rdquo; 함수는 손님이 몇번 방문했는지에 따라 다른 인삿말을 반환합니다. customerData 객체를 참고해 주세요.)</p>
+</blockquote>
+
+<h3 id="my-soultion-44">My_Soultion</h3>
+
+<pre><code class="language-js">
+function greetCustomer(customerData, firstName) {
+  let greeting = '';
+  // your code here
+
+  // 1 . 객체의 속성의 객체의 속성값 접근한다.
+  // 2.  객체의 속성의 객체의 속성값이 undefinded 이라면 1 greeting 대입
+  // 3.  객체의 속성의 객체의 속성값이 1 이라면 2  greeting 대입
+  // 4.  객체의 속성의 객체의 속성값이 1 보다 크다면 3 greeting 대입
+
+    if (!customerData[firstName]) {
+        greeting = `Welcome! Is this your first time?`;
+    } else if (customerData[firstName].visits === 1  ) {;
+        greeting = `Welcome back, ${firstName}! We're glad you liked us the first time!`
+    } else if ( customerData[firstName].visits &gt; 1 ) {
+        greeting =  `Welcome back, ${firstName}! So glad to see you again!`;
+    }
+    return greeting;
+}
+
+</code></pre>
+
+<h3 id="question-39">Question</h3>
+
+<h2 id="convertdoublespacetosingle">convertDoubleSpaceToSingle</h2>
+
+<blockquote>
+<p>Write a function called &ldquo;convertDoubleSpaceToSingle&rdquo;. (&ldquo;convertDoubleSpaceToSingle&rdquo; 함수를 작성하세요.)</p>
+
+<p>Given a string, &ldquo;convertDoubleSpaceToSingle&rdquo; returns the passed in string, with all the double spaces converted to single spaces. (문자열이 주어졌을때, &ldquo;convertDoubleSpaceToSingle&rdquo; 함수는 주어진 문자열에 있는 띄어쓰기 두개(double spaces)를 띄어쓰기 한개(single space)로 변환한 뒤 해당 문자열을 반환합니다.)</p>
+</blockquote>
+
+<h3 id="my-soultion-45">My_Soultion</h3>
+
+<pre><code class="language-js">
+function convertDoubleSpaceToSingle(str) {
+  
+  // 1. 문자열을 split() 를 사용해서 str 변수에 배열로 저장한다.
+  // 2. reduce 를 사용해서 배열에 담긴 문자의 single space로 만들어 출력한다. 
+
+  let strArr = str.split(&quot;  &quot;);
+  let output = strArr.join(&quot; &quot;);
+  return output;
+}
+
+
+// Refactoing
+
+function convertDoubleSpaceToSingle(str) {
+  return str.split(&quot;  &quot;).join(&quot; &quot;);
+
+}
+
+
+</code></pre>
+
+<h3 id="other-soultion-6">other_Soultion</h3>
+
+<pre><code class="language-js">
+function convertDoubleSpaceToSingle(str) {
+  return str.replace( /  +/g,' ');
+}
+잘되긴 하는데.... ㅡ,.ㅡ
+
+/ +/g 부분이 이해가 가지 않습니다...............
+/(빈칸 두개)+/g 를 찾아서 ' '로 바꿔준다는 것 같습니다.
+
+</code></pre>
+
+<h3 id="other-soultion-7">other_Soultion</h3>
+
+<pre><code class="language-js">
+function convertDoubleSpaceToSingle(str) {
+
+var array = str.split(' '); // 문자열 배열 만들기  [ 'string', '', 'with', '', 'double', '', 'spaces' ]
+
+for (i = 0; i&lt;=array.length; i++) { // for 문을 이용해 배열 접근 
+  if (array[i] === '') { //만약 각각의 요소가 '' 와 같다면
+    array.splice(i,1); // splice 접근해서 삭제 
+  }
+}
+
+return array.join(' '); // 각각의 문자열을 join ' ' 를 나눠서 출력 
+
+}
+
+
+</code></pre>
+
+          </div>
+
+          
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/javascript/">Javascript</a>
+  
+</div>
+
+
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Nov 14, 2019
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+
+  </body>
+</html>
+
+

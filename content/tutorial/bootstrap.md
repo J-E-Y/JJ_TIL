@@ -1,19 +1,17 @@
 ---
 title: Bootstrap
-date: 2019
-draft: true
+author: JohnJung
+date: '2019-11-14'
+categories: []
+tags: ['Bootstrap']
 menu:
   tutorial:
-    parent: "2.Html&&Css"
-    weight: 0
-
-toc: true
+    name: 4.Bootstrap
+    weight: 4
+toc: yes
 type: docs
-tags:
-- Html&&Css
 summary: 'write here:rocket:' 
 ---
-
 
 
 

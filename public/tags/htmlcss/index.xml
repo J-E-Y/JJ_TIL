@@ -12,29 +12,20 @@
     
     
     <item>
-      <title>Html&amp;&amp;Css</title>
-      <link>/tutorial/html/</link>
+      <title>Bootstrap</title>
+      <link>/tutorial/html-css-bootstrap/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/html/</guid>
-      <description>write here:rocket:</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap</title>
-      <link>/tutorial/bootstrap/</link>
-      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
-      
-      <guid>/tutorial/bootstrap/</guid>
+      <guid>/tutorial/html-css-bootstrap/</guid>
       <description>write here:rocket:</description>
     </item>
     
     <item>
       <title>Css</title>
-      <link>/tutorial/css/</link>
-      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      <link>/tutorial/html-css-css/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/css/</guid>
+      <guid>/tutorial/html-css-css/</guid>
       <description>write here:rocket:</description>
     </item>
     

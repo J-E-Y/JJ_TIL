@@ -6,8 +6,8 @@ categories: []
 tags: ['Javascript']
 menu:
   tutorial:
-    name: 3.Javascript
-    weight: 3
+    name: 5.Javascript
+    weight: 0
 toc: yes
 type: docs
 summary: 'write here:rocket:' 

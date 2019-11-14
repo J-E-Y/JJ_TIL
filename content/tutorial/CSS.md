@@ -1,22 +1,17 @@
 ---
 title: Css
-date: 2019
-draft: true
+author: JohnJung
+date: '2019-11-14'
+categories: []
+tags: ['Css']
 menu:
   tutorial:
-    parent: "2.Html&&Css"
-    weight: 0
-
-toc: true
+    name: 3.Css
+    weight: 3
+toc: yes
 type: docs
-tags:
-- Html&&Css
 summary: 'write here:rocket:' 
 ---
-
-
-![](/tutorial/CSS_files/Screen Shot 2019-09-15 at 5.21.03 PM.png)
-
 
 ## &lt;style&gt; 
 ---

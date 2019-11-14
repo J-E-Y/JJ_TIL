@@ -1,12 +1,12 @@
 ---
-title: Html&&Css
+title: Html
 author: JohnJung
 date: '2019-11-14'
 categories: []
-tags: ['Html&&Css']
+tags: ['Html']
 menu:
   tutorial:
-    name: 2.Html&&Css
+    name: 2.Html
     weight: 2
 toc: yes
 type: docs
