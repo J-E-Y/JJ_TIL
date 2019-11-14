@@ -6,8 +6,8 @@ categories: []
 tags: ['Technical terms']
 menu:
   tutorial:
-    name: Technical terms
-    weight: 0
+    name: 1.Technical terms
+    weight: 1
 toc: yes
 type: docs
 summary: 'write here:rocket:' 

@@ -6,8 +6,8 @@ categories: []
 tags: ['Git']
 menu:
   tutorial:
-    name: 1.Git
-    weight: 1
+    name: 2.Git
+    weight: 2
 toc: yes
 type: docs
 summary: 'write here:rocket:' 

@@ -6,8 +6,8 @@ categories: []
 tags: ['Python']
 menu:
   tutorial:
-    name: 4.Python
-    weight: 4
+    name: 5.Python
+    weight: 5
 toc: yes
 type: docs
 summary: 'write here:rocket:' 
