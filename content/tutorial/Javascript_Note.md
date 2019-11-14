@@ -1,17 +1,19 @@
 ---
-title: Notes
+title: 5. Notes
 date: 2019
 draft: true
 menu:
   tutorial:
-    parent: "Javascript"
-    weight: 21
+    parent: "3.Javascript"
+    weight: 0
 
 toc: true
 type: docs
+tags:
+- Javacript
+summary: 'write here:rocket:' 
 
 ---
-
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
  
