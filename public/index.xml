@@ -960,1268 +960,6 @@ Plus, content, like a copyright notice for example, can go on the outside of the
     </item>
     
     <item>
-      <title>Javascript</title>
-      <link>/tutorial/javascript/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/javascript/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;this-is-why-i-want-to&#34;&gt;this is why I want to&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-data-type&#34;&gt;&lt;strong&gt;1.data type&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;h5 id=&#34;자료형이란&#34;&gt;자료형이란?&lt;/h5&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;어떤 종류의 데이터를 사용하는 것이지 컴퓨터에게 알려주는 것
-자료형마다 사용 가능한 연산자(Operator)를 따로 가지고 있습니다!
-자료형이 같아야 연산을 할 수 있습니다!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h5 id=&#34;자료형의-종류&#34;&gt;자료형의 종류&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Number :숫자&lt;/li&gt;
-&lt;li&gt;String :문자&lt;/li&gt;
-&lt;li&gt;Boolean :true and False&lt;/li&gt;
-&lt;li&gt;Null : 값이 비어있다&lt;/li&gt;
-&lt;li&gt;Undefined :값이 정의되지 않았다&lt;/li&gt;
-&lt;li&gt;symbol(new in ECMAScript 6)
-and Object :&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;1-number-type-숫자&#34;&gt;1. Number type (숫자)&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var firstNum = 10;     // 소수점을 사용하지 않은 표현
-var secondNum = 10.00; // 소수점을 사용한 표현
-var thirdNum = 10e6;   // 10000000
-var fourthNum = 10e-6; // 0.00001
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;length&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var a = &amp;quot;hello&amp;quot;
-a.length;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;slice :자르기&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var a = &amp;quot;KheLLo&amp;quot;
-a[0];
-a[1] = &amp;quot;H&amp;quot;; //안 됨
-
-
-a.slice(1,4);
-a.toUpperCase(); : 대문자로 바뀐
-a.toLowerCase(); : 소문자로 바뀐다
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;2-string-문자열&#34;&gt;2. String (문자열)&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;quot;I am String&amp;quot;;
-&amp;quot;Hello &amp;quot; + &amp;quot;world&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;3-boolean-불리언&#34;&gt;3. Boolean (불리언)&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;true;
-false;
-5 &amp;gt; 3;
-5 === 5;
-5 &amp;gt; 5;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;4-the-typeof-operator-데이터유형을-알려주는-중요한-연산자&#34;&gt;4. The typeof Operator: 데이터유형을 알려주는 중요한 연산자!&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;typeof 10;        // number 타입
-typeof &amp;quot;문자열&amp;quot;;  // string 타입
-typeof true;      // boolean 타입
-typeof undefined; // undefined 타입
-typeof null;      // object 타입
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;5-symbol-심볼&#34;&gt;5. symbol (심볼)&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;심볼 타입은 ECMAScript 6부터 새롭게 추가된 타입이다.
-심볼은 유일하고 변경할 수 없는 타입으로, 객체의 프로퍼티를 위한 식별자로 사용할 수 있다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ex)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var sym = Symbol(&amp;quot;javascript&amp;quot;);  // symbol 타입
-var symObj = Object(sym);        // object 타입
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;6-object-객체&#34;&gt;6. object (객체)&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;자바스크립트의 기본 타입은 객체(object)이다. 객체(object)란 실생활에서 우리가 인식할 수 있는 사물로 이해할 수 있다. 객체는 여러 프로퍼티(property)나 메소드(method)를 같은 이름으로 묶어놓은 일종의 집합체이다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ex)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var dog = { name: &amp;quot;해피&amp;quot;, age: 3 }; // 객체의 생성
-// 객체의 프로퍼티 참조
-document.getElementById(&amp;quot;result&amp;quot;).innerHTML =
-&amp;quot;강아지의 이름은 &amp;quot; + dog.name + &amp;quot;이고, 나이는 &amp;quot; + dog.age + &amp;quot;살 이다.&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;2-variable&#34;&gt;&lt;strong&gt;2.Variable&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;h5 id=&#34;using-variables&#34;&gt;Using Variables&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;var x = 10;
-
-x + 5 ; // =&amp;gt; 15
-
-x ; // =&amp;gt; 10
-
-once we have created our variables,
-we can use their name as a substitute for their value elsewhere in our program.
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;declaring-a-variable-without-a-vaue&#34;&gt;Declaring a variable without a Vaue&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;
-Creating a variable in JavaScript is called &amp;quot;declaring&amp;quot; a variable.
-
-1.var carName;
-After the declaration, the variable has no value (technically it has the value of undefined).
-
-
-To assign a value to the variable, use the equal sign:
-
-2. carName = &amp;quot;Volvo&amp;quot;;   // carName 를 Volvo 로 변경할때 var 없이 만든다 cos 먼저 선언을 했기 때문이다. 
-
-2. var carName = &amp;quot;Volvo&amp;quot;;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;changing-a-variable-s-value&#34;&gt;Changing a Variable’s value&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;
-var pokemon = charmander
-
-pokemon = heelo
-
-
-Notice that When you change the value of a variable, &amp;quot;you don’t need to use the var keyword&amp;quot;The var keyword is only needed for creating new variables.
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;variable-scope-변수의-유효-범위&#34;&gt;variable scope 변수의 유효 범위&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;local variable 지역 변수&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Variables declared inside a function body are in the Local scope.&lt;/p&gt;
-
-&lt;p&gt;지역 변수(local variable)란 함수 내에서 선언된 변수를 가리킨다.
-이러한 지역 변수는 변수가 선언된 함수 내에서만 유효하며, 함수가 종료되면 메모리에서 사라진다.함수의 매개변수 또한 함수 내에서 정의되는 지역 변수처럼 동작한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex 1-1&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var greeting = &amp;quot;Hello&amp;quot;;
-
-function greetSomeone() {
-	var firstName = &amp;quot;john&amp;quot;
-	return greeting + &amp;quot; &amp;quot; + firstName;
-}
-
-greetSomeone
-firstName; // = &amp;gt; Error
-
-
-Function(greetSomeone) is working but &amp;quot;firstName&amp;quot;&amp;quot; is Error Because we declared our name variable inside the scope of our greetSomeone function.
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;global variable  전역 변수&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Variables declared outside a function body are in the global scope.&lt;/p&gt;
-
-&lt;p&gt;전역 변수(global variable)란 함수의 외부에서 선언된 변수를 가리킨다.
-이러한 전역 변수는 프로그램의 어느 영역에서나 접근할 수 있으며, 웹 페이지가 닫혀야만 메모리에서 사라진다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex 1-2&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;quot;But!!!!!!! if you do this it works well&amp;quot;!!
-
-var greeting = &amp;quot;Hello&amp;quot;;
-var firstName = &amp;quot;john&amp;quot;
-
-function greetSomeone() {
-	firstName = &amp;quot;JJ&amp;quot;
-	return greeting + &amp;quot; &amp;quot;+ firstName;
-}
-
-
-firstNmae // = &amp;gt; JJ
-
-Because you changed a variable the was defined in an outer scope
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;3-operator&#34;&gt;&lt;strong&gt;3.Operator&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;h5 id=&#34;arithmetic-operator-산술-연산자&#34;&gt;arithmetic operator (산술 연산자)&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;+	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 더함.
--	왼쪽 피연산자의 값에서 오른쪽 피연산자의 값을 뺌.
-*	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 곱함.
-/	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눔.
-%	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 나머지를 반환함
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var x = 10, y = 4;
-document.write(x + y + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 14
-document.write(x - y + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 6
-document.write(x * y + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 40
-document.write(x / y + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 2.5
-document.write(x % y);          // 2
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;assignment-operator-대입-연산자&#34;&gt;assignment operator (대입 연산자)&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;=	왼쪽 피연산자에 오른쪽 피연산자의 값을 대입함.
-+=	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 더한 후, 그 결과 값을 왼쪽 피연산자에 대입함.
--=	왼쪽 피연산자의 값에서 오른쪽 피연산자의 값을 뺀 후, 그 결과 값을 왼쪽 피연산자에 대입함.
-*=	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 곱한 후, 그 결과 값을 왼쪽 피연산자에 대입함.
-/=	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 결과 값을 왼쪽 피연산자에 대입함.
-%=	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 나머지를 왼쪽
-피연산자에 대입함.
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var x = 10, y = 10, z = 10;
-x = x - 5;
-y -= 5; // y = y - 5 와 같은 표현임.
-z =- 5; // z = -5 와 같은 표현임.
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;increment-and-decrement-operator-증감-연산자&#34;&gt;increment and decrement operator ( 증감 연산자 )&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;++x	먼저 피연산자의 값을 1 증가시킨 후에 해당 연산을 진행함.
-x++	먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 증가시킴.
---x	먼저 피연산자의 값을 1 감소시킨 후에 해당 연산을 진행함.
-x--	먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 감소시킴.
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var x = 10, y = 10;
-document.write((++x - 3) + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // x의 값을 우선 1 증가시킨 후에 3을 뺌.
-document.write(x + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);         // 11
-document.write((y++ - 3) + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 먼저 y에서 3을 뺀 후에 y의 값을 1 증가시킴.
-document.write(y);                  // 11
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;comparison-operator-비교-연산자&#34;&gt;comparison operator (비교 연산자)&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같으면 참을 반환함.
-===	왼쪽 피연산자와 오른쪽 피연산자의 값이 같고, 같은 타입이면 참을 반환함.
-!=	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않으면 참을 반환함.
-!==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않거나, 타입이 다르면 참을 반환함.
-&amp;gt;	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크면 참을 반환함.
-&amp;gt;=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크거나 같으면 참을 반환함.
-&amp;lt;	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작으면 참을 반환함.
-&amp;lt;=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작거나 같으면 참을 반환함.
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-var x = 3, y = 5;
-var a = &amp;quot;abc&amp;quot;, b = &amp;quot;bcd&amp;quot;;
-document.write((x &amp;gt; y) + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);  // y의 값이 x의 값보다 크므로 false
-document.write((a &amp;lt;= b) + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 알파벳 순서상 &#39;a&#39;가 &#39;b&#39;보다 먼저 나오므로 &#39;a&#39;가 &#39;b&#39;보다 작음.
-document.write(x &amp;lt; a);             // x의 값은 숫자이고 a의 값은 문자열이므로 비교할 수 없음.
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;logical-operator-논리연산자&#34;&gt;Logical operator (논리연산자)&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;amp;&amp;amp; 는 and 
-
-|| 는 or
-
-! 는 Not
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;bitwise-operator-비트-연산자&#34;&gt;bitwise operator (비트 연산자)&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;amp;	대응되는 비트가 모두 1이면 1을 반환함. (비트 AND 연산)
-|	대응되는 비트 중에서 하나라도 1이면 1을 반환함. (비트 OR 연산)
-^	대응되는 비트가 서로 다르면 1을 반환함. (비트 XOR 연산)
-~	비트를 1이면 0으로, 0이면 1로 반전시킴. (비트 NOT 연산)
-&amp;lt;&amp;lt;	지정한 수만큼 비트를 전부 왼쪽으로 이동시킴. (left shift 연산)
-&amp;gt;&amp;gt;	부호를 유지하면서 지정한 수만큼 비트를 전부 오른쪽으로 이동시킴. (right shift 연산)
-&amp;gt;&amp;gt;&amp;gt;	지정한 수만큼 비트를 전부 오른쪽으로 이동시키며, 새로운 비트는 전부 0이 됨.
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;increment-decrement-operator-증감연산자&#34;&gt;increment/decrement operator (증감연산자)&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;증감 연산자는 피연산자를 1씩 증가 혹은 감소시킬 때 사용하는 연산자이다.이 연산자는 피연산자가 단 하나뿐인 단항 연산자이다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ex)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var a;
-a++;
-a = 0;
-a++;
-a--;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;comparison-operator-비교-연산자-1&#34;&gt;comparison operator (비교 연산자)&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같으면 참을 반환함.
-===	왼쪽 피연산자와 오른쪽 피연산자의 값이 같고, 같은 타입이면 참을 반환함.
-!=	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않으면 참을 반환함.
-!==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않거나, 타입이 다르면 참을 반환함.
-&amp;gt;	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크면 참을 반환함.
-&amp;gt;=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크거나 같으면 참을 반환함.
-&amp;lt;	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작으면 참을 반환함.
-&amp;lt;=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작거나 같으면 참을 반환함.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;typeof-연산자&#34;&gt;typeof 연산자&lt;/h5&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;typeof 연산자는 피연산자의 타입을 반환한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code&gt;숫자, NaN	&amp;quot;number&amp;quot;
-문자열	&amp;quot;string&amp;quot;
-true, false	&amp;quot;boolean&amp;quot;
-null	&amp;quot;object&amp;quot;
-undefined	&amp;quot;undefined&amp;quot;
-함수	&amp;quot;function&amp;quot;
-함수가 아닌 객체	&amp;quot;object&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;typeof &amp;quot;문자열&amp;quot;   // string
-typeof 10         // number
-typeof NaN        // number
-typeof false      // boolean
-typeof undefined  // undefined
-typeof new Date() // object
-typeof null       // object
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;ternary-operator-삼항-연산자&#34;&gt;ternary operator (삼항 연산자)&lt;/h5&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;삼항 연산자는 유일하게 피연산자를 세 개나 가지는 조건 연산자이다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var x = 3, y = 5;
-var result = (x &amp;gt; y) ? x : y   // x가 더 크면 x를, 그렇지 않으면 y를 반환함.
-document.write(&amp;quot;둘 중에 더 큰 수는 &amp;quot; + result + &amp;quot;이다.&amp;quot;);
-
-삼항 연산자는 짧은 if / else 문 대신 사용할 수 있으며, 코드를 간결하게 만들어 준다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;delete-연산자&#34;&gt;delete 연산자&lt;/h5&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;delete 연산자는 피연산자인 객체, 객체의 프로퍼티(property) 또는 배열의 요소(element) 등을 삭제해 준다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;피연산자가 성공적으로 삭제되었을 경우에는 참(true)을 반환하고, 삭제하지 못했을 경우에는 거짓(false)을 반환한다.
-이 연산자는 피연산자가 단 하나뿐인 단항 연산자이며, 피연산자의 결합 방향은 오른쪽에서 왼쪽이다.&lt;/p&gt;
-
-&lt;h5 id=&#34;쉼표-연산자&#34;&gt;쉼표 연산자&lt;/h5&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;쉼표 연산자를 for 문에서 사용하면, 루프마다 여러 변수를 동시에 갱신할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;루프마다 i의 값은 1씩 증가하고, 동시에 j의 값은 1씩 감소함.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code&gt;for (var i = 0, j = 9; i &amp;lt;= j; i++, j--) {
-    document.write(&amp;quot;i의 값은 &amp;quot; + i + &amp;quot;이고, j의 값은 &amp;quot; + j + &amp;quot;이다.&amp;lt;br&amp;gt;&amp;quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-var arr = [1, 2, 3];          // 배열 생성
-delete arr[2];                // 배열의 원소 중 인덱스가 2인 요소를 삭제함.
-document.write(arr + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // [1, 2, ]
-// 배열에 빈자리가 생긴 것으로 undefined 값으로 직접 설정된 것은 아님.
-document.write(arr[2] + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
-// 배열의 요소를 삭제하는 것이지 배열의 길이까지 줄이는 것은 아님.
-document.write(arr.length);
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;instanceof-연산자&#34;&gt;instanceof 연산자&lt;/h5&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;instanceof 연산자는 피연산자인 객체가 특정 객체의 인스턴스인지 아닌지를 확인해 준다.
-피연산자가 특정 객체의 인스턴스이면 참(true)을 반환하고, 특정 객체의 인스턴스가 아니면 거짓(false)을 반환한다.
-이 연산자는 두 개의 피연산자를 가지는 이항 연산자이며, 피연산자들의 결합 방향은 왼쪽에서 오른쪽이다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var str = new String(&amp;quot;이것은 문자열이다.&amp;quot;);
- 
-str instanceof Object;  // true
-str instanceof String;  // true
-str instanceof Array;   // false
-str instanceof Number;  // false
-str instanceof Boolean; // false
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;void-연산자&#34;&gt;void 연산자&lt;/h5&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;void 연산자는 피연산자로 어떤 타입의 값이 오던지 상관없이 언제나 undefined 값만을 반환한다.
-이 연산자는 피연산자가 단 하나뿐인 단항 연산자이며, 피연산자의 결합 방향은 오른쪽에서 왼쪽이다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;javascript:void(0)&amp;quot;&amp;gt;이 링크는 동작하지 않는다.&amp;lt;/a&amp;gt;
- 
-&amp;lt;a href=&amp;quot;javascript:void(document.body.style.backgroundColor=&#39;yellow&#39;)&amp;quot;&amp;gt;
-이 링크도 동작하지 않지만, HTML 문서의 배경색을 바꿔준다.
-&amp;lt;/a&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;4-conditional&#34;&gt;&lt;strong&gt;4.Conditional&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code&gt;
-if 문
-if / else 문
-if / else if / else 문
-switch 문
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;if-문&#34;&gt;if 문&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;if (표현식) {
-    표현식의 결과가 참일 때 실행하고자 하는 실행문;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var x = 10, y = 20;
-if (x == y) {
-document.write(&amp;quot;x와 y는 같다.&amp;quot;);
-}
-if (x &amp;lt; y) {
-document.write(&amp;quot;x가 y보다 작다.&amp;quot;);
-}
-if (x &amp;gt; y) // 실행될 실행문이 한 줄뿐이라면 중괄호({})를 생략할 수 있음.
-document.write(&amp;quot;x가 y보다 크다.&amp;quot;);
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;else-문&#34;&gt;else 문&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;
-if (표현식) {
-    표현식의 결과가 참일 때 실행하고자 하는 실행문;
-} else {
-    표현식의 결과가 거짓일 때 실행하고자 하는 실행문;
-}
-else 문을 사용하면 앞의 예제를 좀 더 직관적으로 표현할 수 있다.
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var x = 10, y = 20;
-if (x == y) {
-document.write(&amp;quot;x와 y는 같다.&amp;quot;);
-} else {
-if (x &amp;lt; y)
-    document.write(&amp;quot;x가 y보다 작다.&amp;quot;);
-else // 실행될 실행문이 한 줄뿐이라면 중괄호({})를 생략할 수 있음.
-    document.write(&amp;quot;x가 y보다 크다.&amp;quot;);
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;else-if-문&#34;&gt;else if 문&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;
-if (표현식1) {
-    표현식1의 결과가 참일 때 실행하고자 하는 실행문;
-} else if (표현식2) {
-    표현식2의 결과가 참일 때 실행하고자 하는 실행문;
-} else {
-    표현식1의 결과도 거짓이고, 표현식2의 결과도 거짓일 때 실행하고자 하는 실행문;
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var x = 10, y = 20;
-if (x == y) {
-document.write(&amp;quot;x와 y는 같다.&amp;quot;);
-} else if (x &amp;lt; y) {
-document.write(&amp;quot;x가 y보다 작다.&amp;quot;);
-} else { // x &amp;gt; y인 경우
-document.write(&amp;quot;x가 y보다 크다.&amp;quot;);
-}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;switch-case&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;if 와 else if를 반복적으로 써야 하는 상황을 피하게 해 줍니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code&gt;var value;
-switch(value) {
-    case 값1:
-    //value == 값1일 경우 실행할 코드
-    break;
-    case 값2:
-    //value == 값2일 경우 실행할 코드
-    break;
-    //...
-    default:
-    //위쪽에 해당되지 않는 경우 실행할 코드
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;점수가 10점이면 A, 9점이면 B, 그 외에는 C를 출력하는 코드를 작성하세요.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code&gt;if로 구현
-var score = prompt(&#39;점수를 입력하세요&#39;);
-if (score === 10) {
-    console.log(&#39;A&#39;);
-} else if (score == 9) {
-    console.log(&#39;B&#39;);
-} else {
-    console.log(&#39;C&#39;);
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;
-switch-case 로 구현
-var score = prompt(&#39;점수를 입력하세요&#39;);
-switch (score) {
-    case 10:
-    console.log(&#39;A);
-    break;
-    case 9:
-    console.log(&#39;B&#39;);
-    break;
-    default:
-    console.log(&#39;C&#39;);
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;5-loops&#34;&gt;&lt;strong&gt;5.Loops&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code&gt;
-while 문
-do / while 문
-for 문
-for / in 문
-for / of 문
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;while&#34;&gt;while&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;while (표현식) {
-    표현식의 결과가 참인 동안 반복적으로 실행하고자 하는 실행문;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;note&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;while 문 만들때는 변수를 미리 만들어 줘야 한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code&gt;var n ;
-var n = 0;
-var n = 1;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex 1-1&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var n = 1;
-while(n &amp;lt;= 100) {    
-console.log(&amp;quot;Hi &amp;quot; + n);
-n++;
-}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ex 1-2&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;while 문을 사용해서 1에서 100까지의 합을 구해 봅시다.
-자주 사용하는 패턴
-var i = 0; // 1 변수 초기화
-while (i &amp;lt;= 100) { // 2 변수 검사
-console.log(i); // 3 코드 다하고나서 
-i++; //  4 하나씩 증가
-}
-
-그래서 for가 등장함
-위의 while 코드와 완전히 똑같음
-for (var i = 0; i &amp;lt;= 100; i++) {
-console.log(i);
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ex gugudan with while&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;script&amp;gt;
-       
-    var strN = Number(prompt(&amp;quot;input which gugudan&amp;quot;));
-    var i = 1;
-    document.write(&amp;quot;gugudan&amp;quot; + strN + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
-    while (i &amp;lt; 10) {
-        document.write(strN + &amp;quot; * &amp;quot; + i + &amp;quot; = &amp;quot; + strN * i + &amp;quot; &amp;lt;br&amp;gt; &amp;quot; );
-        i++;
-    }
-   
-&amp;lt;/script&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;for-문&#34;&gt;for 문&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;for (초기식; 표현식; 증감식) {
-    표현식의 결과가 참인 동안 반복적으로 실행하고자 하는 실행문;
-}
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex 1-1&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-for (var i = 1; i &amp;lt; 10; i++) {
-document.write(i + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
-}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ex 1-2 gugudan with for&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;script&amp;gt;
-    
-   var strN = Number(prompt(&amp;quot;input which dan?&amp;quot;));
-   document.write(&amp;quot;gugudan&amp;quot; + strN + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
-   for (var i = 1; i &amp;lt; 10; i++) {
-       document.write(strN + &amp;quot; * &amp;quot; + i + &amp;quot; = &amp;quot; + strN * i + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
-   }
-    
-&amp;lt;/script&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ex 1-3 gugudan with button&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;P&amp;gt;사용자가 2 이상, 9 이하가 아닌 값을 입력하는 경우 &amp;quot;2이상, 9이하의 값만      입력할 수 있습니다.&amp;quot;라는 메시지를 출력한다.&amp;lt;/P&amp;gt;
-&amp;lt;script&amp;gt;
-        
-    var strN;
-    while (true){
-        strN = Number(prompt(&amp;quot;input which dan from 2 dan to 9 dan&amp;quot;))
-        if (strN &amp;lt; 2 || strN &amp;gt; 9){
-            console.log(&amp;quot;this is not available&amp;quot;);
-        } else {
-            document.write(&amp;quot;gugudan&amp;quot; + strN + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); 
-            break;
-        }
-    }
-    for (i = 1; i &amp;lt; 10; i ++){
-        document.write(strN + &amp;quot; + &amp;quot; + i + &amp;quot; = &amp;quot; + strN + i + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
-    }
-        
-&amp;lt;/script&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;6-array&#34;&gt;&lt;strong&gt;6.Array&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;h5 id=&#34;배열이란&#34;&gt;배열이란?&lt;/h5&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;자바스크립트에서 배열(array)은 이름과 인덱스로 참조되는 정렬된 값의 집합으로 정의된다. 배열을 구성하는 각각의 값을 배열 요소(element)라고 하며, 배열에서의 위치를 가리키는 숫자를 인덱스(index)라고 한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h5 id=&#34;특징&#34;&gt;특징&lt;/h5&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;배열 요소의 타입이 고정되어 있지 않으므로, 같은 배열에 있는 배열 요소끼리의 타입이 서로 다를 수도 있다. 배열 요소의 인덱스가 연속적이지 않아도 되며, 따라서 특정 배열 요소가 비어 있을 수도 있다.자바스크립트에서 배열은 Array 객체로 다뤄진다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h5 id=&#34;배열-만들기-1&#34;&gt;배열 만들기 1&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;var scores = [50, 60, 70];
-console.log(scores);
-console.log(scores.length);
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;인덱스를-이용해서-배열의-원소-읽기&#34;&gt;인덱스를 이용해서 배열의 원소 읽기&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;scores[0];
-scores[3];
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;배열에-값-쓰기&#34;&gt;배열에 값 쓰기&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;scores[0] = 100;
-scores[9] = 50;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;배열의-타입-알아보기&#34;&gt;배열의 타입 알아보기&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;typeof scores
-typeof scores[0]
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;배열-만들기-2&#34;&gt;배열 만들기 2&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;var a = [];
-a[0] = 2;
-a[1] = 4;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;배열의-길이-구하기&#34;&gt;배열의 길이 구하기&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;scores.length;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;배열의-마지막-원소를-읽어-오려면&#34;&gt;배열의 마지막 원소를 읽어 오려면?&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;scores[scores.length - 1];
-문자열과 배열
-	•	문자열과 배열은 비슷한 성질을 많이 가지고 있습니다.
-	•	문자열: Immutable
-	•	배열: Mutable
-	•	배열의 속성과 메소드를 문자열에도 테스트해보세요.
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;배열의-메소드들-1&#34;&gt;배열의 메소드들 1&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;push() 뒤어 붙이기&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4,];
-arr.push(1);
-
-arr; // = &amp;gt; [1,2,3,4,1]
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;pop() 뒤에 있는거 빼기&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4,];
-arr.pop();
-
-arr; // = &amp;gt; [1,2,3]
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;unshift()  앞에 붙이기&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4];
-
-arr.unshift(1);
-
-arr; // = &amp;gt; [1,1,2,3,4,];
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;shift()  앞에 있는거 빼기&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4];
-
-arr.shift();
-
-arr; // = &amp;gt; [2,3,4,]
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;concat() 더하기&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4,5];
-
-arr.concat(6); 
-
-&amp;gt;&amp;gt;arr 
-[1,2,3,4,5,6]  
-기존에 있는 것은 변하지 않는다.
-변하게 하기위해서는 변수를 새로 만들기 !
-
-
-var arr = [1,2,3,4,5];
-
-arr.concat([6,7,8,9,10]);
-
-&amp;gt;&amp;gt;arr
-[1,2,3,4,5,6,7,8,9,10] 
-여러게를 더할수 있다.
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;join() 문자열로 바꾸기&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4,5,6]
-
-arr.join() ;
-
-&amp;gt;&amp;gt;arr
-[&amp;quot;1&amp;quot;,&amp;quot;2&amp;quot;,&amp;quot;3&amp;quot;,&amp;quot;4&amp;quot;,&amp;quot;5&amp;quot;,&amp;quot;6&amp;quot;]
-문자열로 바꿔준다. 
-
-arr.join(&amp;quot;&amp;quot;);
-
-&amp;gt;&amp;gt;arr
-[&amp;quot;123456&amp;quot;];
-문자열 다 붙인다.
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;indaxtOf() ()&amp;lt;&amp;lt;원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;lastIndaxtOf() ()&amp;lt;&amp;lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-
-var arr = [1,2,3,4,5];
-arr.indexOf[1];
-
-&amp;gt;&amp;gt;arr
-2
-
-arr.indexOf[100];
-&amp;gt;&amp;gt;arr
--1
-없는 경우 -1를 호출한다. 
-
-EX) 
-var arr = [1,2,3,4,5,6]
-if (arr.indexOf(100) === -1 ) {
-만약 100이라는 원소가 arr 에 없으면 
-}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;slice()&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var arr = [1, 2, 3, 4, 5];
-a.slice(0, 3);
-&amp;gt;&amp;gt;a;
-123
-원소는 변하지 않는다
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;splice()&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var arr = [1, 2, 3, 4, 5];
-a.splice(0, 3);
-&amp;gt;&amp;gt;a;
-123
-원소 값이 변한다. 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;split()&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code&gt;var s = &amp;quot;hello, world this is jj&amp;quot;;
-s.split(&amp;quot;&amp;quot;);
-
-
-&amp;quot;h&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;,&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;w&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;r&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;t&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;j&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;
-var s = &amp;quot;hello, world this is jj&amp;quot;;
-s.split(&amp;quot;,&amp;quot;);
-&amp;quot;hello&amp;quot;, &amp;quot; world this is jj&amp;quot;
-콤마가 생겼다. 콤마의 기준으로 갈라진다.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;var s = &amp;quot;hello world t-h-i-s-i-s-j-j&amp;quot;
-s.split(&amp;quot;-&amp;quot;);
-
-&amp;quot;hello  world t&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;j&amp;quot;
-- 기준으로 갈라진다. 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;7-function&#34;&gt;&lt;strong&gt;7.Function&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;h5 id=&#34;함수-만들기&#34;&gt;함수 만들기&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;function convertHeight(feet, inches) {
-  return (feet * 12 + inches) * 2.54
-}
-convertHeight(5, 10);
- //= &amp;gt;&amp;gt;177.8
-
-(feet , inches) ==&amp;gt;&amp;gt; parameter ( 매개 변수) 
-(5,10)  ==&amp;gt;&amp;gt; argument ( 전달인자	)
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;변수에-담아서-함수-사용하기&#34;&gt;변수에 담아서 함수 사용하기&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;var ret = function convertHeight(feet, inches) {
-  return (feet * 12 + inches) * 2.54
-}
-ret(5, 10);
-177.8
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;리턴값-없는-변수를-변수에-담으면-undefind-출력된다&#34;&gt;리턴값 없는 변수를 변수에 담으면 “undefind” 출력된다 .&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex 1-1 (console.log)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var foo = function () {
-	console.log(“I’m a foo”);
-}
-&amp;gt;&amp;gt;undefined
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ex 1-2 (return)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var foo = function () {
-	return(“I’m a foo”);
-}
-
-&amp;gt;&amp;gt; I’m a foo
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;return-을-break-로-사용하기-return-으로-함수를-종료하는데-사용할-수-있다&#34;&gt;return 을 break 로 사용하기 (return 으로 함수를 종료하는데 사용할 수 있다.)&lt;/h5&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;(Option) 2중 루프를 한 번에 빠져 나가기
-- &lt;code&gt;break&lt;/code&gt; 명령은 한 번에 한 루프만 빠져나갑니다.
-- 함수의 &lt;code&gt;return&lt;/code&gt; 을 이용하면 2중 루프를 한 번에 종료할 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;종료하기&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var test1 = function (text) {
-        if (text === &amp;quot;exit&amp;quot;) {
-            return;
-        }
-        console.log(&amp;quot;실행&amp;quot;);
-    }
-
-test1(&amp;quot;exit&amp;quot;) // =&amp;gt; undefined
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;실행 하기&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var test1 = function (text) {
-        if (text === &amp;quot;exit&amp;quot;) {
-            return;
-        }
-        console.log(&amp;quot;실행&amp;quot;);
-    }
-test1(&amp;quot;oh&amp;quot;&amp;quot;); // = &amp;gt; 실행 
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;이중-loop-빠져-나가기&#34;&gt;이중 loop 빠져 나가기&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ex (하나만 빠져 나가기 )&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;for (var i = 0; i &amp;lt; 10; i ++)  {
-	for (var j = 0; j &amp;lt; 10; j++) {
-		console.log(i , j );
-		if (j === 3 ) {
-		    break;
-
-		}
-	}
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ex (이중 loop 빠져나간다 with function)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    var foo = function() {
-        for (var i = 0; i &amp;lt; 10; i ++)  {
-            for (var j = 0; j &amp;lt; 10; j++) {
-                console.log(i , j );
-                if (j === 3 ) {
-                    return;
-
-                }
-            }
-        }
-     };
-         
-     foo();
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;배열을-이용한-while-문-for-문&#34;&gt;배열을 이용한 while 문 , for 문&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;// while loop
-    
-    
-    function sum (nums) {
-    var total = 0;
-    var i = 0;
-    while (i &amp;lt; nums.length) {
-        total = total + nums[i];
-        i++;
-    }
-    return total;
-}
-sum([2,3,5,1]);
-
-&amp;gt;&amp;gt; 11
-
-    
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;// for loop
-  
-  
-  function sum (nums) {
-  	var total = 0 ;
-  	for (var i = 0 ; i &amp;lt; nums.length ; i = i + i ) {
-  	total = total + nums[i]
-  }
-	return total;
-}
-
-sum([2,3,5,1,]);
-
-&amp;gt;&amp;gt;11
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;8-objects&#34;&gt;&lt;strong&gt;8.Objects&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;h5 id=&#34;making-objects&#34;&gt;making objects&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;1.
-  var dog = {};
-
-  dog.name = &amp;quot;jj&amp;quot;
-  dog.color = &amp;quot;red&amp;quot;
-  dog.kind = &amp;quot;똥깨&amp;quot;
-  // &amp;gt;&amp;gt;&amp;gt; dog = {name = &amp;quot;jj&amp;quot;, color =&amp;quot;red&amp;quot; , kind = &amp;quot;똥깨 &amp;quot;}
-
-
-2. 
- var dog = {
-    name : &amp;quot;jj&amp;quot;,
-    color : &amp;quot;red&amp;quot;,
-    kind : &amp;quot;똥깨&amp;quot;
-}
-
-  // &amp;gt;&amp;gt;&amp;gt; dog = {name = &amp;quot;jj&amp;quot;, color =&amp;quot;red&amp;quot; , kind = &amp;quot;똥깨 &amp;quot;}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;using-objcets-in-javascript&#34;&gt;using objcets in Javascript&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;var dog = {
-    name = &amp;quot;jj&amp;quot;
-    color = &amp;quot;red&amp;quot;
-    
-};
-
-we have two systems .
-
-1. 
-dog.name;
-dog[&amp;quot;name&amp;quot;];
-
-결과갑 똑같다.
-&amp;gt;&amp;gt;&amp;gt;jj
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;changing-objects&#34;&gt;changing objects&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;1. it is changed
-
-dog.name = &amp;quot;john&amp;quot;
-
-2. it is added
-
-dog.food = &amp;quot;Banana&amp;quot;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;메소드&#34;&gt;메소드&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;객체에 속한 함수&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-dog.eat = function(food) {
-console.log(this.name + &amp;quot; ate delicious &amp;quot; + food +&amp;quot;...&amp;quot;);
-};
-
-p1.eat(&amp;quot;Beef&amp;quot;);
-
-&amp;gt;&amp;gt; jj ate delicious Beef ...
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;this&#34;&gt;this&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;
-메소드 안에서 사용시 함수를 소유한 객체를 가르킨다.
-
-var p2 = {};
-p2.name = &amp;quot;jj&amp;quot;;
-p2.weight = 80;
-p2.say = function(word) {
-    console.log(this.name + &amp;quot; says, &amp;quot; + word);
-};
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Python</title>
       <link>/tutorial/python/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
@@ -3605,6 +2343,1268 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.47.05 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>/tutorial/javascript/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/javascript/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;this-is-why-i-want-to&#34;&gt;this is why I want to&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-data-type&#34;&gt;&lt;strong&gt;1.data type&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&#34;자료형이란&#34;&gt;자료형이란?&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;어떤 종류의 데이터를 사용하는 것이지 컴퓨터에게 알려주는 것
+자료형마다 사용 가능한 연산자(Operator)를 따로 가지고 있습니다!
+자료형이 같아야 연산을 할 수 있습니다!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;자료형의-종류&#34;&gt;자료형의 종류&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Number :숫자&lt;/li&gt;
+&lt;li&gt;String :문자&lt;/li&gt;
+&lt;li&gt;Boolean :true and False&lt;/li&gt;
+&lt;li&gt;Null : 값이 비어있다&lt;/li&gt;
+&lt;li&gt;Undefined :값이 정의되지 않았다&lt;/li&gt;
+&lt;li&gt;symbol(new in ECMAScript 6)
+and Object :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;1-number-type-숫자&#34;&gt;1. Number type (숫자)&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var firstNum = 10;     // 소수점을 사용하지 않은 표현
+var secondNum = 10.00; // 소수점을 사용한 표현
+var thirdNum = 10e6;   // 10000000
+var fourthNum = 10e-6; // 0.00001
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;length&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var a = &amp;quot;hello&amp;quot;
+a.length;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;slice :자르기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var a = &amp;quot;KheLLo&amp;quot;
+a[0];
+a[1] = &amp;quot;H&amp;quot;; //안 됨
+
+
+a.slice(1,4);
+a.toUpperCase(); : 대문자로 바뀐
+a.toLowerCase(); : 소문자로 바뀐다
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;2-string-문자열&#34;&gt;2. String (문자열)&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;quot;I am String&amp;quot;;
+&amp;quot;Hello &amp;quot; + &amp;quot;world&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;3-boolean-불리언&#34;&gt;3. Boolean (불리언)&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;true;
+false;
+5 &amp;gt; 3;
+5 === 5;
+5 &amp;gt; 5;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;4-the-typeof-operator-데이터유형을-알려주는-중요한-연산자&#34;&gt;4. The typeof Operator: 데이터유형을 알려주는 중요한 연산자!&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;typeof 10;        // number 타입
+typeof &amp;quot;문자열&amp;quot;;  // string 타입
+typeof true;      // boolean 타입
+typeof undefined; // undefined 타입
+typeof null;      // object 타입
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;5-symbol-심볼&#34;&gt;5. symbol (심볼)&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;심볼 타입은 ECMAScript 6부터 새롭게 추가된 타입이다.
+심볼은 유일하고 변경할 수 없는 타입으로, 객체의 프로퍼티를 위한 식별자로 사용할 수 있다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ex)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var sym = Symbol(&amp;quot;javascript&amp;quot;);  // symbol 타입
+var symObj = Object(sym);        // object 타입
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;6-object-객체&#34;&gt;6. object (객체)&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;자바스크립트의 기본 타입은 객체(object)이다. 객체(object)란 실생활에서 우리가 인식할 수 있는 사물로 이해할 수 있다. 객체는 여러 프로퍼티(property)나 메소드(method)를 같은 이름으로 묶어놓은 일종의 집합체이다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ex)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var dog = { name: &amp;quot;해피&amp;quot;, age: 3 }; // 객체의 생성
+// 객체의 프로퍼티 참조
+document.getElementById(&amp;quot;result&amp;quot;).innerHTML =
+&amp;quot;강아지의 이름은 &amp;quot; + dog.name + &amp;quot;이고, 나이는 &amp;quot; + dog.age + &amp;quot;살 이다.&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;2-variable&#34;&gt;&lt;strong&gt;2.Variable&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&#34;using-variables&#34;&gt;Using Variables&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;var x = 10;
+
+x + 5 ; // =&amp;gt; 15
+
+x ; // =&amp;gt; 10
+
+once we have created our variables,
+we can use their name as a substitute for their value elsewhere in our program.
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;declaring-a-variable-without-a-vaue&#34;&gt;Declaring a variable without a Vaue&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;
+Creating a variable in JavaScript is called &amp;quot;declaring&amp;quot; a variable.
+
+1.var carName;
+After the declaration, the variable has no value (technically it has the value of undefined).
+
+
+To assign a value to the variable, use the equal sign:
+
+2. carName = &amp;quot;Volvo&amp;quot;;   // carName 를 Volvo 로 변경할때 var 없이 만든다 cos 먼저 선언을 했기 때문이다. 
+
+2. var carName = &amp;quot;Volvo&amp;quot;;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;changing-a-variable-s-value&#34;&gt;Changing a Variable’s value&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;
+var pokemon = charmander
+
+pokemon = heelo
+
+
+Notice that When you change the value of a variable, &amp;quot;you don’t need to use the var keyword&amp;quot;The var keyword is only needed for creating new variables.
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;variable-scope-변수의-유효-범위&#34;&gt;variable scope 변수의 유효 범위&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;local variable 지역 변수&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Variables declared inside a function body are in the Local scope.&lt;/p&gt;
+
+&lt;p&gt;지역 변수(local variable)란 함수 내에서 선언된 변수를 가리킨다.
+이러한 지역 변수는 변수가 선언된 함수 내에서만 유효하며, 함수가 종료되면 메모리에서 사라진다.함수의 매개변수 또한 함수 내에서 정의되는 지역 변수처럼 동작한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex 1-1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var greeting = &amp;quot;Hello&amp;quot;;
+
+function greetSomeone() {
+	var firstName = &amp;quot;john&amp;quot;
+	return greeting + &amp;quot; &amp;quot; + firstName;
+}
+
+greetSomeone
+firstName; // = &amp;gt; Error
+
+
+Function(greetSomeone) is working but &amp;quot;firstName&amp;quot;&amp;quot; is Error Because we declared our name variable inside the scope of our greetSomeone function.
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;global variable  전역 변수&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Variables declared outside a function body are in the global scope.&lt;/p&gt;
+
+&lt;p&gt;전역 변수(global variable)란 함수의 외부에서 선언된 변수를 가리킨다.
+이러한 전역 변수는 프로그램의 어느 영역에서나 접근할 수 있으며, 웹 페이지가 닫혀야만 메모리에서 사라진다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex 1-2&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;quot;But!!!!!!! if you do this it works well&amp;quot;!!
+
+var greeting = &amp;quot;Hello&amp;quot;;
+var firstName = &amp;quot;john&amp;quot;
+
+function greetSomeone() {
+	firstName = &amp;quot;JJ&amp;quot;
+	return greeting + &amp;quot; &amp;quot;+ firstName;
+}
+
+
+firstNmae // = &amp;gt; JJ
+
+Because you changed a variable the was defined in an outer scope
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;3-operator&#34;&gt;&lt;strong&gt;3.Operator&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&#34;arithmetic-operator-산술-연산자&#34;&gt;arithmetic operator (산술 연산자)&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;+	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 더함.
+-	왼쪽 피연산자의 값에서 오른쪽 피연산자의 값을 뺌.
+*	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 곱함.
+/	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눔.
+%	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 나머지를 반환함
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var x = 10, y = 4;
+document.write(x + y + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 14
+document.write(x - y + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 6
+document.write(x * y + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 40
+document.write(x / y + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 2.5
+document.write(x % y);          // 2
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;assignment-operator-대입-연산자&#34;&gt;assignment operator (대입 연산자)&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;=	왼쪽 피연산자에 오른쪽 피연산자의 값을 대입함.
++=	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 더한 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+-=	왼쪽 피연산자의 값에서 오른쪽 피연산자의 값을 뺀 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+*=	왼쪽 피연산자의 값에 오른쪽 피연산자의 값을 곱한 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+/=	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 결과 값을 왼쪽 피연산자에 대입함.
+%=	왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 나머지를 왼쪽
+피연산자에 대입함.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var x = 10, y = 10, z = 10;
+x = x - 5;
+y -= 5; // y = y - 5 와 같은 표현임.
+z =- 5; // z = -5 와 같은 표현임.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;increment-and-decrement-operator-증감-연산자&#34;&gt;increment and decrement operator ( 증감 연산자 )&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;++x	먼저 피연산자의 값을 1 증가시킨 후에 해당 연산을 진행함.
+x++	먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 증가시킴.
+--x	먼저 피연산자의 값을 1 감소시킨 후에 해당 연산을 진행함.
+x--	먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 감소시킴.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var x = 10, y = 10;
+document.write((++x - 3) + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // x의 값을 우선 1 증가시킨 후에 3을 뺌.
+document.write(x + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);         // 11
+document.write((y++ - 3) + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 먼저 y에서 3을 뺀 후에 y의 값을 1 증가시킴.
+document.write(y);                  // 11
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;comparison-operator-비교-연산자&#34;&gt;comparison operator (비교 연산자)&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같으면 참을 반환함.
+===	왼쪽 피연산자와 오른쪽 피연산자의 값이 같고, 같은 타입이면 참을 반환함.
+!=	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않으면 참을 반환함.
+!==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않거나, 타입이 다르면 참을 반환함.
+&amp;gt;	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크면 참을 반환함.
+&amp;gt;=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크거나 같으면 참을 반환함.
+&amp;lt;	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작으면 참을 반환함.
+&amp;lt;=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작거나 같으면 참을 반환함.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+var x = 3, y = 5;
+var a = &amp;quot;abc&amp;quot;, b = &amp;quot;bcd&amp;quot;;
+document.write((x &amp;gt; y) + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);  // y의 값이 x의 값보다 크므로 false
+document.write((a &amp;lt;= b) + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // 알파벳 순서상 &#39;a&#39;가 &#39;b&#39;보다 먼저 나오므로 &#39;a&#39;가 &#39;b&#39;보다 작음.
+document.write(x &amp;lt; a);             // x의 값은 숫자이고 a의 값은 문자열이므로 비교할 수 없음.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;logical-operator-논리연산자&#34;&gt;Logical operator (논리연산자)&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;amp;&amp;amp; 는 and 
+
+|| 는 or
+
+! 는 Not
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;bitwise-operator-비트-연산자&#34;&gt;bitwise operator (비트 연산자)&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;amp;	대응되는 비트가 모두 1이면 1을 반환함. (비트 AND 연산)
+|	대응되는 비트 중에서 하나라도 1이면 1을 반환함. (비트 OR 연산)
+^	대응되는 비트가 서로 다르면 1을 반환함. (비트 XOR 연산)
+~	비트를 1이면 0으로, 0이면 1로 반전시킴. (비트 NOT 연산)
+&amp;lt;&amp;lt;	지정한 수만큼 비트를 전부 왼쪽으로 이동시킴. (left shift 연산)
+&amp;gt;&amp;gt;	부호를 유지하면서 지정한 수만큼 비트를 전부 오른쪽으로 이동시킴. (right shift 연산)
+&amp;gt;&amp;gt;&amp;gt;	지정한 수만큼 비트를 전부 오른쪽으로 이동시키며, 새로운 비트는 전부 0이 됨.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;increment-decrement-operator-증감연산자&#34;&gt;increment/decrement operator (증감연산자)&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;증감 연산자는 피연산자를 1씩 증가 혹은 감소시킬 때 사용하는 연산자이다.이 연산자는 피연산자가 단 하나뿐인 단항 연산자이다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ex)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var a;
+a++;
+a = 0;
+a++;
+a--;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;comparison-operator-비교-연산자-1&#34;&gt;comparison operator (비교 연산자)&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같으면 참을 반환함.
+===	왼쪽 피연산자와 오른쪽 피연산자의 값이 같고, 같은 타입이면 참을 반환함.
+!=	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않으면 참을 반환함.
+!==	왼쪽 피연산자와 오른쪽 피연산자의 값이 같지 않거나, 타입이 다르면 참을 반환함.
+&amp;gt;	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크면 참을 반환함.
+&amp;gt;=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 크거나 같으면 참을 반환함.
+&amp;lt;	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작으면 참을 반환함.
+&amp;lt;=	왼쪽 피연산자의 값이 오른쪽 피연산자의 값보다 작거나 같으면 참을 반환함.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;typeof-연산자&#34;&gt;typeof 연산자&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;typeof 연산자는 피연산자의 타입을 반환한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;숫자, NaN	&amp;quot;number&amp;quot;
+문자열	&amp;quot;string&amp;quot;
+true, false	&amp;quot;boolean&amp;quot;
+null	&amp;quot;object&amp;quot;
+undefined	&amp;quot;undefined&amp;quot;
+함수	&amp;quot;function&amp;quot;
+함수가 아닌 객체	&amp;quot;object&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;typeof &amp;quot;문자열&amp;quot;   // string
+typeof 10         // number
+typeof NaN        // number
+typeof false      // boolean
+typeof undefined  // undefined
+typeof new Date() // object
+typeof null       // object
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;ternary-operator-삼항-연산자&#34;&gt;ternary operator (삼항 연산자)&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;삼항 연산자는 유일하게 피연산자를 세 개나 가지는 조건 연산자이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var x = 3, y = 5;
+var result = (x &amp;gt; y) ? x : y   // x가 더 크면 x를, 그렇지 않으면 y를 반환함.
+document.write(&amp;quot;둘 중에 더 큰 수는 &amp;quot; + result + &amp;quot;이다.&amp;quot;);
+
+삼항 연산자는 짧은 if / else 문 대신 사용할 수 있으며, 코드를 간결하게 만들어 준다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;delete-연산자&#34;&gt;delete 연산자&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;delete 연산자는 피연산자인 객체, 객체의 프로퍼티(property) 또는 배열의 요소(element) 등을 삭제해 준다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;피연산자가 성공적으로 삭제되었을 경우에는 참(true)을 반환하고, 삭제하지 못했을 경우에는 거짓(false)을 반환한다.
+이 연산자는 피연산자가 단 하나뿐인 단항 연산자이며, 피연산자의 결합 방향은 오른쪽에서 왼쪽이다.&lt;/p&gt;
+
+&lt;h5 id=&#34;쉼표-연산자&#34;&gt;쉼표 연산자&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;쉼표 연산자를 for 문에서 사용하면, 루프마다 여러 변수를 동시에 갱신할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;루프마다 i의 값은 1씩 증가하고, 동시에 j의 값은 1씩 감소함.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;for (var i = 0, j = 9; i &amp;lt;= j; i++, j--) {
+    document.write(&amp;quot;i의 값은 &amp;quot; + i + &amp;quot;이고, j의 값은 &amp;quot; + j + &amp;quot;이다.&amp;lt;br&amp;gt;&amp;quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+var arr = [1, 2, 3];          // 배열 생성
+delete arr[2];                // 배열의 원소 중 인덱스가 2인 요소를 삭제함.
+document.write(arr + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); // [1, 2, ]
+// 배열에 빈자리가 생긴 것으로 undefined 값으로 직접 설정된 것은 아님.
+document.write(arr[2] + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
+// 배열의 요소를 삭제하는 것이지 배열의 길이까지 줄이는 것은 아님.
+document.write(arr.length);
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;instanceof-연산자&#34;&gt;instanceof 연산자&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;instanceof 연산자는 피연산자인 객체가 특정 객체의 인스턴스인지 아닌지를 확인해 준다.
+피연산자가 특정 객체의 인스턴스이면 참(true)을 반환하고, 특정 객체의 인스턴스가 아니면 거짓(false)을 반환한다.
+이 연산자는 두 개의 피연산자를 가지는 이항 연산자이며, 피연산자들의 결합 방향은 왼쪽에서 오른쪽이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var str = new String(&amp;quot;이것은 문자열이다.&amp;quot;);
+ 
+str instanceof Object;  // true
+str instanceof String;  // true
+str instanceof Array;   // false
+str instanceof Number;  // false
+str instanceof Boolean; // false
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;void-연산자&#34;&gt;void 연산자&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;void 연산자는 피연산자로 어떤 타입의 값이 오던지 상관없이 언제나 undefined 값만을 반환한다.
+이 연산자는 피연산자가 단 하나뿐인 단항 연산자이며, 피연산자의 결합 방향은 오른쪽에서 왼쪽이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;javascript:void(0)&amp;quot;&amp;gt;이 링크는 동작하지 않는다.&amp;lt;/a&amp;gt;
+ 
+&amp;lt;a href=&amp;quot;javascript:void(document.body.style.backgroundColor=&#39;yellow&#39;)&amp;quot;&amp;gt;
+이 링크도 동작하지 않지만, HTML 문서의 배경색을 바꿔준다.
+&amp;lt;/a&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;4-conditional&#34;&gt;&lt;strong&gt;4.Conditional&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;
+if 문
+if / else 문
+if / else if / else 문
+switch 문
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;if-문&#34;&gt;if 문&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;if (표현식) {
+    표현식의 결과가 참일 때 실행하고자 하는 실행문;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var x = 10, y = 20;
+if (x == y) {
+document.write(&amp;quot;x와 y는 같다.&amp;quot;);
+}
+if (x &amp;lt; y) {
+document.write(&amp;quot;x가 y보다 작다.&amp;quot;);
+}
+if (x &amp;gt; y) // 실행될 실행문이 한 줄뿐이라면 중괄호({})를 생략할 수 있음.
+document.write(&amp;quot;x가 y보다 크다.&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;else-문&#34;&gt;else 문&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;
+if (표현식) {
+    표현식의 결과가 참일 때 실행하고자 하는 실행문;
+} else {
+    표현식의 결과가 거짓일 때 실행하고자 하는 실행문;
+}
+else 문을 사용하면 앞의 예제를 좀 더 직관적으로 표현할 수 있다.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var x = 10, y = 20;
+if (x == y) {
+document.write(&amp;quot;x와 y는 같다.&amp;quot;);
+} else {
+if (x &amp;lt; y)
+    document.write(&amp;quot;x가 y보다 작다.&amp;quot;);
+else // 실행될 실행문이 한 줄뿐이라면 중괄호({})를 생략할 수 있음.
+    document.write(&amp;quot;x가 y보다 크다.&amp;quot;);
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;else-if-문&#34;&gt;else if 문&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;
+if (표현식1) {
+    표현식1의 결과가 참일 때 실행하고자 하는 실행문;
+} else if (표현식2) {
+    표현식2의 결과가 참일 때 실행하고자 하는 실행문;
+} else {
+    표현식1의 결과도 거짓이고, 표현식2의 결과도 거짓일 때 실행하고자 하는 실행문;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var x = 10, y = 20;
+if (x == y) {
+document.write(&amp;quot;x와 y는 같다.&amp;quot;);
+} else if (x &amp;lt; y) {
+document.write(&amp;quot;x가 y보다 작다.&amp;quot;);
+} else { // x &amp;gt; y인 경우
+document.write(&amp;quot;x가 y보다 크다.&amp;quot;);
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;switch-case&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;if 와 else if를 반복적으로 써야 하는 상황을 피하게 해 줍니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;var value;
+switch(value) {
+    case 값1:
+    //value == 값1일 경우 실행할 코드
+    break;
+    case 값2:
+    //value == 값2일 경우 실행할 코드
+    break;
+    //...
+    default:
+    //위쪽에 해당되지 않는 경우 실행할 코드
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;점수가 10점이면 A, 9점이면 B, 그 외에는 C를 출력하는 코드를 작성하세요.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;if로 구현
+var score = prompt(&#39;점수를 입력하세요&#39;);
+if (score === 10) {
+    console.log(&#39;A&#39;);
+} else if (score == 9) {
+    console.log(&#39;B&#39;);
+} else {
+    console.log(&#39;C&#39;);
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;
+switch-case 로 구현
+var score = prompt(&#39;점수를 입력하세요&#39;);
+switch (score) {
+    case 10:
+    console.log(&#39;A);
+    break;
+    case 9:
+    console.log(&#39;B&#39;);
+    break;
+    default:
+    console.log(&#39;C&#39;);
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;5-loops&#34;&gt;&lt;strong&gt;5.Loops&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;
+while 문
+do / while 문
+for 문
+for / in 문
+for / of 문
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;while&#34;&gt;while&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;while (표현식) {
+    표현식의 결과가 참인 동안 반복적으로 실행하고자 하는 실행문;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;note&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;while 문 만들때는 변수를 미리 만들어 줘야 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;var n ;
+var n = 0;
+var n = 1;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex 1-1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var n = 1;
+while(n &amp;lt;= 100) {    
+console.log(&amp;quot;Hi &amp;quot; + n);
+n++;
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ex 1-2&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;while 문을 사용해서 1에서 100까지의 합을 구해 봅시다.
+자주 사용하는 패턴
+var i = 0; // 1 변수 초기화
+while (i &amp;lt;= 100) { // 2 변수 검사
+console.log(i); // 3 코드 다하고나서 
+i++; //  4 하나씩 증가
+}
+
+그래서 for가 등장함
+위의 while 코드와 완전히 똑같음
+for (var i = 0; i &amp;lt;= 100; i++) {
+console.log(i);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ex gugudan with while&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;script&amp;gt;
+       
+    var strN = Number(prompt(&amp;quot;input which gugudan&amp;quot;));
+    var i = 1;
+    document.write(&amp;quot;gugudan&amp;quot; + strN + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
+    while (i &amp;lt; 10) {
+        document.write(strN + &amp;quot; * &amp;quot; + i + &amp;quot; = &amp;quot; + strN * i + &amp;quot; &amp;lt;br&amp;gt; &amp;quot; );
+        i++;
+    }
+   
+&amp;lt;/script&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;for-문&#34;&gt;for 문&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;for (초기식; 표현식; 증감식) {
+    표현식의 결과가 참인 동안 반복적으로 실행하고자 하는 실행문;
+}
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex 1-1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+for (var i = 1; i &amp;lt; 10; i++) {
+document.write(i + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ex 1-2 gugudan with for&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script&amp;gt;
+    
+   var strN = Number(prompt(&amp;quot;input which dan?&amp;quot;));
+   document.write(&amp;quot;gugudan&amp;quot; + strN + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
+   for (var i = 1; i &amp;lt; 10; i++) {
+       document.write(strN + &amp;quot; * &amp;quot; + i + &amp;quot; = &amp;quot; + strN * i + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
+   }
+    
+&amp;lt;/script&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ex 1-3 gugudan with button&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;P&amp;gt;사용자가 2 이상, 9 이하가 아닌 값을 입력하는 경우 &amp;quot;2이상, 9이하의 값만      입력할 수 있습니다.&amp;quot;라는 메시지를 출력한다.&amp;lt;/P&amp;gt;
+&amp;lt;script&amp;gt;
+        
+    var strN;
+    while (true){
+        strN = Number(prompt(&amp;quot;input which dan from 2 dan to 9 dan&amp;quot;))
+        if (strN &amp;lt; 2 || strN &amp;gt; 9){
+            console.log(&amp;quot;this is not available&amp;quot;);
+        } else {
+            document.write(&amp;quot;gugudan&amp;quot; + strN + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;); 
+            break;
+        }
+    }
+    for (i = 1; i &amp;lt; 10; i ++){
+        document.write(strN + &amp;quot; + &amp;quot; + i + &amp;quot; = &amp;quot; + strN + i + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;);
+    }
+        
+&amp;lt;/script&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;6-array&#34;&gt;&lt;strong&gt;6.Array&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&#34;배열이란&#34;&gt;배열이란?&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;자바스크립트에서 배열(array)은 이름과 인덱스로 참조되는 정렬된 값의 집합으로 정의된다. 배열을 구성하는 각각의 값을 배열 요소(element)라고 하며, 배열에서의 위치를 가리키는 숫자를 인덱스(index)라고 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;특징&#34;&gt;특징&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;배열 요소의 타입이 고정되어 있지 않으므로, 같은 배열에 있는 배열 요소끼리의 타입이 서로 다를 수도 있다. 배열 요소의 인덱스가 연속적이지 않아도 되며, 따라서 특정 배열 요소가 비어 있을 수도 있다.자바스크립트에서 배열은 Array 객체로 다뤄진다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;배열-만들기-1&#34;&gt;배열 만들기 1&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;var scores = [50, 60, 70];
+console.log(scores);
+console.log(scores.length);
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;인덱스를-이용해서-배열의-원소-읽기&#34;&gt;인덱스를 이용해서 배열의 원소 읽기&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;scores[0];
+scores[3];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;배열에-값-쓰기&#34;&gt;배열에 값 쓰기&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;scores[0] = 100;
+scores[9] = 50;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;배열의-타입-알아보기&#34;&gt;배열의 타입 알아보기&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;typeof scores
+typeof scores[0]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;배열-만들기-2&#34;&gt;배열 만들기 2&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;var a = [];
+a[0] = 2;
+a[1] = 4;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;배열의-길이-구하기&#34;&gt;배열의 길이 구하기&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;scores.length;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;배열의-마지막-원소를-읽어-오려면&#34;&gt;배열의 마지막 원소를 읽어 오려면?&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;scores[scores.length - 1];
+문자열과 배열
+	•	문자열과 배열은 비슷한 성질을 많이 가지고 있습니다.
+	•	문자열: Immutable
+	•	배열: Mutable
+	•	배열의 속성과 메소드를 문자열에도 테스트해보세요.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;배열의-메소드들-1&#34;&gt;배열의 메소드들 1&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;push() 뒤어 붙이기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4,];
+arr.push(1);
+
+arr; // = &amp;gt; [1,2,3,4,1]
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;pop() 뒤에 있는거 빼기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4,];
+arr.pop();
+
+arr; // = &amp;gt; [1,2,3]
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;unshift()  앞에 붙이기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4];
+
+arr.unshift(1);
+
+arr; // = &amp;gt; [1,1,2,3,4,];
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;shift()  앞에 있는거 빼기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4];
+
+arr.shift();
+
+arr; // = &amp;gt; [2,3,4,]
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;concat() 더하기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4,5];
+
+arr.concat(6); 
+
+&amp;gt;&amp;gt;arr 
+[1,2,3,4,5,6]  
+기존에 있는 것은 변하지 않는다.
+변하게 하기위해서는 변수를 새로 만들기 !
+
+
+var arr = [1,2,3,4,5];
+
+arr.concat([6,7,8,9,10]);
+
+&amp;gt;&amp;gt;arr
+[1,2,3,4,5,6,7,8,9,10] 
+여러게를 더할수 있다.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;join() 문자열로 바꾸기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1,2,3,4,5,6]
+
+arr.join() ;
+
+&amp;gt;&amp;gt;arr
+[&amp;quot;1&amp;quot;,&amp;quot;2&amp;quot;,&amp;quot;3&amp;quot;,&amp;quot;4&amp;quot;,&amp;quot;5&amp;quot;,&amp;quot;6&amp;quot;]
+문자열로 바꿔준다. 
+
+arr.join(&amp;quot;&amp;quot;);
+
+&amp;gt;&amp;gt;arr
+[&amp;quot;123456&amp;quot;];
+문자열 다 붙인다.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;indaxtOf() ()&amp;lt;&amp;lt;원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;lastIndaxtOf() ()&amp;lt;&amp;lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+
+var arr = [1,2,3,4,5];
+arr.indexOf[1];
+
+&amp;gt;&amp;gt;arr
+2
+
+arr.indexOf[100];
+&amp;gt;&amp;gt;arr
+-1
+없는 경우 -1를 호출한다. 
+
+EX) 
+var arr = [1,2,3,4,5,6]
+if (arr.indexOf(100) === -1 ) {
+만약 100이라는 원소가 arr 에 없으면 
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;slice()&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1, 2, 3, 4, 5];
+a.slice(0, 3);
+&amp;gt;&amp;gt;a;
+123
+원소는 변하지 않는다
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;splice()&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var arr = [1, 2, 3, 4, 5];
+a.splice(0, 3);
+&amp;gt;&amp;gt;a;
+123
+원소 값이 변한다. 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;split()&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;var s = &amp;quot;hello, world this is jj&amp;quot;;
+s.split(&amp;quot;&amp;quot;);
+
+
+&amp;quot;h&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;,&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;w&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;r&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;t&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;j&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;
+var s = &amp;quot;hello, world this is jj&amp;quot;;
+s.split(&amp;quot;,&amp;quot;);
+&amp;quot;hello&amp;quot;, &amp;quot; world this is jj&amp;quot;
+콤마가 생겼다. 콤마의 기준으로 갈라진다.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;var s = &amp;quot;hello world t-h-i-s-i-s-j-j&amp;quot;
+s.split(&amp;quot;-&amp;quot;);
+
+&amp;quot;hello  world t&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;j&amp;quot;
+- 기준으로 갈라진다. 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;7-function&#34;&gt;&lt;strong&gt;7.Function&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&#34;함수-만들기&#34;&gt;함수 만들기&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;function convertHeight(feet, inches) {
+  return (feet * 12 + inches) * 2.54
+}
+convertHeight(5, 10);
+ //= &amp;gt;&amp;gt;177.8
+
+(feet , inches) ==&amp;gt;&amp;gt; parameter ( 매개 변수) 
+(5,10)  ==&amp;gt;&amp;gt; argument ( 전달인자	)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;변수에-담아서-함수-사용하기&#34;&gt;변수에 담아서 함수 사용하기&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;var ret = function convertHeight(feet, inches) {
+  return (feet * 12 + inches) * 2.54
+}
+ret(5, 10);
+177.8
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;리턴값-없는-변수를-변수에-담으면-undefind-출력된다&#34;&gt;리턴값 없는 변수를 변수에 담으면 “undefind” 출력된다 .&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex 1-1 (console.log)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var foo = function () {
+	console.log(“I’m a foo”);
+}
+&amp;gt;&amp;gt;undefined
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ex 1-2 (return)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var foo = function () {
+	return(“I’m a foo”);
+}
+
+&amp;gt;&amp;gt; I’m a foo
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;return-을-break-로-사용하기-return-으로-함수를-종료하는데-사용할-수-있다&#34;&gt;return 을 break 로 사용하기 (return 으로 함수를 종료하는데 사용할 수 있다.)&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;(Option) 2중 루프를 한 번에 빠져 나가기
+- &lt;code&gt;break&lt;/code&gt; 명령은 한 번에 한 루프만 빠져나갑니다.
+- 함수의 &lt;code&gt;return&lt;/code&gt; 을 이용하면 2중 루프를 한 번에 종료할 수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;종료하기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var test1 = function (text) {
+        if (text === &amp;quot;exit&amp;quot;) {
+            return;
+        }
+        console.log(&amp;quot;실행&amp;quot;);
+    }
+
+test1(&amp;quot;exit&amp;quot;) // =&amp;gt; undefined
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;실행 하기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var test1 = function (text) {
+        if (text === &amp;quot;exit&amp;quot;) {
+            return;
+        }
+        console.log(&amp;quot;실행&amp;quot;);
+    }
+test1(&amp;quot;oh&amp;quot;&amp;quot;); // = &amp;gt; 실행 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;이중-loop-빠져-나가기&#34;&gt;이중 loop 빠져 나가기&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ex (하나만 빠져 나가기 )&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for (var i = 0; i &amp;lt; 10; i ++)  {
+	for (var j = 0; j &amp;lt; 10; j++) {
+		console.log(i , j );
+		if (j === 3 ) {
+		    break;
+
+		}
+	}
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ex (이중 loop 빠져나간다 with function)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    var foo = function() {
+        for (var i = 0; i &amp;lt; 10; i ++)  {
+            for (var j = 0; j &amp;lt; 10; j++) {
+                console.log(i , j );
+                if (j === 3 ) {
+                    return;
+
+                }
+            }
+        }
+     };
+         
+     foo();
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;배열을-이용한-while-문-for-문&#34;&gt;배열을 이용한 while 문 , for 문&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;// while loop
+    
+    
+    function sum (nums) {
+    var total = 0;
+    var i = 0;
+    while (i &amp;lt; nums.length) {
+        total = total + nums[i];
+        i++;
+    }
+    return total;
+}
+sum([2,3,5,1]);
+
+&amp;gt;&amp;gt; 11
+
+    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;// for loop
+  
+  
+  function sum (nums) {
+  	var total = 0 ;
+  	for (var i = 0 ; i &amp;lt; nums.length ; i = i + i ) {
+  	total = total + nums[i]
+  }
+	return total;
+}
+
+sum([2,3,5,1,]);
+
+&amp;gt;&amp;gt;11
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;8-objects&#34;&gt;&lt;strong&gt;8.Objects&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&#34;making-objects&#34;&gt;making objects&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;1.
+  var dog = {};
+
+  dog.name = &amp;quot;jj&amp;quot;
+  dog.color = &amp;quot;red&amp;quot;
+  dog.kind = &amp;quot;똥깨&amp;quot;
+  // &amp;gt;&amp;gt;&amp;gt; dog = {name = &amp;quot;jj&amp;quot;, color =&amp;quot;red&amp;quot; , kind = &amp;quot;똥깨 &amp;quot;}
+
+
+2. 
+ var dog = {
+    name : &amp;quot;jj&amp;quot;,
+    color : &amp;quot;red&amp;quot;,
+    kind : &amp;quot;똥깨&amp;quot;
+}
+
+  // &amp;gt;&amp;gt;&amp;gt; dog = {name = &amp;quot;jj&amp;quot;, color =&amp;quot;red&amp;quot; , kind = &amp;quot;똥깨 &amp;quot;}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;using-objcets-in-javascript&#34;&gt;using objcets in Javascript&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;var dog = {
+    name = &amp;quot;jj&amp;quot;
+    color = &amp;quot;red&amp;quot;
+    
+};
+
+we have two systems .
+
+1. 
+dog.name;
+dog[&amp;quot;name&amp;quot;];
+
+결과갑 똑같다.
+&amp;gt;&amp;gt;&amp;gt;jj
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;changing-objects&#34;&gt;changing objects&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;1. it is changed
+
+dog.name = &amp;quot;john&amp;quot;
+
+2. it is added
+
+dog.food = &amp;quot;Banana&amp;quot;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;메소드&#34;&gt;메소드&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;객체에 속한 함수&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+dog.eat = function(food) {
+console.log(this.name + &amp;quot; ate delicious &amp;quot; + food +&amp;quot;...&amp;quot;);
+};
+
+p1.eat(&amp;quot;Beef&amp;quot;);
+
+&amp;gt;&amp;gt; jj ate delicious Beef ...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;this&#34;&gt;this&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;
+메소드 안에서 사용시 함수를 소유한 객체를 가르킨다.
+
+var p2 = {};
+p2.name = &amp;quot;jj&amp;quot;;
+p2.weight = 80;
+p2.say = function(word) {
+    console.log(this.name + &amp;quot; says, &amp;quot; + word);
+};
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -5387,7 +5387,62 @@ let Employee = {
     </item>
     
     <item>
-      <title>5. Notes</title>
+      <title>Bootstrap</title>
+      <link>/tutorial/bootstrap/</link>
+      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      
+      <guid>/tutorial/bootstrap/</guid>
+      <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;bs-image-img-fluid&#34;&gt;BS_image: &lt;strong&gt;img-fluid&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Create responsive images by adding an &lt;code&gt;.img-fluid&lt;/code&gt; class to the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag. The image will then scale nicely to the parent element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;bs-spacing-my&#34;&gt;BS_Spacing: &lt;strong&gt;my&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Assign responsive-friendly &lt;code&gt;margin&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; values to an element or a subset of its sides with shorthand classes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;my&amp;quot;&amp;gt;
+  Centered element
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
       <link>/tutorial/javascript_note/</link>
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
@@ -7237,61 +7292,6 @@ var newArray = [];
 &lt;p&gt;&lt;strong&gt;JavaScript Arrays: slice vs splice&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://wsvincent.com/javascript-array-slice-vs-splice/&#34; target=&#34;_blank&#34;&gt;This is link&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap</title>
-      <link>/tutorial/bootstrap/</link>
-      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
-      
-      <guid>/tutorial/bootstrap/</guid>
-      <description>
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;bs-image-img-fluid&#34;&gt;BS_image: &lt;strong&gt;img-fluid&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Create responsive images by adding an &lt;code&gt;.img-fluid&lt;/code&gt; class to the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag. The image will then scale nicely to the parent element.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Syntax&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;bs-spacing-my&#34;&gt;BS_Spacing: &lt;strong&gt;my&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Assign responsive-friendly &lt;code&gt;margin&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; values to an element or a subset of its sides with shorthand classes&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Syntax&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;my&amp;quot;&amp;gt;
-  Centered element
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
