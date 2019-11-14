@@ -8,7 +8,7 @@ tags:
   - Javascript
 menu:
   tutorial:
-    parent: "5.javascript"
+    parent: "5.Javascript"
     weight: 3
 toc: yes
 type: docs
