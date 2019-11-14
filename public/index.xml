@@ -960,6 +960,16 @@ Plus, content, like a copyright notice for example, can go on the outside of the
     </item>
     
     <item>
+      <title>JS_Notes</title>
+      <link>/tutorial/js-notes/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/js-notes/</guid>
+      <description>&lt;p&gt;sdsdd&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Javascript</title>
       <link>/tutorial/javascript/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
@@ -968,8 +978,6 @@ Plus, content, like a copyright notice for example, can go on the outside of the
       <description>
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;this-is-why-i-want-to&#34;&gt;this is why I want to&lt;/h1&gt;
 
 &lt;h2 id=&#34;1-data-type&#34;&gt;&lt;strong&gt;1.data type&lt;/strong&gt;&lt;/h2&gt;
 
