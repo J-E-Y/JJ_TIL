@@ -37,10 +37,10 @@
     
     <item>
       <title>Git</title>
-      <link>/tutorial/main-git/</link>
+      <link>/tutorial/git/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/main-git/</guid>
+      <guid>/tutorial/git/</guid>
       <description>
 
 &lt;p&gt;__&lt;/p&gt;
@@ -468,10 +468,10 @@ git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
     
     <item>
       <title>Html&amp;&amp;Css</title>
-      <link>/tutorial/html-css/</link>
+      <link>/tutorial/html/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/html-css/</guid>
+      <guid>/tutorial/html/</guid>
       <description>
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -3289,10 +3289,10 @@ for link in links:
     
     <item>
       <title>Technical terms</title>
-      <link>/tutorial/technical-terms/</link>
+      <link>/tutorial/it-terminology/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/technical-terms/</guid>
+      <guid>/tutorial/it-terminology/</guid>
       <description>&lt;p&gt;this is what?&lt;/p&gt;
 </description>
     </item>

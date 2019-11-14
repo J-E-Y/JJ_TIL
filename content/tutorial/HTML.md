@@ -2,7 +2,6 @@
 title: Html&&Css
 author: JohnJung
 date: '2019-11-14'
-slug: Html-Css
 categories: []
 tags: ['Html&&Css']
 menu:

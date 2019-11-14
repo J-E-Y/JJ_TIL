@@ -13,19 +13,19 @@
     
     <item>
       <title>Git</title>
-      <link>/tutorial/main-git/</link>
+      <link>/tutorial/git/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/main-git/</guid>
+      <guid>/tutorial/git/</guid>
       <description>write here:rocket:</description>
     </item>
     
     <item>
       <title>Html&amp;&amp;Css</title>
-      <link>/tutorial/html-css/</link>
+      <link>/tutorial/html/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/html-css/</guid>
+      <guid>/tutorial/html/</guid>
       <description>write here:rocket:</description>
     </item>
     
@@ -49,10 +49,10 @@
     
     <item>
       <title>Technical terms</title>
-      <link>/tutorial/technical-terms/</link>
+      <link>/tutorial/it-terminology/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/technical-terms/</guid>
+      <guid>/tutorial/it-terminology/</guid>
       <description>write here:rocket:</description>
     </item>
     

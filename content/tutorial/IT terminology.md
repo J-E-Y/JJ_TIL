@@ -2,7 +2,6 @@
 title: Technical terms
 author: JohnJung
 date: '2019-11-14'
-slug: technical-terms
 categories: []
 tags: ['Technical terms']
 menu:

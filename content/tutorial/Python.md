@@ -2,7 +2,6 @@
 title: Python
 author: JohnJung
 date: '2019-11-14'
-slug: Python
 categories: []
 tags: ['Python']
 menu:

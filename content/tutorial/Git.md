@@ -2,7 +2,6 @@
 title: Git
 author: JohnJung
 date: '2019-11-14'
-slug: main-git
 categories: []
 tags: ['Git']
 menu:

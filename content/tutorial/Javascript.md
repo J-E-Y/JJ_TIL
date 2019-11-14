@@ -1,13 +1,12 @@
 ---
-title:Javascript
+title: Javascript
 author: JohnJung
 date: '2019-11-14'
-slug: Javascript
 categories: []
-tags: ['Javacript']
+tags: ['Javascript']
 menu:
   tutorial:
-    name:3.Javascript
+    name: 3.Javascript
     weight: 3
 toc: yes
 type: docs
@@ -16,7 +15,7 @@ summary: 'write here:rocket:'
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 
-
+# this is why I want to 
 
 ## **1.data type**
 ---
