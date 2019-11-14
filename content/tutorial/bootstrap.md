@@ -5,17 +5,17 @@ draft: true
 menu:
   tutorial:
     name: Bootstrap
-    weight: 8
+    weight: 0
 toc: true
 type: docs
 ---
 
+
+
+
 ---
 ##  BS_image: **img-fluid**
 ---
-
-
-
 
 
 

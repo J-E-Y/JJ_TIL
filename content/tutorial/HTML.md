@@ -1,13 +1,11 @@
 ---
 title: Html
-subtitle: 'write here:rocket:' 
 date: 2019-04-29
 draft: true
-
 menu:
   tutorial:
     name: HTML
-    weight: 1
+    weight: 0
 toc: true
 type: docs
 tags:
@@ -30,7 +28,7 @@ url_video: '#'
 
 
 
-
+---
 ## &lt;strong&gt;
 ---
 

@@ -6,13 +6,13 @@ draft: true
 
 menu:
   tutorial:
-    parent: HTML
-    weight: 2
+    parent: Html&&Css
+    weight: 0
 toc: true
 type: docs
 tags:
-- HTML
-title: this is what I want;
+- Html&&Css
+title: html2;
 summary: write hsdere in frist page
 url_code: '#'
 url_dataset: '#'

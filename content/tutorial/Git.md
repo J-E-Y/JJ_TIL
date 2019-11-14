@@ -1,11 +1,11 @@
 ---
-title: Git
+title: Gi2
 date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    name: Git
-    weight: 6
+    name: Gi2
+    weight: 0
 toc: true
 type: docs
 ---

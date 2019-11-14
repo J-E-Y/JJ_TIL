@@ -12,6 +12,33 @@
     
     
     <item>
+      <title>Html&amp;&amp;Css</title>
+      <link>/tutorial/html-css/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/html-css/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
+      <title>Javacript</title>
+      <link>/tutorial/javacript/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/javacript/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>/tutorial/python/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/python/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
       <title>Bootstrap</title>
       <link>/tutorial/bootstrap/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -32,7 +59,7 @@
     </item>
     
     <item>
-      <title>Git</title>
+      <title>Gi2</title>
       <link>/tutorial/git/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -59,7 +86,7 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
     </item>
     
     <item>
-      <title>Python</title>
+      <title>Python1</title>
       <link>/tutorial/python/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -68,20 +95,20 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
     </item>
     
     <item>
-      <title>this is what I want;</title>
-      <link>/tutorial/html/</link>
+      <title>html2;</title>
+      <link>/tutorial/html2/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/html/</guid>
+      <guid>/tutorial/html2/</guid>
       <description>write hsdere in frist page</description>
     </item>
     
     <item>
       <title>this is what I want;</title>
-      <link>/tutorial/html2/</link>
+      <link>/tutorial/html/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/html2/</guid>
+      <guid>/tutorial/html/</guid>
       <description>write hsdere in frist page</description>
     </item>
     

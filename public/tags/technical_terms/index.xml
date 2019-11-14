@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical_terms on JohnJung</title>
+    <link>/tags/technical_terms/</link>
+    <description>Recent content in Technical_terms on JohnJung</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/technical_terms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Technical_terms</title>
+      <link>/tutorial/ex/technical-terms/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/ex/technical-terms/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,7 @@ draft: true
 menu:
   tutorial:
     name: Javascript
-    weight: 4
+    weight: 0
 toc: true
 type: docs
 ---

@@ -5,7 +5,7 @@ draft: true
 menu:
   tutorial:
     name: Css
-    weight: 3
+    weight: 0
 toc: true
 type: docs
 ---

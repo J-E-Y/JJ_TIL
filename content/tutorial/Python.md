@@ -1,11 +1,11 @@
 ---
-title: Python
+title: Python1
 date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    name: Python
-    weight: 4
+    name: Python1
+    weight: 0
 toc: true
 type: docs
 ---
