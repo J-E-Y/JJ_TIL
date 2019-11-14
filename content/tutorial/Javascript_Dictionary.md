@@ -10,8 +10,8 @@ menu:
 toc: true
 type: docs
 tags:
-- Javacript
-summary: 'write here:rocket:' 
+- Javascript
+summary: 'write here:rocket:'
 
 ---
 

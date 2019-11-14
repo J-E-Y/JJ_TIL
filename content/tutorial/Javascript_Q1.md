@@ -9,7 +9,7 @@ menu:
 toc: true
 type: docs
 tags:
-- Javacript
+- Javascript
 summary: 'write here:rocket:' 
 ---
 
