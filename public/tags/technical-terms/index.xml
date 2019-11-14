@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>technical terms on JohnJung</title>
+    <title>Technical terms on JohnJung</title>
     <link>/tags/technical-terms/</link>
-    <description>Recent content in technical terms on JohnJung</description>
+    <description>Recent content in Technical terms on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0000</lastBuildDate>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>technical terms</title>
+      <title>Technical terms</title>
       <link>/tutorial/technical-terms/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       

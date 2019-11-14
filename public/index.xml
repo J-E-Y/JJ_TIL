@@ -3288,7 +3288,7 @@ for link in links:
     </item>
     
     <item>
-      <title>technical terms</title>
+      <title>Technical terms</title>
       <link>/tutorial/technical-terms/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -3312,6 +3312,299 @@ for link in links:
 &lt;div id=&#34;second&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;second&lt;/h1&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>/tutorial/css/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/css/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-15 at 5.21.03 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lt-style-gt&#34;&gt;&amp;lt;style&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+/*syntax*/
+
+&amp;lt;style&amp;gt;
+
+a {
+  color:red
+  }
+
+&amp;lt;/style&amp;gt;
+
+
+
+&amp;lt;dd&amp;gt;a :  selector(선택자)&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;{Color:red}; : declaration (선언)&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;{Color} :  property (속성)&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;{Color:red} : property value (속성값)&amp;lt;/dd&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;hover-버튼-클릭시-마우스-손가락-변형&#34;&gt;hover 버튼 클릭시 마우스 손가락 변형&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+button.hover {
+
+ cursor: pointer;
+}
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;스크롤-만들기&#34;&gt;스크롤 만들기&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--Vertical scroll bar in div which is a child of css grid column --&amp;gt;
+
+&amp;lt;div class=&amp;quot;A&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;B&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;C&amp;quot;&amp;gt;search&amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;quot;D&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 먼제 부모 tag 에 grid 명령과 max-hight 을 준다. 
+
+.A {
+  max-height: 300px; /* matters */
+  display: grid; /* matters */
+  overflow: hidden; /* matters */
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+html, body, .A {
+  height: 100%; /* matters */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.A {
+  max-height: 300px; /* matters */
+  display: grid; /* matters */
+  overflow: hidden; /* matters */
+}
+
+.B {
+  display: grid; /* matters */
+  overflow-y: auto; /* matters */
+}
+
+.D {
+  overflow-y: scroll; /* matters */
+}
+
+.C {
+  padding: 10px;
+  background-color: #07f;
+}
+
+.E {
+  padding: 10px;
+  background-color: #eee;
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-25 at 8.37.27 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;boxmodel&#34;&gt;BoxModel&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;{
+font-size:20px;
+text-align:center;
+text-decoration:none; : 밑줄없애기
+text-decoration:underline; : 언더라인 만들어라
+Border-bottom:red 20px solid;
+Border-right: lightblue 20px solid;
+Border-right:none; (오른쪽에 있는 선 없애기)
+Margin:20px; 가장자리
+Padding:20px;
+width:20px;  : 폭
+Display:none; 
+Display:block; : 전체화면을 이용해라 (block level element)
+Display:inline; : 부분화면을 이용해라 (inline element)
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;wrapper&#34;&gt;wrapper&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+/* Most basic example */ 
+
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;div id=&amp;quot;wrapper&amp;quot;&amp;gt;
+        Piece of text inside a 500px width div centered on the page
+    &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;!-- * How the principle works
+
+Create your wrapper and assign it a certain width. Then apply an automatic horizontal margin to it by using `margin: 0 auto;` or `margin-left: auto;` `margin-right: auto;.` The automatic margins make sure your element is centered.
+--&amp;gt;
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;media-queries&#34;&gt;media queries&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+/* @media(max-width:800px) :  screen width &amp;lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.
+
+@media(min-width:800px)  : screen width  &amp;gt; 800px스크린이 800px 보다 클때 명령을 내린다.
+*/
+
+
+    @media(max-width:800px) {
+    p {
+        font-size: 1px
+        font-weight
+        font-height
+        Display:block;
+  }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;grid&#34;&gt;Grid&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 11.52.20 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div class = &amp;quot;container&amp;quot;&amp;gt;
+
+&amp;lt;div calss = &amp;quot;child1&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child2&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child3&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child4&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child5&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child6&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child7&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child8&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child9&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt;
+
+&amp;lt;div&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTML&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+.container {
+  
+  display: grid;  // 처음 시작을 지정해준다. 
+  grid-template-columns: 40% 60%; // 위에 있는 그림이 4대 6으로 나뉜다.  
+  grid-template-columns: 4fr 6fr;  //  4대 6으로 나뉜다. 
+  grid-gap:1rem; // 사이마다 공간을 줄때 4fr 6fr 로 쓰는것을 권장한다. % 로 사용하면 여백이 뒤에 생기기 때문.. 
+  
+  grid-template-columns: repeat(3, 1fr); // 이것은  1fr 이 세번 반복 
+  grid-template-columns: 1fr 1fr 1fr; // 이것과 동일하다. 
+
+  grid-template-columns: 200px 1fr; // 200 픽셀로 왼쪽 것을 고정하고 오른쪽 것을 늘리는 것이다. 
+
+  grid-auto-rows: 200px; // 200 픽셀 씩 모두 통일
+  grid-auto-rows: minmax(200px,auto); // 이것은 동일한데 content 늘어나면 같이 같이 늘어난다. 
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Css&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 1번칸 늘리기 
+
+.child1 {
+  
+  grid-column: 1/4 // 열에서 1부터 4까지 차지한다. 
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.44.12 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 4번칸 밑으로 늘리기 
+
+ gird-column:3; // 3번 열부터 시작해라 
+ gird-row :2/4; // 2번부터 4버까지 차지하라 
+ 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.45.18 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 9번칸을 4번안에 집어넣는다. 
+  
+ gird-colum:3;
+ gird-row:3/5;
+ 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.47.05 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -6999,299 +7292,6 @@ var newArray = [];
   Centered element
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Css</title>
-      <link>/tutorial/css/</link>
-      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
-      
-      <guid>/tutorial/css/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-15 at 5.21.03 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;lt-style-gt&#34;&gt;&amp;lt;style&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-/*syntax*/
-
-&amp;lt;style&amp;gt;
-
-a {
-  color:red
-  }
-
-&amp;lt;/style&amp;gt;
-
-
-
-&amp;lt;dd&amp;gt;a :  selector(선택자)&amp;lt;/dd&amp;gt;
-&amp;lt;dd&amp;gt;{Color:red}; : declaration (선언)&amp;lt;/dd&amp;gt;
-&amp;lt;dd&amp;gt;{Color} :  property (속성)&amp;lt;/dd&amp;gt;
-&amp;lt;dd&amp;gt;{Color:red} : property value (속성값)&amp;lt;/dd&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;hover-버튼-클릭시-마우스-손가락-변형&#34;&gt;hover 버튼 클릭시 마우스 손가락 변형&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-button.hover {
-
- cursor: pointer;
-}
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;스크롤-만들기&#34;&gt;스크롤 만들기&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--Vertical scroll bar in div which is a child of css grid column --&amp;gt;
-
-&amp;lt;div class=&amp;quot;A&amp;quot;&amp;gt;
-  &amp;lt;div class=&amp;quot;B&amp;quot;&amp;gt;
-    &amp;lt;div class=&amp;quot;C&amp;quot;&amp;gt;search&amp;lt;/div&amp;gt;
-    &amp;lt;div class=&amp;quot;D&amp;quot;&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 먼제 부모 tag 에 grid 명령과 max-hight 을 준다. 
-
-.A {
-  max-height: 300px; /* matters */
-  display: grid; /* matters */
-  overflow: hidden; /* matters */
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-html, body, .A {
-  height: 100%; /* matters */
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.A {
-  max-height: 300px; /* matters */
-  display: grid; /* matters */
-  overflow: hidden; /* matters */
-}
-
-.B {
-  display: grid; /* matters */
-  overflow-y: auto; /* matters */
-}
-
-.D {
-  overflow-y: scroll; /* matters */
-}
-
-.C {
-  padding: 10px;
-  background-color: #07f;
-}
-
-.E {
-  padding: 10px;
-  background-color: #eee;
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-25 at 8.37.27 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;boxmodel&#34;&gt;BoxModel&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;{
-font-size:20px;
-text-align:center;
-text-decoration:none; : 밑줄없애기
-text-decoration:underline; : 언더라인 만들어라
-Border-bottom:red 20px solid;
-Border-right: lightblue 20px solid;
-Border-right:none; (오른쪽에 있는 선 없애기)
-Margin:20px; 가장자리
-Padding:20px;
-width:20px;  : 폭
-Display:none; 
-Display:block; : 전체화면을 이용해라 (block level element)
-Display:inline; : 부분화면을 이용해라 (inline element)
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;wrapper&#34;&gt;wrapper&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-/* Most basic example */ 
-
-#wrapper {
-    width: 500px;
-    margin: 0 auto;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;body&amp;gt;
-    &amp;lt;div id=&amp;quot;wrapper&amp;quot;&amp;gt;
-        Piece of text inside a 500px width div centered on the page
-    &amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&amp;lt;!-- * How the principle works
-
-Create your wrapper and assign it a certain width. Then apply an automatic horizontal margin to it by using `margin: 0 auto;` or `margin-left: auto;` `margin-right: auto;.` The automatic margins make sure your element is centered.
---&amp;gt;
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;media-queries&#34;&gt;media queries&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-/* @media(max-width:800px) :  screen width &amp;lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.
-
-@media(min-width:800px)  : screen width  &amp;gt; 800px스크린이 800px 보다 클때 명령을 내린다.
-*/
-
-
-    @media(max-width:800px) {
-    p {
-        font-size: 1px
-        font-weight
-        font-height
-        Display:block;
-  }
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;grid&#34;&gt;Grid&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 11.52.20 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-
-&amp;lt;div class = &amp;quot;container&amp;quot;&amp;gt;
-
-&amp;lt;div calss = &amp;quot;child1&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child2&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child3&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child4&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child5&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child6&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child7&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child8&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child9&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt;
-
-&amp;lt;div&amp;gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;HTML&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-.container {
-  
-  display: grid;  // 처음 시작을 지정해준다. 
-  grid-template-columns: 40% 60%; // 위에 있는 그림이 4대 6으로 나뉜다.  
-  grid-template-columns: 4fr 6fr;  //  4대 6으로 나뉜다. 
-  grid-gap:1rem; // 사이마다 공간을 줄때 4fr 6fr 로 쓰는것을 권장한다. % 로 사용하면 여백이 뒤에 생기기 때문.. 
-  
-  grid-template-columns: repeat(3, 1fr); // 이것은  1fr 이 세번 반복 
-  grid-template-columns: 1fr 1fr 1fr; // 이것과 동일하다. 
-
-  grid-template-columns: 200px 1fr; // 200 픽셀로 왼쪽 것을 고정하고 오른쪽 것을 늘리는 것이다. 
-
-  grid-auto-rows: 200px; // 200 픽셀 씩 모두 통일
-  grid-auto-rows: minmax(200px,auto); // 이것은 동일한데 content 늘어나면 같이 같이 늘어난다. 
-
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Css&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 1번칸 늘리기 
-
-.child1 {
-  
-  grid-column: 1/4 // 열에서 1부터 4까지 차지한다. 
-
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.44.12 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 4번칸 밑으로 늘리기 
-
- gird-column:3; // 3번 열부터 시작해라 
- gird-row :2/4; // 2번부터 4버까지 차지하라 
- 
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.45.18 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 9번칸을 4번안에 집어넣는다. 
-  
- gird-colum:3;
- gird-row:3/5;
- 
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.47.05 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

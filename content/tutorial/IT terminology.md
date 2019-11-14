@@ -1,13 +1,13 @@
 ---
-title: technical terms
+title: Technical terms
 author: JohnJung
 date: '2019-11-14'
 slug: technical-terms
 categories: []
-tags: ['technical terms']
+tags: ['Technical terms']
 menu:
   tutorial:
-    name: technical terms
+    name: Technical terms
     weight: 0
 toc: yes
 type: docs
