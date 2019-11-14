@@ -6,7 +6,7 @@ draft: true
 
 menu:
   tutorial:
-    parent: Html&&Css
+    parent: Html
     weight: 0
 toc: true
 type: docs
