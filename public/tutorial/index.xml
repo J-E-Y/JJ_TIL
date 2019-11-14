@@ -12,86 +12,48 @@
     
     
     <item>
-      <title>Bootstrap</title>
-      <link>/tutorial/bootstrap/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Git</title>
+      <link>/tutorial/main-git/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/bootstrap/</guid>
-      <description> BS_image: img-fluid  Description   Create responsive images by adding an .img-fluid class to the &amp;lt;img&amp;gt; tag. The image will then scale nicely to the parent element.
-  Syntax  &amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;  BS_Spacing: my  Description   Assign responsive-friendly margin or padding values to an element or a subset of its sides with shorthand classes
-  Syntax  &amp;lt;div class=&amp;quot;my&amp;quot;&amp;gt; Centered element &amp;lt;/div&amp;gt;  </description>
+      <guid>/tutorial/main-git/</guid>
+      <description>write here:rocket:</description>
     </item>
     
     <item>
-      <title>Css</title>
-      <link>/tutorial/css/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Html&amp;&amp;Css</title>
+      <link>/tutorial/html-css/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/css/</guid>
-      <description>&amp;lt;style&amp;gt; /*syntax*/ &amp;lt;style&amp;gt; a { color:red } &amp;lt;/style&amp;gt; &amp;lt;dd&amp;gt;a : selector(선택자)&amp;lt;/dd&amp;gt; &amp;lt;dd&amp;gt;{Color:red}; : declaration (선언)&amp;lt;/dd&amp;gt; &amp;lt;dd&amp;gt;{Color} : property (속성)&amp;lt;/dd&amp;gt; &amp;lt;dd&amp;gt;{Color:red} : property value (속성값)&amp;lt;/dd&amp;gt;  hover 버튼 클릭시 마우스 손가락 변형 button.hover { cursor: pointer; }  스크롤 만들기 &amp;lt;!--Vertical scroll bar in div which is a child of css grid column --&amp;gt; &amp;lt;div class=&amp;quot;A&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;B&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;C&amp;quot;&amp;gt;search&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;D&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;  // 먼제 부모 tag 에 grid 명령과 max-hight 을 준다.</description>
-    </item>
-    
-    <item>
-      <title>Gi2</title>
-      <link>/tutorial/git/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/git/</guid>
-      <description>__
-new Learning __
-branch 충돌 방지하기  merge 하는 중 출돌이 존재할수 있다.
-master branch 와 develop branch와 내용이 다를경우 master branch 에서 통합을 한다.
-merge 하는 순간 conflict 가 발생 한다.
-git은 병합한 코드가 무엇이 다른지 코드안에 표시가 되게 한다. 그리고 그분은에 들어가서 HAED 부분을 선택할지 develop 부분을 선택할지 직접 수동으로 코드를 삭제해서 결정을 하고 저장한다.
-git add . 하고 다시 git merge develop 한다.
-그럼 병합이 된것이다.</description>
+      <guid>/tutorial/html-css/</guid>
+      <description>write here:rocket:</description>
     </item>
     
     <item>
       <title>Javascript</title>
       <link>/tutorial/javascript/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript/</guid>
-      <description>this is why I want to 1.data type 자료형이란?  어떤 종류의 데이터를 사용하는 것이지 컴퓨터에게 알려주는 것 자료형마다 사용 가능한 연산자(Operator)를 따로 가지고 있습니다! 자료형이 같아야 연산을 할 수 있습니다!
- 자료형의 종류  Number :숫자 String :문자 Boolean :true and False Null : 값이 비어있다 Undefined :값이 정의되지 않았다 symbol(new in ECMAScript 6) and Object :  1. Number type (숫자)  ex)
-var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10.</description>
+      <description>write here:rocket:</description>
     </item>
     
     <item>
-      <title>Python1</title>
+      <title>Python</title>
       <link>/tutorial/python/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/python/</guid>
-      <description>Python: Operators  Arithmetic operators Assignment operators Comparison operators Logical operators  Arithmetic Operator           + Addition x + y   - Subtraction x - y   * Multiplication x * y   / Division x / y   % Modulus x % y   ** Exponentiation x ** y   // Floor division x // y    Assignment Operators           = x = 5 x = 5   += x += 3 x = x + 3   -= x -= 3 x = x - 3   *= x *= 3 x = x * 3   /= x /= 3 x = x / 3   %= x %= 3 x = x % 3   //= x //= 3 x = x // 3   **= x **= 3 x = x ** 3   &amp;amp;= x &amp;amp;= 3 x = x &amp;amp; 3    = x   ^= x ^= 3 x = x ^ 3   &amp;gt;&amp;gt;= x &amp;gt;&amp;gt;= 3 x = x &amp;gt;&amp;gt; 3   &amp;lt;&amp;lt;= x &amp;lt;&amp;lt;= 3 x = x &amp;lt;&amp;lt; 3    Comparison Operators           == Equal x == y   !</description>
+      <description>write here:rocket:</description>
     </item>
     
     <item>
-      <title>html2;</title>
-      <link>/tutorial/html2/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <title>technical terms</title>
+      <link>/tutorial/technical-terms/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/html2/</guid>
-      <description>write hsdere in frist page</description>
-    </item>
-    
-    <item>
-      <title>this is what I want;</title>
-      <link>/tutorial/html/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/html/</guid>
-      <description>write hsdere in frist page</description>
-    </item>
-    
-    <item>
-      <title>IT terminology</title>
-      <link>/tutorial/it-terminology/</link>
-      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/it-terminology/</guid>
-      <description>sd</description>
+      <guid>/tutorial/technical-terms/</guid>
+      <description>write here:rocket:</description>
     </item>
     
     <item>
@@ -100,10 +62,7 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_dictionary/</guid>
-      <description>String str.includes()
-// true or false 를 반환한다. // if 문에 넣어 쓴다. let str = &#39;To be, or not to be, that is the question.&#39;; console.log(str.includes(&#39;To be&#39;)); // true console.log(str.includes(&#39;question&#39;)); // true console.log(str.includes(&#39;nonexistent&#39;)); // false console.log(str.includes(&#39;To be&#39;, 1)); // false console.log(str.includes(&#39;TO BE&#39;)); // false console.log(str.includes(&#39;&#39;))  str.match(regexp)
-immutable
-// 문자열안에 있는 알파벳 뽑기. let str = &amp;quot;abcdefgh23j2k4h6l3h1uiui24h4324jk3jh4k3h24&amp;quot; let alphabet = str.match(/[a-zA-Z]/g); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;f&amp;quot;, &amp;quot;g&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;]  str[index]</description>
+      <description>write here:rocket:</description>
     </item>
     
     <item>
@@ -112,7 +71,25 @@ immutable
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? Immutably Rename Object Keys in Javascript obj = { name: &#39;Bobo&#39; } obj.somethingElse = obj.name delete obj.name  Unll 과 undefined 의 차이점 // null 과 undefined 는 등록, 저장 여부이다. //null 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다. //undefined 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</description>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap</title>
+      <link>/tutorial/bootstrap/</link>
+      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      
+      <guid>/tutorial/bootstrap/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>/tutorial/css/</link>
+      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      
+      <guid>/tutorial/css/</guid>
+      <description>write here:rocket:</description>
     </item>
     
     <item>
@@ -121,7 +98,7 @@ immutable
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q2/</guid>
-      <description>Dom &amp;lt;!-- div 안에 element 를 추가하는 방법 3가지 --&amp;gt; &amp;lt;!-- 첫번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // innerHTML 로 tag 까지 같이 한번에 집어넣는다 let comments = document.querySelector(&amp;quot;#comments&amp;quot;); comments.innerHTML = &amp;quot;&amp;lt;span&amp;gt;아메리카노&amp;lt;span&amp;gt;&amp;quot;; &amp;lt;/script&amp;gt; &amp;lt;!-- 두번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // element 를 생성해서 집어넣을때는 appendChild 로 집어넣는다. let comments = document.querySelector(&amp;quot;#comments&amp;quot;); let newElement = document.createElement(&amp;quot;span&amp;quot;); // element 생성 newElement.innerHTML = &amp;quot;아메리카노&amp;quot;; // 생성된 element 안에 미리 써준다.</description>
+      <description>write here:rocket:</description>
     </item>
     
     <item>
@@ -130,8 +107,7 @@ immutable
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q1/</guid>
-      <description>Question longestWord  Using the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &amp;lsquo;LongestWord&amp;rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
-If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요.</description>
+      <description>write here:rocket:</description>
     </item>
     
     <item>
@@ -140,8 +116,7 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>Question  convert nested (2-dimensional) array to flatten array! (2차원 배열을 1차원 배열로 전환하세요.)
- flatten([1,2,[3],[4]]); // [1,2,3,4]  My_Soultion function flatten (array){ //your solution here // 1. 재귀함수 사용 let ret = []; // 새로운 배열은 만든다. // 재귀함수 function filtered(array) { // (1).array 의 각각의 요소에 접근한다. [1,2,[11,25,21,34],[4]] // (5). array 의 각각의 요소에 접근한다. [11,25,21,34] for(let i = 0 ; i &amp;lt; array.length; i ++ ) { // (2)만약 요소가 array 안에 array 가아니면 [1,2] // (6)만약 요소가 array 안에 array 가 아니면 [11,25,21,34] if (!</description>
+      <description>write here:rocket:</description>
     </item>
     
   </channel>

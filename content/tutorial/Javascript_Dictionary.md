@@ -4,11 +4,14 @@ date: 2019
 draft: true
 menu:
   tutorial:
-    parent: "Javascript"
+    parent: "3.Javascript"
     weight: 0
 
 toc: true
 type: docs
+tags:
+- Javacript
+summary: 'write here:rocket:' 
 
 ---
 

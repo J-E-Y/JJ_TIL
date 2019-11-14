@@ -1,14 +1,20 @@
 ---
-title: IT terminology
-date: 2019-04-22
-draft: true
+title: technical terms
+author: JohnJung
+date: '2019-11-14'
+slug: technical-terms
+categories: []
+tags: ['technical terms']
 menu:
   tutorial:
-    name: IT terminology
-    weight: 00
-toc: true
+    name: technical terms
+    weight: 0
+toc: yes
 type: docs
+summary: 'write here:rocket:' 
 ---
 
-sd
+
+this is what?
+
 

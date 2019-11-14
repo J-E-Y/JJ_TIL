@@ -1,13 +1,17 @@
 ---
 title: Bootstrap
-date: 2019-04-29
+date: 2019
 draft: true
 menu:
   tutorial:
-    name: Bootstrap
+    parent: "2.Html&&Css"
     weight: 0
+
 toc: true
 type: docs
+tags:
+- Html&&Css
+summary: 'write here:rocket:' 
 ---
 
 

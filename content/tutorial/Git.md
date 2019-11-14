@@ -1,13 +1,17 @@
 ---
-title: Gi2
-date: 2019-04-29
-draft: true
+title: Git
+author: JohnJung
+date: '2019-11-14'
+slug: main-git
+categories: []
+tags: ['Git']
 menu:
   tutorial:
-    name: Gi2
-    weight: 0
-toc: true
+    name: 1.Git
+    weight: 1
+toc: yes
 type: docs
+summary: 'write here:rocket:' 
 ---
 
 

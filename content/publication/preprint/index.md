@@ -22,8 +22,8 @@ publication_types:
 slides: ""
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus
   ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
-tags:
-- kkk
+#tags:
+#- kkk
 title: An example preprint / working paper
 url_code: ""
 url_dataset: ""

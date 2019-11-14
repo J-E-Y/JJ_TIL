@@ -1,13 +1,17 @@
 ---
 title: Javascript
-date: 2019-04-29
-draft: true
+author: JohnJung
+date: '2019-11-14'
+slug: Javascript
+categories: []
+tags: ['Javacript']
 menu:
   tutorial:
-    name: Javascript
-    weight: 0
-toc: true
+    name: 3.Javascript
+    weight: 3
+toc: yes
 type: docs
+summary: 'write here:rocket:' 
 ---
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)

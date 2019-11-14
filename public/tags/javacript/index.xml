@@ -12,11 +12,56 @@
     
     
     <item>
-      <title>Javacript</title>
-      <link>/tutorial/javacript/</link>
+      <title>Javascript</title>
+      <link>/tutorial/javascript/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/javacript/</guid>
+      <guid>/tutorial/javascript/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
+      <title>1.Dictionary_level_1</title>
+      <link>/tutorial/javascript_dictionary/</link>
+      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      
+      <guid>/tutorial/javascript_dictionary/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
+      <title>5. Notes</title>
+      <link>/tutorial/javascript_note/</link>
+      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      
+      <guid>/tutorial/javascript_note/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
+      <title>2.Dictionary_level_2</title>
+      <link>/tutorial/javascript_q2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/javascript_q2/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
+      <title>3.Coding_level_1</title>
+      <link>/tutorial/javascript_q1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/javascript_q1/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
+      <title>4.Coding_level_2</title>
+      <link>/tutorial/javascript_algorithm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/javascript_algorithm/</guid>
       <description>write here:rocket:</description>
     </item>
     

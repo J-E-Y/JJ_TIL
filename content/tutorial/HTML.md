@@ -1,26 +1,19 @@
 ---
-title: Html
-date: 2019-04-29
-draft: true
+title: Html&&Css
+author: JohnJung
+date: '2019-11-14'
+slug: Html-Css
+categories: []
+tags: ['Html&&Css']
 menu:
   tutorial:
-    name: HTML
-    weight: 0
-toc: true
+    name: 2.Html&&Css
+    weight: 2
+toc: yes
 type: docs
-tags:
-- HTML
-title: this is what I want;
-summary: write hsdere in frist page
-url_code: '#'
-url_dataset: '#'
-url_pdf: http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf
-url_poster: '#'
-url_project: ""
-url_slides: ""
-url_source: '#'
-url_video: '#'
+summary: 'write here:rocket:' 
 ---
+
 
 
 ![](/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png)

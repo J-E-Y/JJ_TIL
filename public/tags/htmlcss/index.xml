@@ -6,18 +6,36 @@
     <description>Recent content in Html&amp;&amp;Css on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/htmlcss/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>html2;</title>
-      <link>/tutorial/html2/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Html&amp;&amp;Css</title>
+      <link>/tutorial/html-css/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/html2/</guid>
-      <description>write hsdere in frist page</description>
+      <guid>/tutorial/html-css/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap</title>
+      <link>/tutorial/bootstrap/</link>
+      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      
+      <guid>/tutorial/bootstrap/</guid>
+      <description>write here:rocket:</description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>/tutorial/css/</link>
+      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      
+      <guid>/tutorial/css/</guid>
+      <description>write here:rocket:</description>
     </item>
     
   </channel>

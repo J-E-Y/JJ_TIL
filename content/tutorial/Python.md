@@ -1,15 +1,18 @@
 ---
-title: Python1
-date: 2019-04-29
-draft: true
+title: Python
+author: JohnJung
+date: '2019-11-14'
+slug: Python
+categories: []
+tags: ['Python']
 menu:
   tutorial:
-    name: Python1
-    weight: 0
-toc: true
+    name: 4.Python
+    weight: 4
+toc: yes
 type: docs
+summary: 'write here:rocket:' 
 ---
-
 ---
 ##  Python: **Operators**
 ---

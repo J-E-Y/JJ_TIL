@@ -1,14 +1,19 @@
 ---
 title: Css
-date: 2019-04-29
+date: 2019
 draft: true
 menu:
   tutorial:
-    name: Css
+    parent: "2.Html&&Css"
     weight: 0
+
 toc: true
 type: docs
+tags:
+- Html&&Css
+summary: 'write here:rocket:' 
 ---
+
 
 ![](/tutorial/CSS_files/Screen Shot 2019-09-15 at 5.21.03 PM.png)
 
