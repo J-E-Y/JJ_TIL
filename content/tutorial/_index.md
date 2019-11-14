@@ -6,7 +6,7 @@ menu:
   tutorial:
     name: Today I Learned
     weight: 0
-toc: true
+toc: yes
 type: docs
 ---
 
