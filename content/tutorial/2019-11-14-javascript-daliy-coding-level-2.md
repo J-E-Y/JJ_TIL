@@ -2,7 +2,7 @@
 title: Daliy_Coding_Level_2
 author: JohnJung
 date: '2019-11-14'
-slug: javascript-daliy-coding-level-1
+slug: javascript-daliy-coding-level-2
 categories: []
 tags:
   - Javascript
@@ -17,7 +17,7 @@ summary: 'write here:rocket:'
 
 ### Question
 
->convert nested (2-dimensional) array to flatten array! (2차원 배열을 1차원 배열로 전환하세요.)
+> convert nested (2-dimensional) array to flatten array! (2차원 배열을 1차원 배열로 전환하세요.)
 
 ```js
 flatten([1,2,[3],[4]]); // [1,2,3,4]
