@@ -6,7 +6,7 @@
     <description>Recent content in Tags on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>HTML</title>
       <link>/tags/html/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/html/</guid>
       <description></description>
@@ -53,15 +53,6 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0900</pubDate>
       
       <guid>/tags/demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learningsd</title>
-      <link>/tags/learningsd/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0900</pubDate>
-      
-      <guid>/tags/learningsd/</guid>
       <description></description>
     </item>
     

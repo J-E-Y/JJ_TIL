@@ -7,7 +7,7 @@ menu:
     name: Today I Learned
     weight: 0
 toc: true
-type: docs
+type: post
 ---
 
 

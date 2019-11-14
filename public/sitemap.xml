@@ -19,28 +19,6 @@
   </url>
   
   <url>
-    <loc>/tags/html/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/this-is-newpost/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/downre/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
@@ -49,6 +27,11 @@
     <loc>/categories/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
@@ -73,6 +56,12 @@
   </url>
   
   <url>
+    <loc>/tags/html/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/htmlcss/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -86,6 +75,12 @@
   <url>
     <loc>/tutorial/python/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -171,25 +166,8 @@
   </url>
   
   <url>
-    <loc>/it/</loc>
-    <lastmod>2016-04-27T00:00:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/project/internal-project/</loc>
     <lastmod>2016-04-27T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/it/itit/</loc>
-    <lastmod>2016-04-27T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/learningsd/</loc>
-    <lastmod>2016-04-27T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -275,26 +253,6 @@
   </url>
   
   <url>
-    <loc>/post/_book/firstsd/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/_book/frist/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/_book/second-1/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/_book/second/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tutorial/javascript_q2/</loc>
   </url>
   
@@ -309,6 +267,10 @@
   <url>
     <loc>/author/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/displaydocs/</loc>
   </url>
   
 </urlset>
