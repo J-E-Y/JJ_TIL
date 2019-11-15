@@ -15,11 +15,51 @@ type: docs
 summary: 'write here:rocket:' 
 ---
 
+
 ### Question
+
+## shuffle 함수 만들기 
+
+
+### My_Soultion
+
+
+```js
+
+// 배열 내용의 순서를 랜덤하게 변경합니다.
+// TIP: 이 함수는 immutable해야 합니다.
+
+
+function shuffle(array) {
+    let shuffleArr = array.slice();
+    let i,j,k;
+    for ( i = shuffleArr.length-1; i > 0; i--) {
+      j = Math.floor(Math.random()*(i+1));
+      k = shuffleArr[i];
+      shuffleArr[i] = shuffleArr[j];
+      shuffleArr[j] = k;
+    } return shuffleArr;
+  };
+
+
+
+```
+
+
+
+
+
+
+
+### Question
+
+## flatten 함수 만들기 
 
 > convert nested (2-dimensional) array to flatten array! (2차원 배열을 1차원 배열로 전환하세요.)
 
+
 ```js
+
 flatten([1,2,[3],[4]]); // [1,2,3,4]
 
 ```
@@ -71,7 +111,7 @@ function flatten (array){
 ### Question 
 
 
-## bugInApple
+> ## bugInApple
 
 > Find out "B"(Bug) in a lot of "A"(Apple). (수많은 "A"(Apple) 사이에서 "B"(Bug)를 찾으세요.)
 
