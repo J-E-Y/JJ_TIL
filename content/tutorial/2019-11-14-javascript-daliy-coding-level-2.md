@@ -16,6 +16,66 @@ summary: 'write here:rocket:'
 ---
 
 
+
+### Question
+
+
+> Broswer에 존재하는 document.getElementsByClassName 함수를
+ 직접 구현해봅니다.
+ 
+> getElementsByClassName 함수는 현재 documnet에서 주어진 className을 가지고 있는 모든 html element를 찾는 함수입니다.
+
+> 결과는 항상 배열의 형태로 리턴해줍니다.document.body, element.childNodes, element.classList를 사용해보세요
+ 
+  
+
+### My_Soultion
+
+
+```js
+  
+  
+// 이것을 다른 재귀로 구현하세요 
+  function getElementsByClassName (className) {
+    return document.getElementsByClassName(className);
+  };
+
+
+   // document.body.classList == > 배열형태  but typeof 는 object
+   // document.body.childNodes == > 배열형태 but typeof 는 object
+   // document.body.children   == > 배열형태 but typeof 는 object
+  
+
+function getElementsByClassName(className) {
+
+
+  let result = [];
+  let rootElement = document.body;
+
+  function recursion(rootElement){
+
+    if(rootElement.classList && rootElement.classList.contains(className)) {
+      result.push(rootElement);
+    }
+    
+    if(rootElement.hasChildNodes()){
+      // rootElement.children.length 사용해도됨 
+      for(let i=0; i<rootElement.childNodes.length; i++){
+        recursion(rootElement.childNodes[i]);
+      }
+    }
+  }
+  recursion(rootElement);  // 이것이 첫번째로 호출???
+  return result;
+};
+
+
+
+
+```
+
+
+
 ### Question
 
 ## shuffle 함수 만들기 
