@@ -16,6 +16,112 @@ summary: 'write here:rocket:'
 ---
 
 
+### Question
+
+
+## JSON.stringfy 함수 만들기 
+
+
+```js 
+ * 2. stringfyJSON은 아래와 같이 작동합니다.
+ * 
+ * 
+ * - Bolean이 input으로 주어졌을 경우
+ * stringifyJSON(true);                // 'true'
+ * 
+ * 
+ * - String이 input으로 주어졌을 경우
+ * stringifyJSON('foo');               // '"foo"'
+ * 
+ * 
+ * - Array가 input으로 주어졌을 경우
+ * stringifyJSON([1, 'false', false]); // '[1,"false",false]'
+ * 
+ * 
+ * - Object가 input으로 주어졌을 경우
+ * stringifyJSON({ x: 5 });            // '{"x":5}'
+ * 
+ * 
+ * - undefind, function이 주어졌을 경우
+ * stringifyJSON(undefined)            // undefined
+ * stringifyJSON(function(){})         // undefined
+ * 
+ * 
+ * stringifyJSON({ x: undefined, y: function(){} })   // '{}'
+ * 
+ * 3. spec/fixtures.js를 참고해서 테스트에서 어떤 input 값들이
+ * 주어지고, 어떻게 stringify해 주어야할지 생각해 보세요.
+ * 
+ * 4. 그냥 테스트 통과를 하고 싶으시다면, 다음과 같이 구현하면 될거예요.
+ *  const stringifyJSON = JSON.stringify;
+ * 
+ * 하지만 이 과제의 목적은 재귀를 공부하는 것이니, 처음부터 구현해봐야겠지요?:
+ */
+
+```
+
+### My_Soultion
+
+
+```js
+
+
+  
+
+ function stringifyJSON(obj) {
+
+  let result = []  ;
+
+  // boolean or 숫자로 받는다면? 
+ 
+  
+  
+ 
+  if(typeof obj === 'boolean' || typeof obj === 'number') {
+      return String(obj);
+    }
+    
+    // 만약 값이 없다면 
+    if (obj === null ) {
+      return 'null';
+    }
+
+    // string으로 받는다면 
+     else if (typeof obj === "string") {
+      return '"' + obj + '"';
+     }
+     
+     // 배열로 받는다면 
+     else if (Array.isArray(obj)) {
+      for( let i = 0; i < obj.length; i++ ) {
+        // result.push(obj[i]);
+        // 왜 여기서 push obj[i]를 안하고 
+        // stringifyJOSN(obj[i])
+        result.push(stringifyJSON(obj[i])) 
+        
+      }
+      return "[" + result + "]";
+    } 
+    // 객체로 받는다
+      else if (typeof obj === 'object') {
+      for (let propo in obj) {
+        if(obj[propo] !== undefined && typeof obj[propo] !== 'function'){
+          //  왜 이것은 안되고
+          // result.push("'" + propo + "'" + ':' + "'" + obj[propo] + "'");
+          // 이것은 될까요?
+          result.push(stringifyJSON(propo) + ':' + stringifyJSON(obj[propo]));
+        }
+      }
+      return '{' + result + '}';
+
+    }
+
+  };
+  
+
+
+```
+
 
 ### Question
 
