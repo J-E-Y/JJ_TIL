@@ -6,18 +6,81 @@
     <description>Recent content in Posts on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jul 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>11111</title>
-      <link>/post/downre/</link>
-      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
+      <title>Array_method</title>
+      <link>/post/array-method/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/downre/</guid>
-      <description> frist  second  </description>
+      <guid>/post/array-method/</guid>
+      <description>:rocket:</description>
+    </item>
+    
+    <item>
+      <title>How to check if element has any children in Javascript?</title>
+      <link>/post/how-to-check-if-element-has-any-children-in-javascript/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/how-to-check-if-element-has-any-children-in-javascript/</guid>
+      <description>:rocket:</description>
+    </item>
+    
+    <item>
+      <title>Unll 과 undefined 의 차이점</title>
+      <link>/post/unll-undefined/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/unll-undefined/</guid>
+      <description>:rocket:</description>
+    </item>
+    
+    <item>
+      <title>data fliter 와 foreach 로 다루기 </title>
+      <link>/post/data-fliter-foreach/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/data-fliter-foreach/</guid>
+      <description>:rocket:</description>
+    </item>
+    
+    <item>
+      <title>falsy 와 trythy</title>
+      <link>/post/falsy-trythy/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/falsy-trythy/</guid>
+      <description>:rocket:</description>
+    </item>
+    
+    <item>
+      <title>sort()</title>
+      <link>/post/sort/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/sort/</guid>
+      <description>:rocket:</description>
+    </item>
+    
+    <item>
+      <title>자바스크립트 javascript forEach, for of, for in 의 차이</title>
+      <link>/post/javascript-foreach-for-of-for-in/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/javascript-foreach-for-of-for-in/</guid>
+      <description>:rocket:</description>
+    </item>
+    
+    <item>
+      <title>피보나치 수열</title>
+      <link>/post/2019-11-20-/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-11-20-/</guid>
+      <description>:rocket:</description>
     </item>
     
     <item>

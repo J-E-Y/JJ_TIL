@@ -1,5 +1,5 @@
 ---
-title: Javascript
+title: Javascript_Basic
 author: JohnJung
 date: '2019-11-14'
 categories: []

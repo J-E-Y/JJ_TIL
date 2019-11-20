@@ -9,5 +9,15 @@ header:
 
 ### `I constantly learn new things. This is a repo to share those learnings`. 
 
+## Today I wrote
 
-> ## {{< list_tags >}}
+> ### {{< list_categories >}}
+
+
+## Today I learned
+
+> ### {{< list_tags >}}
+
+
+
+

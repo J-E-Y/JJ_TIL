@@ -511,6 +511,7 @@ console.log(max)
 ---
 
 
+
 **arr.reverse()**
 
 
@@ -1025,6 +1026,14 @@ array.join();      // 배열의 모든 원소를 문자열로 변환하고 연�
 
 ```
 
+
+**JavaScript Arrays: slice vs splice**
+
+```
+
+[This is link](https://wsvincent.com/javascript-array-slice-vs-splice/)
+
+```
 
 
 **arr.concat(arr)** 
