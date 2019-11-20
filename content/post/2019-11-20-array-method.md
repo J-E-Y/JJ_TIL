@@ -1,5 +1,5 @@
 ---
-title: Array_method
+title: <Javascript> Array_method
 summary: ':rocket:' 
 author: JohnJung
 date: '2019-11-20'

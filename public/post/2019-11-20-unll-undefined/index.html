@@ -30,7 +30,7 @@
   <meta name="description" content=":rocket:">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/data-fliter-foreach/">
+  <link rel="alternate" hreflang="en-us" href="/post/2019-11-20-unll-undefined/">
 
   
 
@@ -102,7 +102,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/data-fliter-foreach/">
+  <link rel="canonical" href="/post/2019-11-20-unll-undefined/">
 
   
   
@@ -114,8 +114,8 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="JohnJung">
-  <meta property="og:url" content="/post/data-fliter-foreach/">
-  <meta property="og:title" content="&lt;Javascript&gt; data fliter 와 foreach 로 다루기  | JohnJung">
+  <meta property="og:url" content="/post/2019-11-20-unll-undefined/">
+  <meta property="og:title" content="&lt;Javascript&gt; Unll 과 undefined 의 차이점 | JohnJung">
   <meta property="og:description" content=":rocket:"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
@@ -128,7 +128,7 @@
 
   
 
-  <title>&lt;Javascript&gt; data fliter 와 foreach 로 다루기  | JohnJung</title>
+  <title>&lt;Javascript&gt; Unll 과 undefined 의 차이점 | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -332,7 +332,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">&lt;Javascript&gt; data fliter 와 foreach 로 다루기 </h1>
+  <h1 itemprop="name">&lt;Javascript&gt; Unll 과 undefined 의 차이점</h1>
 
   
 
@@ -402,55 +402,13 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<h2 id="salesteam-안에-있는-data-fliter-와-foreach-로-다루기">salesTeam 안에 있는 data  fliter 와 foreach 로 다루기</h2>
+<blockquote>
+<h2 id="null-과-undefined-는-등록-저장-여부이다">null 과 undefined 는 등록, 저장 여부이다.</h2>
+</blockquote>
 
-<pre><code class="language-js">var salesTeam = [
-  {
-    &quot;name&quot;: {
-      &quot;first&quot;: &quot;Bruce&quot;,
-      &quot;last&quot;: &quot;Wayne&quot;
-    },
-    &quot;age&quot;: 10,
-    &quot;sales&quot;: &quot;$2314&quot;
-  },
-  {
-    &quot;name&quot;: {
-      &quot;first&quot;: &quot;Alvaro&quot;,
-      &quot;last&quot;: &quot;Angelos&quot;
-    },
-    &quot;age&quot;: 55,
-    &quot;sales&quot;: &quot;$1668&quot;
-  },
-  {
-    &quot;name&quot;: {
-      &quot;first&quot;: &quot;Alvaro&quot;,
-      &quot;last&quot;: &quot;Angelos&quot;
-    },
-    &quot;age&quot;: 15,
-    &quot;sales&quot;: &quot;$1668&quot;
-  }
-];
+<p><code>null</code> 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다.</p>
 
-
-// age 가 20 아래인 것만 teenager 에 담기 
-// filter 사용
-
-let teenager = salesTeam.filter(function(ele){
-    return ele.age &lt; 20;
-  });
-
-// 뽑은거 안에서 fullNmae 가져오기
-// foreach 사용
-
-  let result = [];
-  teenager.forEach(function(ele){
-    result.push(`${ele.name.first} ${ele.name.last}`); // 
-  });
-
-
-
-
-</code></pre>
+<p><code>undefined</code> 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</p>
 
     </div>
 

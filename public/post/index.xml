@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Array_method</title>
+      <title>&lt;Javascript&gt; Array_method</title>
       <link>/post/array-method/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>How to check if element has any children in Javascript?</title>
+      <title>&lt;Javascript&gt; How to check if element has any children in Javascript?</title>
       <link>/post/how-to-check-if-element-has-any-children-in-javascript/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -30,16 +30,16 @@
     </item>
     
     <item>
-      <title>Unll 과 undefined 의 차이점</title>
-      <link>/post/unll-undefined/</link>
+      <title>&lt;Javascript&gt; Unll 과 undefined 의 차이점</title>
+      <link>/post/2019-11-20-unll-undefined/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/unll-undefined/</guid>
+      <guid>/post/2019-11-20-unll-undefined/</guid>
       <description>:rocket:</description>
     </item>
     
     <item>
-      <title>data fliter 와 foreach 로 다루기 </title>
+      <title>&lt;Javascript&gt; data fliter 와 foreach 로 다루기 </title>
       <link>/post/data-fliter-foreach/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -48,7 +48,7 @@
     </item>
     
     <item>
-      <title>falsy 와 trythy</title>
+      <title>&lt;Javascript&gt; falsy 와 trythy</title>
       <link>/post/falsy-trythy/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -57,16 +57,7 @@
     </item>
     
     <item>
-      <title>sort()</title>
-      <link>/post/sort/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/sort/</guid>
-      <description>:rocket:</description>
-    </item>
-    
-    <item>
-      <title>자바스크립트 javascript forEach, for of, for in 의 차이</title>
+      <title>&lt;Javascript&gt; forEach, for of, for in 의 차이</title>
       <link>/post/javascript-foreach-for-of-for-in/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -75,7 +66,16 @@
     </item>
     
     <item>
-      <title>피보나치 수열</title>
+      <title>&lt;Javascript&gt; sort()</title>
+      <link>/post/sort/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/sort/</guid>
+      <description>:rocket:</description>
+    </item>
+    
+    <item>
+      <title>&lt;Javascript&gt; 피보나치 수열</title>
       <link>/post/2019-11-20-/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -100,6 +100,24 @@
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>firstsd This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &amp;gt; this is link http://rmarkdown.rstudio.com.
 summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/_book/firstsd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/_book/firstsd/</guid>
+      <description>333  a.sourceLine { display: inline-block; line-height: 1.25; } a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; } a.sourceLine:empty { height: 1.2em; } .sourceCode { overflow: visible; } code.sourceCode { white-space: pre; position: relative; } div.sourceCode { margin: 1em 0; } pre.sourceCode { margin: 0; } @media screen { div.sourceCode { overflow: auto; } } @media print { code.sourceCode { white-space: pre-wrap; } a.sourceLine { text-indent: -1em; padding-left: 1em; } } pre.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/_book/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/_book/second/</guid>
+      <description>2 second | 333  a.sourceLine { display: inline-block; line-height: 1.25; } a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; } a.sourceLine:empty { height: 1.2em; } .sourceCode { overflow: visible; } code.sourceCode { white-space: pre; position: relative; } div.sourceCode { margin: 1em 0; } pre.sourceCode { margin: 0; } @media screen { div.sourceCode { overflow: auto; } } @media print { code.sourceCode { white-space: pre-wrap; } a.sourceLine { text-indent: -1em; padding-left: 1em; } } pre.</description>
     </item>
     
   </channel>

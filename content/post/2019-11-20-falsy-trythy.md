@@ -1,5 +1,5 @@
 ---
-title: falsy 와 trythy
+title: <Javascript> falsy 와 trythy
 summary: ':rocket:' 
 author: JohnJung
 date: '2019-11-20'

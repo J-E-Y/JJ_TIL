@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Array_method</title>
+      <title>&lt;Javascript&gt; Array_method</title>
       <link>/post/array-method/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>How to check if element has any children in Javascript?</title>
+      <title>&lt;Javascript&gt; How to check if element has any children in Javascript?</title>
       <link>/post/how-to-check-if-element-has-any-children-in-javascript/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -30,16 +30,16 @@
     </item>
     
     <item>
-      <title>Unll 과 undefined 의 차이점</title>
-      <link>/post/unll-undefined/</link>
+      <title>&lt;Javascript&gt; Unll 과 undefined 의 차이점</title>
+      <link>/post/2019-11-20-unll-undefined/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/unll-undefined/</guid>
+      <guid>/post/2019-11-20-unll-undefined/</guid>
       <description>:rocket:</description>
     </item>
     
     <item>
-      <title>data fliter 와 foreach 로 다루기 </title>
+      <title>&lt;Javascript&gt; data fliter 와 foreach 로 다루기 </title>
       <link>/post/data-fliter-foreach/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -48,7 +48,7 @@
     </item>
     
     <item>
-      <title>falsy 와 trythy</title>
+      <title>&lt;Javascript&gt; falsy 와 trythy</title>
       <link>/post/falsy-trythy/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -57,16 +57,7 @@
     </item>
     
     <item>
-      <title>sort()</title>
-      <link>/post/sort/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/sort/</guid>
-      <description>:rocket:</description>
-    </item>
-    
-    <item>
-      <title>자바스크립트 javascript forEach, for of, for in 의 차이</title>
+      <title>&lt;Javascript&gt; forEach, for of, for in 의 차이</title>
       <link>/post/javascript-foreach-for-of-for-in/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -75,7 +66,16 @@
     </item>
     
     <item>
-      <title>피보나치 수열</title>
+      <title>&lt;Javascript&gt; sort()</title>
+      <link>/post/sort/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/sort/</guid>
+      <description>:rocket:</description>
+    </item>
+    
+    <item>
+      <title>&lt;Javascript&gt; 피보나치 수열</title>
       <link>/post/2019-11-20-/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       

@@ -1,9 +1,9 @@
 ---
-title: Unll 과 undefined 의 차이점
+title: <Javascript> Unll 과 undefined 의 차이점
 summary: ':rocket:' 
 author: JohnJung
 date: '2019-11-20'
-slug: unll-undefined
+
 categories: ['Javascript Post']
 tags: []
 image:

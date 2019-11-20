@@ -1,5 +1,5 @@
 ---
-title: 자바스크립트 javascript forEach, for of, for in 의 차이
+title: <Javascript> forEach, for of, for in 의 차이
 summary: ':rocket:' 
 author: JohnJung
 date: '2019-11-20'
