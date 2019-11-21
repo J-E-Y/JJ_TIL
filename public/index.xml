@@ -36,6 +36,55 @@
     </item>
     
     <item>
+      <title>&lt;Javacript/Dom&gt; checkbox 안에 있는 value 값 얻기</title>
+      <link>/post/javacript-checkbox-value/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/javacript-checkbox-value/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;html&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div class = &amp;quot;container&amp;quot;&amp;gt;
+    
+    &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;뜨거워&amp;quot;&amp;gt; hot
+    &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;추워&amp;quot;&amp;gt; clod
+    &amp;lt;a href=&amp;quot;#&amp;quot; onclick=&amp;quot;submitFun();return false;&amp;quot;&amp;gt;ok &amp;lt;/a&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;js&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+
+	function submitFun() {
+		
+
+		var checks = document.getElementsByClassName(&#39;checks&#39;)
+		var str = &amp;quot;&amp;quot;;
+		
+
+		for (let i = 0; i &amp;lt; checks.length; i++ ){
+
+			if (checks[i].checked === true ) {
+ 				str += checks[i].value + &amp;quot;&amp;quot;;
+ 			}
+ 		}
+ 		alert(str);
+	}
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>&lt;Javascript&gt; Array_method</title>
       <link>/post/array-method/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
@@ -12922,7 +12971,6 @@ for(let i = 0; i &amp;lt; 20; i++){ // 20번째 까지
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-
 
 
 // 함수사용해서 피보나치 수열 만들기 

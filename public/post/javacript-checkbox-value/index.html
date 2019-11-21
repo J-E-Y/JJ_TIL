@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Studying">
+  <meta name="description" content=":rocket:">
 
   
-  <link rel="alternate" hreflang="en-us" href="/404.html">
+  <link rel="alternate" hreflang="en-us" href="/post/javacript-checkbox-value/">
 
   
 
@@ -102,7 +102,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/404.html">
+  <link rel="canonical" href="/post/javacript-checkbox-value/">
 
   
   
@@ -114,19 +114,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="JohnJung">
-  <meta property="og:url" content="/404.html">
-  <meta property="og:title" content="404 Page not found | JohnJung">
-  <meta property="og:description" content="Studying"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/post/javacript-checkbox-value/">
+  <meta property="og:title" content="&lt;Javacript/Dom&gt; checkbox 안에 있는 value 값 얻기 | JohnJung">
+  <meta property="og:description" content=":rocket:"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
+  <meta property="article:published_time" content="2019-11-21T00:00:00&#43;00:00">
   
+  <meta property="article:modified_time" content="2019-11-21T00:00:00&#43;00:00">
+  
+
   
 
   
 
-  
-
-  <title>404 Page not found | JohnJung</title>
+  <title>&lt;Javacript/Dom&gt; checkbox 안에 있는 value 값 얻기 | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -308,59 +310,257 @@
   </div>
 </nav>
 
-<div class="container">
 
-  <h1>Page not found</h1>
-  <p>Perhaps you were looking for one of these?</p>
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
-    <h2>Latest</h2>
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">&lt;Javacript/Dom&gt; checkbox 안에 있는 value 값 얻기</h1>
+
+  
+
+  
     
-    <ul>
-      <li><a href="/talk/example/">Example Talk</a></li>
-    </ul>
+
+
+
+<meta content="" itemprop="datePublished">
+<meta content="" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
     
-    <ul>
-      <li><a href="/post/javacript-checkbox-value/">&lt;Javacript/Dom&gt; checkbox 안에 있는 value 값 얻기</a></li>
-    </ul>
     
-    <ul>
-      <li><a href="/post/array-method/">&lt;Javascript&gt; Array_method</a></li>
-    </ul>
+      
     
-    <ul>
-      <li><a href="/post/how-to-check-if-element-has-any-children-in-javascript/">&lt;Javascript&gt; How to check if element has any children in Javascript?</a></li>
-    </ul>
+    <time></time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
     
-    <ul>
-      <li><a href="/post/2019-11-20-unll-undefined/">&lt;Javascript&gt; Unll 과 undefined 의 차이점</a></li>
-    </ul>
-    
-    <ul>
-      <li><a href="/post/data-fliter-foreach/">&lt;Javascript&gt; data fliter 와 foreach 로 다루기 </a></li>
-    </ul>
-    
-    <ul>
-      <li><a href="/post/falsy-trythy/">&lt;Javascript&gt; falsy 와 trythy</a></li>
-    </ul>
-    
-    <ul>
-      <li><a href="/post/javascript-foreach-for-of-for-in/">&lt;Javascript&gt; forEach, for of, for in 의 차이</a></li>
-    </ul>
-    
-    <ul>
-      <li><a href="/post/sort/">&lt;Javascript&gt; sort()</a></li>
-    </ul>
-    
-    <ul>
-      <li><a href="/post/2019-11-20-/">&lt;Javascript&gt; 피보나치 수열</a></li>
-    </ul>
-    
+
   
 
 </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <ul>
+<li>html</li>
+</ul>
+
+<pre><code class="language-html">
+
+&lt;div class = &quot;container&quot;&gt;
+    
+    &lt;input type=&quot;checkbox&quot; class =&quot;checks&quot; value =&quot;뜨거워&quot;&gt; hot
+    &lt;input type=&quot;checkbox&quot; class =&quot;checks&quot; value =&quot;추워&quot;&gt; clod
+    &lt;a href=&quot;#&quot; onclick=&quot;submitFun();return false;&quot;&gt;ok &lt;/a&gt;
+
+&lt;/div&gt;
+
+</code></pre>
+
+<ul>
+<li>js</li>
+</ul>
+
+<pre><code class="language-js">
+
+
+	function submitFun() {
+		
+
+		var checks = document.getElementsByClassName('checks')
+		var str = &quot;&quot;;
+		
+
+		for (let i = 0; i &lt; checks.length; i++ ){
+
+			if (checks[i].checked === true ) {
+ 				str += checks[i].value + &quot;&quot;;
+ 			}
+ 		}
+ 		alert(str);
+	}
+
+</code></pre>
+
+    </div>
+
+    
+
+
+
+
+
+    
+      
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  
+  <img class="portrait mr-3" src="/author/admin/avatar_hu9d86a95361d48c7ef439503a043609ac_95081_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/admin">John Jung</a></h5>
+    <h6 class="card-subtitle">Studying</h6>
+    <p class="card-text" itemprop="description">My research interests include distributed robotics, mobile computing and programmable matter.</p>
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/J-E-Y" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+      
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
 <div class="container">
   <footer class="site-footer">
   
