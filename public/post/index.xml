@@ -6,10 +6,19 @@
     <description>Recent content in Posts on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>&lt;Javascript&gt; every() 와 some()</title>
+      <link>/post/every-some/</link>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/every-some/</guid>
+      <description>:rocket:</description>
+    </item>
     
     <item>
       <title>&lt;Javacript/Dom&gt; checkbox 안에 있는 value 값 얻기</title>
@@ -17,15 +26,6 @@
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/javacript-checkbox-value/</guid>
-      <description>:rocket:</description>
-    </item>
-    
-    <item>
-      <title>&lt;Javascript&gt; Array_method</title>
-      <link>/post/array-method/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/array-method/</guid>
       <description>:rocket:</description>
     </item>
     
@@ -62,6 +62,15 @@
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/falsy-trythy/</guid>
+      <description>:rocket:</description>
+    </item>
+    
+    <item>
+      <title>&lt;Javascript&gt; forEach(), map(), fliter()</title>
+      <link>/post/array-method/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/array-method/</guid>
       <description>:rocket:</description>
     </item>
     

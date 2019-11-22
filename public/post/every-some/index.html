@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Studying">
+  <meta name="description" content=":rocket:">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/">
+  <link rel="alternate" hreflang="en-us" href="/post/every-some/">
 
   
 
@@ -97,15 +97,12 @@
   
 
   
-  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="JohnJung">
-  <link rel="feed" href="/post/index.xml" type="application/rss+xml" title="JohnJung">
-  
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/post/every-some/">
 
   
   
@@ -117,19 +114,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="JohnJung">
-  <meta property="og:url" content="/post/">
-  <meta property="og:title" content="Posts | JohnJung">
-  <meta property="og:description" content="Studying"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/post/every-some/">
+  <meta property="og:title" content="&lt;Javascript&gt; every() 와 some() | JohnJung">
+  <meta property="og:description" content=":rocket:"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-11-22T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-11-22T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-11-22T00:00:00&#43;00:00">
   
 
   
 
   
 
-  <title>Posts | JohnJung</title>
+  <title>&lt;Javascript&gt; every() 와 some() | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -312,7 +311,9 @@
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
+  
 
 
 
@@ -329,62 +330,14 @@
 
   
   
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">&lt;Javascript&gt; every() 와 some()</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Posts</h1>
-
-  
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-
-  
-
-  
-  
-    
-      
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/post/getting-started/" itemprop="url">22</a>
-    </h3>
-
-    
-    <div class="article-style" itemprop="articleBody">
-      Create a beautifully simple website in under 10 minutes.
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 
@@ -416,297 +369,189 @@
   
 
   
+    
+
+  
 
 </div>
 
-      
-    </div>
-
     
 
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/post/getting-started/">
-      <img src="/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_150x0_resize_q90_lanczos.jpg" itemprop="image">
-    </a>
-    
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </div>
 
-    
-  
-    
-      
 
 
+  <div class="article-container">
 
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/post/2015-07-23-r-rmarkdown/" itemprop="url">333</a>
-    </h3>
-
-    
     <div class="article-style" itemprop="articleBody">
-      firstsd This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
       
 
+<h2 id="1-every">1.every()</h2>
+
+<blockquote>
+<p>array.every(callbackFunction(currentValue, index, array), thisArg)</p>
+</blockquote>
+
+<ul>
+<li><p>every 함수는 배열의 모든 요소가 callbackFunction 에서 true를 리턴해야 true를 리턴, 하나라도 false가 떨어지면 false를 리턴합니다.</p></li>
+
+<li><p>every나 some 함수의 경우 배열내 값이 존재하는지 확인할때나 조건에 맞는(혹은 맞지 않는) 값이 있는지 확인 할 때 등 활용이 가능합니다.</p></li>
+</ul>
+
+<h2 id="2-some">2.some()</h2>
+
+<blockquote>
+<p>array.some(callbackFunction(currentValue, index, array), thisArg)</p>
+</blockquote>
+
+<ul>
+<li><p>some 함수는 배열의 요소 중 하나라도 callbackFunction에서 true를 리턴하면 true를 리턴 합니다.</p></li>
+
+<li><p>every나 some 함수의 경우 배열내 값이 존재하는지 확인할때나 조건에 맞는(혹은 맞지 않는) 값이 있는지 확인 할 때 등 활용이 가능합니다.</p></li>
+
+<li><p>every 와 some 의 차이점</p></li>
+</ul>
+
+<blockquote>
+<p>every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다</p>
+</blockquote>
+
+    </div>
+
+    
+
+
+
+
+
+    
+      
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  
+  <img class="portrait mr-3" src="/author/admin/avatar_hu9d86a95361d48c7ef439503a043609ac_95081_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/admin">John Jung</a></h5>
+    <h6 class="card-subtitle">Studying</h6>
+    <p class="card-text" itemprop="description">My research interests include distributed robotics, mobile computing and programmable matter.</p>
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
       
         
-
-
-
-<meta content="" itemprop="datePublished">
-<meta content="" itemprop="dateModified">
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
       
-    
-    <time></time>
-  </span>
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
       
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/post/_book/firstsd/" itemprop="url"></a>
-    </h3>
-
-    
-    <div class="article-style" itemprop="articleBody">
-      333  a.sourceLine { display: inline-block; line-height: 1.25; } a.sourceLine { pointer-events: none; color: inherit; text-decoration: …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
       
-
       
         
-
-
-
-<meta content="" itemprop="datePublished">
-<meta content="" itemprop="dateModified">
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
       
-    
-    <time></time>
-  </span>
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-</div>
-
+      <li>
+        <a itemprop="sameAs" href="/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
       
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/post/_book/second/" itemprop="url"></a>
-    </h3>
-
-    
-    <div class="article-style" itemprop="articleBody">
-      2 second | 333  a.sourceLine { display: inline-block; line-height: 1.25; } a.sourceLine { pointer-events: none; color: inherit; …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
       
-
       
         
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/J-E-Y" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
 
 
 
-<meta content="" itemprop="datePublished">
-<meta content="" itemprop="dateModified">
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
+      
       
     
-    <time></time>
-  </span>
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-</div>
-
-      
-    </div>
 
     
+
+    
+
 
   </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
+</article>
 
-    
-  
-
-  
-<nav>
-  <ul class="pagination justify-content-center">
-    
-    <li class="page-item"><a class="page-link" href="/post/">&laquo;</a></li>
-    
-    
-  </ul>
-</nav>
-
-
-
-</div>
 <div class="container">
   <footer class="site-footer">
   
