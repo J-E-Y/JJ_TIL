@@ -1,6 +1,6 @@
 ---
-title: <Javascript> forEach, for of, for in 의 차이
-summary: ':rocket:' 
+title: forEach, for of, for in 의 차이
+summary: 'Javascript:rocket:' 
 author: JohnJung
 date: '2019-11-20'
 slug: javascript-foreach-for-of-for-in

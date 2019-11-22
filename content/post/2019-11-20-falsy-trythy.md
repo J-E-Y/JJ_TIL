@@ -1,6 +1,6 @@
 ---
-title: <Javascript> falsy 와 trythy
-summary: ':rocket:' 
+title: falsy 와 trythy
+summary: 'Javascript:rocket:' 
 author: JohnJung
 date: '2019-11-20'
 slug: falsy-trythy

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -27,10 +29,10 @@
   
     
   
-  <meta name="description" content="Javascript:rocket:">
+  <meta name="description" content="Studying">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/array-method/">
+  <link rel="alternate" hreflang="en-us" href="/categories/javascript-post/">
 
   
 
@@ -97,12 +99,15 @@
   
 
   
+  <link rel="alternate" href="/categories/javascript-post/index.xml" type="application/rss+xml" title="JohnJung">
+  <link rel="feed" href="/categories/javascript-post/index.xml" type="application/rss+xml" title="JohnJung">
+  
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/array-method/">
+  <link rel="canonical" href="/categories/javascript-post/">
 
   
   
@@ -114,21 +119,19 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="JohnJung">
-  <meta property="og:url" content="/post/array-method/">
-  <meta property="og:title" content="forEach(), map(), fliter() | JohnJung">
-  <meta property="og:description" content="Javascript:rocket:"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/categories/javascript-post/">
+  <meta property="og:title" content="Javascript Post | JohnJung">
+  <meta property="og:description" content="Studying"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-11-20T00:00:00&#43;00:00">
-  
-  <meta property="article:modified_time" content="2019-11-20T00:00:00&#43;00:00">
+  <meta property="og:updated_time" content="2019-11-22T00:00:00&#43;00:00">
   
 
   
 
   
 
-  <title>forEach(), map(), fliter() | JohnJung</title>
+  <title>Javascript Post | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -311,9 +314,7 @@
 </nav>
 
 
-<article class="article" itemscope itemtype="http://schema.org/Article">
 
-  
 
 
 
@@ -330,358 +331,46 @@
 
   
   
-  
-<div class="article-container pt-3">
-  <h1 itemprop="name">forEach(), map(), fliter()</h1>
-
-  
-
   
     
-
-
-
-<meta content="" itemprop="datePublished">
-<meta content="" itemprop="dateModified">
-
-<div class="article-metadata">
+  
+<div class="universal-wrapper pt-3">
+  <h1 itemprop="name">Javascript Post</h1>
 
   
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time></time>
-  </span>
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-    
-
-  
-
-</div>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   
 </div>
 
 
 
-  <div class="article-container">
+<div class="universal-wrapper">
+  
 
-    <div class="article-style" itemprop="articleBody">
+  
+  
+  <div>
+    <h2><a href="/post/2019-11-20-/">피보나치 수열</a></h2>
+    <div class="article-style">
       
-
-<h3 id="1-foreach">1. forEach()</h3>
-
-<blockquote>
-<p>array.forEach (callback(callbackFunction(element, index, array)</p>
-</blockquote>
-
-<ul>
-<li><p>배열 혹은 함수를 반복할때  사용</p></li>
-
-<li><p>리턴값 없다</p></li>
-</ul>
-
-<h4 id="ex">ex)</h4>
-
-<ul>
-<li>forEach 로 배열의 합 구하기</li>
-</ul>
-
-<pre><code class="language-js">
-function test(){
-    var testArray = [1,2,3,4,5];
-    var sum = 0;
-    function getSum(value){
-        sum =  sum + value;
-    }
-    testArray.forEach(getSum); // forEach(getSum) that's all  
-    console.log(sum);
-  }
-
-test()  // 15 
-
-</code></pre>
-
-<h3 id="2-map">2.map()</h3>
-
-<blockquote>
-<p>array.map(callbackFunction(element, index, array)</p>
-</blockquote>
-
-<ul>
-<li><p><code>immutable</code></p></li>
-
-<li><p><code>새로운 배열</code>을 만들때 사용</p></li>
-
-<li><p>리턴값 있다.</p></li>
-</ul>
-
-<h4 id="ex-1">ex)</h4>
-
-<ul>
-<li>for 문으로 name 값 가져오기</li>
-</ul>
-
-<pre><code class="language-js">let users = [
-  
-  {name:&quot;john&quot;,age : 20 },
-  {name:&quot;tim&quot;,age :40 },
-  {name:&quot;esther&quot;,age : 60 },
-  
-];
-
-
-let userName = [];
-
-
-for (let i = 0; i &lt; users.length; i ++ ) {
-	userName.push(users[i].name);
- }
- 
- userName // [&quot;john&quot;, &quot;tim&quot;, &quot;esther&quot;]
-
-</code></pre>
-
-<ul>
-<li>map() 으로 name 값 가져오기</li>
-</ul>
-
-<pre><code class="language-js">
-let users = [
-  
-  {name:&quot;john&quot;,age : 20 },
-  {name:&quot;tim&quot;,age :40 },
-  {name:&quot;esther&quot;,age : 60 },
-  
-];
-
-
-function getName (user){
-  return user.name; //  리턴값 필요하다. 
-
-}
-
-users.map(getName); // [&quot;john&quot;, &quot;tim&quot;, &quot;esther&quot;]
-
-
-
-
-
-</code></pre>
-
-<h3 id="3-fliter">3.fliter()</h3>
-
-<blockquote>
-<p>array.fliter(callbackFunction(element, index, array)</p>
-</blockquote>
-
-<ul>
-<li><p><code>조건</code>에 해당한 것을 새로운 배열의 형태로 출력 한다.</p></li>
-
-<li><p>리턴값 있다.</p></li>
-
-<li><p>map 함수는 filter함수와 같이 오브젝트도 컨트롤 할 수도 있습니다.</p></li>
-</ul>
-
-<h4 id="예제">예제</h4>
-
-<ul>
-<li>filter 로 30 살 보다 많은 사람 사람을 찾는다</li>
-</ul>
-
-<pre><code class="language-js">
-let users = [
-  
-  {name:&quot;john&quot;,age : 20 },
-  {name:&quot;tim&quot;,age :40 },
-  {name:&quot;esther&quot;,age : 60 },
-  
-];
-
-function getOldName(user){
-	return user.age &gt; 30; // 리턴 필요하다. 
-}
-// 그리고 filter 에 함수를 넣는다. 
-users.filter(getOldName) // [{name:&quot;tim&quot;,age :40 },{name:&quot;esther&quot;,age : 60 }];
-</code></pre>
-
-<ul>
-<li>filter 로 이름에 s 가 있는 사람을 가져오고 싶다.?</li>
-</ul>
-
-<pre><code class="language-js">
-let users = [
-  
-  {name:&quot;john&quot;,age : 20 },
-  {name:&quot;tim&quot;,age :40 },
-  {name:&quot;esther&quot;,age : 60 },
-  
-];
-
-
-function userIncludeS (user){
-	return user.name.indexOf(&quot;s&quot;) !== -1; // 조건문 
-
- }
- 
- 
-users.filter(userIncludeS) // [{name:&quot;esther&quot;,age : 60 }];
-
-</code></pre>
-
+      Javascript🚀
+      
     </div>
-
-    
-
-
-
-
-
-    
-      
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-<div class="media author-card" itemscope itemtype="http://schema.org/Person">
-  
-  
-  <img class="portrait mr-3" src="/author/admin/avatar_hu9d86a95361d48c7ef439503a043609ac_95081_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
-  
-
-  <div class="media-body">
-    <h5 class="card-title" itemprop="name"><a href="/authors/admin">John Jung</a></h5>
-    <h6 class="card-subtitle">Studying</h6>
-    <p class="card-text" itemprop="description">My research interests include distributed robotics, mobile computing and programmable matter.</p>
-    <ul class="network-icon" aria-hidden="true">
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="/#contact" >
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
-          <i class="ai ai-google-scholar"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://github.com/J-E-Y" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      
-    </ul>
   </div>
+  
+
+  
+<nav>
+  <ul class="pagination justify-content-center">
+    
+    <li class="page-item"><a class="page-link" href="/categories/javascript-post/">&laquo;</a></li>
+    
+    
+  </ul>
+</nav>
+
+
 </div>
-
-
-
-      
-      
-    
-
-    
-
-    
-
-
-  </div>
-</article>
-
 <div class="container">
   <footer class="site-footer">
   
@@ -834,4 +523,6 @@ users.filter(userIncludeS) // [{name:&quot;esther&quot;,age : 60 }];
 
   </body>
 </html>
+
+
 

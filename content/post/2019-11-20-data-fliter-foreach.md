@@ -1,6 +1,6 @@
 ---
-title: '<Javascript> data fliter 와 foreach 로 다루기 '
-summary: ':rocket:' 
+title: 'data fliter 와 foreach 로 다루기 '
+summary: 'Javascript:rocket:' 
 author: JohnJung
 date: '2019-11-20'
 slug: data-fliter-foreach

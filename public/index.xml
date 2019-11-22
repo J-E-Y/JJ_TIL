@@ -36,7 +36,7 @@
     </item>
     
     <item>
-      <title>&lt;Javascript&gt; every() 와 some()</title>
+      <title>every() 와 some()</title>
       <link>/post/every-some/</link>
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -76,7 +76,193 @@
     </item>
     
     <item>
-      <title>&lt;Javacript/Dom&gt; checkbox 안에 있는 value 값 얻기</title>
+      <title>reduce()</title>
+      <link>/post/javascript-reduce/</link>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/javascript-reduce/</guid>
+      <description>
+
+&lt;h3 id=&#34;reduce&#34;&gt;reduce()&lt;/h3&gt;
+
+&lt;h4 id=&#34;definiton-syntax&#34;&gt;Definiton &amp;amp; Syntax&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;accumulator — the accumulator accumulates all of the callbacks returned values.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;val — the current value being processed&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;index — the current index of the value being processed&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;arr — the original array&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The reduce() method is used to apply a function to each element in the array to reduce the array to a single value.&lt;/p&gt;
+
+&lt;p&gt;여러게의 값이 담긴 배열이 줄여서(reduce) &lt;code&gt;최종적으로 하나의 값으로 만드는 과정&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;리턴값이 반듯이 필요&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;누적값 : 배열의 요소를 하나하나 줄여가면서 생기는 중간 과정(결과)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;현재값 : 리듀서가 배열을 지나갈 떄 만나는 배열의 요소&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;초기값 : 배열의 요소를 줄이기 전 누적값의 &lt;code&gt;초기&lt;/code&gt; 상태&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;ex&#34;&gt;ex)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Reduce vs. For Loop&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;To use for Loop&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let arr = [1, 2, 3, 4];
+let sum = 0;
+for(var i = 0; i &amp;lt; arr.length; i++) {
+    sum += arr[i];
+}
+// sum = 10
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To use the reduce() function&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let arr = [1,2,3,4];
+
+let sum = arr.reduce((acc, val) =&amp;gt; {
+  return acc + val;
+});
+
+// sum = 10
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;배열에서 문자열로&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;이름 함쳐서 문자열로 출력 시키기&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let users = [
+  
+  {name:&amp;quot;john&amp;quot;,age : 20 },
+  {name:&amp;quot;tim&amp;quot;,age :40 },
+  {name:&amp;quot;esther&amp;quot;,age : 60 },
+  
+];
+
+// &amp;quot;john, tim, esther&amp;quot; 이렇게 만들것이다. 
+
+function sumName(retName , cuur ) {
+	// 1. &amp;quot; &amp;quot; + &amp;quot;john&amp;quot; + &amp;quot;,&amp;quot;
+	// 2. &amp;quot;john,&amp;quot; + &amp;quot;tim&amp;quot; + &amp;quot;,&amp;quot;
+	// 3. &amp;quot;john, time,&amp;quot; + &amp;quot;esther&amp;quot; + &amp;quot;,&amp;quot;
+	retName = retName + cuur.name + &amp;quot;,&amp;quot;; 
+	return retName ; // 리턴을 꼭 해줘야 한다.
+ }
+ 
+ 
+users.reduce(sumName, &amp;quot;&amp;quot;); // 두번째 인자값에 초기값인  &amp;quot;&amp;quot; 넣어준다.
+
+// &amp;quot;john,tim,esther,&amp;quot;
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;배열에서 객체로&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;첫번째 글자를 따서 전화번호부 만들기&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 원본
+let users = [
+  
+  {name:&amp;quot;john&amp;quot;,age : 20 },
+  {name:&amp;quot;tim&amp;quot;,age :40 },
+  {name:&amp;quot;esther&amp;quot;,age : 60 },
+  
+];
+
+// 결과 출력 
+
+let addressBook = {
+	j : [
+		{name:&amp;quot;john&amp;quot;,age : 20 }
+      ],
+	t : [
+		{name:&amp;quot;tim&amp;quot;,age :40 }
+      ],
+	e : [
+		{name:&amp;quot;esther&amp;quot;,age : 60 }
+ 	  ]
+};
+
+
+
+
+
+//1. makeAddressBook &amp;lt; callback 함수를 미리 만든다. 
+
+function makeAddressBook (addressBook, user) {
+  // 첫번째 글자를 먼저 변수에 저장한다. 
+  let firstLetter = user.name[0];
+  
+  // addressBook { };
+  
+  
+  if (firstLetter in addressBook) {
+	  // 만약 키가 있으면 해당 배열에 사람을 추가한다. 
+    addressBook[firstLetter].push(user);
+	} else {
+	  // 만약 키가 없다면 해당 배열을 만들고
+	  addressBook[firstLetter] = [];
+	  // 사람을 추가한다. 
+  	addressBook[firstLetter].push(user);
+  }
+	return addressBook; // 객체를 리턴한다. 
+}
+
+users.reduce(makeAddressBook, {} ); 
+// {j: Array(1), t: Array(1), e: Array(1)}
+
+/* 결과값 
+{
+	j : [
+		{name:&amp;quot;john&amp;quot;,age : 20 }
+      ],
+	t : [
+		{name:&amp;quot;tim&amp;quot;,age :40 }
+      ],
+	e : [
+		{name:&amp;quot;esther&amp;quot;,age : 60 }
+ 	  ]
+};
+*/
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>checkbox 안에 있는 value 값 얻기</title>
       <link>/post/javacript-checkbox-value/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -125,7 +311,7 @@
     </item>
     
     <item>
-      <title>&lt;Javascript&gt; How to check if element has any children in Javascript?</title>
+      <title>How to check if element has any children in Javascript?</title>
       <link>/post/how-to-check-if-element-has-any-children-in-javascript/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -186,25 +372,7 @@ function hasChildElement(elm) {
     </item>
     
     <item>
-      <title>&lt;Javascript&gt; Unll 과 undefined 의 차이점</title>
-      <link>/post/2019-11-20-unll-undefined/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019-11-20-unll-undefined/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;h2 id=&#34;null-과-undefined-는-등록-저장-여부이다&#34;&gt;null 과 undefined 는 등록, 저장 여부이다.&lt;/h2&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;code&gt;null&lt;/code&gt; 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;undefined&lt;/code&gt; 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>&lt;Javascript&gt; data fliter 와 foreach 로 다루기 </title>
+      <title>data fliter 와 foreach 로 다루기 </title>
       <link>/post/data-fliter-foreach/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -264,7 +432,7 @@ let teenager = salesTeam.filter(function(ele){
     </item>
     
     <item>
-      <title>&lt;Javascript&gt; falsy 와 trythy</title>
+      <title>falsy 와 trythy</title>
       <link>/post/falsy-trythy/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -284,41 +452,47 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
     </item>
     
     <item>
-      <title>&lt;Javascript&gt; forEach(), map(), fliter()</title>
+      <title>forEach(), map(), fliter()</title>
       <link>/post/array-method/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/array-method/</guid>
       <description>
 
-&lt;h2 id=&#34;1-foreach&#34;&gt;1. forEach()&lt;/h2&gt;
+&lt;h3 id=&#34;1-foreach&#34;&gt;1. forEach()&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;array.forEach (callback(callbackFunction(element, index, array)&lt;/p&gt;
-
-&lt;p&gt;리턴값 없다&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;forEach 로 배열의 합 구하기&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;배열 혹은 함수를 반복할때  사용&lt;/p&gt;&lt;/li&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;li&gt;&lt;p&gt;리턴값 없다&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;ex&#34;&gt;ex)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;forEach 로 배열의 합 구하기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function test(){
-var testArray = [1,2,3,4,5];
-var sum = 0;
-function getSum(value){
-    sum =  sum + value;
-}
-testArray.forEach(getSum); // forEach(getSum) that&#39;s all  
-console.log(sum);
-}
+    var testArray = [1,2,3,4,5];
+    var sum = 0;
+    function getSum(value){
+        sum =  sum + value;
+    }
+    testArray.forEach(getSum); // forEach(getSum) that&#39;s all  
+    console.log(sum);
+  }
 
 test()  // 15 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;2-map&#34;&gt;2.map()&lt;/h2&gt;
+&lt;h3 id=&#34;2-map&#34;&gt;2.map()&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;array.map(callbackFunction(element, index, array)&lt;/p&gt;
@@ -327,37 +501,128 @@ test()  // 15
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;immutable&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;새로운 배열을 만들때 사용&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;새로운 배열&lt;/code&gt;을 만들때 사용&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;리턴값 있다.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;3-fliter&#34;&gt;3.fliter()&lt;/h2&gt;
+&lt;h4 id=&#34;ex-1&#34;&gt;ex)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;for 문으로 name 값 가져오기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let users = [
+  
+  {name:&amp;quot;john&amp;quot;,age : 20 },
+  {name:&amp;quot;tim&amp;quot;,age :40 },
+  {name:&amp;quot;esther&amp;quot;,age : 60 },
+  
+];
+
+
+let userName = [];
+
+
+for (let i = 0; i &amp;lt; users.length; i ++ ) {
+	userName.push(users[i].name);
+ }
+ 
+ userName // [&amp;quot;john&amp;quot;, &amp;quot;tim&amp;quot;, &amp;quot;esther&amp;quot;]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;map() 으로 name 값 가져오기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let users = [
+  
+  {name:&amp;quot;john&amp;quot;,age : 20 },
+  {name:&amp;quot;tim&amp;quot;,age :40 },
+  {name:&amp;quot;esther&amp;quot;,age : 60 },
+  
+];
+
+
+function getName (user){
+  return user.name; //  리턴값 필요하다. 
+
+}
+
+users.map(getName); // [&amp;quot;john&amp;quot;, &amp;quot;tim&amp;quot;, &amp;quot;esther&amp;quot;]
+
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;3-fliter&#34;&gt;3.fliter()&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;array.fliter(callbackFunction(element, index, array)&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;조건문을 통과하 것을 새로운 배열로 만드는 역활
-리턴값 있다.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;조건&lt;/code&gt;에 해당한 것을 새로운 배열의 형태로 출력 한다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;리턴값 있다.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;map 함수는 filter함수와 같이 오브젝트도 컨트롤 할 수도 있습니다.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-var testArray = [1,2,3,4,5];
-var returnArray = testArray.map(function(currentValue, index, array){
-        return currentValue * 2;
-     })
+&lt;h4 id=&#34;예제&#34;&gt;예제&lt;/h4&gt;
 
+&lt;ul&gt;
+&lt;li&gt;filter 로 30 살 보다 많은 사람 사람을 찾는다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let users = [
+  
+  {name:&amp;quot;john&amp;quot;,age : 20 },
+  {name:&amp;quot;tim&amp;quot;,age :40 },
+  {name:&amp;quot;esther&amp;quot;,age : 60 },
+  
+];
+
+function getOldName(user){
+	return user.age &amp;gt; 30; // 리턴 필요하다. 
+}
+// 그리고 filter 에 함수를 넣는다. 
+users.filter(getOldName) // [{name:&amp;quot;tim&amp;quot;,age :40 },{name:&amp;quot;esther&amp;quot;,age : 60 }];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;filter 로 이름에 s 가 있는 사람을 가져오고 싶다.?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let users = [
+  
+  {name:&amp;quot;john&amp;quot;,age : 20 },
+  {name:&amp;quot;tim&amp;quot;,age :40 },
+  {name:&amp;quot;esther&amp;quot;,age : 60 },
+  
+];
+
+
+function userIncludeS (user){
+	return user.name.indexOf(&amp;quot;s&amp;quot;) !== -1; // 조건문 
+
+ }
+ 
+ 
+users.filter(userIncludeS) // [{name:&amp;quot;esther&amp;quot;,age : 60 }];
 
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
     <item>
-      <title>&lt;Javascript&gt; forEach, for of, for in 의 차이</title>
+      <title>forEach, for of, for in 의 차이</title>
       <link>/post/javascript-foreach-for-of-for-in/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -422,7 +687,25 @@ for (let z in array){
     </item>
     
     <item>
-      <title>&lt;Javascript&gt; sort()</title>
+      <title>nll 과 undefined 의 차이점</title>
+      <link>/post/2019-11-20-unll-undefined/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-11-20-unll-undefined/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;h2 id=&#34;null-과-undefined-는-등록-저장-여부이다&#34;&gt;null 과 undefined 는 등록, 저장 여부이다.&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;null&lt;/code&gt; 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;undefined&lt;/code&gt; 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>sort()</title>
       <link>/post/sort/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -651,7 +934,7 @@ return a - b;
     </item>
     
     <item>
-      <title>&lt;Javascript&gt; 피보나치 수열</title>
+      <title>피보나치 수열</title>
       <link>/post/2019-11-20-/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -14408,456 +14691,6 @@ var newArray = [];
 &lt;p&gt;&lt;strong&gt;JavaScript Arrays: slice vs splice&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://wsvincent.com/javascript-array-slice-vs-splice/&#34; target=&#34;_blank&#34;&gt;This is link&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/_book/firstsd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/_book/firstsd/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html &gt;
-
-&lt;head&gt;
-
-  &lt;meta charset=&#34;UTF-8&#34;&gt;
-  &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt;
-  &lt;title&gt;333&lt;/title&gt;
-  &lt;meta name=&#34;description&#34; content=&#34;333&#34;&gt;
-  &lt;meta name=&#34;generator&#34; content=&#34;bookdown  and GitBook 2.6.7&#34;&gt;
-
-  &lt;meta property=&#34;og:title&#34; content=&#34;333&#34; /&gt;
-  &lt;meta property=&#34;og:type&#34; content=&#34;book&#34; /&gt;
-  
-  
-  
-  
-
-  &lt;meta name=&#34;twitter:card&#34; content=&#34;summary&#34; /&gt;
-  &lt;meta name=&#34;twitter:title&#34; content=&#34;333&#34; /&gt;
-  
-  
-  
-
-&lt;meta name=&#34;author&#34; content=&#34;John&#34;&gt;
-
-
-
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34;&gt;
-  &lt;meta name=&#34;apple-mobile-web-app-capable&#34; content=&#34;yes&#34;&gt;
-  &lt;meta name=&#34;apple-mobile-web-app-status-bar-style&#34; content=&#34;black&#34;&gt;
-  
-  
-
-&lt;link rel=&#34;next&#34; href=&#34;second.html&#34;&gt;
-&lt;script src=&#34;libs/jquery-2.2.3/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/style.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/plugin-table.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/plugin-bookdown.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/plugin-highlight.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/plugin-search.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/plugin-fontsettings.css&#34; rel=&#34;stylesheet&#34; /&gt;
-
-
-
-
-
-
-
-
-
-&lt;style type=&#34;text/css&#34;&gt;
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-&lt;/style&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-
-
-  &lt;div class=&#34;book without-animation with-summary font-size-2 font-family-1&#34; data-basepath=&#34;.&#34;&gt;
-
-    &lt;div class=&#34;book-summary&#34;&gt;
-      &lt;nav role=&#34;navigation&#34;&gt;
-
-&lt;ul class=&#34;summary&#34;&gt;
-&lt;li class=&#34;chapter&#34; data-level=&#34;1&#34; data-path=&#34;firstsd.html&#34;&gt;&lt;a href=&#34;firstsd.html&#34;&gt;&lt;i class=&#34;fa fa-check&#34;&gt;&lt;/i&gt;&lt;b&gt;1&lt;/b&gt; firstsd&lt;/a&gt;&lt;/li&gt;
-&lt;li class=&#34;chapter&#34; data-level=&#34;2&#34; data-path=&#34;second.html&#34;&gt;&lt;a href=&#34;second.html&#34;&gt;&lt;i class=&#34;fa fa-check&#34;&gt;&lt;/i&gt;&lt;b&gt;2&lt;/b&gt; second&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-      &lt;/nav&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&#34;book-body&#34;&gt;
-      &lt;div class=&#34;body-inner&#34;&gt;
-        &lt;div class=&#34;book-header&#34; role=&#34;navigation&#34;&gt;
-          &lt;h1&gt;
-            &lt;i class=&#34;fa fa-circle-o-notch fa-spin&#34;&gt;&lt;/i&gt;&lt;a href=&#34;./&#34;&gt;333&lt;/a&gt;
-          &lt;/h1&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&#34;page-wrapper&#34; tabindex=&#34;-1&#34; role=&#34;main&#34;&gt;
-          &lt;div class=&#34;page-inner&#34;&gt;
-
-            &lt;section class=&#34;normal&#34; id=&#34;section-&#34;&gt;
-&lt;div id=&#34;header&#34;&gt;
-&lt;h1 class=&#34;title&#34;&gt;333&lt;/h1&gt;
-&lt;p class=&#34;author&#34;&gt;&lt;em&gt;John&lt;/em&gt;&lt;/p&gt;
-&lt;p class=&#34;date&#34;&gt;&lt;em&gt;2015-07-23T21:13:14-05:00&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;firstsd&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; firstsd&lt;/h1&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see
-&amp;gt; this is link &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;pre class=&#34;sourceCode r&#34;&gt;&lt;code class=&#34;sourceCode r&#34;&gt;&lt;span class=&#34;kw&#34;&gt;summary&lt;/span&gt;(cars)
-&lt;span class=&#34;co&#34;&gt;##      speed           dist       &lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;##  Min.   : 4.0   Min.   :  2.00  &lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;##  1st Qu.:12.0   1st Qu.: 26.00  &lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;##  Median :15.0   Median : 36.00  &lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;##  Mean   :15.4   Mean   : 42.98  &lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;##  3rd Qu.:19.0   3rd Qu.: 56.00  &lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;##  Max.   :25.0   Max.   :120.00&lt;/span&gt;
-fit &amp;lt;-&lt;span class=&#34;st&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kw&#34;&gt;lm&lt;/span&gt;(dist &lt;span class=&#34;op&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;st&#34;&gt; &lt;/span&gt;speed, &lt;span class=&#34;dt&#34;&gt;data =&lt;/span&gt; cars)
-fit
-&lt;span class=&#34;co&#34;&gt;## &lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;## Call:&lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;## lm(formula = dist ~ speed, data = cars)&lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;## &lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;## Coefficients:&lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;## (Intercept)        speed  &lt;/span&gt;
-&lt;span class=&#34;co&#34;&gt;##     -17.579        3.932&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-            &lt;/section&gt;
-
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-&lt;a href=&#34;second.html&#34; class=&#34;navigation navigation-next navigation-unique&#34; aria-label=&#34;Next page&#34;&gt;&lt;i class=&#34;fa fa-angle-right&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/app.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/lunr.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/plugin-search.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/plugin-sharing.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/plugin-fontsettings.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/plugin-bookdown.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/jquery.highlight.js&#34;&gt;&lt;/script&gt;
-&lt;script&gt;
-gitbook.require([&#34;gitbook&#34;], function(gitbook) {
-gitbook.start({
-&#34;sharing&#34;: {
-&#34;github&#34;: false,
-&#34;facebook&#34;: true,
-&#34;twitter&#34;: true,
-&#34;google&#34;: false,
-&#34;linkedin&#34;: false,
-&#34;weibo&#34;: false,
-&#34;instapaper&#34;: false,
-&#34;vk&#34;: false,
-&#34;all&#34;: [&#34;facebook&#34;, &#34;google&#34;, &#34;twitter&#34;, &#34;linkedin&#34;, &#34;weibo&#34;, &#34;instapaper&#34;]
-},
-&#34;fontsettings&#34;: {
-&#34;theme&#34;: &#34;white&#34;,
-&#34;family&#34;: &#34;sans&#34;,
-&#34;size&#34;: 2
-},
-&#34;edit&#34;: {
-&#34;link&#34;: null,
-&#34;text&#34;: null
-},
-&#34;history&#34;: {
-&#34;link&#34;: null,
-&#34;text&#34;: null
-},
-&#34;download&#34;: null,
-&#34;toc&#34;: {
-&#34;collapse&#34;: &#34;subsection&#34;
-}
-});
-});
-&lt;/script&gt;
-
-&lt;/body&gt;
-
-&lt;/html&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/_book/second/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/_book/second/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html &gt;
-
-&lt;head&gt;
-
-  &lt;meta charset=&#34;UTF-8&#34;&gt;
-  &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt;
-  &lt;title&gt;2 second | 333&lt;/title&gt;
-  &lt;meta name=&#34;description&#34; content=&#34;2 second | 333&#34;&gt;
-  &lt;meta name=&#34;generator&#34; content=&#34;bookdown  and GitBook 2.6.7&#34;&gt;
-
-  &lt;meta property=&#34;og:title&#34; content=&#34;2 second | 333&#34; /&gt;
-  &lt;meta property=&#34;og:type&#34; content=&#34;book&#34; /&gt;
-  
-  
-  
-  
-
-  &lt;meta name=&#34;twitter:card&#34; content=&#34;summary&#34; /&gt;
-  &lt;meta name=&#34;twitter:title&#34; content=&#34;2 second | 333&#34; /&gt;
-  
-  
-  
-
-&lt;meta name=&#34;author&#34; content=&#34;John&#34;&gt;
-
-
-
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34;&gt;
-  &lt;meta name=&#34;apple-mobile-web-app-capable&#34; content=&#34;yes&#34;&gt;
-  &lt;meta name=&#34;apple-mobile-web-app-status-bar-style&#34; content=&#34;black&#34;&gt;
-  
-  
-&lt;link rel=&#34;prev&#34; href=&#34;firstsd.html&#34;&gt;
-
-&lt;script src=&#34;libs/jquery-2.2.3/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/style.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/plugin-table.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/plugin-bookdown.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/plugin-highlight.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/plugin-search.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;libs/gitbook-2.6.7/css/plugin-fontsettings.css&#34; rel=&#34;stylesheet&#34; /&gt;
-
-
-
-
-
-
-
-
-
-&lt;style type=&#34;text/css&#34;&gt;
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-&lt;/style&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-
-
-  &lt;div class=&#34;book without-animation with-summary font-size-2 font-family-1&#34; data-basepath=&#34;.&#34;&gt;
-
-    &lt;div class=&#34;book-summary&#34;&gt;
-      &lt;nav role=&#34;navigation&#34;&gt;
-
-&lt;ul class=&#34;summary&#34;&gt;
-&lt;li class=&#34;chapter&#34; data-level=&#34;1&#34; data-path=&#34;firstsd.html&#34;&gt;&lt;a href=&#34;firstsd.html&#34;&gt;&lt;i class=&#34;fa fa-check&#34;&gt;&lt;/i&gt;&lt;b&gt;1&lt;/b&gt; firstsd&lt;/a&gt;&lt;/li&gt;
-&lt;li class=&#34;chapter&#34; data-level=&#34;2&#34; data-path=&#34;second.html&#34;&gt;&lt;a href=&#34;second.html&#34;&gt;&lt;i class=&#34;fa fa-check&#34;&gt;&lt;/i&gt;&lt;b&gt;2&lt;/b&gt; second&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-      &lt;/nav&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&#34;book-body&#34;&gt;
-      &lt;div class=&#34;body-inner&#34;&gt;
-        &lt;div class=&#34;book-header&#34; role=&#34;navigation&#34;&gt;
-          &lt;h1&gt;
-            &lt;i class=&#34;fa fa-circle-o-notch fa-spin&#34;&gt;&lt;/i&gt;&lt;a href=&#34;./&#34;&gt;333&lt;/a&gt;
-          &lt;/h1&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&#34;page-wrapper&#34; tabindex=&#34;-1&#34; role=&#34;main&#34;&gt;
-          &lt;div class=&#34;page-inner&#34;&gt;
-
-            &lt;section class=&#34;normal&#34; id=&#34;section-&#34;&gt;
-&lt;div id=&#34;second&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; second&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure&lt;/p&gt;
-
-&lt;/div&gt;
-            &lt;/section&gt;
-
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-&lt;a href=&#34;firstsd.html&#34; class=&#34;navigation navigation-prev navigation-unique&#34; aria-label=&#34;Previous page&#34;&gt;&lt;i class=&#34;fa fa-angle-left&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/app.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/lunr.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/plugin-search.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/plugin-sharing.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/plugin-fontsettings.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/plugin-bookdown.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;libs/gitbook-2.6.7/js/jquery.highlight.js&#34;&gt;&lt;/script&gt;
-&lt;script&gt;
-gitbook.require([&#34;gitbook&#34;], function(gitbook) {
-gitbook.start({
-&#34;sharing&#34;: {
-&#34;github&#34;: false,
-&#34;facebook&#34;: true,
-&#34;twitter&#34;: true,
-&#34;google&#34;: false,
-&#34;linkedin&#34;: false,
-&#34;weibo&#34;: false,
-&#34;instapaper&#34;: false,
-&#34;vk&#34;: false,
-&#34;all&#34;: [&#34;facebook&#34;, &#34;google&#34;, &#34;twitter&#34;, &#34;linkedin&#34;, &#34;weibo&#34;, &#34;instapaper&#34;]
-},
-&#34;fontsettings&#34;: {
-&#34;theme&#34;: &#34;white&#34;,
-&#34;family&#34;: &#34;sans&#34;,
-&#34;size&#34;: 2
-},
-&#34;edit&#34;: {
-&#34;link&#34;: null,
-&#34;text&#34;: null
-},
-&#34;history&#34;: {
-&#34;link&#34;: null,
-&#34;text&#34;: null
-},
-&#34;download&#34;: null,
-&#34;toc&#34;: {
-&#34;collapse&#34;: &#34;subsection&#34;
-}
-});
-});
-&lt;/script&gt;
-
-&lt;/body&gt;
-
-&lt;/html&gt;
 </description>
     </item>
     

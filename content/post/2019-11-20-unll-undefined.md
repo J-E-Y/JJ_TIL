@@ -1,6 +1,6 @@
 ---
-title: <Javascript> Unll 과 undefined 의 차이점
-summary: ':rocket:' 
+title: nll 과 undefined 의 차이점
+summary: 'Javascript:rocket:' 
 author: JohnJung
 date: '2019-11-20'
 

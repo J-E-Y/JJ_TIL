@@ -1,6 +1,6 @@
 ---
-title: <Javascript> How to check if element has any children in Javascript?
-summary: ':rocket:' 
+title: How to check if element has any children in Javascript?
+summary: 'Javascript:rocket:' 
 author: JohnJung
 date: '2019-11-20'
 slug: how-to-check-if-element-has-any-children-in-javascript

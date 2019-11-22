@@ -1,12 +1,13 @@
 ---
-title: <Javascript> every() 와 some()
-summary: ':rocket:' 
+title: every() 와 some()
+summary: 'Javascript:rocket:' 
 author: JohnJung
 date: '2019-11-22'
 slug: every-some
 categories:
   - Javascript Post
 tags: []
+
 image:
   caption: ''
   focal_point: ''

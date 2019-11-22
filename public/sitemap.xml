@@ -19,11 +19,6 @@
   </url>
   
   <url>
-    <loc>/post/every-some/</loc>
-    <lastmod>2019-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
     <lastmod>2019-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -41,17 +36,22 @@
   </url>
   
   <url>
+    <loc>/post/every-some/</loc>
+    <lastmod>2019-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/javascript-reduce/</loc>
+    <lastmod>2019-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/javacript-checkbox-value/</loc>
     <lastmod>2019-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/how-to-check-if-element-has-any-children-in-javascript/</loc>
-    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/2019-11-20-unll-undefined/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -72,6 +72,11 @@
   
   <url>
     <loc>/post/javascript-foreach-for-of-for-in/</loc>
+    <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-11-20-unll-undefined/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -293,16 +298,6 @@
   
   <url>
     <loc>/author/admin/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/_book/firstsd/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/_book/second/</loc>
-    <priority>0</priority>
   </url>
   
   <url>

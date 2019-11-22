@@ -1,6 +1,6 @@
 ---
-title: <Javacript/Dom> checkbox 안에 있는 value 값 얻기
-summary: ':rocket:'
+title: checkbox 안에 있는 value 값 얻기
+summary: 'Javascript/Dom:rocket:' 
 author: JohnJung
 date: '2019-11-21'
 slug: javacript-checkbox-value
@@ -10,6 +10,7 @@ tags: []
 image:
   caption: ''
   focal_point: ''
+
 ---
 
 * html
