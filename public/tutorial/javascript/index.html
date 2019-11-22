@@ -1510,70 +1510,83 @@ arr.join(&quot;&quot;);
 
 <li><p>indaxtOf() ()&lt;&lt;원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다.</p></li>
 
-<li><p>lastIndaxtOf() ()&lt;&lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.</p>
+<li><p>lastIndaxtOf() ()&lt;&lt;원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다.</p></li>
+</ul>
 
-<pre><code>
+<pre><code class="language-js">
 
 var arr = [1,2,3,4,5];
 arr.indexOf[1];
+// arr
 
-&gt;&gt;arr
-2
+
+
+// 2
 
 arr.indexOf[100];
-&gt;&gt;arr
--1
-없는 경우 -1를 호출한다. 
+// arr
+// -1
+// 없는 경우 -1를 호출한다. 
 
-EX) 
+// EX) 
 var arr = [1,2,3,4,5,6]
 if (arr.indexOf(100) === -1 ) {
 만약 100이라는 원소가 arr 에 없으면 
 }
 
-</code></pre></li>
+</code></pre>
 
-<li><p>slice()</p>
+<ul>
+<li>slice()</li>
+</ul>
 
-<pre><code>var arr = [1, 2, 3, 4, 5];
+<pre><code class="language-js">//원소는 변하지 않는다
+
+var arr = [1, 2, 3, 4, 5];
 a.slice(0, 3);
 &gt;&gt;a;
 123
-원소는 변하지 않는다
 
-</code></pre></li>
+</code></pre>
 
-<li><p>splice()</p>
+<ul>
+<li>splice()</li>
+</ul>
 
-<pre><code>var arr = [1, 2, 3, 4, 5];
+<pre><code class="language-js">//원소 값이 변한다. 
+var arr = [1, 2, 3, 4, 5];
 a.splice(0, 3);
-&gt;&gt;a;
-123
-원소 값이 변한다. 
-</code></pre></li>
+// a  123
 
-<li><p>split()</p></li>
+
+</code></pre>
+
+<ul>
+<li>split()</li>
 </ul>
 
 <blockquote>
 <p>문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.</p>
 </blockquote>
 
-<pre><code>var s = &quot;hello, world this is jj&quot;;
+<pre><code class="language-js">var s = &quot;hello, world this is jj&quot;;
+
 s.split(&quot;&quot;);
 
 
-&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;, &quot;,&quot;, &quot; &quot;, &quot;w&quot;, &quot;o&quot;, &quot;r&quot;, &quot;l&quot;, &quot;d&quot;, &quot; &quot;, &quot;t&quot;, &quot;h&quot;, &quot;i&quot;, &quot;s&quot;, &quot; &quot;, &quot;i&quot;, &quot;s&quot;, &quot; &quot;, &quot;j&quot;, &quot;j&quot;
+// &quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;, &quot;,&quot;, &quot; &quot;, &quot;w&quot;, &quot;o&quot;, &quot;r&quot;, &quot;l&quot;, &quot;d&quot;, &quot; &quot;, &quot;t&quot;, &quot;h&quot;, &quot;i&quot;, &quot;s&quot;, &quot; &quot;, &quot;i&quot;, &quot;s&quot;, &quot; &quot;, &quot;j&quot;, &quot;j&quot;
 </code></pre>
 
-<pre><code>
+<pre><code class="language-js">
 var s = &quot;hello, world this is jj&quot;;
 s.split(&quot;,&quot;);
-&quot;hello&quot;, &quot; world this is jj&quot;
-콤마가 생겼다. 콤마의 기준으로 갈라진다.
+
+//&quot;hello&quot;, &quot; world this is jj&quot;
+//콤마가 생겼다. 콤마의 기준으로 갈라진다.
+
 </code></pre>
 
-<pre><code>var s = &quot;hello world t-h-i-s-i-s-j-j&quot;
+<pre><code class="language-js">var s = &quot;hello world t-h-i-s-i-s-j-j&quot;
 s.split(&quot;-&quot;);
 
 &quot;hello  world t&quot;, &quot;h&quot;, &quot;i&quot;, &quot;s&quot;, &quot;i&quot;, &quot;s&quot;, &quot;j&quot;, &quot;j&quot;
@@ -1588,7 +1601,7 @@ s.split(&quot;-&quot;);
 
 <h5 id="함수-만들기">함수 만들기</h5>
 
-<pre><code>function convertHeight(feet, inches) {
+<pre><code class="language-js">function convertHeight(feet, inches) {
   return (feet * 12 + inches) * 2.54
 }
 convertHeight(5, 10);
@@ -1601,75 +1614,86 @@ convertHeight(5, 10);
 
 <h5 id="변수에-담아서-함수-사용하기">변수에 담아서 함수 사용하기</h5>
 
-<pre><code>var ret = function convertHeight(feet, inches) {
+<pre><code class="language-js">var ret = function convertHeight(feet, inches) {
   return (feet * 12 + inches) * 2.54
 }
 ret(5, 10);
-177.8
+//177.8
 
 </code></pre>
 
 <h5 id="리턴값-없는-변수를-변수에-담으면-undefind-출력된다">리턴값 없는 변수를 변수에 담으면 “undefind” 출력된다 .</h5>
 
 <ul>
-<li><p>ex 1-1 (console.log)</p>
+<li>ex 1-1 (console.log)</li>
+</ul>
 
-<pre><code>var foo = function () {
+<pre><code class="language-js">var foo = function () {
 	console.log(“I’m a foo”);
 }
-&gt;&gt;undefined
-</code></pre></li>
 
-<li><p>ex 1-2 (return)</p>
+// undefined
+</code></pre>
 
-<pre><code>var foo = function () {
+<ul>
+<li>ex 1-2 (return)</li>
+</ul>
+
+<pre><code class="language-js">var foo = function () {
 	return(“I’m a foo”);
 }
 
-&gt;&gt; I’m a foo
-</code></pre></li>
-</ul>
+// I’m a foo
+</code></pre>
 
 <h5 id="return-을-break-로-사용하기-return-으로-함수를-종료하는데-사용할-수-있다">return 을 break 로 사용하기 (return 으로 함수를 종료하는데 사용할 수 있다.)</h5>
 
 <blockquote>
-<p>(Option) 2중 루프를 한 번에 빠져 나가기
-- <code>break</code> 명령은 한 번에 한 루프만 빠져나갑니다.
-- 함수의 <code>return</code> 을 이용하면 2중 루프를 한 번에 종료할 수 있습니다.</p>
+<p>(Option) 2중 루프를 한 번에 빠져 나가기</p>
+
+<p><code>break</code> 명령은 한 번에 한 루프만 빠져나갑니다.</p>
+
+<p>함수의 <code>return</code> 을 이용하면 2중 루프를 한 번에 종료할 수 있습니다.</p>
 </blockquote>
 
 <ul>
-<li><p>종료하기</p>
+<li>종료하기</li>
+</ul>
 
-<pre><code>var test1 = function (text) {
-        if (text === &quot;exit&quot;) {
-            return;
+<pre><code class="language-js">var test1 = function (text) {
+            if (text === &quot;exit&quot;) {
+                return;
+            }
+            console.log(&quot;실행&quot;);
         }
-        console.log(&quot;실행&quot;);
-    }
 
 test1(&quot;exit&quot;) // =&gt; undefined
-</code></pre></li>
 
-<li><p>실행 하기</p>
+</code></pre>
 
-<pre><code>var test1 = function (text) {
-        if (text === &quot;exit&quot;) {
-            return;
+<ul>
+<li>실행 하기</li>
+</ul>
+
+<pre><code class="language-js">
+var test1 = function (text) {
+            if (text === &quot;exit&quot;) {
+                return;
+            }
+            console.log(&quot;실행&quot;);
         }
-        console.log(&quot;실행&quot;);
-    }
 test1(&quot;oh&quot;&quot;); // = &gt; 실행 
 
-</code></pre></li>
-</ul>
+</code></pre>
 
 <h5 id="이중-loop-빠져-나가기">이중 loop 빠져 나가기</h5>
 
 <ul>
-<li><p>ex (하나만 빠져 나가기 )</p>
+<li>ex (하나만 빠져 나가기 )</li>
+</ul>
 
-<pre><code>for (var i = 0; i &lt; 10; i ++)  {
+<pre><code class="language-js">
+for (var i = 0; i &lt; 10; i ++)  {
 	for (var j = 0; j &lt; 10; j++) {
 		console.log(i , j );
 		if (j === 3 ) {
@@ -1680,29 +1704,29 @@ test1(&quot;oh&quot;&quot;); // = &gt; 실행
 }
 
 
-</code></pre></li>
+</code></pre>
 
-<li><p>ex (이중 loop 빠져나간다 with function)</p>
-
-<pre><code>    var foo = function() {
-        for (var i = 0; i &lt; 10; i ++)  {
-            for (var j = 0; j &lt; 10; j++) {
-                console.log(i , j );
-                if (j === 3 ) {
-                    return;
-
-                }
-            }
-        }
-     };
-         
-     foo();
-</code></pre></li>
+<ul>
+<li>ex (이중 loop 빠져나간다 with function)</li>
 </ul>
+
+<pre><code class="language-js">      
+var foo = function() {
+    for (var i = 0; i &lt; 10; i ++)  {
+      for (var j = 0; j &lt; 10; j++) {
+          console.log(i , j );
+          if (j === 3 ) {
+              return;
+                }
+              }
+            }
+         };
+foo();
+</code></pre>
 
 <h5 id="배열을-이용한-while-문-for-문">배열을 이용한 while 문 , for 문</h5>
 
-<pre><code>// while loop
+<pre><code class="language-js">// while loop
     
     
     function sum (nums) {
@@ -1714,14 +1738,16 @@ test1(&quot;oh&quot;&quot;); // = &gt; 실행
     }
     return total;
 }
+
 sum([2,3,5,1]);
 
-&gt;&gt; 11
+// 11
 
     
 </code></pre>
 
-<pre><code>// for loop
+<pre><code class="language-js">
+// for loop
   
   
   function sum (nums) {
@@ -1734,7 +1760,7 @@ sum([2,3,5,1]);
 
 sum([2,3,5,1,]);
 
-&gt;&gt;11
+// 11
 
 </code></pre>
 
@@ -1746,52 +1772,54 @@ sum([2,3,5,1,]);
 
 <h5 id="making-objects">making objects</h5>
 
-<pre><code>1.
+<pre><code class="language-js">// 1.
   var dog = {};
 
   dog.name = &quot;jj&quot;
   dog.color = &quot;red&quot;
   dog.kind = &quot;똥깨&quot;
-  // &gt;&gt;&gt; dog = {name = &quot;jj&quot;, color =&quot;red&quot; , kind = &quot;똥깨 &quot;}
+  
+  // dog = {name = &quot;jj&quot;, color =&quot;red&quot; , kind = &quot;똥깨 &quot;}
 
 
-2. 
+// 2. 
  var dog = {
     name : &quot;jj&quot;,
     color : &quot;red&quot;,
     kind : &quot;똥깨&quot;
 }
 
-  // &gt;&gt;&gt; dog = {name = &quot;jj&quot;, color =&quot;red&quot; , kind = &quot;똥깨 &quot;}
+  // dog = {name = &quot;jj&quot;, color =&quot;red&quot; , kind = &quot;똥깨 &quot;}
 
 </code></pre>
 
 <h5 id="using-objcets-in-javascript">using objcets in Javascript</h5>
 
-<pre><code>var dog = {
+<pre><code class="language-js">
+var dog = {
     name = &quot;jj&quot;
     color = &quot;red&quot;
     
 };
 
-we have two systems .
+// we have two systems .
 
-1. 
+// 1. 
 dog.name;
 dog[&quot;name&quot;];
 
-결과갑 똑같다.
-&gt;&gt;&gt;jj
+//결과갑 똑같다.
+// jj
 
 </code></pre>
 
 <h5 id="changing-objects">changing objects</h5>
 
-<pre><code>1. it is changed
+<pre><code class="language-js">// 1. it is changed
 
 dog.name = &quot;john&quot;
 
-2. it is added
+// 2. it is added
 
 dog.food = &quot;Banana&quot;
 
@@ -1801,24 +1829,24 @@ dog.food = &quot;Banana&quot;
 <h5 id="메소드">메소드</h5>
 
 <ul>
-<li><p>객체에 속한 함수</p>
+<li>객체에 속한 함수</li>
+</ul>
 
-<pre><code>
+<pre><code class="language-js">
 dog.eat = function(food) {
-console.log(this.name + &quot; ate delicious &quot; + food +&quot;...&quot;);
+    console.log(this.name + &quot; ate delicious &quot; + food +&quot;...&quot;);
 };
 
 p1.eat(&quot;Beef&quot;);
 
-&gt;&gt; jj ate delicious Beef ...
+&gt;jj ate delicious Beef ...
 
-</code></pre></li>
-</ul>
+</code></pre>
 
 <h4 id="this">this</h4>
 
-<pre><code>
-메소드 안에서 사용시 함수를 소유한 객체를 가르킨다.
+<pre><code class="language-js">
+// 메소드 안에서 사용시 함수를 소유한 객체를 가르킨다.
 
 var p2 = {};
 p2.name = &quot;jj&quot;;

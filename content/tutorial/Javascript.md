@@ -992,46 +992,52 @@ arr.join("");
 * indaxtOf() ()<<원소를 입력하면부터 앞에서 부터 찾아서 index번호 알려준다. 
 * lastIndaxtOf() ()<<원소를 입력하면부터 뒤에서 부터 찾아서 index번호 알려준다. 
 
-```
+```js
 
 
 var arr = [1,2,3,4,5];
 arr.indexOf[1];
+// arr
 
->>arr
-2
+
+
+// 2
 
 arr.indexOf[100];
->>arr
--1
-없는 경우 -1를 호출한다. 
+// arr
+// -1
+// 없는 경우 -1를 호출한다. 
 
-EX) 
+// EX) 
 var arr = [1,2,3,4,5,6]
 if (arr.indexOf(100) === -1 ) {
 만약 100이라는 원소가 arr 에 없으면 
 }
 
 ```
+
 * slice()
-```
+
+```js
+//원소는 변하지 않는다
+
 var arr = [1, 2, 3, 4, 5];
 a.slice(0, 3);
 >>a;
 123
-원소는 변하지 않는다
 
 ```
 
 * splice()
 
 
-```
+```js
+//원소 값이 변한다. 
 var arr = [1, 2, 3, 4, 5];
 a.splice(0, 3);
->>a;
-123
-원소 값이 변한다. 
+// a  123
+
+
 ```
 
 
@@ -1040,23 +1046,26 @@ a.splice(0, 3);
 >문자열을 문자의 배열로 나누고 싶을 때 사용하는 메소드입니다.
 
 
-```
+```js
 var s = "hello, world this is jj";
+
 s.split("");
 
 
-"h", "e", "l", "l", "o", ",", " ", "w", "o", "r", "l", "d", " ", "t", "h", "i", "s", " ", "i", "s", " ", "j", "j"
+// "h", "e", "l", "l", "o", ",", " ", "w", "o", "r", "l", "d", " ", "t", "h", "i", "s", " ", "i", "s", " ", "j", "j"
 ```
 
-```
+```js
 
 var s = "hello, world this is jj";
 s.split(",");
-"hello", " world this is jj"
-콤마가 생겼다. 콤마의 기준으로 갈라진다.
-```
+
+//"hello", " world this is jj"
+//콤마가 생겼다. 콤마의 기준으로 갈라진다.
 
 ```
+
+```js
 var s = "hello world t-h-i-s-i-s-j-j"
 s.split("-");
 
@@ -1071,7 +1080,7 @@ s.split("-");
 
 ##### 함수 만들기
 
-```
+```js
 function convertHeight(feet, inches) {
   return (feet * 12 + inches) * 2.54
 }
@@ -1085,12 +1094,13 @@ convertHeight(5, 10);
 
 ##### 변수에 담아서 함수 사용하기
 
-```
+
+```js
 var ret = function convertHeight(feet, inches) {
   return (feet * 12 + inches) * 2.54
 }
 ret(5, 10);
-177.8
+//177.8
 
 ```
 
@@ -1099,32 +1109,37 @@ ret(5, 10);
 
 * ex 1-1 (console.log)
 
-```
+
+```js
 var foo = function () {
 	console.log(“I’m a foo”);
 }
->>undefined
+
+// undefined
 ```
 
 * ex 1-2 (return)
 
-```
+```js
 var foo = function () {
 	return(“I’m a foo”);
 }
 
->> I’m a foo
+// I’m a foo
 ```
 
 ##### return 을 break 로 사용하기 (return 으로 함수를 종료하는데 사용할 수 있다.)
 
 > (Option) 2중 루프를 한 번에 빠져 나가기
-- `break` 명령은 한 번에 한 루프만 빠져나갑니다.
-- 함수의 `return` 을 이용하면 2중 루프를 한 번에 종료할 수 있습니다. 
+
+>`break` 명령은 한 번에 한 루프만 빠져나갑니다.
+
+>함수의 `return` 을 이용하면 2중 루프를 한 번에 종료할 수 있습니다. 
 
 
 * 종료하기 
-```
+
+```js
 var test1 = function (text) {
             if (text === "exit") {
                 return;
@@ -1133,11 +1148,13 @@ var test1 = function (text) {
         }
 
 test1("exit") // => undefined
+
 ```
 
 * 실행 하기 
 
-```
+```js
+
 var test1 = function (text) {
             if (text === "exit") {
                 return;
@@ -1152,7 +1169,8 @@ test1("oh""); // = > 실행
 
 * ex (하나만 빠져 나가기 )
 
-```
+```js
+
 for (var i = 0; i < 10; i ++)  {
 	for (var j = 0; j < 10; j++) {
 		console.log(i , j );
@@ -1169,26 +1187,25 @@ for (var i = 0; i < 10; i ++)  {
 * ex (이중 loop 빠져나간다 with function)
 
 
-```
-        var foo = function() {
-            for (var i = 0; i < 10; i ++)  {
-                for (var j = 0; j < 10; j++) {
-                    console.log(i , j );
-                    if (j === 3 ) {
-                        return;
-
-                    }
+```js
+      
+var foo = function() {
+    for (var i = 0; i < 10; i ++)  {
+      for (var j = 0; j < 10; j++) {
+          console.log(i , j );
+          if (j === 3 ) {
+              return;
                 }
+              }
             }
          };
-         
-         foo();
+foo();
 ```
 
 
 ##### 배열을 이용한 while 문 , for 문
 
-```
+```js
 // while loop
     
     
@@ -1201,15 +1218,17 @@ for (var i = 0; i < 10; i ++)  {
     }
     return total;
 }
+
 sum([2,3,5,1]);
 
->> 11
+// 11
 
     
 ```
 
 
-```
+```js
+
 // for loop
   
   
@@ -1223,7 +1242,7 @@ sum([2,3,5,1]);
 
 sum([2,3,5,1,]);
 
->>11
+// 11
 
 ```
 
@@ -1235,44 +1254,46 @@ sum([2,3,5,1,]);
 
 ##### making objects 
 
-```  
-1.
+```js  
+// 1.
   var dog = {};
 
   dog.name = "jj"
   dog.color = "red"
   dog.kind = "똥깨"
-  // >>> dog = {name = "jj", color ="red" , kind = "똥깨 "}
+  
+  // dog = {name = "jj", color ="red" , kind = "똥깨 "}
 
 
-2. 
+// 2. 
  var dog = {
     name : "jj",
     color : "red",
     kind : "똥깨"
 }
 
-  // >>> dog = {name = "jj", color ="red" , kind = "똥깨 "}
+  // dog = {name = "jj", color ="red" , kind = "똥깨 "}
 
 ```
 
 ##### using objcets in Javascript 
 
-```
+```js
+
 var dog = {
     name = "jj"
     color = "red"
     
 };
 
-we have two systems .
+// we have two systems .
 
-1. 
+// 1. 
 dog.name;
 dog["name"];
 
-결과갑 똑같다.
->>>jj
+//결과갑 똑같다.
+// jj
 
 ```
 
@@ -1280,12 +1301,12 @@ dog["name"];
 ##### changing objects 
 
 
-```
-1. it is changed
+```js
+// 1. it is changed
 
 dog.name = "john"
 
-2. it is added
+// 2. it is added
 
 dog.food = "Banana"
 
@@ -1295,7 +1316,7 @@ dog.food = "Banana"
 
 * 객체에 속한 함수
 
-```
+```js
 
 dog.eat = function(food) {
     console.log(this.name + " ate delicious " + food +"...");
@@ -1303,15 +1324,15 @@ dog.eat = function(food) {
 
 p1.eat("Beef");
 
->> jj ate delicious Beef ...
+>jj ate delicious Beef ...
 
 ```
 
 #### this
 
-```
+```js
 
-메소드 안에서 사용시 함수를 소유한 객체를 가르킨다.
+// 메소드 안에서 사용시 함수를 소유한 객체를 가르킨다.
 
 var p2 = {};
 p2.name = "jj";
