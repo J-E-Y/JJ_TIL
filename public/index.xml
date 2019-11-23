@@ -178,6 +178,8 @@ var b = Array.from(a.split(&#39;,&#39;),Number);
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Reduce vs. For Loop&lt;/p&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;p&gt;배열에서 숫자로&lt;/p&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;To use for Loop&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -194,6 +196,7 @@ for(var i = 0; i &amp;lt; arr.length; i++) {
 
 &lt;ul&gt;
 &lt;li&gt;To use the reduce() function&lt;/li&gt;
+&lt;li&gt;배열에서 숫자로&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let arr = [1,2,3,4];
@@ -273,8 +276,6 @@ let addressBook = {
 
 
 
-
-
 //1. makeAddressBook &amp;lt; callback 함수를 미리 만든다. 
 
 function makeAddressBook (addressBook, user) {
@@ -297,6 +298,7 @@ function makeAddressBook (addressBook, user) {
 }
 
 users.reduce(makeAddressBook, {} ); 
+
 // {j: Array(1), t: Array(1), e: Array(1)}
 
 /* 결과값 

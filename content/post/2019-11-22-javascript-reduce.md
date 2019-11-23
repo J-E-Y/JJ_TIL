@@ -44,7 +44,10 @@ image:
 
 * Reduce vs. For Loop
 
+* 배열에서 숫자로 
+
 * To use for Loop
+
 
 ```js
 
@@ -59,6 +62,7 @@ for(var i = 0; i < arr.length; i++) {
 ```
 
 * To use the reduce() function
+* 배열에서 숫자로 
 
 
 ```js
@@ -140,8 +144,6 @@ let addressBook = {
 
 
 
-
-
 //1. makeAddressBook < callback 함수를 미리 만든다. 
 
 function makeAddressBook (addressBook, user) {
@@ -164,6 +166,7 @@ function makeAddressBook (addressBook, user) {
 }
 
 users.reduce(makeAddressBook, {} ); 
+
 // {j: Array(1), t: Array(1), e: Array(1)}
 
 /* 결과값 
@@ -181,6 +184,8 @@ users.reduce(makeAddressBook, {} );
 */
 
 ```
+
+
 
 
 
