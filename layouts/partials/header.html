@@ -180,7 +180,6 @@
 
   {{ partial "cookie_consent" . }}
   {{ partial "head_custom" . }}
-  {{ template "_internal/google_analytics.html" . }}
 
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 
