@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable
+bio: I'm a Software Engineer based in the South Korea.I'm quite interested in all aspects of software development.
   matter.
 #education:
 #  courses:
