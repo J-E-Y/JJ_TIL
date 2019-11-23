@@ -2,7 +2,6 @@
 authors:
 - admin
 bio: I'm a Software Engineer based in the South Korea.I'm quite interested in all aspects of software development.
-  matter.
 #education:
 #  courses:
 #  - course: PhD in Artificial Intelligence
