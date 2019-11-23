@@ -16,10 +16,10 @@
   weight = 20
   
   
-[[main_right]]
-  name = "Today I Learned"
-  url = "tutorial/"
-  weight = 30
+#[[main_right]]
+#  name = "Today I Learned"
+#  url = "tutorial/"
+#  weight = 30
 
 [[main_right]]
   name = "Posts"
