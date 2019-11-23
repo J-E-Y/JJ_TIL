@@ -32,10 +32,10 @@
   weight = 50
 
 
-[[main_right]]
- name = "Contact"
- url = "#contact"
- weight = 60
+#[[main_right]]
+# name = "Contact"
+# url = "#contact"
+# weight = 60
 
 
 
