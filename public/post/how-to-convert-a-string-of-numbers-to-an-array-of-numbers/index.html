@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -29,10 +27,10 @@
   
     
   
-  <meta name="description" content="Studying">
+  <meta name="description" content="Javascript:rocket:">
 
   
-  <link rel="alternate" hreflang="en-us" href="/categories/">
+  <link rel="alternate" hreflang="en-us" href="/post/how-to-convert-a-string-of-numbers-to-an-array-of-numbers/">
 
   
 
@@ -99,15 +97,12 @@
   
 
   
-  <link rel="alternate" href="/categories/index.xml" type="application/rss+xml" title="JohnJung">
-  <link rel="feed" href="/categories/index.xml" type="application/rss+xml" title="JohnJung">
-  
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/categories/">
+  <link rel="canonical" href="/post/how-to-convert-a-string-of-numbers-to-an-array-of-numbers/">
 
   
   
@@ -119,19 +114,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="JohnJung">
-  <meta property="og:url" content="/categories/">
-  <meta property="og:title" content="Categories | JohnJung">
-  <meta property="og:description" content="Studying"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/post/how-to-convert-a-string-of-numbers-to-an-array-of-numbers/">
+  <meta property="og:title" content="How to convert a string of numbers to an array of numbers? | JohnJung">
+  <meta property="og:description" content="Javascript:rocket:"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-11-23T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-11-23T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-11-23T00:00:00&#43;00:00">
   
 
   
 
   
 
-  <title>Categories | JohnJung</title>
+  <title>How to convert a string of numbers to an array of numbers? | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -314,7 +311,9 @@
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
+  
 
 
 
@@ -331,35 +330,257 @@
 
   
   
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">How to convert a string of numbers to an array of numbers?</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Categories</h1>
+
+
+
+<meta content="" itemprop="datePublished">
+<meta content="" itemprop="dateModified">
+
+<div class="article-metadata">
 
   
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time></time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+    
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h3 id="qeustion">Qeustion</h3>
+
+<pre><code class="language-js">var a = &quot;1,2,3,4&quot;;
+var b = a.split(',');
+/// [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;]
+
+// how to make this : [1, 2, 3, 4] 
+
+</code></pre>
+
+<h4 id="soultion">Soultion</h4>
+
+<ul>
+<li>useing Array.map to convert each element into a number.</li>
+</ul>
+
+<pre><code class="language-js">var a = &quot;1,2,3,4&quot;;
+
+var b = a.split(',').map(function(item) {
+    return parseInt(item, 10);
+});
+
+// b = [1, 2, 3, 4] 
+
+</code></pre>
+
+<ul>
+<li>useing Map and Number</li>
+</ul>
+
+<pre><code class="language-js">var b = a.split(',').map(Number);
+
+// b = [1, 2, 3, 4] 
+
+</code></pre>
+
+<ul>
+<li>useing from()</li>
+</ul>
+
+<pre><code class="language-js">
+var b = Array.from(a.split(','),Number);
+
+// b = [1, 2, 3, 4]
+</code></pre>
+
+    </div>
+
+    
+
+
+
+
+
+    
+      
+
+
+
+
+
 
   
+
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
   
-  <div>
-    <h2><a href="/categories/javascript-post/">Javascript Post</a></h2>
-    <div class="article-style">
+  
+  <img class="portrait mr-3" src="/author/admin/avatar_hu9d86a95361d48c7ef439503a043609ac_95081_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/admin">John Jung</a></h5>
+    <h6 class="card-subtitle">Studying</h6>
+    <p class="card-text" itemprop="description">My research interests include distributed robotics, mobile computing and programmable matter.</p>
+    <ul class="network-icon" aria-hidden="true">
       
-    </div>
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/J-E-Y" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+      
+      
+    
+
+    
+    <div class="article-widget">
+      <div class="post-nav">
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/post/every-some/" rel="prev">every() 와 some()</a>
   </div>
   
-
-  
-
 </div>
+
+    </div>
+    
+
+    
+
+
+  </div>
+</article>
+
 <div class="container">
   <footer class="site-footer">
   
@@ -512,6 +733,4 @@
 
   </body>
 </html>
-
-
 

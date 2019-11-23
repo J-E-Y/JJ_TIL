@@ -36,6 +36,62 @@
     </item>
     
     <item>
+      <title>How to convert a string of numbers to an array of numbers?</title>
+      <link>/post/how-to-convert-a-string-of-numbers-to-an-array-of-numbers/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/how-to-convert-a-string-of-numbers-to-an-array-of-numbers/</guid>
+      <description>
+
+&lt;h3 id=&#34;qeustion&#34;&gt;Qeustion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var a = &amp;quot;1,2,3,4&amp;quot;;
+var b = a.split(&#39;,&#39;);
+/// [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;]
+
+// how to make this : [1, 2, 3, 4] 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;soultion&#34;&gt;Soultion&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;useing Array.map to convert each element into a number.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var a = &amp;quot;1,2,3,4&amp;quot;;
+
+var b = a.split(&#39;,&#39;).map(function(item) {
+    return parseInt(item, 10);
+});
+
+// b = [1, 2, 3, 4] 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;useing Map and Number&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var b = a.split(&#39;,&#39;).map(Number);
+
+// b = [1, 2, 3, 4] 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;useing from()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var b = Array.from(a.split(&#39;,&#39;),Number);
+
+// b = [1, 2, 3, 4]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>every() 와 some()</title>
       <link>/post/every-some/</link>
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
