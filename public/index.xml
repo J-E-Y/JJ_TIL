@@ -36,6 +36,35 @@
     </item>
     
     <item>
+      <title>e.target 와 e.target.parentNode or currentTarget의 차이점 </title>
+      <link>/post/e-target-e-target-parentnode-or-currenttarget/</link>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/e-target-e-target-parentnode-or-currenttarget/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;event.target 와 event.target.parentNode 차이점&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+* e.target === 클릭된애
+* e.target.parentNode === 클릭된애 부모태그 
+* e.target.parentNode.parentNode === 클릭된애 부모의 부모태그
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;event.target 과 currentTarget 의 차이점&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+* event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고
+* event.currentTarget 은 addEventListener 를발생시키는 대상 
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to convert a string of numbers to an array of numbers?</title>
       <link>/post/how-to-convert-a-string-of-numbers-to-an-array-of-numbers/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>

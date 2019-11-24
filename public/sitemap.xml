@@ -20,23 +20,28 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-11-23T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/how-to-convert-a-string-of-numbers-to-an-array-of-numbers/</loc>
-    <lastmod>2019-11-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/javascript-post/</loc>
-    <lastmod>2019-11-23T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2019-11-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/e-target-e-target-parentnode-or-currenttarget/</loc>
+    <lastmod>2019-11-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/how-to-convert-a-string-of-numbers-to-an-array-of-numbers/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   

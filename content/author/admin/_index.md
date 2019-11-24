@@ -24,9 +24,9 @@ name: John Jung
 #  url: ""
 #role: Studying
 social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'
+#- icon: envelope
+#  icon_pack: fas
+#  link: '#contact'
 #- icon: twitter
 #  icon_pack: fab
 #  link: https://twitter.com/GeorgeCushen
@@ -42,4 +42,8 @@ user_groups:
 - Visitors
 ---
 
-Hello!! I'm JohnJung. I'm a Software Engineer based in the south Korea.I'm quite interested in all aspects of software development. My passion lies in the web application development including both the front end and the back end. I fell in love with the modern JavaScript.Since I changed my major
+Hello!! I'm JohnJung. 
+
+I'm a Software Engineer based in the south Korea. I'm quite interested in all aspects of software development. My passion lies in the web application development including both the front end and the back end. I fell in love with the modern JavaScript Since I changed my major. 
+
+Thank you for visiting my blog. I hope you enjoy looking around :)

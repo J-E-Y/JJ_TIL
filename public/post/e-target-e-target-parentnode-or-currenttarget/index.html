@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Javascript/Dom:rocket:">
+  <meta name="description" content="Javascript:rocket:">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/javacript-checkbox-value/">
+  <link rel="alternate" hreflang="en-us" href="/post/e-target-e-target-parentnode-or-currenttarget/">
 
   
 
@@ -116,7 +116,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/javacript-checkbox-value/">
+  <link rel="canonical" href="/post/e-target-e-target-parentnode-or-currenttarget/">
 
   
   
@@ -128,21 +128,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="JohnJung">
-  <meta property="og:url" content="/post/javacript-checkbox-value/">
-  <meta property="og:title" content="checkbox 안에 있는 value 값 얻기 | JohnJung">
-  <meta property="og:description" content="Javascript/Dom:rocket:"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/post/e-target-e-target-parentnode-or-currenttarget/">
+  <meta property="og:title" content="e.target 와 e.target.parentNode or currentTarget의 차이점  | JohnJung">
+  <meta property="og:description" content="Javascript:rocket:"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-11-21T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-11-24T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2019-11-21T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2019-11-24T00:00:00&#43;00:00">
   
 
   
 
-  <title>checkbox 안에 있는 value 값 얻기 | JohnJung</title>
+  
+
+  <title>e.target 와 e.target.parentNode or currentTarget의 차이점  | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -314,7 +314,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">checkbox 안에 있는 value 값 얻기</h1>
+  <h1 itemprop="name">e.target 와 e.target.parentNode or currentTarget의 차이점 </h1>
 
   
 
@@ -383,43 +383,23 @@
 
     <div class="article-style" itemprop="articleBody">
       <ul>
-<li>html</li>
+<li>event.target 와 event.target.parentNode 차이점</li>
 </ul>
 
-<pre><code class="language-html">
-
-&lt;div class = &quot;container&quot;&gt;
-    
-    &lt;input type=&quot;checkbox&quot; class =&quot;checks&quot; value =&quot;뜨거워&quot;&gt; hot
-    &lt;input type=&quot;checkbox&quot; class =&quot;checks&quot; value =&quot;추워&quot;&gt; clod
-    &lt;a href=&quot;#&quot; onclick=&quot;submitFun();return false;&quot;&gt;ok &lt;/a&gt;
-
-&lt;/div&gt;
+<pre><code class="language-js">
+* e.target === 클릭된애
+* e.target.parentNode === 클릭된애 부모태그 
+* e.target.parentNode.parentNode === 클릭된애 부모의 부모태그
 
 </code></pre>
 
 <ul>
-<li>js</li>
+<li>event.target 과 currentTarget 의 차이점</li>
 </ul>
 
 <pre><code class="language-js">
-
-
-	function submitFun() {
-		
-
-		var checks = document.getElementsByClassName('checks')
-		var str = &quot;&quot;;
-		
-
-		for (let i = 0; i &lt; checks.length; i++ ){
-
-			if (checks[i].checked === true ) {
- 				str += checks[i].value + &quot;&quot;;
- 			}
- 		}
- 		alert(str);
-	}
+* event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고
+* event.currentTarget 은 addEventListener 를발생시키는 대상 
 
 </code></pre>
 
@@ -490,15 +470,10 @@
     <div class="article-widget">
       <div class="post-nav">
   
-  <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="/post/javascript-reduce/" rel="next">reduce()</a>
-  </div>
-  
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/post/how-to-check-if-element-has-any-children-in-javascript/" rel="prev">How to check if element has any children in Javascript?</a>
+    <a href="/post/how-to-convert-a-string-of-numbers-to-an-array-of-numbers/" rel="prev">How to convert a string of numbers to an array of numbers?</a>
   </div>
   
 </div>
