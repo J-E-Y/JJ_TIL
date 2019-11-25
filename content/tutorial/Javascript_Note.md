@@ -598,7 +598,7 @@ document.write(b + ", ");
 
 
 
-## e.target 과 e.target.parentNode 의 차이 
+## e.target 와 e.target.parentNode or currentTarget의 차이점 
 
 
 ```js
@@ -700,6 +700,8 @@ form.addEventListener('submit',function(event){
 
 
 ```
+
+
 
 ```js
 

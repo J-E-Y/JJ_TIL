@@ -2204,7 +2204,7 @@ div.alert a {
 @supports ((position:-webkit-sticky) or (position:sticky)) {
   .docs-toc {
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 70px;
     height: calc(100vh - 70px);
     overflow-y: auto

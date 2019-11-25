@@ -9,7 +9,8 @@
     </div>
 
     {{ if .Params.toc }}
-    <div class="d-none d-xl-block col-xl-2 docs-toc">
+    <div class="d-none d-xl-block col-xl-4 docs-toc"style="
+    right: -88px;">
       {{ with (i18n "on_this_page") }}
       <p class="docs-toc-title">{{.}}</p>
       {{ end }}
@@ -24,7 +25,7 @@
     </div>
     {{ end }}
 
-    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+    <main class="col-12 col-md-9 col-xl-7 py-md-3 pl-md-5 docs-content" role="main">
 
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
