@@ -14,10 +14,10 @@ summary: 'write here:rocket:'
 ---
 
 
-## 아키스 코드란무엇인가 알수 있을까여 나는
+## ASCII(아키스) 
 
 
-#### ASCII
+#### 아키스 코드란 무엇인가?
 
 * ASCII (American Standard Code for Information Interchange, 미국 정보 교환 표준 부호)
 
@@ -34,6 +34,42 @@ summary: 'write here:rocket:'
 
 
 
+#### ex)
+
+* alphabetPosition 함수 만들기
+
+> In this exercise, you are required to, given a string, replace every letter with its position in the alphabet. (문자열이 주어졌을때, 각각의 문자를 알파벳의 몇번째 인지 숫자로 바꾸는 함수를 작성하세요.) If anything in the text isn't a letter, ignore it and don't return it. a being 1, b being 2, etc. (만약 문자가 알파벳이 아니라면, 무시하고 결과값에 포함하지 마세요. a 는 1, b 는 2, 등등 으로 변환됩니다.)
+
+
+* output
+
+```js
+alphabetPosition("The sunset sets at twelve o' clock."); 
+// "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"
+
+```
+
+
+```js
+
+var alphabetPosition = function (str) {
+ // Your code here
+ let output = [];
+ // 1. 배열로 바꾼다
+ let temp = str.toUpperCase();
+ // 2. THE SUNSET SETS AT....
+ for(let i=0;i<temp.length;i++){
+   if(typeof(temp[i]) ==='string'){
+     if(temp[i].charCodeAt(0) - 64 > 0)
+       output.push(temp[i].charCodeAt(0) - 64);
+   }
+ }
+ return output.join(' ');
+}
+
+
+
+```
 
 
 
