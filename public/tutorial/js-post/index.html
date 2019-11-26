@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.2.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="John Jung">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="write here:rocket:">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/tutorial/js-post/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#795548">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-153100405-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/tutorial/js-post/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="JohnJung">
+  <meta property="og:url" content="/tutorial/js-post/">
+  <meta property="og:title" content="JS_Post | JohnJung">
+  <meta property="og:description" content="write here:rocket:"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-11-26T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-11-26T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>JS_Post | JohnJung</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">JohnJung</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/displayDocs">
+          
+          <span>Technical Documents</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+          
+          <span>Posts</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+          
+          <span>Projects</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/it-terminology/">1.Technical terms</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/git/">2.Git</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/html/">3.Html</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/css/">4.Css</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/bootstrap/">5.Bootstrap</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/python/">5.Python</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/javascript/">6.Javascript</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/tutorial/js-post/">JS_Post</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript-my-mdn/">My_MDN</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript-daliy-coding-level-1/">Daliy_Coding_Level_1</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript-daliy-coding-level-2/">Daliy_Coding_Level_2</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/javascript_q1/">3.Javascript</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tutorial/javascript_q1/">x Coding_level_1</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript_dictionary/">x Dictionary_level_1</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript_note/">x Notes</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript_algorithm/">xCoding_level_2</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript_q2/">xDictionary_level_2</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/">Today I Learned</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-4 docs-toc"style="
+    right: -88px;">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-javacript">1.Javacript</a></li>
+<li><a href="#salesteam-안에-있는-data-fliter-와-foreach-로-다루기">salesTeam 안에 있는 data  fliter 와 foreach 로 다루기</a>
+<ul>
+<li><a href="#reduce">reduce()</a>
+<ul>
+<li><a href="#definiton-syntax">Definiton &amp; Syntax</a></li>
+<li><a href="#ex">ex)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#how-to-convert-a-str-of-nums-to-an-arr-of-nums">How to convert a str of nums to an arr of nums?</a>
+<ul>
+<li>
+<ul>
+<li><a href="#qeustion">Qeustion</a></li>
+<li><a href="#soultion">Soultion</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#foreach-map-fliter">forEach(), map(), fliter()</a>
+<ul>
+<li>
+<ul>
+<li><a href="#1-foreach">1. forEach()</a></li>
+<li><a href="#ex-1">ex)</a></li>
+<li><a href="#2-map">2.map()</a></li>
+<li><a href="#ex-2">ex)</a></li>
+<li><a href="#3-fliter">3.fliter()</a></li>
+<li><a href="#예제">예제</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#sort">sort()</a></li>
+<li><a href="#every-와-some">every() 와 some()</a>
+<ul>
+<li>
+<ul>
+<li><a href="#1-every">1.every()</a></li>
+<li><a href="#2-some">2.some()</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#toc_19">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#2-dom">2. Dom</a></li>
+<li><a href="#e-target-이란">e.target 이란 ?</a></li>
+<li><a href="#how-to-check-if-element-has-any-children">How to check if element has any children ?</a></li>
+<li><a href="#checkbox-안에-있는-value-값-얻기">checkbox 안에 있는 value 값 얻기</a></li>
+<li><a href="#toc_24">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#3-my-post">3. My_post</a></li>
+<li><a href="#피보나치-수열-이란">피보나치 수열 이란?</a></li>
+<li><a href="#foreach-for-of-for-in-의-차이">forEach, for of, for in 의 차이</a></li>
+<li><a href="#falsy-와-fruthy-구별">Falsy 와 Fruthy 구별</a></li>
+<li><a href="#null-과-undefined-는-등록-저장-여부이다">null 과 undefined 는 등록, 저장 여부이다.</a></li>
+<li><a href="#toc_30">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#4-post-from-others">4. post from others</a></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-7 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">JS_Post</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<h2 id="1-javacript">1.Javacript</h2>
+
+<h2 id="salesteam-안에-있는-data-fliter-와-foreach-로-다루기">salesTeam 안에 있는 data  fliter 와 foreach 로 다루기</h2>
+
+<pre><code class="language-js">var salesTeam = [
+  {
+    &quot;name&quot;: {
+      &quot;first&quot;: &quot;Bruce&quot;,
+      &quot;last&quot;: &quot;Wayne&quot;
+    },
+    &quot;age&quot;: 10,
+    &quot;sales&quot;: &quot;$2314&quot;
+  },
+  {
+    &quot;name&quot;: {
+      &quot;first&quot;: &quot;Alvaro&quot;,
+      &quot;last&quot;: &quot;Angelos&quot;
+    },
+    &quot;age&quot;: 55,
+    &quot;sales&quot;: &quot;$1668&quot;
+  },
+  {
+    &quot;name&quot;: {
+      &quot;first&quot;: &quot;Alvaro&quot;,
+      &quot;last&quot;: &quot;Angelos&quot;
+    },
+    &quot;age&quot;: 15,
+    &quot;sales&quot;: &quot;$1668&quot;
+  }
+];
+
+
+// age 가 20 아래인 것만 teenager 에 담기 
+// filter 사용
+
+let teenager = salesTeam.filter(function(ele){
+    return ele.age &lt; 20;
+  });
+
+// 뽑은거 안에서 fullNmae 가져오기
+// foreach 사용
+
+  let result = [];
+  teenager.forEach(function(ele){
+    result.push(`${ele.name.first} ${ele.name.last}`); // 
+  });
+
+
+
+
+</code></pre>
+
+<h3 id="reduce">reduce()</h3>
+
+<h4 id="definiton-syntax">Definiton &amp; Syntax</h4>
+
+<blockquote>
+<p>arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])</p>
+</blockquote>
+
+<ul>
+<li><p>accumulator — the accumulator accumulates all of the callbacks returned values.</p></li>
+
+<li><p>val — the current value being processed</p></li>
+
+<li><p>index — the current index of the value being processed</p></li>
+
+<li><p>arr — the original array</p></li>
+</ul>
+
+<blockquote>
+<p>The reduce() method is used to apply a function to each element in the array to reduce the array to a single value.</p>
+
+<p>여러게의 값이 담긴 배열이 줄여서(reduce) <code>최종적으로 하나의 값으로 만드는 과정</code></p>
+</blockquote>
+
+<ul>
+<li><p>리턴값이 반듯이 필요</p></li>
+
+<li><p>누적값 : 배열의 요소를 하나하나 줄여가면서 생기는 중간 과정(결과)</p></li>
+
+<li><p>현재값 : 리듀서가 배열을 지나갈 떄 만나는 배열의 요소</p></li>
+
+<li><p>초기값 : 배열의 요소를 줄이기 전 누적값의 <code>초기</code> 상태</p></li>
+</ul>
+
+<h4 id="ex">ex)</h4>
+
+<ul>
+<li><p>Reduce vs. For Loop</p></li>
+
+<li><p>배열에서 숫자로</p></li>
+
+<li><p>To use for Loop</p></li>
+</ul>
+
+<pre><code class="language-js">
+let arr = [1, 2, 3, 4];
+let sum = 0;
+for(var i = 0; i &lt; arr.length; i++) {
+    sum += arr[i];
+}
+// sum = 10
+
+
+</code></pre>
+
+<ul>
+<li>To use the reduce() function</li>
+<li>배열에서 숫자로</li>
+</ul>
+
+<pre><code class="language-js">let arr = [1,2,3,4];
+
+let sum = arr.reduce((acc, val) =&gt; {
+  return acc + val;
+});
+
+// sum = 10
+
+</code></pre>
+
+<ul>
+<li><p>배열에서 문자열로</p></li>
+
+<li><p>이름 함쳐서 문자열로 출력 시키기</p></li>
+</ul>
+
+<pre><code class="language-js">
+let users = [
+  
+  {name:&quot;john&quot;,age : 20 },
+  {name:&quot;tim&quot;,age :40 },
+  {name:&quot;esther&quot;,age : 60 },
+  
+];
+
+// &quot;john, tim, esther&quot; 이렇게 만들것이다. 
+
+function sumName(retName , cuur ) {
+	// 1. &quot; &quot; + &quot;john&quot; + &quot;,&quot;
+	// 2. &quot;john,&quot; + &quot;tim&quot; + &quot;,&quot;
+	// 3. &quot;john, time,&quot; + &quot;esther&quot; + &quot;,&quot;
+	retName = retName + cuur.name + &quot;,&quot;; 
+	return retName ; // 리턴을 꼭 해줘야 한다.
+ }
+ 
+ 
+users.reduce(sumName, &quot;&quot;); // 두번째 인자값에 초기값인  &quot;&quot; 넣어준다.
+
+// &quot;john,tim,esther,&quot;
+
+
+
+
+</code></pre>
+
+<ul>
+<li><p>배열에서 객체로</p></li>
+
+<li><p>첫번째 글자를 따서 전화번호부 만들기</p></li>
+</ul>
+
+<pre><code class="language-js">
+// 원본
+let users = [
+  
+  {name:&quot;john&quot;,age : 20 },
+  {name:&quot;tim&quot;,age :40 },
+  {name:&quot;esther&quot;,age : 60 },
+  
+];
+
+// 결과 출력 
+
+let addressBook = {
+	j : [
+		{name:&quot;john&quot;,age : 20 }
+      ],
+	t : [
+		{name:&quot;tim&quot;,age :40 }
+      ],
+	e : [
+		{name:&quot;esther&quot;,age : 60 }
+ 	  ]
+};
+
+
+
+//1. makeAddressBook &lt; callback 함수를 미리 만든다. 
+
+function makeAddressBook (addressBook, user) {
+  // 첫번째 글자를 먼저 변수에 저장한다. 
+  let firstLetter = user.name[0];
+  
+  // addressBook { };
+  
+  
+  if (firstLetter in addressBook) {
+	  // 만약 키가 있으면 해당 배열에 사람을 추가한다. 
+    addressBook[firstLetter].push(user);
+	} else {
+	  // 만약 키가 없다면 해당 배열을 만들고
+	  addressBook[firstLetter] = [];
+	  // 사람을 추가한다. 
+  	addressBook[firstLetter].push(user);
+  }
+	return addressBook; // 객체를 리턴한다. 
+}
+
+users.reduce(makeAddressBook, {} ); 
+
+// {j: Array(1), t: Array(1), e: Array(1)}
+
+/* 결과값 
+{
+	j : [
+		{name:&quot;john&quot;,age : 20 }
+      ],
+	t : [
+		{name:&quot;tim&quot;,age :40 }
+      ],
+	e : [
+		{name:&quot;esther&quot;,age : 60 }
+ 	  ]
+};
+*/
+
+</code></pre>
+
+<ul>
+<li><p>Using the reduce() method, how would you sum up the population of every country</p></li>
+
+<li><p>data</p></li>
+</ul>
+
+<pre><code class="language-js">
+let data = [
+  {
+    country: 'China',
+    pop: 1409517397,
+  },
+  {
+    country: 'India',
+    pop: 1339180127,
+  },
+  {
+    country: 'USA',
+    pop: 324459463,
+  },
+  {
+    country: 'Indonesia',
+    pop: 263991379,
+  }
+]
+
+</code></pre>
+
+<ul>
+<li>Soultion</li>
+</ul>
+
+<pre><code class="language-js">
+
+
+let sum = data.reduce(function(acc,val){
+	
+	return acc + val.pop;
+		
+	},0);
+	
+//1409517397 +1339180127 + 324459463 + 263991379 = 3337148366
+
+// sum // 3337148366
+</code></pre>
+
+<ul>
+<li>except China?</li>
+</ul>
+
+<pre><code class="language-js">
+let sum = data.reduce((acc, val) =&gt; {
+  return val.country == 'China' ? acc : acc + val.pop;
+}, 0);
+
+
+//sum = 1927630969
+</code></pre>
+
+<h2 id="how-to-convert-a-str-of-nums-to-an-arr-of-nums">How to convert a str of nums to an arr of nums?</h2>
+
+<h4 id="qeustion">Qeustion</h4>
+
+<ul>
+<li>str = &ldquo;1,2,3,4&rdquo; =&gt;  [1, 2, 3, 4]</li>
+</ul>
+
+<pre><code class="language-js">
+ 
+var a = &quot;1,2,3,4&quot;;
+var b = a.split(',');
+/// [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;]
+
+// how to make this : [1, 2, 3, 4] 
+
+</code></pre>
+
+<h4 id="soultion">Soultion</h4>
+
+<ul>
+<li>useing Array.map to convert each element into a number.</li>
+</ul>
+
+<pre><code class="language-js">var a = &quot;1,2,3,4&quot;;
+
+var b = a.split(',').map(function(item) {
+    return parseInt(item, 10);
+});
+
+// b = [1, 2, 3, 4] 
+
+</code></pre>
+
+<ul>
+<li>useing Map and Number</li>
+</ul>
+
+<pre><code class="language-js">var b = a.split(',').map(Number);
+
+// b = [1, 2, 3, 4] 
+
+</code></pre>
+
+<ul>
+<li>useing from()</li>
+</ul>
+
+<pre><code class="language-js">
+var b = Array.from(a.split(','),Number);
+
+// b = [1, 2, 3, 4]
+</code></pre>
+
+<h2 id="foreach-map-fliter">forEach(), map(), fliter()</h2>
+
+<h4 id="1-foreach">1. forEach()</h4>
+
+<blockquote>
+<p>array.forEach (callback(callbackFunction(element, index, array)</p>
+</blockquote>
+
+<ul>
+<li><p>배열 혹은 함수를 반복할때  사용</p></li>
+
+<li><p>리턴값 없다</p></li>
+</ul>
+
+<h4 id="ex-1">ex)</h4>
+
+<ul>
+<li>forEach 로 배열의 합 구하기</li>
+</ul>
+
+<pre><code class="language-js">
+function test(){
+    var testArray = [1,2,3,4,5];
+    var sum = 0;
+    function getSum(value){
+        sum =  sum + value;
+    }
+    testArray.forEach(getSum); // forEach(getSum) that's all  
+    console.log(sum);
+  }
+
+test()  // 15 
+
+</code></pre>
+
+<h4 id="2-map">2.map()</h4>
+
+<blockquote>
+<p>array.map(callbackFunction(element, index, array)</p>
+</blockquote>
+
+<ul>
+<li><p><code>immutable</code></p></li>
+
+<li><p><code>새로운 배열</code>을 만들때 사용</p></li>
+
+<li><p>리턴값 있다.</p></li>
+</ul>
+
+<h4 id="ex-2">ex)</h4>
+
+<ul>
+<li>for 문으로 name 값 가져오기</li>
+</ul>
+
+<pre><code class="language-js">let users = [
+  
+  {name:&quot;john&quot;,age : 20 },
+  {name:&quot;tim&quot;,age :40 },
+  {name:&quot;esther&quot;,age : 60 },
+  
+];
+
+
+let userName = [];
+
+
+for (let i = 0; i &lt; users.length; i ++ ) {
+	userName.push(users[i].name);
+ }
+ 
+ userName // [&quot;john&quot;, &quot;tim&quot;, &quot;esther&quot;]
+
+</code></pre>
+
+<ul>
+<li>map() 으로 name 값 가져오기</li>
+</ul>
+
+<pre><code class="language-js">
+let users = [
+  
+  {name:&quot;john&quot;,age : 20 },
+  {name:&quot;tim&quot;,age :40 },
+  {name:&quot;esther&quot;,age : 60 },
+  
+];
+
+
+function getName (user){
+  return user.name; //  리턴값 필요하다. 
+
+}
+
+users.map(getName); // [&quot;john&quot;, &quot;tim&quot;, &quot;esther&quot;]
+
+
+
+
+
+</code></pre>
+
+<h4 id="3-fliter">3.fliter()</h4>
+
+<blockquote>
+<p>array.fliter(callbackFunction(element, index, array)</p>
+</blockquote>
+
+<ul>
+<li><p><code>조건</code>에 해당한 것을 새로운 배열의 형태로 출력 한다.</p></li>
+
+<li><p>리턴값 있다.</p></li>
+
+<li><p>map 함수는 filter함수와 같이 오브젝트도 컨트롤 할 수도 있습니다.</p></li>
+</ul>
+
+<h4 id="예제">예제</h4>
+
+<ul>
+<li>filter 로 30 살 보다 많은 사람 사람을 찾는다</li>
+</ul>
+
+<pre><code class="language-js">
+let users = [
+  
+  {name:&quot;john&quot;,age : 20 },
+  {name:&quot;tim&quot;,age :40 },
+  {name:&quot;esther&quot;,age : 60 },
+  
+];
+
+function getOldName(user){
+	return user.age &gt; 30; // 리턴 필요하다. 
+}
+// 그리고 filter 에 함수를 넣는다. 
+users.filter(getOldName) // [{name:&quot;tim&quot;,age :40 },{name:&quot;esther&quot;,age : 60 }];
+</code></pre>
+
+<ul>
+<li>filter 로 이름에 s 가 있는 사람을 가져오고 싶다.?</li>
+</ul>
+
+<pre><code class="language-js">
+let users = [
+  
+  {name:&quot;john&quot;,age : 20 },
+  {name:&quot;tim&quot;,age :40 },
+  {name:&quot;esther&quot;,age : 60 },
+  
+];
+
+
+function userIncludeS (user){
+	return user.name.indexOf(&quot;s&quot;) !== -1; // 조건문 
+
+ }
+ 
+ 
+users.filter(userIncludeS) // [{name:&quot;esther&quot;,age : 60 }];
+
+</code></pre>
+
+<h2 id="sort">sort()</h2>
+
+<p><strong>arr.sort(sortfunc)</strong></p>
+
+<blockquote>
+<p><code>mutable</code></p>
+
+<p>1.배열을 정렬한다.</p>
+
+<p>2.알파벳 순서로 정렬한다.</p>
+
+<p>3.숫자의 경우 암시적으로 문자열로 형변환 하기 때문에 숫자 1이 숫자 10보다 먼저 나온다.</p>
+
+<p>4.sortfunc 로 비교 대상인 두개의 인자를 전달하는데, 리턴 값에 따라서 선후를 판단한다.</p>
+</blockquote>
+
+<pre><code class="language-js">
+strArr = [&quot;all&quot;, &quot;before&quot;, &quot;hello&quot;, &quot;world&quot;]
+
+// a 가 크면 리턴 1  작은수부터 정렬
+strArr.sort(function(a,b){
+	if (a &gt; b) {
+	return 1;
+} else if (a === b){
+	return 0;
+} else {
+	return -1;
+}
+})
+
+
+// a 가 작으면 리턴  큰수부터 정렬
+
+strArr.sort(function(a,b){
+	if (a &gt; b) {
+	return -1;
+} else if (a === b){
+	return 0;
+} else {
+	return 1;
+}
+})
+
+
+
+
+</code></pre>
+
+<blockquote>
+<p>Example 1</p>
+</blockquote>
+
+<pre><code>
+var numbers = [9,8,7,6,5,4,3,2,1];
+alert(numbers.sort()); // array, [1,2,3,4,5,6,7,8,9]
+alert(numbers); // array, [1,2,3,4,5,6,7,8,9], 원본을 변경한다. 
+alert(numbers.sort() === numbers); // boolean, true, 원본과 반환값이 같다.
+ 
+var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+//array, [1,10,2,20,3,4,5,6,7,8,9], 암시적으로 원소를 문자로 형변환 하기 때문에 10이 1뒤에 온다.
+alert(numbers.sort()); 
+
+</code></pre>
+
+<blockquote>
+<p>Example 2</p>
+</blockquote>
+
+<pre><code>var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+var x = function(a,b){
+	return a-b;
+}
+
+console.log(numbers.sort(x));
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20]
+
+
+순서반대 로 할려면
+return a+b;
+
+[20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+</code></pre>
+
+<blockquote>
+<p>Example 3</p>
+</blockquote>
+
+<pre><code>
+function sortNumber(a,b){
+// 비교 대상인 a와 b가 인자로 전달된다.
+//alert('a :'+a+', b:'+b);
+// a에서 b를 뺀 결과가 음수면 a가 b보다 작고, 0이면 같다.
+// sort메소드는 return 값이 음수,양수,0인지에 따라서 순서를 정한다.
+return a-b;
+}
+var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+alert(numbers.sort(sortNumber)); // array, [1,2,3,4,5,6,7,8,9,10,20]
+
+
+</code></pre>
+
+<blockquote>
+<p>Description from others</p>
+</blockquote>
+
+<pre><code>
+위의 sort함수를 보면 parameter로 function이 올수 있다은건 이 문서를 보고 알수 있습니다.
+그런데 sort함수 parameter인 function의 parameter와 retrun에 대한 설명(?)은 어떻게 알수 있나요??
+
+예를들어서
+var numbers = [20, 10, 9,8,7,6,5,4,3,2,1]; 
+function sortNumber(a,b){
+return a - b;
+}
+
+이럴때, sortNumber함수(내가 만들려는 함수 )의 파라미터가 2개 (a,b)인건 어찌 알수있고, 
+return함수가 어떻게 동작하는지는 어떻게 알수 있을까요?
+
+
+</code></pre>
+
+<blockquote>
+<p>Description from others</p>
+</blockquote>
+
+<pre><code class="language-js">
+우선 [20, 10, 9,8,7,6,5,4,3,2,1]의 배열에서 a-b라는 연산을 모두 한 다음 
+그 결과값으로 정렬하는 것이 결코 아닙니다.
+뭐하러 굳이 뺄셈을 하고 그 값으로 또 정렬하겠습니까? 
+
+자바스크립트의 정확한 알고리즘은 아니지만 
+쉽게 정렬 알고리즘을 설명하면 이렇습니다. 
+
+(a,b) 형식으로 지정한 두 인자를 차례로 비교합니다.
+
+우선 배열 numbers[0]과 numbers[1] 즉, 20과 10을 비교해 볼까요?
+20-10 = 10 
+결과값이 10 즉, 양수입니다.
+sort함수에 sortNumber(a,b)의 return 값으로 양수 10을 전달합니다. 
+그럼 sort함수가 양수값을 전달받고 배열의 순서를 바꾸어 버립니다. 
+(정확하게 말하면 두 배열 안에 든 값을 교체)
+그럼 배열이 [10, 20, 9,8,7,6,5,4,3,2,1] 이렇게 바뀝니다. 
+
+그 다음 numbers[0]과 numbers[2] 즉 10과 9를 비교합니다. 10 - 9 = 1 &gt;0, 양수입니다. 
+결과값이 양수이므로 또 10과 9의 순서를 바꿉니다. 
+이런 식으로 계속 두 인자를 비교해서 결과값이 양수가 나오면 순서를 바꾸고, 
+음수가 나오면 순서를 그대로 유지하는 겁니다.
+
+배열이 바뀌어가는 순서를 보면 이해하기 쉽습니다.
+
+[(20), (10), 9,8,7,6,5,4,3,2,1] 20-10 = 10, 즉 양수이므로 순서바뀜! ()는 비교되는 인자값.
+[(10), 20, (9),8,7,6,5,4,3,2,1] 10 - 9 = 1 또 양수, 순서 바뀜.
+[(9), 20, 10, (8),7,6,5,4,3,2,1] 반복...
+[(8), 20, 10, 9,(7)...]
+...
+[(2). 20, 10...3, (1)]
+[(1), 20, 10...]
+
+그럼 배열 내에서 가장 작은 값 1이 찾아지겠죠. 
+
+[1, 20, 10, 9,8,7,6,5,4,3,2]
+
+1의 순서는 바뀌지 않습니다. 1-2 = -1 
+즉 결과값이 음수이기 때문이죠. 
+
+그 다음은 두번째 배열 차례입니다.
+20 - 10 = 10 &gt; 0 이므로 순서를 또 바꿉니다. 
+
+[1, (20), (10), 9,8,7,6,5,4,3,2]
+[1, (10), 20, (9), 8...]
+[1, (9), 20, 10, (8)...]
+
+이런 식으로 반복하다 보면 두번째로 작은 값 2도 찾게 됩니다. 
+
+....
+
+[1, 2, 20, 10, 9,8,7,6,5,4,3]
+
+그럼 다음은 세번째... 
+이렇게 지루하게 반복하면 결국 정렬이 됩니다.
+
+물론 실제 자바스크립트에서는 비교하는 순서가 다릅니다. 
+다른 알고리즘을 쓰기 때문이죠.
+
+이렇게 차례차례 비교해 나가면 인간이 이해하기는 쉽지만 
+연산량이 기하급수적으로 늘어나기 때문에 다른 정렬 알고리즘을 쓰는 것이죠.
+
+실제로는 
+[20, 10, 9,8,7,6,5,4,3,2,1]
+배열의 양쪽 끝부터 비교하고 (20, 1), 
+그 다음 배열의 가운데 값을 차례로 비교해 나갑니다. (1,6)
+디버깅해 보시면 쉽게 아실 수 있을 겁니다
+</code></pre>
+
+<blockquote>
+<p>Description from others</p>
+</blockquote>
+
+<pre><code class="language-js">ar numbers = [20, 10, 9,8,7,6,5,4,3,2,1]; 
+function sortNumber(a,b){
+return a - b;
+}
+를 하게 되면 모든 값들끼리 a - b를 하게 됩니다. 
+
+그렇게 나온 값들을 sort()에 넣으면, (a - b)의 순서가 숫자가 낮은 것부터 높은 순서대로 정렬이 되겠죠.
+-19(1 - 20), -9(1-10), -8(1-9), -7(1-8), -6(1-7), -5(1-6), -4(1-5), -3(1-4), -2(1-3), -1(1-2)
+-18(2-20), -8(2-10), -7(2-9), -6(2-8), -5(2-7), -4(2-6), -3(2-5), -2(2-4), -1(2-3), 0(2-2), 1(2-1)
+-17(3-20), -7(3-10), -6(3-9), -5(3-8), -4(3-7), -3(3-6), -2(3-5), -1(3-4), 0(3-3), 1(3-2), 2(3-1)
+...
+10(20-10), 11(20-9), 12(20-8), 13(20-7), 14(20-6), 15(20-5), 16(20-4), 17(20-3), 18(20-2), 19(20-1)
+
+그럼 계산된 숫자의 크기에 따라서 a와 b의 순서가 sort()에 의해 재배열 되어
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20
+가 나옵니다.
+
+</code></pre>
+
+<h2 id="every-와-some">every() 와 some()</h2>
+
+<h4 id="1-every">1.every()</h4>
+
+<blockquote>
+<p>array.every(callbackFunction(currentValue, index, array), thisArg)</p>
+</blockquote>
+
+<ul>
+<li><p>every 함수는 배열의 모든 요소가 callbackFunction 에서 true를 리턴해야 true를 리턴, 하나라도 false가 떨어지면 false를 리턴합니다.</p></li>
+
+<li><p>every나 some 함수의 경우 배열내 값이 존재하는지 확인할때나 조건에 맞는(혹은 맞지 않는) 값이 있는지 확인 할 때 등 활용이 가능합니다.</p></li>
+</ul>
+
+<h4 id="2-some">2.some()</h4>
+
+<blockquote>
+<p>array.some(callbackFunction(currentValue, index, array), thisArg)</p>
+</blockquote>
+
+<ul>
+<li><p>some 함수는 배열의 요소 중 하나라도 callbackFunction에서 true를 리턴하면 true를 리턴 합니다.</p></li>
+
+<li><p>every나 some 함수의 경우 배열내 값이 존재하는지 확인할때나 조건에 맞는(혹은 맞지 않는) 값이 있는지 확인 할 때 등 활용이 가능합니다.</p></li>
+
+<li><p>every 와 some 의 차이점</p></li>
+</ul>
+
+<blockquote>
+<p>every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다</p>
+</blockquote>
+
+<h2 id="toc_19">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+
+<h2 id="2-dom">2. Dom</h2>
+
+<h2 id="e-target-이란">e.target 이란 ?</h2>
+
+<ul>
+<li>event.target 와 event.target.parentNode 차이점</li>
+</ul>
+
+<pre><code class="language-js">
+* e.target === 클릭된애
+* e.target.parentNode === 클릭된애 부모태그 
+* e.target.parentNode.parentNode === 클릭된애 부모의 부모태그
+
+</code></pre>
+
+<ul>
+<li>event.target 과 currentTarget 의 차이점</li>
+</ul>
+
+<pre><code class="language-js">
+* event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고
+* event.currentTarget 은 addEventListener 를발생시키는 대상 
+
+</code></pre>
+
+<h2 id="how-to-check-if-element-has-any-children">How to check if element has any children ?</h2>
+
+<pre><code class="language-js">
+if (element.firstChild) {
+    // It has at least one
+}
+
+if (element.hasChildNodes()) {
+    // It has at least one
+}
+
+if (element.childNodes.length &gt; 0) { // Or just `if (element.childNodes.length)`
+    // It has at least one
+}
+
+if (element.children.length &gt; 0) { // Or just `if (element.children.length)`
+    // It has at least one element as a child
+}
+
+if (element.firstElementChild) {
+    // It has at least one element as a child
+}
+
+var hasChildElements, child;
+hasChildElements = false;
+for (child = element.firstChild; child; child = child.nextSibling) {
+    if (child.nodeType == 1) { // 1 == Element
+        hasChildElements = true;
+        break;
+    }
+}
+
+function hasChildElement(elm) {
+    var child, rv;
+
+    if (elm.children) {
+        // Supports `children`
+        rv = elm.children.length !== 0;
+    } else {
+        // The hard way...
+        rv = false;
+        for (child = element.firstChild; !rv &amp;&amp; child; child = child.nextSibling) {
+            if (child.nodeType == 1) { // 1 == Element
+                rv = true;
+            }
+        }
+    }
+    return rv;
+}
+
+
+
+
+</code></pre>
+
+<h2 id="checkbox-안에-있는-value-값-얻기">checkbox 안에 있는 value 값 얻기</h2>
+
+<ul>
+<li>html</li>
+</ul>
+
+<pre><code class="language-html">
+
+&lt;div class = &quot;container&quot;&gt;
+    
+    &lt;input type=&quot;checkbox&quot; class =&quot;checks&quot; value =&quot;뜨거워&quot;&gt; hot
+    &lt;input type=&quot;checkbox&quot; class =&quot;checks&quot; value =&quot;추워&quot;&gt; clod
+    &lt;a href=&quot;#&quot; onclick=&quot;submitFun();return false;&quot;&gt;ok &lt;/a&gt;
+
+&lt;/div&gt;
+
+</code></pre>
+
+<ul>
+<li>js</li>
+</ul>
+
+<pre><code class="language-js">
+
+
+	function submitFun() {
+		
+
+		var checks = document.getElementsByClassName('checks')
+		var str = &quot;&quot;;
+		
+
+		for (let i = 0; i &lt; checks.length; i++ ){
+
+			if (checks[i].checked === true ) {
+ 				str += checks[i].value + &quot;&quot;;
+ 			}
+ 		}
+ 		alert(str);
+	}
+
+</code></pre>
+
+<h2 id="toc_24">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+
+<h2 id="3-my-post">3. My_post</h2>
+
+<h2 id="피보나치-수열-이란">피보나치 수열 이란?</h2>
+
+<blockquote>
+<p>n 번째의 피보나치 수열에 숫자출력하는 fib(n) 함수만들기</p>
+</blockquote>
+
+<pre><code class="language-js">
+
+// 0 1 1 2 3 5 8 13 21 34 ......
+// 점화식표현은 ==&gt; f(n) = f(n-1) + f(n-2)  
+
+// 5번째 숫자는? = f(n-1) + f(n-2)  
+// n = 5 
+// 5-1 = 4  네번째 피보나치 수열에 있는 3은  숫자와 5-2 = 3 세번째 피보나치 에 있는 숫자 2 를 더한값이 된다. 
+
+
+
+function fib(n) {    // n = 10 
+    if (n &lt;= 1) {    // 만약 n 이 0 과 1 이라면 
+        return n;    // 그것을 그냥 바로 출력해라 
+    } else {         // 만약 그게 아니라면 
+        return fib(n-2) + fib(n-1);  //  피보나치 수열에 8번째수와  + 9번째 수의 합을 리턴한다.  그럼 8번째 있는 수는 21 이고 9번째 있는 수는 34 이기 때문에 더한 값은 55가 된다. 
+
+    }
+}
+
+fib(10) // ==&gt; 55
+
+
+function fib(n) {
+ 
+	if (n === 0 ) { // n 이 0 이면 0을 출력하고 그만  
+	return 0;      
+	}
+	if (n === 1 ) { // n 이 1 이면 1을 출력하고 그만 
+	return 1;
+}
+
+
+return fib(n-1) + fib(n-2) 
+	
+}
+
+
+
+
+</code></pre>
+
+<blockquote>
+<p>20번째 까지 피보나치 수열을 출력하는 fib(n) 함수 만들기</p>
+</blockquote>
+
+<pre><code class="language-js">
+
+function fib(n) {
+    if ( n &lt;= 1 ) {
+        return n;
+    } else {
+        return fib(n - 1) + fib(n - 2);
+    }
+}
+
+let  tmp = '';
+
+for(let i = 0; i &lt; 20; i++){ // 20번째 까지 
+    tmp += fib(i) + &quot; &quot; 
+}
+
+
+</code></pre>
+
+<blockquote>
+<p>함수사용해서 피보나치 수열 만들기</p>
+</blockquote>
+
+<pre><code class="language-js">
+
+
+
+
+function fibonacci(num){
+    var a = 1 
+	  var b = 0
+	  var temp;
+	  
+	  for(var i = num; i &gt;= 1; i--){
+            temp = a;
+            a = a + b;
+            b = temp;
+            
+			if(i === 1) {
+			console.log(b);
+            }	else {
+			console.log(b);
+      			
+   		 }
+        }
+}
+
+</code></pre>
+
+<blockquote>
+<p>for 문을 사용해서 피보나치 수열 만들기</p>
+</blockquote>
+
+<pre><code class="language-js">
+
+
+var num = 15;  // 몇번째까지 
+var a = 1, b = 0, temp;
+
+document.write(b + &quot;, &quot;);
+
+for(var i = num; i &gt;= 1; i--){
+temp = a;
+a = a + b;
+b = temp;
+if(i == 1) {
+document.write(b);
+} else {
+document.write(b + &quot;, &quot;);
+}
+}
+
+</code></pre>
+
+<h2 id="foreach-for-of-for-in-의-차이">forEach, for of, for in 의 차이</h2>
+
+<blockquote>
+<p>basic for문과 for in은 반복변수에 index를 리턴하지만</p>
+
+<p>forEach 와 for of 는 해당 값을 리턴하기 때문이죠.</p>
+</blockquote>
+
+<pre><code class="language-js">
+const array = ['가','나','다','라'];
+
+// for
+for(let i=0; i&lt;array.length; i++){
+  console.log(array[i]);
+}
+
+// 가 나 다 라 
+
+
+ 
+//forEach
+array.forEach(function(j){
+  console.log(array[j]);
+});
+ 
+// console.log(array[j]) 
+// undefined
+ 
+// console.log(j) 
+// 가 나 다 라
+ 
+ 
+ 
+ 
+// for of 
+for (let k of array){
+  console.log(array[k]);
+}
+ 
+// console.log(array[k]) 
+// undefined
+ 
+// console.log(k) 
+// 가 나 다 라
+ 
+ 
+ 
+ 
+ // for in
+for (let z in array){
+  console.log(array[z]);
+}
+
+// 가 나 다 라
+
+
+
+</code></pre>
+
+<h2 id="falsy-와-fruthy-구별">Falsy 와 Fruthy 구별</h2>
+
+<pre><code class="language-js">
+undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
+(NaN : Not a Number)
+
+/위에 적힌 데이터가 아닌 모든 데이터는 trye로 취급(truthy)
+
+</code></pre>
+
+<h2 id="null-과-undefined-는-등록-저장-여부이다">null 과 undefined 는 등록, 저장 여부이다.</h2>
+
+<p><code>null</code> 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다.</p>
+
+<p><code>undefined</code> 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</p>
+
+<h2 id="toc_30">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+
+<h2 id="4-post-from-others">4. post from others</h2>
+
+          </div>
+
+          
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/javascript/">Javascript</a>
+  
+</div>
+
+
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Nov 26, 2019
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.11384ce0c8c15291681687fbc4e0b90a.js"></script>
+
+  </body>
+</html>
+
+

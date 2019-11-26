@@ -5,19 +5,17 @@ header:
   caption: ""
   image: ""
   
+# {{< list_categories >}}
 
 ---
 
 ### `I constantly learn new things. This is a repo to share those learnings`. 
 
-## Today I wrote
-
-> ### {{< list_categories >}}
 
 
 ## Today I learned
 
-> ### {{< list_tags >}}
+> ## {{< list_tags >}}
 
 
 

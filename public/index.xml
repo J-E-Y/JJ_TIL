@@ -36,137 +36,64 @@
     </item>
     
     <item>
-      <title>e.target 와 e.target.parentNode or currentTarget의 차이점 </title>
-      <link>/post/e-target-e-target-parentnode-or-currenttarget/</link>
-      <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
+      <title>JS_Post</title>
+      <link>/tutorial/js-post/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/e-target-e-target-parentnode-or-currenttarget/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;event.target 와 event.target.parentNode 차이점&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-* e.target === 클릭된애
-* e.target.parentNode === 클릭된애 부모태그 
-* e.target.parentNode.parentNode === 클릭된애 부모의 부모태그
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;event.target 과 currentTarget 의 차이점&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-* event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고
-* event.currentTarget 은 addEventListener 를발생시키는 대상 
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to convert a string of numbers to an array of numbers?</title>
-      <link>/post/how-to-convert-a-string-of-numbers-to-an-array-of-numbers/</link>
-      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/how-to-convert-a-string-of-numbers-to-an-array-of-numbers/</guid>
+      <guid>/tutorial/js-post/</guid>
       <description>
 
-&lt;h3 id=&#34;qeustion&#34;&gt;Qeustion&lt;/h3&gt;
+&lt;h2 id=&#34;1-javacript&#34;&gt;1.Javacript&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var a = &amp;quot;1,2,3,4&amp;quot;;
-var b = a.split(&#39;,&#39;);
-/// [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;]
+&lt;h2 id=&#34;salesteam-안에-있는-data-fliter-와-foreach-로-다루기&#34;&gt;salesTeam 안에 있는 data  fliter 와 foreach 로 다루기&lt;/h2&gt;
 
-// how to make this : [1, 2, 3, 4] 
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var salesTeam = [
+  {
+    &amp;quot;name&amp;quot;: {
+      &amp;quot;first&amp;quot;: &amp;quot;Bruce&amp;quot;,
+      &amp;quot;last&amp;quot;: &amp;quot;Wayne&amp;quot;
+    },
+    &amp;quot;age&amp;quot;: 10,
+    &amp;quot;sales&amp;quot;: &amp;quot;$2314&amp;quot;
+  },
+  {
+    &amp;quot;name&amp;quot;: {
+      &amp;quot;first&amp;quot;: &amp;quot;Alvaro&amp;quot;,
+      &amp;quot;last&amp;quot;: &amp;quot;Angelos&amp;quot;
+    },
+    &amp;quot;age&amp;quot;: 55,
+    &amp;quot;sales&amp;quot;: &amp;quot;$1668&amp;quot;
+  },
+  {
+    &amp;quot;name&amp;quot;: {
+      &amp;quot;first&amp;quot;: &amp;quot;Alvaro&amp;quot;,
+      &amp;quot;last&amp;quot;: &amp;quot;Angelos&amp;quot;
+    },
+    &amp;quot;age&amp;quot;: 15,
+    &amp;quot;sales&amp;quot;: &amp;quot;$1668&amp;quot;
+  }
+];
+
+
+// age 가 20 아래인 것만 teenager 에 담기 
+// filter 사용
+
+let teenager = salesTeam.filter(function(ele){
+    return ele.age &amp;lt; 20;
+  });
+
+// 뽑은거 안에서 fullNmae 가져오기
+// foreach 사용
+
+  let result = [];
+  teenager.forEach(function(ele){
+    result.push(`${ele.name.first} ${ele.name.last}`); // 
+  });
+
+
+
 
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;soultion&#34;&gt;Soultion&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;useing Array.map to convert each element into a number.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var a = &amp;quot;1,2,3,4&amp;quot;;
-
-var b = a.split(&#39;,&#39;).map(function(item) {
-    return parseInt(item, 10);
-});
-
-// b = [1, 2, 3, 4] 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;useing Map and Number&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var b = a.split(&#39;,&#39;).map(Number);
-
-// b = [1, 2, 3, 4] 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;useing from()&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-var b = Array.from(a.split(&#39;,&#39;),Number);
-
-// b = [1, 2, 3, 4]
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>every() 와 some()</title>
-      <link>/post/every-some/</link>
-      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/every-some/</guid>
-      <description>
-
-&lt;h2 id=&#34;1-every&#34;&gt;1.every()&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;array.every(callbackFunction(currentValue, index, array), thisArg)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;every 함수는 배열의 모든 요소가 callbackFunction 에서 true를 리턴해야 true를 리턴, 하나라도 false가 떨어지면 false를 리턴합니다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;every나 some 함수의 경우 배열내 값이 존재하는지 확인할때나 조건에 맞는(혹은 맞지 않는) 값이 있는지 확인 할 때 등 활용이 가능합니다.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;2-some&#34;&gt;2.some()&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;array.some(callbackFunction(currentValue, index, array), thisArg)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;some 함수는 배열의 요소 중 하나라도 callbackFunction에서 true를 리턴하면 true를 리턴 합니다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;every나 some 함수의 경우 배열내 값이 존재하는지 확인할때나 조건에 맞는(혹은 맞지 않는) 값이 있는지 확인 할 때 등 활용이 가능합니다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;every 와 some 의 차이점&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>reduce()</title>
-      <link>/post/javascript-reduce/</link>
-      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/javascript-reduce/</guid>
-      <description>
 
 &lt;h3 id=&#34;reduce&#34;&gt;reduce()&lt;/h3&gt;
 
@@ -345,208 +272,123 @@ users.reduce(makeAddressBook, {} );
 */
 
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>checkbox 안에 있는 value 값 얻기</title>
-      <link>/post/javacript-checkbox-value/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/javacript-checkbox-value/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;html&lt;/li&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Using the reduce() method, how would you sum up the population of every country&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;data&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-
-&amp;lt;div class = &amp;quot;container&amp;quot;&amp;gt;
-    
-    &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;뜨거워&amp;quot;&amp;gt; hot
-    &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;추워&amp;quot;&amp;gt; clod
-    &amp;lt;a href=&amp;quot;#&amp;quot; onclick=&amp;quot;submitFun();return false;&amp;quot;&amp;gt;ok &amp;lt;/a&amp;gt;
-
-&amp;lt;/div&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let data = [
+  {
+    country: &#39;China&#39;,
+    pop: 1409517397,
+  },
+  {
+    country: &#39;India&#39;,
+    pop: 1339180127,
+  },
+  {
+    country: &#39;USA&#39;,
+    pop: 324459463,
+  },
+  {
+    country: &#39;Indonesia&#39;,
+    pop: 263991379,
+  }
+]
 
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;js&lt;/li&gt;
+&lt;li&gt;Soultion&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
 
-	function submitFun() {
+let sum = data.reduce(function(acc,val){
+	
+	return acc + val.pop;
 		
+	},0);
+	
+//1409517397 +1339180127 + 324459463 + 263991379 = 3337148366
 
-		var checks = document.getElementsByClassName(&#39;checks&#39;)
-		var str = &amp;quot;&amp;quot;;
-		
-
-		for (let i = 0; i &amp;lt; checks.length; i++ ){
-
-			if (checks[i].checked === true ) {
- 				str += checks[i].value + &amp;quot;&amp;quot;;
- 			}
- 		}
- 		alert(str);
-	}
-
+// sum // 3337148366
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to check if element has any children in Javascript?</title>
-      <link>/post/how-to-check-if-element-has-any-children-in-javascript/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/how-to-check-if-element-has-any-children-in-javascript/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-if (element.firstChild) {
-    // It has at least one
-}
 
-if (element.hasChildNodes()) {
-    // It has at least one
-}
-
-if (element.childNodes.length &amp;gt; 0) { // Or just `if (element.childNodes.length)`
-    // It has at least one
-}
-
-if (element.children.length &amp;gt; 0) { // Or just `if (element.children.length)`
-    // It has at least one element as a child
-}
-
-if (element.firstElementChild) {
-    // It has at least one element as a child
-}
-
-var hasChildElements, child;
-hasChildElements = false;
-for (child = element.firstChild; child; child = child.nextSibling) {
-    if (child.nodeType == 1) { // 1 == Element
-        hasChildElements = true;
-        break;
-    }
-}
-
-function hasChildElement(elm) {
-    var child, rv;
-
-    if (elm.children) {
-        // Supports `children`
-        rv = elm.children.length !== 0;
-    } else {
-        // The hard way...
-        rv = false;
-        for (child = element.firstChild; !rv &amp;amp;&amp;amp; child; child = child.nextSibling) {
-            if (child.nodeType == 1) { // 1 == Element
-                rv = true;
-            }
-        }
-    }
-    return rv;
-}
-
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>data fliter 와 foreach 로 다루기 </title>
-      <link>/post/data-fliter-foreach/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/data-fliter-foreach/</guid>
-      <description>
-
-&lt;h2 id=&#34;salesteam-안에-있는-data-fliter-와-foreach-로-다루기&#34;&gt;salesTeam 안에 있는 data  fliter 와 foreach 로 다루기&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var salesTeam = [
-  {
-    &amp;quot;name&amp;quot;: {
-      &amp;quot;first&amp;quot;: &amp;quot;Bruce&amp;quot;,
-      &amp;quot;last&amp;quot;: &amp;quot;Wayne&amp;quot;
-    },
-    &amp;quot;age&amp;quot;: 10,
-    &amp;quot;sales&amp;quot;: &amp;quot;$2314&amp;quot;
-  },
-  {
-    &amp;quot;name&amp;quot;: {
-      &amp;quot;first&amp;quot;: &amp;quot;Alvaro&amp;quot;,
-      &amp;quot;last&amp;quot;: &amp;quot;Angelos&amp;quot;
-    },
-    &amp;quot;age&amp;quot;: 55,
-    &amp;quot;sales&amp;quot;: &amp;quot;$1668&amp;quot;
-  },
-  {
-    &amp;quot;name&amp;quot;: {
-      &amp;quot;first&amp;quot;: &amp;quot;Alvaro&amp;quot;,
-      &amp;quot;last&amp;quot;: &amp;quot;Angelos&amp;quot;
-    },
-    &amp;quot;age&amp;quot;: 15,
-    &amp;quot;sales&amp;quot;: &amp;quot;$1668&amp;quot;
-  }
-];
-
-
-// age 가 20 아래인 것만 teenager 에 담기 
-// filter 사용
-
-let teenager = salesTeam.filter(function(ele){
-    return ele.age &amp;lt; 20;
-  });
-
-// 뽑은거 안에서 fullNmae 가져오기
-// foreach 사용
-
-  let result = [];
-  teenager.forEach(function(ele){
-    result.push(`${ele.name.first} ${ele.name.last}`); // 
-  });
-
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>falsy 와 trythy</title>
-      <link>/post/falsy-trythy/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/falsy-trythy/</guid>
-      <description>
-
-&lt;h2 id=&#34;falsy-와-fruthy-구별&#34;&gt;Falsy 와 Fruthy 구별&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;except China?&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
-(NaN : Not a Number)
+let sum = data.reduce((acc, val) =&amp;gt; {
+  return val.country == &#39;China&#39; ? acc : acc + val.pop;
+}, 0);
 
-/위에 적힌 데이터가 아닌 모든 데이터는 trye로 취급(truthy)
+
+//sum = 1927630969
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;how-to-convert-a-str-of-nums-to-an-arr-of-nums&#34;&gt;How to convert a str of nums to an arr of nums?&lt;/h2&gt;
+
+&lt;h4 id=&#34;qeustion&#34;&gt;Qeustion&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;str = &amp;ldquo;1,2,3,4&amp;rdquo; =&amp;gt;  [1, 2, 3, 4]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+ 
+var a = &amp;quot;1,2,3,4&amp;quot;;
+var b = a.split(&#39;,&#39;);
+/// [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;]
+
+// how to make this : [1, 2, 3, 4] 
 
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>forEach(), map(), fliter()</title>
-      <link>/post/array-method/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/array-method/</guid>
-      <description>
 
-&lt;h3 id=&#34;1-foreach&#34;&gt;1. forEach()&lt;/h3&gt;
+&lt;h4 id=&#34;soultion&#34;&gt;Soultion&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;useing Array.map to convert each element into a number.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var a = &amp;quot;1,2,3,4&amp;quot;;
+
+var b = a.split(&#39;,&#39;).map(function(item) {
+    return parseInt(item, 10);
+});
+
+// b = [1, 2, 3, 4] 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;useing Map and Number&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var b = a.split(&#39;,&#39;).map(Number);
+
+// b = [1, 2, 3, 4] 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;useing from()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var b = Array.from(a.split(&#39;,&#39;),Number);
+
+// b = [1, 2, 3, 4]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;foreach-map-fliter&#34;&gt;forEach(), map(), fliter()&lt;/h2&gt;
+
+&lt;h4 id=&#34;1-foreach&#34;&gt;1. forEach()&lt;/h4&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;array.forEach (callback(callbackFunction(element, index, array)&lt;/p&gt;
@@ -558,7 +400,7 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 &lt;li&gt;&lt;p&gt;리턴값 없다&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;ex&#34;&gt;ex)&lt;/h4&gt;
+&lt;h4 id=&#34;ex-1&#34;&gt;ex)&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;forEach 로 배열의 합 구하기&lt;/li&gt;
@@ -579,7 +421,7 @@ test()  // 15
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;2-map&#34;&gt;2.map()&lt;/h3&gt;
+&lt;h4 id=&#34;2-map&#34;&gt;2.map()&lt;/h4&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;array.map(callbackFunction(element, index, array)&lt;/p&gt;
@@ -593,7 +435,7 @@ test()  // 15
 &lt;li&gt;&lt;p&gt;리턴값 있다.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;ex-1&#34;&gt;ex)&lt;/h4&gt;
+&lt;h4 id=&#34;ex-2&#34;&gt;ex)&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;for 문으로 name 값 가져오기&lt;/li&gt;
@@ -646,7 +488,7 @@ users.map(getName); // [&amp;quot;john&amp;quot;, &amp;quot;tim&amp;quot;, &amp;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;3-fliter&#34;&gt;3.fliter()&lt;/h3&gt;
+&lt;h4 id=&#34;3-fliter&#34;&gt;3.fliter()&lt;/h4&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;array.fliter(callbackFunction(element, index, array)&lt;/p&gt;
@@ -705,101 +547,8 @@ function userIncludeS (user){
 users.filter(userIncludeS) // [{name:&amp;quot;esther&amp;quot;,age : 60 }];
 
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>forEach, for of, for in 의 차이</title>
-      <link>/post/javascript-foreach-for-of-for-in/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/javascript-foreach-for-of-for-in/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;basic for문과 for in은 반복변수에 index를 리턴하지만&lt;/p&gt;
 
-&lt;p&gt;forEach 와 for of 는 해당 값을 리턴하기 때문이죠.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-const array = [&#39;가&#39;,&#39;나&#39;,&#39;다&#39;,&#39;라&#39;];
-
-// for
-for(let i=0; i&amp;lt;array.length; i++){
-  console.log(array[i]);
-}
-
-// 가 나 다 라 
-
-
- 
-//forEach
-array.forEach(function(j){
-  console.log(array[j]);
-});
- 
-// console.log(array[j]) 
-// undefined
- 
-// console.log(j) 
-// 가 나 다 라
- 
- 
- 
- 
-// for of 
-for (let k of array){
-  console.log(array[k]);
-}
- 
-// console.log(array[k]) 
-// undefined
- 
-// console.log(k) 
-// 가 나 다 라
- 
- 
- 
- 
- // for in
-for (let z in array){
-  console.log(array[z]);
-}
-
-// 가 나 다 라
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>nll 과 undefined 의 차이점</title>
-      <link>/post/2019-11-20-unll-undefined/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019-11-20-unll-undefined/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;h2 id=&#34;null-과-undefined-는-등록-저장-여부이다&#34;&gt;null 과 undefined 는 등록, 저장 여부이다.&lt;/h2&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;code&gt;null&lt;/code&gt; 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;undefined&lt;/code&gt; 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>sort()</title>
-      <link>/post/sort/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/sort/</guid>
-      <description>
-
-&lt;h2 id=&#34;sort&#34;&gt;sort&lt;/h2&gt;
+&lt;h2 id=&#34;sort&#34;&gt;sort()&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;arr.sort(sortfunc)&lt;/strong&gt;&lt;/p&gt;
 
@@ -1017,16 +766,167 @@ return a - b;
 가 나옵니다.
 
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
+
+&lt;h2 id=&#34;every-와-some&#34;&gt;every() 와 some()&lt;/h2&gt;
+
+&lt;h4 id=&#34;1-every&#34;&gt;1.every()&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;array.every(callbackFunction(currentValue, index, array), thisArg)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;every 함수는 배열의 모든 요소가 callbackFunction 에서 true를 리턴해야 true를 리턴, 하나라도 false가 떨어지면 false를 리턴합니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;every나 some 함수의 경우 배열내 값이 존재하는지 확인할때나 조건에 맞는(혹은 맞지 않는) 값이 있는지 확인 할 때 등 활용이 가능합니다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;2-some&#34;&gt;2.some()&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;array.some(callbackFunction(currentValue, index, array), thisArg)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;some 함수는 배열의 요소 중 하나라도 callbackFunction에서 true를 리턴하면 true를 리턴 합니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;every나 some 함수의 경우 배열내 값이 존재하는지 확인할때나 조건에 맞는(혹은 맞지 않는) 값이 있는지 확인 할 때 등 활용이 가능합니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;every 와 some 의 차이점&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;toc_19&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+
+&lt;h2 id=&#34;2-dom&#34;&gt;2. Dom&lt;/h2&gt;
+
+&lt;h2 id=&#34;e-target-이란&#34;&gt;e.target 이란 ?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;event.target 와 event.target.parentNode 차이점&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+* e.target === 클릭된애
+* e.target.parentNode === 클릭된애 부모태그 
+* e.target.parentNode.parentNode === 클릭된애 부모의 부모태그
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;event.target 과 currentTarget 의 차이점&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+* event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고
+* event.currentTarget 은 addEventListener 를발생시키는 대상 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;how-to-check-if-element-has-any-children&#34;&gt;How to check if element has any children ?&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+if (element.firstChild) {
+    // It has at least one
+}
+
+if (element.hasChildNodes()) {
+    // It has at least one
+}
+
+if (element.childNodes.length &amp;gt; 0) { // Or just `if (element.childNodes.length)`
+    // It has at least one
+}
+
+if (element.children.length &amp;gt; 0) { // Or just `if (element.children.length)`
+    // It has at least one element as a child
+}
+
+if (element.firstElementChild) {
+    // It has at least one element as a child
+}
+
+var hasChildElements, child;
+hasChildElements = false;
+for (child = element.firstChild; child; child = child.nextSibling) {
+    if (child.nodeType == 1) { // 1 == Element
+        hasChildElements = true;
+        break;
+    }
+}
+
+function hasChildElement(elm) {
+    var child, rv;
+
+    if (elm.children) {
+        // Supports `children`
+        rv = elm.children.length !== 0;
+    } else {
+        // The hard way...
+        rv = false;
+        for (child = element.firstChild; !rv &amp;amp;&amp;amp; child; child = child.nextSibling) {
+            if (child.nodeType == 1) { // 1 == Element
+                rv = true;
+            }
+        }
+    }
+    return rv;
+}
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;checkbox-안에-있는-value-값-얻기&#34;&gt;checkbox 안에 있는 value 값 얻기&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;html&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div class = &amp;quot;container&amp;quot;&amp;gt;
     
-    <item>
-      <title>피보나치 수열</title>
-      <link>/post/2019-11-20-/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019-11-20-/</guid>
-      <description>
+    &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;뜨거워&amp;quot;&amp;gt; hot
+    &amp;lt;input type=&amp;quot;checkbox&amp;quot; class =&amp;quot;checks&amp;quot; value =&amp;quot;추워&amp;quot;&amp;gt; clod
+    &amp;lt;a href=&amp;quot;#&amp;quot; onclick=&amp;quot;submitFun();return false;&amp;quot;&amp;gt;ok &amp;lt;/a&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;js&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+
+	function submitFun() {
+		
+
+		var checks = document.getElementsByClassName(&#39;checks&#39;)
+		var str = &amp;quot;&amp;quot;;
+		
+
+		for (let i = 0; i &amp;lt; checks.length; i++ ){
+
+			if (checks[i].checked === true ) {
+ 				str += checks[i].value + &amp;quot;&amp;quot;;
+ 			}
+ 		}
+ 		alert(str);
+	}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;toc_24&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+
+&lt;h2 id=&#34;3-my-post&#34;&gt;3. My_post&lt;/h2&gt;
 
 &lt;h2 id=&#34;피보나치-수열-이란&#34;&gt;피보나치 수열 이란?&lt;/h2&gt;
 
@@ -1153,6 +1053,85 @@ document.write(b + &amp;quot;, &amp;quot;);
 }
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;foreach-for-of-for-in-의-차이&#34;&gt;forEach, for of, for in 의 차이&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;basic for문과 for in은 반복변수에 index를 리턴하지만&lt;/p&gt;
+
+&lt;p&gt;forEach 와 for of 는 해당 값을 리턴하기 때문이죠.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+const array = [&#39;가&#39;,&#39;나&#39;,&#39;다&#39;,&#39;라&#39;];
+
+// for
+for(let i=0; i&amp;lt;array.length; i++){
+  console.log(array[i]);
+}
+
+// 가 나 다 라 
+
+
+ 
+//forEach
+array.forEach(function(j){
+  console.log(array[j]);
+});
+ 
+// console.log(array[j]) 
+// undefined
+ 
+// console.log(j) 
+// 가 나 다 라
+ 
+ 
+ 
+ 
+// for of 
+for (let k of array){
+  console.log(array[k]);
+}
+ 
+// console.log(array[k]) 
+// undefined
+ 
+// console.log(k) 
+// 가 나 다 라
+ 
+ 
+ 
+ 
+ // for in
+for (let z in array){
+  console.log(array[z]);
+}
+
+// 가 나 다 라
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;falsy-와-fruthy-구별&#34;&gt;Falsy 와 Fruthy 구별&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
+(NaN : Not a Number)
+
+/위에 적힌 데이터가 아닌 모든 데이터는 trye로 취급(truthy)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;null-과-undefined-는-등록-저장-여부이다&#34;&gt;null 과 undefined 는 등록, 저장 여부이다.&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;null&lt;/code&gt; 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;undefined&lt;/code&gt; 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_30&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+
+&lt;h2 id=&#34;4-post-from-others&#34;&gt;4. post from others&lt;/h2&gt;
 </description>
     </item>
     
