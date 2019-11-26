@@ -13,16 +13,190 @@ type: docs
 summary: 'write here:rocket:' 
 ---
 
+## 1.Command Line
 
 
-__
-## new Learning
-__
+## ls
+
+* 파일보기 
+
+## ls -A
+
+* 숨겨진 파일까지 보기
+
+## ls -al
+
+* 상세 내용
+
+```js
+// (1)         (2)(3)   (4)      (5) (6)   (7)   (8)
+//drwxr-xr-x   2 root  wheel    64B 11  7 14:14 test/
 
 
----
-## branch 충돌 방지하기 
----
+//1접근 권한 (읽기/쓰기/실행 가능) 여부
+//2chmod 명령어
+//3링크된 파일 갯수
+//4소유자
+//5소유그룹
+//6파일 크기
+//7만든 날짜
+//8만든 시간
+//9파일/디렉토리 이름
+
+
+```
+
+## cd 디렉토리 이름 
+
+* 디렉토리로 이동( print working List )
+
+```js
+ myuser@mymachine:~$ `cd` Downloads
+
+```
+
+## cd- 
+
+* 뒤로가기 
+
+
+
+## pwd
+
+* 내가 어디있는지 확인
+
+```js
+// myuser@mymachine:~/Downloads$ pwd
+// showing that .. Users/myuser/Downloads
+```
+
+
+## touch [file_name]
+* 빈 파일 생성
+
+## mkdir [dir_name]
+
+* 디렉토리 생성
+
+## cat [file_name]
+
+* 텍스트 형태의 파일 확인
+
+## mv [file_or_dir] [target_dir]
+
+* 파일 및 디렉토리 옮기기
+
+
+## mv [file_or_dir] [new_name]
+
+* 파일 및 디렉토리 이름 바꾸기
+
+## cp [file] [target_dir] or cp -r [folder]
+
+* 복사
+
+
+## rm [filename] 
+
+* 파일 삭제
+* 휴지통에 들어가지 않음 
+
+## rm -r [dirname]
+
+* 폴더 삭제
+* 휴지통에 들어가지 않음 
+
+## rm -f [file or dirname];
+
+* `coution` 강제로 지우기 
+
+
+
+## ------------------------------------------------------------
+## 2.Version Control System
+
+## init
+
+> Create an empty Git repository or reinitialize an existing one
+
+## clone
+
+> Clone a repository into a new directory
+
+## add .
+
+
+> Add all file contents to the index
+
+
+## add 파일 이름 
+
+> one file add 
+
+```js
+git add jung.html
+
+```
+## commit -m ""
+
+> write message into github
+
+## remote add origin""
+
+> link local to github 
+
+```js
+Git remote add origin "https://github.com/J-E-Y/test_2.git"
+
+```
+
+## push
+
+
+```js
+// git push -u origin master  최종 깇허브에 올리기 
+// git push -u origin master  
+// git push -f origin master ( 강제로)
+
+```
+
+## log
+
+
+> 그동안 commit 한 내용을 볼수 있다.
+
+>enter 키를 치면 밑에 내용을 계속 볼수 있다.
+
+> log 파일을 나오려면 q  버튼을 누르면 된다. 
+
+
+
+
+
+## status
+
+
+* 현재 진행 상태 보기
+
+
+
+## config --global
+
+* 등록하기 
+
+```
+git config --global user.email "yourGitHub@email.com"
+git config --global user.name "yourGitHubusername"
+
+```
+
+
+
+
+
+
+## branch : 충돌 방지하기
+
 
 
 > merge 하는 중 출돌이 존재할수 있다. 
@@ -49,9 +223,7 @@ __
 
 > git push  로 마무리 
 
----
-## git : Branch
----
+## Branch
 
 
 ![](/tutorial/Git_files/Screen Shot 2019-09-24 at 3.19.15 PM.png)
@@ -113,12 +285,8 @@ __
 
 
 
+## 기존에 commit한 내용으로 되돌아 가기 
 
-
-
----
-## git : **기존에 commit한 내용으로 되돌아 가기 **
----
 
 > log 명령을 하고 
 
@@ -132,17 +300,11 @@ __
 
 
 ---
-## git :**log**
+## git :log
 ---
 
-> 그동안 commit 한 내용을 볼수 있다.
-
->enter 키를 치면 밑에 내용을 계속 볼수 있다.
-> log 파일을 나오려면 q  버튼을 누르면 된다. 
-
-
 ---
-## git :**commit -- amend**
+## git :commit -- amend
 ---
 
 > commit 명령을 잘못 넣으면  이명령어를 통해 수정할수 있다. 
@@ -161,10 +323,8 @@ __
 
 
 
+## cheakout--
 
----
-## git :**cheakout--**
----
 
 > add 한다음에 git status 명령을 하면  수정된 파일이 스테이지에 올라가게 된다. 
 
@@ -175,204 +335,14 @@ __
 
 
 
----
-## git :**reset**
----
+
+## reset
+
 
 > add 한 파일을 다시 되돌리기 
 
 
-__
-## new Learning 
-__
 
-
-
----
-## Git : **pwd**
----
-
-> print working Directory 
-
----
-## Git : **ls** 
----
-
-> print working List 
-
----
-## Git :**cd**
----
-
-> go back to beginning
-
----
-## Git :**cd -**
----
-
-> previous directory (or back)
-
----
-## Git :**init**
----
-
-> Create an empty Git repository or reinitialize an existing one
-
-
----
-## Git :**clone**
----
-
-> Clone a repository into a new directory
-
----
-## Git :**add .**
----
-
-> Add all file contents to the index
-
----
-## Git : **add**
----
-
-> one file add 
-
-```
-git add jung.html
-```
-
----
-## Git :**rm**
----
-
-> Remove files
-
----
-## Git :**rm -f**
----
-
-> Remove files and directory
-
----
-## Git :**mkdir**
----
->create directory 
-
-* ex
-```
-git mkdir jung
-
-```
-
----
-## Git :**touch**
----
-
-> create file 
-
-* ex
-```
-git touch jung.txt 
-```
-
----
-## Git :**commit -m ""**
----
-
-> write message into github
-
----
-## Git :**remote add origin""**
----
-
-> link local to github 
-
-```
-Git remote add origin "https://github.com/J-E-Y/test_2.git"
-
-```
-
----
-## Git : **Push**
----
-
-```
-git push -u origin master  최종 깇허브에 올리기 
-git push -u origin master  
-git push -f origin master ( 강제로)
-
-```
-
-
----
-## Git : **log**
----
-
-
-```
-git log  기록 업데이트한 기록 확인
-
-```
-
----
-## Git : **status**
----
-
-```
-git 현재 진행 상태 보기
-```
-
----
-## Git : **Add your github email and username to git**
----
-
-
-```
-git config --global user.email "yourGitHub@email.com"
-git config --global user.name "yourGitHubusername"
-
-```
-
-
----
-## Git : **branch**  
----
-
-```
-
-`기능 변경을 하고 싶을 때 생성 및 사용`
-
-
-기능 변경하기
-이미 돌아가고 있는 프로그램에서 기능을 바꾸고 싶은 일이 생길 수 있습니다. 그럴 때 어떻게 해야 하나요? 보통 초보 개발자들은 주석을 활용합니다. 돌아가고 있는 부분을 삭제하면 아까우니까 주석 처리하고 개발합니다. 시간이 지나면 코드가 엉망진창으로 짜장짬뽕 믹싱이 되는데 이런 코드를 스파게티 코드라고 하죠. 이런 상황을 막기 위해서 브랜치를 사용할 수 있습니다.
-
-
-```
----
-## Git : **merge**  
----
-
-```
-한 브랜치의 내용을 다른 브랜치에 반영 (통합)
-
-```
-
-
----
-## Git : **checkout**  
----
-
-```
-저장소에서 특정 커밋이나 브랜치로 돌아가고 싶을 때 사용
-```
-
----
-## Git : **diff**  
----
-
-```
-
-```
 
 
 
