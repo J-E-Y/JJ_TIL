@@ -45,6 +45,167 @@
 
 &lt;h2 id=&#34;1-javacript&#34;&gt;1.Javacript&lt;/h2&gt;
 
+&lt;h2 id=&#34;number-methods&#34;&gt;Number Methods&lt;/h2&gt;
+
+&lt;h4 id=&#34;1-number-isinteger&#34;&gt;1. Number.isInteger()&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;숫자가 인지 아닌지 확인&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;return : boolean&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+Number.isInteger(1) // ture;
+number.isInteget(&amp;quot;1&amp;quot;) // false;
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;2-number-parsefloat-parseint&#34;&gt;2. Number(), parseFloat(), parseInt()&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;문자열을 숫자로 바꾸는 함수&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+Number(&amp;quot;12,32&amp;quot;); // Nan 소수점이 있으면 반환 안된다. 
+
+parseInt(&amp;quot;123.2323&amp;quot;); // 123 소수점뒤에는 버린다. 
+parseFloat( &#39;12.34&#39; ) // 12.34 소수점까지 포함해서 숫자로 반환해준다.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;3-tofixed&#34;&gt;3. toFixed();&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;소수점이 길면 자르는 역활&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;반환값 : string&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let num = 123.2342323123231232312323123231232312323
+num.toFixed(3) //  &amp;quot;123.234&amp;quot; // string 으로 반환
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;math-methods&#34;&gt;Math Methods&lt;/h2&gt;
+
+&lt;h4 id=&#34;1-math-max-math-min&#34;&gt;1. Math.max() / Math.min()&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;가장 큰수 리턴&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+Math.max(2,3,2,4,52)
+
+// 52
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;가장 작은수 리턴&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;Math.min(2,3,2,4,52)
+
+// 2
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;2-floor&#34;&gt;2.floor()&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;소수점을 가장 가까운 정수로 내림한 값을 리턴&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;return : numnber , 정수&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;alert(Math.floor(5.1)); // number, 5
+alert(Math.floor(5.9)); // number, 5
+alert(Math.floor(5)); // number, 5
+alert(Math.floor(-5.1)); // number, -6
+alert(Math.floor(-5.9)); // number, -6
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;3-round&#34;&gt;3.round()&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;소수점을 가장 가까운 정수로 리턴한다.&lt;/li&gt;
+&lt;li&gt;return : number;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+alert(Math.round(5));   // number, 5
+alert(Math.round(5.6)); // number, 6 // 올라간다. 
+alert(Math.round(5.4)); // number, 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;4-random&#34;&gt;4.random()&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;0과 1사이의 랜덤한 수를 리턴&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;*0과 1사이의 수를 리턴함&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Math.random()의 리턴값에 수를 곱하면 0부터 곱한 수 사이의 랜덤한 값을 구할 수 있다&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;랜덤한 수를 발급하거나, 시스템적으로 불규칙한 행위가 필요할 때 사용&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;alert(Math.random()*100); // number, 0~100 사이의 랜덤한 값을 리턴
+alert(Math.ceil(Math.random()*100)); // number, 0~100 사이의 랜덤한 값을 올림한 정수를 반환
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;5-abs&#34;&gt;5. abs()&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;인자로 전달된 값에 대한 절대값을 리턴함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;6-sqrt&#34;&gt;6. sqrt()&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;제곱근을 리턴함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+alert(Math.sqrt(25)); // number, 5
+alert(Math.sqrt(100)); // number, 10
+alert(Math.sqrt(5)); // number, 2.23606797749979
+alert(Math.sqrt(-5)); // Nan, 제곱근은 음수일 수 없음
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;7-pow&#34;&gt;7.pow&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;거듭제곱을 리턴한다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Syntax : Math.pow(a,n)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+//절대값이란 실수에서 부호를 제거한 값을 의미한다. 
+// 3과 -3의 절대값은 3이 된다.
+alert(Math.abs(-3)); // number, 3
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;salesteam-안에-있는-data-fliter-와-foreach-로-다루기&#34;&gt;salesTeam 안에 있는 data  fliter 와 foreach 로 다루기&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var salesTeam = [
@@ -95,7 +256,7 @@ let teenager = salesTeam.filter(function(ele){
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;reduce&#34;&gt;reduce()&lt;/h3&gt;
+&lt;h2 id=&#34;reduce&#34;&gt;reduce()&lt;/h2&gt;
 
 &lt;h4 id=&#34;definiton-syntax&#34;&gt;Definiton &amp;amp; Syntax&lt;/h4&gt;
 
@@ -799,7 +960,7 @@ return a - b;
 &lt;p&gt;every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;toc_19&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_31&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;2-dom&#34;&gt;2. Dom&lt;/h2&gt;
 
@@ -924,7 +1085,7 @@ function hasChildElement(elm) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_24&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_36&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;3-my-post&#34;&gt;3. My_post&lt;/h2&gt;
 
@@ -1129,7 +1290,7 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 
 &lt;p&gt;&lt;code&gt;undefined&lt;/code&gt; 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_30&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_42&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;4-post-from-others&#34;&gt;4. post from others&lt;/h2&gt;
 </description>

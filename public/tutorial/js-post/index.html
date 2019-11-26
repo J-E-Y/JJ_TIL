@@ -421,9 +421,32 @@
 <li>
 <ul>
 <li><a href="#1-javacript">1.Javacript</a></li>
-<li><a href="#salesteam-안에-있는-data-fliter-와-foreach-로-다루기">salesTeam 안에 있는 data  fliter 와 foreach 로 다루기</a>
+<li><a href="#number-methods">Number Methods</a>
 <ul>
+<li>
+<ul>
+<li><a href="#1-number-isinteger">1. Number.isInteger()</a></li>
+<li><a href="#2-number-parsefloat-parseint">2. Number(), parseFloat(), parseInt()</a></li>
+<li><a href="#3-tofixed">3. toFixed();</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#math-methods">Math Methods</a>
+<ul>
+<li>
+<ul>
+<li><a href="#1-math-max-math-min">1. Math.max() / Math.min()</a></li>
+<li><a href="#2-floor">2.floor()</a></li>
+<li><a href="#3-round">3.round()</a></li>
+<li><a href="#4-random">4.random()</a></li>
+<li><a href="#5-abs">5. abs()</a></li>
+<li><a href="#6-sqrt">6. sqrt()</a></li>
+<li><a href="#7-pow">7.pow</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#salesteam-안에-있는-data-fliter-와-foreach-로-다루기">salesTeam 안에 있는 data  fliter 와 foreach 로 다루기</a></li>
 <li><a href="#reduce">reduce()</a>
+<ul>
+<li>
 <ul>
 <li><a href="#definiton-syntax">Definiton &amp; Syntax</a></li>
 <li><a href="#ex">ex)</a></li>
@@ -458,18 +481,18 @@
 <li><a href="#2-some">2.some()</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#toc_19">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_31">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#2-dom">2. Dom</a></li>
 <li><a href="#e-target-이란">e.target 이란 ?</a></li>
 <li><a href="#how-to-check-if-element-has-any-children">How to check if element has any children ?</a></li>
 <li><a href="#checkbox-안에-있는-value-값-얻기">checkbox 안에 있는 value 값 얻기</a></li>
-<li><a href="#toc_24">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_36">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#3-my-post">3. My_post</a></li>
 <li><a href="#피보나치-수열-이란">피보나치 수열 이란?</a></li>
 <li><a href="#foreach-for-of-for-in-의-차이">forEach, for of, for in 의 차이</a></li>
 <li><a href="#falsy-와-fruthy-구별">Falsy 와 Fruthy 구별</a></li>
 <li><a href="#null-과-undefined-는-등록-저장-여부이다">null 과 undefined 는 등록, 저장 여부이다.</a></li>
-<li><a href="#toc_30">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_42">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#4-post-from-others">4. post from others</a></li>
 </ul></li>
 </ul>
@@ -494,6 +517,167 @@
             
 
 <h2 id="1-javacript">1.Javacript</h2>
+
+<h2 id="number-methods">Number Methods</h2>
+
+<h4 id="1-number-isinteger">1. Number.isInteger()</h4>
+
+<ul>
+<li><p>숫자가 인지 아닌지 확인</p></li>
+
+<li><p>return : boolean</p></li>
+</ul>
+
+<pre><code class="language-js">
+Number.isInteger(1) // ture;
+number.isInteget(&quot;1&quot;) // false;
+
+
+
+</code></pre>
+
+<h4 id="2-number-parsefloat-parseint">2. Number(), parseFloat(), parseInt()</h4>
+
+<ul>
+<li>문자열을 숫자로 바꾸는 함수</li>
+</ul>
+
+<pre><code class="language-js">
+Number(&quot;12,32&quot;); // Nan 소수점이 있으면 반환 안된다. 
+
+parseInt(&quot;123.2323&quot;); // 123 소수점뒤에는 버린다. 
+parseFloat( '12.34' ) // 12.34 소수점까지 포함해서 숫자로 반환해준다.
+
+</code></pre>
+
+<h4 id="3-tofixed">3. toFixed();</h4>
+
+<ul>
+<li><p>소수점이 길면 자르는 역활</p></li>
+
+<li><p>반환값 : string</p></li>
+</ul>
+
+<pre><code class="language-js">let num = 123.2342323123231232312323123231232312323
+num.toFixed(3) //  &quot;123.234&quot; // string 으로 반환
+
+
+</code></pre>
+
+<h2 id="math-methods">Math Methods</h2>
+
+<h4 id="1-math-max-math-min">1. Math.max() / Math.min()</h4>
+
+<ul>
+<li>가장 큰수 리턴</li>
+</ul>
+
+<pre><code class="language-js">
+Math.max(2,3,2,4,52)
+
+// 52
+
+</code></pre>
+
+<ul>
+<li>가장 작은수 리턴</li>
+</ul>
+
+<pre><code class="language-js">Math.min(2,3,2,4,52)
+
+// 2
+
+
+</code></pre>
+
+<h4 id="2-floor">2.floor()</h4>
+
+<ul>
+<li><p>소수점을 가장 가까운 정수로 내림한 값을 리턴</p></li>
+
+<li><p>return : numnber , 정수</p></li>
+</ul>
+
+<pre><code class="language-js">alert(Math.floor(5.1)); // number, 5
+alert(Math.floor(5.9)); // number, 5
+alert(Math.floor(5)); // number, 5
+alert(Math.floor(-5.1)); // number, -6
+alert(Math.floor(-5.9)); // number, -6
+
+
+</code></pre>
+
+<h4 id="3-round">3.round()</h4>
+
+<ul>
+<li>소수점을 가장 가까운 정수로 리턴한다.</li>
+<li>return : number;</li>
+</ul>
+
+<pre><code class="language-js">
+
+alert(Math.round(5));   // number, 5
+alert(Math.round(5.6)); // number, 6 // 올라간다. 
+alert(Math.round(5.4)); // number, 5
+</code></pre>
+
+<h4 id="4-random">4.random()</h4>
+
+<ul>
+<li>0과 1사이의 랜덤한 수를 리턴</li>
+</ul>
+
+<p>*0과 1사이의 수를 리턴함</p>
+
+<ul>
+<li><p>Math.random()의 리턴값에 수를 곱하면 0부터 곱한 수 사이의 랜덤한 값을 구할 수 있다</p></li>
+
+<li><p>랜덤한 수를 발급하거나, 시스템적으로 불규칙한 행위가 필요할 때 사용</p></li>
+</ul>
+
+<pre><code class="language-js">alert(Math.random()*100); // number, 0~100 사이의 랜덤한 값을 리턴
+alert(Math.ceil(Math.random()*100)); // number, 0~100 사이의 랜덤한 값을 올림한 정수를 반환
+
+
+
+</code></pre>
+
+<h4 id="5-abs">5. abs()</h4>
+
+<ul>
+<li>인자로 전달된 값에 대한 절대값을 리턴함</li>
+</ul>
+
+<h4 id="6-sqrt">6. sqrt()</h4>
+
+<ul>
+<li>제곱근을 리턴함</li>
+</ul>
+
+<pre><code class="language-js">
+alert(Math.sqrt(25)); // number, 5
+alert(Math.sqrt(100)); // number, 10
+alert(Math.sqrt(5)); // number, 2.23606797749979
+alert(Math.sqrt(-5)); // Nan, 제곱근은 음수일 수 없음
+
+
+</code></pre>
+
+<h4 id="7-pow">7.pow</h4>
+
+<ul>
+<li><p>거듭제곱을 리턴한다.</p></li>
+
+<li><p>Syntax : Math.pow(a,n)</p></li>
+</ul>
+
+<pre><code class="language-js">
+//절대값이란 실수에서 부호를 제거한 값을 의미한다. 
+// 3과 -3의 절대값은 3이 된다.
+alert(Math.abs(-3)); // number, 3
+
+
+</code></pre>
 
 <h2 id="salesteam-안에-있는-data-fliter-와-foreach-로-다루기">salesTeam 안에 있는 data  fliter 와 foreach 로 다루기</h2>
 
@@ -545,7 +729,7 @@ let teenager = salesTeam.filter(function(ele){
 
 </code></pre>
 
-<h3 id="reduce">reduce()</h3>
+<h2 id="reduce">reduce()</h2>
 
 <h4 id="definiton-syntax">Definiton &amp; Syntax</h4>
 
@@ -1249,7 +1433,7 @@ return a - b;
 <p>every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다</p>
 </blockquote>
 
-<h2 id="toc_19">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_31">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="2-dom">2. Dom</h2>
 
@@ -1374,7 +1558,7 @@ function hasChildElement(elm) {
 
 </code></pre>
 
-<h2 id="toc_24">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_36">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="3-my-post">3. My_post</h2>
 
@@ -1579,7 +1763,7 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 
 <p><code>undefined</code> 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</p>
 
-<h2 id="toc_30">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_42">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="4-post-from-others">4. post from others</h2>
 
