@@ -16,6 +16,41 @@ summary: 'write here:rocket:'
 ---
 
 
+
+### Question
+
+## powerOfTwo
+
+>powerOfTwo (num) 함수는 num parameter를 가져와서 정수이며, 동시에 2의 거듭제곱이면 true를 반환합니다.
+
+
+### My_Soultion
+
+
+```js
+function powerOfTwo(num) {
+ // 함수를 계속 실행해서 num 1이면 true
+ // 정수이면, / 2 한 num 다시 poweroftwo()
+ // 재귀함수로
+ debugger; // 디버거
+ if(num === 1) {
+   return true;
+ } else if(Number.parseInt(num / 2)) {
+   num = num / 2;
+   return powerOfTwo(num);   
+ } return false;
+}
+
+powerOfTwo(16); // true가 반환되어야 함
+
+
+
+```
+
+
+
+
+
 ### Question
 
 
@@ -2120,6 +2155,7 @@ function getStringLength(string) {
 
 
 ```js
+
 function getIndexOf(char, str) {
 
       for (let i = 0; i < str.length;  i = i + 1 ) {
@@ -2135,6 +2171,28 @@ function getIndexOf(char, str) {
 ```
 
 
+### other_Soultion
+
+```js
+function getIndexOf(char, str) {
+  // your code here
+  let newStr = str.split("");
+    if (newStr.every(el =>  el !== char )) {
+      return -1;
+    }
+  let countArr = [];
+  for (let i = 0; i < newStr.length; i ++ ) {
+    if (newStr[i] === char) {
+      countArr.push(i);
+    }
+  }
+  return countArr[0];
+
+}
+
+
+
+```
 
 
 
