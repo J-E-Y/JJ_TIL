@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pierre-Henri Tournier on JohnJung</title>
+    <link>/authors/pierre-henri-tournier/</link>
+    <description>Recent content in Pierre-Henri Tournier on JohnJung</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Sep 2018 15:20:57 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/pierre-henri-tournier/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ElastoPhi </title>
+      <link>/project/pos/</link>
+      <pubDate>Fri, 14 Sep 2018 15:20:57 +0200</pubDate>
+      
+      <guid>/project/pos/</guid>
+      <description>Research project conducted during the summer school CEMRACS in 2016</description>
+    </item>
+    
+  </channel>
+</rss>

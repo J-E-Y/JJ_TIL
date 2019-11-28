@@ -36,6 +36,19 @@
     </item>
     
     <item>
+      <title>HelloWorld</title>
+      <link>/post/helloworld/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/helloworld/</guid>
+      <description>&lt;p&gt;sdsd
+sds
+sd
+sd&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>JS_Study_Notes</title>
       <link>/tutorial/js-post/</link>
       <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
@@ -101,7 +114,20 @@ Math.max.apply(null,arr);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;class-객체지향-프로그래밍&#34;&gt;Class : 객체지향 프로그래밍&lt;/h2&gt;
+&lt;h2 id=&#34;객체지향-javascript&#34;&gt;객체지향 JavaScript&lt;/h2&gt;
+
+&lt;h4 id=&#34;class&#34;&gt;Class&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Object Oriented JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;하나의 모델이 되는 청사진(&lt;code&gt;blueprint&lt;/code&gt;)를 만들고 =&amp;gt; &lt;code&gt;class&lt;/code&gt;,
+그 청사진을 바탕으로 한 객체(&lt;code&gt;object&lt;/code&gt;)를 만드는 =&amp;gt; &lt;code&gt;instance&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;프로그래밍 패턴&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -1719,7 +1745,7 @@ return a - b;
 &lt;p&gt;every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;toc_48&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_49&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;2-dom&#34;&gt;2. Dom&lt;/h2&gt;
 
@@ -1935,7 +1961,7 @@ function hasChildElement(elm) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_55&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_56&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;3-my-post&#34;&gt;3. My_post&lt;/h2&gt;
 
@@ -2140,7 +2166,7 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 
 &lt;p&gt;&lt;code&gt;undefined&lt;/code&gt; 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_61&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_62&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;4-post-from-others&#34;&gt;4. post from others&lt;/h2&gt;
 
@@ -12366,30 +12392,49 @@ var alphabetPosition = function (str) {
     </item>
     
     <item>
+      <title>The minority language typing experience</title>
+      <link>/project/pos/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/pos/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Previous work&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;This project follows and builds upon the project where &lt;a href=&#34;/project/2012-mexico-keyboards/&#34;&gt;keyboard layouts for Meꞌphaa and Sochiapam Chinantec&lt;/a&gt; were produced. This project uses data from Meꞌphaa and Sochiapam Chinantec but purposely extends the scope of the analysis to include Latin and Cyrillic script languages, particularly focusing on those with diacritics which express tone.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Goals&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;The goal of this project is to bring &amp;lsquo;natural&amp;rsquo;, intuitive, and easy to use typing experiences in the form of keyboard layout designs to minority language users. These language users often do not type in their own languages, but rather experience technology through languages other than their first language. This is in part because of the perception that their language is complex or not easy to type, which is often not an invalid observation. However, with these languages which have different and sometimes more characters than English, what does a good layout look like?
+The objectives of this project are threefold:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;To establish a consistent method to evaluate the appropriateness of a keyboard layout for a specific language situation given a specific text sample. This needs to include &lt;code&gt;deadkeys&lt;/code&gt; and &lt;code&gt;alt&lt;/code&gt; states.
+
+&lt;ul&gt;
+&lt;li&gt;This needs to account for monolingual situations&lt;/li&gt;
+&lt;li&gt;This needs to account for multi-lingual situations where each language has its own keyboard&lt;/li&gt;
+&lt;li&gt;This needs to account for multi-lingual situations where only a single keyboard is used&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Provide a best fit solution recommendation when provided the following:
+
+&lt;ul&gt;
+&lt;li&gt;A corpus of text encoded in UTF-16 or UTF-8 in any language&lt;/li&gt;
+&lt;li&gt;A user selected choice between a physical keyboard layout of ANSI, ISO, or JIS
+The application providing the best fit solution needs to be able to suggest a better layout, inclusive of &lt;code&gt;alt&lt;/code&gt; states and &lt;code&gt;deadkey&lt;/code&gt; options.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Assess and analyze real user feedback. That is, measure the impacts of keyboards on users. Speed of typing, speed of keyboard acquisition, error rate, and results such as language choice when typing.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;span class=&#34;fa fa-github fa-2x&#34;&gt;&lt;/span&gt; Project resources are split into three repos: &lt;a href=&#34;https://github.com/HughP/MLKA&#34; target=&#34;_blank&#34;&gt;MLKA&lt;/a&gt;, &lt;a href=&#34;https://github.com/HughP/MLKA-Bash-data&#34; target=&#34;_blank&#34;&gt;MLKA-Bash-data&lt;/a&gt;, and &lt;a href=&#34;https://github.com/HughP/MLKA-Test-Data&#34; target=&#34;_blank&#34;&gt;MLKA-Test-Data&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>External Project</title>
       <link>/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0900</pubDate>
       
       <guid>/project/external-project/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Internal Project</title>
-      <link>/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0900</pubDate>
-      
-      <guid>/project/internal-project/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -12718,6 +12763,18 @@ var alphabetPosition = function (str) {
 &lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Collaborative Mapping</title>
+      <link>/project/ex1/</link>
+      <pubDate>Thu, 07 Apr 2016 00:00:00 +0900</pubDate>
+      
+      <guid>/project/ex1/</guid>
+      <description>&lt;p&gt;Founded by myself and Dr. on Geography Miguel Sevilla in 2016, &lt;em&gt;&lt;a href=&#34;https://translate.google.com/translate?sl=es&amp;amp;tl=en&amp;amp;u=https%3A%2F%2Fmapcolabora.org&#34; target=&#34;_blank&#34;&gt;Collaborative Mapping&lt;/a&gt;&lt;/em&gt; is an action-research group of enthusiasts aimed to foster citizen innovation and collective intelligence through Voluntary Geographic Informationand that result in collaborative maps at the service of citizens. We do so through participatory projects and periodical meetings and talks about tools, methodologies or related topics such as Free Culture and Informationalism paradigm. Some of our main achievements so far have been the organization of &lt;a href=&#34;https://www.msf.org/&#34; target=&#34;_blank&#34;&gt;Medecins Sans Frontieres&lt;/a&gt;’s &lt;strong&gt;Humanitarian Hackaton in Spain&lt;/strong&gt; (2017, 2018 and 2019), leading &lt;strong&gt;Mapping parties&lt;/strong&gt; for &lt;a href=&#34;/project/zaccesible&#34;&gt;Accessible Zaragoza&lt;/a&gt; project, or giving a number of &lt;strong&gt;&lt;a href=&#34;https://translate.google.com/translate?hl=&amp;amp;sl=es&amp;amp;tl=en&amp;amp;u=https%3A%2F%2Fmapcolabora.org%23talks&#34; target=&#34;_blank&#34;&gt;talks and workshops&lt;/a&gt;&lt;/strong&gt; on VGI and tools such as Leaflet, Carto, Mapbox, OpenStreetMap, Overpass API, Mapillary, uMap&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Since then, I have been coordinating the group&amp;rsquo;s activities as well with Dr. Miguel Sevilla-Callejo and Alejandro Suárez, Héctor Hochoa and Joan Cano, who joined the staff soon afterwards.&lt;/p&gt;
 </description>
     </item>
     

@@ -19,6 +19,16 @@
   </url>
   
   <url>
+    <loc>/post/helloworld/</loc>
+    <lastmod>2019-11-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-11-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/js-post/</loc>
     <lastmod>2019-11-26T00:00:00+00:00</lastmod>
   </url>
@@ -166,19 +176,31 @@
   </url>
   
   <url>
+    <loc>/project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/project/pos/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/maps/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/pos/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/project/external-project/</loc>
     <lastmod>2016-04-27T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/internal-project/</loc>
-    <lastmod>2016-04-27T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2016-04-27T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -187,8 +209,8 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-04-17T00:00:00+09:00</lastmod>
+    <loc>/project/ex1/</loc>
+    <lastmod>2016-04-07T00:00:00+09:00</lastmod>
   </url>
   
   <url>

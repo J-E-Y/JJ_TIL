@@ -74,5 +74,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>maps</title>
+      <link>/tags/maps/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pos</title>
+      <link>/tags/pos/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pos/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

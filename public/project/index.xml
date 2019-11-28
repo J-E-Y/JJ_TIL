@@ -6,10 +6,19 @@
     <description>Recent content in Projects on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The minority language typing experience</title>
+      <link>/project/pos/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/pos/</guid>
+      <description>How much work is it to type languages with tonal markers in their orthographies?</description>
+    </item>
     
     <item>
       <title>External Project</title>
@@ -21,12 +30,12 @@
     </item>
     
     <item>
-      <title>Internal Project</title>
-      <link>/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0900</pubDate>
+      <title>Collaborative Mapping</title>
+      <link>/project/ex1/</link>
+      <pubDate>Thu, 07 Apr 2016 00:00:00 +0900</pubDate>
       
-      <guid>/project/internal-project/</guid>
-      <description>An example of using the in-built project page.</description>
+      <guid>/project/ex1/</guid>
+      <description>Action-research group of enthusiasts aimed to foster citizen innovation and collective intelligence through Voluntary Geographic Informationand that result in collaborative maps at the service of citizens.</description>
     </item>
     
   </channel>
