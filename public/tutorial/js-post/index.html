@@ -541,11 +541,14 @@
 <li><a href="#checkbox-안에-있는-value-값-얻기">checkbox 안에 있는 value 값 얻기</a></li>
 <li><a href="#toc_59">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#3-my-post">3. My_post</a></li>
+<li><a href="#string-안에-알파벳-뽑기">string 안에 알파벳 뽑기</a></li>
+<li><a href="#string-안에-숫자뽑기">string 안에  숫자뽑기</a></li>
+<li><a href="#extract-numbers-from-a-string-javascript">Extract numbers from a string-Javascript</a></li>
 <li><a href="#피보나치-수열-이란">피보나치 수열 이란?</a></li>
 <li><a href="#foreach-for-of-for-in-의-차이">forEach, for of, for in 의 차이</a></li>
 <li><a href="#falsy-와-fruthy-구별">Falsy 와 Fruthy 구별</a></li>
 <li><a href="#null-과-undefined-는-등록-저장-여부이다">null 과 undefined 는 등록, 저장 여부이다.</a></li>
-<li><a href="#toc_65">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_68">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#4-post-from-others">4. post from others</a></li>
 <li><a href="#rest파라미터와-spread연산자-or-함수의-가독성을-높이는-방법">Rest파라미터와 Spread연산자 or 함수의 가독성을 높이는 방법</a>
 <ul>
@@ -2512,6 +2515,70 @@ function hasChildElement(elm) {
 
 <h2 id="3-my-post">3. My_post</h2>
 
+<h2 id="string-안에-알파벳-뽑기">string 안에 알파벳 뽑기</h2>
+
+<pre><code class="language-js">
+str = &quot;Hello6 9World 2, Nic8e D7ay!&quot;;
+
+var sum = str.match(/\d/g).map(Number).reduce(function(a,c){
+	return a + c;
+})
+
+str.replace(/[^a-z]/gi, ''); // &quot;HelloWorldNiceDay&quot;
+
+</code></pre>
+
+<h2 id="string-안에-숫자뽑기">string 안에  숫자뽑기</h2>
+
+<ul>
+<li><p><code>imutable</code></p></li>
+
+<li><p>숫자를 뽑는 역활</p></li>
+
+<li><p>\d 는 모든 숫자를 각각 배열로 나눠서 출력한다.</p></li>
+</ul>
+
+<pre><code class="language-js">
+
+
+let str = &quot;123f456f78910&quot;;
+str.match(/\d+/g);
+
+// [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;1&quot;, &quot;0&quot;]
+
+```js
+
+
+
+
+* \d+ 숫자가 나란히 붙어있는 것으로 나뉜다. 
+
+*  `imutable`
+
+```js
+
+let str = &quot;123f456f78910&quot;;
+str.match(/\d/g);
+
+// [&quot;123&quot;, &quot;456&quot;, &quot;789&quot;, &quot;10&quot;]
+
+
+
+</code></pre>
+
+<h2 id="extract-numbers-from-a-string-javascript">Extract numbers from a string-Javascript</h2>
+
+<pre><code class="language-js">var string = &quot;border-radius:10px 20px 30px 40px&quot;;
+var numbers = string.match(/\d+/g).map(Number); 
+
+console.log(numbers);
+
+// [10, 20, 30, 40]
+
+
+
+</code></pre>
+
 <h2 id="피보나치-수열-이란">피보나치 수열 이란?</h2>
 
 <blockquote>
@@ -2713,7 +2780,7 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 
 <p><code>undefined</code> 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</p>
 
-<h2 id="toc_65">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_68">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="4-post-from-others">4. post from others</h2>
 

@@ -1991,6 +1991,70 @@ function hasChildElement(elm) {
 
 &lt;h2 id=&#34;3-my-post&#34;&gt;3. My_post&lt;/h2&gt;
 
+&lt;h2 id=&#34;string-안에-알파벳-뽑기&#34;&gt;string 안에 알파벳 뽑기&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+str = &amp;quot;Hello6 9World 2, Nic8e D7ay!&amp;quot;;
+
+var sum = str.match(/\d/g).map(Number).reduce(function(a,c){
+	return a + c;
+})
+
+str.replace(/[^a-z]/gi, &#39;&#39;); // &amp;quot;HelloWorldNiceDay&amp;quot;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;string-안에-숫자뽑기&#34;&gt;string 안에  숫자뽑기&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;imutable&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;숫자를 뽑는 역활&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;\d 는 모든 숫자를 각각 배열로 나눠서 출력한다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+
+let str = &amp;quot;123f456f78910&amp;quot;;
+str.match(/\d+/g);
+
+// [&amp;quot;1&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;, &amp;quot;5&amp;quot;, &amp;quot;6&amp;quot;, &amp;quot;7&amp;quot;, &amp;quot;8&amp;quot;, &amp;quot;9&amp;quot;, &amp;quot;1&amp;quot;, &amp;quot;0&amp;quot;]
+
+```js
+
+
+
+
+* \d+ 숫자가 나란히 붙어있는 것으로 나뉜다. 
+
+*  `imutable`
+
+```js
+
+let str = &amp;quot;123f456f78910&amp;quot;;
+str.match(/\d/g);
+
+// [&amp;quot;123&amp;quot;, &amp;quot;456&amp;quot;, &amp;quot;789&amp;quot;, &amp;quot;10&amp;quot;]
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;extract-numbers-from-a-string-javascript&#34;&gt;Extract numbers from a string-Javascript&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var string = &amp;quot;border-radius:10px 20px 30px 40px&amp;quot;;
+var numbers = string.match(/\d+/g).map(Number); 
+
+console.log(numbers);
+
+// [10, 20, 30, 40]
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;피보나치-수열-이란&#34;&gt;피보나치 수열 이란?&lt;/h2&gt;
 
 &lt;blockquote&gt;
@@ -2192,7 +2256,7 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 
 &lt;p&gt;&lt;code&gt;undefined&lt;/code&gt; 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_65&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_68&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;4-post-from-others&#34;&gt;4. post from others&lt;/h2&gt;
 
@@ -5209,6 +5273,40 @@ function getProductOfAllElementsAtProperty(obj, key) {
 
 &lt;h3 id=&#34;question&#34;&gt;Question&lt;/h3&gt;
 
+&lt;h2 id=&#34;numbersearch&#34;&gt;numberSearch&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;문자열이 주어졌을때, numberSearch(str) 함수는 주어진 문자열에서 숫자를 모두 찾아 더한 뒤 해당 값을 (숫자, 공백 등을 제외한) 알파벳의 길이의 길이로 나눈 값을 정수로 반올림하여 반환합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+예시: 만약 문자열 Hello6 9World 2, Nic8e D7ay! 이 주어졌다면, 결과값은 2 입니다.
+
+우선 모든 숫자를 더하면 6 + 9 + 2 + 8 + 7 = 32 가 나오게됩니다.
+
+그 후 (숫자, 공백 등을 제외한) 알파벳의 길이가 17이기 때문에 32/17 = 1.882 가 나오게 되며, 가까운 정수로 반올림을 하게되면 정답인 2가 나오게 됩니다.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;my-soultoin&#34;&gt;My_Soultoin&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function numberSearch(str) {
+  // your code here
+
+  let strLength = str.replace(/[^a-z]/gi, &#39;&#39;).length;
+  let sum = str.match(/\d/g).map(Number).reduce(function(a,c){
+	return a + c;
+})
+
+  return Math.round(sum / strLength);
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;question-1&#34;&gt;Question&lt;/h3&gt;
+
 &lt;h2 id=&#34;findmaxonmultiplesofthirty&#34;&gt;findMaxOnMultiplesOfThirty&lt;/h2&gt;
 
 &lt;blockquote&gt;
@@ -5297,7 +5395,7 @@ findMaxOnMultiplesOfThirty(4800)  // 8400
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-1&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-2&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;runlength&#34;&gt;runLength&lt;/h2&gt;
 
@@ -5385,7 +5483,7 @@ function thirdGreatest(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-2&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-3&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;superincreasing&#34;&gt;superIncreasing&lt;/h2&gt;
 
@@ -5478,7 +5576,7 @@ function multiplicativePersistence(num) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-3&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-4&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;lettercapitalize&#34;&gt;letterCapitalize&lt;/h2&gt;
 
@@ -5519,7 +5617,7 @@ function letterCapitalize(str) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-4&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-5&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;poweroftwo&#34;&gt;powerOfTwo&lt;/h2&gt;
 
@@ -5548,7 +5646,7 @@ powerOfTwo(16); // true가 반환되어야 함
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-5&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-6&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;json-stringfy-함수-만들기&#34;&gt;JSON.stringfy 함수 만들기&lt;/h2&gt;
 
@@ -5649,7 +5747,7 @@ powerOfTwo(16); // true가 반환되어야 함
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-6&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-7&#34;&gt;Question&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Broswer에 존재하는 document.getElementsByClassName 함수를
@@ -5703,7 +5801,7 @@ function getElementsByClassName(className) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-7&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-8&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;shuffle-함수-만들기&#34;&gt;shuffle 함수 만들기&lt;/h2&gt;
 
@@ -5729,7 +5827,7 @@ function shuffle(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-8&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-9&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;flatten-함수-만들기&#34;&gt;flatten 함수 만들기&lt;/h2&gt;
 
@@ -5785,7 +5883,7 @@ flatten([1,2,[3],[4]]); // [1,2,3,4]
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-9&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-10&#34;&gt;Question&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;h2 id=&#34;buginapple&#34;&gt;bugInApple&lt;/h2&gt;
@@ -5826,7 +5924,7 @@ let bugInApple = function(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-10&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-11&#34;&gt;Question&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;using the JavaScript language, have the function firstReverse(str) take the str parameter being passed and return the string in reversed order.&lt;/p&gt;
@@ -5853,7 +5951,7 @@ let bugInApple = function(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-11&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-12&#34;&gt;Question&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Using the JavaScript language, have the function ABCheck(str) take the str parameter being passed and return the true if the characters a and b are separated by exactly 3 places anywhere in the string at least once Otherwise return the false.&lt;/p&gt;
@@ -5892,7 +5990,7 @@ function ABCheck(str) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-12&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-13&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;filteredarray&#34;&gt;filteredArray&lt;/h2&gt;
 
@@ -6196,7 +6294,7 @@ function some(collection, iterator) {
 
 &lt;h2 id=&#34;contains-함수-만들기&#34;&gt;contains 함수 만들기&lt;/h2&gt;
 
-&lt;h3 id=&#34;my-soultoin&#34;&gt;My_Soultoin&lt;/h3&gt;
+&lt;h3 id=&#34;my-soultoin-1&#34;&gt;My_Soultoin&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;  //배열 또는 객체가 주어진 값을 포함하는지 체크합니다. (`===` 연산자를 사용해서 판단합니다.)
 
@@ -6237,7 +6335,7 @@ function some(collection, iterator) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-13&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-14&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;reduce&#34;&gt;reduce&lt;/h2&gt;
 
@@ -6286,7 +6384,7 @@ function some(collection, iterator) {
   // 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-14&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-15&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;billtotal&#34;&gt;billTotal&lt;/h2&gt;
 
@@ -6324,7 +6422,7 @@ billTotal(10.00); // =&amp;gt; 12.45
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-15&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-16&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;multiplybetween&#34;&gt;multiplyBetween&lt;/h2&gt;
 
@@ -6364,7 +6462,7 @@ console.log(arr);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-16&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-17&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;computesquareroot&#34;&gt;computeSquareRoot&lt;/h2&gt;
 
@@ -6432,7 +6530,7 @@ toFixed()를 지우면 4를 넣었을시만 통과가 안되구요!
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-17&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-18&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;modulo&#34;&gt;modulo&lt;/h2&gt;
 
@@ -6479,7 +6577,7 @@ function modulo(num1, num2) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-18&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-19&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;unique&#34;&gt;unique&lt;/h2&gt;
 
@@ -6540,7 +6638,7 @@ Array will be contained only primitive type values. (string, number, boolean)
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-19&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-20&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;tenthousandclub&#34;&gt;tenThousandClub&lt;/h2&gt;
 
@@ -6606,7 +6704,7 @@ function salesToNumber(salesString){
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-20&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-21&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;sumconsecutives&#34;&gt;sumConsecutives&lt;/h2&gt;
 
@@ -6671,7 +6769,7 @@ function sumConsecutives(s) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-21&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-22&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;oldest&#34;&gt;oldest&lt;/h2&gt;
 
@@ -6715,7 +6813,7 @@ function oldest(salesTeam){
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-22&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-23&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;isagediverse&#34;&gt;isAgeDiverse&lt;/h2&gt;
 
@@ -6766,7 +6864,7 @@ var isAgeDiverse = function(list) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-23&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-24&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getteenager&#34;&gt;getTeenager&lt;/h2&gt;
 
@@ -6829,7 +6927,7 @@ function getTeenager(salesTeam) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-24&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-25&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;sumdigits&#34;&gt;sumDigits&lt;/h2&gt;
 
@@ -6860,7 +6958,7 @@ function sumDigits(num) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-25&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-26&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;offlineminimum&#34;&gt;offLineMinimum&lt;/h2&gt;
 
@@ -6983,7 +7081,7 @@ function offLineMinimum(strArr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-26&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-27&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;range&#34;&gt;range&lt;/h2&gt;
 
@@ -7025,7 +7123,7 @@ range(10, 2); // =&amp;gt; []
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-27&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-28&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;longestname&#34;&gt;longestName&lt;/h2&gt;
 
@@ -7138,7 +7236,7 @@ console.log(hammingDistance([&amp;quot;coder&amp;quot;, &amp;quot;codec&amp;quot
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-28&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-29&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getfullname&#34;&gt;getFullName&lt;/h2&gt;
 
@@ -7196,7 +7294,7 @@ function getFullName(obj) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-29&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-30&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;billtotal-1&#34;&gt;billTotal&lt;/h2&gt;
 
@@ -7251,7 +7349,7 @@ billTotal(10.00); // =&amp;gt; 12.45
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-30&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-31&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;primemover&#34;&gt;primeMover&lt;/h2&gt;
 
@@ -7283,7 +7381,7 @@ let primeMover = function(n) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-31&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-32&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;isoddwithoutmodulo&#34;&gt;isOddWithoutModulo&lt;/h2&gt;
 
@@ -7328,7 +7426,7 @@ function isOddWithoutModulo(num) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-32&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-33&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getstringlength&#34;&gt;getStringLength&lt;/h2&gt;
 
@@ -7361,7 +7459,7 @@ function getStringLength(string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-33&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-34&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;getindexof&#34;&gt;getIndexOf&lt;/h2&gt;
 
@@ -7410,7 +7508,7 @@ function getIndexOf(char, str) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-34&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-35&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;calculatebilltotal&#34;&gt;calculateBillTotal&lt;/h2&gt;
 
@@ -7445,7 +7543,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-35&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-36&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;convertobjecttoarray3&#34;&gt;convertObjectToArray3&lt;/h2&gt;
 
@@ -7475,7 +7573,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-36&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-37&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;isodd&#34;&gt;isOdd&lt;/h2&gt;
 
@@ -7517,7 +7615,7 @@ function isOdd(num) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-37&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-38&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;sum&#34;&gt;sum&lt;/h2&gt;
 
@@ -7544,7 +7642,7 @@ sum(4);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-38&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-39&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;onlyevenelements&#34;&gt;onlyEvenElements&lt;/h2&gt;
 
@@ -7573,7 +7671,7 @@ function onlyEvenElements(arr) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-39&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-40&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;removeoddvalues&#34;&gt;removeOddValues&lt;/h2&gt;
 
@@ -7666,7 +7764,7 @@ function removeOddValues(object) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-40&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-41&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;firstcharacter&#34;&gt;firstCharacter&lt;/h2&gt;
 
@@ -7718,7 +7816,7 @@ unction firstCharacter (string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-41&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-42&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;dashinsert&#34;&gt;dashInsert&lt;/h2&gt;
 
@@ -7785,7 +7883,7 @@ function DashInsert(string) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-42&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-43&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;longestword&#34;&gt;longestWord&lt;/h2&gt;
 
@@ -7842,7 +7940,7 @@ return string.split(&#39; &#39;).reduce((acc,cur)=&amp;gt; acc.length&amp;lt;cur
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-43&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-44&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;convertarraytoobject1&#34;&gt;convertArrayToObject1&lt;/h2&gt;
 
@@ -7874,7 +7972,7 @@ function transformFirstAndLast(array) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-44&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-45&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;convertobjecttoarray1&#34;&gt;convertObjectToArray1&lt;/h2&gt;
 
@@ -7902,7 +8000,7 @@ return arr;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-45&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-46&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;convertarraytoobject2&#34;&gt;convertArrayToObject2&lt;/h2&gt;
 
@@ -7964,7 +8062,7 @@ function listAllValues(obj) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-46&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-47&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;convertarraytoobject3&#34;&gt;convertArrayToObject3&lt;/h2&gt;
 
@@ -8068,7 +8166,7 @@ function greetCustomer(customerData, firstName) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;question-47&#34;&gt;Question&lt;/h3&gt;
+&lt;h3 id=&#34;question-48&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;convertdoublespacetosingle&#34;&gt;convertDoubleSpaceToSingle&lt;/h2&gt;
 

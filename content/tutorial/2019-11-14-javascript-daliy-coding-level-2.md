@@ -16,6 +16,39 @@ summary: 'write here:rocket:'
 ---
 
 
+### Question
+
+## numberSearch
+
+> 문자열이 주어졌을때, numberSearch(str) 함수는 주어진 문자열에서 숫자를 모두 찾아 더한 뒤 해당 값을 (숫자, 공백 등을 제외한) 알파벳의 길이의 길이로 나눈 값을 정수로 반올림하여 반환합니다.
+
+```js
+
+예시: 만약 문자열 Hello6 9World 2, Nic8e D7ay! 이 주어졌다면, 결과값은 2 입니다.
+
+우선 모든 숫자를 더하면 6 + 9 + 2 + 8 + 7 = 32 가 나오게됩니다.
+
+그 후 (숫자, 공백 등을 제외한) 알파벳의 길이가 17이기 때문에 32/17 = 1.882 가 나오게 되며, 가까운 정수로 반올림을 하게되면 정답인 2가 나오게 됩니다.
+
+```
+
+### My_Soultoin
+
+```js
+
+function numberSearch(str) {
+  // your code here
+
+  let strLength = str.replace(/[^a-z]/gi, '').length;
+  let sum = str.match(/\d/g).map(Number).reduce(function(a,c){
+	return a + c;
+})
+
+  return Math.round(sum / strLength);
+
+}
+
+```
 
 
 ### Question
