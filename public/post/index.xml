@@ -6,37 +6,21 @@
     <description>Recent content in Posts on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>HelloWorld</title>
-      <link>/post/helloworld/</link>
-      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <title>Writing technical content in Academic</title>
+      <link>/post/ex/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/helloworld/</guid>
-      <description>sdsd sds sd sd</description>
-    </item>
-    
-    <item>
-      <title>22</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0900</pubDate>
-      
-      <guid>/post/getting-started/</guid>
-      <description>Create a beautifully simple website in under 10 minutes.</description>
-    </item>
-    
-    <item>
-      <title>333</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>firstsd This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &amp;gt; this is link http://rmarkdown.rstudio.com.
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max.</description>
+      <guid>/post/ex/</guid>
+      <description>Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.
+Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.
+On this page, you&#39;ll find some examples of the types of technical content that can be rendered with Academic.
+Examples Code Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the highlight option in your config/_default/params.</description>
     </item>
     
   </channel>
