@@ -17,6 +17,356 @@ summary: 'write here:rocket:'
 
 
 
+
+### Question
+
+## findMaxOnMultiplesOfThirty
+
+> 어느날, 성준이는 우연히 길거리에서 양수 N을 보았다. 성준이는 30이란 수를 존경하기 때문에, 그는 길거리에서 찾은 수에 포함된 숫자들을 섞어 30의 배수가 되는 가장 큰 수를 만들고 싶어한다. 성준이를 도와 그가 만들고 싶어하는 수를 계산하는 프로그램을 작성하라. (그 수가 존재한다면)
+
+> 출력 : 성준이가 만들고 싶어하는 수가 존재한다면 그 수를 출력하라. 그 수가 존재하지 않는다면, -1을 출력하라.
+
+
+```js
+
+
+findMaxOnMultiplesOfThirty(4095)  // 9540
+findMaxOnMultiplesOfThirty(1023)  // 3210
+findMaxOnMultiplesOfThirty(4800)  // 8400
+
+```
+
+
+### My_Soultion
+
+```js
+function findMaxOnMultiplesOfThirty(num) {
+  
+  // your code here
+  
+  // 4095 --> 9540
+  // 1023 --> 3210
+  // 4800 --> 8400
+
+
+  str = String(num); // num 를 문자열로 바꾼다.
+
+  let sum = str.split('').map(Number).reduce(function(acc,curr){ // 
+    return acc + curr;
+  });
+    
+  if ( sum % 3 === 0 && str.includes('0')) {
+    return Number(str.split('').map(Number).sort(function(a,b){
+      return b - a;
+    }).join(''));
+  } else {
+    return -1;
+  }
+  }
+
+
+
+
+```
+
+
+
+
+
+### Quesiton
+
+##  threeFiveMultiples
+
+
+> 숫자가 주어졌을때, threeFiveMultiples(num) 함수는 해당 숫자보다 작은 3 혹은 5의 배수들의 총합을 반환합니다.
+
+
+
+
+```js
+
+예시: 만약 10이 주어졌다면, 10 보다 작은 3과 5의 배수들은 3, 5, 6, 9 가 있으며 
+
+해당 숫자들을 모두 더하면 23 이 나오므로 여러분이 작성하진 함수는 23 을 반환해야 합니다.
+
+
+
+```
+
+
+### My_Soultion
+
+
+```js
+function threeFiveMultiples(num) {
+
+  // 여기에 코드를 작성하세요
+
+  let sum3 = 0; // 3의 배수들이 담긴다.
+  let sum5 = 0; // 5의 배수들이 담긴다. 
+
+  for ( let i = 1; i < num; i = i + 1 ) { // 10(Num) 보다 작을때까지 돌린다. 
+    if (i % 3 === 0 ) {   // i 값이 3 6 9 가 되면 통과
+      sum3 = sum3 + i;  //  3 + 6 + 9 = 18 
+    } else if ( i % 5 === 0) { // i 값이 5 가 되면 통과
+      sum5 = sum5 + i;  // 0 + 5 = 5
+    }
+  }
+  return sum3 + sum5; // 18 + 5 = 23
+
+}
+
+
+
+```
+
+
+
+
+
+
+
+
+
+### Question
+
+
+## runLength
+
+>문자열이 주어졌을때, runLength(str) 함수는 Run-length 인코딩 알고리즘을 사용하여 주어진 문자열을 압축하여 반환합니다.
+
+>해당 알고리즘은 반복되는 글자가 있을경우 반복되는 수와 해당 글자를 조합하여 문자열을 압축시킵니다.
+
+```js
+예시: wwwggopp 는 3w2g1o2p 로 압축됩니다. 
+주어지는 문자열은 숫자나, 구두점이나, 문자를 포함하고 있지 않습니다.
+
+
+```
+
+### My_Soultion
+
+```js
+
+
+function runLength(str) {
+  // Your code here
+
+ let result = new Array(); // << new Array() 와 [] 차이점 
+ let count = 1; // 숫자를 계산하기위해 1로 초기값설정
+ for ( let i = 0; i < str.length; i = i + 1 ) {
+   if ( str[i] === str[i + 1]) {
+     count = count + 1;
+   } else {
+     result.push(count);
+     result.push(str[i]);
+     count = 1;
+   }
+ }
+ return result.join('');
+}
+
+```
+
+
+
+### Qeustion
+
+
+## thirdGreatest
+
+> 문자열로 이루어진 배열이 주어졌을때, thirdGreatest(strArr) 함수는 주어진 배열에서 세번째로 긴 단어를 반환합니다. 그 중, 동률일때는 뒤에 있는 단어를 반환해줘야 합니다.
+
+
+
+```js
+
+예를 들어, 주어진 배열이 ["hello", "world", "before", "all"] 라면, 결과값은 world 가 될것입니다. 
+
+왜냐하면 before는 6글자이고 hello와 world 둘다 5글자 이지만 world가 더 뒤에 나온 5글자 단어이기 때문입니다.
+
+만약 주어진 배열이 ["hello", "world", "after", "all"] 이라면 결과값은 after가 될것입니다. 
+
+왜냐하면 앞에 세 단어가 모두 5글자이기 때문에 마지막 단어를 반환하기 때문입니다. 
+
+배열은 항상 적어도 문자열 세개를 가지고 있으며, 각각의 문자열은 오직 글자만을 포함하고 있습니다.
+
+
+```
+
+### My_Soultion
+
+```js
+
+function thirdGreatest(arr) {
+  
+  // 여기에 코드를 작성하세요
+
+  // 1. sort() 메소드를 이용해서 문자열의 길이가 가장 긴것들을 가장 처음으로 배열한다. 
+  // 2. 3번째 배열에 있는 요소를 출력한다. 
+
+   let lineUp = function (a,b) {
+     if (a.length > b.length) {
+       return -1;
+     } else if (a.length === b.length){
+       return 0;
+     } else {
+       return 1;
+     }
+  }
+  return arr.sort(lineUp)[2];
+}
+  
+
+
+
+```
+
+
+
+### Question
+
+## superIncreasing
+
+> 숫자로 이루어진 배열이 주어졌을때, superIncreasing(arr) 함수는 해당 배열이 superIncreasing 조건을 만족하는지 반환합니다. 배열의 모든 요소들이 해당 요소들 앞에 있는 요소들 전체의 합보다 크면 superIncreasing 조건을 만족하는 배열이라 할 수 있습니다.
+
+```js
+
+//(예시: 만약 주어진 배열이 [1, 3, 6, 13, 54] 라면 superIncreasing 조건에 만족하기 때문에 여러분의 함수는 true를 반환해야 합니다. 
+
+// 만약 superIncreasing 조건에 만족하지 않는다면 여러분의 함수는 false를 반환해야 합니
+
+```
+
+
+### My_Soultion
+
+
+
+```js
+
+function superIncreasing(arr) {
+
+  // 1. arr 안에 0번째 요소를 비교할 대상으로 사용하기 위해 변수에 담는다.
+  // 2. for 문을 사용하여 배안안에 길이가 끝날때까지 만큼 조건을 걸어둔다. 
+  
+  // [1, 3, 6, 13, 54] 
+  
+  let  num = arr[0]; // 1
+  for (let i = 0; i < arr.length -1; i = i + 1 ) { // 4
+    if (num > arr[i+1]) {  //  1 > 3 
+      return false;
+    } else {
+      num = num + arr[i];
+  
+    }
+  }
+  return true
+}
+
+
+
+
+```
+
+###
+
+### Quesiton
+
+## multiplicativePersistence
+
+>양의 정수가 주어졌을때, multiplicativePersistence(num) 함수는 주어진 수의 각 자리의 숫자를 곱했을때 한 자릿수가 될때까지의 계산 횟수를 반환합니다.
+
+```js
+//예시: 만약 입력값이 39라면, 여러분의 함수는 3을 반환해야 합니다.
+
+//왜냐하면
+
+//3 * 9 = 27
+
+//그리고 2 * 7 = 14
+
+// 그리고 마지막으로 1 * 4 = 4 이므로 한 자리가 될 때까지 총 3번의 계산을 하기 때문입니다.
+
+
+```
+
+### My_Soultion
+
+
+
+```js
+
+function multiplicativePersistence(num) {
+ /*
+ 0. 숫자를 문자열로 바꾼다.
+ 1. 입력값(숫자)가 한 자리인가?
+ 1-1. No ->
+ 한 글자씩 나눠서 배열로 만든다.
+ 배열을 도는 반복문을 만드는데,
+ 새 변수를 1로 저장하고 새 변수에 하나씩 곱해준다. (여기서 숫자로 바꿔줌)
+ 곱해준 값이 한 자리인지 다시 진단한다.
+ */
+ let count = 0;
+ while(num.toString().length > 1){
+   let resultVal = 1
+   count = count + 1
+   for (let i=0; i<num.toString().length; i++){
+     resultVal = resultVal * Number(num.toString()[i]);
+   }
+   num = resultVal;
+ }
+ return count;
+}
+
+
+```
+
+
+
+### Question
+
+## letterCapitalize
+
+> letterCapitalize(str)는 문자열을 parameter로 받는 함수로, 문자열의 각 단어의 첫번째 글자를 대문자로 만듭니다.
+
+* output
+
+```js
+
+letterCapitalize("hello world"); // "Hello World"
+letterCapitalize("javascript is sexy") // "Javascript Is Sexy
+
+
+
+```
+
+### My_Soultion
+
+
+
+```js
+
+function letterCapitalize(str) {
+  // Your code here
+
+  // "Hello World"
+  let strArr = str.split(" ");
+  let newArr = [];
+  for (let i =0; i < strArr.length; i ++ ) {
+  let element = strArr[i].replace(strArr[i][0],strArr[i][0].toUpperCase());
+  newArr.push(element);
+  }
+  return newArr.join(" ");
+
+  
+}
+
+
+```
+
+
+
 ### Question
 
 ## powerOfTwo
@@ -624,17 +974,13 @@ function flatten (nestedArray, result) {
 
 
 
-
-
-
-
 ### Qeustion
 
 
-## 갹채를 함쳐주는 함수 만들기 2(key 덮어쓰지 않기 )
+## 갹채를 함쳐주는 함수 만들기 2 (key 덮어쓰지 않기 )
 
 
-## My_Soultion
+### My_Soultion
 
 ```js
  // extend와 비슷하지만, 이번엔 이미 존재하는 key에 대해 값을 덮어쓰기 하지 않습니다.
