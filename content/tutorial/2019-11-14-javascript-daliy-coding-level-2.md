@@ -16,6 +16,74 @@ summary: 'write here:rocket:'
 ---
 
 
+
+
+### Quesiton
+
+## runLength
+
+
+> 문자열이 주어졌을때, runLength(str) 함수는 Run-length 인코딩 알고리즘을 사용하여 주어진 문자열을 압축하여 반환합니다.
+
+>해당 알고리즘은 반복되는 글자가 있을경우 반복되는 수와 해당 글자를 조합하여 문자열을 압축시킵니다.
+
+>예시: wwwggopp 는 3w2g1o2p 로 압축됩니다. 주어지는 문자열은 숫자나, 구두점이나, 문자를 포함하고 있지 않습니다.
+
+## My_Soultion
+
+
+```js
+
+function runLength(str) {
+   
+
+   // 같은 char 끼리 묶기 위해 우선 각배열안에 담아서 newArr안에 넣느다 .
+   // newArr = (4) [Array(3), Array(5), Array(6), Array(8)]
+   
+   // (3) ["w", "w", "w"]
+   // (5) ["w", "w", "w", "g", "g"]
+   // (6) ["w", "w", "w", "g", "g", "o"]
+   // (8) ["w", "w", "w", "g", "g", "o", "p", "p"]
+   
+    var strArr = str.split("");
+    var newArr = [];
+    var index = 0;
+    for (let i = 0; i < strArr.length ; i ++  ) {
+        let copeArr = strArr.slice(); 
+        if(strArr[i] !== strArr[i + 1]) {
+            // i = 2 , 4, 5, 7
+            copeArr.splice(i+1,0,"-"); // ["w", "w","w","-","g", "g", "o", "p", "p"]
+            newArr.push(copeArr.slice(index,i+1));
+        }
+    }
+
+    // retArr 안에  같은 char 끼리 모아 놓는다.
+    // retArr = (4) ["www", "gg", "o", "pp"]
+    var retArr = [];
+    var filtered = [];
+    retArr.push(newArr[0].join(""))
+    for (let i = 0; i < newArr.length- 1; i ++ ) {
+        retArr.push(newArr[i+1].slice(newArr[i].length).join(""))
+	
+    }
+    
+    // map 을 이용하여 outPut 변수안에 숫자와 char각각요소를 합쳐 배열로 만든다.
+    // outPut["3w", "2g", "1o", "2p"]
+    
+    let outPut = retArr.map(function(val) {
+	return  val.length + val[0];
+	})
+
+    // 문자열로 만들고 리턴한다. 
+    return outPut.join("");
+
+}
+
+
+```
+
+
+
 ### Question
 
 ## numberSearch
