@@ -16,6 +16,97 @@ summary: 'write here:rocket:'
 ---
 
 
+### Quesiton
+
+> +, -, 그리고 괄호를 가지고 길이가 최대 50인 식을 만들었다. 그리고 나서 성준 이는 괄호를 모두 지웠다. 그리고 나서 괄호를 적절히 쳐서 이 식의 값을 최소로 만드려고 한다. 괄호를 적절히 쳐서 이 식의 값을 최소로 만드는 프로그램을 작성하시오.
+
+### output
+
+```js
+findMinByBracket('55-50+40') // -35
+
+
+
+```
+
+
+### My_soultion
+
+
+
+```js
+
+
+function findMinByBracket(str) {
+  let arr = str.split("-")
+  let sumPlus = 0;
+  let sum = 0;
+  for (let i = 0; i < arr.length; i ++ ) {
+    if (arr[i].split("+").length > 1 )	 { // [55-50+40]
+    sumPlus = arr[i].split("+").map(Number).reduce(function(a,c){
+	    return  a + c
+      });
+      arr.splice(i,1,sumPlus.toString());
+      }
+      // 현재  arr = ["50","90"];	
+      sum = arr.map(Number).reduce(function(a,c){
+        return  a - c;
+      });
+  }
+      return sum;
+}
+
+
+```
+
+
+### Quesiton
+
+## findMaxOnMultiplesOfThirty
+
+> 어느날, 성준이는 우연히 길거리에서 양수 N을 보았다. 성준이는 30이란 수를 존경하기 때문에, 그는 길거리에서 찾은 수에 포함된 숫자들을 섞어 30의 배수가 되는 가장 큰 수를 만들고 싶어한다. 성준이를 도와 그가 만들고 싶어하는 수를 계산하는 프로그램을 작성하라. (그 수가 존재한다면)
+
+> 출력 : 성준이가 만들고 싶어하는 수가 존재한다면 그 수를 출력하라. 그 수가 존재하지 않는다면, -1을 출력하라.
+
+
+* outPut
+
+```js
+
+
+findMaxOnMultiplesOfThirty(4095)  // 9540
+findMaxOnMultiplesOfThirty(1023)  // 3210
+findMaxOnMultiplesOfThirty(4800)  // 8400
+```
+
+
+
+### My_Soultion
+
+
+```js
+
+function findMaxOnMultiplesOfThirty(num) {
+  // your code here
+  let num2 = num.toString().split("").map(Number);
+  let num3 = num2.sort().reverse().join("");
+
+  let num4 = Number(num3);
+  if (num4 % 30 === 0 ){
+    return num4; 
+  } else {
+    return -1;
+  }
+
+}
+
+
+
+
+
+```
+
+
 
 ### Question
 
@@ -59,16 +150,20 @@ function threeFiveMultiples(num) {
 ## runLength
 
 
+> `3시간 반 소요` 
+
 > 문자열이 주어졌을때, runLength(str) 함수는 Run-length 인코딩 알고리즘을 사용하여 주어진 문자열을 압축하여 반환합니다.
 
 >해당 알고리즘은 반복되는 글자가 있을경우 반복되는 수와 해당 글자를 조합하여 문자열을 압축시킵니다.
 
 >예시: wwwggopp 는 3w2g1o2p 로 압축됩니다. 주어지는 문자열은 숫자나, 구두점이나, 문자를 포함하고 있지 않습니다.
 
-## My_Soultion
+### My_Soultion
 
 
 ```js
+
+
 
 function runLength(str) {
    
