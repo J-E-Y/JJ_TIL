@@ -16,6 +16,44 @@ summary: 'write here:rocket:'
 ---
 
 
+### Question
+
+## findMissingNumber
+
+>성준이는 1부터 n까지 숫자를 적던 중 깜빡하고 하나의 숫자를 빼먹었다. 그 빼먹은 숫자를 찾으시오.
+
+* outPut
+
+
+```js
+
+findMissingNumber('1 6 2 4 3') // => 5
+
+
+```
+
+### My_Soultion
+
+
+```js
+
+function findMissingNumber(str) {
+
+  // code goes here
+  let strArr = str.split(" ").map(Number);
+  let x = function(a,b){
+	return a-b;
+  }
+  let orderArr = strArr.sort(x);
+  let arr = orderArr.filter(function(ele,index){
+		return ele -1 !== index;
+	})
+	return arr[0]-1
+}
+
+```
+
+
 ### Quesiton
 
 > +, -, 그리고 괄호를 가지고 길이가 최대 50인 식을 만들었다. 그리고 나서 성준 이는 괄호를 모두 지웠다. 그리고 나서 괄호를 적절히 쳐서 이 식의 값을 최소로 만드려고 한다. 괄호를 적절히 쳐서 이 식의 값을 최소로 만드는 프로그램을 작성하시오.
