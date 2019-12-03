@@ -18,6 +18,129 @@ summary: 'write here:rocket:'
 
 ### Question
 
+## gcd(최대 공약 알고리즘) 함수 작성
+
+> 주어진 두 숫자에 대한 최대공약수(greatest common divisor)를 구하세요
+
+* outPut
+
+```js
+
+gcd(22, 24) // 2
+
+```
+
+### My_soultion
+
+
+```js
+
+function gcd(num1, num2) {
+  // code goes here   
+
+  //num1 = 12,num 2 = 8
+  let num1Arr = [];
+  let num2Arr = [];
+  for (let i =0; i <= num1; i ++) {
+    num1Arr.push(i);
+  }
+  for (let i =0; i <= num1; i ++) {
+    num2Arr.push(i);
+  }
+  
+  let filteredArr1 = num1Arr.filter((ele)=>{
+    return num1 % ele === 0;
+  })
+  let filteredArr2 = num2Arr.filter((ele)=>{
+    return num2 % ele === 0;
+  })
+
+  let totalArr = filteredArr1.filter(function(val) {
+  return filteredArr2.indexOf(val) !== -1;
+});
+
+  return Math.max(...totalArr);
+
+}
+
+
+
+
+
+```
+
+
+### Other_Soultion 1
+
+```js
+function getGCD(value1, value2) {
+  if (typeof value1 !== "number" || typeof value2 !== "number") {
+    return;
+  }
+  // value1과 value2 중 큰 값을 기준으로 값을 선택
+  let num = value1 > value2 ? value1 : value2;
+  let max;
+
+  for (let i = 1; i <= num; i++) {
+    if (value1 % i === 0 && value2 % i === 0) {
+      max = i;
+    }
+  }
+
+  return max;
+}
+console.log(getGCD(280, 30)); // 10
+console.log(getGCD(12, 4)); // 4
+
+
+```
+
+
+
+### Other_Soultion 2
+
+```js
+
+function gcd(num1, num2) {
+  return num2 ? gcd(num2, num1 % num2) : num1;
+}
+
+
+```
+
+
+
+
+
+### 약수 공약 알고리즘
+
+```js
+export function getDivisor(value) {
+  if (typeof value !== "number") {
+    return;
+  }
+  let result = [];
+
+  for (let i = 1; i <= value; i++) {
+    if (value % i === 0) {
+      result.push(i);
+    }
+  }
+
+  return result.toString();
+}
+
+console.log(getDivisor(30)); // 1,2,3,5,6,10,15,30
+console.log(getDivisor(12)); // 1,2,3,4,6,12
+
+
+```
+
+
+
+
+### Question
+
 ## findMissingNumber
 
 >성준이는 1부터 n까지 숫자를 적던 중 깜빡하고 하나의 숫자를 빼먹었다. 그 빼먹은 숫자를 찾으시오.
@@ -44,7 +167,7 @@ function findMissingNumber(str) {
   let x = function(a,b){
 	return a-b;
   }
-  let orderArr = strArr.sort(x);
+  let orderArr = strArr.sort(x); 
   let arr = orderArr.filter(function(ele,index){
 		return ele -1 !== index;
 	})

@@ -371,8 +371,12 @@
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/tutorial/javascript_q1/">3.Javascript</a>
+    <a class="docs-toc-link" href="/tutorial/javascript_q2/">3.Javascript</a>
     <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tutorial/javascript_q2/">notes 2</a>
+      </li>
       
       <li >
         <a href="/tutorial/javascript_q1/">x Coding_level_1</a>
@@ -388,10 +392,6 @@
       
       <li >
         <a href="/tutorial/javascript_algorithm/">xCoding_level_2</a>
-      </li>
-      
-      <li >
-        <a href="/tutorial/javascript_q2/">xDictionary_level_2</a>
       </li>
       
     </ul>
@@ -420,6 +420,13 @@
 <ul>
 <li>
 <ul>
+<li><a href="#메소드란">메소드란?</a>
+<ul>
+<li>
+<ul>
+<li><a href="#객체안에-함수가-들어있는것이-메소드">객체안에 함수가 들어있는것이 메소드</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#ascii-아키스">ASCII(아키스)</a>
 <ul>
 <li>
@@ -450,6 +457,27 @@
 
           <div class="article-style" itemprop="articleBody">
             
+
+<h2 id="메소드란">메소드란?</h2>
+
+<h4 id="객체안에-함수가-들어있는것이-메소드">객체안에 함수가 들어있는것이 메소드</h4>
+
+<pre><code class="language-js">
+// 객체 만든다 
+// obj 의 키는 foo
+// foo 의 값은 function()
+// obj.foo() 메소드 호출한것이다. 
+obj = {
+    foo: function () {
+        return “hello world”
+    }
+  }
+
+obj.foo() // “hello world” 
+
+
+
+</code></pre>
 
 <h2 id="ascii-아키스">ASCII(아키스)</h2>
 

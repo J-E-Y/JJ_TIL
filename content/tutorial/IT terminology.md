@@ -14,6 +14,29 @@ summary: 'write here:rocket:'
 ---
 
 
+## 메소드란?
+
+
+#### 객체안에 함수가 들어있는것이 메소드
+
+```js
+
+// 객체 만든다 
+// obj 의 키는 foo
+// foo 의 값은 function()
+// obj.foo() 메소드 호출한것이다. 
+obj = {
+    foo: function () {
+        return “hello world”
+    }
+  }
+
+obj.foo() // “hello world” 
+
+
+
+```
+
 ## ASCII(아키스) 
 
 

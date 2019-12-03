@@ -1,5 +1,5 @@
 ---
-title: xDictionary_level_2
+title: notes 2 
 date: 2019-6
 draft: true
 menu:
