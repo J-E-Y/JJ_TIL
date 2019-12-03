@@ -428,7 +428,8 @@
 <ul>
 <li><a href="#my-soultion">My_soultion</a></li>
 <li><a href="#other-soultion-1">Other_Soultion 1</a></li>
-<li><a href="#other-soultion-2">Other_Soultion 2</a></li>
+<li><a href="#other-soultion-2-1">Other_Soultion 2-1</a></li>
+<li><a href="#other-soultion-2-2">Other_Soultion 2-2</a></li>
 <li><a href="#약수-공약-알고리즘">약수 공약 알고리즘</a></li>
 <li><a href="#question-1">Question</a></li>
 </ul></li>
@@ -872,7 +873,25 @@ console.log(getGCD(12, 4)); // 4
 
 </code></pre>
 
-<h3 id="other-soultion-2">Other_Soultion 2</h3>
+<h3 id="other-soultion-2-1">Other_Soultion 2-1</h3>
+
+<pre><code class="language-js">
+
+function gcd(num1, num2) {
+  if(num2 === 0) { 
+    return num1;
+  }
+    let c = num1 % num2 // 0나머지값이 나올때까지 계속 num1 % num2 실행
+    // 자리를 바꾼다.
+    num1 = num2 // num1 은 num2 가 되고 
+    num2 = c //  num2 는 c 가 된다.  
+    return gcd(num1, num2) // 계속 실행시킨다. 
+}
+
+
+</code></pre>
+
+<h3 id="other-soultion-2-2">Other_Soultion 2-2</h3>
 
 <pre><code class="language-js">
 function gcd(num1, num2) {

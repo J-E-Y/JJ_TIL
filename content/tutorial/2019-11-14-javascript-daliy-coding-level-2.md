@@ -94,10 +94,27 @@ console.log(getGCD(12, 4)); // 4
 
 
 ```
+### Other_Soultion 2-1
+
+```js
 
 
+function gcd(num1, num2) {
+  if(num2 === 0) { 
+    return num1;
+  }
+    let c = num1 % num2 // 0나머지값이 나올때까지 계속 num1 % num2 실행
+    // 자리를 바꾼다.
+    num1 = num2 // num1 은 num2 가 되고 
+    num2 = c //  num2 는 c 가 된다.  
+    return gcd(num1, num2) // 계속 실행시킨다. 
+}
 
-### Other_Soultion 2
+
+```
+
+
+### Other_Soultion 2-2
 
 ```js
 
