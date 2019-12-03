@@ -1978,6 +1978,41 @@ function hasChildElement(elm) {
 
 &lt;h2 id=&#34;3-my-post&#34;&gt;3. My_post&lt;/h2&gt;
 
+&lt;h2 id=&#34;두개의-배열을-비교-및-출력&#34;&gt;두개의 배열을 비교 및 출력&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;filter() and indexOf()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let filtered1 = [1, 2, 3, 4, 5, 12]
+let filtered2 = [1, 2, 4, 8]
+
+let result = filtered1.filter(function(val) {
+  return filtered2.indexOf(val) !== -1;
+  
+reulst // [1, 2, 4] 중복된 값을 리턴한다. 
+});
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;filter() and includes()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let filtered1 = [1, 2, 3, 4, 5, 12]
+let filtered2 = [1, 2, 4, 8]
+
+let result = filtered1.filter((val) =&amp;gt; {
+  return filtered2.includes(val);
+
+})
+
+result  // [1, 2, 4]
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;underbar&#34;&gt;underBar&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
@@ -2925,7 +2960,7 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 
 &lt;p&gt;&lt;code&gt;undefined&lt;/code&gt; 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_70&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_71&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;4-post-from-others&#34;&gt;4. post from others&lt;/h2&gt;
 

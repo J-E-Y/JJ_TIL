@@ -541,6 +541,7 @@
 <li><a href="#checkbox-안에-있는-value-값-얻기">checkbox 안에 있는 value 값 얻기</a></li>
 <li><a href="#toc_59">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#3-my-post">3. My_post</a></li>
+<li><a href="#두개의-배열을-비교-및-출력">두개의 배열을 비교 및 출력</a></li>
 <li><a href="#underbar">underBar</a></li>
 <li><a href="#array-중복-제거하는-방법">Array 중복 제거하는 방법</a></li>
 <li><a href="#string-안에-알파벳-뽑기">string 안에 알파벳 뽑기</a></li>
@@ -550,7 +551,7 @@
 <li><a href="#foreach-for-of-for-in-의-차이">forEach, for of, for in 의 차이</a></li>
 <li><a href="#falsy-와-fruthy-구별">Falsy 와 Fruthy 구별</a></li>
 <li><a href="#null-과-undefined-는-등록-저장-여부이다">null 과 undefined 는 등록, 저장 여부이다.</a></li>
-<li><a href="#toc_70">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_71">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#4-post-from-others">4. post from others</a></li>
 <li><a href="#rest파라미터와-spread연산자-or-함수의-가독성을-높이는-방법">Rest파라미터와 Spread연산자 or 함수의 가독성을 높이는 방법</a>
 <ul>
@@ -2517,6 +2518,41 @@ function hasChildElement(elm) {
 
 <h2 id="3-my-post">3. My_post</h2>
 
+<h2 id="두개의-배열을-비교-및-출력">두개의 배열을 비교 및 출력</h2>
+
+<ul>
+<li>filter() and indexOf()</li>
+</ul>
+
+<pre><code class="language-js">
+let filtered1 = [1, 2, 3, 4, 5, 12]
+let filtered2 = [1, 2, 4, 8]
+
+let result = filtered1.filter(function(val) {
+  return filtered2.indexOf(val) !== -1;
+  
+reulst // [1, 2, 4] 중복된 값을 리턴한다. 
+});
+
+</code></pre>
+
+<ul>
+<li>filter() and includes()</li>
+</ul>
+
+<pre><code class="language-js">
+let filtered1 = [1, 2, 3, 4, 5, 12]
+let filtered2 = [1, 2, 4, 8]
+
+let result = filtered1.filter((val) =&gt; {
+  return filtered2.includes(val);
+
+})
+
+result  // [1, 2, 4]
+
+</code></pre>
+
 <h2 id="underbar">underBar</h2>
 
 <pre><code class="language-js">
@@ -3464,7 +3500,7 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 
 <p><code>undefined</code> 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</p>
 
-<h2 id="toc_70">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_71">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="4-post-from-others">4. post from others</h2>
 
