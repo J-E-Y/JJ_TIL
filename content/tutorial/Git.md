@@ -16,15 +16,15 @@ summary: 'write here:rocket:'
 ## 1.Command Line
 
 
-## ls
+## git git ls
 
 * 파일보기 
 
-## ls -A
+## git ls -A
 
 * 숨겨진 파일까지 보기
 
-## ls -al
+## git ls -al
 
 * 상세 내용
 
@@ -46,7 +46,7 @@ summary: 'write here:rocket:'
 
 ```
 
-## cd 디렉토리 이름 
+## git cd 디렉토리 이름 
 
 * 디렉토리로 이동( print working List )
 
@@ -55,13 +55,13 @@ summary: 'write here:rocket:'
 
 ```
 
-## cd- 
+## git cd- 
 
 * 뒤로가기 
 
 
 
-## pwd
+## git pwd
 
 * 내가 어디있는지 확인
 
@@ -71,42 +71,42 @@ summary: 'write here:rocket:'
 ```
 
 
-## touch [file_name]
+## git touch [file_name]
 * 빈 파일 생성
 
-## mkdir [dir_name]
+## git mkdir [dir_name]
 
 * 디렉토리 생성
 
-## cat [file_name]
+## git cat [file_name]
 
 * 텍스트 형태의 파일 확인
 
-## mv [file_or_dir] [target_dir]
+## git mv [file_or_dir] [target_dir]
 
 * 파일 및 디렉토리 옮기기
 
 
-## mv [file_or_dir] [new_name]
+## git mv [file_or_dir] [new_name]
 
 * 파일 및 디렉토리 이름 바꾸기
 
-## cp [file] [target_dir] or cp -r [folder]
+## git cp [file] [target_dir] or cp -r [folder]
 
 * 복사
 
 
-## rm [filename] 
+## git rm [filename] 
 
 * 파일 삭제
 * 휴지통에 들어가지 않음 
 
-## rm -r [dirname]
+## git rm -r [dirname]
 
 * 폴더 삭제
 * 휴지통에 들어가지 않음 
 
-## rm -f [file or dirname];
+## git rm -f [file or dirname];
 
 * `coution` 강제로 지우기 
 
@@ -115,21 +115,83 @@ summary: 'write here:rocket:'
 ## ------------------------------------------------------------
 ## 2.Version Control System
 
-## init
+
+
+## git branch -d test
+
+
+> branch 지우기 
+
+```js
+
+git branch -d test
+# Deleted branch test (was ########).
+
+
+```
+
+
+
+
+## git push origin --delete test
+
+> remote 지우기 
+
+```js
+
+it branch -a
+# *master
+#  test
+#  remote/origin/master
+#  remote/origin/test
+
+
+
+git push origin --delete test
+# To <URL of your repository>.git
+#  - [deleted]         test
+
+```
+
+
+
+## git branch -a
+
+> 현재 romote 상태 보기 
+
+
+
+
+
+```js
+
+git branch -a
+# *master
+#  test
+#  remote/origin/master
+#  remote/origin/test
+
+
+
+
+```
+
+
+## git init
 
 > Create an empty Git repository or reinitialize an existing one
 
-## clone
+## git clone
 
 > Clone a repository into a new directory
 
-## add .
+## git add .
 
 
 > Add all file contents to the index
 
 
-## add 파일 이름 
+## git add 파일 이름 
 
 > one file add 
 
@@ -137,11 +199,11 @@ summary: 'write here:rocket:'
 git add jung.html
 
 ```
-## commit -m ""
+## git commit -m ""
 
 > write message into github
 
-## remote add origin""
+## git remote add origin""
 
 > link local to github 
 
@@ -150,7 +212,7 @@ Git remote add origin "https://github.com/J-E-Y/test_2.git"
 
 ```
 
-## push
+## git push
 
 
 ```js
@@ -160,7 +222,7 @@ Git remote add origin "https://github.com/J-E-Y/test_2.git"
 
 ```
 
-## log
+## git log
 
 
 > 그동안 commit 한 내용을 볼수 있다.
@@ -173,14 +235,14 @@ Git remote add origin "https://github.com/J-E-Y/test_2.git"
 
 
 
-## status
+## git status
 
 
 * 현재 진행 상태 보기
 
 
 
-## config --global
+## git config --global
 
 * 등록하기 
 
@@ -195,7 +257,7 @@ git config --global user.name "yourGitHubusername"
 
 
 
-## branch : 충돌 방지하기
+## git branch : 충돌 방지하기
 
 
 
@@ -223,7 +285,7 @@ git config --global user.name "yourGitHubusername"
 
 > git push  로 마무리 
 
-## Branch
+## git Branch
 
 
 ![](/tutorial/Git_files/Screen Shot 2019-09-24 at 3.19.15 PM.png)
@@ -323,7 +385,7 @@ git config --global user.name "yourGitHubusername"
 
 
 
-## cheakout--
+## git cheakout--
 
 
 > add 한다음에 git status 명령을 하면  수정된 파일이 스테이지에 올라가게 된다. 
@@ -336,7 +398,7 @@ git config --global user.name "yourGitHubusername"
 
 
 
-## reset
+## git reset
 
 
 > add 한 파일을 다시 되돌리기 

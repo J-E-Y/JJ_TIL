@@ -9822,19 +9822,19 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
 
 &lt;h2 id=&#34;1-command-line&#34;&gt;1.Command Line&lt;/h2&gt;
 
-&lt;h2 id=&#34;ls&#34;&gt;ls&lt;/h2&gt;
+&lt;h2 id=&#34;git-git-ls&#34;&gt;git git ls&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;파일보기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;ls-a&#34;&gt;ls -A&lt;/h2&gt;
+&lt;h2 id=&#34;git-ls-a&#34;&gt;git ls -A&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;숨겨진 파일까지 보기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;ls-al&#34;&gt;ls -al&lt;/h2&gt;
+&lt;h2 id=&#34;git-ls-al&#34;&gt;git ls -al&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;상세 내용&lt;/li&gt;
@@ -9857,7 +9857,7 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;cd-디렉토리-이름&#34;&gt;cd 디렉토리 이름&lt;/h2&gt;
+&lt;h2 id=&#34;git-cd-디렉토리-이름&#34;&gt;git cd 디렉토리 이름&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;디렉토리로 이동( print working List )&lt;/li&gt;
@@ -9867,13 +9867,13 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;cd&#34;&gt;cd-&lt;/h2&gt;
+&lt;h2 id=&#34;git-cd&#34;&gt;git cd-&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;뒤로가기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;pwd&#34;&gt;pwd&lt;/h2&gt;
+&lt;h2 id=&#34;git-pwd&#34;&gt;git pwd&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;내가 어디있는지 확인&lt;/li&gt;
@@ -9883,57 +9883,57 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
 // showing that .. Users/myuser/Downloads
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;touch-file-name&#34;&gt;touch [file_name]&lt;/h2&gt;
+&lt;h2 id=&#34;git-touch-file-name&#34;&gt;git touch [file_name]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;빈 파일 생성&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;mkdir-dir-name&#34;&gt;mkdir [dir_name]&lt;/h2&gt;
+&lt;h2 id=&#34;git-mkdir-dir-name&#34;&gt;git mkdir [dir_name]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;디렉토리 생성&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;cat-file-name&#34;&gt;cat [file_name]&lt;/h2&gt;
+&lt;h2 id=&#34;git-cat-file-name&#34;&gt;git cat [file_name]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;텍스트 형태의 파일 확인&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;mv-file-or-dir-target-dir&#34;&gt;mv [file_or_dir] [target_dir]&lt;/h2&gt;
+&lt;h2 id=&#34;git-mv-file-or-dir-target-dir&#34;&gt;git mv [file_or_dir] [target_dir]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;파일 및 디렉토리 옮기기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;mv-file-or-dir-new-name&#34;&gt;mv [file_or_dir] [new_name]&lt;/h2&gt;
+&lt;h2 id=&#34;git-mv-file-or-dir-new-name&#34;&gt;git mv [file_or_dir] [new_name]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;파일 및 디렉토리 이름 바꾸기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;cp-file-target-dir-or-cp-r-folder&#34;&gt;cp [file] [target_dir] or cp -r [folder]&lt;/h2&gt;
+&lt;h2 id=&#34;git-cp-file-target-dir-or-cp-r-folder&#34;&gt;git cp [file] [target_dir] or cp -r [folder]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;복사&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;rm-filename&#34;&gt;rm [filename]&lt;/h2&gt;
+&lt;h2 id=&#34;git-rm-filename&#34;&gt;git rm [filename]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;파일 삭제&lt;/li&gt;
 &lt;li&gt;휴지통에 들어가지 않음&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;rm-r-dirname&#34;&gt;rm -r [dirname]&lt;/h2&gt;
+&lt;h2 id=&#34;git-rm-r-dirname&#34;&gt;git rm -r [dirname]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;폴더 삭제&lt;/li&gt;
 &lt;li&gt;휴지통에 들어가지 않음&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;rm-f-file-or-dirname&#34;&gt;rm -f [file or dirname];&lt;/h2&gt;
+&lt;h2 id=&#34;git-rm-f-file-or-dirname&#34;&gt;git rm -f [file or dirname];&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;coution&lt;/code&gt; 강제로 지우기&lt;/li&gt;
@@ -9943,25 +9943,77 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
 
 &lt;h2 id=&#34;2-version-control-system&#34;&gt;2.Version Control System&lt;/h2&gt;
 
-&lt;h2 id=&#34;init&#34;&gt;init&lt;/h2&gt;
+&lt;h2 id=&#34;git-branch-d-test&#34;&gt;git branch -d test&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;branch 지우기&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+git branch -d test
+# Deleted branch test (was ########).
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-push-origin-delete-test&#34;&gt;git push origin &amp;ndash;delete test&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;remote 지우기&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+it branch -a
+# *master
+#  test
+#  remote/origin/master
+#  remote/origin/test
+
+
+
+git push origin --delete test
+# To &amp;lt;URL of your repository&amp;gt;.git
+#  - [deleted]         test
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-branch-a&#34;&gt;git branch -a&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;현재 romote 상태 보기&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+git branch -a
+# *master
+#  test
+#  remote/origin/master
+#  remote/origin/test
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-init&#34;&gt;git init&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Create an empty Git repository or reinitialize an existing one&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;clone&#34;&gt;clone&lt;/h2&gt;
+&lt;h2 id=&#34;git-clone&#34;&gt;git clone&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Clone a repository into a new directory&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;add&#34;&gt;add .&lt;/h2&gt;
+&lt;h2 id=&#34;git-add&#34;&gt;git add .&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Add all file contents to the index&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;add-파일-이름&#34;&gt;add 파일 이름&lt;/h2&gt;
+&lt;h2 id=&#34;git-add-파일-이름&#34;&gt;git add 파일 이름&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;one file add&lt;/p&gt;
@@ -9971,13 +10023,13 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;commit-m&#34;&gt;commit -m &amp;ldquo;&amp;rdquo;&lt;/h2&gt;
+&lt;h2 id=&#34;git-commit-m&#34;&gt;git commit -m &amp;ldquo;&amp;rdquo;&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;write message into github&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;remote-add-origin&#34;&gt;remote add origin&amp;rdquo;&amp;rdquo;&lt;/h2&gt;
+&lt;h2 id=&#34;git-remote-add-origin&#34;&gt;git remote add origin&amp;rdquo;&amp;rdquo;&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;link local to github&lt;/p&gt;
@@ -9987,7 +10039,7 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;push&#34;&gt;push&lt;/h2&gt;
+&lt;h2 id=&#34;git-push&#34;&gt;git push&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// git push -u origin master  최종 깇허브에 올리기 
 // git push -u origin master  
@@ -9995,7 +10047,7 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;log&#34;&gt;log&lt;/h2&gt;
+&lt;h2 id=&#34;git-log&#34;&gt;git log&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;그동안 commit 한 내용을 볼수 있다.&lt;/p&gt;
@@ -10005,13 +10057,13 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
 &lt;p&gt;log 파일을 나오려면 q  버튼을 누르면 된다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;status&#34;&gt;status&lt;/h2&gt;
+&lt;h2 id=&#34;git-status&#34;&gt;git status&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;현재 진행 상태 보기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;config-global&#34;&gt;config &amp;ndash;global&lt;/h2&gt;
+&lt;h2 id=&#34;git-config-global&#34;&gt;git config &amp;ndash;global&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;등록하기&lt;/p&gt;
@@ -10022,7 +10074,7 @@ git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;branch-충돌-방지하기&#34;&gt;branch : 충돌 방지하기&lt;/h2&gt;
+&lt;h2 id=&#34;git-branch-충돌-방지하기&#34;&gt;git branch : 충돌 방지하기&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;merge 하는 중 출돌이 존재할수 있다.&lt;/p&gt;
@@ -10049,7 +10101,7 @@ git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
 &lt;p&gt;git push  로 마무리&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;branch&#34;&gt;Branch&lt;/h2&gt;
+&lt;h2 id=&#34;git-branch&#34;&gt;git Branch&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Git_files/Screen Shot 2019-09-24 at 3.19.15 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -10118,7 +10170,7 @@ Bug Fix Branch&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;git-log&#34;&gt;git :log&lt;/h2&gt;
+&lt;h2 id=&#34;git-log-1&#34;&gt;git :log&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -10142,7 +10194,7 @@ Bug Fix Branch&lt;/p&gt;
 &lt;p&gt;git push -f 강제로 명령하면 적용된다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;cheakout&#34;&gt;cheakout&amp;ndash;&lt;/h2&gt;
+&lt;h2 id=&#34;git-cheakout&#34;&gt;git cheakout&amp;ndash;&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;add 한다음에 git status 명령을 하면  수정된 파일이 스테이지에 올라가게 된다.&lt;/p&gt;
@@ -10150,7 +10202,7 @@ Bug Fix Branch&lt;/p&gt;
 &lt;p&gt;cheakout&amp;ndash; 이라는 명령을 하면 add 하기전 코드상태로 되돌아 간다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;reset&#34;&gt;reset&lt;/h2&gt;
+&lt;h2 id=&#34;git-reset&#34;&gt;git reset&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;add 한 파일을 다시 되돌리기&lt;/p&gt;
