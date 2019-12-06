@@ -40,6 +40,7 @@ obj.foo() // “hello world”
 ## ASCII(아키스) 
 
 
+
 #### 아키스 코드란 무엇인가?
 
 * ASCII (American Standard Code for Information Interchange, 미국 정보 교환 표준 부호)
