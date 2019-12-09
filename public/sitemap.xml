@@ -185,32 +185,17 @@
   </url>
   
   <url>
-    <loc>/author/admin/</loc>
-  </url>
-  
-  <url>
     <loc>/tutorial/javascript_dictionary/</loc>
-    <priority>0</priority>
+    <lastmod>1970-01-01T09:33:39+09:00</lastmod>
   </url>
   
   <url>
     <loc>/tutorial/javascript_note/</loc>
-    <priority>0</priority>
+    <lastmod>1970-01-01T09:33:39+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/tutorial/javascript_q1/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tutorial/javascript_q2/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tutorial/javascript_algorithm/</loc>
-    <priority>0</priority>
+    <loc>/author/admin/</loc>
   </url>
   
   <url>
@@ -225,6 +210,18 @@
   
   <url>
     <loc>/displaydocs/</loc>
+  </url>
+  
+  <url>
+    <loc>/tutorial/javascript_q2/</loc>
+  </url>
+  
+  <url>
+    <loc>/tutorial/javascript_q1/</loc>
+  </url>
+  
+  <url>
+    <loc>/tutorial/javascript_algorithm/</loc>
   </url>
   
 </urlset>
