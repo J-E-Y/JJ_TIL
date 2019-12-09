@@ -1,18 +1,13 @@
 ---
-title: __My_MDN
-author: JohnJung
-date: '2019-11-14'
-slug: javascript-my-mdn
-categories: []
-tags:
-  - Javascript
+title: __My_MDN 
+date: 2019-04-29
+draft: true
 menu:
   tutorial:
     parent: "6.Javascript"
     weight: 3
 toc: yes
 type: docs
-summary: 'write here:rocket:' 
 ---
 
 

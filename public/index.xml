@@ -4497,1243 +4497,6 @@ console.log(Object.assign(target, source)); // { x: 1, y: 2, z: 3 }
     </item>
     
     <item>
-      <title>Bootstrap</title>
-      <link>/tutorial/bootstrap/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/bootstrap/</guid>
-      <description>
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;bs-image-img-fluid&#34;&gt;BS_image: &lt;strong&gt;img-fluid&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Create responsive images by adding an &lt;code&gt;.img-fluid&lt;/code&gt; class to the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag. The image will then scale nicely to the parent element.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Syntax&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;bs-spacing-my&#34;&gt;BS_Spacing: &lt;strong&gt;my&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Assign responsive-friendly &lt;code&gt;margin&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; values to an element or a subset of its sides with shorthand classes&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Syntax&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;my&amp;quot;&amp;gt;
-  Centered element
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Css</title>
-      <link>/tutorial/css/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/css/</guid>
-      <description>
-
-&lt;h2 id=&#34;lt-style-gt&#34;&gt;&amp;lt;style&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-/*syntax*/
-
-&amp;lt;style&amp;gt;
-
-a {
-  color:red
-  }
-
-&amp;lt;/style&amp;gt;
-
-
-
-&amp;lt;dd&amp;gt;a :  selector(선택자)&amp;lt;/dd&amp;gt;
-&amp;lt;dd&amp;gt;{Color:red}; : declaration (선언)&amp;lt;/dd&amp;gt;
-&amp;lt;dd&amp;gt;{Color} :  property (속성)&amp;lt;/dd&amp;gt;
-&amp;lt;dd&amp;gt;{Color:red} : property value (속성값)&amp;lt;/dd&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;hover-버튼-클릭시-마우스-손가락-변형&#34;&gt;hover 버튼 클릭시 마우스 손가락 변형&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-button.hover {
-
- cursor: pointer;
-}
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;스크롤-만들기&#34;&gt;스크롤 만들기&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--Vertical scroll bar in div which is a child of css grid column --&amp;gt;
-
-&amp;lt;div class=&amp;quot;A&amp;quot;&amp;gt;
-  &amp;lt;div class=&amp;quot;B&amp;quot;&amp;gt;
-    &amp;lt;div class=&amp;quot;C&amp;quot;&amp;gt;search&amp;lt;/div&amp;gt;
-    &amp;lt;div class=&amp;quot;D&amp;quot;&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 먼제 부모 tag 에 grid 명령과 max-hight 을 준다. 
-
-.A {
-  max-height: 300px; /* matters */
-  display: grid; /* matters */
-  overflow: hidden; /* matters */
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-html, body, .A {
-  height: 100%; /* matters */
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.A {
-  max-height: 300px; /* matters */
-  display: grid; /* matters */
-  overflow: hidden; /* matters */
-}
-
-.B {
-  display: grid; /* matters */
-  overflow-y: auto; /* matters */
-}
-
-.D {
-  overflow-y: scroll; /* matters */
-}
-
-.C {
-  padding: 10px;
-  background-color: #07f;
-}
-
-.E {
-  padding: 10px;
-  background-color: #eee;
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-25 at 8.37.27 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;boxmodel&#34;&gt;BoxModel&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;{
-font-size:20px;
-text-align:center;
-text-decoration:none; : 밑줄없애기
-text-decoration:underline; : 언더라인 만들어라
-Border-bottom:red 20px solid;
-Border-right: lightblue 20px solid;
-Border-right:none; (오른쪽에 있는 선 없애기)
-Margin:20px; 가장자리
-Padding:20px;
-width:20px;  : 폭
-Display:none; 
-Display:block; : 전체화면을 이용해라 (block level element)
-Display:inline; : 부분화면을 이용해라 (inline element)
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;wrapper&#34;&gt;wrapper&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-/* Most basic example */ 
-
-#wrapper {
-    width: 500px;
-    margin: 0 auto;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;body&amp;gt;
-    &amp;lt;div id=&amp;quot;wrapper&amp;quot;&amp;gt;
-        Piece of text inside a 500px width div centered on the page
-    &amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&amp;lt;!-- * How the principle works
-
-Create your wrapper and assign it a certain width. Then apply an automatic horizontal margin to it by using `margin: 0 auto;` or `margin-left: auto;` `margin-right: auto;.` The automatic margins make sure your element is centered.
---&amp;gt;
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;media-queries&#34;&gt;media queries&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-/* @media(max-width:800px) :  screen width &amp;lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.
-
-@media(min-width:800px)  : screen width  &amp;gt; 800px스크린이 800px 보다 클때 명령을 내린다.
-*/
-
-
-    @media(max-width:800px) {
-    p {
-        font-size: 1px
-        font-weight
-        font-height
-        Display:block;
-  }
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;grid&#34;&gt;Grid&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 11.52.20 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-
-&amp;lt;div class = &amp;quot;container&amp;quot;&amp;gt;
-
-&amp;lt;div calss = &amp;quot;child1&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child2&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child3&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child4&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child5&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child6&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child7&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child8&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt;
-&amp;lt;div calss = &amp;quot;child9&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt;
-
-&amp;lt;div&amp;gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;HTML&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-.container {
-  
-  display: grid;  // 처음 시작을 지정해준다. 
-  grid-template-columns: 40% 60%; // 위에 있는 그림이 4대 6으로 나뉜다.  
-  grid-template-columns: 4fr 6fr;  //  4대 6으로 나뉜다. 
-  grid-gap:1rem; // 사이마다 공간을 줄때 4fr 6fr 로 쓰는것을 권장한다. % 로 사용하면 여백이 뒤에 생기기 때문.. 
-  
-  grid-template-columns: repeat(3, 1fr); // 이것은  1fr 이 세번 반복 
-  grid-template-columns: 1fr 1fr 1fr; // 이것과 동일하다. 
-
-  grid-template-columns: 200px 1fr; // 200 픽셀로 왼쪽 것을 고정하고 오른쪽 것을 늘리는 것이다. 
-
-  grid-auto-rows: 200px; // 200 픽셀 씩 모두 통일
-  grid-auto-rows: minmax(200px,auto); // 이것은 동일한데 content 늘어나면 같이 같이 늘어난다. 
-
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Css&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 1번칸 늘리기 
-
-.child1 {
-  
-  grid-column: 1/4 // 열에서 1부터 4까지 차지한다. 
-
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.44.12 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 4번칸 밑으로 늘리기 
-
- gird-column:3; // 3번 열부터 시작해라 
- gird-row :2/4; // 2번부터 4버까지 차지하라 
- 
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.45.18 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 9번칸을 4번안에 집어넣는다. 
-  
- gird-colum:3;
- gird-row:3/5;
- 
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.47.05 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>/tutorial/git/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/git/</guid>
-      <description>
-
-&lt;h2 id=&#34;1-command-line&#34;&gt;1.Command Line&lt;/h2&gt;
-
-&lt;h2 id=&#34;git-git-ls&#34;&gt;git git ls&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;파일보기&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-ls-a&#34;&gt;git ls -A&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;숨겨진 파일까지 보기&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-ls-al&#34;&gt;git ls -al&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;상세 내용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// (1)         (2)(3)   (4)      (5) (6)   (7)   (8)
-//drwxr-xr-x   2 root  wheel    64B 11  7 14:14 test/
-
-
-//1접근 권한 (읽기/쓰기/실행 가능) 여부
-//2chmod 명령어
-//3링크된 파일 갯수
-//4소유자
-//5소유그룹
-//6파일 크기
-//7만든 날짜
-//8만든 시간
-//9파일/디렉토리 이름
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;git-cd-디렉토리-이름&#34;&gt;git cd 디렉토리 이름&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;디렉토리로 이동( print working List )&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt; myuser@mymachine:~$ `cd` Downloads
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;git-cd&#34;&gt;git cd-&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;뒤로가기&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-pwd&#34;&gt;git pwd&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;내가 어디있는지 확인&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// myuser@mymachine:~/Downloads$ pwd
-// showing that .. Users/myuser/Downloads
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;git-touch-file-name&#34;&gt;git touch [file_name]&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;빈 파일 생성&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-mkdir-dir-name&#34;&gt;git mkdir [dir_name]&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;디렉토리 생성&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-cat-file-name&#34;&gt;git cat [file_name]&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;텍스트 형태의 파일 확인&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-mv-file-or-dir-target-dir&#34;&gt;git mv [file_or_dir] [target_dir]&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;파일 및 디렉토리 옮기기&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-mv-file-or-dir-new-name&#34;&gt;git mv [file_or_dir] [new_name]&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;파일 및 디렉토리 이름 바꾸기&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-cp-file-target-dir-or-cp-r-folder&#34;&gt;git cp [file] [target_dir] or cp -r [folder]&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;복사&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-rm-filename&#34;&gt;git rm [filename]&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;파일 삭제&lt;/li&gt;
-&lt;li&gt;휴지통에 들어가지 않음&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-rm-r-dirname&#34;&gt;git rm -r [dirname]&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;폴더 삭제&lt;/li&gt;
-&lt;li&gt;휴지통에 들어가지 않음&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-rm-f-file-or-dirname&#34;&gt;git rm -f [file or dirname];&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;coution&lt;/code&gt; 강제로 지우기&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;toc_16&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/h2&gt;
-
-&lt;h2 id=&#34;2-version-control-system&#34;&gt;2.Version Control System&lt;/h2&gt;
-
-&lt;h2 id=&#34;git-branch-d-test&#34;&gt;git branch -d test&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;branch 지우기&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-git branch -d test
-# Deleted branch test (was ########).
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;git-push-origin-delete-test&#34;&gt;git push origin &amp;ndash;delete test&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;remote 지우기&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-it branch -a
-# *master
-#  test
-#  remote/origin/master
-#  remote/origin/test
-
-
-
-git push origin --delete test
-# To &amp;lt;URL of your repository&amp;gt;.git
-#  - [deleted]         test
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;git-branch-a&#34;&gt;git branch -a&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;현재 romote 상태 보기&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-git branch -a
-# *master
-#  test
-#  remote/origin/master
-#  remote/origin/test
-
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;git-init&#34;&gt;git init&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Create an empty Git repository or reinitialize an existing one&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;git-clone&#34;&gt;git clone&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Clone a repository into a new directory&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;git-add&#34;&gt;git add .&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Add all file contents to the index&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;git-add-파일-이름&#34;&gt;git add 파일 이름&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;one file add&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;git add jung.html
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;git-commit-m&#34;&gt;git commit -m &amp;ldquo;&amp;rdquo;&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;write message into github&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;git-remote-add-origin&#34;&gt;git remote add origin&amp;rdquo;&amp;rdquo;&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;link local to github&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;Git remote add origin &amp;quot;https://github.com/J-E-Y/test_2.git&amp;quot;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;git-push&#34;&gt;git push&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// git push -u origin master  최종 깇허브에 올리기 
-// git push -u origin master  
-// git push -f origin master ( 강제로)
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;git-log&#34;&gt;git log&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;그동안 commit 한 내용을 볼수 있다.&lt;/p&gt;
-
-&lt;p&gt;enter 키를 치면 밑에 내용을 계속 볼수 있다.&lt;/p&gt;
-
-&lt;p&gt;log 파일을 나오려면 q  버튼을 누르면 된다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;git-status&#34;&gt;git status&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;현재 진행 상태 보기&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-config-global&#34;&gt;git config &amp;ndash;global&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;등록하기&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git config --global user.email &amp;quot;yourGitHub@email.com&amp;quot;
-git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;git-branch-충돌-방지하기&#34;&gt;git branch : 충돌 방지하기&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;merge 하는 중 출돌이 존재할수 있다.&lt;/p&gt;
-
-&lt;p&gt;master branch 와 develop branch와 내용이 다를경우 master branch 에서 통합을 한다.&lt;/p&gt;
-
-&lt;p&gt;merge 하는 순간 conflict 가 발생 한다.&lt;/p&gt;
-
-&lt;p&gt;git은 병합한 코드가 무엇이 다른지 코드안에 표시가 되게 한다.
-그리고 그분은에 들어가서 HAED 부분을 선택할지 develop 부분을 선택할지 직접 수동으로  코드를 삭제해서 결정을 하고 저장한다.&lt;/p&gt;
-
-&lt;p&gt;git add . 하고 다시  git merge develop 한다.&lt;/p&gt;
-
-&lt;p&gt;그럼 병합이 된것이다.&lt;/p&gt;
-
-&lt;p&gt;확인 git merge develop 하면 이미 병합이 되었다 .&lt;/p&gt;
-
-&lt;p&gt;그럼 log 하면 같은 화면에 master와 develop 가 동시에 나온다.&lt;/p&gt;
-
-&lt;p&gt;develop 는 필요없기 떄문 git branch -d develop 명령으로 삭제한다.&lt;/p&gt;
-
-&lt;p&gt;git branch 만 확인하면 master branch 만 남아있다.&lt;/p&gt;
-
-&lt;p&gt;git push  로 마무리&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;git-branch&#34;&gt;git Branch&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/Git_files/Screen Shot 2019-09-24 at 3.19.15 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Branch : git 은 동시에 여러 개발자들이 프로젝트에서 각기 다른 기능을 개발할 수 있도록 브랜치 (branch) 기능을 제공한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;일반적으로 EX)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Master Branch
-Develop Branch
-Bug Fix Branch&lt;/p&gt;
-
-&lt;p&gt;기능들이 수정되면 Master Branch 에 합치기(Merge) 라면 명령어를 사용해서 합치면 된다.&lt;/p&gt;
-
-&lt;p&gt;Branch 에는 두가지 용어&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;통합Branch : Master Branch 를 말한다.&lt;/li&gt;
-&lt;li&gt;토픽Branch : 특정 기능을 위해 만들어진 Branch 를 말한다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;실습&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;git branch 명령 하면 현재 몇개의 branch 가 있는지 확일할수 있다.&lt;/p&gt;
-
-&lt;p&gt;git branch develop 명령 branch 생성&lt;/p&gt;
-
-&lt;p&gt;cheakout develop 명령을 현재 default 값이 master 에서 새로만든 develop branch 로 바꿔준다. (git branch 로 확인할수 있다.);&lt;/p&gt;
-
-&lt;p&gt;이상태에서 기존 master branchs 에 있는 코드에 수정을 하고 git add 하고 git commit 을 하고 log 명렁을 하면 현재 &amp;lsquo;HAED -&amp;gt; develop&amp;rsquo; 바뀐것을 볼수 있다.&lt;/p&gt;
-
-&lt;p&gt;그러면 master branch 에는 적용이 안되있고 새로생성한 branch 에만 해당되어있다.  그러면 develop 에서 작업을 할수 있다.&lt;/p&gt;
-
-&lt;p&gt;이것을 합치기 위해서는 merge 명령을 한다.&lt;/p&gt;
-
-&lt;p&gt;git cheakout master 명령을 해서 되돌아 간다.&lt;/p&gt;
-
-&lt;p&gt;그리고 git merge develop 명령을 해서 합친다.&lt;/p&gt;
-
-&lt;p&gt;마지막으로 git push 명령을 해서 깃허브에 저장한다.&lt;/p&gt;
-
-&lt;p&gt;필요없는 branch develop 를 삭제는 git branch -d develop 이다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;기존에-commit한-내용으로-되돌아-가기&#34;&gt;기존에 commit한 내용으로 되돌아 가기&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;log 명령을 하고&lt;/p&gt;
-
-&lt;p&gt;git reset &amp;ndash;hard 9a9sdsa8fsdfsd6a78f6safs 명령을 한다.&lt;/p&gt;
-
-&lt;p&gt;가져온 주소명령으로 돌아가고 그 이후에 있는 commit 내용들을 싹다 지운다.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;주의&lt;/em&gt; commit 내용들이 지워질뿐 아니라 모든 로컬에 저장되어있는 파일들도 제거된다.&lt;/p&gt;
-
-&lt;p&gt;그리고 나서 push 를 해주는데 push -f 를 명령해야 깃허브 저장소에서도 동일하게 적용된다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;git-log-1&#34;&gt;git :log&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;git-commit-amend&#34;&gt;git :commit &amp;ndash; amend&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;commit 명령을 잘못 넣으면  이명령어를 통해 수정할수 있다.&lt;/p&gt;
-
-&lt;p&gt;unix 에디터가 실행된다. 이모드는 수정모두와 관리자 모드로 나뉜다.&lt;/p&gt;
-
-&lt;p&gt;수정 모드로 들어가고자 한다면 a 를 입력하면 된다.&lt;/p&gt;
-
-&lt;p&gt;그리고 내용을 수정하고 ESC 누르고 : 입력하면 wq! 수정되고 밖으로 나오게 된다.&lt;/p&gt;
-
-&lt;p&gt;git status  하면 수정된 파일을 볼수 있다.&lt;/p&gt;
-
-&lt;p&gt;git push -f 강제로 명령하면 적용된다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;git-cheakout&#34;&gt;git cheakout&amp;ndash;&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;add 한다음에 git status 명령을 하면  수정된 파일이 스테이지에 올라가게 된다.&lt;/p&gt;
-
-&lt;p&gt;cheakout&amp;ndash; 이라는 명령을 하면 add 하기전 코드상태로 되돌아 간다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;git-reset&#34;&gt;git reset&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;add 한 파일을 다시 되돌리기&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>/tutorial/html/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/html/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;lt-strong-gt&#34;&gt;&amp;lt;strong&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-/*
-
-The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. 
-
-
-
-Note 
-
-what&#39;s the difference bewteen strong tag and b tag ?
-
-strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. 
-
-b tag :평상시대로 굵게 읽는다.
-
-*/
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-h1-gt&#34;&gt;&amp;lt;h1&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--  
-
-The HTML &amp;lt;h1&amp;gt; tag defines the highest level or most important heading in the HTML document. This tag is also commonly referred to as the &amp;lt;h1&amp;gt; element.
-
---&amp;gt;
-
-
-
-&amp;lt;!--  Syntax--&amp;gt;
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;h1&amp;gt;Heading 1 goes here&amp;lt;/h1&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-br-gt&#34;&gt;&amp;lt;br&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-
-&amp;lt;!-- The HTML &amp;lt;br&amp;gt; tag defines a line break within text in the HTML document. This tag is also commonly referred to as the &amp;lt;br&amp;gt; element.--&amp;gt;
-
-
-&amp;lt;!-- Syntax --&amp;gt;
-
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;The paragraph starts here&amp;lt;br&amp;gt;
-and ends on the next line.&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;nbsp-making-space&#34;&gt;&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;  (making space)&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-/*
-HTML will only display one space between words, no matter how many times you press the space bar. To force an extra space to show up, type `&amp;amp;nbsp;` in the area where you want to force the space.
-
-*/
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-p-gt&#34;&gt;&amp;lt;p&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!---
-The HTML &amp;lt;p&amp;gt; tag defines a paragraph in the HTML document. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.--&amp;gt;
-
-* syntax
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;The paragraph goes here.&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-hr-gt&#34;&gt;&amp;lt;hr&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-The HTML &amp;lt;hr&amp;gt; tag defines a thematic break between paragraphs in HTML5, and a horizontal rule in HTML 4.01. This tag is also commonly referred to as the &amp;lt;hr&amp;gt; element.
-
-* Note
-
-The HTML &amp;lt;hr&amp;gt; element makes line bewteen two paragraphs.
-
-* Syntax
-
---&amp;gt;
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;This is the first paragraph.&amp;lt;/p&amp;gt;
-&amp;lt;hr&amp;gt;
-&amp;lt;p&amp;gt;This is the second paragraph.&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-div-gt&#34;&gt;&amp;lt;div&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-The HTML &amp;lt;p&amp;gt; tag defines a generic container in an HTML document that is generally used to group elements. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.
-
-* Note
- 
-The HTML &amp;lt;p&amp;gt; element is found within the &amp;lt;body&amp;gt; tag.
-The &amp;lt;div&amp;gt; tag is generally used to group elements together.
-
-&amp;lt;p&amp;gt; :element is a block-level element.
-
-
-* Syntax
-
-
---&amp;gt;
-
-&amp;lt;body&amp;gt;
-
-&amp;lt;div&amp;gt;
-  &amp;lt;div&amp;gt;this is the type of elemnt &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-span-gt&#34;&gt;&amp;lt;span&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-`height 와 width 적용이 안된다.` 하지만 Disply 사용해서 적용할수 있다 
-
-
-The HTML &amp;lt;span&amp;gt; tag defines a generic inline container in an HTML document. This tag is also commonly referred to as the &amp;lt;span&amp;gt; element.
-
-Note
-
-&amp;lt;span&amp;gt;  tag is is generally used for styling purposes when there is no other element to use.
-&amp;lt;span&amp;gt;  tag is a inline-level element
-&amp;lt;span&amp;gt; tag does not inherently represent anything
-
-
-Syntax
-
---&amp;gt;
-
-&amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;span&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&amp;lt;body&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;span class=&amp;quot;red_text&amp;quot;&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-nav-gt&#34;&gt;&amp;lt;nav&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-The HTML &amp;lt;nav&amp;gt; tag is an HTML5 element that defines a section with navigation links in the HTML document. This tag is also commonly referred to as the &amp;lt;nav&amp;gt; element. It is used to define a block of navigation links, either within the current document or to other documents
-
-
-* Note
-
- The &amp;lt;nav&amp;gt; tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: &amp;lt;header&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;section&amp;gt;, &amp;lt;aside&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;footer&amp;gt;.
-
-
-* Syntax
-
---&amp;gt;
-
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;nav&amp;gt;
-  &amp;lt;ul&amp;gt;
-    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section1/index.html&amp;quot;&amp;gt;Section1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section2/index.html&amp;quot;&amp;gt;Section2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section3/index.html&amp;quot;&amp;gt;Section3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-  &amp;lt;/ul&amp;gt;
-&amp;lt;/nav&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-ul-gt&#34;&gt;&amp;lt;ul&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-* Description
-
-(부모태그)
-The HTML &amp;lt;ul&amp;gt; tag defines an unordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ul&amp;gt; element.
-
-* Note
-
-The HTML &amp;lt;ul&amp;gt; element is found within the &amp;lt;body&amp;gt; tag.
-The &amp;lt;ul&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags.
-Use the &amp;lt;ul&amp;gt; tag when the list items have no numerical ordering.
-You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu lists.
-
-* Syntax
-
-
---&amp;gt;
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;ul&amp;gt;
-  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-li-gt&#34;&gt;&amp;lt;li&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-* Description
-
-
-(부모태그)
-The HTML &amp;lt;li&amp;gt; tag defines a list item in &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt; in the HTML document. This tag is also commonly referred to as the &amp;lt;li&amp;gt; element.
-
-
-* Syntax
-
---&amp;gt;
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;ul&amp;gt;
-  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;ol&amp;gt;
-  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
-&amp;lt;/ol&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-
-* Sample Output 2
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;menu type=&amp;quot;toolbar&amp;quot;&amp;gt;
-  &amp;lt;li&amp;gt;
-    &amp;lt;menu label=&amp;quot;File&amp;quot;&amp;gt;
-      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;new()&amp;quot;&amp;gt;New&amp;lt;/button&amp;gt;
-      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;save()&amp;quot;&amp;gt;Save&amp;lt;/button&amp;gt;
-    &amp;lt;/menu&amp;gt;
-  &amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;
-    &amp;lt;menu label=&amp;quot;Edit&amp;quot;&amp;gt;
-      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;copy()&amp;quot;&amp;gt;Copy&amp;lt;/button&amp;gt;
-      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;paste()&amp;quot;&amp;gt;Paste&amp;lt;/button&amp;gt;
-    &amp;lt;/menu&amp;gt;
-  &amp;lt;/li&amp;gt;
-&amp;lt;/menu&amp;gt;
-&amp;lt;/body&amp;gt;
-
-&amp;lt;!--
-* Note
-
-The &amp;lt;li&amp;gt; tag is used within &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt;.
-You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
-
---&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;lt-ol-gt&#34;&gt;&amp;lt;ol&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-* Description
-(자식태그)
-The HTML &amp;lt;ol&amp;gt; tag defines an ordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ol&amp;gt; element.
-
-* Syntax
-
---&amp;gt;
-
-
-
-
-&amp;lt;body&amp;gt;
-&amp;lt;ol&amp;gt;
-  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
-&amp;lt;/ol&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-&amp;lt;!--
-
-* Note
-
-The &amp;lt;ol&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags. 
-Use the &amp;lt;ol&amp;gt; tag when the list items have numeric, meaningful ordering.
-You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists.
-
---&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;lt-form-gt&#34;&gt;&amp;lt;form&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-
-&amp;lt;!--
-
-* Description
-
-The HTML `&amp;lt;form&amp;gt; tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `&amp;lt;form&amp;gt;` element.
-
-* Syntax
-
---&amp;gt;
-
-&amp;lt;body&amp;gt;
-  &amp;lt;form action=&amp;quot;&amp;quot; method=&amp;quot;get&amp;quot;&amp;gt;
-    Company: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;company&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
-    Address: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;address&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
-    &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Submit&amp;quot;&amp;gt;
-  &amp;lt;/form&amp;gt;
-&amp;lt;/body&amp;gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Sample Output&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-06-01 at 9.40.42 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;lt-container-gt&#34;&gt;&amp;lt;container&amp;gt;&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-* Description
-
-In HTML, the container is the area enclosed by the beginning and ending tags. For example &amp;lt; HTML &amp;gt; encloses an entire document while other tags may enclose a single word, paragraph, or other elements. In HTML code, all container must have a start and stop tag to close the container. Without a stop tag the start tag will apply to the entire document.
- 
-
---&amp;gt;
-
-
-
-&amp;lt;html&amp;gt;
-  &amp;lt;head&amp;gt;
-    
-  &amp;lt;/head&amp;gt;
-  &amp;lt;body&amp;gt;
-    &amp;lt;div id=&amp;quot;container&amp;quot;&amp;gt;
-      
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-
-
-
-
-
-&amp;lt;!--
-
- * note
- 
- The container div, and sometimes content div, are almost always used to allow for more sophisticated CSS styling. The body tag is special in some ways. Browsers don&#39;t treat it like a normal div; its position and dimensions are tied to the browser window.
-
-But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.
-
-Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can&#39;t go on the outside of the body, allowing for content on the outside of a border.
-
-
---&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;cashing&#34;&gt;cashing&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-&amp;lt;!--
-
-* Description
-
-파일을 따로 만든후 저장해놓는것
-
-
-* how to use it? 
-
-&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=“파일이름&amp;quot;&amp;gt;
-
-
-* Sample Output
-
---&amp;gt;
-
-
-&amp;lt;!doctype html&amp;gt;
-
-&amp;lt;html&amp;gt;
-&amp;lt;title&amp;gt;web1 - Son&amp;lt;/title&amp;gt;
-&amp;lt;meta charset=&amp;quot;ut-8&amp;quot;&amp;gt;
-&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;style.css&amp;quot;&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Javascript_Basic</title>
       <link>/tutorial/javascript/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
@@ -7022,9 +5785,1246 @@ p2.say = function(word) {
     </item>
     
     <item>
+      <title>Bootstrap</title>
+      <link>/tutorial/bootstrap/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/bootstrap/</guid>
+      <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;bs-image-img-fluid&#34;&gt;BS_image: &lt;strong&gt;img-fluid&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Create responsive images by adding an &lt;code&gt;.img-fluid&lt;/code&gt; class to the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag. The image will then scale nicely to the parent element.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;bs-spacing-my&#34;&gt;BS_Spacing: &lt;strong&gt;my&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Assign responsive-friendly &lt;code&gt;margin&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; values to an element or a subset of its sides with shorthand classes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;my&amp;quot;&amp;gt;
+  Centered element
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>/tutorial/css/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/css/</guid>
+      <description>
+
+&lt;h2 id=&#34;lt-style-gt&#34;&gt;&amp;lt;style&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+/*syntax*/
+
+&amp;lt;style&amp;gt;
+
+a {
+  color:red
+  }
+
+&amp;lt;/style&amp;gt;
+
+
+
+&amp;lt;dd&amp;gt;a :  selector(선택자)&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;{Color:red}; : declaration (선언)&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;{Color} :  property (속성)&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;{Color:red} : property value (속성값)&amp;lt;/dd&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;hover-버튼-클릭시-마우스-손가락-변형&#34;&gt;hover 버튼 클릭시 마우스 손가락 변형&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+button.hover {
+
+ cursor: pointer;
+}
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;스크롤-만들기&#34;&gt;스크롤 만들기&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--Vertical scroll bar in div which is a child of css grid column --&amp;gt;
+
+&amp;lt;div class=&amp;quot;A&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;B&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;C&amp;quot;&amp;gt;search&amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;quot;D&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 먼제 부모 tag 에 grid 명령과 max-hight 을 준다. 
+
+.A {
+  max-height: 300px; /* matters */
+  display: grid; /* matters */
+  overflow: hidden; /* matters */
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+html, body, .A {
+  height: 100%; /* matters */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.A {
+  max-height: 300px; /* matters */
+  display: grid; /* matters */
+  overflow: hidden; /* matters */
+}
+
+.B {
+  display: grid; /* matters */
+  overflow-y: auto; /* matters */
+}
+
+.D {
+  overflow-y: scroll; /* matters */
+}
+
+.C {
+  padding: 10px;
+  background-color: #07f;
+}
+
+.E {
+  padding: 10px;
+  background-color: #eee;
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-25 at 8.37.27 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;boxmodel&#34;&gt;BoxModel&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;{
+font-size:20px;
+text-align:center;
+text-decoration:none; : 밑줄없애기
+text-decoration:underline; : 언더라인 만들어라
+Border-bottom:red 20px solid;
+Border-right: lightblue 20px solid;
+Border-right:none; (오른쪽에 있는 선 없애기)
+Margin:20px; 가장자리
+Padding:20px;
+width:20px;  : 폭
+Display:none; 
+Display:block; : 전체화면을 이용해라 (block level element)
+Display:inline; : 부분화면을 이용해라 (inline element)
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;wrapper&#34;&gt;wrapper&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+/* Most basic example */ 
+
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;div id=&amp;quot;wrapper&amp;quot;&amp;gt;
+        Piece of text inside a 500px width div centered on the page
+    &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;!-- * How the principle works
+
+Create your wrapper and assign it a certain width. Then apply an automatic horizontal margin to it by using `margin: 0 auto;` or `margin-left: auto;` `margin-right: auto;.` The automatic margins make sure your element is centered.
+--&amp;gt;
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;media-queries&#34;&gt;media queries&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+/* @media(max-width:800px) :  screen width &amp;lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.
+
+@media(min-width:800px)  : screen width  &amp;gt; 800px스크린이 800px 보다 클때 명령을 내린다.
+*/
+
+
+    @media(max-width:800px) {
+    p {
+        font-size: 1px
+        font-weight
+        font-height
+        Display:block;
+  }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;grid&#34;&gt;Grid&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 11.52.20 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div class = &amp;quot;container&amp;quot;&amp;gt;
+
+&amp;lt;div calss = &amp;quot;child1&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child2&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child3&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child4&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child5&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child6&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child7&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child8&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt;
+&amp;lt;div calss = &amp;quot;child9&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt;
+
+&amp;lt;div&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTML&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+.container {
+  
+  display: grid;  // 처음 시작을 지정해준다. 
+  grid-template-columns: 40% 60%; // 위에 있는 그림이 4대 6으로 나뉜다.  
+  grid-template-columns: 4fr 6fr;  //  4대 6으로 나뉜다. 
+  grid-gap:1rem; // 사이마다 공간을 줄때 4fr 6fr 로 쓰는것을 권장한다. % 로 사용하면 여백이 뒤에 생기기 때문.. 
+  
+  grid-template-columns: repeat(3, 1fr); // 이것은  1fr 이 세번 반복 
+  grid-template-columns: 1fr 1fr 1fr; // 이것과 동일하다. 
+
+  grid-template-columns: 200px 1fr; // 200 픽셀로 왼쪽 것을 고정하고 오른쪽 것을 늘리는 것이다. 
+
+  grid-auto-rows: 200px; // 200 픽셀 씩 모두 통일
+  grid-auto-rows: minmax(200px,auto); // 이것은 동일한데 content 늘어나면 같이 같이 늘어난다. 
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Css&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 1번칸 늘리기 
+
+.child1 {
+  
+  grid-column: 1/4 // 열에서 1부터 4까지 차지한다. 
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.44.12 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 4번칸 밑으로 늘리기 
+
+ gird-column:3; // 3번 열부터 시작해라 
+ gird-row :2/4; // 2번부터 4버까지 차지하라 
+ 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.45.18 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 9번칸을 4번안에 집어넣는다. 
+  
+ gird-colum:3;
+ gird-row:3/5;
+ 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.47.05 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>/tutorial/git/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/git/</guid>
+      <description>
+
+&lt;h2 id=&#34;1-command-line&#34;&gt;1.Command Line&lt;/h2&gt;
+
+&lt;h2 id=&#34;git-git-ls&#34;&gt;git git ls&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;파일보기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-ls-a&#34;&gt;git ls -A&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;숨겨진 파일까지 보기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-ls-al&#34;&gt;git ls -al&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;상세 내용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// (1)         (2)(3)   (4)      (5) (6)   (7)   (8)
+//drwxr-xr-x   2 root  wheel    64B 11  7 14:14 test/
+
+
+//1접근 권한 (읽기/쓰기/실행 가능) 여부
+//2chmod 명령어
+//3링크된 파일 갯수
+//4소유자
+//5소유그룹
+//6파일 크기
+//7만든 날짜
+//8만든 시간
+//9파일/디렉토리 이름
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-cd-디렉토리-이름&#34;&gt;git cd 디렉토리 이름&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;디렉토리로 이동( print working List )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt; myuser@mymachine:~$ `cd` Downloads
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-cd&#34;&gt;git cd-&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;뒤로가기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-pwd&#34;&gt;git pwd&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;내가 어디있는지 확인&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// myuser@mymachine:~/Downloads$ pwd
+// showing that .. Users/myuser/Downloads
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-touch-file-name&#34;&gt;git touch [file_name]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;빈 파일 생성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-mkdir-dir-name&#34;&gt;git mkdir [dir_name]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;디렉토리 생성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-cat-file-name&#34;&gt;git cat [file_name]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;텍스트 형태의 파일 확인&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-mv-file-or-dir-target-dir&#34;&gt;git mv [file_or_dir] [target_dir]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;파일 및 디렉토리 옮기기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-mv-file-or-dir-new-name&#34;&gt;git mv [file_or_dir] [new_name]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;파일 및 디렉토리 이름 바꾸기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-cp-file-target-dir-or-cp-r-folder&#34;&gt;git cp [file] [target_dir] or cp -r [folder]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;복사&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-rm-filename&#34;&gt;git rm [filename]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;파일 삭제&lt;/li&gt;
+&lt;li&gt;휴지통에 들어가지 않음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-rm-r-dirname&#34;&gt;git rm -r [dirname]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;폴더 삭제&lt;/li&gt;
+&lt;li&gt;휴지통에 들어가지 않음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-rm-f-file-or-dirname&#34;&gt;git rm -f [file or dirname];&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;coution&lt;/code&gt; 강제로 지우기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_16&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/h2&gt;
+
+&lt;h2 id=&#34;2-version-control-system&#34;&gt;2.Version Control System&lt;/h2&gt;
+
+&lt;h2 id=&#34;git-branch-d-test&#34;&gt;git branch -d test&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;branch 지우기&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+git branch -d test
+# Deleted branch test (was ########).
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-push-origin-delete-test&#34;&gt;git push origin &amp;ndash;delete test&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;remote 지우기&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+it branch -a
+# *master
+#  test
+#  remote/origin/master
+#  remote/origin/test
+
+
+
+git push origin --delete test
+# To &amp;lt;URL of your repository&amp;gt;.git
+#  - [deleted]         test
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-branch-a&#34;&gt;git branch -a&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;현재 romote 상태 보기&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+git branch -a
+# *master
+#  test
+#  remote/origin/master
+#  remote/origin/test
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-init&#34;&gt;git init&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Create an empty Git repository or reinitialize an existing one&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;git-clone&#34;&gt;git clone&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Clone a repository into a new directory&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;git-add&#34;&gt;git add .&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Add all file contents to the index&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;git-add-파일-이름&#34;&gt;git add 파일 이름&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;one file add&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;git add jung.html
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-commit-m&#34;&gt;git commit -m &amp;ldquo;&amp;rdquo;&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;write message into github&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;git-remote-add-origin&#34;&gt;git remote add origin&amp;rdquo;&amp;rdquo;&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;link local to github&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;Git remote add origin &amp;quot;https://github.com/J-E-Y/test_2.git&amp;quot;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-push&#34;&gt;git push&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// git push -u origin master  최종 깇허브에 올리기 
+// git push -u origin master  
+// git push -f origin master ( 강제로)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;git-log&#34;&gt;git log&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;그동안 commit 한 내용을 볼수 있다.&lt;/p&gt;
+
+&lt;p&gt;enter 키를 치면 밑에 내용을 계속 볼수 있다.&lt;/p&gt;
+
+&lt;p&gt;log 파일을 나오려면 q  버튼을 누르면 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;git-status&#34;&gt;git status&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;현재 진행 상태 보기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-config-global&#34;&gt;git config &amp;ndash;global&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;등록하기&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git config --global user.email &amp;quot;yourGitHub@email.com&amp;quot;
+git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;git-branch-충돌-방지하기&#34;&gt;git branch : 충돌 방지하기&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;merge 하는 중 출돌이 존재할수 있다.&lt;/p&gt;
+
+&lt;p&gt;master branch 와 develop branch와 내용이 다를경우 master branch 에서 통합을 한다.&lt;/p&gt;
+
+&lt;p&gt;merge 하는 순간 conflict 가 발생 한다.&lt;/p&gt;
+
+&lt;p&gt;git은 병합한 코드가 무엇이 다른지 코드안에 표시가 되게 한다.
+그리고 그분은에 들어가서 HAED 부분을 선택할지 develop 부분을 선택할지 직접 수동으로  코드를 삭제해서 결정을 하고 저장한다.&lt;/p&gt;
+
+&lt;p&gt;git add . 하고 다시  git merge develop 한다.&lt;/p&gt;
+
+&lt;p&gt;그럼 병합이 된것이다.&lt;/p&gt;
+
+&lt;p&gt;확인 git merge develop 하면 이미 병합이 되었다 .&lt;/p&gt;
+
+&lt;p&gt;그럼 log 하면 같은 화면에 master와 develop 가 동시에 나온다.&lt;/p&gt;
+
+&lt;p&gt;develop 는 필요없기 떄문 git branch -d develop 명령으로 삭제한다.&lt;/p&gt;
+
+&lt;p&gt;git branch 만 확인하면 master branch 만 남아있다.&lt;/p&gt;
+
+&lt;p&gt;git push  로 마무리&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;git-branch&#34;&gt;git Branch&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/Git_files/Screen Shot 2019-09-24 at 3.19.15 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Branch : git 은 동시에 여러 개발자들이 프로젝트에서 각기 다른 기능을 개발할 수 있도록 브랜치 (branch) 기능을 제공한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;일반적으로 EX)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Master Branch
+Develop Branch
+Bug Fix Branch&lt;/p&gt;
+
+&lt;p&gt;기능들이 수정되면 Master Branch 에 합치기(Merge) 라면 명령어를 사용해서 합치면 된다.&lt;/p&gt;
+
+&lt;p&gt;Branch 에는 두가지 용어&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;통합Branch : Master Branch 를 말한다.&lt;/li&gt;
+&lt;li&gt;토픽Branch : 특정 기능을 위해 만들어진 Branch 를 말한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;실습&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;git branch 명령 하면 현재 몇개의 branch 가 있는지 확일할수 있다.&lt;/p&gt;
+
+&lt;p&gt;git branch develop 명령 branch 생성&lt;/p&gt;
+
+&lt;p&gt;cheakout develop 명령을 현재 default 값이 master 에서 새로만든 develop branch 로 바꿔준다. (git branch 로 확인할수 있다.);&lt;/p&gt;
+
+&lt;p&gt;이상태에서 기존 master branchs 에 있는 코드에 수정을 하고 git add 하고 git commit 을 하고 log 명렁을 하면 현재 &amp;lsquo;HAED -&amp;gt; develop&amp;rsquo; 바뀐것을 볼수 있다.&lt;/p&gt;
+
+&lt;p&gt;그러면 master branch 에는 적용이 안되있고 새로생성한 branch 에만 해당되어있다.  그러면 develop 에서 작업을 할수 있다.&lt;/p&gt;
+
+&lt;p&gt;이것을 합치기 위해서는 merge 명령을 한다.&lt;/p&gt;
+
+&lt;p&gt;git cheakout master 명령을 해서 되돌아 간다.&lt;/p&gt;
+
+&lt;p&gt;그리고 git merge develop 명령을 해서 합친다.&lt;/p&gt;
+
+&lt;p&gt;마지막으로 git push 명령을 해서 깃허브에 저장한다.&lt;/p&gt;
+
+&lt;p&gt;필요없는 branch develop 를 삭제는 git branch -d develop 이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;기존에-commit한-내용으로-되돌아-가기&#34;&gt;기존에 commit한 내용으로 되돌아 가기&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;log 명령을 하고&lt;/p&gt;
+
+&lt;p&gt;git reset &amp;ndash;hard 9a9sdsa8fsdfsd6a78f6safs 명령을 한다.&lt;/p&gt;
+
+&lt;p&gt;가져온 주소명령으로 돌아가고 그 이후에 있는 commit 내용들을 싹다 지운다.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;주의&lt;/em&gt; commit 내용들이 지워질뿐 아니라 모든 로컬에 저장되어있는 파일들도 제거된다.&lt;/p&gt;
+
+&lt;p&gt;그리고 나서 push 를 해주는데 push -f 를 명령해야 깃허브 저장소에서도 동일하게 적용된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-log-1&#34;&gt;git :log&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;git-commit-amend&#34;&gt;git :commit &amp;ndash; amend&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;commit 명령을 잘못 넣으면  이명령어를 통해 수정할수 있다.&lt;/p&gt;
+
+&lt;p&gt;unix 에디터가 실행된다. 이모드는 수정모두와 관리자 모드로 나뉜다.&lt;/p&gt;
+
+&lt;p&gt;수정 모드로 들어가고자 한다면 a 를 입력하면 된다.&lt;/p&gt;
+
+&lt;p&gt;그리고 내용을 수정하고 ESC 누르고 : 입력하면 wq! 수정되고 밖으로 나오게 된다.&lt;/p&gt;
+
+&lt;p&gt;git status  하면 수정된 파일을 볼수 있다.&lt;/p&gt;
+
+&lt;p&gt;git push -f 강제로 명령하면 적용된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;git-cheakout&#34;&gt;git cheakout&amp;ndash;&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;add 한다음에 git status 명령을 하면  수정된 파일이 스테이지에 올라가게 된다.&lt;/p&gt;
+
+&lt;p&gt;cheakout&amp;ndash; 이라는 명령을 하면 add 하기전 코드상태로 되돌아 간다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;git-reset&#34;&gt;git reset&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;add 한 파일을 다시 되돌리기&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>/tutorial/html/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/html/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-09-13 at 5.15.58 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;lt-strong-gt&#34;&gt;&amp;lt;strong&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+/*
+
+The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. 
+
+
+
+Note 
+
+what&#39;s the difference bewteen strong tag and b tag ?
+
+strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. 
+
+b tag :평상시대로 굵게 읽는다.
+
+*/
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-h1-gt&#34;&gt;&amp;lt;h1&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--  
+
+The HTML &amp;lt;h1&amp;gt; tag defines the highest level or most important heading in the HTML document. This tag is also commonly referred to as the &amp;lt;h1&amp;gt; element.
+
+--&amp;gt;
+
+
+
+&amp;lt;!--  Syntax--&amp;gt;
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;h1&amp;gt;Heading 1 goes here&amp;lt;/h1&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-br-gt&#34;&gt;&amp;lt;br&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;!-- The HTML &amp;lt;br&amp;gt; tag defines a line break within text in the HTML document. This tag is also commonly referred to as the &amp;lt;br&amp;gt; element.--&amp;gt;
+
+
+&amp;lt;!-- Syntax --&amp;gt;
+
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;The paragraph starts here&amp;lt;br&amp;gt;
+and ends on the next line.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;nbsp-making-space&#34;&gt;&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;  (making space)&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+/*
+HTML will only display one space between words, no matter how many times you press the space bar. To force an extra space to show up, type `&amp;amp;nbsp;` in the area where you want to force the space.
+
+*/
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-p-gt&#34;&gt;&amp;lt;p&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!---
+The HTML &amp;lt;p&amp;gt; tag defines a paragraph in the HTML document. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.--&amp;gt;
+
+* syntax
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;The paragraph goes here.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-hr-gt&#34;&gt;&amp;lt;hr&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+The HTML &amp;lt;hr&amp;gt; tag defines a thematic break between paragraphs in HTML5, and a horizontal rule in HTML 4.01. This tag is also commonly referred to as the &amp;lt;hr&amp;gt; element.
+
+* Note
+
+The HTML &amp;lt;hr&amp;gt; element makes line bewteen two paragraphs.
+
+* Syntax
+
+--&amp;gt;
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;This is the first paragraph.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;p&amp;gt;This is the second paragraph.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-div-gt&#34;&gt;&amp;lt;div&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+The HTML &amp;lt;p&amp;gt; tag defines a generic container in an HTML document that is generally used to group elements. This tag is also commonly referred to as the &amp;lt;p&amp;gt; element.
+
+* Note
+ 
+The HTML &amp;lt;p&amp;gt; element is found within the &amp;lt;body&amp;gt; tag.
+The &amp;lt;div&amp;gt; tag is generally used to group elements together.
+
+&amp;lt;p&amp;gt; :element is a block-level element.
+
+
+* Syntax
+
+
+--&amp;gt;
+
+&amp;lt;body&amp;gt;
+
+&amp;lt;div&amp;gt;
+  &amp;lt;div&amp;gt;this is the type of elemnt &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-span-gt&#34;&gt;&amp;lt;span&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+`height 와 width 적용이 안된다.` 하지만 Disply 사용해서 적용할수 있다 
+
+
+The HTML &amp;lt;span&amp;gt; tag defines a generic inline container in an HTML document. This tag is also commonly referred to as the &amp;lt;span&amp;gt; element.
+
+Note
+
+&amp;lt;span&amp;gt;  tag is is generally used for styling purposes when there is no other element to use.
+&amp;lt;span&amp;gt;  tag is a inline-level element
+&amp;lt;span&amp;gt; tag does not inherently represent anything
+
+
+Syntax
+
+--&amp;gt;
+
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;span&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;span class=&amp;quot;red_text&amp;quot;&amp;gt;Span text goes here&amp;lt;/span&amp;gt; and not here&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-nav-gt&#34;&gt;&amp;lt;nav&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+The HTML &amp;lt;nav&amp;gt; tag is an HTML5 element that defines a section with navigation links in the HTML document. This tag is also commonly referred to as the &amp;lt;nav&amp;gt; element. It is used to define a block of navigation links, either within the current document or to other documents
+
+
+* Note
+
+ The &amp;lt;nav&amp;gt; tag is used to create navigation in the HTML document.For IE browsers older than IE 9, use HTML5shiv which is a javascript workaround to provide support for the new HTML5 elements such as: &amp;lt;header&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;section&amp;gt;, &amp;lt;aside&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;footer&amp;gt;.
+
+
+* Syntax
+
+--&amp;gt;
+
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;nav&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section1/index.html&amp;quot;&amp;gt;Section1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section2/index.html&amp;quot;&amp;gt;Section2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/section3/index.html&amp;quot;&amp;gt;Section3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+&amp;lt;/nav&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-ul-gt&#34;&gt;&amp;lt;ul&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+* Description
+
+(부모태그)
+The HTML &amp;lt;ul&amp;gt; tag defines an unordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ul&amp;gt; element.
+
+* Note
+
+The HTML &amp;lt;ul&amp;gt; element is found within the &amp;lt;body&amp;gt; tag.
+The &amp;lt;ul&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags.
+Use the &amp;lt;ul&amp;gt; tag when the list items have no numerical ordering.
+You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;ul&amp;gt;menu lists.
+
+* Syntax
+
+
+--&amp;gt;
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-li-gt&#34;&gt;&amp;lt;li&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+* Description
+
+
+(부모태그)
+The HTML &amp;lt;li&amp;gt; tag defines a list item in &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt; in the HTML document. This tag is also commonly referred to as the &amp;lt;li&amp;gt; element.
+
+
+* Syntax
+
+--&amp;gt;
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;ol&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+
+* Sample Output 2
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;menu type=&amp;quot;toolbar&amp;quot;&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;menu label=&amp;quot;File&amp;quot;&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;new()&amp;quot;&amp;gt;New&amp;lt;/button&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;save()&amp;quot;&amp;gt;Save&amp;lt;/button&amp;gt;
+    &amp;lt;/menu&amp;gt;
+  &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;
+    &amp;lt;menu label=&amp;quot;Edit&amp;quot;&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;copy()&amp;quot;&amp;gt;Copy&amp;lt;/button&amp;gt;
+      &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;paste()&amp;quot;&amp;gt;Paste&amp;lt;/button&amp;gt;
+    &amp;lt;/menu&amp;gt;
+  &amp;lt;/li&amp;gt;
+&amp;lt;/menu&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;!--
+* Note
+
+The &amp;lt;li&amp;gt; tag is used within &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; or &amp;lt;menu&amp;gt;.
+You can nest &amp;lt;ol, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists. (자식태그) li 태그는 반드시 부모태그를 가지고 있다. 
+
+--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;lt-ol-gt&#34;&gt;&amp;lt;ol&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+* Description
+(자식태그)
+The HTML &amp;lt;ol&amp;gt; tag defines an ordered list in the HTML document. This tag is also commonly referred to as the &amp;lt;ol&amp;gt; element.
+
+* Syntax
+
+--&amp;gt;
+
+
+
+
+&amp;lt;body&amp;gt;
+&amp;lt;ol&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+&amp;lt;!--
+
+* Note
+
+The &amp;lt;ol&amp;gt; tag is made up of &amp;lt;li&amp;gt; tags. 
+Use the &amp;lt;ol&amp;gt; tag when the list items have numeric, meaningful ordering.
+You can nest &amp;lt;ol&amp;gt;, &amp;lt;ul&amp;gt; and &amp;lt;menu&amp;gt; lists.
+
+--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;lt-form-gt&#34;&gt;&amp;lt;form&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;!--
+
+* Description
+
+The HTML `&amp;lt;form&amp;gt; tag` is used to create a form on a web page that has interactive controls for user input. This tag is also commonly referred to as the `&amp;lt;form&amp;gt;` element.
+
+* Syntax
+
+--&amp;gt;
+
+&amp;lt;body&amp;gt;
+  &amp;lt;form action=&amp;quot;&amp;quot; method=&amp;quot;get&amp;quot;&amp;gt;
+    Company: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;company&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+    Address: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;address&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+    &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Submit&amp;quot;&amp;gt;
+  &amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sample Output&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/HTML_files/Screen Shot 2019-06-01 at 9.40.42 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lt-container-gt&#34;&gt;&amp;lt;container&amp;gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+* Description
+
+In HTML, the container is the area enclosed by the beginning and ending tags. For example &amp;lt; HTML &amp;gt; encloses an entire document while other tags may enclose a single word, paragraph, or other elements. In HTML code, all container must have a start and stop tag to close the container. Without a stop tag the start tag will apply to the entire document.
+ 
+
+--&amp;gt;
+
+
+
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;div id=&amp;quot;container&amp;quot;&amp;gt;
+      
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+
+
+
+
+&amp;lt;!--
+
+ * note
+ 
+ The container div, and sometimes content div, are almost always used to allow for more sophisticated CSS styling. The body tag is special in some ways. Browsers don&#39;t treat it like a normal div; its position and dimensions are tied to the browser window.
+
+But a container div is just a div and you can style it with margins and borders. You can give it a fixed width, and you can center it with margin-left: auto; margin-right: auto.
+
+Plus, content, like a copyright notice for example, can go on the outside of the container div, but it can&#39;t go on the outside of the body, allowing for content on the outside of a border.
+
+
+--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;cashing&#34;&gt;cashing&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!--
+
+* Description
+
+파일을 따로 만든후 저장해놓는것
+
+
+* how to use it? 
+
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=“파일이름&amp;quot;&amp;gt;
+
+
+* Sample Output
+
+--&amp;gt;
+
+
+&amp;lt;!doctype html&amp;gt;
+
+&amp;lt;html&amp;gt;
+&amp;lt;title&amp;gt;web1 - Son&amp;lt;/title&amp;gt;
+&amp;lt;meta charset=&amp;quot;ut-8&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;style.css&amp;quot;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>/tutorial/python/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/python/</guid>
       <description>
@@ -8090,7 +8090,7 @@ for link in links:
     <item>
       <title>Technical terms</title>
       <link>/tutorial/it-terminology/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/it-terminology/</guid>
       <description>
@@ -8199,10 +8199,10 @@ var alphabetPosition = function (str) {
     
     <item>
       <title>__Algorithm_1</title>
-      <link>/tutorial/javascript-daliy-coding-level-1/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <link>/tutorial/2019-11-14-javascript-daliy-coding-level-1/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/javascript-daliy-coding-level-1/</guid>
+      <guid>/tutorial/2019-11-14-javascript-daliy-coding-level-1/</guid>
       <description>
 
 &lt;h3 id=&#34;question&#34;&gt;Question&lt;/h3&gt;
@@ -10698,10 +10698,10 @@ function getProductOfAllElementsAtProperty(obj, key) {
     
     <item>
       <title>__Algorithm_2</title>
-      <link>/tutorial/javascript-daliy-coding-level-2/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <link>/tutorial/2019-11-14-javascript-daliy-coding-level-2/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/javascript-daliy-coding-level-2/</guid>
+      <guid>/tutorial/2019-11-14-javascript-daliy-coding-level-2/</guid>
       <description>
 
 &lt;h3 id=&#34;question&#34;&gt;Question&lt;/h3&gt;
@@ -14050,10 +14050,10 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
     
     <item>
       <title>__My_MDN</title>
-      <link>/tutorial/javascript-my-mdn/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <link>/tutorial/2019-11-14-javascript-my-mdn/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/javascript-my-mdn/</guid>
+      <guid>/tutorial/2019-11-14-javascript-my-mdn/</guid>
       <description>
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;

@@ -1,17 +1,16 @@
 ---
 title: Git
-author: JohnJung
-date: '2019-11-14'
-categories: []
-tags: ['Git']
+date: 2019-04-29
+draft: true
 menu:
   tutorial:
     name: 2.Git
     weight: 2
 toc: yes
 type: docs
-summary: 'write here:rocket:' 
 ---
+
+
 
 ## 1.Command Line
 

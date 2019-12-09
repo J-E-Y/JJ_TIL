@@ -8,9 +8,7 @@ menu:
     weight: 0
 toc: true
 type: docs
-tags:
-- Javascript
-summary: 'write here:rocket:' 
+ 
 ---
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)

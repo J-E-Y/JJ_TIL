@@ -9,11 +9,11 @@
   weight = 10
   
   
-[[main_right]]
+#[[main_right]]
   #name = "TIL"
-  name = "Technical Documents"
-  url = "displayDocs"
-  weight = 20
+#  name = "Technical Documents"
+#  url = "displayDocs"
+#  weight = 20
   
   
 [[main_right]]

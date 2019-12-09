@@ -36,93 +36,57 @@
   </url>
   
   <url>
-    <loc>/tags/bootstrap/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tutorial/bootstrap/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/css/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tutorial/css/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/git/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tutorial/git/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/html/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tutorial/html/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tutorial/javascript/</loc>
     <lastmod>2019-11-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/python/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tutorial/bootstrap/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/css/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/git/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/html/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tutorial/python/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/technical-terms/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tutorial/it-terminology/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/javascript-daliy-coding-level-1/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/javascript-daliy-coding-level-2/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/javascript-my-mdn/</loc>
-    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tutorial/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2019-11-14-javascript-daliy-coding-level-1/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2019-11-14-javascript-daliy-coding-level-2/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2019-11-14-javascript-my-mdn/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   

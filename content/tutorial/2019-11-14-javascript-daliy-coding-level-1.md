@@ -1,18 +1,13 @@
 ---
-title: __Algorithm_1
-author: JohnJung
-date: '2019-11-14'
-slug: javascript-daliy-coding-level-1
-categories: []
-tags:
-  - Javascript
+title:  __Algorithm_1
+date: 2019-04-29
+draft: true
 menu:
   tutorial:
     parent: "6.Javascript"
     weight: 1
 toc: yes
 type: docs
-summary: 'write here:rocket:' 
 ---
 
 

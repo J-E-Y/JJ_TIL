@@ -27,11 +27,11 @@
   
     
   
-  <meta name="description" content="Question  convert nested (2-dimensional) array to flatten array! (2차원 배열을 1차원 배열로 전환하세요.)
- flatten([1,2,[3],[4]]); // [1,2,3,4]  My_Soultion function flatten (array){ //your solution here // 1. 재귀함수 사용 let ret = []; // 새로운 배열은 만든다. // 재귀함수 function filtered(array) { // (1).array 의 각각의 요소에 접근한다. [1,2,[11,25,21,34],[4]] // (5). array 의 각각의 요소에 접근한다. [11,25,21,34] for(let i = 0 ; i &lt; array.length; i &#43;&#43; ) { // (2)만약 요소가 array 안에 array 가아니면 [1,2] // (6)만약 요소가 array 안에 array 가 아니면 [11,25,21,34] if (!">
+  <meta name="description" content="Question gcd(최대 공약 알고리즘) 함수 작성  주어진 두 숫자에 대한 최대공약수(greatest common divisor)를 구하세요
+  outPut  gcd(22, 24) // 2  My_soultion function gcd(num1, num2) { // code goes here //num1 = 12,num 2 = 8 let num1Arr = []; let num2Arr = []; for (let i =0; i &lt;= num1; i &#43;&#43;) { num1Arr.push(i); } for (let i =0; i &lt;= num1; i &#43;&#43;) { num2Arr.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_algorithm/">
+  <link rel="alternate" hreflang="en-us" href="/tutorial/2019-11-14-javascript-daliy-coding-level-2/">
 
   
 
@@ -117,7 +117,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/tutorial/javascript_algorithm/">
+  <link rel="canonical" href="/tutorial/2019-11-14-javascript-daliy-coding-level-2/">
 
   
   
@@ -129,21 +129,22 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="JohnJung">
-  <meta property="og:url" content="/tutorial/javascript_algorithm/">
-  <meta property="og:title" content="xCoding_level_2 | JohnJung">
-  <meta property="og:description" content="Question  convert nested (2-dimensional) array to flatten array! (2차원 배열을 1차원 배열로 전환하세요.)
- flatten([1,2,[3],[4]]); // [1,2,3,4]  My_Soultion function flatten (array){ //your solution here // 1. 재귀함수 사용 let ret = []; // 새로운 배열은 만든다. // 재귀함수 function filtered(array) { // (1).array 의 각각의 요소에 접근한다. [1,2,[11,25,21,34],[4]] // (5). array 의 각각의 요소에 접근한다. [11,25,21,34] for(let i = 0 ; i &lt; array.length; i &#43;&#43; ) { // (2)만약 요소가 array 안에 array 가아니면 [1,2] // (6)만약 요소가 array 안에 array 가 아니면 [11,25,21,34] if (!"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/tutorial/2019-11-14-javascript-daliy-coding-level-2/">
+  <meta property="og:title" content="__Algorithm_2 | JohnJung">
+  <meta property="og:description" content="Question gcd(최대 공약 알고리즘) 함수 작성  주어진 두 숫자에 대한 최대공약수(greatest common divisor)를 구하세요
+  outPut  gcd(22, 24) // 2  My_soultion function gcd(num1, num2) { // code goes here //num1 = 12,num 2 = 8 let num1Arr = []; let num2Arr = []; for (let i =0; i &lt;= num1; i &#43;&#43;) { num1Arr.push(i); } for (let i =0; i &lt;= num1; i &#43;&#43;) { num2Arr."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
+  <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
   
+  <meta property="article:modified_time" content="2019-04-29T00:00:00&#43;00:00">
   
+
   
 
   
 
-  
-
-  <title>xCoding_level_2 | JohnJung</title>
+  <title>__Algorithm_2 | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -354,7 +355,7 @@
         <a href="/tutorial/2019-11-14-javascript-daliy-coding-level-1/">__Algorithm_1</a>
       </li>
       
-      <li >
+      <li class="active">
         <a href="/tutorial/2019-11-14-javascript-daliy-coding-level-2/">__Algorithm_2</a>
       </li>
       
@@ -391,7 +392,7 @@
         <a href="/tutorial/javascript_note/">x Notes</a>
       </li>
       
-      <li class="active">
+      <li >
         <a href="/tutorial/javascript_algorithm/">xCoding_level_2</a>
       </li>
       
@@ -424,137 +425,229 @@
 <li>
 <ul>
 <li><a href="#question">Question</a></li>
-<li><a href="#my-soultion">My_Soultion</a></li>
+</ul></li>
+<li><a href="#gcd-최대-공약-알고리즘-함수-작성">gcd(최대 공약 알고리즘) 함수 작성</a>
+<ul>
+<li><a href="#my-soultion">My_soultion</a></li>
+<li><a href="#other-soultion-1">Other_Soultion 1</a></li>
+<li><a href="#other-soultion-2-1">Other_Soultion 2-1</a></li>
+<li><a href="#other-soultion-2-2">Other_Soultion 2-2</a></li>
+<li><a href="#약수-공약-알고리즘">약수 공약 알고리즘</a></li>
 <li><a href="#question-1">Question</a></li>
 </ul></li>
-<li><a href="#buginapple">bugInApple</a>
+<li><a href="#findmissingnumber">findMissingNumber</a>
 <ul>
 <li><a href="#my-soultion-1">My_Soultion</a></li>
+<li><a href="#quesiton">Quesiton</a></li>
+<li><a href="#output">output</a></li>
+<li><a href="#my-soultion-2">My_soultion</a></li>
+<li><a href="#quesiton-1">Quesiton</a></li>
+</ul></li>
+<li><a href="#findmaxonmultiplesofthirty">findMaxOnMultiplesOfThirty</a>
+<ul>
+<li><a href="#my-soultion-3">My_Soultion</a></li>
 <li><a href="#question-2">Question</a></li>
 </ul></li>
-<li><a href="#firstreverse">firstReverse</a>
-<ul>
-<li><a href="#my-soultion-2">My_Soultion</a></li>
-<li><a href="#question-3">Question</a></li>
-<li><a href="#my-soultion-3">My_Soultion</a></li>
-<li><a href="#question-4">Question</a></li>
-</ul></li>
-<li><a href="#filteredarray">filteredArray</a>
+<li><a href="#threefivemultiples">threeFiveMultiples</a>
 <ul>
 <li><a href="#my-soultion-4">My_Soultion</a></li>
-<li><a href="#qeustion">Qeustion</a></li>
+<li><a href="#quesiton-2">Quesiton</a></li>
 </ul></li>
-<li><a href="#flatten-함수-만들기">flatten 함수 만들기</a>
-<ul>
-<li><a href="#my-soution">My_Soution</a></li>
-<li><a href="#qeustion-1">Qeustion</a></li>
-</ul></li>
-<li><a href="#delay-함수-만들기">delay 함수 만들기</a>
+<li><a href="#runlength">runLength</a>
 <ul>
 <li><a href="#my-soultion-5">My_Soultion</a></li>
-<li><a href="#qeustion-2">Qeustion</a></li>
+<li><a href="#question-3">Question</a></li>
 </ul></li>
-<li><a href="#최대-한번만-호출할-수-있는-함수-만들기">최대 한번만 호출할 수 있는 함수 만들기</a>
-<ul>
-<li><a href="#my-soultion-6">My_Soultion</a></li>
-<li><a href="#qeustion-3">Qeustion</a></li>
-</ul></li>
-<li><a href="#갹채를-함쳐주는-함수-만들기-2-key-덮어쓰지-않기">갹채를 함쳐주는 함수 만들기 2(key 덮어쓰지 않기 )</a></li>
-<li><a href="#my-soultion-7">My_Soultion</a>
-<ul>
-<li><a href="#qeustion-4">Qeustion</a></li>
-</ul></li>
-<li><a href="#갹채를-함쳐주는-함수-만들기">갹채를 함쳐주는 함수 만들기</a>
-<ul>
-<li><a href="#my-souliton">My_Souliton</a></li>
-<li><a href="#qeustion-5">Qeustion</a></li>
-</ul></li>
-<li><a href="#some-함수-만들기">some 함수 만들기</a>
-<ul>
-<li><a href="#my-soultion-8">My_Soultion</a></li>
-<li><a href="#qeustion-6">Qeustion</a></li>
-</ul></li>
-<li><a href="#every-함수-만들기">every 함수 만들기</a>
-<ul>
-<li><a href="#my-soultion-9">My_Soultion</a></li>
-<li><a href="#qeustion-7">Qeustion</a></li>
-</ul></li>
-<li><a href="#contains-함수-만들기">contains 함수 만들기</a>
+<li><a href="#numbersearch">numberSearch</a>
 <ul>
 <li><a href="#my-soultoin">My_Soultoin</a></li>
+<li><a href="#question-4">Question</a></li>
+</ul></li>
+<li><a href="#findmaxonmultiplesofthirty-1">findMaxOnMultiplesOfThirty</a>
+<ul>
+<li><a href="#my-soultion-6">My_Soultion</a></li>
+<li><a href="#quesiton-3">Quesiton</a></li>
+</ul></li>
+<li><a href="#threefivemultiples-1">threeFiveMultiples</a>
+<ul>
+<li><a href="#my-soultion-7">My_Soultion</a></li>
 <li><a href="#question-5">Question</a></li>
 </ul></li>
-<li><a href="#reduce">reduce</a>
+<li><a href="#runlength-1">runLength</a>
 <ul>
-<li><a href="#my-soultion-10">My_Soultion</a></li>
+<li><a href="#my-soultion-8">My_Soultion</a></li>
+<li><a href="#qeustion">Qeustion</a></li>
+</ul></li>
+<li><a href="#thirdgreatest">thirdGreatest</a>
+<ul>
+<li><a href="#my-soultion-9">My_Soultion</a></li>
 <li><a href="#question-6">Question</a></li>
 </ul></li>
-<li><a href="#billtotal">billTotal</a>
+<li><a href="#superincreasing">superIncreasing</a>
+<ul>
+<li><a href="#my-soultion-10">My_Soultion</a></li>
+<li><a href="#quesiton-4">Quesiton</a></li>
+</ul></li>
+<li><a href="#multiplicativepersistence">multiplicativePersistence</a>
 <ul>
 <li><a href="#my-soultion-11">My_Soultion</a></li>
 <li><a href="#question-7">Question</a></li>
 </ul></li>
-<li><a href="#multiplybetween">multiplyBetween</a>
+<li><a href="#lettercapitalize">letterCapitalize</a>
 <ul>
 <li><a href="#my-soultion-12">My_Soultion</a></li>
 <li><a href="#question-8">Question</a></li>
 </ul></li>
-<li><a href="#computesquareroot">computeSquareRoot</a>
+<li><a href="#poweroftwo">powerOfTwo</a>
 <ul>
 <li><a href="#my-soultion-13">My_Soultion</a></li>
 <li><a href="#question-9">Question</a></li>
 </ul></li>
-<li><a href="#modulo">modulo</a>
+<li><a href="#json-stringfy-함수-만들기">JSON.stringfy 함수 만들기</a>
 <ul>
 <li><a href="#my-soultion-14">My_Soultion</a></li>
 <li><a href="#question-10">Question</a></li>
-</ul></li>
-<li><a href="#unique">unique</a>
-<ul>
 <li><a href="#my-soultion-15">My_Soultion</a></li>
 <li><a href="#question-11">Question</a></li>
 </ul></li>
-<li><a href="#tenthousandclub">tenThousandClub</a>
+<li><a href="#shuffle-함수-만들기">shuffle 함수 만들기</a>
 <ul>
 <li><a href="#my-soultion-16">My_Soultion</a></li>
 <li><a href="#question-12">Question</a></li>
 </ul></li>
-<li><a href="#sumconsecutives">sumConsecutives</a>
+<li><a href="#flatten-함수-만들기">flatten 함수 만들기</a>
 <ul>
 <li><a href="#my-soultion-17">My_Soultion</a></li>
 <li><a href="#question-13">Question</a></li>
 </ul></li>
-<li><a href="#oldest">oldest</a>
+<li><a href="#buginapple">bugInApple</a>
 <ul>
 <li><a href="#my-soultion-18">My_Soultion</a></li>
 <li><a href="#question-14">Question</a></li>
 </ul></li>
-<li><a href="#isagediverse">isAgeDiverse</a>
+<li><a href="#firstreverse">firstReverse</a>
 <ul>
 <li><a href="#my-soultion-19">My_Soultion</a></li>
 <li><a href="#question-15">Question</a></li>
+<li><a href="#my-soultion-20">My_Soultion</a></li>
+<li><a href="#question-16">Question</a></li>
+</ul></li>
+<li><a href="#filteredarray">filteredArray</a>
+<ul>
+<li><a href="#my-soultion-21">My_Soultion</a></li>
+<li><a href="#qeustion-1">Qeustion</a></li>
+</ul></li>
+<li><a href="#flatten-함수-만들기-1">flatten 함수 만들기</a>
+<ul>
+<li><a href="#my-soution">My_Soution</a></li>
+<li><a href="#qeustion-2">Qeustion</a></li>
+</ul></li>
+<li><a href="#delay-함수-만들기">delay 함수 만들기</a>
+<ul>
+<li><a href="#my-soultion-22">My_Soultion</a></li>
+<li><a href="#qeustion-3">Qeustion</a></li>
+</ul></li>
+<li><a href="#최대-한번만-호출할-수-있는-함수-만들기">최대 한번만 호출할 수 있는 함수 만들기</a>
+<ul>
+<li><a href="#my-soultion-23">My_Soultion</a></li>
+<li><a href="#qeustion-4">Qeustion</a></li>
+</ul></li>
+<li><a href="#갹채를-함쳐주는-함수-만들기-2-key-덮어쓰지-않기">갹채를 함쳐주는 함수 만들기 2 (key 덮어쓰지 않기 )</a>
+<ul>
+<li><a href="#my-soultion-24">My_Soultion</a></li>
+<li><a href="#qeustion-5">Qeustion</a></li>
+</ul></li>
+<li><a href="#갹채를-함쳐주는-함수-만들기">갹채를 함쳐주는 함수 만들기</a>
+<ul>
+<li><a href="#my-souliton">My_Souliton</a></li>
+<li><a href="#qeustion-6">Qeustion</a></li>
+</ul></li>
+<li><a href="#some-함수-만들기">some 함수 만들기</a>
+<ul>
+<li><a href="#my-soultion-25">My_Soultion</a></li>
+<li><a href="#qeustion-7">Qeustion</a></li>
+</ul></li>
+<li><a href="#every-함수-만들기">every 함수 만들기</a>
+<ul>
+<li><a href="#my-soultion-26">My_Soultion</a></li>
+<li><a href="#qeustion-8">Qeustion</a></li>
+</ul></li>
+<li><a href="#contains-함수-만들기">contains 함수 만들기</a>
+<ul>
+<li><a href="#my-soultoin-1">My_Soultoin</a></li>
+<li><a href="#question-17">Question</a></li>
+</ul></li>
+<li><a href="#reduce">reduce</a>
+<ul>
+<li><a href="#my-soultion-27">My_Soultion</a></li>
+<li><a href="#question-18">Question</a></li>
+</ul></li>
+<li><a href="#billtotal">billTotal</a>
+<ul>
+<li><a href="#my-soultion-28">My_Soultion</a></li>
+<li><a href="#question-19">Question</a></li>
+</ul></li>
+<li><a href="#multiplybetween">multiplyBetween</a>
+<ul>
+<li><a href="#my-soultion-29">My_Soultion</a></li>
+<li><a href="#question-20">Question</a></li>
+</ul></li>
+<li><a href="#computesquareroot">computeSquareRoot</a>
+<ul>
+<li><a href="#my-soultion-30">My_Soultion</a></li>
+<li><a href="#question-21">Question</a></li>
+</ul></li>
+<li><a href="#modulo">modulo</a>
+<ul>
+<li><a href="#my-soultion-31">My_Soultion</a></li>
+<li><a href="#question-22">Question</a></li>
+</ul></li>
+<li><a href="#unique">unique</a>
+<ul>
+<li><a href="#my-soultion-32">My_Soultion</a></li>
+<li><a href="#question-23">Question</a></li>
+</ul></li>
+<li><a href="#tenthousandclub">tenThousandClub</a>
+<ul>
+<li><a href="#my-soultion-33">My_Soultion</a></li>
+<li><a href="#question-24">Question</a></li>
+</ul></li>
+<li><a href="#sumconsecutives">sumConsecutives</a>
+<ul>
+<li><a href="#my-soultion-34">My_Soultion</a></li>
+<li><a href="#question-25">Question</a></li>
+</ul></li>
+<li><a href="#oldest">oldest</a>
+<ul>
+<li><a href="#my-soultion-35">My_Soultion</a></li>
+<li><a href="#question-26">Question</a></li>
+</ul></li>
+<li><a href="#isagediverse">isAgeDiverse</a>
+<ul>
+<li><a href="#my-soultion-36">My_Soultion</a></li>
+<li><a href="#question-27">Question</a></li>
 </ul></li>
 <li><a href="#getteenager">getTeenager</a>
 <ul>
-<li><a href="#my-soultion-20">My_Soultion</a></li>
+<li><a href="#my-soultion-37">My_Soultion</a></li>
 <li><a href="#other-soultion">other_Soultion</a></li>
-<li><a href="#question-16">Question</a></li>
+<li><a href="#question-28">Question</a></li>
 </ul></li>
 <li><a href="#sumdigits">sumDigits</a>
 <ul>
-<li><a href="#my-soultion-21">My_Soultion</a></li>
-<li><a href="#question-17">Question</a></li>
+<li><a href="#my-soultion-38">My_Soultion</a></li>
+<li><a href="#question-29">Question</a></li>
 </ul></li>
 <li><a href="#offlineminimum">offLineMinimum</a>
 <ul>
-<li><a href="#my-soultion-22">My_Soultion</a></li>
-<li><a href="#other-soultion-1">other_Soultion</a></li>
-<li><a href="#question-18">Question</a></li>
+<li><a href="#my-soultion-39">My_Soultion</a></li>
+<li><a href="#other-soultion-1-1">other_Soultion</a></li>
+<li><a href="#question-30">Question</a></li>
 </ul></li>
 <li><a href="#range">range</a>
 <ul>
-<li><a href="#my-soultion-23">My_soultion</a></li>
-<li><a href="#question-19">Question</a></li>
+<li><a href="#my-soultion-40">My_soultion</a></li>
+<li><a href="#question-31">Question</a></li>
 </ul></li>
 <li><a href="#longestname">longestName</a>
 <ul>
@@ -562,124 +655,125 @@
 </ul></li>
 <li><a href="#hammingdistance">hammingDistance</a>
 <ul>
-<li><a href="#my-soultion-24">My_Soultion</a></li>
-<li><a href="#other-soultion-2">Other_Soultion</a></li>
-<li><a href="#question-20">Question</a></li>
+<li><a href="#my-soultion-41">My_Soultion</a></li>
+<li><a href="#other-soultion-1-2">Other_Soultion</a></li>
+<li><a href="#question-32">Question</a></li>
 </ul></li>
 <li><a href="#getfullname">getFullName</a>
 <ul>
-<li><a href="#my-soultion-25">My_Soultion</a></li>
-<li><a href="#other-soultion-3">Other_Soultion</a></li>
-<li><a href="#question-21">Question</a></li>
+<li><a href="#my-soultion-42">My_Soultion</a></li>
+<li><a href="#other-soultion-1-3">Other_Soultion</a></li>
+<li><a href="#question-33">Question</a></li>
 </ul></li>
 <li><a href="#billtotal-1">billTotal</a>
 <ul>
-<li><a href="#my-soultion-26">My_Soultion</a></li>
-<li><a href="#other-soultion-4">Other_Soultion</a></li>
-<li><a href="#question-22">Question</a></li>
+<li><a href="#my-soultion-43">My_Soultion</a></li>
+<li><a href="#other-soultion-1-4">Other_Soultion</a></li>
+<li><a href="#question-34">Question</a></li>
 </ul></li>
 <li><a href="#primemover">primeMover</a>
 <ul>
-<li><a href="#my-soultion-27">My_Soultion</a></li>
-<li><a href="#question-23">Question</a></li>
+<li><a href="#my-soultion-44">My_Soultion</a></li>
+<li><a href="#question-35">Question</a></li>
 </ul></li>
 <li><a href="#isoddwithoutmodulo">isOddWithoutModulo</a>
 <ul>
-<li><a href="#my-soultion-28">My_Soultion</a></li>
+<li><a href="#my-soultion-45">My_Soultion</a></li>
 <li><a href="#others-soultion">Others_Soultion</a></li>
-<li><a href="#question-24">Question</a></li>
+<li><a href="#question-36">Question</a></li>
 </ul></li>
 <li><a href="#getstringlength">getStringLength</a>
 <ul>
-<li><a href="#my-soultion-29">My_Soultion</a></li>
-<li><a href="#question-25">Question</a></li>
+<li><a href="#my-soultion-46">My_Soultion</a></li>
+<li><a href="#question-37">Question</a></li>
 </ul></li>
 <li><a href="#getindexof">getIndexOf</a>
 <ul>
-<li><a href="#my-soultion-30">My_Soultion</a></li>
-<li><a href="#question-26">Question</a></li>
+<li><a href="#my-soultion-47">My_Soultion</a></li>
+<li><a href="#other-soultion-1-5">other_Soultion</a></li>
+<li><a href="#question-38">Question</a></li>
 </ul></li>
 <li><a href="#calculatebilltotal">calculateBillTotal</a>
 <ul>
-<li><a href="#my-soultion-31">My_Soultion</a></li>
-<li><a href="#question-27">Question</a></li>
+<li><a href="#my-soultion-48">My_Soultion</a></li>
+<li><a href="#question-39">Question</a></li>
 </ul></li>
 <li><a href="#convertobjecttoarray3">convertObjectToArray3</a>
 <ul>
-<li><a href="#my-soultion-32">My_Soultion</a></li>
-<li><a href="#question-28">Question</a></li>
+<li><a href="#my-soultion-49">My_Soultion</a></li>
+<li><a href="#question-40">Question</a></li>
 </ul></li>
 <li><a href="#isodd">isOdd</a>
 <ul>
-<li><a href="#my-soultion-33">My_Soultion</a></li>
+<li><a href="#my-soultion-50">My_Soultion</a></li>
 <li><a href="#my-refactoring-code">My_Refactoring code</a></li>
-<li><a href="#question-29">Question</a></li>
+<li><a href="#question-41">Question</a></li>
 </ul></li>
 <li><a href="#sum">sum</a>
 <ul>
-<li><a href="#my-soultion-34">My_Soultion</a></li>
-<li><a href="#question-30">Question</a></li>
+<li><a href="#my-soultion-51">My_Soultion</a></li>
+<li><a href="#question-42">Question</a></li>
 </ul></li>
 <li><a href="#onlyevenelements">onlyEvenElements</a>
 <ul>
-<li><a href="#my-soultion-35">My_Soultion</a></li>
-<li><a href="#question-31">Question</a></li>
+<li><a href="#my-soultion-52">My_Soultion</a></li>
+<li><a href="#question-43">Question</a></li>
 </ul></li>
 <li><a href="#removeoddvalues">removeOddValues</a>
 <ul>
-<li><a href="#my-soultion-36">My_Soultion</a></li>
-<li><a href="#question-32">Question</a></li>
+<li><a href="#my-soultion-53">My_Soultion</a></li>
+<li><a href="#question-44">Question</a></li>
 </ul></li>
 <li><a href="#firstcharacter">firstCharacter</a>
 <ul>
-<li><a href="#my-soultion-37">My_Soultion</a></li>
-<li><a href="#question-33">Question</a></li>
+<li><a href="#my-soultion-54">My_Soultion</a></li>
+<li><a href="#question-45">Question</a></li>
 </ul></li>
 <li><a href="#dashinsert">dashInsert</a>
 <ul>
-<li><a href="#question-34">Question</a></li>
+<li><a href="#question-46">Question</a></li>
 </ul></li>
 <li><a href="#longestword">longestWord</a>
 <ul>
-<li><a href="#my-soultion-38">My_Soultion</a></li>
-<li><a href="#question-35">Question</a></li>
+<li><a href="#my-soultion-55">My_Soultion</a></li>
+<li><a href="#question-47">Question</a></li>
 </ul></li>
 <li><a href="#convertarraytoobject1">convertArrayToObject1</a>
 <ul>
-<li><a href="#my-soultion-39">My_Soultion</a></li>
-<li><a href="#question-36">Question</a></li>
+<li><a href="#my-soultion-56">My_Soultion</a></li>
+<li><a href="#question-48">Question</a></li>
 </ul></li>
 <li><a href="#convertobjecttoarray1">convertObjectToArray1</a>
 <ul>
-<li><a href="#my-soultion-40">My_Soultion</a></li>
-<li><a href="#question-37">Question</a></li>
+<li><a href="#my-soultion-57">My_Soultion</a></li>
+<li><a href="#question-49">Question</a></li>
 </ul></li>
 <li><a href="#convertarraytoobject2">convertArrayToObject2</a>
 <ul>
-<li><a href="#my-soultion-41">My_Soultion</a></li>
+<li><a href="#my-soultion-58">My_Soultion</a></li>
 <li><a href="#questoin">Questoin</a></li>
 </ul></li>
 <li><a href="#convertobjecttoarray2">convertObjectToArray2</a>
 <ul>
-<li><a href="#my-soultion-42">My_Soultion</a></li>
-<li><a href="#question-38">Question</a></li>
+<li><a href="#my-soultion-59">My_Soultion</a></li>
+<li><a href="#question-50">Question</a></li>
 </ul></li>
 <li><a href="#convertarraytoobject3">convertArrayToObject3</a>
 <ul>
-<li><a href="#my-soultion-43">My_Soultion</a></li>
-<li><a href="#other-soultion-5">other_Soultion</a></li>
+<li><a href="#my-soultion-60">My_Soultion</a></li>
+<li><a href="#other-soultion-1-6">other_Soultion</a></li>
 <li><a href="#qutestion">Qutestion</a></li>
 </ul></li>
 <li><a href="#greetcustomers">greetCustomers</a>
 <ul>
-<li><a href="#my-soultion-44">My_Soultion</a></li>
-<li><a href="#question-39">Question</a></li>
+<li><a href="#my-soultion-61">My_Soultion</a></li>
+<li><a href="#question-51">Question</a></li>
 </ul></li>
 <li><a href="#convertdoublespacetosingle">convertDoubleSpaceToSingle</a>
 <ul>
-<li><a href="#my-soultion-45">My_Soultion</a></li>
-<li><a href="#other-soultion-6">other_Soultion</a></li>
-<li><a href="#other-soultion-7">other_Soultion</a></li>
+<li><a href="#my-soultion-62">My_Soultion</a></li>
+<li><a href="#other-soultion-1-7">other_Soultion</a></li>
+<li><a href="#other-soultion-1-8">other_Soultion</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -698,26 +792,961 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">xCoding_level_2</h1>
+          <h1 itemprop="name">__Algorithm_2</h1>
 
           <div class="article-style" itemprop="articleBody">
             
 
-<p><img src="/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png" alt="" /></p>
-
-<hr />
-
 <h3 id="question">Question</h3>
+
+<h2 id="gcd-최대-공약-알고리즘-함수-작성">gcd(최대 공약 알고리즘) 함수 작성</h2>
+
+<blockquote>
+<p>주어진 두 숫자에 대한 최대공약수(greatest common divisor)를 구하세요</p>
+</blockquote>
+
+<ul>
+<li>outPut</li>
+</ul>
+
+<pre><code class="language-js">
+gcd(22, 24) // 2
+
+</code></pre>
+
+<h3 id="my-soultion">My_soultion</h3>
+
+<pre><code class="language-js">
+function gcd(num1, num2) {
+  // code goes here   
+
+  //num1 = 12,num 2 = 8
+  let num1Arr = [];
+  let num2Arr = [];
+  for (let i =0; i &lt;= num1; i ++) {
+    num1Arr.push(i);
+  }
+  for (let i =0; i &lt;= num1; i ++) {
+    num2Arr.push(i);
+  }
+  
+  let filteredArr1 = num1Arr.filter((ele)=&gt;{
+    return num1 % ele === 0;
+  })
+  let filteredArr2 = num2Arr.filter((ele)=&gt;{
+    return num2 % ele === 0;
+  })
+
+  let totalArr = filteredArr1.filter(function(val) {
+  return filteredArr2.indexOf(val) !== -1;
+});
+
+  return Math.max(...totalArr);
+
+}
+
+
+
+
+
+</code></pre>
+
+<h3 id="other-soultion-1">Other_Soultion 1</h3>
+
+<pre><code class="language-js">function getGCD(value1, value2) {
+  if (typeof value1 !== &quot;number&quot; || typeof value2 !== &quot;number&quot;) {
+    return;
+  }
+  // value1과 value2 중 큰 값을 기준으로 값을 선택
+  let num = value1 &gt; value2 ? value1 : value2;
+  let max;
+
+  for (let i = 1; i &lt;= num; i++) {
+    if (value1 % i === 0 &amp;&amp; value2 % i === 0) {
+      max = i;
+    }
+  }
+
+  return max;
+}
+console.log(getGCD(280, 30)); // 10
+console.log(getGCD(12, 4)); // 4
+
+
+</code></pre>
+
+<h3 id="other-soultion-2-1">Other_Soultion 2-1</h3>
+
+<pre><code class="language-js">
+
+function gcd(num1, num2) {
+  if(num2 === 0) { 
+    return num1;
+  }
+    let c = num1 % num2 // 0나머지값이 나올때까지 계속 num1 % num2 실행
+    // 자리를 바꾼다.
+    num1 = num2 // num1 은 num2 가 되고 
+    num2 = c //  num2 는 c 가 된다.  
+    return gcd(num1, num2) // 계속 실행시킨다. 
+}
+
+
+</code></pre>
+
+<h3 id="other-soultion-2-2">Other_Soultion 2-2</h3>
+
+<pre><code class="language-js">
+function gcd(num1, num2) {
+  return num2 ? gcd(num2, num1 % num2) : num1;
+}
+
+
+</code></pre>
+
+<h3 id="약수-공약-알고리즘">약수 공약 알고리즘</h3>
+
+<pre><code class="language-js">export function getDivisor(value) {
+  if (typeof value !== &quot;number&quot;) {
+    return;
+  }
+  let result = [];
+
+  for (let i = 1; i &lt;= value; i++) {
+    if (value % i === 0) {
+      result.push(i);
+    }
+  }
+
+  return result.toString();
+}
+
+console.log(getDivisor(30)); // 1,2,3,5,6,10,15,30
+console.log(getDivisor(12)); // 1,2,3,4,6,12
+
+
+</code></pre>
+
+<h3 id="question-1">Question</h3>
+
+<h2 id="findmissingnumber">findMissingNumber</h2>
+
+<blockquote>
+<p>성준이는 1부터 n까지 숫자를 적던 중 깜빡하고 하나의 숫자를 빼먹었다. 그 빼먹은 숫자를 찾으시오.</p>
+</blockquote>
+
+<ul>
+<li>outPut</li>
+</ul>
+
+<pre><code class="language-js">
+findMissingNumber('1 6 2 4 3') // =&gt; 5
+
+
+</code></pre>
+
+<h3 id="my-soultion-1">My_Soultion</h3>
+
+<pre><code class="language-js">
+function findMissingNumber(str) {
+
+  // code goes here
+  let strArr = str.split(&quot; &quot;).map(Number);
+  let x = function(a,b){
+	return a-b;
+  }
+  let orderArr = strArr.sort(x); 
+  let arr = orderArr.filter(function(ele,index){
+		return ele -1 !== index;
+	})
+	return arr[0]-1
+}
+
+</code></pre>
+
+<h3 id="quesiton">Quesiton</h3>
+
+<blockquote>
+<p>+, -, 그리고 괄호를 가지고 길이가 최대 50인 식을 만들었다. 그리고 나서 성준 이는 괄호를 모두 지웠다. 그리고 나서 괄호를 적절히 쳐서 이 식의 값을 최소로 만드려고 한다. 괄호를 적절히 쳐서 이 식의 값을 최소로 만드는 프로그램을 작성하시오.</p>
+</blockquote>
+
+<h3 id="output">output</h3>
+
+<pre><code class="language-js">findMinByBracket('55-50+40') // -35
+
+
+
+</code></pre>
+
+<h3 id="my-soultion-2">My_soultion</h3>
+
+<pre><code class="language-js">
+
+function findMinByBracket(str) {
+  let arr = str.split(&quot;-&quot;)
+  let sumPlus = 0;
+  let sum = 0;
+  for (let i = 0; i &lt; arr.length; i ++ ) {
+    if (arr[i].split(&quot;+&quot;).length &gt; 1 )	 { // [55-50+40]
+    sumPlus = arr[i].split(&quot;+&quot;).map(Number).reduce(function(a,c){
+	    return  a + c
+      });
+      arr.splice(i,1,sumPlus.toString());
+      }
+      // 현재  arr = [&quot;50&quot;,&quot;90&quot;];	
+      sum = arr.map(Number).reduce(function(a,c){
+        return  a - c;
+      });
+  }
+      return sum;
+}
+
+
+</code></pre>
+
+<h3 id="quesiton-1">Quesiton</h3>
+
+<h2 id="findmaxonmultiplesofthirty">findMaxOnMultiplesOfThirty</h2>
+
+<blockquote>
+<p>어느날, 성준이는 우연히 길거리에서 양수 N을 보았다. 성준이는 30이란 수를 존경하기 때문에, 그는 길거리에서 찾은 수에 포함된 숫자들을 섞어 30의 배수가 되는 가장 큰 수를 만들고 싶어한다. 성준이를 도와 그가 만들고 싶어하는 수를 계산하는 프로그램을 작성하라. (그 수가 존재한다면)</p>
+
+<p>출력 : 성준이가 만들고 싶어하는 수가 존재한다면 그 수를 출력하라. 그 수가 존재하지 않는다면, -1을 출력하라.</p>
+</blockquote>
+
+<ul>
+<li>outPut</li>
+</ul>
+
+<pre><code class="language-js">
+
+findMaxOnMultiplesOfThirty(4095)  // 9540
+findMaxOnMultiplesOfThirty(1023)  // 3210
+findMaxOnMultiplesOfThirty(4800)  // 8400
+</code></pre>
+
+<h3 id="my-soultion-3">My_Soultion</h3>
+
+<pre><code class="language-js">
+function findMaxOnMultiplesOfThirty(num) {
+  // your code here
+  let num2 = num.toString().split(&quot;&quot;).map(Number);
+  let num3 = num2.sort().reverse().join(&quot;&quot;);
+
+  let num4 = Number(num3);
+  if (num4 % 30 === 0 ){
+    return num4; 
+  } else {
+    return -1;
+  }
+
+}
+
+
+
+
+
+</code></pre>
+
+<h3 id="question-2">Question</h3>
+
+<h2 id="threefivemultiples">threeFiveMultiples</h2>
+
+<blockquote>
+<p>숫자가 주어졌을때, threeFiveMultiples(num) 함수는 해당 숫자보다 작은 3 혹은 5의 배수들의 총합을 반환합니다.</p>
+
+<p>예시: 만약 10이 주어졌다면, 10 보다 작은 3과 5의 배수들은 3, 5, 6, 9 가 있으며 해당 숫자들을 모두 더하면 23 이 나오므로 여러분이 작성하진 함수는 23 을 반환해야 합니다.</p>
+</blockquote>
+
+<h3 id="my-soultion-4">My_Soultion</h3>
+
+<pre><code class="language-js">
+function threeFiveMultiples(num) {
+  // 여기에 코드를 작성하세요 
+  let result = 0;
+  for(let i = 0; i &lt; num; i++ ) { 
+    if(i % 3 === 0 || i % 5 === 0){
+       result = result + i;
+    } 
+  }
+  return result;
+
+}
+
+
+
+</code></pre>
+
+<h3 id="quesiton-2">Quesiton</h3>
+
+<h2 id="runlength">runLength</h2>
+
+<blockquote>
+<p><code>3시간 반 소요</code></p>
+
+<p>문자열이 주어졌을때, runLength(str) 함수는 Run-length 인코딩 알고리즘을 사용하여 주어진 문자열을 압축하여 반환합니다.</p>
+
+<p>해당 알고리즘은 반복되는 글자가 있을경우 반복되는 수와 해당 글자를 조합하여 문자열을 압축시킵니다.</p>
+
+<p>예시: wwwggopp 는 3w2g1o2p 로 압축됩니다. 주어지는 문자열은 숫자나, 구두점이나, 문자를 포함하고 있지 않습니다.</p>
+</blockquote>
+
+<h3 id="my-soultion-5">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+
+function runLength(str) {
+   
+
+   // 같은 char 끼리 묶기 위해 우선 각배열안에 담아서 newArr안에 넣느다 .
+   // newArr = (4) [Array(3), Array(5), Array(6), Array(8)]
+   
+   // (3) [&quot;w&quot;, &quot;w&quot;, &quot;w&quot;]
+   // (5) [&quot;w&quot;, &quot;w&quot;, &quot;w&quot;, &quot;g&quot;, &quot;g&quot;]
+   // (6) [&quot;w&quot;, &quot;w&quot;, &quot;w&quot;, &quot;g&quot;, &quot;g&quot;, &quot;o&quot;]
+   // (8) [&quot;w&quot;, &quot;w&quot;, &quot;w&quot;, &quot;g&quot;, &quot;g&quot;, &quot;o&quot;, &quot;p&quot;, &quot;p&quot;]
+   
+    var strArr = str.split(&quot;&quot;);
+    var newArr = [];
+    var index = 0;
+    for (let i = 0; i &lt; strArr.length ; i ++  ) {
+        let copeArr = strArr.slice(); 
+        if(strArr[i] !== strArr[i + 1]) {
+            // i = 2 , 4, 5, 7
+            copeArr.splice(i+1,0,&quot;-&quot;); // [&quot;w&quot;, &quot;w&quot;,&quot;w&quot;,&quot;-&quot;,&quot;g&quot;, &quot;g&quot;, &quot;o&quot;, &quot;p&quot;, &quot;p&quot;]
+            newArr.push(copeArr.slice(index,i+1));
+        }
+    }
+
+    // retArr 안에  같은 char 끼리 모아 놓는다.
+    // retArr = (4) [&quot;www&quot;, &quot;gg&quot;, &quot;o&quot;, &quot;pp&quot;]
+    var retArr = [];
+    var filtered = [];
+    retArr.push(newArr[0].join(&quot;&quot;))
+    for (let i = 0; i &lt; newArr.length- 1; i ++ ) {
+        retArr.push(newArr[i+1].slice(newArr[i].length).join(&quot;&quot;))
+	
+    }
+    
+    // map 을 이용하여 outPut 변수안에 숫자와 char각각요소를 합쳐 배열로 만든다.
+    // outPut[&quot;3w&quot;, &quot;2g&quot;, &quot;1o&quot;, &quot;2p&quot;]
+    
+    let outPut = retArr.map(function(val) {
+	return  val.length + val[0];
+	})
+
+    // 문자열로 만들고 리턴한다. 
+    return outPut.join(&quot;&quot;);
+
+}
+
+
+</code></pre>
+
+<h3 id="question-3">Question</h3>
+
+<h2 id="numbersearch">numberSearch</h2>
+
+<blockquote>
+<p>문자열이 주어졌을때, numberSearch(str) 함수는 주어진 문자열에서 숫자를 모두 찾아 더한 뒤 해당 값을 (숫자, 공백 등을 제외한) 알파벳의 길이의 길이로 나눈 값을 정수로 반올림하여 반환합니다.</p>
+</blockquote>
+
+<pre><code class="language-js">
+예시: 만약 문자열 Hello6 9World 2, Nic8e D7ay! 이 주어졌다면, 결과값은 2 입니다.
+
+우선 모든 숫자를 더하면 6 + 9 + 2 + 8 + 7 = 32 가 나오게됩니다.
+
+그 후 (숫자, 공백 등을 제외한) 알파벳의 길이가 17이기 때문에 32/17 = 1.882 가 나오게 되며, 가까운 정수로 반올림을 하게되면 정답인 2가 나오게 됩니다.
+
+</code></pre>
+
+<h3 id="my-soultoin">My_Soultoin</h3>
+
+<pre><code class="language-js">
+function numberSearch(str) {
+  // your code here
+
+  let strLength = str.replace(/[^a-z]/gi, '').length;
+  let sum = str.match(/\d/g).map(Number).reduce(function(a,c){
+	return a + c;
+})
+
+  return Math.round(sum / strLength);
+
+}
+
+</code></pre>
+
+<h3 id="question-4">Question</h3>
+
+<h2 id="findmaxonmultiplesofthirty-1">findMaxOnMultiplesOfThirty</h2>
+
+<blockquote>
+<p>어느날, 성준이는 우연히 길거리에서 양수 N을 보았다. 성준이는 30이란 수를 존경하기 때문에, 그는 길거리에서 찾은 수에 포함된 숫자들을 섞어 30의 배수가 되는 가장 큰 수를 만들고 싶어한다. 성준이를 도와 그가 만들고 싶어하는 수를 계산하는 프로그램을 작성하라. (그 수가 존재한다면)</p>
+
+<p>출력 : 성준이가 만들고 싶어하는 수가 존재한다면 그 수를 출력하라. 그 수가 존재하지 않는다면, -1을 출력하라.</p>
+</blockquote>
+
+<pre><code class="language-js">
+
+findMaxOnMultiplesOfThirty(4095)  // 9540
+findMaxOnMultiplesOfThirty(1023)  // 3210
+findMaxOnMultiplesOfThirty(4800)  // 8400
+
+</code></pre>
+
+<h3 id="my-soultion-6">My_Soultion</h3>
+
+<pre><code class="language-js">function findMaxOnMultiplesOfThirty(num) {
+  
+  // your code here
+  
+  // 4095 --&gt; 9540
+  // 1023 --&gt; 3210
+  // 4800 --&gt; 8400
+
+
+  str = String(num); // num 를 문자열로 바꾼다.
+
+  let sum = str.split('').map(Number).reduce(function(acc,curr){ // 
+    return acc + curr;
+  });
+    
+  if ( sum % 3 === 0 &amp;&amp; str.includes('0')) {
+    return Number(str.split('').map(Number).sort(function(a,b){
+      return b - a;
+    }).join(''));
+  } else {
+    return -1;
+  }
+  }
+
+
+
+
+</code></pre>
+
+<h3 id="quesiton-3">Quesiton</h3>
+
+<h2 id="threefivemultiples-1">threeFiveMultiples</h2>
+
+<blockquote>
+<p>숫자가 주어졌을때, threeFiveMultiples(num) 함수는 해당 숫자보다 작은 3 혹은 5의 배수들의 총합을 반환합니다.</p>
+</blockquote>
+
+<pre><code class="language-js">
+예시: 만약 10이 주어졌다면, 10 보다 작은 3과 5의 배수들은 3, 5, 6, 9 가 있으며 
+
+해당 숫자들을 모두 더하면 23 이 나오므로 여러분이 작성하진 함수는 23 을 반환해야 합니다.
+
+
+
+</code></pre>
+
+<h3 id="my-soultion-7">My_Soultion</h3>
+
+<pre><code class="language-js">function threeFiveMultiples(num) {
+
+  // 여기에 코드를 작성하세요
+
+  let sum3 = 0; // 3의 배수들이 담긴다.
+  let sum5 = 0; // 5의 배수들이 담긴다. 
+
+  for ( let i = 1; i &lt; num; i = i + 1 ) { // 10(Num) 보다 작을때까지 돌린다. 
+    if (i % 3 === 0 ) {   // i 값이 3 6 9 가 되면 통과
+      sum3 = sum3 + i;  //  3 + 6 + 9 = 18 
+    } else if ( i % 5 === 0) { // i 값이 5 가 되면 통과
+      sum5 = sum5 + i;  // 0 + 5 = 5
+    }
+  }
+  return sum3 + sum5; // 18 + 5 = 23
+
+}
+
+
+
+</code></pre>
+
+<h3 id="question-5">Question</h3>
+
+<h2 id="runlength-1">runLength</h2>
+
+<blockquote>
+<p>문자열이 주어졌을때, runLength(str) 함수는 Run-length 인코딩 알고리즘을 사용하여 주어진 문자열을 압축하여 반환합니다.</p>
+
+<p>해당 알고리즘은 반복되는 글자가 있을경우 반복되는 수와 해당 글자를 조합하여 문자열을 압축시킵니다.</p>
+</blockquote>
+
+<pre><code class="language-js">예시: wwwggopp 는 3w2g1o2p 로 압축됩니다. 
+주어지는 문자열은 숫자나, 구두점이나, 문자를 포함하고 있지 않습니다.
+
+
+</code></pre>
+
+<h3 id="my-soultion-8">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+function runLength(str) {
+  // Your code here
+
+ let result = new Array(); // &lt;&lt; new Array() 와 [] 차이점 
+ let count = 1; // 숫자를 계산하기위해 1로 초기값설정
+ for ( let i = 0; i &lt; str.length; i = i + 1 ) {
+   if ( str[i] === str[i + 1]) {
+     count = count + 1;
+   } else {
+     result.push(count);
+     result.push(str[i]);
+     count = 1;
+   }
+ }
+ return result.join('');
+}
+
+</code></pre>
+
+<h3 id="qeustion">Qeustion</h3>
+
+<h2 id="thirdgreatest">thirdGreatest</h2>
+
+<blockquote>
+<p>문자열로 이루어진 배열이 주어졌을때, thirdGreatest(strArr) 함수는 주어진 배열에서 세번째로 긴 단어를 반환합니다. 그 중, 동률일때는 뒤에 있는 단어를 반환해줘야 합니다.</p>
+</blockquote>
+
+<pre><code class="language-js">
+예를 들어, 주어진 배열이 [&quot;hello&quot;, &quot;world&quot;, &quot;before&quot;, &quot;all&quot;] 라면, 결과값은 world 가 될것입니다. 
+
+왜냐하면 before는 6글자이고 hello와 world 둘다 5글자 이지만 world가 더 뒤에 나온 5글자 단어이기 때문입니다.
+
+만약 주어진 배열이 [&quot;hello&quot;, &quot;world&quot;, &quot;after&quot;, &quot;all&quot;] 이라면 결과값은 after가 될것입니다. 
+
+왜냐하면 앞에 세 단어가 모두 5글자이기 때문에 마지막 단어를 반환하기 때문입니다. 
+
+배열은 항상 적어도 문자열 세개를 가지고 있으며, 각각의 문자열은 오직 글자만을 포함하고 있습니다.
+
+
+</code></pre>
+
+<h3 id="my-soultion-9">My_Soultion</h3>
+
+<pre><code class="language-js">
+function thirdGreatest(arr) {
+  
+  // 여기에 코드를 작성하세요
+
+  // 1. sort() 메소드를 이용해서 문자열의 길이가 가장 긴것들을 가장 처음으로 배열한다. 
+  // 2. 3번째 배열에 있는 요소를 출력한다. 
+
+   let lineUp = function (a,b) {
+     if (a.length &gt; b.length) {
+       return -1;
+     } else if (a.length === b.length){
+       return 0;
+     } else {
+       return 1;
+     }
+  }
+  return arr.sort(lineUp)[2];
+}
+  
+
+
+
+</code></pre>
+
+<h3 id="question-6">Question</h3>
+
+<h2 id="superincreasing">superIncreasing</h2>
+
+<blockquote>
+<p>숫자로 이루어진 배열이 주어졌을때, superIncreasing(arr) 함수는 해당 배열이 superIncreasing 조건을 만족하는지 반환합니다. 배열의 모든 요소들이 해당 요소들 앞에 있는 요소들 전체의 합보다 크면 superIncreasing 조건을 만족하는 배열이라 할 수 있습니다.</p>
+</blockquote>
+
+<pre><code class="language-js">
+//(예시: 만약 주어진 배열이 [1, 3, 6, 13, 54] 라면 superIncreasing 조건에 만족하기 때문에 여러분의 함수는 true를 반환해야 합니다. 
+
+// 만약 superIncreasing 조건에 만족하지 않는다면 여러분의 함수는 false를 반환해야 합니
+
+</code></pre>
+
+<h3 id="my-soultion-10">My_Soultion</h3>
+
+<pre><code class="language-js">
+function superIncreasing(arr) {
+
+  // 1. arr 안에 0번째 요소를 비교할 대상으로 사용하기 위해 변수에 담는다.
+  // 2. for 문을 사용하여 배안안에 길이가 끝날때까지 만큼 조건을 걸어둔다. 
+  
+  // [1, 3, 6, 13, 54] 
+  
+  let  num = arr[0]; // 1
+  for (let i = 0; i &lt; arr.length -1; i = i + 1 ) { // 4
+    if (num &gt; arr[i+1]) {  //  1 &gt; 3 
+      return false;
+    } else {
+      num = num + arr[i];
+  
+    }
+  }
+  return true
+}
+
+
+
+
+</code></pre>
+
+<h3 id="quesiton-4">Quesiton</h3>
+
+<h2 id="multiplicativepersistence">multiplicativePersistence</h2>
+
+<blockquote>
+<p>양의 정수가 주어졌을때, multiplicativePersistence(num) 함수는 주어진 수의 각 자리의 숫자를 곱했을때 한 자릿수가 될때까지의 계산 횟수를 반환합니다.</p>
+</blockquote>
+
+<pre><code class="language-js">//예시: 만약 입력값이 39라면, 여러분의 함수는 3을 반환해야 합니다.
+
+//왜냐하면
+
+//3 * 9 = 27
+
+//그리고 2 * 7 = 14
+
+// 그리고 마지막으로 1 * 4 = 4 이므로 한 자리가 될 때까지 총 3번의 계산을 하기 때문입니다.
+
+
+</code></pre>
+
+<h3 id="my-soultion-11">My_Soultion</h3>
+
+<pre><code class="language-js">
+function multiplicativePersistence(num) {
+ /*
+ 0. 숫자를 문자열로 바꾼다.
+ 1. 입력값(숫자)가 한 자리인가?
+ 1-1. No -&gt;
+ 한 글자씩 나눠서 배열로 만든다.
+ 배열을 도는 반복문을 만드는데,
+ 새 변수를 1로 저장하고 새 변수에 하나씩 곱해준다. (여기서 숫자로 바꿔줌)
+ 곱해준 값이 한 자리인지 다시 진단한다.
+ */
+ let count = 0;
+ while(num.toString().length &gt; 1){
+   let resultVal = 1
+   count = count + 1
+   for (let i=0; i&lt;num.toString().length; i++){
+     resultVal = resultVal * Number(num.toString()[i]);
+   }
+   num = resultVal;
+ }
+ return count;
+}
+
+
+</code></pre>
+
+<h3 id="question-7">Question</h3>
+
+<h2 id="lettercapitalize">letterCapitalize</h2>
+
+<blockquote>
+<p>letterCapitalize(str)는 문자열을 parameter로 받는 함수로, 문자열의 각 단어의 첫번째 글자를 대문자로 만듭니다.</p>
+</blockquote>
+
+<ul>
+<li>output</li>
+</ul>
+
+<pre><code class="language-js">
+letterCapitalize(&quot;hello world&quot;); // &quot;Hello World&quot;
+letterCapitalize(&quot;javascript is sexy&quot;) // &quot;Javascript Is Sexy
+
+
+
+</code></pre>
+
+<h3 id="my-soultion-12">My_Soultion</h3>
+
+<pre><code class="language-js">
+function letterCapitalize(str) {
+  // Your code here
+
+  // &quot;Hello World&quot;
+  let strArr = str.split(&quot; &quot;);
+  let newArr = [];
+  for (let i =0; i &lt; strArr.length; i ++ ) {
+  let element = strArr[i].replace(strArr[i][0],strArr[i][0].toUpperCase());
+  newArr.push(element);
+  }
+  return newArr.join(&quot; &quot;);
+
+  
+}
+
+
+</code></pre>
+
+<h3 id="question-8">Question</h3>
+
+<h2 id="poweroftwo">powerOfTwo</h2>
+
+<blockquote>
+<p>powerOfTwo (num) 함수는 num parameter를 가져와서 정수이며, 동시에 2의 거듭제곱이면 true를 반환합니다.</p>
+</blockquote>
+
+<h3 id="my-soultion-13">My_Soultion</h3>
+
+<pre><code class="language-js">function powerOfTwo(num) {
+ // 함수를 계속 실행해서 num 1이면 true
+ // 정수이면, / 2 한 num 다시 poweroftwo()
+ // 재귀함수로
+ debugger; // 디버거
+ if(num === 1) {
+   return true;
+ } else if(Number.parseInt(num / 2)) {
+   num = num / 2;
+   return powerOfTwo(num);   
+ } return false;
+}
+
+powerOfTwo(16); // true가 반환되어야 함
+
+
+
+</code></pre>
+
+<h3 id="question-9">Question</h3>
+
+<h2 id="json-stringfy-함수-만들기">JSON.stringfy 함수 만들기</h2>
+
+<pre><code class="language-js"> * 2. stringfyJSON은 아래와 같이 작동합니다.
+ * 
+ * 
+ * - Bolean이 input으로 주어졌을 경우
+ * stringifyJSON(true);                // 'true'
+ * 
+ * 
+ * - String이 input으로 주어졌을 경우
+ * stringifyJSON('foo');               // '&quot;foo&quot;'
+ * 
+ * 
+ * - Array가 input으로 주어졌을 경우
+ * stringifyJSON([1, 'false', false]); // '[1,&quot;false&quot;,false]'
+ * 
+ * 
+ * - Object가 input으로 주어졌을 경우
+ * stringifyJSON({ x: 5 });            // '{&quot;x&quot;:5}'
+ * 
+ * 
+ * - undefind, function이 주어졌을 경우
+ * stringifyJSON(undefined)            // undefined
+ * stringifyJSON(function(){})         // undefined
+ * 
+ * 
+ * stringifyJSON({ x: undefined, y: function(){} })   // '{}'
+ * 
+ * 3. spec/fixtures.js를 참고해서 테스트에서 어떤 input 값들이
+ * 주어지고, 어떻게 stringify해 주어야할지 생각해 보세요.
+ * 
+ * 4. 그냥 테스트 통과를 하고 싶으시다면, 다음과 같이 구현하면 될거예요.
+ *  const stringifyJSON = JSON.stringify;
+ * 
+ * 하지만 이 과제의 목적은 재귀를 공부하는 것이니, 처음부터 구현해봐야겠지요?:
+ */
+
+</code></pre>
+
+<h3 id="my-soultion-14">My_Soultion</h3>
+
+<pre><code class="language-js">
+
+  
+
+ function stringifyJSON(obj) {
+
+  let result = []  ;
+
+  // boolean or 숫자로 받는다면? 
+ 
+  
+  
+ 
+  if(typeof obj === 'boolean' || typeof obj === 'number') {
+      return String(obj);
+    }
+    
+    // 만약 값이 없다면 
+    if (obj === null ) {
+      return 'null';
+    }
+
+    // string으로 받는다면 
+     else if (typeof obj === &quot;string&quot;) {
+      return '&quot;' + obj + '&quot;';
+     }
+     
+     // 배열로 받는다면 
+     else if (Array.isArray(obj)) {
+      for( let i = 0; i &lt; obj.length; i++ ) {
+        // result.push(obj[i]);
+        // 왜 여기서 push obj[i]를 안하고 
+        // stringifyJOSN(obj[i])
+        result.push(stringifyJSON(obj[i])) 
+        
+      }
+      return &quot;[&quot; + result + &quot;]&quot;;
+    } 
+    // 객체로 받는다
+      else if (typeof obj === 'object') {
+      for (let propo in obj) {
+        if(obj[propo] !== undefined &amp;&amp; typeof obj[propo] !== 'function'){
+          //  왜 이것은 안되고
+          // result.push(&quot;'&quot; + propo + &quot;'&quot; + ':' + &quot;'&quot; + obj[propo] + &quot;'&quot;);
+          // 이것은 될까요?
+          result.push(stringifyJSON(propo) + ':' + stringifyJSON(obj[propo]));
+        }
+      }
+      return '{' + result + '}';
+
+    }
+
+  };
+  
+
+
+</code></pre>
+
+<h3 id="question-10">Question</h3>
+
+<blockquote>
+<p>Broswer에 존재하는 document.getElementsByClassName 함수를
+ 직접 구현해봅니다.</p>
+
+<p>getElementsByClassName 함수는 현재 documnet에서 주어진 className을 가지고 있는 모든 html element를 찾는 함수입니다.</p>
+
+<p>결과는 항상 배열의 형태로 리턴해줍니다.document.body, element.childNodes, element.classList를 사용해보세요</p>
+</blockquote>
+
+<h3 id="my-soultion-15">My_Soultion</h3>
+
+<pre><code class="language-js">  
+  
+// 이것을 다른 재귀로 구현하세요 
+  function getElementsByClassName (className) {
+    return document.getElementsByClassName(className);
+  };
+
+
+   // document.body.classList == &gt; 배열형태  but typeof 는 object
+   // document.body.childNodes == &gt; 배열형태 but typeof 는 object
+   // document.body.children   == &gt; 배열형태 but typeof 는 object
+  
+
+function getElementsByClassName(className) {
+
+
+  let result = [];
+  let rootElement = document.body;
+
+  function recursion(rootElement){
+
+    if(rootElement.classList &amp;&amp; rootElement.classList.contains(className)) {
+      result.push(rootElement);
+    }
+    
+    if(rootElement.hasChildNodes()){
+      // rootElement.children.length 사용해도됨 
+      for(let i=0; i&lt;rootElement.childNodes.length; i++){
+        recursion(rootElement.childNodes[i]);
+      }
+    }
+  }
+  recursion(rootElement);  // 이것이 첫번째로 호출???
+  return result;
+};
+
+
+
+
+</code></pre>
+
+<h3 id="question-11">Question</h3>
+
+<h2 id="shuffle-함수-만들기">shuffle 함수 만들기</h2>
+
+<h3 id="my-soultion-16">My_Soultion</h3>
+
+<pre><code class="language-js">
+// 배열 내용의 순서를 랜덤하게 변경합니다.
+// TIP: 이 함수는 immutable해야 합니다.
+
+
+function shuffle(array) {
+    let shuffleArr = array.slice();
+    let i,j,k;
+    for ( i = shuffleArr.length-1; i &gt; 0; i--) {
+      j = Math.floor(Math.random()*(i+1));
+      k = shuffleArr[i];
+      shuffleArr[i] = shuffleArr[j];
+      shuffleArr[j] = k;
+    } return shuffleArr;
+  };
+
+
+
+// other
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+
+// Another one
+
+function shuffle(array) {
+    
+    let copy = array.slice();
+    copy.sort(function(a, b){
+      return Math.random() - 0.5;
+    })
+    return copy;
+  };
+
+
+
+
+</code></pre>
+
+<h3 id="question-12">Question</h3>
+
+<h2 id="flatten-함수-만들기">flatten 함수 만들기</h2>
 
 <blockquote>
 <p>convert nested (2-dimensional) array to flatten array! (2차원 배열을 1차원 배열로 전환하세요.)</p>
 </blockquote>
 
-<pre><code class="language-js">flatten([1,2,[3],[4]]); // [1,2,3,4]
+<pre><code class="language-js">
+flatten([1,2,[3],[4]]); // [1,2,3,4]
 
 </code></pre>
 
-<h3 id="my-soultion">My_Soultion</h3>
+<h3 id="my-soultion-17">My_Soultion</h3>
 
 <pre><code class="language-js">function flatten (array){
   //your solution here
@@ -760,11 +1789,11 @@
 
 </code></pre>
 
-<h3 id="question-1">Question</h3>
-
-<h2 id="buginapple">bugInApple</h2>
+<h3 id="question-13">Question</h3>
 
 <blockquote>
+<h2 id="buginapple">bugInApple</h2>
+
 <p>Find out &ldquo;B&rdquo;(Bug) in a lot of &ldquo;A&rdquo;(Apple). (수많은 &ldquo;A&rdquo;(Apple) 사이에서 &ldquo;B&rdquo;(Bug)를 찾으세요.)</p>
 
 <p>There will always be one bug in apple, not need to consider the situation that without bug or more than one bugs. (사과(apple) 사이에는 언제나 항상 한개의 벌레(bug)가 있으므로 벌레가 없는 경우나 한개 이상인 경우는 고려하지 않으셔도 됩니다.)</p>
@@ -782,7 +1811,7 @@ output:
 
 </code></pre>
 
-<h3 id="my-soultion-1">My_Soultion</h3>
+<h3 id="my-soultion-18">My_Soultion</h3>
 
 <pre><code class="language-js">
 let bugInApple = function(array) {
@@ -801,7 +1830,7 @@ let bugInApple = function(array) {
 
 </code></pre>
 
-<h3 id="question-2">Question</h3>
+<h3 id="question-14">Question</h3>
 
 <blockquote>
 <p>using the JavaScript language, have the function firstReverse(str) take the str parameter being passed and return the string in reversed order.</p>
@@ -811,7 +1840,7 @@ let bugInApple = function(array) {
 
 <h2 id="firstreverse">firstReverse</h2>
 
-<h3 id="my-soultion-2">My_Soultion</h3>
+<h3 id="my-soultion-19">My_Soultion</h3>
 
 <pre><code class="language-js">function firstReverse(str) {
   // code here ... :)
@@ -828,7 +1857,7 @@ let bugInApple = function(array) {
 
 </code></pre>
 
-<h3 id="question-3">Question</h3>
+<h3 id="question-15">Question</h3>
 
 <blockquote>
 <p>Using the JavaScript language, have the function ABCheck(str) take the str parameter being passed and return the true if the characters a and b are separated by exactly 3 places anywhere in the string at least once Otherwise return the false.</p>
@@ -836,7 +1865,7 @@ let bugInApple = function(array) {
 <p>(ABCheck(str) 함수를 작성하세요. 문자열(str)이 주어졌을때, ABCheck(str) 주어진 문자열에서 함수는 문자 a 와 b 사이가 문자열 안에서 한번이라도 정확히 3글자 떨어져 있으면 true를 반환하고 그렇지 않은 경우는 모두 false 를 반환합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-3">My_Soultion</h3>
+<h3 id="my-soultion-20">My_Soultion</h3>
 
 <pre><code class="language-js">
 function ABCheck(str) {
@@ -867,7 +1896,7 @@ function ABCheck(str) {
 
 </code></pre>
 
-<h3 id="question-4">Question</h3>
+<h3 id="question-16">Question</h3>
 
 <h2 id="filteredarray">filteredArray</h2>
 
@@ -875,7 +1904,7 @@ function ABCheck(str) {
 <p>return a new array that all elements passed testFunction without using filter method (filter 메소드를 사용하지 않고 testFunction 함수를 통과하는 요소로만 이루어진 배열을 반환하는 함수를 작성하세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-4">My_Soultion</h3>
+<h3 id="my-soultion-21">My_Soultion</h3>
 
 <pre><code class="language-js">
 function filteredArray (array, testFunction) {
@@ -897,7 +1926,7 @@ function filteredArray (array, testFunction) {
 
 </code></pre>
 
-<h3 id="qeustion">Qeustion</h3>
+<h3 id="qeustion-1">Qeustion</h3>
 
 <blockquote>
 <p>다차원 배열을 가져와서, 1차원 배열로 변환합니다.</p>
@@ -905,7 +1934,7 @@ function filteredArray (array, testFunction) {
 <p>새 배열에는 다차원 배열의 모든 요소가 포함되어야 합니다.</p>
 </blockquote>
 
-<h2 id="flatten-함수-만들기">flatten 함수 만들기</h2>
+<h2 id="flatten-함수-만들기-1">flatten 함수 만들기</h2>
 
 <h3 id="my-soution">My_Soution</h3>
 
@@ -967,11 +1996,11 @@ function flatten (nestedArray, result) {
 
 </code></pre>
 
-<h3 id="qeustion-1">Qeustion</h3>
+<h3 id="qeustion-2">Qeustion</h3>
 
 <h2 id="delay-함수-만들기">delay 함수 만들기</h2>
 
-<h3 id="my-soultion-5">My_Soultion</h3>
+<h3 id="my-soultion-22">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -997,11 +2026,11 @@ function flatten (nestedArray, result) {
 
 </code></pre>
 
-<h3 id="qeustion-2">Qeustion</h3>
+<h3 id="qeustion-3">Qeustion</h3>
 
 <h2 id="최대-한번만-호출할-수-있는-함수-만들기">최대 한번만 호출할 수 있는 함수 만들기</h2>
 
-<h3 id="my-soultion-6">My_Soultion</h3>
+<h3 id="my-soultion-23">My_Soultion</h3>
 
 <pre><code class="language-js"> 
   function once(func) {
@@ -1041,11 +2070,11 @@ function flatten (nestedArray, result) {
 
 </code></pre>
 
-<h3 id="qeustion-3">Qeustion</h3>
+<h3 id="qeustion-4">Qeustion</h3>
 
-<h2 id="갹채를-함쳐주는-함수-만들기-2-key-덮어쓰지-않기">갹채를 함쳐주는 함수 만들기 2(key 덮어쓰지 않기 )</h2>
+<h2 id="갹채를-함쳐주는-함수-만들기-2-key-덮어쓰지-않기">갹채를 함쳐주는 함수 만들기 2 (key 덮어쓰지 않기 )</h2>
 
-<h2 id="my-soultion-7">My_Soultion</h2>
+<h3 id="my-soultion-24">My_Soultion</h3>
 
 <pre><code class="language-js"> // extend와 비슷하지만, 이번엔 이미 존재하는 key에 대해 값을 덮어쓰기 하지 않습니다.
   function defaults (obj,...objs) {
@@ -1067,7 +2096,7 @@ function flatten (nestedArray, result) {
 
 </code></pre>
 
-<h3 id="qeustion-4">Qeustion</h3>
+<h3 id="qeustion-5">Qeustion</h3>
 
 <h2 id="갹채를-함쳐주는-함수-만들기">갹채를 함쳐주는 함수 만들기</h2>
 
@@ -1100,11 +2129,11 @@ extend = function(obj, ...objs) {
 
 </code></pre>
 
-<h3 id="qeustion-5">Qeustion</h3>
+<h3 id="qeustion-6">Qeustion</h3>
 
 <h2 id="some-함수-만들기">some 함수 만들기</h2>
 
-<h3 id="my-soultion-8">My_Soultion</h3>
+<h3 id="my-soultion-25">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -1134,11 +2163,11 @@ function some(collection, iterator) {
 
 </code></pre>
 
-<h3 id="qeustion-6">Qeustion</h3>
+<h3 id="qeustion-7">Qeustion</h3>
 
 <h2 id="every-함수-만들기">every 함수 만들기</h2>
 
-<h3 id="my-soultion-9">My_Soultion</h3>
+<h3 id="my-soultion-26">My_Soultion</h3>
 
 <pre><code class="language-js">
 // 모든 element가 iterator에 의해 truthy한지 체크합니다.
@@ -1167,11 +2196,11 @@ function some(collection, iterator) {
 
 </code></pre>
 
-<h3 id="qeustion-7">Qeustion</h3>
+<h3 id="qeustion-8">Qeustion</h3>
 
 <h2 id="contains-함수-만들기">contains 함수 만들기</h2>
 
-<h3 id="my-soultoin">My_Soultoin</h3>
+<h3 id="my-soultoin-1">My_Soultoin</h3>
 
 <pre><code class="language-js">  //배열 또는 객체가 주어진 값을 포함하는지 체크합니다. (`===` 연산자를 사용해서 판단합니다.)
 
@@ -1212,7 +2241,7 @@ function some(collection, iterator) {
 
 </code></pre>
 
-<h3 id="question-5">Question</h3>
+<h3 id="question-17">Question</h3>
 
 <h2 id="reduce">reduce</h2>
 
@@ -1238,7 +2267,7 @@ function some(collection, iterator) {
 
 </code></pre>
 
-<h3 id="my-soultion-10">My_Soultion</h3>
+<h3 id="my-soultion-27">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -1261,7 +2290,7 @@ function some(collection, iterator) {
   // 
 </code></pre>
 
-<h3 id="question-6">Question</h3>
+<h3 id="question-18">Question</h3>
 
 <h2 id="billtotal">billTotal</h2>
 
@@ -1274,7 +2303,7 @@ function some(collection, iterator) {
 
 </code></pre>
 
-<h3 id="my-soultion-11">My_Soultion</h3>
+<h3 id="my-soultion-28">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -1299,7 +2328,7 @@ billTotal(10.00); // =&gt; 12.45
 
 </code></pre>
 
-<h3 id="question-7">Question</h3>
+<h3 id="question-19">Question</h3>
 
 <h2 id="multiplybetween">multiplyBetween</h2>
 
@@ -1315,7 +2344,7 @@ console.log(output); // --&gt; 24
 
 </code></pre>
 
-<h3 id="my-soultion-12">My_Soultion</h3>
+<h3 id="my-soultion-29">My_Soultion</h3>
 
 <pre><code class="language-js">function multiplyBetween(num1, num2) {
   // your code here
@@ -1339,7 +2368,7 @@ console.log(arr);
 
 </code></pre>
 
-<h3 id="question-8">Question</h3>
+<h3 id="question-20">Question</h3>
 
 <h2 id="computesquareroot">computeSquareRoot</h2>
 
@@ -1359,7 +2388,7 @@ console.log(output); // --&gt; 3
 <p>Do not use Math.sqrt(); for this problem. Instead, use this iterative way of solving the problem: (Math.sqrt()를 사용하지 말고, 아래 링크에서 나온 방법을 통해 해결하세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-13">My_Soultion</h3>
+<h3 id="my-soultion-30">My_Soultion</h3>
 
 <pre><code class="language-js">
 unction computeSquareRoot(num) {
@@ -1407,7 +2436,7 @@ toFixed()를 지우면 4를 넣었을시만 통과가 안되구요!
 
 </code></pre>
 
-<h3 id="question-9">Question</h3>
+<h3 id="question-21">Question</h3>
 
 <h2 id="modulo">modulo</h2>
 
@@ -1425,7 +2454,7 @@ console.log(output); // --&gt; 1
 
 </code></pre>
 
-<h3 id="my-soultion-14">My_Soultion</h3>
+<h3 id="my-soultion-31">My_Soultion</h3>
 
 <pre><code class="language-js">
 function modulo(num1, num2) {
@@ -1454,7 +2483,7 @@ function modulo(num1, num2) {
 
 </code></pre>
 
-<h3 id="question-10">Question</h3>
+<h3 id="question-22">Question</h3>
 
 <h2 id="unique">unique</h2>
 
@@ -1466,7 +2495,7 @@ Array will be contained only primitive type values. (string, number, boolean)
 
 </code></pre>
 
-<h3 id="my-soultion-15">My_Soultion</h3>
+<h3 id="my-soultion-32">My_Soultion</h3>
 
 <pre><code class="language-js">unction unique(array) {
   // your code here
@@ -1515,7 +2544,7 @@ Array will be contained only primitive type values. (string, number, boolean)
 
 </code></pre>
 
-<h3 id="question-11">Question</h3>
+<h3 id="question-23">Question</h3>
 
 <h2 id="tenthousandclub">tenThousandClub</h2>
 
@@ -1533,7 +2562,7 @@ Feel free to look up parseInt() and slice() on MDN if you don't remember how the
 
 </code></pre>
 
-<h3 id="my-soultion-16">My_Soultion</h3>
+<h3 id="my-soultion-33">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -1581,7 +2610,7 @@ function salesToNumber(salesString){
 
 </code></pre>
 
-<h3 id="question-12">Question</h3>
+<h3 id="question-24">Question</h3>
 
 <h2 id="sumconsecutives">sumConsecutives</h2>
 
@@ -1604,7 +2633,7 @@ sum of 2 consecutives 3 is 6 ...
 
 </code></pre>
 
-<h3 id="my-soultion-17">My_Soultion</h3>
+<h3 id="my-soultion-34">My_Soultion</h3>
 
 <pre><code class="language-js">
 function sumConsecutives(s) {
@@ -1646,7 +2675,7 @@ function sumConsecutives(s) {
 
 </code></pre>
 
-<h3 id="question-13">Question</h3>
+<h3 id="question-25">Question</h3>
 
 <h2 id="oldest">oldest</h2>
 
@@ -1661,7 +2690,7 @@ If there is a tie for the oldest student, return the student whose name appears 
 
 </code></pre>
 
-<h3 id="my-soultion-18">My_Soultion</h3>
+<h3 id="my-soultion-35">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -1690,7 +2719,7 @@ function oldest(salesTeam){
 
 </code></pre>
 
-<h3 id="question-14">Question</h3>
+<h3 id="question-26">Question</h3>
 
 <h2 id="isagediverse">isAgeDiverse</h2>
 
@@ -1709,7 +2738,7 @@ Your function should return true as there is at least one member from each age g
 
 </code></pre>
 
-<h3 id="my-soultion-19">My_Soultion</h3>
+<h3 id="my-soultion-36">My_Soultion</h3>
 
 <pre><code class="language-js">
 var isAgeDiverse = function(list) {
@@ -1741,7 +2770,7 @@ var isAgeDiverse = function(list) {
 
 </code></pre>
 
-<h3 id="question-15">Question</h3>
+<h3 id="question-27">Question</h3>
 
 <h2 id="getteenager">getTeenager</h2>
 
@@ -1762,7 +2791,7 @@ Notes:
 
 </code></pre>
 
-<h3 id="my-soultion-20">My_Soultion</h3>
+<h3 id="my-soultion-37">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -1804,7 +2833,7 @@ function getTeenager(salesTeam) {
 
 </code></pre>
 
-<h3 id="question-16">Question</h3>
+<h3 id="question-28">Question</h3>
 
 <h2 id="sumdigits">sumDigits</h2>
 
@@ -1815,7 +2844,7 @@ function getTeenager(salesTeam) {
 k</p>
 </blockquote>
 
-<h3 id="my-soultion-21">My_Soultion</h3>
+<h3 id="my-soultion-38">My_Soultion</h3>
 
 <pre><code class="language-js">
 function sumDigits(num) {
@@ -1835,7 +2864,7 @@ function sumDigits(num) {
 
 </code></pre>
 
-<h3 id="question-17">Question</h3>
+<h3 id="question-29">Question</h3>
 
 <h2 id="offlineminimum">offLineMinimum</h2>
 
@@ -1846,7 +2875,7 @@ function sumDigits(num) {
 When finished, your program should return that new set with integers separated by commas.</p>
 </blockquote>
 
-<h3 id="my-soultion-22">My_Soultion</h3>
+<h3 id="my-soultion-39">My_Soultion</h3>
 
 <pre><code class="language-js">
 function offLineMinimum(strArr) {
@@ -1921,7 +2950,7 @@ offLineMinimum([&quot;5&quot;,&quot;4&quot;,&quot;6&quot;,&quot;E&quot;,&quot;1&
 
 </code></pre>
 
-<h3 id="other-soultion-1">other_Soultion</h3>
+<h3 id="other-soultion-1-1">other_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -1958,7 +2987,7 @@ function offLineMinimum(strArr) {
 
 </code></pre>
 
-<h3 id="question-18">Question</h3>
+<h3 id="question-30">Question</h3>
 
 <h2 id="range">range</h2>
 
@@ -1968,7 +2997,7 @@ function offLineMinimum(strArr) {
 <p>After you write your function, you can test it using the above inputs to make sure that it behaves correctly.</p>
 </blockquote>
 
-<h3 id="my-soultion-23">My_soultion</h3>
+<h3 id="my-soultion-40">My_soultion</h3>
 
 <pre><code class="language-js">
 function range(start, end) {
@@ -2000,7 +3029,7 @@ range(10, 2); // =&gt; []
 
 </code></pre>
 
-<h3 id="question-19">Question</h3>
+<h3 id="question-31">Question</h3>
 
 <h2 id="longestname">longestName</h2>
 
@@ -2048,7 +3077,7 @@ if `strArr` is `[&quot;coder&quot;, &quot;codec&quot;]` then your program should
 
 </code></pre>
 
-<h3 id="my-soultion-24">My_Soultion</h3>
+<h3 id="my-soultion-41">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -2085,7 +3114,7 @@ hammingDistance([&quot;helloworld&quot;, &quot;worldhello&quot;]); // =&gt; 8
 
 </code></pre>
 
-<h3 id="other-soultion-2">Other_Soultion</h3>
+<h3 id="other-soultion-1-2">Other_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -2113,7 +3142,7 @@ console.log(hammingDistance([&quot;coder&quot;, &quot;codec&quot;]))
 
 </code></pre>
 
-<h3 id="question-20">Question</h3>
+<h3 id="question-32">Question</h3>
 
 <h2 id="getfullname">getFullName</h2>
 
@@ -2121,7 +3150,7 @@ console.log(hammingDistance([&quot;coder&quot;, &quot;codec&quot;]))
 <p>Write a function called &lsquo;getFullName&rsquo; that takes in an object which has this structure:</p>
 </blockquote>
 
-<h3 id="my-soultion-25">My_Soultion</h3>
+<h3 id="my-soultion-42">My_Soultion</h3>
 
 <pre><code class="language-js">
 function getFullName(obj) {
@@ -2157,7 +3186,7 @@ getFullName(personB); //&quot;Ben Bitdiddle&quot;
 
 </code></pre>
 
-<h3 id="other-soultion-3">Other_Soultion</h3>
+<h3 id="other-soultion-1-3">Other_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -2171,7 +3200,7 @@ function getFullName(obj) {
 
 </code></pre>
 
-<h3 id="question-21">Question</h3>
+<h3 id="question-33">Question</h3>
 
 <h2 id="billtotal-1">billTotal</h2>
 
@@ -2179,7 +3208,7 @@ function getFullName(obj) {
 <p>Write a function called billTotal that can be used to calculate the total to be paid at a restaurant &ndash; including tip and tax &ndash; given the subtotal (i.e. cost of food and drinks). We can assume that the tip will be 15% and tax will be 9.5%. Make sure that the tip does not include the tax!</p>
 </blockquote>
 
-<h3 id="my-soultion-26">My_Soultion</h3>
+<h3 id="my-soultion-43">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -2209,7 +3238,7 @@ billTotal(10.00); // =&gt; 12.45
 
 </code></pre>
 
-<h3 id="other-soultion-4">Other_Soultion</h3>
+<h3 id="other-soultion-1-4">Other_Soultion</h3>
 
 <pre><code class="language-js">
 // 뭐 단순하게...팁 15%, 세금 9.5% 더해주면 된다고 한다 :)
@@ -2226,7 +3255,7 @@ billTotal(10.00); // =&gt; 12.45
 
 </code></pre>
 
-<h3 id="question-22">Question</h3>
+<h3 id="question-34">Question</h3>
 
 <h2 id="primemover">primeMover</h2>
 
@@ -2236,7 +3265,7 @@ billTotal(10.00); // =&gt; 12.45
 <p>For example: if n is 16 the output should be 53 as 53 is the 16th prime number. (예시: 만약 n 이 16이라면, 결과값은 16번째 소수인 53 입니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-27">My_Soultion</h3>
+<h3 id="my-soultion-44">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -2258,7 +3287,7 @@ let primeMover = function(n) {
 
 </code></pre>
 
-<h3 id="question-23">Question</h3>
+<h3 id="question-35">Question</h3>
 
 <h2 id="isoddwithoutmodulo">isOddWithoutModulo</h2>
 
@@ -2268,7 +3297,7 @@ let primeMover = function(n) {
 <p>Given a number, &ldquo;isOddWithoutModulo&rdquo; returns whether the passed in number is odd. (숫자가 주어졌을때, &ldquo;isOddWithoutModulo&rdquo; 함수는 주어진 숫자가 홀수인지를 반환합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-28">My_Soultion</h3>
+<h3 id="my-soultion-45">My_Soultion</h3>
 
 <pre><code class="language-js">
 // 2. it is used by Math.floor 
@@ -2303,7 +3332,7 @@ function isOddWithoutModulo(num) {
 
 </code></pre>
 
-<h3 id="question-24">Question</h3>
+<h3 id="question-36">Question</h3>
 
 <h2 id="getstringlength">getStringLength</h2>
 
@@ -2315,7 +3344,7 @@ function isOddWithoutModulo(num) {
 <p>Do NOT use any native &lsquo;length&rsquo; methods. (- &lsquo;length&rsquo; 메소드를 사용하지 마세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-29">My_Soultion</h3>
+<h3 id="my-soultion-46">My_Soultion</h3>
 
 <pre><code class="language-js">
 function getStringLength(string) {
@@ -2336,7 +3365,7 @@ function getStringLength(string) {
 
 </code></pre>
 
-<h3 id="question-25">Question</h3>
+<h3 id="question-37">Question</h3>
 
 <h2 id="getindexof">getIndexOf</h2>
 
@@ -2346,9 +3375,10 @@ function getStringLength(string) {
 <p>Given a character and a string, &ldquo;getIndexOf&rdquo; returns the first position of the given character in the given string. (문자와 문자열이 주어졌을때, &ldquo;getIndexOf&rdquo; 함수는 주어진 문자열에서 주어진 문자가 나타나는 첫번째 위치를 반환합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-30">My_Soultion</h3>
+<h3 id="my-soultion-47">My_Soultion</h3>
 
-<pre><code class="language-js">function getIndexOf(char, str) {
+<pre><code class="language-js">
+function getIndexOf(char, str) {
 
       for (let i = 0; i &lt; str.length;  i = i + 1 ) {
           if ( str[i] === char ) {  //  만약 str 에 있는 문자들중에 char 같다면 
@@ -2362,7 +3392,29 @@ function getStringLength(string) {
 
 </code></pre>
 
-<h3 id="question-26">Question</h3>
+<h3 id="other-soultion-1-5">other_Soultion</h3>
+
+<pre><code class="language-js">function getIndexOf(char, str) {
+  // your code here
+  let newStr = str.split(&quot;&quot;);
+    if (newStr.every(el =&gt;  el !== char )) {
+      return -1;
+    }
+  let countArr = [];
+  for (let i = 0; i &lt; newStr.length; i ++ ) {
+    if (newStr[i] === char) {
+      countArr.push(i);
+    }
+  }
+  return countArr[0];
+
+}
+
+
+
+</code></pre>
+
+<h3 id="question-38">Question</h3>
 
 <h2 id="calculatebilltotal">calculateBillTotal</h2>
 
@@ -2375,7 +3427,7 @@ function getStringLength(string) {
 Do NOT tip on the sales tax, only on the pre tip amount. (- 팁을 계산할때 세금을 포함하여 계산하지 마세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-31">My_Soultion</h3>
+<h3 id="my-soultion-48">My_Soultion</h3>
 
 <pre><code class="language-js">
 function calculateBillTotal(preTaxAndTipAmount) {
@@ -2397,7 +3449,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 
 </code></pre>
 
-<h3 id="question-27">Question</h3>
+<h3 id="question-39">Question</h3>
 
 <h2 id="convertobjecttoarray3">convertObjectToArray3</h2>
 
@@ -2405,7 +3457,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 <p>Write a function called &ldquo;convertObjectToList&rdquo; which converts an object literal into an array of arrays, like this: (객체를 입력으로 받고 해당 객체를 다음과 같이 2차원 배열로 변형 할 수 있는 함수 &ldquo;convertObjectToList&rdquo;를 작성하세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-32">My_Soultion</h3>
+<h3 id="my-soultion-49">My_Soultion</h3>
 
 <pre><code class="language-js">function convertObjectToList(obj) {
   // your code here
@@ -2427,7 +3479,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 
 </code></pre>
 
-<h3 id="question-28">Question</h3>
+<h3 id="question-40">Question</h3>
 
 <h2 id="isodd">isOdd</h2>
 
@@ -2437,7 +3489,7 @@ function calculateBillTotal(preTaxAndTipAmount) {
 <p>Given an integer, isOdd returns whether the integer is odd or not. (숫자가 주어졌을때, &ldquo;isOdd&rdquo; 함수는 주어진 숫자가 홀수 인지 아닌지를 반환합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-33">My_Soultion</h3>
+<h3 id="my-soultion-50">My_Soultion</h3>
 
 <pre><code class="language-js">
 function isOdd(num) {
@@ -2469,7 +3521,7 @@ function isOdd(num) {
 
 </code></pre>
 
-<h3 id="question-29">Question</h3>
+<h3 id="question-41">Question</h3>
 
 <h2 id="sum">sum</h2>
 
@@ -2479,7 +3531,7 @@ function isOdd(num) {
 <p>(n까지의 총 합: n을 매개변수로 받아 0 부터 n 까지 모든 수의 총 합을 반환하는 함수를 작성하세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-34">My_Soultion</h3>
+<h3 id="my-soultion-51">My_Soultion</h3>
 
 <pre><code class="language-js">function sum(n) {
   let result = 0;
@@ -2496,7 +3548,7 @@ sum(4);
 
 </code></pre>
 
-<h3 id="question-30">Question</h3>
+<h3 id="question-42">Question</h3>
 
 <h2 id="onlyevenelements">onlyEvenElements</h2>
 
@@ -2504,7 +3556,7 @@ sum(4);
 <p>Given an array of numbers, onlyEvenElements returns a new array of just the even numbers. (숫자로 이루어진 배열이 주어졌을때, &ldquo;onlyEvenElements&rdquo; 함수는 주어진 배열에 있는 짝수로만으로 이루어진 새로운 배열을 반환해야 합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-35">My_Soultion</h3>
+<h3 id="my-soultion-52">My_Soultion</h3>
 
 <pre><code class="language-js">
 function onlyEvenElements(arr) {
@@ -2525,7 +3577,7 @@ function onlyEvenElements(arr) {
 
 </code></pre>
 
-<h3 id="question-31">Question</h3>
+<h3 id="question-43">Question</h3>
 
 <h2 id="removeoddvalues">removeOddValues</h2>
 
@@ -2535,7 +3587,7 @@ function onlyEvenElements(arr) {
 <p>You&rsquo;ll need to use the &ldquo;typeof&rdquo; operator to first check that the values are numbers: (value가 숫자인지 확인하기 위하서는 &ldquo;typeof&rdquo; 연산자를 먼저 사용해야 합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-36">My_Soultion</h3>
+<h3 id="my-soultion-53">My_Soultion</h3>
 
 <pre><code class="language-js">
 // first 
@@ -2618,7 +3670,7 @@ function removeOddValues(object) {
 
 </code></pre>
 
-<h3 id="question-32">Question</h3>
+<h3 id="question-44">Question</h3>
 
 <h2 id="firstcharacter">firstCharacter</h2>
 
@@ -2628,7 +3680,7 @@ function removeOddValues(object) {
 <p>Attention! In test case 5 userinput is one space input char as &lsquo; &lsquo;, please do not get confused with &ldquo;, empty string (주의사항! 테스트 케이스 5 에서 주는 입력값은 띄어쓰기 한개(&rsquo; &lsquo;) 입니다. 빈 문자열(&rdquo;) 과 혼동하지 마세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-37">My_Soultion</h3>
+<h3 id="my-soultion-54">My_Soultion</h3>
 
 <pre><code class="language-js">
 unction firstCharacter (string) {
@@ -2670,7 +3722,7 @@ unction firstCharacter (string) {
 
 </code></pre>
 
-<h3 id="question-33">Question</h3>
+<h3 id="question-45">Question</h3>
 
 <h2 id="dashinsert">dashInsert</h2>
 
@@ -2737,7 +3789,7 @@ function DashInsert(string) {
 
 </code></pre>
 
-<h3 id="question-34">Question</h3>
+<h3 id="question-46">Question</h3>
 
 <h2 id="longestword">longestWord</h2>
 
@@ -2747,7 +3799,7 @@ function DashInsert(string) {
 <p>If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요. 문장은 빈 문자열이 아닙니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-38">My_Soultion</h3>
+<h3 id="my-soultion-55">My_Soultion</h3>
 
 <pre><code class="language-js">
 // It's used by sort() 
@@ -2794,7 +3846,7 @@ return string.split(' ').reduce((acc,cur)=&gt; acc.length&lt;cur.length? cur:acc
 
 </code></pre>
 
-<h3 id="question-35">Question</h3>
+<h3 id="question-47">Question</h3>
 
 <h2 id="convertarraytoobject1">convertArrayToObject1</h2>
 
@@ -2805,7 +3857,7 @@ return string.split(' ').reduce((acc,cur)=&gt; acc.length&lt;cur.length? cur:acc
 the last element of the array as that key&rsquo;s value. (2. 배열의 마지막 요소를 해당 키의 값으로 가집니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-39">My_Soultion</h3>
+<h3 id="my-soultion-56">My_Soultion</h3>
 
 <pre><code class="language-js">
 function transformFirstAndLast(array) {
@@ -2826,7 +3878,7 @@ function transformFirstAndLast(array) {
 
 </code></pre>
 
-<h3 id="question-36">Question</h3>
+<h3 id="question-48">Question</h3>
 
 <h2 id="convertobjecttoarray1">convertObjectToArray1</h2>
 
@@ -2834,7 +3886,7 @@ function transformFirstAndLast(array) {
 <p>Write a function called &ldquo;getAllKeys&rdquo; which returns an array of all the input object&rsquo;s keys. (객체를 입력으로 받고 해당 객체의 키들을 배열로 반환하는 &ldquo;getAllKeys&rdquo; 함수를 작성하세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-40">My_Soultion</h3>
+<h3 id="my-soultion-57">My_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -2854,7 +3906,7 @@ return arr;
 
 </code></pre>
 
-<h3 id="question-37">Question</h3>
+<h3 id="question-49">Question</h3>
 
 <h2 id="convertarraytoobject2">convertArrayToObject2</h2>
 
@@ -2862,7 +3914,7 @@ return arr;
 <p>Write a function &lsquo;fromListToObject&rsquo; which takes in an array of arrays, and returns an object with each pair of elements in the array as a key-value pair. (2차원 배열을 입력으로 받고 배열안에 있는 배열의 요소 페어를 키-값 페어로 가지는 객체를 반환하는 함수 &lsquo;fromListToObject&rsquo; 함수를 작성하세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-41">My_Soultion</h3>
+<h3 id="my-soultion-58">My_Soultion</h3>
 
 <pre><code class="language-js">
 function fromListToObject(array) {
@@ -2893,7 +3945,7 @@ function fromListToObject(array) {
 <p>Write a function called &ldquo;listAllValues&rdquo; which returns an array of all the input object&rsquo;s values. (객체를 입력으로 받고 해당 객체의 값들을 배열로 반환하는 &ldquo;listAllValues&rdquo; 함수를 작성하세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-42">My_Soultion</h3>
+<h3 id="my-soultion-59">My_Soultion</h3>
 
 <pre><code class="language-js">
 function listAllValues(obj) {
@@ -2916,7 +3968,7 @@ function listAllValues(obj) {
 
 </code></pre>
 
-<h3 id="question-38">Question</h3>
+<h3 id="question-50">Question</h3>
 
 <h2 id="convertarraytoobject3">convertArrayToObject3</h2>
 
@@ -2926,7 +3978,7 @@ function listAllValues(obj) {
 <p>The argument will look something like this: (사원들의 정보는 아래와 같은 배열로 주어질 수 있습니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-43">My_Soultion</h3>
+<h3 id="my-soultion-60">My_Soultion</h3>
 
 <pre><code class="language-js">
 function transformEmployeeData(array) {
@@ -2951,7 +4003,7 @@ function transformEmployeeData(array) {
 
 </code></pre>
 
-<h3 id="other-soultion-5">other_Soultion</h3>
+<h3 id="other-soultion-1-6">other_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -2996,7 +4048,7 @@ return result;
 <p>Given a name, &ldquo;greetCustomer&rdquo; returns a greeting based on how many times that customer has visited the restaurant. Please refer to the customerData object. (고객들의 방문 횟수를 가지고 있는 객체와 이름이 주어졌을때, &ldquo;greetCustomer&rdquo; 함수는 손님이 몇번 방문했는지에 따라 다른 인삿말을 반환합니다. customerData 객체를 참고해 주세요.)</p>
 </blockquote>
 
-<h3 id="my-soultion-44">My_Soultion</h3>
+<h3 id="my-soultion-61">My_Soultion</h3>
 
 <pre><code class="language-js">
 function greetCustomer(customerData, firstName) {
@@ -3020,7 +4072,7 @@ function greetCustomer(customerData, firstName) {
 
 </code></pre>
 
-<h3 id="question-39">Question</h3>
+<h3 id="question-51">Question</h3>
 
 <h2 id="convertdoublespacetosingle">convertDoubleSpaceToSingle</h2>
 
@@ -3030,7 +4082,7 @@ function greetCustomer(customerData, firstName) {
 <p>Given a string, &ldquo;convertDoubleSpaceToSingle&rdquo; returns the passed in string, with all the double spaces converted to single spaces. (문자열이 주어졌을때, &ldquo;convertDoubleSpaceToSingle&rdquo; 함수는 주어진 문자열에 있는 띄어쓰기 두개(double spaces)를 띄어쓰기 한개(single space)로 변환한 뒤 해당 문자열을 반환합니다.)</p>
 </blockquote>
 
-<h3 id="my-soultion-45">My_Soultion</h3>
+<h3 id="my-soultion-62">My_Soultion</h3>
 
 <pre><code class="language-js">
 function convertDoubleSpaceToSingle(str) {
@@ -3054,7 +4106,7 @@ function convertDoubleSpaceToSingle(str) {
 
 </code></pre>
 
-<h3 id="other-soultion-6">other_Soultion</h3>
+<h3 id="other-soultion-1-7">other_Soultion</h3>
 
 <pre><code class="language-js">
 function convertDoubleSpaceToSingle(str) {
@@ -3067,7 +4119,7 @@ function convertDoubleSpaceToSingle(str) {
 
 </code></pre>
 
-<h3 id="other-soultion-7">other_Soultion</h3>
+<h3 id="other-soultion-1-8">other_Soultion</h3>
 
 <pre><code class="language-js">
 function convertDoubleSpaceToSingle(str) {
@@ -3094,7 +4146,7 @@ return array.join(' '); // 각각의 문자열을 join ' ' 를 나눠서 출력
         </div>
 
         <div class="body-footer">
-          Last updated on Jan 1, 0001
+          Last updated on Apr 29, 2019
         </div>
 
       </article>

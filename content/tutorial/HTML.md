@@ -1,16 +1,13 @@
 ---
 title: Html
-author: JohnJung
-date: '2019-11-14'
-categories: []
-tags: ['Html']
+date: 2019-04-29
+draft: true
 menu:
   tutorial:
     name: 3.Html
     weight: 3
 toc: yes
 type: docs
-summary: 'write here:rocket:' 
 ---
 
 

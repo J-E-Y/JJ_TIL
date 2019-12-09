@@ -21,42 +21,6 @@
     </item>
     
     <item>
-      <title>Bootstrap</title>
-      <link>/tutorial/bootstrap/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/bootstrap/</guid>
-      <description>write here:rocket:</description>
-    </item>
-    
-    <item>
-      <title>Css</title>
-      <link>/tutorial/css/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/css/</guid>
-      <description>write here:rocket:</description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>/tutorial/git/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/git/</guid>
-      <description>write here:rocket:</description>
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>/tutorial/html/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/html/</guid>
-      <description>write here:rocket:</description>
-    </item>
-    
-    <item>
       <title>Javascript_Basic</title>
       <link>/tutorial/javascript/</link>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
@@ -66,48 +30,92 @@
     </item>
     
     <item>
+      <title>Bootstrap</title>
+      <link>/tutorial/bootstrap/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/bootstrap/</guid>
+      <description> BS_image: img-fluid  Description   Create responsive images by adding an .img-fluid class to the &amp;lt;img&amp;gt; tag. The image will then scale nicely to the parent element.
+  Syntax  &amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;  BS_Spacing: my  Description   Assign responsive-friendly margin or padding values to an element or a subset of its sides with shorthand classes
+  Syntax  &amp;lt;div class=&amp;quot;my&amp;quot;&amp;gt; Centered element &amp;lt;/div&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>/tutorial/css/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/css/</guid>
+      <description>&amp;lt;style&amp;gt; /*syntax*/ &amp;lt;style&amp;gt; a { color:red } &amp;lt;/style&amp;gt; &amp;lt;dd&amp;gt;a : selector(선택자)&amp;lt;/dd&amp;gt; &amp;lt;dd&amp;gt;{Color:red}; : declaration (선언)&amp;lt;/dd&amp;gt; &amp;lt;dd&amp;gt;{Color} : property (속성)&amp;lt;/dd&amp;gt; &amp;lt;dd&amp;gt;{Color:red} : property value (속성값)&amp;lt;/dd&amp;gt;  hover 버튼 클릭시 마우스 손가락 변형 button.hover { cursor: pointer; }  스크롤 만들기 &amp;lt;!--Vertical scroll bar in div which is a child of css grid column --&amp;gt; &amp;lt;div class=&amp;quot;A&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;B&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;C&amp;quot;&amp;gt;search&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;D&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;4&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;5&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;6&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;7&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;8&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;9&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;10&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;11&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;E&amp;quot;&amp;gt;12&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;  // 먼제 부모 tag 에 grid 명령과 max-hight 을 준다.</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>/tutorial/git/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/git/</guid>
+      <description>1.Command Line git git ls  파일보기  git ls -A  숨겨진 파일까지 보기  git ls -al  상세 내용  // (1) (2)(3) (4) (5) (6) (7) (8) //drwxr-xr-x 2 root wheel 64B 11 7 14:14 test/ //1접근 권한 (읽기/쓰기/실행 가능) 여부 //2chmod 명령어 //3링크된 파일 갯수 //4소유자 //5소유그룹 //6파일 크기 //7만든 날짜 //8만든 시간 //9파일/디렉토리 이름  git cd 디렉토리 이름  디렉토리로 이동( print working List )  myuser@mymachine:~$ `cd` Downloads  git cd-  뒤로가기  git pwd  내가 어디있는지 확인  // myuser@mymachine:~/Downloads$ pwd // showing that .</description>
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>/tutorial/html/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/html/</guid>
+      <description>&amp;lt;strong&amp;gt; /* The HTML &amp;lt;strong&amp;gt; tag gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser. Note what&#39;s the difference bewteen strong tag and b tag ? strong tag :시각장애인들 낭독기를 사용할때 조금 더 굵 게 읽는다. b tag :평상시대로 굵게 읽는다. */  &amp;lt;h1&amp;gt; &amp;lt;!-- The HTML &amp;lt;h1&amp;gt; tag defines the highest level or most important heading in the HTML document.</description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>/tutorial/python/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/python/</guid>
-      <description>write here:rocket:</description>
+      <description>Python: Operators  Arithmetic operators Assignment operators Comparison operators Logical operators  Arithmetic Operator           + Addition x + y   - Subtraction x - y   * Multiplication x * y   / Division x / y   % Modulus x % y   ** Exponentiation x ** y   // Floor division x // y    Assignment Operators           = x = 5 x = 5   += x += 3 x = x + 3   -= x -= 3 x = x - 3   *= x *= 3 x = x * 3   /= x /= 3 x = x / 3   %= x %= 3 x = x % 3   //= x //= 3 x = x // 3   **= x **= 3 x = x ** 3   &amp;amp;= x &amp;amp;= 3 x = x &amp;amp; 3    = x   ^= x ^= 3 x = x ^ 3   &amp;gt;&amp;gt;= x &amp;gt;&amp;gt;= 3 x = x &amp;gt;&amp;gt; 3   &amp;lt;&amp;lt;= x &amp;lt;&amp;lt;= 3 x = x &amp;lt;&amp;lt; 3    Comparison Operators           == Equal x == y   !</description>
     </item>
     
     <item>
       <title>Technical terms</title>
       <link>/tutorial/it-terminology/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/it-terminology/</guid>
-      <description>write here:rocket:</description>
+      <description>CPU 중앙 처리 장치 또는 CPU (central processing unit)  CPU 처리하는 용도 데이터를 읽고 처리하고 다시쓰는 동작을 합니다.
+컴퓨터 시스템을 통제하고 프로그램의 연산을 실행하는 가장 핵심적인 컴퓨터의 제어 장치, 혹은 그 기능을 내장한 칩을 말한다. 컴퓨터 안의 중앙 처리 장치(CPU)는 외부에서 정보를 입력 받고, 기억하고, 컴퓨터 프로그램의 명령어를 해석하여 연산하고, 외부로 출력하는 역할을 한다. 따라서 중앙 처리 장치(CPU)는 컴퓨터 부품과 정보를 교환하면서 컴퓨터 시스템 전체를 제어하는 장치로, 모든 컴퓨터의 작동과정이 중앙 처리 장치(CPU)의 제어를 받기 때문에 컴퓨터의 두뇌에 해당한다고 할 수 있다.</description>
     </item>
     
     <item>
       <title>__Algorithm_1</title>
-      <link>/tutorial/javascript-daliy-coding-level-1/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <link>/tutorial/2019-11-14-javascript-daliy-coding-level-1/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/javascript-daliy-coding-level-1/</guid>
-      <description>write here:rocket:</description>
+      <guid>/tutorial/2019-11-14-javascript-daliy-coding-level-1/</guid>
+      <description>Question longestWord  Using the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &amp;lsquo;LongestWord&amp;rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
+If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요.</description>
     </item>
     
     <item>
       <title>__Algorithm_2</title>
-      <link>/tutorial/javascript-daliy-coding-level-2/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <link>/tutorial/2019-11-14-javascript-daliy-coding-level-2/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/javascript-daliy-coding-level-2/</guid>
-      <description>write here:rocket:</description>
+      <guid>/tutorial/2019-11-14-javascript-daliy-coding-level-2/</guid>
+      <description>Question gcd(최대 공약 알고리즘) 함수 작성  주어진 두 숫자에 대한 최대공약수(greatest common divisor)를 구하세요
+  outPut  gcd(22, 24) // 2  My_soultion function gcd(num1, num2) { // code goes here //num1 = 12,num 2 = 8 let num1Arr = []; let num2Arr = []; for (let i =0; i &amp;lt;= num1; i ++) { num1Arr.push(i); } for (let i =0; i &amp;lt;= num1; i ++) { num2Arr.</description>
     </item>
     
     <item>
       <title>__My_MDN</title>
-      <link>/tutorial/javascript-my-mdn/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      <link>/tutorial/2019-11-14-javascript-my-mdn/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/javascript-my-mdn/</guid>
-      <description>write here:rocket:</description>
+      <guid>/tutorial/2019-11-14-javascript-my-mdn/</guid>
+      <description>String str.includes()
+// true or false 를 반환한다. // if 문에 넣어 쓴다. let str = &#39;To be, or not to be, that is the question.&#39;; console.log(str.includes(&#39;To be&#39;)); // true console.log(str.includes(&#39;question&#39;)); // true console.log(str.includes(&#39;nonexistent&#39;)); // false console.log(str.includes(&#39;To be&#39;, 1)); // false console.log(str.includes(&#39;TO BE&#39;)); // false console.log(str.includes(&#39;&#39;))  str.match(regexp)
+immutable
+// 문자열안에 있는 알파벳 뽑기. let str = &amp;quot;abcdefgh23j2k4h6l3h1uiui24h4324jk3jh4k3h24&amp;quot; let alphabet = str.match(/[a-zA-Z]/g); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;f&amp;quot;, &amp;quot;g&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;]  str[index]</description>
     </item>
     
     <item>
@@ -116,7 +124,10 @@
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_dictionary/</guid>
-      <description>write here:rocket:</description>
+      <description>String str.includes()
+// true or false 를 반환한다. // if 문에 넣어 쓴다. let str = &#39;To be, or not to be, that is the question.&#39;; console.log(str.includes(&#39;To be&#39;)); // true console.log(str.includes(&#39;question&#39;)); // true console.log(str.includes(&#39;nonexistent&#39;)); // false console.log(str.includes(&#39;To be&#39;, 1)); // false console.log(str.includes(&#39;TO BE&#39;)); // false console.log(str.includes(&#39;&#39;))  str.match(regexp)
+immutable
+// 문자열안에 있는 알파벳 뽑기. let str = &amp;quot;abcdefgh23j2k4h6l3h1uiui24h4324jk3jh4k3h24&amp;quot; let alphabet = str.match(/[a-zA-Z]/g); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;f&amp;quot;, &amp;quot;g&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;]  str[index]</description>
     </item>
     
     <item>
@@ -125,7 +136,7 @@
       <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>write here:rocket:</description>
+      <description>Today What I Learn ? Immutably Rename Object Keys in Javascript obj = { name: &#39;Bobo&#39; } obj.somethingElse = obj.name delete obj.name  Unll 과 undefined 의 차이점 // null 과 undefined 는 등록, 저장 여부이다. //null 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다. //undefined 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</description>
     </item>
     
     <item>
@@ -134,7 +145,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q2/</guid>
-      <description>write here:rocket:</description>
+      <description>다 완료 Dom &amp;lt;!-- div 안에 element 를 추가하는 방법 3가지 --&amp;gt; &amp;lt;!-- 첫번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // innerHTML 로 tag 까지 같이 한번에 집어넣는다 let comments = document.querySelector(&amp;quot;#comments&amp;quot;); comments.innerHTML = &amp;quot;&amp;lt;span&amp;gt;아메리카노&amp;lt;span&amp;gt;&amp;quot;; &amp;lt;/script&amp;gt; &amp;lt;!-- 두번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // element 를 생성해서 집어넣을때는 appendChild 로 집어넣는다. let comments = document.querySelector(&amp;quot;#comments&amp;quot;); let newElement = document.createElement(&amp;quot;span&amp;quot;); // element 생성 newElement.innerHTML = &amp;quot;아메리카노&amp;quot;; // 생성된 element 안에 미리 써준다.</description>
     </item>
     
     <item>
@@ -143,7 +154,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q1/</guid>
-      <description>write here:rocket:</description>
+      <description>Question longestWord  Using the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &amp;lsquo;LongestWord&amp;rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
+If there are two or more words that are the same length, return the first word from the string with that length. Assume sen will not be empty. (만약 가장 긴 단어가 두개 이상이라면, 첫번째로 등장하는 가장 긴 단어를 반환하세요.</description>
     </item>
     
     <item>
@@ -152,7 +164,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
-      <description>write here:rocket:</description>
+      <description>Question  convert nested (2-dimensional) array to flatten array! (2차원 배열을 1차원 배열로 전환하세요.)
+ flatten([1,2,[3],[4]]); // [1,2,3,4]  My_Soultion function flatten (array){ //your solution here // 1. 재귀함수 사용 let ret = []; // 새로운 배열은 만든다. // 재귀함수 function filtered(array) { // (1).array 의 각각의 요소에 접근한다. [1,2,[11,25,21,34],[4]] // (5). array 의 각각의 요소에 접근한다. [11,25,21,34] for(let i = 0 ; i &amp;lt; array.length; i ++ ) { // (2)만약 요소가 array 안에 array 가아니면 [1,2] // (6)만약 요소가 array 안에 array 가 아니면 [11,25,21,34] if (!</description>
     </item>
     
   </channel>

@@ -1,17 +1,15 @@
 ---
 title: Bootstrap
-author: JohnJung
-date: '2019-11-14'
-categories: []
-tags: ['Bootstrap']
+date: 2019-04-29
+draft: true
 menu:
   tutorial:
     name: 5.Bootstrap
     weight: 5
 toc: yes
 type: docs
-summary: 'write here:rocket:' 
 ---
+
 
 
 
