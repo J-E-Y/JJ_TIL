@@ -17,7 +17,7 @@
   
   
 [[main_right]]
-  name = "Today I Learned"
+  name = "Technical Documents"
   url = "tutorial/"
   weight = 30
 

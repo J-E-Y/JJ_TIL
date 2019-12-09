@@ -5,7 +5,7 @@ draft: true
 menu:
   tutorial:
     name: 1.Technical terms
-    weight: 1
+    weight: 2
 toc: yes
 type: docs
 ---

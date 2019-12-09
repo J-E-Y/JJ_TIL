@@ -1,15 +1,15 @@
----
-title: notes 2 
-date: 2019-6
-draft: true
-menu:
-  tutorial:
-    parent: "3.Javascript"
-    weight: 0
-toc: true
-type: docs
-
----
+#---
+#title: notes 2 
+#date: 2019-6
+#draft: true
+#menu:
+#  tutorial:
+#    parent: "3.Javascript"
+#    weight: 0
+#toc: true
+#type: docs
+#
+#---
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 

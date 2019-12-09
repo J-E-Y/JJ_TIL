@@ -15467,12 +15467,31 @@ The application providing the best fit solution needs to be able to suggest a be
     </item>
     
     <item>
-      <title>x Dictionary_level_1</title>
+      <title></title>
       <link>/tutorial/javascript_dictionary/</link>
-      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_dictionary/</guid>
       <description>
+
+&lt;p&gt;#&amp;mdash;
+#title:  x Dictionary_level_1
+#date: 2019
+#draft: true
+#menu:&lt;/p&gt;
+
+&lt;h1 id=&#34;tutorial&#34;&gt;tutorial:&lt;/h1&gt;
+
+&lt;h1 id=&#34;parent-3-javascript&#34;&gt;parent: &amp;ldquo;3.Javascript&amp;rdquo;&lt;/h1&gt;
+
+&lt;h1 id=&#34;weight-0&#34;&gt;weight: 0&lt;/h1&gt;
+
+&lt;p&gt;#
+#toc: true
+#type: docs
+#
+#
+#&amp;mdash;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -16806,12 +16825,31 @@ let Employee = {
     </item>
     
     <item>
-      <title>x Notes</title>
+      <title></title>
       <link>/tutorial/javascript_note/</link>
-      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
       <description>
+
+&lt;p&gt;#&amp;mdash;
+#title: x Notes
+#date: 2019
+#draft: true
+#menu:&lt;/p&gt;
+
+&lt;h1 id=&#34;tutorial&#34;&gt;tutorial:&lt;/h1&gt;
+
+&lt;h1 id=&#34;parent-3-javascript&#34;&gt;parent: &amp;ldquo;3.Javascript&amp;rdquo;&lt;/h1&gt;
+
+&lt;h1 id=&#34;weight-0&#34;&gt;weight: 0&lt;/h1&gt;
+
+&lt;p&gt;#
+#toc: true
+#type: docs&lt;/p&gt;
+
+&lt;p&gt;#
+#&amp;mdash;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -18094,875 +18132,29 @@ var newArray = [];
     </item>
     
     <item>
-      <title>notes 2</title>
-      <link>/tutorial/javascript_q2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/javascript_q2/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;다-완료&#34;&gt;다 완료&lt;/h2&gt;
-
-&lt;h2 id=&#34;dom&#34;&gt;Dom&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
-
-
-&amp;lt;!-- div 안에 element 를 추가하는 방법 3가지  --&amp;gt;
-
-  
-
-  &amp;lt;!-- 첫번째 방법 HTML --&amp;gt;
-  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt;
-  
-  &amp;lt;script&amp;gt;
-  // innerHTML 로 tag 까지 같이 한번에 집어넣는다 
-  let comments = document.querySelector(&amp;quot;#comments&amp;quot;);
-  comments.innerHTML = &amp;quot;&amp;lt;span&amp;gt;아메리카노&amp;lt;span&amp;gt;&amp;quot;;
-
-  &amp;lt;/script&amp;gt;
-  
-  
-  
-
-  &amp;lt;!-- 두번째 방법 HTML --&amp;gt;
-  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; 
-
-  &amp;lt;script&amp;gt;
-  
-  // element 를 생성해서 집어넣을때는 appendChild 로 집어넣는다. 
-  
-  let comments = document.querySelector(&amp;quot;#comments&amp;quot;);
-  let newElement = document.createElement(&amp;quot;span&amp;quot;); // element 생성
-  newElement.innerHTML = &amp;quot;아메리카노&amp;quot;; //  생성된 element  안에 미리 써준다.
-  comments.appendChild(newElement); // 집어넣을 comments태그 안에 생성된 elemment를 집어넣는다.
-&amp;lt;/script&amp;gt;
-  
-  
-  
-  &amp;lt;!-- 세번째 방법 HTML --&amp;gt;
-
-  &amp;lt;template id = &amp;quot;cloneTem&amp;quot;&amp;gt;
-  
-    &amp;lt;div&amp;gt;새로운 커피매뉴판&amp;lt;/div&amp;gt;
-    &amp;lt;span&amp;gt;아메리카노&amp;lt;/span&amp;gt;
-    &amp;lt;span&amp;gt;flat_Write&amp;lt;/span&amp;gt;
-    &amp;lt;spand&amp;gt;라때&amp;lt;/spand&amp;gt;
-  
-  &amp;lt;/template&amp;gt; 
-  
-  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt;  
-  
-  
-  
-  
-  &amp;lt;script&amp;gt;
-// 미리 HTML 안에 만들어 놓고 importNode 와 appendChild 사용해서 기존에 있는 template 의 등록한다. 그러먼 id=&amp;quot;comments&amp;quot;에 있는 div 안에 cloneTem 안에 있는 내용들이 담긴다. 
-
-  let comments = document.querySelector(&amp;quot;#comments&amp;quot;); // 집어넣장소가져온다
-  let template = document.querySelector(&amp;quot;#cloneTem&amp;quot;); // 
-  
-  // 새로운 변수를 만들어 template 에있는 모든 content 를 복사해서 집어넣는다. 
-  let newComment = document.importNode(template.content,true);  
-
-  comments.innerHTML = &amp;quot;&amp;quot; // 집어넣을 공간을 싹다 지운다 // 커피 메뉴판 날라간다.
-  comments.appendChild(newComment) 
-  
-&amp;lt;/script&amp;gt;  
-
-
-
-&amp;lt;!-- HTML 결과  --&amp;gt;
-&amp;lt;!-- element 와 id 값이 기존에 elemment 로 바뀌었다  --&amp;gt;
-  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;
-  
-  &amp;lt;div&amp;gt;새로운 커피매뉴판&amp;lt;/div&amp;gt;
-  &amp;lt;span&amp;gt;아메리카노&amp;lt;/span&amp;gt;
-  &amp;lt;span&amp;gt;flat_Write&amp;lt;/span&amp;gt;
-  &amp;lt;spand&amp;gt;라때&amp;lt;/spand&amp;gt;
-
-  &amp;lt;/div&amp;gt;   
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;call&#34;&gt;call()&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 사용방법 
-
-function identify() {
-	return this.name;
-}
-function speak() {
-	var greeting = &amp;quot;hello, I am &amp;quot; + identify.call(this);
-	console.log(greet);
-}
-var me = { name : &amp;quot;jj&amp;quot;};
-var you = {name : &amp;quot;Tim&amp;quot;};
-
-// 호출
-identify.call(me) // identify함수를 호출한다. return 값의 있는  this 는 me가 된다
-
-
-// &amp;quot;jj&amp;quot;
-speak.call(you) // speak 함수를 호출한다. return 값의 있는  identify 함수가호출된다 마지막으로 this는 you 가 된다.
-
-// hello, I am Tim
-	
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;call-과-apply-의-차이&#34;&gt;call() 과 apply() 의 차이&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// this 값을 넘겨주는 방식이 틀림
-// call() and apply()  사용해서 함수안에있는 parameter 사용하기 
-
-
-var obj = { 
-val : 0
-}; 
-
-var add = function  ( x , y ) {
-	this.val = x + y ;   //  리턴값이 출력되는 것이 아니라 this값이 obj 가 됨으로 obj.val =  2 +3 // 이것을 해주기 위해  add.call(obj,2,3); or add.apply(obj,[2,3]);
-
-add.call(obj,2,3);  // 5 동일다. 
-add.apply(obj,[2,3]); // 5  동일하다. 
-	
-// arr 안에 가장 큰수를 가져오는 방법 apply() 메소드 써서 가져올수 있다.
-
-let arr = [1,2,3,4,5,6];
-Math.max.apply(null,arr);
-
-// 6
-
-	
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;class-객체지향-프로그래밍&#34;&gt;Class : 객체지향 프로그래밍&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-
-
-
-function Car(band,name,color) {
-    // 인스턴스가 만들어 질때  실행될 코드들... 
-}
-
-// new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. 
-
-
-// Car 라는 class 만들어 낼때 class는 2가지를 갖게 된다.
-
-// 1. 속성  : band,name,color , currentFuel,maxSpeed
-// 2. 메소드  : refuel() ,setSpeed(), drive()
-
-
-
-// ex
-
-
-// 1. 클라스 함수 와 인스턴스 생성 
-
-function Car(brand,name,color) { // Car() 는 클라스
-	
-	this.what_brand = brand; // 여기서 this 는 인자값이 드러갈 변수이름 (avante)
-	this.what_name = name;	
-	this.what_color = color;
-}
-
-// 2. 클라스 함수를 변수에 담고 파라미터 들어갈 값들 넣는다. 
-
-let avante = new Car(&amp;quot;GM&amp;quot;,&amp;quot;avante&amp;quot;,&amp;quot;black&amp;quot;); // 변수를 만든다 (인스턴스값으로 들어갈 )
-
-// 3. 추가로 인스턴스를 생성 
-
-Car.prototype.what_drive = function () { // Car() 인스턴스 생성 그리고 function 는 인스턴스 값  
-    console.log(this.name + &amp;quot;가 운전을 합니다. &amp;quot;);
-}
-
-
-avante.what_name // 인스턴스 값 출력
-// &amp;quot;avante&amp;quot;
-avante.what_brand
-// &amp;quot;GM&amp;quot;
-avante.what_color
-// &amp;quot;black&amp;quot;
-
-avante.what_drive  // 새로 생성한 what_drive 출력 
-// jj 가 운전을 합니다. 
-
-`tip`
-
-let arr = [1,2,3,4,5]     // 배열 만들기 
-let arr = new Array(1,2,3,4,5) // 배열 만들기  // Array클라스 안에 (인자값들) 
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;closure-1&#34;&gt;Closure 1&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 1.클로저란?
-
-함수는 함수를 리턴할수 있다.그것을 고차함수라고 하는데 그것을 클로저라 부른다. 한마디로 `외부함수의 변수에 접근할수 있는 함수`를  `클로저`라 부른다. 
-
-// 2.특징 ?
-
-// 클로저 함수의 장점은 지역변수 외부 함수의 변수 전역 변수 에 접근이 가능하다는 점이다 !
-
-
-
-function foo() {
-  return function() {
-        return 2 
-    }
-}
-
-foo() // f
-
-// 2 가 반환되지 않고 
-//f &amp;lt;&amp;lt; 함수 자체가 리턴된다 
-
-
-// 클로저예제1 : 함수 이용해서 템플릿 함수 만들기
-
-
-function htmlMark(tag) {
-    let stratTag = &amp;quot;&amp;lt;&amp;quot; + tag + &amp;quot;&amp;gt;&amp;quot; ; 
-    let endTag = &amp;quot;&amp;lt;&amp;quot; + tag + &amp;quot;&amp;gt;&amp;quot; ;
-      return function(content) {     //  클로저 함수 사용 
-        return stratTag + content + endTag;
-    }
-}
-
-htmlMark(&amp;quot;h1&amp;quot;)(&amp;quot;JJ&amp;quot;); // 커링 사용해서 출력 tag : &amp;quot;h1&amp;quot; content:&amp;quot;JJ&amp;quot;
-// &amp;gt;&amp;gt;&amp;gt; &amp;lt;h1&amp;gt;JJ&amp;lt;h1&amp;gt;
-
-let h1Tag = htmlMark(&amp;quot;h1&amp;quot;); // 변수에 tag:&amp;quot;h1&amp;quot;담아서 지정하고 출력 
-
-h1Tag(&amp;quot;JJ&amp;quot;)  //  content : &amp;quot;JJ&amp;quot;
-// &amp;gt;&amp;gt;&amp;gt; &amp;lt;h1&amp;gt;JJ&amp;lt;h1&amp;gt;
-
-
-
-// 클로저예제 2 : 클로저 모튤 패턴 
-
-
-// 두 카운터가 각기 다른 privateCount 를 다루면서, privareCounter 을 밖에 노출시키지 않는 것이 장점이다. 
-
-function makeCounter() {
-	let privateCounter = 0; 
-
-	let obj = {
-	  plus : function() {
-		  privateCounter = privateCounter + 1;
-	  },	
-	  minus: function() {
-		  privateCounter = privateCounter - 1;
-	  },
-	  getValue: function() {
-		  return privateCounter;
-	  }
-  }
-  return obj;
-};
-
-let count1 = makeCounter() // 함수를 변수에 지정한다. 
-count1.plus() // obj key값을 실행시키면 propo 값인 함수가 실행되면서 기존에 privateCounter 0 이였던 것을 1 증가시킨다. 
-
-coun1.getValue() //  obj key값인 getValue() 함수를 실행시키면 지금까지 plus 하고 minus한 값을 출력 할수 있게 코드가 짜여 있다. 
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;closure-2&#34;&gt;Closure 2&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-//클로저는 독립적인 (자유) 변수를 가리키는 함수이다. 또는, 클로저 안에 정의된 함수는 만들어진 환경을 ‘기억한다’.
-
-// 내부함수는 외부함수의 지역변수에 접근 할 수 있는데 외부함수의 실행이 끝나서 외부함수가 소멸된 이후에도 내부함수가 외부함수의 변수에 접근 할 수 있다. 이러한 메커니즘을 클로저라고 한다.
-
-
-// 일반적인 함수
-
-
-let addTo = function (passed) {
-
-	let inner = 2;
-	return passed + inner; 3 + 2 
-
-};
-
-console.log( addTo(3) ) //  5
-
-
-//이것이 클로저
-
-let passed = 3;  // 함수 밖에 변수를 선언한다 
-
-let addTo = function () { //  parameter 를 외부에서가져온다. 
-
-	let inner = 2;
-	return passed + inner; 3 + 2  // 
-
-};
-
-console.log( addTo() ) //  5
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;closure-3&#34;&gt;Closure 3&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 클로저(closure)는 내부함수가 외부함수의 맥락(context)에 접근할 수 있는 것을 가르킨다.
-// 자바스크립트에서 함수는 일급객체이다. 함수를 호출했을때 리턴되는 함수(클로저)를 참조하고 있는 것이다.
-// 즉 반환되는 내부함수가 클로저이다.
- 
-function outter() {
-    
-    var title = &#39;난 영혼처럼 살아있다.&#39;;
-    
-    return function() {
-        
-        console.log(title); // 클로저로 참조되는 외부변수를 자유변수(Free Variable) 라 부른다.
-        
-    };
-};
- 
-var inner = outter();  // 생명 주기가 끝난 외부함수의 변수를 참조하는 내부함수를 클로저라 한다.  
-inner();  // 결과 : 난 영혼처럼 살아있다. 
- 
- 
- 
-
-// 매번 호출할때 마다 변수값을 유지하고 싶을때 사용한다.
-// 클로저가 참조하고 있는 변수를 노출시키지 않는다 (캡슐화)
-// 클로저에서는 접근할수 있지만 코드 외부에서는 접근할수 없다.
-
-var a = function() {
-    
-    var count = 0;
- 
-    return function() {
-         return count++;
-    };
-};
- 
-let next = a();
- 
-console.log(next());  
-console.log(next());  
-console.log(next());  
-console.log(next());  
-
-
-출처: https://mylife365.tistory.com/108?category=624212 [변화에 적응하기]
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;closure-4&#34;&gt;Closure 4&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 추가설명 &amp;amp; 코드를 작성할때 많이 격는 어려움
-
-
-
-
-/*
-
-클로저는 JavaScript의 유효범위 체인을 이용하여 이미 생명 주기가 끝난 외부 함수의 변수를 참조하는 방법입니다. 외부 함수가 종료되더라도 내부함수가 실행되는 상태면 내부함수에서 참조하는 외부함수는 닫히지 못하고 내부함수에 의해서 닫히게 되어 클로저라 불리 웁니다. 따라서 클로저란 외부에서 내부 변수에 접근할 수 있도록 하는 함수입니다.
-
-내부 변수는 하나의 클로저에만 종속될 필요는 없으며 외부 함수가 실행 될 때마다 새로운 유효범위 체인과 새로운 내부 변수를 생성합니다. 또, 클로저가 참조하는 내부 변수는 실제 내부 변수의 복사본이 아닌 그 내부 변수를 직접 참조합니다.
-
-*/
-
-function outerFunc(){  
-    var a= 0;
-    return {
-        innerFunc1 : function(){
-            a+=1;
-            console.log(&amp;quot;a :&amp;quot;+a);
-        },
-        innerFunc2 : function(){
-            a+=2;
-            console.log(&amp;quot;a :&amp;quot;+a);
-        }
-    };
-}
-var out = outerFunc();  
-out.innerFunc1();  
-out.innerFunc2();  
-out.innerFunc2();  
-out.innerFunc1();
-
-//실행결과
-/*
-a = 1  
-a = 3  
-a = 5  
-a = 6  
-*/
-function outerFunc(){  
-    var a= 0;
-    return {
-        innerFunc1 : function(){
-            a+=1;
-            console.log(&amp;quot;a :&amp;quot;+a);
-        },
-        innerFunc2 : function(){
-            a+=2;
-            console.log(&amp;quot;a :&amp;quot;+a);
-        }
-    };
-}
-var out = outerFunc();  
-var out2 = outerFunc();  
-out.innerFunc1();  
-out.innerFunc2();  
-out2.innerFunc1();  
-out2.innerFunc2();
-
-
-//실행결과
-
-/*
-a = 1  
-a = 3  
-a = 1  
-a = 3  
-*/
-
-
-/* 
-
-[예제 8] 클로저의 상호작용, 서로 다른 객체
-
-위의 코드는 클로저의 예제 코드이며 그 중 좌측 코드는 서로 다른 클로저가 같은 내부 변수를 참조하고 있다는 것을 보여주고 있습니다. 서로 다른 클로저 innerFunc1과 innerFunc2가 내부 변수 a를 참조하고 a의 값을 바꿔주고 있습니다. 실행 결과를 보면 내부 변수 a의 메모리를 같이 공유한다는 것을 알 수 있습니다.
-
-우측 코드는 같은 함수를 쓰지만 서로 다른 객체로 내부 변수를 참조하는 모습입니다. 외부 함수가 여러 번 실행되면서 서로 다른 객체가 생성되고 객체가 생성될 때 마다 서로 다른 내부 변수가 생성되어 보기엔 같은 내부 변수 a로 보이지만 서로 다른 내부 변수를 참조합니다.
-
-*/
-
-
-// 클로저의 사용이유
-
-
-
-/*
-
-클로저를 사용하게 되면 전역변수의 오,남용이 없는 깔끔한 스크립트를 작성 할 수 있습니다. 같은 변수를 사용하고자 할 때 전역 변수가 아닌 클로저를 통해 같은 내부 변수를 참조하게 되면 전역변수의 오남용을 줄일 수 있습니다. 또한, 클로저는 JavaScript에 적합한 방식의 스크립트를 구성하고 다양한 JavaScript의 디자인 패턴을 적용할 수 있습니다. 그의 대표적인 예로 모듈 패턴을 말 할 수 있는데 모듈 패턴의 자세한 내용은 [Javascript : 함수(function) 다시 보기]을 참고 하시면 될 것 같습니다. 마지막으로 함수 내부의 함수를 이용해 함수 내부변수 또는 함수에 접근 함으로써 JavaScript에 없는 class의 역할을 대신해 비공개 속성/함수, 공개 속성/함수에 접근을 함으로 class를 구현하는 근거 입니다.
-
-*/
-
-
-// 3.2 클로저 사용시 주의할 점
-// 클로저를 사용할 때 주의해야 할 점이 여럿 있습니다. 제가 알려드리고 싶은 주의 점은 다음과 같습니다.
-
-// for 문 클로저는 상위 함수의 변수를 참조할 때 자신의 생성될 때가 아닌 내부 변수의 최종 값을 참조합니다.
-
-&amp;lt;body&amp;gt;  
-    &amp;lt;script&amp;gt;
-    window.onload = function(){
-        var list = document.getElementsByTagName(&amp;quot;button&amp;quot;);
-
-        for(var i =0, length = list.length; i&amp;lt;length; i++){
-            list[i].onclick=function(){
-            console.log(this.innerHTML+&amp;quot;은&amp;quot;+(i+1)+&amp;quot;번째 버튼입니다&amp;quot;);
-            }
-        }
-    }
-    &amp;lt;/script&amp;gt;
-&amp;lt;button&amp;gt;1번째 버튼&amp;lt;/button&amp;gt;  
-&amp;lt;button&amp;gt;2번째 버튼&amp;lt;/button&amp;gt;  
-&amp;lt;button&amp;gt;3번째 버튼&amp;lt;/button&amp;gt;  
-&amp;lt;/body&amp;gt;  
-
-
-//실행결과
-
-/*
-1번째 버튼은 4번째 버튼입니다  
-2번째 버튼은 4번째 버튼입니다  
-3번째 버튼은 4번째 버튼입니다  
-*/
-
-// [예제 9] for문안의 클로저
-
-// 위의 코드는 각각의 버튼에 이벤트를 걸어 클릭된 버튼이 몇 번째 버튼인지를 알기 위한 예제 입니다. 하지만, 실행 결과 값은 바라던 결과가 나오지 않습니다. 위의 클로저인 클릭 이벤트가 참조 하는 변수 i의 값이 버튼이 클릭될 때의 값이 아닌 for 구문을 다 돌고 난후 i의 값 4를 참조하기 때문에 모두 4라는 결과가 나옵니다.
-
-&amp;lt;body&amp;gt;  
-    &amp;lt;script&amp;gt;
-    window.onload = function(){
-        var list = document.getElementsByTagName(&amp;quot;button&amp;quot;);
-
-        var gate = function(i){
-            list[i].onclick=function(){
-            console.log(this.innerHTML+&amp;quot;은&amp;quot;+(i+1)+&amp;quot;번째 버튼입니다&amp;quot;);
-            }
-        }
-        for(var i =0, length = list.length; i&amp;lt;length; i++){
-             gate(i);
-        }
-    }
-    &amp;lt;/script&amp;gt;
-&amp;lt;button&amp;gt;1번째 버튼&amp;lt;/button&amp;gt;  
-&amp;lt;button&amp;gt;2번째 버튼&amp;lt;/button&amp;gt;  
-&amp;lt;button&amp;gt;3번째 버튼&amp;lt;/button&amp;gt;  
-&amp;lt;/body&amp;gt;
-
-
-//실행결과
-/*
-1번째 버튼은 1번째 버튼입니다  
-2번째 버튼은 2번째 버튼입니다  
-3번째 버튼은 3번째 버튼입니다  
-*/
-
-// [예제 10] 예제9 해결법 : 중첩클로저
-
-// 위의 예제 코드를 통해 중첩 된 클로저를 사용하는 것 만으로 위와 같은 문제를 피하여 원하는 값이 나옵니다.
-
-// 성능문제 클로저가 필요하지 않는 부분에서 클로저를 사용하는 것은 처리 속도와 메모리 면에서 좋은 방법이 아닙니다.
-
-function MyObject(inputname) {  
-    this.name = inputname;
-    this.getName = function() {
-        return this.name;
-    };
-    this.setName = function(rename) {
-        this.name = rename;
-    };
-}
-var obj= new MyObject(&amp;quot;서&amp;quot;);  
-console.log(obj.getName());  
-
-
-//실행결과
-/*
-서
-*/
-
-// [예제 11] 클로저의 오남용
-
-// 위의 코드와 같은 함수 내부의 클로저 구현은 함수의 객체가 생성될 때마다 클로저가 생성되는 결과를 가져옵니다. 같은 구동을하는 클로저가 객체마다 생성이 된다면 쓸데없이 메모리를 쓸데없이 차지하게 되는데, 이를 클로저의 오남용이라고 합니다. 클로저의 오남용은 성능 문제 면에서 안 좋은 결과를 가져옵니다.
-
-function MyObject(inputname) {  
-    this.name = inputname;
-}
-MyObject.prototype.getName = function() {  
-    return this.name;
-};
-MyObject.prototype.setName =   function(rename) {  
-    this.name = rename;
-};
-var obj= new MyObject(&amp;quot;서&amp;quot;);  
-console.log(obj.getName());  
-
-//실행결과
-/*
-서
-*/
-
-
-// [예제 12] prototype객체를 이용한 클로저 생성
-
-// 클로저를 위의 코드와 같이 prototype객체에 생성하게 되면 객체가 아무리 생성되어도 클로저를 한 번만 생성하고 여러 객체에서 쓸 수 있게 되어 메모리의 낭비를 줄입니다.
-
-// this와 arguments객체 클로저를 통해서는 외부함수의 this객체와 arguments객체를 참조하지 못합니다.
-
-function f1(){  
-    function f2(){
-        console.log(arguments[0]);
-    }
-    return f2;
-}
-var exam = f1(1);  
-exam();
-
-//실행결과
-/*
-undefined  
-*/
-
-function f1(){  
-    var a= arguments[0];
-    function f2(){
-        console.log(a);
-    }
-    return f2;
-}
-var exam = f1(1);  
-exam();  
-
-//실행결과
-/*
-1  
-*/
-
-
-// [예제 13] arguments객체 참조
-
-// 위의 좌측코드같이 클로저를 통해 arguments객체를 참조하게 되면 undefined라는 실행결과가 나옵니다. 즉, arguments객체는 참조가 불가능하며 굳이 참조하고 싶다면 오른쪽 코드와 같이 새로운 내부 변수에 arguments객체의 값을 넣고 그 변수를 참조 하거나 매개변수를 만들어 매개 변수를 참조하여야 합니다.
-
-Function 생성자
-
-var a= 20;  
-function function1(){  
-    var a= 10;
-    var function2 = new Function(&amp;quot;&amp;quot;,&amp;quot;return a;&amp;quot;);
-    return function2;
-}
-var exam = function1();  
-exam();  
-//실행결과
-/*
-20  
-*/
-
-// [예제 14] Function생성자로 선언된 클로저
-
-// 위의 코드와 같이 클로저가 Function생성자로 생성된 경우 전역에서 생성된 것으로 인지합니다. 클로저 function2를 통하여 내부 변수 a를 참조하려고 했지만 원했던 결과와 달리 전역 변수 a가 참조 됩니다.
-
-
-
-function outerFunc(){  
-    var outer_val = {};
-    function innerFunc(){
-        console.log(outer_val);
-    }
-
-    outer_val.values = innerFunc;
-    return innerFunc;
-}
-
-
-// [예제 15] 인위적 순환참조
-
-// 위의 코드는 의도적으로 클로저의 순환참조를 만든 예제 코드입니다. 내부 객체 outerval의 속성 값 values 에 내부 함수 innerFunc를 참조하게 만들고 내부 함수 innerFunc는 내부 객체 outerval을 호출 하고 있습니다. 위와 같은 순환 참조는 서로를 참조 하면서 영원히 끝나지 않는 호출로 인하여 메모리 누수를 야기합니다.
-
-function outerFunc(){  
-    var outer_val = {};
-    function innerFunc(){
-        console.log(&amp;quot;Hello&amp;quot;);
-    }
-    outer_val.values = innerFunc;
-    return innerFunc;
-}
-
-// [예제 16] 의도치 않은 순환참조
-
-// 그렇다면 위 코드같이 서로를 참조를 하지 않게 되면 순환참조가 끊어질까요? 아닙니다. JavaScript의 클로저는 특별한 문법을 쓰지 않고도 암묵적으로 생기는 특성을 가지고 있습니다. 이는 클로저를 쉽게 만들도록 해주지만 클로저가 사용되는 곳을 사용자가 식별하기 어렵게 만들기도 합니다. 그렇게 되면 내부 함수의 innerFunc는 암묵적으로 상위 함수의 내부 객체인 outer_val을 참조하게 되고 이로인해 의도치 않게 순환참조가 만들어집니다. 이런 의도치 않은 순환참조는 메모리 누수를 야기합니다.
-
-// 이 같은 의도치 않은 순환참조는 객체가 제거될 때 명시적으로 null값으로 초기화 해 주거나 try-catch-finally구문으로 해결합니다. 또는 더 글라스 크락포드가 제시한 purge함수를 쓰게 되면 순환참조를 해결할 수 있습니다. 아래는 purge함수 입니다.
-
-function purge(d) {  
-    var a = d.attributes, i, l, n;
-    if (a) {
-        for (i = a.length - 1; i &amp;gt;= 0; i -= 1) {
-            n = a[i].name;
-            if (typeof d[n] === &#39;function&#39;) {
-                d[n] = null;
-            }
-        }
-    }
-    a = d.childNodes;
-    if (a) {
-        l = a.length;
-        for (i = 0; i &amp;lt; l; i += 1) {
-            purge(d.childNodes[i]);
-        }
-    }
-}
-
-
-// [더글라스 크락포드의 purge함수]
-
-// 3.3 캡슐화
-//캡슐화란 간단하게 말하면 객체의 자료화 행위를 하나로 묶고, 실제 구현 내용을 외부에 감추는 겁니다. 즉, 외부에서 볼 때는 실제 하는 것이 아닌 추상화 되어 보이게 하는 것으로 정보은닉에 쓰입니다. JavaScript는 이와 같은 캡슐화를 클로저를 사용하여 구현합니다.
-
-function Gugudan(dan){  
-    this.maxDan=3;
-    this.calculate = function(){
-        for(var i =1; i&amp;lt;=this.maxDan; i++){
-            console.log(dan+&amp;quot;*&amp;quot;+i+&amp;quot;=&amp;quot;+dan*i);
-        }
-    }
-    this.setMaxDan = function(reset){
-        this.maxDan = reset;
-    }
-}
-var dan5 = new Gugudan(5);  
-dan5.calculate();
-
-dan5.maxDan=2;  
-dan5.calculate();
-
-//실행결과
-/*
-5*1=5  
-5*2=10  
-5*3=15
-
-5*1=5  
-5*2=10  
-*/
-
-// [예제 17] 캡슐화 전
-
-// 위의 코드는 JavaScript 캡슐화 하기 전의 코드입니다. 내부 변수를 this객체로 바인딩 하여 선언하게 되면 내부 변수 maxDan에 대하여 외부에서 직접 접근이 가능합니다. 이런식의 소스코드 구현은 사용자가 임의로 바꿔선 안될 값들이 외부에 공개가 되면서 보안문제에 안좋은 결과를 가져옵니다.
-
-function Gugudan(dan){  
-    var maxDan=3;
-    this.calculate = function(){
-        for(var i =1; i&amp;lt;=maxDan; i++){
-            console.log(dan+&amp;quot;*&amp;quot;+i+&amp;quot;=&amp;quot;+dan*i);
-        }
-    }
-    this.setMaxDan = function(reset){
-        maxDan = reset;
-    }
-}
-var dan5 = new Gugudan(5);  
-dan5.calculate();
-
-dan5.maxDan=2;  
-dan5.calculate();
-
-dan5.setMaxDan(2)  
-dan5.calculate();  
-
-
-//실행결과
-/*
-5*1=5  
-5*2=10  
-5*3=15
-
-5*1=5  
-5*2=10  
-5*3=15
-
-5*1=5  
-5*2=10  
-*/
-
-// [예제 18] 캡슐화 후
-
-// 하지만 위의 코드와 같이 var키워드를 통하여 내부 변수를 선언하게 되면 내부 변수 maxDan이 외부에서 직접 접근이 되지 않고 오직 클로저를 통해서만 접근이 가능합니다. 즉, 사용자가 임의로 값을 바꿀수 없고 개발자가 만들어놓은 길(클로저)을 통해서만 값을 바꿔 줄수 있습니다. 아쉬운 점은 캡슐화를 하게되면 클로저를 prototype 맴버로 등록하지 못해 공용 메소드로 사용할 수 있는 이점은 사라집니다. 하지만, 별도의 부모 객체를 정의해서 공용 메소드나 상수 들을 위치시키고 이를 상속받는 방식으로 보완할 수 있습니다.
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;커링-currying&#34;&gt;커링 (currying)&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 호출된 함수의 매개변수로 동적으로 새로운 함수를 생성하여 반환하는 패턴을 커링이라 한다.
-
-// 호출하는 함수의 인자값이 비슷하다면 커링을 사용하는 것이 효율적이다.
-
-// 클로저를 이용해 함수의 인자를 미리 등록해두는 것
-
-
-function func(a) {
-    return function(b) { // 내부 함수, 즉 클로저인 익명 함수 반환
-        return a + b;
-    }
-}
-var currying = func(5);
-var result = currying(5); 
-console.log(result);
-
-// 또는 아래처럼 호출
-var result2 = func(5)(7); 
-console.log(result2);
-
-https://mylife365.tistory.com/320 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;스코프란&#34;&gt;스코프란?&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.
-//스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.
-
-
-// 전역_스코프
-
-
-let greeting = &#39;Hello John&#39; // 외부에서 변수가 선언됨
-
-function marcusHello () {
-  console.log(greeting)
-}
-
-console.log(greeting) // &#39;Hello John!&#39; 
-
-sayHello() // &#39;Hello John!&#39; 
-
-
-
-// 지역_스코프
-
-
-function marcusHello () {
-  
-  let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨
-  console.log(greeting)
-}
-
-marcusHello() // &#39;Hello John!!&#39;
-
-console.log(x) // Error, hello is not defined
-
-
-let name = &amp;quot;john&amp;quot;;
-
-function showName() { 
-  let name = &amp;quot;jj&amp;quot;; // 2. 지역변수 &amp;lt;&amp;lt; showName함수에서만 접근 가능
-  console.log(name); // 2. jj
-}
-
-console.log(name); // 1.jj &amp;lt;&amp;lt; 전역변수 가져옴
-showname()         // 2.
-console.log(name)  // 3. john &amp;lt;&amp;lt; 여전히 전역 변수 john
-
-
-
-
-
-let name = &amp;quot;john&amp;quot;;
-
-function showName() {
-  name = &amp;quot;jj&amp;quot;; // name 이 전역변수로 바뀜 cos let 없기 때문에 외부에서 변수 가져왔다. 
-  console.log(name); //   jj 
-}
-
-console.log(name); // 1. john &amp;lt;&amp;lt; 전역변수 가져옴
-showName()         // 2. 
-console.log(name)  // 3. jj 함수가 실행된 뒤에는 함수안에 있는 name = jj 를 가져와서 리턴한다. 왜냐하면 jj 가 전역 변수로 바뀌었기 때문이다. 
-
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>x Coding_level_1</title>
+      <title></title>
       <link>/tutorial/javascript_q1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q1/</guid>
       <description>
+
+&lt;p&gt;#&amp;mdash;
+#title: x Coding_level_1
+#date: 2019-6
+#draft: true
+#menu:&lt;/p&gt;
+
+&lt;h1 id=&#34;tutorial&#34;&gt;tutorial:&lt;/h1&gt;
+
+&lt;h1 id=&#34;parent-3-javascript&#34;&gt;parent: &amp;ldquo;3.Javascript&amp;rdquo;&lt;/h1&gt;
+
+&lt;h1 id=&#34;weight-0&#34;&gt;weight: 0&lt;/h1&gt;
+
+&lt;p&gt;#toc: true
+#type: docs&lt;/p&gt;
+
+&lt;p&gt;#&amp;mdash;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -21460,12 +20652,909 @@ function getProductOfAllElementsAtProperty(obj, key) {
     </item>
     
     <item>
-      <title>xCoding_level_2</title>
+      <title></title>
+      <link>/tutorial/javascript_q2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/javascript_q2/</guid>
+      <description>
+
+&lt;p&gt;#&amp;mdash;
+#title: notes 2
+#date: 2019-6
+#draft: true
+#menu:&lt;/p&gt;
+
+&lt;h1 id=&#34;tutorial&#34;&gt;tutorial:&lt;/h1&gt;
+
+&lt;h1 id=&#34;parent-3-javascript&#34;&gt;parent: &amp;ldquo;3.Javascript&amp;rdquo;&lt;/h1&gt;
+
+&lt;h1 id=&#34;weight-0&#34;&gt;weight: 0&lt;/h1&gt;
+
+&lt;p&gt;#toc: true
+#type: docs
+#
+#&amp;mdash;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;다-완료&#34;&gt;다 완료&lt;/h2&gt;
+
+&lt;h2 id=&#34;dom&#34;&gt;Dom&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+
+
+&amp;lt;!-- div 안에 element 를 추가하는 방법 3가지  --&amp;gt;
+
+  
+
+  &amp;lt;!-- 첫번째 방법 HTML --&amp;gt;
+  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt;
+  
+  &amp;lt;script&amp;gt;
+  // innerHTML 로 tag 까지 같이 한번에 집어넣는다 
+  let comments = document.querySelector(&amp;quot;#comments&amp;quot;);
+  comments.innerHTML = &amp;quot;&amp;lt;span&amp;gt;아메리카노&amp;lt;span&amp;gt;&amp;quot;;
+
+  &amp;lt;/script&amp;gt;
+  
+  
+  
+
+  &amp;lt;!-- 두번째 방법 HTML --&amp;gt;
+  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; 
+
+  &amp;lt;script&amp;gt;
+  
+  // element 를 생성해서 집어넣을때는 appendChild 로 집어넣는다. 
+  
+  let comments = document.querySelector(&amp;quot;#comments&amp;quot;);
+  let newElement = document.createElement(&amp;quot;span&amp;quot;); // element 생성
+  newElement.innerHTML = &amp;quot;아메리카노&amp;quot;; //  생성된 element  안에 미리 써준다.
+  comments.appendChild(newElement); // 집어넣을 comments태그 안에 생성된 elemment를 집어넣는다.
+&amp;lt;/script&amp;gt;
+  
+  
+  
+  &amp;lt;!-- 세번째 방법 HTML --&amp;gt;
+
+  &amp;lt;template id = &amp;quot;cloneTem&amp;quot;&amp;gt;
+  
+    &amp;lt;div&amp;gt;새로운 커피매뉴판&amp;lt;/div&amp;gt;
+    &amp;lt;span&amp;gt;아메리카노&amp;lt;/span&amp;gt;
+    &amp;lt;span&amp;gt;flat_Write&amp;lt;/span&amp;gt;
+    &amp;lt;spand&amp;gt;라때&amp;lt;/spand&amp;gt;
+  
+  &amp;lt;/template&amp;gt; 
+  
+  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt;  
+  
+  
+  
+  
+  &amp;lt;script&amp;gt;
+// 미리 HTML 안에 만들어 놓고 importNode 와 appendChild 사용해서 기존에 있는 template 의 등록한다. 그러먼 id=&amp;quot;comments&amp;quot;에 있는 div 안에 cloneTem 안에 있는 내용들이 담긴다. 
+
+  let comments = document.querySelector(&amp;quot;#comments&amp;quot;); // 집어넣장소가져온다
+  let template = document.querySelector(&amp;quot;#cloneTem&amp;quot;); // 
+  
+  // 새로운 변수를 만들어 template 에있는 모든 content 를 복사해서 집어넣는다. 
+  let newComment = document.importNode(template.content,true);  
+
+  comments.innerHTML = &amp;quot;&amp;quot; // 집어넣을 공간을 싹다 지운다 // 커피 메뉴판 날라간다.
+  comments.appendChild(newComment) 
+  
+&amp;lt;/script&amp;gt;  
+
+
+
+&amp;lt;!-- HTML 결과  --&amp;gt;
+&amp;lt;!-- element 와 id 값이 기존에 elemment 로 바뀌었다  --&amp;gt;
+  &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;
+  
+  &amp;lt;div&amp;gt;새로운 커피매뉴판&amp;lt;/div&amp;gt;
+  &amp;lt;span&amp;gt;아메리카노&amp;lt;/span&amp;gt;
+  &amp;lt;span&amp;gt;flat_Write&amp;lt;/span&amp;gt;
+  &amp;lt;spand&amp;gt;라때&amp;lt;/spand&amp;gt;
+
+  &amp;lt;/div&amp;gt;   
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;call&#34;&gt;call()&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 사용방법 
+
+function identify() {
+	return this.name;
+}
+function speak() {
+	var greeting = &amp;quot;hello, I am &amp;quot; + identify.call(this);
+	console.log(greet);
+}
+var me = { name : &amp;quot;jj&amp;quot;};
+var you = {name : &amp;quot;Tim&amp;quot;};
+
+// 호출
+identify.call(me) // identify함수를 호출한다. return 값의 있는  this 는 me가 된다
+
+
+// &amp;quot;jj&amp;quot;
+speak.call(you) // speak 함수를 호출한다. return 값의 있는  identify 함수가호출된다 마지막으로 this는 you 가 된다.
+
+// hello, I am Tim
+	
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;call-과-apply-의-차이&#34;&gt;call() 과 apply() 의 차이&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// this 값을 넘겨주는 방식이 틀림
+// call() and apply()  사용해서 함수안에있는 parameter 사용하기 
+
+
+var obj = { 
+val : 0
+}; 
+
+var add = function  ( x , y ) {
+	this.val = x + y ;   //  리턴값이 출력되는 것이 아니라 this값이 obj 가 됨으로 obj.val =  2 +3 // 이것을 해주기 위해  add.call(obj,2,3); or add.apply(obj,[2,3]);
+
+add.call(obj,2,3);  // 5 동일다. 
+add.apply(obj,[2,3]); // 5  동일하다. 
+	
+// arr 안에 가장 큰수를 가져오는 방법 apply() 메소드 써서 가져올수 있다.
+
+let arr = [1,2,3,4,5,6];
+Math.max.apply(null,arr);
+
+// 6
+
+	
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;class-객체지향-프로그래밍&#34;&gt;Class : 객체지향 프로그래밍&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+
+
+function Car(band,name,color) {
+    // 인스턴스가 만들어 질때  실행될 코드들... 
+}
+
+// new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. 
+
+
+// Car 라는 class 만들어 낼때 class는 2가지를 갖게 된다.
+
+// 1. 속성  : band,name,color , currentFuel,maxSpeed
+// 2. 메소드  : refuel() ,setSpeed(), drive()
+
+
+
+// ex
+
+
+// 1. 클라스 함수 와 인스턴스 생성 
+
+function Car(brand,name,color) { // Car() 는 클라스
+	
+	this.what_brand = brand; // 여기서 this 는 인자값이 드러갈 변수이름 (avante)
+	this.what_name = name;	
+	this.what_color = color;
+}
+
+// 2. 클라스 함수를 변수에 담고 파라미터 들어갈 값들 넣는다. 
+
+let avante = new Car(&amp;quot;GM&amp;quot;,&amp;quot;avante&amp;quot;,&amp;quot;black&amp;quot;); // 변수를 만든다 (인스턴스값으로 들어갈 )
+
+// 3. 추가로 인스턴스를 생성 
+
+Car.prototype.what_drive = function () { // Car() 인스턴스 생성 그리고 function 는 인스턴스 값  
+    console.log(this.name + &amp;quot;가 운전을 합니다. &amp;quot;);
+}
+
+
+avante.what_name // 인스턴스 값 출력
+// &amp;quot;avante&amp;quot;
+avante.what_brand
+// &amp;quot;GM&amp;quot;
+avante.what_color
+// &amp;quot;black&amp;quot;
+
+avante.what_drive  // 새로 생성한 what_drive 출력 
+// jj 가 운전을 합니다. 
+
+`tip`
+
+let arr = [1,2,3,4,5]     // 배열 만들기 
+let arr = new Array(1,2,3,4,5) // 배열 만들기  // Array클라스 안에 (인자값들) 
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;closure-1&#34;&gt;Closure 1&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 1.클로저란?
+
+함수는 함수를 리턴할수 있다.그것을 고차함수라고 하는데 그것을 클로저라 부른다. 한마디로 `외부함수의 변수에 접근할수 있는 함수`를  `클로저`라 부른다. 
+
+// 2.특징 ?
+
+// 클로저 함수의 장점은 지역변수 외부 함수의 변수 전역 변수 에 접근이 가능하다는 점이다 !
+
+
+
+function foo() {
+  return function() {
+        return 2 
+    }
+}
+
+foo() // f
+
+// 2 가 반환되지 않고 
+//f &amp;lt;&amp;lt; 함수 자체가 리턴된다 
+
+
+// 클로저예제1 : 함수 이용해서 템플릿 함수 만들기
+
+
+function htmlMark(tag) {
+    let stratTag = &amp;quot;&amp;lt;&amp;quot; + tag + &amp;quot;&amp;gt;&amp;quot; ; 
+    let endTag = &amp;quot;&amp;lt;&amp;quot; + tag + &amp;quot;&amp;gt;&amp;quot; ;
+      return function(content) {     //  클로저 함수 사용 
+        return stratTag + content + endTag;
+    }
+}
+
+htmlMark(&amp;quot;h1&amp;quot;)(&amp;quot;JJ&amp;quot;); // 커링 사용해서 출력 tag : &amp;quot;h1&amp;quot; content:&amp;quot;JJ&amp;quot;
+// &amp;gt;&amp;gt;&amp;gt; &amp;lt;h1&amp;gt;JJ&amp;lt;h1&amp;gt;
+
+let h1Tag = htmlMark(&amp;quot;h1&amp;quot;); // 변수에 tag:&amp;quot;h1&amp;quot;담아서 지정하고 출력 
+
+h1Tag(&amp;quot;JJ&amp;quot;)  //  content : &amp;quot;JJ&amp;quot;
+// &amp;gt;&amp;gt;&amp;gt; &amp;lt;h1&amp;gt;JJ&amp;lt;h1&amp;gt;
+
+
+
+// 클로저예제 2 : 클로저 모튤 패턴 
+
+
+// 두 카운터가 각기 다른 privateCount 를 다루면서, privareCounter 을 밖에 노출시키지 않는 것이 장점이다. 
+
+function makeCounter() {
+	let privateCounter = 0; 
+
+	let obj = {
+	  plus : function() {
+		  privateCounter = privateCounter + 1;
+	  },	
+	  minus: function() {
+		  privateCounter = privateCounter - 1;
+	  },
+	  getValue: function() {
+		  return privateCounter;
+	  }
+  }
+  return obj;
+};
+
+let count1 = makeCounter() // 함수를 변수에 지정한다. 
+count1.plus() // obj key값을 실행시키면 propo 값인 함수가 실행되면서 기존에 privateCounter 0 이였던 것을 1 증가시킨다. 
+
+coun1.getValue() //  obj key값인 getValue() 함수를 실행시키면 지금까지 plus 하고 minus한 값을 출력 할수 있게 코드가 짜여 있다. 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;closure-2&#34;&gt;Closure 2&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+//클로저는 독립적인 (자유) 변수를 가리키는 함수이다. 또는, 클로저 안에 정의된 함수는 만들어진 환경을 ‘기억한다’.
+
+// 내부함수는 외부함수의 지역변수에 접근 할 수 있는데 외부함수의 실행이 끝나서 외부함수가 소멸된 이후에도 내부함수가 외부함수의 변수에 접근 할 수 있다. 이러한 메커니즘을 클로저라고 한다.
+
+
+// 일반적인 함수
+
+
+let addTo = function (passed) {
+
+	let inner = 2;
+	return passed + inner; 3 + 2 
+
+};
+
+console.log( addTo(3) ) //  5
+
+
+//이것이 클로저
+
+let passed = 3;  // 함수 밖에 변수를 선언한다 
+
+let addTo = function () { //  parameter 를 외부에서가져온다. 
+
+	let inner = 2;
+	return passed + inner; 3 + 2  // 
+
+};
+
+console.log( addTo() ) //  5
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;closure-3&#34;&gt;Closure 3&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 클로저(closure)는 내부함수가 외부함수의 맥락(context)에 접근할 수 있는 것을 가르킨다.
+// 자바스크립트에서 함수는 일급객체이다. 함수를 호출했을때 리턴되는 함수(클로저)를 참조하고 있는 것이다.
+// 즉 반환되는 내부함수가 클로저이다.
+ 
+function outter() {
+    
+    var title = &#39;난 영혼처럼 살아있다.&#39;;
+    
+    return function() {
+        
+        console.log(title); // 클로저로 참조되는 외부변수를 자유변수(Free Variable) 라 부른다.
+        
+    };
+};
+ 
+var inner = outter();  // 생명 주기가 끝난 외부함수의 변수를 참조하는 내부함수를 클로저라 한다.  
+inner();  // 결과 : 난 영혼처럼 살아있다. 
+ 
+ 
+ 
+
+// 매번 호출할때 마다 변수값을 유지하고 싶을때 사용한다.
+// 클로저가 참조하고 있는 변수를 노출시키지 않는다 (캡슐화)
+// 클로저에서는 접근할수 있지만 코드 외부에서는 접근할수 없다.
+
+var a = function() {
+    
+    var count = 0;
+ 
+    return function() {
+         return count++;
+    };
+};
+ 
+let next = a();
+ 
+console.log(next());  
+console.log(next());  
+console.log(next());  
+console.log(next());  
+
+
+출처: https://mylife365.tistory.com/108?category=624212 [변화에 적응하기]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;closure-4&#34;&gt;Closure 4&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 추가설명 &amp;amp; 코드를 작성할때 많이 격는 어려움
+
+
+
+
+/*
+
+클로저는 JavaScript의 유효범위 체인을 이용하여 이미 생명 주기가 끝난 외부 함수의 변수를 참조하는 방법입니다. 외부 함수가 종료되더라도 내부함수가 실행되는 상태면 내부함수에서 참조하는 외부함수는 닫히지 못하고 내부함수에 의해서 닫히게 되어 클로저라 불리 웁니다. 따라서 클로저란 외부에서 내부 변수에 접근할 수 있도록 하는 함수입니다.
+
+내부 변수는 하나의 클로저에만 종속될 필요는 없으며 외부 함수가 실행 될 때마다 새로운 유효범위 체인과 새로운 내부 변수를 생성합니다. 또, 클로저가 참조하는 내부 변수는 실제 내부 변수의 복사본이 아닌 그 내부 변수를 직접 참조합니다.
+
+*/
+
+function outerFunc(){  
+    var a= 0;
+    return {
+        innerFunc1 : function(){
+            a+=1;
+            console.log(&amp;quot;a :&amp;quot;+a);
+        },
+        innerFunc2 : function(){
+            a+=2;
+            console.log(&amp;quot;a :&amp;quot;+a);
+        }
+    };
+}
+var out = outerFunc();  
+out.innerFunc1();  
+out.innerFunc2();  
+out.innerFunc2();  
+out.innerFunc1();
+
+//실행결과
+/*
+a = 1  
+a = 3  
+a = 5  
+a = 6  
+*/
+function outerFunc(){  
+    var a= 0;
+    return {
+        innerFunc1 : function(){
+            a+=1;
+            console.log(&amp;quot;a :&amp;quot;+a);
+        },
+        innerFunc2 : function(){
+            a+=2;
+            console.log(&amp;quot;a :&amp;quot;+a);
+        }
+    };
+}
+var out = outerFunc();  
+var out2 = outerFunc();  
+out.innerFunc1();  
+out.innerFunc2();  
+out2.innerFunc1();  
+out2.innerFunc2();
+
+
+//실행결과
+
+/*
+a = 1  
+a = 3  
+a = 1  
+a = 3  
+*/
+
+
+/* 
+
+[예제 8] 클로저의 상호작용, 서로 다른 객체
+
+위의 코드는 클로저의 예제 코드이며 그 중 좌측 코드는 서로 다른 클로저가 같은 내부 변수를 참조하고 있다는 것을 보여주고 있습니다. 서로 다른 클로저 innerFunc1과 innerFunc2가 내부 변수 a를 참조하고 a의 값을 바꿔주고 있습니다. 실행 결과를 보면 내부 변수 a의 메모리를 같이 공유한다는 것을 알 수 있습니다.
+
+우측 코드는 같은 함수를 쓰지만 서로 다른 객체로 내부 변수를 참조하는 모습입니다. 외부 함수가 여러 번 실행되면서 서로 다른 객체가 생성되고 객체가 생성될 때 마다 서로 다른 내부 변수가 생성되어 보기엔 같은 내부 변수 a로 보이지만 서로 다른 내부 변수를 참조합니다.
+
+*/
+
+
+// 클로저의 사용이유
+
+
+
+/*
+
+클로저를 사용하게 되면 전역변수의 오,남용이 없는 깔끔한 스크립트를 작성 할 수 있습니다. 같은 변수를 사용하고자 할 때 전역 변수가 아닌 클로저를 통해 같은 내부 변수를 참조하게 되면 전역변수의 오남용을 줄일 수 있습니다. 또한, 클로저는 JavaScript에 적합한 방식의 스크립트를 구성하고 다양한 JavaScript의 디자인 패턴을 적용할 수 있습니다. 그의 대표적인 예로 모듈 패턴을 말 할 수 있는데 모듈 패턴의 자세한 내용은 [Javascript : 함수(function) 다시 보기]을 참고 하시면 될 것 같습니다. 마지막으로 함수 내부의 함수를 이용해 함수 내부변수 또는 함수에 접근 함으로써 JavaScript에 없는 class의 역할을 대신해 비공개 속성/함수, 공개 속성/함수에 접근을 함으로 class를 구현하는 근거 입니다.
+
+*/
+
+
+// 3.2 클로저 사용시 주의할 점
+// 클로저를 사용할 때 주의해야 할 점이 여럿 있습니다. 제가 알려드리고 싶은 주의 점은 다음과 같습니다.
+
+// for 문 클로저는 상위 함수의 변수를 참조할 때 자신의 생성될 때가 아닌 내부 변수의 최종 값을 참조합니다.
+
+&amp;lt;body&amp;gt;  
+    &amp;lt;script&amp;gt;
+    window.onload = function(){
+        var list = document.getElementsByTagName(&amp;quot;button&amp;quot;);
+
+        for(var i =0, length = list.length; i&amp;lt;length; i++){
+            list[i].onclick=function(){
+            console.log(this.innerHTML+&amp;quot;은&amp;quot;+(i+1)+&amp;quot;번째 버튼입니다&amp;quot;);
+            }
+        }
+    }
+    &amp;lt;/script&amp;gt;
+&amp;lt;button&amp;gt;1번째 버튼&amp;lt;/button&amp;gt;  
+&amp;lt;button&amp;gt;2번째 버튼&amp;lt;/button&amp;gt;  
+&amp;lt;button&amp;gt;3번째 버튼&amp;lt;/button&amp;gt;  
+&amp;lt;/body&amp;gt;  
+
+
+//실행결과
+
+/*
+1번째 버튼은 4번째 버튼입니다  
+2번째 버튼은 4번째 버튼입니다  
+3번째 버튼은 4번째 버튼입니다  
+*/
+
+// [예제 9] for문안의 클로저
+
+// 위의 코드는 각각의 버튼에 이벤트를 걸어 클릭된 버튼이 몇 번째 버튼인지를 알기 위한 예제 입니다. 하지만, 실행 결과 값은 바라던 결과가 나오지 않습니다. 위의 클로저인 클릭 이벤트가 참조 하는 변수 i의 값이 버튼이 클릭될 때의 값이 아닌 for 구문을 다 돌고 난후 i의 값 4를 참조하기 때문에 모두 4라는 결과가 나옵니다.
+
+&amp;lt;body&amp;gt;  
+    &amp;lt;script&amp;gt;
+    window.onload = function(){
+        var list = document.getElementsByTagName(&amp;quot;button&amp;quot;);
+
+        var gate = function(i){
+            list[i].onclick=function(){
+            console.log(this.innerHTML+&amp;quot;은&amp;quot;+(i+1)+&amp;quot;번째 버튼입니다&amp;quot;);
+            }
+        }
+        for(var i =0, length = list.length; i&amp;lt;length; i++){
+             gate(i);
+        }
+    }
+    &amp;lt;/script&amp;gt;
+&amp;lt;button&amp;gt;1번째 버튼&amp;lt;/button&amp;gt;  
+&amp;lt;button&amp;gt;2번째 버튼&amp;lt;/button&amp;gt;  
+&amp;lt;button&amp;gt;3번째 버튼&amp;lt;/button&amp;gt;  
+&amp;lt;/body&amp;gt;
+
+
+//실행결과
+/*
+1번째 버튼은 1번째 버튼입니다  
+2번째 버튼은 2번째 버튼입니다  
+3번째 버튼은 3번째 버튼입니다  
+*/
+
+// [예제 10] 예제9 해결법 : 중첩클로저
+
+// 위의 예제 코드를 통해 중첩 된 클로저를 사용하는 것 만으로 위와 같은 문제를 피하여 원하는 값이 나옵니다.
+
+// 성능문제 클로저가 필요하지 않는 부분에서 클로저를 사용하는 것은 처리 속도와 메모리 면에서 좋은 방법이 아닙니다.
+
+function MyObject(inputname) {  
+    this.name = inputname;
+    this.getName = function() {
+        return this.name;
+    };
+    this.setName = function(rename) {
+        this.name = rename;
+    };
+}
+var obj= new MyObject(&amp;quot;서&amp;quot;);  
+console.log(obj.getName());  
+
+
+//실행결과
+/*
+서
+*/
+
+// [예제 11] 클로저의 오남용
+
+// 위의 코드와 같은 함수 내부의 클로저 구현은 함수의 객체가 생성될 때마다 클로저가 생성되는 결과를 가져옵니다. 같은 구동을하는 클로저가 객체마다 생성이 된다면 쓸데없이 메모리를 쓸데없이 차지하게 되는데, 이를 클로저의 오남용이라고 합니다. 클로저의 오남용은 성능 문제 면에서 안 좋은 결과를 가져옵니다.
+
+function MyObject(inputname) {  
+    this.name = inputname;
+}
+MyObject.prototype.getName = function() {  
+    return this.name;
+};
+MyObject.prototype.setName =   function(rename) {  
+    this.name = rename;
+};
+var obj= new MyObject(&amp;quot;서&amp;quot;);  
+console.log(obj.getName());  
+
+//실행결과
+/*
+서
+*/
+
+
+// [예제 12] prototype객체를 이용한 클로저 생성
+
+// 클로저를 위의 코드와 같이 prototype객체에 생성하게 되면 객체가 아무리 생성되어도 클로저를 한 번만 생성하고 여러 객체에서 쓸 수 있게 되어 메모리의 낭비를 줄입니다.
+
+// this와 arguments객체 클로저를 통해서는 외부함수의 this객체와 arguments객체를 참조하지 못합니다.
+
+function f1(){  
+    function f2(){
+        console.log(arguments[0]);
+    }
+    return f2;
+}
+var exam = f1(1);  
+exam();
+
+//실행결과
+/*
+undefined  
+*/
+
+function f1(){  
+    var a= arguments[0];
+    function f2(){
+        console.log(a);
+    }
+    return f2;
+}
+var exam = f1(1);  
+exam();  
+
+//실행결과
+/*
+1  
+*/
+
+
+// [예제 13] arguments객체 참조
+
+// 위의 좌측코드같이 클로저를 통해 arguments객체를 참조하게 되면 undefined라는 실행결과가 나옵니다. 즉, arguments객체는 참조가 불가능하며 굳이 참조하고 싶다면 오른쪽 코드와 같이 새로운 내부 변수에 arguments객체의 값을 넣고 그 변수를 참조 하거나 매개변수를 만들어 매개 변수를 참조하여야 합니다.
+
+Function 생성자
+
+var a= 20;  
+function function1(){  
+    var a= 10;
+    var function2 = new Function(&amp;quot;&amp;quot;,&amp;quot;return a;&amp;quot;);
+    return function2;
+}
+var exam = function1();  
+exam();  
+//실행결과
+/*
+20  
+*/
+
+// [예제 14] Function생성자로 선언된 클로저
+
+// 위의 코드와 같이 클로저가 Function생성자로 생성된 경우 전역에서 생성된 것으로 인지합니다. 클로저 function2를 통하여 내부 변수 a를 참조하려고 했지만 원했던 결과와 달리 전역 변수 a가 참조 됩니다.
+
+
+
+function outerFunc(){  
+    var outer_val = {};
+    function innerFunc(){
+        console.log(outer_val);
+    }
+
+    outer_val.values = innerFunc;
+    return innerFunc;
+}
+
+
+// [예제 15] 인위적 순환참조
+
+// 위의 코드는 의도적으로 클로저의 순환참조를 만든 예제 코드입니다. 내부 객체 outerval의 속성 값 values 에 내부 함수 innerFunc를 참조하게 만들고 내부 함수 innerFunc는 내부 객체 outerval을 호출 하고 있습니다. 위와 같은 순환 참조는 서로를 참조 하면서 영원히 끝나지 않는 호출로 인하여 메모리 누수를 야기합니다.
+
+function outerFunc(){  
+    var outer_val = {};
+    function innerFunc(){
+        console.log(&amp;quot;Hello&amp;quot;);
+    }
+    outer_val.values = innerFunc;
+    return innerFunc;
+}
+
+// [예제 16] 의도치 않은 순환참조
+
+// 그렇다면 위 코드같이 서로를 참조를 하지 않게 되면 순환참조가 끊어질까요? 아닙니다. JavaScript의 클로저는 특별한 문법을 쓰지 않고도 암묵적으로 생기는 특성을 가지고 있습니다. 이는 클로저를 쉽게 만들도록 해주지만 클로저가 사용되는 곳을 사용자가 식별하기 어렵게 만들기도 합니다. 그렇게 되면 내부 함수의 innerFunc는 암묵적으로 상위 함수의 내부 객체인 outer_val을 참조하게 되고 이로인해 의도치 않게 순환참조가 만들어집니다. 이런 의도치 않은 순환참조는 메모리 누수를 야기합니다.
+
+// 이 같은 의도치 않은 순환참조는 객체가 제거될 때 명시적으로 null값으로 초기화 해 주거나 try-catch-finally구문으로 해결합니다. 또는 더 글라스 크락포드가 제시한 purge함수를 쓰게 되면 순환참조를 해결할 수 있습니다. 아래는 purge함수 입니다.
+
+function purge(d) {  
+    var a = d.attributes, i, l, n;
+    if (a) {
+        for (i = a.length - 1; i &amp;gt;= 0; i -= 1) {
+            n = a[i].name;
+            if (typeof d[n] === &#39;function&#39;) {
+                d[n] = null;
+            }
+        }
+    }
+    a = d.childNodes;
+    if (a) {
+        l = a.length;
+        for (i = 0; i &amp;lt; l; i += 1) {
+            purge(d.childNodes[i]);
+        }
+    }
+}
+
+
+// [더글라스 크락포드의 purge함수]
+
+// 3.3 캡슐화
+//캡슐화란 간단하게 말하면 객체의 자료화 행위를 하나로 묶고, 실제 구현 내용을 외부에 감추는 겁니다. 즉, 외부에서 볼 때는 실제 하는 것이 아닌 추상화 되어 보이게 하는 것으로 정보은닉에 쓰입니다. JavaScript는 이와 같은 캡슐화를 클로저를 사용하여 구현합니다.
+
+function Gugudan(dan){  
+    this.maxDan=3;
+    this.calculate = function(){
+        for(var i =1; i&amp;lt;=this.maxDan; i++){
+            console.log(dan+&amp;quot;*&amp;quot;+i+&amp;quot;=&amp;quot;+dan*i);
+        }
+    }
+    this.setMaxDan = function(reset){
+        this.maxDan = reset;
+    }
+}
+var dan5 = new Gugudan(5);  
+dan5.calculate();
+
+dan5.maxDan=2;  
+dan5.calculate();
+
+//실행결과
+/*
+5*1=5  
+5*2=10  
+5*3=15
+
+5*1=5  
+5*2=10  
+*/
+
+// [예제 17] 캡슐화 전
+
+// 위의 코드는 JavaScript 캡슐화 하기 전의 코드입니다. 내부 변수를 this객체로 바인딩 하여 선언하게 되면 내부 변수 maxDan에 대하여 외부에서 직접 접근이 가능합니다. 이런식의 소스코드 구현은 사용자가 임의로 바꿔선 안될 값들이 외부에 공개가 되면서 보안문제에 안좋은 결과를 가져옵니다.
+
+function Gugudan(dan){  
+    var maxDan=3;
+    this.calculate = function(){
+        for(var i =1; i&amp;lt;=maxDan; i++){
+            console.log(dan+&amp;quot;*&amp;quot;+i+&amp;quot;=&amp;quot;+dan*i);
+        }
+    }
+    this.setMaxDan = function(reset){
+        maxDan = reset;
+    }
+}
+var dan5 = new Gugudan(5);  
+dan5.calculate();
+
+dan5.maxDan=2;  
+dan5.calculate();
+
+dan5.setMaxDan(2)  
+dan5.calculate();  
+
+
+//실행결과
+/*
+5*1=5  
+5*2=10  
+5*3=15
+
+5*1=5  
+5*2=10  
+5*3=15
+
+5*1=5  
+5*2=10  
+*/
+
+// [예제 18] 캡슐화 후
+
+// 하지만 위의 코드와 같이 var키워드를 통하여 내부 변수를 선언하게 되면 내부 변수 maxDan이 외부에서 직접 접근이 되지 않고 오직 클로저를 통해서만 접근이 가능합니다. 즉, 사용자가 임의로 값을 바꿀수 없고 개발자가 만들어놓은 길(클로저)을 통해서만 값을 바꿔 줄수 있습니다. 아쉬운 점은 캡슐화를 하게되면 클로저를 prototype 맴버로 등록하지 못해 공용 메소드로 사용할 수 있는 이점은 사라집니다. 하지만, 별도의 부모 객체를 정의해서 공용 메소드나 상수 들을 위치시키고 이를 상속받는 방식으로 보완할 수 있습니다.
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;커링-currying&#34;&gt;커링 (currying)&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 호출된 함수의 매개변수로 동적으로 새로운 함수를 생성하여 반환하는 패턴을 커링이라 한다.
+
+// 호출하는 함수의 인자값이 비슷하다면 커링을 사용하는 것이 효율적이다.
+
+// 클로저를 이용해 함수의 인자를 미리 등록해두는 것
+
+
+function func(a) {
+    return function(b) { // 내부 함수, 즉 클로저인 익명 함수 반환
+        return a + b;
+    }
+}
+var currying = func(5);
+var result = currying(5); 
+console.log(result);
+
+// 또는 아래처럼 호출
+var result2 = func(5)(7); 
+console.log(result2);
+
+https://mylife365.tistory.com/320 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;스코프란&#34;&gt;스코프란?&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지를 정의합니다.
+//스코프엔 두 가지 종류가 있습니다. 전역 스코프와 지역 스코프로 나뉩니다.
+
+
+// 전역_스코프
+
+
+let greeting = &#39;Hello John&#39; // 외부에서 변수가 선언됨
+
+function marcusHello () {
+  console.log(greeting)
+}
+
+console.log(greeting) // &#39;Hello John!&#39; 
+
+sayHello() // &#39;Hello John!&#39; 
+
+
+
+// 지역_스코프
+
+
+function marcusHello () {
+  
+  let greeting = &#39;Hello John!&#39; // 안에서 변수가 선언됨
+  console.log(greeting)
+}
+
+marcusHello() // &#39;Hello John!!&#39;
+
+console.log(x) // Error, hello is not defined
+
+
+let name = &amp;quot;john&amp;quot;;
+
+function showName() { 
+  let name = &amp;quot;jj&amp;quot;; // 2. 지역변수 &amp;lt;&amp;lt; showName함수에서만 접근 가능
+  console.log(name); // 2. jj
+}
+
+console.log(name); // 1.jj &amp;lt;&amp;lt; 전역변수 가져옴
+showname()         // 2.
+console.log(name)  // 3. john &amp;lt;&amp;lt; 여전히 전역 변수 john
+
+
+
+
+
+let name = &amp;quot;john&amp;quot;;
+
+function showName() {
+  name = &amp;quot;jj&amp;quot;; // name 이 전역변수로 바뀜 cos let 없기 때문에 외부에서 변수 가져왔다. 
+  console.log(name); //   jj 
+}
+
+console.log(name); // 1. john &amp;lt;&amp;lt; 전역변수 가져옴
+showName()         // 2. 
+console.log(name)  // 3. jj 함수가 실행된 뒤에는 함수안에 있는 name = jj 를 가져와서 리턴한다. 왜냐하면 jj 가 전역 변수로 바뀌었기 때문이다. 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/tutorial/javascript_algorithm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
       <description>
+
+&lt;p&gt;#&amp;mdash;
+#title: xCoding_level_2
+#date: 2019-45
+#draft: true
+#menu:&lt;/p&gt;
+
+&lt;h1 id=&#34;tutorial&#34;&gt;tutorial:&lt;/h1&gt;
+
+&lt;h1 id=&#34;parent-3-javascript&#34;&gt;parent: &amp;ldquo;3.Javascript&amp;rdquo;&lt;/h1&gt;
+
+&lt;h1 id=&#34;weight-0&#34;&gt;weight: 0&lt;/h1&gt;
+
+&lt;p&gt;#toc: true
+#type: docs
+#
+#&amp;mdash;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 

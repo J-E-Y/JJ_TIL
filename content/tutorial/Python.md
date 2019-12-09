@@ -5,7 +5,7 @@ draft: true
 menu:
   tutorial:
     name: 5.Python
-    weight: 5
+    weight: 6
 toc: yes
 type: docs
 ---

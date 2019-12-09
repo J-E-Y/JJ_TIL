@@ -5,7 +5,7 @@ draft: true
 menu:
   tutorial:
     name: 2.Git
-    weight: 2
+    weight: 3
 toc: yes
 type: docs
 ---

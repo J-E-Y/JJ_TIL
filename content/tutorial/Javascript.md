@@ -5,7 +5,7 @@ draft: true
 menu:
   tutorial:
     name: 6.Javascript
-    weight: 6
+    weight: 7
 toc: yes
 type: docs
 toc: yes

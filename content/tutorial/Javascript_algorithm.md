@@ -1,15 +1,15 @@
----
-title: xCoding_level_2
-date: 2019-45
-draft: true
-menu:
-  tutorial:
-    parent: "3.Javascript"
-    weight: 0
-toc: true
-type: docs
-
----
+#---
+#title: xCoding_level_2
+#date: 2019-45
+#draft: true
+#menu:
+#  tutorial:
+#    parent: "3.Javascript"
+#    weight: 0
+#toc: true
+#type: docs
+#
+#---
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 
