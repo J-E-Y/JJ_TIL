@@ -1,5 +1,5 @@
 ---
-title: Daliy_Coding_Level_2
+title: __Algorithm_2
 author: JohnJung
 date: '2019-11-14'
 slug: javascript-daliy-coding-level-2
@@ -9,7 +9,7 @@ tags:
 menu:
   tutorial:
     parent: "6.Javascript"
-    weight: 3
+    weight: 2
 toc: yes
 type: docs
 summary: 'write here:rocket:' 
@@ -999,6 +999,42 @@ function shuffle(array) {
       shuffleArr[j] = k;
     } return shuffleArr;
   };
+
+
+
+// other
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+
+// Another one
+
+function shuffle(array) {
+    
+    let copy = array.slice();
+    copy.sort(function(a, b){
+      return Math.random() - 0.5;
+    })
+    return copy;
+  };
+
 
 
 

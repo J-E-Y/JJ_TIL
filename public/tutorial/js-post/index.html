@@ -129,7 +129,7 @@
   
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/js-post/">
-  <meta property="og:title" content="JS_Study_Notes | JohnJung">
+  <meta property="og:title" content="__My_Notes | JohnJung">
   <meta property="og:description" content="write here:rocket:"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
@@ -142,7 +142,7 @@
 
   
 
-  <title>JS_Study_Notes | JohnJung</title>
+  <title>__My_Notes | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -234,6 +234,22 @@
           <a class="nav-link" href="/displayDocs">
           
           <span>Technical Documents</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tutorial/">
+          
+          <span>Today I Learned</span>
           
           </a>
         </li>
@@ -349,20 +365,20 @@
     <a class="docs-toc-link" href="/tutorial/javascript/">6.Javascript</a>
     <ul class="nav docs-sidenav">
       
+      <li >
+        <a href="/tutorial/javascript-daliy-coding-level-1/">__Algorithm_1</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript-daliy-coding-level-2/">__Algorithm_2</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript-my-mdn/">__My_MDN</a>
+      </li>
+      
       <li class="active">
-        <a href="/tutorial/js-post/">JS_Study_Notes</a>
-      </li>
-      
-      <li >
-        <a href="/tutorial/javascript-my-mdn/">My_MDN</a>
-      </li>
-      
-      <li >
-        <a href="/tutorial/javascript-daliy-coding-level-1/">Daliy_Coding_Level_1</a>
-      </li>
-      
-      <li >
-        <a href="/tutorial/javascript-daliy-coding-level-2/">Daliy_Coding_Level_2</a>
+        <a href="/tutorial/js-post/">__My_Notes</a>
       </li>
       
     </ul>
@@ -420,7 +436,9 @@
 <ul>
 <li>
 <ul>
+<li><a href="#toc_0">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#1-javacript">1.Javacript</a></li>
+<li><a href="#toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#생성자-함수-prototype-객체-instance">생성자 함수 || prototype 객체 || instance</a>
 <ul>
 <li>
@@ -434,6 +452,7 @@
 <li>
 <ul>
 <li><a href="#call-apply">call() , apply()</a></li>
+<li><a href="#call-apply-어떻게-쓰냐">call(), apply 어떻게 쓰냐?</a></li>
 <li><a href="#applly-어디다-쓰느냐">applly() 어디다 쓰느냐?</a></li>
 <li><a href="#bind-언제-유용하냐">bind() 언제 유용하냐 ?</a></li>
 </ul></li>
@@ -520,6 +539,7 @@
 <li><a href="#ex-1">ex</a></li>
 </ul></li>
 </ul></li>
+<li><a href="#callback">Callback</a></li>
 <li><a href="#salesteam-안에-있는-data-fliter-와-foreach-로-다루기">salesTeam 안에 있는 data  fliter 와 foreach 로 다루기</a></li>
 <li><a href="#reduce">reduce()</a>
 <ul>
@@ -558,28 +578,64 @@
 <li><a href="#2-some">2.some()</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#toc_63">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_67">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#2-dom">2. Dom</a></li>
+<li><a href="#toc_69">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#dom-이란">Dom 이란 ?</a></li>
 <li><a href="#버튼-만들기">버튼 만들기</a></li>
 <li><a href="#e-target-이란">e.target 이란 ?</a></li>
 <li><a href="#how-to-check-if-element-has-any-children">How to check if element has any children ?</a></li>
 <li><a href="#checkbox-안에-있는-value-값-얻기">checkbox 안에 있는 value 값 얻기</a></li>
-<li><a href="#toc_70">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#버튼-엔터키-작동-및-입력창-커서유지시키기">버튼 엔터키 작동 및 입력창 커서유지시키기</a></li>
+<li><a href="#addeventlistener-사용하기">addEventListener 사용하기</a></li>
+<li><a href="#e-target-와-e-target-parentnode-or-currenttarget의-차이점">e.target 와 e.target.parentNode or currentTarget의 차이점</a>
+<ul>
+<li><a href="#event-target-과-currenttarget-의-차이점">event.target 과 currentTarget 의 차이점</a></li>
+</ul></li>
+<li><a href="#버튼-엔터키-작동-및-입력창-커서유지시키기-1">버튼 엔터키 작동 및 입력창 커서유지시키기</a></li>
+<li><a href="#onclick-동작하는-원리">onclick 동작하는 원리</a></li>
+<li><a href="#textcontent-와-value-의-차이점">textContent 와 value 의 차이점</a></li>
+<li><a href="#버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</a></li>
+<li><a href="#script-위치">script 위치</a></li>
+<li><a href="#insertbefore">insertBefore()</a></li>
+<li><a href="#toc_85">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#3-my-post">3. My_post</a></li>
+<li><a href="#toc_87">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</a>
+<ul>
+<li>
+<ul>
+<li><a href="#how-to-count-the-number-of-properties-of-the-javascript-object">How to Count the Number of Properties of the JavaScript Object</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법">prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법</a></li>
+<li><a href="#객체안에-담겨있는-function-사용하기">객체안에 담겨있는 function 사용하기</a></li>
+<li><a href="#함수가-객체의-키값으로-사용">함수가 객체의 키값으로 사용</a></li>
+<li><a href="#parameter-지정하는-법">parameter 지정하는 법</a></li>
+<li><a href="#making-guid">Making_GUID</a></li>
+<li><a href="#할당-연산자">할당 연산자</a></li>
+<li><a href="#랜덤-숫자-원하는-수대로-뽑기">랜덤 숫자 원하는 수대로 뽑기</a></li>
+<li><a href="#랜덤글자-가져오기">랜덤글자 가져오기</a></li>
+<li><a href="#get-current-data-time-in-js">Get Current Data &amp; Time in JS</a></li>
+<li><a href="#block-스코프와-function-스코프의-차이">block 스코프와 function 스코프의 차이</a></li>
+<li><a href="#var-or-let-변수를-사용한-함수중-어던것이-에러">var or let 변수를 사용한 함수중 어던것이 에러??</a></li>
+<li><a href="#var-and-let-and-const">var and let and const</a></li>
+<li><a href="#strict-mode">Strict Mode</a></li>
 <li><a href="#다중배열-하나로-합치기">다중배열 하나로 합치기</a></li>
 <li><a href="#두개의-배열을-비교-및-출력">두개의 배열을 비교 및 출력</a></li>
 <li><a href="#underbar">underBar</a></li>
 <li><a href="#array-중복-제거하는-방법">Array 중복 제거하는 방법</a></li>
 <li><a href="#string-안에-알파벳-뽑기">string 안에 알파벳 뽑기</a></li>
 <li><a href="#string-안에-숫자뽑기">string 안에  숫자뽑기</a></li>
+<li><a href="#d-or-d-차이점">\d or \d+  차이점</a></li>
 <li><a href="#extract-numbers-from-a-string-javascript">Extract numbers from a string-Javascript</a></li>
 <li><a href="#피보나치-수열-이란">피보나치 수열 이란?</a></li>
 <li><a href="#foreach-for-of-for-in-의-차이">forEach, for of, for in 의 차이</a></li>
 <li><a href="#falsy-와-fruthy-구별">Falsy 와 Fruthy 구별</a></li>
 <li><a href="#null-과-undefined-는-등록-저장-여부이다">null 과 undefined 는 등록, 저장 여부이다.</a></li>
-<li><a href="#toc_83">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
-<li><a href="#4-post-from-others">4. post from others</a></li>
+<li><a href="#toc_115">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#4-post-from-others">4.post from others</a></li>
+<li><a href="#toc_117">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#객체인-arguments-를-array-로-바꾸는-방법">객체인 arguments 를 array 로 바꾸는 방법</a></li>
 <li><a href="#rest파라미터와-spread연산자-or-함수의-가독성을-높이는-방법">Rest파라미터와 Spread연산자 or 함수의 가독성을 높이는 방법</a>
 <ul>
@@ -606,12 +662,16 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">JS_Study_Notes</h1>
+          <h1 itemprop="name">__My_Notes</h1>
 
           <div class="article-style" itemprop="articleBody">
             
 
+<h2 id="toc_0">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+
 <h2 id="1-javacript">1.Javacript</h2>
+
+<h2 id="toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="생성자-함수-prototype-객체-instance">생성자 함수 || prototype 객체 || instance</h2>
 
@@ -704,12 +764,18 @@ clearInterval(timer); // 실행되는 순간 내가 만든 함수는 멈춘다.
 
 <h2 id="함수-메소드-call-apply-bind">함수 메소드 call(),apply,bind()</h2>
 
+<blockquote>
+<p>함수를 불러올때 유요한 메소드들</p>
+
+<p>불로오는 방식이 들림</p>
+</blockquote>
+
 <ul>
 <li><p>add.call(obj,2,3);</p></li>
 
 <li><p>add.apply(obj,[2,3]);  (배열로 인자값을 넣는다.)</p></li>
 
-<li><p>let boundFn = add.<code>bind</code>(obj,2,3) &lt;=</p></li>
+<li><p>let boundFn = add.<code>bind</code>(obj,2,3)</p></li>
 </ul>
 
 <blockquote>
@@ -732,30 +798,30 @@ var obj = {
 val : 0
 }; 
 
+//  리턴값이 출력되는 것이 아니라 this값이 obj 가 됨으로 obj.val =  2 +3 // 이것을 해주기 위해  add.call(obj,2,3); or add.apply(obj,[2,3]);
 var add = function  ( x , y ) {
-	this.val = x + y ;   //  리턴값이 출력되는 것이 아니라 this값이 obj 가 됨으로 obj.val =  2 +3 // 이것을 해주기 위해  add.call(obj,2,3); or add.apply(obj,[2,3]);
-
-//
+	this.val = x + y ;   
 
 
 add.call(obj,2,3);  // 5 동일다. 
 
 add.apply(obj,[2,3]); // 5  동일하다. 
-	
-```	
 
 
-#### call(), apply 어떻게 쓰냐?
+</code></pre>
 
-* call, apply로 prototype 기능 빌려쓰기
+<h4 id="call-apply-어떻게-쓰냐">call(), apply 어떻게 쓰냐?</h4>
 
+<ul>
+<li>call, apply로 prototype 기능 빌려쓰기</li>
+</ul>
 
-```js
-
+<pre><code class="language-js">
 let arr = [&quot;code&quot;,&quot;states&quot;]; 
 
 //5보다 많은 length 가져오고 싶을때 filter 를 쓰게 된다. 
 //그런데 call() 과 applay 를 이용해서 가져올수 있다. 
+
 Array.prototype // 이럴때 필요 이라는 것이 필요하다. 
 
 function moreThanFive(str) {
@@ -771,7 +837,6 @@ arr.fillter(moreTahnFive)
 
 Array.prototype.filter.call(arr,moreThanFive)
 Array.prototype.filter.apply(arr,[moreThanFive])
-
 
 
 </code></pre>
@@ -795,7 +860,7 @@ function getElementId(element) {
 }
 list.map(getElementId) // 오류가발생한다. 왜냐하면 list 는 array 가 아니가 때문이다. 
 
-//이것을 되게 하는 방법
+// 이것을 되게 하는 방법
 
 Array.prototype.map.call(this,getElementId) // this 값인 list 를 넣어주고 함수를 두번째 에 넣어주면  값이 실행된다. 
 
@@ -1049,7 +1114,7 @@ bar.call({a:1}) // 1
 <pre><code class="language-js">
 
 
-
+// ES%
 function Car(band,name,color) {
     // 인스턴스가 만들어 질때  실행될 코드들... 
 }
@@ -1101,6 +1166,21 @@ avante.what_drive  // 새로 생성한 what_drive 출력
 
 let arr = [1,2,3,4,5]     // 배열 만들기 
 let arr = new Array(1,2,3,4,5) // 배열 만들기  // Array클라스 안에 (인자값들) 
+
+
+
+
+
+
+// ES6  에서는 클라스라는 키워드를 이용해서 정의 할수 있다. 
+
+
+class car {
+	constructor(brand,name,color) {
+	
+	// 인스턴스가 만들어질 때 실행되는 코드
+		}
+}
 
 
 
@@ -1725,8 +1805,8 @@ function showName() {
   console.log(name); // 2. jj
 }
 
-console.log(name); // 1.jj &lt;&lt; 전역변수 가져옴
-showname()         // 2.
+console.log(name); // 1.john &lt;&lt; 전역변수 가져옴
+showname()         // 2.jj 
 console.log(name)  // 3. john &lt;&lt; 여전히 전역 변수 john
 
 
@@ -1929,6 +2009,57 @@ Math.pow(2, 5)      // : 32
 // 3과 -3의 절대값은 3이 된다.
 alert(Math.abs(-3)); // number, 3
 
+
+</code></pre>
+
+<h2 id="callback">Callback</h2>
+
+<pre><code class="language-js">
+
+
+// 장점 
+
+
+/*
+원래의 내장메소드에 있는 기능을 콜백 으로 바꿔서 사용할수 있다.
+
+값으로 사용될 수 있는 특성을 이용하면 함수의 인자로 함수로 전달할 수 있다. 값으로 전달된 함수는 호출될 수 있기 때문에 이를 이용하면 함수의 동작을 완전히 바꿀 수 있다. 인자로 전달된 함수 sortNumber의 구현에 따라서 sort의 동작방법이 완전히 바뀌게 된다.
+
+ajax를 사용할때 제이 쿼리를 이용해서 콜백이 사용된다. 
+
+
+*/
+
+function sortNumber(a,b){
+    // 위의 예제와 비교해서 a와 b의 순서를 바꾸면 정렬순서가 반대가 된다.
+    return b-a;
+}
+var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+alert(numbers.sort(sortNumber)); // array, [20,10,9,8,7,6,5,4,3,2,1]
+</code></pre>
+
+<p><img src="/tutorial/Javascript_Notes_files/Screen Shot 2019-07-17 at 4.46.43 PM.png" alt="" /></p>
+
+<pre><code class="language-js">
+// 콜백 함수를 사용해서 함수 사용해기 
+
+// first = element
+// second = index
+// third = array
+
+function foo(first,second,third) {
+	if ( first &gt; second ) {
+		console.log(first);
+	} else {
+		console.log(second);  
+	}
+}
+
+function forEach(arr,test) {
+	for (let i = 0; i &lt; arr.length; i = i + 1 ) {
+		foo(arr[i],i,arr); // 함수
+    	}
+	}
 
 </code></pre>
 
@@ -2686,9 +2817,11 @@ return a - b;
 <p>every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다</p>
 </blockquote>
 
-<h2 id="toc_63">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_67">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="2-dom">2. Dom</h2>
+
+<h2 id="toc_69">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="dom-이란">Dom 이란 ?</h2>
 
@@ -2902,9 +3035,748 @@ function hasChildElement(elm) {
 
 </code></pre>
 
-<h2 id="toc_70">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="버튼-엔터키-작동-및-입력창-커서유지시키기">버튼 엔터키 작동 및 입력창 커서유지시키기</h2>
+
+<pre><code class="language-html">
+
+&lt;h1&gt;this is coffee machine&lt;h1&gt;
+&lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt;
+&lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt;
+&lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt;
+&lt;ol id = &quot;list&quot;&gt;
+  &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt;
+  &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt;
+  &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt;
+&lt;ol&gt;
+
+</code></pre>
+
+<pre><code class="language-js"> 
+// 버튼을 누르면 list 가 추가되는데 사용자를 위하여 엔터로 control 할수 있게 하고 커서가 계속 입력창에 깜빡이게 하는 방법이다. 
+
+let coffeeList = document.querySelector(&quot;#list&quot;);
+let coffeeInput = document.querySelector(&quot;#input&quot;);
+let add = document.querySelector(&quot;#btn&quot;);
+// form tag를 만들어 input 과 btn tags 를 넣는다.  
+  let form = document.createElement(&quot;form&quot;);
+  document.body.appendChild(form);
+  form.appendChild(coffeeInput);
+  form.appendChild(add);
+
+// form tag에 이벤트를 발생시킨다. 
+// form 과 &quot;submit&quot; 의 기본동작은 엔터를 첬을때 새로고침 or 다른페이지로 넘어가게 되어있다. 
+// 그것을 막기 위해서 function(event) 설정하고  event.preventDefalut() 넣어주면 된다. 
+
+form.addEventListener('submit',function(event){
+    event.preventDefault();
+  let newList = document.createElement(&quot;li&quot;);  
+  newList.setAttribute(&quot;class&quot;,&quot;new-list&quot;);
+  coffeeList.appendChild(newList);
+  newList.textContent = coffeeInput.value;
+  coffeeInput.focus(); // input tag 에 함수를 넣는다. 입력후 계속 입력할수 있게 해준다. 
+  
+})
+
+
+
+
+</code></pre>
+
+<h2 id="addeventlistener-사용하기">addEventListener 사용하기</h2>
+
+<pre><code class="language-html">&lt;h1&gt;this is coffee machine&lt;h1&gt;
+&lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt;
+&lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt;
+&lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt;
+&lt;ol id = &quot;list&quot;&gt;
+  &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt;
+  &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt;
+  &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt;
+&lt;ol&gt;
+
+
+</code></pre>
+
+<pre><code class="language-js">
+// 1. addEventListener
+// 버튼을 누르면 menu 버튼이 한글로 바뀜
+
+let xxx = document.querySelector(&quot;#btn&quot;);
+let menu = document.querySelector(&quot;#menu&quot;);
+
+xxx.addEventListener('click', function(){
+  menu.innerHTML = &quot;메뉴&quot;;
+})
+
+// 2 addEventListener 
+// 버튼 누르면 리스트가 추가된다. 
+
+let coffeeList = document.querySelector(&quot;#list&quot;);
+let coffeeInput = document.querySelector(&quot;#input&quot;);
+let add = document.querySelector(&quot;#btn&quot;);
+
+add.addEventListener('click',function(){
+  let newList = document.createElement(&quot;li&quot;)
+  newList.setAttribute(&quot;class&quot;,&quot;new-list&quot;);
+  coffeeList.appendChild(newList);
+  newList.textContent = coffeeInput.value;
+})
+
+
+
+</code></pre>
+
+<h2 id="e-target-와-e-target-parentnode-or-currenttarget의-차이점">e.target 와 e.target.parentNode or currentTarget의 차이점</h2>
+
+<pre><code class="language-js">
+* e.target === 클릭된애
+* e.target.parentNode === 클릭된애 부모태그 
+* e.target.parentNode.parentNode === 클릭된애 부모의 부모태그
+
+</code></pre>
+
+<h3 id="event-target-과-currenttarget-의-차이점">event.target 과 currentTarget 의 차이점</h3>
+
+<pre><code class="language-js">
+* event.target 은 마우스 클릭할때 발생되는 이벤트가 일어나는 곳을 말하고
+* event.currentTarget 은 addEventListener 를발생시키는 대상 
+
+</code></pre>
+
+<h2 id="버튼-엔터키-작동-및-입력창-커서유지시키기-1">버튼 엔터키 작동 및 입력창 커서유지시키기</h2>
+
+<pre><code class="language-html">
+
+&lt;h1&gt;this is coffee machine&lt;h1&gt;
+&lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt;
+&lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt;
+&lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt;
+&lt;ol id = &quot;list&quot;&gt;
+  &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt;
+  &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt;
+  &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt;
+&lt;ol&gt;
+
+</code></pre>
+
+<pre><code class="language-js"> 
+// 버튼을 누르면 list 가 추가되는데 사용자를 위하여 엔터로 control 할수 있게 하고 커서가 계속 입력창에 깜빡이게 하는 방법이다. 
+
+let coffeeList = document.querySelector(&quot;#list&quot;);
+let coffeeInput = document.querySelector(&quot;#input&quot;);
+let add = document.querySelector(&quot;#btn&quot;);
+// form tag를 만들어 input 과 btn tags 를 넣는다.  
+  let form = document.createElement(&quot;form&quot;);
+  document.body.appendChild(form);
+  form.appendChild(coffeeInput);
+  form.appendChild(add);
+
+// form tag에 이벤트를 발생시킨다. 
+// form 과 &quot;submit&quot; 의 기본동작은 엔터를 첬을때 새로고침 or 다른페이지로 넘어가게 되어있다. 
+// 그것을 막기 위해서 function(event) 설정하고  event.preventDefalut() 넣어주면 된다. 
+
+form.addEventListener('submit',function(event){
+    event.preventDefault();
+  let newList = document.createElement(&quot;li&quot;);  
+  newList.setAttribute(&quot;class&quot;,&quot;new-list&quot;);
+  coffeeList.appendChild(newList);
+  newList.textContent = coffeeInput.value;
+  coffeeInput.focus(); // input tag 에 함수를 넣는다. 입력후 계속 입력할수 있게 해준다. 
+  
+})
+
+
+
+
+</code></pre>
+
+<h2 id="onclick-동작하는-원리">onclick 동작하는 원리</h2>
+
+<pre><code class="language-html">
+
+&lt;h1&gt;this is coffee machine&lt;h1&gt;
+&lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt;
+&lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt;
+&lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt;
+&lt;ol id = &quot;list&quot;&gt;
+  &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt;
+  &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt;
+  &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt;
+&lt;ol&gt;
+</code></pre>
+
+<pre><code class="language-js">
+// 1. onlick 동작하는원리 
+// menu 버튼을 누르면 menu 가 red 로 변함  
+
+let xxx = document.querySelector(&quot;#btn&quot;);
+
+xxx.onclick = function() {
+  document.querySelector(&quot;#menu&quot;).style.background=&quot;red&quot;;
+}
+
+
+</code></pre>
+
+<h2 id="textcontent-와-value-의-차이점">textContent 와 value 의 차이점</h2>
+
+<pre><code class="language-js">
+tag 안에 들어가는 글자내용은  textcontent 이고
+input 안에 들어가있는 글자내용은 value 이다 
+
+
+</code></pre>
+
+<h2 id="버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</h2>
+
+<ul>
+<li>HTML</li>
+</ul>
+
+<pre><code class="language-html">
+
+  &lt;button id=&quot;clickbtn&quot;&gt;new_tweet&lt;/button&gt;
+    
+    &lt;div id=&quot;comments&quot;&gt;&lt;/div&gt;
+ 
+
+</code></pre>
+
+<ul>
+<li>JS</li>
+</ul>
+
+<pre><code class="language-js">
+
+var DATA = [
+  { user: 'ingikim', message: 'Welcome to Code States #codestates', created_at: '2019-01-03 12:30:20' },
+  { user: 'satya', message: 'this is test message #pair #programming', created_at: '2019-01-04 18:30:20' },
+  { user: 'sundar', message: 'code now! #work #hard', created_at: '2019-01-05 07:30:20' },
+  { user: 'steve', message: 'Stay hungry, and stay foolish', created_at: '2015-01-03 12:30:20' },
+  { user: 'tim', message: 'education for real world', created_at: '2019-01-04 18:30:20' }
+];
+
+var randomUser = ['ingikim', 'satya', 'sundar', 'steve', 'tim', 'jeff'];
+var randomMessage = [
+  '이 헌법공포 당시의 국회의원의 임기는 제1항에 의한 국회의 최초의 집회일 전일까지로 한다. 감사원은 원장을 포함한 5인 이상 11인 이하의 감사위원으로 구성한다.',
+  '헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다.',
+  '헌법개정은 국회재적의원 과반수 또는 대통령의 발의로 제안된다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.',
+  '모든 국민은 직업선택의 자유를 가진다. 군인은 현역을 면한 후가 아니면 국무총리로 임명될 수 없다. 행정권은 대통령을 수반으로 하는 정부에 속한다.',
+  '민주평화통일자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국가는 농·어민과 중소기업의 자조조직을 육성하여야 하며, 그 자율적 활동과 발전을 보장한다.',
+  '국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며, 이에 필요한 서류의 제출 또는 증인의 출석과 증언이나 의견의 진술을 요구할 수 있다.',
+  '인간이 얼음에 고행을 따뜻한 가장 이것이다. 꽃이 곧 동력은 끝에 동산에는 그것은 거선의 별과 인생의 것이다. 구하지 착목한는 스며들어 인생의 것이다.',
+  '새 가슴에 있는 만천하의 있다. 몸이 뜨거운지라, 청춘의 소리다.이것은 같으며, 피다. 설산에서 힘차게 옷을 피다. 놀이 그들의 인간의 주는 소금이라',
+  '귀는 우리는 피에 무엇이 이것이다. 구하지 우리는 그들은 약동하다. 따뜻한 발휘하기 사람은 충분히 사막이다.'
+]
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function generateNewTweet() {
+  var tweet = {};
+  tweet.user = randomUser[getRandomInt(0, randomUser.length)];
+  tweet.message = randomMessage[getRandomInt(0, randomMessage.length)];
+  tweet.created_at = new Date().format(); // 어떻게 하면 보기 좋은 형태로 나타낼 수 있을까요?
+  return tweet;
+}
+
+Number.prototype.padLeft = function() {
+  if(this &lt; 10) {
+    return '0' + String(this);
+  }
+  else {
+    return String(this);
+  }
+}
+
+Date.prototype.format = function() {
+  var yyyy = this.getFullYear();
+  var month = (this.getMonth() + 1).padLeft();
+  var dd = this.getDate().padLeft();
+  var HH = this.getHours().padLeft();
+  var mm = this.getMinutes().padLeft();
+  var ss = this.getSeconds().padLeft();
+
+  var format = [yyyy, month, dd].join('-') + ' ' + [HH, mm, ss].join(':');
+  return format;
+}
+
+
+
+
+
+//2.check_new_tweet! 
+function myFunction() {
+    let  array = [];
+    let obj = generateNewTweet();
+
+    array.push(&quot;&lt;div class='comment'&gt;&quot;
+         + &quot;&lt;div class='username'&gt;&quot;  + obj.user + &quot;&lt;/div&gt;&quot; 
+         + &quot;&lt;div&gt;&quot; + obj.message + &quot;&lt;/div&gt;&quot;
+         + &quot;&lt;div&gt;&quot; + obj.created_at + &quot;&lt;/div&gt;&quot;
+         + &quot;&lt;/div&gt;&quot;);
+
+    
+  comments.innerHTML = array + comments.innerHTML;
+
+}
+
+
+
+
+let Button = document.querySelector('#clickbtn');
+
+function randomTweet() {
+    clickbtn.onclick = function() {
+        myFunction();
+    }
+}
+
+randomTweet();
+
+
+
+
+
+</code></pre>
+
+<h2 id="script-위치">script 위치</h2>
+
+<pre><code class="language-js">
+
+//Html 파일에서 script 를 head 안에 넣으면 script 안에 써있는 코드들이 실행이 안된다 !
+
+//하지만 script 안에 있는 코드들을 실행 시키려면 
+
+
+window.onload = function () { } // 실행하고싶은 코드넣으면 실행할수 있다. 
+
+
+
+</code></pre>
+
+<h2 id="insertbefore">insertBefore()</h2>
+
+<pre><code class="language-js">
+// html
+
+&lt;h1&gt;test&lt;/h1&gt; 
+  
+&lt;ul id=&quot;subjects&quot;&gt; 
+        &lt;li&gt;C&lt;/li&gt; 
+        &lt;li&gt;Python&lt;/li&gt; 
+&lt;/ul&gt; 
+  
+  
+// js
+
+  &lt;script&gt;
+  
+  function myGeeks() { 
+            var newItem = document.createElement(&quot;li&quot;); 
+            var textnode = document.createTextNode(&quot;Java&quot;); 
+            newItem.appendChild(textnode); 
+  
+            var list = document.getElementById(&quot;subjects&quot;); 
+            list.insertBefore(newItem, list.childNodes.lastChild); // 마지막으로 삽입하고 싶으면 lastChild
+            
+            list.insertBefore(newItem, list.childNodes[0]); //  첫번째로 삽입하고 싶으면 [0] 
+            } 
+
+ myGeeks();
+  
+  &lt;/script&gt;
+
+// html
+
+// Java     // 삽입 되었다. 
+// C
+// Python
+
+
+
+
+
+</code></pre>
+
+<h2 id="toc_85">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="3-my-post">3. My_post</h2>
+
+<h2 id="toc_87">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+
+<h2 id="객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</h2>
+
+<h4 id="how-to-count-the-number-of-properties-of-the-javascript-object">How to Count the Number of Properties of the JavaScript Object</h4>
+
+<pre><code class="language-js">
+
+// While working with JavaScript, I come across a requirement to count a number of properties in a JavaScript object. I found two ways to find the number of properties in an object. They are as follows:
+
+
+
+
+Consider an object, &quot;cat,&quot; as demonstrated below:
+
+var cat = {
+    name: 'foo',
+    age: 9
+}
+
+
+// You can find a number of properties by iterating in a for loop and update counter, as shown in the below listing:
+
+let count = 0;
+for (var c in cat) {
+    count = count + 1;
+}
+console.log(count);// 2
+
+</code></pre>
+
+<blockquote>
+<p>Above code will print &ldquo;2&rdquo; as the output.</p>
+
+<p>The above approach not only prints the object&rsquo;s own enumerable properties, but it also prints properties of objects to which it is linked. To further understand it, let us consider the below listing:</p>
+</blockquote>
+
+<pre><code>var animal = {
+    canRun: true
+}
+var cat = {
+    name: 'foo',
+    age: 9
+}
+cat.__proto__ = animal;
+
+</code></pre>
+
+<blockquote>
+<p>There are two objects, cat andanimal, and the cat object is linked to an animal object using the <strong>proto</strong> property. Now, when you use a for loop to iterate and count a number of properties, it will also count the enumerable properties of the animal object. Therefore, the code listing below will print &ldquo;3.&rdquo;</p>
+</blockquote>
+
+<pre><code>var animal = {
+    canRun: true
+}
+var cat = {
+    name: 'foo',
+    age: 9
+}
+cat.__proto__ = animal;
+let count = 0;
+for (var c in cat) {
+    count = count + 1;
+}
+console.log(count);// 3
+
+</code></pre>
+
+<blockquote>
+<p>A JavaScript for loop will iterate through all the linked properties of the object.</p>
+
+<p>To count the object&rsquo;s own enumerable properties, you may consider using another approach, Object.keys(), which only enumerates the object&rsquo;s own enumerable properties. It does not enumerate the object&rsquo;s linked properties.</p>
+
+<p>Moving forward, let us again consider the cat object which is linked to animal object and count the number of properties using Object.keys:</p>
+</blockquote>
+
+<pre><code>
+var animal = {
+    canRun: true
+}
+var cat = {
+    name: 'foo',
+    age: 9
+}
+cat.__proto__ = animal;
+var count = Object.keys(cat).length;
+console.log(count);
+
+</code></pre>
+
+<blockquote>
+<p>Now you will get &ldquo;2&rdquo; printed as the output.</p>
+
+<p>Object.keys only enumerates the object&rsquo;s own enumerable properties.</p>
+
+<p>If the object&rsquo;s property enumerable is set to false, then it is not a member of the Object.keys array. Let us again consider the cat object and set its name property enumerable to false.</p>
+</blockquote>
+
+<pre><code>var cat = {
+    name: 'foo',
+    age: 9
+}
+Object.defineProperty(cat, 'name', { enumerable: false });
+
+</code></pre>
+
+<blockquote>
+<p>Now, when you use Object.keys to find a number of properties, it will count only one.</p>
+</blockquote>
+
+<pre><code>var count = Object.keys(cat).length;
+console.log(count);  // print 1
+</code></pre>
+
+<blockquote>
+<p>In closing, these are the two ways that you can use to find the number of properties in a JavaScript object</p>
+</blockquote>
+
+<h2 id="prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법">prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법</h2>
+
+<pre><code class="language-js">
+// prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다
+
+function objFunc(para) { // 객체를 담고있는 함수를 먼저 만든다.
+      this.age = para; // key 는 name / property는 para  &lt; 아직 모른다.
+    }
+
+    let newObj = new objFunc(33); // para 값이 33이 됨 따라서 info1 = { age:33 }
+    newObj.name = &quot;John&quot;; //  // 함수안에 infor1 객체안에 키값이랑 property 를 추가한다.
+
+newObj //&gt;&gt; objFunc = { age: 33 , name: &quot;John&quot; } name = &quot;john&quot; 이 추가됬다. 
+
+// prototype 을 사용해서 추가하기
+
+objFunc.prototype.text = function() { // 처음함수에 prototype을 넣는다.  그다음에 text라는 키값을 지정한다. 이키값은 함수이기도 하다. 그래서 키이면서도 함수인 text()가 실행되면 return값이 출력된다.  
+	return &quot;this is the stroy what I want to say to &quot; + newObj.name; 
+}
+
+newObj.text(); // &quot;this is the stroy what I want to say to john&quot;
+
+
+</code></pre>
+
+<h2 id="객체안에-담겨있는-function-사용하기">객체안에 담겨있는 function 사용하기</h2>
+
+<pre><code class="language-js">
+  // 객체를 만들고 속성값에 text 내용을 출력할 함수를 만든다. 
+  
+ // 이름을 몇번 집어넣을지 num 라는 것을 Array(num+1)를 통해 만들고 join 메소드를 이용해 &quot; &quot; 띄어쓰기를 한후 text 를 출력한다.
+
+obj1 = {
+      name1 : &quot;john&quot;,
+      name2: &quot;tim&quot;,
+      funcSum: function (num) {
+        return &quot;They are &quot; + this.name1 + &quot; and the&quot; +
+        Array(num + 1).join(&quot; &quot; + this.name2);     
+      }
+    };
+
+let massage = obj1.funcSum(2) //  객체안에 있는 속성인 funcSum(2) 호출한다.
+
+console.log(massage) // &gt;&gt; &quot;They are john and the tim tim&quot;
+
+</code></pre>
+
+<h2 id="함수가-객체의-키값으로-사용">함수가 객체의 키값으로 사용</h2>
+
+<pre><code class="language-js">
+// 객체와 함수를 이용한다.
+// 장점 객체안에 키값을 자유롭게 사용할수 있다.
+
+let funcGood = function (elem) {
+      return elem + &quot; is good man!&quot;;
+    };
+    let obj1 = { name: funcGood };
+    
+
+obj1.name(&quot;John&quot;) // &gt;&gt; john is good man!
+
+// 만약 obj.name 이 다른 기능을 가지고있는 함수를 대입하면..
+
+let funcBad = function (elem) {
+      return elem + &quot; is good bad!&quot;;
+    };
+
+obj.name = funcBad 
+
+// 기존에 있던 obj.name 기능은 사라지고 obj.name 의 기능은
+
+obj.name(&quot;john&quot;) // john is good bad!
+
+
+</code></pre>
+
+<h2 id="parameter-지정하는-법">parameter 지정하는 법</h2>
+
+<p><code>ES6</code></p>
+
+<pre><code class="language-js">
+function timeToGoHome(distance, speed = 20 ) { 
+
+	return distance + speed;
+}
+
+timeToGoHome(10);
+
+// 30
+
+timeToGoHome(10,10); // 두번째 값인 지정했던 speed 값이 변한다. 
+
+// 20
+
+
+
+ // 만약 첫번째 값을 지정하고 출력하고 싶다면
+
+function timeToGoHome(distance = 20, speed) { 
+
+timeToGoHome(undefined,20) ;
+// 40
+ 
+
+</code></pre>
+
+<h2 id="making-guid">Making_GUID</h2>
+
+<pre><code class="language-js">
+JavaScript
+Its easy to make GUIDs in JavaScript. Below is code to get strings that look like GUIDs. This code just random GUIDs they are not claimed to be unique. Don't use these if its very important.
+
+function S4() {
+    return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+}
+ 
+// then to call it, plus stitch in '4' in the third group
+guid = (S4() + S4() + &quot;-&quot; + S4() + &quot;-4&quot; + S4().substr(0,3) + &quot;-&quot; + S4() + &quot;-&quot; + S4() + S4() + S4()).toLowerCase();
+
+
+</code></pre>
+
+<h2 id="할당-연산자">할당 연산자</h2>
+
+<pre><code class="language-js">// 3 가지가 똑같은 것이다.  할당연산자
+
+count = count + 1 
+coutt+= 
+count++
+
+</code></pre>
+
+<h2 id="랜덤-숫자-원하는-수대로-뽑기">랜덤 숫자 원하는 수대로 뽑기</h2>
+
+<pre><code class="language-js">
+// for 문을 이용한 랜덤 숫자 원하는수대로 뽑기 
+for ( let i = 0 ; i &lt;= 30; i = i + 1 ) { 
+  String(Math.random().toFixed(i).split('').slice(2).join('')) // slice(2) 를 이용해 0과 . 을 제거한 나머지 숫자들을 출력한다.  
+}
+
+
+</code></pre>
+
+<h2 id="랜덤글자-가져오기">랜덤글자 가져오기</h2>
+
+<pre><code class="language-js">
+var randomUser = ['ingikim', 'satya', 'sundar', 'steve', 'tim', 'jeff'];
+var randomMessage = [
+  '이 헌법공포 당시의 국회의원의 임기는 제1항에 의한 국회의 최초의 집회일 전일까지로 한다. 감사원은 원장을 포함한 5인 이상 11인 이하의 감사위원으로 구성한다.',
+  '헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다.',
+  '헌법개정은 국회재적의원 과반수 또는 대통령의 발의로 제안된다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.',
+  '모든 국민은 직업선택의 자유를 가진다. 군인은 현역을 면한 후가 아니면 국무총리로 임명될 수 없다. 행정권은 대통령을 수반으로 하는 정부에 속한다.',
+  '민주평화통일자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국가는 농·어민과 중소기업의 자조조직을 육성하여야 하며, 그 자율적 활동과 발전을 보장한다.',
+  '국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며, 이에 필요한 서류의 제출 또는 증인의 출석과 증언이나 의견의 진술을 요구할 수 있다.',
+  '인간이 얼음에 고행을 따뜻한 가장 이것이다. 꽃이 곧 동력은 끝에 동산에는 그것은 거선의 별과 인생의 것이다. 구하지 착목한는 스며들어 인생의 것이다.',
+  '새 가슴에 있는 만천하의 있다. 몸이 뜨거운지라, 청춘의 소리다.이것은 같으며, 피다. 설산에서 힘차게 옷을 피다. 놀이 그들의 인간의 주는 소금이라',
+  '귀는 우리는 피에 무엇이 이것이다. 구하지 우리는 그들은 약동하다. 따뜻한 발휘하기 사람은 충분히 사막이다.'
+]
+
+
+// getRandomInt(min,max)  이용해 인자만큼 가져오는 방법
+
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+
+// 각각 user or message or time 을 객체안에 넣는다.
+// 여기서 들어가는 요소들은 랜덤하게 들어가게 된다. 
+
+function generateNewTweet() {
+  var tweet = {};
+  tweet.user = randomUser[getRandomInt(0, randomUser.length)]; 
+  tweet.message = randomMessage[getRandomInt(0, randomMessage.length)];
+  tweet.created_at = new Date().format(); 
+  return tweet;
+}
+
+
+</code></pre>
+
+<h2 id="get-current-data-time-in-js">Get Current Data &amp; Time in JS</h2>
+
+<pre><code class="language-js">
+
+var today = new Date(); // Data 가져온다. 
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate(); // 날짜
+var time = today.getHours() + &quot;:&quot; + today.getMinutes() + &quot;:&quot; + today.getSeconds(); // 시간 
+
+var dateTime = date+' '+time;  
+
+dateTime // 2019-9-5 13:2:48&quot;
+
+</code></pre>
+
+<h2 id="block-스코프와-function-스코프의-차이">block 스코프와 function 스코프의 차이</h2>
+
+<pre><code class="language-js">
+// block 스코프
+
+for (let i = 0;  i &lt; 5; i = i + 1) {
+	console.log(i); //  0,1,2,3,4  출력된다. 
+}
+
+console.log(i) //  ReferenceError 출력 이유 : i라는 변수는 block let = i 선언되었을때 i 의 변수는  block 안에 제한 되기 때문이다.
+
+
+// 
+for (var i = 0;  i &lt; 5; i = i + 1) {
+	console.log(i); //  0,1,2,3,4  출력된다. 
+}
+console.log(i) // 5   이유: var 변수를 지정했을때 block의 범위를 넘어선다. 
+
+</code></pre>
+
+<h2 id="var-or-let-변수를-사용한-함수중-어던것이-에러">var or let 변수를 사용한 함수중 어던것이 에러??</h2>
+
+<p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 4.41.59 PM.png" alt="" /></p>
+
+<pre><code class="language-js">
+function greetSomeone (firstName ) { 
+  let time = &quot;night&quot;;
+  
+  if (time === &quot;night&quot;) {         
+    let greeting = &quot;Good Night&quot;; ////////// let greeting block 안에 갇혀 있다. 이 block 를 벗어나는 순간 효력을 잃는 다. 
+  }
+  
+  
+  return greeting + ' ' + firstName;  ///  greeting 실행되지 않는다 
+}
+
+greetSomeone('steve');
+
+</code></pre>
+
+<h2 id="var-and-let-and-const">var and let and const</h2>
+
+<p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 5.37.46 PM.png" alt="" /></p>
+
+<h2 id="strict-mode">Strict Mode</h2>
+
+<pre><code class="language-js">
+
+// 변수를 안전하게 쓰기위한 “use strict”
+
+`use strict` //  처음 시작에 이렇게 달아둔다.
+
+function showAge() {
+  arr = [1234];     //  선언되지 않는 변수가 실행되지 않게 해준다. 
+console.log(arr);
+}
+
+
+</code></pre>
 
 <h2 id="다중배열-하나로-합치기">다중배열 하나로 합치기</h2>
 
@@ -3780,6 +4652,33 @@ str.match(/\d/g);
 
 </code></pre>
 
+<h2 id="d-or-d-차이점">\d or \d+  차이점</h2>
+
+<pre><code class="language-js">
+// 둘다 `imutable`  이다 
+
+// 정규식 표현으로 둘다 숫자를 뽑는 역활을 한다. 
+
+// \d 는 모든 숫자를 각각 배열로 나눠서 출력하낟.  
+
+let str = &quot;123f456f789 10&quot;;
+str.match(/\d+/g);
+
+// [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;1&quot;, &quot;0&quot;]
+
+
+
+
+// \d+ 숫자가 나란히 붙어있는 것으로 나뉜다. 
+let str = &quot;123f456f789 10&quot;;
+str.match(/\d/g);
+
+// [&quot;123&quot;, &quot;456&quot;, &quot;789&quot;, &quot;10&quot;]
+
+
+
+</code></pre>
+
 <h2 id="extract-numbers-from-a-string-javascript">Extract numbers from a string-Javascript</h2>
 
 <pre><code class="language-js">var string = &quot;border-radius:10px 20px 30px 40px&quot;;
@@ -3994,9 +4893,11 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 
 <p><code>undefined</code> 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</p>
 
-<h2 id="toc_83">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_115">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
-<h2 id="4-post-from-others">4. post from others</h2>
+<h2 id="4-post-from-others">4.post from others</h2>
+
+<h2 id="toc_117">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="객체인-arguments-를-array-로-바꾸는-방법">객체인 arguments 를 array 로 바꾸는 방법</h2>
 

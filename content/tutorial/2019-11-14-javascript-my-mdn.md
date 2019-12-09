@@ -1,5 +1,5 @@
 ---
-title: My_MDN
+title: __My_MDN
 author: JohnJung
 date: '2019-11-14'
 slug: javascript-my-mdn
@@ -9,7 +9,7 @@ tags:
 menu:
   tutorial:
     parent: "6.Javascript"
-    weight: 1
+    weight: 3
 toc: yes
 type: docs
 summary: 'write here:rocket:' 

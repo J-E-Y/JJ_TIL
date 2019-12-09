@@ -1,5 +1,5 @@
 ---
-title: Daliy_Coding_Level_1
+title: __Algorithm_1
 author: JohnJung
 date: '2019-11-14'
 slug: javascript-daliy-coding-level-1
@@ -9,7 +9,7 @@ tags:
 menu:
   tutorial:
     parent: "6.Javascript"
-    weight: 2
+    weight: 1
 toc: yes
 type: docs
 summary: 'write here:rocket:' 

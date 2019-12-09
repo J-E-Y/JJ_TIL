@@ -129,7 +129,7 @@
   
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/javascript-daliy-coding-level-2/">
-  <meta property="og:title" content="Daliy_Coding_Level_2 | JohnJung">
+  <meta property="og:title" content="__Algorithm_2 | JohnJung">
   <meta property="og:description" content="write here:rocket:"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
@@ -142,7 +142,7 @@
 
   
 
-  <title>Daliy_Coding_Level_2 | JohnJung</title>
+  <title>__Algorithm_2 | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -234,6 +234,22 @@
           <a class="nav-link" href="/displayDocs">
           
           <span>Technical Documents</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tutorial/">
+          
+          <span>Today I Learned</span>
           
           </a>
         </li>
@@ -350,19 +366,19 @@
     <ul class="nav docs-sidenav">
       
       <li >
-        <a href="/tutorial/js-post/">JS_Study_Notes</a>
-      </li>
-      
-      <li >
-        <a href="/tutorial/javascript-my-mdn/">My_MDN</a>
-      </li>
-      
-      <li >
-        <a href="/tutorial/javascript-daliy-coding-level-1/">Daliy_Coding_Level_1</a>
+        <a href="/tutorial/javascript-daliy-coding-level-1/">__Algorithm_1</a>
       </li>
       
       <li class="active">
-        <a href="/tutorial/javascript-daliy-coding-level-2/">Daliy_Coding_Level_2</a>
+        <a href="/tutorial/javascript-daliy-coding-level-2/">__Algorithm_2</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript-my-mdn/">__My_MDN</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/js-post/">__My_Notes</a>
       </li>
       
     </ul>
@@ -790,7 +806,7 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">Daliy_Coding_Level_2</h1>
+          <h1 itemprop="name">__Algorithm_2</h1>
 
           <div class="article-style" itemprop="articleBody">
             
@@ -1690,6 +1706,42 @@ function shuffle(array) {
       shuffleArr[j] = k;
     } return shuffleArr;
   };
+
+
+
+// other
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+
+// Another one
+
+function shuffle(array) {
+    
+    let copy = array.slice();
+    copy.sort(function(a, b){
+      return Math.random() - 0.5;
+    })
+    return copy;
+  };
+
 
 
 

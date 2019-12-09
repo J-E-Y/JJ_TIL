@@ -247,6 +247,22 @@
         
 
         <li class="nav-item">
+          <a class="nav-link" href="/tutorial/">
+          
+          <span>Today I Learned</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
           <a class="nav-link" href="/#posts">
           
           <span>Posts</span>
@@ -350,19 +366,19 @@
     <ul class="nav docs-sidenav">
       
       <li >
-        <a href="/tutorial/js-post/">JS_Study_Notes</a>
+        <a href="/tutorial/javascript-daliy-coding-level-1/">__Algorithm_1</a>
       </li>
       
       <li >
-        <a href="/tutorial/javascript-my-mdn/">My_MDN</a>
+        <a href="/tutorial/javascript-daliy-coding-level-2/">__Algorithm_2</a>
       </li>
       
       <li >
-        <a href="/tutorial/javascript-daliy-coding-level-1/">Daliy_Coding_Level_1</a>
+        <a href="/tutorial/javascript-my-mdn/">__My_MDN</a>
       </li>
       
       <li >
-        <a href="/tutorial/javascript-daliy-coding-level-2/">Daliy_Coding_Level_2</a>
+        <a href="/tutorial/js-post/">__My_Notes</a>
       </li>
       
     </ul>
@@ -440,32 +456,14 @@
 <ul>
 <li><a href="#event-target-과-currenttarget-의-차이점">event.target 과 currentTarget 의 차이점</a></li>
 </ul></li>
-<li><a href="#버튼-엔터키-작동-및-입력창-커서유지시키기">버튼 엔터키 작동 및 입력창 커서유지시키기</a></li>
-<li><a href="#addeventlistener-사용하기">addEventListener 사용하기</a></li>
-<li><a href="#onclick-동작하는-원리">onclick 동작하는 원리</a></li>
-<li><a href="#js-html-textcontent-와-value-의-차이점">JS/HTML textContent 와 value 의 차이점</a></li>
-<li><a href="#버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</a></li>
-<li><a href="#js-html-script-위치">JS/HTML script 위치</a></li>
-<li><a href="#js-html-insertbefore">JS/HTML insertBefore()</a></li>
-<li><a href="#js-html랜덤글자-가져오기">JS/HTML랜덤글자 가져오기</a></li>
-<li><a href="#get-current-data-time-in-js">Get Current Data &amp; Time in JS</a></li>
-<li><a href="#block-스코프와-function-스코프의-차이">block 스코프와 function 스코프의 차이</a></li>
-<li><a href="#var-or-let-변수를-사용한-함수중-어던것이-에러">var or let 변수를 사용한 함수중 어던것이 에러??</a></li>
-<li><a href="#var-and-let-and-const">var and let and const</a></li>
-<li><a href="#strict-mode">Strict Mode</a></li>
 <li><a href="#랜덤-숫자-원하는-수대로-뽑기">랜덤 숫자 원하는 수대로 뽑기</a></li>
 <li><a href="#d-or-d-차이점">\d or \d+  차이점</a></li>
 <li><a href="#extract-numbers-from-a-string-javascript">Extract numbers from a string-Javascript</a></li>
 <li><a href="#making-guid">Making_GUID</a></li>
 <li><a href="#할당-연산자">할당 연산자</a></li>
-<li><a href="#parameter-지정하는-법">parameter 지정하는 법</a></li>
 <li><a href="#getmaxnum-함수-만들기">getMaxNum 함수 만들기</a></li>
 <li><a href="#현재-시간-날짜-년도-불러오기">현재 시간,날짜  || 년도 불러오기</a></li>
 <li><a href="#in-에-관해서">in 에 관해서</a></li>
-<li><a href="#prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법">prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법</a></li>
-<li><a href="#객체안에-담겨있는-function-사용하기">객체안에 담겨있는 function 사용하기</a></li>
-<li><a href="#함수가-객체의-키값으로-사용">함수가 객체의 키값으로 사용</a></li>
-<li><a href="#key-배열-출력-object-keys-for-in-문">key 배열 출력 - Object.keys, for in 문</a></li>
 <li><a href="#dot-notation-and-braket-notation">dot notation and  braket notation ?</a></li>
 <li><a href="#first-class-object">first-class object()</a></li>
 <li><a href="#callback">Callback</a></li>
@@ -1032,420 +1030,6 @@ document.write(b + &quot;, &quot;);
 
 </code></pre>
 
-<h2 id="버튼-엔터키-작동-및-입력창-커서유지시키기">버튼 엔터키 작동 및 입력창 커서유지시키기</h2>
-
-<pre><code class="language-html">
-
-&lt;h1&gt;this is coffee machine&lt;h1&gt;
-&lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt;
-&lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt;
-&lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt;
-&lt;ol id = &quot;list&quot;&gt;
-  &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt;
-  &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt;
-  &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt;
-&lt;ol&gt;
-
-</code></pre>
-
-<pre><code class="language-js"> 
-// 버튼을 누르면 list 가 추가되는데 사용자를 위하여 엔터로 control 할수 있게 하고 커서가 계속 입력창에 깜빡이게 하는 방법이다. 
-
-let coffeeList = document.querySelector(&quot;#list&quot;);
-let coffeeInput = document.querySelector(&quot;#input&quot;);
-let add = document.querySelector(&quot;#btn&quot;);
-// form tag를 만들어 input 과 btn tags 를 넣는다.  
-  let form = document.createElement(&quot;form&quot;);
-  document.body.appendChild(form);
-  form.appendChild(coffeeInput);
-  form.appendChild(add);
-
-// form tag에 이벤트를 발생시킨다. 
-// form 과 &quot;submit&quot; 의 기본동작은 엔터를 첬을때 새로고침 or 다른페이지로 넘어가게 되어있다. 
-// 그것을 막기 위해서 function(event) 설정하고  event.preventDefalut() 넣어주면 된다. 
-
-form.addEventListener('submit',function(event){
-    event.preventDefault();
-  let newList = document.createElement(&quot;li&quot;);  
-  newList.setAttribute(&quot;class&quot;,&quot;new-list&quot;);
-  coffeeList.appendChild(newList);
-  newList.textContent = coffeeInput.value;
-  coffeeInput.focus(); // input tag 에 함수를 넣는다. 입력후 계속 입력할수 있게 해준다. 
-  
-})
-
-
-
-
-</code></pre>
-
-<h2 id="addeventlistener-사용하기">addEventListener 사용하기</h2>
-
-<pre><code class="language-html">&lt;h1&gt;this is coffee machine&lt;h1&gt;
-&lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt;
-&lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt;
-&lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt;
-&lt;ol id = &quot;list&quot;&gt;
-  &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt;
-  &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt;
-  &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt;
-&lt;ol&gt;
-
-
-</code></pre>
-
-<pre><code class="language-js">
-// 1. addEventListener
-// 버튼을 누르면 menu 버튼이 한글로 바뀜
-
-let xxx = document.querySelector(&quot;#btn&quot;);
-let menu = document.querySelector(&quot;#menu&quot;);
-
-xxx.addEventListener('click', function(){
-  menu.innerHTML = &quot;메뉴&quot;;
-})
-
-// 2 addEventListener 
-// 버튼 누르면 리스트가 추가된다. 
-
-let coffeeList = document.querySelector(&quot;#list&quot;);
-let coffeeInput = document.querySelector(&quot;#input&quot;);
-let add = document.querySelector(&quot;#btn&quot;);
-
-add.addEventListener('click',function(){
-  let newList = document.createElement(&quot;li&quot;)
-  newList.setAttribute(&quot;class&quot;,&quot;new-list&quot;);
-  coffeeList.appendChild(newList);
-  newList.textContent = coffeeInput.value;
-})
-
-
-
-</code></pre>
-
-<h2 id="onclick-동작하는-원리">onclick 동작하는 원리</h2>
-
-<pre><code class="language-html">
-
-&lt;h1&gt;this is coffee machine&lt;h1&gt;
-&lt;div id = &quot;menu&quot;&gt;menu&lt;/div&gt;
-&lt;input id = &quot;input&quot; type=&quot;text&quot; placeholder = &quot;what drink?&quot;&gt;
-&lt;button id = &quot;btn&quot;&gt;order&lt;/button&gt;
-&lt;ol id = &quot;list&quot;&gt;
-  &lt;li class = &quot;americano&quot;&gt;americano&lt;/li&gt;
-  &lt;li class = &quot;latte&quot;&gt;latte&lt;/li&gt;
-  &lt;li class = &quot;flatWhite&quot;&gt;flatWhite&lt;/li&gt;
-&lt;ol&gt;
-</code></pre>
-
-<pre><code class="language-js">
-// 1. onlick 동작하는원리 
-// menu 버튼을 누르면 menu 가 red 로 변함  
-
-let xxx = document.querySelector(&quot;#btn&quot;);
-
-xxx.onclick = function() {
-  document.querySelector(&quot;#menu&quot;).style.background=&quot;red&quot;;
-}
-
-
-</code></pre>
-
-<h2 id="js-html-textcontent-와-value-의-차이점">JS/HTML textContent 와 value 의 차이점</h2>
-
-<pre><code class="language-js">
-tag 안에 들어가는 글자내용은  textcontent 이고
-input 안에 들어가있는 글자내용은 value 이다 
-
-
-</code></pre>
-
-<h2 id="버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</h2>
-
-<ul>
-<li>HTML</li>
-</ul>
-
-<pre><code class="language-html">
-
-  &lt;button id=&quot;clickbtn&quot;&gt;new_tweet&lt;/button&gt;
-    
-    &lt;div id=&quot;comments&quot;&gt;&lt;/div&gt;
- 
-
-</code></pre>
-
-<ul>
-<li>JS</li>
-</ul>
-
-<pre><code class="language-js">
-
-var DATA = [
-  { user: 'ingikim', message: 'Welcome to Code States #codestates', created_at: '2019-01-03 12:30:20' },
-  { user: 'satya', message: 'this is test message #pair #programming', created_at: '2019-01-04 18:30:20' },
-  { user: 'sundar', message: 'code now! #work #hard', created_at: '2019-01-05 07:30:20' },
-  { user: 'steve', message: 'Stay hungry, and stay foolish', created_at: '2015-01-03 12:30:20' },
-  { user: 'tim', message: 'education for real world', created_at: '2019-01-04 18:30:20' }
-];
-
-var randomUser = ['ingikim', 'satya', 'sundar', 'steve', 'tim', 'jeff'];
-var randomMessage = [
-  '이 헌법공포 당시의 국회의원의 임기는 제1항에 의한 국회의 최초의 집회일 전일까지로 한다. 감사원은 원장을 포함한 5인 이상 11인 이하의 감사위원으로 구성한다.',
-  '헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다.',
-  '헌법개정은 국회재적의원 과반수 또는 대통령의 발의로 제안된다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.',
-  '모든 국민은 직업선택의 자유를 가진다. 군인은 현역을 면한 후가 아니면 국무총리로 임명될 수 없다. 행정권은 대통령을 수반으로 하는 정부에 속한다.',
-  '민주평화통일자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국가는 농·어민과 중소기업의 자조조직을 육성하여야 하며, 그 자율적 활동과 발전을 보장한다.',
-  '국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며, 이에 필요한 서류의 제출 또는 증인의 출석과 증언이나 의견의 진술을 요구할 수 있다.',
-  '인간이 얼음에 고행을 따뜻한 가장 이것이다. 꽃이 곧 동력은 끝에 동산에는 그것은 거선의 별과 인생의 것이다. 구하지 착목한는 스며들어 인생의 것이다.',
-  '새 가슴에 있는 만천하의 있다. 몸이 뜨거운지라, 청춘의 소리다.이것은 같으며, 피다. 설산에서 힘차게 옷을 피다. 놀이 그들의 인간의 주는 소금이라',
-  '귀는 우리는 피에 무엇이 이것이다. 구하지 우리는 그들은 약동하다. 따뜻한 발휘하기 사람은 충분히 사막이다.'
-]
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
-
-function generateNewTweet() {
-  var tweet = {};
-  tweet.user = randomUser[getRandomInt(0, randomUser.length)];
-  tweet.message = randomMessage[getRandomInt(0, randomMessage.length)];
-  tweet.created_at = new Date().format(); // 어떻게 하면 보기 좋은 형태로 나타낼 수 있을까요?
-  return tweet;
-}
-
-Number.prototype.padLeft = function() {
-  if(this &lt; 10) {
-    return '0' + String(this);
-  }
-  else {
-    return String(this);
-  }
-}
-
-Date.prototype.format = function() {
-  var yyyy = this.getFullYear();
-  var month = (this.getMonth() + 1).padLeft();
-  var dd = this.getDate().padLeft();
-  var HH = this.getHours().padLeft();
-  var mm = this.getMinutes().padLeft();
-  var ss = this.getSeconds().padLeft();
-
-  var format = [yyyy, month, dd].join('-') + ' ' + [HH, mm, ss].join(':');
-  return format;
-}
-
-
-
-
-
-//2.check_new_tweet! 
-function myFunction() {
-    let  array = [];
-    let obj = generateNewTweet();
-
-    array.push(&quot;&lt;div class='comment'&gt;&quot;
-         + &quot;&lt;div class='username'&gt;&quot;  + obj.user + &quot;&lt;/div&gt;&quot; 
-         + &quot;&lt;div&gt;&quot; + obj.message + &quot;&lt;/div&gt;&quot;
-         + &quot;&lt;div&gt;&quot; + obj.created_at + &quot;&lt;/div&gt;&quot;
-         + &quot;&lt;/div&gt;&quot;);
-
-    
-  comments.innerHTML = array + comments.innerHTML;
-
-}
-
-
-
-
-let Button = document.querySelector('#clickbtn');
-
-function randomTweet() {
-    clickbtn.onclick = function() {
-        myFunction();
-    }
-}
-
-randomTweet();
-
-
-
-
-
-</code></pre>
-
-<h2 id="js-html-script-위치">JS/HTML script 위치</h2>
-
-<pre><code class="language-js">
-
-//Html 파일에서 script 를 head 안에 넣으면 script 안에 써있는 코드들이 실행이 안된다 !
-
-//하지만 script 안에 있는 코드들을 실행 시키려면 
-
-
-window.onload = function () { } // 실행하고싶은 코드넣으면 실행할수 있다. 
-
-
-
-</code></pre>
-
-<h2 id="js-html-insertbefore">JS/HTML insertBefore()</h2>
-
-<pre><code class="language-js">
-// html
-
-&lt;h1&gt;test&lt;/h1&gt; 
-  
-&lt;ul id=&quot;subjects&quot;&gt; 
-        &lt;li&gt;C&lt;/li&gt; 
-        &lt;li&gt;Python&lt;/li&gt; 
-&lt;/ul&gt; 
-  
-  
-// js
-
-  &lt;script&gt;
-  
-  function myGeeks() { 
-            var newItem = document.createElement(&quot;li&quot;); 
-            var textnode = document.createTextNode(&quot;Java&quot;); 
-            newItem.appendChild(textnode); 
-  
-            var list = document.getElementById(&quot;subjects&quot;); 
-            list.insertBefore(newItem, list.childNodes.lastChild); // 마지막으로 삽입하고 싶으면 lastChild
-            
-            list.insertBefore(newItem, list.childNodes[0]); //  첫번째로 삽입하고 싶으면 [0] 
-            } 
-
- myGeeks();
-  
-  &lt;/script&gt;
-
-// html
-
-// Java     // 삽입 되었다. 
-// C
-// Python
-
-
-
-
-
-</code></pre>
-
-<h2 id="js-html랜덤글자-가져오기">JS/HTML랜덤글자 가져오기</h2>
-
-<pre><code class="language-js">
-var randomUser = ['ingikim', 'satya', 'sundar', 'steve', 'tim', 'jeff'];
-var randomMessage = [
-  '이 헌법공포 당시의 국회의원의 임기는 제1항에 의한 국회의 최초의 집회일 전일까지로 한다. 감사원은 원장을 포함한 5인 이상 11인 이하의 감사위원으로 구성한다.',
-  '헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다.',
-  '헌법개정은 국회재적의원 과반수 또는 대통령의 발의로 제안된다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.',
-  '모든 국민은 직업선택의 자유를 가진다. 군인은 현역을 면한 후가 아니면 국무총리로 임명될 수 없다. 행정권은 대통령을 수반으로 하는 정부에 속한다.',
-  '민주평화통일자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국가는 농·어민과 중소기업의 자조조직을 육성하여야 하며, 그 자율적 활동과 발전을 보장한다.',
-  '국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며, 이에 필요한 서류의 제출 또는 증인의 출석과 증언이나 의견의 진술을 요구할 수 있다.',
-  '인간이 얼음에 고행을 따뜻한 가장 이것이다. 꽃이 곧 동력은 끝에 동산에는 그것은 거선의 별과 인생의 것이다. 구하지 착목한는 스며들어 인생의 것이다.',
-  '새 가슴에 있는 만천하의 있다. 몸이 뜨거운지라, 청춘의 소리다.이것은 같으며, 피다. 설산에서 힘차게 옷을 피다. 놀이 그들의 인간의 주는 소금이라',
-  '귀는 우리는 피에 무엇이 이것이다. 구하지 우리는 그들은 약동하다. 따뜻한 발휘하기 사람은 충분히 사막이다.'
-]
-
-
-// getRandomInt(min,max)  이용해 인자만큼 가져오는 방법
-
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
-
-
-// 각각 user or message or time 을 객체안에 넣는다.
-// 여기서 들어가는 요소들은 랜덤하게 들어가게 된다. 
-
-function generateNewTweet() {
-  var tweet = {};
-  tweet.user = randomUser[getRandomInt(0, randomUser.length)]; 
-  tweet.message = randomMessage[getRandomInt(0, randomMessage.length)];
-  tweet.created_at = new Date().format(); 
-  return tweet;
-}
-
-
-</code></pre>
-
-<h2 id="get-current-data-time-in-js">Get Current Data &amp; Time in JS</h2>
-
-<pre><code class="language-js">
-
-var today = new Date(); // Data 가져온다. 
-var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate(); // 날짜
-var time = today.getHours() + &quot;:&quot; + today.getMinutes() + &quot;:&quot; + today.getSeconds(); // 시간 
-
-var dateTime = date+' '+time;  
-
-dateTime // 2019-9-5 13:2:48&quot;
-
-</code></pre>
-
-<h2 id="block-스코프와-function-스코프의-차이">block 스코프와 function 스코프의 차이</h2>
-
-<pre><code class="language-js">
-// block 스코프
-
-for (let i = 0;  i &lt; 5; i = i + 1) {
-	console.log(i); //  0,1,2,3,4  출력된다. 
-}
-
-console.log(i) //  ReferenceError 출력 이유 : i라는 변수는 block let = i 선언되었을때 i 의 변수는  block 안에 제한 되기 때문이다.
-
-
-// 
-for (var i = 0;  i &lt; 5; i = i + 1) {
-	console.log(i); //  0,1,2,3,4  출력된다. 
-}
-console.log(i) // 5   이유: var 변수를 지정했을때 block의 범위를 넘어선다. 
-
-</code></pre>
-
-<h2 id="var-or-let-변수를-사용한-함수중-어던것이-에러">var or let 변수를 사용한 함수중 어던것이 에러??</h2>
-
-<p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 4.41.59 PM.png" alt="" /></p>
-
-<pre><code class="language-js">
-function greetSomeone (firstName ) { 
-  let time = &quot;night&quot;;
-  
-  if (time === &quot;night&quot;) {         
-    let greeting = &quot;Good Night&quot;; ////////// let greeting block 안에 갇혀 있다. 이 block 를 벗어나는 순간 효력을 잃는 다. 
-  }
-  
-  
-  return greeting + ' ' + firstName;  ///  greeting 실행되지 않는다 
-}
-
-greetSomeone('steve');
-
-</code></pre>
-
-<h2 id="var-and-let-and-const">var and let and const</h2>
-
-<p><img src="/tutorial/Javascript_Note_files/Screen Shot 2019-08-28 at 5.37.46 PM.png" alt="" /></p>
-
-<h2 id="strict-mode">Strict Mode</h2>
-
-<pre><code class="language-js">
-
-// 변수를 안전하게 쓰기위한 “use strict”
-
-`use strict` //  처음 시작에 이렇게 달아둔다.
-
-function showAge() {
-  arr = [1234];     //  선언되지 않는 변수가 실행되지 않게 해준다. 
-console.log(arr);
-}
-
-
-</code></pre>
-
 <h2 id="랜덤-숫자-원하는-수대로-뽑기">랜덤 숫자 원하는 수대로 뽑기</h2>
 
 <pre><code class="language-js">
@@ -1523,36 +1107,6 @@ count++
 
 </code></pre>
 
-<h2 id="parameter-지정하는-법">parameter 지정하는 법</h2>
-
-<p><code>ES6</code></p>
-
-<pre><code class="language-js">
-function timeToGoHome(distance, speed = 20 ) { 
-
-	return distance + speed;
-}
-
-timeToGoHome(10);
-
-// 30
-
-timeToGoHome(10,10); // 두번째 값인 지정했던 speed 값이 변한다. 
-
-// 20
-
-
-
- // 만약 첫번째 값을 지정하고 출력하고 싶다면
-
-function timeToGoHome(distance = 20, speed) { 
-
-timeToGoHome(undefined,20) ;
-// 40
- 
-
-</code></pre>
-
 <h2 id="getmaxnum-함수-만들기">getMaxNum 함수 만들기</h2>
 
 <pre><code class="language-js">
@@ -1611,127 +1165,6 @@ console.log(obj2) // &gt;&gt; true &lt;&lt; true or false 로 값을 나타낸�
 
 
 
-</code></pre>
-
-<h2 id="prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법">prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법</h2>
-
-<pre><code class="language-js">
-// prototype를 사용해 모든 instance 객체에 property와 method 추가하는 법을 확인합니다
-
-function objFunc(para) { // 객체를 담고있는 함수를 먼저 만든다.
-      this.age = para; // key 는 name / property는 para  &lt; 아직 모른다.
-    }
-
-    let newObj = new objFunc(33); // para 값이 33이 됨 따라서 info1 = { age:33 }
-    newObj.name = &quot;John&quot;; //  // 함수안에 infor1 객체안에 키값이랑 property 를 추가한다.
-
-newObj //&gt;&gt; objFunc = { age: 33 , name: &quot;John&quot; } name = &quot;john&quot; 이 추가됬다. 
-
-// prototype 을 사용해서 추가하기
-
-objFunc.prototype.text = function() { // 처음함수에 prototype을 넣는다.  그다음에 text라는 키값을 지정한다. 이키값은 함수이기도 하다. 그래서 키이면서도 함수인 text()가 실행되면 return값이 출력된다.  
-	return &quot;this is the stroy what I want to say to &quot; + newObj.name; 
-}
-
-newObj.text(); // &quot;this is the stroy what I want to say to john&quot;
-
-
-</code></pre>
-
-<h2 id="객체안에-담겨있는-function-사용하기">객체안에 담겨있는 function 사용하기</h2>
-
-<pre><code class="language-js">
-  // 객체를 만들고 속성값에 text 내용을 출력할 함수를 만든다. 
-  
- // 이름을 몇번 집어넣을지 num 라는 것을 Array(num+1)를 통해 만들고 join 메소드를 이용해 &quot; &quot; 띄어쓰기를 한후 text 를 출력한다.
-
-obj1 = {
-      name1 : &quot;john&quot;,
-      name2: &quot;tim&quot;,
-      funcSum: function (num) {
-        return &quot;They are &quot; + this.name1 + &quot; and the&quot; +
-        Array(num + 1).join(&quot; &quot; + this.name2);     
-      }
-    };
-
-let massage = obj1.funcSum(2) //  객체안에 있는 속성인 funcSum(2) 호출한다.
-
-console.log(massage) // &gt;&gt; &quot;They are john and the tim tim&quot;
-
-</code></pre>
-
-<h2 id="함수가-객체의-키값으로-사용">함수가 객체의 키값으로 사용</h2>
-
-<pre><code class="language-js">
-// 객체와 함수를 이용한다.
-// 장점 객체안에 키값을 자유롭게 사용할수 있다.
-
-let funcGood = function (elem) {
-      return elem + &quot; is good man!&quot;;
-    };
-    let obj1 = { name: funcGood };
-    
-
-obj1.name(&quot;John&quot;) // &gt;&gt; john is good man!
-
-// 만약 obj.name 이 다른 기능을 가지고있는 함수를 대입하면..
-
-let funcBad = function (elem) {
-      return elem + &quot; is good bad!&quot;;
-    };
-
-obj.name = funcBad 
-
-// 기존에 있던 obj.name 기능은 사라지고 obj.name 의 기능은
-
-obj.name(&quot;john&quot;) // john is good bad!
-
-
-</code></pre>
-
-<h2 id="key-배열-출력-object-keys-for-in-문">key 배열 출력 - Object.keys, for in 문</h2>
-
-<pre><code class="language-js">
-var arr = [];
-arr[&quot;a&quot;] = 20;
-arr[&quot;b&quot;] = 10;
-arr[&quot;c&quot;] = 30;
-arr[&quot;d&quot;] = 40;
-
-arr = [a: 20, b: 10, c: 30, d: 40];
-
-
-console.log(arr);    
-console.log(arr.length);  // 헉 키값으로 된 array는 length가 0??
-// jquery each문으로 안돌아간다.
-$.each(arr, function(index, el) {
-	console.log(el);
-});
-
- // key만 출력
-console.log(Object.keys(arr)) // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot; ] 
-// for in으로 출력하자
-
-for (var i in arr) {  // in 연산자는 상속계통을 모두 검색하여 맴버가 존재하는지 확인한다. (반복문중 가장 느리다.)
-	if (arr.hasOwnProperty(i)) {   // hasOwnProperty를 통해 해당 객체의 맴버인지 확인을 한다.
-		console.log(arr[i]);
-	}
-}
-//------------------------------------------------------------------------------------------------------
-//  key array length 키 배열 사이즈  얻는 사용자함수
-function arraySize(obj) {
-	var size = 0, key;
-	for (key in obj) {
-		if (obj.hasOwnProperty(key)) {
-			size++;
-		}
-	}
-	return size;
-};	
-console.log(arraySize(arr));  // 4
-
-
-출처: https://mylife365.tistory.com/286?category=624212 [변화에 적응하기]
 </code></pre>
 
 <h2 id="dot-notation-and-braket-notation">dot notation and  braket notation ?</h2>
