@@ -8,8 +8,6 @@ menu:
     weight: 7
 toc: yes
 type: docs
-toc: yes
-type: docs
 ---
 
 

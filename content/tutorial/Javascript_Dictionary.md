@@ -1,12 +1,12 @@
 ---
-title: x Dictionary_level_1 
-date: 2019
+title: undefined2
+date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    parent: "3.Javascript"
-    weight: 0
-toc: true
+    name: undefined2
+    weight: 8
+toc: yes
 type: docs
 ---
 

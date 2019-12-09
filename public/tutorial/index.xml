@@ -123,39 +123,18 @@ immutable
     </item>
     
     <item>
-      <title>x Dictionary_level_1</title>
-      <link>/tutorial/javascript_dictionary/</link>
-      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
-      
-      <guid>/tutorial/javascript_dictionary/</guid>
-      <description>String str.includes()
-// true or false 를 반환한다. // if 문에 넣어 쓴다. let str = &#39;To be, or not to be, that is the question.&#39;; console.log(str.includes(&#39;To be&#39;)); // true console.log(str.includes(&#39;question&#39;)); // true console.log(str.includes(&#39;nonexistent&#39;)); // false console.log(str.includes(&#39;To be&#39;, 1)); // false console.log(str.includes(&#39;TO BE&#39;)); // false console.log(str.includes(&#39;&#39;))  str.match(regexp)
-immutable
-// 문자열안에 있는 알파벳 뽑기. let str = &amp;quot;abcdefgh23j2k4h6l3h1uiui24h4324jk3jh4k3h24&amp;quot; let alphabet = str.match(/[a-zA-Z]/g); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;f&amp;quot;, &amp;quot;g&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;]  str[index]</description>
-    </item>
-    
-    <item>
-      <title>x Notes</title>
+      <title>undefined1</title>
       <link>/tutorial/javascript_note/</link>
-      <pubDate>Thu, 01 Jan 1970 09:33:39 +0900</pubDate>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
       <description>Today What I Learn ? Immutably Rename Object Keys in Javascript obj = { name: &#39;Bobo&#39; } obj.somethingElse = obj.name delete obj.name  Unll 과 undefined 의 차이점 // null 과 undefined 는 등록, 저장 여부이다. //null 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다. //undefined 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</description>
     </item>
     
     <item>
-      <title>notes 2</title>
-      <link>/tutorial/javascript_q2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/javascript_q2/</guid>
-      <description>다 완료 Dom &amp;lt;!-- div 안에 element 를 추가하는 방법 3가지 --&amp;gt; &amp;lt;!-- 첫번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // innerHTML 로 tag 까지 같이 한번에 집어넣는다 let comments = document.querySelector(&amp;quot;#comments&amp;quot;); comments.innerHTML = &amp;quot;&amp;lt;span&amp;gt;아메리카노&amp;lt;span&amp;gt;&amp;quot;; &amp;lt;/script&amp;gt; &amp;lt;!-- 두번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // element 를 생성해서 집어넣을때는 appendChild 로 집어넣는다. let comments = document.querySelector(&amp;quot;#comments&amp;quot;); let newElement = document.createElement(&amp;quot;span&amp;quot;); // element 생성 newElement.innerHTML = &amp;quot;아메리카노&amp;quot;; // 생성된 element 안에 미리 써준다.</description>
-    </item>
-    
-    <item>
-      <title>x Coding_level_1</title>
+      <title>undefined1</title>
       <link>/tutorial/javascript_q1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q1/</guid>
       <description>Question longestWord  Using the JavaScript language, have the function LongestWord take the sen parameter being passed and return the largest word in the string. (문장이 주어졌을때, &amp;lsquo;LongestWord&amp;rsquo; 함수는 주어진 문장에서 가장 긴 단어를 반환합니다.)
@@ -163,13 +142,34 @@ If there are two or more words that are the same length, return the first word f
     </item>
     
     <item>
-      <title>xCoding_level_2</title>
+      <title>undefined1</title>
+      <link>/tutorial/javascript_q2/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/javascript_q2/</guid>
+      <description>다 완료 Dom &amp;lt;!-- div 안에 element 를 추가하는 방법 3가지 --&amp;gt; &amp;lt;!-- 첫번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // innerHTML 로 tag 까지 같이 한번에 집어넣는다 let comments = document.querySelector(&amp;quot;#comments&amp;quot;); comments.innerHTML = &amp;quot;&amp;lt;span&amp;gt;아메리카노&amp;lt;span&amp;gt;&amp;quot;; &amp;lt;/script&amp;gt; &amp;lt;!-- 두번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // element 를 생성해서 집어넣을때는 appendChild 로 집어넣는다. let comments = document.querySelector(&amp;quot;#comments&amp;quot;); let newElement = document.createElement(&amp;quot;span&amp;quot;); // element 생성 newElement.innerHTML = &amp;quot;아메리카노&amp;quot;; // 생성된 element 안에 미리 써준다.</description>
+    </item>
+    
+    <item>
+      <title>undefined1</title>
       <link>/tutorial/javascript_algorithm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_algorithm/</guid>
       <description>Question  convert nested (2-dimensional) array to flatten array! (2차원 배열을 1차원 배열로 전환하세요.)
  flatten([1,2,[3],[4]]); // [1,2,3,4]  My_Soultion function flatten (array){ //your solution here // 1. 재귀함수 사용 let ret = []; // 새로운 배열은 만든다. // 재귀함수 function filtered(array) { // (1).array 의 각각의 요소에 접근한다. [1,2,[11,25,21,34],[4]] // (5). array 의 각각의 요소에 접근한다. [11,25,21,34] for(let i = 0 ; i &amp;lt; array.length; i ++ ) { // (2)만약 요소가 array 안에 array 가아니면 [1,2] // (6)만약 요소가 array 안에 array 가 아니면 [11,25,21,34] if (!</description>
+    </item>
+    
+    <item>
+      <title>undefined2</title>
+      <link>/tutorial/javascript_dictionary/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/javascript_dictionary/</guid>
+      <description>String str.includes()
+// true or false 를 반환한다. // if 문에 넣어 쓴다. let str = &#39;To be, or not to be, that is the question.&#39;; console.log(str.includes(&#39;To be&#39;)); // true console.log(str.includes(&#39;question&#39;)); // true console.log(str.includes(&#39;nonexistent&#39;)); // false console.log(str.includes(&#39;To be&#39;, 1)); // false console.log(str.includes(&#39;TO BE&#39;)); // false console.log(str.includes(&#39;&#39;))  str.match(regexp)
+immutable
+// 문자열안에 있는 알파벳 뽑기. let str = &amp;quot;abcdefgh23j2k4h6l3h1uiui24h4324jk3jh4k3h24&amp;quot; let alphabet = str.match(/[a-zA-Z]/g); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;f&amp;quot;, &amp;quot;g&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;]  str[index]</description>
     </item>
     
   </channel>

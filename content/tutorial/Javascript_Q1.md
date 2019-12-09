@@ -1,14 +1,13 @@
 ---
-title: x Coding_level_1 
-date: 2019-6
+title: undefined1
+date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    parent: "3.Javascript"
-    weight: 0
-toc: true
+    name: undefined4
+    weight: 8
+toc: yes
 type: docs
-
 ---
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)

@@ -79,6 +79,31 @@
   </url>
   
   <url>
+    <loc>/tutorial/javascript_note/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/javascript_q1/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/javascript_q2/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/javascript_algorithm/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/javascript_dictionary/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication_types/3/</loc>
     <lastmod>2019-04-07T00:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -185,16 +210,6 @@
   </url>
   
   <url>
-    <loc>/tutorial/javascript_dictionary/</loc>
-    <lastmod>1970-01-01T09:33:39+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/javascript_note/</loc>
-    <lastmod>1970-01-01T09:33:39+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/author/admin/</loc>
   </url>
   
@@ -210,18 +225,6 @@
   
   <url>
     <loc>/displaydocs/</loc>
-  </url>
-  
-  <url>
-    <loc>/tutorial/javascript_q2/</loc>
-  </url>
-  
-  <url>
-    <loc>/tutorial/javascript_q1/</loc>
-  </url>
-  
-  <url>
-    <loc>/tutorial/javascript_algorithm/</loc>
   </url>
   
 </urlset>

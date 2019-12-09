@@ -1,12 +1,12 @@
 ---
-title: notes 2 
-date: 2019-6
+title: undefined1
+date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    parent: "3.Javascript"
-    weight: 0
-toc: true
+    name: undefined5
+    weight: 8
+toc: yes
 type: docs
 ---
 
