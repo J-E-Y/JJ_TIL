@@ -1,19 +1,16 @@
 ---
 title: Javascript_Basic
-author: JohnJung
-date: '2019-11-14'
-categories: []
-tags: ['Javascript']
+date: 2019-04-29
+draft: true
 menu:
   tutorial:
     name: 6.Javascript
     weight: 6
 toc: yes
 type: docs
-summary: 'write here:rocket:' 
+toc: yes
+type: docs
 ---
-
-
 
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
