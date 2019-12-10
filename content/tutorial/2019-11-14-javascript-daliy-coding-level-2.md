@@ -998,6 +998,19 @@ function shuffle(array) {
 
 
 
+// 더좋은 코드
+
+function shuffle (array) {
+
+  let newArr = [];
+  let newArray = array.slice();
+  while(newArray.length > 0) {
+	let movingNum = newArray.splice(Math.floor(Math.random()*newArray.length),1)[0]
+	newArr.push(movingNum);
+   }
+	return newArr;
+  };
+
 // other
 
 function shuffle(array) {
