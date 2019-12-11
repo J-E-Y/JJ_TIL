@@ -1081,6 +1081,10 @@ bar.call({a:1}) // 1
 
 <h2 id="객체지향-javascript">객체지향 JavaScript</h2>
 
+<blockquote>
+<p>변수랑 함수를 묶어놓고 객체를 가지고 코딩을 말한다.</p>
+</blockquote>
+
 <h4 id="class">Class</h4>
 
 <ul>
@@ -4565,22 +4569,30 @@ result  // [1, 2, 4]
 <h2 id="array-중복-제거하는-방법">Array 중복 제거하는 방법</h2>
 
 <pre><code class="language-js">
-const array = ['a' , 1, 2, 'a' , 'a', 3];
+var data = ['a' , 1, 2, 'a' , 'a', 3];
 
 // 3가지 방법 from() + set , filter , reduce 
 
 // 1: 'Set'
-Array.from(new Set(array));
-// 2: 'Filter'
-array.filter((item, index) =&gt; array.indexOf(item) === index);
+Array.from(new Set(data));
+
+// 2: 'Filter' // arr 의 요소가 string 이라면 filter(ele,index,array) 사용한다. 
+data.filter((ele, index,array) =&gt;{
+  return array.indexOf(ele) === index //array 3번째 파라미터를 이용하한다.  
+})
+
+//2 : filter // arr 요소가 숫자라면 
+data.filter((ele, index,) =&gt;{
+  return data.indexOf(ele) === index //array 3번째 파라미터를 이용하한다.  
+})
+
+
+
+
 // 3: 'Reduce'
 array.reduce((unique, item) =&gt;
   unique.includes(item) ? unique : [...unique, item], []);
   
-// RESULT:
-
-// ['a', 1, 2, 3]
-
 
 </code></pre>
 

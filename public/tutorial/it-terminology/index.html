@@ -27,8 +27,9 @@
   
     
   
-  <meta name="description" content="CPU 중앙 처리 장치 또는 CPU (central processing unit)  CPU 처리하는 용도 데이터를 읽고 처리하고 다시쓰는 동작을 합니다.
-컴퓨터 시스템을 통제하고 프로그램의 연산을 실행하는 가장 핵심적인 컴퓨터의 제어 장치, 혹은 그 기능을 내장한 칩을 말한다. 컴퓨터 안의 중앙 처리 장치(CPU)는 외부에서 정보를 입력 받고, 기억하고, 컴퓨터 프로그램의 명령어를 해석하여 연산하고, 외부로 출력하는 역할을 한다. 따라서 중앙 처리 장치(CPU)는 컴퓨터 부품과 정보를 교환하면서 컴퓨터 시스템 전체를 제어하는 장치로, 모든 컴퓨터의 작동과정이 중앙 처리 장치(CPU)의 제어를 받기 때문에 컴퓨터의 두뇌에 해당한다고 할 수 있다.">
+  <meta name="description" content="Web storage Web storage (웹 스토리지)  local storage는 우리가 아는 세션과 비슷하고 session storage는 쿠키와 비슷합니다. 자바스크립트로만 읽고 쓰기가 가능해 서버에서 바로 접근할 수 없고 문자열만 관리가 가능하다는 단점이 있습니다.
+하지만 매번 서버로 전송해야하는 쿠키와 달리 불필요한 트래픽이 없고상대적으로 여유로운 저장공간에 문자열을 객체 정보로 저장할 수 있다는 강점이 있죠.
+로컬 스토리지는 만료 기간의 설정이 없기 때문에 브라우저의 종료와 관계 없이 정말 영구적으로 데이터를 저장할 수 있습니다.os를 재설치 하거나 브라우저를 날려버리는 특수한 상황을 제외하고서요.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/it-terminology/">
@@ -131,8 +132,9 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/it-terminology/">
   <meta property="og:title" content="Technical terms | JohnJung">
-  <meta property="og:description" content="CPU 중앙 처리 장치 또는 CPU (central processing unit)  CPU 처리하는 용도 데이터를 읽고 처리하고 다시쓰는 동작을 합니다.
-컴퓨터 시스템을 통제하고 프로그램의 연산을 실행하는 가장 핵심적인 컴퓨터의 제어 장치, 혹은 그 기능을 내장한 칩을 말한다. 컴퓨터 안의 중앙 처리 장치(CPU)는 외부에서 정보를 입력 받고, 기억하고, 컴퓨터 프로그램의 명령어를 해석하여 연산하고, 외부로 출력하는 역할을 한다. 따라서 중앙 처리 장치(CPU)는 컴퓨터 부품과 정보를 교환하면서 컴퓨터 시스템 전체를 제어하는 장치로, 모든 컴퓨터의 작동과정이 중앙 처리 장치(CPU)의 제어를 받기 때문에 컴퓨터의 두뇌에 해당한다고 할 수 있다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Web storage Web storage (웹 스토리지)  local storage는 우리가 아는 세션과 비슷하고 session storage는 쿠키와 비슷합니다. 자바스크립트로만 읽고 쓰기가 가능해 서버에서 바로 접근할 수 없고 문자열만 관리가 가능하다는 단점이 있습니다.
+하지만 매번 서버로 전송해야하는 쿠키와 달리 불필요한 트래픽이 없고상대적으로 여유로운 저장공간에 문자열을 객체 정보로 저장할 수 있다는 강점이 있죠.
+로컬 스토리지는 만료 기간의 설정이 없기 때문에 브라우저의 종료와 관계 없이 정말 영구적으로 데이터를 저장할 수 있습니다.os를 재설치 하거나 브라우저를 날려버리는 특수한 상황을 제외하고서요."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -417,6 +419,21 @@
 <ul>
 <li>
 <ul>
+<li><a href="#web-storage">Web storage</a>
+<ul>
+<li>
+<ul>
+<li><a href="#web-storage-웹-스토리지">Web storage (웹 스토리지)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#proxy-sever">Proxy sever</a></li>
+<li><a href="#tls">TLS</a>
+<ul>
+<li>
+<ul>
+<li><a href="#tls-transport-layer-security">TLS (Transport Layer Security,)</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#cpu">CPU</a>
 <ul>
 <li>
@@ -468,6 +485,37 @@
 
           <div class="article-style" itemprop="articleBody">
             
+
+<h2 id="web-storage">Web storage</h2>
+
+<h4 id="web-storage-웹-스토리지">Web storage (웹 스토리지)</h4>
+
+<blockquote>
+<p>local storage는 우리가 아는 세션과 비슷하고 session storage는 쿠키와 비슷합니다.
+자바스크립트로만 읽고 쓰기가 가능해 서버에서 바로 접근할 수 없고 문자열만 관리가 가능하다는 단점이 있습니다.</p>
+
+<p>하지만 매번 서버로 전송해야하는 쿠키와 달리 불필요한 트래픽이 없고상대적으로 여유로운 저장공간에 문자열을 객체 정보로 저장할 수 있다는 강점이 있죠.</p>
+
+<p>로컬 스토리지는 만료 기간의 설정이 없기 때문에 브라우저의 종료와 관계 없이 정말 영구적으로 데이터를 저장할 수 있습니다.os를 재설치 하거나 브라우저를 날려버리는 특수한 상황을 제외하고서요.</p>
+
+<p>또한 모든 페이지가 사용자릐 로컬 스토리지를 공유하고 브라우저창에 관계없이 사이트 별로 생성 됩니다.</p>
+
+<p>세션 스토리지는 브라우저 종료시 사라지고, 새 탭이나 다른 브라우저에서 공유할 수 없습니다. 하나의 페이지 안에서 저장되고 살아있는 데이터라고 생각하시면 됩니다. 우리가 하나의 사이트를 접속하면 하나의 세션이 이루어지는 원리입니다.</p>
+</blockquote>
+
+<p><img src="/tutorial/IT terminology_files/7D12ECCA-909C-4AE9-8788-58DCD391293F.png" alt="" /></p>
+
+<h2 id="proxy-sever">Proxy sever</h2>
+
+<p><img src="/tutorial/IT terminology_files/BD37F54D-B97E-41B5-BEEF-E92F3E0BAFF9.png" alt="" /></p>
+
+<h2 id="tls">TLS</h2>
+
+<h4 id="tls-transport-layer-security">TLS (Transport Layer Security,)</h4>
+
+<blockquote>
+<p>클라이언트/서버 응용 프로그램이 네트워크로 통신을 하는 과정에서 도청, 간섭, 위조를 방지하기 위해서 설계되었다. 그리고 암호화를 해서 최종단의 인증, 통신 기밀성을 유지시켜준다.</p>
+</blockquote>
 
 <h2 id="cpu">CPU</h2>
 
