@@ -27,7 +27,8 @@
   
     
   
-  <meta name="description" content="nonUniqueElements(data) Question  You are given a non-empty list of integers (X). For this task, you should return a list consisting of only the non-unique elements in this list. To do so you will need to remove all unique elements (elements which are contained in a given list only once). When solving this task, do not change the order of the list. Example: [1, 2, 3, 1, 3] 1 and 3 non-unique elements and result will be [1, 3, 1, 3].">
+  <meta name="description" content="Qeustion scrabble word calculator  implement the word_calc method to return the correct Scrabble word score. The scores are already set up for you to use and are managed within Dictionaries:
+ one_point_values = [&quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, &quot;u&quot;, &quot;l&quot;, &quot;n&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;]; two_point_values = [&quot;d&quot;, &quot;g&quot;]; three_point_values = [&quot;b&quot;, &quot;c&quot;, &quot;m&quot;, &quot;p&quot;]; four_point_values = [&quot;f&quot;, &quot;h&quot;, &quot;v&quot;, &quot;w&quot;, &quot;y&quot;]; five_point_values = [&quot;k&quot;]; eight_point_values = [&quot;j&quot;,&quot;x&quot;]; ten_point_values = [&quot;z&quot;,&quot;q&quot;]; word_calc(&quot;zoo&quot;) // 12 word_calc(&quot;bus&quot;) // 5  My_soultion function word_calc(word) { var inputArr = word.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_algorithm/">
@@ -130,7 +131,8 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/javascript_algorithm/">
   <meta property="og:title" content="__Algorithm_3 | JohnJung">
-  <meta property="og:description" content="nonUniqueElements(data) Question  You are given a non-empty list of integers (X). For this task, you should return a list consisting of only the non-unique elements in this list. To do so you will need to remove all unique elements (elements which are contained in a given list only once). When solving this task, do not change the order of the list. Example: [1, 2, 3, 1, 3] 1 and 3 non-unique elements and result will be [1, 3, 1, 3]."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Qeustion scrabble word calculator  implement the word_calc method to return the correct Scrabble word score. The scores are already set up for you to use and are managed within Dictionaries:
+ one_point_values = [&quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, &quot;u&quot;, &quot;l&quot;, &quot;n&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;]; two_point_values = [&quot;d&quot;, &quot;g&quot;]; three_point_values = [&quot;b&quot;, &quot;c&quot;, &quot;m&quot;, &quot;p&quot;]; four_point_values = [&quot;f&quot;, &quot;h&quot;, &quot;v&quot;, &quot;w&quot;, &quot;y&quot;]; five_point_values = [&quot;k&quot;]; eight_point_values = [&quot;j&quot;,&quot;x&quot;]; ten_point_values = [&quot;z&quot;,&quot;q&quot;]; word_calc(&quot;zoo&quot;) // 12 word_calc(&quot;bus&quot;) // 5  My_soultion function word_calc(word) { var inputArr = word."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -415,9 +417,22 @@
 <ul>
 <li>
 <ul>
+<li>
+<ul>
+<li><a href="#qeustion">Qeustion</a></li>
+</ul></li>
+<li><a href="#scrabble-word-calculator">scrabble word calculator</a>
+<ul>
+<li><a href="#my-soultion">My_soultion</a></li>
+<li><a href="#question">Question</a></li>
+</ul></li>
+<li><a href="#4칙연산-함수-만들기">4칙연산 함수 만들기</a>
+<ul>
+<li><a href="#my-soultion-1">My_Soultion</a></li>
+</ul></li>
 <li><a href="#nonuniqueelements-data">nonUniqueElements(data)</a>
 <ul>
-<li><a href="#question">Question</a></li>
+<li><a href="#question-1">Question</a></li>
 <li><a href="#my-soulion">My_Soulion</a></li>
 <li><a href="#others">Others</a></li>
 </ul></li>
@@ -447,9 +462,190 @@
 
 <hr />
 
-<h2 id="nonuniqueelements-data">nonUniqueElements(data)</h2>
+<h3 id="qeustion">Qeustion</h3>
+
+<h2 id="scrabble-word-calculator">scrabble word calculator</h2>
+
+<blockquote>
+<p>implement the word_calc method to return the correct Scrabble word score. The scores are already set up for you to use and are managed within Dictionaries:</p>
+</blockquote>
+
+<pre><code class="language-js">
+one_point_values = [&quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, &quot;u&quot;, &quot;l&quot;, &quot;n&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;];
+two_point_values = [&quot;d&quot;, &quot;g&quot;];
+three_point_values = [&quot;b&quot;, &quot;c&quot;, &quot;m&quot;, &quot;p&quot;];
+four_point_values = [&quot;f&quot;, &quot;h&quot;, &quot;v&quot;, &quot;w&quot;, &quot;y&quot;];
+five_point_values = [&quot;k&quot;];
+eight_point_values = [&quot;j&quot;,&quot;x&quot;];
+ten_point_values = [&quot;z&quot;,&quot;q&quot;];
+
+
+word_calc(&quot;zoo&quot;) // 12
+word_calc(&quot;bus&quot;) // 5
+
+</code></pre>
+
+<h3 id="my-soultion">My_soultion</h3>
+
+<pre><code class="language-js">
+
+function word_calc(word) {
+
+
+
+	var inputArr = word.split(&quot;&quot;);
+	var countArr = [];
+	var dataArr = [one_point_values,two_point_values,three_point_values,four_point_values,five_point_values,eight_point_values,ten_point_values];
+	var total = 0;
+	function sum(array) {
+		var countArr = [];
+		var sum = 0;
+		if(array[0]=== one_point_values[0]) {
+			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 1;
+		  	
+		  }
+			countArr = [];
+		} 
+
+		else if (array[0]=== two_point_values[0]){
+			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 2;
+	  	 
+		  }
+			countArr = [];	
+		}
+		
+		else if (array[0]=== three_point_values[0]) {
+			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 3;
+	  	 	
+		  }
+			countArr = [];
+		}
+			
+		else if (array[0]=== four_point_values[0]) {
+			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 4;
+	  	 }
+            countArr = [];
+		}
+
+		else if (array[0]=== five_point_values[0]) {
+			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 5;
+          }
+			countArr = [];
+		}
+		
+		else if (array[0]=== five_point_values[0]) {
+			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 8;
+		  }
+			countArr = [];
+		} 
+		
+		else if (array[0]=== ten_point_values[0]) {
+			for (let i = 0; i &lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 10;
+		  }
+			countArr = [];
+        }
+		total = total + sum;
+    }
+
+    dataArr.forEach((ele)=&gt;{
+    	sum(ele);
+    })
+
+    return total;
+
+
+}
+
+
+</code></pre>
 
 <h3 id="question">Question</h3>
+
+<h2 id="4칙연산-함수-만들기">4칙연산 함수 만들기</h2>
+
+<blockquote>
+<p>Create a basic calulator with the following functions add,subtract,multiply and divide, implement the correct code to return correct mathematical value the functions should take two arguments</p>
+</blockquote>
+
+<pre><code class="language-js">
+// 파이썬 문제이지만 자바스크립트로 풀어보았습니다. 
+
+// 이렇게 출력하게 만드는 문제입니다. 
+Answer.add(2,2) // 4
+Answer.subtract(2,2) // 0
+Answer.multiply(2,2)// 4
+Answer.divide(2,2)// 1.0
+
+// 저는
+
+answer.call(add,2,2) // 4
+answer.call(subtract,2,2) // 0
+answer.call(multiply,2,2) // 4
+answer.call(divide,2,2) // 1.0
+
+</code></pre>
+
+<h3 id="my-soultion-1">My_Soultion</h3>
+
+<pre><code class="language-js">var add = {
+	add: 0
+}
+var subtract = {
+	
+}
+var multiply = {
+	multiply: 0
+}
+var divide = {
+	divide: 0
+}
+
+var answer = function (first,second) {
+  if(this === add) {
+	return this.add = first + second; 
+  } else if ( this === subtract) {
+	return this.subtract = first - second;
+  } else if (this === multiply) {
+  	return this.multiply = frist * second;
+  } else if ( this === divide ) {
+	return this.divide = first / second;
+  }
+}
+
+
+</code></pre>
+
+<h2 id="nonuniqueelements-data">nonUniqueElements(data)</h2>
+
+<h3 id="question-1">Question</h3>
 
 <blockquote>
 <p>You are given a non-empty list of integers (X). For this task, you should return a list consisting of only the non-unique elements in this list. To do so you will need to remove all unique elements (elements which are contained in a given list only once). When solving this task, do not change the order of the list. Example: [1, 2, 3, 1, 3] 1 and 3 non-unique elements and result will be [1, 3, 1, 3].</p>

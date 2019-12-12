@@ -9643,9 +9643,190 @@ return array.join(&#39; &#39;); // 각각의 문자열을 join &#39; &#39; 를 �
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;nonuniqueelements-data&#34;&gt;nonUniqueElements(data)&lt;/h2&gt;
+&lt;h3 id=&#34;qeustion&#34;&gt;Qeustion&lt;/h3&gt;
+
+&lt;h2 id=&#34;scrabble-word-calculator&#34;&gt;scrabble word calculator&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;implement the word_calc method to return the correct Scrabble word score. The scores are already set up for you to use and are managed within Dictionaries:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+one_point_values = [&amp;quot;a&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;n&amp;quot;, &amp;quot;r&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot;t&amp;quot;];
+two_point_values = [&amp;quot;d&amp;quot;, &amp;quot;g&amp;quot;];
+three_point_values = [&amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;m&amp;quot;, &amp;quot;p&amp;quot;];
+four_point_values = [&amp;quot;f&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;v&amp;quot;, &amp;quot;w&amp;quot;, &amp;quot;y&amp;quot;];
+five_point_values = [&amp;quot;k&amp;quot;];
+eight_point_values = [&amp;quot;j&amp;quot;,&amp;quot;x&amp;quot;];
+ten_point_values = [&amp;quot;z&amp;quot;,&amp;quot;q&amp;quot;];
+
+
+word_calc(&amp;quot;zoo&amp;quot;) // 12
+word_calc(&amp;quot;bus&amp;quot;) // 5
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;my-soultion&#34;&gt;My_soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+function word_calc(word) {
+
+
+
+	var inputArr = word.split(&amp;quot;&amp;quot;);
+	var countArr = [];
+	var dataArr = [one_point_values,two_point_values,three_point_values,four_point_values,five_point_values,eight_point_values,ten_point_values];
+	var total = 0;
+	function sum(array) {
+		var countArr = [];
+		var sum = 0;
+		if(array[0]=== one_point_values[0]) {
+			 for (let i = 0; i &amp;lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 1;
+		  	
+		  }
+			countArr = [];
+		} 
+
+		else if (array[0]=== two_point_values[0]){
+			 for (let i = 0; i &amp;lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 2;
+	  	 
+		  }
+			countArr = [];	
+		}
+		
+		else if (array[0]=== three_point_values[0]) {
+			 for (let i = 0; i &amp;lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 3;
+	  	 	
+		  }
+			countArr = [];
+		}
+			
+		else if (array[0]=== four_point_values[0]) {
+			 for (let i = 0; i &amp;lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 4;
+	  	 }
+            countArr = [];
+		}
+
+		else if (array[0]=== five_point_values[0]) {
+			 for (let i = 0; i &amp;lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 5;
+          }
+			countArr = [];
+		}
+		
+		else if (array[0]=== five_point_values[0]) {
+			 for (let i = 0; i &amp;lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 8;
+		  }
+			countArr = [];
+		} 
+		
+		else if (array[0]=== ten_point_values[0]) {
+			for (let i = 0; i &amp;lt; inputArr.length; i ++ ) {	
+			 	if (array.includes(inputArr[i])) {
+		  		countArr.push(inputArr[i])
+		  	} 
+		  	sum = countArr.length * 10;
+		  }
+			countArr = [];
+        }
+		total = total + sum;
+    }
+
+    dataArr.forEach((ele)=&amp;gt;{
+    	sum(ele);
+    })
+
+    return total;
+
+
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;question&#34;&gt;Question&lt;/h3&gt;
+
+&lt;h2 id=&#34;4칙연산-함수-만들기&#34;&gt;4칙연산 함수 만들기&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Create a basic calulator with the following functions add,subtract,multiply and divide, implement the correct code to return correct mathematical value the functions should take two arguments&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 파이썬 문제이지만 자바스크립트로 풀어보았습니다. 
+
+// 이렇게 출력하게 만드는 문제입니다. 
+Answer.add(2,2) // 4
+Answer.subtract(2,2) // 0
+Answer.multiply(2,2)// 4
+Answer.divide(2,2)// 1.0
+
+// 저는
+
+answer.call(add,2,2) // 4
+answer.call(subtract,2,2) // 0
+answer.call(multiply,2,2) // 4
+answer.call(divide,2,2) // 1.0
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;my-soultion-1&#34;&gt;My_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var add = {
+	add: 0
+}
+var subtract = {
+	
+}
+var multiply = {
+	multiply: 0
+}
+var divide = {
+	divide: 0
+}
+
+var answer = function (first,second) {
+  if(this === add) {
+	return this.add = first + second; 
+  } else if ( this === subtract) {
+	return this.subtract = first - second;
+  } else if (this === multiply) {
+  	return this.multiply = frist * second;
+  } else if ( this === divide ) {
+	return this.divide = first / second;
+  }
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;nonuniqueelements-data&#34;&gt;nonUniqueElements(data)&lt;/h2&gt;
+
+&lt;h3 id=&#34;question-1&#34;&gt;Question&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;You are given a non-empty list of integers (X). For this task, you should return a list consisting of only the non-unique elements in this list. To do so you will need to remove all unique elements (elements which are contained in a given list only once). When solving this task, do not change the order of the list. Example: [1, 2, 3, 1, 3] 1 and 3 non-unique elements and result will be [1, 3, 1, 3].&lt;/p&gt;
