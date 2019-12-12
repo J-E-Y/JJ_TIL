@@ -382,22 +382,23 @@
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/tutorial/javascript_dictionary/">undefined2</a>
-
-  </div>
-  
-  <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/tutorial/javascript_note/">undefined3</a>
-
-  </div>
-  
-  <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/tutorial/javascript_q1/">undefined4</a>
-
-  </div>
-  
-  <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/tutorial/javascript_q2/">undefined5</a>
+    <a class="docs-toc-link" href="/tutorial/javascript_dictionary/">CodeStates</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tutorial/javascript_note/">__Section1</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript_q1/">__Section2</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/javascript_q2/">__Section3</a>
+      </li>
+      
+    </ul>
+    
 
   </div>
   
@@ -506,33 +507,27 @@ function word_calc(word) {
 		  		countArr.push(inputArr[i])
 		  	} 
 		  	sum = countArr.length * 1;
-		  	
-		  }
+		   }
 			countArr = [];
 		} 
-
 		else if (array[0]=== two_point_values[0]){
 			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
 		  		countArr.push(inputArr[i])
 		  	} 
 		  	sum = countArr.length * 2;
-	  	 
-		  }
+	  	 }
 			countArr = [];	
 		}
-		
 		else if (array[0]=== three_point_values[0]) {
 			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
 		  		countArr.push(inputArr[i])
 		  	} 
 		  	sum = countArr.length * 3;
-	  	 	
-		  }
+	  	 }
 			countArr = [];
 		}
-			
 		else if (array[0]=== four_point_values[0]) {
 			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
@@ -540,29 +535,26 @@ function word_calc(word) {
 		  	} 
 		  	sum = countArr.length * 4;
 	  	 }
-            countArr = [];
+      countArr = [];
 		}
-
 		else if (array[0]=== five_point_values[0]) {
 			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
 		  		countArr.push(inputArr[i])
 		  	} 
 		  	sum = countArr.length * 5;
-          }
+       }
 			countArr = [];
 		}
-		
 		else if (array[0]=== five_point_values[0]) {
 			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
 		  		countArr.push(inputArr[i])
 		  	} 
 		  	sum = countArr.length * 8;
-		  }
+       }
 			countArr = [];
 		} 
-		
 		else if (array[0]=== ten_point_values[0]) {
 			for (let i = 0; i &lt; inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
@@ -571,15 +563,16 @@ function word_calc(word) {
 		  	sum = countArr.length * 10;
 		  }
 			countArr = [];
-        }
+    }
 		total = total + sum;
     }
-
+    
     dataArr.forEach((ele)=&gt;{
-    	sum(ele);
+    sum(ele);
     })
 
-    return total;
+
+ return total;
 
 
 }

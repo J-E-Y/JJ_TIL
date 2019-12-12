@@ -4,7 +4,7 @@ date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    name: undefined2
+    name: CodeStates
     weight: 8
 toc: yes
 type: docs

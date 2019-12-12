@@ -64,33 +64,27 @@ function word_calc(word) {
 		  		countArr.push(inputArr[i])
 		  	} 
 		  	sum = countArr.length * 1;
-		  	
-		  }
+		   }
 			countArr = [];
 		} 
-
 		else if (array[0]=== two_point_values[0]){
 			 for (let i = 0; i < inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
 		  		countArr.push(inputArr[i])
 		  	} 
 		  	sum = countArr.length * 2;
-	  	 
-		  }
+	  	 }
 			countArr = [];	
 		}
-		
 		else if (array[0]=== three_point_values[0]) {
 			 for (let i = 0; i < inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
 		  		countArr.push(inputArr[i])
 		  	} 
 		  	sum = countArr.length * 3;
-	  	 	
-		  }
+	  	 }
 			countArr = [];
 		}
-			
 		else if (array[0]=== four_point_values[0]) {
 			 for (let i = 0; i < inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
@@ -98,29 +92,26 @@ function word_calc(word) {
 		  	} 
 		  	sum = countArr.length * 4;
 	  	 }
-            countArr = [];
+      countArr = [];
 		}
-
 		else if (array[0]=== five_point_values[0]) {
 			 for (let i = 0; i < inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
 		  		countArr.push(inputArr[i])
 		  	} 
 		  	sum = countArr.length * 5;
-          }
+       }
 			countArr = [];
 		}
-		
 		else if (array[0]=== five_point_values[0]) {
 			 for (let i = 0; i < inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
 		  		countArr.push(inputArr[i])
 		  	} 
 		  	sum = countArr.length * 8;
-		  }
+       }
 			countArr = [];
 		} 
-		
 		else if (array[0]=== ten_point_values[0]) {
 			for (let i = 0; i < inputArr.length; i ++ ) {	
 			 	if (array.includes(inputArr[i])) {
@@ -129,15 +120,16 @@ function word_calc(word) {
 		  	sum = countArr.length * 10;
 		  }
 			countArr = [];
-        }
+    }
 		total = total + sum;
     }
-
+    
     dataArr.forEach((ele)=>{
-    	sum(ele);
+    sum(ele);
     })
 
-    return total;
+
+ return total;
 
 
 }

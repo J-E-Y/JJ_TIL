@@ -1,14 +1,17 @@
 ---
-title: undefined1
+title: __Section1
 date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    name: undefined3
+    parent: "CodeStates"
     weight: 8
 toc: yes
 type: docs
 ---
+
+ 
+
 
 ![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
  
