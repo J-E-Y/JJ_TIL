@@ -10,6 +10,16 @@ toc: yes
 type: docs
 ---
 
+
+## JavaScript 와 ECMAScript
+
+> JavaScript는 1996년에 만들어졌고, 그 다음에 JavaScript의 표준화를 위해 1997년에 ECMAScript가 만들어졌습니다. 당시 기준에서 JavaScript는 ECMAScript 사양을 따르고 있었기 때문에, JavaScript는 ECMAScript 사양을 준수하고 있던 언어의 예시였습니다.
+
+> 여기서 우리는 재미있는 사실을 하나 알 수 있습니다. 바로, ECMAScript는 JavaScript를 기반으로 하는 동시에, JavaScript 역시 ECMAScript를 기반으로 한다는 거죠.
+
+> 둘의 뗄레야 뗄 수 없는 관계, 그리고 그 두 용어가 혼용되어서 사용되던 이유는 바로 여기에서부터 출발하지 않았을까 생각해봅니다.
+
+
 ## Web storage
 
 #### Web storage (웹 스토리지)

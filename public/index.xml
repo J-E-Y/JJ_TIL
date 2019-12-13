@@ -3634,6 +3634,16 @@ for link in links:
       <guid>/tutorial/it-terminology/</guid>
       <description>
 
+&lt;h2 id=&#34;javascript-와-ecmascript&#34;&gt;JavaScript 와 ECMAScript&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;JavaScript는 1996년에 만들어졌고, 그 다음에 JavaScript의 표준화를 위해 1997년에 ECMAScript가 만들어졌습니다. 당시 기준에서 JavaScript는 ECMAScript 사양을 따르고 있었기 때문에, JavaScript는 ECMAScript 사양을 준수하고 있던 언어의 예시였습니다.&lt;/p&gt;
+
+&lt;p&gt;여기서 우리는 재미있는 사실을 하나 알 수 있습니다. 바로, ECMAScript는 JavaScript를 기반으로 하는 동시에, JavaScript 역시 ECMAScript를 기반으로 한다는 거죠.&lt;/p&gt;
+
+&lt;p&gt;둘의 뗄레야 뗄 수 없는 관계, 그리고 그 두 용어가 혼용되어서 사용되던 이유는 바로 여기에서부터 출발하지 않았을까 생각해봅니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;h2 id=&#34;web-storage&#34;&gt;Web storage&lt;/h2&gt;
 
 &lt;h4 id=&#34;web-storage-웹-스토리지&#34;&gt;Web storage (웹 스토리지)&lt;/h4&gt;
@@ -9793,35 +9803,6 @@ const char_points = {
 };
 
 
-const char_points = {
-  &amp;quot;a&amp;quot;: 1,
-  &amp;quot;e&amp;quot;: 1,
-  &amp;quot;i&amp;quot;: 1,
-  &amp;quot;o&amp;quot;: 1,
-  &amp;quot;u&amp;quot;: 1,
-  &amp;quot;l&amp;quot;: 1,
-  &amp;quot;n&amp;quot;: 1,
-  &amp;quot;r&amp;quot;: 1,
-  &amp;quot;s&amp;quot;: 1,
-  &amp;quot;t&amp;quot;: 1,
-  &amp;quot;d&amp;quot;: 2,
-  &amp;quot;g&amp;quot;: 2,
-  &amp;quot;b&amp;quot;: 3,
-  &amp;quot;c&amp;quot;: 3,
-  &amp;quot;m&amp;quot;: 3,
-  &amp;quot;p&amp;quot;: 3,
-  &amp;quot;f&amp;quot;: 4,
-  &amp;quot;h&amp;quot;: 4,
-  &amp;quot;v&amp;quot;: 4,
-  &amp;quot;w&amp;quot;: 4,
-  &amp;quot;y&amp;quot;: 4,
-  &amp;quot;k&amp;quot;: 5,
-  &amp;quot;j&amp;quot;: 8,
-  &amp;quot;x&amp;quot;: 8,
-  &amp;quot;z&amp;quot;: 10,
-  &amp;quot;q&amp;quot;: 10
-};
-
 const reducer = (accumulator, currentValue) =&amp;gt; accumulator + currentValue;
 
 
@@ -11323,17 +11304,33 @@ for (let key in person) {
 
 &lt;h2 id=&#34;toc_2&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
+&lt;h2 id=&#34;prototype-무엇이냐&#34;&gt;prototype 무엇이냐?&lt;/h2&gt;
+
+&lt;h3 id=&#34;자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다&#34;&gt;자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;자바스크립트의 모든 객체는 자신의 부모 역할을 하는 객체와 연결되어 있다. 이를 통해 자바스크립트에서는 상속 개념을 구현할 수 있다. 이를 &lt;code&gt;프로토타입 객체&lt;/code&gt;라고 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;첫번째-알아야-할것&#34;&gt;첫번째 알아야 할것&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function Person() {}
+
+let x = new Person(); //  x 라는 변수는 객체가 된다. 
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;생성자-함수-prototype-객체-instance&#34;&gt;생성자 함수 || prototype 객체 || instance&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/2019-11-26-js-post_files/Screen Shot 2019-12-04 at 9.14.37 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;prototype-이란&#34;&gt;prototype 이란 ?&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;인스턴스가 생성될때 원형() 즉 프로토타입의 모양대로 인스턴스가 생성된다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;어떻게 사용하나요?&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h4 id=&#34;생성자-함수-만들기&#34;&gt;생성자 함수 만들기&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 생성자 함수 를 만든다. 
 
@@ -11357,58 +11354,6 @@ let obj = new Class(&amp;quot;join&amp;quot;,33,&amp;quot;좋아 이녀석아&am
 
 obj.study(); // join 운전을 합니다.
 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;타이머-사용하기&#34;&gt;타이머 사용하기&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;setTimeout(callback, millisecond)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;내가 설정한 시간 후에 함수를 실행;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-setTimeout(function() {
-  console.log(&#39;1초후 이것이 실행된다&#39;);
-}, 1000);
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;setInterval(callback, millisecond)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;내가 설정한 시간마다 계속 실행되는 함수&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-setInterval(function() {
-  console.log(&#39;1초마다 실행&#39;);
-}, 1000);
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;clearInterval(timerID)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;반복 실행중인 타이머를 종료&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-let timer = setInterval(function() {
-  console.log(&#39;1초마다 실행&#39;);
-}, 1000);
-
-
-clearInterval(timer); // 실행되는 순간 내가 만든 함수는 멈춘다. 
 
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -12758,9 +12703,8 @@ let teenager = salesTeam.filter(function(ele){
 
   let result = [];
   teenager.forEach(function(ele){
-    result.push(`${ele.name.first} ${ele.name.last}`); // 
+    result.push(`${ele.name.first} ${ele.name.last}`);
   });
-
 
 
 
@@ -12778,9 +12722,13 @@ let teenager = salesTeam.filter(function(ele){
 &lt;li&gt;&lt;p&gt;리턴 새로운 Array 인스턴스&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;MDN&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;string 받아서 배열로 바꿈&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Array.from()&lt;/code&gt;은 선택 매개변수인 mapFn를 가지는데, 배열(혹은 배열 서브클래스)의 각 요소를 맵핑할 때 사용할 수 있습니다. 즉, &lt;code&gt;Array.from(obj, mapFn, thisArg)&lt;/code&gt;는 중간에 다른 배열을 생성하지 않는다는 점을 제외하면 &lt;code&gt;Array.from(obj).map(mapFn, thisArg)&lt;/code&gt;와 같습니다. 이 특징은 &lt;code&gt;typed arrays&lt;/code&gt;와 같은 특정 배열 서브클래스에서 중간 배열 값이 적절한 유형에 맞게 생략되기 때문에 특히 중요합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;string-받아서-배열로-바꿈&#34;&gt;string 받아서 배열로 바꿈&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 console.log(Array.from(&#39;foo&#39;));
@@ -12792,9 +12740,7 @@ console.log(Array.from([1, 2, 3], x =&amp;gt; x + x));
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;set 사용해서 중복된 값 제거&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h5 id=&#34;set-사용해서-중복된-값-제거&#34;&gt;set 사용해서 중복된 값 제거&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 const set = new Set([&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;, &#39;foo&#39;]);
@@ -12804,9 +12750,7 @@ Array.from(set);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;arguments 도 받아서 배열로 만들어 버린다.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h5 id=&#34;arguments-도-받아서-배열로-만들어-버린다&#34;&gt;arguments 도 받아서 배열로 만들어 버린다.&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 function f() {
@@ -12818,9 +12762,7 @@ f(1, 2, 3);
 // [ 1, 2, 3 ]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;map 으로 사용하기 배열안에 배열&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h5 id=&#34;map-으로-사용하기-배열안에-배열&#34;&gt;map 으로 사용하기 배열안에 배열&lt;/h5&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;values 값 얻기&lt;/p&gt;
@@ -12846,6 +12788,24 @@ Array.from(a.values()); // 새로운 array 출력한다.
 
 [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;] //값
 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;내가-원하는-수만큼-배열-만들기&#34;&gt;내가 원하는 수만큼 배열 만들기&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+Array.from({length: 5}, (val, index) =&amp;gt; index);
+
+// [0, 1, 2, 3, 4]
+
+
+function add (val,index) {
+return index;
+}
+
+
+
+Array.from({length: 5},add) // [0, 1, 2, 3, 4]
 
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -13554,11 +13514,11 @@ return a - b;
 &lt;p&gt;every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;toc_69&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_76&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;2-dom&#34;&gt;2. Dom&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_71&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_78&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;dom-이란&#34;&gt;Dom 이란 ?&lt;/h2&gt;
 
@@ -14137,11 +14097,63 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_87&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_94&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
-&lt;h2 id=&#34;3-my-post&#34;&gt;3. My_post&lt;/h2&gt;
+&lt;h2 id=&#34;3-studying-notes&#34;&gt;3. Studying_Notes&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_89&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_96&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+
+&lt;h2 id=&#34;타이머-사용하기&#34;&gt;타이머 사용하기&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;setTimeout(callback, millisecond)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;내가 설정한 시간 후에 함수를 실행;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+setTimeout(function() {
+  console.log(&#39;1초후 이것이 실행된다&#39;);
+}, 1000);
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;setInterval(callback, millisecond)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;내가 설정한 시간마다 계속 실행되는 함수&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+setInterval(function() {
+  console.log(&#39;1초마다 실행&#39;);
+}, 1000);
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;clearInterval(timerID)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;반복 실행중인 타이머를 종료&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let timer = setInterval(function() {
+  console.log(&#39;1초마다 실행&#39;);
+}, 1000);
+
+
+clearInterval(timer); // 실행되는 순간 내가 만든 함수는 멈춘다. 
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;객체-숫자-계산-하는-방법&#34;&gt;객체 숫자 계산 하는 방법&lt;/h2&gt;
 
@@ -15637,12 +15649,6 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 &lt;p&gt;&lt;code&gt;null&lt;/code&gt; 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;undefined&lt;/code&gt; 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_117&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
-
-&lt;h2 id=&#34;4-post-from-others&#34;&gt;4.post from others&lt;/h2&gt;
-
-&lt;h2 id=&#34;toc_119&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;객체인-arguments-를-array-로-바꾸는-방법&#34;&gt;객체인 arguments 를 array 로 바꾸는 방법&lt;/h2&gt;
 

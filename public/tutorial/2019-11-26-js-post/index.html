@@ -27,9 +27,8 @@
   
     
   
-  <meta name="description" content="&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 1.Javacript &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 생성자 함수 || prototype 객체 || instance prototype 이란 ?  인스턴스가 생성될때 원형() 즉 프로토타입의 모양대로 인스턴스가 생성된다.
- 어떻게 사용하나요?
-  // 생성자 함수 를 만든다. function Class(name, age,yesNo) { this.name = name this.age = age this.yesNo = yesNo } // 동작을 만들기 위해 stydy 함수를 생정자 함수안에 추가한다. // 이때 prototype 을 만든다. Class.prototype.study = function(){ console.log(this.name &#43; &quot; 운전을 합니다. &quot;) } // 인스턴스 만든다.">
+  <meta name="description" content="&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 1.Javacript &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- prototype 무엇이냐? 자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.  자바스크립트의 모든 객체는 자신의 부모 역할을 하는 객체와 연결되어 있다. 이를 통해 자바스크립트에서는 상속 개념을 구현할 수 있다. 이를 프로토타입 객체라고 한다.
+ 첫번째 알아야 할것  함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.  function Person() {} let x = new Person(); // x 라는 변수는 객체가 된다.  생성자 함수 || prototype 객체 || instance 생성자 함수 만들기 // 생성자 함수 를 만든다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/2019-11-26-js-post/">
@@ -132,9 +131,8 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2019-11-26-js-post/">
   <meta property="og:title" content="__My_Notes | JohnJung">
-  <meta property="og:description" content="&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 1.Javacript &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 생성자 함수 || prototype 객체 || instance prototype 이란 ?  인스턴스가 생성될때 원형() 즉 프로토타입의 모양대로 인스턴스가 생성된다.
- 어떻게 사용하나요?
-  // 생성자 함수 를 만든다. function Class(name, age,yesNo) { this.name = name this.age = age this.yesNo = yesNo } // 동작을 만들기 위해 stydy 함수를 생정자 함수안에 추가한다. // 이때 prototype 을 만든다. Class.prototype.study = function(){ console.log(this.name &#43; &quot; 운전을 합니다. &quot;) } // 인스턴스 만든다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 1.Javacript &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- prototype 무엇이냐? 자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.  자바스크립트의 모든 객체는 자신의 부모 역할을 하는 객체와 연결되어 있다. 이를 통해 자바스크립트에서는 상속 개념을 구현할 수 있다. 이를 프로토타입 객체라고 한다.
+ 첫번째 알아야 할것  함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.  function Person() {} let x = new Person(); // x 라는 변수는 객체가 된다.  생성자 함수 || prototype 객체 || instance 생성자 함수 만들기 // 생성자 함수 를 만든다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -423,14 +421,23 @@
 <li><a href="#toc_0">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#1-javacript">1.Javacript</a></li>
 <li><a href="#toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#prototype-무엇이냐">prototype 무엇이냐?</a>
+<ul>
+<li><a href="#자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다">자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.</a>
+<ul>
+<li>
+<ul>
+<li><a href="#첫번째-알아야-할것">첫번째 알아야 할것</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
 <li><a href="#생성자-함수-prototype-객체-instance">생성자 함수 || prototype 객체 || instance</a>
 <ul>
 <li>
 <ul>
-<li><a href="#prototype-이란">prototype 이란 ?</a></li>
+<li><a href="#생성자-함수-만들기">생성자 함수 만들기</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#타이머-사용하기">타이머 사용하기</a></li>
 <li><a href="#함수-메소드-call-apply-bind">함수 메소드 call(),apply,bind()</a>
 <ul>
 <li>
@@ -529,7 +536,14 @@
 <ul>
 <li>
 <ul>
-<li><a href="#definiton-syntax">Definiton &amp; Syntax</a></li>
+<li><a href="#definiton-syntax">Definiton &amp; Syntax</a>
+<ul>
+<li><a href="#string-받아서-배열로-바꿈">string 받아서 배열로 바꿈</a></li>
+<li><a href="#set-사용해서-중복된-값-제거">set 사용해서 중복된 값 제거</a></li>
+<li><a href="#arguments-도-받아서-배열로-만들어-버린다">arguments 도 받아서 배열로 만들어 버린다.</a></li>
+<li><a href="#map-으로-사용하기-배열안에-배열">map 으로 사용하기 배열안에 배열</a></li>
+<li><a href="#내가-원하는-수만큼-배열-만들기">내가 원하는 수만큼 배열 만들기</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 <li><a href="#reduce">reduce()</a>
@@ -569,9 +583,9 @@
 <li><a href="#2-some">2.some()</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#toc_69">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_76">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#2-dom">2. Dom</a></li>
-<li><a href="#toc_71">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_78">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#dom-이란">Dom 이란 ?</a></li>
 <li><a href="#버튼-만들기">버튼 만들기</a></li>
 <li><a href="#e-target-이란">e.target 이란 ?</a></li>
@@ -589,9 +603,10 @@
 <li><a href="#버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</a></li>
 <li><a href="#script-위치">script 위치</a></li>
 <li><a href="#insertbefore">insertBefore()</a></li>
-<li><a href="#toc_87">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
-<li><a href="#3-my-post">3. My_post</a></li>
-<li><a href="#toc_89">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_94">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#3-studying-notes">3. Studying_Notes</a></li>
+<li><a href="#toc_96">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#타이머-사용하기">타이머 사용하기</a></li>
 <li><a href="#객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</a>
 <ul>
 <li>
@@ -624,9 +639,6 @@
 <li><a href="#foreach-for-of-for-in-의-차이">forEach, for of, for in 의 차이</a></li>
 <li><a href="#falsy-와-fruthy-구별">Falsy 와 Fruthy 구별</a></li>
 <li><a href="#null-과-undefined-는-등록-저장-여부이다">null 과 undefined 는 등록, 저장 여부이다.</a></li>
-<li><a href="#toc_117">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
-<li><a href="#4-post-from-others">4.post from others</a></li>
-<li><a href="#toc_119">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#객체인-arguments-를-array-로-바꾸는-방법">객체인 arguments 를 array 로 바꾸는 방법</a></li>
 <li><a href="#rest파라미터와-spread연산자-or-함수의-가독성을-높이는-방법">Rest파라미터와 Spread연산자 or 함수의 가독성을 높이는 방법</a>
 <ul>
@@ -664,17 +676,33 @@
 
 <h2 id="toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
+<h2 id="prototype-무엇이냐">prototype 무엇이냐?</h2>
+
+<h3 id="자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다">자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.</h3>
+
+<blockquote>
+<p>자바스크립트의 모든 객체는 자신의 부모 역할을 하는 객체와 연결되어 있다. 이를 통해 자바스크립트에서는 상속 개념을 구현할 수 있다. 이를 <code>프로토타입 객체</code>라고 한다.</p>
+</blockquote>
+
+<h5 id="첫번째-알아야-할것">첫번째 알아야 할것</h5>
+
+<ul>
+<li>함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.</li>
+</ul>
+
+<pre><code class="language-js">function Person() {}
+
+let x = new Person(); //  x 라는 변수는 객체가 된다. 
+
+
+
+</code></pre>
+
 <h2 id="생성자-함수-prototype-객체-instance">생성자 함수 || prototype 객체 || instance</h2>
 
 <p><img src="/tutorial/2019-11-26-js-post_files/Screen Shot 2019-12-04 at 9.14.37 AM.png" alt="" /></p>
 
-<h4 id="prototype-이란">prototype 이란 ?</h4>
-
-<ul>
-<li><p>인스턴스가 생성될때 원형() 즉 프로토타입의 모양대로 인스턴스가 생성된다.</p></li>
-
-<li><p>어떻게 사용하나요?</p></li>
-</ul>
+<h4 id="생성자-함수-만들기">생성자 함수 만들기</h4>
 
 <pre><code class="language-js">// 생성자 함수 를 만든다. 
 
@@ -698,58 +726,6 @@ let obj = new Class(&quot;join&quot;,33,&quot;좋아 이녀석아&quot;);
 
 obj.study(); // join 운전을 합니다.
 
-
-</code></pre>
-
-<h2 id="타이머-사용하기">타이머 사용하기</h2>
-
-<ul>
-<li>setTimeout(callback, millisecond)</li>
-</ul>
-
-<blockquote>
-<p>내가 설정한 시간 후에 함수를 실행;</p>
-</blockquote>
-
-<pre><code class="language-js">
-setTimeout(function() {
-  console.log('1초후 이것이 실행된다');
-}, 1000);
-
-
-</code></pre>
-
-<ul>
-<li>setInterval(callback, millisecond)</li>
-</ul>
-
-<blockquote>
-<p>내가 설정한 시간마다 계속 실행되는 함수</p>
-</blockquote>
-
-<pre><code class="language-js">
-setInterval(function() {
-  console.log('1초마다 실행');
-}, 1000);
-
-
-</code></pre>
-
-<ul>
-<li>clearInterval(timerID)</li>
-</ul>
-
-<blockquote>
-<p>반복 실행중인 타이머를 종료</p>
-</blockquote>
-
-<pre><code class="language-js">
-let timer = setInterval(function() {
-  console.log('1초마다 실행');
-}, 1000);
-
-
-clearInterval(timer); // 실행되는 순간 내가 만든 함수는 멈춘다. 
 
 </code></pre>
 
@@ -2099,9 +2075,8 @@ let teenager = salesTeam.filter(function(ele){
 
   let result = [];
   teenager.forEach(function(ele){
-    result.push(`${ele.name.first} ${ele.name.last}`); // 
+    result.push(`${ele.name.first} ${ele.name.last}`);
   });
-
 
 
 
@@ -2119,9 +2094,13 @@ let teenager = salesTeam.filter(function(ele){
 <li><p>리턴 새로운 Array 인스턴스</p></li>
 
 <li><p>MDN</p></li>
-
-<li><p>string 받아서 배열로 바꿈</p></li>
 </ul>
+
+<blockquote>
+<p><code>Array.from()</code>은 선택 매개변수인 mapFn를 가지는데, 배열(혹은 배열 서브클래스)의 각 요소를 맵핑할 때 사용할 수 있습니다. 즉, <code>Array.from(obj, mapFn, thisArg)</code>는 중간에 다른 배열을 생성하지 않는다는 점을 제외하면 <code>Array.from(obj).map(mapFn, thisArg)</code>와 같습니다. 이 특징은 <code>typed arrays</code>와 같은 특정 배열 서브클래스에서 중간 배열 값이 적절한 유형에 맞게 생략되기 때문에 특히 중요합니다.</p>
+</blockquote>
+
+<h5 id="string-받아서-배열로-바꿈">string 받아서 배열로 바꿈</h5>
 
 <pre><code class="language-js">
 console.log(Array.from('foo'));
@@ -2133,9 +2112,7 @@ console.log(Array.from([1, 2, 3], x =&gt; x + x));
 
 </code></pre>
 
-<ul>
-<li>set 사용해서 중복된 값 제거</li>
-</ul>
+<h5 id="set-사용해서-중복된-값-제거">set 사용해서 중복된 값 제거</h5>
 
 <pre><code class="language-js">
 const set = new Set(['foo', 'bar', 'baz', 'foo']);
@@ -2145,9 +2122,7 @@ Array.from(set);
 
 </code></pre>
 
-<ul>
-<li>arguments 도 받아서 배열로 만들어 버린다.</li>
-</ul>
+<h5 id="arguments-도-받아서-배열로-만들어-버린다">arguments 도 받아서 배열로 만들어 버린다.</h5>
 
 <pre><code class="language-js">
 function f() {
@@ -2159,9 +2134,7 @@ f(1, 2, 3);
 // [ 1, 2, 3 ]
 </code></pre>
 
-<ul>
-<li>map 으로 사용하기 배열안에 배열</li>
-</ul>
+<h5 id="map-으로-사용하기-배열안에-배열">map 으로 사용하기 배열안에 배열</h5>
 
 <blockquote>
 <p>values 값 얻기</p>
@@ -2187,6 +2160,24 @@ Array.from(a.values()); // 새로운 array 출력한다.
 
 [&quot;a&quot;, &quot;b&quot;] //값
 
+
+</code></pre>
+
+<h5 id="내가-원하는-수만큼-배열-만들기">내가 원하는 수만큼 배열 만들기</h5>
+
+<pre><code class="language-js">
+Array.from({length: 5}, (val, index) =&gt; index);
+
+// [0, 1, 2, 3, 4]
+
+
+function add (val,index) {
+return index;
+}
+
+
+
+Array.from({length: 5},add) // [0, 1, 2, 3, 4]
 
 
 </code></pre>
@@ -2895,11 +2886,11 @@ return a - b;
 <p>every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다</p>
 </blockquote>
 
-<h2 id="toc_69">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_76">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="2-dom">2. Dom</h2>
 
-<h2 id="toc_71">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_78">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="dom-이란">Dom 이란 ?</h2>
 
@@ -3478,11 +3469,63 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 </code></pre>
 
-<h2 id="toc_87">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_94">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
-<h2 id="3-my-post">3. My_post</h2>
+<h2 id="3-studying-notes">3. Studying_Notes</h2>
 
-<h2 id="toc_89">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_96">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+
+<h2 id="타이머-사용하기">타이머 사용하기</h2>
+
+<ul>
+<li>setTimeout(callback, millisecond)</li>
+</ul>
+
+<blockquote>
+<p>내가 설정한 시간 후에 함수를 실행;</p>
+</blockquote>
+
+<pre><code class="language-js">
+setTimeout(function() {
+  console.log('1초후 이것이 실행된다');
+}, 1000);
+
+
+</code></pre>
+
+<ul>
+<li>setInterval(callback, millisecond)</li>
+</ul>
+
+<blockquote>
+<p>내가 설정한 시간마다 계속 실행되는 함수</p>
+</blockquote>
+
+<pre><code class="language-js">
+setInterval(function() {
+  console.log('1초마다 실행');
+}, 1000);
+
+
+</code></pre>
+
+<ul>
+<li>clearInterval(timerID)</li>
+</ul>
+
+<blockquote>
+<p>반복 실행중인 타이머를 종료</p>
+</blockquote>
+
+<pre><code class="language-js">
+let timer = setInterval(function() {
+  console.log('1초마다 실행');
+}, 1000);
+
+
+clearInterval(timer); // 실행되는 순간 내가 만든 함수는 멈춘다. 
+
+</code></pre>
 
 <h2 id="객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</h2>
 
@@ -4978,12 +5021,6 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 <p><code>null</code> 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다.</p>
 
 <p><code>undefined</code> 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</p>
-
-<h2 id="toc_117">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
-
-<h2 id="4-post-from-others">4.post from others</h2>
-
-<h2 id="toc_119">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="객체인-arguments-를-array-로-바꾸는-방법">객체인 arguments 를 array 로 바꾸는 방법</h2>
 
