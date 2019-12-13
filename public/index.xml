@@ -9760,6 +9760,108 @@ function word_calc(word) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h3 id=&#34;other-soultion&#34;&gt;Other_Soultion&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+const char_points = {
+  &amp;quot;a&amp;quot;: 1,
+  &amp;quot;e&amp;quot;: 1,
+  &amp;quot;i&amp;quot;: 1,
+  &amp;quot;o&amp;quot;: 1,
+  &amp;quot;u&amp;quot;: 1,
+  &amp;quot;l&amp;quot;: 1,
+  &amp;quot;n&amp;quot;: 1,
+  &amp;quot;r&amp;quot;: 1,
+  &amp;quot;s&amp;quot;: 1,
+  &amp;quot;t&amp;quot;: 1,
+  &amp;quot;d&amp;quot;: 2,
+  &amp;quot;g&amp;quot;: 2,
+  &amp;quot;b&amp;quot;: 3,
+  &amp;quot;c&amp;quot;: 3,
+  &amp;quot;m&amp;quot;: 3,
+  &amp;quot;p&amp;quot;: 3,
+  &amp;quot;f&amp;quot;: 4,
+  &amp;quot;h&amp;quot;: 4,
+  &amp;quot;v&amp;quot;: 4,
+  &amp;quot;w&amp;quot;: 4,
+  &amp;quot;y&amp;quot;: 4,
+  &amp;quot;k&amp;quot;: 5,
+  &amp;quot;j&amp;quot;: 8,
+  &amp;quot;x&amp;quot;: 8,
+  &amp;quot;z&amp;quot;: 10,
+  &amp;quot;q&amp;quot;: 10
+};
+
+
+const char_points = {
+  &amp;quot;a&amp;quot;: 1,
+  &amp;quot;e&amp;quot;: 1,
+  &amp;quot;i&amp;quot;: 1,
+  &amp;quot;o&amp;quot;: 1,
+  &amp;quot;u&amp;quot;: 1,
+  &amp;quot;l&amp;quot;: 1,
+  &amp;quot;n&amp;quot;: 1,
+  &amp;quot;r&amp;quot;: 1,
+  &amp;quot;s&amp;quot;: 1,
+  &amp;quot;t&amp;quot;: 1,
+  &amp;quot;d&amp;quot;: 2,
+  &amp;quot;g&amp;quot;: 2,
+  &amp;quot;b&amp;quot;: 3,
+  &amp;quot;c&amp;quot;: 3,
+  &amp;quot;m&amp;quot;: 3,
+  &amp;quot;p&amp;quot;: 3,
+  &amp;quot;f&amp;quot;: 4,
+  &amp;quot;h&amp;quot;: 4,
+  &amp;quot;v&amp;quot;: 4,
+  &amp;quot;w&amp;quot;: 4,
+  &amp;quot;y&amp;quot;: 4,
+  &amp;quot;k&amp;quot;: 5,
+  &amp;quot;j&amp;quot;: 8,
+  &amp;quot;x&amp;quot;: 8,
+  &amp;quot;z&amp;quot;: 10,
+  &amp;quot;q&amp;quot;: 10
+};
+
+const reducer = (accumulator, currentValue) =&amp;gt; accumulator + currentValue;
+
+
+function word_calc(w) {
+  // convert your string array to relevant numbers 
+  const splitted_array = w.split(&amp;quot;&amp;quot;).map(function(item) {
+    return char_points[item]
+  });
+
+  // You can use simple loop to sum up or reduce to reduce and sum the array
+  const total = splitted_array.reduce(reducer);
+  console.log(total)
+}
+
+
+word_calc(&amp;quot;zoo&amp;quot;) // 12
+word_calc(&amp;quot;bus&amp;quot;) // 5
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+function word_calc(w) {
+  let total=0;
+  // convert your string array to relevant numbers and add it to the total
+  w.split(&amp;quot;&amp;quot;).map(function(item) {
+    total += char_points[item];
+  });
+  console.log(total)
+}
+
+
+word_calc(&amp;quot;zoo&amp;quot;) // 12
+word_calc(&amp;quot;zoozoo&amp;quot;) // 24
+word_calc(&amp;quot;bus&amp;quot;) // 5
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h3 id=&#34;question&#34;&gt;Question&lt;/h3&gt;
 
 &lt;h2 id=&#34;4칙연산-함수-만들기&#34;&gt;4칙연산 함수 만들기&lt;/h2&gt;
@@ -9801,6 +9903,10 @@ var divide = {
 	divide: 0
 }
 
+
+
+
+
 var answer = function (first,second) {
   if(this === add) {
 	return this.add = first + second; 
@@ -9812,6 +9918,28 @@ var answer = function (first,second) {
 	return this.divide = first / second;
   }
 }
+
+
+/*
+
+better code
+
+var answer = {
+  add:function(fir, sec){
+    return fir+sec;
+  },
+  subtract:function(fir, sec){
+    return fir-sec;
+  },
+  multiply:function(fir, sec) {
+    return fir*sec;
+  },
+  divide:function(fir, sec) {
+    return fir/sec;
+  }
+}
+
+*/
 
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -11648,7 +11776,6 @@ function Car(band,name,color) {
 // new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. 
 
 
-// Car 라는 class 만들어 낼때 class는 2가지를 갖게 된다.
 
 // 1. 속성  : band,name,color , currentFuel,maxSpeed
 // 2. 메소드  : refuel() ,setSpeed(), drive()
@@ -12639,9 +12766,93 @@ let teenager = salesTeam.filter(function(ele){
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;reduce&#34;&gt;reduce()&lt;/h2&gt;
+&lt;h2 id=&#34;from&#34;&gt;from()&lt;/h2&gt;
 
 &lt;h4 id=&#34;definiton-syntax&#34;&gt;Definiton &amp;amp; Syntax&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Array.from(arrayLike[, mapFn[, thisArg]])&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;리턴 새로운 Array 인스턴스&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;MDN&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;string 받아서 배열로 바꿈&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+console.log(Array.from(&#39;foo&#39;));
+// expected output: Array [&amp;quot;f&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;o&amp;quot;]
+
+console.log(Array.from([1, 2, 3], x =&amp;gt; x + x));
+// expected output: Array [2, 4, 6]
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;set 사용해서 중복된 값 제거&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+const set = new Set([&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;, &#39;foo&#39;]);
+Array.from(set);
+// [ &amp;quot;foo&amp;quot;, &amp;quot;bar&amp;quot;, &amp;quot;baz&amp;quot; ]
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;arguments 도 받아서 배열로 만들어 버린다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function f() {
+  return Array.from(arguments);
+}
+
+f(1, 2, 3);
+
+// [ 1, 2, 3 ]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;map 으로 사용하기 배열안에 배열&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;values 값 얻기&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var a = new Map([[&#39;1&#39;, &#39;a&#39;], [&#39;2&#39;, &#39;b&#39;]]) // 각요소의 1번째 가 키 2번째가 값 
+
+Array.from(a.values()); // 새로운 array 출력한다. 
+
+[&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;] //값
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;keys 값 얻기&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var a = new Map([[&#39;1&#39;, &#39;a&#39;], [&#39;2&#39;, &#39;b&#39;]]) // 각요소의 1번째 가 키 2번째가 값 
+
+Array.from(a.values()); // 새로운 array 출력한다. 
+
+[&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;] //값
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;reduce&#34;&gt;reduce()&lt;/h2&gt;
+
+&lt;h4 id=&#34;definiton-syntax-1&#34;&gt;Definiton &amp;amp; Syntax&lt;/h4&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])&lt;/p&gt;
@@ -13343,11 +13554,11 @@ return a - b;
 &lt;p&gt;every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;toc_67&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_69&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;2-dom&#34;&gt;2. Dom&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_69&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_71&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;dom-이란&#34;&gt;Dom 이란 ?&lt;/h2&gt;
 
@@ -13926,11 +14137,11 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_85&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_87&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;3-my-post&#34;&gt;3. My_post&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_87&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_89&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;객체-숫자-계산-하는-방법&#34;&gt;객체 숫자 계산 하는 방법&lt;/h2&gt;
 
@@ -15427,11 +15638,11 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 
 &lt;p&gt;&lt;code&gt;undefined&lt;/code&gt; 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_115&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_117&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;4-post-from-others&#34;&gt;4.post from others&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_117&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_119&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;객체인-arguments-를-array-로-바꾸는-방법&#34;&gt;객체인 arguments 를 array 로 바꾸는 방법&lt;/h2&gt;
 

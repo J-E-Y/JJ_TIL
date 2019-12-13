@@ -525,11 +525,18 @@
 </ul></li>
 <li><a href="#callback">Callback</a></li>
 <li><a href="#salesteam-안에-있는-data-fliter-와-foreach-로-다루기">salesTeam 안에 있는 data  fliter 와 foreach 로 다루기</a></li>
-<li><a href="#reduce">reduce()</a>
+<li><a href="#from">from()</a>
 <ul>
 <li>
 <ul>
 <li><a href="#definiton-syntax">Definiton &amp; Syntax</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#reduce">reduce()</a>
+<ul>
+<li>
+<ul>
+<li><a href="#definiton-syntax-1">Definiton &amp; Syntax</a></li>
 <li><a href="#ex-2">ex)</a></li>
 </ul></li>
 </ul></li>
@@ -562,9 +569,9 @@
 <li><a href="#2-some">2.some()</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#toc_67">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
-<li><a href="#2-dom">2. Dom</a></li>
 <li><a href="#toc_69">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#2-dom">2. Dom</a></li>
+<li><a href="#toc_71">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#dom-이란">Dom 이란 ?</a></li>
 <li><a href="#버튼-만들기">버튼 만들기</a></li>
 <li><a href="#e-target-이란">e.target 이란 ?</a></li>
@@ -582,9 +589,9 @@
 <li><a href="#버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</a></li>
 <li><a href="#script-위치">script 위치</a></li>
 <li><a href="#insertbefore">insertBefore()</a></li>
-<li><a href="#toc_85">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
-<li><a href="#3-my-post">3. My_post</a></li>
 <li><a href="#toc_87">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#3-my-post">3. My_post</a></li>
+<li><a href="#toc_89">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</a>
 <ul>
 <li>
@@ -617,9 +624,9 @@
 <li><a href="#foreach-for-of-for-in-의-차이">forEach, for of, for in 의 차이</a></li>
 <li><a href="#falsy-와-fruthy-구별">Falsy 와 Fruthy 구별</a></li>
 <li><a href="#null-과-undefined-는-등록-저장-여부이다">null 과 undefined 는 등록, 저장 여부이다.</a></li>
-<li><a href="#toc_115">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
-<li><a href="#4-post-from-others">4.post from others</a></li>
 <li><a href="#toc_117">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#4-post-from-others">4.post from others</a></li>
+<li><a href="#toc_119">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#객체인-arguments-를-array-로-바꾸는-방법">객체인 arguments 를 array 로 바꾸는 방법</a></li>
 <li><a href="#rest파라미터와-spread연산자-or-함수의-가독성을-높이는-방법">Rest파라미터와 Spread연산자 or 함수의 가독성을 높이는 방법</a>
 <ul>
@@ -1110,7 +1117,6 @@ function Car(band,name,color) {
 // new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. 
 
 
-// Car 라는 class 만들어 낼때 class는 2가지를 갖게 된다.
 
 // 1. 속성  : band,name,color , currentFuel,maxSpeed
 // 2. 메소드  : refuel() ,setSpeed(), drive()
@@ -2101,9 +2107,93 @@ let teenager = salesTeam.filter(function(ele){
 
 </code></pre>
 
-<h2 id="reduce">reduce()</h2>
+<h2 id="from">from()</h2>
 
 <h4 id="definiton-syntax">Definiton &amp; Syntax</h4>
+
+<blockquote>
+<p>Array.from(arrayLike[, mapFn[, thisArg]])</p>
+</blockquote>
+
+<ul>
+<li><p>리턴 새로운 Array 인스턴스</p></li>
+
+<li><p>MDN</p></li>
+
+<li><p>string 받아서 배열로 바꿈</p></li>
+</ul>
+
+<pre><code class="language-js">
+console.log(Array.from('foo'));
+// expected output: Array [&quot;f&quot;, &quot;o&quot;, &quot;o&quot;]
+
+console.log(Array.from([1, 2, 3], x =&gt; x + x));
+// expected output: Array [2, 4, 6]
+
+
+</code></pre>
+
+<ul>
+<li>set 사용해서 중복된 값 제거</li>
+</ul>
+
+<pre><code class="language-js">
+const set = new Set(['foo', 'bar', 'baz', 'foo']);
+Array.from(set);
+// [ &quot;foo&quot;, &quot;bar&quot;, &quot;baz&quot; ]
+
+
+</code></pre>
+
+<ul>
+<li>arguments 도 받아서 배열로 만들어 버린다.</li>
+</ul>
+
+<pre><code class="language-js">
+function f() {
+  return Array.from(arguments);
+}
+
+f(1, 2, 3);
+
+// [ 1, 2, 3 ]
+</code></pre>
+
+<ul>
+<li>map 으로 사용하기 배열안에 배열</li>
+</ul>
+
+<blockquote>
+<p>values 값 얻기</p>
+</blockquote>
+
+<pre><code class="language-js">
+var a = new Map([['1', 'a'], ['2', 'b']]) // 각요소의 1번째 가 키 2번째가 값 
+
+Array.from(a.values()); // 새로운 array 출력한다. 
+
+[&quot;a&quot;, &quot;b&quot;] //값
+
+</code></pre>
+
+<blockquote>
+<p>keys 값 얻기</p>
+</blockquote>
+
+<pre><code class="language-js">
+var a = new Map([['1', 'a'], ['2', 'b']]) // 각요소의 1번째 가 키 2번째가 값 
+
+Array.from(a.values()); // 새로운 array 출력한다. 
+
+[&quot;a&quot;, &quot;b&quot;] //값
+
+
+
+</code></pre>
+
+<h2 id="reduce">reduce()</h2>
+
+<h4 id="definiton-syntax-1">Definiton &amp; Syntax</h4>
 
 <blockquote>
 <p>arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])</p>
@@ -2805,11 +2895,11 @@ return a - b;
 <p>every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다</p>
 </blockquote>
 
-<h2 id="toc_67">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_69">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="2-dom">2. Dom</h2>
 
-<h2 id="toc_69">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_71">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="dom-이란">Dom 이란 ?</h2>
 
@@ -3388,11 +3478,11 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 </code></pre>
 
-<h2 id="toc_85">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_87">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="3-my-post">3. My_post</h2>
 
-<h2 id="toc_87">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_89">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</h2>
 
@@ -4889,11 +4979,11 @@ undefined, false, null, 0, NaN, “ 는 false 로 취급(falsy)
 
 <p><code>undefined</code> 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</p>
 
-<h2 id="toc_115">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_117">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="4-post-from-others">4.post from others</h2>
 
-<h2 id="toc_117">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_119">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="객체인-arguments-를-array-로-바꾸는-방법">객체인 arguments 를 array 로 바꾸는 방법</h2>
 

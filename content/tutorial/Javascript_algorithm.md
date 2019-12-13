@@ -137,6 +137,112 @@ function word_calc(word) {
 
 ```
 
+### Other_Soultion
+
+```js
+
+const char_points = {
+  "a": 1,
+  "e": 1,
+  "i": 1,
+  "o": 1,
+  "u": 1,
+  "l": 1,
+  "n": 1,
+  "r": 1,
+  "s": 1,
+  "t": 1,
+  "d": 2,
+  "g": 2,
+  "b": 3,
+  "c": 3,
+  "m": 3,
+  "p": 3,
+  "f": 4,
+  "h": 4,
+  "v": 4,
+  "w": 4,
+  "y": 4,
+  "k": 5,
+  "j": 8,
+  "x": 8,
+  "z": 10,
+  "q": 10
+};
+
+
+const char_points = {
+  "a": 1,
+  "e": 1,
+  "i": 1,
+  "o": 1,
+  "u": 1,
+  "l": 1,
+  "n": 1,
+  "r": 1,
+  "s": 1,
+  "t": 1,
+  "d": 2,
+  "g": 2,
+  "b": 3,
+  "c": 3,
+  "m": 3,
+  "p": 3,
+  "f": 4,
+  "h": 4,
+  "v": 4,
+  "w": 4,
+  "y": 4,
+  "k": 5,
+  "j": 8,
+  "x": 8,
+  "z": 10,
+  "q": 10
+};
+
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+
+function word_calc(w) {
+  // convert your string array to relevant numbers 
+  const splitted_array = w.split("").map(function(item) {
+    return char_points[item]
+  });
+
+  // You can use simple loop to sum up or reduce to reduce and sum the array
+  const total = splitted_array.reduce(reducer);
+  console.log(total)
+}
+
+
+word_calc("zoo") // 12
+word_calc("bus") // 5
+
+
+```
+
+
+```js
+
+
+function word_calc(w) {
+  let total=0;
+  // convert your string array to relevant numbers and add it to the total
+  w.split("").map(function(item) {
+    total += char_points[item];
+  });
+  console.log(total)
+}
+
+
+word_calc("zoo") // 12
+word_calc("zoozoo") // 24
+word_calc("bus") // 5
+
+
+```
+
+
 
 
 
@@ -182,6 +288,10 @@ var divide = {
 	divide: 0
 }
 
+
+
+
+
 var answer = function (first,second) {
   if(this === add) {
 	return this.add = first + second; 
@@ -193,6 +303,28 @@ var answer = function (first,second) {
 	return this.divide = first / second;
   }
 }
+
+
+/*
+
+better code
+
+var answer = {
+  add:function(fir, sec){
+    return fir+sec;
+  },
+  subtract:function(fir, sec){
+    return fir-sec;
+  },
+  multiply:function(fir, sec) {
+    return fir*sec;
+  },
+  divide:function(fir, sec) {
+    return fir/sec;
+  }
+}
+
+*/
 
 
 ```

@@ -425,6 +425,7 @@
 <li><a href="#scrabble-word-calculator">scrabble word calculator</a>
 <ul>
 <li><a href="#my-soultion">My_soultion</a></li>
+<li><a href="#other-soultion">Other_Soultion</a></li>
 <li><a href="#question">Question</a></li>
 </ul></li>
 <li><a href="#4칙연산-함수-만들기">4칙연산 함수 만들기</a>
@@ -580,6 +581,108 @@ function word_calc(word) {
 
 </code></pre>
 
+<h3 id="other-soultion">Other_Soultion</h3>
+
+<pre><code class="language-js">
+const char_points = {
+  &quot;a&quot;: 1,
+  &quot;e&quot;: 1,
+  &quot;i&quot;: 1,
+  &quot;o&quot;: 1,
+  &quot;u&quot;: 1,
+  &quot;l&quot;: 1,
+  &quot;n&quot;: 1,
+  &quot;r&quot;: 1,
+  &quot;s&quot;: 1,
+  &quot;t&quot;: 1,
+  &quot;d&quot;: 2,
+  &quot;g&quot;: 2,
+  &quot;b&quot;: 3,
+  &quot;c&quot;: 3,
+  &quot;m&quot;: 3,
+  &quot;p&quot;: 3,
+  &quot;f&quot;: 4,
+  &quot;h&quot;: 4,
+  &quot;v&quot;: 4,
+  &quot;w&quot;: 4,
+  &quot;y&quot;: 4,
+  &quot;k&quot;: 5,
+  &quot;j&quot;: 8,
+  &quot;x&quot;: 8,
+  &quot;z&quot;: 10,
+  &quot;q&quot;: 10
+};
+
+
+const char_points = {
+  &quot;a&quot;: 1,
+  &quot;e&quot;: 1,
+  &quot;i&quot;: 1,
+  &quot;o&quot;: 1,
+  &quot;u&quot;: 1,
+  &quot;l&quot;: 1,
+  &quot;n&quot;: 1,
+  &quot;r&quot;: 1,
+  &quot;s&quot;: 1,
+  &quot;t&quot;: 1,
+  &quot;d&quot;: 2,
+  &quot;g&quot;: 2,
+  &quot;b&quot;: 3,
+  &quot;c&quot;: 3,
+  &quot;m&quot;: 3,
+  &quot;p&quot;: 3,
+  &quot;f&quot;: 4,
+  &quot;h&quot;: 4,
+  &quot;v&quot;: 4,
+  &quot;w&quot;: 4,
+  &quot;y&quot;: 4,
+  &quot;k&quot;: 5,
+  &quot;j&quot;: 8,
+  &quot;x&quot;: 8,
+  &quot;z&quot;: 10,
+  &quot;q&quot;: 10
+};
+
+const reducer = (accumulator, currentValue) =&gt; accumulator + currentValue;
+
+
+function word_calc(w) {
+  // convert your string array to relevant numbers 
+  const splitted_array = w.split(&quot;&quot;).map(function(item) {
+    return char_points[item]
+  });
+
+  // You can use simple loop to sum up or reduce to reduce and sum the array
+  const total = splitted_array.reduce(reducer);
+  console.log(total)
+}
+
+
+word_calc(&quot;zoo&quot;) // 12
+word_calc(&quot;bus&quot;) // 5
+
+
+</code></pre>
+
+<pre><code class="language-js">
+
+function word_calc(w) {
+  let total=0;
+  // convert your string array to relevant numbers and add it to the total
+  w.split(&quot;&quot;).map(function(item) {
+    total += char_points[item];
+  });
+  console.log(total)
+}
+
+
+word_calc(&quot;zoo&quot;) // 12
+word_calc(&quot;zoozoo&quot;) // 24
+word_calc(&quot;bus&quot;) // 5
+
+
+</code></pre>
+
 <h3 id="question">Question</h3>
 
 <h2 id="4칙연산-함수-만들기">4칙연산 함수 만들기</h2>
@@ -621,6 +724,10 @@ var divide = {
 	divide: 0
 }
 
+
+
+
+
 var answer = function (first,second) {
   if(this === add) {
 	return this.add = first + second; 
@@ -632,6 +739,28 @@ var answer = function (first,second) {
 	return this.divide = first / second;
   }
 }
+
+
+/*
+
+better code
+
+var answer = {
+  add:function(fir, sec){
+    return fir+sec;
+  },
+  subtract:function(fir, sec){
+    return fir-sec;
+  },
+  multiply:function(fir, sec) {
+    return fir*sec;
+  },
+  divide:function(fir, sec) {
+    return fir/sec;
+  }
+}
+
+*/
 
 
 </code></pre>
