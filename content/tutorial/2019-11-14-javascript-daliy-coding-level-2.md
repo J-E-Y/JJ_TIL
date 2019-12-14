@@ -2302,6 +2302,29 @@ function getTeenager(salesTeam) {
 
 ```
 
+### other_Soultion
+
+```js
+
+function getTeenager(salesTeam) {
+
+// filter 와 map을 이용해서 
+
+
+return salesTeam.filter((ele)=>{
+	return ele.age < 20;  
+}).map((ele)=>{
+	return ele.name.first +" "+ ele.name.last;
+})
+
+
+
+}
+
+
+```
+
+
 
 
 ### Question

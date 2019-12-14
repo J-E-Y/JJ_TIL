@@ -627,6 +627,7 @@
 <ul>
 <li><a href="#my-soultion-37">My_Soultion</a></li>
 <li><a href="#other-soultion">other_Soultion</a></li>
+<li><a href="#other-soultion-1-1">other_Soultion</a></li>
 <li><a href="#question-28">Question</a></li>
 </ul></li>
 <li><a href="#sumdigits">sumDigits</a>
@@ -637,7 +638,7 @@
 <li><a href="#offlineminimum">offLineMinimum</a>
 <ul>
 <li><a href="#my-soultion-39">My_Soultion</a></li>
-<li><a href="#other-soultion-1-1">other_Soultion</a></li>
+<li><a href="#other-soultion-1-2">other_Soultion</a></li>
 <li><a href="#question-30">Question</a></li>
 </ul></li>
 <li><a href="#range">range</a>
@@ -652,19 +653,19 @@
 <li><a href="#hammingdistance">hammingDistance</a>
 <ul>
 <li><a href="#my-soultion-41">My_Soultion</a></li>
-<li><a href="#other-soultion-1-2">Other_Soultion</a></li>
+<li><a href="#other-soultion-1-3">Other_Soultion</a></li>
 <li><a href="#question-32">Question</a></li>
 </ul></li>
 <li><a href="#getfullname">getFullName</a>
 <ul>
 <li><a href="#my-soultion-42">My_Soultion</a></li>
-<li><a href="#other-soultion-1-3">Other_Soultion</a></li>
+<li><a href="#other-soultion-1-4">Other_Soultion</a></li>
 <li><a href="#question-33">Question</a></li>
 </ul></li>
 <li><a href="#billtotal-1">billTotal</a>
 <ul>
 <li><a href="#my-soultion-43">My_Soultion</a></li>
-<li><a href="#other-soultion-1-4">Other_Soultion</a></li>
+<li><a href="#other-soultion-1-5">Other_Soultion</a></li>
 <li><a href="#question-34">Question</a></li>
 </ul></li>
 <li><a href="#primemover">primeMover</a>
@@ -686,7 +687,7 @@
 <li><a href="#getindexof">getIndexOf</a>
 <ul>
 <li><a href="#my-soultion-47">My_Soultion</a></li>
-<li><a href="#other-soultion-1-5">other_Soultion</a></li>
+<li><a href="#other-soultion-1-6">other_Soultion</a></li>
 <li><a href="#question-38">Question</a></li>
 </ul></li>
 <li><a href="#calculatebilltotal">calculateBillTotal</a>
@@ -757,7 +758,7 @@
 <li><a href="#convertarraytoobject3">convertArrayToObject3</a>
 <ul>
 <li><a href="#my-soultion-60">My_Soultion</a></li>
-<li><a href="#other-soultion-1-6">other_Soultion</a></li>
+<li><a href="#other-soultion-1-7">other_Soultion</a></li>
 <li><a href="#qutestion">Qutestion</a></li>
 </ul></li>
 <li><a href="#greetcustomers">greetCustomers</a>
@@ -768,8 +769,8 @@
 <li><a href="#convertdoublespacetosingle">convertDoubleSpaceToSingle</a>
 <ul>
 <li><a href="#my-soultion-62">My_Soultion</a></li>
-<li><a href="#other-soultion-1-7">other_Soultion</a></li>
 <li><a href="#other-soultion-1-8">other_Soultion</a></li>
+<li><a href="#other-soultion-1-9">other_Soultion</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -2842,6 +2843,27 @@ function getTeenager(salesTeam) {
 
 </code></pre>
 
+<h3 id="other-soultion-1-1">other_Soultion</h3>
+
+<pre><code class="language-js">
+function getTeenager(salesTeam) {
+
+// filter 와 map을 이용해서 
+
+
+return salesTeam.filter((ele)=&gt;{
+	return ele.age &lt; 20;  
+}).map((ele)=&gt;{
+	return ele.name.first +&quot; &quot;+ ele.name.last;
+})
+
+
+
+}
+
+
+</code></pre>
+
 <h3 id="question-28">Question</h3>
 
 <h2 id="sumdigits">sumDigits</h2>
@@ -2959,7 +2981,7 @@ offLineMinimum([&quot;5&quot;,&quot;4&quot;,&quot;6&quot;,&quot;E&quot;,&quot;1&
 
 </code></pre>
 
-<h3 id="other-soultion-1-1">other_Soultion</h3>
+<h3 id="other-soultion-1-2">other_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -3123,7 +3145,7 @@ hammingDistance([&quot;helloworld&quot;, &quot;worldhello&quot;]); // =&gt; 8
 
 </code></pre>
 
-<h3 id="other-soultion-1-2">Other_Soultion</h3>
+<h3 id="other-soultion-1-3">Other_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -3195,7 +3217,7 @@ getFullName(personB); //&quot;Ben Bitdiddle&quot;
 
 </code></pre>
 
-<h3 id="other-soultion-1-3">Other_Soultion</h3>
+<h3 id="other-soultion-1-4">Other_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -3247,7 +3269,7 @@ billTotal(10.00); // =&gt; 12.45
 
 </code></pre>
 
-<h3 id="other-soultion-1-4">Other_Soultion</h3>
+<h3 id="other-soultion-1-5">Other_Soultion</h3>
 
 <pre><code class="language-js">
 // 뭐 단순하게...팁 15%, 세금 9.5% 더해주면 된다고 한다 :)
@@ -3401,7 +3423,7 @@ function getIndexOf(char, str) {
 
 </code></pre>
 
-<h3 id="other-soultion-1-5">other_Soultion</h3>
+<h3 id="other-soultion-1-6">other_Soultion</h3>
 
 <pre><code class="language-js">function getIndexOf(char, str) {
   // your code here
@@ -4012,7 +4034,7 @@ function transformEmployeeData(array) {
 
 </code></pre>
 
-<h3 id="other-soultion-1-6">other_Soultion</h3>
+<h3 id="other-soultion-1-7">other_Soultion</h3>
 
 <pre><code class="language-js">
 
@@ -4115,7 +4137,7 @@ function convertDoubleSpaceToSingle(str) {
 
 </code></pre>
 
-<h3 id="other-soultion-1-7">other_Soultion</h3>
+<h3 id="other-soultion-1-8">other_Soultion</h3>
 
 <pre><code class="language-js">
 function convertDoubleSpaceToSingle(str) {
@@ -4128,7 +4150,7 @@ function convertDoubleSpaceToSingle(str) {
 
 </code></pre>
 
-<h3 id="other-soultion-1-8">other_Soultion</h3>
+<h3 id="other-soultion-1-9">other_Soultion</h3>
 
 <pre><code class="language-js">
 function convertDoubleSpaceToSingle(str) {
