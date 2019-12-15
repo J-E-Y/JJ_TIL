@@ -10,6 +10,31 @@ toc: yes
 type: docs
 ---
 
+## URL & URI
+
+
+
+#### URL 과 URI 의 차이점 
+
+> `URL`(Uniform Resource Locator) : 네트워크상에서 자원이 어디있는지를 알려주는 주소. 정의 뜻으로는 어떤 차이가 있는지 구별이 어렵다.
+
+> `URI`(Uniform Resource Identifier) : 인터넷에 있는 자원을 식별할 수 있는 유일한 문자열 주소로, 인터넷에서 요구되는 기본조건으로 인터넷 프로토콜과 항상 함께 붙어 있다.
+
+
+
+
+
+#### 예) 주소로 차이점을 느껴보자.
+
+*  http://localhost:8080/profile.jsp의 뜻은 localhost라는 서버에 profile.jsp 라는 자원이 있다는 걸 알려주는 주소다. 자원의 위치를 알 수 있는 주소기에 uri도 되며 url도 된다.
+
+
+*  http://localhost:8080/profile.jsp?addr=seoul&age=22 로 url 의 끝에 쿼리 문자열이 붙으면, 이런 주소는 url이 아닌 uri 이다.
+
+* 간단하게 그냥 서버에 있는 자원의 위치 주소에다가 요청 처리에 필요한 값이 포함여부의 차이를 보면 될것 같다. 
+
+`갑이 포함되면 uri, 포함 안되면 url.`
+
 
 ## JavaScript 와 ECMAScript
 

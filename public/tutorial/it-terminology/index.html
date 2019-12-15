@@ -27,10 +27,9 @@
   
     
   
-  <meta name="description" content="JavaScript 와 ECMAScript  JavaScript는 1996년에 만들어졌고, 그 다음에 JavaScript의 표준화를 위해 1997년에 ECMAScript가 만들어졌습니다. 당시 기준에서 JavaScript는 ECMAScript 사양을 따르고 있었기 때문에, JavaScript는 ECMAScript 사양을 준수하고 있던 언어의 예시였습니다.
-여기서 우리는 재미있는 사실을 하나 알 수 있습니다. 바로, ECMAScript는 JavaScript를 기반으로 하는 동시에, JavaScript 역시 ECMAScript를 기반으로 한다는 거죠.
-둘의 뗄레야 뗄 수 없는 관계, 그리고 그 두 용어가 혼용되어서 사용되던 이유는 바로 여기에서부터 출발하지 않았을까 생각해봅니다.
- Web storage Web storage (웹 스토리지)  local storage는 우리가 아는 세션과 비슷하고 session storage는 쿠키와 비슷합니다.">
+  <meta name="description" content="URL &amp; URI URL 과 URI 의 차이점  URL(Uniform Resource Locator) : 네트워크상에서 자원이 어디있는지를 알려주는 주소. 정의 뜻으로는 어떤 차이가 있는지 구별이 어렵다.
+URI(Uniform Resource Identifier) : 인터넷에 있는 자원을 식별할 수 있는 유일한 문자열 주소로, 인터넷에서 요구되는 기본조건으로 인터넷 프로토콜과 항상 함께 붙어 있다.
+ 예) 주소로 차이점을 느껴보자.  http://localhost:8080/profile.jsp의 뜻은 localhost라는 서버에 profile.jsp 라는 자원이 있다는 걸 알려주는 주소다. 자원의 위치를 알 수 있는 주소기에 uri도 되며 url도 된다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/it-terminology/">
@@ -53,7 +52,7 @@
   
   
   
-  <meta name="theme-color" content="#795548">
+  <meta name="theme-color" content="#EAF04E">
   
 
   
@@ -75,8 +74,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
         
       
     
@@ -89,7 +88,7 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair+Display:400,700|Fauna+One">
   
 
   <link rel="stylesheet" href="/styles.css">
@@ -133,10 +132,9 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/it-terminology/">
   <meta property="og:title" content="Technical terms | JohnJung">
-  <meta property="og:description" content="JavaScript 와 ECMAScript  JavaScript는 1996년에 만들어졌고, 그 다음에 JavaScript의 표준화를 위해 1997년에 ECMAScript가 만들어졌습니다. 당시 기준에서 JavaScript는 ECMAScript 사양을 따르고 있었기 때문에, JavaScript는 ECMAScript 사양을 준수하고 있던 언어의 예시였습니다.
-여기서 우리는 재미있는 사실을 하나 알 수 있습니다. 바로, ECMAScript는 JavaScript를 기반으로 하는 동시에, JavaScript 역시 ECMAScript를 기반으로 한다는 거죠.
-둘의 뗄레야 뗄 수 없는 관계, 그리고 그 두 용어가 혼용되어서 사용되던 이유는 바로 여기에서부터 출발하지 않았을까 생각해봅니다.
- Web storage Web storage (웹 스토리지)  local storage는 우리가 아는 세션과 비슷하고 session storage는 쿠키와 비슷합니다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="URL &amp; URI URL 과 URI 의 차이점  URL(Uniform Resource Locator) : 네트워크상에서 자원이 어디있는지를 알려주는 주소. 정의 뜻으로는 어떤 차이가 있는지 구별이 어렵다.
+URI(Uniform Resource Identifier) : 인터넷에 있는 자원을 식별할 수 있는 유일한 문자열 주소로, 인터넷에서 요구되는 기본조건으로 인터넷 프로토콜과 항상 함께 붙어 있다.
+ 예) 주소로 차이점을 느껴보자.  http://localhost:8080/profile.jsp의 뜻은 localhost라는 서버에 profile.jsp 라는 자원이 있다는 걸 알려주는 주소다. 자원의 위치를 알 수 있는 주소기에 uri도 되며 url도 된다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -151,7 +149,7 @@
   <title>Technical terms | JohnJung</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
   <aside class="search-results" id="search">
   <div class="container">
     <section class="search-header">
@@ -422,6 +420,14 @@
 <ul>
 <li>
 <ul>
+<li><a href="#url-uri">URL &amp; URI</a>
+<ul>
+<li>
+<ul>
+<li><a href="#url-과-uri-의-차이점">URL 과 URI 의 차이점</a></li>
+<li><a href="#예-주소로-차이점을-느껴보자">예) 주소로 차이점을 느껴보자.</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#javascript-와-ecmascript">JavaScript 와 ECMAScript</a></li>
 <li><a href="#web-storage">Web storage</a>
 <ul>
@@ -489,6 +495,28 @@
 
           <div class="article-style" itemprop="articleBody">
             
+
+<h2 id="url-uri">URL &amp; URI</h2>
+
+<h4 id="url-과-uri-의-차이점">URL 과 URI 의 차이점</h4>
+
+<blockquote>
+<p><code>URL</code>(Uniform Resource Locator) : 네트워크상에서 자원이 어디있는지를 알려주는 주소. 정의 뜻으로는 어떤 차이가 있는지 구별이 어렵다.</p>
+
+<p><code>URI</code>(Uniform Resource Identifier) : 인터넷에 있는 자원을 식별할 수 있는 유일한 문자열 주소로, 인터넷에서 요구되는 기본조건으로 인터넷 프로토콜과 항상 함께 붙어 있다.</p>
+</blockquote>
+
+<h4 id="예-주소로-차이점을-느껴보자">예) 주소로 차이점을 느껴보자.</h4>
+
+<ul>
+<li><p><a href="http://localhost:8080/profile.jsp의" target="_blank">http://localhost:8080/profile.jsp의</a> 뜻은 localhost라는 서버에 profile.jsp 라는 자원이 있다는 걸 알려주는 주소다. 자원의 위치를 알 수 있는 주소기에 uri도 되며 url도 된다.</p></li>
+
+<li><p><a href="http://localhost:8080/profile.jsp?addr=seoul&amp;age=22" target="_blank">http://localhost:8080/profile.jsp?addr=seoul&amp;age=22</a> 로 url 의 끝에 쿼리 문자열이 붙으면, 이런 주소는 url이 아닌 uri 이다.</p></li>
+
+<li><p>간단하게 그냥 서버에 있는 자원의 위치 주소에다가 요청 처리에 필요한 값이 포함여부의 차이를 보면 될것 같다.</p></li>
+</ul>
+
+<p><code>갑이 포함되면 uri, 포함 안되면 url.</code></p>
 
 <h2 id="javascript-와-ecmascript">JavaScript 와 ECMAScript</h2>
 
