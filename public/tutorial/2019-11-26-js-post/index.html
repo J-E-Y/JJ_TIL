@@ -28,7 +28,7 @@
     
   
   <meta name="description" content="&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 1.Javacript &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- prototype 무엇이냐? 자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.  자바스크립트의 모든 객체는 자신의 부모 역할을 하는 객체와 연결되어 있다. 이를 통해 자바스크립트에서는 상속 개념을 구현할 수 있다. 이를 프로토타입 객체라고 한다.
- 첫번째 알아야 할것  함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.  function Person() {} let x = new Person(); // x 라는 변수는 객체가 된다.  생성자 함수 || prototype 객체 || instance 생성자 함수 만들기 // 생성자 함수 를 만든다.">
+ 첫번째 알아야 할것  함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.  function Person() {} let x = new Person(); // x 라는 변수는 객체가 된다.  두번째 알아야할 것  객체(object)는 함수(function)로부터 시작된다  function Book() { } // 함수 &lt;&lt;생성자 함수 var jsBook = new Book(); // 객체 생성   두가지 방식을 객체를 생성할수 있다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/2019-11-26-js-post/">
@@ -132,7 +132,7 @@
   <meta property="og:url" content="/tutorial/2019-11-26-js-post/">
   <meta property="og:title" content="__My_Notes | JohnJung">
   <meta property="og:description" content="&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 1.Javacript &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- prototype 무엇이냐? 자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.  자바스크립트의 모든 객체는 자신의 부모 역할을 하는 객체와 연결되어 있다. 이를 통해 자바스크립트에서는 상속 개념을 구현할 수 있다. 이를 프로토타입 객체라고 한다.
- 첫번째 알아야 할것  함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.  function Person() {} let x = new Person(); // x 라는 변수는 객체가 된다.  생성자 함수 || prototype 객체 || instance 생성자 함수 만들기 // 생성자 함수 를 만든다."><meta property="og:image" content="/img/icon-192.png">
+ 첫번째 알아야 할것  함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.  function Person() {} let x = new Person(); // x 라는 변수는 객체가 된다.  두번째 알아야할 것  객체(object)는 함수(function)로부터 시작된다  function Book() { } // 함수 &lt;&lt;생성자 함수 var jsBook = new Book(); // 객체 생성   두가지 방식을 객체를 생성할수 있다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -429,6 +429,9 @@
 <ul>
 <li><a href="#첫번째-알아야-할것">첫번째 알아야 할것</a></li>
 </ul></li>
+<li><a href="#두번째-알아야할-것">두번째 알아야할 것</a></li>
+<li><a href="#세번째-알아야-할것">세번째 알아야 할것</a></li>
+<li><a href="#네번째-알아야-하는것">네번째 알아야 하는것</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#생성자-함수-prototype-객체-instance">생성자 함수 || prototype 객체 || instance</a>
@@ -583,9 +586,9 @@
 <li><a href="#2-some">2.some()</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#toc_76">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_79">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#2-dom">2. Dom</a></li>
-<li><a href="#toc_78">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_81">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#dom-이란">Dom 이란 ?</a></li>
 <li><a href="#버튼-만들기">버튼 만들기</a></li>
 <li><a href="#e-target-이란">e.target 이란 ?</a></li>
@@ -603,9 +606,9 @@
 <li><a href="#버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</a></li>
 <li><a href="#script-위치">script 위치</a></li>
 <li><a href="#insertbefore">insertBefore()</a></li>
-<li><a href="#toc_94">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_97">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#3-studying-notes">3. Studying_Notes</a></li>
-<li><a href="#toc_96">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_99">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#타이머-사용하기">타이머 사용하기</a></li>
 <li><a href="#객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</a>
 <ul>
@@ -695,8 +698,84 @@
 let x = new Person(); //  x 라는 변수는 객체가 된다. 
 
 
+</code></pre>
+
+<h4 id="두번째-알아야할-것">두번째 알아야할 것</h4>
+
+<ul>
+<li>객체(object)는 함수(function)로부터 시작된다</li>
+</ul>
+
+<pre><code class="language-js">
+function Book() { }                // 함수 &lt;&lt;생성자 함수
+var jsBook = new Book();           // 객체 생성
+
 
 </code></pre>
+
+<ul>
+<li>두가지 방식을 객체를 생성할수 있다.</li>
+</ul>
+
+<pre><code class="language-js">var jsBook = new Book(); // 첫번째 방식 (생성자 함수) // 객체 
+
+var jsBook = {}          // 두번째 방식(생성자 선언 없이 ) // 객체 
+
+
+</code></pre>
+
+<h4 id="세번째-알아야-할것">세번째 알아야 할것</h4>
+
+<ul>
+<li><p>함수 생성시 발생하는 것을 알아야 한다.</p></li>
+
+<li><p>1.함수를 정의하면 함수가 생성되며 <code>Prototype object</code>가 같이 생성 됩니다.</p></li>
+</ul>
+
+<blockquote>
+<p>생성된 Prototype object는 함수의 prototype 속성을 통해 접근할 수 있습니다.
+(Prototype object같은 경우 <code>함수 생성시</code>(var jsBook = new Book())에만 됩니다. 일반 객체 생성시에는 생성되지 않습니다.)</p>
+</blockquote>
+
+<ul>
+<li>2.함수의 생성과 함께 생성된 Prototype object는 constructor와 <strong>proto</strong>를 갖고 있습니다.</li>
+</ul>
+
+<blockquote>
+<p>constructor는 <code>생성된 함수</code>를 가리키며(여기서는 function Book을 가리킵니다.)</p>
+
+<p><strong>proto</strong>는 Prototype Link로서 객체가 생성될 때 사용된 생성자(함수)의 <code>Prototype object</code>를 가리킵니다.</p>
+</blockquote>
+
+<h4 id="네번째-알아야-하는것">네번째 알아야 하는것</h4>
+
+<ul>
+<li>객체(object) 생성시 발생하는 일</li>
+</ul>
+
+<blockquote>
+<p>생성하는 순간 jsBook 이라는 객체는 <strong>proto</strong> 라는 <code>_proto__</code>라는 프로퍼티를 갖고있습니다.</p>
+</blockquote>
+
+<pre><code class="language-js">
+function Book() { }
+
+Book.prototype.name = &quot;john&quot; 
+
+var jsBook = new Book() // jsBook 은 객체이다. 
+
+
+</code></pre>
+
+<blockquote>
+<p>prototype property(함수 생성시 함께 생성된 Prototype object를 가리킴)는 함수객체만 가지며 <strong>proto</strong>는 객체라면 모두 갖고 있습니다.</p>
+</blockquote>
+
+<p><img src="/tutorial/2019-11-26-js-post_files/Screen Shot 2019-12-16 at 2.39.56 PM.png" alt="" /></p>
+
+<blockquote>
+<p><code>prototype property</code>(함수 생성시 함께 생성된 Prototype object를 가리킴)는 함수객체만 가지며 <code>__proto__</code>는 객체라면 모두 갖고 있습니다.</p>
+</blockquote>
 
 <h2 id="생성자-함수-prototype-객체-instance">생성자 함수 || prototype 객체 || instance</h2>
 
@@ -2886,11 +2965,11 @@ return a - b;
 <p>every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다</p>
 </blockquote>
 
-<h2 id="toc_76">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_79">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="2-dom">2. Dom</h2>
 
-<h2 id="toc_78">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_81">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="dom-이란">Dom 이란 ?</h2>
 
@@ -3469,11 +3548,11 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 </code></pre>
 
-<h2 id="toc_94">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_97">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="3-studying-notes">3. Studying_Notes</h2>
 
-<h2 id="toc_96">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_99">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="타이머-사용하기">타이머 사용하기</h2>
 

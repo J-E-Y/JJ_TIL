@@ -11366,8 +11366,84 @@ for (let key in person) {
 let x = new Person(); //  x 라는 변수는 객체가 된다. 
 
 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;두번째-알아야할-것&#34;&gt;두번째 알아야할 것&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;객체(object)는 함수(function)로부터 시작된다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function Book() { }                // 함수 &amp;lt;&amp;lt;생성자 함수
+var jsBook = new Book();           // 객체 생성
+
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;두가지 방식을 객체를 생성할수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var jsBook = new Book(); // 첫번째 방식 (생성자 함수) // 객체 
+
+var jsBook = {}          // 두번째 방식(생성자 선언 없이 ) // 객체 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;세번째-알아야-할것&#34;&gt;세번째 알아야 할것&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;함수 생성시 발생하는 것을 알아야 한다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;1.함수를 정의하면 함수가 생성되며 &lt;code&gt;Prototype object&lt;/code&gt;가 같이 생성 됩니다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;생성된 Prototype object는 함수의 prototype 속성을 통해 접근할 수 있습니다.
+(Prototype object같은 경우 &lt;code&gt;함수 생성시&lt;/code&gt;(var jsBook = new Book())에만 됩니다. 일반 객체 생성시에는 생성되지 않습니다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2.함수의 생성과 함께 생성된 Prototype object는 constructor와 &lt;strong&gt;proto&lt;/strong&gt;를 갖고 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;constructor는 &lt;code&gt;생성된 함수&lt;/code&gt;를 가리키며(여기서는 function Book을 가리킵니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;proto&lt;/strong&gt;는 Prototype Link로서 객체가 생성될 때 사용된 생성자(함수)의 &lt;code&gt;Prototype object&lt;/code&gt;를 가리킵니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;네번째-알아야-하는것&#34;&gt;네번째 알아야 하는것&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;객체(object) 생성시 발생하는 일&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;생성하는 순간 jsBook 이라는 객체는 &lt;strong&gt;proto&lt;/strong&gt; 라는 &lt;code&gt;_proto__&lt;/code&gt;라는 프로퍼티를 갖고있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function Book() { }
+
+Book.prototype.name = &amp;quot;john&amp;quot; 
+
+var jsBook = new Book() // jsBook 은 객체이다. 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;prototype property(함수 생성시 함께 생성된 Prototype object를 가리킴)는 함수객체만 가지며 &lt;strong&gt;proto&lt;/strong&gt;는 객체라면 모두 갖고 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-11-26-js-post_files/Screen Shot 2019-12-16 at 2.39.56 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;prototype property&lt;/code&gt;(함수 생성시 함께 생성된 Prototype object를 가리킴)는 함수객체만 가지며 &lt;code&gt;__proto__&lt;/code&gt;는 객체라면 모두 갖고 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id=&#34;생성자-함수-prototype-객체-instance&#34;&gt;생성자 함수 || prototype 객체 || instance&lt;/h2&gt;
 
@@ -13557,11 +13633,11 @@ return a - b;
 &lt;p&gt;every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;toc_76&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_79&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;2-dom&#34;&gt;2. Dom&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_78&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_81&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;dom-이란&#34;&gt;Dom 이란 ?&lt;/h2&gt;
 
@@ -14140,11 +14216,11 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_94&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_97&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;3-studying-notes&#34;&gt;3. Studying_Notes&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_96&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_99&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;타이머-사용하기&#34;&gt;타이머 사용하기&lt;/h2&gt;
 
