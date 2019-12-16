@@ -27,9 +27,12 @@
   
     
   
-  <meta name="description" content="URL &amp; URI URL 과 URI 의 차이점  URL(Uniform Resource Locator) : 네트워크상에서 자원이 어디있는지를 알려주는 주소. 정의 뜻으로는 어떤 차이가 있는지 구별이 어렵다.
-URI(Uniform Resource Identifier) : 인터넷에 있는 자원을 식별할 수 있는 유일한 문자열 주소로, 인터넷에서 요구되는 기본조건으로 인터넷 프로토콜과 항상 함께 붙어 있다.
- 예) 주소로 차이점을 느껴보자.  http://localhost:8080/profile.jsp의 뜻은 localhost라는 서버에 profile.jsp 라는 자원이 있다는 걸 알려주는 주소다. 자원의 위치를 알 수 있는 주소기에 uri도 되며 url도 된다.">
+  <meta name="description" content="URL 첫번째 URL  protocol   indicates how to access the resource
+  IP address and URL name
+   the computer where the resource is located
+  port   can be running multiple network applications
+  resource   the web server uses this info to identify the resource
+ 두번째 URL Query string  ? 문자가 보이면 쿼리   passing some info to the web server ?">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/it-terminology/">
@@ -132,9 +135,12 @@ URI(Uniform Resource Identifier) : 인터넷에 있는 자원을 식별할 수 �
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/it-terminology/">
   <meta property="og:title" content="Technical terms | JohnJung">
-  <meta property="og:description" content="URL &amp; URI URL 과 URI 의 차이점  URL(Uniform Resource Locator) : 네트워크상에서 자원이 어디있는지를 알려주는 주소. 정의 뜻으로는 어떤 차이가 있는지 구별이 어렵다.
-URI(Uniform Resource Identifier) : 인터넷에 있는 자원을 식별할 수 있는 유일한 문자열 주소로, 인터넷에서 요구되는 기본조건으로 인터넷 프로토콜과 항상 함께 붙어 있다.
- 예) 주소로 차이점을 느껴보자.  http://localhost:8080/profile.jsp의 뜻은 localhost라는 서버에 profile.jsp 라는 자원이 있다는 걸 알려주는 주소다. 자원의 위치를 알 수 있는 주소기에 uri도 되며 url도 된다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="URL 첫번째 URL  protocol   indicates how to access the resource
+  IP address and URL name
+   the computer where the resource is located
+  port   can be running multiple network applications
+  resource   the web server uses this info to identify the resource
+ 두번째 URL Query string  ? 문자가 보이면 쿼리   passing some info to the web server ?"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -420,6 +426,56 @@ URI(Uniform Resource Identifier) : 인터넷에 있는 자원을 식별할 수 �
 <ul>
 <li>
 <ul>
+<li><a href="#url">URL</a>
+<ul>
+<li><a href="#첫번째-url">첫번째 URL</a></li>
+<li><a href="#두번째-url-query-string">두번째 URL Query string</a></li>
+<li><a href="#세번째-url-fragment">세번째 URL Fragment</a></li>
+<li><a href="#encoding">encoding</a></li>
+</ul></li>
+<li><a href="#client-sever">Client &amp; sever</a>
+<ul>
+<li><a href="#http-www-santaged-name-2014-07-up-andnwjkd-thml"><a href="HTTP://www.santaged.name/2014/07/up=andnwjkd.thml" target="_blank">HTTP://www.santaged.name/2014/07/up=andnwjkd.thml</a></a></li>
+<li><a href="#ftp-protocol-http-protocol">FTP_protocol &amp; HTTP_protocol</a></li>
+<li><a href="#what-is-web-resource">What is Web Resource</a></li>
+<li><a href="#http-transaction-a-stateless-protocol">HTTP Transaction &amp; a stateless protocol</a></li>
+</ul></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#html-internet">HTML &amp; Internet</a>
+<ul>
+<li>
+<ul>
+<li><a href="#html">HTML</a></li>
+<li><a href="#https">HTTPS</a></li>
+</ul></li>
+<li><a href="#1-ip-와-dns">1.IP 와 DNS</a></li>
+<li><a href="#2-dns">2.DNS</a>
+<ul>
+<li>
+<ul>
+<li><a href="#어떻게-dns-는-무엇을-하는가">어떻게 <code>DNS</code>는 무엇을 하는가?</a></li>
+</ul></li>
+<li><a href="#dns-원리과-위험성">DNS 원리과 위험성</a>
+<ul>
+<li>
+<ul>
+<li><a href="#원리">원리</a></li>
+<li><a href="#위험성">위험성</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#3-패킷-과-라우터">3.패킷 과 라우터</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#정보를-주고받을때-패킷을-통해-전단된다">정보를 주고받을때 패킷을 통해 전단된다.</a></li>
+<li><a href="#용량이-많을때-나눠서-보낸다">용량이 많을때 나눠서 보낸다.</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
 <li><a href="#url-uri">URL &amp; URI</a>
 <ul>
 <li>
@@ -495,6 +551,282 @@ URI(Uniform Resource Identifier) : 인터넷에 있는 자원을 식별할 수 �
 
           <div class="article-style" itemprop="articleBody">
             
+
+<h2 id="url">URL</h2>
+
+<p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 6.07.41 PM.png" alt="" /></p>
+
+<h3 id="첫번째-url">첫번째 URL</h3>
+
+<ul>
+<li>protocol</li>
+</ul>
+
+<blockquote>
+<p>indicates how to access the resource</p>
+</blockquote>
+
+<ul>
+<li>IP address and URL name<br /></li>
+</ul>
+
+<blockquote>
+<p>the computer where the resource is located</p>
+</blockquote>
+
+<ul>
+<li>port</li>
+</ul>
+
+<blockquote>
+<p>can be running multiple network applications</p>
+</blockquote>
+
+<ul>
+<li>resource</li>
+</ul>
+
+<blockquote>
+<p>the web server uses this info to identify the resource</p>
+</blockquote>
+
+<h3 id="두번째-url-query-string">두번째 URL Query string</h3>
+
+<ul>
+<li>? 문자가 보이면 쿼리</li>
+</ul>
+
+<blockquote>
+<p>passing some info to the web server ? 바로 질러서 접근할수 있게 해준다.</p>
+</blockquote>
+
+<h3 id="세번째-url-fragment">세번째 URL Fragment</h3>
+
+<ul>
+<li># 보이면 재빨리 찾아서 보내준다.</li>
+</ul>
+
+<blockquote>
+<p>만약 이것이 없다면 resource 가 web sever 에 가서 저장된 모든 것들을 찾아야 하기 때문이다.</p>
+</blockquote>
+
+<h3 id="encoding">encoding</h3>
+
+<p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 6.15.13 PM.png" alt="" /></p>
+
+<blockquote>
+<p>문자를 다른현태로 바꿔주는것</p>
+</blockquote>
+
+<ul>
+<li>더공부할 내용
+
+<ul>
+<li>ASCII / ANSI / EUC-KR / CP949 / UTF-8 / UNICODE</li>
+</ul></li>
+</ul>
+
+<h2 id="client-sever">Client &amp; sever</h2>
+
+<h3 id="http-www-santaged-name-2014-07-up-andnwjkd-thml"><a href="HTTP://www.santaged.name/2014/07/up=andnwjkd.thml" target="_blank">HTTP://www.santaged.name/2014/07/up=andnwjkd.thml</a></h3>
+
+<ul>
+<li><p>HTTP : 프로토콜</p></li>
+
+<li><p>www.santaged.name: 웹서버</p></li>
+
+<li><p>2014/07/up=andnwjkd.thml : web Resource in web sever</p></li>
+</ul>
+
+<h3 id="ftp-protocol-http-protocol">FTP_protocol &amp; HTTP_protocol</h3>
+
+<ul>
+<li><p>HTTP_Protocol 은  is merge protocol in the web client and the web server</p></li>
+
+<li><p>FTP protocol is used for transferring files</p></li>
+</ul>
+
+<h3 id="what-is-web-resource">What is Web Resource</h3>
+
+<ul>
+<li><p>간략 하게 말해서 a web client 가 PDC or HTML Document 등등을 web server 를 통해서 접근하는 것들을 web Resource 라고 한다.</p></li>
+
+<li><p>web resource 안에는 <code>static</code> 와 <code>dynamic</code> resource 가 담겨있다.</p></li>
+</ul>
+
+<blockquote>
+<p>Statice resource 는 바뀌지 <code>않는</code> 정보들을 말하고</p>
+
+<p>Dynmic resource 는 web client 에서 <code>바꾼</code> 정보드를 반영하는 것들을 말한다.</p>
+</blockquote>
+
+<h3 id="http-transaction-a-stateless-protocol">HTTP Transaction &amp; a stateless protocol</h3>
+
+<p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 5.26.30 PM.png" alt="" /></p>
+
+<ul>
+<li><p>a stateless protocol</p>
+
+<ul>
+<li>a web client  가 요청한 것을 web sever 는 web resource 에서 가져온다.
+다음번에 가져올때 이것을 기억못하게 되고 다시 새로운 a web client 가 web sever 에게 접근하게 되는 과정을 a stateless protocol 이라고 한다.</li>
+</ul></li>
+
+<li><p>HTTP Transaction</p>
+
+<ul>
+<li>a web client 가 web sever 에게 요청을 보내고 그 요청된것을 Response 하는 과정을 HTTP Transaction 이라고 부른다.
+<br /></li>
+</ul></li>
+</ul>
+
+<h2 id="http">HTTP</h2>
+
+<ul>
+<li>HTTP : <code>H</code>ypertext <code>T</code>ransfer <code>P</code>rotocal</li>
+</ul>
+
+<p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 5.43.03 PM.png" alt="" /></p>
+
+<ul>
+<li>it&rsquo;s this combination if HTTP and URL that makes the web work.</li>
+</ul>
+
+<p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 5.51.55 PM.png" alt="" /></p>
+
+<h2 id="html-internet">HTML &amp; Internet</h2>
+
+<h4 id="html">HTML</h4>
+
+<ul>
+<li><p>HTTP : <code>H</code>ypertext <code>T</code>ransfer <code>P</code>rotocal</p></li>
+
+<li><p>HTML : <code>H</code>ypertext <code>M</code>arkup <code>L</code>anguage</p></li>
+
+<li><ol>
+<li>브라우저에서 주소를 치면 나의 컴퓨터는 서버컴퓨터에 <code>요청(get)</code>한다.</li>
+</ol></li>
+
+<li><ol>
+<li>요청할때 이루어지는 언어가 바로 <code>HTTP</code> 로 이루어 져 있다.</li>
+</ol></li>
+
+<li><ol>
+<li>서버는 요청받은 내용을 <code>브라우저</code> 에게 <code>HTML</code> 언어로 <code>전달</code>해준다.</li>
+</ol></li>
+</ul>
+
+<h4 id="https">HTTPS</h4>
+
+<ul>
+<li><p>HTTPS : <code>H</code>yperText <code>T</code>ransfer <code>P</code>rotocol <code>S</code>ecure</p></li>
+
+<li><p>해커들을 방지하기 위해 만들어져 보호시켜주는 시스템</p></li>
+
+<li><p>(HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP).</p></li>
+
+<li><p>SSL : <code>S</code>ecure <code>S</code>ockets <code>L</code>ayer</p></li>
+
+<li><p>TLS : <code>T</code>ransport <code>L</code>ayer <code>S</code>ecurity</p></li>
+</ul>
+
+<h3 id="1-ip-와-dns">1.IP 와 DNS</h3>
+
+<ul>
+<li><p>IP : <code>I</code>nternet <code>P</code>rotocol</p></li>
+
+<li><p>간단히 말해서 컴퓨터의 주소 IP</p></li>
+</ul>
+
+<blockquote>
+<p>IP 주소는 전통적으로 32비트 길이를 가지고 있고 지금은 128비트 긴주소를 사용한다.</p>
+</blockquote>
+
+<h3 id="2-dns">2.DNS</h3>
+
+<ul>
+<li><p>DNS : <code>D</code>omain <code>N</code>ame <code>S</code>ystem</p></li>
+
+<li><p>DNS  는</p></li>
+</ul>
+
+<p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 3.47.39 PM.png" alt="" /></p>
+
+<h5 id="어떻게-dns-는-무엇을-하는가">어떻게 <code>DNS</code>는 무엇을 하는가?</h5>
+
+<ul>
+<li><p>1.사용자가 웹다른 사이트를 가고싶을때 검색을 하게 된다.</p></li>
+
+<li><p>2.그럴때 IP 주소를 알야아 하는데</p></li>
+
+<li><p>3.그럴때 우리 컴퓨터 안에있는 DNS 가 IP주소를 찾아서 알려준다.</p></li>
+
+<li><p>4.DNS 하나가 모든 정보를 가지고 있지 않기 때문에 친구들에게 물어봐서 알려준다.</p></li>
+</ul>
+
+<h4 id="dns-원리과-위험성">DNS 원리과 위험성</h4>
+
+<h6 id="원리">원리</h6>
+
+<ul>
+<li><p>DNS 가 하나라면 혼잡하기 때문에 나눠서 연결되도록 설계 되었다.</p></li>
+
+<li><p>지역을 나누는 것이다.</p></li>
+
+<li><p>예)</p></li>
+</ul>
+
+<p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.04.29 PM.png" alt="" /></p>
+
+<ul>
+<li>DNS 서버는 정부나 교육기관을 위한 공개되어 있고 누구나 사용 가능한 커뮤니케이션 프로토콜로 제작되었습니다.</li>
+</ul>
+
+<h6 id="위험성">위험성</h6>
+
+<ul>
+<li>DNS SPOOFING 이라 불리는 것은 해커들이 DNS 서버에 침입해서 주소를 바꿔서 사용자를 다른곳으로 보내버린다.</li>
+</ul>
+
+<h3 id="3-패킷-과-라우터">3.패킷 과 라우터</h3>
+
+<ul>
+<li>패킷  (packet)</li>
+</ul>
+
+<h6 id="정보를-주고받을때-패킷을-통해-전단된다">정보를 주고받을때 패킷을 통해 전단된다.</h6>
+
+<p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.08.03 PM.png" alt="" /></p>
+
+<h6 id="용량이-많을때-나눠서-보낸다">용량이 많을때 나눠서 보낸다.</h6>
+
+<p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.09.25 PM.png" alt="" /></p>
+
+<ul>
+<li>라우터</li>
+</ul>
+
+<blockquote>
+<p>패킷을 <code>관리</code>하는 것이 라우터</p>
+
+<p>패킷을 나눠서 보낼때 충돌과 교통이 혼잡 할수가 있다 이것을 방지하기 위해 라우터가 그것을 통제한다.</p>
+
+<p>도착 순서를 다르게 만든다.</p>
+</blockquote>
+
+<p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.10.04 PM.png" alt="" /></p>
+
+<ul>
+<li><p>TCP</p></li>
+
+<li><p>TCP : <code>T</code>ransMission <code>C</code>ontrol <code>P</code>rotocol 전송 제어 프로토콜</p></li>
+</ul>
+
+<blockquote>
+<p>TCP 는 전송중 끊어진 것들을 다시 원활하게 다시 전송할수 있게 만드는 아주 안전한 메일 시스템과 같은 것이다.</p>
+
+<p>TCP 가 다 모든 패킷 (사용자가 보낸 정보)  가 도착했는지 확인하고 공유한다.</p>
+</blockquote>
 
 <h2 id="url-uri">URL &amp; URI</h2>
 

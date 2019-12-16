@@ -75,9 +75,12 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/it-terminology/</guid>
-      <description>URL &amp;amp; URI URL 과 URI 의 차이점  URL(Uniform Resource Locator) : 네트워크상에서 자원이 어디있는지를 알려주는 주소. 정의 뜻으로는 어떤 차이가 있는지 구별이 어렵다.
-URI(Uniform Resource Identifier) : 인터넷에 있는 자원을 식별할 수 있는 유일한 문자열 주소로, 인터넷에서 요구되는 기본조건으로 인터넷 프로토콜과 항상 함께 붙어 있다.
- 예) 주소로 차이점을 느껴보자.  http://localhost:8080/profile.jsp의 뜻은 localhost라는 서버에 profile.jsp 라는 자원이 있다는 걸 알려주는 주소다. 자원의 위치를 알 수 있는 주소기에 uri도 되며 url도 된다.</description>
+      <description>URL 첫번째 URL  protocol   indicates how to access the resource
+  IP address and URL name
+   the computer where the resource is located
+  port   can be running multiple network applications
+  resource   the web server uses this info to identify the resource
+ 두번째 URL Query string  ? 문자가 보이면 쿼리   passing some info to the web server ?</description>
     </item>
     
     <item>

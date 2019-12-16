@@ -10,6 +10,253 @@ toc: yes
 type: docs
 ---
 
+
+
+## URL 
+
+![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 6.07.41 PM.png)
+
+
+### 첫번째 URL 
+
+* protocol
+
+> indicates how to access the resource 
+
+* IP address and URL name  
+
+>the computer where the resource is located 
+
+* port 
+
+> can be running multiple network applications
+
+* resource
+
+> the web server uses this info to identify the resource
+
+### 두번째 URL Query string
+
+* ? 문자가 보이면 쿼리 
+
+> passing some info to the web server ? 바로 질러서 접근할수 있게 해준다.
+
+
+
+### 세번째 URL Fragment
+
+
+* # 보이면 재빨리 찾아서 보내준다. 
+ 
+> 만약 이것이 없다면 resource 가 web sever 에 가서 저장된 모든 것들을 찾아야 하기 때문이다. 
+
+
+
+### encoding
+
+![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 6.15.13 PM.png)
+
+
+> 문자를 다른현태로 바꿔주는것
+
+* 더공부할 내용
+  * ASCII / ANSI / EUC-KR / CP949 / UTF-8 / UNICODE
+
+
+## Client & sever
+
+
+###  HTTP://www.santaged.name/2014/07/up=andnwjkd.thml
+
+* HTTP : 프로토콜
+
+* www.santaged.name: 웹서버
+
+* 2014/07/up=andnwjkd.thml : web Resource in web sever
+
+
+
+### FTP_protocol & HTTP_protocol
+
+
+* HTTP_Protocol 은  is merge protocol in the web client and the web server
+
+* FTP protocol is used for transferring files
+
+
+
+### What is Web Resource  
+
+* 간략 하게 말해서 a web client 가 PDC or HTML Document 등등을 web server 를 통해서 접근하는 것들을 web Resource 라고 한다. 
+
+* web resource 안에는 `static` 와 `dynamic` resource 가 담겨있다.
+
+> Statice resource 는 바뀌지 `않는` 정보들을 말하고 
+
+> Dynmic resource 는 web client 에서 `바꾼` 정보드를 반영하는 것들을 말한다. 
+
+
+
+### HTTP Transaction & a stateless protocol
+
+![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 5.26.30 PM.png)
+
+* a stateless protocol 
+
+  * a web client  가 요청한 것을 web sever 는 web resource 에서 가져온다. 
+  다음번에 가져올때 이것을 기억못하게 되고 다시 새로운 a web client 가 web sever 에게 접근하게 되는 과정을 a stateless protocol 이라고 한다. 
+
+
+* HTTP Transaction
+  
+  * a web client 가 web sever 에게 요청을 보내고 그 요청된것을 Response 하는 과정을 HTTP Transaction 이라고 부른다. 
+  
+
+
+## HTTP 
+
+
+* HTTP : `H`ypertext `T`ransfer `P`rotocal
+
+
+![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 5.43.03 PM.png)
+
+
+* it's this combination if HTTP and URL that makes the web work.
+
+![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 5.51.55 PM.png)
+
+
+
+## HTML & Internet
+
+
+
+#### HTML
+
+* HTTP : `H`ypertext `T`ransfer `P`rotocal
+
+* HTML : `H`ypertext `M`arkup `L`anguage 
+
+
+
+* 1. 브라우저에서 주소를 치면 나의 컴퓨터는 서버컴퓨터에 `요청(get)`한다.
+* 2. 요청할때 이루어지는 언어가 바로 `HTTP` 로 이루어 져 있다. 
+* 3. 서버는 요청받은 내용을 `브라우저` 에게 `HTML` 언어로 `전달`해준다. 
+
+
+
+#### HTTPS
+
+
+* HTTPS : `H`yperText `T`ransfer `P`rotocol `S`ecure
+
+* 해커들을 방지하기 위해 만들어져 보호시켜주는 시스템
+
+*  (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP).
+
+
+* SSL : `S`ecure `S`ockets `L`ayer
+
+* TLS : `T`ransport `L`ayer `S`ecurity
+
+
+
+
+### 1.IP 와 DNS
+
+
+* IP : `I`nternet `P`rotocol
+
+* 간단히 말해서 컴퓨터의 주소 IP
+
+> IP 주소는 전통적으로 32비트 길이를 가지고 있고 지금은 128비트 긴주소를 사용한다. 
+
+
+
+### 2.DNS
+
+* DNS : `D`omain `N`ame `S`ystem
+
+* DNS  는 
+
+![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 3.47.39 PM.png)
+
+##### 어떻게 `DNS`는 무엇을 하는가? 
+
+* 1.사용자가 웹다른 사이트를 가고싶을때 검색을 하게 된다. 
+
+* 2.그럴때 IP 주소를 알야아 하는데 
+
+* 3.그럴때 우리 컴퓨터 안에있는 DNS 가 IP주소를 찾아서 알려준다. 
+
+* 4.DNS 하나가 모든 정보를 가지고 있지 않기 때문에 친구들에게 물어봐서 알려준다. 
+
+
+#### DNS 원리과 위험성
+
+
+###### 원리 
+
+* DNS 가 하나라면 혼잡하기 때문에 나눠서 연결되도록 설계 되었다.
+
+* 지역을 나누는 것이다. 
+
+* 예)
+
+![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.04.29 PM.png)
+
+
+
+
+* DNS 서버는 정부나 교육기관을 위한 공개되어 있고 누구나 사용 가능한 커뮤니케이션 프로토콜로 제작되었습니다. 
+
+
+###### 위험성 
+
+* DNS SPOOFING 이라 불리는 것은 해커들이 DNS 서버에 침입해서 주소를 바꿔서 사용자를 다른곳으로 보내버린다. 
+
+
+### 3.패킷 과 라우터
+
+
+* 패킷  (packet)
+
+
+###### 정보를 주고받을때 패킷을 통해 전단된다. 
+
+![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.08.03 PM.png)
+
+###### 용량이 많을때 나눠서 보낸다. 
+
+![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.09.25 PM.png)
+
+* 라우터 
+
+> 패킷을 `관리`하는 것이 라우터 
+
+> 패킷을 나눠서 보낼때 충돌과 교통이 혼잡 할수가 있다 이것을 방지하기 위해 라우터가 그것을 통제한다. 
+
+> 도착 순서를 다르게 만든다. 
+
+![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.10.04 PM.png)
+
+
+
+* TCP
+
+* TCP : `T`ransMission `C`ontrol `P`rotocol 전송 제어 프로토콜
+
+
+> TCP 는 전송중 끊어진 것들을 다시 원활하게 다시 전송할수 있게 만드는 아주 안전한 메일 시스템과 같은 것이다. 
+
+> TCP 가 다 모든 패킷 (사용자가 보낸 정보)  가 도착했는지 확인하고 공유한다. 
+
+
+
+
+
+
 ## URL & URI
 
 
@@ -34,6 +281,11 @@ type: docs
 * 간단하게 그냥 서버에 있는 자원의 위치 주소에다가 요청 처리에 필요한 값이 포함여부의 차이를 보면 될것 같다. 
 
 `갑이 포함되면 uri, 포함 안되면 url.`
+
+
+
+
+
 
 
 ## JavaScript 와 ECMAScript
