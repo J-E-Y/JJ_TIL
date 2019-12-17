@@ -3634,6 +3634,38 @@ for link in links:
       <guid>/tutorial/it-terminology/</guid>
       <description>
 
+&lt;h2 id=&#34;port&#34;&gt;port&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;컴퓨터의 Lan선은 하나인데 통신을 필요로 하는 프로그램이 다수일 때 이 다수의 프로그램을 구별할 수 있는 번호가 Port이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/IT terminology_files/port.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;port-forwarding&#34;&gt;port forwarding&lt;/h2&gt;
+
+&lt;h3 id=&#34;port-forwarding-이란&#34;&gt;Port forwarding 이란&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;포트포워딩 (Port Forwarding)이란?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;포트 포워딩(port forwarding) 또는 포트 매핑(port mapping)은 컴퓨터 네트워크에서 패킷이 라우터나 방화벽과 같은 네트워크 게이트웨이를 가로지르는 동안 하나의 IP 주소와 포트 번호 결합의 통신 요청을 다른 곳으로 넘겨주는 네트워크 주소 변환(NAT)의 응용이다.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;쉽게 설명하면 부여받은 IP가 외부에서 내 장치에 접근할 수 있도록 포트, 즉 문을 열어주는 것입니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;주로 가정의 네트워크 환경은 인터넷사업자(ISP-Internet Service Provider)가 제공한 모뎀 - 공유기 - 디바이스(PC등&amp;hellip;)으로 구성되어 있습니다. 이러한 경우 네트워크는 주로 하나의 고유한 IP를 가지게 되며, 이는 사업자로부터 제공됩니다. (이 고유한 IP는 하나의 자원이며, 돈입니다)
+이때, ISP에 할당된 IP (Public IP)는 공유기가 가지게 됩니다. 그리고 그 공유기가 공유기에 연결된 여러개의 기기에 가상의 IP (Local IP)를 할당해줍니다. 기본적으로 허가되지 않은 외부로부터의 접속을 차단하게 되며, 외부에서 고유 IP로 연결되더라도 공유기까지만 닿을 뿐 그 공유기에 접속해 있는 디바이스까지는 닿을 수 없게 됩니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;또한 가상 IP, Local IP는 내부 네트워크 안에서만 사용되므로 외부의 컴퓨터가 내부의 IP가 할당 된 디바이스에 접속할 수 없습니다.
+하지만 사용자가 외부로부터의 접속을 허용하고 싶은 경우 사용하는 방법이 바로 포트 포워딩(Port Forwarding) 또는 DMZ(Demilitarized Zone) 설정입니다.
+IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 포트(아래 표 참조)가 있는데, 포트포워딩의 경우 IP의 특정 포트를 네트워크의 내부 특정 컴퓨터로, DMZ 설정은 IP 포트 전체를 내부 네트워크의 특정 컴퓨터로 옮겨주는 방식입니다.
+[출처] 포트포워딩 (Port Forwarding)?|작성자 재이아버지&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&#34;url&#34;&gt;URL&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 6.07.41 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -22284,43 +22316,6 @@ let Employee = {
     </item>
     
     <item>
-      <title>The minority language typing experience</title>
-      <link>/project/pos/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/pos/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Previous work&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;This project follows and builds upon the project where &lt;a href=&#34;/project/2012-mexico-keyboards/&#34;&gt;keyboard layouts for Meꞌphaa and Sochiapam Chinantec&lt;/a&gt; were produced. This project uses data from Meꞌphaa and Sochiapam Chinantec but purposely extends the scope of the analysis to include Latin and Cyrillic script languages, particularly focusing on those with diacritics which express tone.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Goals&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;The goal of this project is to bring &amp;lsquo;natural&amp;rsquo;, intuitive, and easy to use typing experiences in the form of keyboard layout designs to minority language users. These language users often do not type in their own languages, but rather experience technology through languages other than their first language. This is in part because of the perception that their language is complex or not easy to type, which is often not an invalid observation. However, with these languages which have different and sometimes more characters than English, what does a good layout look like?
-The objectives of this project are threefold:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;To establish a consistent method to evaluate the appropriateness of a keyboard layout for a specific language situation given a specific text sample. This needs to include &lt;code&gt;deadkeys&lt;/code&gt; and &lt;code&gt;alt&lt;/code&gt; states.
-
-&lt;ul&gt;
-&lt;li&gt;This needs to account for monolingual situations&lt;/li&gt;
-&lt;li&gt;This needs to account for multi-lingual situations where each language has its own keyboard&lt;/li&gt;
-&lt;li&gt;This needs to account for multi-lingual situations where only a single keyboard is used&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Provide a best fit solution recommendation when provided the following:
-
-&lt;ul&gt;
-&lt;li&gt;A corpus of text encoded in UTF-16 or UTF-8 in any language&lt;/li&gt;
-&lt;li&gt;A user selected choice between a physical keyboard layout of ANSI, ISO, or JIS
-The application providing the best fit solution needs to be able to suggest a better layout, inclusive of &lt;code&gt;alt&lt;/code&gt; states and &lt;code&gt;deadkey&lt;/code&gt; options.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Assess and analyze real user feedback. That is, measure the impacts of keyboards on users. Speed of typing, speed of keyboard acquisition, error rate, and results such as language choice when typing.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;span class=&#34;fa fa-github fa-2x&#34;&gt;&lt;/span&gt; Project resources are split into three repos: &lt;a href=&#34;https://github.com/HughP/MLKA&#34; target=&#34;_blank&#34;&gt;MLKA&lt;/a&gt;, &lt;a href=&#34;https://github.com/HughP/MLKA-Bash-data&#34; target=&#34;_blank&#34;&gt;MLKA-Bash-data&lt;/a&gt;, and &lt;a href=&#34;https://github.com/HughP/MLKA-Test-Data&#34; target=&#34;_blank&#34;&gt;MLKA-Test-Data&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>External Project</title>
       <link>/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0900</pubDate>
@@ -22366,6 +22361,16 @@ The application providing the best fit solution needs to be able to suggest a be
     Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pos</title>
+      <link>/project/pos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/pos/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Previous work&lt;/strong&gt;:&lt;/p&gt;
 </description>
     </item>
     

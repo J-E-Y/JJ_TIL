@@ -27,12 +27,9 @@
   
     
   
-  <meta name="description" content="URL 첫번째 URL  protocol   indicates how to access the resource
-  IP address and URL name
-   the computer where the resource is located
-  port   can be running multiple network applications
-  resource   the web server uses this info to identify the resource
- 두번째 URL Query string  ? 문자가 보이면 쿼리   passing some info to the web server ?">
+  <meta name="description" content="port  컴퓨터의 Lan선은 하나인데 통신을 필요로 하는 프로그램이 다수일 때 이 다수의 프로그램을 구별할 수 있는 번호가 Port이다.
+ port forwarding Port forwarding 이란  포트포워딩 (Port Forwarding)이란?
+ 포트 포워딩(port forwarding) 또는 포트 매핑(port mapping)은 컴퓨터 네트워크에서 패킷이 라우터나 방화벽과 같은 네트워크 게이트웨이를 가로지르는 동안 하나의 IP 주소와 포트 번호 결합의 통신 요청을 다른 곳으로 넘겨주는 네트워크 주소 변환(NAT)의 응용이다.  쉽게 설명하면 부여받은 IP가 외부에서 내 장치에 접근할 수 있도록 포트, 즉 문을 열어주는 것입니다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/it-terminology/">
@@ -135,12 +132,9 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/it-terminology/">
   <meta property="og:title" content="Technical terms | JohnJung">
-  <meta property="og:description" content="URL 첫번째 URL  protocol   indicates how to access the resource
-  IP address and URL name
-   the computer where the resource is located
-  port   can be running multiple network applications
-  resource   the web server uses this info to identify the resource
- 두번째 URL Query string  ? 문자가 보이면 쿼리   passing some info to the web server ?"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="port  컴퓨터의 Lan선은 하나인데 통신을 필요로 하는 프로그램이 다수일 때 이 다수의 프로그램을 구별할 수 있는 번호가 Port이다.
+ port forwarding Port forwarding 이란  포트포워딩 (Port Forwarding)이란?
+ 포트 포워딩(port forwarding) 또는 포트 매핑(port mapping)은 컴퓨터 네트워크에서 패킷이 라우터나 방화벽과 같은 네트워크 게이트웨이를 가로지르는 동안 하나의 IP 주소와 포트 번호 결합의 통신 요청을 다른 곳으로 넘겨주는 네트워크 주소 변환(NAT)의 응용이다.  쉽게 설명하면 부여받은 IP가 외부에서 내 장치에 접근할 수 있도록 포트, 즉 문을 열어주는 것입니다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -426,6 +420,11 @@
 <ul>
 <li>
 <ul>
+<li><a href="#port">port</a></li>
+<li><a href="#port-forwarding">port forwarding</a>
+<ul>
+<li><a href="#port-forwarding-이란">Port forwarding 이란</a></li>
+</ul></li>
 <li><a href="#url">URL</a>
 <ul>
 <li><a href="#첫번째-url">첫번째 URL</a></li>
@@ -551,6 +550,38 @@
 
           <div class="article-style" itemprop="articleBody">
             
+
+<h2 id="port">port</h2>
+
+<blockquote>
+<p>컴퓨터의 Lan선은 하나인데 통신을 필요로 하는 프로그램이 다수일 때 이 다수의 프로그램을 구별할 수 있는 번호가 Port이다.</p>
+</blockquote>
+
+<p><img src="/tutorial/IT terminology_files/port.png" alt="" /></p>
+
+<h2 id="port-forwarding">port forwarding</h2>
+
+<h3 id="port-forwarding-이란">Port forwarding 이란</h3>
+
+<ul>
+<li><p>포트포워딩 (Port Forwarding)이란?</p>
+
+<ul>
+<li>포트 포워딩(port forwarding) 또는 포트 매핑(port mapping)은 컴퓨터 네트워크에서 패킷이 라우터나 방화벽과 같은 네트워크 게이트웨이를 가로지르는 동안 하나의 IP 주소와 포트 번호 결합의 통신 요청을 다른 곳으로 넘겨주는 네트워크 주소 변환(NAT)의 응용이다.</li>
+</ul></li>
+
+<li><p>쉽게 설명하면 부여받은 IP가 외부에서 내 장치에 접근할 수 있도록 포트, 즉 문을 열어주는 것입니다.</p>
+
+<ul>
+<li><p>주로 가정의 네트워크 환경은 인터넷사업자(ISP-Internet Service Provider)가 제공한 모뎀 - 공유기 - 디바이스(PC등&hellip;)으로 구성되어 있습니다. 이러한 경우 네트워크는 주로 하나의 고유한 IP를 가지게 되며, 이는 사업자로부터 제공됩니다. (이 고유한 IP는 하나의 자원이며, 돈입니다)
+이때, ISP에 할당된 IP (Public IP)는 공유기가 가지게 됩니다. 그리고 그 공유기가 공유기에 연결된 여러개의 기기에 가상의 IP (Local IP)를 할당해줍니다. 기본적으로 허가되지 않은 외부로부터의 접속을 차단하게 되며, 외부에서 고유 IP로 연결되더라도 공유기까지만 닿을 뿐 그 공유기에 접속해 있는 디바이스까지는 닿을 수 없게 됩니다.</p></li>
+
+<li><p>또한 가상 IP, Local IP는 내부 네트워크 안에서만 사용되므로 외부의 컴퓨터가 내부의 IP가 할당 된 디바이스에 접속할 수 없습니다.
+하지만 사용자가 외부로부터의 접속을 허용하고 싶은 경우 사용하는 방법이 바로 포트 포워딩(Port Forwarding) 또는 DMZ(Demilitarized Zone) 설정입니다.
+IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 포트(아래 표 참조)가 있는데, 포트포워딩의 경우 IP의 특정 포트를 네트워크의 내부 특정 컴퓨터로, DMZ 설정은 IP 포트 전체를 내부 네트워크의 특정 컴퓨터로 옮겨주는 방식입니다.
+[출처] 포트포워딩 (Port Forwarding)?|작성자 재이아버지</p></li>
+</ul></li>
+</ul>
 
 <h2 id="url">URL</h2>
 

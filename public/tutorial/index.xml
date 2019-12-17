@@ -75,12 +75,9 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/it-terminology/</guid>
-      <description>URL 첫번째 URL  protocol   indicates how to access the resource
-  IP address and URL name
-   the computer where the resource is located
-  port   can be running multiple network applications
-  resource   the web server uses this info to identify the resource
- 두번째 URL Query string  ? 문자가 보이면 쿼리   passing some info to the web server ?</description>
+      <description>port  컴퓨터의 Lan선은 하나인데 통신을 필요로 하는 프로그램이 다수일 때 이 다수의 프로그램을 구별할 수 있는 번호가 Port이다.
+ port forwarding Port forwarding 이란  포트포워딩 (Port Forwarding)이란?
+ 포트 포워딩(port forwarding) 또는 포트 매핑(port mapping)은 컴퓨터 네트워크에서 패킷이 라우터나 방화벽과 같은 네트워크 게이트웨이를 가로지르는 동안 하나의 IP 주소와 포트 번호 결합의 통신 요청을 다른 곳으로 넘겨주는 네트워크 주소 변환(NAT)의 응용이다.  쉽게 설명하면 부여받은 IP가 외부에서 내 장치에 접근할 수 있도록 포트, 즉 문을 열어주는 것입니다.</description>
     </item>
     
     <item>

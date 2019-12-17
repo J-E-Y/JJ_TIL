@@ -26,24 +26,26 @@ subtitle = ""
     tag = "*"
 
   [[content.filter_button]]
-    name = "Research"
-    tag = ".js-id-research"
+    name = "first"
+    tag = ".js-id-first"
 
   [[content.filter_button]]
     name = "Web development"
-    tag = ".js-id-web"
+    tag = "Web development"
 
   [[content.filter_button]]
     name = "Maps"
-    tag = ".js-id-maps"
+    tag = "Maps"
 
   [[content.filter_button]]
-    name = "Divulgation"
-    tag = ".js-id-divulgation"
-    
-  [[content.filter_button]]
     name = "Pos"
-    tag = ".js-id-pos"
+    tag = "Pos"
+  
+  
+  [[content.filter_button]]
+    name = "last"
+    tag = "last"
+  
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

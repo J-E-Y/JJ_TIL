@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pos on JohnJung</title>
+    <title>Pos on JohnJung</title>
     <link>/tags/pos/</link>
-    <description>Recent content in pos on JohnJung</description>
+    <description>Recent content in Pos on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="/tags/pos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>The minority language typing experience</title>
-      <link>/project/pos/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>External Project</title>
+      <link>/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0900</pubDate>
       
-      <guid>/project/pos/</guid>
-      <description>How much work is it to type languages with tonal markers in their orthographies?</description>
+      <guid>/project/external-project/</guid>
+      <description>An example of linking directly to an external project website using &lt;code&gt;external_link&lt;/code&gt;.</description>
     </item>
     
     <item>
@@ -27,6 +27,15 @@
       
       <guid>/project/ex1/</guid>
       <description>Action-research group of enthusiasts aimed to foster citizen innovation and collective intelligence through Voluntary Geographic Informationand that result in collaborative maps at the service of citizens.</description>
+    </item>
+    
+    <item>
+      <title>Pos</title>
+      <link>/project/pos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/pos/</guid>
+      <description>hello</description>
     </item>
     
   </channel>
