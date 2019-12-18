@@ -514,9 +514,9 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 
 &lt;h2 id=&#34;git-branch-d-test&#34;&gt;git branch -d test&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;branch 지우기&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;branch 지우기&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 git branch -d test
@@ -527,9 +527,9 @@ git branch -d test
 
 &lt;h2 id=&#34;git-push-origin-delete-test&#34;&gt;git push origin &amp;ndash;delete test&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;remote 지우기&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;remote 지우기&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 it branch -a
@@ -541,16 +541,16 @@ it branch -a
 
 
 git push origin --delete test
-# To &amp;lt;URL of your repository&amp;gt;.git
+# To &amp;lt;URL of your repository*.git
 #  - [deleted]         test
 
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;git-branch-a&#34;&gt;git branch -a&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;현재 romote 상태 보기&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;현재 romote 상태 보기&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 git branch -a
@@ -566,27 +566,27 @@ git branch -a
 
 &lt;h2 id=&#34;git-init&#34;&gt;git init&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Create an empty Git repository or reinitialize an existing one&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an empty Git repository or reinitialize an existing one&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;git-clone&#34;&gt;git clone&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Clone a repository into a new directory&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Clone a repository into a new directory&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;git-add&#34;&gt;git add .&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Add all file contents to the index&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Add all file contents to the index&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;git-add-파일-이름&#34;&gt;git add 파일 이름&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;one file add&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;one file add&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;git add jung.html
 
@@ -594,15 +594,15 @@ git branch -a
 
 &lt;h2 id=&#34;git-commit-m&#34;&gt;git commit -m &amp;ldquo;&amp;rdquo;&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;write message into github&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;write message into github&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;git-remote-add-origin&#34;&gt;git remote add origin&amp;rdquo;&amp;rdquo;&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;link local to github&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;link local to github&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;Git remote add origin &amp;quot;https://github.com/J-E-Y/test_2.git&amp;quot;
 
@@ -618,13 +618,15 @@ git branch -a
 
 &lt;h2 id=&#34;git-log&#34;&gt;git log&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;그동안 commit 한 내용을 볼수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;그동안 commit 한 내용을 볼수 있다.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;enter 키를 치면 밑에 내용을 계속 볼수 있다.&lt;/p&gt;
+&lt;p&gt;*enter 키를 치면 밑에 내용을 계속 볼수 있다.&lt;/p&gt;
 
-&lt;p&gt;log 파일을 나오려면 q  버튼을 누르면 된다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;log 파일을 나오려면 q  버튼을 누르면 된다.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;git-status&#34;&gt;git status&lt;/h2&gt;
 
@@ -645,97 +647,94 @@ git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
 
 &lt;h2 id=&#34;git-branch-충돌-방지하기&#34;&gt;git branch : 충돌 방지하기&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;merge 하는 중 출돌이 존재할수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;merge 하는 중 출돌이 존재할수 있다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;master branch 와 develop branch와 내용이 다를경우 master branch 에서 통합을 한다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;master branch 와 develop branch와 내용이 다를경우 master branch 에서 통합을 한다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;merge 하는 순간 conflict 가 발생 한다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;merge 하는 순간 conflict 가 발생 한다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;git은 병합한 코드가 무엇이 다른지 코드안에 표시가 되게 한다.
-그리고 그분은에 들어가서 HAED 부분을 선택할지 develop 부분을 선택할지 직접 수동으로  코드를 삭제해서 결정을 하고 저장한다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;git은 병합한 코드가 무엇이 다른지 코드안에 표시가 되게 한다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;git add . 하고 다시  git merge develop 한다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;그리고 그분은에 들어가서 HAED 부분을 선택할지 develop 부분을 선택할지 직접 수동으로  코드를 삭제해서 결정을 하고 저장한다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;그럼 병합이 된것이다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;git add . 하고 다시  git merge develop 한다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;확인 git merge develop 하면 이미 병합이 되었다 .&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;그럼 병합이 된것이다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;그럼 log 하면 같은 화면에 master와 develop 가 동시에 나온다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;확인 git merge develop 하면 이미 병합이 되었다 .&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;develop 는 필요없기 떄문 git branch -d develop 명령으로 삭제한다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;그럼 log 하면 같은 화면에 master와 develop 가 동시에 나온다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;git branch 만 확인하면 master branch 만 남아있다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;develop 는 필요없기 떄문 git branch -d develop 명령으로 삭제한다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;git push  로 마무리&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;li&gt;&lt;p&gt;git branch 만 확인하면 master branch 만 남아있다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;git push  로 마무리&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;git-branch&#34;&gt;git Branch&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/Git_files/Screen Shot 2019-09-24 at 3.19.15 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Branch : git 은 동시에 여러 개발자들이 프로젝트에서 각기 다른 기능을 개발할 수 있도록 브랜치 (branch) 기능을 제공한다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Branch : git 은 동시에 여러 개발자들이 프로젝트에서 각기 다른 기능을 개발할 수 있도록 브랜치 (branch) 기능을 제공한다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;일반적으로 EX)&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;일반적으로 EX)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;Master Branch&lt;/li&gt;
+&lt;li&gt;Develop Branch&lt;/li&gt;
+&lt;li&gt;Bug Fix Branch&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Master Branch
-Develop Branch
-Bug Fix Branch&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;기능들이 수정되면 Master Branch 에 합치기(Merge) 라면 명령어를 사용해서 합치면 된다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;기능들이 수정되면 Master Branch 에 합치기(Merge) 라면 명령어를 사용해서 합치면 된다.&lt;/p&gt;
-
-&lt;p&gt;Branch 에는 두가지 용어&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;통합Branch : Master Branch 를 말한다.&lt;/li&gt;
-&lt;li&gt;토픽Branch : 특정 기능을 위해 만들어진 Branch 를 말한다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;li&gt;&lt;p&gt;Branch 에는 두가지 용어&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;실습&lt;/li&gt;
+&lt;li&gt;1. 통합Branch : Master Branch 를 말한다.&lt;/li&gt;
+&lt;li&gt;2. 토픽Branch : 특정 기능을 위해 만들어진 Branch 를 말한다.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;실습&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;git branch 명령 하면 현재 몇개의 branch 가 있는지 확일할수 있다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;git branch develop 명령 branch 생성&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;cheakout develop 명령을 현재 default 값이 master 에서 새로만든 develop branch 로 바꿔준다. (git branch 로 확인할수 있다.);&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;이상태에서 기존 master branchs 에 있는 코드에 수정을 하고 git add 하고 git commit 을 하고 log 명렁을 하면 현재 &amp;lsquo;HAED -* develop&amp;rsquo; 바뀐것을 볼수 있다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;그러면 master branch 에는 적용이 안되있고 새로생성한 branch 에만 해당되어있다.  그러면 develop 에서 작업을 할수 있다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;이것을 합치기 위해서는 merge 명령을 한다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;git cheakout master 명령을 해서 되돌아 간다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;그리고 git merge develop 명령을 해서 합친다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;마지막으로 git push 명령을 해서 깃허브에 저장한다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;필요없는 branch develop 를 삭제는 git branch -d develop 이다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;git branch 명령 하면 현재 몇개의 branch 가 있는지 확일할수 있다.&lt;/p&gt;
-
-&lt;p&gt;git branch develop 명령 branch 생성&lt;/p&gt;
-
-&lt;p&gt;cheakout develop 명령을 현재 default 값이 master 에서 새로만든 develop branch 로 바꿔준다. (git branch 로 확인할수 있다.);&lt;/p&gt;
-
-&lt;p&gt;이상태에서 기존 master branchs 에 있는 코드에 수정을 하고 git add 하고 git commit 을 하고 log 명렁을 하면 현재 &amp;lsquo;HAED -&amp;gt; develop&amp;rsquo; 바뀐것을 볼수 있다.&lt;/p&gt;
-
-&lt;p&gt;그러면 master branch 에는 적용이 안되있고 새로생성한 branch 에만 해당되어있다.  그러면 develop 에서 작업을 할수 있다.&lt;/p&gt;
-
-&lt;p&gt;이것을 합치기 위해서는 merge 명령을 한다.&lt;/p&gt;
-
-&lt;p&gt;git cheakout master 명령을 해서 되돌아 간다.&lt;/p&gt;
-
-&lt;p&gt;그리고 git merge develop 명령을 해서 합친다.&lt;/p&gt;
-
-&lt;p&gt;마지막으로 git push 명령을 해서 깃허브에 저장한다.&lt;/p&gt;
-
-&lt;p&gt;필요없는 branch develop 를 삭제는 git branch -d develop 이다.&lt;/p&gt;
-&lt;/blockquote&gt;
 
 &lt;h2 id=&#34;기존에-commit한-내용으로-되돌아-가기&#34;&gt;기존에 commit한 내용으로 되돌아 가기&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;log 명령을 하고&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;log 명령을 하고&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;git reset &amp;ndash;hard 9a9sdsa8fsdfsd6a78f6safs 명령을 한다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;git reset &amp;ndash;hard 9a9sdsa8fsdfsd6a78f6safs 명령을 한다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;가져온 주소명령으로 돌아가고 그 이후에 있는 commit 내용들을 싹다 지운다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;가져온 주소명령으로 돌아가고 그 이후에 있는 commit 내용들을 싹다 지운다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;em&gt;주의&lt;/em&gt; commit 내용들이 지워질뿐 아니라 모든 로컬에 저장되어있는 파일들도 제거된다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;주의&lt;/em&gt; commit 내용들이 지워질뿐 아니라 모든 로컬에 저장되어있는 파일들도 제거된다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;그리고 나서 push 를 해주는데 push -f 를 명령해야 깃허브 저장소에서도 동일하게 적용된다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;li&gt;&lt;p&gt;그리고 나서 push 를 해주는데 push -f 를 명령해야 깃허브 저장소에서도 동일하게 적용된다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -749,33 +748,33 @@ Bug Fix Branch&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;commit 명령을 잘못 넣으면  이명령어를 통해 수정할수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;commit 명령을 잘못 넣으면  이명령어를 통해 수정할수 있다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;unix 에디터가 실행된다. 이모드는 수정모두와 관리자 모드로 나뉜다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;unix 에디터가 실행된다. 이모드는 수정모두와 관리자 모드로 나뉜다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;수정 모드로 들어가고자 한다면 a 를 입력하면 된다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;수정 모드로 들어가고자 한다면 a 를 입력하면 된다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;그리고 내용을 수정하고 ESC 누르고 : 입력하면 wq! 수정되고 밖으로 나오게 된다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;그리고 내용을 수정하고 ESC 누르고 : 입력하면 wq! 수정되고 밖으로 나오게 된다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;git status  하면 수정된 파일을 볼수 있다.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;git status  하면 수정된 파일을 볼수 있다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;git push -f 강제로 명령하면 적용된다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;li&gt;&lt;p&gt;git push -f 강제로 명령하면 적용된다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;git-cheakout&#34;&gt;git cheakout&amp;ndash;&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;add 한다음에 git status 명령을 하면  수정된 파일이 스테이지에 올라가게 된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;add 한다음에 git status 명령을 하면  수정된 파일이 스테이지에 올라가게 된다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;cheakout&amp;ndash; 이라는 명령을 하면 add 하기전 코드상태로 되돌아 간다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;li&gt;&lt;p&gt;cheakout&amp;ndash; 이라는 명령을 하면 add 하기전 코드상태로 되돌아 간다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;git-reset&#34;&gt;git reset&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;add 한 파일을 다시 되돌리기&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;add 한 파일을 다시 되돌리기&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
