@@ -27,9 +27,11 @@
   
     
   
-  <meta name="description" content="port  컴퓨터의 Lan선은 하나인데 통신을 필요로 하는 프로그램이 다수일 때 이 다수의 프로그램을 구별할 수 있는 번호가 Port이다.
- port forwarding Port forwarding 이란  포트포워딩 (Port Forwarding)이란?
- 포트 포워딩(port forwarding) 또는 포트 매핑(port mapping)은 컴퓨터 네트워크에서 패킷이 라우터나 방화벽과 같은 네트워크 게이트웨이를 가로지르는 동안 하나의 IP 주소와 포트 번호 결합의 통신 요청을 다른 곳으로 넘겨주는 네트워크 주소 변환(NAT)의 응용이다.  쉽게 설명하면 부여받은 IP가 외부에서 내 장치에 접근할 수 있도록 포트, 즉 문을 열어주는 것입니다.">
+  <meta name="description" content="NAT  Network Address Translation
+ NAT 이란 무엇인가?
+ User 가 웹사이트에 접촉하려고 할때 IP주소가 같지 않아 불가능 하다.하지만 NET이라는 기능으로 인해 private IP주소를 public IP주소로 바꿔주어서 interface 가능하도록 도와준다  또한 다음에 또 접촉하려고 했을때 원활한 접근을 위해 기록해둔다
+ NET 은 두가지를 한다 접촉할수있게 사용자의 IP주소를 pubilc IP 주소로 바꿔준다. 다음 원활한 접근을 위해 기록해둔다   port  Port 란?
+ 컴퓨터의 Lan선은 하나인데 통신을 필요로 하는 프로그램이 다수일 때 이 다수의 프로그램을 구별할 수 있는 번호가 Port이다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/it-terminology/">
@@ -132,9 +134,11 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/it-terminology/">
   <meta property="og:title" content="Technical terms | JohnJung">
-  <meta property="og:description" content="port  컴퓨터의 Lan선은 하나인데 통신을 필요로 하는 프로그램이 다수일 때 이 다수의 프로그램을 구별할 수 있는 번호가 Port이다.
- port forwarding Port forwarding 이란  포트포워딩 (Port Forwarding)이란?
- 포트 포워딩(port forwarding) 또는 포트 매핑(port mapping)은 컴퓨터 네트워크에서 패킷이 라우터나 방화벽과 같은 네트워크 게이트웨이를 가로지르는 동안 하나의 IP 주소와 포트 번호 결합의 통신 요청을 다른 곳으로 넘겨주는 네트워크 주소 변환(NAT)의 응용이다.  쉽게 설명하면 부여받은 IP가 외부에서 내 장치에 접근할 수 있도록 포트, 즉 문을 열어주는 것입니다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="NAT  Network Address Translation
+ NAT 이란 무엇인가?
+ User 가 웹사이트에 접촉하려고 할때 IP주소가 같지 않아 불가능 하다.하지만 NET이라는 기능으로 인해 private IP주소를 public IP주소로 바꿔주어서 interface 가능하도록 도와준다  또한 다음에 또 접촉하려고 했을때 원활한 접근을 위해 기록해둔다
+ NET 은 두가지를 한다 접촉할수있게 사용자의 IP주소를 pubilc IP 주소로 바꿔준다. 다음 원활한 접근을 위해 기록해둔다   port  Port 란?
+ 컴퓨터의 Lan선은 하나인데 통신을 필요로 하는 프로그램이 다수일 때 이 다수의 프로그램을 구별할 수 있는 번호가 Port이다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -420,50 +424,15 @@
 <ul>
 <li>
 <ul>
+<li><a href="#nat">NAT</a></li>
 <li><a href="#port">port</a></li>
-<li><a href="#port-forwarding">port forwarding</a>
-<ul>
-<li><a href="#port-forwarding-이란">Port forwarding 이란</a></li>
-</ul></li>
-<li><a href="#url">URL</a>
-<ul>
-<li><a href="#첫번째-url">첫번째 URL</a></li>
-<li><a href="#두번째-url-query-string">두번째 URL Query string</a></li>
-<li><a href="#세번째-url-fragment">세번째 URL Fragment</a></li>
-<li><a href="#encoding">encoding</a></li>
-</ul></li>
-<li><a href="#client-sever">Client &amp; sever</a>
-<ul>
-<li><a href="#http-www-santaged-name-2014-07-up-andnwjkd-thml"><a href="HTTP://www.santaged.name/2014/07/up=andnwjkd.thml" target="_blank">HTTP://www.santaged.name/2014/07/up=andnwjkd.thml</a></a></li>
-<li><a href="#ftp-protocol-http-protocol">FTP_protocol &amp; HTTP_protocol</a></li>
-<li><a href="#what-is-web-resource">What is Web Resource</a></li>
-<li><a href="#http-transaction-a-stateless-protocol">HTTP Transaction &amp; a stateless protocol</a></li>
-</ul></li>
+<li><a href="#port-forwarding">port forwarding</a></li>
+<li><a href="#url">URL</a></li>
+<li><a href="#client-sever">Client &amp; sever</a></li>
 <li><a href="#http">HTTP</a></li>
 <li><a href="#html-internet">HTML &amp; Internet</a>
 <ul>
 <li>
-<ul>
-<li><a href="#html">HTML</a></li>
-<li><a href="#https">HTTPS</a></li>
-</ul></li>
-<li><a href="#1-ip-와-dns">1.IP 와 DNS</a></li>
-<li><a href="#2-dns">2.DNS</a>
-<ul>
-<li>
-<ul>
-<li><a href="#어떻게-dns-는-무엇을-하는가">어떻게 <code>DNS</code>는 무엇을 하는가?</a></li>
-</ul></li>
-<li><a href="#dns-원리과-위험성">DNS 원리과 위험성</a>
-<ul>
-<li>
-<ul>
-<li><a href="#원리">원리</a></li>
-<li><a href="#위험성">위험성</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li><a href="#3-패킷-과-라우터">3.패킷 과 라우터</a>
 <ul>
 <li>
 <ul>
@@ -475,22 +444,9 @@
 </ul></li>
 </ul></li>
 </ul></li>
-<li><a href="#url-uri">URL &amp; URI</a>
-<ul>
-<li>
-<ul>
-<li><a href="#url-과-uri-의-차이점">URL 과 URI 의 차이점</a></li>
-<li><a href="#예-주소로-차이점을-느껴보자">예) 주소로 차이점을 느껴보자.</a></li>
-</ul></li>
-</ul></li>
+<li><a href="#url-uri">URL &amp; URI</a></li>
 <li><a href="#javascript-와-ecmascript">JavaScript 와 ECMAScript</a></li>
-<li><a href="#web-storage">Web storage</a>
-<ul>
-<li>
-<ul>
-<li><a href="#web-storage-웹-스토리지">Web storage (웹 스토리지)</a></li>
-</ul></li>
-</ul></li>
+<li><a href="#web-storage">Web storage</a></li>
 <li><a href="#proxy-sever">Proxy sever</a></li>
 <li><a href="#tls">TLS</a>
 <ul>
@@ -551,46 +507,87 @@
           <div class="article-style" itemprop="articleBody">
             
 
+<h2 id="nat">NAT</h2>
+
+<ul>
+<li><p>Network Address Translation</p></li>
+
+<li><p>NAT 이란 무엇인가?</p>
+
+<ul>
+<li>User 가 웹사이트에 접촉하려고 할때 IP주소가 같지 않아 불가능 하다.하지만 NET이라는 기능으로 인해 private IP주소를 public IP주소로 바꿔주어서 interface 가능하도록 도와준다</li>
+</ul></li>
+
+<li><p>또한 다음에 또 접촉하려고 했을때 원활한 접근을 위해 기록해둔다</p>
+
+<ul>
+<li>NET 은 두가지를 한다</li>
+<li>접촉할수있게 사용자의 IP주소를 pubilc IP 주소로 바꿔준다.</li>
+<li>다음 원활한 접근을 위해 기록해둔다</li>
+</ul></li>
+</ul>
+
 <h2 id="port">port</h2>
 
-<blockquote>
-<p>컴퓨터의 Lan선은 하나인데 통신을 필요로 하는 프로그램이 다수일 때 이 다수의 프로그램을 구별할 수 있는 번호가 Port이다.</p>
-</blockquote>
+<ul>
+<li><p>Port 란?</p>
+
+<ul>
+<li>컴퓨터의 Lan선은 하나인데 통신을 필요로 하는 프로그램이 다수일 때 이 다수의 프로그램을 구별할 수 있는 번호가 Port이다.</li>
+</ul></li>
+</ul>
 
 <p><img src="/tutorial/IT terminology_files/port.png" alt="" /></p>
 
 <h2 id="port-forwarding">port forwarding</h2>
 
-<h3 id="port-forwarding-이란">Port forwarding 이란</h3>
-
 <ul>
 <li><p>포트포워딩 (Port Forwarding)이란?</p>
 
 <ul>
-<li>포트 포워딩(port forwarding) 또는 포트 매핑(port mapping)은 컴퓨터 네트워크에서 패킷이 라우터나 방화벽과 같은 네트워크 게이트웨이를 가로지르는 동안 하나의 IP 주소와 포트 번호 결합의 통신 요청을 다른 곳으로 넘겨주는 네트워크 주소 변환(NAT)의 응용이다.</li>
+<li><p>포트 포워딩(port forwarding) 또는 포트 매핑(port mapping)은 컴퓨터 네트워크에서 패킷이 라우터나 방화벽과 같은 네트워크 게이트웨이를 가로지르는 동안 하나의 IP 주소와 포트 번호 결합의 통신 요청을 다른 곳으로 넘겨주는 네트워크 주소 변환(NAT)의 응용이다.</p></li>
+
+<li><p>쉽게 설명하면 부여받은 IP가 외부에서 내 장치에 접근할 수 있도록 포트, 즉 문을 열어주는 것입니다.</p></li>
 </ul></li>
 
-<li><p>쉽게 설명하면 부여받은 IP가 외부에서 내 장치에 접근할 수 있도록 포트, 즉 문을 열어주는 것입니다.</p>
+<li><p>언제 Port forwarding 사용하는가?</p>
 
 <ul>
-<li><p>주로 가정의 네트워크 환경은 인터넷사업자(ISP-Internet Service Provider)가 제공한 모뎀 - 공유기 - 디바이스(PC등&hellip;)으로 구성되어 있습니다. 이러한 경우 네트워크는 주로 하나의 고유한 IP를 가지게 되며, 이는 사업자로부터 제공됩니다. (이 고유한 IP는 하나의 자원이며, 돈입니다)
-이때, ISP에 할당된 IP (Public IP)는 공유기가 가지게 됩니다. 그리고 그 공유기가 공유기에 연결된 여러개의 기기에 가상의 IP (Local IP)를 할당해줍니다. 기본적으로 허가되지 않은 외부로부터의 접속을 차단하게 되며, 외부에서 고유 IP로 연결되더라도 공유기까지만 닿을 뿐 그 공유기에 접속해 있는 디바이스까지는 닿을 수 없게 됩니다.</p></li>
+<li>Web server를 자신의 컴퓨터부터 시작하고 싶을때 port forwarding 을 사용해야 한다.</li>
+</ul></li>
 
-<li><p>또한 가상 IP, Local IP는 내부 네트워크 안에서만 사용되므로 외부의 컴퓨터가 내부의 IP가 할당 된 디바이스에 접속할 수 없습니다.
-하지만 사용자가 외부로부터의 접속을 허용하고 싶은 경우 사용하는 방법이 바로 포트 포워딩(Port Forwarding) 또는 DMZ(Demilitarized Zone) 설정입니다.
-IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 포트(아래 표 참조)가 있는데, 포트포워딩의 경우 IP의 특정 포트를 네트워크의 내부 특정 컴퓨터로, DMZ 설정은 IP 포트 전체를 내부 네트워크의 특정 컴퓨터로 옮겨주는 방식입니다.
-[출처] 포트포워딩 (Port Forwarding)?|작성자 재이아버지</p></li>
+<li><p>How dose port forwarding work ?</p>
+
+<ul>
+<li><p>사람들이 나의 컴퓨터로 들어오기 위해서는 public IC주소 (wan IP주소를) 알려주어야 한다. <code>BUT</code>사람들이 Public IP주소로 들어오면 어느곳으로 이동해야하는지 모른다.</p></li>
+
+<li><p>이것을 실행하기 위한것이 port forwarding 이다.</p></li>
+
+<li><p>How to convert it ? Router port forwarding 설정을 하면된다.</p></li>
 </ul></li>
 </ul>
+
+<p><img src="/tutorial/IT terminology_files/prot for1.png" alt="" /></p>
+
+<ul>
+<li><code>내부 IP주소가 web server 를 설치할 컴퓨터IP이고</code></li>
+<li><code>외부 IP주소가 나의 public IP에 주소를 만들 port 번호 이다.</code></li>
+</ul>
+
+<p><img src="/tutorial/IT terminology_files/2.png" alt="" /></p>
+
+<p><img src="/tutorial/IT terminology_files/4.png" alt="" /></p>
+
+<p><img src="/tutorial/IT terminology_files/3.png" alt="" /></p>
 
 <h2 id="url">URL</h2>
 
 <p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 6.07.41 PM.png" alt="" /></p>
 
-<h3 id="첫번째-url">첫번째 URL</h3>
-
 <ul>
-<li>protocol</li>
+<li><p>첫번째 URL</p></li>
+
+<li><p>protocol</p></li>
 </ul>
 
 <blockquote>
@@ -621,27 +618,31 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 <p>the web server uses this info to identify the resource</p>
 </blockquote>
 
-<h3 id="두번째-url-query-string">두번째 URL Query string</h3>
-
 <ul>
-<li>? 문자가 보이면 쿼리</li>
+<li><p>두번째 URL Query string</p></li>
+
+<li><p>? 문자가 보이면 쿼리</p></li>
 </ul>
 
 <blockquote>
 <p>passing some info to the web server ? 바로 질러서 접근할수 있게 해준다.</p>
 </blockquote>
 
-<h3 id="세번째-url-fragment">세번째 URL Fragment</h3>
+<ul>
+<li><p>세번째 URL Fragment</p>
 
 <ul>
 <li># 보이면 재빨리 찾아서 보내준다.</li>
+</ul></li>
 </ul>
 
 <blockquote>
 <p>만약 이것이 없다면 resource 가 web sever 에 가서 저장된 모든 것들을 찾아야 하기 때문이다.</p>
 </blockquote>
 
-<h3 id="encoding">encoding</h3>
+<ul>
+<li>encoding</li>
+</ul>
 
 <p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 6.15.13 PM.png" alt="" /></p>
 
@@ -650,7 +651,7 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 </blockquote>
 
 <ul>
-<li>더공부할 내용
+<li><p>더공부할 내용</p>
 
 <ul>
 <li>ASCII / ANSI / EUC-KR / CP949 / UTF-8 / UNICODE</li>
@@ -659,7 +660,9 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 
 <h2 id="client-sever">Client &amp; sever</h2>
 
-<h3 id="http-www-santaged-name-2014-07-up-andnwjkd-thml"><a href="HTTP://www.santaged.name/2014/07/up=andnwjkd.thml" target="_blank">HTTP://www.santaged.name/2014/07/up=andnwjkd.thml</a></h3>
+<blockquote>
+<p><a href="HTTP://www.santaged.name/2014/07/up=andnwjkd.thml" target="_blank">HTTP://www.santaged.name/2014/07/up=andnwjkd.thml</a></p>
+</blockquote>
 
 <ul>
 <li><p>HTTP : 프로토콜</p></li>
@@ -667,22 +670,20 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 <li><p>www.santaged.name: 웹서버</p></li>
 
 <li><p>2014/07/up=andnwjkd.thml : web Resource in web sever</p></li>
-</ul>
 
-<h3 id="ftp-protocol-http-protocol">FTP_protocol &amp; HTTP_protocol</h3>
+<li><p>FTP_protocol &amp; HTTP_protocol</p>
 
 <ul>
 <li><p>HTTP_Protocol 은  is merge protocol in the web client and the web server</p></li>
 
 <li><p>FTP protocol is used for transferring files</p></li>
-</ul>
 
-<h3 id="what-is-web-resource">What is Web Resource</h3>
+<li><p>What is Web Resource</p></li>
 
-<ul>
 <li><p>간략 하게 말해서 a web client 가 PDC or HTML Document 등등을 web server 를 통해서 접근하는 것들을 web Resource 라고 한다.</p></li>
 
 <li><p>web resource 안에는 <code>static</code> 와 <code>dynamic</code> resource 가 담겨있다.</p></li>
+</ul></li>
 </ul>
 
 <blockquote>
@@ -691,17 +692,17 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 <p>Dynmic resource 는 web client 에서 <code>바꾼</code> 정보드를 반영하는 것들을 말한다.</p>
 </blockquote>
 
-<h3 id="http-transaction-a-stateless-protocol">HTTP Transaction &amp; a stateless protocol</h3>
+<ul>
+<li>HTTP Transaction &amp; a stateless protocol</li>
+</ul>
 
 <p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 5.26.30 PM.png" alt="" /></p>
 
 <ul>
-<li><p>a stateless protocol</p>
+<li><p>a stateless protocol</p></li>
 
-<ul>
-<li>a web client  가 요청한 것을 web sever 는 web resource 에서 가져온다.
-다음번에 가져올때 이것을 기억못하게 되고 다시 새로운 a web client 가 web sever 에게 접근하게 되는 과정을 a stateless protocol 이라고 한다.</li>
-</ul></li>
+<li><p>a web client  가 요청한 것을 web sever 는 web resource 에서 가져온다.
+다음번에 가져올때 이것을 기억못하게 되고 다시 새로운 a web client 가 web sever 에게 접근하게 되는 과정을 a stateless protocol 이라고 한다.</p></li>
 
 <li><p>HTTP Transaction</p>
 
@@ -727,9 +728,9 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 
 <h2 id="html-internet">HTML &amp; Internet</h2>
 
-<h4 id="html">HTML</h4>
-
 <ul>
+<li><p>HTTP HTML</p></li>
+
 <li><p>HTTP : <code>H</code>ypertext <code>T</code>ransfer <code>P</code>rotocal</p></li>
 
 <li><p>HTML : <code>H</code>ypertext <code>M</code>arkup <code>L</code>anguage</p></li>
@@ -745,9 +746,8 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 <li><ol>
 <li>서버는 요청받은 내용을 <code>브라우저</code> 에게 <code>HTML</code> 언어로 <code>전달</code>해준다.</li>
 </ol></li>
-</ul>
 
-<h4 id="https">HTTPS</h4>
+<li><p>HTTPS</p>
 
 <ul>
 <li><p>HTTPS : <code>H</code>yperText <code>T</code>ransfer <code>P</code>rotocol <code>S</code>ecure</p></li>
@@ -759,31 +759,35 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 <li><p>SSL : <code>S</code>ecure <code>S</code>ockets <code>L</code>ayer</p></li>
 
 <li><p>TLS : <code>T</code>ransport <code>L</code>ayer <code>S</code>ecurity</p></li>
-</ul>
+</ul></li>
 
-<h3 id="1-ip-와-dns">1.IP 와 DNS</h3>
+<li><p>1.IP 와 DNS</p>
 
 <ul>
 <li><p>IP : <code>I</code>nternet <code>P</code>rotocol</p></li>
 
 <li><p>간단히 말해서 컴퓨터의 주소 IP</p></li>
+</ul></li>
 </ul>
 
 <blockquote>
 <p>IP 주소는 전통적으로 32비트 길이를 가지고 있고 지금은 128비트 긴주소를 사용한다.</p>
 </blockquote>
 
-<h3 id="2-dns">2.DNS</h3>
+<ul>
+<li><p>2.DNS</p>
 
 <ul>
 <li><p>DNS : <code>D</code>omain <code>N</code>ame <code>S</code>ystem</p></li>
 
 <li><p>DNS  는</p></li>
+</ul></li>
 </ul>
 
 <p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 3.47.39 PM.png" alt="" /></p>
 
-<h5 id="어떻게-dns-는-무엇을-하는가">어떻게 <code>DNS</code>는 무엇을 하는가?</h5>
+<ul>
+<li><p>어떻게 <code>DNS</code>는 무엇을 하는가?</p>
 
 <ul>
 <li><p>1.사용자가 웹다른 사이트를 가고싶을때 검색을 하게 된다.</p></li>
@@ -793,11 +797,13 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 <li><p>3.그럴때 우리 컴퓨터 안에있는 DNS 가 IP주소를 찾아서 알려준다.</p></li>
 
 <li><p>4.DNS 하나가 모든 정보를 가지고 있지 않기 때문에 친구들에게 물어봐서 알려준다.</p></li>
+</ul></li>
 </ul>
 
-<h4 id="dns-원리과-위험성">DNS 원리과 위험성</h4>
+<p><em>DNS 원리과 위험성</em></p>
 
-<h6 id="원리">원리</h6>
+<ul>
+<li><p>원리</p>
 
 <ul>
 <li><p>DNS 가 하나라면 혼잡하기 때문에 나눠서 연결되도록 설계 되었다.</p></li>
@@ -805,6 +811,7 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 <li><p>지역을 나누는 것이다.</p></li>
 
 <li><p>예)</p></li>
+</ul></li>
 </ul>
 
 <p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.04.29 PM.png" alt="" /></p>
@@ -813,16 +820,13 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 <li>DNS 서버는 정부나 교육기관을 위한 공개되어 있고 누구나 사용 가능한 커뮤니케이션 프로토콜로 제작되었습니다.</li>
 </ul>
 
-<h6 id="위험성">위험성</h6>
+<p><em>위험성</em>
+  * DNS SPOOFING 이라 불리는 것은 해커들이 DNS 서버에 침입해서 주소를 바꿔서 사용자를 다른곳으로 보내버린다.</p>
 
 <ul>
-<li>DNS SPOOFING 이라 불리는 것은 해커들이 DNS 서버에 침입해서 주소를 바꿔서 사용자를 다른곳으로 보내버린다.</li>
-</ul>
+<li><p>3.패킷 과 라우터</p></li>
 
-<h3 id="3-패킷-과-라우터">3.패킷 과 라우터</h3>
-
-<ul>
-<li>패킷  (packet)</li>
+<li><p>패킷  (packet)</p></li>
 </ul>
 
 <h6 id="정보를-주고받을때-패킷을-통해-전단된다">정보를 주고받을때 패킷을 통해 전단된다.</h6>
@@ -848,9 +852,11 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 <p><img src="/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.10.04 PM.png" alt="" /></p>
 
 <ul>
-<li><p>TCP</p></li>
+<li><p>TCP</p>
 
-<li><p>TCP : <code>T</code>ransMission <code>C</code>ontrol <code>P</code>rotocol 전송 제어 프로토콜</p></li>
+<ul>
+<li>TCP : <code>T</code>ransMission <code>C</code>ontrol <code>P</code>rotocol 전송 제어 프로토콜</li>
+</ul></li>
 </ul>
 
 <blockquote>
@@ -861,7 +867,9 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 
 <h2 id="url-uri">URL &amp; URI</h2>
 
-<h4 id="url-과-uri-의-차이점">URL 과 URI 의 차이점</h4>
+<ul>
+<li>URL 과 URI 의 차이점</li>
+</ul>
 
 <blockquote>
 <p><code>URL</code>(Uniform Resource Locator) : 네트워크상에서 자원이 어디있는지를 알려주는 주소. 정의 뜻으로는 어떤 차이가 있는지 구별이 어렵다.</p>
@@ -869,7 +877,8 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 <p><code>URI</code>(Uniform Resource Identifier) : 인터넷에 있는 자원을 식별할 수 있는 유일한 문자열 주소로, 인터넷에서 요구되는 기본조건으로 인터넷 프로토콜과 항상 함께 붙어 있다.</p>
 </blockquote>
 
-<h4 id="예-주소로-차이점을-느껴보자">예) 주소로 차이점을 느껴보자.</h4>
+<ul>
+<li><p>예) 주소로 차이점을 느껴보자.</p>
 
 <ul>
 <li><p><a href="http://localhost:8080/profile.jsp의" target="_blank">http://localhost:8080/profile.jsp의</a> 뜻은 localhost라는 서버에 profile.jsp 라는 자원이 있다는 걸 알려주는 주소다. 자원의 위치를 알 수 있는 주소기에 uri도 되며 url도 된다.</p></li>
@@ -877,36 +886,39 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 <li><p><a href="http://localhost:8080/profile.jsp?addr=seoul&amp;age=22" target="_blank">http://localhost:8080/profile.jsp?addr=seoul&amp;age=22</a> 로 url 의 끝에 쿼리 문자열이 붙으면, 이런 주소는 url이 아닌 uri 이다.</p></li>
 
 <li><p>간단하게 그냥 서버에 있는 자원의 위치 주소에다가 요청 처리에 필요한 값이 포함여부의 차이를 보면 될것 같다.</p></li>
+</ul></li>
 </ul>
 
 <p><code>갑이 포함되면 uri, 포함 안되면 url.</code></p>
 
 <h2 id="javascript-와-ecmascript">JavaScript 와 ECMAScript</h2>
 
-<blockquote>
-<p>JavaScript는 1996년에 만들어졌고, 그 다음에 JavaScript의 표준화를 위해 1997년에 ECMAScript가 만들어졌습니다. 당시 기준에서 JavaScript는 ECMAScript 사양을 따르고 있었기 때문에, JavaScript는 ECMAScript 사양을 준수하고 있던 언어의 예시였습니다.</p>
+<ul>
+<li><p>JavaScript는 1996년에 만들어졌고, 그 다음에 JavaScript의 표준화를 위해 1997년에 ECMAScript가 만들어졌습니다. 당시 기준에서 JavaScript는 ECMAScript 사양을 따르고 있었기 때문에, JavaScript는 ECMAScript 사양을 준수하고 있던 언어의 예시였습니다.</p></li>
 
-<p>여기서 우리는 재미있는 사실을 하나 알 수 있습니다. 바로, ECMAScript는 JavaScript를 기반으로 하는 동시에, JavaScript 역시 ECMAScript를 기반으로 한다는 거죠.</p>
+<li><p>여기서 우리는 재미있는 사실을 하나 알 수 있습니다. 바로, ECMAScript는 JavaScript를 기반으로 하는 동시에, JavaScript 역시 ECMAScript를 기반으로 한다는 거죠.</p></li>
 
-<p>둘의 뗄레야 뗄 수 없는 관계, 그리고 그 두 용어가 혼용되어서 사용되던 이유는 바로 여기에서부터 출발하지 않았을까 생각해봅니다.</p>
-</blockquote>
+<li><p>둘의 뗄레야 뗄 수 없는 관계, 그리고 그 두 용어가 혼용되어서 사용되던 이유는 바로 여기에서부터 출발하지 않았을까 생각해봅니다.</p></li>
+</ul>
 
 <h2 id="web-storage">Web storage</h2>
 
-<h4 id="web-storage-웹-스토리지">Web storage (웹 스토리지)</h4>
+<ul>
+<li><p>Web storage (웹 스토리지)</p>
 
-<blockquote>
-<p>local storage는 우리가 아는 세션과 비슷하고 session storage는 쿠키와 비슷합니다.
-자바스크립트로만 읽고 쓰기가 가능해 서버에서 바로 접근할 수 없고 문자열만 관리가 가능하다는 단점이 있습니다.</p>
+<ul>
+<li><p>local storage는 우리가 아는 세션과 비슷하고 session storage는 쿠키와 비슷합니다.
+자바스크립트로만 읽고 쓰기가 가능해 서버에서 바로 접근할 수 없고 문자열만 관리가 가능하다는 단점이 있습니다.</p></li>
 
-<p>하지만 매번 서버로 전송해야하는 쿠키와 달리 불필요한 트래픽이 없고상대적으로 여유로운 저장공간에 문자열을 객체 정보로 저장할 수 있다는 강점이 있죠.</p>
+<li><p>하지만 매번 서버로 전송해야하는 쿠키와 달리 불필요한 트래픽이 없고상대적으로 여유로운 저장공간에 문자열을 객체 정보로 저장할 수 있다는 강점이 있죠.</p></li>
 
-<p>로컬 스토리지는 만료 기간의 설정이 없기 때문에 브라우저의 종료와 관계 없이 정말 영구적으로 데이터를 저장할 수 있습니다.os를 재설치 하거나 브라우저를 날려버리는 특수한 상황을 제외하고서요.</p>
+<li><p>로컬 스토리지는 만료 기간의 설정이 없기 때문에 브라우저의 종료와 관계 없이 정말 영구적으로 데이터를 저장할 수 있습니다.os를 재설치 하거나 브라우저를 날려버리는 특수한 상황을 제외하고서요.</p></li>
 
-<p>또한 모든 페이지가 사용자릐 로컬 스토리지를 공유하고 브라우저창에 관계없이 사이트 별로 생성 됩니다.</p>
+<li><p>또한 모든 페이지가 사용자릐 로컬 스토리지를 공유하고 브라우저창에 관계없이 사이트 별로 생성 됩니다.</p></li>
 
-<p>세션 스토리지는 브라우저 종료시 사라지고, 새 탭이나 다른 브라우저에서 공유할 수 없습니다. 하나의 페이지 안에서 저장되고 살아있는 데이터라고 생각하시면 됩니다. 우리가 하나의 사이트를 접속하면 하나의 세션이 이루어지는 원리입니다.</p>
-</blockquote>
+<li><p>세션 스토리지는 브라우저 종료시 사라지고, 새 탭이나 다른 브라우저에서 공유할 수 없습니다. 하나의 페이지 안에서 저장되고 살아있는 데이터라고 생각하시면 됩니다. 우리가 하나의 사이트를 접속하면 하나의 세션이 이루어지는 원리입니다.</p></li>
+</ul></li>
+</ul>
 
 <p><img src="/tutorial/IT terminology_files/7D12ECCA-909C-4AE9-8788-58DCD391293F.png" alt="" /></p>
 
@@ -926,24 +938,24 @@ IP는 응용 프로그램들의 통신을 구분할 수 있도록 여러개의 �
 
 <h4 id="중앙-처리-장치-또는-cpu-central-processing-unit">중앙 처리 장치 또는 CPU (central processing unit)</h4>
 
-<blockquote>
-<p>CPU 처리하는 용도 데이터를 읽고  처리하고  다시쓰는  동작을 합니다.</p>
+<ul>
+<li><p>CPU 처리하는 용도 데이터를 읽고  처리하고  다시쓰는  동작을 합니다.</p></li>
 
-<p>컴퓨터 시스템을 통제하고 프로그램의 연산을 실행하는 가장 핵심적인 컴퓨터의 제어 장치, 혹은 그 기능을 내장한 칩을 말한다. 컴퓨터 안의 중앙 처리 장치(CPU)는 외부에서 정보를 입력 받고, 기억하고, 컴퓨터 프로그램의 명령어를 해석하여 연산하고, 외부로 출력하는 역할을 한다. 따라서 중앙 처리 장치(CPU)는 컴퓨터 부품과 정보를 교환하면서 컴퓨터 시스템 전체를 제어하는 장치로, 모든 컴퓨터의 작동과정이 중앙 처리 장치(CPU)의 제어를 받기 때문에 컴퓨터의 두뇌에 해당한다고 할 수 있다.</p>
+<li><p>컴퓨터 시스템을 통제하고 프로그램의 연산을 실행하는 가장 핵심적인 컴퓨터의 제어 장치, 혹은 그 기능을 내장한 칩을 말한다. 컴퓨터 안의 중앙 처리 장치(CPU)는 외부에서 정보를 입력 받고, 기억하고, 컴퓨터 프로그램의 명령어를 해석하여 연산하고, 외부로 출력하는 역할을 한다. 따라서 중앙 처리 장치(CPU)는 컴퓨터 부품과 정보를 교환하면서 컴퓨터 시스템 전체를 제어하는 장치로, 모든 컴퓨터의 작동과정이 중앙 처리 장치(CPU)의 제어를 받기 때문에 컴퓨터의 두뇌에 해당한다고 할 수 있다.</p></li>
 
-<p>실제의 CPU 칩엔 실행 부분뿐만 아니라 캐시 등의 부가 장치가 통합된 경우가 많다.
-CPU에는 MCU(Micro Control Unit)와 주변 장치(외부 확장 장체에 관한 IC)가 다 들어있는 Soc(System On Chip)가 있다. 주변 IC가 따로 달려 있을 경우, 그것은 MCU라고 할 수 있다</p>
-</blockquote>
+<li><p>실제의 CPU 칩엔 실행 부분뿐만 아니라 캐시 등의 부가 장치가 통합된 경우가 많다.
+CPU에는 MCU(Micro Control Unit)와 주변 장치(외부 확장 장체에 관한 IC)가 다 들어있는 Soc(System On Chip)가 있다. 주변 IC가 따로 달려 있을 경우, 그것은 MCU라고 할 수 있다</p></li>
+</ul>
 
 <h2 id="ssl">SSL</h2>
 
 <h4 id="ssl-secure-sockets-layer-보안-소켓-계층">SSL (Secure Sockets Layer)  보안 소켓 계층</h4>
 
-<blockquote>
-<p>월드 와이드 웹 브라우저와 웹 서버 간에 데이터를 안전하게 주고받기 위한 업계 표준 프로토콜. 미국 넷스케이프 커뮤니케이션스사가 개발했고, 마이크로소프트사 등 주요 웹 제품 업체가 채택하고 있다. SSL은 웹 제품뿐만 아니라 파일 전송 규약(FTP) 등 다른 TCP/IP 애플리케이션에 적용할 수 있으며, 인증 암호화 기능이 있다.</p>
+<p>*월드 와이드 웹 브라우저와 웹 서버 간에 데이터를 안전하게 주고받기 위한 업계 표준 프로토콜. 미국 넷스케이프 커뮤니케이션스사가 개발했고, 마이크로소프트사 등 주요 웹 제품 업체가 채택하고 있다. SSL은 웹 제품뿐만 아니라 파일 전송 규약(FTP) 등 다른 TCP/IP 애플리케이션에 적용할 수 있으며, 인증 암호화 기능이 있다.</p>
 
-<p>인증은 웹 브라우저와 웹 서버 간에 서로 상대의 신원을 확인하는 기능이다. 예를 들면, 웹 브라우저를 사용하는 웹 서버를 사용한 가상 점포의 진위(眞僞) 여부를 조사할 수 있다. 암호화 기능을 사용하면 주고받는 데이터가 인터넷상에서 도청되는 위험성을 줄일 수 있다.</p>
-</blockquote>
+<ul>
+<li>인증은 웹 브라우저와 웹 서버 간에 서로 상대의 신원을 확인하는 기능이다. 예를 들면, 웹 브라우저를 사용하는 웹 서버를 사용한 가상 점포의 진위(眞僞) 여부를 조사할 수 있다. 암호화 기능을 사용하면 주고받는 데이터가 인터넷상에서 도청되는 위험성을 줄일 수 있다.</li>
+</ul>
 
 <h2 id="메소드란">메소드란?</h2>
 
@@ -986,15 +998,11 @@ obj.foo() // “hello world”
 <h4 id="ex">ex)</h4>
 
 <ul>
-<li>alphabetPosition 함수 만들기</li>
-</ul>
+<li><p>alphabetPosition 함수 만들기</p></li>
 
-<blockquote>
-<p>In this exercise, you are required to, given a string, replace every letter with its position in the alphabet. (문자열이 주어졌을때, 각각의 문자를 알파벳의 몇번째 인지 숫자로 바꾸는 함수를 작성하세요.) If anything in the text isn&rsquo;t a letter, ignore it and don&rsquo;t return it. a being 1, b being 2, etc. (만약 문자가 알파벳이 아니라면, 무시하고 결과값에 포함하지 마세요. a 는 1, b 는 2, 등등 으로 변환됩니다.)</p>
-</blockquote>
+<li><p>In this exercise, you are required to, given a string, replace every letter with its position in the alphabet. (문자열이 주어졌을때, 각각의 문자를 알파벳의 몇번째 인지 숫자로 바꾸는 함수를 작성하세요.) If anything in the text isn&rsquo;t a letter, ignore it and don&rsquo;t return it. a being 1, b being 2, etc. (만약 문자가 알파벳이 아니라면, 무시하고 결과값에 포함하지 마세요. a 는 1, b 는 2, 등등 으로 변환됩니다.)</p></li>
 
-<ul>
-<li>output</li>
+<li><p>output</p></li>
 </ul>
 
 <pre><code class="language-js">alphabetPosition(&quot;The sunset sets at twelve o' clock.&quot;); 
