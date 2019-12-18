@@ -27,8 +27,7 @@
   
     
   
-  <meta name="description" content="&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 1.Javacript &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- prototype 무엇이냐? 자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.  자바스크립트의 모든 객체는 자신의 부모 역할을 하는 객체와 연결되어 있다. 이를 통해 자바스크립트에서는 상속 개념을 구현할 수 있다. 이를 프로토타입 객체라고 한다.
- 첫번째 알아야 할것  함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.  function Person() {} let x = new Person(); // x 라는 변수는 객체가 된다.  두번째 알아야할 것  객체(object)는 함수(function)로부터 시작된다  function Book() { } // 함수 &lt;&lt;생성자 함수 var jsBook = new Book(); // 객체 생성   두가지 방식을 객체를 생성할수 있다.">
+  <meta name="description" content="&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 1.Javacript &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- Callbacks, Promises, Async Await // DATA const posts = [ { title: &quot;&#39;Post One&quot;, body: &#39;this is post one&#39;}, { title: &quot;Porst One&quot;, body: &quot;this is post two&quot;} ]; // getPosts() 함수는 화면에 data 안에 있는 tile 을 출력해준다. // 1초후 출력한다. function getPosts() { setTimeout(()=&gt;{ let output = &quot;&quot;; posts.forEach((post,index)=&gt;{ output = output &#43; `&lt;li&gt;${post.title}&lt;/li&gt;` }); document.body.innerHTML = output; },1000); } getPosts(); // creatPost(post) 함수는 2초후에 data에 새로운 값을 추가해넣는다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/2019-11-26-js-post/">
@@ -131,8 +130,7 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2019-11-26-js-post/">
   <meta property="og:title" content="__My_Notes | JohnJung">
-  <meta property="og:description" content="&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 1.Javacript &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- prototype 무엇이냐? 자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.  자바스크립트의 모든 객체는 자신의 부모 역할을 하는 객체와 연결되어 있다. 이를 통해 자바스크립트에서는 상속 개념을 구현할 수 있다. 이를 프로토타입 객체라고 한다.
- 첫번째 알아야 할것  함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.  function Person() {} let x = new Person(); // x 라는 변수는 객체가 된다.  두번째 알아야할 것  객체(object)는 함수(function)로부터 시작된다  function Book() { } // 함수 &lt;&lt;생성자 함수 var jsBook = new Book(); // 객체 생성   두가지 방식을 객체를 생성할수 있다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- 1.Javacript &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- Callbacks, Promises, Async Await // DATA const posts = [ { title: &quot;&#39;Post One&quot;, body: &#39;this is post one&#39;}, { title: &quot;Porst One&quot;, body: &quot;this is post two&quot;} ]; // getPosts() 함수는 화면에 data 안에 있는 tile 을 출력해준다. // 1초후 출력한다. function getPosts() { setTimeout(()=&gt;{ let output = &quot;&quot;; posts.forEach((post,index)=&gt;{ output = output &#43; `&lt;li&gt;${post.title}&lt;/li&gt;` }); document.body.innerHTML = output; },1000); } getPosts(); // creatPost(post) 함수는 2초후에 data에 새로운 값을 추가해넣는다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -421,6 +419,7 @@
 <li><a href="#toc_0">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#1-javacript">1.Javacript</a></li>
 <li><a href="#toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#callbacks-promises-async-await">Callbacks, Promises, Async Await</a></li>
 <li><a href="#prototype-무엇이냐">prototype 무엇이냐?</a>
 <ul>
 <li><a href="#자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다">자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.</a>
@@ -586,9 +585,9 @@
 <li><a href="#2-some">2.some()</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#toc_79">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_80">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#2-dom">2. Dom</a></li>
-<li><a href="#toc_81">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_82">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#dom-이란">Dom 이란 ?</a></li>
 <li><a href="#버튼-만들기">버튼 만들기</a></li>
 <li><a href="#e-target-이란">e.target 이란 ?</a></li>
@@ -606,9 +605,9 @@
 <li><a href="#버튼누르면-새로운-글-추가">버튼누르면 새로운 글 추가</a></li>
 <li><a href="#script-위치">script 위치</a></li>
 <li><a href="#insertbefore">insertBefore()</a></li>
-<li><a href="#toc_97">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_98">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#3-studying-notes">3. Studying_Notes</a></li>
-<li><a href="#toc_99">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#toc_100">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#타이머-사용하기">타이머 사용하기</a></li>
 <li><a href="#객체-숫자-계산-하는-방법">객체 숫자 계산 하는 방법</a>
 <ul>
@@ -678,6 +677,169 @@
 <h2 id="1-javacript">1.Javacript</h2>
 
 <h2 id="toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+
+<h2 id="callbacks-promises-async-await">Callbacks, Promises, Async Await</h2>
+
+<pre><code class="language-js">
+
+// DATA
+
+const posts = [
+	{ title: &quot;'Post One&quot;, body: 'this is post one'},
+	{ title: &quot;Porst One&quot;, body: &quot;this is post two&quot;}
+];
+
+
+
+// getPosts() 함수는 화면에 data 안에 있는 tile 을 출력해준다. 
+// 1초후 출력한다. 
+
+function getPosts() {
+	setTimeout(()=&gt;{
+	let output = &quot;&quot;;
+	posts.forEach((post,index)=&gt;{
+		output = output + `&lt;li&gt;${post.title}&lt;/li&gt;`
+	});
+	document.body.innerHTML = output;
+	},1000);
+}
+getPosts();
+
+
+// creatPost(post) 함수는 2초후에 data에 새로운 값을 추가해넣는다. 
+// 2초후에 추가된다 추가될 내용은 createPost({title:&quot;추가될 내용&quot;}) 이거다.
+
+function createPost(post){
+	setTimeout(()=&gt;{
+		posts.push(post)
+	},2000)
+}
+
+
+// 추가된 내용이 출력되지 않는다. 왜냐하면 getPosts() 가 출력된후에 
+// creatPost 가 추가되었기 때문이다. 
+
+createPost(title: &quot;Porst Three&quot;, body: &quot;this is post three&quot;})
+
+</code></pre>
+
+<ul>
+<li>callback을 사용해서 추가한 값을 출력하기</li>
+</ul>
+
+<pre><code class="language-js">
+
+function getPosts() {
+	setTimeout(()=&gt;{
+	let output = &quot;&quot;;
+	posts.forEach((post,index)=&gt;{
+		output = output + `&lt;li&gt;${post.title}&lt;/li&gt;`
+	});
+	document.body.innerHTML = output;
+	},1000);
+}
+getPosts(); // 1.이 호출을 creatPost() 함수 인자값으로 넣는다. 
+
+// 2.creatPost 안에 파라미터로 callback 을 만든다.
+// 이것이 callback 을 쓰는 이유이다. 
+function createPost(post,callback){
+	setTimeout(()=&gt;{
+		posts.push(post)
+		callback() // 3.콜백 함수를 여기서 실행한다.
+	},2000)
+}
+
+
+createPost({title:&quot;Post Three&quot;, body:'This is post three'},getPosts) //4.넣는다.
+
+
+
+</code></pre>
+
+<ul>
+<li>Promises 사용하해서 값을 추가하기</li>
+</ul>
+
+<pre><code class="language-js">
+
+function getPosts() {
+	setTimeout(()=&gt;{
+	let output = &quot;&quot;;
+	posts.forEach((post,index)=&gt;{
+		output = output + `&lt;li&gt;${post.title}&lt;/li&gt;`
+	});
+	document.body.innerHTML = output;
+	},1000);
+}
+
+
+
+function createPost(post) {
+		// Prsomise 안에 코드작성 
+	return new Promise((resolve,reject)=&gt;{
+
+		setTimeout(()=&gt;{
+			posts.push(post)
+		
+		// error 가 잇는지 없는지 검사하기 위한방식
+
+			const error = false; 
+
+			if (!error) {
+				resolve(); // 에러가 겂다면 출력
+			} else {
+				reject(&quot;Error : something went wrong&quot;)
+			}
+		},2000);
+
+	})
+
+}
+// .then(getPorsts)  여기에 함수를 넣는다.  
+createPost({title:&quot;Post Three&quot;,body:'This is post three'}).then(getPosts);
+
+
+
+// 만약 에러메시지가 console 에 나오게 하려면
+
+const error = true
+
+		if (!error) {
+				resolve(); 
+			} else {
+				reject(&quot;Error : something went wrong&quot;) // 이것이 나와야 한다. 
+			}
+		},2000);
+
+	})
+
+}
+
+// .catch 라는 것을 사용한다. 
+createPost({title:&quot;Post Three&quot;,body:'This is post three'})
+.then(getPosts).catch(e =&gt; console.log(e)); // console 창에 출력해라 
+
+
+</code></pre>
+
+<p><img src="/tutorial/2019-11-26-js-post_files/Screen Shot 2019-12-18 at 5.42.03 PM.png" alt="" /></p>
+
+<ul>
+<li>Promise.all</li>
+</ul>
+
+<pre><code class="language-js">
+
+const promise1 = Promise.resolve(&quot;Hello world&quot;);
+const promise2 = 10;
+const Promise3 = new Promise((resolve,reject)=&gt;{
+	setTimeout(resolve,2000, &quot;GoodBye&quot;);
+})
+
+Promise.all([promise1,promise2,Promise3])
+.then((val =&gt; console.log(val)))
+
+</code></pre>
 
 <h2 id="prototype-무엇이냐">prototype 무엇이냐?</h2>
 
@@ -2965,11 +3127,11 @@ return a - b;
 <p>every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다</p>
 </blockquote>
 
-<h2 id="toc_79">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_80">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="2-dom">2. Dom</h2>
 
-<h2 id="toc_81">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_82">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="dom-이란">Dom 이란 ?</h2>
 
@@ -3548,11 +3710,11 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 </code></pre>
 
-<h2 id="toc_97">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_98">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="3-studying-notes">3. Studying_Notes</h2>
 
-<h2 id="toc_99">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="toc_100">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="타이머-사용하기">타이머 사용하기</h2>
 

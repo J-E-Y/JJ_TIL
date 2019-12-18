@@ -11655,6 +11655,169 @@ for (let key in person) {
 
 &lt;h2 id=&#34;toc_2&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
+&lt;h2 id=&#34;callbacks-promises-async-await&#34;&gt;Callbacks, Promises, Async Await&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+// DATA
+
+const posts = [
+	{ title: &amp;quot;&#39;Post One&amp;quot;, body: &#39;this is post one&#39;},
+	{ title: &amp;quot;Porst One&amp;quot;, body: &amp;quot;this is post two&amp;quot;}
+];
+
+
+
+// getPosts() 함수는 화면에 data 안에 있는 tile 을 출력해준다. 
+// 1초후 출력한다. 
+
+function getPosts() {
+	setTimeout(()=&amp;gt;{
+	let output = &amp;quot;&amp;quot;;
+	posts.forEach((post,index)=&amp;gt;{
+		output = output + `&amp;lt;li&amp;gt;${post.title}&amp;lt;/li&amp;gt;`
+	});
+	document.body.innerHTML = output;
+	},1000);
+}
+getPosts();
+
+
+// creatPost(post) 함수는 2초후에 data에 새로운 값을 추가해넣는다. 
+// 2초후에 추가된다 추가될 내용은 createPost({title:&amp;quot;추가될 내용&amp;quot;}) 이거다.
+
+function createPost(post){
+	setTimeout(()=&amp;gt;{
+		posts.push(post)
+	},2000)
+}
+
+
+// 추가된 내용이 출력되지 않는다. 왜냐하면 getPosts() 가 출력된후에 
+// creatPost 가 추가되었기 때문이다. 
+
+createPost(title: &amp;quot;Porst Three&amp;quot;, body: &amp;quot;this is post three&amp;quot;})
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;callback을 사용해서 추가한 값을 출력하기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+function getPosts() {
+	setTimeout(()=&amp;gt;{
+	let output = &amp;quot;&amp;quot;;
+	posts.forEach((post,index)=&amp;gt;{
+		output = output + `&amp;lt;li&amp;gt;${post.title}&amp;lt;/li&amp;gt;`
+	});
+	document.body.innerHTML = output;
+	},1000);
+}
+getPosts(); // 1.이 호출을 creatPost() 함수 인자값으로 넣는다. 
+
+// 2.creatPost 안에 파라미터로 callback 을 만든다.
+// 이것이 callback 을 쓰는 이유이다. 
+function createPost(post,callback){
+	setTimeout(()=&amp;gt;{
+		posts.push(post)
+		callback() // 3.콜백 함수를 여기서 실행한다.
+	},2000)
+}
+
+
+createPost({title:&amp;quot;Post Three&amp;quot;, body:&#39;This is post three&#39;},getPosts) //4.넣는다.
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Promises 사용하해서 값을 추가하기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+function getPosts() {
+	setTimeout(()=&amp;gt;{
+	let output = &amp;quot;&amp;quot;;
+	posts.forEach((post,index)=&amp;gt;{
+		output = output + `&amp;lt;li&amp;gt;${post.title}&amp;lt;/li&amp;gt;`
+	});
+	document.body.innerHTML = output;
+	},1000);
+}
+
+
+
+function createPost(post) {
+		// Prsomise 안에 코드작성 
+	return new Promise((resolve,reject)=&amp;gt;{
+
+		setTimeout(()=&amp;gt;{
+			posts.push(post)
+		
+		// error 가 잇는지 없는지 검사하기 위한방식
+
+			const error = false; 
+
+			if (!error) {
+				resolve(); // 에러가 겂다면 출력
+			} else {
+				reject(&amp;quot;Error : something went wrong&amp;quot;)
+			}
+		},2000);
+
+	})
+
+}
+// .then(getPorsts)  여기에 함수를 넣는다.  
+createPost({title:&amp;quot;Post Three&amp;quot;,body:&#39;This is post three&#39;}).then(getPosts);
+
+
+
+// 만약 에러메시지가 console 에 나오게 하려면
+
+const error = true
+
+		if (!error) {
+				resolve(); 
+			} else {
+				reject(&amp;quot;Error : something went wrong&amp;quot;) // 이것이 나와야 한다. 
+			}
+		},2000);
+
+	})
+
+}
+
+// .catch 라는 것을 사용한다. 
+createPost({title:&amp;quot;Post Three&amp;quot;,body:&#39;This is post three&#39;})
+.then(getPosts).catch(e =&amp;gt; console.log(e)); // console 창에 출력해라 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-11-26-js-post_files/Screen Shot 2019-12-18 at 5.42.03 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Promise.all&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+const promise1 = Promise.resolve(&amp;quot;Hello world&amp;quot;);
+const promise2 = 10;
+const Promise3 = new Promise((resolve,reject)=&amp;gt;{
+	setTimeout(resolve,2000, &amp;quot;GoodBye&amp;quot;);
+})
+
+Promise.all([promise1,promise2,Promise3])
+.then((val =&amp;gt; console.log(val)))
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;prototype-무엇이냐&#34;&gt;prototype 무엇이냐?&lt;/h2&gt;
 
 &lt;h3 id=&#34;자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다&#34;&gt;자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.&lt;/h3&gt;
@@ -13941,11 +14104,11 @@ return a - b;
 &lt;p&gt;every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;toc_79&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_80&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;2-dom&#34;&gt;2. Dom&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_81&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_82&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;dom-이란&#34;&gt;Dom 이란 ?&lt;/h2&gt;
 
@@ -14524,11 +14687,11 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_97&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_98&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;3-studying-notes&#34;&gt;3. Studying_Notes&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_99&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_100&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;타이머-사용하기&#34;&gt;타이머 사용하기&lt;/h2&gt;
 
