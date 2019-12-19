@@ -420,6 +420,7 @@
 <li><a href="#1-javacript">1.Javacript</a></li>
 <li><a href="#toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#callbacks-promises-async-await">Callbacks, Promises, Async Await</a></li>
+<li><a href="#객체지향프로그래밍-oop">객체지향프로그래밍(OOP)</a></li>
 <li><a href="#prototype-무엇이냐">prototype 무엇이냐?</a>
 <ul>
 <li><a href="#자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다">자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.</a>
@@ -431,6 +432,7 @@
 <li><a href="#두번째-알아야할-것">두번째 알아야할 것</a></li>
 <li><a href="#세번째-알아야-할것">세번째 알아야 할것</a></li>
 <li><a href="#네번째-알아야-하는것">네번째 알아야 하는것</a></li>
+<li><a href="#예제">예제)</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#생성자-함수-prototype-객체-instance">생성자 함수 || prototype 객체 || instance</a>
@@ -460,13 +462,6 @@
 <li><a href="#생성자함수-만들기-객체">생성자함수 만들기 (객체)</a></li>
 <li><a href="#일반-객체-만들기-객체">일반 객체 만들기 (객체 )</a></li>
 <li><a href="#how-to-use-this-with-call">how to use this with call()</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#객체지향-javascript">객체지향 JavaScript</a>
-<ul>
-<li>
-<ul>
-<li><a href="#class">Class</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#closure-1">Closure 1</a>
@@ -573,7 +568,7 @@
 <li><a href="#2-map">2.map()</a></li>
 <li><a href="#ex-4">ex)</a></li>
 <li><a href="#3-fliter">3.fliter()</a></li>
-<li><a href="#예제">예제</a></li>
+<li><a href="#예제-1">예제</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#sort">sort()</a></li>
@@ -841,13 +836,233 @@ Promise.all([promise1,promise2,Promise3])
 
 </code></pre>
 
+<h2 id="객체지향프로그래밍-oop">객체지향프로그래밍(OOP)</h2>
+
+<ul>
+<li><p>갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?</p>
+
+<ul>
+<li>객체 지향 프로그래밍(이하 OOP)는 컴퓨터 프로그램을 “객체(Object)&ldquo;들의 모임으로 파악하고자 하는 프로그래밍의 패러다임 중에 하나이다. 각 “객체(Object)&rdquo; 들은 서로 메시지를 주고 받을 수 있으며 데이터를 처리할 수 있다.</li>
+</ul></li>
+
+<li><p>객체 지향 프로그래밍 장점</p>
+
+<ul>
+<li><p>코드의 재사용성 제공 :
+객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.</p></li>
+
+<li><p>유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.</p></li>
+
+<li><p>신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다.</p></li>
+</ul></li>
+
+<li><p>OOP의 기본 구성 요소</p>
+
+<ul>
+<li>클래스(Class)</li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>같은 종류의 집단에 속하는 속성과 행위를 정의한 것. 다른 클래스와 독립적으로 디자인해야 한다. 위의 예제에서 몬스터(Monster) 의 특성과 행위들을 정의한 객체가 클래스가 될 것이다.</p>
+</blockquote>
+
+<ul>
+<li>객체(Object)</li>
+</ul>
+
+<blockquote>
+<p>클래스의 인스턴스(Instance). 상위 클래스의 속성을 가지고 있으면서 개별적인 특성과 행위(메소드 : Method) 또한 가지고 있다. 위의 예제에서는 드래곤, 좀비, 해골 등이 각각의 객체가 된다.</p>
+</blockquote>
+
+<ul>
+<li>메서드(Method)</li>
+</ul>
+
+<blockquote>
+<p>클래스로부터 생성된 객체를 사용하는 방법. 객체의 속성을 조작하는 데 사용된다. 위의 예제에서 각각의 몬스터들이 레벨업을 하는 행위가 메서드(method)라고 볼 수 있다.</p>
+</blockquote>
+
+<ul>
+<li>OPP 특성</li>
+</ul>
+
+<blockquote>
+<p>캡슐화(Encapsulation), 추상화(Abstraction) ,재사용성</p>
+</blockquote>
+
+<ul>
+<li>예제)</li>
+<li>객체를 만든다.<br /></li>
+<li>이 객체는 일반적으로 쓰는  Object Literal(객체 리터럴) 으로 생성됨</li>
+<li>외부에서 쉽게 프로포티 에 쉽게 접근할수 있다.</li>
+<li>예를 들어 level 을 바꾸는 경우가 있을수 있다.
+<br /></li>
+</ul>
+
+<pre><code class="language-js">
+var monster1 = {
+  level : 0,
+  habitat : 'forest',
+  levelUp: function () {
+    this.level++;
+  }
+};
+
+
+</code></pre>
+
+<ul>
+<li><p>캡슐화(Encapsulation)</p>
+
+<ul>
+<li><p>캡슐화는 객체의 데이터를 외부에서 직접 접근하지 못하게 막고, 함수를 통해서만 조작이 가능하게 하는 작업이다.</p></li>
+
+<li><p>외부에서 <code>var level = 0</code>  접근 할수 없게 되었다.</p></li>
+
+<li><p>이전의 몬스터 객체처럼 monster.level로 몬스터의 level데이터에 접근할 수 없게 되었다. level은 오직 monster.levelUp이라는 메소드(method)로만 조작할 수 있다.</p></li>
+</ul></li>
+</ul>
+
+<pre><code class="language-js">
+var monster = createMonster();
+function createMonster () {
+  var level = 0;
+  var openInfo = {
+    habitat : 'forest',
+    levelUp : function () {
+      level++;
+    }
+  };
+  return openInfo;
+}
+
+</code></pre>
+
+<ul>
+<li><p>추상화(Abstraction)</p>
+
+<ul>
+<li><p>추상화는 객체들이 가진 공통의 특성들을 파악하고 불필요한 특성들을 제거하는 과정을 말한다</p></li>
+
+<li><p>예)</p></li>
+</ul></li>
+</ul>
+
+<pre><code class="language-js">
+//몬스터들이 공격을 받아 healthPoint가 0이 되면 필드에서
+//죽은 것(death)으로 처리하고 싶다.
+//이용자들은 몬스터들을 공격하고 죽는 모습을 보기만 하면 된다.
+//어떠한 과정을 거쳐서 몬스터가 죽었는지에 대해서는 알 필요가 없다.
+
+</code></pre>
+
+<ul>
+<li>위의 케이스에서는 객체에 2가지 속성이 추가되어야 한다. 몬스터가 죽은 상태인지 살아있는 상태인지를 확인하는 속성, 그리고 healtpoint라는 속성이다. 위의 속성을 추가하고 공격을 받는 상황을 메소드(method)로 만들어보겠다.</li>
+</ul>
+
+<pre><code class="language-js">
+var monster = {
+  level : 0,
+  habitat : 'forest',
+  healthPoint : 100,
+  isLive : true,
+  levelUp: function () {
+    this.level++;
+  },
+
+  damaged: function (damage) {
+    this.healthPoint -= damage;
+    if (this.healthPoint === 0){ 
+       this.isLive = false;
+    } 
+  }
+}
+
+monster
+// {level: 0, habitat: &quot;forest&quot;, healthPoint: 100, isLive: true, levelUp: ƒ, …}
+monster.damaged(20);
+
+monster
+// {level: 0, habitat: &quot;forest&quot;, healthPoint: 80, isLive: true, levelUp: ƒ, …}
+monster.damaged(20);
+
+monster
+//{level: 0, habitat: &quot;forest&quot;, healthPoint: 60, isLive: true, levelUp: ƒ, …}
+monster.damaged(20);
+
+monster
+//{level: 0, habitat: &quot;forest&quot;, healthPoint: 40, isLive: true, levelUp: ƒ, …}
+monster.damaged(20);
+
+monster
+//{level: 0, habitat: &quot;forest&quot;, healthPoint: 20, isLive: true, levelUp: ƒ, …}
+
+monster.damaged(20);
+
+monster // healthPoint :0 되었고 isLive 는 false 가 되었다. 
+//{level: 0, habitat: &quot;forest&quot;, healthPoint: 0, isLive: false, levelUp: ƒ, …}
+
+
+</code></pre>
+
+<ul>
+<li><p>재사용성</p>
+
+<ul>
+<li><p>몬스터를 여러마리 만든다고 가정하자</p></li>
+
+<li><p>OOP의 가장 큰 특성 중 하나가 바로 코드의 <code>재사용성</code>과 <code>상속</code>의 개념이다. 같은 객체를 여러 개 만들어야 하는 경우, 한 번 작성된 코드를 활용하여 동일한 객체를 만들 수 있다.</p></li>
+</ul></li>
+</ul>
+
+<pre><code class="language-js">function Monster () {
+  this.healthPoint = 100;
+  this.habitat = 'forest';
+  this.level = 1;
+}
+Monster.prototype.levelUp = function () {
+  this.level++;
+}
+var broMonster= new Monster();  // 몬스터1
+var childMonster = new Monster(); // 몬스터 2
+var parentMonster= new Monster(); // 몬스터 3
+
+
+</code></pre>
+
+<ul>
+<li>위의 코드처럼 생성자 함수를 이용하는 방법 이외에도 Factory Function을 이용하는 방법도 있다. Factory Function은 간단히 객체를 리턴하는 함수라고 생각하면 된다.</li>
+</ul>
+
+<pre><code class="language-js">
+var monsterPrototype = {
+  levelUp : function () {
+    this.level++;
+  }
+}
+function createMonster () {
+  var monster = Object.create(monsterPrototype);
+  monster.level = 1;
+  monster.habitat = 'forest';
+  return monster;
+}
+var broMonster= new createMonster();
+var childMonster = new createMonster();
+var parentMonster= new createMonster();
+
+
+</code></pre>
+
 <h2 id="prototype-무엇이냐">prototype 무엇이냐?</h2>
 
 <h3 id="자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다">자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.</h3>
 
-<blockquote>
-<p>자바스크립트의 모든 객체는 자신의 부모 역할을 하는 객체와 연결되어 있다. 이를 통해 자바스크립트에서는 상속 개념을 구현할 수 있다. 이를 <code>프로토타입 객체</code>라고 한다.</p>
-</blockquote>
+<ul>
+<li><p>ES6 문법이 도입되기 전에는 JavaScript에는 클래스(Class)가 없었음 그래서 객체 생성을 위해서 prototype을 사용했다.</p></li>
+
+<li><p>객체를 생성하면, 프로토타입이 결정되고, 우리는 그 프로토타입을 변경할 수 있습니다</p></li>
+</ul>
 
 <h5 id="첫번째-알아야-할것">첫번째 알아야 할것</h5>
 
@@ -889,9 +1104,11 @@ var jsBook = {}          // 두번째 방식(생성자 선언 없이 ) // 객체
 <h4 id="세번째-알아야-할것">세번째 알아야 할것</h4>
 
 <ul>
-<li><p>함수 생성시 발생하는 것을 알아야 한다.</p></li>
+<li><p>함수 생성시 발생하는 것을 알아야 한다.</p>
 
-<li><p>1.함수를 정의하면 함수가 생성되며 <code>Prototype object</code>가 같이 생성 됩니다.</p></li>
+<ul>
+<li>1.함수를 정의하면 함수가 생성되며 <code>Prototype object</code>가 같이 생성 됩니다.</li>
+</ul></li>
 </ul>
 
 <blockquote>
@@ -938,6 +1155,186 @@ var jsBook = new Book() // jsBook 은 객체이다.
 <blockquote>
 <p><code>prototype property</code>(함수 생성시 함께 생성된 Prototype object를 가리킴)는 함수객체만 가지며 <code>__proto__</code>는 객체라면 모두 갖고 있습니다.</p>
 </blockquote>
+
+<h4 id="예제">예제)</h4>
+
+<ul>
+<li>1.일반적인 함수 패턴
+<br /></li>
+</ul>
+
+<pre><code class="language-js">
+
+
+function Name(_name){
+    var oName = {
+        name : _name,
+        getName : function(){
+            return this.name;
+        }
+    }
+
+    return oName;
+}
+
+Name('john'); // Object{name: 'siwa', getName:function()} 리턴
+var x = Name('john');
+x.getName(); // 'john' 리턴
+
+
+</code></pre>
+
+<ul>
+<li><p>1.객체 생성자 함수의 활용 - <code>모듈화</code>,<code>프로토타입</code></p>
+
+<ul>
+<li><p>new Key word 를 사용한다.</p></li>
+
+<li><p>이는 객체지향적인 언어를 표방하는 기능, 클래스를 만드는 것과 비슷하다.</p></li>
+
+<li><p>(<code>new</code>라는 키워드는 자바에서 클래스를 호출해서 인스턴스를 만드는 것과 비슷하다)</p></li>
+</ul></li>
+</ul>
+
+<pre><code class="language-js">
+ function Name(_name){
+		console.log('this is',this);
+		this.name = _name;
+		this. getName = function(){
+        return this.name;
+    }
+}
+
+// 함수 를 그냥 호출했을때 와 new 키워드와 같이 호출했을때의 차이점 을 할수 있다. 
+
+// 1. 함수를 그냥 호출했을때
+Name('john'); // this is window, undefined 리턴
+
+// 2. new 키워드와 함께 함수를 호출했을 때
+new Name('john'); // this is Name{}, Name{name:'monkey', getName()} 리턴
+
+
+
+var x = new Name('john');
+
+x.getName(); // 'john'
+
+
+
+
+</code></pre>
+
+<ul>
+<li>2.객체 생성자 함수의 활용 - <code>모듈화</code> 와  <code>프로토타입</code></li>
+</ul>
+
+<p>*기능별로 모듈화 시킨 독립적인 클래스 단위로 그루핑할때 생성자 함수를 활용할 수 있다.</p>
+
+<ul>
+<li>예를 들어 구글지도 UI를 만들 때, 화면에 보이는 기능 단위 즉 의미적으로 다른 기능이라면 (ex. 사진, 공유, 검색, 지도화면, 설정) 각각의 기능을 별도 모듈(클래스 단위)로 만들 수 있다.</li>
+</ul>
+
+<pre><code class="language-js">
+// 모듈화 수도코드 예시
+// 지도를 표현하는 영역 클래스
+
+function Map(name){
+    this.name = &quot;john&quot;
+    }
+    
+// 지도를 검색하는 영역 클래스
+function SearchMenu(){}
+
+// 사진을 슬라이드 하는 영역 클래스
+function ViewCurrentPhotos(){}
+
+
+var oMap = new Map(&quot;john&quot;);
+
+ // 여기서 setDraw 를 설정해준다.
+Map.prototype.setDraw = function (){
+    console.log(name + &quot;그림을 그리네 ?&quot;);
+}
+
+oMap.setDraw() // john 그림을 그리네?
+
+
+</code></pre>
+
+<ul>
+<li>3.객체 생성자 함수의 활용 - <code>모듈화</code> 와  <code>프로토타입</code></li>
+</ul>
+
+<pre><code class="language-js">
+
+
+function Car(band,name,color) {
+    // 인스턴스가 만들어 질때  실행될 코드들... 
+}
+
+// new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. 
+
+
+
+// 1. 속성  : band,name,color , currentFuel,maxSpeed
+// 2. 메소드  : refuel() ,setSpeed(), drive()
+
+
+
+// ex
+
+
+// 1. 클라스 함수 와 인스턴스 생성 
+
+function Car(brand,name,color) { // Car() 는 클라스
+	
+	this.what_brand = brand; // 여기서 this 는 인자값이 드러갈 변수이름 (avante)
+	this.what_name = name;	
+	this.what_color = color;
+}
+
+// 2. 클라스 함수를 변수에 담고 파라미터 들어갈 값들 넣는다. 
+
+let avante = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;); // 변수를 만든다 (인스턴스값으로 들어갈 )
+
+// 3. 추가로 인스턴스를 생성 
+
+Car.prototype.what_drive = function () { // Car() 인스턴스 생성 그리고 function 는 인스턴스 값  
+    console.log(this.name + &quot;가 운전을 합니다. &quot;);
+}
+
+
+avante.what_name // 인스턴스 값 출력
+// &quot;avante&quot;
+avante.what_brand
+// &quot;GM&quot;
+avante.what_color
+// &quot;black&quot;
+
+avante.what_drive()  // 새로 생성한 what_drive 출력 
+// jj 가 운전을 합니다. 
+
+`tip`
+
+let arr = [1,2,3,4,5]     // 배열 만들기 
+let arr = new Array(1,2,3,4,5) // 배열 만들기  // Array클라스 안에 (인자값들) 
+
+
+
+
+// ES6  에서는 클라스라는 키워드를 이용해서 정의 할수 있다. 
+
+
+class car {
+	constructor(brand,name,color) {
+	
+	// 인스턴스가 만들어질 때 실행되는 코드
+		}
+}
+
+
+
+</code></pre>
 
 <h2 id="생성자-함수-prototype-객체-instance">생성자 함수 || prototype 객체 || instance</h2>
 
@@ -1299,99 +1696,6 @@ function bar () {
 bar.call({a:1}) // 1
 
 
-
-
-
-</code></pre>
-
-<h2 id="객체지향-javascript">객체지향 JavaScript</h2>
-
-<blockquote>
-<p>변수랑 함수를 묶어놓고 객체를 가지고 코딩을 말한다.</p>
-</blockquote>
-
-<h4 id="class">Class</h4>
-
-<ul>
-<li>Object Oriented JavaScript</li>
-</ul>
-
-<blockquote>
-<p>하나의 모델이 되는 청사진(<code>blueprint</code>)를 만들고 =&gt; <code>class</code>,
-그 청사진을 바탕으로 한 객체(<code>object</code>)를 만드는 =&gt; <code>instance</code></p>
-</blockquote>
-
-<p>프로그래밍 패턴</p>
-
-<pre><code class="language-js">
-
-
-// ES%
-function Car(band,name,color) {
-    // 인스턴스가 만들어 질때  실행될 코드들... 
-}
-
-// new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. 
-
-
-
-// 1. 속성  : band,name,color , currentFuel,maxSpeed
-// 2. 메소드  : refuel() ,setSpeed(), drive()
-
-
-
-// ex
-
-
-// 1. 클라스 함수 와 인스턴스 생성 
-
-function Car(brand,name,color) { // Car() 는 클라스
-	
-	this.what_brand = brand; // 여기서 this 는 인자값이 드러갈 변수이름 (avante)
-	this.what_name = name;	
-	this.what_color = color;
-}
-
-// 2. 클라스 함수를 변수에 담고 파라미터 들어갈 값들 넣는다. 
-
-let avante = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;); // 변수를 만든다 (인스턴스값으로 들어갈 )
-
-// 3. 추가로 인스턴스를 생성 
-
-Car.prototype.what_drive = function () { // Car() 인스턴스 생성 그리고 function 는 인스턴스 값  
-    console.log(this.name + &quot;가 운전을 합니다. &quot;);
-}
-
-
-avante.what_name // 인스턴스 값 출력
-// &quot;avante&quot;
-avante.what_brand
-// &quot;GM&quot;
-avante.what_color
-// &quot;black&quot;
-
-avante.what_drive  // 새로 생성한 what_drive 출력 
-// jj 가 운전을 합니다. 
-
-`tip`
-
-let arr = [1,2,3,4,5]     // 배열 만들기 
-let arr = new Array(1,2,3,4,5) // 배열 만들기  // Array클라스 안에 (인자값들) 
-
-
-
-
-
-
-// ES6  에서는 클라스라는 키워드를 이용해서 정의 할수 있다. 
-
-
-class car {
-	constructor(brand,name,color) {
-	
-	// 인스턴스가 만들어질 때 실행되는 코드
-		}
-}
 
 
 
@@ -2830,7 +3134,7 @@ users.map(getName); // [&quot;john&quot;, &quot;tim&quot;, &quot;esther&quot;]
 <li><p>map 함수는 filter함수와 같이 오브젝트도 컨트롤 할 수도 있습니다.</p></li>
 </ul>
 
-<h4 id="예제">예제</h4>
+<h4 id="예제-1">예제</h4>
 
 <ul>
 <li>filter 로 30 살 보다 많은 사람 사람을 찾는다</li>

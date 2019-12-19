@@ -15,7 +15,7 @@ type: docs
 ## 1.Command Line
 
 
-## git git ls
+## git ls
 
 * 파일보기 
 
