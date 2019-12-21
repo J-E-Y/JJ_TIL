@@ -251,6 +251,9 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 ![](/tutorial/CSS_files/Screen Shot 2019-09-23 at 11.52.20 AM.png)
 
 
+
+* HTML
+
 ```html
 
 
@@ -271,7 +274,7 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 
 ```
 
-* HTML
+* CSS
 
 ```js
 
@@ -294,7 +297,7 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 
 ```
 
-* Css
+* CSS
 
 
 ```js
@@ -333,7 +336,6 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
  gird-colum:3;
  gird-row:3/5;
  
-
 
 ```
 

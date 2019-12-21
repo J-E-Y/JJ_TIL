@@ -1,11 +1,11 @@
 ---
-title: __Section1
+title: _section1
 date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    parent: "CodeStates"
-    weight: 8
+    name: _section1
+    weight: 9
 toc: yes
 type: docs
 ---

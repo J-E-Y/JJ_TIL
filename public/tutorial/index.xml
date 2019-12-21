@@ -12,6 +12,27 @@
     
     
     <item>
+      <title>__sprint1</title>
+      <link>/tutorial/sprint1/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/sprint1/</guid>
+      <description> someting </description>
+    </item>
+    
+    <item>
+      <title>__sprint2</title>
+      <link>/tutorial/sprint1/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/sprint1/</guid>
+      <description>DS &amp;amp; OOP_1 DS &amp;amp; OOP_2 (Instantiation Patterns)  자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법 Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)
+ Object 를 생성하는 4가지 방법
+ (Instantiation Patterns)
+  Functional   Functional Shared   Prototypal   Pseudoclassical    Functional   var Monster = function() { var body = {}; body.level = 0; body.levelUp = function() { // Instance에 levelUp 라는 메소드를 추가 this.</description>
+    </item>
+    
+    <item>
       <title>Bootstrap</title>
       <link>/tutorial/bootstrap/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -20,6 +41,18 @@
       <description> BS_image: img-fluid  Description   Create responsive images by adding an .img-fluid class to the &amp;lt;img&amp;gt; tag. The image will then scale nicely to the parent element.
   Syntax  &amp;lt;img class=&amp;quot;img-fluid&amp;quot; src=&amp;quot;img_chania.jpg&amp;quot; alt=&amp;quot;Chania&amp;quot;&amp;gt;  BS_Spacing: my  Description   Assign responsive-friendly margin or padding values to an element or a subset of its sides with shorthand classes
   Syntax  &amp;lt;div class=&amp;quot;my&amp;quot;&amp;gt; Centered element &amp;lt;/div&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>CodeStates</title>
+      <link>/tutorial/javascript_dictionary/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/javascript_dictionary/</guid>
+      <description>String str.includes()
+// true or false 를 반환한다. // if 문에 넣어 쓴다. let str = &#39;To be, or not to be, that is the question.&#39;; console.log(str.includes(&#39;To be&#39;)); // true console.log(str.includes(&#39;question&#39;)); // true console.log(str.includes(&#39;nonexistent&#39;)); // false console.log(str.includes(&#39;To be&#39;, 1)); // false console.log(str.includes(&#39;TO BE&#39;)); // false console.log(str.includes(&#39;&#39;))  str.match(regexp)
+immutable
+// 문자열안에 있는 알파벳 뽑기. let str = &amp;quot;abcdefgh23j2k4h6l3h1uiui24h4324jk3jh4k3h24&amp;quot; let alphabet = str.match(/[a-zA-Z]/g); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;f&amp;quot;, &amp;quot;g&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;]  str[index]</description>
     </item>
     
     <item>
@@ -134,7 +167,7 @@ immutable
     </item>
     
     <item>
-      <title>__Section1</title>
+      <title>_section1</title>
       <link>/tutorial/javascript_note/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -143,7 +176,7 @@ immutable
     </item>
     
     <item>
-      <title>__Section2</title>
+      <title>_section2</title>
       <link>/tutorial/javascript_q1/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -153,24 +186,12 @@ If there are two or more words that are the same length, return the first word f
     </item>
     
     <item>
-      <title>__Section3</title>
+      <title>_section3</title>
       <link>/tutorial/javascript_q2/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_q2/</guid>
       <description>다 완료 Dom &amp;lt;!-- div 안에 element 를 추가하는 방법 3가지 --&amp;gt; &amp;lt;!-- 첫번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // innerHTML 로 tag 까지 같이 한번에 집어넣는다 let comments = document.querySelector(&amp;quot;#comments&amp;quot;); comments.innerHTML = &amp;quot;&amp;lt;span&amp;gt;아메리카노&amp;lt;span&amp;gt;&amp;quot;; &amp;lt;/script&amp;gt; &amp;lt;!-- 두번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // element 를 생성해서 집어넣을때는 appendChild 로 집어넣는다. let comments = document.querySelector(&amp;quot;#comments&amp;quot;); let newElement = document.createElement(&amp;quot;span&amp;quot;); // element 생성 newElement.innerHTML = &amp;quot;아메리카노&amp;quot;; // 생성된 element 안에 미리 써준다.</description>
-    </item>
-    
-    <item>
-      <title>undefined2</title>
-      <link>/tutorial/javascript_dictionary/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/javascript_dictionary/</guid>
-      <description>String str.includes()
-// true or false 를 반환한다. // if 문에 넣어 쓴다. let str = &#39;To be, or not to be, that is the question.&#39;; console.log(str.includes(&#39;To be&#39;)); // true console.log(str.includes(&#39;question&#39;)); // true console.log(str.includes(&#39;nonexistent&#39;)); // false console.log(str.includes(&#39;To be&#39;, 1)); // false console.log(str.includes(&#39;TO BE&#39;)); // false console.log(str.includes(&#39;&#39;))  str.match(regexp)
-immutable
-// 문자열안에 있는 알파벳 뽑기. let str = &amp;quot;abcdefgh23j2k4h6l3h1uiui24h4324jk3jh4k3h24&amp;quot; let alphabet = str.match(/[a-zA-Z]/g); // [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;f&amp;quot;, &amp;quot;g&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;h&amp;quot;]  str[index]</description>
     </item>
     
   </channel>

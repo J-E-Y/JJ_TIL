@@ -27,11 +27,13 @@
   
     
   
-  <meta name="description" content="Qeustion scrabble word calculator  implement the word_calc method to return the correct Scrabble word score. The scores are already set up for you to use and are managed within Dictionaries:
- one_point_values = [&quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, &quot;u&quot;, &quot;l&quot;, &quot;n&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;]; two_point_values = [&quot;d&quot;, &quot;g&quot;]; three_point_values = [&quot;b&quot;, &quot;c&quot;, &quot;m&quot;, &quot;p&quot;]; four_point_values = [&quot;f&quot;, &quot;h&quot;, &quot;v&quot;, &quot;w&quot;, &quot;y&quot;]; five_point_values = [&quot;k&quot;]; eight_point_values = [&quot;j&quot;,&quot;x&quot;]; ten_point_values = [&quot;z&quot;,&quot;q&quot;]; word_calc(&quot;zoo&quot;) // 12 word_calc(&quot;bus&quot;) // 5  My_soultion function word_calc(word) { var inputArr = word.">
+  <meta name="description" content="DS &amp; OOP_1 DS &amp; OOP_2 (Instantiation Patterns)  자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법 Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)
+ Object 를 생성하는 4가지 방법
+ (Instantiation Patterns)
+  Functional   Functional Shared   Prototypal   Pseudoclassical    Functional   var Monster = function() { var body = {}; body.level = 0; body.levelUp = function() { // Instance에 levelUp 라는 메소드를 추가 this.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/tutorial/javascript_algorithm/">
+  <link rel="alternate" hreflang="en-us" href="/tutorial/sprint1/">
 
   
 
@@ -117,7 +119,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/tutorial/javascript_algorithm/">
+  <link rel="canonical" href="/tutorial/sprint1/">
 
   
   
@@ -129,22 +131,24 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="JohnJung">
-  <meta property="og:url" content="/tutorial/javascript_algorithm/">
-  <meta property="og:title" content="__Algorithm_3 | JohnJung">
-  <meta property="og:description" content="Qeustion scrabble word calculator  implement the word_calc method to return the correct Scrabble word score. The scores are already set up for you to use and are managed within Dictionaries:
- one_point_values = [&quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, &quot;u&quot;, &quot;l&quot;, &quot;n&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;]; two_point_values = [&quot;d&quot;, &quot;g&quot;]; three_point_values = [&quot;b&quot;, &quot;c&quot;, &quot;m&quot;, &quot;p&quot;]; four_point_values = [&quot;f&quot;, &quot;h&quot;, &quot;v&quot;, &quot;w&quot;, &quot;y&quot;]; five_point_values = [&quot;k&quot;]; eight_point_values = [&quot;j&quot;,&quot;x&quot;]; ten_point_values = [&quot;z&quot;,&quot;q&quot;]; word_calc(&quot;zoo&quot;) // 12 word_calc(&quot;bus&quot;) // 5  My_soultion function word_calc(word) { var inputArr = word."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/tutorial/sprint1/">
+  <meta property="og:title" content="__sprint2 | JohnJung">
+  <meta property="og:description" content="DS &amp; OOP_1 DS &amp; OOP_2 (Instantiation Patterns)  자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법 Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)
+ Object 를 생성하는 4가지 방법
+ (Instantiation Patterns)
+  Functional   Functional Shared   Prototypal   Pseudoclassical    Functional   var Monster = function() { var body = {}; body.level = 0; body.levelUp = function() { // Instance에 levelUp 라는 메소드를 추가 this."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-12-21T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2019-04-29T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2019-12-21T00:00:00&#43;00:00">
   
 
   
 
-  <title>__Algorithm_3 | JohnJung</title>
+  
+
+  <title>__sprint2 | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
@@ -364,7 +368,7 @@
         <a href="/tutorial/2019-11-14-javascript-daliy-coding-level-2/">__Algorithm_2</a>
       </li>
       
-      <li class="active">
+      <li >
         <a href="/tutorial/javascript_algorithm/">__Algorithm_3</a>
       </li>
       
@@ -390,11 +394,11 @@
     <a class="docs-toc-link" href="/tutorial/javascript_note/">_section1</a>
     <ul class="nav docs-sidenav">
       
-      <li >
+      <li class="active">
         <a href="/tutorial/sprint1/">__sprint1</a>
       </li>
       
-      <li >
+      <li class="active">
         <a href="/tutorial/sprint1/">__sprint2</a>
       </li>
       
@@ -429,26 +433,11 @@
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href="#qeustion">Qeustion</a></li>
-</ul></li>
-<li><a href="#scrabble-word-calculator">scrabble word calculator</a>
-<ul>
-<li><a href="#my-soultion">My_soultion</a></li>
-<li><a href="#other-soultion">Other_Soultion</a></li>
-<li><a href="#question">Question</a></li>
-</ul></li>
-<li><a href="#4칙연산-함수-만들기">4칙연산 함수 만들기</a>
-<ul>
-<li><a href="#my-soultion-1">My_Soultion</a></li>
-</ul></li>
-<li><a href="#nonuniqueelements-data">nonUniqueElements(data)</a>
-<ul>
-<li><a href="#question-1">Question</a></li>
-<li><a href="#my-soulion">My_Soulion</a></li>
-<li><a href="#others">Others</a></li>
-</ul></li>
+<li><a href="#ds-oop-1">DS &amp; OOP_1</a></li>
+<li><a href="#ds-oop-2-instantiation-patterns">DS &amp; OOP_2 (Instantiation Patterns)</a></li>
+<li><a href="#ds-oop-4-prototype">DS &amp; OOP_4 (Prototype)</a></li>
+<li><a href="#ds-oop-5-stack-queue">DS &amp; OOP_5 (Stack, Queue)</a></li>
+<li><a href="#ds-oop-6-linked-list">DS &amp; OOP_6 (Linked List)</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -466,350 +455,78 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">__Algorithm_3</h1>
+          <h1 itemprop="name">__sprint2</h1>
 
           <div class="article-style" itemprop="articleBody">
             
 
-<p><img src="/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png" alt="" /></p>
+<h2 id="ds-oop-1">DS &amp; OOP_1</h2>
 
-<hr />
+<h2 id="ds-oop-2-instantiation-patterns">DS &amp; OOP_2 (Instantiation Patterns)</h2>
 
-<h3 id="qeustion">Qeustion</h3>
+<ul>
+<li><p>자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법
+Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)</p></li>
 
-<h2 id="scrabble-word-calculator">scrabble word calculator</h2>
+<li><p>Object 를 생성하는 4가지 방법</p>
 
-<blockquote>
-<p>implement the word_calc method to return the correct Scrabble word score. The scores are already set up for you to use and are managed within Dictionaries:</p>
-</blockquote>
+<ul>
+<li><p>(Instantiation Patterns)</p></li>
 
-<pre><code class="language-js">
-one_point_values = [&quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, &quot;u&quot;, &quot;l&quot;, &quot;n&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;];
-two_point_values = [&quot;d&quot;, &quot;g&quot;];
-three_point_values = [&quot;b&quot;, &quot;c&quot;, &quot;m&quot;, &quot;p&quot;];
-four_point_values = [&quot;f&quot;, &quot;h&quot;, &quot;v&quot;, &quot;w&quot;, &quot;y&quot;];
-five_point_values = [&quot;k&quot;];
-eight_point_values = [&quot;j&quot;,&quot;x&quot;];
-ten_point_values = [&quot;z&quot;,&quot;q&quot;];
+<li><ol>
+<li>Functional</li>
+</ol></li>
 
+<li><ol>
+<li>Functional Shared</li>
+</ol></li>
 
-word_calc(&quot;zoo&quot;) // 12
-word_calc(&quot;bus&quot;) // 5
+<li><ol>
+<li>Prototypal</li>
+</ol></li>
 
-</code></pre>
+<li><ol>
+<li>Pseudoclassical</li>
+</ol></li>
+</ul></li>
 
-<h3 id="my-soultion">My_soultion</h3>
-
-<pre><code class="language-js">
-
-function word_calc(word) {
-
-
-
-	var inputArr = word.split(&quot;&quot;);
-	var countArr = [];
-	var dataArr = [one_point_values,two_point_values,three_point_values,four_point_values,five_point_values,eight_point_values,ten_point_values];
-	var total = 0;
-	function sum(array) {
-		var countArr = [];
-		var sum = 0;
-		if(array[0]=== one_point_values[0]) {
-			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
-			 	if (array.includes(inputArr[i])) {
-		  		countArr.push(inputArr[i])
-		  	} 
-		  	sum = countArr.length * 1;
-		   }
-			countArr = [];
-		} 
-		else if (array[0]=== two_point_values[0]){
-			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
-			 	if (array.includes(inputArr[i])) {
-		  		countArr.push(inputArr[i])
-		  	} 
-		  	sum = countArr.length * 2;
-	  	 }
-			countArr = [];	
-		}
-		else if (array[0]=== three_point_values[0]) {
-			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
-			 	if (array.includes(inputArr[i])) {
-		  		countArr.push(inputArr[i])
-		  	} 
-		  	sum = countArr.length * 3;
-	  	 }
-			countArr = [];
-		}
-		else if (array[0]=== four_point_values[0]) {
-			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
-			 	if (array.includes(inputArr[i])) {
-		  		countArr.push(inputArr[i])
-		  	} 
-		  	sum = countArr.length * 4;
-	  	 }
-      countArr = [];
-		}
-		else if (array[0]=== five_point_values[0]) {
-			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
-			 	if (array.includes(inputArr[i])) {
-		  		countArr.push(inputArr[i])
-		  	} 
-		  	sum = countArr.length * 5;
-       }
-			countArr = [];
-		}
-		else if (array[0]=== five_point_values[0]) {
-			 for (let i = 0; i &lt; inputArr.length; i ++ ) {	
-			 	if (array.includes(inputArr[i])) {
-		  		countArr.push(inputArr[i])
-		  	} 
-		  	sum = countArr.length * 8;
-       }
-			countArr = [];
-		} 
-		else if (array[0]=== ten_point_values[0]) {
-			for (let i = 0; i &lt; inputArr.length; i ++ ) {	
-			 	if (array.includes(inputArr[i])) {
-		  		countArr.push(inputArr[i])
-		  	} 
-		  	sum = countArr.length * 10;
-		  }
-			countArr = [];
-    }
-		total = total + sum;
-    }
-    
-    dataArr.forEach((ele)=&gt;{
-    sum(ele);
-    })
-
-
- return total;
-
-
-}
-
-
-</code></pre>
-
-<h3 id="other-soultion">Other_Soultion</h3>
+<li><ol>
+<li>Functional</li>
+</ol></li>
+</ul>
 
 <pre><code class="language-js">
-const char_points = {
-  &quot;a&quot;: 1,
-  &quot;e&quot;: 1,
-  &quot;i&quot;: 1,
-  &quot;o&quot;: 1,
-  &quot;u&quot;: 1,
-  &quot;l&quot;: 1,
-  &quot;n&quot;: 1,
-  &quot;r&quot;: 1,
-  &quot;s&quot;: 1,
-  &quot;t&quot;: 1,
-  &quot;d&quot;: 2,
-  &quot;g&quot;: 2,
-  &quot;b&quot;: 3,
-  &quot;c&quot;: 3,
-  &quot;m&quot;: 3,
-  &quot;p&quot;: 3,
-  &quot;f&quot;: 4,
-  &quot;h&quot;: 4,
-  &quot;v&quot;: 4,
-  &quot;w&quot;: 4,
-  &quot;y&quot;: 4,
-  &quot;k&quot;: 5,
-  &quot;j&quot;: 8,
-  &quot;x&quot;: 8,
-  &quot;z&quot;: 10,
-  &quot;q&quot;: 10
+var Monster = function() {                
+	var body = {};   
+    body.level = 0;     
+    body.levelUp = function() {    // Instance에 levelUp 라는 메소드를 추가
+    	this.level = this.level + 1  // function내부에 있는 this는 instance를 뜻하므로 this.level 은 body.level과 같다.
+    }                                 // 실행시 level 값이 1만큼 증가
+    return body;
 };
 
 
-const reducer = (accumulator, currentValue) =&gt; accumulator + currentValue;
-
-
-function word_calc(w) {
-  // convert your string array to relevant numbers 
-  const splitted_array = w.split(&quot;&quot;).map(function(item) {
-    return char_points[item]
-  });
-
-  // You can use simple loop to sum up or reduce to reduce and sum the array
-  const total = splitted_array.reduce(reducer);
-  console.log(total)
-}
-
-
-word_calc(&quot;zoo&quot;) // 12
-word_calc(&quot;bus&quot;) // 5
 
 
 </code></pre>
 
-<pre><code class="language-js">
+<h2 id="ds-oop-4-prototype">DS &amp; OOP_4 (Prototype)</h2>
 
-function word_calc(w) {
-  let total=0;
-  // convert your string array to relevant numbers and add it to the total
-  w.split(&quot;&quot;).map(function(item) {
-    total += char_points[item];
-  });
-  console.log(total)
-}
+<h2 id="ds-oop-5-stack-queue">DS &amp; OOP_5 (Stack, Queue)</h2>
 
-
-word_calc(&quot;zoo&quot;) // 12
-word_calc(&quot;zoozoo&quot;) // 24
-word_calc(&quot;bus&quot;) // 5
-
-
-</code></pre>
-
-<h3 id="question">Question</h3>
-
-<h2 id="4칙연산-함수-만들기">4칙연산 함수 만들기</h2>
-
-<blockquote>
-<p>Create a basic calulator with the following functions add,subtract,multiply and divide, implement the correct code to return correct mathematical value the functions should take two arguments</p>
-</blockquote>
-
-<pre><code class="language-js">
-// 파이썬 문제이지만 자바스크립트로 풀어보았습니다. 
-
-// 이렇게 출력하게 만드는 문제입니다. 
-Answer.add(2,2) // 4
-Answer.subtract(2,2) // 0
-Answer.multiply(2,2)// 4
-Answer.divide(2,2)// 1.0
-
-// 저는
-
-answer.call(add,2,2) // 4
-answer.call(subtract,2,2) // 0
-answer.call(multiply,2,2) // 4
-answer.call(divide,2,2) // 1.0
-
-</code></pre>
-
-<h3 id="my-soultion-1">My_Soultion</h3>
-
-<pre><code class="language-js">var add = {
-	add: 0
-}
-var subtract = {
-	
-}
-var multiply = {
-	multiply: 0
-}
-var divide = {
-	divide: 0
-}
-
-
-
-
-
-var answer = function (first,second) {
-  if(this === add) {
-	return this.add = first + second; 
-  } else if ( this === subtract) {
-	return this.subtract = first - second;
-  } else if (this === multiply) {
-  	return this.multiply = frist * second;
-  } else if ( this === divide ) {
-	return this.divide = first / second;
-  }
-}
-
-
-/*
-
-better code
-
-var answer = {
-  add:function(fir, sec){
-    return fir+sec;
-  },
-  subtract:function(fir, sec){
-    return fir-sec;
-  },
-  multiply:function(fir, sec) {
-    return fir*sec;
-  },
-  divide:function(fir, sec) {
-    return fir/sec;
-  }
-}
-
-*/
-
-
-</code></pre>
-
-<h2 id="nonuniqueelements-data">nonUniqueElements(data)</h2>
-
-<h3 id="question-1">Question</h3>
-
-<blockquote>
-<p>You are given a non-empty list of integers (X). For this task, you should return a list consisting of only the non-unique elements in this list. To do so you will need to remove all unique elements (elements which are contained in a given list only once). When solving this task, do not change the order of the list. Example: [1, 2, 3, 1, 3] 1 and 3 non-unique elements and result will be [1, 3, 1, 3].</p>
-</blockquote>
-
-<pre><code class="language-js">
-Input: A list of integers.
-
-Output: An iterable of integ
-
-var assert = require('assert');
-
-if (!global.is_checking) {
-    assert.deepEqual(nonUniqueElements([1, 2, 3, 1, 3]), [1, 3, 1, 3], &quot;1st example&quot;);
-    assert.deepEqual(nonUniqueElements([1, 2, 3, 4, 5]), [], &quot;2nd example&quot;);
-    assert.deepEqual(nonUniqueElements([5, 5, 5, 5, 5]), [5, 5, 5, 5, 5], &quot;3rd example&quot;);
-    assert.deepEqual(nonUniqueElements([10, 9, 10, 10, 9, 8]), [10, 9, 10, 10, 9], &quot;4th example&quot;);
-    console.log(&quot;Coding complete? Click 'Check' to review your tests and earn cool rewards!&quot;);
-}
-
-</code></pre>
-
-<h3 id="my-soulion">My_Soulion</h3>
-
-<pre><code class="language-js">function nonUniqueElements(data) {
-    let overLap = data.filter((ele,index)=&gt;{
-        return data.indexOf(ele) !== index
-        })
-    overLap = Array.from(new Set(overLap));
-    
-    return data.filter(function(val) {
-        return overLap.indexOf(val) !== -1;
-    })
-}
-
-
-
-
-</code></pre>
-
-<h3 id="others">Others</h3>
-
-<pre><code class="language-js">
-
-
-function checkio(data) {
-    return data.filter(function(a){
-        return data.indexOf(a) !== data.lastIndexOf(a)    
-    });
-}
-</code></pre>
+<h2 id="ds-oop-6-linked-list">DS &amp; OOP_6 (Linked List)</h2>
 
           </div>
 
           
 
+
+
+
         </div>
 
         <div class="body-footer">
-          Last updated on Apr 29, 2019
+          Last updated on Dec 21, 2019
         </div>
 
       </article>

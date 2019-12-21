@@ -1,16 +1,16 @@
 ---
-title: __Section2
+title: _section2
 date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    parent: "CodeStates"
-    weight: 9
+    name: _section2
+    weight: 10
 toc: yes
 type: docs
 ---
-![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 
+![](/tutorial/Javascript_Dictionary_files/javascriptt-light_870x220.png)
 
 ---
 
