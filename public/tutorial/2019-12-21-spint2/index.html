@@ -27,10 +27,13 @@
   
     
   
-  <meta name="description" content="&lt;style&gt; /*syntax*/ &lt;style&gt; a { color:red } &lt;/style&gt; &lt;dd&gt;a : selector(선택자)&lt;/dd&gt; &lt;dd&gt;{Color:red}; : declaration (선언)&lt;/dd&gt; &lt;dd&gt;{Color} : property (속성)&lt;/dd&gt; &lt;dd&gt;{Color:red} : property value (속성값)&lt;/dd&gt;  hover 버튼 클릭시 마우스 손가락 변형 button.hover { cursor: pointer; }  스크롤 만들기 &lt;!--Vertical scroll bar in div which is a child of css grid column --&gt; &lt;div class=&quot;A&quot;&gt; &lt;div class=&quot;B&quot;&gt; &lt;div class=&quot;C&quot;&gt;search&lt;/div&gt; &lt;div class=&quot;D&quot;&gt; &lt;div class=&quot;E&quot;&gt;1&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;2&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;3&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;4&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;5&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;6&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;7&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;8&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;9&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;10&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;11&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;12&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;10&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;11&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;12&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;10&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;11&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;12&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;  // 먼제 부모 tag 에 grid 명령과 max-hight 을 준다.">
+  <meta name="description" content="DS &amp; OOP_1 DS &amp; OOP_2 (Instantiation Patterns)  자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법 Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)
+ Object 를 생성하는 4가지 방법
+ (Instantiation Patterns)
+  Functional   Functional Shared   Prototypal   Pseudoclassical    Functional   var Monster = function() { var body = {}; body.level = 0; body.levelUp = function() { // Instance에 levelUp 라는 메소드를 추가 this.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/tutorial/css/">
+  <link rel="alternate" hreflang="en-us" href="/tutorial/2019-12-21-spint2/">
 
   
 
@@ -116,7 +119,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/tutorial/css/">
+  <link rel="canonical" href="/tutorial/2019-12-21-spint2/">
 
   
   
@@ -128,9 +131,12 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="JohnJung">
-  <meta property="og:url" content="/tutorial/css/">
-  <meta property="og:title" content="Css | JohnJung">
-  <meta property="og:description" content="&lt;style&gt; /*syntax*/ &lt;style&gt; a { color:red } &lt;/style&gt; &lt;dd&gt;a : selector(선택자)&lt;/dd&gt; &lt;dd&gt;{Color:red}; : declaration (선언)&lt;/dd&gt; &lt;dd&gt;{Color} : property (속성)&lt;/dd&gt; &lt;dd&gt;{Color:red} : property value (속성값)&lt;/dd&gt;  hover 버튼 클릭시 마우스 손가락 변형 button.hover { cursor: pointer; }  스크롤 만들기 &lt;!--Vertical scroll bar in div which is a child of css grid column --&gt; &lt;div class=&quot;A&quot;&gt; &lt;div class=&quot;B&quot;&gt; &lt;div class=&quot;C&quot;&gt;search&lt;/div&gt; &lt;div class=&quot;D&quot;&gt; &lt;div class=&quot;E&quot;&gt;1&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;2&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;3&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;4&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;5&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;6&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;7&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;8&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;9&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;10&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;11&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;12&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;10&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;11&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;12&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;10&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;11&lt;/div&gt; &lt;div class=&quot;E&quot;&gt;12&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;  // 먼제 부모 tag 에 grid 명령과 max-hight 을 준다."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/tutorial/2019-12-21-spint2/">
+  <meta property="og:title" content="__sprint2 | JohnJung">
+  <meta property="og:description" content="DS &amp; OOP_1 DS &amp; OOP_2 (Instantiation Patterns)  자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법 Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)
+ Object 를 생성하는 4가지 방법
+ (Instantiation Patterns)
+  Functional   Functional Shared   Prototypal   Pseudoclassical    Functional   var Monster = function() { var body = {}; body.level = 0; body.levelUp = function() { // Instance에 levelUp 라는 메소드를 추가 this."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -142,7 +148,7 @@
 
   
 
-  <title>Css | JohnJung</title>
+  <title>__sprint2 | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
@@ -335,7 +341,7 @@
 
   </div>
   
-  <div class="docs-toc-item active">
+  <div class="docs-toc-item">
     <a class="docs-toc-link" href="/tutorial/css/">4.Css</a>
 
   </div>
@@ -392,7 +398,7 @@
         <a href="/tutorial/2019-12-21-sprint1/">__sprint1</a>
       </li>
       
-      <li >
+      <li class="active">
         <a href="/tutorial/2019-12-21-spint2/">__sprint2</a>
       </li>
       
@@ -427,13 +433,11 @@
 <ul>
 <li>
 <ul>
-<li><a href="#lt-style-gt">&lt;style&gt;</a></li>
-<li><a href="#hover-버튼-클릭시-마우스-손가락-변형">hover 버튼 클릭시 마우스 손가락 변형</a></li>
-<li><a href="#스크롤-만들기">스크롤 만들기</a></li>
-<li><a href="#boxmodel">BoxModel</a></li>
-<li><a href="#wrapper">wrapper</a></li>
-<li><a href="#media-queries">media queries</a></li>
-<li><a href="#grid">Grid</a></li>
+<li><a href="#ds-oop-1">DS &amp; OOP_1</a></li>
+<li><a href="#ds-oop-2-instantiation-patterns">DS &amp; OOP_2 (Instantiation Patterns)</a></li>
+<li><a href="#ds-oop-4-prototype">DS &amp; OOP_4 (Prototype)</a></li>
+<li><a href="#ds-oop-5-stack-queue">DS &amp; OOP_5 (Stack, Queue)</a></li>
+<li><a href="#ds-oop-6-linked-list">DS &amp; OOP_6 (Linked List)</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -451,294 +455,66 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">Css</h1>
+          <h1 itemprop="name">__sprint2</h1>
 
           <div class="article-style" itemprop="articleBody">
             
 
-<h2 id="lt-style-gt">&lt;style&gt;</h2>
+<h2 id="ds-oop-1">DS &amp; OOP_1</h2>
 
-<hr />
-
-<pre><code class="language-css">
-/*syntax*/
-
-&lt;style&gt;
-
-a {
-  color:red
-  }
-
-&lt;/style&gt;
-
-
-
-&lt;dd&gt;a :  selector(선택자)&lt;/dd&gt;
-&lt;dd&gt;{Color:red}; : declaration (선언)&lt;/dd&gt;
-&lt;dd&gt;{Color} :  property (속성)&lt;/dd&gt;
-&lt;dd&gt;{Color:red} : property value (속성값)&lt;/dd&gt;
-
-</code></pre>
-
-<h2 id="hover-버튼-클릭시-마우스-손가락-변형">hover 버튼 클릭시 마우스 손가락 변형</h2>
-
-<pre><code class="language-css">
-button.hover {
-
- cursor: pointer;
-}
-
-
-
-</code></pre>
-
-<h2 id="스크롤-만들기">스크롤 만들기</h2>
-
-<pre><code class="language-html">
-&lt;!--Vertical scroll bar in div which is a child of css grid column --&gt;
-
-&lt;div class=&quot;A&quot;&gt;
-  &lt;div class=&quot;B&quot;&gt;
-    &lt;div class=&quot;C&quot;&gt;search&lt;/div&gt;
-    &lt;div class=&quot;D&quot;&gt;
-      &lt;div class=&quot;E&quot;&gt;1&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;2&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;3&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;4&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;5&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;6&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;7&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;8&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;9&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;10&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;11&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;12&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;10&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;11&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;12&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;10&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;11&lt;/div&gt;
-      &lt;div class=&quot;E&quot;&gt;12&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-</code></pre>
-
-<pre><code class="language-js">// 먼제 부모 tag 에 grid 명령과 max-hight 을 준다. 
-
-.A {
-  max-height: 300px; /* matters */
-  display: grid; /* matters */
-  overflow: hidden; /* matters */
-}
-
-
-</code></pre>
-
-<pre><code class="language-css">
-html, body, .A {
-  height: 100%; /* matters */
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.A {
-  max-height: 300px; /* matters */
-  display: grid; /* matters */
-  overflow: hidden; /* matters */
-}
-
-.B {
-  display: grid; /* matters */
-  overflow-y: auto; /* matters */
-}
-
-.D {
-  overflow-y: scroll; /* matters */
-}
-
-.C {
-  padding: 10px;
-  background-color: #07f;
-}
-
-.E {
-  padding: 10px;
-  background-color: #eee;
-}
-
-
-</code></pre>
-
-<p><img src="/tutorial/CSS_files/Screen Shot 2019-09-25 at 8.37.27 PM.png" alt="" /></p>
-
-<h2 id="boxmodel">BoxModel</h2>
-
-<hr />
-
-<pre><code class="language-css">{
-font-size:20px;
-text-align:center;
-text-decoration:none; : 밑줄없애기
-text-decoration:underline; : 언더라인 만들어라
-Border-bottom:red 20px solid;
-Border-right: lightblue 20px solid;
-Border-right:none; (오른쪽에 있는 선 없애기)
-Margin:20px; 가장자리
-Padding:20px;
-width:20px;  : 폭
-Display:none; 
-Display:block; : 전체화면을 이용해라 (block level element)
-Display:inline; : 부분화면을 이용해라 (inline element)
-}
-
-</code></pre>
-
-<h2 id="wrapper">wrapper</h2>
-
-<hr />
-
-<pre><code class="language-css">
-/* Most basic example */ 
-
-#wrapper {
-    width: 500px;
-    margin: 0 auto;
-}
-</code></pre>
-
-<pre><code class="language-html">
-&lt;body&gt;
-    &lt;div id=&quot;wrapper&quot;&gt;
-        Piece of text inside a 500px width div centered on the page
-    &lt;/div&gt;
-&lt;/body&gt;
-
-&lt;!-- * How the principle works
-
-Create your wrapper and assign it a certain width. Then apply an automatic horizontal margin to it by using `margin: 0 auto;` or `margin-left: auto;` `margin-right: auto;.` The automatic margins make sure your element is centered.
---&gt;
-
-
-
-</code></pre>
-
-<h2 id="media-queries">media queries</h2>
-
-<hr />
-
-<pre><code class="language-css">
-/* @media(max-width:800px) :  screen width &lt; 800px 스크린이 800px 보다 작을때 명령을 내린다.
-
-@media(min-width:800px)  : screen width  &gt; 800px스크린이 800px 보다 클때 명령을 내린다.
-*/
-
-
-    @media(max-width:800px) {
-    p {
-        font-size: 1px
-        font-weight
-        font-height
-        Display:block;
-  }
-}
-
-</code></pre>
-
-<h2 id="grid">Grid</h2>
-
-<hr />
-
-<p><img src="/tutorial/CSS_files/Screen Shot 2019-09-23 at 11.52.20 AM.png" alt="" /></p>
+<h2 id="ds-oop-2-instantiation-patterns">DS &amp; OOP_2 (Instantiation Patterns)</h2>
 
 <ul>
-<li>HTML</li>
-</ul>
+<li><p>자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법
+Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)</p></li>
 
-<pre><code class="language-html">
-
-&lt;div class = &quot;container&quot;&gt;
-
-&lt;div calss = &quot;child1&quot;&gt;1&lt;/div&gt;
-&lt;div calss = &quot;child2&quot;&gt;2&lt;/div&gt;
-&lt;div calss = &quot;child3&quot;&gt;3&lt;/div&gt;
-&lt;div calss = &quot;child4&quot;&gt;4&lt;/div&gt;
-&lt;div calss = &quot;child5&quot;&gt;5&lt;/div&gt;
-&lt;div calss = &quot;child6&quot;&gt;6&lt;/div&gt;
-&lt;div calss = &quot;child7&quot;&gt;7&lt;/div&gt;
-&lt;div calss = &quot;child8&quot;&gt;8&lt;/div&gt;
-&lt;div calss = &quot;child9&quot;&gt;9&lt;/div&gt;
-
-&lt;div&gt;
-
-
-</code></pre>
+<li><p>Object 를 생성하는 4가지 방법</p>
 
 <ul>
-<li>CSS</li>
+<li><p>(Instantiation Patterns)</p></li>
+
+<li><ol>
+<li>Functional</li>
+</ol></li>
+
+<li><ol>
+<li>Functional Shared</li>
+</ol></li>
+
+<li><ol>
+<li>Prototypal</li>
+</ol></li>
+
+<li><ol>
+<li>Pseudoclassical</li>
+</ol></li>
+</ul></li>
+
+<li><ol>
+<li>Functional</li>
+</ol></li>
 </ul>
 
 <pre><code class="language-js">
-.container {
-  
-  display: grid;  // 처음 시작을 지정해준다. 
-  grid-template-columns: 40% 60%; // 위에 있는 그림이 4대 6으로 나뉜다.  
-  grid-template-columns: 4fr 6fr;  //  4대 6으로 나뉜다. 
-  grid-gap:1rem; // 사이마다 공간을 줄때 4fr 6fr 로 쓰는것을 권장한다. % 로 사용하면 여백이 뒤에 생기기 때문.. 
-  
-  grid-template-columns: repeat(3, 1fr); // 이것은  1fr 이 세번 반복 
-  grid-template-columns: 1fr 1fr 1fr; // 이것과 동일하다. 
+var Monster = function() {                
+	var body = {};   
+    body.level = 0;     
+    body.levelUp = function() {    // Instance에 levelUp 라는 메소드를 추가
+    	this.level = this.level + 1  // function내부에 있는 this는 instance를 뜻하므로 this.level 은 body.level과 같다.
+    }                                 // 실행시 level 값이 1만큼 증가
+    return body;
+};
 
-  grid-template-columns: 200px 1fr; // 200 픽셀로 왼쪽 것을 고정하고 오른쪽 것을 늘리는 것이다. 
 
-  grid-auto-rows: 200px; // 200 픽셀 씩 모두 통일
-  grid-auto-rows: minmax(200px,auto); // 이것은 동일한데 content 늘어나면 같이 같이 늘어난다. 
-
-}
-
-</code></pre>
-
-<ul>
-<li>CSS</li>
-</ul>
-
-<pre><code class="language-js">
-// 1번칸 늘리기 
-
-.child1 {
-  
-  grid-column: 1/4 // 열에서 1부터 4까지 차지한다. 
-
-}
-
-</code></pre>
-
-<p><img src="/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.44.12 AM.png" alt="" /></p>
-
-<pre><code class="language-js">
-// 4번칸 밑으로 늘리기 
-
- gird-column:3; // 3번 열부터 시작해라 
- gird-row :2/4; // 2번부터 4버까지 차지하라 
- 
 
 
 </code></pre>
 
-<p><img src="/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.45.18 AM.png" alt="" /></p>
+<h2 id="ds-oop-4-prototype">DS &amp; OOP_4 (Prototype)</h2>
 
-<pre><code class="language-js">
-// 9번칸을 4번안에 집어넣는다. 
-  
- gird-colum:3;
- gird-row:3/5;
- 
+<h2 id="ds-oop-5-stack-queue">DS &amp; OOP_5 (Stack, Queue)</h2>
 
-</code></pre>
-
-<p><img src="/tutorial/CSS_files/Screen Shot 2019-09-23 at 9.47.05 AM.png" alt="" /></p>
+<h2 id="ds-oop-6-linked-list">DS &amp; OOP_6 (Linked List)</h2>
 
           </div>
 

@@ -12,27 +12,6 @@
     
     
     <item>
-      <title>__sprint1</title>
-      <link>/tutorial/sprint1/</link>
-      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/sprint1/</guid>
-      <description> someting </description>
-    </item>
-    
-    <item>
-      <title>__sprint2</title>
-      <link>/tutorial/sprint1/</link>
-      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/sprint1/</guid>
-      <description>DS &amp;amp; OOP_1 DS &amp;amp; OOP_2 (Instantiation Patterns)  자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법 Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)
- Object 를 생성하는 4가지 방법
- (Instantiation Patterns)
-  Functional   Functional Shared   Prototypal   Pseudoclassical    Functional   var Monster = function() { var body = {}; body.level = 0; body.levelUp = function() { // Instance에 levelUp 라는 메소드를 추가 this.</description>
-    </item>
-    
-    <item>
       <title>Bootstrap</title>
       <link>/tutorial/bootstrap/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -164,6 +143,28 @@ immutable
       
       <guid>/tutorial/2019-11-26-js-post/</guid>
       <description>&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- 1.Javacript &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- Callbacks, Promises, Async Await // DATA const posts = [ { title: &amp;quot;&#39;Post One&amp;quot;, body: &#39;this is post one&#39;}, { title: &amp;quot;Porst One&amp;quot;, body: &amp;quot;this is post two&amp;quot;} ]; // getPosts() 함수는 화면에 data 안에 있는 tile 을 출력해준다. // 1초후 출력한다. function getPosts() { setTimeout(()=&amp;gt;{ let output = &amp;quot;&amp;quot;; posts.forEach((post,index)=&amp;gt;{ output = output + `&amp;lt;li&amp;gt;${post.title}&amp;lt;/li&amp;gt;` }); document.body.innerHTML = output; },1000); } getPosts(); // creatPost(post) 함수는 2초후에 data에 새로운 값을 추가해넣는다.</description>
+    </item>
+    
+    <item>
+      <title>__sprint1</title>
+      <link>/tutorial/2019-12-21-sprint1/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2019-12-21-sprint1/</guid>
+      <description>someting __sprint1
+&amp;ldquo;_section1&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>__sprint2</title>
+      <link>/tutorial/2019-12-21-spint2/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2019-12-21-spint2/</guid>
+      <description>DS &amp;amp; OOP_1 DS &amp;amp; OOP_2 (Instantiation Patterns)  자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법 Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)
+ Object 를 생성하는 4가지 방법
+ (Instantiation Patterns)
+  Functional   Functional Shared   Prototypal   Pseudoclassical    Functional   var Monster = function() { var body = {}; body.level = 0; body.levelUp = function() { // Instance에 levelUp 라는 메소드를 추가 this.</description>
     </item>
     
     <item>

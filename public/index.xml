@@ -36,84 +36,6 @@
     </item>
     
     <item>
-      <title>__sprint1</title>
-      <link>/tutorial/sprint1/</link>
-      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/sprint1/</guid>
-      <description>
-
-&lt;h2 id=&#34;someting&#34;&gt;someting&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>__sprint2</title>
-      <link>/tutorial/sprint1/</link>
-      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/sprint1/</guid>
-      <description>
-
-&lt;h2 id=&#34;ds-oop-1&#34;&gt;DS &amp;amp; OOP_1&lt;/h2&gt;
-
-&lt;h2 id=&#34;ds-oop-2-instantiation-patterns&#34;&gt;DS &amp;amp; OOP_2 (Instantiation Patterns)&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법
-Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Object 를 생성하는 4가지 방법&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(Instantiation Patterns)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Functional&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Functional Shared&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Prototypal&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Pseudoclassical&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Functional&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-var Monster = function() {                
-	var body = {};   
-    body.level = 0;     
-    body.levelUp = function() {    // Instance에 levelUp 라는 메소드를 추가
-    	this.level = this.level + 1  // function내부에 있는 this는 instance를 뜻하므로 this.level 은 body.level과 같다.
-    }                                 // 실행시 level 값이 1만큼 증가
-    return body;
-};
-
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;ds-oop-4-prototype&#34;&gt;DS &amp;amp; OOP_4 (Prototype)&lt;/h2&gt;
-
-&lt;h2 id=&#34;ds-oop-5-stack-queue&#34;&gt;DS &amp;amp; OOP_5 (Stack, Queue)&lt;/h2&gt;
-
-&lt;h2 id=&#34;ds-oop-6-linked-list&#34;&gt;DS &amp;amp; OOP_6 (Linked List)&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Bootstrap</title>
       <link>/tutorial/bootstrap/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -18238,6 +18160,88 @@ console.log(Object.assign(target, source)); // { x: 1, y: 2, z: 3 }
 
 
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>__sprint1</title>
+      <link>/tutorial/2019-12-21-sprint1/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2019-12-21-sprint1/</guid>
+      <description>
+
+&lt;h2 id=&#34;someting&#34;&gt;someting&lt;/h2&gt;
+
+&lt;p&gt;__sprint1&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;_section1&amp;rdquo;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>__sprint2</title>
+      <link>/tutorial/2019-12-21-spint2/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2019-12-21-spint2/</guid>
+      <description>
+
+&lt;h2 id=&#34;ds-oop-1&#34;&gt;DS &amp;amp; OOP_1&lt;/h2&gt;
+
+&lt;h2 id=&#34;ds-oop-2-instantiation-patterns&#34;&gt;DS &amp;amp; OOP_2 (Instantiation Patterns)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법
+Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Object 를 생성하는 4가지 방법&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;(Instantiation Patterns)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;Functional&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;Functional Shared&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;Prototypal&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;Pseudoclassical&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;Functional&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var Monster = function() {                
+	var body = {};   
+    body.level = 0;     
+    body.levelUp = function() {    // Instance에 levelUp 라는 메소드를 추가
+    	this.level = this.level + 1  // function내부에 있는 this는 instance를 뜻하므로 this.level 은 body.level과 같다.
+    }                                 // 실행시 level 값이 1만큼 증가
+    return body;
+};
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;ds-oop-4-prototype&#34;&gt;DS &amp;amp; OOP_4 (Prototype)&lt;/h2&gt;
+
+&lt;h2 id=&#34;ds-oop-5-stack-queue&#34;&gt;DS &amp;amp; OOP_5 (Stack, Queue)&lt;/h2&gt;
+
+&lt;h2 id=&#34;ds-oop-6-linked-list&#34;&gt;DS &amp;amp; OOP_6 (Linked List)&lt;/h2&gt;
 </description>
     </item>
     
