@@ -18172,10 +18172,6 @@ console.log(Object.assign(target, source)); // { x: 1, y: 2, z: 3 }
       <description>
 
 &lt;h2 id=&#34;someting&#34;&gt;someting&lt;/h2&gt;
-
-&lt;p&gt;__sprint1&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;_section1&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
     
