@@ -62,6 +62,20 @@ immutable
     </item>
     
     <item>
+      <title>Immersive Prep</title>
+      <link>/tutorial/2019-12-21-sprint1/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2019-12-21-sprint1/</guid>
+      <description> Javascript runtime &amp;amp; Node.js  자바스크립트 런타임란?
+ 한마디로 자바스크립트언어를 실행할수 있는 곳 !
+ 예를 들어
+ HTML 안에 script 태그 를 써서 코드를 작성하면 작동한다.
+ node.js 환경에서 node  자바스크립트 코드를 작성한 파일 멸령을 하면 작성한 코드가 작동합니다.
+   // runNode.js const testFunction = function(arg){ console.log(&amp;quot;Arg is : &amp;quot;, arg); } testFunction(20);   이번에는 Node에서 한번 실행시켜 보겠습니다.  $ node runNode.js  </description>
+    </item>
+    
+    <item>
       <title>Javascript_Basic</title>
       <link>/tutorial/javascript/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -146,15 +160,6 @@ immutable
     </item>
     
     <item>
-      <title>__sprint1</title>
-      <link>/tutorial/2019-12-21-sprint1/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/2019-12-21-sprint1/</guid>
-      <description> someting </description>
-    </item>
-    
-    <item>
       <title>__sprint2</title>
       <link>/tutorial/2019-12-21-spint2/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -172,7 +177,8 @@ immutable
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/javascript_note/</guid>
-      <description>Today What I Learn ? Immutably Rename Object Keys in Javascript obj = { name: &#39;Bobo&#39; } obj.somethingElse = obj.name delete obj.name  Unll 과 undefined 의 차이점 // null 과 undefined 는 등록, 저장 여부이다. //null 은 값은 값이지만 값으로써 의미없는 특별한 값이 등록되어 있는 것이고, undefined 는 등록이 되어있지 않기 때문에 초기화도 정의되지도 않은 것입니다. //undefined 는 미리 선언된 전역변수(전역 객체의 프로퍼티)이며, null 은 선언,등록을 하는 키워드인 것입니다.</description>
+      <description>Basic CS Sections
+ 에서는 가장 기초적인 개발환경 셋팅과 컴퓨터 공학의 기본적인 개념을 다루게 됩니다. 당장에 웹 개발에 필요한 지식(네이버를 만들기 위한) 이라기보다는, 개발자로서 필요한 지식들의 집합이라고 보실 수 있습니다.  </description>
     </item>
     
     <item>
