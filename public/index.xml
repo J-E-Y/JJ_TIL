@@ -2614,51 +2614,6 @@ Plus, content, like a copyright notice for example, can go on the outside of the
     </item>
     
     <item>
-      <title>Immersive Prep</title>
-      <link>/tutorial/2019-12-21-sprint1/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/2019-12-21-sprint1/</guid>
-      <description>
-
-&lt;h2 id=&#34;javascript-runtime-node-js&#34;&gt;Javascript runtime &amp;amp; Node.js&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;자바스크립트 런타임란?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;한마디로 자바스크립트언어를 실행할수 있는 곳 !&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;예를 들어&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;HTML 안에  script 태그 를 써서 코드를 작성하면 작동한다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;node.js 환경에서 node &lt;file.name&gt; &lt;code&gt;자바스크립트 코드를 작성한 파일&lt;/code&gt; 멸령을 하면 작성한 코드가 작동합니다.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// runNode.js
-const testFunction = function(arg){
-  console.log(&amp;quot;Arg is : &amp;quot;, arg);
-}
-
-testFunction(20);
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;이번에는 Node에서 한번 실행시켜 보겠습니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-node&#34;&gt;
-$ node runNode.js
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Javascript_Basic</title>
       <link>/tutorial/javascript/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -11772,6 +11727,184 @@ function checkio(data) {
     </item>
     
     <item>
+      <title>__Immersive Prep</title>
+      <link>/tutorial/2019-12-21-sprint1/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2019-12-21-sprint1/</guid>
+      <description>
+
+&lt;h2 id=&#34;runtime&#34;&gt;Runtime&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;런타임란?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;프로그래밍 언어가 실행되는 곳
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;node-js&#34;&gt;Node.js&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Node 란?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;자바스크립트 런타임, V8엔진 등장(속도 향상, 크롬 브라우저의 V8 기반으로  nodejs사용해서 주로 웹서버 구축할수 있는 플랫폼 이다.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;실행 시키는 법&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;node.js 환경에서 &lt;code&gt;node &amp;lt;file.name&amp;gt;&lt;/code&gt; 명령을 하면 작성한 코드가 작동합니다.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1.&lt;code&gt;runNode.js&lt;/code&gt; 파일을 만든다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+const testFunction = function(arg){
+  console.log(&amp;quot;Arg is : &amp;quot;, arg);
+}
+
+testFunction(20);
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;node&lt;/code&gt; 를 명령어 입력&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+$ node runNode.js
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;nvm-node-version-manage&#34;&gt;NVM(Node Version Manage)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;NVM 이란?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;다양한 Node version를 설치하고 관리할 수 있는 프로그램&lt;/li&gt;
+&lt;li&gt;버전 관리를 위해  NVM 이라는 도구를 사용&lt;/li&gt;
+&lt;li&gt;NVM역시 하나의 프로그램이므로 설치해야 합니다.
+*
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;실행 하는 법&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+nvm ls // 현재 버전 알아보기
+
+nvm install 10.13.0 // 새로운 node version 을 설치하고 싶다면  이렇게 입력
+
+nvm use 12.13.0 //  12.13.0 버전을 사용하고 싶다면 이렇게 * 버전이 이미 설치되어있어야함*
+
+
+// 정리해보면 NVM은 다양한 Node version를 설치하고 관리할 수 있는 프로그램 입니다.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;npm-node-package-manager&#34;&gt;NPM (Node Package Manager)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;NPM 이란 ?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;일종의 앱스토어입니다. 필요한 모듈을 다운로드할 수 있는, 모듈들이 모여있는 모듈 스토어입니다.&lt;/li&gt;
+&lt;li&gt;자바스크립트 패키지 매니저이다.&lt;/li&gt;
+&lt;li&gt;하나의 명령어 처럼 사용된다.&lt;/li&gt;
+&lt;li&gt;예) npm start
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;패키지 설치&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Node.js에서 사용할 수 있는 모듈인 패키지를 설치할 때에는 npm install 명령어 뒤에 설치할 패키지 이름을 지정한다.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 이렇게 명령 한다. 
+$ npm install &amp;lt;package&amp;gt;
+
+
+// 예 emoji package 를 설치한다고 가정하자.
+// Node.js 환경에서 emoji를 지원하는 node-emoji를 설치해 보자. 
+
+
+
+// 1.먼저 적당한 위치에 프로젝트 디렉터리를 생성하고 프로젝트 디렉터리로 이동한다.
+
+$ mkdir emoji &amp;amp;&amp;amp; cd emoji
+
+// 2. npm install 명령어로 node-emoji 패키지를 설치한다.
+
+$ npm install node-emoji
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;지역 설치와 전역 설치&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;npm install 명령어에는 &lt;code&gt;지역&lt;/code&gt;(local) 설치와 &lt;code&gt;전역&lt;/code&gt;(global) 설치 옵션이 있다&lt;/li&gt;
+&lt;li&gt;옵션을 별도로 지정하지 않으면 지역으로 설치되며, 프로젝트 루트 디렉터리에 node_modules 디렉터리가 자동 생성되고 그 안에 패키지가 설치된다.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;지역으로 설치된 패키지는 해당 프로젝트 내에서만 사용할 수 있다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;지역 설치&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+$ npm install &amp;lt;package&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;전역 설치
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+$ npm install -g &amp;lt;package&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;전역에 설치된 패키지는 OS에 따라 설치 장소가 다르다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;macOS의 경우&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+/usr/local/lib/node_modules  
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;윈도우의 경우&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+c:\Users\%USERNAME%\AppData\Roaming\npm\node_modules
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>__My_MDN</title>
       <link>/tutorial/2019-11-14-javascript-my-mdn/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -18283,7 +18416,7 @@ var Monster = function() {
       <description>&lt;p&gt;&lt;strong&gt;Basic CS Sections&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;에서는 가장 기초적인 개발환경 셋팅과 컴퓨터 공학의 기본적인 개념을 다루게 됩니다. 당장에 웹 개발에 필요한 지식(네이버를 만들기 위한) 이라기보다는, 개발자로서 필요한 지식들의 집합이라고 보실 수 있습니다.&lt;/li&gt;
+&lt;li&gt;여기에서는 에서는 가장 기초적인 개발환경 셋팅과 컴퓨터 공학의 기본적인 개념을 다루게 됩니다. 당장에 웹 개발에 필요한 지식(네이버를 만들기 위한) 이라기보다는, 개발자로서 필요한 지식들의 집합이라고 보실 수 있습니다.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

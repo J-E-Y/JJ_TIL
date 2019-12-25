@@ -27,12 +27,11 @@
   
     
   
-  <meta name="description" content=" Javascript runtime &amp; Node.js  자바스크립트 런타임란?
- 한마디로 자바스크립트언어를 실행할수 있는 곳 !
- 예를 들어
- HTML 안에 script 태그 를 써서 코드를 작성하면 작동한다.
- node.js 환경에서 node  자바스크립트 코드를 작성한 파일 멸령을 하면 작성한 코드가 작동합니다.
-   // runNode.js const testFunction = function(arg){ console.log(&quot;Arg is : &quot;, arg); } testFunction(20);   이번에는 Node에서 한번 실행시켜 보겠습니다.  $ node runNode.js  ">
+  <meta name="description" content="Runtime  런타임란?
+ 프로그래밍 언어가 실행되는 곳    Node.js  Node 란?
+ 자바스크립트 런타임, V8엔진 등장(속도 향상, 크롬 브라우저의 V8 기반으로 nodejs사용해서 주로 웹서버 구축할수 있는 플랫폼 이다.  실행 시키는 법
+ node.js 환경에서 node &lt;file.name&gt; 명령을 하면 작성한 코드가 작동합니다.     1.runNode.js 파일을 만든다.
+ const testFunction = function(arg){ console.log(&quot;Arg is : &quot;, arg); } testFunction(20);    node 를 명령어 입력   $ node runNode.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/2019-12-21-sprint1/">
@@ -134,13 +133,12 @@
   
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2019-12-21-sprint1/">
-  <meta property="og:title" content="Immersive Prep | JohnJung">
-  <meta property="og:description" content=" Javascript runtime &amp; Node.js  자바스크립트 런타임란?
- 한마디로 자바스크립트언어를 실행할수 있는 곳 !
- 예를 들어
- HTML 안에 script 태그 를 써서 코드를 작성하면 작동한다.
- node.js 환경에서 node  자바스크립트 코드를 작성한 파일 멸령을 하면 작성한 코드가 작동합니다.
-   // runNode.js const testFunction = function(arg){ console.log(&quot;Arg is : &quot;, arg); } testFunction(20);   이번에는 Node에서 한번 실행시켜 보겠습니다.  $ node runNode.js  "><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:title" content="__Immersive Prep | JohnJung">
+  <meta property="og:description" content="Runtime  런타임란?
+ 프로그래밍 언어가 실행되는 곳    Node.js  Node 란?
+ 자바스크립트 런타임, V8엔진 등장(속도 향상, 크롬 브라우저의 V8 기반으로 nodejs사용해서 주로 웹서버 구축할수 있는 플랫폼 이다.  실행 시키는 법
+ node.js 환경에서 node &lt;file.name&gt; 명령을 하면 작성한 코드가 작동합니다.     1.runNode.js 파일을 만든다.
+ const testFunction = function(arg){ console.log(&quot;Arg is : &quot;, arg); } testFunction(20);    node 를 명령어 입력   $ node runNode."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -152,7 +150,7 @@
 
   
 
-  <title>Immersive Prep | JohnJung</title>
+  <title>__Immersive Prep | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
@@ -399,7 +397,7 @@
     <ul class="nav docs-sidenav">
       
       <li class="active">
-        <a href="/tutorial/2019-12-21-sprint1/">Immersive Prep</a>
+        <a href="/tutorial/2019-12-21-sprint1/">__Immersive Prep</a>
       </li>
       
       <li >
@@ -437,7 +435,10 @@
 <ul>
 <li>
 <ul>
-<li><a href="#javascript-runtime-node-js">Javascript runtime &amp; Node.js</a></li>
+<li><a href="#runtime">Runtime</a></li>
+<li><a href="#node-js">Node.js</a></li>
+<li><a href="#nvm-node-version-manage">NVM(Node Version Manage)</a></li>
+<li><a href="#npm-node-package-manager">NPM (Node Package Manager)</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -455,45 +456,178 @@
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">Immersive Prep</h1>
+          <h1 itemprop="name">__Immersive Prep</h1>
 
           <div class="article-style" itemprop="articleBody">
             
 
-<h2 id="javascript-runtime-node-js">Javascript runtime &amp; Node.js</h2>
+<h2 id="runtime">Runtime</h2>
 
 <ul>
-<li><p>자바스크립트 런타임란?</p>
+<li><p>런타임란?</p>
 
 <ul>
-<li><p>한마디로 자바스크립트언어를 실행할수 있는 곳 !</p></li>
-
-<li><p>예를 들어</p></li>
-
-<li><p>HTML 안에  script 태그 를 써서 코드를 작성하면 작동한다.</p></li>
-
-<li><p>node.js 환경에서 node <file.name> <code>자바스크립트 코드를 작성한 파일</code> 멸령을 하면 작성한 코드가 작동합니다.</p></li>
+<li>프로그래밍 언어가 실행되는 곳
+<br /></li>
 </ul></li>
 </ul>
 
-<pre><code class="language-js">// runNode.js
+<h2 id="node-js">Node.js</h2>
+
+<ul>
+<li><p>Node 란?</p>
+
+<ul>
+<li>자바스크립트 런타임, V8엔진 등장(속도 향상, 크롬 브라우저의 V8 기반으로  nodejs사용해서 주로 웹서버 구축할수 있는 플랫폼 이다.</li>
+</ul></li>
+
+<li><p>실행 시키는 법</p>
+
+<ul>
+<li>node.js 환경에서 <code>node &lt;file.name&gt;</code> 명령을 하면 작성한 코드가 작동합니다.
+<br /></li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>1.<code>runNode.js</code> 파일을 만든다.</p>
+</blockquote>
+
+<pre><code class="language-js">
 const testFunction = function(arg){
   console.log(&quot;Arg is : &quot;, arg);
 }
 
 testFunction(20);
 
+</code></pre>
+
+<blockquote>
+<ol>
+<li><code>node</code> 를 명령어 입력</li>
+</ol>
+</blockquote>
+
+<pre><code class="language-js">
+$ node runNode.js
+
+</code></pre>
+
+<h2 id="nvm-node-version-manage">NVM(Node Version Manage)</h2>
+
+<ul>
+<li><p>NVM 이란?</p>
+
+<ul>
+<li>다양한 Node version를 설치하고 관리할 수 있는 프로그램</li>
+<li>버전 관리를 위해  NVM 이라는 도구를 사용</li>
+<li>NVM역시 하나의 프로그램이므로 설치해야 합니다.
+*
+<br /></li>
+</ul></li>
+
+<li><p>실행 하는 법</p></li>
+</ul>
+
+<pre><code class="language-js">
+nvm ls // 현재 버전 알아보기
+
+nvm install 10.13.0 // 새로운 node version 을 설치하고 싶다면  이렇게 입력
+
+nvm use 12.13.0 //  12.13.0 버전을 사용하고 싶다면 이렇게 * 버전이 이미 설치되어있어야함*
+
+
+// 정리해보면 NVM은 다양한 Node version를 설치하고 관리할 수 있는 프로그램 입니다.
+</code></pre>
+
+<h2 id="npm-node-package-manager">NPM (Node Package Manager)</h2>
+
+<ul>
+<li><p>NPM 이란 ?</p>
+
+<ul>
+<li>일종의 앱스토어입니다. 필요한 모듈을 다운로드할 수 있는, 모듈들이 모여있는 모듈 스토어입니다.</li>
+<li>자바스크립트 패키지 매니저이다.</li>
+<li>하나의 명령어 처럼 사용된다.</li>
+<li>예) npm start
+<br /></li>
+</ul></li>
+
+<li><p>패키지 설치</p>
+
+<ul>
+<li>Node.js에서 사용할 수 있는 모듈인 패키지를 설치할 때에는 npm install 명령어 뒤에 설치할 패키지 이름을 지정한다.
+<br /></li>
+</ul></li>
+</ul>
+
+<pre><code class="language-js">
+// 이렇게 명령 한다. 
+$ npm install &lt;package&gt;
+
+
+// 예 emoji package 를 설치한다고 가정하자.
+// Node.js 환경에서 emoji를 지원하는 node-emoji를 설치해 보자. 
+
+
+
+// 1.먼저 적당한 위치에 프로젝트 디렉터리를 생성하고 프로젝트 디렉터리로 이동한다.
+
+$ mkdir emoji &amp;&amp; cd emoji
+
+// 2. npm install 명령어로 node-emoji 패키지를 설치한다.
+
+$ npm install node-emoji
+
 
 </code></pre>
 
 <ul>
-<li>이번에는 Node에서 한번 실행시켜 보겠습니다.</li>
+<li><p>지역 설치와 전역 설치</p>
+
+<ul>
+<li>npm install 명령어에는 <code>지역</code>(local) 설치와 <code>전역</code>(global) 설치 옵션이 있다</li>
+<li>옵션을 별도로 지정하지 않으면 지역으로 설치되며, 프로젝트 루트 디렉터리에 node_modules 디렉터리가 자동 생성되고 그 안에 패키지가 설치된다.</li>
+
+<li><p>지역으로 설치된 패키지는 해당 프로젝트 내에서만 사용할 수 있다.</p></li>
+
+<li><p>지역 설치</p></li>
+</ul></li>
 </ul>
 
-<pre><code class="language-node">
-$ node runNode.js
+<pre><code class="language-js">
+$ npm install &lt;package&gt;
 
 </code></pre>
+
+<ul>
+<li>전역 설치
+<br /></li>
+</ul>
+
+<pre><code class="language-js">
+$ npm install -g &lt;package&gt;
+</code></pre>
+
+<ul>
+<li><p>전역에 설치된 패키지는 OS에 따라 설치 장소가 다르다.</p></li>
+
+<li><p>macOS의 경우</p></li>
+</ul>
+
+<pre><code class="language-js">
+/usr/local/lib/node_modules  
+
+</code></pre>
+
+<ul>
+<li><p>윈도우의 경우</p>
+
+<pre><code>
+c:\Users\%USERNAME%\AppData\Roaming\npm\node_modules
+
+</code></pre></li>
+</ul>
 
           </div>
 
