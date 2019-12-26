@@ -138,10 +138,6 @@ type: docs
 
 
 
-
-
-
-
 ## git remote remove [명칭]
 
 * remote 연결된거 지우기 

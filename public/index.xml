@@ -11908,7 +11908,9 @@ $ npm install &amp;lt;package&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;전역 설치
+&lt;li&gt;전역 설치&lt;/li&gt;
+&lt;li&gt;전역에 설치하는것을 권장하지 않음&lt;/li&gt;
+&lt;li&gt;npm 을 적용할 디렉토리 안에 설치한다.
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -11923,7 +11925,7 @@ $ npm install -g &amp;lt;package&amp;gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-/usr/local/lib/node_modules  
+/usr/local/lib/node_modules 
 
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -11934,7 +11936,171 @@ $ npm install -g &amp;lt;package&amp;gt;
 c:\Users\%USERNAME%\AppData\Roaming\npm\node_modules
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;자주 사용하는 npm 명령어&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt; 
+ 패키지 설치
+
+//# 로컬 설치
+$ npm install &amp;lt;package-name&amp;gt;
+
+//# 전역 설치
+$ npm install -g &amp;lt;package-name&amp;gt;
+
+//# 개발 설치
+$ npm install --save-dev &amp;lt;package-name&amp;gt;
+
+//# package.json의 모든 패키지 설치
+
+$ npm install
+
+//패키지 제거
+
+# 로컬/개발 패키지 제거
+$ npm uninstall &amp;lt;package-name&amp;gt;
+
+# 전역 패키지 제거
+$ npm uninstall -g &amp;lt;package-name&amp;gt;
+
+
+// 패키지 업데이트
+
+$ npm update &amp;lt;package-name&amp;gt;
+
+// 전역 설치 패키지 확인
+
+$ npm ls -g --depth=0
+
+// package.json scripts 프로퍼티의 start 실행
+$ npm start
+
+// package.json scripts 프로퍼티의 start 이외의 scripts 실행
+
+$ npm run &amp;lt;script-name&amp;gt;
+
+// 전역 패키지 설치 폴더 확인
+$ npm root -g
+
+/usr/local/lib/node_modules
+
+
+# 파인더 오픈
+
+$ open /usr/local/lib/node_modules
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;package-json&#34;&gt;package.json&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;package.json 란?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;프로그램을 실행시키기 위해 필요한 모듈들이 무엇인지 적어놓는 공간이다.&lt;/li&gt;
+&lt;li&gt;내가 개발한 프로그램에서 필요한 모듈를 package.json에 작성해놓으면, 사용자는 파일을 보고 필요한 모듈만 설치하면 되기 때문에 효율적으로 작업할 수 있다. 카달로그와 같은 역할을 한다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;dependencies
+*이 프로젝트가 돌아가기위해 반드시 필요한 모듈들이 무엇인지가 적혀 있습니다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;&amp;quot;dependencies&amp;quot;: {
+&amp;quot;react&amp;quot;: &amp;quot;^16.8.6&amp;quot;,
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;devDependencies
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;이 프로젝트를 개발하는 환경에서 필요한 모듈들이 무엇인지가 적혀 있습니다. 예를 들면 코드 모양을 잡아주는 lint나 테스팅 모듈처럼, 실제 프로젝트 동작에 직접적으로 영향을 주지 않는 모듈들을 명시합니다.&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;ldquo;devDependencies&amp;rdquo;: {
+    &amp;ldquo;jest&amp;rdquo;: &amp;ldquo;^2.3.0&amp;rdquo;,
+  	&amp;ldquo;eslint&amp;rdquo; : &amp;ldquo;^2.0.0&amp;rdquo;
+  }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;* 3. scripts
+
+  * npm 으로 실행시킬 수 있는 명령어를 정의합니다. 명령어를 입력하면 어떤 동작을 해야하는지가 적혀 있습니다. 예를들면 npm test 명령어를 입력하면 &amp;quot;test파일을 node 에서 실행시켜라!&amp;quot; 하는 내용들이 들어있습니다. 만약 npm test와 같은 명령어를 실행시켰는데 정의되지 않은 명령어 라는 오류 메시지가 나오면, package.json 파일 scripts 에 해당 명령어가 정의되어 있는지를 확인해 보시면 됩니다.
+
+```js
+
+&amp;quot;scripts&amp;quot;: {
+    &amp;quot;start&amp;quot;: &amp;quot;node app.js&amp;quot;,
+    &amp;quot;test&amp;quot;: &amp;quot;node test.js&amp;quot;,
+  }
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;testing-linting&#34;&gt;Testing &amp;amp; Linting&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;코드 퀄리티를 높이기 위해 testing 과 Linting 한다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;test 목적은?
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;코드가 맞게 작성되어있는지 확인하기 위해 test 를 한다.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;*테스트 방법에는 3가지
+    * testing Tool&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  * 1.end to end test
+
+  * 2.integration Test
+
+  * 3.Unit test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;하나의 기능을 테스트하는  &lt;code&gt;Unit test&lt;/code&gt; 에는 페이스북에서 만든 &lt;code&gt;jest&lt;/code&gt; 라는 것이 있다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;3.Linint 목적은?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;우리가 지정한 코드스타일을 지키는지 안지키는지 체크해주는 도구이다. 일관된 코드스타일을 체크해주므로 다른사람과의 코드를 합칠때 충돌을 줄일수 있다.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;예를 들어 세미클론을 철저히지키는 사람과 빼먹는 사람이 코드를 합치면 충돌과 오류가 나기때문에 그것을 방지하기 위해 Linint 을 사용한다.&lt;/p&gt;
+
+&lt;p&gt;코드 스타일을 일관적으로 마추기 위해 처음부터 setting 하고 들어간다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Linint 을 적용하기위해 Eslint 사용한다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ESlint 는 하나의 테스트해주는 도구이다.&lt;/li&gt;
+&lt;li&gt;엄격하고 내가 원하는 것만 테스트할수있는 장점이 있다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;scope-closure&#34;&gt;Scope &amp;amp; Closure&lt;/h2&gt;
+
+&lt;h2 id=&#34;this&#34;&gt;This&lt;/h2&gt;
 </description>
     </item>
     

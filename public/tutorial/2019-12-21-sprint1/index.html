@@ -439,6 +439,10 @@
 <li><a href="#node-js">Node.js</a></li>
 <li><a href="#nvm-node-version-manage">NVM(Node Version Manage)</a></li>
 <li><a href="#npm-node-package-manager">NPM (Node Package Manager)</a></li>
+<li><a href="#package-json">package.json</a></li>
+<li><a href="#testing-linting">Testing &amp; Linting</a></li>
+<li><a href="#scope-closure">Scope &amp; Closure</a></li>
+<li><a href="#this">This</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -601,7 +605,9 @@ $ npm install &lt;package&gt;
 </code></pre>
 
 <ul>
-<li>전역 설치
+<li>전역 설치</li>
+<li>전역에 설치하는것을 권장하지 않음</li>
+<li>npm 을 적용할 디렉토리 안에 설치한다.
 <br /></li>
 </ul>
 
@@ -616,7 +622,7 @@ $ npm install -g &lt;package&gt;
 </ul>
 
 <pre><code class="language-js">
-/usr/local/lib/node_modules  
+/usr/local/lib/node_modules 
 
 </code></pre>
 
@@ -627,7 +633,171 @@ $ npm install -g &lt;package&gt;
 c:\Users\%USERNAME%\AppData\Roaming\npm\node_modules
 
 </code></pre></li>
+
+<li><p>자주 사용하는 npm 명령어</p></li>
 </ul>
+
+<pre><code class="language-js"> 
+ 패키지 설치
+
+//# 로컬 설치
+$ npm install &lt;package-name&gt;
+
+//# 전역 설치
+$ npm install -g &lt;package-name&gt;
+
+//# 개발 설치
+$ npm install --save-dev &lt;package-name&gt;
+
+//# package.json의 모든 패키지 설치
+
+$ npm install
+
+//패키지 제거
+
+# 로컬/개발 패키지 제거
+$ npm uninstall &lt;package-name&gt;
+
+# 전역 패키지 제거
+$ npm uninstall -g &lt;package-name&gt;
+
+
+// 패키지 업데이트
+
+$ npm update &lt;package-name&gt;
+
+// 전역 설치 패키지 확인
+
+$ npm ls -g --depth=0
+
+// package.json scripts 프로퍼티의 start 실행
+$ npm start
+
+// package.json scripts 프로퍼티의 start 이외의 scripts 실행
+
+$ npm run &lt;script-name&gt;
+
+// 전역 패키지 설치 폴더 확인
+$ npm root -g
+
+/usr/local/lib/node_modules
+
+
+# 파인더 오픈
+
+$ open /usr/local/lib/node_modules
+
+</code></pre>
+
+<h2 id="package-json">package.json</h2>
+
+<ul>
+<li><p>package.json 란?</p>
+
+<ul>
+<li>프로그램을 실행시키기 위해 필요한 모듈들이 무엇인지 적어놓는 공간이다.</li>
+<li>내가 개발한 프로그램에서 필요한 모듈를 package.json에 작성해놓으면, 사용자는 파일을 보고 필요한 모듈만 설치하면 되기 때문에 효율적으로 작업할 수 있다. 카달로그와 같은 역할을 한다.
+<br />
+<br /></li>
+</ul></li>
+
+<li><ol>
+<li><p>dependencies
+*이 프로젝트가 돌아가기위해 반드시 필요한 모듈들이 무엇인지가 적혀 있습니다.</p>
+
+<pre><code class="language-js">&quot;dependencies&quot;: {
+&quot;react&quot;: &quot;^16.8.6&quot;,
+}
+</code></pre>
+
+<ul>
+<li><ol>
+<li>devDependencies
+<br /></li>
+</ol></li>
+
+<li><p>이 프로젝트를 개발하는 환경에서 필요한 모듈들이 무엇인지가 적혀 있습니다. 예를 들면 코드 모양을 잡아주는 lint나 테스팅 모듈처럼, 실제 프로젝트 동작에 직접적으로 영향을 주지 않는 모듈들을 명시합니다.</p>
+
+<p>```</p></li>
+</ul></li>
+</ol></li>
+</ul>
+
+<p>&ldquo;devDependencies&rdquo;: {
+    &ldquo;jest&rdquo;: &ldquo;^2.3.0&rdquo;,
+  	&ldquo;eslint&rdquo; : &ldquo;^2.0.0&rdquo;
+  }</p>
+
+<pre><code>* 3. scripts
+
+  * npm 으로 실행시킬 수 있는 명령어를 정의합니다. 명령어를 입력하면 어떤 동작을 해야하는지가 적혀 있습니다. 예를들면 npm test 명령어를 입력하면 &quot;test파일을 node 에서 실행시켜라!&quot; 하는 내용들이 들어있습니다. 만약 npm test와 같은 명령어를 실행시켰는데 정의되지 않은 명령어 라는 오류 메시지가 나오면, package.json 파일 scripts 에 해당 명령어가 정의되어 있는지를 확인해 보시면 됩니다.
+
+```js
+
+&quot;scripts&quot;: {
+    &quot;start&quot;: &quot;node app.js&quot;,
+    &quot;test&quot;: &quot;node test.js&quot;,
+  }
+
+</code></pre>
+
+<h2 id="testing-linting">Testing &amp; Linting</h2>
+
+<ul>
+<li><p>코드 퀄리티를 높이기 위해 testing 과 Linting 한다.</p></li>
+
+<li><ol>
+<li>test 목적은?
+<br /></li>
+</ol>
+
+<ul>
+<li>코드가 맞게 작성되어있는지 확인하기 위해 test 를 한다.
+<br /></li>
+</ul></li>
+</ul>
+
+<p>*테스트 방법에는 3가지
+    * testing Tool</p>
+
+<pre><code>  * 1.end to end test
+
+  * 2.integration Test
+
+  * 3.Unit test
+</code></pre>
+
+<ul>
+<li><p>하나의 기능을 테스트하는  <code>Unit test</code> 에는 페이스북에서 만든 <code>jest</code> 라는 것이 있다.</p></li>
+
+<li><p>3.Linint 목적은?</p>
+
+<ul>
+<li>우리가 지정한 코드스타일을 지키는지 안지키는지 체크해주는 도구이다. 일관된 코드스타일을 체크해주므로 다른사람과의 코드를 합칠때 충돌을 줄일수 있다.
+<br /></li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>예를 들어 세미클론을 철저히지키는 사람과 빼먹는 사람이 코드를 합치면 충돌과 오류가 나기때문에 그것을 방지하기 위해 Linint 을 사용한다.</p>
+
+<p>코드 스타일을 일관적으로 마추기 위해 처음부터 setting 하고 들어간다.</p>
+</blockquote>
+
+<ul>
+<li><p>Linint 을 적용하기위해 Eslint 사용한다.</p>
+
+<ul>
+<li>ESlint 는 하나의 테스트해주는 도구이다.</li>
+<li>엄격하고 내가 원하는 것만 테스트할수있는 장점이 있다.
+<br />
+<br /></li>
+</ul></li>
+</ul>
+
+<h2 id="scope-closure">Scope &amp; Closure</h2>
+
+<h2 id="this">This</h2>
 
           </div>
 
