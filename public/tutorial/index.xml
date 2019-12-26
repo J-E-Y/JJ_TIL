@@ -130,8 +130,8 @@ If there are two or more words that are the same length, return the first word f
       <description>Runtime  런타임란?
  프로그래밍 언어가 실행되는 곳    Node.js  Node 란?
  자바스크립트 런타임, V8엔진 등장(속도 향상, 크롬 브라우저의 V8 기반으로 nodejs사용해서 주로 웹서버 구축할수 있는 플랫폼 이다.  실행 시키는 법
- node.js 환경에서 node &amp;lt;file.name&amp;gt; 명령을 하면 작성한 코드가 작동합니다.     1.runNode.js 파일을 만든다.
- const testFunction = function(arg){ console.log(&amp;quot;Arg is : &amp;quot;, arg); } testFunction(20);    node 를 명령어 입력   $ node runNode.</description>
+ node.js 환경에서 node &amp;lt;file.name&amp;gt; 명령을 하면 작성한 코드가 작동합니다.   1.runNode.js 파일을 만든다.
+  const testFunction = function(arg){ console.log(&amp;quot;Arg is : &amp;quot;, arg); } testFunction(20);   2. node 를 명령어 입력  $ node runNode.</description>
     </item>
     
     <item>
