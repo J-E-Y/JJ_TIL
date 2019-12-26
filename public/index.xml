@@ -1731,21 +1731,21 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
       <guid>/tutorial/git/</guid>
       <description>
 
-&lt;h2 id=&#34;1-command-line&#34;&gt;1.Command Line&lt;/h2&gt;
+&lt;h2 id=&#34;1-command-line-터미널&#34;&gt;1.Command Line (터미널)&lt;/h2&gt;
 
-&lt;h2 id=&#34;git-ls&#34;&gt;git ls&lt;/h2&gt;
+&lt;h2 id=&#34;ls&#34;&gt;ls&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;파일보기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;git-ls-a&#34;&gt;git ls -A&lt;/h2&gt;
+&lt;h2 id=&#34;ls-a&#34;&gt;ls -A&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;숨겨진 파일까지 보기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;git-ls-al&#34;&gt;git ls -al&lt;/h2&gt;
+&lt;h2 id=&#34;ls-al&#34;&gt;ls -al&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;상세 내용&lt;/li&gt;
@@ -1768,7 +1768,7 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;git-cd-디렉토리-이름&#34;&gt;git cd 디렉토리 이름&lt;/h2&gt;
+&lt;h2 id=&#34;cd-디렉토리-이름&#34;&gt;cd 디렉토리 이름&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;디렉토리로 이동( print working List )&lt;/li&gt;
@@ -1778,13 +1778,19 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;git-cd&#34;&gt;git cd-&lt;/h2&gt;
+&lt;h2 id=&#34;cd&#34;&gt;cd-&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;뒤로가기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;git-pwd&#34;&gt;git pwd&lt;/h2&gt;
+&lt;h2 id=&#34;cd-1&#34;&gt;cd /&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;global 로 가기 (제일 처음 root 디렉토리로 이동 )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;pwd&#34;&gt;pwd&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;내가 어디있는지 확인&lt;/li&gt;
@@ -1794,65 +1800,93 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 // showing that .. Users/myuser/Downloads
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;git-touch-file-name&#34;&gt;git touch [file_name]&lt;/h2&gt;
+&lt;h2 id=&#34;touch-file-name&#34;&gt;touch [file_name]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;빈 파일 생성&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;git-mkdir-dir-name&#34;&gt;git mkdir [dir_name]&lt;/h2&gt;
+&lt;h2 id=&#34;mkdir-dir-name&#34;&gt;mkdir [dir_name]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;디렉토리 생성&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;git-cat-file-name&#34;&gt;git cat [file_name]&lt;/h2&gt;
+&lt;h2 id=&#34;cat-file-name&#34;&gt;cat [file_name]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;텍스트 형태의 파일 확인&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;git-mv-file-or-dir-target-dir&#34;&gt;git mv [file_or_dir] [target_dir]&lt;/h2&gt;
+&lt;h2 id=&#34;mv-file-or-dir-target-dir&#34;&gt;mv [file_or_dir] [target_dir]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;파일 및 디렉토리 옮기기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;git-mv-file-or-dir-new-name&#34;&gt;git mv [file_or_dir] [new_name]&lt;/h2&gt;
+&lt;h2 id=&#34;mv-file-or-dir-new-name&#34;&gt;mv [file_or_dir] [new_name]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;파일 및 디렉토리 이름 바꾸기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;git-cp-file-target-dir-or-cp-r-folder&#34;&gt;git cp [file] [target_dir] or cp -r [folder]&lt;/h2&gt;
+&lt;h2 id=&#34;cp-file-target-dir-or-cp-r-folder&#34;&gt;cp [file] [target_dir] or cp -r [folder]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;복사&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;git-rm-filename&#34;&gt;git rm [filename]&lt;/h2&gt;
+&lt;h2 id=&#34;rm-filename&#34;&gt;rm [filename]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;파일 삭제&lt;/li&gt;
 &lt;li&gt;휴지통에 들어가지 않음&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;git-rm-r-dirname&#34;&gt;git rm -r [dirname]&lt;/h2&gt;
+&lt;h2 id=&#34;rm-r-dirname&#34;&gt;rm -r [dirname]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;폴더 삭제&lt;/li&gt;
 &lt;li&gt;휴지통에 들어가지 않음&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;git-rm-f-file-or-dirname&#34;&gt;git rm -f [file or dirname];&lt;/h2&gt;
+&lt;h2 id=&#34;rm-f-file-or-dirname&#34;&gt;rm -f [file or dirname];&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;coution&lt;/code&gt; 강제로 지우기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_16&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/h2&gt;
+&lt;h2 id=&#34;toc_17&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/h2&gt;
 
-&lt;h2 id=&#34;2-version-control-system&#34;&gt;2.Version Control System&lt;/h2&gt;
+&lt;h2 id=&#34;2-git-version-control-system&#34;&gt;2.Git(Version Control System)&lt;/h2&gt;
+
+&lt;h2 id=&#34;git-work-flow&#34;&gt;git-work-flow&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;페어랑 같이 fork 를 받아서 작업할때 쓰는 명령어&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1. 각각 서로 github 에 있는 레포주소를 clone 해서 연결한다.&lt;/li&gt;
+&lt;li&gt;2. John이 코드를 작성한다. 그리고 add,commit,push 명령어를 통해 github 에 올린다.&lt;/li&gt;
+&lt;li&gt;3. Tim 이 변경된 작성 코드를 가져온다. git pull [명칭] master 명령한다. 그리고 pull 땡겨온 것 을 &lt;code&gt;꼭&lt;/code&gt; add commit push 를 통해 github 에 올린다. 변경된 push 를 하지 않은체 한다면 다음 commit 이 작동하지 않고 충돌이 난다.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/Git_files/1.png&#34; alt=&#34;&#34; /&gt;
+  &lt;img src=&#34;/tutorial/Git_files/2.png&#34; alt=&#34;&#34; /&gt;
+  &lt;img src=&#34;/tutorial/Git_files/3.png&#34; alt=&#34;&#34; /&gt;
+  &lt;img src=&#34;/tutorial/Git_files/4.png&#34; alt=&#34;&#34; /&gt;
+  &lt;img src=&#34;/tutorial/Git_files/5.png&#34; alt=&#34;&#34; /&gt;
+  &lt;img src=&#34;/tutorial/Git_files/6.png&#34; alt=&#34;&#34; /&gt;
+  &lt;img src=&#34;/tutorial/Git_files/7.png&#34; alt=&#34;&#34; /&gt;
+  &lt;img src=&#34;/tutorial/Git_files/8.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;git-remote-remove-명칭&#34;&gt;git remote remove [명칭]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;remote 연결된거 지우기&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;git-branch-d-test&#34;&gt;git branch -d test&lt;/h2&gt;
 

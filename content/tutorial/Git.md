@@ -12,18 +12,18 @@ type: docs
 
 
 
-## 1.Command Line
+## 1.Command Line (터미널)
 
 
-## git ls
+## ls
 
 * 파일보기 
 
-## git ls -A
+## ls -A
 
 * 숨겨진 파일까지 보기
 
-## git ls -al
+## ls -al
 
 * 상세 내용
 
@@ -45,7 +45,7 @@ type: docs
 
 ```
 
-## git cd 디렉토리 이름 
+## cd 디렉토리 이름 
 
 * 디렉토리로 이동( print working List )
 
@@ -54,13 +54,15 @@ type: docs
 
 ```
 
-## git cd- 
+## cd-
 
 * 뒤로가기 
 
+## cd /  
 
+* global 로 가기 (제일 처음 root 디렉토리로 이동 )
 
-## git pwd
+## pwd
 
 * 내가 어디있는지 확인
 
@@ -70,54 +72,81 @@ type: docs
 ```
 
 
-## git touch [file_name]
+##  touch [file_name]
 * 빈 파일 생성
 
-## git mkdir [dir_name]
+##  mkdir [dir_name]
 
 * 디렉토리 생성
 
-## git cat [file_name]
+## cat [file_name]
 
 * 텍스트 형태의 파일 확인
 
-## git mv [file_or_dir] [target_dir]
+##  mv [file_or_dir] [target_dir]
 
 * 파일 및 디렉토리 옮기기
 
 
-## git mv [file_or_dir] [new_name]
+##  mv [file_or_dir] [new_name]
 
 * 파일 및 디렉토리 이름 바꾸기
 
-## git cp [file] [target_dir] or cp -r [folder]
+##  cp [file] [target_dir] or cp -r [folder]
 
 * 복사
 
 
-## git rm [filename] 
+##  rm [filename] 
 
 * 파일 삭제
 * 휴지통에 들어가지 않음 
 
-## git rm -r [dirname]
+##  rm -r [dirname]
 
 * 폴더 삭제
 * 휴지통에 들어가지 않음 
 
-## git rm -f [file or dirname];
+##  rm -f [file or dirname];
 
 * `coution` 강제로 지우기 
 
 
 
 ## ------------------------------------------------------------
-## 2.Version Control System
+## 2.Git(Version Control System)
 
 
+## git-work-flow
+
+* 페어랑 같이 fork 를 받아서 작업할때 쓰는 명령어 
+  
+  * 1. 각각 서로 github 에 있는 레포주소를 clone 해서 연결한다. 
+  * 2. John이 코드를 작성한다. 그리고 add,commit,push 명령어를 통해 github 에 올린다. 
+  * 3. Tim 이 변경된 작성 코드를 가져온다. git pull [명칭] master 명령한다. 그리고 pull 땡겨온 것 을 `꼭` add commit push 를 통해 github 에 올린다. 변경된 push 를 하지 않은체 한다면 다음 commit 이 작동하지 않고 충돌이 난다. 
+  
+  ![](/tutorial/Git_files/1.png)
+  ![](/tutorial/Git_files/2.png)
+  ![](/tutorial/Git_files/3.png)
+  ![](/tutorial/Git_files/4.png)
+  ![](/tutorial/Git_files/5.png)
+  ![](/tutorial/Git_files/6.png)
+  ![](/tutorial/Git_files/7.png)
+  ![](/tutorial/Git_files/8.png)
+  
+  
+
+
+
+
+
+
+
+## git remote remove [명칭]
+
+* remote 연결된거 지우기 
 
 ## git branch -d test
-
 
 * branch 지우기 
 
@@ -128,8 +157,6 @@ git branch -d test
 
 
 ```
-
-
 
 
 ## git push origin --delete test

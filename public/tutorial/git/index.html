@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="1.Command Line git ls  파일보기  git ls -A  숨겨진 파일까지 보기  git ls -al  상세 내용  // (1) (2)(3) (4) (5) (6) (7) (8) //drwxr-xr-x 2 root wheel 64B 11 7 14:14 test/ //1접근 권한 (읽기/쓰기/실행 가능) 여부 //2chmod 명령어 //3링크된 파일 갯수 //4소유자 //5소유그룹 //6파일 크기 //7만든 날짜 //8만든 시간 //9파일/디렉토리 이름  git cd 디렉토리 이름  디렉토리로 이동( print working List )  myuser@mymachine:~$ `cd` Downloads  git cd-  뒤로가기  git pwd  내가 어디있는지 확인  // myuser@mymachine:~/Downloads$ pwd // showing that .">
+  <meta name="description" content="1.Command Line (터미널) ls  파일보기  ls -A  숨겨진 파일까지 보기  ls -al  상세 내용  // (1) (2)(3) (4) (5) (6) (7) (8) //drwxr-xr-x 2 root wheel 64B 11 7 14:14 test/ //1접근 권한 (읽기/쓰기/실행 가능) 여부 //2chmod 명령어 //3링크된 파일 갯수 //4소유자 //5소유그룹 //6파일 크기 //7만든 날짜 //8만든 시간 //9파일/디렉토리 이름  cd 디렉토리 이름  디렉토리로 이동( print working List )  myuser@mymachine:~$ `cd` Downloads  cd-  뒤로가기  cd /  global 로 가기 (제일 처음 root 디렉토리로 이동 )  pwd  내가 어디있는지 확인  // myuser@mymachine:~/Downloads$ pwd // showing that .">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/git/">
@@ -130,7 +130,7 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/git/">
   <meta property="og:title" content="Git | JohnJung">
-  <meta property="og:description" content="1.Command Line git ls  파일보기  git ls -A  숨겨진 파일까지 보기  git ls -al  상세 내용  // (1) (2)(3) (4) (5) (6) (7) (8) //drwxr-xr-x 2 root wheel 64B 11 7 14:14 test/ //1접근 권한 (읽기/쓰기/실행 가능) 여부 //2chmod 명령어 //3링크된 파일 갯수 //4소유자 //5소유그룹 //6파일 크기 //7만든 날짜 //8만든 시간 //9파일/디렉토리 이름  git cd 디렉토리 이름  디렉토리로 이동( print working List )  myuser@mymachine:~$ `cd` Downloads  git cd-  뒤로가기  git pwd  내가 어디있는지 확인  // myuser@mymachine:~/Downloads$ pwd // showing that ."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="1.Command Line (터미널) ls  파일보기  ls -A  숨겨진 파일까지 보기  ls -al  상세 내용  // (1) (2)(3) (4) (5) (6) (7) (8) //drwxr-xr-x 2 root wheel 64B 11 7 14:14 test/ //1접근 권한 (읽기/쓰기/실행 가능) 여부 //2chmod 명령어 //3링크된 파일 갯수 //4소유자 //5소유그룹 //6파일 크기 //7만든 날짜 //8만든 시간 //9파일/디렉토리 이름  cd 디렉토리 이름  디렉토리로 이동( print working List )  myuser@mymachine:~$ `cd` Downloads  cd-  뒤로가기  cd /  global 로 가기 (제일 처음 root 디렉토리로 이동 )  pwd  내가 어디있는지 확인  // myuser@mymachine:~/Downloads$ pwd // showing that ."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -427,24 +427,27 @@
 <ul>
 <li>
 <ul>
-<li><a href="#1-command-line">1.Command Line</a></li>
-<li><a href="#git-ls">git ls</a></li>
-<li><a href="#git-ls-a">git ls -A</a></li>
-<li><a href="#git-ls-al">git ls -al</a></li>
-<li><a href="#git-cd-디렉토리-이름">git cd 디렉토리 이름</a></li>
-<li><a href="#git-cd">git cd-</a></li>
-<li><a href="#git-pwd">git pwd</a></li>
-<li><a href="#git-touch-file-name">git touch [file_name]</a></li>
-<li><a href="#git-mkdir-dir-name">git mkdir [dir_name]</a></li>
-<li><a href="#git-cat-file-name">git cat [file_name]</a></li>
-<li><a href="#git-mv-file-or-dir-target-dir">git mv [file_or_dir] [target_dir]</a></li>
-<li><a href="#git-mv-file-or-dir-new-name">git mv [file_or_dir] [new_name]</a></li>
-<li><a href="#git-cp-file-target-dir-or-cp-r-folder">git cp [file] [target_dir] or cp -r [folder]</a></li>
-<li><a href="#git-rm-filename">git rm [filename]</a></li>
-<li><a href="#git-rm-r-dirname">git rm -r [dirname]</a></li>
-<li><a href="#git-rm-f-file-or-dirname">git rm -f [file or dirname];</a></li>
-<li><a href="#toc_16">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</a></li>
-<li><a href="#2-version-control-system">2.Version Control System</a></li>
+<li><a href="#1-command-line-터미널">1.Command Line (터미널)</a></li>
+<li><a href="#ls">ls</a></li>
+<li><a href="#ls-a">ls -A</a></li>
+<li><a href="#ls-al">ls -al</a></li>
+<li><a href="#cd-디렉토리-이름">cd 디렉토리 이름</a></li>
+<li><a href="#cd">cd-</a></li>
+<li><a href="#cd-1">cd /</a></li>
+<li><a href="#pwd">pwd</a></li>
+<li><a href="#touch-file-name">touch [file_name]</a></li>
+<li><a href="#mkdir-dir-name">mkdir [dir_name]</a></li>
+<li><a href="#cat-file-name">cat [file_name]</a></li>
+<li><a href="#mv-file-or-dir-target-dir">mv [file_or_dir] [target_dir]</a></li>
+<li><a href="#mv-file-or-dir-new-name">mv [file_or_dir] [new_name]</a></li>
+<li><a href="#cp-file-target-dir-or-cp-r-folder">cp [file] [target_dir] or cp -r [folder]</a></li>
+<li><a href="#rm-filename">rm [filename]</a></li>
+<li><a href="#rm-r-dirname">rm -r [dirname]</a></li>
+<li><a href="#rm-f-file-or-dirname">rm -f [file or dirname];</a></li>
+<li><a href="#toc_17">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</a></li>
+<li><a href="#2-git-version-control-system">2.Git(Version Control System)</a></li>
+<li><a href="#git-work-flow">git-work-flow</a></li>
+<li><a href="#git-remote-remove-명칭">git remote remove [명칭]</a></li>
 <li><a href="#git-branch-d-test">git branch -d test</a></li>
 <li><a href="#git-push-origin-delete-test">git push origin &ndash;delete test</a></li>
 <li><a href="#git-branch-a">git branch -a</a></li>
@@ -487,21 +490,21 @@
           <div class="article-style" itemprop="articleBody">
             
 
-<h2 id="1-command-line">1.Command Line</h2>
+<h2 id="1-command-line-터미널">1.Command Line (터미널)</h2>
 
-<h2 id="git-ls">git ls</h2>
+<h2 id="ls">ls</h2>
 
 <ul>
 <li>파일보기</li>
 </ul>
 
-<h2 id="git-ls-a">git ls -A</h2>
+<h2 id="ls-a">ls -A</h2>
 
 <ul>
 <li>숨겨진 파일까지 보기</li>
 </ul>
 
-<h2 id="git-ls-al">git ls -al</h2>
+<h2 id="ls-al">ls -al</h2>
 
 <ul>
 <li>상세 내용</li>
@@ -524,7 +527,7 @@
 
 </code></pre>
 
-<h2 id="git-cd-디렉토리-이름">git cd 디렉토리 이름</h2>
+<h2 id="cd-디렉토리-이름">cd 디렉토리 이름</h2>
 
 <ul>
 <li>디렉토리로 이동( print working List )</li>
@@ -534,13 +537,19 @@
 
 </code></pre>
 
-<h2 id="git-cd">git cd-</h2>
+<h2 id="cd">cd-</h2>
 
 <ul>
 <li>뒤로가기</li>
 </ul>
 
-<h2 id="git-pwd">git pwd</h2>
+<h2 id="cd-1">cd /</h2>
+
+<ul>
+<li>global 로 가기 (제일 처음 root 디렉토리로 이동 )</li>
+</ul>
+
+<h2 id="pwd">pwd</h2>
 
 <ul>
 <li>내가 어디있는지 확인</li>
@@ -550,65 +559,93 @@
 // showing that .. Users/myuser/Downloads
 </code></pre>
 
-<h2 id="git-touch-file-name">git touch [file_name]</h2>
+<h2 id="touch-file-name">touch [file_name]</h2>
 
 <ul>
 <li>빈 파일 생성</li>
 </ul>
 
-<h2 id="git-mkdir-dir-name">git mkdir [dir_name]</h2>
+<h2 id="mkdir-dir-name">mkdir [dir_name]</h2>
 
 <ul>
 <li>디렉토리 생성</li>
 </ul>
 
-<h2 id="git-cat-file-name">git cat [file_name]</h2>
+<h2 id="cat-file-name">cat [file_name]</h2>
 
 <ul>
 <li>텍스트 형태의 파일 확인</li>
 </ul>
 
-<h2 id="git-mv-file-or-dir-target-dir">git mv [file_or_dir] [target_dir]</h2>
+<h2 id="mv-file-or-dir-target-dir">mv [file_or_dir] [target_dir]</h2>
 
 <ul>
 <li>파일 및 디렉토리 옮기기</li>
 </ul>
 
-<h2 id="git-mv-file-or-dir-new-name">git mv [file_or_dir] [new_name]</h2>
+<h2 id="mv-file-or-dir-new-name">mv [file_or_dir] [new_name]</h2>
 
 <ul>
 <li>파일 및 디렉토리 이름 바꾸기</li>
 </ul>
 
-<h2 id="git-cp-file-target-dir-or-cp-r-folder">git cp [file] [target_dir] or cp -r [folder]</h2>
+<h2 id="cp-file-target-dir-or-cp-r-folder">cp [file] [target_dir] or cp -r [folder]</h2>
 
 <ul>
 <li>복사</li>
 </ul>
 
-<h2 id="git-rm-filename">git rm [filename]</h2>
+<h2 id="rm-filename">rm [filename]</h2>
 
 <ul>
 <li>파일 삭제</li>
 <li>휴지통에 들어가지 않음</li>
 </ul>
 
-<h2 id="git-rm-r-dirname">git rm -r [dirname]</h2>
+<h2 id="rm-r-dirname">rm -r [dirname]</h2>
 
 <ul>
 <li>폴더 삭제</li>
 <li>휴지통에 들어가지 않음</li>
 </ul>
 
-<h2 id="git-rm-f-file-or-dirname">git rm -f [file or dirname];</h2>
+<h2 id="rm-f-file-or-dirname">rm -f [file or dirname];</h2>
 
 <ul>
 <li><code>coution</code> 강제로 지우기</li>
 </ul>
 
-<h2 id="toc_16">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h2>
+<h2 id="toc_17">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h2>
 
-<h2 id="2-version-control-system">2.Version Control System</h2>
+<h2 id="2-git-version-control-system">2.Git(Version Control System)</h2>
+
+<h2 id="git-work-flow">git-work-flow</h2>
+
+<ul>
+<li><p>페어랑 같이 fork 를 받아서 작업할때 쓰는 명령어</p>
+
+<ul>
+<li>1. 각각 서로 github 에 있는 레포주소를 clone 해서 연결한다.</li>
+<li>2. John이 코드를 작성한다. 그리고 add,commit,push 명령어를 통해 github 에 올린다.</li>
+<li>3. Tim 이 변경된 작성 코드를 가져온다. git pull [명칭] master 명령한다. 그리고 pull 땡겨온 것 을 <code>꼭</code> add commit push 를 통해 github 에 올린다. 변경된 push 를 하지 않은체 한다면 다음 commit 이 작동하지 않고 충돌이 난다.
+<br /></li>
+</ul></li>
+</ul>
+
+<p><img src="/tutorial/Git_files/1.png" alt="" />
+  <img src="/tutorial/Git_files/2.png" alt="" />
+  <img src="/tutorial/Git_files/3.png" alt="" />
+  <img src="/tutorial/Git_files/4.png" alt="" />
+  <img src="/tutorial/Git_files/5.png" alt="" />
+  <img src="/tutorial/Git_files/6.png" alt="" />
+  <img src="/tutorial/Git_files/7.png" alt="" />
+  <img src="/tutorial/Git_files/8.png" alt="" /></p>
+
+<h2 id="git-remote-remove-명칭">git remote remove [명칭]</h2>
+
+<ul>
+<li>remote 연결된거 지우기</li>
+</ul>
 
 <h2 id="git-branch-d-test">git branch -d test</h2>
 
