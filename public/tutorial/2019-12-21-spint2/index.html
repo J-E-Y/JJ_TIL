@@ -27,10 +27,11 @@
   
     
   
-  <meta name="description" content="DS &amp; OOP_1 DS &amp; OOP_2 (Instantiation Patterns)  자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법 Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)
- Object 를 생성하는 4가지 방법
- (Instantiation Patterns)
-  Functional   Functional Shared   Prototypal   Pseudoclassical    Functional   var Monster = function() { var body = {}; body.level = 0; body.levelUp = function() { // Instance에 levelUp 라는 메소드를 추가 this.">
+  <meta name="description" content="OPP 란?  갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?
+ 객체들의 모임이다.  객체 지향 프로그래밍 장점
+ 코드의 재사용성 제공 :    객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.
+ 유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.
+ 신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/2019-12-21-spint2/">
@@ -133,10 +134,11 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2019-12-21-spint2/">
   <meta property="og:title" content="__sprint2 | JohnJung">
-  <meta property="og:description" content="DS &amp; OOP_1 DS &amp; OOP_2 (Instantiation Patterns)  자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법 Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)
- Object 를 생성하는 4가지 방법
- (Instantiation Patterns)
-  Functional   Functional Shared   Prototypal   Pseudoclassical    Functional   var Monster = function() { var body = {}; body.level = 0; body.levelUp = function() { // Instance에 levelUp 라는 메소드를 추가 this."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="OPP 란?  갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?
+ 객체들의 모임이다.  객체 지향 프로그래밍 장점
+ 코드의 재사용성 제공 :    객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.
+ 유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.
+ 신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -433,10 +435,27 @@
 <ul>
 <li>
 <ul>
-<li><a href="#ds-oop-1">DS &amp; OOP_1</a></li>
+<li><a href="#opp-란">OPP 란?</a></li>
+<li><a href="#prototype-무엇이냐">prototype 무엇이냐?</a>
+<ul>
+<li><a href="#자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다">자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.</a>
+<ul>
+<li>
+<ul>
+<li><a href="#첫번째-알아야-할것">첫번째 알아야 할것</a></li>
+</ul></li>
+<li><a href="#두번째-알아야할-것">두번째 알아야할 것</a></li>
+<li><a href="#세번째-알아야-할것">세번째 알아야 할것</a></li>
+<li><a href="#네번째-알아야-하는것">네번째 알아야 하는것</a></li>
+<li><a href="#예제">예제)</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#ds-oop-2-instantiation-patterns">DS &amp; OOP_2 (Instantiation Patterns)</a></li>
-<li><a href="#ds-oop-4-prototype">DS &amp; OOP_4 (Prototype)</a></li>
-<li><a href="#ds-oop-5-stack-queue">DS &amp; OOP_5 (Stack, Queue)</a></li>
+<li><a href="#자료구조-stack-queue">자료구조[Stack &amp; Queue]</a>
+<ul>
+<li><a href="#stack-이란">Stack 이란 ?</a></li>
+<li><a href="#queue-이란">Queue 이란 ?</a></li>
+</ul></li>
 <li><a href="#ds-oop-6-linked-list">DS &amp; OOP_6 (Linked List)</a></li>
 </ul></li>
 </ul>
@@ -460,7 +479,367 @@
           <div class="article-style" itemprop="articleBody">
             
 
-<h2 id="ds-oop-1">DS &amp; OOP_1</h2>
+<h2 id="opp-란">OPP 란?</h2>
+
+<ul>
+<li><p>갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?</p>
+
+<ul>
+<li>객체들의 <code>모임</code>이다.</li>
+</ul></li>
+
+<li><p>객체 지향 프로그래밍 장점</p>
+
+<ul>
+<li>코드의 재사용성 제공 :
+<br /></li>
+</ul></li>
+</ul>
+
+<p>객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.</p>
+
+<ul>
+<li><p>유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.</p></li>
+
+<li><p>신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다.</p></li>
+
+<li><p>OOP의 기본 구성 요소</p>
+
+<ul>
+<li><p>클래스(Class)</p></li>
+
+<li><p>객체(Object)</p></li>
+
+<li><p>메서드(Method)</p></li>
+</ul></li>
+
+<li><p>OPP 기본 컨셉 4 가지 있다.</p>
+
+<ul>
+<li>1. 캡슐화(Encapsulation)</li>
+<li>2. 상속(Inheritance)</li>
+<li>3. 추상화(Abstraction)</li>
+<li>4. 여러가지 형태 (Polymorphism)
+<br /></li>
+</ul></li>
+
+<li><ol>
+<li>캡슐화란?</li>
+</ol>
+
+<ul>
+<li><p>속성들(properties)들을  object안에 넣어서 활용한다.</p></li>
+
+<li><p>예시</p></li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>employee라는 객체 안에 객체들을 넣어서 사용한다. 이것이 캡슐화이다.</p>
+</blockquote>
+
+<ul>
+<li><ol>
+<li>상속?</li>
+</ol>
+
+<ul>
+<li>상속은 쉽게 말하면 상위 클래스의 모든 것, 행동을 하위 클래스가 가지고 있으며 그대로 사용할 수도 있고 원하면 Customizing을 할 수 있다는 것이다.</li>
+</ul></li>
+
+<li><p>추상화란?</p>
+
+<ul>
+<li>속에는 복잡하게 되어있지만 사용자가 쓰기에는 굉장히 간단하다.</li>
+<li>인터페이스가 간단해진다.</li>
+<li>복잡한걸 알지않아도 사용자 입장에서는 사용 가능</li>
+</ul></li>
+
+<li><p>여러가지 형태 다양성 ?</p></li>
+</ul>
+
+<h2 id="prototype-무엇이냐">prototype 무엇이냐?</h2>
+
+<h3 id="자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다">자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.</h3>
+
+<ul>
+<li><p>ES6 문법이 도입되기 전에는 JavaScript에는 클래스(Class)가 없었음 그래서 객체 생성을 위해서 prototype을 사용했다.</p></li>
+
+<li><p>객체를 생성하면, 프로토타입이 결정되고, 우리는 그 프로토타입을 변경할 수 있습니다</p></li>
+</ul>
+
+<h5 id="첫번째-알아야-할것">첫번째 알아야 할것</h5>
+
+<ul>
+<li>함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.</li>
+</ul>
+
+<pre><code class="language-js">
+function Person() {}
+
+let x = new Person(); //  x 라는 변수는 객체가 된다. 
+
+
+</code></pre>
+
+<h4 id="두번째-알아야할-것">두번째 알아야할 것</h4>
+
+<ul>
+<li>객체(object)는 함수(function)로부터 시작된다</li>
+</ul>
+
+<pre><code class="language-js">
+function Book() { }                // 함수 &lt;&lt;생성자 함수
+var jsBook = new Book();           // 객체 생성
+
+
+</code></pre>
+
+<ul>
+<li>두가지 방식을 객체를 생성할수 있다.</li>
+</ul>
+
+<pre><code class="language-js">var jsBook = new Book(); // 첫번째 방식 (생성자 함수) // 객체 
+
+var jsBook = {}          // 두번째 방식(생성자 선언 없이 ) // 객체 
+
+
+</code></pre>
+
+<h4 id="세번째-알아야-할것">세번째 알아야 할것</h4>
+
+<ul>
+<li><p>함수 생성시 발생하는 것을 알아야 한다.</p>
+
+<ul>
+<li>1.함수를 정의하면 함수가 생성되며 <code>Prototype object</code>가 같이 생성 됩니다.</li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>생성된 Prototype object는 함수의 prototype 속성을 통해 접근할 수 있습니다.
+(Prototype object같은 경우 <code>함수 생성시</code>(var jsBook = new Book())에만 됩니다. 일반 객체 생성시에는 생성되지 않습니다.)</p>
+</blockquote>
+
+<ul>
+<li>2.함수의 생성과 함께 생성된 Prototype object는 constructor와 <strong>proto</strong>를 갖고 있습니다.</li>
+</ul>
+
+<blockquote>
+<p>constructor는 <code>생성된 함수</code>를 가리키며(여기서는 function Book을 가리킵니다.)</p>
+
+<p><strong>proto</strong>는 Prototype Link로서 객체가 생성될 때 사용된 생성자(함수)의 <code>Prototype object</code>를 가리킵니다.</p>
+</blockquote>
+
+<h4 id="네번째-알아야-하는것">네번째 알아야 하는것</h4>
+
+<ul>
+<li>객체(object) 생성시 발생하는 일</li>
+</ul>
+
+<blockquote>
+<p>생성하는 순간 jsBook 이라는 객체는 <strong>proto</strong> 라는 <code>_proto__</code>라는 프로퍼티를 갖고있습니다.</p>
+</blockquote>
+
+<pre><code class="language-js">
+function Book() { }
+
+Book.prototype.name = &quot;john&quot; 
+
+var jsBook = new Book() // jsBook 은 객체이다. 
+
+
+</code></pre>
+
+<blockquote>
+<p>prototype property(함수 생성시 함께 생성된 Prototype object를 가리킴)는 함수객체만 가지며 <strong>proto</strong>는 객체라면 모두 갖고 있습니다.</p>
+</blockquote>
+
+<p><img src="/tutorial/2019-11-26-js-post_files/Screen Shot 2019-12-16 at 2.39.56 PM.png" alt="" /></p>
+
+<blockquote>
+<p><code>prototype property</code>(함수 생성시 함께 생성된 Prototype object를 가리킴)는 함수객체만 가지며 <code>__proto__</code>는 객체라면 모두 갖고 있습니다.</p>
+</blockquote>
+
+<h4 id="예제">예제)</h4>
+
+<ul>
+<li>1.일반적인 함수 패턴
+<br /></li>
+</ul>
+
+<pre><code class="language-js">
+
+
+function Name(_name){
+    var oName = {
+        name : _name,
+        getName : function(){
+            return this.name;
+        }
+    }
+
+    return oName;
+}
+
+Name('john'); // Object{name: 'siwa', getName:function()} 리턴
+var x = Name('john');
+x.getName(); // 'john' 리턴
+
+
+</code></pre>
+
+<ul>
+<li><p>1.객체 생성자 함수의 활용 - <code>모듈화</code>,<code>프로토타입</code></p>
+
+<ul>
+<li><p>new Key word 를 사용한다.</p></li>
+
+<li><p>이는 객체지향적인 언어를 표방하는 기능, 클래스를 만드는 것과 비슷하다.</p></li>
+
+<li><p>(<code>new</code>라는 키워드는 자바에서 클래스를 호출해서 인스턴스를 만드는 것과 비슷하다)</p></li>
+</ul></li>
+</ul>
+
+<pre><code class="language-js">
+ function Name(_name){
+		console.log('this is',this);
+		this.name = _name;
+		this. getName = function(){
+        return this.name;
+    }
+}
+
+// 함수 를 그냥 호출했을때 와 new 키워드와 같이 호출했을때의 차이점 을 할수 있다. 
+
+// 1. 함수를 그냥 호출했을때
+Name('john'); // this is window, undefined 리턴
+
+// 2. new 키워드와 함께 함수를 호출했을 때
+new Name('john'); // this is Name{}, Name{name:'monkey', getName()} 리턴
+
+
+
+var x = new Name('john');
+
+x.getName(); // 'john'
+
+
+
+
+</code></pre>
+
+<ul>
+<li>2.객체 생성자 함수의 활용 - <code>모듈화</code> 와  <code>프로토타입</code></li>
+</ul>
+
+<p>*기능별로 모듈화 시킨 독립적인 클래스 단위로 그루핑할때 생성자 함수를 활용할 수 있다.</p>
+
+<ul>
+<li>예를 들어 구글지도 UI를 만들 때, 화면에 보이는 기능 단위 즉 의미적으로 다른 기능이라면 (ex. 사진, 공유, 검색, 지도화면, 설정) 각각의 기능을 별도 모듈(클래스 단위)로 만들 수 있다.</li>
+</ul>
+
+<pre><code class="language-js">
+// 모듈화 수도코드 예시
+// 지도를 표현하는 영역 클래스
+
+function Map(name){
+    this.name = &quot;john&quot;
+    }
+    
+// 지도를 검색하는 영역 클래스
+function SearchMenu(){}
+
+// 사진을 슬라이드 하는 영역 클래스
+function ViewCurrentPhotos(){}
+
+
+var oMap = new Map(&quot;john&quot;);
+
+ // 여기서 setDraw 를 설정해준다.
+Map.prototype.setDraw = function (){
+    console.log(name + &quot;그림을 그리네 ?&quot;);
+}
+
+oMap.setDraw() // john 그림을 그리네?
+
+
+</code></pre>
+
+<ul>
+<li>3.객체 생성자 함수의 활용 - <code>모듈화</code> 와  <code>프로토타입</code></li>
+</ul>
+
+<pre><code class="language-js">
+
+
+function Car(band,name,color) {
+    // 인스턴스가 만들어 질때  실행될 코드들... 
+}
+
+// new 키워드를 통해 클라스의 인스턴스를 만들어낼 수 있습니다. 
+
+
+
+// 1. 속성  : band,name,color , currentFuel,maxSpeed
+// 2. 메소드  : refuel() ,setSpeed(), drive()
+
+
+
+// ex
+
+
+// 1. 클라스 함수 와 인스턴스 생성 
+
+function Car(brand,name,color) { // Car() 는 클라스
+	
+	this.what_brand = brand; // 여기서 this 는 인자값이 드러갈 변수이름 (avante)
+	this.what_name = name;	
+	this.what_color = color;
+}
+
+// 2. 클라스 함수를 변수에 담고 파라미터 들어갈 값들 넣는다. 
+
+let avante = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;); // 변수를 만든다 (인스턴스값으로 들어갈 )
+
+// 3. 추가로 인스턴스를 생성 
+
+Car.prototype.what_drive = function () { // Car() 인스턴스 생성 그리고 function 는 인스턴스 값  
+    console.log(this.name + &quot;가 운전을 합니다. &quot;);
+}
+
+
+avante.what_name // 인스턴스 값 출력
+// &quot;avante&quot;
+avante.what_brand
+// &quot;GM&quot;
+avante.what_color
+// &quot;black&quot;
+
+avante.what_drive()  // 새로 생성한 what_drive 출력 
+// jj 가 운전을 합니다. 
+
+`tip`
+
+let arr = [1,2,3,4,5]     // 배열 만들기 
+let arr = new Array(1,2,3,4,5) // 배열 만들기  // Array클라스 안에 (인자값들) 
+
+
+
+
+// ES6  에서는 클라스라는 키워드를 이용해서 정의 할수 있다. 
+
+
+class car {
+	constructor(brand,name,color) {
+	
+	// 인스턴스가 만들어질 때 실행되는 코드
+		}
+}
+
+
+
+</code></pre>
 
 <h2 id="ds-oop-2-instantiation-patterns">DS &amp; OOP_2 (Instantiation Patterns)</h2>
 
@@ -510,9 +889,100 @@ var Monster = function() {
 
 </code></pre>
 
-<h2 id="ds-oop-4-prototype">DS &amp; OOP_4 (Prototype)</h2>
+<h2 id="자료구조-stack-queue">자료구조[Stack &amp; Queue]</h2>
 
-<h2 id="ds-oop-5-stack-queue">DS &amp; OOP_5 (Stack, Queue)</h2>
+<h3 id="stack-이란">Stack 이란 ?</h3>
+
+<ul>
+<li>마지막에 쌓인것이 먼저 먼저 나오는 자료구조</li>
+<li>Last In First Out  =&gt; <code>L I F O</code> 이렇게 표현된다.
+<br />
+
+<br /></li>
+</ul>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-14-55-37.jpeg" alt="" /></p>
+
+<ul>
+<li>1. Data[0]  들어간다</li>
+<li>2. Data[1]  들어간다.</li>
+<li>3. Data[2]  들어간다.</li>
+</ul>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-15-02-10.jpeg" alt="" /></p>
+
+<ul>
+<li><p>Data[0] 을 빼려고 한다면 Data[2] =&gt;Data[1] =&gt;Data[0] 이렇게 순서가 된다.</p>
+
+<ul>
+<li>1.Data[2] 빠진다.</li>
+<li>2.Data[1] 빠진다.</li>
+<li>3.Data[0] 남는다.</li>
+</ul></li>
+
+<li><p>method</p>
+
+<ul>
+<li>1. push : 맨 뒤에(위에) 삽입</li>
+<li>2. pop : 맨위 제거</li>
+<li>3. size : 크기 확인</li>
+</ul></li>
+</ul>
+
+<h3 id="queue-이란">Queue 이란 ?</h3>
+
+<ul>
+<li>먼저 들어간 데이터가 먼저 나오는 자료 구조.</li>
+<li>First In First Out =&gt; <code>F I F O</code>
+<br /></li>
+</ul>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/2.jpeg" alt="" /></p>
+
+<ul>
+<li>1. Data[0]  들어간다</li>
+<li>2. Data[1]  들어간다.</li>
+<li>3. Data[2]  들어간다.</li>
+</ul>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/111.jpeg" alt="" /></p>
+
+<ul>
+<li>1.Data[0] 빠진다.</li>
+<li>2.Data[1] 빠진다.</li>
+
+<li><p>3.Data[2] 남는다.</p></li>
+
+<li><p>method</p>
+
+<ul>
+<li>1. enqueue : 맨 뒤에(위에)삽입</li>
+<li>2. dequeue : 제일 앞에 빼기
+
+<br />
+<br /></li>
+</ul></li>
+
+<li><p>오류 발생</p>
+
+<ul>
+<li><p>만약 큐데이터가 비워있는데  삭제한다고 하면 오류가 발생한다.
+Queue Underflow 라고 한다.</p></li>
+
+<li><p>만약 큐데이터가 꽉 차있을 경우 삽일 하려고 한다면 오류가 난다.
+Queue Overflow 라고 한다.</p></li>
+</ul></li>
+</ul>
+
+<p>1.자료 구조의 모양 추상적으로 그림 그리기 (실제 그림 그린 후 사진 캡처, 온라인 그림 등 관계 없음)</p>
+
+<p>2.해당 자료구조가 가지고 있는 property 와 method 찾아보기</p>
+
+<p>3.각 method는 어떻게 동작되는 것인지 알아보고 기록하기</p>
+
+<ol>
+<li>optional: 가능하다면 해당 자료구조와 각 method 를 pseudo code (의사 코드) 로 표현해 보기</li>
+</ol>
 
 <h2 id="ds-oop-6-linked-list">DS &amp; OOP_6 (Linked List)</h2>
 
