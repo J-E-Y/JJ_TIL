@@ -41,19 +41,6 @@
     </item>
     
     <item>
-      <title>DS &amp; OOP</title>
-      <link>/tutorial/2019-12-21-spint2/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/2019-12-21-spint2/</guid>
-      <description>OPP 란?  갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?
- 객체들의 모임이다.  객체 지향 프로그래밍 장점
- 코드의 재사용성 제공 :    객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.
- 유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.
- 신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다.</description>
-    </item>
-    
-    <item>
       <title>Git</title>
       <link>/tutorial/git/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -132,6 +119,19 @@ If there are two or more words that are the same length, return the first word f
       <guid>/tutorial/javascript_algorithm/</guid>
       <description>Qeustion scrabble word calculator  implement the word_calc method to return the correct Scrabble word score. The scores are already set up for you to use and are managed within Dictionaries:
  one_point_values = [&amp;quot;a&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;n&amp;quot;, &amp;quot;r&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot;t&amp;quot;]; two_point_values = [&amp;quot;d&amp;quot;, &amp;quot;g&amp;quot;]; three_point_values = [&amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;m&amp;quot;, &amp;quot;p&amp;quot;]; four_point_values = [&amp;quot;f&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;v&amp;quot;, &amp;quot;w&amp;quot;, &amp;quot;y&amp;quot;]; five_point_values = [&amp;quot;k&amp;quot;]; eight_point_values = [&amp;quot;j&amp;quot;,&amp;quot;x&amp;quot;]; ten_point_values = [&amp;quot;z&amp;quot;,&amp;quot;q&amp;quot;]; word_calc(&amp;quot;zoo&amp;quot;) // 12 word_calc(&amp;quot;bus&amp;quot;) // 5  My_soultion function word_calc(word) { var inputArr = word.</description>
+    </item>
+    
+    <item>
+      <title>__DS &amp; OOP</title>
+      <link>/tutorial/2019-12-21-spint2/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2019-12-21-spint2/</guid>
+      <description>OPP 란?  갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?
+ 객체들의 모임이다.  객체 지향 프로그래밍 장점
+ 코드의 재사용성 제공 :    객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.
+ 유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.
+ 신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다.</description>
     </item>
     
     <item>
