@@ -465,7 +465,13 @@
 <li>
 <ul>
 <li><a href="#stack-이란">Stack 이란 ?</a></li>
+<li><a href="#property">Property</a></li>
+<li><a href="#method">method</a></li>
+<li><a href="#오류">오류</a></li>
 <li><a href="#queue-이란">Queue 이란 ?</a></li>
+<li><a href="#property-1">property</a></li>
+<li><a href="#method-1">method</a></li>
+<li><a href="#오류-발생">오류 발생</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#ds-oop-6-linked-list">DS &amp; OOP_6 (Linked List)</a></li>
@@ -895,6 +901,18 @@ var Monster = function() {
 
 <h2 id="자료구조-stack-queue">자료구조[Stack &amp; Queue]</h2>
 
+<blockquote>
+<p>1.자료 구조의 모양 추상적으로 그림 그리기 (실제 그림 그린 후 사진 캡처, 온라인 그림 등 관계 없음)</p>
+
+<p>2.해당 자료구조가 가지고 있는 property 와 method 찾아보기</p>
+
+<p>3.각 method는 어떻게 동작되는 것인지 알아보고 기록하기</p>
+
+<p>4.optional: 가능하다면 해당 자료구조와 각 method 를 pseudo code (의사 코드) 로 표현해 보기</p>
+</blockquote>
+
+<hr />
+
 <h4 id="stack-이란">Stack 이란 ?</h4>
 
 <ul>
@@ -923,14 +941,30 @@ var Monster = function() {
 <li>2.Data[1] 빠진다.</li>
 <li>3.Data[0] 남는다.</li>
 </ul></li>
+</ul>
 
-<li><p>method</p>
+<h4 id="property">Property</h4>
+
+<pre><code>* top : 가장 최근에 들어간, 맨 위의 값
+* maxSize : 스택의 최대 할당 크기
+* storage : 스택이 가지고 있는 데이터들의 모음
+</code></pre>
+
+<h4 id="method">method</h4>
+
+<pre><code>* 1. push : 맨 뒤에(위에) 삽입
+* 2. pop : 맨위 제거
+* 3. size : 크기 확인
+</code></pre>
+
+<h4 id="오류">오류</h4>
 
 <ul>
-<li>1. push : 맨 뒤에(위에) 삽입</li>
-<li>2. pop : 맨위 제거</li>
-<li>3. size : 크기 확인</li>
-</ul></li>
+<li><p>stack이  꽉차있는데 데이터를 삽입하려고 하면  Stack Overflow가 발생해 데이터가 들어가는 것을 차단한다.</p></li>
+
+<li><p>재귀함수가 멈추지 않을떄 자바스크립상에서 이를 방지하기 위해 <code>Maximum call stack size exceeded</code> 발생 시킨다 이것은 <code>Stack Overflow</code>에 기반한 오류로 볼 수 있다.</p></li>
+
+<li><p>Stack이 없는데 값을 꺼내려고 하면 <code>Stack underflow</code>가 발생한다.</p></li>
 </ul>
 
 <h4 id="queue-이란">Queue 이란 ?</h4>
@@ -954,39 +988,30 @@ var Monster = function() {
 <ul>
 <li>1.Data[0] 빠진다.</li>
 <li>2.Data[1] 빠진다.</li>
-
-<li><p>3.Data[2] 남는다.</p></li>
-
-<li><p>method</p>
-
-<ul>
-<li>1. enqueue : 맨 뒤에(위에)삽입</li>
-<li>2. dequeue : 제일 앞에 빼기
-
-<br />
-<br /></li>
-</ul></li>
-
-<li><p>오류 발생</p>
-
-<ul>
-<li><p>만약 큐데이터가 비워있는데  삭제한다고 하면 오류가 발생한다.
-Queue Underflow 라고 한다.</p></li>
-
-<li><p>만약 큐데이터가 꽉 차있을 경우 삽일 하려고 한다면 오류가 난다.
-Queue Overflow 라고 한다.</p></li>
-</ul></li>
+<li>3.Data[2] 남는다.</li>
 </ul>
 
-<p>1.자료 구조의 모양 추상적으로 그림 그리기 (실제 그림 그린 후 사진 캡처, 온라인 그림 등 관계 없음)</p>
+<h4 id="property-1">property</h4>
 
-<p>2.해당 자료구조가 가지고 있는 property 와 method 찾아보기</p>
+<pre><code>* front : 가장 먼저 들어간, 맨 밑의 값
+* rear : 새로운 데이터가 들어갈 인덱스 (가장 최근의 인덱스 + 1)
+* storage : 큐가 가지고 있는 데이터들의 모음
+</code></pre>
 
-<p>3.각 method는 어떻게 동작되는 것인지 알아보고 기록하기</p>
+<h4 id="method-1">method</h4>
 
-<ol>
-<li>optional: 가능하다면 해당 자료구조와 각 method 를 pseudo code (의사 코드) 로 표현해 보기</li>
-</ol>
+<pre><code>* 1. enqueue : 맨 뒤에(위에)삽입
+* 2. dequeue : 제일 앞에 빼기
+</code></pre>
+
+<h4 id="오류-발생">오류 발생</h4>
+
+<ul>
+<li>만약 큐데이터가 비워있는데  삭제한다고 하면 오류가 발생한다.
+<code>Queue Underflow</code> 라고 한다.</li>
+<li>만약 큐데이터가 꽉 차있을 경우 삽일 하려고 한다면 오류가 난다.
+<code>Queue Overflow</code> 라고 한다.</li>
+</ul>
 
 <h2 id="ds-oop-6-linked-list">DS &amp; OOP_6 (Linked List)</h2>
 
