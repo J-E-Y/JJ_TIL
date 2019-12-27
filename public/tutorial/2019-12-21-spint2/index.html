@@ -27,9 +27,7 @@
   
     
   
-  <meta name="description" content="OPP 란?  갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?
- 객체들의 모임이다.  객체 지향 프로그래밍 장점
- 코드의 재사용성 제공 :    객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.
+  <meta name="description" content="OPP 란? 갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?  객체들의 모임이다.  객체 지향 프로그래밍 장점  코드의 재사용성 제공 :   객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.
  유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.
  신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다.">
 
@@ -134,9 +132,7 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2019-12-21-spint2/">
   <meta property="og:title" content="__DS &amp; OOP | JohnJung">
-  <meta property="og:description" content="OPP 란?  갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?
- 객체들의 모임이다.  객체 지향 프로그래밍 장점
- 코드의 재사용성 제공 :    객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.
+  <meta property="og:description" content="OPP 란? 갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?  객체들의 모임이다.  객체 지향 프로그래밍 장점  코드의 재사용성 제공 :   객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.
  유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.
  신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
@@ -435,7 +431,20 @@
 <ul>
 <li>
 <ul>
-<li><a href="#opp-란">OPP 란?</a></li>
+<li><a href="#opp-란">OPP 란?</a>
+<ul>
+<li>
+<ul>
+<li><a href="#갹체-지향-프로그래밍이란-oop-object-oriented-programming">갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?</a></li>
+<li><a href="#객체-지향-프로그래밍-장점">객체 지향 프로그래밍 장점</a></li>
+<li><a href="#oop의-기본-구성-요소">OOP의 기본 구성 요소</a></li>
+<li><a href="#opp-기본-컨셉-4-가지-있다">OPP 기본 컨셉 4 가지 있다.</a></li>
+<li><a href="#1-캡슐화란">1.캡슐화란?</a></li>
+<li><a href="#2-상속">2.  상속?</a></li>
+<li><a href="#추상화란">추상화란?</a></li>
+<li><a href="#여러가지-형태-다양성">여러가지 형태 다양성 ?</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#prototype-무엇이냐">prototype 무엇이냐?</a>
 <ul>
 <li><a href="#자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다">자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.</a>
@@ -453,8 +462,11 @@
 <li><a href="#ds-oop-2-instantiation-patterns">DS &amp; OOP_2 (Instantiation Patterns)</a></li>
 <li><a href="#자료구조-stack-queue">자료구조[Stack &amp; Queue]</a>
 <ul>
+<li>
+<ul>
 <li><a href="#stack-이란">Stack 이란 ?</a></li>
 <li><a href="#queue-이란">Queue 이란 ?</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#ds-oop-6-linked-list">DS &amp; OOP_6 (Linked List)</a></li>
 </ul></li>
@@ -481,19 +493,17 @@
 
 <h2 id="opp-란">OPP 란?</h2>
 
-<ul>
-<li><p>갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?</p>
+<h4 id="갹체-지향-프로그래밍이란-oop-object-oriented-programming">갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?</h4>
 
 <ul>
 <li>객체들의 <code>모임</code>이다.</li>
-</ul></li>
+</ul>
 
-<li><p>객체 지향 프로그래밍 장점</p>
+<h4 id="객체-지향-프로그래밍-장점">객체 지향 프로그래밍 장점</h4>
 
 <ul>
 <li>코드의 재사용성 제공 :
 <br /></li>
-</ul></li>
 </ul>
 
 <p>객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.</p>
@@ -502,8 +512,9 @@
 <li><p>유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.</p></li>
 
 <li><p>신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다.</p></li>
+</ul>
 
-<li><p>OOP의 기본 구성 요소</p>
+<h4 id="oop의-기본-구성-요소">OOP의 기본 구성 요소</h4>
 
 <ul>
 <li><p>클래스(Class)</p></li>
@@ -511,9 +522,9 @@
 <li><p>객체(Object)</p></li>
 
 <li><p>메서드(Method)</p></li>
-</ul></li>
+</ul>
 
-<li><p>OPP 기본 컨셉 4 가지 있다.</p>
+<h4 id="opp-기본-컨셉-4-가지-있다">OPP 기본 컨셉 4 가지 있다.</h4>
 
 <ul>
 <li>1. 캡슐화(Encapsulation)</li>
@@ -521,42 +532,35 @@
 <li>3. 추상화(Abstraction)</li>
 <li>4. 여러가지 형태 (Polymorphism)
 <br /></li>
-</ul></li>
+</ul>
 
-<li><ol>
-<li>캡슐화란?</li>
-</ol>
+<h4 id="1-캡슐화란">1.캡슐화란?</h4>
 
 <ul>
 <li><p>속성들(properties)들을  object안에 넣어서 활용한다.</p></li>
 
 <li><p>예시</p></li>
-</ul></li>
 </ul>
 
 <blockquote>
 <p>employee라는 객체 안에 객체들을 넣어서 사용한다. 이것이 캡슐화이다.</p>
 </blockquote>
 
-<ul>
-<li><ol>
-<li>상속?</li>
-</ol>
+<h4 id="2-상속">2.  상속?</h4>
 
 <ul>
 <li>상속은 쉽게 말하면 상위 클래스의 모든 것, 행동을 하위 클래스가 가지고 있으며 그대로 사용할 수도 있고 원하면 Customizing을 할 수 있다는 것이다.</li>
-</ul></li>
+</ul>
 
-<li><p>추상화란?</p>
+<h4 id="추상화란">추상화란?</h4>
 
 <ul>
 <li>속에는 복잡하게 되어있지만 사용자가 쓰기에는 굉장히 간단하다.</li>
 <li>인터페이스가 간단해진다.</li>
 <li>복잡한걸 알지않아도 사용자 입장에서는 사용 가능</li>
-</ul></li>
-
-<li><p>여러가지 형태 다양성 ?</p></li>
 </ul>
+
+<h4 id="여러가지-형태-다양성">여러가지 형태 다양성 ?</h4>
 
 <h2 id="prototype-무엇이냐">prototype 무엇이냐?</h2>
 
@@ -891,7 +895,7 @@ var Monster = function() {
 
 <h2 id="자료구조-stack-queue">자료구조[Stack &amp; Queue]</h2>
 
-<h3 id="stack-이란">Stack 이란 ?</h3>
+<h4 id="stack-이란">Stack 이란 ?</h4>
 
 <ul>
 <li>마지막에 쌓인것이 먼저 먼저 나오는 자료구조</li>
@@ -929,7 +933,7 @@ var Monster = function() {
 </ul></li>
 </ul>
 
-<h3 id="queue-이란">Queue 이란 ?</h3>
+<h4 id="queue-이란">Queue 이란 ?</h4>
 
 <ul>
 <li>먼저 들어간 데이터가 먼저 나오는 자료 구조.</li>

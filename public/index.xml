@@ -10441,19 +10441,17 @@ function checkio(data) {
 
 &lt;h2 id=&#34;opp-란&#34;&gt;OPP 란?&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?&lt;/p&gt;
+&lt;h4 id=&#34;갹체-지향-프로그래밍이란-oop-object-oriented-programming&#34;&gt;갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;객체들의 &lt;code&gt;모임&lt;/code&gt;이다.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;객체 지향 프로그래밍 장점&lt;/p&gt;
+&lt;h4 id=&#34;객체-지향-프로그래밍-장점&#34;&gt;객체 지향 프로그래밍 장점&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;코드의 재사용성 제공 :
 &lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.&lt;/p&gt;
@@ -10462,8 +10460,9 @@ function checkio(data) {
 &lt;li&gt;&lt;p&gt;유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;OOP의 기본 구성 요소&lt;/p&gt;
+&lt;h4 id=&#34;oop의-기본-구성-요소&#34;&gt;OOP의 기본 구성 요소&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;클래스(Class)&lt;/p&gt;&lt;/li&gt;
@@ -10471,9 +10470,9 @@ function checkio(data) {
 &lt;li&gt;&lt;p&gt;객체(Object)&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;메서드(Method)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;OPP 기본 컨셉 4 가지 있다.&lt;/p&gt;
+&lt;h4 id=&#34;opp-기본-컨셉-4-가지-있다&#34;&gt;OPP 기본 컨셉 4 가지 있다.&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;1. 캡슐화(Encapsulation)&lt;/li&gt;
@@ -10481,42 +10480,35 @@ function checkio(data) {
 &lt;li&gt;3. 추상화(Abstraction)&lt;/li&gt;
 &lt;li&gt;4. 여러가지 형태 (Polymorphism)
 &lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;캡슐화란?&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h4 id=&#34;1-캡슐화란&#34;&gt;1.캡슐화란?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;속성들(properties)들을  object안에 넣어서 활용한다.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;예시&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;employee라는 객체 안에 객체들을 넣어서 사용한다. 이것이 캡슐화이다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;상속?&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h4 id=&#34;2-상속&#34;&gt;2.  상속?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;상속은 쉽게 말하면 상위 클래스의 모든 것, 행동을 하위 클래스가 가지고 있으며 그대로 사용할 수도 있고 원하면 Customizing을 할 수 있다는 것이다.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;추상화란?&lt;/p&gt;
+&lt;h4 id=&#34;추상화란&#34;&gt;추상화란?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;속에는 복잡하게 되어있지만 사용자가 쓰기에는 굉장히 간단하다.&lt;/li&gt;
 &lt;li&gt;인터페이스가 간단해진다.&lt;/li&gt;
 &lt;li&gt;복잡한걸 알지않아도 사용자 입장에서는 사용 가능&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;여러가지 형태 다양성 ?&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h4 id=&#34;여러가지-형태-다양성&#34;&gt;여러가지 형태 다양성 ?&lt;/h4&gt;
 
 &lt;h2 id=&#34;prototype-무엇이냐&#34;&gt;prototype 무엇이냐?&lt;/h2&gt;
 
@@ -10851,7 +10843,7 @@ var Monster = function() {
 
 &lt;h2 id=&#34;자료구조-stack-queue&#34;&gt;자료구조[Stack &amp;amp; Queue]&lt;/h2&gt;
 
-&lt;h3 id=&#34;stack-이란&#34;&gt;Stack 이란 ?&lt;/h3&gt;
+&lt;h4 id=&#34;stack-이란&#34;&gt;Stack 이란 ?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;마지막에 쌓인것이 먼저 먼저 나오는 자료구조&lt;/li&gt;
@@ -10889,7 +10881,7 @@ var Monster = function() {
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;queue-이란&#34;&gt;Queue 이란 ?&lt;/h3&gt;
+&lt;h4 id=&#34;queue-이란&#34;&gt;Queue 이란 ?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;먼저 들어간 데이터가 먼저 나오는 자료 구조.&lt;/li&gt;
