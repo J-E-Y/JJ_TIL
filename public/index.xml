@@ -11398,20 +11398,22 @@ var total8 = foo(17) // 1 + 17 = 18
 &lt;h4 id=&#34;this란&#34;&gt;this란?&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;this === execution context 라고도 말한다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;execution 안에는 4 가지가 담긴다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;scope내 변수 및 함수 (Local, Global)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;전달인자 (arguments)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;호출된 근원 (caller)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;this&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;this === execution context 라고도 말한다.&lt;/li&gt;
+&lt;li&gt;콜타임에 따라서 알게된다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h4 id=&#34;execution-안에는-4-가지가-담긴다&#34;&gt;execution 안에는 4 가지가 담긴다.&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;* scope내 변수 및 함수 (Local, Global)
+
+* 전달인자 (arguments)
+
+* 호출된 근원 (caller)
+
+* this
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&#34;this-는-5가지-patterns-이-있다&#34;&gt;this 는 5가지 patterns 이 있다.&lt;/h4&gt;
 
@@ -13579,6 +13581,10 @@ obj.study(); // join 운전을 합니다.
 
 &lt;blockquote&gt;
 &lt;p&gt;boundFn &amp;lt;== this 값이 묶여 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;call&lt;/code&gt;은 실행되는 함수의 this값을 원하는 객체로 바꿔서 실행할 수 있게 해준다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bind&lt;/code&gt;는 실행되는 함수의 this값을 원하는 객체로 고정시키는 새로운 함수를 만들어낸다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h4 id=&#34;call-apply&#34;&gt;call() , apply()&lt;/h4&gt;

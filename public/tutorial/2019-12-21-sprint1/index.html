@@ -455,6 +455,7 @@
 <li>
 <ul>
 <li><a href="#this란">this란?</a></li>
+<li><a href="#execution-안에는-4-가지가-담긴다">execution 안에는 4 가지가 담긴다.</a></li>
 <li><a href="#this-는-5가지-patterns-이-있다">this 는 5가지 patterns 이 있다.</a></li>
 </ul></li>
 </ul></li>
@@ -917,20 +918,22 @@ var total8 = foo(17) // 1 + 17 = 18
 <h4 id="this란">this란?</h4>
 
 <ul>
-<li><p>this === execution context 라고도 말한다.</p></li>
-
-<li><p>execution 안에는 4 가지가 담긴다.</p>
-
-<ul>
-<li><p>scope내 변수 및 함수 (Local, Global)</p></li>
-
-<li><p>전달인자 (arguments)</p></li>
-
-<li><p>호출된 근원 (caller)</p></li>
-
-<li><p>this</p></li>
-</ul></li>
+<li>this === execution context 라고도 말한다.</li>
+<li>콜타임에 따라서 알게된다.
+<br />
+<br /></li>
 </ul>
+
+<h4 id="execution-안에는-4-가지가-담긴다">execution 안에는 4 가지가 담긴다.</h4>
+
+<pre><code>* scope내 변수 및 함수 (Local, Global)
+
+* 전달인자 (arguments)
+
+* 호출된 근원 (caller)
+
+* this
+</code></pre>
 
 <h4 id="this-는-5가지-patterns-이-있다">this 는 5가지 patterns 이 있다.</h4>
 
