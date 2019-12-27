@@ -10450,16 +10450,10 @@ function checkio(data) {
 &lt;h4 id=&#34;객체-지향-프로그래밍-장점&#34;&gt;객체 지향 프로그래밍 장점&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;코드의 재사용성 제공 :
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;코드의 재사용성 제공
+*객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.&lt;/li&gt;
+&lt;li&gt;유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.&lt;/li&gt;
+&lt;li&gt;신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&#34;oop의-기본-구성-요소&#34;&gt;OOP의 기본 구성 요소&lt;/h4&gt;
@@ -11479,12 +11473,16 @@ count.getValue()
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;4. construction mode&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;construction mode&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;주인이 누구냐에 따라서 결정된다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;주인이 누구냐에 따라서 결정된다.&lt;/li&gt;
+&lt;li&gt;new 키워드를 쓰면은 this 는 그냥 인스턴스다
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
@@ -11498,25 +11496,52 @@ function Car(brand,name,color) { // Car() 는 클라스
 // 2. 클라스 함수를 변수에 담고 파라미터 들어갈 값들 넣는다. 
  
 
-let a1 = new Car(&amp;quot;GM&amp;quot;,&amp;quot;avante&amp;quot;,&amp;quot;black&amp;quot;);  // this 
-let a2 = new Car(&amp;quot;GM&amp;quot;,&amp;quot;avante&amp;quot;,&amp;quot;black&amp;quot;); 
-let a3 = new Car(&amp;quot;GM&amp;quot;,&amp;quot;avante&amp;quot;,&amp;quot;black&amp;quot;); 
-let a4 = new Car(&amp;quot;GM&amp;quot;,&amp;quot;avante&amp;quot;,&amp;quot;black&amp;quot;); 
+let a1 = new Car(&amp;quot;GM&amp;quot;,&amp;quot;avante&amp;quot;,&amp;quot;black&amp;quot;);  //인스턴스 생성
+let a2 = new Car(&amp;quot;GM&amp;quot;,&amp;quot;avante&amp;quot;,&amp;quot;black&amp;quot;);  //인스턴스 생성
+let a3 = new Car(&amp;quot;GM&amp;quot;,&amp;quot;avante&amp;quot;,&amp;quot;black&amp;quot;);  //인스턴스 생성
+let a4 = new Car(&amp;quot;GM&amp;quot;,&amp;quot;avante&amp;quot;,&amp;quot;black&amp;quot;);  //인스턴스 생성
 
 
 // 3.this는 값은 ?
 
-// a1가 this
-// a2가 this
-// a3가 this
-// a4가 this 
+// 경우에 따라 계속 변한다 
+
+
+a1.what_brand // a1 은 this
+a2.what_brand // a2 은this
+a3.what_brand // a3 은this
+a4.what_brand // a4 은this
+
+
+
 
 
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;5. call(), .apply()&lt;/li&gt;
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;call(), .apply()&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;call(this,1,2);   this 값에 들어갈 obj 가 this 다&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;apply(this,[1,2]); this 값에 들어갈 obj 가 this 다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;```js&lt;/p&gt;
+
+&lt;p&gt;var add = function  ( x , y ) {
+    this.val = x + y ;    // 여기서 this 는 ?&lt;/p&gt;
+
+&lt;p&gt;var obj = {
+val : 0
+};&lt;/p&gt;
+
+&lt;p&gt;add.call(obj,2,3);  // 5 동일다.  // this 는 obj&lt;/p&gt;
+
+&lt;p&gt;add.apply(obj,[2,3]); // 5  동일하다.  //  this 는obj&lt;/p&gt;
 </description>
     </item>
     

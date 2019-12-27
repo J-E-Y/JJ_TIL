@@ -992,12 +992,16 @@ count.getValue()
 </code></pre>
 
 <ul>
-<li>4. construction mode</li>
-</ul>
+<li><ol>
+<li>construction mode</li>
+</ol>
 
-<blockquote>
-<p>주인이 누구냐에 따라서 결정된다.</p>
-</blockquote>
+<ul>
+<li>주인이 누구냐에 따라서 결정된다.</li>
+<li>new 키워드를 쓰면은 this 는 그냥 인스턴스다
+<br /></li>
+</ul></li>
+</ul>
 
 <pre><code class="language-js">
 
@@ -1011,25 +1015,52 @@ function Car(brand,name,color) { // Car() 는 클라스
 // 2. 클라스 함수를 변수에 담고 파라미터 들어갈 값들 넣는다. 
  
 
-let a1 = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;);  // this 
-let a2 = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;); 
-let a3 = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;); 
-let a4 = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;); 
+let a1 = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;);  //인스턴스 생성
+let a2 = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;);  //인스턴스 생성
+let a3 = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;);  //인스턴스 생성
+let a4 = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;);  //인스턴스 생성
 
 
 // 3.this는 값은 ?
 
-// a1가 this
-// a2가 this
-// a3가 this
-// a4가 this 
+// 경우에 따라 계속 변한다 
+
+
+a1.what_brand // a1 은 this
+a2.what_brand // a2 은this
+a3.what_brand // a3 은this
+a4.what_brand // a4 은this
+
+
+
 
 
 </code></pre>
 
 <ul>
-<li>5. call(), .apply()</li>
+<li><ol>
+<li>call(), .apply()</li>
+</ol>
+
+<ul>
+<li><p>call(this,1,2);   this 값에 들어갈 obj 가 this 다</p></li>
+
+<li><p>apply(this,[1,2]); this 값에 들어갈 obj 가 this 다.</p></li>
+</ul></li>
 </ul>
+
+<p>```js</p>
+
+<p>var add = function  ( x , y ) {
+    this.val = x + y ;    // 여기서 this 는 ?</p>
+
+<p>var obj = {
+val : 0
+};</p>
+
+<p>add.call(obj,2,3);  // 5 동일다.  // this 는 obj</p>
+
+<p>add.apply(obj,[2,3]); // 5  동일하다.  //  this 는obj</p>
 
           </div>
 
