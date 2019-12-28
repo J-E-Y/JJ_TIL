@@ -3680,6 +3680,32 @@ for link in links:
       <guid>/tutorial/it-terminology/</guid>
       <description>
 
+&lt;h2 id=&#34;ui-ux&#34;&gt;UI&amp;amp;UX&lt;/h2&gt;
+
+&lt;h4 id=&#34;ui-user-interface&#34;&gt;UI (user Interface)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The user interface (UI), in the industrial design field of human–computer interaction, is the space where interactions between humans and machines occur&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;사용자가 제품이나 서비스를 마주할때 말하는 용어&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;아이폰을 보고 있으면 아이폰 UI&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;자판기를 보고 있으면 음료자판기 UI&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;ux-user-experience&#34;&gt;UX (user experience)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;refers to a person&amp;rsquo;s emotions and attitudes about using a particular product, system or service. It includes the practical, experiential, affective, meaningful and valuable aspects of human–computer interaction and product ownership. Additionally,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;사용자가 제품이나 서비스의 UI를 마주할 때 익숙하게 사용할 수 있도록 하는 요소&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;저런 문구의 UI이를 UX로 전환하면  우리가 보는 핸드폰다이어리 구조가 완성된다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/IT terminology_files/2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;nat&#34;&gt;NAT&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -3699,6 +3725,8 @@ for link in links:
 &lt;li&gt;다음 원활한 접근을 위해 기록해둔다&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/IT terminology_files/1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;port&#34;&gt;port&lt;/h2&gt;
 

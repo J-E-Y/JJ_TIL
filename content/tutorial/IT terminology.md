@@ -10,15 +10,31 @@ toc: yes
 type: docs
 ---
 
+## UI&UX
+
+#### UI (user Interface)
+  
+  * The user interface (UI), in the industrial design field of human–computer interaction, is the space where interactions between humans and machines occur
+
+  * 사용자가 제품이나 서비스를 마주할때 말하는 용어
+  * 아이폰을 보고 있으면 아이폰 UI
+  * 자판기를 보고 있으면 음료자판기 UI
 
 
+#### UX (user experience)
+
+  * refers to a person's emotions and attitudes about using a particular product, system or service. It includes the practical, experiential, affective, meaningful and valuable aspects of human–computer interaction and product ownership. Additionally,
+
+  * 사용자가 제품이나 서비스의 UI를 마주할 때 익숙하게 사용할 수 있도록 하는 요소
+  * 저런 문구의 UI이를 UX로 전환하면  우리가 보는 핸드폰다이어리 구조가 완성된다.
 
 
-
+![](/tutorial/IT terminology_files/2.png)
 
 ## NAT
 
 * Network Address Translation
+
 
 
 * NAT 이란 무엇인가?
@@ -33,7 +49,7 @@ type: docs
   * 다음 원활한 접근을 위해 기록해둔다
 
 
-
+![](/tutorial/IT terminology_files/1.png)
 
 
 
