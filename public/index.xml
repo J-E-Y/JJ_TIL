@@ -10471,7 +10471,17 @@ function checkio(data) {
       <guid>/tutorial/2019-12-21-spint2/</guid>
       <description>
 
-&lt;h2 id=&#34;opp-란&#34;&gt;OPP 란?&lt;/h2&gt;
+&lt;h2 id=&#34;oject-2-javascript에서-object를-생성하는-방법&#34;&gt;Oject 2- JavaScript에서 Object를 생성하는 방법&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;자바스크립트에 class가 나오기 전에 사용하던 4가지 class 선언 방식&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Instantiation Patterns 방식이다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;함수를 이용한 객체 생성 방식을 이용한다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;oject-1-opp-란&#34;&gt;Oject 1 - OPP 란?&lt;/h2&gt;
 
 &lt;h4 id=&#34;객체-지향-프로그래밍이란-oop-object-oriented-programming&#34;&gt;객체 지향 프로그래밍이란(OOP: Object Oriented Programming)?&lt;/h4&gt;
 
@@ -10507,25 +10517,6 @@ function checkio(data) {
 &lt;li&gt;4. 여러가지 형태 (Polymorphism)
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h4 id=&#34;객체-리터럴-object-생성자-함수-생성자-함수-란&#34;&gt;객체 리터럴,  Object() 생성자 함수,생성자 함수 란?&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 객체 리터럴
-var obj1 = {};
-obj1.name = &#39;john&#39;;
-
-// Object() 생성자 함수
-var obj2 = new Object();
-obj2.name = &#39;john&#39;;
-
-// 생성자 함수
-function fun1() {}
-var obj3 = new fun1();
-obj3.name = &#39;john&#39;;
-
-
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&#34;1-캡슐화란&#34;&gt;1.캡슐화란?&lt;/h4&gt;
 
