@@ -625,7 +625,13 @@
 <li><a href="#prototype를-사용해-ininstance-객체에-키값-속성값-추가하는법">prototype를 사용해 ininstance 객체에 키값 속성값 추가하는법</a></li>
 <li><a href="#객체안에-담겨있는-function-사용하기">객체안에 담겨있는 function 사용하기</a></li>
 <li><a href="#함수가-객체의-키값으로-사용">함수가 객체의 키값으로 사용</a></li>
+<li><a href="#rest-parameter">rest parameter</a>
+<ul>
+<li>
+<ul>
 <li><a href="#parameter-지정하는-법">parameter 지정하는 법</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#making-guid">Making_GUID</a></li>
 <li><a href="#할당-연산자">할당 연산자</a></li>
 <li><a href="#랜덤-숫자-원하는-수대로-뽑기">랜덤 숫자 원하는 수대로 뽑기</a></li>
@@ -4279,7 +4285,39 @@ obj.name(&quot;john&quot;) // john is good bad!
 
 </code></pre>
 
-<h2 id="parameter-지정하는-법">parameter 지정하는 법</h2>
+<h2 id="rest-parameter">rest parameter</h2>
+
+<h4 id="parameter-지정하는-법">parameter 지정하는 법</h4>
+
+<pre><code class="language-js">
+// arguments 이용 
+
+function getMax() {
+  let max = arguments[0] 
+  for (let i = 0; i &lt; arguments.length; i ++ ) {
+    if(max &lt; arguments[i]) {
+       max = arguments[i] 
+    }
+  }
+   return max;
+}
+
+// args 이용
+
+function getMax(a,b , ...args) {
+  let max = args[0] 
+  for (let i = 0; i &lt; args.length; i ++ ) {
+    if(max &lt; args[i]) {
+       max = args[i] 
+    }
+  }
+   return max;
+}
+
+
+
+
+</code></pre>
 
 <p><code>ES6</code></p>
 

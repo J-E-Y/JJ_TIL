@@ -14,6 +14,12 @@ type: docs
 
 
 
+## what I need to learn
+
+![](/tutorial/CSS_files/Screen Shot 2019-12-17 at 5.06.14 PM.png)
+
+
+
 ## &lt;style&gt; 
 ---
 

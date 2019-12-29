@@ -108,6 +108,10 @@
       <guid>/tutorial/css/</guid>
       <description>
 
+&lt;h2 id=&#34;what-i-need-to-learn&#34;&gt;what I need to learn&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/CSS_files/Screen Shot 2019-12-17 at 5.06.14 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;lt-style-gt&#34;&gt;&amp;lt;style&amp;gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
@@ -10469,7 +10473,7 @@ function checkio(data) {
 
 &lt;h2 id=&#34;opp-란&#34;&gt;OPP 란?&lt;/h2&gt;
 
-&lt;h4 id=&#34;갹체-지향-프로그래밍이란-oop-object-oriented-programming&#34;&gt;갹체 지향 프로그래밍이란(OOP: Object Oriented Programming)?&lt;/h4&gt;
+&lt;h4 id=&#34;객체-지향-프로그래밍이란-oop-object-oriented-programming&#34;&gt;객체 지향 프로그래밍이란(OOP: Object Oriented Programming)?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;객체들의 &lt;code&gt;모임&lt;/code&gt;이다.&lt;/li&gt;
@@ -10504,6 +10508,25 @@ function checkio(data) {
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h4 id=&#34;객체-리터럴-object-생성자-함수-생성자-함수-란&#34;&gt;객체 리터럴,  Object() 생성자 함수,생성자 함수 란?&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 객체 리터럴
+var obj1 = {};
+obj1.name = &#39;john&#39;;
+
+// Object() 생성자 함수
+var obj2 = new Object();
+obj2.name = &#39;john&#39;;
+
+// 생성자 함수
+function fun1() {}
+var obj3 = new fun1();
+obj3.name = &#39;john&#39;;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h4 id=&#34;1-캡슐화란&#34;&gt;1.캡슐화란?&lt;/h4&gt;
 
 &lt;ul&gt;
@@ -10516,21 +10539,66 @@ function checkio(data) {
 &lt;p&gt;employee라는 객체 안에 객체들을 넣어서 사용한다. 이것이 캡슐화이다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&#34;2-상속&#34;&gt;2.  상속?&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let baseSalary = 3001;
+let overTime = 10;
+let rate = 20;
+
+function getwage(baseSalary,overTime,rate) {
+return baseSalary + (overTime * rate);
+}
+
+getwage() // NaN 
+getwage(baseSalary,overTime,rate) // 3200
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;캡슐화 한 코드&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+let employee = {
+	baseSalary : 3000,
+	overTime : 10,
+	rate: 20,
+	getWage: function() {
+	return this.baseSalary + (this.overTime * this.rate);
+	}
+ }
+ 
+ employee.getWage();// 3200
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;2-상속&#34;&gt;2.상속?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;상속은 쉽게 말하면 상위 클래스의 모든 것, 행동을 하위 클래스가 가지고 있으며 그대로 사용할 수도 있고 원하면 Customizing을 할 수 있다는 것이다.&lt;/li&gt;
+&lt;li&gt;부모 클래스가 가지고 있는 속성(프로퍼티, 메소드) 등을 그대로 자식 클래스가 물려 받아 재사용이 가능하다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;추상화란&#34;&gt;추상화란?&lt;/h4&gt;
+&lt;h4 id=&#34;3-추상화란&#34;&gt;3.추상화란?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;속에는 복잡하게 되어있지만 사용자가 쓰기에는 굉장히 간단하다.&lt;/li&gt;
 &lt;li&gt;인터페이스가 간단해진다.&lt;/li&gt;
-&lt;li&gt;복잡한걸 알지않아도 사용자 입장에서는 사용 가능&lt;/li&gt;
+&lt;li&gt;복잡한걸 알지않아도 사용자 입장에서는 사용 가능
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;여러가지-형태-다양성&#34;&gt;여러가지 형태 다양성 ?&lt;/h4&gt;
+&lt;h4 id=&#34;4-여러가지-형태-다양성&#34;&gt;4.여러가지 형태 다양성 ?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;다형성은 상속을 받은 기능을 변경하거나 확장하는 것&lt;/li&gt;
+&lt;li&gt;코드의 재사용성이 높아져 코드의 길이가 감소하고 유지보수가 용이해짐&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;prototype-무엇이냐&#34;&gt;prototype 무엇이냐?&lt;/h2&gt;
 
@@ -11427,7 +11495,9 @@ var total8 = foo(17) // 1 + 17 = 18
 
 &lt;ul&gt;
 &lt;li&gt;this === execution context 라고도 말한다.&lt;/li&gt;
-&lt;li&gt;콜타임에 따라서 알게된다.
+&lt;li&gt;콜타임에 따라서 알게된다.&lt;/li&gt;
+&lt;li&gt;An object that the invoked function points to when executing&lt;/li&gt;
+&lt;li&gt;호출된 함수가 실행할 때 가리키는 특정 객체입니다
 &lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -16492,7 +16562,39 @@ obj.name(&amp;quot;john&amp;quot;) // john is good bad!
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;parameter-지정하는-법&#34;&gt;parameter 지정하는 법&lt;/h2&gt;
+&lt;h2 id=&#34;rest-parameter&#34;&gt;rest parameter&lt;/h2&gt;
+
+&lt;h4 id=&#34;parameter-지정하는-법&#34;&gt;parameter 지정하는 법&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// arguments 이용 
+
+function getMax() {
+  let max = arguments[0] 
+  for (let i = 0; i &amp;lt; arguments.length; i ++ ) {
+    if(max &amp;lt; arguments[i]) {
+       max = arguments[i] 
+    }
+  }
+   return max;
+}
+
+// args 이용
+
+function getMax(a,b , ...args) {
+  let max = args[0] 
+  for (let i = 0; i &amp;lt; args.length; i ++ ) {
+    if(max &amp;lt; args[i]) {
+       max = args[i] 
+    }
+  }
+   return max;
+}
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;code&gt;ES6&lt;/code&gt;&lt;/p&gt;
 
