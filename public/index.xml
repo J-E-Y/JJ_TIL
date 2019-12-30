@@ -10901,23 +10901,176 @@ Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)&lt;/p&gt;&l
 &lt;li&gt;Pseudoclassical&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Functional&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
+&lt;h4 id=&#34;1-functional&#34;&gt;1. Functional&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+let Car = function() {
+  let printingInstance = {};
+  printingInstance.position = 0;
+  printingInstance.move = function() {
+    this.position ++;
+  }
+  return printingInstance;
+}
+
+let car1 = Car();
+
+car1 {position: 0, move: ƒ} 
+car1.move() // position 1 증가하한다 
+car1 {position: 1, move: ƒ} 
+car1.move() // position 1 증가하한다 
+car1 {position: 2, move: ƒ} 
+car1.move() // position 1 증가하한다 
+car1 {position: 3, move: ƒ} 
+car1.move() // position 1 증가하한다 
+car1 {position: 4, move: ƒ} 
+
+
+// position 초기값을 정해줄 수도 있다
+
+
+let CarType2 = function(position) {
+  let printingInstance = {};
+  printingInstance.position = position;
+  printingInstance.move = function() {
+    console.log(this); 
+    this.position ++;
+  }
+ return printingInstance;
+}
+ 
+var car2 = CarType2(2);
+car2.move();
+car2 // { position: 2, move: ƒ }
+car2.move(); 
+car2 // // { position: 3, move: ƒ }
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;2-functional-shared&#34;&gt;2. Functional Shared&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Functional Shared라는 방식을 사용한다면, someMethods라는 객체에 있는 메소드들의 메모리 주소만을 참조하기 때문에 메모리 효율이 좋아진다&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-var Monster = function() {                
-	var body = {};   
-    body.level = 0;     
-    body.levelUp = function() {    // Instance에 levelUp 라는 메소드를 추가
-    	this.level = this.level + 1  // function내부에 있는 this는 instance를 뜻하므로 this.level 은 body.level과 같다.
-    }                                 // 실행시 level 값이 1만큼 증가
-    return body;
+// 3. // someInstance와 someMethods를 합치는 extend 함수를 만들어 Car 함수 내부에 넣는다. 
+
+let extend = function(to, from) { 
+  for(let key in from) {
+    to[key] = from[key];
+  }
+}
+
+
+// 2.메소드를 담아줄 객체를 생성.
+
+let someMethods = {}; 
+someMethods.move = function() {  // 모든 메소드는 someMethods에 담긴다. 
+  this.position ++;
+}
+
+
+//  1. 먼저 Car 함수를 선언해 줍니다. 
+
+let Car = function(position) { 
+  let printingInstance = {
+    position : position,
+  }
+   
+  extend(printingInstance, someMethods); // Car함수 내부에서 합쳐준다 
+  return printingInstance;
+}
+
+
+var car1 = Car(5); // 공장처럼 찍어낸다.
+var car2 = Car(10); // 공장처럼 찍어낸다. 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Prototypal&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;왜 이방식을 쓰냐? 귀찬게? 이전의 Functional 방식은 인스턴스를 생성할 때마다 모든 메소드를 someInstance에게 할당하므로, 각각의 인스턴스들이 메소드의 수 만큼의 메모리를 더 차지하기 때문입니다.&lt;/p&gt;
+
+&lt;p&gt;However, Functional Shared라는 방식을 사용한다면, someMethods라는 객체에 있는 메소드들의 메모리 주소만을 참조하기 때문에 메모리 효율이 좋아진다&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+// 1. 먼저 Functional Shared 비슷하게 메소드를 담아둘 객체 생성 
+
+var someMethods = {};
+someMethods.move = function() {
+ this.position += 1;
 };
 
 
+// 2. Car 라는 함수 선언해 준다. 
+
+var Car = function(position) {
+	var printingInstance = Object.create(someMethods);  //기존에 만든 someMethods를 상속해버린다. 어디에? 여기에
+    printingInstance.position = position;
+    return printingInstance;
+};
+
+var car1 = Car(10);
+car1 // {position: 10} // 이렇게 나온다.
+
+// 메소드 move 는 어디갔냐? 
+console.dir(car1) // 하면 
+// position: 10
+//__proto__:
+//	move: f()
+
+car1.move() 
+car1 //  {position: 11}
+car1.move() 
+car1 //  {position: 12}
+car1.move() 
+car1 //  {position: 13}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;4. Pseudoclassical&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 1.먼저 Car 함수 생성
+var Car = function(position) {
+    this.position = position
+    }
+
+// 2. 그다음 prototype 에 메소드를 추가한다. 
+
+Car.prototype.move = function (){
+    this.position ++;
+ }
+
+
+
+var car1 = new Car(10) // 꼭 new operater 를 붙여야 한다. 
+car1 // {position: 10} // 이렇게 나온다.
+
+// 메소드 move 는 어디갔냐? 
+console.dir(car1) // 하면 
+// position: 10
+//__proto__:
+//	move: f()
+
+car1.move() 
+car1 //  {position: 11}
+car1.move() 
+car1 //  {position: 12}
+car1.move() 
+car1 //  {position: 13}
 
 
 &lt;/code&gt;&lt;/pre&gt;
