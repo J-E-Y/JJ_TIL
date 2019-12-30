@@ -10922,7 +10922,7 @@ var Monster = function() {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;자료구조-stack-queue&#34;&gt;자료구조[Stack &amp;amp; Queue]&lt;/h2&gt;
+&lt;h2 id=&#34;자료구조-stack-queue&#34;&gt;자료구조 Stack &amp;amp; Queue&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;1.자료 구조의 모양 추상적으로 그림 그리기 (실제 그림 그린 후 사진 캡처, 온라인 그림 등 관계 없음)&lt;/p&gt;
@@ -11036,7 +11036,100 @@ var Monster = function() {
 &lt;code&gt;Queue Overflow&lt;/code&gt; 라고 한다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;ds-oop-6-linked-list&#34;&gt;DS &amp;amp; OOP_6 (Linked List)&lt;/h2&gt;
+&lt;h2 id=&#34;자료구조-linked-list&#34;&gt;자료구조 Linked List&lt;/h2&gt;
+
+&lt;h4 id=&#34;linked-list-란&#34;&gt;Linked List 란?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;연결리스트는 각 데이터들을 포인터로 연결하여 관리하는 자료구조&lt;/li&gt;
+&lt;li&gt;데이터값이 앞과 뒤로 연결되있다.&lt;/li&gt;
+&lt;li&gt;노드들의 모임&lt;/li&gt;
+&lt;li&gt;배열은 추가삭제가 느리지만 인덱스 조회가 빠르고 Linked List 는 추가삭제는 빠르지만 인덱스의 조회가 느리다.
+
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;linked-list-구조&#34;&gt;linked list 구조&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-08-54.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;linked-list-데이터-추가&#34;&gt;linked list  데이터 추가&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-08.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;linked-list-데이터-삭제&#34;&gt;linked list 데이터 삭제&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-03.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;데이터 자체를 바로 삭제하는것이 아니라 연결 고리를 차단 시켜 외톨이가 되게 한후 삭제시켜버린다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;linked-list-데이터-탐색&#34;&gt;linked list 데이터 탐색&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-13.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;property-2&#34;&gt;Property&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;HEAD : 첫 번째 노드를 지정하는 값
+TAIL : 마지막 노드를 지정하는 값
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;method-2&#34;&gt;Method&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;addToTail 추가 : 마지막 번째 노드에 데이터를 삽입
+removeHead 삭제  : 첫 번째 노드를 삭제
+contains 탐색 : 연결 리스트가 주어진 값을 포함하고 있는지 확인
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;자료구조-graphs&#34;&gt;자료구조 Graphs&lt;/h2&gt;
+
+&lt;h4 id=&#34;graphs&#34;&gt;Graphs&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;노드(node)와 노드를 연결하는 간선(edge)로 이루어진 비선형 자료 구조&lt;/li&gt;
+&lt;li&gt;버텍스(vertex)와 노드를 연결하는 아크로 이루어진 비선형 자료 구조&lt;/li&gt;
+&lt;li&gt;그래프에서는 노드를 &lt;code&gt;버텍스&lt;/code&gt;, 엣지를 &lt;code&gt;아크&lt;/code&gt;라고 부릅니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;graphs-구조&#34;&gt;Graphs 구조&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-48.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;in-degree-out-degree&#34;&gt;In-degree &amp;amp; Out-degree&lt;/h4&gt;
+
+&lt;h4 id=&#34;graphs-종류&#34;&gt;Graphs 종류&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-44.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;property-3&#34;&gt;Property&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;node : 그래프를 구성하는 노드들
+edge : 노드들을 연결하고 관계짓는 간선들
+nodes : 노드들을 담고 있는 데이터 배열
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;method-3&#34;&gt;Method&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;addNode : 그래프에 노드를 추가한다.
+removeNode : 그래프에서 노드를 제거한다.
+addEdge : 노드와 노드 사이에 간선을 추가한다.
+removeEdge : 노드와 노드 사이의 간선(관계)를 제거한다.
+hasEdge : 노드와 노드 사이에 간선(관계)가 있는지 확인한다.
+contains : 그래프가 주어진 값의 노드를 포함하고 있는지 확인한다.
+forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에 대해 실행한다.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;자료구조-tree&#34;&gt;자료구조 Tree&lt;/h2&gt;
+
+&lt;h4 id=&#34;tree-란&#34;&gt;Tree 란?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;부모-자식 관계를 이루는 노드들로 구성된 자료 구조&lt;/li&gt;
+&lt;li&gt;컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

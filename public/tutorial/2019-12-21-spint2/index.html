@@ -463,7 +463,7 @@
 </ul></li>
 </ul></li>
 <li><a href="#ds-oop-2-instantiation-patterns">DS &amp; OOP_2 (Instantiation Patterns)</a></li>
-<li><a href="#자료구조-stack-queue">자료구조[Stack &amp; Queue]</a>
+<li><a href="#자료구조-stack-queue">자료구조 Stack &amp; Queue</a>
 <ul>
 <li>
 <ul>
@@ -477,7 +477,38 @@
 <li><a href="#오류-발생">오류 발생</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#ds-oop-6-linked-list">DS &amp; OOP_6 (Linked List)</a></li>
+<li><a href="#자료구조-linked-list">자료구조 Linked List</a>
+<ul>
+<li>
+<ul>
+<li><a href="#linked-list-란">Linked List 란?</a></li>
+<li><a href="#linked-list-구조">linked list 구조</a></li>
+<li><a href="#linked-list-데이터-추가">linked list  데이터 추가</a></li>
+<li><a href="#linked-list-데이터-삭제">linked list 데이터 삭제</a></li>
+<li><a href="#linked-list-데이터-탐색">linked list 데이터 탐색</a></li>
+<li><a href="#property-2">Property</a></li>
+<li><a href="#method-2">Method</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#자료구조-graphs">자료구조 Graphs</a>
+<ul>
+<li>
+<ul>
+<li><a href="#graphs">Graphs</a></li>
+<li><a href="#graphs-구조">Graphs 구조</a></li>
+<li><a href="#in-degree-out-degree">In-degree &amp; Out-degree</a></li>
+<li><a href="#graphs-종류">Graphs 종류</a></li>
+<li><a href="#property-3">Property</a></li>
+<li><a href="#method-3">Method</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#자료구조-tree">자료구조 Tree</a>
+<ul>
+<li>
+<ul>
+<li><a href="#tree-란">Tree 란?</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -951,7 +982,7 @@ var Monster = function() {
 
 </code></pre>
 
-<h2 id="자료구조-stack-queue">자료구조[Stack &amp; Queue]</h2>
+<h2 id="자료구조-stack-queue">자료구조 Stack &amp; Queue</h2>
 
 <blockquote>
 <p>1.자료 구조의 모양 추상적으로 그림 그리기 (실제 그림 그린 후 사진 캡처, 온라인 그림 등 관계 없음)</p>
@@ -1065,7 +1096,100 @@ var Monster = function() {
 <code>Queue Overflow</code> 라고 한다.</li>
 </ul>
 
-<h2 id="ds-oop-6-linked-list">DS &amp; OOP_6 (Linked List)</h2>
+<h2 id="자료구조-linked-list">자료구조 Linked List</h2>
+
+<h4 id="linked-list-란">Linked List 란?</h4>
+
+<ul>
+<li>연결리스트는 각 데이터들을 포인터로 연결하여 관리하는 자료구조</li>
+<li>데이터값이 앞과 뒤로 연결되있다.</li>
+<li>노드들의 모임</li>
+<li>배열은 추가삭제가 느리지만 인덱스 조회가 빠르고 Linked List 는 추가삭제는 빠르지만 인덱스의 조회가 느리다.
+
+<br /></li>
+</ul>
+
+<h4 id="linked-list-구조">linked list 구조</h4>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-08-54.jpeg" alt="" /></p>
+
+<h4 id="linked-list-데이터-추가">linked list  데이터 추가</h4>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-08.jpeg" alt="" /></p>
+
+<h4 id="linked-list-데이터-삭제">linked list 데이터 삭제</h4>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-03.jpeg" alt="" /></p>
+
+<blockquote>
+<p>데이터 자체를 바로 삭제하는것이 아니라 연결 고리를 차단 시켜 외톨이가 되게 한후 삭제시켜버린다.</p>
+</blockquote>
+
+<h4 id="linked-list-데이터-탐색">linked list 데이터 탐색</h4>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-13.jpeg" alt="" /></p>
+
+<h4 id="property-2">Property</h4>
+
+<pre><code>HEAD : 첫 번째 노드를 지정하는 값
+TAIL : 마지막 노드를 지정하는 값
+</code></pre>
+
+<h4 id="method-2">Method</h4>
+
+<pre><code>addToTail 추가 : 마지막 번째 노드에 데이터를 삽입
+removeHead 삭제  : 첫 번째 노드를 삭제
+contains 탐색 : 연결 리스트가 주어진 값을 포함하고 있는지 확인
+</code></pre>
+
+<h2 id="자료구조-graphs">자료구조 Graphs</h2>
+
+<h4 id="graphs">Graphs</h4>
+
+<ul>
+<li>노드(node)와 노드를 연결하는 간선(edge)로 이루어진 비선형 자료 구조</li>
+<li>버텍스(vertex)와 노드를 연결하는 아크로 이루어진 비선형 자료 구조</li>
+<li>그래프에서는 노드를 <code>버텍스</code>, 엣지를 <code>아크</code>라고 부릅니다.</li>
+</ul>
+
+<h4 id="graphs-구조">Graphs 구조</h4>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-48.jpeg" alt="" /></p>
+
+<h4 id="in-degree-out-degree">In-degree &amp; Out-degree</h4>
+
+<h4 id="graphs-종류">Graphs 종류</h4>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-44.jpeg" alt="" /></p>
+
+<h4 id="property-3">Property</h4>
+
+<pre><code>node : 그래프를 구성하는 노드들
+edge : 노드들을 연결하고 관계짓는 간선들
+nodes : 노드들을 담고 있는 데이터 배열
+</code></pre>
+
+<h4 id="method-3">Method</h4>
+
+<pre><code>addNode : 그래프에 노드를 추가한다.
+removeNode : 그래프에서 노드를 제거한다.
+addEdge : 노드와 노드 사이에 간선을 추가한다.
+removeEdge : 노드와 노드 사이의 간선(관계)를 제거한다.
+hasEdge : 노드와 노드 사이에 간선(관계)가 있는지 확인한다.
+contains : 그래프가 주어진 값의 노드를 포함하고 있는지 확인한다.
+forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에 대해 실행한다.
+</code></pre>
+
+<h2 id="자료구조-tree">자료구조 Tree</h2>
+
+<h4 id="tree-란">Tree 란?</h4>
+
+<ul>
+<li>부모-자식 관계를 이루는 노드들로 구성된 자료 구조</li>
+<li>컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.
+<br />
+<br /></li>
+</ul>
 
           </div>
 
