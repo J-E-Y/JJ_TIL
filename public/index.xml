@@ -10471,17 +10471,7 @@ function checkio(data) {
       <guid>/tutorial/2019-12-21-spint2/</guid>
       <description>
 
-&lt;h2 id=&#34;oject-2-javascript에서-object를-생성하는-방법&#34;&gt;Oject 2- JavaScript에서 Object를 생성하는 방법&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;자바스크립트에 class가 나오기 전에 사용하던 4가지 class 선언 방식&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Instantiation Patterns 방식이다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;함수를 이용한 객체 생성 방식을 이용한다.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;oject-1-opp-란&#34;&gt;Oject 1 - OPP 란?&lt;/h2&gt;
+&lt;h2 id=&#34;opp-란&#34;&gt;OPP 란?&lt;/h2&gt;
 
 &lt;h4 id=&#34;객체-지향-프로그래밍이란-oop-object-oriented-programming&#34;&gt;객체 지향 프로그래밍이란(OOP: Object Oriented Programming)?&lt;/h4&gt;
 
@@ -10874,32 +10864,20 @@ class car {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;ds-oop-2-instantiation-patterns&#34;&gt;DS &amp;amp; OOP_2 (Instantiation Patterns)&lt;/h2&gt;
+&lt;h2 id=&#34;instantiation-patterns&#34;&gt;Instantiation Patterns&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;자료구조 Stack, Queue 으로 구현 Class 선언이 나오기 전 사용되었던 4가지 방법
-Pseudoclassical (prototype 선언 방식은 현재도 많이 쓰임)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;자바스크립트에 Class가 나오기 전에 사용하던 4가지 class 선언 방식 이것이 바로 &lt;code&gt;Instantiation Patterns&lt;/code&gt; 방식이다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;함수를 이용한 객체 생성 방식을 이용한다.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Object 를 생성하는 4가지 방법&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(Instantiation Patterns)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Functional&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Functional Shared&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Prototypal&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Pseudoclassical&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;1. Functional&lt;/li&gt;
+&lt;li&gt;2. Functional Shared&lt;/li&gt;
+&lt;li&gt;3. Prototypal&lt;/li&gt;
+&lt;li&gt;4. Pseudoclassical&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
