@@ -468,10 +468,14 @@
 <li>
 <ul>
 <li><a href="#stack-이란">Stack 이란 ?</a></li>
+<li><a href="#데이터-추가">데이터 추가</a></li>
+<li><a href="#데이터-삭제">데이터 삭제</a></li>
 <li><a href="#property">Property</a></li>
 <li><a href="#method">method</a></li>
 <li><a href="#오류">오류</a></li>
 <li><a href="#queue-이란">Queue 이란 ?</a></li>
+<li><a href="#데이터-추가할때">데이터 추가할때</a></li>
+<li><a href="#데이터-빼낼때">데이터 빼낼때</a></li>
 <li><a href="#property-1">property</a></li>
 <li><a href="#method-1">method</a></li>
 <li><a href="#오류-발생">오류 발생</a></li>
@@ -1001,30 +1005,30 @@ var Monster = function() {
 <ul>
 <li>마지막에 쌓인것이 먼저 먼저 나오는 자료구조</li>
 <li>Last In First Out  =&gt; <code>L I F O</code> 이렇게 표현된다.
-<br />
-
 <br /></li>
 </ul>
 
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-14-55-37.jpeg" alt="" /></p>
+<h4 id="데이터-추가">데이터 추가</h4>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-14-55-37.jpg" alt="" /></p>
+
+<pre><code>* 1. Data[0]  들어간다
+* 2. Data[1]  들어간다.
+* 3. Data[2]  들어간다.
+</code></pre>
+
+<h4 id="데이터-삭제">데이터 삭제</h4>
 
 <ul>
-<li>1. Data[0]  들어간다</li>
-<li>2. Data[1]  들어간다.</li>
-<li>3. Data[2]  들어간다.</li>
+<li>Data[0] 을 빼려고 한다면 Data[2] =&gt;Data[1] =&gt;Data[0] 이렇게 순서가 된다.</li>
 </ul>
 
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-15-02-10.jpeg" alt="" /></p>
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-15-02-10.jpg" alt="" /></p>
 
-<ul>
-<li><p>Data[0] 을 빼려고 한다면 Data[2] =&gt;Data[1] =&gt;Data[0] 이렇게 순서가 된다.</p>
-
-<ul>
-<li>1.Data[2] 빠진다.</li>
-<li>2.Data[1] 빠진다.</li>
-<li>3.Data[0] 남는다.</li>
-</ul></li>
-</ul>
+<pre><code>* 1.Data[2] 빠진다.
+* 2.Data[1] 빠진다.
+* 3.Data[0] 남는다. 
+</code></pre>
 
 <h4 id="property">Property</h4>
 
@@ -1058,15 +1062,18 @@ var Monster = function() {
 <br /></li>
 </ul>
 
+<h4 id="데이터-추가할때">데이터 추가할때</h4>
+
 <p><img src="/tutorial/2019-12-21-spint2_files/2.jpeg" alt="" /></p>
 
-<ul>
-<li>1. Data[0]  들어간다</li>
-<li>2. Data[1]  들어간다.</li>
-<li>3. Data[2]  들어간다.</li>
-</ul>
+<pre><code>* 1. Data[0]  들어간다
+* 2. Data[1]  들어간다.
+* 3. Data[2]  들어간다.
+</code></pre>
 
-<p><img src="/tutorial/2019-12-21-spint2_files/111.jpeg" alt="" /></p>
+<h4 id="데이터-빼낼때">데이터 빼낼때</h4>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/111.jpg" alt="" /></p>
 
 <ul>
 <li>1.Data[0] 빠진다.</li>
@@ -1111,15 +1118,15 @@ var Monster = function() {
 
 <h4 id="linked-list-구조">linked list 구조</h4>
 
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-08-54.jpeg" alt="" /></p>
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-08-54.jpg" alt="" /></p>
 
 <h4 id="linked-list-데이터-추가">linked list  데이터 추가</h4>
 
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-08.jpeg" alt="" /></p>
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-08.jpg" alt="" /></p>
 
 <h4 id="linked-list-데이터-삭제">linked list 데이터 삭제</h4>
 
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-03.jpeg" alt="" /></p>
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-03.jpg" alt="" /></p>
 
 <blockquote>
 <p>데이터 자체를 바로 삭제하는것이 아니라 연결 고리를 차단 시켜 외톨이가 되게 한후 삭제시켜버린다.</p>
@@ -1127,7 +1134,7 @@ var Monster = function() {
 
 <h4 id="linked-list-데이터-탐색">linked list 데이터 탐색</h4>
 
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-13.jpeg" alt="" /></p>
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-13.jpg" alt="" /></p>
 
 <h4 id="property-2">Property</h4>
 
@@ -1154,13 +1161,13 @@ contains 탐색 : 연결 리스트가 주어진 값을 포함하고 있는지 �
 
 <h4 id="graphs-구조">Graphs 구조</h4>
 
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-48.jpeg" alt="" /></p>
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-48.jpg" alt="" /></p>
 
 <h4 id="in-degree-out-degree">In-degree &amp; Out-degree</h4>
 
 <h4 id="graphs-종류">Graphs 종류</h4>
 
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-44.jpeg" alt="" /></p>
+<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-44.jpg" alt="" /></p>
 
 <h4 id="property-3">Property</h4>
 
@@ -1186,9 +1193,7 @@ forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에
 
 <ul>
 <li>부모-자식 관계를 이루는 노드들로 구성된 자료 구조</li>
-<li>컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.
-<br />
-<br /></li>
+<li>컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.</li>
 </ul>
 
           </div>

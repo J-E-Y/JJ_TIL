@@ -10941,30 +10941,30 @@ var Monster = function() {
 &lt;ul&gt;
 &lt;li&gt;마지막에 쌓인것이 먼저 먼저 나오는 자료구조&lt;/li&gt;
 &lt;li&gt;Last In First Out  =&amp;gt; &lt;code&gt;L I F O&lt;/code&gt; 이렇게 표현된다.
-&lt;br /&gt;
-
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-14-55-37.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;데이터-추가&#34;&gt;데이터 추가&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-14-55-37.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;* 1. Data[0]  들어간다
+* 2. Data[1]  들어간다.
+* 3. Data[2]  들어간다.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;데이터-삭제&#34;&gt;데이터 삭제&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;1. Data[0]  들어간다&lt;/li&gt;
-&lt;li&gt;2. Data[1]  들어간다.&lt;/li&gt;
-&lt;li&gt;3. Data[2]  들어간다.&lt;/li&gt;
+&lt;li&gt;Data[0] 을 빼려고 한다면 Data[2] =&amp;gt;Data[1] =&amp;gt;Data[0] 이렇게 순서가 된다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-15-02-10.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-15-02-10.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Data[0] 을 빼려고 한다면 Data[2] =&amp;gt;Data[1] =&amp;gt;Data[0] 이렇게 순서가 된다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;1.Data[2] 빠진다.&lt;/li&gt;
-&lt;li&gt;2.Data[1] 빠진다.&lt;/li&gt;
-&lt;li&gt;3.Data[0] 남는다.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;* 1.Data[2] 빠진다.
+* 2.Data[1] 빠진다.
+* 3.Data[0] 남는다. 
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&#34;property&#34;&gt;Property&lt;/h4&gt;
 
@@ -10998,15 +10998,18 @@ var Monster = function() {
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h4 id=&#34;데이터-추가할때&#34;&gt;데이터 추가할때&lt;/h4&gt;
+
 &lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/2.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;1. Data[0]  들어간다&lt;/li&gt;
-&lt;li&gt;2. Data[1]  들어간다.&lt;/li&gt;
-&lt;li&gt;3. Data[2]  들어간다.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;* 1. Data[0]  들어간다
+* 2. Data[1]  들어간다.
+* 3. Data[2]  들어간다.
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/111.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;데이터-빼낼때&#34;&gt;데이터 빼낼때&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/111.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;1.Data[0] 빠진다.&lt;/li&gt;
@@ -11051,15 +11054,15 @@ var Monster = function() {
 
 &lt;h4 id=&#34;linked-list-구조&#34;&gt;linked list 구조&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-08-54.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-08-54.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;linked-list-데이터-추가&#34;&gt;linked list  데이터 추가&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-08.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-08.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;linked-list-데이터-삭제&#34;&gt;linked list 데이터 삭제&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-03.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-03.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;데이터 자체를 바로 삭제하는것이 아니라 연결 고리를 차단 시켜 외톨이가 되게 한후 삭제시켜버린다.&lt;/p&gt;
@@ -11067,7 +11070,7 @@ var Monster = function() {
 
 &lt;h4 id=&#34;linked-list-데이터-탐색&#34;&gt;linked list 데이터 탐색&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-13.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-13.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;property-2&#34;&gt;Property&lt;/h4&gt;
 
@@ -11094,13 +11097,13 @@ contains 탐색 : 연결 리스트가 주어진 값을 포함하고 있는지 �
 
 &lt;h4 id=&#34;graphs-구조&#34;&gt;Graphs 구조&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-48.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-48.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;in-degree-out-degree&#34;&gt;In-degree &amp;amp; Out-degree&lt;/h4&gt;
 
 &lt;h4 id=&#34;graphs-종류&#34;&gt;Graphs 종류&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-44.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-44.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;property-3&#34;&gt;Property&lt;/h4&gt;
 
@@ -11126,9 +11129,7 @@ forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에
 
 &lt;ul&gt;
 &lt;li&gt;부모-자식 관계를 이루는 노드들로 구성된 자료 구조&lt;/li&gt;
-&lt;li&gt;컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
