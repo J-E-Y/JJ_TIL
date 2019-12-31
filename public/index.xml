@@ -11053,7 +11053,13 @@ car1 //  {position: 13}
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;자료구조-stack-queue&#34;&gt;자료구조 Stack &amp;amp; Queue&lt;/h2&gt;
+&lt;h2 id=&#34;자료구조란&#34;&gt;자료구조란 ?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;데이터에 편리하게 접근하고, 변경하기 위해서 데이터를 저장하거나 조직하는 방법 을 말한다. 모든 목적에 맞는 자료구조는 찾기 어렵다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;stack-queue&#34;&gt;Stack &amp;amp; Queue&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;1.자료 구조의 모양 추상적으로 그림 그리기 (실제 그림 그린 후 사진 캡처, 온라인 그림 등 관계 없음)&lt;/p&gt;
@@ -11170,7 +11176,7 @@ car1 //  {position: 13}
 &lt;code&gt;Queue Overflow&lt;/code&gt; 라고 한다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;자료구조-linked-list&#34;&gt;자료구조 Linked List&lt;/h2&gt;
+&lt;h2 id=&#34;advanced-ds-linked-list&#34;&gt;Advanced DS Linked List&lt;/h2&gt;
 
 &lt;h4 id=&#34;linked-list-란&#34;&gt;Linked List 란?&lt;/h4&gt;
 
@@ -11234,7 +11240,7 @@ contains 탐색 : 연결 리스트가 주어진 값을 포함하고 있는지 �
 
 &lt;h4 id=&#34;graphs-종류&#34;&gt;Graphs 종류&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-44.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 1.34.31 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;property-3&#34;&gt;Property&lt;/h4&gt;
 
@@ -11253,6 +11259,14 @@ hasEdge : 노드와 노드 사이에 간선(관계)가 있는지 확인한다.
 contains : 그래프가 주어진 값의 노드를 포함하고 있는지 확인한다.
 forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에 대해 실행한다.
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;그래프를-코드로-표현하는-방법&#34;&gt;그래프를 코드로 표현하는 방법&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;이차원 배열을 사용하는 방법과&lt;/li&gt;
+&lt;li&gt;연결 리스트를 사용하는 방법이
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;자료구조-tree&#34;&gt;자료구조 Tree&lt;/h2&gt;
 
