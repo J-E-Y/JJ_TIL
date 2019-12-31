@@ -778,7 +778,7 @@ git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;log 명령을 하고&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;git reset &amp;ndash;hard 9a9sdsa8fsdfsd6a78f6safs 명령을 한다.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;git reset &lt;code&gt;--hard 9a9sdsa8fsdfsd6a78f6safs&lt;/code&gt; 명령을 한다.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;가져온 주소명령으로 돌아가고 그 이후에 있는 commit 내용들을 싹다 지운다.&lt;/p&gt;&lt;/li&gt;
 
@@ -11059,19 +11059,7 @@ car1 //  {position: 13}
 &lt;li&gt;데이터에 편리하게 접근하고, 변경하기 위해서 데이터를 저장하거나 조직하는 방법 을 말한다. 모든 목적에 맞는 자료구조는 찾기 어렵다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;stack-queue&#34;&gt;Stack &amp;amp; Queue&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;1.자료 구조의 모양 추상적으로 그림 그리기 (실제 그림 그린 후 사진 캡처, 온라인 그림 등 관계 없음)&lt;/p&gt;
-
-&lt;p&gt;2.해당 자료구조가 가지고 있는 property 와 method 찾아보기&lt;/p&gt;
-
-&lt;p&gt;3.각 method는 어떻게 동작되는 것인지 알아보고 기록하기&lt;/p&gt;
-
-&lt;p&gt;4.optional: 가능하다면 해당 자료구조와 각 method 를 pseudo code (의사 코드) 로 표현해 보기&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;stack&#34;&gt;Stack&lt;/h2&gt;
 
 &lt;h4 id=&#34;stack-이란&#34;&gt;Stack 이란 ?&lt;/h4&gt;
 
@@ -11081,27 +11069,7 @@ car1 //  {position: 13}
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;데이터-추가&#34;&gt;데이터 추가&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-14-55-37.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;* 1. Data[0]  들어간다
-* 2. Data[1]  들어간다.
-* 3. Data[2]  들어간다.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;데이터-삭제&#34;&gt;데이터 삭제&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Data[0] 을 빼려고 한다면 Data[2] =&amp;gt;Data[1] =&amp;gt;Data[0] 이렇게 순서가 된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-15-02-10.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;* 1.Data[2] 빠진다.
-* 2.Data[1] 빠진다.
-* 3.Data[0] 남는다. 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 4.43.04 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;property&#34;&gt;Property&lt;/h4&gt;
 
@@ -11127,6 +11095,8 @@ car1 //  {position: 13}
 &lt;li&gt;&lt;p&gt;Stack이 없는데 값을 꺼내려고 하면 &lt;code&gt;Stack underflow&lt;/code&gt;가 발생한다.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&#34;queue&#34;&gt;Queue&lt;/h2&gt;
+
 &lt;h4 id=&#34;queue-이란&#34;&gt;Queue 이란 ?&lt;/h4&gt;
 
 &lt;ul&gt;
@@ -11135,24 +11105,7 @@ car1 //  {position: 13}
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;데이터-추가할때&#34;&gt;데이터 추가할때&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/2.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;* 1. Data[0]  들어간다
-* 2. Data[1]  들어간다.
-* 3. Data[2]  들어간다.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;데이터-빼낼때&#34;&gt;데이터 빼낼때&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/111.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;1.Data[0] 빠진다.&lt;/li&gt;
-&lt;li&gt;2.Data[1] 빠진다.&lt;/li&gt;
-&lt;li&gt;3.Data[2] 남는다.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 4.47.58 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;property-1&#34;&gt;property&lt;/h4&gt;
 
@@ -11176,7 +11129,7 @@ car1 //  {position: 13}
 &lt;code&gt;Queue Overflow&lt;/code&gt; 라고 한다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;advanced-ds-linked-list&#34;&gt;Advanced DS Linked List&lt;/h2&gt;
+&lt;h2 id=&#34;linked-list&#34;&gt;Linked List&lt;/h2&gt;
 
 &lt;h4 id=&#34;linked-list-란&#34;&gt;Linked List 란?&lt;/h4&gt;
 
@@ -11184,30 +11137,10 @@ car1 //  {position: 13}
 &lt;li&gt;연결리스트는 각 데이터들을 포인터로 연결하여 관리하는 자료구조&lt;/li&gt;
 &lt;li&gt;데이터값이 앞과 뒤로 연결되있다.&lt;/li&gt;
 &lt;li&gt;노드들의 모임&lt;/li&gt;
-&lt;li&gt;배열은 추가삭제가 느리지만 인덱스 조회가 빠르고 Linked List 는 추가삭제는 빠르지만 인덱스의 조회가 느리다.
-
-&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;배열은 추가삭제가 느리지만 인덱스 조회가 빠르고 Linked List 는 추가삭제는 빠르지만 인덱스의 조회가 느리다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;linked-list-구조&#34;&gt;linked list 구조&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-08-54.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;linked-list-데이터-추가&#34;&gt;linked list  데이터 추가&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-08.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;linked-list-데이터-삭제&#34;&gt;linked list 데이터 삭제&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-03.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;데이터 자체를 바로 삭제하는것이 아니라 연결 고리를 차단 시켜 외톨이가 되게 한후 삭제시켜버린다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&#34;linked-list-데이터-탐색&#34;&gt;linked list 데이터 탐색&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-13.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.03.37 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;property-2&#34;&gt;Property&lt;/h4&gt;
 
@@ -11232,13 +11165,13 @@ contains 탐색 : 연결 리스트가 주어진 값을 포함하고 있는지 �
 &lt;li&gt;그래프에서는 노드를 &lt;code&gt;버텍스&lt;/code&gt;, 엣지를 &lt;code&gt;아크&lt;/code&gt;라고 부릅니다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;graphs-구조&#34;&gt;Graphs 구조&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-48.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;in-degree-out-degree&#34;&gt;In-degree &amp;amp; Out-degree&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.35.39 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;graphs-종류&#34;&gt;Graphs 종류&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;* 무방향 그래프
+* 정방향 그래프
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 1.34.31 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -11265,17 +11198,68 @@ forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에
 &lt;ul&gt;
 &lt;li&gt;이차원 배열을 사용하는 방법과&lt;/li&gt;
 &lt;li&gt;연결 리스트를 사용하는 방법이
+
+
+
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;자료구조-tree&#34;&gt;자료구조 Tree&lt;/h2&gt;
+&lt;h2 id=&#34;tree&#34;&gt;Tree&lt;/h2&gt;
 
 &lt;h4 id=&#34;tree-란&#34;&gt;Tree 란?&lt;/h4&gt;
 
 &lt;ul&gt;
+&lt;li&gt;트리는 노드(node)들과 노드들을 연결하는 링크(link)들로 구성됨&lt;/li&gt;
 &lt;li&gt;부모-자식 관계를 이루는 노드들로 구성된 자료 구조&lt;/li&gt;
-&lt;li&gt;컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.&lt;/li&gt;
+&lt;li&gt;컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.10.35 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;용어&#34;&gt;용어&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;  루트 노드(root node) : 부모가 없는 노드. 트리는 하나의 루트 노드만을 가진다.
+  단말 노드(leaf node) : 자식이 없는 노드이다.
+  내부(internal) 노드 : 리프 노드가 아닌 노드.
+  링크(link) : 노드를 연결하는 선 (edge, branch 라고도 부름).
+  형제(sibling) : 같은 부모를 가지는 노드.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;binary-search-tree&#34;&gt;binary search tree&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;이진 탐색 트리(binary search tree)는 이진 트리 기반의 탐색을 위한 자료 구조이다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이진 탐색 트리는 4개의 조건이 있다&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;Every node&amp;rsquo;s key is unique.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;The keys in the left subtree are less than the keys in the root.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;3.The keys of the right subtree are larger than the keys of the root.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;The left and right subtrees are also binary search trees.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.16.03 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;알고리즘-방법-추가학습&#34;&gt;알고리즘 방법 (추가학습)&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;탐색 알고리즘&amp;gt;
+&amp;lt;삽입 알고리즘&amp;gt;
+&amp;lt;삭제 알고리즘&amp;gt;
+이진 탐색 트리의 시간복잡도 분석
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

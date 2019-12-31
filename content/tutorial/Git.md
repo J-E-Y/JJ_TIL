@@ -374,7 +374,7 @@ git config --global user.name "yourGitHubusername"
 
 * log 명령을 하고 
 
-* git reset --hard 9a9sdsa8fsdfsd6a78f6safs 명령을 한다. 
+* git reset ```--hard 9a9sdsa8fsdfsd6a78f6safs``` 명령을 한다. 
 
 * 가져온 주소명령으로 돌아가고 그 이후에 있는 commit 내용들을 싹다 지운다.  
 

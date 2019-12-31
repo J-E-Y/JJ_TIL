@@ -464,33 +464,31 @@
 </ul></li>
 </ul></li>
 <li><a href="#자료구조란">자료구조란 ?</a></li>
-<li><a href="#stack-queue">Stack &amp; Queue</a>
+<li><a href="#stack">Stack</a>
 <ul>
 <li>
 <ul>
 <li><a href="#stack-이란">Stack 이란 ?</a></li>
-<li><a href="#데이터-추가">데이터 추가</a></li>
-<li><a href="#데이터-삭제">데이터 삭제</a></li>
 <li><a href="#property">Property</a></li>
 <li><a href="#method">method</a></li>
 <li><a href="#오류">오류</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#queue">Queue</a>
+<ul>
+<li>
+<ul>
 <li><a href="#queue-이란">Queue 이란 ?</a></li>
-<li><a href="#데이터-추가할때">데이터 추가할때</a></li>
-<li><a href="#데이터-빼낼때">데이터 빼낼때</a></li>
 <li><a href="#property-1">property</a></li>
 <li><a href="#method-1">method</a></li>
 <li><a href="#오류-발생">오류 발생</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#advanced-ds-linked-list">Advanced DS Linked List</a>
+<li><a href="#linked-list">Linked List</a>
 <ul>
 <li>
 <ul>
 <li><a href="#linked-list-란">Linked List 란?</a></li>
-<li><a href="#linked-list-구조">linked list 구조</a></li>
-<li><a href="#linked-list-데이터-추가">linked list  데이터 추가</a></li>
-<li><a href="#linked-list-데이터-삭제">linked list 데이터 삭제</a></li>
-<li><a href="#linked-list-데이터-탐색">linked list 데이터 탐색</a></li>
 <li><a href="#property-2">Property</a></li>
 <li><a href="#method-2">Method</a></li>
 </ul></li>
@@ -500,19 +498,25 @@
 <li>
 <ul>
 <li><a href="#graphs">Graphs</a></li>
-<li><a href="#graphs-구조">Graphs 구조</a></li>
-<li><a href="#in-degree-out-degree">In-degree &amp; Out-degree</a></li>
 <li><a href="#graphs-종류">Graphs 종류</a></li>
 <li><a href="#property-3">Property</a></li>
 <li><a href="#method-3">Method</a></li>
 <li><a href="#그래프를-코드로-표현하는-방법">그래프를 코드로 표현하는 방법</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#자료구조-tree">자료구조 Tree</a>
+<li><a href="#tree">Tree</a>
 <ul>
 <li>
 <ul>
 <li><a href="#tree-란">Tree 란?</a></li>
+<li><a href="#용어">용어</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#binary-search-tree">binary search tree</a>
+<ul>
+<li>
+<ul>
+<li><a href="#알고리즘-방법-추가학습">알고리즘 방법 (추가학습)</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -1125,19 +1129,7 @@ car1 //  {position: 13}
 <li>데이터에 편리하게 접근하고, 변경하기 위해서 데이터를 저장하거나 조직하는 방법 을 말한다. 모든 목적에 맞는 자료구조는 찾기 어렵다.</li>
 </ul>
 
-<h2 id="stack-queue">Stack &amp; Queue</h2>
-
-<blockquote>
-<p>1.자료 구조의 모양 추상적으로 그림 그리기 (실제 그림 그린 후 사진 캡처, 온라인 그림 등 관계 없음)</p>
-
-<p>2.해당 자료구조가 가지고 있는 property 와 method 찾아보기</p>
-
-<p>3.각 method는 어떻게 동작되는 것인지 알아보고 기록하기</p>
-
-<p>4.optional: 가능하다면 해당 자료구조와 각 method 를 pseudo code (의사 코드) 로 표현해 보기</p>
-</blockquote>
-
-<hr />
+<h2 id="stack">Stack</h2>
 
 <h4 id="stack-이란">Stack 이란 ?</h4>
 
@@ -1147,27 +1139,7 @@ car1 //  {position: 13}
 <br /></li>
 </ul>
 
-<h4 id="데이터-추가">데이터 추가</h4>
-
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-14-55-37.jpg" alt="" /></p>
-
-<pre><code>* 1. Data[0]  들어간다
-* 2. Data[1]  들어간다.
-* 3. Data[2]  들어간다.
-</code></pre>
-
-<h4 id="데이터-삭제">데이터 삭제</h4>
-
-<ul>
-<li>Data[0] 을 빼려고 한다면 Data[2] =&gt;Data[1] =&gt;Data[0] 이렇게 순서가 된다.</li>
-</ul>
-
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-27-15-02-10.jpg" alt="" /></p>
-
-<pre><code>* 1.Data[2] 빠진다.
-* 2.Data[1] 빠진다.
-* 3.Data[0] 남는다. 
-</code></pre>
+<p><img src="/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 4.43.04 PM.png" alt="" /></p>
 
 <h4 id="property">Property</h4>
 
@@ -1193,6 +1165,8 @@ car1 //  {position: 13}
 <li><p>Stack이 없는데 값을 꺼내려고 하면 <code>Stack underflow</code>가 발생한다.</p></li>
 </ul>
 
+<h2 id="queue">Queue</h2>
+
 <h4 id="queue-이란">Queue 이란 ?</h4>
 
 <ul>
@@ -1201,24 +1175,7 @@ car1 //  {position: 13}
 <br /></li>
 </ul>
 
-<h4 id="데이터-추가할때">데이터 추가할때</h4>
-
-<p><img src="/tutorial/2019-12-21-spint2_files/2.jpeg" alt="" /></p>
-
-<pre><code>* 1. Data[0]  들어간다
-* 2. Data[1]  들어간다.
-* 3. Data[2]  들어간다.
-</code></pre>
-
-<h4 id="데이터-빼낼때">데이터 빼낼때</h4>
-
-<p><img src="/tutorial/2019-12-21-spint2_files/111.jpg" alt="" /></p>
-
-<ul>
-<li>1.Data[0] 빠진다.</li>
-<li>2.Data[1] 빠진다.</li>
-<li>3.Data[2] 남는다.</li>
-</ul>
+<p><img src="/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 4.47.58 PM.png" alt="" /></p>
 
 <h4 id="property-1">property</h4>
 
@@ -1242,7 +1199,7 @@ car1 //  {position: 13}
 <code>Queue Overflow</code> 라고 한다.</li>
 </ul>
 
-<h2 id="advanced-ds-linked-list">Advanced DS Linked List</h2>
+<h2 id="linked-list">Linked List</h2>
 
 <h4 id="linked-list-란">Linked List 란?</h4>
 
@@ -1250,30 +1207,10 @@ car1 //  {position: 13}
 <li>연결리스트는 각 데이터들을 포인터로 연결하여 관리하는 자료구조</li>
 <li>데이터값이 앞과 뒤로 연결되있다.</li>
 <li>노드들의 모임</li>
-<li>배열은 추가삭제가 느리지만 인덱스 조회가 빠르고 Linked List 는 추가삭제는 빠르지만 인덱스의 조회가 느리다.
-
-<br /></li>
+<li>배열은 추가삭제가 느리지만 인덱스 조회가 빠르고 Linked List 는 추가삭제는 빠르지만 인덱스의 조회가 느리다.</li>
 </ul>
 
-<h4 id="linked-list-구조">linked list 구조</h4>
-
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-08-54.jpg" alt="" /></p>
-
-<h4 id="linked-list-데이터-추가">linked list  데이터 추가</h4>
-
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-08.jpg" alt="" /></p>
-
-<h4 id="linked-list-데이터-삭제">linked list 데이터 삭제</h4>
-
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-03.jpg" alt="" /></p>
-
-<blockquote>
-<p>데이터 자체를 바로 삭제하는것이 아니라 연결 고리를 차단 시켜 외톨이가 되게 한후 삭제시켜버린다.</p>
-</blockquote>
-
-<h4 id="linked-list-데이터-탐색">linked list 데이터 탐색</h4>
-
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-09-13.jpg" alt="" /></p>
+<p><img src="/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.03.37 PM.png" alt="" /></p>
 
 <h4 id="property-2">Property</h4>
 
@@ -1298,13 +1235,13 @@ contains 탐색 : 연결 리스트가 주어진 값을 포함하고 있는지 �
 <li>그래프에서는 노드를 <code>버텍스</code>, 엣지를 <code>아크</code>라고 부릅니다.</li>
 </ul>
 
-<h4 id="graphs-구조">Graphs 구조</h4>
-
-<p><img src="/tutorial/2019-12-21-spint2_files/KakaoTalk_Photo_2019-12-30-14-32-48.jpg" alt="" /></p>
-
-<h4 id="in-degree-out-degree">In-degree &amp; Out-degree</h4>
+<p><img src="/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.35.39 PM.png" alt="" /></p>
 
 <h4 id="graphs-종류">Graphs 종류</h4>
+
+<pre><code>* 무방향 그래프
+* 정방향 그래프
+</code></pre>
 
 <p><img src="/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 1.34.31 PM.png" alt="" /></p>
 
@@ -1331,17 +1268,68 @@ forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에
 <ul>
 <li>이차원 배열을 사용하는 방법과</li>
 <li>연결 리스트를 사용하는 방법이
+
+
+
 <br /></li>
 </ul>
 
-<h2 id="자료구조-tree">자료구조 Tree</h2>
+<h2 id="tree">Tree</h2>
 
 <h4 id="tree-란">Tree 란?</h4>
 
 <ul>
+<li>트리는 노드(node)들과 노드들을 연결하는 링크(link)들로 구성됨</li>
 <li>부모-자식 관계를 이루는 노드들로 구성된 자료 구조</li>
-<li>컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.</li>
+<li>컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.
+<br />
+<br /></li>
 </ul>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.10.35 PM.png" alt="" /></p>
+
+<h4 id="용어">용어</h4>
+
+<pre><code>  루트 노드(root node) : 부모가 없는 노드. 트리는 하나의 루트 노드만을 가진다.
+  단말 노드(leaf node) : 자식이 없는 노드이다.
+  내부(internal) 노드 : 리프 노드가 아닌 노드.
+  링크(link) : 노드를 연결하는 선 (edge, branch 라고도 부름).
+  형제(sibling) : 같은 부모를 가지는 노드.
+</code></pre>
+
+<h2 id="binary-search-tree">binary search tree</h2>
+
+<ul>
+<li>이진 탐색 트리(binary search tree)는 이진 트리 기반의 탐색을 위한 자료 구조이다</li>
+</ul>
+
+<p>이진 탐색 트리는 4개의 조건이 있다</p>
+
+<ul>
+<li><ol>
+<li>Every node&rsquo;s key is unique.</li>
+</ol></li>
+
+<li><ol>
+<li>The keys in the left subtree are less than the keys in the root.</li>
+</ol></li>
+
+<li><p>3.The keys of the right subtree are larger than the keys of the root.</p></li>
+
+<li><ol>
+<li>The left and right subtrees are also binary search trees.</li>
+</ol></li>
+</ul>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.16.03 PM.png" alt="" /></p>
+
+<h4 id="알고리즘-방법-추가학습">알고리즘 방법 (추가학습)</h4>
+
+<pre><code>&lt;탐색 알고리즘&gt;
+&lt;삽입 알고리즘&gt;
+&lt;삭제 알고리즘&gt;
+이진 탐색 트리의 시간복잡도 분석
+</code></pre>
 
           </div>
 
