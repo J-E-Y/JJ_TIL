@@ -84,11 +84,8 @@ var firstNum = 10; // 소수점을 사용하지 않은 표현 var secondNum = 10
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/it-terminology/</guid>
-      <description>UI&amp;amp;UX UI (user Interface)  The user interface (UI), in the industrial design field of human–computer interaction, is the space where interactions between humans and machines occur
- 사용자가 제품이나 서비스를 마주할때 말하는 용어
- 아이폰을 보고 있으면 아이폰 UI
- 자판기를 보고 있으면 음료자판기 UI
-  UX (user experience)  refers to a person&amp;rsquo;s emotions and attitudes about using a particular product, system or service. It includes the practical, experiential, affective, meaningful and valuable aspects of human–computer interaction and product ownership.</description>
+      <description>CPU &amp;amp; 메모리&amp;amp; 스토리지(HDD,SSD)   CPU : 중앙정보처리장치, 레지스터, 데이터를 연산/처리하는 가장 중요한 부분, 아주 빠름   메모리 : RAM(Random Access Memory), CPU에서 직접 접근이 가능, 사용자가 자유롭게 내용을 읽고 쓰고 지울 수 있다. 휘발성 기억장치, 빠름   스토리지 : HDD,SSD, 비휘발성 기억장치, 용량이 아주 크지만 느림   CPU  중앙 처리 장치 또는 CPU (central processing unit)
+ CPU 처리하는 용도 데이터를 읽고 처리하고 다시쓰는 동작을 합니다.</description>
     </item>
     
     <item>
