@@ -142,6 +142,17 @@ type: docs
 
 * remote 연결된거 지우기 
 
+```js
+
+origin	https://github.com/J-E-Y/im-sprint-data-structure.git (fetch)
+origin	https://github.com/J-E-Y/im-sprint-data-structure.git (push)
+pair	https://github.com/Dal-ya/im-sprint-data-structure.git) (fetch)
+pair	https://github.com/Dal-ya/im-sprint-data-structure.git) (push)
+
+git remote remove pair
+
+```
+
 ## git branch -d test
 
 * branch 지우기 

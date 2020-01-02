@@ -536,6 +536,10 @@
 <li>
 <ul>
 <li><a href="#시간복잡도에서는-big-o표기-할수-있다">시간복잡도에서는 Big-O표기 할수 있다.</a></li>
+<li><a href="#시간복잡도의-예시">시간복잡도의 예시</a></li>
+<li><a href="#array">array</a></li>
+<li><a href="#singly-linked-list">Singly-Linked List</a></li>
+<li><a href="#doubly-linked-lists">Doubly-Linked Lists</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -1431,7 +1435,185 @@ O(n^2) – 2차 시간 : 문제를 해결하기 위한 단계의 수는 입력�
 O(C^n) – 지수 시간 : 문제를 해결하기 위한 단계의 수는 주어진 상수값 C 의 n 제곱이다.
 </code></pre>
 
+<p><img src="/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-02 at 11.35.18 AM.png" alt="" /></p>
+
 <p><img src="/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-02 at 11.35.32 AM.png" alt="" /></p>
+
+<h4 id="시간복잡도의-예시">시간복잡도의 예시</h4>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-02 at 11.33.25 AM.png" alt="" /></p>
+
+<p><strong>Arrays</strong></p>
+
+<ul>
+<li>lookup O(1)</li>
+</ul>
+
+<blockquote>
+<p>인덱스를 알고있기때문에 바로찾을수 있다.</p>
+</blockquote>
+
+<ul>
+<li>Assign O(1)</li>
+</ul>
+
+<blockquote>
+<p>인덱스를 알고있기 때문에 바로 바꿔버릴수 있다.</p>
+</blockquote>
+
+<ul>
+<li>insert O(n)</li>
+</ul>
+
+<blockquote>
+<p>값을 추가하고 나머지 값들의 인덱스가 바꿔지기 때문에 시간복잡도가 늘어난다.</p>
+</blockquote>
+
+<ul>
+<li>Remove O(n)</li>
+</ul>
+
+<blockquote>
+<p>특정값을 제거하면 나머지 값을을 땡겨서 인덱스를 맞춰야 하기 때문에 시간복잡도가 늘어난다.</p>
+</blockquote>
+
+<ul>
+<li>find(value) O(n)</li>
+</ul>
+
+<blockquote>
+<p>값이 어디에있는지 찾으려면 모든 인덱스값에 접근해야 하기때문에 시간복잡도가 늘어난다.</p>
+</blockquote>
+
+<p><strong>Linked Lists</strong></p>
+
+<ul>
+<li>Lookup(Position) O(n)</li>
+</ul>
+
+<blockquote>
+<p>특정 위치 를 찾으려고 한다.</p>
+
+<p>인덱스를 알수가 없다 무조건 head 부터 시작해야 한다. head 부터 시작해서 차례대로 찾는다.</p>
+</blockquote>
+
+<ul>
+<li>Find (value )O(n)</li>
+</ul>
+
+<blockquote>
+<p>특정 값을 를 찾으려고 한다.</p>
+
+<p>인덱스를 알수가 없다 무조건 head 부터 시작해야 한다. head 부터 시작해서 차례대로 찾는다.</p>
+</blockquote>
+
+<ul>
+<li>Assign O(n)</li>
+</ul>
+
+<blockquote>
+<p>값을 바꿔주려고 할때 그값을 찾으러 갈때 head부터 차례대로 가기 때문에 시간복잡도가 O(n) 이 된다.</p>
+</blockquote>
+
+<ul>
+<li>insert O(1)</li>
+</ul>
+
+<blockquote>
+<p>만약 내가 어디에 추가하고싶은지 알고있다면 O(n) 된다.</p>
+
+<p>왜냐하면 기존 에 값의 next pointer 를 알고있기때문에  next pointer 를 내가 추가하고자 하는 값에 연결시켜주고 내가 많든 값의 next pointer 를 다음 값에 연결시켜주면 되는 것이다.</p>
+</blockquote>
+
+<ul>
+<li>Removal O(n)  or O(n)</li>
+</ul>
+
+<blockquote>
+<p><code>head</code> 처음에 값을 제거하려면  O(1)된다.</p>
+
+<p><code>midle</code> 중간에 값을 제거하려면 O(n) 된다.</p>
+
+<p>왜냐하면 값을 제거하기위 next-poniter 를 옮겨주면 되지만 뒤에 poniter 를 가지고 있지 않기 때문이다. 그래서 찾아야한다.</p>
+</blockquote>
+
+<p><code>하지만 Doubly_linked lists</code> 에서는 <code>insert</code> 와 <code>remove</code> 는 O(1) 이된다
+왜냐하면 이전에 pointer 와 다음에 poniter 둘다를 가지고 있기 때문이다.</p>
+
+<p><strong>Array % Singly-Linked List &amp; Doubly-Linked Lists</strong></p>
+
+<h4 id="array">array</h4>
+
+<pre><code>  O(1) : lookUp
+  O(n) : insert/remove
+</code></pre>
+
+<h4 id="singly-linked-list">Singly-Linked List</h4>
+
+<pre><code>  O(1) : insert
+  O(n) : lookup, remove
+</code></pre>
+
+<h4 id="doubly-linked-lists">Doubly-Linked Lists</h4>
+
+<pre><code>  O(1) : insert/remove
+</code></pre>
+
+<p><code>여기서 주의해야하는 것이</code></p>
+
+<blockquote>
+<p>Doulbly-linked Lists 는 각각의 노드들이 이전 다음 pointers 를 가지고 있기 때문에 <code>공간 복잡도</code>에서 조금 늘어나는 차이가 있다.</p>
+</blockquote>
+
+<p><strong>Trees</strong></p>
+
+<ul>
+<li>Find O(n)</li>
+</ul>
+
+<blockquote>
+<p>각각의 노드를 검색해야하기 때문에 시간복잡도가 늘어난다.</p>
+
+<p>루트부터 쫙 찾야아 한다.</p>
+</blockquote>
+
+<p><strong>Binary Search Tree</strong></p>
+
+<p><code>특정조건이 가지고 있다.</code></p>
+
+<ul>
+<li>find O(log n)</li>
+</ul>
+
+<blockquote>
+<p>특정값을 찾겠다고 하면</p>
+
+<p>3번만에 확인이 가능하다.</p>
+
+<p>빠른것이다.</p>
+</blockquote>
+
+<p>만약 <code>linked-list</code> 처럼 형태가 만들어진다면 (일자형 ) <code>find O(n)</code> 되버린다.</p>
+
+<p>이런경우를 방지하기 위해 <code>Tree 구조</code>를 틀어버린다.</p>
+
+<p><img src="/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-02 at 8.09.06 PM.png" alt="" /></p>
+
+<p>그림에 나와있는 것처럼 추가할때마다 벨런스를 에 맞겠 조정을 해주면 다시</p>
+
+<p>find O(log n) 의 구조를 유지할수 있다.</p>
+
+<ul>
+<li>정렬된 구조에서 배열을 쓰지않고 binary  search 구조를 쓰는 이유가 있을까요?</li>
+</ul>
+
+<blockquote>
+<p>Array 는 메모리를 계속 차지한다.</p>
+
+<p>Trees 구조는  linked-list 도 쓸수 있기때문에 구석구속 메모리를 쓸수 있어 효율적이다.</p>
+
+<p>메모리 효율적인면에서 BST 가 더낳다.</p>
+</blockquote>
 
           </div>
 

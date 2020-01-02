@@ -563,6 +563,16 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 &lt;li&gt;remote 연결된거 지우기&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+origin	https://github.com/J-E-Y/im-sprint-data-structure.git (fetch)
+origin	https://github.com/J-E-Y/im-sprint-data-structure.git (push)
+pair	https://github.com/Dal-ya/im-sprint-data-structure.git) (fetch)
+pair	https://github.com/Dal-ya/im-sprint-data-structure.git) (push)
+
+git remote remove pair
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;git-branch-d-test&#34;&gt;git branch -d test&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -11415,7 +11425,185 @@ O(n^2) – 2차 시간 : 문제를 해결하기 위한 단계의 수는 입력�
 O(C^n) – 지수 시간 : 문제를 해결하기 위한 단계의 수는 주어진 상수값 C 의 n 제곱이다.
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-02 at 11.35.18 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-02 at 11.35.32 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;시간복잡도의-예시&#34;&gt;시간복잡도의 예시&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-02 at 11.33.25 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Arrays&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;lookup O(1)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;인덱스를 알고있기때문에 바로찾을수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Assign O(1)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;인덱스를 알고있기 때문에 바로 바꿔버릴수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;insert O(n)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;값을 추가하고 나머지 값들의 인덱스가 바꿔지기 때문에 시간복잡도가 늘어난다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Remove O(n)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;특정값을 제거하면 나머지 값을을 땡겨서 인덱스를 맞춰야 하기 때문에 시간복잡도가 늘어난다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;find(value) O(n)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;값이 어디에있는지 찾으려면 모든 인덱스값에 접근해야 하기때문에 시간복잡도가 늘어난다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Linked Lists&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lookup(Position) O(n)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;특정 위치 를 찾으려고 한다.&lt;/p&gt;
+
+&lt;p&gt;인덱스를 알수가 없다 무조건 head 부터 시작해야 한다. head 부터 시작해서 차례대로 찾는다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Find (value )O(n)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;특정 값을 를 찾으려고 한다.&lt;/p&gt;
+
+&lt;p&gt;인덱스를 알수가 없다 무조건 head 부터 시작해야 한다. head 부터 시작해서 차례대로 찾는다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Assign O(n)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;값을 바꿔주려고 할때 그값을 찾으러 갈때 head부터 차례대로 가기 때문에 시간복잡도가 O(n) 이 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;insert O(1)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;만약 내가 어디에 추가하고싶은지 알고있다면 O(n) 된다.&lt;/p&gt;
+
+&lt;p&gt;왜냐하면 기존 에 값의 next pointer 를 알고있기때문에  next pointer 를 내가 추가하고자 하는 값에 연결시켜주고 내가 많든 값의 next pointer 를 다음 값에 연결시켜주면 되는 것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Removal O(n)  or O(n)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;head&lt;/code&gt; 처음에 값을 제거하려면  O(1)된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;midle&lt;/code&gt; 중간에 값을 제거하려면 O(n) 된다.&lt;/p&gt;
+
+&lt;p&gt;왜냐하면 값을 제거하기위 next-poniter 를 옮겨주면 되지만 뒤에 poniter 를 가지고 있지 않기 때문이다. 그래서 찾아야한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;하지만 Doubly_linked lists&lt;/code&gt; 에서는 &lt;code&gt;insert&lt;/code&gt; 와 &lt;code&gt;remove&lt;/code&gt; 는 O(1) 이된다
+왜냐하면 이전에 pointer 와 다음에 poniter 둘다를 가지고 있기 때문이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Array % Singly-Linked List &amp;amp; Doubly-Linked Lists&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;array&#34;&gt;array&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;  O(1) : lookUp
+  O(n) : insert/remove
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;singly-linked-list&#34;&gt;Singly-Linked List&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;  O(1) : insert
+  O(n) : lookup, remove
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;doubly-linked-lists&#34;&gt;Doubly-Linked Lists&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;  O(1) : insert/remove
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;여기서 주의해야하는 것이&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Doulbly-linked Lists 는 각각의 노드들이 이전 다음 pointers 를 가지고 있기 때문에 &lt;code&gt;공간 복잡도&lt;/code&gt;에서 조금 늘어나는 차이가 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Trees&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Find O(n)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;각각의 노드를 검색해야하기 때문에 시간복잡도가 늘어난다.&lt;/p&gt;
+
+&lt;p&gt;루트부터 쫙 찾야아 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Binary Search Tree&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;특정조건이 가지고 있다.&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;find O(log n)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;특정값을 찾겠다고 하면&lt;/p&gt;
+
+&lt;p&gt;3번만에 확인이 가능하다.&lt;/p&gt;
+
+&lt;p&gt;빠른것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;만약 &lt;code&gt;linked-list&lt;/code&gt; 처럼 형태가 만들어진다면 (일자형 ) &lt;code&gt;find O(n)&lt;/code&gt; 되버린다.&lt;/p&gt;
+
+&lt;p&gt;이런경우를 방지하기 위해 &lt;code&gt;Tree 구조&lt;/code&gt;를 틀어버린다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-02 at 8.09.06 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;그림에 나와있는 것처럼 추가할때마다 벨런스를 에 맞겠 조정을 해주면 다시&lt;/p&gt;
+
+&lt;p&gt;find O(log n) 의 구조를 유지할수 있다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;정렬된 구조에서 배열을 쓰지않고 binary  search 구조를 쓰는 이유가 있을까요?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Array 는 메모리를 계속 차지한다.&lt;/p&gt;
+
+&lt;p&gt;Trees 구조는  linked-list 도 쓸수 있기때문에 구석구속 메모리를 쓸수 있어 효율적이다.&lt;/p&gt;
+
+&lt;p&gt;메모리 효율적인면에서 BST 가 더낳다.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
@@ -11759,105 +11947,6 @@ $ open /usr/local/lib/node_modules
 
 &lt;li&gt;&lt;p&gt;협업할때 필수 툴 ESlint, Jest,Prettier&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&#34;scope-closure&#34;&gt;Scope &amp;amp; Closure&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;scope 문제&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;8번에 result인 x 가 10인 이유는 이해가 되는데&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;10번에 함수밖에있는 result 인  x 가 어떻게 outer(),inner()함수에 변수 x 를 가져왔는지&lt;/strong&gt; 이해가 잘안되어 질문을 드립니다..  제가 이해하기로는 단순히 var 이 함수안에서 다시 선언되지 않아서 인가요?&lt;/p&gt;
-
-&lt;p&gt;부탁드립니다.&lt;/p&gt;
-
-&lt;h3 id=&#34;8번문제&#34;&gt;8번문제&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-var x = 10;
-
-function outer () {
-  var x = 20;
-  function inner () {
-    x = x + 10;
-    return x;
-  }
-  inner();
-}
-
-outer();
-
-var result = x;  // 10
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;10번-문제&#34;&gt;10번 문제&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var x = 10;
-
-function outer () {
-  x = 20;
-  function inner () {
-    x = x + 20;
-  }
-  inner();
-}
-
-outer();
-
-var result = x; // 40
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;해답&#34;&gt;해답&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;8 번 문제 함수안에 변수가 let var const 선언되면 함수범위(스코프 범위)를 벗어나서 변수를 쓸수가 없다&lt;/p&gt;
-
-&lt;p&gt;10번 문제  함수 안에 변수가 선언되지 않고 전역에 선언되었기 때문에 함수안에 x는 전역에 있는 것을 할당 하게 되어 가져온후 그것을 어니서나 쓸수 있는 변수가 되어버린것이다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;closure 문제&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;클로저를 정의한다면&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;함수안에 또다른 함수를 실행 외부함수가 실행 &lt;code&gt;종료된 뒤에도&lt;/code&gt; 여전히 내부함수가 계속 외부함수였던 스코프에 접근할수 있다.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;qeustion&#34;&gt;Qeustion&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var add = function(x) {
-   function sum (y) {
-      return x + y;
-  }
-  return sum;
-}
-
-var foo = add(1) // 이렇게 하면 x는 1로 저장된다. 
-
-foo(2) // 1 + 2 되어서 3 
-
-var total1 = foo(10) // 1 + 10 = 11
-var total2 = foo(11) // 1 + 11 = 12
-
-var total3 = foo(12) // 1 + 12 = 13
-var total4 = foo(13) // 1 + 13 = 14
-
-var total5 = foo(14) // 1 + 14 = 15
-var total6 = foo(15) // 1 + 15 = 16
-
-var total7 = foo(16) // 1 + 16 = 17
-var total8 = foo(17) // 1 + 17 = 18
-
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;this&#34;&gt;This&lt;/h2&gt;
 
@@ -21948,6 +22037,111 @@ console.log(name)  // 3. jj 함수가 실행된 뒤에는 함수안에 있는 na
       
       <guid>/project/pos/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Previous work&lt;/strong&gt;:&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>__Cheak_Point</title>
+      <link>/tutorial/__section1_cheak_point/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/__section1_cheak_point/</guid>
+      <description>
+
+&lt;h2 id=&#34;check-point-1-scope&#34;&gt;Check_Point_1 Scope&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;8번에 result인 x 가 10인 이유는 이해가 되는데&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;10번에 함수밖에있는 result 인  x 가 어떻게 outer(),inner()함수에 변수 x 를 가져왔는지&lt;/strong&gt; 이해가 잘안되어 질문을 드립니다..  제가 이해하기로는 단순히 var 이 함수안에서 다시 선언되지 않아서 인가요?&lt;/p&gt;
+
+&lt;p&gt;부탁드립니다.&lt;/p&gt;
+
+&lt;h3 id=&#34;8번문제&#34;&gt;8번문제&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var x = 10;
+
+function outer () {
+  var x = 20;
+  function inner () {
+    x = x + 10;
+    return x;
+  }
+  inner();
+}
+
+outer();
+
+var result = x;  // 10
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;10번-문제&#34;&gt;10번 문제&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var x = 10;
+
+function outer () {
+  x = 20;
+  function inner () {
+    x = x + 20;
+  }
+  inner();
+}
+
+outer();
+
+var result = x; // 40
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;해답&#34;&gt;해답&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;8 번 문제 함수안에 변수가 let var const 선언되면 함수범위(스코프 범위)를 벗어나서 변수를 쓸수가 없다&lt;/p&gt;
+
+&lt;p&gt;10번 문제  함수 안에 변수가 선언되지 않고 전역에 선언되었기 때문에 함수안에 x는 전역에 있는 것을 할당 하게 되어 가져온후 그것을 어니서나 쓸수 있는 변수가 되어버린것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;check-point-2-closure&#34;&gt;check_point 2 _Closure&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;클로저를 정의한다면&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;함수안에 또다른 함수를 실행 외부함수가 실행 &lt;code&gt;종료된 뒤에도&lt;/code&gt; 여전히 내부함수가 계속 외부함수였던 스코프에 접근할수 있다.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;qeustion&#34;&gt;Qeustion&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var add = function(x) {
+   function sum (y) {
+      return x + y;
+  }
+  return sum;
+}
+
+var foo = add(1) // 이렇게 하면 x는 1로 저장된다. 
+
+foo(2) // 1 + 2 되어서 3 
+
+var total1 = foo(10) // 1 + 10 = 11
+var total2 = foo(11) // 1 + 11 = 12
+
+var total3 = foo(12) // 1 + 12 = 13
+var total4 = foo(13) // 1 + 13 = 14
+
+var total5 = foo(14) // 1 + 14 = 15
+var total6 = foo(15) // 1 + 15 = 16
+
+var total7 = foo(16) // 1 + 16 = 17
+var total8 = foo(17) // 1 + 17 = 18
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
