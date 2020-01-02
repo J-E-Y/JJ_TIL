@@ -19,6 +19,11 @@
   </url>
   
   <url>
+    <loc>/tutorial/2020-01-02-check-point/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/bootstrap/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
@@ -234,10 +239,6 @@
   
   <url>
     <loc>/displaydocs/</loc>
-  </url>
-  
-  <url>
-    <loc>/tutorial/__section1_cheak_point/</loc>
   </url>
   
 </urlset>

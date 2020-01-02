@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>__Check_Point</title>
+      <link>/tutorial/2020-01-02-check-point/</link>
+      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2020-01-02-check-point/</guid>
+      <description>Check_Point_1 Scope  8번에 result인 x 가 10인 이유는 이해가 되는데  10번에 함수밖에있는 result 인 x 가 어떻게 outer(),inner()함수에 변수 x 를 가져왔는지 이해가 잘안되어 질문을 드립니다.. 제가 이해하기로는 단순히 var 이 함수안에서 다시 선언되지 않아서 인가요?
+부탁드립니다.
+8번문제 var x = 10; function outer () { var x = 20; function inner () { x = x + 10; return x; } inner(); } outer(); var result = x; // 10  10번 문제 var x = 10; function outer () { x = 20; function inner () { x = x + 20; } inner(); } outer(); var result = x; // 40  해답  8 번 문제 함수안에 변수가 let var const 선언되면 함수범위(스코프 범위)를 벗어나서 변수를 쓸수가 없다</description>
+    </item>
+    
+    <item>
       <title>Bootstrap</title>
       <link>/tutorial/bootstrap/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -188,17 +199,6 @@ If there are two or more words that are the same length, return the first word f
       
       <guid>/tutorial/javascript_q2/</guid>
       <description>다 완료 Dom &amp;lt;!-- div 안에 element 를 추가하는 방법 3가지 --&amp;gt; &amp;lt;!-- 첫번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // innerHTML 로 tag 까지 같이 한번에 집어넣는다 let comments = document.querySelector(&amp;quot;#comments&amp;quot;); comments.innerHTML = &amp;quot;&amp;lt;span&amp;gt;아메리카노&amp;lt;span&amp;gt;&amp;quot;; &amp;lt;/script&amp;gt; &amp;lt;!-- 두번째 방법 HTML --&amp;gt; &amp;lt;div id = &amp;quot;comments&amp;quot;&amp;gt;커피메뉴판&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; // element 를 생성해서 집어넣을때는 appendChild 로 집어넣는다. let comments = document.querySelector(&amp;quot;#comments&amp;quot;); let newElement = document.createElement(&amp;quot;span&amp;quot;); // element 생성 newElement.innerHTML = &amp;quot;아메리카노&amp;quot;; // 생성된 element 안에 미리 써준다.</description>
-    </item>
-    
-    <item>
-      <title>__Cheak_Point</title>
-      <link>/tutorial/__section1_cheak_point/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/__section1_cheak_point/</guid>
-      <description>Check_Point_1 Scope  8번에 result인 x 가 10인 이유는 이해가 되는데  10번에 함수밖에있는 result 인 x 가 어떻게 outer(),inner()함수에 변수 x 를 가져왔는지 이해가 잘안되어 질문을 드립니다.. 제가 이해하기로는 단순히 var 이 함수안에서 다시 선언되지 않아서 인가요?
-부탁드립니다.
-8번문제 var x = 10; function outer () { var x = 20; function inner () { x = x + 10; return x; } inner(); } outer(); var result = x; // 10  10번 문제 var x = 10; function outer () { x = 20; function inner () { x = x + 20; } inner(); } outer(); var result = x; // 40  해답  8 번 문제 함수안에 변수가 let var const 선언되면 함수범위(스코프 범위)를 벗어나서 변수를 쓸수가 없다</description>
     </item>
     
   </channel>
