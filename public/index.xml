@@ -12222,8 +12222,6 @@ a4.what_brand // a4 은this
 
 
 
-
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
@@ -12238,18 +12236,21 @@ a4.what_brand // a4 은this
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;```js&lt;/p&gt;
-
-&lt;p&gt;var add = function  ( x , y ) {
-    this.val = x + y ;    // 여기서 this 는 ?&lt;/p&gt;
-
-&lt;p&gt;var obj = {
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var add = function  ( x , y ) {
+	this.val = x + y ;    // 여기서 this 는 ?
+ 
+var obj = { 
 val : 0
-};&lt;/p&gt;
+}; 
 
-&lt;p&gt;add.call(obj,2,3);  // 5 동일다.  // this 는 obj&lt;/p&gt;
 
-&lt;p&gt;add.apply(obj,[2,3]); // 5  동일하다.  //  this 는obj&lt;/p&gt;
+add.call(obj,2,3);  // 5 동일다.  // this 는 obj
+
+add.apply(obj,[2,3]); // 5  동일하다.  //  this 는obj
+
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

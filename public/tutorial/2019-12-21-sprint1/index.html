@@ -934,8 +934,6 @@ a4.what_brand // a4 은this
 
 
 
-
-
 </code></pre>
 
 <ul>
@@ -950,18 +948,21 @@ a4.what_brand // a4 은this
 </ul></li>
 </ul>
 
-<p>```js</p>
-
-<p>var add = function  ( x , y ) {
-    this.val = x + y ;    // 여기서 this 는 ?</p>
-
-<p>var obj = {
+<pre><code class="language-js">
+var add = function  ( x , y ) {
+	this.val = x + y ;    // 여기서 this 는 ?
+ 
+var obj = { 
 val : 0
-};</p>
+}; 
 
-<p>add.call(obj,2,3);  // 5 동일다.  // this 는 obj</p>
 
-<p>add.apply(obj,[2,3]); // 5  동일하다.  //  this 는obj</p>
+add.call(obj,2,3);  // 5 동일다.  // this 는 obj
+
+add.apply(obj,[2,3]); // 5  동일하다.  //  this 는obj
+
+
+</code></pre>
 
           </div>
 
