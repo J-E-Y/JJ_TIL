@@ -835,12 +835,20 @@ $ open /usr/local/lib/node_modules
 
 <h4 id="this-는-5가지-patterns-이-있다">this 는 5가지 patterns 이 있다.</h4>
 
+<pre><code>  // 1. global this
+  // 2. function invocation
+  // 3. method invocation
+  // 4. construction mode
+  // 5. call(), .apply()
+</code></pre>
+
 <ul>
 <li>1. global this
 <br /></li>
 </ul>
 
-<pre><code class="language-js">this === window  같다 나온다
+<pre><code class="language-js">
+this === window  같다 나온다
 
 
 </code></pre>
@@ -893,9 +901,7 @@ count.getValue()
 </code></pre>
 
 <ul>
-<li><ol>
-<li>construction mode</li>
-</ol>
+<li><p>4 construction mode (생정자 모드 )</p>
 
 <ul>
 <li>주인이 누구냐에 따라서 결정된다.</li>
@@ -925,6 +931,7 @@ let a4 = new Car(&quot;GM&quot;,&quot;avante&quot;,&quot;black&quot;);  //인스
 // 3.this는 값은 ?
 
 // 경우에 따라 계속 변한다 
+// car 의 인스턴스인 a1,a2,a3,a4 가 this가 되는것이다. 
 
 
 a1.what_brand // a1 은 this
@@ -937,11 +944,11 @@ a4.what_brand // a4 은this
 </code></pre>
 
 <ul>
-<li><ol>
-<li>call(), .apply()</li>
-</ol>
+<li><p>5 call(), .apply()</p>
 
 <ul>
+<li><p>첫번째 인자가 <code>무조건</code> <code>this</code> 이다.</p></li>
+
 <li><p>call(this,1,2);   this 값에 들어갈 obj 가 this 다</p></li>
 
 <li><p>apply(this,[1,2]); this 값에 들어갈 obj 가 this 다.</p></li>

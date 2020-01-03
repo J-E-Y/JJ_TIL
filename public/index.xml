@@ -12123,12 +12123,20 @@ $ open /usr/local/lib/node_modules
 
 &lt;h4 id=&#34;this-는-5가지-patterns-이-있다&#34;&gt;this 는 5가지 patterns 이 있다.&lt;/h4&gt;
 
+&lt;pre&gt;&lt;code&gt;  // 1. global this
+  // 2. function invocation
+  // 3. method invocation
+  // 4. construction mode
+  // 5. call(), .apply()
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;ul&gt;
 &lt;li&gt;1. global this
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;this === window  같다 나온다
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+this === window  같다 나온다
 
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -12181,9 +12189,7 @@ count.getValue()
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;construction mode&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;4 construction mode (생정자 모드 )&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;주인이 누구냐에 따라서 결정된다.&lt;/li&gt;
@@ -12213,6 +12219,7 @@ let a4 = new Car(&amp;quot;GM&amp;quot;,&amp;quot;avante&amp;quot;,&amp;quot;bla
 // 3.this는 값은 ?
 
 // 경우에 따라 계속 변한다 
+// car 의 인스턴스인 a1,a2,a3,a4 가 this가 되는것이다. 
 
 
 a1.what_brand // a1 은 this
@@ -12225,11 +12232,11 @@ a4.what_brand // a4 은this
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;call(), .apply()&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;5 call(), .apply()&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;첫번째 인자가 &lt;code&gt;무조건&lt;/code&gt; &lt;code&gt;this&lt;/code&gt; 이다.&lt;/p&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;call(this,1,2);   this 값에 들어갈 obj 가 this 다&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;apply(this,[1,2]); this 값에 들어갈 obj 가 this 다.&lt;/p&gt;&lt;/li&gt;
@@ -14500,30 +14507,13 @@ temEsther(2000); // &amp;quot;&amp;lt;h1&amp;gt;esther&amp;lt;/h1&amp;gt;&amp;lt
 
 &lt;h4 id=&#34;this-는-5가지-patterns-이-있다&#34;&gt;&lt;code&gt;this&lt;/code&gt; 는 5가지 patterns 이 있다.&lt;/h4&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;5 patterns of Binding &amp;lsquo;this&amp;rsquo;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Global reference : window&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Free Function invocation : window&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;.call or .apply Invocation : 부모 object&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Contruction Mode : (new연산자로 생성된 function 영역의 this) 새로 생성된 객체&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// 1. global this
+&lt;p&gt;// 1. global this
 // 2. function invocation
 // 3. method invocation
 // 4. construction mode
-// 5. call(), .apply()
+// 5. call(), .apply()&lt;/p&gt;
 
-
-
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Contruction ==&amp;lt; 생성자 함수&lt;/p&gt;
