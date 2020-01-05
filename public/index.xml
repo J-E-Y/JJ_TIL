@@ -137,6 +137,170 @@ var total7 = foo(16) // 1 + 16 = 17
 var total8 = foo(17) // 1 + 17 = 18
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;check-point-4&#34;&gt;check_point-4&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1번 - What message will eventually be alerted? After how long?
+
+&lt;ul&gt;
+&lt;li&gt;setTimeout(function(){jj.sayHi()},1000)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;2번 - What message will eventually be alerted? After how long?
+
+&lt;ul&gt;
+&lt;li&gt;setTimeout(jj.sayHi,1000)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;3번 - What message will eventually be alerted? After how long?
+
+&lt;ul&gt;
+&lt;li&gt;setTimeout(jj.sayHi.bind(jj), 1000);&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;5번 - What message will eventually be alerted? After how long?
+
+&lt;ul&gt;
+&lt;li&gt;setTimeout(jj.sayHi.bind(tim), 1000);
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var esther = &amp;quot;eshter&amp;quot;;
+var jj = {
+  name: &amp;quot;jj&amp;quot;,
+  sayHi: function() {
+    alert(this.esther + &amp;quot; says hi&amp;quot;);
+  }
+}; this 값이 바껴버린다. 
+
+var tim = {
+  name : &amp;quot;tim&amp;quot;
+}
+
+//1.After how long?
+
+setTimeout(function(){jj.sayHi()},1000) //  jj say hi 
+// this 값이 jj되서 jj.name 원하는 바되로 jj say hi 가 나온다. 
+
+
+//2. After how long?
+// 하지만 
+setTimeout(jj.sayHi,1000) // esther says hi
+
+// 이렇게 콜백 함수를 넣는다면 this 값이 window 가 되어서
+// jj.sayHi를 불렀지만 esther. says hi 가 나온다. 
+
+//3. Ater how long?
+
+setTimeout(jj.sayHi.bind(jj), 1000); // jj say hi
+ 
+// 이렇게 하면 2번에서 나오는 esther  say hi 를 방지할수 있다 
+// 한마디로 this값을 원래 의도대로 jj 를 가르키게 하여 1초 후에 jj.name 되어 jj say hi  가 된다. 
+
+//4. Ater how long?
+
+setTimeout(jj.sayHi.bind(tim), 1000); // tim say hi
+
+ // this 는 tim  bind(tim) 으로 인해 this 값을 정해줬다. 
+  // 출력 
+
+var sayHiTim = jj.sayHi.bind(tim) // 이렇게 묶어서 사용할수 있다. 
+
+sayHiTim // tim.name + &amp;quot;says hi &amp;quot; 묶인채로 저장된다.  
+
+// ƒ () {
+//    alert(this.name + &amp;quot; says hi&amp;quot;);
+//  }
+
+
+sayHiTim() //  tim say hi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;5번 - After the following code runs, what will be the value of result?
+6번 - After the following code runs and all setTimeout callbacks run, what will be the value of result?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+//5 번
+
+function foo () {
+
+  var data = 10;
+
+  bar(function (players) {
+    data = players;
+  });
+
+  return data;
+}
+
+//1.
+///////////////////////////////////  
+// bar 함수는 callback 함수를 받아서 인자값을 20으로 한다. 
+function bar (callback) {
+  callback(20);
+}
+
+var result = foo(); // 20
+
+//2
+
+setTimout() // 안에 넣고 callback(20) 을 실행한다. 
+
+///////////////////////////////////
+///////////////////////////////////
+
+
+function foo () {
+
+  var data = 10;
+
+  bar(function (players) {
+    data = players;
+  });
+
+  return data;
+}
+
+function bar (callback) {
+  setTimeout(function () {
+    callback(20);
+  }, 500);
+}
+
+var result = foo(); //  값이 변하지 않아서 10 이다 
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;result 값이 42 가 되게 exercise 함수를 작성하라&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function exercise (???) {
+  ???
+}
+
+var a = exercise(10, function (x) {
+  return x + 2;
+});
+
+var b = exercise(15, function (x) {
+  return x * 2;
+});
+
+var result = a + b;
+
+
+
+function exercise (x,f) {
+  return f(x);
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -3799,21 +3963,47 @@ for link in links:
       <guid>/tutorial/it-terminology/</guid>
       <description>
 
-&lt;h3 id=&#34;cpu-메모리-스토리지-hdd-ssd&#34;&gt;CPU &amp;amp; 메모리&amp;amp; 스토리지(HDD,SSD)&lt;/h3&gt;
+&lt;h2 id=&#34;cpu-메모리-ram-스토리지-hdd-ssd&#34;&gt;CPU &amp;amp; 메모리(RAM)&amp;amp; 스토리지(HDD,SSD)&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/IT terminology_files/Screen Shot 2020-01-04 at 1.44.50 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;CPU : 중앙정보처리장치, 레지스터, 데이터를 연산/처리하는 가장 중요한 부분, 아주 빠름&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;메모리 : RAM(Random Access Memory),  CPU에서 직접 접근이 가능, 사용자가 자유롭게 내용을 읽고 쓰고 지울 수 있다. 휘발성 기억장치, 빠름&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;스토리지 : HDD,SSD, 비휘발성 기억장치, 용량이 아주 크지만 느림&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;1. CPU : 중앙정보처리장치, 레지스터, 데이터를 연산/처리하는 가장 중요한 부분, 아주 빠름&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;처리속도가 가장 빠르다.&lt;/p&gt;
+
+&lt;p&gt;어떠한 데이터가져와서 처리하려면&lt;/p&gt;
+
+&lt;p&gt;바로 스토리지로 가지 않는다.왜냐하면 느리고 성능이 CUP 를 못따라 온다.&lt;/p&gt;
+
+&lt;p&gt;그래서 메모리를 거쳐 데이터를 가져와서 처리를 해준다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2. 메모리(RAM)(램) :  CPU에서 직접 접근이 가능, 사용자가 자유롭게 내용을 읽고 쓰고 지울 수 있다. 휘발성 기억장치, 빠름&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;가격이 비싸다&lt;/p&gt;
+
+&lt;p&gt;용량이 적다&lt;/p&gt;
+
+&lt;p&gt;컴퓨터를 끄면 데이터 사라진다.&lt;/p&gt;
+
+&lt;p&gt;메모리가 하드디스크보다 더빠르게 데이터를 저장하고 가져올수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;3. 스토리지(하드디스크) : HDD,SSD, 비휘발성 기억장치, 용량이 아주 크지만 느림&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;가격이 저렴하다.&lt;/p&gt;
+
+&lt;p&gt;용량이 크고 전원이 꺼져도 데이터가 저장된다.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h4 id=&#34;cpu&#34;&gt;CPU&lt;/h4&gt;
 
@@ -3827,13 +4017,17 @@ for link in links:
 &lt;li&gt;&lt;p&gt;CPU에는 MCU(Micro Control Unit)와 주변 장치(외부 확장 장체에 관한 IC)가 다 들어있는 Soc(System On Chip)가 있다. 주변 IC가 따로 달려 있을 경우, 그것은 MCU라고 할 수 있다&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;램이란&#34;&gt;램이란?&lt;/h4&gt;
+&lt;h4 id=&#34;메모리-ram-random-access-memory-이란&#34;&gt;메모리(RAM) (Random Access Memory) 이란?&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/IT terminology_files/Screen Shot 2020-01-04 at 1.45.00 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;하드디스크와 시피유 사이에서.. 정보를 전송해주는 컴퓨터 부품이구요&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;hdd-ssd&#34;&gt;HDD SSD&lt;/h4&gt;
+&lt;h4 id=&#34;하드디스크-hdd-ssd&#34;&gt;하드디스크(HDD,SSD)&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/IT terminology_files/Screen Shot 2020-01-04 at 1.45.17 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;  HDD = SSD. 문서 사진 동영상 드라이버 공간 저장하는곳
 
@@ -3869,7 +4063,7 @@ for link in links:
 &lt;h4 id=&#34;자료구조를-왜-알아야-하는가&#34;&gt;자료구조를 왜 알아야 하는가?&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;메모리의 효율적인 사용 이라고 할 수 있다.&lt;/li&gt;
+&lt;li&gt;자료구조의 역확은 &lt;code&gt;메모리&lt;/code&gt;의 효율적인 사용하기 위함이라고 할수 있다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;ui-ux&#34;&gt;UI&amp;amp;UX&lt;/h2&gt;
@@ -11330,6 +11524,26 @@ car1 //  {position: 13}
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.03.37 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
+&lt;h4 id=&#34;연결-리스트를-사용할-때의-장점&#34;&gt;연결 리스트를 사용할 때의 장점&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;데이터를 차례대로 순회하면서 연산하기 좋음&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;순회 도중에 새로운 데이터의 삽입, 삭제에 용이함&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;배열과는 달리 데이터의 개수를 모르는 경우에도 별도의 비용없이 추가할 수 있음&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;연결-리스트를-원형으로-연결할-때의-장점&#34;&gt;연결 리스트를 원형으로 연결할 때의 장점&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;반복적인 순회에서 연결리스트의 끝을 체크해야할 필요가 없음&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;head같은 메타데이터가 필요하지 않음&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;이로인해 시간, 메모리, 코드 모두 이득을 볼 수 있음&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h4 id=&#34;property-2&#34;&gt;Property&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;HEAD : 첫 번째 노드를 지정하는 값
@@ -11343,14 +11557,16 @@ removeHead 삭제  : 첫 번째 노드를 삭제
 contains 탐색 : 연결 리스트가 주어진 값을 포함하고 있는지 확인
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;자료구조-graphs&#34;&gt;자료구조 Graphs&lt;/h2&gt;
+&lt;h2 id=&#34;graphs&#34;&gt;Graphs&lt;/h2&gt;
 
-&lt;h4 id=&#34;graphs&#34;&gt;Graphs&lt;/h4&gt;
+&lt;h4 id=&#34;graphs-란&#34;&gt;Graphs 란?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;노드(node)와 노드를 연결하는 간선(edge)로 이루어진 비선형 자료 구조&lt;/li&gt;
 &lt;li&gt;버텍스(vertex)와 노드를 연결하는 아크로 이루어진 비선형 자료 구조&lt;/li&gt;
 &lt;li&gt;그래프에서는 노드를 &lt;code&gt;버텍스&lt;/code&gt;, 엣지를 &lt;code&gt;아크&lt;/code&gt;라고 부릅니다.&lt;/li&gt;
+&lt;li&gt;예를 들어 지도, 지하철 노선도의 최단 경로, 전기 회로의 소자들, 도로(교차점과 일방통행길), 선수 과목 등이 있다.&lt;/li&gt;
+&lt;li&gt;오일러 문제(다리 건너기), 길찾기 알고리즘, 최단거리 알고리즘(다익스트라,벨만포드)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.35.39 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -11381,16 +11597,30 @@ contains : 그래프가 주어진 값의 노드를 포함하고 있는지 확인
 forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에 대해 실행한다.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;그래프를-코드로-표현하는-방법&#34;&gt;그래프를 코드로 표현하는 방법&lt;/h4&gt;
+&lt;h4 id=&#34;그래프를-코드로-표현하는-2가지-방법&#34;&gt;그래프를 코드로 표현하는 2가지 방법&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;이차원 배열을 사용하는 방법과&lt;/li&gt;
-&lt;li&gt;연결 리스트를 사용하는 방법이
-
-
-
-&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;1. 인접 행렬 그래프&lt;/li&gt;
+&lt;li&gt;2. 인접 리스트 그래프의 두가지로 나눌 수 있다.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h4 id=&#34;인접-행렬-그래프&#34;&gt;인접 행렬 그래프&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;장점: 직관적이며 쉽게 구현 가능
+단점: 불필요한 정보의 저장이 많으며, 그래프의 크기가 커지면 메모리 초과가 발생할 수 있음
+구현: int형의 2차원 배열을 주로 이용하며, 이동할 수 있으면 1, 없으면 0으로 표기함
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;인접-리스트-그래프-갈-수-있는-곳만-저장&#34;&gt;인접 리스트 그래프 - &amp;ldquo;갈 수 있는 곳만 저장&amp;rdquo;&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;장점: 필요한 정보만 저장하여 메모리 절약 가능
+단점: 인접행렬에 비해 다소 어려움
+구현: 리스트(List)나 벡터(Vector)등의 자료구조를 이용하여 각 정점에서 이동가능한 정점들을 저장(List나 Vector를 이용한 2차원 배열이라 생각하면 이해하기 쉬움)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;길찾기-알고리즘&#34;&gt;길찾기 알고리즘&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-04 at 2.17.29 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;tree&#34;&gt;Tree&lt;/h2&gt;
 
@@ -11399,12 +11629,60 @@ forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에
 &lt;ul&gt;
 &lt;li&gt;트리는 노드(node)들과 노드들을 연결하는 링크(link)들로 구성됨&lt;/li&gt;
 &lt;li&gt;부모-자식 관계를 이루는 노드들로 구성된 자료 구조&lt;/li&gt;
-&lt;li&gt;컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.
+&lt;li&gt;컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.(조직도)
 &lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.10.35 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;tree-종류에는-4가지가-대표적으로-있다&#34;&gt;Tree 종류에는 4가지가 대표적으로 있다.&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1.이진 트리 (binary Tree) 란?&lt;/li&gt;
+&lt;li&gt;2.편향 이진트리(skewed binary tree)란?&lt;/li&gt;
+&lt;li&gt;3.포화 이진트리(full binary tree)란?&lt;/li&gt;
+&lt;li&gt;4.완전 이진트리(complete binary tree)란?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-04 at 2.52.31 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;1.이진 트리 (binary Tree) 란?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;이진 트리에서 각 노드는 &lt;code&gt;최대 2&lt;/code&gt;개의 자식을 가진다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;이진트리인 경우 &lt;code&gt;왼쪽&lt;/code&gt;서브트리와 &lt;code&gt;오른쪽&lt;/code&gt; 서브트리로 구성된다.  여기서 &lt;code&gt;중요한점&lt;/code&gt;은 왼쪽과 오른쪽 서브트리를 확실하게 구분한다는 것이다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;2 편향 이진트리(skewed binary tree)란?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;한쪽으로만 되어있는 한쪽 자식만 가지고 있는 것&lt;/li&gt;
+&lt;li&gt;liked list 와 같이 생각할수 있다.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;포화 이진 트리(Full Binary Tree) ?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;모든 레벨이 꽉 찬 이진 트리&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;완전 이진 트리(Complete Binart Tree) 란?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;포화 이진 트리처럼 모든 레벨이 꽉 찬 상태는 아니지만, 차곡차곡 빈 틈 없이 노드가 채워진 이진 트리
+
+
+
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h4 id=&#34;용어&#34;&gt;용어&lt;/h4&gt;
 
@@ -11431,26 +11709,31 @@ contains() : 주어진 값을 트리에 있는 노드들이 가지고 있는지 
 &lt;h2 id=&#34;binary-search-tree&#34;&gt;binary search tree&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;이진 탐색 트리(binary search tree)는 이진 트리 기반의 탐색을 위한 자료 구조이다&lt;/li&gt;
+&lt;li&gt;이진 탐색 트리(binary search tree)는 이진 트리 기반의 &lt;code&gt;탐색&lt;/code&gt;을 위한 자료 구조이다&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;이진 탐색 트리는 4개의 조건이 있다&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Every node&amp;rsquo;s key is unique.&lt;/li&gt;
+&lt;li&gt;Every node&amp;rsquo;s key is unique. (모든 노드들은 유일하다. )&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;ol&gt;
-&lt;li&gt;The keys in the left subtree are less than the keys in the root.&lt;/li&gt;
+&lt;li&gt;The keys in the left subtree are less than the keys in the root. (왼쪽은 항상 오른쪽보다 작다.)&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;ol&gt;
-&lt;li&gt;The keys of the right subtree are larger than the keys of the root.&lt;/li&gt;
+&lt;li&gt;The keys of the right subtree are larger than the keys of the root. (오른쪽은 항상 왼쪽보다 크다. )&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;ol&gt;
-&lt;li&gt;모든 트리 노드들은 최대 2개의 자식 노드를 가질 수 있다.&lt;/li&gt;
+&lt;li&gt;모든 트리 노드들은  2개의 자식 노드&lt;code&gt;만&lt;/code&gt; 를 가질 수 있다.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;배열보다 메모리를 효율적으로 할 수 있으면서도 데이터값을 빠르게 찾을 수 있다는 점이 장점입니다.&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -11479,7 +11762,39 @@ contains : 트리를 반복하여 주어진 값이 있는지 확인
 delete : 노드를 삭제하고 트리 위치를 조정 
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h4 id=&#34;삭제하는-3가지-방법&#34;&gt;삭제하는 3가지 방법&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;1.맨밑에 지울때 리프한번의 연산 &lt;code&gt;O(1)&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;2.자식이 한개인노드를 지울때 두번의 연산 일어난다. &lt;code&gt;O(n)&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;3.자식이 2개이상인 노드를 지울때 이자리에 올려줄 친구를 찾는다.??? &lt;code&gt;O(n)&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&#34;hash-table&#34;&gt;Hash Table&lt;/h2&gt;
+
+&lt;h4 id=&#34;hash-table-란&#34;&gt;Hash Table 란?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;데이터의 효율적 관리를 목적으로 임의의 길이의 데이터를 고정된 길이의 데이터로 매핑하는 함수입니다. 이 때 매핑 전 원래 데이터의 값을 키(key), 매핑 후 데이터의 값을 해시값(hash value), 매핑하는 과정 자체를 해싱(hashing)라고 합니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;값을 가공하기 위해서는 해쉬 함수가 필요하다&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;해쉬 함수란?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;키값을 (Dog)  을 넣으면 고유의 값(!@#1)이 나와서 hi 를 찾게 해준다.&lt;/li&gt;
+&lt;li&gt;0 부터 key를 담은 값의 length 만큼만 반환시켜줄수 있어야 한다.&lt;/li&gt;
+&lt;li&gt;언제든지 key 를 넣었을때 같은 값이 나와야 한다.&lt;/li&gt;
+&lt;li&gt;어떠한 저장도 할수 없다. 기억을 가지고 있지않고 그때그때 값을 내밷어야 한다.&lt;/li&gt;
+&lt;li&gt;근데 만약 fox 를 넣었는데 Dog 을 넣었을때 고유의 값 고유의 값(!@#1) 가 나온다면 충돌이 난다.&lt;/li&gt;
+&lt;li&gt;그래서 고유의 값(!@#1)이 저장되에 있는곳에 0번째에 Dog &amp;gt; 1번째의 hi 를 가르키게 해주고 저장해놓고  0번째의 fox &amp;gt; 1번째의 hello  를 저장해놓게 된다면 고유의 값(!@#1) 값에서 0번째들안에 fox 를 찾아 value 값을 반환해주게 하면 된다 !
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;특징&#34;&gt;특징&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;key,value를가지고 있는 것&lt;/li&gt;
@@ -11487,12 +11802,30 @@ delete : 노드를 삭제하고 트리 위치를 조정
 &lt;li&gt;O(1)의 시간복잡도로 해결할 수 있다&lt;/li&gt;
 &lt;li&gt;고유에 인댁스로 바로 접근할수 있기  때문에 빠르게 검색할수 있다.&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;해시 테이블은 사전을 구현하는 가장 효율적인 자료구조이다.
-
 &lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h4 id=&#34;주의&#34;&gt;주의&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;해쉬 테이블은 원래 O(1) 를 자랑하는데 O(n) 이 될수 있다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;내가 insert 한 값이 same bucket 에 들어가게 된다면 O(n) 이 된다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;when a hash table is growing, it resizes itself  and every element must be rehashed&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.53.57 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;스토리지 ?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;튜퓰 ?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;bucket ?
+&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-05 at 12.36.09 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h4 id=&#34;property-6&#34;&gt;Property&lt;/h4&gt;
 
@@ -12232,7 +12565,7 @@ a4.what_brand // a4 은this
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;5 call(), .apply()&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;5 call(), .apply() invocation&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;첫번째 인자가 &lt;code&gt;무조건&lt;/code&gt; &lt;code&gt;this&lt;/code&gt; 이다.&lt;/p&gt;&lt;/li&gt;
