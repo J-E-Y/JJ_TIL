@@ -144,6 +144,19 @@ If there are two or more words that are the same length, return the first word f
     </item>
     
     <item>
+      <title>__Iheritance Patterns</title>
+      <link>/tutorial/2020-01-05-spint-3/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2020-01-05-spint-3/</guid>
+      <description> proto 1.모든 일반 객체는 Object.prototype 부모를 갖는다. 2..모든일반객체 생성되면 proto 가지고 있다. var obj ={}
+ 일반객체가 생성되면 Object.prototype 의 부모를 가지고 있다.  var student = { name: &#39;Lee&#39;, score: 90 } console.log(student.__proto__ === Object.prototype);   모든함수객체도 생성되면 proto가지고있다. function person(){}
+ 모든객체는 prototype 을 가르킨다.
+ 함도객체도 객체이므로 prototype 을 갖는다. 그런데 또 가지고 있는것이 있다. 그것이 prototype 프로퍼티 이다 !
+  constructor prototype Object.create 사용법 ES6 class 키워드 Super 키워드 </description>
+    </item>
+    
+    <item>
       <title>__Immersive Prep</title>
       <link>/tutorial/2019-12-21-sprint1/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>

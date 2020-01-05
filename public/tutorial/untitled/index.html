@@ -27,8 +27,7 @@
   
     
   
-  <meta name="description" content="sdsddsdds sd sd sd
-dsd sd">
+  <meta name="description" content="">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/untitled/">
@@ -51,7 +50,7 @@ dsd sd">
   
   
   
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="#EAF04E">
   
 
   
@@ -73,8 +72,8 @@ dsd sd">
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
         
       
     
@@ -87,13 +86,27 @@ dsd sd">
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair+Display:400,700|Fauna+One">
   
 
   <link rel="stylesheet" href="/styles.css">
   
 
   
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-153100405-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
   
   
 
@@ -114,11 +127,10 @@ dsd sd">
   
   <meta property="twitter:card" content="summary">
   
-  <meta property="og:site_name" content="Today JJ Learned">
+  <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/untitled/">
-  <meta property="og:title" content="first | Today JJ Learned">
-  <meta property="og:description" content="sdsddsdds sd sd sd
-dsd sd"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:title" content="__Inheritance Patterns | JohnJung">
+  <meta property="og:description" content=""><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   
@@ -129,10 +141,10 @@ dsd sd"><meta property="og:image" content="/img/icon-192.png">
 
   
 
-  <title>first | Today JJ Learned</title>
+  <title>__Inheritance Patterns | JohnJung</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
   <aside class="search-results" id="search">
   <div class="container">
     <section class="search-header">
@@ -169,7 +181,7 @@ dsd sd"><meta property="og:image" content="/img/icon-192.png">
   <div class="container">
 
     
-      <a class="navbar-brand" href="/">Today JJ Learned</a>
+      <a class="navbar-brand" href="/">JohnJung</a>
       
       <button type="button" class="navbar-toggler" data-toggle="collapse"
               data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -204,105 +216,58 @@ dsd sd"><meta property="og:image" content="/img/icon-192.png">
         
         
 
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#posts">
-            
-            <span>Posts</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#projects">
-            
-            <span>Projects</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#featured">
-            
-            <span>Publications</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/tutorial/">
-            
-            <span>Tutorials</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#contact">
-            
-            <span>Contact</span>
-            
-          </a>
-        </li>
-
-        
-        
-
       
       </ul>
       <ul class="navbar-nav ml-auto">
       
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tutorial/">
+          
+          <span>Technical Documents</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+          
+          <span>Posts</span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+          
+          <span>Projects</span>
+          
+          </a>
+        </li>
 
         
 
@@ -348,7 +313,7 @@ dsd sd"><meta property="og:image" content="/img/icon-192.png">
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">first</h1>
+  <h1 itemprop="name">__Inheritance Patterns</h1>
 
   
 
@@ -417,15 +382,6 @@ dsd sd"><meta property="og:image" content="/img/icon-192.png">
 
     <div class="article-style" itemprop="articleBody">
       
-
-
-<p>sdsddsdds
-sd
-sd
-sd</p>
-<p>dsd
-sd</p>
-
     </div>
 
     
@@ -450,13 +406,13 @@ sd</p>
 <div class="media author-card" itemscope itemtype="http://schema.org/Person">
   
   
-  <img class="portrait mr-3" src="/author/admin/avatar_hu9d86a95361d48c7ef439503a043609ac_95081_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+  <img class="portrait mr-3" src="/author/admin/avatar_hu89de8281188c8461d349c56a45f6ac7b_1793832_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
   
 
   <div class="media-body">
     <h5 class="card-title" itemprop="name"><a href="/authors/admin">John Jung</a></h5>
-    <h6 class="card-subtitle">Studying</h6>
-    <p class="card-text" itemprop="description">My research interests include distributed robotics, mobile computing and programmable matter.</p>
+    
+    <p class="card-text" itemprop="description">I&rsquo;m a Software Engineer based in the South Korea.I&rsquo;m quite interested in all aspects of software development.</p>
     <ul class="network-icon" aria-hidden="true">
       
       
@@ -471,56 +427,7 @@ sd</p>
         
       
       <li>
-        <a itemprop="sameAs" href="/#contact" >
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
-          <i class="ai ai-google-scholar"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://github.com/gcushen" target="_blank" rel="noopener">
+        <a itemprop="sameAs" href="https://github.com/J-E-Y" target="_blank" rel="noopener">
           <i class="fab fa-github"></i>
         </a>
       </li>
@@ -535,6 +442,19 @@ sd</p>
       
     
 
+    
+    <div class="article-widget">
+      <div class="post-nav">
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/tutorial/javascript_q2/" rel="next">_section3</a>
+  </div>
+  
+  
+</div>
+
+    </div>
     
 
     
@@ -691,7 +611,7 @@ sd</p>
     
     
     
-    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+    <script src="/js/academic.min.11384ce0c8c15291681687fbc4e0b90a.js"></script>
 
   </body>
 </html>

@@ -12090,6 +12090,52 @@ remove : 주어진 키값에 해당하는 index에 들어 있는 값을 제거�
     </item>
     
     <item>
+      <title>__Iheritance Patterns</title>
+      <link>/tutorial/2020-01-05-spint-3/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2020-01-05-spint-3/</guid>
+      <description>
+
+&lt;h2 id=&#34;proto&#34;&gt;&lt;strong&gt;proto&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;1.모든 일반 객체는 Object.prototype 부모를 갖는다.
+2..모든일반객체 생성되면 &lt;strong&gt;proto&lt;/strong&gt; 가지고 있다. var obj ={}&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;일반객체가 생성되면 Object.prototype 의 부모를 가지고 있다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var student = {
+  name: &#39;Lee&#39;,
+  score: 90
+}
+console.log(student.__proto__ === Object.prototype); 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;모든함수객체도 생성되면 &lt;strong&gt;proto&lt;/strong&gt;가지고있다. function person(){}&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;모든객체는 prototype 을 가르킨다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;함도객체도 객체이므로 prototype 을 갖는다. 그런데 또 가지고 있는것이 있다. 그것이 prototype 프로퍼티 이다 !&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;constructor&#34;&gt;constructor&lt;/h2&gt;
+
+&lt;h2 id=&#34;prototype&#34;&gt;prototype&lt;/h2&gt;
+
+&lt;h2 id=&#34;object-create-사용법&#34;&gt;Object.create 사용법&lt;/h2&gt;
+
+&lt;h2 id=&#34;es6-class-키워드&#34;&gt;ES6 class 키워드&lt;/h2&gt;
+
+&lt;h2 id=&#34;super-키워드&#34;&gt;Super 키워드&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
       <title>__Immersive Prep</title>
       <link>/tutorial/2019-12-21-sprint1/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -12386,8 +12432,7 @@ $ open /usr/local/lib/node_modules
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;*테스트 방법에는 3가지
-    * testing Tool&lt;/p&gt;
+&lt;h4 id=&#34;testing-tool-3가지-테스트-방법이-있다&#34;&gt;testing Tool (3가지 테스트 방법이 있다. )&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;  * 1.end to end test
 
