@@ -149,11 +149,13 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2020-01-05-spint-3/</guid>
-      <description> proto 1.모든 일반 객체는 Object.prototype 부모를 갖는다. 2..모든일반객체 생성되면 proto 가지고 있다. var obj ={}
- 일반객체가 생성되면 Object.prototype 의 부모를 가지고 있다.  var student = { name: &#39;Lee&#39;, score: 90 } console.log(student.__proto__ === Object.prototype);   모든함수객체도 생성되면 proto가지고있다. function person(){}
- 모든객체는 prototype 을 가르킨다.
- 함도객체도 객체이므로 prototype 을 갖는다. 그런데 또 가지고 있는것이 있다. 그것이 prototype 프로퍼티 이다 !
-  constructor prototype Object.create 사용법 ES6 class 키워드 Super 키워드 </description>
+      <description>프로토타입 상속의 관한개념 prototype,__proto__, constructor 관계를 알아보자.
+1.Parent생성자 함수가 생성되는순간 Parent의 프로토타입 객체 (Parent.prototype) 가 형성 된다.
+ Parent.protoype 안에는 __proto__ 와 constructor 가 있다.
+ __proto__ 는 위에 부모객체를 가르키고 연결되어있다.
+ 모든 객체는 __proto__가지고 있다. 프로토타입 객체에 접근할수 있게 해준다.
+ constructor 는 자기 자신을 가르킨다. Parent === Parent.prototype.constructor
+   생성자 함수 Parent의 인스턴스로 Son1,2,3,4을 생성했습니다. Son 들은은 __proto__ 프로퍼티를 가지고, Son.__proto__는 자신의 부모인 Parent.prototype 을 가리키고 있습니다.</description>
     </item>
     
     <item>
