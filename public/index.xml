@@ -12112,7 +12112,7 @@ remove : 주어진 키값에 해당하는 index에 들어 있는 값을 제거�
 
 &lt;li&gt;&lt;p&gt;4.모든 객체는 &lt;code&gt;__proto__&lt;/code&gt;가지고 있다. &lt;code&gt;프로토타입 객체&lt;/code&gt;에 접근할수 있게 해준다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;4.&lt;code&gt;constructor&lt;/code&gt; 는 자기 자신을 가르킨다. &lt;code&gt;Parent === Parent.prototype.constructor&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;4.&lt;code&gt;constructor&lt;/code&gt; 는 자기 자신을 가르킨다. Parent === Parent.prototype.constructor // true&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;5.생성자 함수 &lt;code&gt;Parent&lt;/code&gt;의 인스턴스로 &lt;code&gt;Son1,2,3,4&lt;/code&gt;을 생성했습니다.  &lt;code&gt;Son 들은&lt;/code&gt;은 &lt;code&gt;__proto__&lt;/code&gt; 프로퍼티를 가지고, &lt;code&gt;Son.__proto__&lt;/code&gt;는 자신의 부모인 &lt;code&gt;Parent.prototype&lt;/code&gt; 을 가리키고 있습니다.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
