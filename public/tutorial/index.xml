@@ -149,13 +149,12 @@ If there are two or more words that are the same length, return the first word f
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2020-01-05-spint-3/</guid>
-      <description>프로토타입 상속의 관한개념 prototype,__proto__, constructor 관계를 알아보자.
-1.Parent생성자 함수가 생성되는순간 Parent의 프로토타입 객체 (Parent.prototype) 가 형성 된다.
- Parent.protoype 안에는 __proto__ 와 constructor 가 있다.
- __proto__ 는 위에 부모객체를 가르키고 연결되어있다.
- 모든 객체는 __proto__가지고 있다. 프로토타입 객체에 접근할수 있게 해준다.
- constructor 는 자기 자신을 가르킨다. Parent === Parent.prototype.constructor
-   생성자 함수 Parent의 인스턴스로 Son1,2,3,4을 생성했습니다. Son 들은은 __proto__ 프로퍼티를 가지고, Son.__proto__는 자신의 부모인 Parent.prototype 을 가리키고 있습니다.</description>
+      <description>프로토타입 상속의 관한개념 prototype || __proto__ || constructor 관계  1.Parent생성자 함수가 생성되는순간 Parent의 프로토타입 객체 (Parent.prototype) 가 형성 된다.
+ 2.Parent.protoype 안에는 __proto__ 와 constructor 가 있다.
+ 3.__proto__ 는 위에 부모객체를 가르키고 연결되어있다.
+ 4.모든 객체는 __proto__가지고 있다. 프로토타입 객체에 접근할수 있게 해준다.
+ 4.constructor 는 자기 자신을 가르킨다. Parent === Parent.prototype.constructor
+ 5.생성자 함수 Parent의 인스턴스로 Son1,2,3,4을 생성했습니다. Son 들은은 __proto__ 프로퍼티를 가지고, Son.__proto__는 자신의 부모인 Parent.</description>
     </item>
     
     <item>

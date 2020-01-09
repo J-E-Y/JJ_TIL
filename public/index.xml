@@ -12099,27 +12099,29 @@ remove : 주어진 키값에 해당하는 index에 들어 있는 값을 제거�
 
 &lt;h2 id=&#34;프로토타입-상속의-관한개념&#34;&gt;프로토타입 상속의 관한개념&lt;/h2&gt;
 
-&lt;p&gt;prototype,&lt;code&gt;__proto__&lt;/code&gt;, constructor 관계를 알아보자.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-05-spint-3_files/Screen Shot 2020-01-09 at 11.05.49 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-05-spint-3_files/Screen Shot 2020-01-09 at 10.42.03 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;1.&lt;code&gt;Parent&lt;/code&gt;생성자 함수가 생성되는순간 Parent의 프로토타입 객체 (&lt;code&gt;Parent.prototype&lt;/code&gt;) 가 형성 된다.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Parent.protoype 안에는 &lt;code&gt;__proto__&lt;/code&gt; 와 &lt;code&gt;constructor&lt;/code&gt; 가 있다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;__proto__&lt;/code&gt; 는 위에 부모객체를 가르키고 연결되어있다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;모든 객체는 &lt;code&gt;__proto__&lt;/code&gt;가지고 있다. &lt;code&gt;프로토타입 객체&lt;/code&gt;에 접근할수 있게 해준다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;constructor&lt;/code&gt; 는 자기 자신을 가르킨다. &lt;code&gt;Parent === Parent.prototype.constructor&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&#34;prototype-proto-constructor-관계&#34;&gt;&lt;code&gt;prototype&lt;/code&gt; || &lt;code&gt;__proto__&lt;/code&gt; || &lt;code&gt;constructor&lt;/code&gt; 관계&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;생성자 함수 &lt;code&gt;Parent&lt;/code&gt;의 인스턴스로 &lt;code&gt;Son1,2,3,4&lt;/code&gt;을 생성했습니다.  &lt;code&gt;Son 들은&lt;/code&gt;은 &lt;code&gt;__proto__&lt;/code&gt; 프로퍼티를 가지고, &lt;code&gt;Son.__proto__&lt;/code&gt;는 자신의 부모인 &lt;code&gt;Parent.prototype&lt;/code&gt; 을 가리키고 있습니다.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;1.&lt;code&gt;Parent&lt;/code&gt;생성자 함수가 생성되는순간 Parent의 프로토타입 객체 (&lt;code&gt;Parent.prototype&lt;/code&gt;) 가 형성 된다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Prototype Chaining?&lt;/strong&gt; 자바스크립트 엔진이 어떤 프로퍼티나 메소드에 접근하려고 할 때 해당 객체에서 프로퍼티나 메소드를 찾지 못하면, &lt;code&gt;__proto__&lt;/code&gt;가 가리키는 링크를 따라 부모 역할을 하는 프로토타입 객체를 살펴보는 것을 의미합니다.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2.Parent.protoype 안에는 &lt;code&gt;__proto__&lt;/code&gt; 와 &lt;code&gt;constructor&lt;/code&gt; 가 있다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;3.&lt;code&gt;__proto__&lt;/code&gt; 는 위에 부모객체를 가르키고 연결되어있다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;4.모든 객체는 &lt;code&gt;__proto__&lt;/code&gt;가지고 있다. &lt;code&gt;프로토타입 객체&lt;/code&gt;에 접근할수 있게 해준다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;4.&lt;code&gt;constructor&lt;/code&gt; 는 자기 자신을 가르킨다. &lt;code&gt;Parent === Parent.prototype.constructor&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;5.생성자 함수 &lt;code&gt;Parent&lt;/code&gt;의 인스턴스로 &lt;code&gt;Son1,2,3,4&lt;/code&gt;을 생성했습니다.  &lt;code&gt;Son 들은&lt;/code&gt;은 &lt;code&gt;__proto__&lt;/code&gt; 프로퍼티를 가지고, &lt;code&gt;Son.__proto__&lt;/code&gt;는 자신의 부모인 &lt;code&gt;Parent.prototype&lt;/code&gt; 을 가리키고 있습니다.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&#34;prototype-chaining&#34;&gt;&lt;strong&gt;Prototype Chaining?&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;자바스크립트 엔진이 어떤 프로퍼티나 메소드에 접근하려고 할 때 해당 객체에서 프로퍼티나 메소드를 찾지 못하면, &lt;code&gt;__proto__&lt;/code&gt;가 가리키는 링크를 따라 부모 역할을 하는 프로토타입 객체를 살펴보는 것을 의미합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id=&#34;object-create-사용법&#34;&gt;Object.create 사용법&lt;/h2&gt;
 
