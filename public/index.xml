@@ -14131,6 +14131,108 @@ for (let key in person) {
 
 &lt;h2 id=&#34;toc_2&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;1.Deep copy&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;원시타입(primitive type)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;string-boolean-number&#34;&gt;String,Boolean,Number&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;복사가 일어날때 독립적이다
+새로운 메모리 공간을 확보하여 값을 저장한다. 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Shallow copy&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;참조 타입(reference type)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;object-array-function&#34;&gt;Object,Array,function&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;복사가 일어날때, 객체 그 자체가 아닌 객체의 위치 값을 저장 
+한마디로 딥 카피를 하면 엄청 메모리가 많이 잡힌다. 
+똑같은값쓰는데 메모리값또할당받아서 쓰지말라는 것이다. 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;예제&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var x = 2;
+var y = x; 
+y = 3;
+
+x // 2 
+
+// 
+// y = x 로 할당 하여도 x 값은 변하지 않는다 왜냐하면 메모리를 따로 저장하기 때문이다. 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var x = { foo: 3 };
+var y = x;
+y.foo = 2;
+
+// x.foo = 2  가 된다. 
+// y.foo = 2 로 바꿨다. 그런데 x.foo 값이 바뀌었다. 
+// 왜냐하면 x 와 y 는 같은 메모리를 사용하기 때문이다. 위치만 따로 쓴다. 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var x = { foo: 3 };
+var y = x;
+y = 2;
+
+// x.foo = 3. 
+// 이것은 바뀌지 않는다. 왜냐하면 y = x 로 하여 deep Copy 가 일어나서 메모리를 따로 쓰기 때문에 x.foo 에 영향을 주지 않는다. 
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var myArray = [2, 3, 4, 5];
+var ourArray = myArray;
+ourArray = [];
+
+myArray // [2, 3, 4, 5]
+
+// ourArray = [] 배열을 초기화 해도 myArray 에 영향을 주지 않는다. 
+// 왜냐하면 값을 새로 지정해줬기 때문이다. 
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+var myArray = [2, 3, 4, 5];
+var ourArray = myArray;
+ourArray[2] = 25;
+ourArray = undefined;
+
+myArray // [2, 3, 25, 5]
+
+// 이경우에는 값이 변했다. 
+// 왜냐하면 ourArray 가 myArray 메모리를 같이 쓰고있다가
+// ourArray[2] = 25 로 바꾸웠기 때문에 myArray에 영향을 끼친다. 
+
+// 하지만 
+var myArray = [2, 3, 4, 5];
+var ourArray = myArray;
+ourArray = []
+
+myArray // [2, 3, 4, 5];
+
+// ourArray = [] 하면 myArray 에 영향을 주지 않는다. 
+// ourArray = [] 빈배열로 정의하면 새로 배열을 만들었기 때문에
+// myArray 에서 독립되서 메모리를 사용하기 때문이다. 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;callbacks-promises-async-await&#34;&gt;Callbacks, Promises, Async Await&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
@@ -16876,11 +16978,11 @@ return a - b;
 &lt;p&gt;every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;toc_80&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_82&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;2-dom&#34;&gt;2. Dom&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_82&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_84&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;dom-이란&#34;&gt;Dom 이란 ?&lt;/h2&gt;
 
@@ -17459,11 +17561,11 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_98&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_100&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;3-studying-notes&#34;&gt;3. Studying_Notes&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_100&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_102&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;타이머-사용하기&#34;&gt;타이머 사용하기&lt;/h2&gt;
 

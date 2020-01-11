@@ -188,7 +188,11 @@ immutable
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2019-11-26-js-post/</guid>
-      <description>&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- 1.Javacript &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- Callbacks, Promises, Async Await // DATA const posts = [ { title: &amp;quot;&#39;Post One&amp;quot;, body: &#39;this is post one&#39;}, { title: &amp;quot;Porst One&amp;quot;, body: &amp;quot;this is post two&amp;quot;} ]; // getPosts() 함수는 화면에 data 안에 있는 tile 을 출력해준다. // 1초후 출력한다. function getPosts() { setTimeout(()=&amp;gt;{ let output = &amp;quot;&amp;quot;; posts.forEach((post,index)=&amp;gt;{ output = output + `&amp;lt;li&amp;gt;${post.title}&amp;lt;/li&amp;gt;` }); document.body.innerHTML = output; },1000); } getPosts(); // creatPost(post) 함수는 2초후에 data에 새로운 값을 추가해넣는다.</description>
+      <description>&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- 1.Javacript &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-  1.Deep copy
+ 원시타입(primitive type)
+  String,Boolean,Number 복사가 일어날때 독립적이다 새로운 메모리 공간을 확보하여 값을 저장한다.   Shallow copy
+ 참조 타입(reference type)
+  Object,Array,function 복사가 일어날때, 객체 그 자체가 아닌 객체의 위치 값을 저장 한마디로 딥 카피를 하면 엄청 메모리가 많이 잡힌다. 똑같은값쓰는데 메모리값또할당받아서 쓰지말라는 것이다.   예제  var x = 2; var y = x; y = 3; x // 2 // // y = x 로 할당 하여도 x 값은 변하지 않는다 왜냐하면 메모리를 따로 저장하기 때문이다.</description>
     </item>
     
     <item>
