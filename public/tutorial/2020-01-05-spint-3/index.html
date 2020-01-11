@@ -449,9 +449,11 @@
 <ul>
 <li><a href="#prototype-proto-constructor-관계"><code>prototype</code> || <code>__proto__</code> || <code>constructor</code> 관계</a></li>
 <li><a href="#prototype-chaining"><strong>Prototype Chaining?</strong></a></li>
+<li><a href="#보무객체를-상속받는-예제">보무객체를 상속받는 예제</a></li>
 </ul></li>
-<li><a href="#object-create-사용법">Object.create 사용법</a></li>
+<li><a href="#object-create-사용해서-parent의-모든-프로퍼티-가져오기">Object.create 사용해서 Parent의 모든 프로퍼티 가져오기</a></li>
 <li><a href="#es6-class-키워드">ES6 class 키워드</a></li>
+<li><a href="#es5-와-es6-차이점">ES5 와 ES6 차이점</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -500,9 +502,185 @@
 <p>자바스크립트 엔진이 어떤 프로퍼티나 메소드에 접근하려고 할 때 해당 객체에서 프로퍼티나 메소드를 찾지 못하면, <code>__proto__</code>가 가리키는 링크를 따라 부모 역할을 하는 프로토타입 객체를 살펴보는 것을 의미합니다.</p>
 </blockquote>
 
-<h2 id="object-create-사용법">Object.create 사용법</h2>
+<h3 id="보무객체를-상속받는-예제">보무객체를 상속받는 예제</h3>
+
+<ul>
+<li>생성자 함수 Parent 생성</li>
+</ul>
+
+<pre><code class="language-js"> 
+
+function Parent(){
+  this.money = 1000;
+  this.car = &quot;car&quot;
+    
+    }
+
+// 생성자 함수 Parent 의 메소드 massage 생성 
+
+Parent.prototype.message = function(){
+    return &quot;밥먹어라 아들아&quot;
+    
+    }
+    
+//new 키워드로 parent 생성자 함수 생성
+    
+var parent = new Parent()     
+
+// 메소드 message 는 안보이지만 parent의 프로토타입 객체 (parent.prototype) 안에 message 가 저장되어있다.  
+
+parent // Parent {money: 1000, car: &quot;car&quot;} 
+
+parent.message() // &quot;밥먹어라 아들아&quot;
+
+
+</code></pre>
+
+<h2 id="object-create-사용해서-parent의-모든-프로퍼티-가져오기">Object.create 사용해서 Parent의 모든 프로퍼티 가져오기</h2>
+
+<ul>
+<li>생성자 함수 Son<br /></li>
+
+<li><p>Son 함수는 이제 위에 Parent.prototype 의 접근해서{money: 1000, car: &ldquo;car&rdquo;}  와  <code>message()</code> 를 상속받을 것이다.</p></li>
+
+<li><p>Son 생성자 함수</p></li>
+</ul>
+
+<pre><code class="language-js">
+function Son(){ 
+  Parent.call(this) // 1.Parent.call(this) 연결 시켜준다. 
+  this.name = &quot;jj&quot;
+    
+
+Son.prototype = Object.create(Parent); // 2.Object.creat() 사용해서 상속
+Son.prototype.constructor = Son; // 3. Son 함수가 constructor: ƒ Son() 자기자신을 가르키게 설정해준다. 
+
+// 결과
+console.dir(Son); // Son {money: 1000, car: &quot;car&quot;, name: &quot;jj&quot;}
+//money: 1000
+//car: &quot;car&quot;
+//name: &quot;jj&quot;
+// __proto__: Parent  &lt;&lt; Parent 과 연결 되어있다
+// constructor: ƒ Parent()
+
+
+
+// 3. Son.prototype.constructor = Son 을 하는 이유는?
+
+// Son.protoype = Object.create(Parent) 하는 순간 
+
+// Son.protoype.constructor = Parent 를 가르키게 된다. 
+
+// 그렇게 되면 Son 함수가 자기 자신을 가르키지 않고 constructor: ƒ Parent() 가르키게 된다.  
+
+// Son.prototype.constructor = Son 를 하지않는다면 
+// 결과 
+console.dir(Son); // Son {money: 1000, car: &quot;car&quot;, name: &quot;jj&quot;}
+
+// money: 1000
+//car: &quot;car&quot;
+//name: &quot;jj&quot;
+// __proto__: Parent  &lt;&lt; Parent 과 연결 되어있다
+// constructor: ƒ Parent() // 하지만 Son 의 construtor 는 Parent()를 가르키게 된다. 
+ 
+
+
+
+
+</code></pre>
 
 <h2 id="es6-class-키워드">ES6 class 키워드</h2>
+
+<ul>
+<li><p>위에 있는 Parent() 와 Son() 의 상속관계를 예제로 바꿔보자</p></li>
+
+<li><p>Parent class 함수 만든다.</p></li>
+</ul>
+
+<pre><code class="language-js">
+class Parent {
+  constructor() { // constructor키가 추가되었다. constructor(Parameter) 넣을수 있다. 
+    this.money = 1000
+    this.car = &quot;car&quot;
+    }
+  mesaage(){ // 메소드를 이렇게 정의한다. 
+    return &quot;밥먹어라&quot;;
+  }
+}
+
+
+
+</code></pre>
+
+<ul>
+<li>Son class 함수를 만든다.</li>
+</ul>
+
+<pre><code class="language-js">// 엄청 간단해졌다. 
+class Son extends Parent{  // extentds 키워드 추가 
+  constructor(){
+    super()               // super()추가 Parent.call() 대체 
+    this.name = &quot;jj&quot;    
+  }
+       eat(){             // 메소드 추가 
+    return &quot;맛있다.&quot;
+    } 
+}
+
+
+</code></pre>
+
+<h2 id="es5-와-es6-차이점">ES5 와 ES6 차이점</h2>
+
+<ul>
+<li><p>What we&rsquo;ll cover</p></li>
+
+<li><p>Destructuring</p></li>
+
+<li><p>Spread operator</p></li>
+
+<li><p>Rest Parameters</p></li>
+
+<li><p>Default Parameters</p></li>
+
+<li><p>Template Literals</p></li>
+
+<li><p>Arrow Functions</p></li>
+
+<li><p>for &hellip; of Loop</p></li>
+
+<li><p>변수 할당 (Destructuring)</p></li>
+</ul>
+
+<pre><code class="language-js">// ES5
+
+var user = {
+  first: &quot;john&quot;,
+  last : &quot;jung&quot;,
+  age: 33
+}
+
+var first = user.first
+var last = user.last
+
+first // &quot;john&quot;
+last // &quot;jung&quot;
+
+
+// ES6
+var user = {
+  first: &quot;john&quot;,
+  last : &quot;jung&quot;,
+  age: 33
+}
+
+var {first,last} = user;
+
+first // &quot;john&quot;
+last // &quot;jung&quot;
+
+
+</code></pre>
 
           </div>
 
