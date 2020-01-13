@@ -101,7 +101,7 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;get/message 전달하고
-get/message 저장한다.&lt;/p&gt;
+post/message 저장한다.&lt;/p&gt;
 
 &lt;h2 id=&#34;http-hypertext-transfer-protocal&#34;&gt;HTTP :Hypertext Transfer Protocal&lt;/h2&gt;
 
