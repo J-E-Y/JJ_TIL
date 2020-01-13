@@ -36,6 +36,162 @@
     </item>
     
     <item>
+      <title>__Sever</title>
+      <link>/tutorial/2020-01-13-sever/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2020-01-13-sever/</guid>
+      <description>
+
+&lt;h2 id=&#34;브라우저란&#34;&gt;브라우저란?&lt;/h2&gt;
+
+&lt;p&gt;인터넷 망에서 정보를 감색하는데 사용하는 응용프로그램을 말한다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;기능&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;웹 페이지 열기, 최근 방문한 URL(uniform resource locator) 및 즐겨찾기 제공, 웹페이지 저장&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;종류&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Explorer&lt;/p&gt;
+
+&lt;p&gt;fireFox&lt;/p&gt;
+
+&lt;p&gt;Chrome&lt;/p&gt;
+
+&lt;p&gt;Safari&lt;/p&gt;
+
+&lt;p&gt;Opera&lt;/p&gt;
+
+&lt;h2 id=&#34;sever&#34;&gt;Sever&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게 되면 내컴퓨터는 서버컴퓨터가 되는것이다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;어떤 형태의 컴퓨터든 정보제공 역활을 하는 주체이면 ‘서버’컴퓨터로 불릴수 있다. (노트북꾸진것이라도 서버컴퓨터가 될수있다.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;예) 맛집에가서 사진을찍고 내컴퓨터에 저장했다 이것을 다른이에게 공유하기위해 다른 컴퓨터들이 내가 저장한 사진에 접근해서 볼수 있도록 하는것이다. 그럼 내컴퓨터는 서버컴퓨터가 되는것이다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;api&#34;&gt;API&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;[Application Program Interface]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;프로그램과 또 다른 프로그램을 연결해주는 일종의 &lt;code&gt;다리&lt;/code&gt;라고 볼 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;서버 자원을 잘 가져다가 쓸수 있게 만들어놓은 &lt;code&gt;interface&lt;/code&gt; 를 말한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;UI&lt;/code&gt;(User Interface)를 먼저 짚고 넘어가려 합니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;아이폰에 홈버튼이 있다. 이것을 누르면 처음화면으로 간다
+이홈버튼은 스마트폰안에 있는 내용들을 확일할수 있게 사용자를 이어주는 매개체입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;API&lt;/code&gt;도 같은 맥락이라고 볼 수 있는데요&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;모든각국의 나라 도시의 날씨의 정보가 있는 싸이트가 있다.  그런데 나는 한국의 인천의 날씨를 가져와서 인천사람들에게 이것을 전달하기위해 API 라는 것을 통해 전달할수 있다.&lt;/p&gt;
+
+&lt;p&gt;이것을 도와주는 중간 &lt;code&gt;매개체&lt;/code&gt;이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;get/message 전달하고
+get/message 저장한다.&lt;/p&gt;
+
+&lt;h2 id=&#34;http-hypertext-transfer-protocal&#34;&gt;HTTP :Hypertext Transfer Protocal&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTTP란&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;HyperText Transfer Protocol의 약자로 하이퍼텍스트 문서를 교환하기 위하여 사용된 통신 규약이다. 즉, 웹 서버와 클라이언트 간의 통신을 하기 위한 통신 규약이며 HTTP는 1989년 팀 버너스-리에 의해 처음 설계되었다. &lt;/p&gt;
+
+&lt;p&gt;한마디로 클라이언트와 서버간에 통신을 위해 만들어진 규칙이 HTTP 를 주소창에 적고 그다음 URL 주소를 넣어 통신을 하게 만든다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTTP의 동작&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;HTTP는 연결 상태를 유지하지 않는 비연결성 프로토콜이다. 이러한 단점을 해결하기 위해 Cookie와 Seesion 등장하였다.&lt;/p&gt;
+
+&lt;p&gt;HTTP는 연결을 유지하지 않는 프로토콜이기 떄문에 요청/응답(request/response) 방식으로 동작한다.&lt;/p&gt;
+
+&lt;p&gt;client는 server에게 request(요청)을 보낸다. 그럼 요청을 받은 server가 해야 할 일은 response(응답)을 보내는 것이다. &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;예)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;예를 들어 이야기해보자. 우리가 회원가입을 하려고 한다. 회원가입 양식을 다 작성한 후 회원가입 버튼을 눌렀을 때 우리가 작성한 양식의 data는 server가 database에 저장해준다. 그리고 사용자는 회원가입이 완료되었다고 뜨는 페이지를 보게될 것이다. 이러한 일이 일어나는데 이 과정을 순서대로 적어보자.&lt;/p&gt;
+
+&lt;p&gt;회원가입 버튼을 누르면 client가 server에게 request를 보내는 것이다. 그러면 server는 지정한 방식으로 request가 왔기때문에 그 요청이 오면 request객체가 가지고 있는 data를 저장하도록 코딩을 해놨을 것이다. 그렇게 data를 저장한 후 client에게 회원가입이 완료되었다는 페이지를 보여주기 위해 server는 어떠한 페이지를 보여주는 역할을 response를 통해 하는 것이다. &lt;/p&gt;
+
+&lt;p&gt;이런 과정을 HTTP를 통해 하는 것이다&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTTP 구성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;Header&lt;/code&gt; 안에&lt;/p&gt;
+
+&lt;p&gt;어디서 보내는 요청인가? origin
+컨텐츠 타입은 무엇인가? content-type
+어떤 클라이언트를 이용해 보냈는가?
+user-agent&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Body&lt;/code&gt;안에&lt;/p&gt;
+
+&lt;p&gt;서버에 데이터를 보내기위한 공간으로 활용한다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTTP 속성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;stateless&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;요청할때 서버는 멍청해서 그전에 내용을 기억하지 못해서 또 전에 요청한 내용을 동일하게 해줘야 한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;connettionless&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;물어보면 한번만 대답한다는것
+한번요청보내면 대답도 한번&lt;/p&gt;
+
+&lt;h2 id=&#34;ajax란-무엇인가&#34;&gt;AJAX란 무엇인가?&lt;/h2&gt;
+
+&lt;p&gt;AJAX는 Asynchronos Javascript And XML이다.&lt;/p&gt;
+
+&lt;p&gt;쉽게 말하면, 자바스크립트를 통해서 서버에 데이터를 요청하는 것이다&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;서버랑 통신을 하기 AJAX 를 사용해야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;처음에는&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;XMLHttpRequest 를 사용했었다. 조금 복잡하다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;두번째&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;JQuery 간편 너무 줄였다. 몬말인지 모르겠다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;마지막&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Fetch API 를 사용한다.  유연하고 가독성 좋고 무슨말인지 이해가 잘된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
       <title>__Check_Point</title>
       <link>/tutorial/2020-01-02-check-point/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
@@ -11715,29 +11871,42 @@ contains() : 주어진 값을 트리에 있는 노드들이 가지고 있는지 
 &lt;p&gt;이진 탐색 트리는 4개의 조건이 있다&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;바이너리 서치 트리는 세 가지 특징을 가지고 있습니다.&lt;/p&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;ol&gt;
-&lt;li&gt;Every node&amp;rsquo;s key is unique. (모든 노드들은 유일하다. )&lt;/li&gt;
+&lt;li&gt;트리의 각 노드가 갖는 자식 노드의 수가 &lt;strong&gt;2개 이하&lt;/strong&gt;가 되어야 합니다.&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;ol&gt;
-&lt;li&gt;The keys in the left subtree are less than the keys in the root. (왼쪽은 항상 오른쪽보다 작다.)&lt;/li&gt;
+&lt;li&gt;부모 노드의 &lt;strong&gt;왼쪽 하위 트리&lt;/strong&gt;에 있는 모든 노드의 데이터는 부모의 데이터보다 &lt;strong&gt;작거나 같아야&lt;/strong&gt; 합니다.&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;ol&gt;
-&lt;li&gt;The keys of the right subtree are larger than the keys of the root. (오른쪽은 항상 왼쪽보다 크다. )&lt;/li&gt;
+&lt;li&gt;부모 노드의 &lt;strong&gt;오른쪽 하위 트리&lt;/strong&gt;에 있는 모든 노드의 데이터는 부모의 데이터보다 &lt;strong&gt;커야&lt;/strong&gt; 합니다.&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;모든 트리 노드들은  2개의 자식 노드&lt;code&gt;만&lt;/code&gt; 를 가질 수 있다.
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;ol&gt;
-&lt;li&gt;배열보다 메모리를 효율적으로 할 수 있으면서도 데이터값을 빠르게 찾을 수 있다는 점이 장점입니다.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.16.03 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;바이너리 서치 트리를 순회하는 방법에는 두 가지가 있습니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;DFS (깊이 우선 탐색, Depth-First Search):&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;루트를 시작으로 점차 깊이 들어갔다가, 가장 깊은 depth에 도달했을 때 다시 나오고, 또 다시 깊이 들어가는 방식을 반복하며 전체 트리를 순회합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;BFS (너비 우선 탐색, Breadth-First Search):&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;sibling을 먼저 탐색하고, 그 후 다음 depth로 들어가 해당 depth의 slibling을 탐색하는 식으로 전체 트리를 순회합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h4 id=&#34;알고리즘-방법-추가학습&#34;&gt;알고리즘 방법 (추가학습)&lt;/h4&gt;
 
@@ -14130,6 +14299,90 @@ for (let key in person) {
 &lt;h2 id=&#34;1-javacript&#34;&gt;1.Javacript&lt;/h2&gt;
 
 &lt;h2 id=&#34;toc_2&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+
+&lt;h2 id=&#34;object-assign&#34;&gt;Object.assign()&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;ES6&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Object.assign(target, &amp;hellip;sources)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+// 1 번째 예제
+
+var obj = {a:1};
+var copy = Object.assign({}, obj);
+console.log(copy); // {a: 1}
+
+// 2번째 예제
+
+var obj1 = {a:1};
+var obj2 = {b:1};
+var obj3 = {c:1};
+var obj4 = {d:1};
+
+
+var newObj = Object.assign({}, obj1, obj2, obj3,obj4);
+
+
+console.log(newObj); // {a: 1, b: 1, c: 1, d: 1}
+
+// 3번째 예제 
+
+
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+
+const returnedTarget = Object.assign(target, source);
+
+console.log(target);  // assign 을 한후 target의 값이 바뀌었다.  
+// expected output: Object { a: 1, b: 4, c: 5 }
+
+console.log(returnedTarget); // 이중 값이 둘어오면 나중에 값으로 cover 된다. 
+
+// expected output: Object { a: 1, b: 4, c: 5 }
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;함수-생성하는-방법&#34;&gt;함수 생성하는 방법&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;함수 선언식 과 표현식의 차이점&lt;/li&gt;
+&lt;li&gt;함수 선언식은 호이스팅이 되고 표현식은 호이스팅이 되지 않는다.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;함수 선언식에서는  ; 사용하지 않는다. 표현식에서는 세미콜론 사용,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;선언식&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+greet();
+// 함수 선언
+function greet(){
+    console.log(&#39;hi&#39;)
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;표현식&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+const sayHello = function(){ 
+
+  console.log(&#39;hello&#39;) 
+  
+  };
+
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;상속과-다형성의-차이점&#34;&gt;상속과 다형성의 차이점&lt;/h2&gt;
 
@@ -16993,11 +17246,11 @@ return a - b;
 &lt;p&gt;every 와 some 메서드는 배열을 순회하면서 특정 조건을 배열의 값들이 만족시키는지 검사하는 메서드로서 호출한 배열이 결론적으로 조건을 만족시키는지(true), 만족시키지 못하는지(false)를 알려준다. every 와 some 의 차이는 every 가 배열의 모든 값이 조건을 만족해야, some 은 일부만 만족해도 true 를 return 한다&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;toc_84&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_86&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;2-dom&#34;&gt;2. Dom&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_86&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_88&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;dom-이란&#34;&gt;Dom 이란 ?&lt;/h2&gt;
 
@@ -17576,11 +17829,11 @@ window.onload = function () { } // 실행하고싶은 코드넣으면 실행할�
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_102&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_104&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;3-studying-notes&#34;&gt;3. Studying_Notes&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_104&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;toc_106&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;타이머-사용하기&#34;&gt;타이머 사용하기&lt;/h2&gt;
 
@@ -18866,6 +19119,19 @@ data.filter((ele, index,) =&amp;gt;{
 array.reduce((unique, item) =&amp;gt;
   unique.includes(item) ? unique : [...unique, item], []);
   
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;let names = [&#39;Mike&#39;, &#39;John&#39;, &#39;Bob&#39;, &#39;Jane&#39;, &#39;Bob&#39;, &#39;John&#39;, &#39;Lee&#39;, &#39;Mason&#39;] ;
+ 
+let single = names.reduce(( a, b ) =&amp;gt; {
+	if( a.indexOf(b) &amp;lt; 0 ) a.push(b) ;
+	return a ;
+}, []) ; // &amp;lt;-- 초기값 빈 배열 세팅!
+ 
+console.log( single ) ;
+// [ &#39;Mike&#39;, &#39;John&#39;, &#39;Bob&#39;, &#39;Jane&#39;, &#39;Lee&#39;, &#39;Mason&#39; ]
+
 
 &lt;/code&gt;&lt;/pre&gt;
 

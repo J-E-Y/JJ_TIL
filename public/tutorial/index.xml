@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>__Sever</title>
+      <link>/tutorial/2020-01-13-sever/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2020-01-13-sever/</guid>
+      <description>브라우저란? 인터넷 망에서 정보를 감색하는데 사용하는 응용프로그램을 말한다.
+ 기능  웹 페이지 열기, 최근 방문한 URL(uniform resource locator) 및 즐겨찾기 제공, 웹페이지 저장
+ 종류  Explorer
+fireFox
+Chrome
+Safari
+Opera
+Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게 되면 내컴퓨터는 서버컴퓨터가 되는것이다.
+ 어떤 형태의 컴퓨터든 정보제공 역활을 하는 주체이면 ‘서버’컴퓨터로 불릴수 있다. (노트북꾸진것이라도 서버컴퓨터가 될수있다.)
+ 예) 맛집에가서 사진을찍고 내컴퓨터에 저장했다 이것을 다른이에게 공유하기위해 다른 컴퓨터들이 내가 저장한 사진에 접근해서 볼수 있도록 하는것이다.</description>
+    </item>
+    
+    <item>
       <title>__Check_Point</title>
       <link>/tutorial/2020-01-02-check-point/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
@@ -188,14 +206,8 @@ immutable
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2019-11-26-js-post/</guid>
-      <description>&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- 1.Javacript &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- 상속과 다형성의 차이점  상속과 다형성은 서로 보는관점이 다르다.
- 상위객체가 하위객체를 자기의 어떠함으로 만들어낼때 다형성이 된다.
- 하위객체가 상위객체를 볼때 상속이 된다.
-   Deep copy &amp;amp; Shallow copy  1.Deep copy
- 원시타입(primitive type)
-  String,Boolean,Number 복사가 일어날때 독립적이다 새로운 메모리 공간을 확보하여 값을 저장한다.   Shallow copy
- 참조 타입(reference type)
-  Object,Array,function 복사가 일어날때, 객체 그 자체가 아닌 객체의 위치 값을 저장 한마디로 딥 카피를 하면 엄청 메모리가 많이 잡힌다.</description>
+      <description>&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- 1.Javacript &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- Object.assign() ES6
+ Object.assign(target, &amp;hellip;sources)  // 1 번째 예제 var obj = {a:1}; var copy = Object.assign({}, obj); console.log(copy); // {a: 1} // 2번째 예제 var obj1 = {a:1}; var obj2 = {b:1}; var obj3 = {c:1}; var obj4 = {d:1}; var newObj = Object.assign({}, obj1, obj2, obj3,obj4); console.log(newObj); // {a: 1, b: 1, c: 1, d: 1} // 3번째 예제 const target = { a: 1, b: 2 }; const source = { b: 4, c: 5 }; const returnedTarget = Object.</description>
     </item>
     
     <item>
