@@ -138,7 +138,7 @@ Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게
   
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2020-01-13-sever/">
-  <meta property="og:title" content="__Sever | JohnJung">
+  <meta property="og:title" content="__Server | JohnJung">
   <meta property="og:description" content="브라우저란? 인터넷 망에서 정보를 감색하는데 사용하는 응용프로그램을 말한다.
  기능  웹 페이지 열기, 최근 방문한 URL(uniform resource locator) 및 즐겨찾기 제공, 웹페이지 저장
  종류  Explorer
@@ -160,7 +160,7 @@ Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게
 
   
 
-  <title>__Sever | JohnJung</title>
+  <title>__Server | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
@@ -432,7 +432,11 @@ Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게
     <ul class="nav docs-sidenav">
       
       <li class="active">
-        <a href="/tutorial/2020-01-13-sever/">__Sever</a>
+        <a href="/tutorial/2020-01-13-sever/">__Server</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/2020-01-20-react/">__React</a>
       </li>
       
     </ul>
@@ -467,6 +471,7 @@ Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게
 <li><a href="#http-hypertext-transfer-protocal">HTTP :Hypertext Transfer Protocal</a></li>
 <li><a href="#ajax란-무엇인가">AJAX란 무엇인가?</a></li>
 <li><a href="#fetch-를-왜-쓰는가">Fetch 를 왜 쓰는가?</a></li>
+<li><a href="#request-message">Request message</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -484,7 +489,7 @@ Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">__Sever</h1>
+          <h1 itemprop="name">__Server</h1>
 
           <div class="article-style" itemprop="articleBody">
             
@@ -652,6 +657,30 @@ user-agent</p>
 <p>Factch 는 가져오는 함수</p>
 
 <p>서버 자원을 가져오기 위해</p>
+
+<h2 id="request-message">Request message</h2>
+
+<ul>
+<li>웹브라우져와 웹서버 주고받는 메</li>
+</ul>
+
+<pre><code class="language-js">
+Request Header
+GET /1.html HTTP/1.1     =&gt; 요청행
+Host: localhost:8080     =&gt; 네트워크의 컴퓨터 식별하는 이름
+
+User-Agent :     =&gt; 유저 컴퓨터, 웹브라우저 정보
+...
+...
+Accept-Encoding : gzip, deflate, br   =&gt; 데이터 양이 많으면 압축해서 전송하는데, 어떤 압축방식을 지원하는지 설명
+...
+...
+If-Modified-Since: Tue, ... =&gt; 마지막으로 페이지를 다운받은게 언제인지 확인하여 다시 다운받을지 결정
+&lt;blank line&gt;    =&gt; 블랭크로 헤더와 바디 구분
+Request Message Body
+
+
+</code></pre>
 
           </div>
 
