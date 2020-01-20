@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="1. What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.  React ES6 &amp; JSX 반드시 알아야 할 ES6 문법들 1) Destructuring(구조 분해) 2) spread operator(전개 구문) 3) rest parameters 4) default parameters(기본 매개변수) 5) template literals 6) arrow function(화살표 함수) 7) for-of loop  1.Destructuring(구조 분해)
+  <meta name="description" content="1. What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.  React ES6 반드시 알아야 할 ES6 문법들 1) Destructuring(구조 분해) 2) spread operator(전개 구문) 3) rest parameters 4) default parameters(기본 매개변수) 5) template literals 6) arrow function(화살표 함수) 7) for-of loop  1.Destructuring(구조 분해)
  배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 JavaScript 표현식">
 
   
@@ -131,7 +131,7 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2020-01-20-react/">
   <meta property="og:title" content="__React | JohnJung">
-  <meta property="og:description" content="1. What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.  React ES6 &amp; JSX 반드시 알아야 할 ES6 문법들 1) Destructuring(구조 분해) 2) spread operator(전개 구문) 3) rest parameters 4) default parameters(기본 매개변수) 5) template literals 6) arrow function(화살표 함수) 7) for-of loop  1.Destructuring(구조 분해)
+  <meta property="og:description" content="1. What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.  React ES6 반드시 알아야 할 ES6 문법들 1) Destructuring(구조 분해) 2) spread operator(전개 구문) 3) rest parameters 4) default parameters(기본 매개변수) 5) template literals 6) arrow function(화살표 함수) 7) for-of loop  1.Destructuring(구조 분해)
  배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 JavaScript 표현식"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
@@ -450,13 +450,18 @@
 <li>
 <ul>
 <li><a href="#1-what-is-react">1. What is &ldquo;React&rdquo;??</a></li>
-<li><a href="#react-es6-jsx">React ES6 &amp; JSX</a>
+<li><a href="#react-es6">React ES6</a>
 <ul>
 <li>
 <ul>
 <li><a href="#반드시-알아야-할-es6-문법들">반드시 알아야 할 ES6 문법들</a></li>
 </ul></li>
 </ul></li>
+<li><a href="#jsx">JSX</a></li>
+<li><a href="#1-data-flow">1. Data flow</a></li>
+<li><a href="#2-컴포넌트와-props">2. 컴포넌트와 Props</a></li>
+<li><a href="#3-state">3. State</a></li>
+<li><a href="#life-cycle"><strong>Life Cycle</strong></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -486,7 +491,7 @@
 <li>프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.</li>
 </ul>
 
-<h2 id="react-es6-jsx">React ES6 &amp; JSX</h2>
+<h2 id="react-es6">React ES6</h2>
 
 <h4 id="반드시-알아야-할-es6-문법들">반드시 알아야 할 ES6 문법들</h4>
 
@@ -791,6 +796,333 @@ for (let [key, value] of iterable) {
 
 
 </code></pre>
+
+<h2 id="jsx">JSX</h2>
+
+<p>JSX 란?</p>
+
+<ul>
+<li><p>자바 스크립트의 확장 문법</p></li>
+
+<li><p>반드시 하나의 엘리먼트로 감싸야 한다.</p></li>
+
+<li><p>자바스크립트 코드를 적용할 땐 { } 안에 작성한다.</p></li>
+
+<li><p>JSX 내부에선 if문을 사용할 수 없다. IIFE or 삼항연산자 사용</p></li>
+
+<li><p>엘리먼트의 클래스 이름을 적용할 때, className 을 사용(class는 ES6에 존재하기 때문)</p></li>
+</ul>
+
+<p>JSX 객체 표현</p>
+
+<blockquote>
+<p>Babel은 JSX를 React.createElement() 호출로 컴파일합니다.</p>
+</blockquote>
+
+<ul>
+<li><p>아래 두 예제는 동일합니다.</p>
+
+<pre><code>
+// 
+const element = (
+&lt;h1 className=&quot;greeting&quot;&gt;
+Hello, world!
+&lt;/h1&gt;
+);
+
+
+const element = React.createElement(
+'h1',
+{className: 'greeting'},
+'Hello, world!'
+);
+
+</code></pre></li>
+</ul>
+
+<p>React.createElement() 는 버그 없는 코드를 작성하는 데 도움을 주는 몇가지 체크를 하지만 기본적으로는 아래와 같은 객체를 생성합니다.</p>
+
+<pre><code class="language-js">
+
+// Note: this structure is simplified
+const element = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world'
+  }
+};
+
+</code></pre>
+
+<p>이 객체는 <code>“React elements”</code> 부릅니다. 화면에서 볼 수 있는 내용에 대한 설명으로 생각할 수 있습니다. React는 이 객체를 읽어들이고 이를 사용하여 DOM을 구성하고 최신 상태로 유지합니다.</p>
+
+<h2 id="1-data-flow">1. Data flow</h2>
+
+<ul>
+<li>부모 컴포넌트에서 자식 컴포넌트로 데이터가 흐름</li>
+<li>자식이 부모컴포넌트에 데이터를 줄수 없음</li>
+</ul>
+
+<p><img src="/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 1.50.10 PM.png" alt="" /></p>
+
+<h2 id="2-컴포넌트와-props">2. 컴포넌트와 Props</h2>
+
+<ul>
+<li><p>Props 란?</p>
+
+<ul>
+<li>Props: <code>상위</code> 컴포넌트가 <code>하위</code> 컴포넌트에게 <code>내려</code>주는 <code>데이터(속성)</code></li>
+<li>단순히 사용만 할 수 있다. 변경할 수 없다.</li>
+</ul></li>
+
+<li><p>컴포넌트?</p>
+
+<ul>
+<li>개념상 컴포넌트는 자바스크립트 함수와 비슷함.</li>
+<li>임의의 입력 (“props”라고 부르는)을 받아들이고 어떤 게 화면에 나타나야 하는 지를 설명하는 React 요소를 반환함.</li>
+</ul></li>
+
+<li><p>2-1. 함수형 및 클래스 컴포넌트</p></li>
+</ul>
+
+<blockquote>
+<p>컴포넌트는 자바스크립트의 함수형 및 클래스형으로 작성할 수 있다.</p>
+</blockquote>
+
+<pre><code class="language-js">
+`아래는 함수형으로 작성한 컴포넌트`
+
+
+function Welcome(props) {
+    return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+
+
+`아래는 ES6를 사용해 작성한 컴포넌트`
+
+
+class Welcome extends React.Component {
+    render() {
+        return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+    }
+}
+
+
+위의 두 컴포넌트는 React 관점에서 보면 동일하지만 ES6의 클래스 기능을 사용한 컴포넌트가 몇가지 기능을 더 가지고 있음.
+
+
+</code></pre>
+
+<p>2-2. 컴포넌트 렌더링</p>
+
+<ul>
+<li>props: React가 유저가 정의한 컴포넌트를 나타내는 요소를 볼 때 JSX 속성을 이 컴포넌트에 단일 객체로 전달하는데, 이 객체를 props라고 부름</li>
+</ul>
+
+<p><code>Bable</code></p>
+
+<pre><code class="language-js">
+
+
+function Welcome(props) {
+  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+
+const element = &lt;Welcome name=&quot;Rami&quot; /&gt;;
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+
+</code></pre>
+
+<p><img src="/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 2.29.59 PM.png" alt="" /></p>
+
+<p><code>여기서의 props: { name: 'rami' }</code>
+<code>Welcome(props)</code>
+컴포넌트의 이름은 항상 <code>대문자</code>로 시작해야 함.</p>
+
+<p>2-3. 컴포넌트 결합</p>
+
+<blockquote>
+<p>컴포넌트는 출력될 때 다른 컴포넌트를 참조할 수 있습니다. 이를 통해 모든 세부 레벨에서 동일한 컴포넌트 추상화를 사용할 수 있습니다.</p>
+</blockquote>
+
+<pre><code class="language-js">//-----------------component-------------------------------
+function Welcome(props) {
+  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+//-----------------component-------------------------------
+ 
+function App() {
+  return (
+    &lt;div&gt;
+      &lt;Welcome name=&quot;Sara&quot; /&gt;  // name=&quot;Sara&quot; &gt;&gt;&gt;props
+      &lt;Welcome name=&quot;Cahal&quot; /&gt; // name=&quot;Cahal&quot; &gt;&gt;&gt;props
+      &lt;Welcome name=&quot;Edite&quot; /&gt; // name=&quot;Edite&quot;  &gt;&gt;&gt;props
+    &lt;/div&gt;
+  );
+}
+
+ReactDOM.render(
+  &lt;App /&gt;,
+  document.getElementById('root')
+);
+
+
+</code></pre>
+
+<p><img src="/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 2.47.22 PM.png" alt="" /></p>
+
+<p>2.4 Props는 읽기전용</p>
+
+<h2 id="3-state">3. State</h2>
+
+<p>3-1. State</p>
+
+<blockquote>
+<p>컴포넌트가 갖는 <code>상태</code>. <code>객체의 형태</code>로 컴포넌트 내에서 보관하고 관리한다.</p>
+</blockquote>
+
+<ul>
+<li>1) <code>class</code> 컴포넌트로 작성되어야 한다</li>
+</ul>
+
+<blockquote>
+<p>class형식으로 무조건 작성되어야 하한다.</p>
+</blockquote>
+
+<ul>
+<li>2) 반드시 <code>setState</code> 메서드로 값을 변경</li>
+</ul>
+
+<blockquote>
+<p><code>state의 값을 직접적으로 변경하면 안됨.</code></p>
+</blockquote>
+
+<p>state 값을 변경할때 변경 ( setState 메서드 사용할때 ) ==&gt; <code>render() 함수</code>가 실행된다.</p>
+
+<pre><code class="language-js">
+class Foo extends Component{
+    state = {
+        a: 10,
+        b: false
+    }
+	changeState() {        
+        //this.state.a = 100; ~~~~~~!!!~~~!!!  직접 바꾸면 안되고 
+        this.setState({     // 이렇게 
+            a: 100          // 이렇게 
+        })                  // 이렇게  바꿔야 한다. 
+    }
+}
+
+
+</code></pre>
+
+<ul>
+<li>3) State 업데이트는 비동기일 수 있다</li>
+</ul>
+
+<blockquote>
+<p>React는 여러 setState() 호출을 성능을 위해 단일 업데이트로 배치할 수 있습니다.</p>
+
+<p>this.props 및 this.state 가 비동기로 업데이트될 수 있기 때문에, 다음 state를 계산할 때 해당 값을 신뢰해서는 안됩니다.</p>
+
+<p>예를 들어, 카운터를 업데이트하는 이 코드는 실패할 수 있습니다.</p>
+</blockquote>
+
+<pre><code class="language-js">
+// Wrong
+this.setState({
+  counter: this.state.counter + this.props.increment,
+});
+
+
+</code></pre>
+
+<ul>
+<li>이 문제를 해결하기 위해 객체가 아닌 함수를 받는 두 번째 형식의 setState() 를 사용할 수 있습니다.</li>
+</ul>
+
+<pre><code class="language-js">
+
+// Correct
+this.setState((prevState, props) =&gt; ({
+  counter: prevState.counter + props.increment
+}));
+
+
+</code></pre>
+
+<ul>
+<li>4)State Update는 병합됨</li>
+</ul>
+
+<blockquote>
+<p>setState() 를 호출할 때, React는 현재 state와 제공한 객체를 병합합니다.</p>
+</blockquote>
+
+<pre><code class="language-js">
+constructor(props) {
+    super(props);
+    this.state = {
+        posts: [],
+        comments: []
+    };
+}
+
+componentDidMount() {
+    fetchPosts().then(response =&gt; {
+      this.setState({
+        posts: response.posts
+        //여기서의 setState()는 posts만 변경할 뿐 comments는 건드리지 않음.
+      });
+    });
+
+    fetchComments().then(response =&gt; {
+      this.setState({
+        comments: response.comments
+        //여기서의 setState()는 comments만 변경할 뿐 posts는 건드리지 않음.
+      });
+    });
+  }
+
+
+
+</code></pre>
+
+<ul>
+<li>5) 데이터는 아래로 흐름</li>
+</ul>
+
+<blockquote>
+<p>부모 컴포넌트나 자식 컴포넌트는 특정 컴포넌트의 state 유무를 알 수 없으며 해당 컴포넌트가 함수나 클래스로 선언되었는 지 알 수 없습니다.</p>
+</blockquote>
+
+<p><strong>State는 props와 비슷하지만 컴포넌트에 의해 완전히 제어되며 private 속성이다.</strong></p>
+
+<h2 id="life-cycle"><strong>Life Cycle</strong></h2>
+
+<p>컴포넌트가 브라우저에 보여질 때, 업데이트될 때, 사라질 때 각 단계 전,후로 특정 메서드가 호출된다.</p>
+
+<p><img src="/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 4.48.31 PM.png" alt="" /></p>
+
+<ul>
+<li><p>많은 컴포넌트를 가진 어플리케이션에서, 컴포넌트가 제거될 때 리소스를 풀어주는 건 아주 중요한 일</p></li>
+
+<li><p>컴포넌트가 DOM에 최초로 렌더링 될 때 React에서 이를 “mounting” 이라고 부릅니다.
+메서드명은 componentDidMount라고 써야 함.</p></li>
+
+<li><p>DOM에서 컴포넌트를 삭제할 때 React에서 이를 “unmounting” 이라고 부릅니다.
+메서드명은 componentWillUnmount이다.</p></li>
+</ul>
+
+<p><code>라이프사이클 훅</code></p>
+
+<blockquote>
+<p>컴포넌트가 <code>마운트</code> (mount) 되고 <code>언마운트</code> (unmount) 될 때 <code>특정 코드</code>를 실행하기 위해 컴포넌트 클래스에 특별한 메서드를 선언할 수 있고 이런 메서드들을 “<code>라이프사이클 훅</code>” 이라고 부릅니다.</p>
+</blockquote>
 
           </div>
 
