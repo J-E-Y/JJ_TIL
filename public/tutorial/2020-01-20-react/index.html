@@ -462,6 +462,11 @@
 <li><a href="#2-컴포넌트와-props">2. 컴포넌트와 Props</a></li>
 <li><a href="#3-state">3. State</a></li>
 <li><a href="#life-cycle"><strong>Life Cycle</strong></a></li>
+<li><a href="#component-만들기">Component 만들기</a></li>
+<li><a href="#props-만들기">Props 만들기</a></li>
+<li><a href="#component-파일로-분리하기">Component 파일로 분리하기</a></li>
+<li><a href="#state의-사용">state의 사용</a></li>
+<li><a href="#state-key">state (Key)</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -979,14 +984,12 @@ ReactDOM.render(
 
 <h2 id="3-state">3. State</h2>
 
-<p>3-1. State</p>
-
-<blockquote>
-<p>컴포넌트가 갖는 <code>상태</code>. <code>객체의 형태</code>로 컴포넌트 내에서 보관하고 관리한다.</p>
-</blockquote>
+<p>State 란?</p>
 
 <ul>
-<li>1) <code>class</code> 컴포넌트로 작성되어야 한다</li>
+<li><p>컴포넌트가 갖는 <code>상태</code>. <code>객체의 형태</code>로 컴포넌트 내에서 보관하고 관리한다.</p></li>
+
+<li><p>1) <code>class</code> 컴포넌트로 작성되어야 한다</p></li>
 </ul>
 
 <blockquote>
@@ -1128,6 +1131,495 @@ componentDidMount() {
 <blockquote>
 <p>컴포넌트가 <code>마운트</code> (mount) 되고 <code>언마운트</code> (unmount) 될 때 <code>특정 코드</code>를 실행하기 위해 컴포넌트 클래스에 특별한 메서드를 선언할 수 있고 이런 메서드들을 “<code>라이프사이클 훅</code>” 이라고 부릅니다.</p>
 </blockquote>
+
+<h2 id="component-만들기">Component 만들기</h2>
+
+<p>HTML tag</p>
+
+<pre><code class="language-js">&lt;html&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;WEB&lt;/h1&gt;
+      world wide web!
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;article&gt;
+      &lt;h2&gt;HTML&lt;/h2&gt;
+      HTML is HyperText Markup Language.
+    &lt;/article&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+
+
+
+</code></pre>
+
+<p>App.js</p>
+
+<pre><code class="language-js">
+import React, { Component } from &quot;react&quot;;
+import logo from &quot;./logo.svg&quot;; //필요없다 현재
+import &quot;./App.css&quot;;
+
+class Content extends Component {
+  render() {
+    return (
+      &lt;article&gt;
+        &lt;h2&gt;HTML&lt;/h2&gt;
+        HTML is HyperText Markup Language.
+      &lt;/article&gt;
+    );
+  }
+}
+
+class TOC extends Component {
+  render() {
+    return (
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    );
+  }
+}
+
+// 컴퍼넌트를 만들때는 항상 하나의 최상의 tag로 시작해야한다.
+
+class Subject extends Component {
+  render() {
+    return (
+      &lt;header&gt; 
+        &lt;h1&gt;WEB&lt;/h1&gt;
+        world wide web!
+      &lt;/header&gt;
+    );
+  }
+}
+
+// App이라는 것이 Component 를 만들 것이다.
+// App 는 render 라는 메소드를 가지고 있다.
+
+class App extends Component {
+  render() {
+    return (
+      &lt;div className=&quot;App&quot;&gt;
+        &lt;Subject&gt;&lt;/Subject&gt;
+        &lt;TOC&gt;&lt;/TOC&gt;
+        &lt;Content&gt;&lt;/Content&gt;
+      &lt;/div&gt;
+    ); // class =  에서 calssName으로 바뀜
+  }
+}
+
+export default App;
+
+
+
+</code></pre>
+
+<h2 id="props-만들기">Props 만들기</h2>
+
+<pre><code class="language-js">import React, { Component } from &quot;react&quot;;
+import logo from &quot;./logo.svg&quot;; //필요없다 현재
+import &quot;./App.css&quot;;
+
+class Content extends Component {
+  render() {
+    return (
+      &lt;article&gt; // props
+        &lt;h2&gt;{this.props.title}&lt;/h2&gt;  
+        {this.props.desc}
+      &lt;/article&gt;
+    );
+  }
+}
+
+class TOC extends Component {
+  render() {
+    return (
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    );
+  }
+}
+
+// 컴퍼넌트를 만들때는 항상 하나의 최상의 tag로 시작해야한다.
+class Subject extends Component {
+  render() {
+    return (
+      &lt;header&gt; // props
+        &lt;h1&gt;{this.props.title}&lt;/h1&gt;
+        {this.props.sub}
+      &lt;/header&gt;
+    );
+  }
+}
+
+// App이라는 것이 Component 를 만들 것이다.
+// App 는 render 라는 메소드를 가지고 있다.
+
+class App extends Component {
+  render() {
+    return (
+      &lt;div className=&quot;App&quot;&gt;
+        &lt;Subject title=&quot;WEB&quot; sub=&quot;world wide web!&quot;&gt;&lt;/Subject&gt;
+        &lt;Subject title=&quot;menu&quot; sub=&quot;this is what I wanted to build&quot;&gt;&lt;/Subject&gt;
+        &lt;TOC&gt;&lt;/TOC&gt;
+        &lt;Content
+          title=&quot;HTML&quot;
+          desc=&quot; HTML is HyperText Markup Language.&quot;
+        &gt;&lt;/Content&gt;
+      &lt;/div&gt;
+    ); 
+  }
+}
+
+export default App;
+
+
+
+</code></pre>
+
+<h2 id="component-파일로-분리하기">Component 파일로 분리하기</h2>
+
+<blockquote>
+<p>만약 하나의 파일에 component가 수천개 있다면 복잡할 것이다.</p>
+</blockquote>
+
+<p>App.js</p>
+
+<blockquote>
+<p>main JS 파일</p>
+</blockquote>
+
+<pre><code class="language-js">
+import React, { Component } from &quot;react&quot;;
+import logo from &quot;./logo.svg&quot;; //필요없다 현재
+import TOC from &quot;./component/TOC&quot;;
+import Subject from &quot;./component/subject&quot;;
+import Content from &quot;./component/content&quot;;
+import &quot;./App.css&quot;;
+
+// App이라는 것이 Component 를 만들 것이다.
+// App 는 render 라는 메소드를 가지고 있다.
+
+class App extends Component {
+  render() {
+    return (
+      &lt;div className=&quot;App&quot;&gt;
+        &lt;Subject title=&quot;WEB&quot; sub=&quot;world wide web!&quot;&gt;&lt;/Subject&gt;
+        &lt;Subject title=&quot;menu&quot; sub=&quot;this is what I wanted to build&quot;&gt;&lt;/Subject&gt;
+        &lt;TOC&gt;&lt;/TOC&gt;
+        &lt;Content
+          title=&quot;HTML&quot;
+          desc=&quot; HTML is HyperText Markup Language.&quot;
+        &gt;&lt;/Content&gt;
+      &lt;/div&gt;
+    ); // class =  에서 calssName으로 바뀜
+  }
+}
+
+export default App;
+
+
+
+
+</code></pre>
+
+<p>component파일 안에</p>
+
+<p>subject.js</p>
+
+<blockquote>
+<p>component파일</p>
+</blockquote>
+
+<pre><code class="language-js">import React, { Component } from &quot;react&quot;;
+
+// 컴퍼넌트를 만들때는 항상 하나의 최상의 tag로 시작해야한다.
+
+class Subject extends Component {
+  render() {
+    return (
+      &lt;header&gt;
+        &lt;h1&gt;{this.props.title}&lt;/h1&gt;
+        {this.props.sub}
+      &lt;/header&gt;
+    );
+  }
+}
+
+export default Subject;
+
+
+
+</code></pre>
+
+<p>component파일 안에</p>
+
+<p>content.js</p>
+
+<blockquote>
+<p>component파일</p>
+</blockquote>
+
+<pre><code class="language-js">
+import React, { Component } from &quot;react&quot;;
+class Content extends Component {
+  render() {
+    return (
+      &lt;article&gt;
+        &lt;h2&gt;{this.props.title}&lt;/h2&gt;
+        {this.props.desc}
+      &lt;/article&gt;
+    );
+  }
+}
+
+export default Content;
+
+
+
+</code></pre>
+
+<p>component파일 안에</p>
+
+<p>TOC.js</p>
+
+<blockquote>
+<p>component파일</p>
+</blockquote>
+
+<pre><code class="language-js">
+import React, { Component } from &quot;react&quot;;
+
+class TOC extends Component {
+  render() {
+    return (
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    );
+  }
+}
+
+export default TOC;
+
+
+
+</code></pre>
+
+<h2 id="state의-사용">state의 사용</h2>
+
+<blockquote>
+<p>리팩토링과 마찬가지이다.</p>
+</blockquote>
+
+<pre><code class="language-js">import React, { Component } from &quot;react&quot;;
+import logo from &quot;./logo.svg&quot;; //필요없다 현재
+import TOC from &quot;./component/TOC&quot;;
+import Subject from &quot;./component/subject&quot;;
+import Content from &quot;./component/content&quot;;
+import &quot;./App.css&quot;;
+
+// App이라는 것이 Component 를 만들 것이다.
+// App 는 render 라는 메소드를 가지고 있다.
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      subject: { title: &quot;WEB&quot;, sub: &quot;world wide web!&quot; }
+    };
+  }
+  render() {
+    return (
+      &lt;div className=&quot;App&quot;&gt;
+        &lt;Subject
+          title={this.state.subject.title} //this 로 constructor 에 속성값 불러온다. 
+          sub={this.state.subject.sub}
+        &gt;&lt;/Subject&gt;
+        &lt;TOC&gt;&lt;/TOC&gt;
+        &lt;Content
+          title=&quot;HTML&quot;
+          desc=&quot; HTML is HyperText Markup Language.&quot;
+        &gt;&lt;/Content&gt;
+      &lt;/div&gt;
+    ); // class =  에서 calssName으로 바뀜
+  }
+}
+
+export default App;
+
+
+</code></pre>
+
+<h2 id="state-key">state (Key)</h2>
+
+<blockquote>
+<p>복수의 앨리먼트를 생성할 때는 <code>key</code>라는 특수한 <code>props</code>를 사용해야 합니다. 여기서는 key의 사용법을 소개합니다.</p>
+</blockquote>
+
+<p>App.js</p>
+
+<pre><code class="language-js">
+import React, { Component } from &quot;react&quot;;
+import logo from &quot;./logo.svg&quot;; //필요없다 현재
+import TOC from &quot;./component/TOC&quot;;
+import Subject from &quot;./component/subject&quot;;
+import Content from &quot;./component/content&quot;;
+import &quot;./App.css&quot;;
+
+// App이라는 것이 Component 를 만들 것이다.
+// App 는 render 라는 메소드를 가지고 있다.
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      subject: { title: &quot;WEB&quot;, sub: &quot;world wide web!&quot; },
+      contents: [
+        // 1. contents 키값과 value 값으로 [] 만들고 그안에 내용을 적는다.
+        { id: 1, title: &quot;HTML&quot;, desc: &quot;HTML is information&quot; },
+        { id: 2, title: &quot;CSS&quot;, desc: &quot;CSS is information&quot; },
+        { id: 3, title: &quot;JS&quot;, desc: &quot;JS is information&quot; }
+      ]
+    };
+  }
+  // 2.render() 메소드 안에 TOC data = {this.state.contents} 넣어준다.
+  // 3.그리고 TOC component 로 이동한다.
+  render() {
+    return (
+      &lt;div className=&quot;App&quot;&gt;
+        &lt;Subject
+          title={this.state.subject.title}
+          sub={this.state.subject.sub}
+        &gt;&lt;/Subject&gt;
+        &lt;TOC data={this.state.contents}&gt;&lt;/TOC&gt;
+        &lt;Content
+          title=&quot;HTML&quot;
+          desc=&quot; HTML is HyperText Markup Language.&quot;
+        &gt;&lt;/Content&gt;
+      &lt;/div&gt;
+    ); // class =  에서 calssName으로 바뀜
+  }
+}
+
+export default App;
+
+
+</code></pre>
+
+<p>이전 TOC.js</p>
+
+<pre><code class="language-js">
+
+import React, { Component } from &quot;react&quot;;
+
+class TOC extends Component {
+  render() {
+    return (
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    );
+  }
+}
+
+export default TOC;
+
+
+
+</code></pre>
+
+<p>이후 TOC.js</p>
+
+<pre><code class="language-js">
+
+
+import React, { Component } from &quot;react&quot;;
+
+class TOC extends Component {
+  render() {
+    var lists = [];
+    var data = this.props.data; // &lt;TOC data={this.state.contents}&gt;&lt;/TOC&gt; 연결된다.
+    var i = 0;
+    // 여러게의 엘리먼트를 자동으로 생성할때 콘솔에 에러가 발생한다. 왜냐하면 각각의 목록에 키값을 주라는 것이다.
+    // 이것은 react 가 필요로 하는 것이기 때문에 넣어 주어야 한다.
+    // li tag 에 key 를 넣고 값은 App 의 프로퍼티에 있는 dt
+    while (i &lt; data.length) {
+      lists.push(
+        &lt;li key={data[i].id}&gt;
+          &lt;a href={&quot;/content/&quot; + data[i].id}&gt;{data[i].title}&lt;/a&gt;
+        &lt;/li&gt;
+      );
+      i = i + 1;
+    }
+
+    return &lt;nav&gt;{lists}&lt;/nav&gt;;
+  }
+}
+
+//     &lt;ul&gt;
+//       &lt;li&gt;&lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+//       &lt;li&gt;&lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;
+//       &lt;li&gt;&lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+//     &lt;/ul&gt;
+
+export default TOC;
+
+
+
+</code></pre>
 
           </div>
 
