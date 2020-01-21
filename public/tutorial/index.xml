@@ -17,7 +17,7 @@
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2020-01-20-react/</guid>
-      <description>1. What is &amp;ldquo;React&amp;rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.  React ES6 반드시 알아야 할 ES6 문법들 1) Destructuring(구조 분해) 2) spread operator(전개 구문) 3) rest parameters 4) default parameters(기본 매개변수) 5) template literals 6) arrow function(화살표 함수) 7) for-of loop  1.Destructuring(구조 분해)
+      <description>What is &amp;ldquo;React&amp;rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.  알아야 할 ES6 문법들 1) Destructuring(구조 분해) 2) spread operator(전개 구문) 3) rest parameters 4) default parameters(기본 매개변수) 5) template literals 6) arrow function(화살표 함수) 7) for-of loop  1.Destructuring(구조 분해)
  배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 JavaScript 표현식</description>
     </item>
     

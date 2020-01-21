@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="1. What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.  React ES6 반드시 알아야 할 ES6 문법들 1) Destructuring(구조 분해) 2) spread operator(전개 구문) 3) rest parameters 4) default parameters(기본 매개변수) 5) template literals 6) arrow function(화살표 함수) 7) for-of loop  1.Destructuring(구조 분해)
+  <meta name="description" content="What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.  알아야 할 ES6 문법들 1) Destructuring(구조 분해) 2) spread operator(전개 구문) 3) rest parameters 4) default parameters(기본 매개변수) 5) template literals 6) arrow function(화살표 함수) 7) for-of loop  1.Destructuring(구조 분해)
  배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 JavaScript 표현식">
 
   
@@ -131,7 +131,7 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2020-01-20-react/">
   <meta property="og:title" content="__React | JohnJung">
-  <meta property="og:description" content="1. What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.  React ES6 반드시 알아야 할 ES6 문법들 1) Destructuring(구조 분해) 2) spread operator(전개 구문) 3) rest parameters 4) default parameters(기본 매개변수) 5) template literals 6) arrow function(화살표 함수) 7) for-of loop  1.Destructuring(구조 분해)
+  <meta property="og:description" content="What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.  알아야 할 ES6 문법들 1) Destructuring(구조 분해) 2) spread operator(전개 구문) 3) rest parameters 4) default parameters(기본 매개변수) 5) template literals 6) arrow function(화살표 함수) 7) for-of loop  1.Destructuring(구조 분해)
  배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 JavaScript 표현식"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
@@ -449,24 +449,30 @@
 <ul>
 <li>
 <ul>
-<li><a href="#1-what-is-react">1. What is &ldquo;React&rdquo;??</a></li>
-<li><a href="#react-es6">React ES6</a>
-<ul>
-<li>
-<ul>
-<li><a href="#반드시-알아야-할-es6-문법들">반드시 알아야 할 ES6 문법들</a></li>
-</ul></li>
-</ul></li>
+<li><a href="#what-is-react">What is &ldquo;React&rdquo;??</a></li>
+<li><a href="#알아야-할-es6-문법들">알아야 할 ES6 문법들</a></li>
+<li><a href="#toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</a></li>
+<li><a href="#1-jsx">1. JSX</a></li>
+<li><a href="#2-element">2. Element</a></li>
+<li><a href="#3-component">3. Component</a></li>
+<li><a href="#4-props">4. Props</a></li>
+<li><a href="#5-state">5. State</a></li>
+<li><a href="#6-lifecycle-api-1">6. LifeCycle API (1)</a></li>
+<li><a href="#7-lifecycle-api-2">7. LifeCycle API (2)</a></li>
 <li><a href="#jsx">JSX</a></li>
 <li><a href="#1-data-flow">1. Data flow</a></li>
 <li><a href="#2-컴포넌트와-props">2. 컴포넌트와 Props</a></li>
 <li><a href="#3-state">3. State</a></li>
-<li><a href="#life-cycle"><strong>Life Cycle</strong></a></li>
+<li><a href="#엘리먼트-렌더링">엘리먼트 렌더링</a></li>
+<li><a href="#state-and-lifecycle">State and Lifecycle</a></li>
+<li><a href="#생활코딩예제">//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#component-만들기">Component 만들기</a></li>
 <li><a href="#props-만들기">Props 만들기</a></li>
 <li><a href="#component-파일로-분리하기">Component 파일로 분리하기</a></li>
 <li><a href="#state의-사용">state의 사용</a></li>
 <li><a href="#state-key">state (Key)</a></li>
+<li><a href="#이벤트-state-props-그리고-render-함수">이벤트 state props 그리고 render 함수</a></li>
+<li><a href="#이벤트-설치">이벤트 설치</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -489,16 +495,14 @@
           <div class="article-style" itemprop="articleBody">
             
 
-<h2 id="1-what-is-react">1. What is &ldquo;React&rdquo;??</h2>
+<h2 id="what-is-react">What is &ldquo;React&rdquo;??</h2>
 
 <ul>
 <li>인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐</li>
 <li>프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.</li>
 </ul>
 
-<h2 id="react-es6">React ES6</h2>
-
-<h4 id="반드시-알아야-할-es6-문법들">반드시 알아야 할 ES6 문법들</h4>
+<h2 id="알아야-할-es6-문법들">알아야 할 ES6 문법들</h2>
 
 <pre><code>1) Destructuring(구조 분해)
 2) spread operator(전개 구문)
@@ -802,13 +806,27 @@ for (let [key, value] of iterable) {
 
 </code></pre>
 
+<h2 id="toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h2>
+
+<h2 id="1-jsx">1. JSX</h2>
+
+<h2 id="2-element">2. Element</h2>
+
+<h2 id="3-component">3. Component</h2>
+
+<h2 id="4-props">4. Props</h2>
+
+<h2 id="5-state">5. State</h2>
+
+<h2 id="6-lifecycle-api-1">6. LifeCycle API (1)</h2>
+
+<h2 id="7-lifecycle-api-2">7. LifeCycle API (2)</h2>
+
 <h2 id="jsx">JSX</h2>
 
-<p>JSX 란?</p>
+<p>JSX 규칙</p>
 
 <ul>
-<li><p>자바 스크립트의 확장 문법</p></li>
-
 <li><p>반드시 하나의 엘리먼트로 감싸야 한다.</p></li>
 
 <li><p>자바스크립트 코드를 적용할 땐 { } 안에 작성한다.</p></li>
@@ -836,6 +854,8 @@ Hello, world!
 );
 
 
+// JSX는 Babel을 통해 React.createElement() 호출로 컴파일
+
 const element = React.createElement(
 'h1',
 {className: 'greeting'},
@@ -861,6 +881,8 @@ const element = {
 </code></pre>
 
 <p>이 객체는 <code>“React elements”</code> 부릅니다. 화면에서 볼 수 있는 내용에 대한 설명으로 생각할 수 있습니다. React는 이 객체를 읽어들이고 이를 사용하여 DOM을 구성하고 최신 상태로 유지합니다.</p>
+
+<p>ES6 및 JSX 코드가 올바르게 표시되도록 편집기에 Babel 언어 설정 사용하는 것을 권장</p>
 
 <h2 id="1-data-flow">1. Data flow</h2>
 
@@ -919,7 +941,7 @@ class Welcome extends React.Component {
 
 </code></pre>
 
-<p>2-2. 컴포넌트 렌더링</p>
+<p>2-2. 컴포넌트 랜더링</p>
 
 <ul>
 <li>props: React가 유저가 정의한 컴포넌트를 나타내는 요소를 볼 때 JSX 속성을 이 컴포넌트에 단일 객체로 전달하는데, 이 객체를 props라고 부름</li>
@@ -1105,32 +1127,15 @@ componentDidMount() {
 
 <p><strong>State는 props와 비슷하지만 컴포넌트에 의해 완전히 제어되며 private 속성이다.</strong></p>
 
-<h2 id="life-cycle"><strong>Life Cycle</strong></h2>
+<h2 id="엘리먼트-렌더링">엘리먼트 렌더링</h2>
 
-<p>컴포넌트가 브라우저에 보여질 때, 업데이트될 때, 사라질 때 각 단계 전,후로 특정 메서드가 호출된다.</p>
-
-<p>라이프 사이클 이벤트란</p>
-
-<p>React의 컴포너트는 생명주기(Life cycle)을 가진다. 생명주기란 컴포넌트가 생성되고 사용되고 소멸될 때 까지 일련의 과정을 말한다.
-이러한 생명주기 안에서는 특정 시점에 자동으로 호출되는 메서드가 있는데, 이를 라이프 사이클 이벤트라고 한다.</p>
-
-<p><img src="/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 4.48.31 PM.png" alt="" /></p>
+<h2 id="state-and-lifecycle">State and Lifecycle</h2>
 
 <ul>
-<li><p>많은 컴포넌트를 가진 어플리케이션에서, 컴포넌트가 제거될 때 리소스를 풀어주는 건 아주 중요한 일</p></li>
-
-<li><p>컴포넌트가 DOM에 최초로 렌더링 될 때 React에서 이를 “mounting” 이라고 부릅니다.
-메서드명은 componentDidMount라고 써야 함.</p></li>
-
-<li><p>DOM에서 컴포넌트를 삭제할 때 React에서 이를 “unmounting” 이라고 부릅니다.
-메서드명은 componentWillUnmount이다.</p></li>
+<li>째깍거리는 시계 예시를 다시 살펴보겠습니다</li>
 </ul>
 
-<p><code>라이프사이클 훅</code></p>
-
-<blockquote>
-<p>컴포넌트가 <code>마운트</code> (mount) 되고 <code>언마운트</code> (unmount) 될 때 <code>특정 코드</code>를 실행하기 위해 컴포넌트 클래스에 특별한 메서드를 선언할 수 있고 이런 메서드들을 “<code>라이프사이클 훅</code>” 이라고 부릅니다.</p>
-</blockquote>
+<h2 id="생활코딩예제">//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="component-만들기">Component 만들기</h2>
 
@@ -1617,6 +1622,149 @@ class TOC extends Component {
 
 export default TOC;
 
+
+
+</code></pre>
+
+<h2 id="이벤트-state-props-그리고-render-함수">이벤트 state props 그리고 render 함수</h2>
+
+<ul>
+<li>App.js</li>
+</ul>
+
+<pre><code class="language-js">import React, { Component } from &quot;react&quot;;
+// import logo from &quot;./logo.svg&quot;; //필요없다 현재
+import TOC from &quot;./component/TOC&quot;;
+import Subject from &quot;./component/subject&quot;;
+import Content from &quot;./component/content&quot;;
+import &quot;./App.css&quot;;
+// import ReactDOM from &quot;react-dom&quot;;
+
+// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mode: &quot;welcome&quot;, // 이벤트 준비
+      subject: { title: &quot;WEB&quot;, sub: &quot;world wide web!&quot; },
+      welcome: { title: &quot;welcom&quot;, desc: &quot;hello react!!!&quot; }, // 이벤트 준비
+      contents: [
+        { id: 1, title: &quot;HTML&quot;, desc: &quot;HTML is information&quot; },
+        { id: 2, title: &quot;CSS&quot;, desc: &quot;CSS is information&quot; },
+        { id: 3, title: &quot;JS&quot;, desc: &quot;JS is information&quot; }
+      ]
+    };
+  }
+
+  render() {
+    let _title = null; // 이벤트 변수
+    let _desc = null; //  이벤트변수
+    if (this.state.mode === &quot;welcome&quot;) {
+      _title = this.state.welcome.title;
+      _desc = this.state.welcome.desc;
+    } else if (this.state.mode === &quot;read&quot;) {
+      _title = this.state.contents[0].title;
+      _desc = this.state.contents[0].desc;
+    }
+
+    return (
+      &lt;div className=&quot;App&quot;&gt;
+        &lt;Subject
+          title={this.state.subject.title} // 이벤트 위에서 변수 가져옴
+          sub={this.state.subject.sub} // 이벤트 위에서 변수 가져옴
+        &gt;&lt;/Subject&gt;
+        &lt;TOC data={this.state.contents}&gt;&lt;/TOC&gt;
+        &lt;Content title={_title} desc={_desc}&gt;&lt;/Content&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default App;
+
+
+</code></pre>
+
+<h2 id="이벤트-설치">이벤트 설치</h2>
+
+<blockquote>
+<p>다시 랜더링 되는거 방지하기</p>
+
+<p>e.preventDefault() 사용하기</p>
+</blockquote>
+
+<pre><code class="language-js">
+import React, { Component } from &quot;react&quot;;
+// import logo from &quot;./logo.svg&quot;; //필요없다 현재
+import TOC from &quot;./component/TOC&quot;;
+import Subject from &quot;./component/subject&quot;;
+import Content from &quot;./component/content&quot;;
+import &quot;./App.css&quot;;
+// import ReactDOM from &quot;react-dom&quot;;
+
+// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mode: &quot;welcome&quot;, // 이벤트 준비
+      subject: { title: &quot;WEB&quot;, sub: &quot;world wide web!&quot; },
+      welcome: { title: &quot;welcom&quot;, desc: &quot;hello react!!!&quot; }, // 이벤트 준비
+      contents: [
+        { id: 1, title: &quot;HTML&quot;, desc: &quot;HTML is information&quot; },
+        { id: 2, title: &quot;CSS&quot;, desc: &quot;CSS is information&quot; },
+        { id: 3, title: &quot;JS&quot;, desc: &quot;JS is information&quot; }
+      ]
+    };
+  }
+
+  render() {
+    let _title = null; // 이벤트 변수
+    let _desc = null; //  이벤트변수
+    if (this.state.mode === &quot;welcome&quot;) {
+      _title = this.state.welcome.title;
+      _desc = this.state.welcome.desc;
+    } else if (this.state.mode === &quot;read&quot;) {
+      _title = this.state.contents[0].title;
+      _desc = this.state.contents[0].desc;
+    }
+
+    return (
+      &lt;div className=&quot;App&quot;&gt;
+        {
+          /* &lt;Subject
+          title={this.state.subject.title} // 이벤트 위에서 변수 가져옴
+          sub={this.state.subject.sub} // 이벤트 위에서 변수 가져옴
+        &gt;&lt;/Subject&gt; */
+          // App 함수안에 &lt;subject&gt; 를 풀어해친후 테그안에 OnClick  을 넣느다.
+          // 이때 e 파마미터를 추가하여 e.preventDefault() 호출한다.
+          // 그러면 다시 랜더링하는것을 방지할수 있다.
+          &lt;header&gt;
+            &lt;h1&gt;
+              &lt;a
+                href=&quot;/&quot;
+                onClick={function(e) {
+                  alert(&quot;hello&quot;);
+                  e.preventDefault();
+                }}
+              &gt;
+                {this.state.subject.title}
+              &lt;/a&gt;
+            &lt;/h1&gt;
+            {this.state.subject.desc}
+          &lt;/header&gt;
+        }
+
+        &lt;TOC data={this.state.contents}&gt;&lt;/TOC&gt;
+        &lt;Content title={_title} desc={_desc}&gt;&lt;/Content&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default App;
 
 
 </code></pre>
