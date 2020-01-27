@@ -456,9 +456,7 @@
 <li><a href="#2-component">2. Component</a></li>
 <li><a href="#4-props">4. Props</a></li>
 <li><a href="#5-state">5. State</a></li>
-<li><a href="#6-lifecycle-api-1">6. LifeCycle API (1)</a></li>
-<li><a href="#7-lifecycle-api-2">7. LifeCycle API (2)</a></li>
-<li><a href="#3-state">3. State</a></li>
+<li><a href="#6-lifecycle">6. LifeCycle</a></li>
 <li><a href="#생활코딩예제">//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#component-만들기">Component 만들기</a></li>
 <li><a href="#props-만들기">Props 만들기</a></li>
@@ -876,12 +874,6 @@ class Welcome extends React.Component {
 
 <h2 id="5-state">5. State</h2>
 
-<h2 id="6-lifecycle-api-1">6. LifeCycle API (1)</h2>
-
-<h2 id="7-lifecycle-api-2">7. LifeCycle API (2)</h2>
-
-<h2 id="3-state">3. State</h2>
-
 <p>State 란?</p>
 
 <ul>
@@ -897,6 +889,20 @@ class Welcome extends React.Component {
 
 <li><p>props is unchangeble</p></li>
 </ul>
+
+<h2 id="6-lifecycle">6. LifeCycle</h2>
+
+<ul>
+<li><p><code>LifeCycle</code> 란 컴포넌트가 생성되고 소멸되는 모든 과정</p></li>
+
+<li><p>lifeCycle Event 함수들은 <code>특정</code>시점에 실행된다. 각각 함수마다(componentWillMount,componentDidMount,componentWillUnmount &hellip;..)마다 실행되는 시점이 다르다.</p></li>
+
+<li><p>컴포넌트를 생성 할 때는 <code>constructor</code> -&gt; <code>componentWillMount</code> -&gt; render -&gt; <code>componentDidMount</code> 순으로 진행됩니다.</p></li>
+
+<li><p>컴포넌트를 제거 할 때는 <code>componentWillUnmount</code> 메소드만 실행됩니다.</p></li>
+</ul>
+
+<p><img src="/tutorial/2020-01-20-react_files/life.png" alt="" /></p>
 
 <h2 id="생활코딩예제">//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
@@ -964,9 +970,7 @@ class TOC extends Component {
             &lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
-      &lt;/nav&gt;
-    );
-  }
+      &lt;/nav&gt;  }
 }
 
 // 컴퍼넌트를 만들때는 항상 하나의 최상의 tag로 시작해야한다.
