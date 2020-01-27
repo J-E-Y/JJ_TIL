@@ -358,20 +358,6 @@ for (let [key, value] of iterable) {
 
 &lt;h2 id=&#34;1-jsx&#34;&gt;1. JSX&lt;/h2&gt;
 
-&lt;h2 id=&#34;2-element&#34;&gt;2. Element&lt;/h2&gt;
-
-&lt;h2 id=&#34;3-component&#34;&gt;3. Component&lt;/h2&gt;
-
-&lt;h2 id=&#34;4-props&#34;&gt;4. Props&lt;/h2&gt;
-
-&lt;h2 id=&#34;5-state&#34;&gt;5. State&lt;/h2&gt;
-
-&lt;h2 id=&#34;6-lifecycle-api-1&#34;&gt;6. LifeCycle API (1)&lt;/h2&gt;
-
-&lt;h2 id=&#34;7-lifecycle-api-2&#34;&gt;7. LifeCycle API (2)&lt;/h2&gt;
-
-&lt;h2 id=&#34;jsx&#34;&gt;JSX&lt;/h2&gt;
-
 &lt;p&gt;JSX 규칙&lt;/p&gt;
 
 &lt;ul&gt;
@@ -384,97 +370,42 @@ for (let [key, value] of iterable) {
 &lt;li&gt;&lt;p&gt;엘리먼트의 클래스 이름을 적용할 때, className 을 사용(class는 ES6에 존재하기 때문)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;JSX 객체 표현&lt;/p&gt;
+&lt;h2 id=&#34;2-component&#34;&gt;2. Component&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Babel은 JSX를 React.createElement() 호출로 컴파일합니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;아래 두 예제는 동일합니다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-// 
-const element = (
-&amp;lt;h1 className=&amp;quot;greeting&amp;quot;&amp;gt;
-Hello, world!
-&amp;lt;/h1&amp;gt;
-);
-
-
-// JSX는 Babel을 통해 React.createElement() 호출로 컴파일
-
-const element = React.createElement(
-&#39;h1&#39;,
-{className: &#39;greeting&#39;},
-&#39;Hello, world!&#39;
-);
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;React.createElement() 는 버그 없는 코드를 작성하는 데 도움을 주는 몇가지 체크를 하지만 기본적으로는 아래와 같은 객체를 생성합니다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-
-// Note: this structure is simplified
-const element = {
-  type: &#39;h1&#39;,
-  props: {
-    className: &#39;greeting&#39;,
-    children: &#39;Hello, world&#39;
-  }
-};
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;이 객체는 &lt;code&gt;“React elements”&lt;/code&gt; 부릅니다. 화면에서 볼 수 있는 내용에 대한 설명으로 생각할 수 있습니다. React는 이 객체를 읽어들이고 이를 사용하여 DOM을 구성하고 최신 상태로 유지합니다.&lt;/p&gt;
-
-&lt;p&gt;ES6 및 JSX 코드가 올바르게 표시되도록 편집기에 Babel 언어 설정 사용하는 것을 권장&lt;/p&gt;
-
-&lt;h2 id=&#34;1-data-flow&#34;&gt;1. Data flow&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;부모 컴포넌트에서 자식 컴포넌트로 데이터가 흐름&lt;/li&gt;
-&lt;li&gt;자식이 부모컴포넌트에 데이터를 줄수 없음&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 1.50.10 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;2-컴포넌트와-props&#34;&gt;2. 컴포넌트와 Props&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Props 란?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Props: &lt;code&gt;상위&lt;/code&gt; 컴포넌트가 &lt;code&gt;하위&lt;/code&gt; 컴포넌트에게 &lt;code&gt;내려&lt;/code&gt;주는 &lt;code&gt;데이터(속성)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;단순히 사용만 할 수 있다. 변경할 수 없다.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;컴포넌트?&lt;/p&gt;
+&lt;p&gt;컴포넌트?&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;개념상 컴포넌트는 자바스크립트 함수와 비슷함.&lt;/li&gt;
-&lt;li&gt;임의의 입력 (“props”라고 부르는)을 받아들이고 어떤 게 화면에 나타나야 하는 지를 설명하는 React 요소를 반환함.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;2-1. 함수형 및 클래스 컴포넌트&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;독립적으로 기능할 것과 재사용 가능할 것&lt;/li&gt;
+&lt;li&gt;재사용성과 코드 관리에 용이&lt;/li&gt;
+&lt;li&gt;하나의 컴포넌트가 하나의 기능만 하게 햐야한다 왜냐하면 에러 발생시 용의하다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;컴포넌트는 자바스크립트의 함수형 및 클래스형으로 작성할 수 있다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Functional component vs Class component&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;함수형 컴포넌트 생성 방식&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;prop 값의 변경 없이 바로 렌더하고자 할 때 사용한다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-`아래는 함수형으로 작성한 컴포넌트`
-
 
 function Welcome(props) {
     return &amp;lt;h1&amp;gt;Hello, {props.name}&amp;lt;/h1&amp;gt;;
 }
 
 
-`아래는 ES6를 사용해 작성한 컴포넌트`
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;클래스 컴포넌트 생성 방식&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;method를 사용해야 하고, 클래스 내에서 state 관리 할 수 있고, life cycle에 맞춘 함수 관리가 가능하다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 
 
 class Welcome extends React.Component {
@@ -484,73 +415,22 @@ class Welcome extends React.Component {
 }
 
 
-위의 두 컴포넌트는 React 관점에서 보면 동일하지만 ES6의 클래스 기능을 사용한 컴포넌트가 몇가지 기능을 더 가지고 있음.
-
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;2-2. 컴포넌트 랜더링&lt;/p&gt;
+&lt;h2 id=&#34;4-props&#34;&gt;4. Props&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;props: React가 유저가 정의한 컴포넌트를 나타내는 요소를 볼 때 JSX 속성을 이 컴포넌트에 단일 객체로 전달하는데, 이 객체를 props라고 부름&lt;/li&gt;
+&lt;li&gt;상위 컴포넌트에서 하위 컴포넌트로 물려 받는 속성(데이터)&lt;/li&gt;
+&lt;li&gt;Props: &lt;code&gt;상위&lt;/code&gt; 컴포넌트가 &lt;code&gt;하위&lt;/code&gt; 컴포넌트에게 &lt;code&gt;내려&lt;/code&gt;주는 &lt;code&gt;데이터(속성)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;단순히 사용만 할 수 있다. 변경할 수 없다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;code&gt;Bable&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;5-state&#34;&gt;5. State&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+&lt;h2 id=&#34;6-lifecycle-api-1&#34;&gt;6. LifeCycle API (1)&lt;/h2&gt;
 
-
-function Welcome(props) {
-  return &amp;lt;h1&amp;gt;Hello, {props.name}&amp;lt;/h1&amp;gt;;
-}
-
-const element = &amp;lt;Welcome name=&amp;quot;Rami&amp;quot; /&amp;gt;;
-ReactDOM.render(
-  element,
-  document.getElementById(&#39;root&#39;)
-);
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 2.29.59 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;여기서의 props: { name: &#39;rami&#39; }&lt;/code&gt;
-&lt;code&gt;Welcome(props)&lt;/code&gt;
-컴포넌트의 이름은 항상 &lt;code&gt;대문자&lt;/code&gt;로 시작해야 함.&lt;/p&gt;
-
-&lt;p&gt;2-3. 컴포넌트 결합&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;컴포넌트는 출력될 때 다른 컴포넌트를 참조할 수 있습니다. 이를 통해 모든 세부 레벨에서 동일한 컴포넌트 추상화를 사용할 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;//-----------------component-------------------------------
-function Welcome(props) {
-  return &amp;lt;h1&amp;gt;Hello, {props.name}&amp;lt;/h1&amp;gt;;
-}
-//-----------------component-------------------------------
- 
-function App() {
-  return (
-    &amp;lt;div&amp;gt;
-      &amp;lt;Welcome name=&amp;quot;Sara&amp;quot; /&amp;gt;  // name=&amp;quot;Sara&amp;quot; &amp;gt;&amp;gt;&amp;gt;props
-      &amp;lt;Welcome name=&amp;quot;Cahal&amp;quot; /&amp;gt; // name=&amp;quot;Cahal&amp;quot; &amp;gt;&amp;gt;&amp;gt;props
-      &amp;lt;Welcome name=&amp;quot;Edite&amp;quot; /&amp;gt; // name=&amp;quot;Edite&amp;quot;  &amp;gt;&amp;gt;&amp;gt;props
-    &amp;lt;/div&amp;gt;
-  );
-}
-
-ReactDOM.render(
-  &amp;lt;App /&amp;gt;,
-  document.getElementById(&#39;root&#39;)
-);
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 2.47.22 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;2.4 Props는 읽기전용&lt;/p&gt;
+&lt;h2 id=&#34;7-lifecycle-api-2&#34;&gt;7. LifeCycle API (2)&lt;/h2&gt;
 
 &lt;h2 id=&#34;3-state&#34;&gt;3. State&lt;/h2&gt;
 
@@ -559,128 +439,15 @@ ReactDOM.render(
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;컴포넌트가 갖는 &lt;code&gt;상태&lt;/code&gt;. &lt;code&gt;객체의 형태&lt;/code&gt;로 컴포넌트 내에서 보관하고 관리한다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;1) &lt;code&gt;class&lt;/code&gt; 컴포넌트로 작성되어야 한다&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;State는 props와 유사하지만, 비공개이며 컴포넌트에 의해 완전히 제어된다&lt;/p&gt;&lt;/li&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;class형식으로 무조건 작성되어야 하한다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;li&gt;&lt;p&gt;컴포넌트가 만들어질 때 가장 먼저 설정되는 것이기 때문에 constructor 안에 위치한다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;2) 반드시 &lt;code&gt;setState&lt;/code&gt; 메서드로 값을 변경&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;sate에 있는 데이터를 변경하기 위해서는 this.setState()라는 내장 메소드를 사용해야만 변경을 인식한다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;state의 값을 직접적으로 변경하면 안됨.&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;li&gt;&lt;p&gt;state is changeble&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;state 값을 변경할때 변경 ( setState 메서드 사용할때 ) ==&amp;gt; &lt;code&gt;render() 함수&lt;/code&gt;가 실행된다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-class Foo extends Component{
-    state = {
-        a: 10,
-        b: false
-    }
-	changeState() {        
-        //this.state.a = 100; ~~~~~~!!!~~~!!!  직접 바꾸면 안되고 
-        this.setState({     // 이렇게 
-            a: 100          // 이렇게 
-        })                  // 이렇게  바꿔야 한다. 
-    }
-}
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;3) State 업데이트는 비동기일 수 있다&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;React는 여러 setState() 호출을 성능을 위해 단일 업데이트로 배치할 수 있습니다.&lt;/p&gt;
-
-&lt;p&gt;this.props 및 this.state 가 비동기로 업데이트될 수 있기 때문에, 다음 state를 계산할 때 해당 값을 신뢰해서는 안됩니다.&lt;/p&gt;
-
-&lt;p&gt;예를 들어, 카운터를 업데이트하는 이 코드는 실패할 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-// Wrong
-this.setState({
-  counter: this.state.counter + this.props.increment,
-});
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;이 문제를 해결하기 위해 객체가 아닌 함수를 받는 두 번째 형식의 setState() 를 사용할 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-
-// Correct
-this.setState((prevState, props) =&amp;gt; ({
-  counter: prevState.counter + props.increment
-}));
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;4)State Update는 병합됨&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;setState() 를 호출할 때, React는 현재 state와 제공한 객체를 병합합니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-constructor(props) {
-    super(props);
-    this.state = {
-        posts: [],
-        comments: []
-    };
-}
-
-componentDidMount() {
-    fetchPosts().then(response =&amp;gt; {
-      this.setState({
-        posts: response.posts
-        //여기서의 setState()는 posts만 변경할 뿐 comments는 건드리지 않음.
-      });
-    });
-
-    fetchComments().then(response =&amp;gt; {
-      this.setState({
-        comments: response.comments
-        //여기서의 setState()는 comments만 변경할 뿐 posts는 건드리지 않음.
-      });
-    });
-  }
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;5) 데이터는 아래로 흐름&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;부모 컴포넌트나 자식 컴포넌트는 특정 컴포넌트의 state 유무를 알 수 없으며 해당 컴포넌트가 함수나 클래스로 선언되었는 지 알 수 없습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;State는 props와 비슷하지만 컴포넌트에 의해 완전히 제어되며 private 속성이다.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;엘리먼트-렌더링&#34;&gt;엘리먼트 렌더링&lt;/h2&gt;
-
-&lt;h2 id=&#34;state-and-lifecycle&#34;&gt;State and Lifecycle&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;째깍거리는 시계 예시를 다시 살펴보겠습니다&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;props is unchangeble&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;생활코딩예제&#34;&gt;//&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-생활코딩예제&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
@@ -1313,6 +1080,228 @@ class App extends Component {
 }
 
 export default App;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;state-변경하기&#34;&gt;state 변경하기&lt;/h2&gt;
+
+&lt;p&gt;두가지 필요&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;setState() 메소드 사용&lt;/li&gt;
+&lt;li&gt;bind(this) this 묶어주기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;setState 로 꼭 state 값을 바꿔줘야 한다.&lt;/p&gt;
+
+&lt;p&gt;하지만&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;주의&lt;/code&gt;
+아래 코드에서는 아니다.
+그이유는 컴퍼넌트가 생성이 끝난 다음에 동적으로 state를 바꿀때는 다르기 때문이다.
+&lt;code&gt;this.setState({})&lt;/code&gt; 이렇게 해주어야 한다. 그래야 react 가 안다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;class App extends Component {
+constructor(props) {
+    super(props);
+    this.state = {}
+    
+    }
+    render(){
+    if (this.state.mode === &amp;quot;welcome&amp;quot;) {
+    //블라브라
+    }
+    }
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+import React, { Component } from &amp;quot;react&amp;quot;;
+// import logo from &amp;quot;./logo.svg&amp;quot;; //필요없다 현재
+import TOC from &amp;quot;./component/TOC&amp;quot;;
+import Subject from &amp;quot;./component/subject&amp;quot;;
+import Content from &amp;quot;./component/content&amp;quot;;
+import &amp;quot;./App.css&amp;quot;;
+// import ReactDOM from &amp;quot;react-dom&amp;quot;;
+
+// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mode: &amp;quot;read&amp;quot;, // 이벤트 준비
+      subject: { title: &amp;quot;WEB&amp;quot;, sub: &amp;quot;world wide web!&amp;quot; },
+      welcome: { title: &amp;quot;welcom&amp;quot;, desc: &amp;quot;hello react!!!&amp;quot; }, // 이벤트 준비
+      contents: [
+        { id: 1, title: &amp;quot;HTML&amp;quot;, desc: &amp;quot;HTML is information&amp;quot; },
+        { id: 2, title: &amp;quot;CSS&amp;quot;, desc: &amp;quot;CSS is information&amp;quot; },
+        { id: 3, title: &amp;quot;JS&amp;quot;, desc: &amp;quot;JS is information&amp;quot; }
+      ]
+    };
+  }
+
+  render() {
+    let _title = null; // 이벤트 변수
+    let _desc = null; //  이벤트변수
+    if (this.state.mode === &amp;quot;welcome&amp;quot;) {
+      _title = this.state.welcome.title;
+      _desc = this.state.welcome.desc;
+    } else if (this.state.mode === &amp;quot;read&amp;quot;) {
+      _title = this.state.contents[0].title;
+      _desc = this.state.contents[0].desc;
+    }
+
+    return (
+      &amp;lt;div className=&amp;quot;App&amp;quot;&amp;gt;
+        {
+          /* &amp;lt;Subject
+          title={this.state.subject.title} // 이벤트 위에서 변수 가져옴
+          sub={this.state.subject.sub} // 이벤트 위에서 변수 가져옴
+        &amp;gt;&amp;lt;/Subject&amp;gt; */
+
+          &amp;lt;header&amp;gt;
+            &amp;lt;h1&amp;gt;
+              &amp;lt;a
+                href=&amp;quot;/&amp;quot;
+                onClick={function(e) {
+                  e.preventDefault();
+                  // 클릭시 this.state.mode 값을 바꾸는 명령을 할것이다.
+                  // this.state.mode = &amp;quot;welcome&amp;quot; 이것은 자바스크립트에서 허락하지 않는다.
+                  // 이럴때 2가지를 해야한다.
+                  // 1. setState() 메소드를 쓴다.
+                  // 2. bind(this) this 가 바뀌는 것을 잡아준다.
+                  this.setState({
+                    mode: &amp;quot;welcome&amp;quot;
+                  });
+                }.bind(this)}
+              &amp;gt;
+                {this.state.subject.title}
+              &amp;lt;/a&amp;gt;
+            &amp;lt;/h1&amp;gt;
+            {this.state.subject.desc}
+          &amp;lt;/header&amp;gt;
+        }
+
+        &amp;lt;TOC data={this.state.contents}&amp;gt;&amp;lt;/TOC&amp;gt;
+        &amp;lt;Content title={_title} desc={_desc}&amp;gt;&amp;lt;/Content&amp;gt;
+      &amp;lt;/div&amp;gt;
+    );
+  }
+}
+
+export default App;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;컴포넌트-이벤트-만들기&#34;&gt;컴포넌트 이벤트 만들기&lt;/h2&gt;
+
+&lt;p&gt;이벤트를 사용만 했지 만들지는 않았다.&lt;/p&gt;
+
+&lt;p&gt;이벤트의 생상자가 되어보자&lt;/p&gt;
+
+&lt;p&gt;브라우저에서 WEB 을 클릭하면 메시지 내용이 바뀌는 것을 구현한다.&lt;/p&gt;
+
+&lt;p&gt;App.js 파일&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;import React, { Component } from &amp;quot;react&amp;quot;;
+// import logo from &amp;quot;./logo.svg&amp;quot;; //필요없다 현재
+import TOC from &amp;quot;./component/TOC&amp;quot;;
+import Subject from &amp;quot;./component/subject&amp;quot;;
+import Content from &amp;quot;./component/content&amp;quot;;
+import &amp;quot;./App.css&amp;quot;;
+// import ReactDOM from &amp;quot;react-dom&amp;quot;;
+
+// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mode: &amp;quot;read&amp;quot;,
+      subject: { title: &amp;quot;WEB&amp;quot;, sub: &amp;quot;world wide web!&amp;quot; },
+      welcome: { title: &amp;quot;welcom&amp;quot;, desc: &amp;quot;hello react!!!&amp;quot; },
+      contents: [
+        { id: 1, title: &amp;quot;HTML&amp;quot;, desc: &amp;quot;HTML is information&amp;quot; },
+        { id: 2, title: &amp;quot;CSS&amp;quot;, desc: &amp;quot;CSS is information&amp;quot; },
+        { id: 3, title: &amp;quot;JS&amp;quot;, desc: &amp;quot;JS is information&amp;quot; }
+      ]
+    };
+  }
+
+  render() {
+    let _title = null;
+    let _desc = null;
+    if (this.state.mode === &amp;quot;welcome&amp;quot;) {
+      _title = this.state.welcome.title;
+      _desc = this.state.welcome.desc;
+    } else if (this.state.mode === &amp;quot;read&amp;quot;) {
+      _title = this.state.contents[0].title;
+      _desc = this.state.contents[0].desc;
+    }
+
+    return (
+      &amp;lt;div className=&amp;quot;App&amp;quot;&amp;gt;
+        {
+          &amp;lt;Subject
+            title={this.state.subject.title}
+            sub={this.state.subject.sub}
+            onchanged={function() {
+              this.setState({
+                mode: &amp;quot;welcome&amp;quot;
+              });
+            }.bind(this)} //원하는 이름의 함수를 만든다. 이름은 onChanged
+          &amp;gt;&amp;lt;/Subject&amp;gt;
+        }
+
+        &amp;lt;TOC data={this.state.contents}&amp;gt;&amp;lt;/TOC&amp;gt;
+        &amp;lt;Content title={_title} desc={_desc}&amp;gt;&amp;lt;/Content&amp;gt;
+      &amp;lt;/div&amp;gt;
+    );
+  }
+}
+
+export default App;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;subject.js 파일&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;여기에서 OnClick 을 사용해     e.preventDefault(); 와 this.props.onchanged(); 와 .bind(this) 조합하면 된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+import React, { Component } from &amp;quot;react&amp;quot;;
+
+
+
+class Subject extends Component {
+  render() {
+    return (
+      &amp;lt;header&amp;gt;
+        &amp;lt;h1&amp;gt;
+          &amp;lt;a
+            href=&amp;quot;/&amp;quot;
+            onClick={function(e) {
+              e.preventDefault();
+              this.props.onchanged();
+            }.bind(this)}
+          &amp;gt;
+            {this.props.title}
+          &amp;lt;/a&amp;gt;
+        &amp;lt;/h1&amp;gt;
+        {this.props.sub}
+      &amp;lt;/header&amp;gt;
+    );
+  }
+}
+
+export default Subject;
+
 
 
 &lt;/code&gt;&lt;/pre&gt;
