@@ -457,6 +457,7 @@
 <li><a href="#4-props">4. Props</a></li>
 <li><a href="#5-state">5. State</a></li>
 <li><a href="#6-lifecycle">6. LifeCycle</a></li>
+<li><a href="#handle-async-function">Handle Async function</a></li>
 <li><a href="#생활코딩예제">//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#component-만들기">Component 만들기</a></li>
 <li><a href="#props-만들기">Props 만들기</a></li>
@@ -903,6 +904,39 @@ class Welcome extends React.Component {
 </ul>
 
 <p><img src="/tutorial/2020-01-20-react_files/life.png" alt="" /></p>
+
+<h2 id="handle-async-function">Handle Async function</h2>
+
+<ul>
+<li>setTimeout에서 실행되는 함수안에서 일어나는 연산 들을 가져오기</li>
+</ul>
+
+<pre><code class="language-js">
+function hello17th(callback){
+  setTimeout(function(){
+       var hello = &quot;hello&quot;;
+       var name = &quot;jj&quot;
+       var im17 = &quot;im17&quot;
+       callback( `${hello} ${name} ${im17}`);
+},2000);
+
+}
+
+hello17th()  // undefined 와 callback is not a function 나온다. 
+
+
+// 이렇게 callback 함수를 인자안에 작성하면 위에 작성한
+// 변수들을 모아서 사용할수 있다. 
+
+hello17th(function(value){
+    console.log(value);
+    })
+
+// 2초후에 실행된다.     
+// hello jj im17 
+
+
+</code></pre>
 
 <h2 id="생활코딩예제">//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 

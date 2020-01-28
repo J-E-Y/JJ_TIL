@@ -458,6 +458,39 @@ class Welcome extends React.Component {
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-20-react_files/life.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
+&lt;h2 id=&#34;handle-async-function&#34;&gt;Handle Async function&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;setTimeout에서 실행되는 함수안에서 일어나는 연산 들을 가져오기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+function hello17th(callback){
+  setTimeout(function(){
+       var hello = &amp;quot;hello&amp;quot;;
+       var name = &amp;quot;jj&amp;quot;
+       var im17 = &amp;quot;im17&amp;quot;
+       callback( `${hello} ${name} ${im17}`);
+},2000);
+
+}
+
+hello17th()  // undefined 와 callback is not a function 나온다. 
+
+
+// 이렇게 callback 함수를 인자안에 작성하면 위에 작성한
+// 변수들을 모아서 사용할수 있다. 
+
+hello17th(function(value){
+    console.log(value);
+    })
+
+// 2초후에 실행된다.     
+// hello jj im17 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;생활코딩예제&#34;&gt;//&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-생활코딩예제&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;component-만들기&#34;&gt;Component 만들기&lt;/h2&gt;
