@@ -356,7 +356,9 @@ for (let [key, value] of iterable) {
 
 &lt;h2 id=&#34;toc_2&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/h2&gt;
 
-&lt;h2 id=&#34;1-jsx&#34;&gt;1. JSX&lt;/h2&gt;
+&lt;h2 id=&#34;jsx&#34;&gt;JSX&lt;/h2&gt;
+
+&lt;p&gt;JSX  란?&lt;/p&gt;
 
 &lt;p&gt;JSX 규칙&lt;/p&gt;
 
@@ -370,7 +372,7 @@ for (let [key, value] of iterable) {
 &lt;li&gt;&lt;p&gt;엘리먼트의 클래스 이름을 적용할 때, className 을 사용(class는 ES6에 존재하기 때문)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;2-component&#34;&gt;2. Component&lt;/h2&gt;
+&lt;h2 id=&#34;component&#34;&gt;Component&lt;/h2&gt;
 
 &lt;p&gt;컴포넌트?&lt;/p&gt;
 
@@ -418,45 +420,83 @@ class Welcome extends React.Component {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;4-props&#34;&gt;4. Props&lt;/h2&gt;
+&lt;h2 id=&#34;props-란&#34;&gt;Props 란?&lt;/h2&gt;
+
+&lt;p&gt;부모 컴포넌트가 자식 컴포넌트에게 내려주는 데이터&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;상위 컴포넌트에서 하위 컴포넌트로 물려 받는 속성(데이터)&lt;/li&gt;
-&lt;li&gt;Props: &lt;code&gt;상위&lt;/code&gt; 컴포넌트가 &lt;code&gt;하위&lt;/code&gt; 컴포넌트에게 &lt;code&gt;내려&lt;/code&gt;주는 &lt;code&gt;데이터(속성)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;단순히 사용만 할 수 있다. 변경할 수 없다.&lt;/li&gt;
+&lt;li&gt;변경불가 - 고정값&lt;/li&gt;
+&lt;li&gt;일기전용&lt;/li&gt;
+&lt;li&gt;String,number function 내려준다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;5-state&#34;&gt;5. State&lt;/h2&gt;
-
-&lt;p&gt;State 란?&lt;/p&gt;
+&lt;h2 id=&#34;state&#34;&gt;state&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;컴포넌트가 갖는 &lt;code&gt;상태&lt;/code&gt;. &lt;code&gt;객체의 형태&lt;/code&gt;로 컴포넌트 내에서 보관하고 관리한다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;State는 props와 유사하지만, 비공개이며 컴포넌트에 의해 완전히 제어된다&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;컴포넌트가 만들어질 때 가장 먼저 설정되는 것이기 때문에 constructor 안에 위치한다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;sate에 있는 데이터를 변경하기 위해서는 this.setState()라는 내장 메소드를 사용해야만 변경을 인식한다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;state is changeble&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;props is unchangeble&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;state 란?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;6-lifecycle&#34;&gt;6. LifeCycle&lt;/h2&gt;
+&lt;p&gt;컴퍼넌트의상태
+컴포넌트 안에서 관리해야 한다.
+setState 메소드를 이용하여 변경해야 한다.
+왜냐하면&lt;/p&gt;
+
+&lt;p&gt;1  재랜더링 하기위해
+2. 가상돔이 인지하지 못해서&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;LifeCycle&lt;/code&gt; 란 컴포넌트가 생성되고 소멸되는 모든 과정&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;lifeCycle Event 함수들은 &lt;code&gt;특정&lt;/code&gt;시점에 실행된다. 각각 함수마다(componentWillMount,componentDidMount,componentWillUnmount &amp;hellip;..)마다 실행되는 시점이 다르다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;컴포넌트를 생성 할 때는 &lt;code&gt;constructor&lt;/code&gt; -&amp;gt; &lt;code&gt;componentWillMount&lt;/code&gt; -&amp;gt; render -&amp;gt; &lt;code&gt;componentDidMount&lt;/code&gt; 순으로 진행됩니다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;컴포넌트를 제거 할 때는 &lt;code&gt;componentWillUnmount&lt;/code&gt; 메소드만 실행됩니다.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;state가 변경되는 것은 동기 VS 비동기 ?&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;setState 메서드 자체는 동기로 작동
+하지만 내부에서 state 값을 업데이트하는것은 비동기&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;state&lt;/code&gt; 의 특징??&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;클래스 컴포넌트에서 사용가능
+immutable 하다
+컴포넌트 내부에서만 접근 가능하다.
+변경하려면 SetState사용
+state 변화의 결과로 life cycle 이 순환한다.&lt;/p&gt;
+
+&lt;h2 id=&#34;life-cycle&#34;&gt;Life Cycle&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Life Cycle 란?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;컴퍼넌트가 생성되고 업데이트되고 사라질때
+항상!!! 보장된 타이밍에 실행되는 메서드&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-20-react_files/life.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lifting-state-up&#34;&gt;Lifting state up&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lifting state up  이란?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;자식 컴포넌트의 어떤 액션을 통해 부모 컴포넌트의 state 를 변경시키는 작업.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;why??&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;컴포넌트 단위로 로직을 작성하기 때문에&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;how??&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;1.상위 컴포넌트에서 state 를 변경시키는 method 를 만듭니다.&lt;/p&gt;
+
+&lt;p&gt;2.만든 modthod 를 자식 컴포넌트에게 props 로 넘겨준다.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;자식 컴포넌트에서는 넘겨받은 props를 싱행시킨다.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&#34;handle-async-function&#34;&gt;Handle Async function&lt;/h2&gt;
 
@@ -472,11 +512,12 @@ function hello17th(callback){
        var im17 = &amp;quot;im17&amp;quot;
        callback( `${hello} ${name} ${im17}`);
 },2000);
-
 }
 
 hello17th()  // undefined 와 callback is not a function 나온다. 
 
+
+// 그럼 어떻게 위에있는 코드를 실행할수 있을까 ?
 
 // 이렇게 callback 함수를 인자안에 작성하면 위에 작성한
 // 변수들을 모아서 사용할수 있다. 
@@ -491,7 +532,22 @@ hello17th(function(value){
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;생활코딩예제&#34;&gt;//&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-생활코딩예제&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;class-or-function-component의-차이&#34;&gt;Class OR Function Component의 차이&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 11.34.35 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 11.34.40 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;virual-dom&#34;&gt;virual Dom&lt;/h2&gt;
+
+&lt;p&gt;virual Dom 을 간단하게 설명한다.&lt;/p&gt;
+
+&lt;p&gt;브라우저에 HTML 을 받으면 그것을 바로 RealDom 에 적용시키지 않고 virual Dom 을 만들어 브라우저에 있는 Dom 과 virual Dom 을 비교해서
+바뀐 부분만 변경해준다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-20-react_files/Screen Shot 2020-02-02 at 11.04.43 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;생활코딩예제&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-생활코딩예제&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;component-만들기&#34;&gt;Component 만들기&lt;/h2&gt;
 
@@ -1348,7 +1404,7 @@ export default Subject;
     </item>
     
     <item>
-      <title>__Server</title>
+      <title>__Node&amp;Server</title>
       <link>/tutorial/2020-01-13-sever/</link>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
       
@@ -1542,6 +1598,170 @@ Request Message Body
 
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-
+Browser Security&lt;/p&gt;
+
+&lt;h2 id=&#34;cors&#34;&gt;CORS&lt;/h2&gt;
+
+&lt;p&gt;Corss Oring Resource Sharing&lt;/p&gt;
+
+&lt;p&gt;CORS 란?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 10.52.13 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;브라우저의 현재 웹 페이지에서 다른 페이지에 있는 자원을 쓸수 있게 해주는 정책 이다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;다른 웹 페이지에 있는 리소스를 사용할수 있게 &lt;code&gt;도와&lt;/code&gt;주는 것이 CORS라고 한다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;예를 들어보자&lt;/p&gt;
+
+&lt;p&gt;예전에는 동일한 도메인에서만 요청과 응답을 할수 있게 해주었다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 9.34.59 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;하지만 클라이언트가 &lt;code&gt;www.naver/post.com&lt;/code&gt; 에서 &lt;code&gt;naver 서버컴퓨터&lt;/code&gt;에서 요청을 보내면 간단하게 응답을 줄수 있는데&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;naver서버컴퓨터&lt;/code&gt;가 &lt;code&gt;날씨 AIP 서버 컴퓨터&lt;/code&gt; 에서 정보를 가져다가 브라우져상에 보여줘서 사용자들에게 제공하고 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 8.15.14 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;그러면 클라이언트는 굳이 naver 서버에 요청을 하는것이 아니라 날씨 AIP 서버에 요청을 하는 것이 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 8.15.38 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 9.14.38 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;그러면  위에 그림과 같이 접근을 하고싶을 것이다.
+그러면 도메인 주소가 다르게 된다 &lt;code&gt;이때&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 9.40.36 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cross-origin 이 발생하게 된다.&lt;/p&gt;
+
+&lt;p&gt;서로 다른 도메인에 리소스를 보내고 받기 위해서는&lt;/p&gt;
+
+&lt;p&gt;클라이언트와 서버에서 특정한 작업을 해줘야 한다.&lt;/p&gt;
+
+&lt;p&gt;클라이언트는 브라우져에서 담당 하고 서버에서는 option 메소드가 올경우를 대비해서 코드를 작성해서 넣어주면 된다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;app.js 서버&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+ if (request.method === &amp;quot;OPTIONS&amp;quot;) {
+    response.writeHead(200, headers);
+    response.end(&amp;quot;옵션이 맞습니다.&amp;quot;); // 처음시작은 헤더를 작성해준다.=조건맞으면 200준다.
+    }
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Express - Node.js framework 를 이용해 간편하게 작성할수 있다.
+express의 해결방법&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+const express = require(&amp;quot;express&amp;quot;); // 1.express web application framework 불러온다.
+
+
+// 2.npm install cors
+
+
+
+const app = express(); // 3. app으로 프레임워크를 불러온다.
+
+
+app.use(cors()); // 4. 실행한다. 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;xss&#34;&gt;XSS&lt;/h2&gt;
+
+&lt;h2 id=&#34;csrf&#34;&gt;CSRF&lt;/h2&gt;
+
+&lt;p&gt;##&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/p&gt;
+
+&lt;h2 id=&#34;commonjs&#34;&gt;CommonJS ?&lt;/h2&gt;
+
+&lt;p&gt;자바스크립트를 모튤화 시켜서 사용하는 것이다.&lt;/p&gt;
+
+&lt;p&gt;모듈 : 독립적인 작은 코드들이 모여있는 집합. 다른 곳에서 가져다 활용할 수 있는 기능들&lt;/p&gt;
+
+&lt;p&gt;1.&lt;code&gt;require&lt;/code&gt; 는 nodeJS 에서 사용&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;const moment = require(&#39;moment&#39;);
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2.&lt;code&gt;import&lt;/code&gt;  는 ES6 에서 새롭게 도입&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+import moment from &#39;moment&#39;;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Node.js에서 exports와 mudule.exports의 차이&lt;/p&gt;
+
+&lt;p&gt;exports&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;exports를 사용할 때는 exports 객체에 프로퍼티를 추가했다&lt;/li&gt;
+&lt;li&gt;여러 개의 객체를 내보낼 경우, exports 변수의 속성으로 할당한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;module.exports&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;module.exports를 사용할 때는 module.exports 변수에 아예 새로운 객체를 할당했다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;딱 하나의 객체를 내보낼 경우, module.exports 변수 자체에 할당한다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 10.51.23 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var x = 10;
+var mod = require(&#39;./lib/my-module.js&#39;);
+var result = mod.x;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+
+//in lib/my-module.js
+var x = 20;
+exports.x = 30;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;result: 30&lt;/p&gt;
+
+&lt;p&gt;require이 내보내는 것은 exports라는 객체이다.&lt;/p&gt;
+
+&lt;p&gt;(exports객체 안에 보내고 싶은 부분을 담는 것임.)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var mod = require(&#39;./lib/my-module.js&#39;);
+var result = mod.x;
+//in lib/my-module.js:
+
+var x = 10;
+exports.x = 20;
+module.exports.x = 30;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;result: 30&lt;/p&gt;
+
+&lt;p&gt;exports는 module.exports를 참조하는 객체이다.&lt;/p&gt;
 </description>
     </item>
     
@@ -13853,7 +14073,11 @@ last // &amp;quot;jung&amp;quot;
 &lt;li&gt;&lt;p&gt;Node 란?&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;자바스크립트 런타임, V8엔진 등장(속도 향상, 크롬 브라우저의 V8 기반으로  nodejs사용해서 주로 웹서버 구축할수 있는 플랫폼 이다.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;자바스크립트 런타임, V8엔진 등장(속도 향상, 크롬 브라우저의 V8 기반으로  nodejs사용해서 주로 웹서버 구축할수 있는 플랫폼 이다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;V8 크롬 자바스크립트엔진?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;자바스크립트를 기계어로 컴파일 해주는 역활을 해주는것이 V8&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;실행 시키는 법&lt;/p&gt;

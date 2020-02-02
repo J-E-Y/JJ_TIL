@@ -138,7 +138,7 @@ Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게
   
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2020-01-13-sever/">
-  <meta property="og:title" content="__Server | JohnJung">
+  <meta property="og:title" content="__Node&amp;Server | JohnJung">
   <meta property="og:description" content="브라우저란? 인터넷 망에서 정보를 감색하는데 사용하는 응용프로그램을 말한다.
  기능  웹 페이지 열기, 최근 방문한 URL(uniform resource locator) 및 즐겨찾기 제공, 웹페이지 저장
  종류  Explorer
@@ -160,7 +160,7 @@ Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게
 
   
 
-  <title>__Server | JohnJung</title>
+  <title>__Node&amp;Server | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
@@ -432,7 +432,7 @@ Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게
     <ul class="nav docs-sidenav">
       
       <li class="active">
-        <a href="/tutorial/2020-01-13-sever/">__Server</a>
+        <a href="/tutorial/2020-01-13-sever/">__Node&amp;Server</a>
       </li>
       
       <li >
@@ -472,6 +472,10 @@ Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게
 <li><a href="#ajax란-무엇인가">AJAX란 무엇인가?</a></li>
 <li><a href="#fetch-를-왜-쓰는가">Fetch 를 왜 쓰는가?</a></li>
 <li><a href="#request-message">Request message</a></li>
+<li><a href="#cors">CORS</a></li>
+<li><a href="#xss">XSS</a></li>
+<li><a href="#csrf">CSRF</a></li>
+<li><a href="#commonjs">CommonJS ?</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -489,7 +493,7 @@ Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">__Server</h1>
+          <h1 itemprop="name">__Node&amp;Server</h1>
 
           <div class="article-style" itemprop="articleBody">
             
@@ -681,6 +685,170 @@ Request Message Body
 
 
 </code></pre>
+
+<p>##&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-
+Browser Security</p>
+
+<h2 id="cors">CORS</h2>
+
+<p>Corss Oring Resource Sharing</p>
+
+<p>CORS 란?</p>
+
+<p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 10.52.13 PM.png" alt="" /></p>
+
+<ul>
+<li><p>브라우저의 현재 웹 페이지에서 다른 페이지에 있는 자원을 쓸수 있게 해주는 정책 이다.</p></li>
+
+<li><p>다른 웹 페이지에 있는 리소스를 사용할수 있게 <code>도와</code>주는 것이 CORS라고 한다.</p></li>
+</ul>
+
+<p>예를 들어보자</p>
+
+<p>예전에는 동일한 도메인에서만 요청과 응답을 할수 있게 해주었다.</p>
+
+<p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 9.34.59 PM.png" alt="" /></p>
+
+<p>하지만 클라이언트가 <code>www.naver/post.com</code> 에서 <code>naver 서버컴퓨터</code>에서 요청을 보내면 간단하게 응답을 줄수 있는데</p>
+
+<p><code>naver서버컴퓨터</code>가 <code>날씨 AIP 서버 컴퓨터</code> 에서 정보를 가져다가 브라우져상에 보여줘서 사용자들에게 제공하고 있다.</p>
+
+<p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 8.15.14 PM.png" alt="" /></p>
+
+<p>그러면 클라이언트는 굳이 naver 서버에 요청을 하는것이 아니라 날씨 AIP 서버에 요청을 하는 것이 된다.</p>
+
+<p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 8.15.38 PM.png" alt="" /></p>
+
+<p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 9.14.38 PM.png" alt="" /></p>
+
+<p>그러면  위에 그림과 같이 접근을 하고싶을 것이다.
+그러면 도메인 주소가 다르게 된다 <code>이때</code></p>
+
+<p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 9.40.36 PM.png" alt="" /></p>
+
+<p>Cross-origin 이 발생하게 된다.</p>
+
+<p>서로 다른 도메인에 리소스를 보내고 받기 위해서는</p>
+
+<p>클라이언트와 서버에서 특정한 작업을 해줘야 한다.</p>
+
+<p>클라이언트는 브라우져에서 담당 하고 서버에서는 option 메소드가 올경우를 대비해서 코드를 작성해서 넣어주면 된다.</p>
+
+<ul>
+<li>app.js 서버</li>
+</ul>
+
+<pre><code class="language-js">
+ if (request.method === &quot;OPTIONS&quot;) {
+    response.writeHead(200, headers);
+    response.end(&quot;옵션이 맞습니다.&quot;); // 처음시작은 헤더를 작성해준다.=조건맞으면 200준다.
+    }
+
+</code></pre>
+
+<ul>
+<li>Express - Node.js framework 를 이용해 간편하게 작성할수 있다.
+express의 해결방법</li>
+</ul>
+
+<pre><code class="language-js">
+
+const express = require(&quot;express&quot;); // 1.express web application framework 불러온다.
+
+
+// 2.npm install cors
+
+
+
+const app = express(); // 3. app으로 프레임워크를 불러온다.
+
+
+app.use(cors()); // 4. 실행한다. 
+
+</code></pre>
+
+<h2 id="xss">XSS</h2>
+
+<h2 id="csrf">CSRF</h2>
+
+<p>##&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</p>
+
+<h2 id="commonjs">CommonJS ?</h2>
+
+<p>자바스크립트를 모튤화 시켜서 사용하는 것이다.</p>
+
+<p>모듈 : 독립적인 작은 코드들이 모여있는 집합. 다른 곳에서 가져다 활용할 수 있는 기능들</p>
+
+<p>1.<code>require</code> 는 nodeJS 에서 사용</p>
+
+<pre><code class="language-js">const moment = require('moment');
+
+</code></pre>
+
+<p>2.<code>import</code>  는 ES6 에서 새롭게 도입</p>
+
+<pre><code class="language-js">
+import moment from 'moment';
+
+</code></pre>
+
+<p>Node.js에서 exports와 mudule.exports의 차이</p>
+
+<p>exports</p>
+
+<ul>
+<li>exports를 사용할 때는 exports 객체에 프로퍼티를 추가했다</li>
+<li>여러 개의 객체를 내보낼 경우, exports 변수의 속성으로 할당한다.</li>
+</ul>
+
+<p>module.exports</p>
+
+<ul>
+<li><p>module.exports를 사용할 때는 module.exports 변수에 아예 새로운 객체를 할당했다.</p></li>
+
+<li><p>딱 하나의 객체를 내보낼 경우, module.exports 변수 자체에 할당한다.</p></li>
+</ul>
+
+<p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 10.51.23 PM.png" alt="" /></p>
+
+<pre><code class="language-js">
+var x = 10;
+var mod = require('./lib/my-module.js');
+var result = mod.x;
+
+</code></pre>
+
+<pre><code class="language-js">
+
+
+//in lib/my-module.js
+var x = 20;
+exports.x = 30;
+
+
+</code></pre>
+
+<p>result: 30</p>
+
+<p>require이 내보내는 것은 exports라는 객체이다.</p>
+
+<p>(exports객체 안에 보내고 싶은 부분을 담는 것임.)</p>
+
+<pre><code class="language-js">
+var mod = require('./lib/my-module.js');
+var result = mod.x;
+//in lib/my-module.js:
+
+var x = 10;
+exports.x = 20;
+module.exports.x = 30;
+
+
+</code></pre>
+
+<p>result: 30</p>
+
+<p>exports는 module.exports를 참조하는 객체이다.</p>
 
           </div>
 

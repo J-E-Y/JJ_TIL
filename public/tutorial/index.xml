@@ -22,7 +22,7 @@
     </item>
     
     <item>
-      <title>__Server</title>
+      <title>__Node&amp;Server</title>
       <link>/tutorial/2020-01-13-sever/</link>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
       
@@ -193,9 +193,12 @@ If there are two or more words that are the same length, return the first word f
       <guid>/tutorial/2019-12-21-sprint1/</guid>
       <description>Runtime  런타임란?
  프로그래밍 언어가 실행되는 곳    Node.js  Node 란?
- 자바스크립트 런타임, V8엔진 등장(속도 향상, 크롬 브라우저의 V8 기반으로 nodejs사용해서 주로 웹서버 구축할수 있는 플랫폼 이다.  실행 시키는 법
+ 자바스크립트 런타임, V8엔진 등장(속도 향상, 크롬 브라우저의 V8 기반으로 nodejs사용해서 주로 웹서버 구축할수 있는 플랫폼 이다.
+ V8 크롬 자바스크립트엔진?
+ 자바스크립트를 기계어로 컴파일 해주는 역활을 해주는것이 V8
+  실행 시키는 법
  node.js 환경에서 node &amp;lt;file.name&amp;gt; 명령을 하면 작성한 코드가 작동합니다.   1.runNode.js 파일을 만든다.
-  const testFunction = function(arg){ console.log(&amp;quot;Arg is : &amp;quot;, arg); } testFunction(20);   2. node 를 명령어 입력  $ node runNode.</description>
+  const testFunction = function(arg){ console.</description>
     </item>
     
     <item>

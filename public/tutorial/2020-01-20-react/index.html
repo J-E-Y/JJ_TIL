@@ -416,7 +416,7 @@
     <ul class="nav docs-sidenav">
       
       <li >
-        <a href="/tutorial/2020-01-13-sever/">__Server</a>
+        <a href="/tutorial/2020-01-13-sever/">__Node&amp;Server</a>
       </li>
       
       <li class="active">
@@ -452,13 +452,16 @@
 <li><a href="#what-is-react">What is &ldquo;React&rdquo;??</a></li>
 <li><a href="#알아야-할-es6-문법들">알아야 할 ES6 문법들</a></li>
 <li><a href="#toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</a></li>
-<li><a href="#1-jsx">1. JSX</a></li>
-<li><a href="#2-component">2. Component</a></li>
-<li><a href="#4-props">4. Props</a></li>
-<li><a href="#5-state">5. State</a></li>
-<li><a href="#6-lifecycle">6. LifeCycle</a></li>
+<li><a href="#jsx">JSX</a></li>
+<li><a href="#component">Component</a></li>
+<li><a href="#props-란">Props 란?</a></li>
+<li><a href="#state">state</a></li>
+<li><a href="#life-cycle">Life Cycle</a></li>
+<li><a href="#lifting-state-up">Lifting state up</a></li>
 <li><a href="#handle-async-function">Handle Async function</a></li>
-<li><a href="#생활코딩예제">//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+<li><a href="#class-or-function-component의-차이">Class OR Function Component의 차이</a></li>
+<li><a href="#virual-dom">virual Dom</a></li>
+<li><a href="#생활코딩예제">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
 <li><a href="#component-만들기">Component 만들기</a></li>
 <li><a href="#props-만들기">Props 만들기</a></li>
 <li><a href="#component-파일로-분리하기">Component 파일로 분리하기</a></li>
@@ -803,7 +806,9 @@ for (let [key, value] of iterable) {
 
 <h2 id="toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h2>
 
-<h2 id="1-jsx">1. JSX</h2>
+<h2 id="jsx">JSX</h2>
+
+<p>JSX  란?</p>
 
 <p>JSX 규칙</p>
 
@@ -817,7 +822,7 @@ for (let [key, value] of iterable) {
 <li><p>엘리먼트의 클래스 이름을 적용할 때, className 을 사용(class는 ES6에 존재하기 때문)</p></li>
 </ul>
 
-<h2 id="2-component">2. Component</h2>
+<h2 id="component">Component</h2>
 
 <p>컴포넌트?</p>
 
@@ -865,45 +870,83 @@ class Welcome extends React.Component {
 
 </code></pre>
 
-<h2 id="4-props">4. Props</h2>
+<h2 id="props-란">Props 란?</h2>
+
+<p>부모 컴포넌트가 자식 컴포넌트에게 내려주는 데이터</p>
 
 <ul>
-<li>상위 컴포넌트에서 하위 컴포넌트로 물려 받는 속성(데이터)</li>
-<li>Props: <code>상위</code> 컴포넌트가 <code>하위</code> 컴포넌트에게 <code>내려</code>주는 <code>데이터(속성)</code></li>
-<li>단순히 사용만 할 수 있다. 변경할 수 없다.</li>
+<li>변경불가 - 고정값</li>
+<li>일기전용</li>
+<li>String,number function 내려준다.</li>
 </ul>
 
-<h2 id="5-state">5. State</h2>
-
-<p>State 란?</p>
+<h2 id="state">state</h2>
 
 <ul>
-<li><p>컴포넌트가 갖는 <code>상태</code>. <code>객체의 형태</code>로 컴포넌트 내에서 보관하고 관리한다.</p></li>
-
-<li><p>State는 props와 유사하지만, 비공개이며 컴포넌트에 의해 완전히 제어된다</p></li>
-
-<li><p>컴포넌트가 만들어질 때 가장 먼저 설정되는 것이기 때문에 constructor 안에 위치한다.</p></li>
-
-<li><p>sate에 있는 데이터를 변경하기 위해서는 this.setState()라는 내장 메소드를 사용해야만 변경을 인식한다.</p></li>
-
-<li><p>state is changeble</p></li>
-
-<li><p>props is unchangeble</p></li>
+<li>state 란?</li>
 </ul>
 
-<h2 id="6-lifecycle">6. LifeCycle</h2>
+<p>컴퍼넌트의상태
+컴포넌트 안에서 관리해야 한다.
+setState 메소드를 이용하여 변경해야 한다.
+왜냐하면</p>
+
+<p>1  재랜더링 하기위해
+2. 가상돔이 인지하지 못해서</p>
 
 <ul>
-<li><p><code>LifeCycle</code> 란 컴포넌트가 생성되고 소멸되는 모든 과정</p></li>
-
-<li><p>lifeCycle Event 함수들은 <code>특정</code>시점에 실행된다. 각각 함수마다(componentWillMount,componentDidMount,componentWillUnmount &hellip;..)마다 실행되는 시점이 다르다.</p></li>
-
-<li><p>컴포넌트를 생성 할 때는 <code>constructor</code> -&gt; <code>componentWillMount</code> -&gt; render -&gt; <code>componentDidMount</code> 순으로 진행됩니다.</p></li>
-
-<li><p>컴포넌트를 제거 할 때는 <code>componentWillUnmount</code> 메소드만 실행됩니다.</p></li>
+<li>state가 변경되는 것은 동기 VS 비동기 ?</li>
 </ul>
+
+<p>setState 메서드 자체는 동기로 작동
+하지만 내부에서 state 값을 업데이트하는것은 비동기</p>
+
+<ul>
+<li><code>state</code> 의 특징??</li>
+</ul>
+
+<p>클래스 컴포넌트에서 사용가능
+immutable 하다
+컴포넌트 내부에서만 접근 가능하다.
+변경하려면 SetState사용
+state 변화의 결과로 life cycle 이 순환한다.</p>
+
+<h2 id="life-cycle">Life Cycle</h2>
+
+<ul>
+<li>Life Cycle 란?</li>
+</ul>
+
+<p>컴퍼넌트가 생성되고 업데이트되고 사라질때
+항상!!! 보장된 타이밍에 실행되는 메서드</p>
 
 <p><img src="/tutorial/2020-01-20-react_files/life.png" alt="" /></p>
+
+<h2 id="lifting-state-up">Lifting state up</h2>
+
+<ul>
+<li>Lifting state up  이란?</li>
+</ul>
+
+<p>자식 컴포넌트의 어떤 액션을 통해 부모 컴포넌트의 state 를 변경시키는 작업.</p>
+
+<ul>
+<li>why??</li>
+</ul>
+
+<p>컴포넌트 단위로 로직을 작성하기 때문에</p>
+
+<ul>
+<li>how??</li>
+</ul>
+
+<p>1.상위 컴포넌트에서 state 를 변경시키는 method 를 만듭니다.</p>
+
+<p>2.만든 modthod 를 자식 컴포넌트에게 props 로 넘겨준다.</p>
+
+<ol>
+<li>자식 컴포넌트에서는 넘겨받은 props를 싱행시킨다.</li>
+</ol>
 
 <h2 id="handle-async-function">Handle Async function</h2>
 
@@ -919,11 +962,12 @@ function hello17th(callback){
        var im17 = &quot;im17&quot;
        callback( `${hello} ${name} ${im17}`);
 },2000);
-
 }
 
 hello17th()  // undefined 와 callback is not a function 나온다. 
 
+
+// 그럼 어떻게 위에있는 코드를 실행할수 있을까 ?
 
 // 이렇게 callback 함수를 인자안에 작성하면 위에 작성한
 // 변수들을 모아서 사용할수 있다. 
@@ -938,7 +982,22 @@ hello17th(function(value){
 
 </code></pre>
 
-<h2 id="생활코딩예제">//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
+<h2 id="class-or-function-component의-차이">Class OR Function Component의 차이</h2>
+
+<p><img src="/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 11.34.35 PM.png" alt="" /></p>
+
+<p><img src="/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 11.34.40 PM.png" alt="" /></p>
+
+<h2 id="virual-dom">virual Dom</h2>
+
+<p>virual Dom 을 간단하게 설명한다.</p>
+
+<p>브라우저에 HTML 을 받으면 그것을 바로 RealDom 에 적용시키지 않고 virual Dom 을 만들어 브라우저에 있는 Dom 과 virual Dom 을 비교해서
+바뀐 부분만 변경해준다.</p>
+
+<p><img src="/tutorial/2020-01-20-react_files/Screen Shot 2020-02-02 at 11.04.43 PM.png" alt="" /></p>
+
+<h2 id="생활코딩예제">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 
 <h2 id="component-만들기">Component 만들기</h2>
 
