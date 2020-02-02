@@ -547,7 +547,24 @@ hello17th(function(value){
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-20-react_files/Screen Shot 2020-02-02 at 11.04.43 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;생활코딩예제&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-생활코딩예제&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;h2 id=&#34;reactdom-과-reactnative-차이점&#34;&gt;ReactDom 과 reactNative 차이점?&lt;/h2&gt;
+
+&lt;p&gt;리엑트를 사용해서 웹사이트에 올리고 싶다?&lt;/p&gt;
+
+&lt;p&gt;ReactDom 을 쓰면됨&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+import ReactDOM from &amp;quot;react-dom&amp;quot;;
+
+ReactDOM.render(&amp;lt;App /&amp;gt;, document.getElementById(&amp;quot;root&amp;quot;));
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;리엑트를 사용해서 웹사이트에 올리고 싶다?&lt;/p&gt;
+
+&lt;p&gt;reactNative 쓰면됨&lt;/p&gt;
+
+&lt;h2 id=&#34;생활코딩예제&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-생활코딩예제&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;component-만들기&#34;&gt;Component 만들기&lt;/h2&gt;
 
@@ -1647,9 +1664,15 @@ Browser Security&lt;/p&gt;
 
 &lt;p&gt;클라이언트는 브라우져에서 담당 하고 서버에서는 option 메소드가 올경우를 대비해서 코드를 작성해서 넣어주면 된다.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 9.47.01 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;app.js 서버&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;이런 방식을 통해 options 값을 서버에 작성한다.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
  if (request.method === &amp;quot;OPTIONS&amp;quot;) {
@@ -1660,8 +1683,10 @@ Browser Security&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Express - Node.js framework 를 이용해 간편하게 작성할수 있다.
-express의 해결방법&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Express - Node.js framework 를 이용해 간편하게 작성할수 있다.
+express의 해결방법&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;위에있는 내용과 동일하다.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
@@ -1670,7 +1695,6 @@ const express = require(&amp;quot;express&amp;quot;); // 1.express web applicati
 
 
 // 2.npm install cors
-
 
 
 const app = express(); // 3. app으로 프레임워크를 불러온다.

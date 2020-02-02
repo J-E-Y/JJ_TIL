@@ -734,9 +734,15 @@ Browser Security</p>
 
 <p>클라이언트는 브라우져에서 담당 하고 서버에서는 option 메소드가 올경우를 대비해서 코드를 작성해서 넣어주면 된다.</p>
 
+<p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 9.47.01 PM.png" alt="" /></p>
+
 <ul>
 <li>app.js 서버</li>
 </ul>
+
+<blockquote>
+<p>이런 방식을 통해 options 값을 서버에 작성한다.</p>
+</blockquote>
 
 <pre><code class="language-js">
  if (request.method === &quot;OPTIONS&quot;) {
@@ -747,8 +753,10 @@ Browser Security</p>
 </code></pre>
 
 <ul>
-<li>Express - Node.js framework 를 이용해 간편하게 작성할수 있다.
-express의 해결방법</li>
+<li><p>Express - Node.js framework 를 이용해 간편하게 작성할수 있다.
+express의 해결방법</p></li>
+
+<li><p>위에있는 내용과 동일하다.</p></li>
 </ul>
 
 <pre><code class="language-js">
@@ -757,7 +765,6 @@ const express = require(&quot;express&quot;); // 1.express web application frame
 
 
 // 2.npm install cors
-
 
 
 const app = express(); // 3. app으로 프레임워크를 불러온다.
