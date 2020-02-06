@@ -12,6 +12,26 @@
     
     
     <item>
+      <title>__DB_SQL</title>
+      <link>/tutorial/2020-02-06-database/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2020-02-06-database/</guid>
+      <description>MYSQL MySQL 이랑 그냥 SQL 의 차이 ??
+ MySQL : 데이터베이스(DataBase)이다.
+ SQL : 데이터를 관리하기 위해 설계된 프로그래밍 언어이다.
+  MYSQL 시작하기 경로 cd /usr/local/mysql/bin
+비밀번호 입력 ./mysql -uroot -p
+생성 mysql&amp;gt; CREATE DATABASE jjdb;
+삭제 mysql&amp;gt; DROP CREATE DATABASE jjd;
+확인
+mysql&amp;gt; DATABASE;
+사용 mysql&amp;gt; UES jjd;
+Data table 만들기
+ Data table을 만들기 위해서는 명시적으로 Database를 선택해 줘야 함 데이터베이스가 선택되면 생성된 모든 테이블들은 그 해당 데이터베이스에서 만들어짐</description>
+    </item>
+    
+    <item>
       <title>__React</title>
       <link>/tutorial/2020-01-20-react/</link>
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>

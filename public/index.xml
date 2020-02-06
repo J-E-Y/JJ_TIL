@@ -36,6 +36,184 @@
     </item>
     
     <item>
+      <title>__DB_SQL</title>
+      <link>/tutorial/2020-02-06-database/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2020-02-06-database/</guid>
+      <description>
+
+&lt;h2 id=&#34;mysql&#34;&gt;MYSQL&lt;/h2&gt;
+
+&lt;p&gt;MySQL 이랑 그냥 SQL 의 차이 ??&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;MySQL : 데이터베이스(DataBase)이다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;SQL : 데이터를 관리하기 위해 설계된 프로그래밍 언어이다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;mysql-시작하기&#34;&gt;MYSQL 시작하기&lt;/h5&gt;
+
+&lt;p&gt;경로
+cd /usr/local/mysql/bin&lt;/p&gt;
+
+&lt;p&gt;비밀번호 입력
+./mysql -uroot -p&lt;/p&gt;
+
+&lt;p&gt;생성
+mysql&amp;gt; CREATE DATABASE jjdb;&lt;/p&gt;
+
+&lt;p&gt;삭제
+mysql&amp;gt; DROP CREATE DATABASE jjd;&lt;/p&gt;
+
+&lt;p&gt;확인&lt;/p&gt;
+
+&lt;p&gt;mysql&amp;gt; DATABASE;&lt;/p&gt;
+
+&lt;p&gt;사용
+mysql&amp;gt; UES jjd;&lt;/p&gt;
+
+&lt;p&gt;Data table 만들기&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Data table&lt;/code&gt;을 만들기 위해서는 명시적으로 Database를 선택해 줘야 함 데이터베이스가 선택되면 생성된 모든 테이블들은 그 해당 데이터베이스에서 만들어짐&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Table 생성&lt;/p&gt;
+
+&lt;p&gt;table 탐색&lt;/p&gt;
+
+&lt;p&gt;mysql&amp;gt; DESC &lt;code&gt;jjTable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;table 삽입&lt;/p&gt;
+
+&lt;h2 id=&#34;learn-sql&#34;&gt;Learn SQL&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Select&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Customers table 모두 보기
+SELECT * FROM Customers;&lt;/p&gt;
+
+&lt;p&gt;CustomerName만 가져오기
+SELECT CustomerName,City FROM Customers;&lt;/p&gt;
+
+&lt;p&gt;중복되지 않는 나라만 가져오기
+SELECT DISTINCT Country FROM Customers;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Where&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;나라가 멕시코인곳만 가져오기
+SELECT * FROM Customers
+WHERE Country=&amp;lsquo;Mexico&amp;rsquo;;&lt;/p&gt;
+
+&lt;p&gt;3 And, Or, Not&lt;/p&gt;
+
+&lt;p&gt;나라는 Germany Adn Berlin
+SELECT * FROM Customers
+WHERE Country=&amp;ldquo;Germany&amp;rdquo; AND City=&amp;ldquo;Berlin&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;나라는 Germany And Berlin OR Munchen
+SELECT * FROM Customers
+WHERE Country=&amp;lsquo;Germany&amp;rsquo; AND (City=&amp;lsquo;Berlin&amp;rsquo; OR City=&amp;lsquo;München&amp;rsquo;);&lt;/p&gt;
+
+&lt;p&gt;나라가 Germany 와 USA 가 아닌곳
+SELECT * FROM Customers
+WHERE NOT Country=&amp;lsquo;Germany&amp;rsquo; AND NOT Country=&amp;lsquo;USA&amp;rsquo;;&lt;/p&gt;
+
+&lt;p&gt;4.Order By&lt;/p&gt;
+
+&lt;p&gt;나라 알파벳 순서대로 모든 정보들 정렬
+SELECT * FROM Customers
+ORDER BY Country;&lt;/p&gt;
+
+&lt;p&gt;나라 알파벳 반대순서대로 모든 정보들 정렬
+SELECT * FROM Customers
+ORDER BY Country DESC;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Insert Into&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;원하는 정보 맨밑에저장된다.
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES (&amp;lsquo;Cardinal&amp;rsquo;,&amp;lsquo;Tom B. Erichsen&amp;rsquo;,&amp;lsquo;Skagen 21&amp;rsquo;,&amp;lsquo;Stavanger&amp;rsquo;,&amp;lsquo;4006&amp;rsquo;,&amp;lsquo;Norway&amp;rsquo;);&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Null Values&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Customers table 에 CustomerName, ContactName, Address 목록을 불러오는데 Adrress 에 값이 Null 인 목록을 불러와라
+SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NULL;&lt;/p&gt;
+
+&lt;p&gt;No result.&lt;/p&gt;
+
+&lt;p&gt;반대로 NULL 값이 없는 목록들을 가져와라&lt;/p&gt;
+
+&lt;p&gt;SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NOT NULL;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Wildcards&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Customers 에 table 안에 city 안에 ber와 같은 char 들이 있는 목록들 불러오기
+SELECT * FROM Customers
+WHERE City LIKE &amp;lsquo;ber%&amp;rsquo;;&lt;/p&gt;
+
+&lt;p&gt;LIKE &amp;lsquo;ber%&amp;rsquo;     처음
+LIKE &amp;lsquo;%es%&amp;rsquo;;    중간
+LIKE &amp;lsquo;_ondon&amp;rsquo;;  끝
+LIKE &amp;lsquo;L_n_on&amp;rsquo;;  검색중간
+LIKE &amp;lsquo;[bsp]%&amp;lsquo;;  b,s,p 시작하는것들
+LIKE &amp;lsquo;[!bsp]%&amp;lsquo;; b,s,p 시작하지 않는것들
+NOT LIKE &amp;lsquo;[bsp]%&amp;lsquo;; b,s,p 시작하지 않는것들
+LIKE &amp;lsquo;[a-c]%&amp;lsquo;;  a부터 c 까지&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Aliases (map)같은 문법&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;새로운 테이블을 만든다.
+CustomerID 불러오고 이것의 카테고리는 ID
+CustomerName 불로오고 이것의 카테고리는 Customer
+그것을 화면에 출력&lt;/p&gt;
+
+&lt;p&gt;SELECT CustomerID AS ID, CustomerName AS Customer
+FROM Customers;&lt;/p&gt;
+
+&lt;p&gt;만약 AS 의 사이에 하나만 있으면 데이터만 출력후
+뒤에로 넘어간다.
+SELECT CustomerName, Address + &amp;lsquo;, &amp;rsquo; + PostalCode + &amp;lsquo; &amp;rsquo; + City + &amp;lsquo;, &amp;rsquo; + Country AS Address
+FROM Customers;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-06 at 1.29.29 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mysql&lt;/p&gt;
+
+&lt;p&gt;Mysql 은 디비 이름
+SQL 은 디비를 다루기 위한 언어&lt;/p&gt;
+
+&lt;p&gt;터미널 시작&lt;/p&gt;
+
+&lt;p&gt;1.
+cd /usr/local/mysql/bin&lt;/p&gt;
+
+&lt;p&gt;2.
+./mysql -uroot -p&lt;/p&gt;
+
+&lt;p&gt;테이블 생성&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>__React</title>
       <link>/tutorial/2020-01-20-react/</link>
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
@@ -1786,6 +1964,66 @@ module.exports.x = 30;
 &lt;p&gt;result: 30&lt;/p&gt;
 
 &lt;p&gt;exports는 module.exports를 참조하는 객체이다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+var posts = [
+    { title: &amp;quot;&#39;Post 1&amp;quot;, body: &#39;this is post one&#39;},
+    { title: &amp;quot;Porst 2&amp;quot;, body: &amp;quot;this is post two&amp;quot;}
+];
+var newarr =[];
+function getPosts() {
+    setTimeout(()=&amp;gt;{
+    let output = &amp;quot;&amp;quot;;
+    posts.forEach((post)=&amp;gt;{
+    newarr.push(post.title)
+    });
+    
+    console.log(newarr)
+    },3000);
+}
+getPosts();
+
+function createPost(post){
+    setTimeout(()=&amp;gt;{
+        posts.push(post)
+    },2000)
+}
+createPost({ title: &amp;quot;&#39;Post 3&amp;quot;, body: &#39;this is post three&#39;})
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+// getPosts(); // createPost() 안에 인자값으로 넣는다. 
+var posts = [
+    { title: &amp;quot;&#39;Post 1&amp;quot;, body: &#39;this is post one&#39;},
+    { title: &amp;quot;Porst 2&amp;quot;, body: &amp;quot;this is post two&amp;quot;}
+];
+var newarr =[];
+function getPosts() {
+    setTimeout(()=&amp;gt;{
+    let output = &amp;quot;&amp;quot;;
+    posts.forEach((post)=&amp;gt;{
+    newarr.push(post.title)
+    });
+    
+    console.log(newarr)
+    },1000);
+}
+// getPosts(); // createPost() 안에 인자값으로 넣는다. 
+
+function createPost(post,callback){
+    setTimeout(()=&amp;gt;{
+        posts.push(post)
+        callback()
+    },2000)
+}
+createPost({ title: &amp;quot;&#39;Post 3&amp;quot;, body: &#39;this is post three&#39;},getPosts)
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
