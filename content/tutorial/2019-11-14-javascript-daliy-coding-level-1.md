@@ -4,7 +4,7 @@ date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    parent: "6.Javascript"
+    parent: "7.Javascript"
     weight: 1
 toc: yes
 type: docs

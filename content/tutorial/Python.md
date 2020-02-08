@@ -4,7 +4,7 @@ date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    name: 5.Python
+    name: 6.Python
     weight: 6
 toc: yes
 type: docs

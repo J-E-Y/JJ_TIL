@@ -4,7 +4,7 @@ date: 2019-04-29
 draft: true
 menu:
   tutorial:
-    name: 6.Javascript
+    name: 7.Javascript
     weight: 7
 toc: yes
 type: docs

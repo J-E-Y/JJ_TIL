@@ -36,7 +36,220 @@
     </item>
     
     <item>
-      <title>__DB_SQL</title>
+      <title>__Server Side Techniques</title>
+      <link>/tutorial/2020-02-08-server-side-techniques/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2020-02-08-server-side-techniques/</guid>
+      <description>
+
+&lt;h2 id=&#34;promise&#34;&gt;Promise&lt;/h2&gt;
+
+&lt;h2 id=&#34;callback&#34;&gt;Callback&lt;/h2&gt;
+
+&lt;h2 id=&#34;promise-chaining&#34;&gt;Promise Chaining&lt;/h2&gt;
+
+&lt;h2 id=&#34;promise-all&#34;&gt;Promise.all&lt;/h2&gt;
+
+&lt;h2 id=&#34;async-await&#34;&gt;async/await&lt;/h2&gt;
+
+&lt;h2 id=&#34;fs-module&#34;&gt;fs module&lt;/h2&gt;
+
+&lt;h2 id=&#34;request&#34;&gt;Request&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>__node</title>
+      <link>/tutorial/2020-02-08-node/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2020-02-08-node/</guid>
+      <description>
+
+&lt;h2 id=&#34;node&#34;&gt;Node&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;node.js 란?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;노드는 &lt;code&gt;V8 엔진&lt;/code&gt;으로 만들어진  자바스크립트 &lt;code&gt;런타임&lt;/code&gt;이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;v8 이란 ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;v8 complies Javascript directly to native machine code&lt;/p&gt;
+
+&lt;p&gt;자바스크립트를 기계어로 컴파일 해준다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;런타임이란?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;프로그래밍 언어가 구동되고 있는 환경 이다&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;결론적으로 Node.js 란?&lt;/p&gt;
+
+&lt;p&gt;node.js 는 자바스크립트를 컴파일 해주는 엔진으로 빌드된 자바스크립트 구동중인 환경이다.&lt;/p&gt;
+
+&lt;h2 id=&#34;restful-api&#34;&gt;RESTful API&lt;/h2&gt;
+
+&lt;h2 id=&#34;commonjs&#34;&gt;CommonJS&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CommonJS 란?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;자바스크립트를 모튤화 시켜서 사용하는 것이다.&lt;/p&gt;
+
+&lt;p&gt;모듈 : 독립적인 작은 코드들이 모여있는 집합. 다른 곳에서 가져다 활용할 수 있는 기능들&lt;/p&gt;
+
+&lt;p&gt;1.&lt;code&gt;require&lt;/code&gt; 는 nodeJS 에서 사용&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;const moment = require(&#39;moment&#39;);
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2.&lt;code&gt;import&lt;/code&gt;  는 ES6 에서 새롭게 도입&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+import moment from &#39;moment&#39;;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Node.js에서 exports와 mudule.exports의 차이&lt;/p&gt;
+
+&lt;p&gt;exports&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;exports를 사용할 때는 exports 객체에 프로퍼티를 추가했다&lt;/li&gt;
+&lt;li&gt;여러 개의 객체를 내보낼 경우, exports 변수의 속성으로 할당한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;module.exports&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;module.exports를 사용할 때는 module.exports 변수에 아예 새로운 객체를 할당했다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;딱 하나의 객체를 내보낼 경우, module.exports 변수 자체에 할당한다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 10.51.23 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var x = 10;
+var mod = require(&#39;./lib/my-module.js&#39;);
+var result = mod.x;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+
+//in lib/my-module.js
+var x = 20;
+exports.x = 30;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;result: 30&lt;/p&gt;
+
+&lt;p&gt;require이 내보내는 것은 exports라는 객체이다.&lt;/p&gt;
+
+&lt;p&gt;(exports객체 안에 보내고 싶은 부분을 담는 것임.)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var mod = require(&#39;./lib/my-module.js&#39;);
+var result = mod.x;
+//in lib/my-module.js:
+
+var x = 10;
+exports.x = 20;
+module.exports.x = 30;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;result: 30&lt;/p&gt;
+
+&lt;p&gt;exports는 module.exports를 참조하는 객체이다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+var posts = [
+    { title: &amp;quot;&#39;Post 1&amp;quot;, body: &#39;this is post one&#39;},
+    { title: &amp;quot;Porst 2&amp;quot;, body: &amp;quot;this is post two&amp;quot;}
+];
+var newarr =[];
+function getPosts() {
+    setTimeout(()=&amp;gt;{
+    let output = &amp;quot;&amp;quot;;
+    posts.forEach((post)=&amp;gt;{
+    newarr.push(post.title)
+    });
+    
+    console.log(newarr)
+    },3000);
+}
+getPosts();
+
+function createPost(post){
+    setTimeout(()=&amp;gt;{
+        posts.push(post)
+    },2000)
+}
+createPost({ title: &amp;quot;&#39;Post 3&amp;quot;, body: &#39;this is post three&#39;})
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+// getPosts(); // createPost() 안에 인자값으로 넣는다. 
+var posts = [
+    { title: &amp;quot;&#39;Post 1&amp;quot;, body: &#39;this is post one&#39;},
+    { title: &amp;quot;Porst 2&amp;quot;, body: &amp;quot;this is post two&amp;quot;}
+];
+var newarr =[];
+function getPosts() {
+    setTimeout(()=&amp;gt;{
+    let output = &amp;quot;&amp;quot;;
+    posts.forEach((post)=&amp;gt;{
+    newarr.push(post.title)
+    });
+    
+    console.log(newarr)
+    },1000);
+}
+// getPosts(); // createPost() 안에 인자값으로 넣는다. 
+
+function createPost(post,callback){
+    setTimeout(()=&amp;gt;{
+        posts.push(post)
+        callback()
+    },2000)
+}
+createPost({ title: &amp;quot;&#39;Post 3&amp;quot;, body: &#39;this is post three&#39;},getPosts)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;express&#34;&gt;Express&lt;/h2&gt;
+
+&lt;h2 id=&#34;event-loop&#34;&gt;Event Loop&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>__Database</title>
       <link>/tutorial/2020-02-06-database/</link>
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       
@@ -741,6 +954,8 @@ ReactDOM.render(&amp;lt;App /&amp;gt;, document.getElementById(&amp;quot;root&am
 &lt;p&gt;리엑트를 사용해서 웹사이트에 올리고 싶다?&lt;/p&gt;
 
 &lt;p&gt;reactNative 쓰면됨&lt;/p&gt;
+
+&lt;h2 id=&#34;redux&#34;&gt;Redux&lt;/h2&gt;
 
 &lt;h2 id=&#34;생활코딩예제&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-생활코딩예제&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
@@ -1599,7 +1814,7 @@ export default Subject;
     </item>
     
     <item>
-      <title>__Node&amp;Server</title>
+      <title>__Interaction With Server</title>
       <link>/tutorial/2020-01-13-sever/</link>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
       
@@ -1773,7 +1988,7 @@ user-agent&lt;/p&gt;
 &lt;h2 id=&#34;request-message&#34;&gt;Request message&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;웹브라우져와 웹서버 주고받는 메&lt;/li&gt;
+&lt;li&gt;웹브라우져와 웹서버 주고받는 내용&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
@@ -1794,8 +2009,7 @@ Request Message Body
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;##&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-
-Browser Security&lt;/p&gt;
+&lt;h2 id=&#34;browser-security&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;Browser Security&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
 &lt;h2 id=&#34;cors&#34;&gt;CORS&lt;/h2&gt;
 
@@ -1886,144 +2100,45 @@ app.use(cors()); // 4. 실행한다.
 
 &lt;h2 id=&#34;csrf&#34;&gt;CSRF&lt;/h2&gt;
 
-&lt;p&gt;##&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/p&gt;
-
-&lt;h2 id=&#34;commonjs&#34;&gt;CommonJS ?&lt;/h2&gt;
-
-&lt;p&gt;자바스크립트를 모튤화 시켜서 사용하는 것이다.&lt;/p&gt;
-
-&lt;p&gt;모듈 : 독립적인 작은 코드들이 모여있는 집합. 다른 곳에서 가져다 활용할 수 있는 기능들&lt;/p&gt;
-
-&lt;p&gt;1.&lt;code&gt;require&lt;/code&gt; 는 nodeJS 에서 사용&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;const moment = require(&#39;moment&#39;);
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;2.&lt;code&gt;import&lt;/code&gt;  는 ES6 에서 새롭게 도입&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-import moment from &#39;moment&#39;;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Node.js에서 exports와 mudule.exports의 차이&lt;/p&gt;
-
-&lt;p&gt;exports&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;exports를 사용할 때는 exports 객체에 프로퍼티를 추가했다&lt;/li&gt;
-&lt;li&gt;여러 개의 객체를 내보낼 경우, exports 변수의 속성으로 할당한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;module.exports&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;module.exports를 사용할 때는 module.exports 변수에 아예 새로운 객체를 할당했다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;딱 하나의 객체를 내보낼 경우, module.exports 변수 자체에 할당한다.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 10.51.23 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-var x = 10;
-var mod = require(&#39;./lib/my-module.js&#39;);
-var result = mod.x;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-
-
-//in lib/my-module.js
-var x = 20;
-exports.x = 30;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;result: 30&lt;/p&gt;
-
-&lt;p&gt;require이 내보내는 것은 exports라는 객체이다.&lt;/p&gt;
-
-&lt;p&gt;(exports객체 안에 보내고 싶은 부분을 담는 것임.)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-var mod = require(&#39;./lib/my-module.js&#39;);
-var result = mod.x;
-//in lib/my-module.js:
-
-var x = 10;
-exports.x = 20;
-module.exports.x = 30;
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;result: 30&lt;/p&gt;
-
-&lt;p&gt;exports는 module.exports를 참조하는 객체이다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-
-var posts = [
-    { title: &amp;quot;&#39;Post 1&amp;quot;, body: &#39;this is post one&#39;},
-    { title: &amp;quot;Porst 2&amp;quot;, body: &amp;quot;this is post two&amp;quot;}
-];
-var newarr =[];
-function getPosts() {
-    setTimeout(()=&amp;gt;{
-    let output = &amp;quot;&amp;quot;;
-    posts.forEach((post)=&amp;gt;{
-    newarr.push(post.title)
-    });
+&lt;h2 id=&#34;toc_11&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+</description>
+    </item>
     
-    console.log(newarr)
-    },3000);
-}
-getPosts();
-
-function createPost(post){
-    setTimeout(()=&amp;gt;{
-        posts.push(post)
-    },2000)
-}
-createPost({ title: &amp;quot;&#39;Post 3&amp;quot;, body: &#39;this is post three&#39;})
+    <item>
+      <title>6.configure</title>
+      <link>/tutorial/2020-02-08-configure/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2020-02-08-configure/</guid>
+      <description>
 
+&lt;h2 id=&#34;visual-studio&#34;&gt;visual studio&lt;/h2&gt;
 
+&lt;p&gt;Material Icon Them
+DBdiagram 쓰기
+ERD 공부&lt;/p&gt;
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;magnet 맥스토어
+* vim
+* git hostoy
+* html boilerplate&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+&lt;p&gt;eslint-cofig-prettier 충돌나지 않게 하기&lt;/p&gt;
 
-// getPosts(); // createPost() 안에 인자값으로 넣는다. 
-var posts = [
-    { title: &amp;quot;&#39;Post 1&amp;quot;, body: &#39;this is post one&#39;},
-    { title: &amp;quot;Porst 2&amp;quot;, body: &amp;quot;this is post two&amp;quot;}
-];
-var newarr =[];
-function getPosts() {
-    setTimeout(()=&amp;gt;{
-    let output = &amp;quot;&amp;quot;;
-    posts.forEach((post)=&amp;gt;{
-    newarr.push(post.title)
-    });
-    
-    console.log(newarr)
-    },1000);
-}
-// getPosts(); // createPost() 안에 인자값으로 넣는다. 
-
-function createPost(post,callback){
-    setTimeout(()=&amp;gt;{
-        posts.push(post)
-        callback()
-    },2000)
-}
-createPost({ title: &amp;quot;&#39;Post 3&amp;quot;, body: &#39;this is post three&#39;},getPosts)
+&lt;h2 id=&#34;mysql&#34;&gt;Mysql&lt;/h2&gt;
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Mysql 은 디비 이름
+SQL 은 디비를 다루기 위한 언어&lt;/p&gt;
+
+&lt;p&gt;터미널 시작&lt;/p&gt;
+
+&lt;p&gt;1.
+cd /usr/local/mysql/bin&lt;/p&gt;
+
+&lt;p&gt;2.
+./mysql -uroot -p&lt;/p&gt;
+
+&lt;p&gt;테이블 생성&lt;/p&gt;
 </description>
     </item>
     
@@ -14085,7 +14200,7 @@ remove : 주어진 키값에 해당하는 index에 들어 있는 값을 제거�
     </item>
     
     <item>
-      <title>__Iheritance Patterns</title>
+      <title>__Iheritance</title>
       <link>/tutorial/2020-01-05-spint-3/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       

@@ -19,6 +19,16 @@
   </url>
   
   <url>
+    <loc>/tutorial/2020-02-08-server-side-techniques/</loc>
+    <lastmod>2020-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2020-02-08-node/</loc>
+    <lastmod>2020-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/2020-02-06-database/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
   </url>
@@ -31,6 +41,11 @@
   <url>
     <loc>/tutorial/2020-01-13-sever/</loc>
     <lastmod>2020-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2020-02-08-configure/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -178,12 +193,6 @@
   </url>
   
   <url>
-    <loc>/tags/pos/</loc>
-    <lastmod>2016-04-27T00:00:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/project/</loc>
     <lastmod>2016-04-27T00:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -191,6 +200,12 @@
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2016-04-27T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/pos/</loc>
     <lastmod>2016-04-27T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
