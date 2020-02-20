@@ -420,7 +420,7 @@ FROM Customers;&lt;/p&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;code&gt;View&lt;/code&gt;는 사용자들이 보는 화면(UI)으로서, 컨트롤러와의 소통을 통해 데이터를 입력하거나 출력합니다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;code&gt;Controller&lt;/code&gt;는 데이터(Model)와 사용자 인터페이스(View)를 연결하는 역할을 합니다.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Controller&lt;/code&gt;는 데이터(Model)와 사용자 인터페이스(View)를 연결하는 역할을 합니다..&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
