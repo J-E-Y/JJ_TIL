@@ -497,6 +497,7 @@ Data table 만들기
 </ul></li>
 </ul></li>
 <li><a href="#learn-sql">Learn SQL</a></li>
+<li><a href="#mvc-design-pattern">MVC design pattern</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -672,20 +673,19 @@ FROM Customers;</p>
 
 <p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-06 at 1.29.29 PM.png" alt="" /></p>
 
-<p>Mysql</p>
+<h2 id="mvc-design-pattern">MVC design pattern</h2>
 
-<p>Mysql 은 디비 이름
-SQL 은 디비를 다루기 위한 언어</p>
+<p><code>MVC</code> 패턴은 애플리케이션을 Model, View, Controller 세 역할로 구분한 개발 방법론입니다. 각 요소는 애플리케이션의 작동과 관련하여 각기 다른 역할을 수행합니다.</p>
 
-<p>터미널 시작</p>
+<p>크게 3가지 패턴을 이야기 할수 있다.</p>
 
-<p>1.
-cd /usr/local/mysql/bin</p>
+<ul>
+<li><p><code>Model</code>은 데이터 처리와 관련된 역할을 수행하는 컴포넌트입니다. 컨트롤러의 명령을 받아 동작합니다.</p></li>
 
-<p>2.
-./mysql -uroot -p</p>
+<li><p><code>View</code>는 사용자들이 보는 화면(UI)으로서, 컨트롤러와의 소통을 통해 데이터를 입력하거나 출력합니다.</p></li>
 
-<p>테이블 생성</p>
+<li><p><code>Controller</code>는 데이터(Model)와 사용자 인터페이스(View)를 연결하는 역할을 합니다.</p></li>
+</ul>
 
           </div>
 

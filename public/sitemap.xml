@@ -193,6 +193,12 @@
   </url>
   
   <url>
+    <loc>/tags/pos/</loc>
+    <lastmod>2016-04-27T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/project/</loc>
     <lastmod>2016-04-27T00:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -200,12 +206,6 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2016-04-27T00:00:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/pos/</loc>
     <lastmod>2016-04-27T00:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>

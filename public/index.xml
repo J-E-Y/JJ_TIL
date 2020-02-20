@@ -409,20 +409,19 @@ FROM Customers;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-06 at 1.29.29 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Mysql&lt;/p&gt;
+&lt;h2 id=&#34;mvc-design-pattern&#34;&gt;MVC design pattern&lt;/h2&gt;
 
-&lt;p&gt;Mysql 은 디비 이름
-SQL 은 디비를 다루기 위한 언어&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;MVC&lt;/code&gt; 패턴은 애플리케이션을 Model, View, Controller 세 역할로 구분한 개발 방법론입니다. 각 요소는 애플리케이션의 작동과 관련하여 각기 다른 역할을 수행합니다.&lt;/p&gt;
 
-&lt;p&gt;터미널 시작&lt;/p&gt;
+&lt;p&gt;크게 3가지 패턴을 이야기 할수 있다.&lt;/p&gt;
 
-&lt;p&gt;1.
-cd /usr/local/mysql/bin&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Model&lt;/code&gt;은 데이터 처리와 관련된 역할을 수행하는 컴포넌트입니다. 컨트롤러의 명령을 받아 동작합니다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;2.
-./mysql -uroot -p&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;View&lt;/code&gt;는 사용자들이 보는 화면(UI)으로서, 컨트롤러와의 소통을 통해 데이터를 입력하거나 출력합니다.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;테이블 생성&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Controller&lt;/code&gt;는 데이터(Model)와 사용자 인터페이스(View)를 연결하는 역할을 합니다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
