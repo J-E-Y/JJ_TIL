@@ -41,8 +41,7 @@
   런타임이란?   프로그래밍 언어가 구동되고 있는 환경 이다
  결론적으로 Node.js 란?
 node.js 는 자바스크립트를 컴파일 해주는 엔진으로 빌드된 자바스크립트 구동중인 환경이다.
-RESTful API CommonJS  CommonJS 란?  자바스크립트를 모튤화 시켜서 사용하는 것이다.
-모듈 : 독립적인 작은 코드들이 모여있는 집합.</description>
+RESTful API  REST(REpresentational State Transfer)  CommonJS  CommonJS 란?  자바스크립트를 모튤화 시켜서 사용하는 것이다.</description>
     </item>
     
     <item>
