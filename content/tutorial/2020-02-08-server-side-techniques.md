@@ -5,7 +5,7 @@ draft: true
 menu:
   tutorial:
     parent: "_section3"
-    weight: 2
+    weight: 1
 toc: yes
 type: docs
 ---
