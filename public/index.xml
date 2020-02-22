@@ -1829,6 +1829,10 @@ export default Subject;
       <guid>/tutorial/2020-01-13-sever/</guid>
       <description>
 
+&lt;h2 id=&#34;web-architecture&#34;&gt;Web Architecture&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-22 at 9.24.05 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;브라우저란&#34;&gt;브라우저란?&lt;/h2&gt;
 
 &lt;p&gt;인터넷 망에서 정보를 감색하는데 사용하는 응용프로그램을 말한다.&lt;/p&gt;
@@ -1838,6 +1842,8 @@ export default Subject;
 &lt;/ul&gt;
 
 &lt;p&gt;웹 페이지 열기, 최근 방문한 URL(uniform resource locator) 및 즐겨찾기 제공, 웹페이지 저장&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-22 at 9.09.37 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;종류&lt;/li&gt;
@@ -1853,15 +1859,9 @@ export default Subject;
 
 &lt;p&gt;Opera&lt;/p&gt;
 
-&lt;h2 id=&#34;sever&#34;&gt;Sever&lt;/h2&gt;
+&lt;h2 id=&#34;client-and-server&#34;&gt;Client and Server&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게 되면 내컴퓨터는 서버컴퓨터가 되는것이다.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;어떤 형태의 컴퓨터든 정보제공 역활을 하는 주체이면 ‘서버’컴퓨터로 불릴수 있다. (노트북꾸진것이라도 서버컴퓨터가 될수있다.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;예) 맛집에가서 사진을찍고 내컴퓨터에 저장했다 이것을 다른이에게 공유하기위해 다른 컴퓨터들이 내가 저장한 사진에 접근해서 볼수 있도록 하는것이다. 그럼 내컴퓨터는 서버컴퓨터가 되는것이다.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-22 at 9.09.41 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;api&#34;&gt;API&lt;/h2&gt;
 
@@ -1895,63 +1895,23 @@ post/message 저장한다.&lt;/p&gt;
 &lt;li&gt;HTTP란&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;HyperText Transfer Protocol의 약자로 하이퍼텍스트 문서를 교환하기 위하여 사용된 통신 규약이다. 즉, 웹 서버와 클라이언트 간의 통신을 하기 위한 통신 규약이며 HTTP는 1989년 팀 버너스-리에 의해 처음 설계되었다. &lt;/p&gt;
+&lt;p&gt;HyperText Transfer Protocol의 약자로 하이퍼텍스트 문서를 교환하기 위하여 사용된 통신 규약이다.&lt;/p&gt;
 
-&lt;p&gt;한마디로 클라이언트와 서버간에 통신을 위해 만들어진 규칙이 HTTP 를 주소창에 적고 그다음 URL 주소를 넣어 통신을 하게 만든다.&lt;/p&gt;
+&lt;p&gt;클라이언트와 서버가 서로 통신할 수 있게 하기 위한 언어를 정의하는 어플리케이션 &lt;code&gt;규약&lt;/code&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;HTTP의 동작&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-22 at 9.10.41 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;HTTP는 연결 상태를 유지하지 않는 비연결성 프로토콜이다. 이러한 단점을 해결하기 위해 Cookie와 Seesion 등장하였다.&lt;/p&gt;
-
-&lt;p&gt;HTTP는 연결을 유지하지 않는 프로토콜이기 떄문에 요청/응답(request/response) 방식으로 동작한다.&lt;/p&gt;
-
-&lt;p&gt;client는 server에게 request(요청)을 보낸다. 그럼 요청을 받은 server가 해야 할 일은 response(응답)을 보내는 것이다. &lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;예)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;예를 들어 이야기해보자. 우리가 회원가입을 하려고 한다. 회원가입 양식을 다 작성한 후 회원가입 버튼을 눌렀을 때 우리가 작성한 양식의 data는 server가 database에 저장해준다. 그리고 사용자는 회원가입이 완료되었다고 뜨는 페이지를 보게될 것이다. 이러한 일이 일어나는데 이 과정을 순서대로 적어보자.&lt;/p&gt;
-
-&lt;p&gt;회원가입 버튼을 누르면 client가 server에게 request를 보내는 것이다. 그러면 server는 지정한 방식으로 request가 왔기때문에 그 요청이 오면 request객체가 가지고 있는 data를 저장하도록 코딩을 해놨을 것이다. 그렇게 data를 저장한 후 client에게 회원가입이 완료되었다는 페이지를 보여주기 위해 server는 어떠한 페이지를 보여주는 역할을 response를 통해 하는 것이다. &lt;/p&gt;
-
-&lt;p&gt;이런 과정을 HTTP를 통해 하는 것이다&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;HTTP 구성&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;Header&lt;/code&gt; 안에&lt;/p&gt;
-
-&lt;p&gt;어디서 보내는 요청인가? origin
-컨텐츠 타입은 무엇인가? content-type
-어떤 클라이언트를 이용해 보냈는가?
-user-agent&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Body&lt;/code&gt;안에&lt;/p&gt;
-
-&lt;p&gt;서버에 데이터를 보내기위한 공간으로 활용한다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;HTTP 속성&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;stateless&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;요청할때 서버는 멍청해서 그전에 내용을 기억하지 못해서 또 전에 요청한 내용을 동일하게 해줘야 한다.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;connetionless&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;물어보면 한번만 대답한다는것
-한번요청보내면 대답도 한번&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-22 at 9.19.46 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;ajax란-무엇인가&#34;&gt;AJAX란 무엇인가?&lt;/h2&gt;
 
 &lt;p&gt;AJAX는 Asynchronos Javascript And XML이다.&lt;/p&gt;
 
 &lt;p&gt;쉽게 말하면, 자바스크립트를 통해서 서버에 데이터를 요청하는 것이다&lt;/p&gt;
+
+&lt;p&gt;AJAX는 &lt;code&gt;필요한 데이터만을 서버에 요청해서 받은 후, 클라이언트에서 데이터 처리&lt;/code&gt;를 할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-22 at 9.13.31 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;dynamic web page 페이지 안에서&lt;/p&gt;
 
@@ -1987,6 +1947,8 @@ user-agent&lt;/p&gt;
 &lt;p&gt;Fetch API 를 사용한다.  유연하고 가독성 좋고 무슨말인지 이해가 잘된다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;p&gt;XMLHttpRequest, jQuery ajax, fetch 등에서 ajax를 메소드로 제공&lt;/p&gt;
+
 &lt;h2 id=&#34;fetch-를-왜-쓰는가&#34;&gt;Fetch 를 왜 쓰는가?&lt;/h2&gt;
 
 &lt;p&gt;Factch 는 가져오는 함수&lt;/p&gt;
@@ -2019,6 +1981,14 @@ Request Message Body
 
 &lt;h2 id=&#34;browser-security&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;Browser Security&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
+&lt;h2 id=&#34;sop&#34;&gt;SOP&lt;/h2&gt;
+
+&lt;p&gt;SOP : &lt;strong&gt;SOP(Same-origin policy)?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Origin의 세 가지 요소, 즉 &lt;strong&gt;프로토콜, 호스트, 포트 번호&lt;/strong&gt;가 일치하는 웹페이지들 간의 상호작용만을 허용하는 보안 정책입니다.&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&#34;cors&#34;&gt;CORS&lt;/h2&gt;
 
 &lt;p&gt;Corss Oring Resource Sharing&lt;/p&gt;
@@ -2035,7 +2005,17 @@ Request Message Body
 
 &lt;p&gt;예를 들어보자&lt;/p&gt;
 
-&lt;p&gt;예전에는 동일한 도메인에서만 요청과 응답을 할수 있게 해주었다.&lt;/p&gt;
+&lt;p&gt;예전에는 동일한 도메인에서만 요청과 응답을 할수 있게 해주었다.
+왜냐하면 다른도매인에서 요청을 보내서 put 이나 delete 라는 메소드로 post요청을 보내서 바꿔버릴수 있기 때문이다.
+그렇기 때문에 Cors 가 생긴것이다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;그렇다면, CORS는 외부로부터의 요청을 어떤 방식으로 관리할까요? 바로 &lt;strong&gt;HTTP 헤더&lt;/strong&gt;에 답이 있습니다. HTTP 헤더에는 현재 전송하는 요청 또는 응답에 대한 정보가 담겨 있는데요. CORS와 관련된 헤더를 통해 cross-origin 요청들을 관리할 수 있습니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;여러 헤더 가운데, &lt;code&gt;**Access-Control-Allow-Origin**&lt;/code&gt;을 살펴 보겠습니다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Access-Control-Allow-Origin&lt;code&gt;헤더를 통해, 서버의 리소스를 어떤 외부 도메인과 공유할 것인지를 규정할 수 있습니다. 만약 어떤 서버의&lt;/code&gt;Access-Control-Allow-Origin&lt;code&gt;헤더 값이&lt;/code&gt;*`이라면, 이 서버의 리소스에는 어떠한 도메인이라도 접근할 수 있다는 의미입니다. 반대로 헤더 값이 특정한 도메인으로 설정되어 있을 경우, 해당 도메인의 접근만 허용됩니다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 9.34.59 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -2106,9 +2086,22 @@ app.use(cors()); // 4. 실행한다.
 
 &lt;h2 id=&#34;xss&#34;&gt;XSS&lt;/h2&gt;
 
-&lt;h2 id=&#34;csrf&#34;&gt;CSRF&lt;/h2&gt;
+&lt;p&gt;XSS(Cross-Site Scripting)&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_11&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;XSS는 &lt;strong&gt;클라이언트에 악성 스크립트를 주입&lt;/strong&gt;하는 공격입니다.&lt;/li&gt;
+&lt;li&gt;특히, input을 통해 XSS 공격이 이루어지는 경우가 많습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h1 id=&#34;csrf&#34;&gt;CSRF&lt;/h1&gt;
+
+&lt;p&gt;#CSRF(Cross-site request forgery)&lt;/p&gt;
+
+&lt;p&gt;웹 어플리케이션 취약점 중 하나로 인터넷 사용자(희생자)가 자신의 의지와는 무관하게 공격자가 의도한 행위(수정, 삭제, 등록 등)를 특정 웹사이트에 요청하게 만드는 공격입니다.&lt;/p&gt;
+
+&lt;h1 id=&#34;toc_13&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h1&gt;
 </description>
     </item>
     

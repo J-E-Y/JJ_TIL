@@ -81,16 +81,18 @@ Data table 만들기
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2020-01-13-sever/</guid>
-      <description>브라우저란? 인터넷 망에서 정보를 감색하는데 사용하는 응용프로그램을 말한다.
+      <description>Web Architecture 브라우저란? 인터넷 망에서 정보를 감색하는데 사용하는 응용프로그램을 말한다.
  기능  웹 페이지 열기, 최근 방문한 URL(uniform resource locator) 및 즐겨찾기 제공, 웹페이지 저장
  종류  Explorer
 fireFox
 Chrome
 Safari
 Opera
-Sever  내컴퓨터가 다른컴퓨터에게 정보를 전달하고 공유하게 되면 내컴퓨터는 서버컴퓨터가 되는것이다.
- 어떤 형태의 컴퓨터든 정보제공 역활을 하는 주체이면 ‘서버’컴퓨터로 불릴수 있다. (노트북꾸진것이라도 서버컴퓨터가 될수있다.)
- 예) 맛집에가서 사진을찍고 내컴퓨터에 저장했다 이것을 다른이에게 공유하기위해 다른 컴퓨터들이 내가 저장한 사진에 접근해서 볼수 있도록 하는것이다.</description>
+Client and Server API [Application Program Interface]
+프로그램과 또 다른 프로그램을 연결해주는 일종의 다리라고 볼 수 있습니다.
+서버 자원을 잘 가져다가 쓸수 있게 만들어놓은 interface 를 말한다.
+UI(User Interface)를 먼저 짚고 넘어가려 합니다.
+ 아이폰에 홈버튼이 있다.</description>
     </item>
     
     <item>
