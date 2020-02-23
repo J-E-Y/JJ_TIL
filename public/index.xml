@@ -450,7 +450,16 @@ FROM Customers;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐&lt;/li&gt;
-&lt;li&gt;프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Component&lt;/strong&gt; 는 데이터(ex: Props, State)를 입력받아 DOM Node를 출력하는 함수의 역할을 합니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Component&lt;/strong&gt; 는 UI를 구성하는 &lt;strong&gt;개별적&lt;/strong&gt;인 뷰 단위입니다. Application은 이런 &lt;strong&gt;Component&lt;/strong&gt;들이 모여  마치 블럭을 조립하듯 완성됩니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;각 &lt;strong&gt;Component&lt;/strong&gt; 들은 Application의 다른 부분, 또는 다른 Application에서 쉽게 &lt;strong&gt;재사용&lt;/strong&gt;이 가능합니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Component&lt;/strong&gt; 를 사용하는 이유는 뭘까요? Application의 구성요소를 작은 단위로 나누어서 관리를 하게되면 유지 보수, 재사용이 매우 용이해지기 때문입니다!&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;알아야-할-es6-문법들&#34;&gt;알아야 할 ES6 문법들&lt;/h2&gt;
