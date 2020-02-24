@@ -1,0 +1,67 @@
+---
+title: Daily-Project-report-1 
+author: ''
+date: '2020-02-24'
+slug: project
+categories: []
+tags: []
+image:
+  caption: ''
+  focal_point: ''
+---
+
+
+## 팀명
+
+* Dreammaker 
+
+## 프로젝트 명
+
+* Dreammaker
+
+
+## Stand up Meeting time
+
+* 매일 10시 30분
+
+## Team Rule
+
+- 슬랙 접속시간은 
+- 모각코 형식으로 행아웃에서 또는 줌 에서  카메라를 켜놓고 각자 코딩 진행 한다. - 성용
+- 코드 작성시 주석에 신경 쓸 것 (상대방이 이해할 수 있도록, 상대방의 생각과 내 생각이 다를 수 있다.) -민재
+- 의견 조율 사항이 필요시 다수결로 해서  의견 조율 할 것 - 의영
+- 1주일에 1번 정도는 refresh 타임을 갖자 (서로 어땠는지 , 프로젝트 방향에 대한 이야기, 또는 각자의 애로사항 등) - 의영   <토요일 오전타임>
+
+## Stack
+
+
+* `Front End`: 	Bootstrap,React,css,html,javasript
+* `Back End`: 	express,mysql,nodejs
+* `Etc`: 	api,eslint,prettier,redux
+
+
+## Project Step
+
+
+![](/post/2020-02-24-project_files/Screen Shot 2020-02-24 at 9.41.08 PM.png)
+
+
+
+## Task
+
+* [[F]추가 디자인 및 애니메이션 기능]
+* [[F]결과검사 페이지 디자인(CSS&부트스트랩)]
+* [[F]흥미검사 페이지 디자인(CSS&부트스트랩)]
+* [[F] 검사 결과 화면 작성]
+* [F] 테스트 화면 작성
+* [REACT 배포 테스트]
+* [[F]UI 설계]
+* [[F,B]DB 스키마 작성]
+* [GIT WORKFLOW 테스트]
+* [[F,B]흥미 검사 결과지 가공(필터링)]
+* [[F,B]흥미 검사 질문지 가공(필터링)]
+* [B]흥미 검사 질문지 API화
+* [B]API 문서 작성하기
+* [[F] AWS-S3 설정 ]
+* [[B] AWS-E3 설정]
+* [[B] AWS-RDS 설정]

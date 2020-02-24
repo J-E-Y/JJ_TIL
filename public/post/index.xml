@@ -6,21 +6,18 @@
     <description>Recent content in Posts on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Writing technical content in Academic</title>
-      <link>/post/ex/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Daily-Project-report-1</title>
+      <link>/post/project/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/ex/</guid>
-      <description>Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.
-Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.
-On this page, you&#39;ll find some examples of the types of technical content that can be rendered with Academic.
-Examples Code Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the highlight option in your config/_default/params.</description>
+      <guid>/post/project/</guid>
+      <description> 팀명  Dreammaker  프로젝트 명  Dreammaker  Stand up Meeting time  매일 10시 30분  Team Rule  슬랙 접속시간은 모각코 형식으로 행아웃에서 또는 줌 에서 카메라를 켜놓고 각자 코딩 진행 한다. - 성용 코드 작성시 주석에 신경 쓸 것 (상대방이 이해할 수 있도록, 상대방의 생각과 내 생각이 다를 수 있다.) -민재 의견 조율 사항이 필요시 다수결로 해서 의견 조율 할 것 - 의영 1주일에 1번 정도는 refresh 타임을 갖자 (서로 어땠는지 , 프로젝트 방향에 대한 이야기, 또는 각자의 애로사항 등) - 의영 &amp;lt;토요일 오전타임&amp;gt;  Stack  Front End: Bootstrap,React,css,html,javasript Back End: express,mysql,nodejs Etc: api,eslint,prettier,redux  Project Step Task  [[F]추가 디자인 및 애니메이션 기능] [[F]결과검사 페이지 디자인(CSS&amp;amp;부트스트랩)] [[F]흥미검사 페이지 디자인(CSS&amp;amp;부트스트랩)] [[F] 검사 결과 화면 작성] [F] 테스트 화면 작성 [REACT 배포 테스트] [[F]UI 설계] [[F,B]DB 스키마 작성] [GIT WORKFLOW 테스트] [[F,B]흥미 검사 결과지 가공(필터링)] [[F,B]흥미 검사 질문지 가공(필터링)] [B]흥미 검사 질문지 API화 [B]API 문서 작성하기 [[F] AWS-S3 설정 ] [[B] AWS-E3 설정] [[B] AWS-RDS 설정]  </description>
     </item>
     
   </channel>
