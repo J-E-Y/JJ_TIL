@@ -36,7 +36,29 @@
     </item>
     
     <item>
-      <title>Daily-Project-report-1</title>
+      <title>Dreammaker-report-2</title>
+      <link>/post/daily-project-report-2/</link>
+      <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/daily-project-report-2/</guid>
+      <description>&lt;p&gt;DB Schema 만들기&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/2020-02-25-daily-project-report-2_files/image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;UI 만들기&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/2020-02-25-daily-project-report-2_files/Screen Shot 2020-02-25 at 3.14.40 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/2020-02-25-daily-project-report-2_files/Screen Shot 2020-02-25 at 2.21.49 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/2020-02-25-daily-project-report-2_files/Screen Shot 2020-02-25 at 3.15.45 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/2020-02-25-daily-project-report-2_files/Screen Shot 2020-02-25 at 3.16.04 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dreammaker-report-1</title>
       <link>/post/project/</link>
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
@@ -2710,18 +2732,14 @@ Create your wrapper and assign it a certain width. Then apply an automatic horiz
 &lt;li&gt;휴지통에 들어가지 않음&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;rm-r-dirname&#34;&gt;rm -r [dirname]&lt;/h2&gt;
+&lt;h2 id=&#34;rm-rf-dirname&#34;&gt;rm -rf [dirname]&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;폴더 삭제&lt;/li&gt;
 &lt;li&gt;휴지통에 들어가지 않음&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;rm-f-file-or-dirname&#34;&gt;rm -f [file or dirname];&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;coution&lt;/code&gt; 강제로 지우기&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;rm-d-file-or-dirname&#34;&gt;rm -d [file or dirname];&lt;/h2&gt;
 
 &lt;h2 id=&#34;toc_17&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/h2&gt;
 

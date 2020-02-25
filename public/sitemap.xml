@@ -19,14 +19,19 @@
   </url>
   
   <url>
-    <loc>/post/project/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
+    <loc>/post/daily-project-report-2/</loc>
+    <lastmod>2020-02-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/project/</loc>
+    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
