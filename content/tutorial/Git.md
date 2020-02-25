@@ -102,14 +102,13 @@ type: docs
 * 파일 삭제
 * 휴지통에 들어가지 않음 
 
-##  rm -r [dirname]
+##  rm -rf [dirname]
 
 * 폴더 삭제
 * 휴지통에 들어가지 않음 
 
-##  rm -f [file or dirname];
+##  rm -d [file or dirname];
 
-* `coution` 강제로 지우기 
 
 
 
