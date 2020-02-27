@@ -6,10 +6,20 @@
     <description>Recent content in Posts on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dreammaker-report-3</title>
+      <link>/post/dreammaker-report-3/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/dreammaker-report-3/</guid>
+      <description>1. 오늘의 To-do List (목록) Git-Workflow - 연습 2 컴포넌트 구성 (목업) AWS 리액트 배포 AWS EC2 설정 AWS RDS 설정 데이터베이스 입력작업 (question, answer, holland 테이블 일부만 완료) 엔지니어 체크인 및 피드백 받기 (오후 3시 ~ 오후 4시 예정)  2. 오늘 논의 한 일 GIt-Workflow test-2 진행 중 이슈
+ Workflow시에 pull-request 하고 업데이트 된 브랜치 정보를 자신의 저장소로 pull 해오는게 안된다. → 각자 remote연결을 통하여 문제 해결함 Dev브랜치에서 Pull로 받아온 파일들이 기존 feature1 브랜치로 넘어오지 않는다.</description>
+    </item>
     
     <item>
       <title>Dreammaker-report-2</title>
