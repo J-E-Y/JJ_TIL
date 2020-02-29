@@ -6,10 +6,19 @@
     <description>Recent content in Posts on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dreammaker-report-4</title>
+      <link>/post/dreammaker-report-4/</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/dreammaker-report-4/</guid>
+      <description>1. 오늘의 To-do List (목록) 어제 조사한 유형별 흥미조사 및 질문지 답변지 관한 내용 공유 DB에 어떻게 원하는 질문과 결과를 넣고 화면에 가져올지 DB 스키마 작성 해보기 클라이언트 UI 화면 목업 만들기 SR 카드 수정 및 분배 ( SR카드는 추가 될 수 있고 변경 될 수 있다. 가져갈 때 시간만 잘 지키자) 홀랜드 검사 유형에 따른 설문내용과 직업 조사 하고 작성 Git - Workflow 연습 -2 (시간 부족으로 못함) AWS 배포 - S3 (시간 부족으로 못함)  2.</description>
+    </item>
     
     <item>
       <title>Dreammaker-report-3</title>
