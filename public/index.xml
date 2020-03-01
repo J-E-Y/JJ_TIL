@@ -36,6 +36,37 @@
     </item>
     
     <item>
+      <title>Dreammaker-report-5</title>
+      <link>/post/dreammaker-report-5/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/dreammaker-report-5/</guid>
+      <description>
+
+&lt;h1 id=&#34;1-오늘의-to-do-list-목록&#34;&gt;1. 오늘의 To-do List (목록)&lt;/h1&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt;  우분투에서 EC2 인스턴스 연결&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt;  FileZilla ftp서버  연결&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt;  클라이언트에서 서버에 요청할 형식들 구성 논의&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt;  서버에서 클라이언트에 보내줄 형식들 구성 논의&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt;  시퀄라이즈에서 mysql curd 명령어 생각,  JOIN 문 등&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt;  클라이언트 초기 화면 핸들링 후에 첫 P/R 보내기&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt;  비회원 전용 테이블 스키마 설계&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt;  설문 시작전 선택할 데이터들에 대한 값 보내는 방법 논의&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;2-오늘-논의-한-일&#34;&gt;2. 오늘 논의 한 일&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;EC2 연결한 민재님 컴퓨터에서 우분투가 잘 못되어 다시 설치 후에 EC2를 연결하였는데 서버와 연결이 잘 되지 않음 → 보안 설정 후 문제 해결&lt;/li&gt;
+&lt;li&gt;Filezilla를 통해 EC2에서 CLI작업 보다 편하게 하고 싶어서 연결시도 하였으나 계속 접속 실패 → 우분투 지우기 전에는 잘 되었으나, 현재 Filezilla와 연결이 되질 않음,&lt;/li&gt;
+&lt;li&gt;각 팀원들 전부 FIleZilla를 설치하고 pem키를 통해 서버 연결하는 것 성공, 민재님도 지우고 다시 새 서버 만들기를 통해 연결 성공&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Dreammaker-report-4</title>
       <link>/post/dreammaker-report-4/</link>
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
