@@ -36,6 +36,26 @@
     </item>
     
     <item>
+      <title>Dreammaker-report-7</title>
+      <link>/post/dreammaker-report-7/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/dreammaker-report-7/</guid>
+      <description>
+
+&lt;h1 id=&#34;에러-발견&#34;&gt;에러 발견&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A cookie associated with a cross-site resource at &lt;a href=&#34;http://google.com/&#34; target=&#34;_blank&#34;&gt;http://google.com/&lt;/a&gt; was set without the &lt;code&gt;SameSite&lt;/code&gt; attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with &lt;code&gt;SameSite=None&lt;/code&gt; and &lt;code&gt;Secure&lt;/code&gt;. You can review cookies in developer tools under Application&amp;gt;Storage&amp;gt;Cookies and see more details at &lt;a href=&#34;https://www.chromestatus.com/feature/5088147346030592&#34; target=&#34;_blank&#34;&gt;https://www.chromestatus.com/feature/5088147346030592&lt;/a&gt; and &lt;a href=&#34;https://www.chromestatus.com/feature/5633521622188032&#34; target=&#34;_blank&#34;&gt;https://www.chromestatus.com/feature/5633521622188032&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is a companion repo for the &amp;ldquo;SameSite cookies explained&amp;rdquo; article on web.dev. This is your starting point for how cookies work, the functionality of the SameSite attribute, and the changes in Chrome to apply a SameSite=Lax policy by default while requiring the use of SameSite=None; Secure for cookies in a third-party context.&lt;/p&gt;
+
+&lt;p&gt;This functionality is available now in Chrome 76 behind the associated flags to let you test the effect on your site. This is intended to become default behaviour as of Chrome 80.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Dreammaker-report-6</title>
       <link>/post/dreammaker-report-6/</link>
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
