@@ -1,5 +1,5 @@
 ---
-title: Dreammaker-report-6
+title: My-frist-project-DreamMaker
 author: ''
 date: '2020-03-02'
 slug: dreammaker-report-6
@@ -12,17 +12,45 @@ image:
 
 
 
-# 1. 오늘의 To-do List (목록)
+# ReamMe 작성
 
-- [x]  우분투에서 EC2 인스턴스 연결
-- [x]  FileZilla ftp서버  연결
-- [ ]  
-- [ ]  
-- [ ]  
-- [ ]  
 
-# 2. 오늘 논의 한 일
 
-- EC2 연결한 민재님 컴퓨터에서 우분투가 잘 못되어 다시 설치 후에 EC2를 연결하였는데 서버와 연결이 잘 되지 않음 → 보안 설정 후 문제 해결
-- Filezilla를 통해 EC2에서 CLI작업 보다 편하게 하고 싶어서 연결시도 하였으나 계속 접속 실패 → 우분투 지우기 전에는 잘 되었으나, 현재 Filezilla와 연결이 되질 않음,
-- 각 팀원들 전부 FIleZilla를 설치하고 pem키를 통해 서버 연결하는 것 성공, 민재님도 지우고 다시 새 서버 만들기를 통해 연결 성공
+# learning points 
+
+
+EC2 에서 서버를 돌리지 않고 serverLess 사용해서 ASW 에 라마를 쓰는 이유?
+
+> 라마를 쓰면 하나의 함수만 요청 처리를 해주기 때문에 메모리 효율성을 좋아진다. 라마를 쓰기위해서 Serverless computing 이 필요하다.
+
+
+
+토큰을 사용하는 이유?
+
+> 토큰을 사용할때는 쿠키에 담아서 서버에서 보내주는 로직을 사용한다
+
+
+리엑트를 쓸때 리덕스랑 hooks 사용하는 이유?
+
+> state 와 components 관리하기 편리해진다. 복잡성을 줄인다.
+
+
+리덕스로 비동기 처리 어떻게 했나요?
+
+
+리프레시 토큰과 데이터 받을때받는것의 차이는?
+
+
+
+jwt.verify ?
+
+
+x-accesstoken ?
+
+
+
+회원가입 중복체크를 대분 어떻게 처리하는가? 
+
+
+
+

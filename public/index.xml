@@ -36,51 +36,185 @@
     </item>
     
     <item>
-      <title>Dreammaker-report-7</title>
-      <link>/post/dreammaker-report-7/</link>
+      <title>My-first-project-Review</title>
+      <link>/post/my-first-project-dreammaker/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/my-first-project-dreammaker/</guid>
+      <description>
+
+&lt;h1 id=&#34;프로젝트에서-가장-중요했던-것은&#34;&gt;프로젝트에서 가장 중요했던 것은?&lt;/h1&gt;
+
+&lt;p&gt;초반에 조급하지 않고 충분하게 구조를 계획하고 설계하는것에 필요성과 의사소통의 중요성을 알게 되었습니다. 상대방에 말을 이해하고 듣는것의 얼마나 중요한지를  조금 더 알게 되었던것 같습니다.&lt;/p&gt;
+
+&lt;h1 id=&#34;프로젝트에서-커뮤니케이션-이란&#34;&gt;프로젝트에서 커뮤니케이션 이란?&lt;/h1&gt;
+
+&lt;p&gt;서로 어떠한 일의 결과를 만들기위한 필수과정&lt;/p&gt;
+
+&lt;h1 id=&#34;프로젝트에서-협업이란&#34;&gt;프로젝트에서 협업이란?&lt;/h1&gt;
+
+&lt;p&gt;같이하는 즐거운 일&lt;/p&gt;
+
+&lt;h1 id=&#34;프로젝트에서-기획이란&#34;&gt;프로젝트에서 기획이란?&lt;/h1&gt;
+
+&lt;p&gt;장점은 중심에서 벗어나 길을 잊어 버릴수 상황을 보호한다.
+단점은 새로운것이 정해진후에 창의적인 생각을 못하게 될수 있다.&lt;/p&gt;
+
+&lt;h1 id=&#34;프로젝트에서-자신이-얻고-싶었던-것은&#34;&gt;프로젝트에서 자신이 얻고 싶었던 것은?&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;협업을 하는 방법&lt;/li&gt;
+&lt;li&gt;기초확인&lt;/li&gt;
+&lt;li&gt;클라이언트→서버→DB 흐름&lt;/li&gt;
+&lt;li&gt;회고를 하며 내가 했던것들을 돌아보기&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What makes a good front-end developer?</title>
+      <link>/post/dreammaker-report-8/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/dreammaker-report-8/</guid>
+      <description>
+
+&lt;h1 id=&#34;2&#34;&gt;2&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I’ll argue that front-end developers need to master four different skills.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Empathy
+Code
+Design
+Communication&lt;/p&gt;
+
+&lt;h1 id=&#34;3&#34;&gt;3&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Front-End Developers, having learnt HTML, CSS and JS, are forced to take functionality into account when creating user experiences or making sure that the two disciplines work as one from a development perspective. They become all-rounders, having to understand what is actually happening between the AJAX data and the PHP file that’s sending off a mail or returning errors.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;4&#34;&gt;4&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In my opinion, what defines a good front-end developer is one that has skilled knowledge of HTML, CSS, JS with a vast understanding of User design thinking as they&amp;rsquo;ll be building web interfaces with accessibility in mind. They should also be excited to learn, as the world of Front-End Development keeps evolving. The ability to stay in the loop is critical.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;4-1&#34;&gt;4&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;After I started to feel more comfortable with my responsibilities &amp;hellip; I soon found my next challenge: to help build a stronger connection between the design and development teams. Though we regularly collaborated to produce high-quality work, these teams didn’t always speak the same language.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;5&#34;&gt;5&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I think that front-end developers need to have a holistic view of the architecture of the software that they and their team are creating. They can&amp;rsquo;t silo themselves on the Front-End, but need to have an appreciation for the complexities of the Back-End as well in order to create the best user experience for their customers. In the end, it&amp;rsquo;s about continual learning and team communication, as well as listening to the customer to create a great experience.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;6&#34;&gt;6&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The longer I work on the web, the more I realize that what separates the good people from the really good people isn’t what they know; it’s how they think. Obviously knowledge is important—critical in some cases—but in a field that changes so quickly, how you go about acquiring that knowledge is always going to be more important (at least in the long term) than what you know at any given time. And perhaps most important of all: how you use that knowledge to solve everyday problems.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;7&#34;&gt;7&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Having a working understanding of HTML, CSS and JS is certainly a no-brainer, but it&amp;rsquo;s only one part of the equation. I believe a good front-ender connects the dots between user experiences and business goals while closing any gaps that would prevent holistic user flows. That requires good communication, creative problem solving, empathy and, perhaps above all, an willingness to listen to and accept criticism.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;8&#34;&gt;8&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It&amp;rsquo;s a difficult question in some ways because the nature of Front-end Development is constantly expanding. The types of things we build as front ends become increasingly complex and varied.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;9&#34;&gt;9&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;For that reason, I think a good Front-end Developer understands the scope, requirements, and technical restraints of the project they are currently working on. This can invariably mean: what their teams expect from them, what their users need, and because things are changing- curiosity!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;10&#34;&gt;10&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I admire how good front-end developers answer questions. If they’re super dogmatic about this one particular approach to something being the only one true way then I start to worry. Take SVG illustrations. Or image optimization. Or how to markup navigation. There’s a lot of different ways to tackle each of those things and none of them are perfect. On this note, Chris wrote a wonderful post all about dogmatism a while back and I think about it all the time. That’s the mark of a great front-end developer right there: someone who’s okay with not having the perfect answers all the time.&lt;/p&gt;
+
+&lt;p&gt;A good front-end developer is flexible, eager to learn, eager to share and has a pragmatic approach to the ever-changing landscape&lt;/p&gt;
+
+&lt;p&gt;Oh yeah, and something something cascade.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>error-cross-site</title>
+      <link>/post/2020-03-05-dreammaker-report-7/</link>
       <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/dreammaker-report-7/</guid>
+      <guid>/post/2020-03-05-dreammaker-report-7/</guid>
       <description>
 
 &lt;h1 id=&#34;에러-발견&#34;&gt;에러 발견&lt;/h1&gt;
+
+&lt;p&gt;서버에서 데이터를 받아서 클라이언트에서 핸들링 할때 home page 에서 이러한 메시지의 경고창을 얻게 되었다.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;A cookie associated with a cross-site resource at &lt;a href=&#34;http://google.com/&#34; target=&#34;_blank&#34;&gt;http://google.com/&lt;/a&gt; was set without the &lt;code&gt;SameSite&lt;/code&gt; attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with &lt;code&gt;SameSite=None&lt;/code&gt; and &lt;code&gt;Secure&lt;/code&gt;. You can review cookies in developer tools under Application&amp;gt;Storage&amp;gt;Cookies and see more details at &lt;a href=&#34;https://www.chromestatus.com/feature/5088147346030592&#34; target=&#34;_blank&#34;&gt;https://www.chromestatus.com/feature/5088147346030592&lt;/a&gt; and &lt;a href=&#34;https://www.chromestatus.com/feature/5633521622188032&#34; target=&#34;_blank&#34;&gt;https://www.chromestatus.com/feature/5633521622188032&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;h1 id=&#34;how-to-solve&#34;&gt;how to solve&lt;/h1&gt;
+
+&lt;blockquote&gt;
 &lt;p&gt;This is a companion repo for the &amp;ldquo;SameSite cookies explained&amp;rdquo; article on web.dev. This is your starting point for how cookies work, the functionality of the SameSite attribute, and the changes in Chrome to apply a SameSite=Lax policy by default while requiring the use of SameSite=None; Secure for cookies in a third-party context.&lt;/p&gt;
 
 &lt;p&gt;This functionality is available now in Chrome 76 behind the associated flags to let you test the effect on your site. This is intended to become default behaviour as of Chrome 80.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
     <item>
-      <title>Dreammaker-report-6</title>
+      <title>My-frist-project-DreamMaker</title>
       <link>/post/dreammaker-report-6/</link>
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/dreammaker-report-6/</guid>
       <description>
 
-&lt;h1 id=&#34;1-오늘의-to-do-list-목록&#34;&gt;1. 오늘의 To-do List (목록)&lt;/h1&gt;
+&lt;h1 id=&#34;reamme-작성&#34;&gt;ReamMe 작성&lt;/h1&gt;
 
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt;  우분투에서 EC2 인스턴스 연결&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt;  FileZilla ftp서버  연결&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;[ ]&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;[ ]&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;[ ]&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;[ ]&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h1 id=&#34;learning-points&#34;&gt;learning points&lt;/h1&gt;
 
-&lt;h1 id=&#34;2-오늘-논의-한-일&#34;&gt;2. 오늘 논의 한 일&lt;/h1&gt;
+&lt;p&gt;EC2 에서 서버를 돌리지 않고 serverLess 사용해서 ASW 에 라마를 쓰는 이유?&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;EC2 연결한 민재님 컴퓨터에서 우분투가 잘 못되어 다시 설치 후에 EC2를 연결하였는데 서버와 연결이 잘 되지 않음 → 보안 설정 후 문제 해결&lt;/li&gt;
-&lt;li&gt;Filezilla를 통해 EC2에서 CLI작업 보다 편하게 하고 싶어서 연결시도 하였으나 계속 접속 실패 → 우분투 지우기 전에는 잘 되었으나, 현재 Filezilla와 연결이 되질 않음,&lt;/li&gt;
-&lt;li&gt;각 팀원들 전부 FIleZilla를 설치하고 pem키를 통해 서버 연결하는 것 성공, 민재님도 지우고 다시 새 서버 만들기를 통해 연결 성공&lt;/li&gt;
-&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;라마를 쓰면 하나의 함수만 요청 처리를 해주기 때문에 메모리 효율성을 좋아진다. 라마를 쓰기위해서 Serverless computing 이 필요하다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;토큰을 사용하는 이유?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;토큰을 사용할때는 쿠키에 담아서 서버에서 보내주는 로직을 사용한다&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;리엑트를 쓸때 리덕스랑 hooks 사용하는 이유?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;state 와 components 관리하기 편리해진다. 복잡성을 줄인다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;리덕스로 비동기 처리 어떻게 했나요?&lt;/p&gt;
+
+&lt;p&gt;리프레시 토큰과 데이터 받을때받는것의 차이는?&lt;/p&gt;
+
+&lt;p&gt;jwt.verify ?&lt;/p&gt;
+
+&lt;p&gt;x-accesstoken ?&lt;/p&gt;
+
+&lt;p&gt;회원가입 중복체크를 대분 어떻게 처리하는가?&lt;/p&gt;
 </description>
     </item>
     

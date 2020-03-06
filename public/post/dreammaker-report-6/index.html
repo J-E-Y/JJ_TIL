@@ -27,11 +27,14 @@
   
     
   
-  <meta name="description" content=" 1. 오늘의 To-do List (목록) 우분투에서 EC2 인스턴스 연결 FileZilla ftp서버 연결 [ ]
- [ ]
- [ ]
- [ ]
-  2. 오늘 논의 한 일  EC2 연결한 민재님 컴퓨터에서 우분투가 잘 못되어 다시 설치 후에 EC2를 연결하였는데 서버와 연결이 잘 되지 않음 → 보안 설정 후 문제 해결 Filezilla를 통해 EC2에서 CLI작업 보다 편하게 하고 싶어서 연결시도 하였으나 계속 접속 실패 → 우분투 지우기 전에는 잘 되었으나, 현재 Filezilla와 연결이 되질 않음, 각 팀원들 전부 FIleZilla를 설치하고 pem키를 통해 서버 연결하는 것 성공, 민재님도 지우고 다시 새 서버 만들기를 통해 연결 성공  ">
+  <meta name="description" content="ReamMe 작성 learning points EC2 에서 서버를 돌리지 않고 serverLess 사용해서 ASW 에 라마를 쓰는 이유?
+ 라마를 쓰면 하나의 함수만 요청 처리를 해주기 때문에 메모리 효율성을 좋아진다. 라마를 쓰기위해서 Serverless computing 이 필요하다.
+ 토큰을 사용하는 이유?
+ 토큰을 사용할때는 쿠키에 담아서 서버에서 보내주는 로직을 사용한다
+ 리엑트를 쓸때 리덕스랑 hooks 사용하는 이유?
+ state 와 components 관리하기 편리해진다. 복잡성을 줄인다.
+ 리덕스로 비동기 처리 어떻게 했나요?
+리프레시 토큰과 데이터 받을때받는것의 차이는?">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/dreammaker-report-6/">
@@ -54,7 +57,7 @@
   
   
   
-  <meta name="theme-color" content="#EAF04E">
+  <meta name="theme-color" content="#3f51b5">
   
 
   
@@ -76,8 +79,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -90,7 +93,7 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair+Display:400,700|Fauna+One">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
   
 
   <link rel="stylesheet" href="/styles.css">
@@ -133,12 +136,15 @@
   
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/post/dreammaker-report-6/">
-  <meta property="og:title" content="Dreammaker-report-6 | JohnJung">
-  <meta property="og:description" content=" 1. 오늘의 To-do List (목록) 우분투에서 EC2 인스턴스 연결 FileZilla ftp서버 연결 [ ]
- [ ]
- [ ]
- [ ]
-  2. 오늘 논의 한 일  EC2 연결한 민재님 컴퓨터에서 우분투가 잘 못되어 다시 설치 후에 EC2를 연결하였는데 서버와 연결이 잘 되지 않음 → 보안 설정 후 문제 해결 Filezilla를 통해 EC2에서 CLI작업 보다 편하게 하고 싶어서 연결시도 하였으나 계속 접속 실패 → 우분투 지우기 전에는 잘 되었으나, 현재 Filezilla와 연결이 되질 않음, 각 팀원들 전부 FIleZilla를 설치하고 pem키를 통해 서버 연결하는 것 성공, 민재님도 지우고 다시 새 서버 만들기를 통해 연결 성공  "><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:title" content="My-frist-project-DreamMaker | JohnJung">
+  <meta property="og:description" content="ReamMe 작성 learning points EC2 에서 서버를 돌리지 않고 serverLess 사용해서 ASW 에 라마를 쓰는 이유?
+ 라마를 쓰면 하나의 함수만 요청 처리를 해주기 때문에 메모리 효율성을 좋아진다. 라마를 쓰기위해서 Serverless computing 이 필요하다.
+ 토큰을 사용하는 이유?
+ 토큰을 사용할때는 쿠키에 담아서 서버에서 보내주는 로직을 사용한다
+ 리엑트를 쓸때 리덕스랑 hooks 사용하는 이유?
+ state 와 components 관리하기 편리해진다. 복잡성을 줄인다.
+ 리덕스로 비동기 처리 어떻게 했나요?
+리프레시 토큰과 데이터 받을때받는것의 차이는?"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2020-03-02T00:00:00&#43;00:00">
@@ -150,10 +156,10 @@
 
   
 
-  <title>Dreammaker-report-6 | JohnJung</title>
+  <title>My-frist-project-DreamMaker | JohnJung</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
   <aside class="search-results" id="search">
   <div class="container">
     <section class="search-header">
@@ -322,7 +328,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Dreammaker-report-6</h1>
+  <h1 itemprop="name">My-frist-project-DreamMaker</h1>
 
   
 
@@ -392,24 +398,37 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<h1 id="1-오늘의-to-do-list-목록">1. 오늘의 To-do List (목록)</h1>
+<h1 id="reamme-작성">ReamMe 작성</h1>
 
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item">  우분투에서 EC2 인스턴스 연결</label></li>
-<li><label><input type="checkbox" checked disabled class="task-list-item">  FileZilla ftp서버  연결</label></li>
-<li>[ ]<br /></li>
-<li>[ ]<br /></li>
-<li>[ ]<br /></li>
-<li>[ ]<br /></li>
-</ul>
+<h1 id="learning-points">learning points</h1>
 
-<h1 id="2-오늘-논의-한-일">2. 오늘 논의 한 일</h1>
+<p>EC2 에서 서버를 돌리지 않고 serverLess 사용해서 ASW 에 라마를 쓰는 이유?</p>
 
-<ul>
-<li>EC2 연결한 민재님 컴퓨터에서 우분투가 잘 못되어 다시 설치 후에 EC2를 연결하였는데 서버와 연결이 잘 되지 않음 → 보안 설정 후 문제 해결</li>
-<li>Filezilla를 통해 EC2에서 CLI작업 보다 편하게 하고 싶어서 연결시도 하였으나 계속 접속 실패 → 우분투 지우기 전에는 잘 되었으나, 현재 Filezilla와 연결이 되질 않음,</li>
-<li>각 팀원들 전부 FIleZilla를 설치하고 pem키를 통해 서버 연결하는 것 성공, 민재님도 지우고 다시 새 서버 만들기를 통해 연결 성공</li>
-</ul>
+<blockquote>
+<p>라마를 쓰면 하나의 함수만 요청 처리를 해주기 때문에 메모리 효율성을 좋아진다. 라마를 쓰기위해서 Serverless computing 이 필요하다.</p>
+</blockquote>
+
+<p>토큰을 사용하는 이유?</p>
+
+<blockquote>
+<p>토큰을 사용할때는 쿠키에 담아서 서버에서 보내주는 로직을 사용한다</p>
+</blockquote>
+
+<p>리엑트를 쓸때 리덕스랑 hooks 사용하는 이유?</p>
+
+<blockquote>
+<p>state 와 components 관리하기 편리해진다. 복잡성을 줄인다.</p>
+</blockquote>
+
+<p>리덕스로 비동기 처리 어떻게 했나요?</p>
+
+<p>리프레시 토큰과 데이터 받을때받는것의 차이는?</p>
+
+<p>jwt.verify ?</p>
+
+<p>x-accesstoken ?</p>
+
+<p>회원가입 중복체크를 대분 어떻게 처리하는가?</p>
 
     </div>
 
@@ -480,7 +499,7 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/post/dreammaker-report-7/" rel="next">Dreammaker-report-7</a>
+    <a href="/post/2020-03-05-dreammaker-report-7/" rel="next">error-cross-site</a>
   </div>
   
   
