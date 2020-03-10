@@ -6,10 +6,27 @@
     <description>Recent content in Posts on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vanilla js / Ecma script / Typescript</title>
+      <link>/post/typesript/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/typesript/</guid>
+      <description>1. 바닐라 자바스크립트 (Vanilla js) 2. 에크마 스크립트 (Ecma Script) 3. 타입 스크립트 (Typescript) 자바스크립트의 슈퍼셋인 오픈소스 프로그래밍 언어로, 마이크로소프트에서 개발했다.
+Javascript + type = typescript!
+언어이기도 하고 라이브러리 이기도 하다
+타입스크립트의 실행기는 무엇인가?
+그것은 라이브러리다. 언어인데 실행기가 라이브러리라고? 맞다 .
+그래서 버그가 있다.
+TypeScript 또한 자바스크립트 대체 언어의 하나로써 자바스크립트(ES5)의 Superset(상위확장)이다
+TypeScript 컴파일러(tsc)는 TypeScript 파일(.ts)을 자바스크립트 파일로 컴파일 || 트랜스파일링한다. 컴파일과 트랜스파일링은 같은 의미이다.
+ 컴파일은 일반적으로 소스 코드를 바이트 코드로 변환하는 작업을 의미한다.</description>
+    </item>
     
     <item>
       <title>My-first-project-Review</title>

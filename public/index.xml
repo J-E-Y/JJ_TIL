@@ -36,6 +36,52 @@
     </item>
     
     <item>
+      <title>Vanilla js / Ecma script / Typescript</title>
+      <link>/post/typesript/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/typesript/</guid>
+      <description>
+
+&lt;h1 id=&#34;1-바닐라-자바스크립트-vanilla-js&#34;&gt;1. 바닐라 자바스크립트 (Vanilla js)&lt;/h1&gt;
+
+&lt;h1 id=&#34;2-에크마-스크립트-ecma-script&#34;&gt;2. 에크마 스크립트 (Ecma Script)&lt;/h1&gt;
+
+&lt;h1 id=&#34;3-타입-스크립트-typescript&#34;&gt;3. 타입 스크립트 (Typescript)&lt;/h1&gt;
+
+&lt;p&gt;자바스크립트의 슈퍼셋인 오픈소스 프로그래밍 언어로, 마이크로소프트에서 개발했다.&lt;/p&gt;
+
+&lt;p&gt;Javascript + type = typescript!&lt;/p&gt;
+
+&lt;p&gt;언어이기도 하고 라이브러리 이기도 하다&lt;/p&gt;
+
+&lt;p&gt;타입스크립트의 실행기는 무엇인가?&lt;/p&gt;
+
+&lt;p&gt;그것은 라이브러리다.  언어인데 실행기가 라이브러리라고? 맞다 .&lt;/p&gt;
+
+&lt;p&gt;그래서 버그가 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/2020-03-10-typesript_files/Screen Shot 2020-03-10 at 9.05.02 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;TypeScript 또한 자바스크립트 대체 언어의 하나로써 자바스크립트(ES5)의 Superset(상위확장)이다&lt;/p&gt;
+
+&lt;p&gt;TypeScript 컴파일러(tsc)는 TypeScript 파일(.ts)을 자바스크립트 파일로 컴파일 || 트랜스파일링한다. 컴파일과 트랜스파일링은 같은 의미이다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;컴파일은 일반적으로 소스 코드를 바이트 코드로 변환하는 작업을 의미한다. TypeScript 컴파일러는 TypeScript 파일을 자바스크립트 파일로 변환하므로 컴파일보다는 트랜스파일링(Transpiling)이 보다 적절한 표현이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;what-does-typescript-offer&#34;&gt;what does typeScript Offer?&lt;/h2&gt;
+
+&lt;p&gt;Static type checking
+Class based Objects
+Modularity
+ES6 features
+syntax closer to java and other high level languages&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>My-first-project-Review</title>
       <link>/post/my-first-project-dreammaker/</link>
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
