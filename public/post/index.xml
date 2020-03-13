@@ -6,10 +6,31 @@
     <description>Recent content in Posts on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>typescript</title>
+      <link>/post/typescript/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/typescript/</guid>
+      <description> 설치 install npx create-react-app my-app --template typescript  </description>
+    </item>
+    
+    <item>
+      <title>React with Babel or React with typescript</title>
+      <link>/post/react-with-babel-or-react-with-typescript/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/react-with-babel-or-react-with-typescript/</guid>
+      <description>React with Babel [es6,jsx] 바벨이란?
+바벨은 컴파일러 버전이 틀린 자바스크립트 문법을 읽을수 있게 컴파일 해주는 것이다.
+react를 돌리기 위해서는 필수적인 모듈이 필요하다. 리엑트를 설정할때 필수적인것 1.Module bundler webpack :
+2.Loader : webpack 이 jsx 가 들어있는 파일을 컴퍼넌트를 작성한 파일을 읽고나서 설정하는 곳이 Lpader 이다. babel-loader : loader 중에 가장 필수로 들어가는게 바벨 loader이다. 바벨로드를 쓰기위해서 babel-core 받아야하고 어떤 바벨을 쓸것이냐 babel-preset-env 받아야 하고 Jsx 를 transform하기 위해서는 babel-plugin-transform-react-jsx 받아야 한다.</description>
+    </item>
     
     <item>
       <title>Vanilla js / Ecma script / Typescript</title>

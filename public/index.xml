@@ -36,6 +36,77 @@
     </item>
     
     <item>
+      <title>typescript</title>
+      <link>/post/typescript/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/typescript/</guid>
+      <description>
+
+&lt;h1 id=&#34;설치-install&#34;&gt;설치 install&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+npx create-react-app my-app --template typescript
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>React with Babel or React with typescript</title>
+      <link>/post/react-with-babel-or-react-with-typescript/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/react-with-babel-or-react-with-typescript/</guid>
+      <description>
+
+&lt;h1 id=&#34;react-with-babel-es6-jsx&#34;&gt;React with Babel [es6,jsx]&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/2020-03-11-react-with-babel-or-react-with-typescript_files/Screen Shot 2020-03-11 at 7.45.23 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/2020-03-11-react-with-babel-or-react-with-typescript_files/Screen Shot 2020-03-11 at 8.04.29 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;바벨이란?&lt;/p&gt;
+
+&lt;p&gt;바벨은 컴파일러  버전이 틀린 자바스크립트 문법을 읽을수 있게 컴파일 해주는 것이다.&lt;/p&gt;
+
+&lt;h3 id=&#34;react를-돌리기-위해서는-필수적인-모듈이-필요하다&#34;&gt;react를 돌리기 위해서는 필수적인 모듈이 필요하다.&lt;/h3&gt;
+
+&lt;h2 id=&#34;리엑트를-설정할때-필수적인것&#34;&gt;리엑트를 설정할때 필수적인것&lt;/h2&gt;
+
+&lt;p&gt;1.Module bundler
+webpack :&lt;/p&gt;
+
+&lt;p&gt;2.Loader :  webpack 이 jsx 가 들어있는 파일을  컴퍼넌트를 작성한 파일을 읽고나서 설정하는 곳이  Lpader 이다.
+babel-loader : loader 중에 가장 필수로 들어가는게 바벨 loader이다.
+바벨로드를 쓰기위해서
+babel-core 받아야하고
+어떤 바벨을 쓸것이냐 babel-preset-env 받아야 하고
+Jsx 를 transform하기 위해서는
+babel-plugin-transform-react-jsx
+받아야 한다.&lt;/p&gt;
+
+&lt;p&gt;3.react
+react 라이브러리
+react-dom 최종 랜더가 리엑트돔&lt;/p&gt;
+
+&lt;h1 id=&#34;react-with-typescript&#34;&gt;React with Typescript&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/2020-03-11-react-with-babel-or-react-with-typescript_files/Screen Shot 2020-03-11 at 7.45.52 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/2020-03-11-react-with-babel-or-react-with-typescript_files/Screen Shot 2020-03-11 at 7.51.23 PM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ts-loader 하는 일은 간단하다.&lt;/p&gt;
+
+&lt;p&gt;웹팩에서 파일을 읽어서 타입스크립트를 자바스크립트로 변경해서 내려준다.&lt;/p&gt;
+
+&lt;p&gt;ts loader 를 하기위해서
+ts loader 를 깔면 typescript 를 깔아야 한다.
+여기서는 Eslint 를 쓰지않고 tslint를 쓴다.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Vanilla js / Ecma script / Typescript</title>
       <link>/post/typesript/</link>
       <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
