@@ -6,10 +6,28 @@
     <description>Recent content in Posts on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CodeMate-report-1</title>
+      <link>/post/codemate-report-1/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/codemate-report-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redux </title>
+      <link>/post/redux/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/redux/</guid>
+      <description> Do you need Redux?? </description>
+    </item>
     
     <item>
       <title>typescript</title>

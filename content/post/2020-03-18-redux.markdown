@@ -1,0 +1,16 @@
+---
+title: 'Redux '
+author: ''
+date: '2020-03-18'
+slug: redux
+categories: []
+tags: []
+image:
+  caption: ''
+  focal_point: ''
+---
+
+
+# Do you need Redux??
+
+
