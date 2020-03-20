@@ -17,7 +17,11 @@
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/codemate-report-1/</guid>
-      <description></description>
+      <description>기업협업 프로젝트 Dog-Mate 4명에서 팀을 이루어 프론트2명 백엔드 2명 으로 시작하였다.
+프론트와 백엔드 스택은 이렇다 .
+첫번째 2주 프로젝트와는 다르게 새로운 기술 스택이 추가되었다.
+Front End React,Redux,Redux toolkit,material ui Back End TypeORM,express,typescript-rest Etc TypeScript,eslint,mocha/chai,prettier 1차 배포 후 피드백 배포를 진행하고 기업에서 일하고 계신분에게 피드백을 얻게 되었다.
+프론트에서는 전반적으로 redux 를 쓰며 이익을 얻는 면이 부족한것 이 아닐까라는 의견을 듣게 되었고 저또한 코드를 작성하며 redux 를 굳이 써야하는 이유를 아직 깨닫지 못했다.</description>
     </item>
     
     <item>
