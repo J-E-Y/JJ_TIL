@@ -19,14 +19,19 @@
   </url>
   
   <url>
-    <loc>/post/codemate-report-1/</loc>
-    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+    <loc>/post/debounce-throttle/</loc>
+    <lastmod>2020-03-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/codemate-report-1/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -101,6 +106,11 @@
   
   <url>
     <loc>/tutorial/2020-02-22-authentication/</loc>
+    <lastmod>2020-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2020-03-20-npm-module/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
   </url>
   

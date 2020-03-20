@@ -6,10 +6,22 @@
     <description>Recent content in Posts on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Debounce 와 Throttle 차이점</title>
+      <link>/post/debounce-throttle/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/debounce-throttle/</guid>
+      <description>Debounce input창에서 만약 onchange속성을 넣었다고 과정하자 그러면 그때 이값들이 어디에 올라가게 되고 그것을 반복하게 될것이다. 그러면 페이지에 엄청난 양의 메모리를 쓰게 된다 그렇게 된다면 페이지 로딩 속도가 느려지게 될것이다.
+그렇기 때문에 Debounce 를 써서 이러한 이벤트 발생량을 줄이는 것이다. 바운스를 사용하면 키보드에서 동작이 멈출때 딱한번 실행이 된다.
+Throttle 규칙적이고 정기적으로 특정한 시점만 실행하게 되므로 이벤트 를 줄일수 있다.
+Debounce 와 Throttle 차이점은? 디바운싱과 스로틀의 가장 큰 차이점은 스로틀은 적어도 X 밀리 초마다 정기적으로 기능 실행을 보장한다는 것입니다.</description>
+    </item>
     
     <item>
       <title>CodeMate-report-1</title>

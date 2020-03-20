@@ -27,21 +27,11 @@
   
     
   
-  <meta name="description" content="MYSQL MySQL 이랑 그냥 SQL 의 차이 ??
- MySQL : 데이터베이스(DataBase)이다.
- SQL : 데이터를 관리하기 위해 설계된 프로그래밍 언어이다.
-  MYSQL 시작하기 경로 cd /usr/local/mysql/bin
-비밀번호 입력 ./mysql -uroot -p
-생성 mysql&gt; CREATE DATABASE jjdb;
-삭제 mysql&gt; DROP CREATE DATABASE jjd;
-확인
-mysql&gt; DATABASE;
-사용 mysql&gt; UES jjd;
-Data table 만들기
- Data table을 만들기 위해서는 명시적으로 Database를 선택해 줘야 함 데이터베이스가 선택되면 생성된 모든 테이블들은 그 해당 데이터베이스에서 만들어짐">
+  <meta name="description" content=" debounce input창에 onchange 를 하면 버튼을 누를때마다 리소스가 증가한다. 이것을 방지하기 위한 debounce
+npm install lodash  ">
 
   
-  <link rel="alternate" hreflang="en-us" href="/tutorial/2020-02-06-database/">
+  <link rel="alternate" hreflang="en-us" href="/tutorial/2020-03-20-npm-module/">
 
   
 
@@ -127,7 +117,7 @@ Data table 만들기
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/tutorial/2020-02-06-database/">
+  <link rel="canonical" href="/tutorial/2020-03-20-npm-module/">
 
   
   
@@ -139,32 +129,22 @@ Data table 만들기
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="JohnJung">
-  <meta property="og:url" content="/tutorial/2020-02-06-database/">
-  <meta property="og:title" content="__Database | JohnJung">
-  <meta property="og:description" content="MYSQL MySQL 이랑 그냥 SQL 의 차이 ??
- MySQL : 데이터베이스(DataBase)이다.
- SQL : 데이터를 관리하기 위해 설계된 프로그래밍 언어이다.
-  MYSQL 시작하기 경로 cd /usr/local/mysql/bin
-비밀번호 입력 ./mysql -uroot -p
-생성 mysql&gt; CREATE DATABASE jjdb;
-삭제 mysql&gt; DROP CREATE DATABASE jjd;
-확인
-mysql&gt; DATABASE;
-사용 mysql&gt; UES jjd;
-Data table 만들기
- Data table을 만들기 위해서는 명시적으로 Database를 선택해 줘야 함 데이터베이스가 선택되면 생성된 모든 테이블들은 그 해당 데이터베이스에서 만들어짐"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/tutorial/2020-03-20-npm-module/">
+  <meta property="og:title" content="__Npm module | JohnJung">
+  <meta property="og:description" content=" debounce input창에 onchange 를 하면 버튼을 누를때마다 리소스가 증가한다. 이것을 방지하기 위한 debounce
+npm install lodash  "><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2020-01-14T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2020-01-15T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2020-01-14T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2020-01-15T00:00:00&#43;00:00">
   
 
   
 
-  <title>__Database | JohnJung</title>
+  
+
+  <title>__Npm module | JohnJung</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -405,7 +385,7 @@ Data table 만들기
     <a class="docs-toc-link" href="/tutorial/2020-02-08-configure/">8.configure</a>
     <ul class="nav docs-sidenav">
       
-      <li >
+      <li class="active">
         <a href="/tutorial/2020-03-20-npm-module/">__Npm module</a>
       </li>
       
@@ -469,7 +449,7 @@ Data table 만들기
         <a href="/tutorial/2020-02-08-server-side-techniques/">__Asynchronous</a>
       </li>
       
-      <li class="active">
+      <li >
         <a href="/tutorial/2020-02-06-database/">__Database</a>
       </li>
       
@@ -498,18 +478,7 @@ Data table 만들기
 <ul>
 <li>
 <ul>
-<li><a href="#mysql">MYSQL</a>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#mysql-시작하기">MYSQL 시작하기</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li><a href="#learn-sql">Learn SQL</a></li>
-<li><a href="#mvc-design-pattern">MVC design pattern</a></li>
+<li><a href="#debounce">debounce</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -527,177 +496,19 @@ Data table 만들기
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">__Database</h1>
+          <h1 itemprop="name">__Npm module</h1>
 
           <div class="article-style" itemprop="articleBody">
             
 
-<h2 id="mysql">MYSQL</h2>
+<h2 id="debounce">debounce</h2>
 
-<p>MySQL 이랑 그냥 SQL 의 차이 ??</p>
+<p>input창에 onchange 를 하면 버튼을 누를때마다 리소스가 증가한다.
+이것을 방지하기 위한 debounce</p>
 
-<ul>
-<li><p>MySQL : 데이터베이스(DataBase)이다.</p></li>
+<pre><code class="language-js">npm install lodash
 
-<li><p>SQL : 데이터를 관리하기 위해 설계된 프로그래밍 언어이다.</p></li>
-</ul>
-
-<h5 id="mysql-시작하기">MYSQL 시작하기</h5>
-
-<p>경로
-cd /usr/local/mysql/bin</p>
-
-<p>비밀번호 입력
-./mysql -uroot -p</p>
-
-<p>생성
-mysql&gt; CREATE DATABASE jjdb;</p>
-
-<p>삭제
-mysql&gt; DROP CREATE DATABASE jjd;</p>
-
-<p>확인</p>
-
-<p>mysql&gt; DATABASE;</p>
-
-<p>사용
-mysql&gt; UES jjd;</p>
-
-<p>Data table 만들기</p>
-
-<blockquote>
-<p><code>Data table</code>을 만들기 위해서는 명시적으로 Database를 선택해 줘야 함 데이터베이스가 선택되면 생성된 모든 테이블들은 그 해당 데이터베이스에서 만들어짐</p>
-</blockquote>
-
-<p>Table 생성</p>
-
-<p>table 탐색</p>
-
-<p>mysql&gt; DESC <code>jjTable</code></p>
-
-<p>table 삽입</p>
-
-<h2 id="learn-sql">Learn SQL</h2>
-
-<ol>
-<li>Select</li>
-</ol>
-
-<p>Customers table 모두 보기
-SELECT * FROM Customers;</p>
-
-<p>CustomerName만 가져오기
-SELECT CustomerName,City FROM Customers;</p>
-
-<p>중복되지 않는 나라만 가져오기
-SELECT DISTINCT Country FROM Customers;</p>
-
-<ol>
-<li>Where</li>
-</ol>
-
-<p>나라가 멕시코인곳만 가져오기
-SELECT * FROM Customers
-WHERE Country=&lsquo;Mexico&rsquo;;</p>
-
-<p>3 And, Or, Not</p>
-
-<p>나라는 Germany Adn Berlin
-SELECT * FROM Customers
-WHERE Country=&ldquo;Germany&rdquo; AND City=&ldquo;Berlin&rdquo;</p>
-
-<p>나라는 Germany And Berlin OR Munchen
-SELECT * FROM Customers
-WHERE Country=&lsquo;Germany&rsquo; AND (City=&lsquo;Berlin&rsquo; OR City=&lsquo;München&rsquo;);</p>
-
-<p>나라가 Germany 와 USA 가 아닌곳
-SELECT * FROM Customers
-WHERE NOT Country=&lsquo;Germany&rsquo; AND NOT Country=&lsquo;USA&rsquo;;</p>
-
-<p>4.Order By</p>
-
-<p>나라 알파벳 순서대로 모든 정보들 정렬
-SELECT * FROM Customers
-ORDER BY Country;</p>
-
-<p>나라 알파벳 반대순서대로 모든 정보들 정렬
-SELECT * FROM Customers
-ORDER BY Country DESC;</p>
-
-<ol>
-<li>Insert Into</li>
-</ol>
-
-<p>원하는 정보 맨밑에저장된다.
-INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
-VALUES (&lsquo;Cardinal&rsquo;,&lsquo;Tom B. Erichsen&rsquo;,&lsquo;Skagen 21&rsquo;,&lsquo;Stavanger&rsquo;,&lsquo;4006&rsquo;,&lsquo;Norway&rsquo;);</p>
-
-<ol>
-<li>Null Values</li>
-</ol>
-
-<p>Customers table 에 CustomerName, ContactName, Address 목록을 불러오는데 Adrress 에 값이 Null 인 목록을 불러와라
-SELECT CustomerName, ContactName, Address
-FROM Customers
-WHERE Address IS NULL;</p>
-
-<p>No result.</p>
-
-<p>반대로 NULL 값이 없는 목록들을 가져와라</p>
-
-<p>SELECT CustomerName, ContactName, Address
-FROM Customers
-WHERE Address IS NOT NULL;</p>
-
-<ol>
-<li>Wildcards</li>
-</ol>
-
-<p>Customers 에 table 안에 city 안에 ber와 같은 char 들이 있는 목록들 불러오기
-SELECT * FROM Customers
-WHERE City LIKE &lsquo;ber%&rsquo;;</p>
-
-<p>LIKE &lsquo;ber%&rsquo;     처음
-LIKE &lsquo;%es%&rsquo;;    중간
-LIKE &lsquo;_ondon&rsquo;;  끝
-LIKE &lsquo;L_n_on&rsquo;;  검색중간
-LIKE &lsquo;[bsp]%&lsquo;;  b,s,p 시작하는것들
-LIKE &lsquo;[!bsp]%&lsquo;; b,s,p 시작하지 않는것들
-NOT LIKE &lsquo;[bsp]%&lsquo;; b,s,p 시작하지 않는것들
-LIKE &lsquo;[a-c]%&lsquo;;  a부터 c 까지</p>
-
-<ol>
-<li>Aliases (map)같은 문법</li>
-</ol>
-
-<p>새로운 테이블을 만든다.
-CustomerID 불러오고 이것의 카테고리는 ID
-CustomerName 불로오고 이것의 카테고리는 Customer
-그것을 화면에 출력</p>
-
-<p>SELECT CustomerID AS ID, CustomerName AS Customer
-FROM Customers;</p>
-
-<p>만약 AS 의 사이에 하나만 있으면 데이터만 출력후
-뒤에로 넘어간다.
-SELECT CustomerName, Address + &lsquo;, &rsquo; + PostalCode + &lsquo; &rsquo; + City + &lsquo;, &rsquo; + Country AS Address
-FROM Customers;</p>
-
-<p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-06 at 1.29.29 PM.png" alt="" /></p>
-
-<h2 id="mvc-design-pattern">MVC design pattern</h2>
-
-<p><code>MVC</code> 패턴은 애플리케이션을 Model, View, Controller 세 역할로 구분한 개발 방법론입니다. 각 요소는 애플리케이션의 작동과 관련하여 각기 다른 역할을 수행합니다.</p>
-
-<p>크게 3가지 패턴을 이야기 할수 있다.</p>
-
-<ul>
-<li><p><code>Model</code>은 데이터 처리와 관련된 역할을 수행하는 컴포넌트입니다. 컨트롤러의 명령을 받아 동작합니다.</p></li>
-
-<li><p><code>View</code>는 사용자들이 보는 화면(UI)으로서, 컨트롤러와의 소통을 통해 데이터를 입력하거나 출력합니다.</p></li>
-
-<li><p><code>Controller</code>는 데이터(Model)와 사용자 인터페이스(View)를 연결하는 역할을 합니다..</p></li>
-</ul>
+</code></pre>
 
           </div>
 
@@ -706,7 +517,7 @@ FROM Customers;</p>
         </div>
 
         <div class="body-footer">
-          Last updated on Jan 14, 2020
+          Last updated on Jan 15, 2020
         </div>
 
       </article>

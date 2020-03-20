@@ -36,6 +36,34 @@
     </item>
     
     <item>
+      <title>Debounce 와 Throttle 차이점</title>
+      <link>/post/debounce-throttle/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/debounce-throttle/</guid>
+      <description>
+
+&lt;h1 id=&#34;debounce&#34;&gt;Debounce&lt;/h1&gt;
+
+&lt;p&gt;input창에서 만약 onchange속성을 넣었다고 과정하자 그러면 그때 이값들이 어디에 올라가게 되고 그것을 반복하게 될것이다. 그러면 페이지에 엄청난 양의 메모리를 쓰게 된다 그렇게 된다면 페이지 로딩 속도가 느려지게 될것이다.&lt;/p&gt;
+
+&lt;p&gt;그렇기 때문에 Debounce 를 써서 이러한 이벤트 발생량을 줄이는 것이다.
+바운스를 사용하면 키보드에서 동작이 멈출때 딱한번 실행이 된다.&lt;/p&gt;
+
+&lt;h1 id=&#34;throttle&#34;&gt;Throttle&lt;/h1&gt;
+
+&lt;p&gt;규칙적이고 정기적으로 특정한 시점만 실행하게 되므로 이벤트 를 줄일수 있다.&lt;/p&gt;
+
+&lt;h1 id=&#34;debounce-와-throttle-차이점은&#34;&gt;Debounce 와 Throttle 차이점은?&lt;/h1&gt;
+
+&lt;p&gt;디바운싱과 스로틀의 가장 큰 차이점은 스로틀은 적어도 X 밀리 초마다 정기적으로 기능 실행을 보장한다는 것입니다.
+Debounce 는 아무리 많은 이벤트가 발생해도 모두 무시하고 특정 시간사이에 어떤 이벤트도 발생하지 않았을 때 딱 한번만 마지막 이벤트를 발생시키는 기법입니다.&lt;/p&gt;
+
+&lt;p&gt;따라서 5ms 가 지나기전에 계속 이벤트가 발생할 경우 콜백에 반응하는 이벤트는 발생하지 않고 계속 무시됩니다&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>CodeMate-report-1</title>
       <link>/post/codemate-report-1/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
@@ -763,6 +791,25 @@ BareMinimun - Advanced - Nightmare 별  해야할 리스트들 조금 더 세분
       
       <guid>/tutorial/2020-02-22-authentication/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>__Npm module</title>
+      <link>/tutorial/2020-03-20-npm-module/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2020-03-20-npm-module/</guid>
+      <description>
+
+&lt;h2 id=&#34;debounce&#34;&gt;debounce&lt;/h2&gt;
+
+&lt;p&gt;input창에 onchange 를 하면 버튼을 누를때마다 리소스가 증가한다.
+이것을 방지하기 위한 debounce&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;npm install lodash
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
