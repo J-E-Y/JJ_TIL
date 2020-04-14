@@ -4,8 +4,8 @@ date: '2020-01-15'
 draft: true
 menu:
   tutorial:
-    parent: "_section3"
-    weight: 1
+    parent: "CodeStates"
+    weight: 7
 toc: yes
 type: docs
 ---

@@ -45,4 +45,14 @@ cd /usr/local/mysql/bin
 
 
 테이블 생성
+
+# port 3000 이미 사용중? 
+
+> Something is already running on port 3000
+
+```js
+
+npx kill-port 3000
+
+```
 	
