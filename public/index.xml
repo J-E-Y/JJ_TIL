@@ -859,6 +859,24 @@ BareMinimun - Advanced - Nightmare 별  해야할 리스트들 조금 더 세분
 &lt;li&gt;REST(REpresentational State Transfer)&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;blockquote&gt;
+&lt;p&gt;REST API에 REST는 Representational State Transfer의 약자로 소프트웨어 프로그램 아키텍처의 한 형식입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;REST 구성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;REST API는 다음의 구성으로 이루어져있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;자원 (Resource) - URL&lt;/li&gt;
+&lt;li&gt;행위 (Verb) - Http method&lt;/li&gt;
+&lt;li&gt;표현 (Representations)&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&#34;commonjs&#34;&gt;CommonJS&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -1002,7 +1020,199 @@ createPost({ title: &amp;quot;&#39;Post 3&amp;quot;, body: &#39;this is post thr
 
 &lt;h2 id=&#34;express&#34;&gt;Express&lt;/h2&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Express&lt;/strong&gt; 는 &lt;strong&gt;Node.js&lt;/strong&gt; 의 핵심 모듈인 &lt;strong&gt;http&lt;/strong&gt;와컴포넌트**를 기반으로 하는 간편한 프레임워크입니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;한마디로 Node 에서의 개발을 빠르고 손쉽게 할 수 있도록 도와주는 역할입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Express&lt;/strong&gt;의 장점은 &lt;strong&gt;미들웨어(Middleware)&lt;/strong&gt; 구조로,  다양한 기능의 미들웨어를 개발자가 선택하여 결합해 빠르고 손쉽게 사용할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Express 서버 생성&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+var express = require(&#39;express&#39;);
+    var app = express();
+    
+    app.get(&#39;/&#39;, function (req, res) {
+      res.send(&#39;Hello World!&#39;);
+    });
+    
+    app.listen(3000, function () {
+      console.log(&#39;Example app listening on port 3000!&#39;);
+    });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;실행하기&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+$ node app.js
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;middleware&#34;&gt;Middleware&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;lsquo;중간 처리&amp;rsquo; 역할을 수행하는 소프트웨어를 의미합니다.
+
+&lt;ul&gt;
+&lt;li&gt;요청에 대한 응답을 완수하기 전까지 중간중간 다양한 일을 처리할 수 있습니다.&lt;/li&gt;
+&lt;li&gt;미들웨어 함수 생명주기는 request - response 응답을 주기로 종료됩니다.&lt;/li&gt;
+&lt;li&gt;미들웨어 함수 우선순위는 먼저 로드 되는 미들웨어 함수가 먼저 실행됩니다.(&lt;strong&gt;코드 순서가 중요합니다!!&lt;/strong&gt;)
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;  
+var app = express();
+    
+    app.use(function (req, res, next) {
+      console.log(&#39;Time:&#39;, Date.now());
+      next();
+    });
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;body-parser는 body-stream을 메모리 객체에 매핑하기 위한 모듈입니다. chunk를 이용하여, &lt;code&gt;end&lt;/code&gt; event에서 확인 가능 하셨던 것처럼, 이를 이용하시면, 그 과정이 필요하지 않습니다.&lt;/p&gt;
+
+&lt;p&gt;body-parser는 express 4.16.0+ 에 built-in 되어있습니다. 즉, 설치하지 않아도, 사용하실 수 있습니다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+
+var express = require(&#39;express&#39;);
+    var bodyParser = require(&#39;body-parser&#39;);
+    
+    var app = express();
+    
+    // (1) app.use 를 사용하지 않는 경우
+    // create application/json parser
+    var jsonParser = bodyParser.json()
+     
+    // create application/x-www-form-urlencoded parser
+    var urlencodedParser = bodyParser.urlencoded({ extended: false })
+    
+     
+    // POST /login gets urlencoded bodies
+    app.post(&#39;/login&#39;, urlencodedParser, function (req, res) {
+      res.send(&#39;welcome, &#39; + req.body.username)
+    })
+    
+     
+    // POST /api/users gets JSON bodies
+    app.post(&#39;/api/users&#39;, jsonParser, function (req, res) {
+      // create user in req.body
+    })
+   
+    // (2) app.use 를 사용한다면
+    app.use(bodyParser.json());
+    // or
+    app.use(express.json());
+    
+    var express = require(&#39;express&#39;);
+    var app = express();
+    var cookieParser = require(&#39;cookie-parser&#39;);
+    
+    // load the cookie-parsing middleware
+    app.use(cookieParser());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;routing&#34;&gt;Routing&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;라우팅&lt;/em&gt;&lt;/strong&gt; 은 &lt;strong&gt;URI&lt;/strong&gt;(또는 경로) 및 특정한 &lt;strong&gt;HTTP&lt;/strong&gt; 요청 메소드(&lt;strong&gt;GET, POST&lt;/strong&gt; 등)인 특정 엔드포인트에 대한&lt;/p&gt;
+
+&lt;p&gt;클라이언트 요청에 애플리케이션이 응답하는 방법을 결정하는 것을 말합니다.&lt;/p&gt;
+
+&lt;p&gt;파일을 하나로 해도 무관하지만 다루어야 할 규모가 커지고 엔드포인트 또한 많아진다면 파일을 카테고리 별로&lt;/p&gt;
+
+&lt;p&gt;나누어서 가독성을 높히고 복잡도를 낮출 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;각 라우트는 하나 이상의 핸들러 함수를 가질 수 있으며, 이러한 함수는 라우트가 일치할 때 실행됩니다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;app.METHOD(PATH, HANDLER)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;app&lt;/code&gt;은 &lt;code&gt;express&lt;/code&gt;의 인스턴스입니다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;METHOD&lt;/code&gt;는 [HTTP 요청 메소드]입니다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PATH&lt;/code&gt;는 서버에서의 경로입니다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HANDLER&lt;/code&gt;는 라우트가 일치할 때 실행되는 함수입니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+    // **ex)**
+    app.get(&#39;/&#39;, function (req, res) {
+      res.send(&#39;Hello World!&#39;);
+    });
+    
+    app.post(&#39;/&#39;, function (req, res) {
+      res.send(&#39;Got a POST request&#39;);
+    });
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;route-handler&#34;&gt;Route handler&lt;/h3&gt;
+
+&lt;p&gt;[미들웨어]와 비슷하게 작동하는 여러 콜백 함수를 제공하여 요청을 처리할 수 있습니다. 유일한 차이점은 이러한&lt;/p&gt;
+
+&lt;p&gt;콜백은 &lt;code&gt;next(&#39;route&#39;)&lt;/code&gt;를 호출하여 나머지 라우트 콜백을 우회할 수도 있다는 점입니다.&lt;/p&gt;
+
+&lt;p&gt;이러한 메커니즘을 이용하면 라우트에 대한 사전 조건을 지정한 후, 현재의 라우트를 계속할 이유가 없는 경우에는&lt;/p&gt;
+
+&lt;p&gt;제어를 후속 라우터에 전달할 수 있습니다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+    app.get(&#39;/example/b&#39;, function (req, res, next) {
+      console.log(&#39;the response will be sent by the next function);
+      next(); //--&amp;gt; 다음 function 을 실행시킵니다.
+    }, function (req, res) {
+      res.send(&#39;Hello from B!&#39;);
+    });
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;router&#34;&gt;Router&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+var express = require(&#39;express&#39;);
+var router = express.Router();
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;라우터는 미들웨어 자체처럼 동작하므로 app.use ()에 대한 인수 또는 다른 라우터의 use () 메소드에 대한 인수로 사용할 수 있습니다 .&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+router.use(function (req, res, next) {
+// 
+      next()
+    })
+    // 이벤트로 끝나는 요청을 처리합니다
+    router.get(&#39;/events&#39;, function (req, res, next) {
+    //
+    })
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;경로를 파일 , 또는 미니 앱으로 분리하는 방식으로 특정 루트 URL 에 라우터를 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+app.use(&#39;/calendar&#39;, router)
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;event-loop&#34;&gt;Event Loop&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;event Loop  영상&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;amp;feature=emb_title&#34; target=&#34;_blank&#34;&gt;https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;amp;feature=emb_title&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
