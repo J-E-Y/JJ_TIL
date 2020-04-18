@@ -541,6 +541,22 @@ RESTful API  REST(REpresentational State Transfer)   REST API에 REST는 Represe
 </blockquote>
 
 <ul>
+<li>Roy T. Fieiding 이라는 사람이 REST 를 만들었다.</li>
+</ul>
+
+<blockquote>
+<p>만든이유. web을 망가뜨리지 않고, 어떻게 HTTP를 개선할수 있을까라는 생각으로 시작</p>
+</blockquote>
+
+<ul>
+<li>REST란???<br /></li>
+</ul>
+
+<blockquote>
+<p>&ldquo;웹에 존재하는 모든 자원(이미지, 동영상, DB 자원)에 고유한 URI를 부여해 활용&rdquo;하는 것으로, 자원을 정의하고 자원에 대한 주소를 지정하는 방법론을 의미한다고 한다.</p>
+</blockquote>
+
+<ul>
 <li>REST 구성</li>
 </ul>
 
@@ -551,7 +567,24 @@ RESTful API  REST(REpresentational State Transfer)   REST API에 REST는 Represe
 <ul>
 <li>자원 (Resource) - URL</li>
 <li>행위 (Verb) - Http method</li>
-<li>표현 (Representations)</li>
+
+<li><p>표현 (Representations)</p></li>
+
+<li><p>URL 설계시 주의사항</p>
+
+<ol>
+<li><p>슬래시 구분자(/)는 계층 관계를 나타내는데 사용</p></li>
+
+<li><p>URI 마지막 문자로 슬래시(/)를 포함하지 않는다.</p></li>
+
+<li><p>하이픈(-)은 URI 가독성을 높이는데 사용</p></li>
+
+<li><p>밑줄(_)은 URI에 사용하지 않는다.</p></li>
+
+<li><p>URI 경로에는 소문자가 적합하다.</p></li>
+
+<li><p>파일확장자는 URI에 포함하지 않는다.</p></li>
+</ol></li>
 </ul>
 
 <h2 id="commonjs">CommonJS</h2>
@@ -885,7 +918,14 @@ app.use('/calendar', router)
 
 <h2 id="event-loop">Event Loop</h2>
 
+<p><img src="/tutorial/2020-02-08-node_files/Screen Shot 2020-04-18 at 10.14.55 AM.png" alt="" /></p>
+
 <blockquote>
+<p>Event Loop는 Call Stack과 Callback Queue의 상태를 체크하여,
+Call Stack이 빈 상태가 되면, Callback Queue의 첫번째 콜백을 Call Stack으로 밀어넣는다. 이러한 반복적인 행동을 틱(tick) 이라 부른다.</p>
+
+<p>자바스크립트를 <code>단일 스레드 프로그래밍 언어</code>라 한번에 하나씩 밖에 실행할 수 없다.</p>
+
 <p>event Loop  영상</p>
 </blockquote>
 

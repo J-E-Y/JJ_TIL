@@ -864,6 +864,22 @@ BareMinimun - Advanced - Nightmare 별  해야할 리스트들 조금 더 세분
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
+&lt;li&gt;Roy T. Fieiding 이라는 사람이 REST 를 만들었다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;만든이유. web을 망가뜨리지 않고, 어떻게 HTTP를 개선할수 있을까라는 생각으로 시작&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;REST란???&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;웹에 존재하는 모든 자원(이미지, 동영상, DB 자원)에 고유한 URI를 부여해 활용&amp;rdquo;하는 것으로, 자원을 정의하고 자원에 대한 주소를 지정하는 방법론을 의미한다고 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
 &lt;li&gt;REST 구성&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -874,7 +890,24 @@ BareMinimun - Advanced - Nightmare 별  해야할 리스트들 조금 더 세분
 &lt;ul&gt;
 &lt;li&gt;자원 (Resource) - URL&lt;/li&gt;
 &lt;li&gt;행위 (Verb) - Http method&lt;/li&gt;
-&lt;li&gt;표현 (Representations)&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;표현 (Representations)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;URL 설계시 주의사항&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;슬래시 구분자(/)는 계층 관계를 나타내는데 사용&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;URI 마지막 문자로 슬래시(/)를 포함하지 않는다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;하이픈(-)은 URI 가독성을 높이는데 사용&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;밑줄(_)은 URI에 사용하지 않는다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;URI 경로에는 소문자가 적합하다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;파일확장자는 URI에 포함하지 않는다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;commonjs&#34;&gt;CommonJS&lt;/h2&gt;
@@ -1208,7 +1241,14 @@ app.use(&#39;/calendar&#39;, router)
 
 &lt;h2 id=&#34;event-loop&#34;&gt;Event Loop&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&#34;/tutorial/2020-02-08-node_files/Screen Shot 2020-04-18 at 10.14.55 AM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
 &lt;blockquote&gt;
+&lt;p&gt;Event Loop는 Call Stack과 Callback Queue의 상태를 체크하여,
+Call Stack이 빈 상태가 되면, Callback Queue의 첫번째 콜백을 Call Stack으로 밀어넣는다. 이러한 반복적인 행동을 틱(tick) 이라 부른다.&lt;/p&gt;
+
+&lt;p&gt;자바스크립트를 &lt;code&gt;단일 스레드 프로그래밍 언어&lt;/code&gt;라 한번에 하나씩 밖에 실행할 수 없다.&lt;/p&gt;
+
 &lt;p&gt;event Loop  영상&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1930,8 +1970,6 @@ ReactDOM.render(&amp;lt;App /&amp;gt;, document.getElementById(&amp;quot;root&am
 &lt;p&gt;리엑트를 사용해서 웹사이트에 올리고 싶다?&lt;/p&gt;
 
 &lt;p&gt;reactNative 쓰면됨&lt;/p&gt;
-
-&lt;h2 id=&#34;redux&#34;&gt;Redux&lt;/h2&gt;
 
 &lt;h2 id=&#34;생활코딩예제&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-생활코딩예제&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h2&gt;
 
