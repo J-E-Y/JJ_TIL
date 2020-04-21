@@ -62,18 +62,8 @@ RESTful API  REST(REpresentational State Transfer)   REST API에 REST는 Represe
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2020-02-06-database/</guid>
-      <description>MYSQL MySQL 이랑 그냥 SQL 의 차이 ??
- MySQL : 데이터베이스(DataBase)이다.
- SQL : 데이터를 관리하기 위해 설계된 프로그래밍 언어이다.
-  MYSQL 시작하기 경로 cd /usr/local/mysql/bin
-비밀번호 입력 ./mysql -uroot -p
-생성 mysql&amp;gt; CREATE DATABASE jjdb;
-삭제 mysql&amp;gt; DROP CREATE DATABASE jjd;
-확인
-mysql&amp;gt; DATABASE;
-사용 mysql&amp;gt; UES jjd;
-Data table 만들기
- Data table을 만들기 위해서는 명시적으로 Database를 선택해 줘야 함 데이터베이스가 선택되면 생성된 모든 테이블들은 그 해당 데이터베이스에서 만들어짐</description>
+      <description>SQL 이란?  데이터베이스는 웹 개발을 위해 다양한 정보를 효율적이고 안정적으로 보관하기 위해서 사용합니다. 가장 많이 사용하시게 될 mysql이 SQL database (관계형 데이터베이스, RDBMS)고, 이를 활용하기 위한 언어가 SQL(Structured Query Language)입니다. 즉, DB에 구조화된(Structured) 질문(Query)을 할 수 있는 컴퓨터 언어(Language) 입니다.
+ SQL vs NOSQL ?  SQL Database - Strict Schema, Relations  Strict Schema - 처음 스키마 설계시 필요할 것으로 예상이 되었던 데이터보다 더 많은 데이터를 다루게 되었을 때, 유연하게 스키마를 바꿀 수 없습니다.</description>
     </item>
     
     <item>

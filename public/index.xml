@@ -1538,9 +1538,41 @@ Call Stack이 빈 상태가 되면, Callback Queue의 첫번째 콜백을 Call S
       <guid>/tutorial/2020-02-06-database/</guid>
       <description>
 
-&lt;h2 id=&#34;mysql&#34;&gt;MYSQL&lt;/h2&gt;
+&lt;h3 id=&#34;sql-이란&#34;&gt;SQL 이란?&lt;/h3&gt;
 
-&lt;p&gt;MySQL 이랑 그냥 SQL 의 차이 ??&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;데이터베이스는 웹 개발을 위해 다양한 정보를 효율적이고 안정적으로 보관하기 위해서 사용합니다. 가장 많이 사용하시게 될 mysql이 SQL database (관계형 데이터베이스, RDBMS)고, 이를 활용하기 위한 언어가 SQL(Structured Query Language)입니다. 즉, DB에 구조화된(Structured) 질문(Query)을 할 수 있는 컴퓨터 언어(&lt;strong&gt;L&lt;/strong&gt;anguage) 입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;sql-vs-nosql&#34;&gt;SQL vs NOSQL ?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SQL Database - Strict Schema, Relations&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Strict Schema&lt;/strong&gt; - 처음 스키마 설계시 필요할 것으로 예상이 되었던 데이터보다 더 많은 데이터를 다루게 되었을 때, 유연하게 스키마를 바꿀 수 없습니다. 이를 보완하기 위해서 ORM을 사용할 수 있습니다. (Sequelize CLI 등 활용)
+Relations - 스키마 설계 시 one-to-one, one-to-many, many-to-many를 명확히 규정을 하고 스키마를 짜야 합니다. 중복되거나 잘못 입력된 데이터가 쉽게 DB에 삽입될 수 없습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;noSQL Database (Not Only SQL!) -  No Schema, Relations&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;No Schema&lt;/strong&gt; - JSON data와 같은 구조를 사용하여, 자바스크립트의 객체를 다루는 것과 같은 느낌으로 데이터 조회가 가능합니다.
+No Relations - JOIN의 개념이 사라지고, duplicate된 데이터가 각각의 Collection에 저장됩니다. (SQL의 table과 같은 개념) JOIN을 하지 않아도 각 Collection에서 원하는 정보를 조회할 수 있습니다. 조회가 noSQL보다 비교적 빠릅니다 (because no JOIN)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Where to use SQL?&lt;/strong&gt;
+초기 스키마 구성을 통해서 대부분의 데이터를 처리할 수 있을 때
+스키마 구조는 비교적 간단하지만 Update가 많을 때
+Scale up을 해야하는 경우가 적을 때 - 서버의 성능이 향상되어야 됨&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Where to use NoSQL?&lt;/strong&gt;
+이후에 어떤 데이터가 추가될 지 예상할 수 없을 때**
+Read / Write가 Update가 보다 현저히 많을 때
+&lt;strong&gt;Scale up을 해야하는 경우가 많을 때&lt;/strong&gt; - 서버의 수량만 더 추가하면 OK&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;mysql-vs-sql&#34;&gt;MySQL vs SQL&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;MySQL : 데이터베이스(DataBase)이다.&lt;/p&gt;&lt;/li&gt;
@@ -1548,7 +1580,7 @@ Call Stack이 빈 상태가 되면, Callback Queue의 첫번째 콜백을 Call S
 &lt;li&gt;&lt;p&gt;SQL : 데이터를 관리하기 위해 설계된 프로그래밍 언어이다.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5 id=&#34;mysql-시작하기&#34;&gt;MYSQL 시작하기&lt;/h5&gt;
+&lt;h2 id=&#34;mysql-시작하기&#34;&gt;MYSQL 시작하기&lt;/h2&gt;
 
 &lt;p&gt;경로
 cd /usr/local/mysql/bin&lt;/p&gt;
@@ -1693,7 +1725,16 @@ FROM Customers;&lt;/p&gt;
 
 &lt;h2 id=&#34;mvc-design-pattern&#34;&gt;MVC design pattern&lt;/h2&gt;
 
-&lt;p&gt;&lt;code&gt;MVC&lt;/code&gt; 패턴은 애플리케이션을 Model, View, Controller 세 역할로 구분한 개발 방법론입니다. 각 요소는 애플리케이션의 작동과 관련하여 각기 다른 역할을 수행합니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MVC 패턴&lt;/strong&gt;은 애플리케이션을 &lt;strong&gt;Model, View, Controller&lt;/strong&gt; 세 역할로 구분한 개발 방법론입니다. 각 요소는 애플리케이션의 작동과 관련하여 각기 다른 역할을 수행합니다.&lt;/li&gt;
+&lt;li&gt;Model은 데이터 처리와 관련된 역할을 수행하는 컴포넌트입니다. 컨트롤러의 명령을 받아 동작합니다.&lt;/li&gt;
+&lt;li&gt;View는 사용자들이 보는 화면(UI)으로서, 컨트롤러와의 소통을 통해 데이터를 입력하거나 출력합니다.&lt;/li&gt;
+&lt;li&gt;Controller는 데이터(Model)와 사용자 인터페이스(View)를 연결하는 역할을 합니다.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;구성 요소를 분리&lt;/strong&gt;하는 이유는 무엇일까요?&lt;/p&gt;
+
+&lt;p&gt;→ 이해하기 쉽고 깔끔한 코드를 짤 수 있습니다. 덕분에 유지보수가 용이해지며, 확장성도 좋아집니다. 또한 기능에 따라 코드를 분류하기 때문에, 중복되는 코드를 작성하는 실수 또한 줄일 수 있습니다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;크게 3가지 패턴을 이야기 할수 있다.&lt;/p&gt;
 
@@ -1703,6 +1744,59 @@ FROM Customers;&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;View&lt;/code&gt;는 사용자들이 보는 화면(UI)으로서, 컨트롤러와의 소통을 통해 데이터를 입력하거나 출력합니다.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;code&gt;Controller&lt;/code&gt;는 데이터(Model)와 사용자 인터페이스(View)를 연결하는 역할을 합니다..&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;orm이란&#34;&gt;ORM이란?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;객체와 관계형 데이터베이스의 데이터를 자동으로 매핑(연결)해주는 것을 말합니다.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ORM을 왜 사용할까요?&lt;/p&gt;
+
+&lt;p&gt;우리가 사용하는 객체 지향 프로그래밍은 &lt;strong&gt;클래스&lt;/strong&gt;를 사용하고, 관계형 데이터베이스는 &lt;strong&gt;테이블&lt;/strong&gt;을 사용합니다. 이 때 서로의 구조 간의 불일치가 발생합니다. 따라서 ORM을 활용하여 객체 간의 관계를 바탕으로 SQL을 자동으로 생성하여 이러한 불일치를 해결할 수 있습니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ORM의 장점&lt;/p&gt;
+
+&lt;p&gt;익숙한 객체 지향적인 코드를 사용함으로써 직관적인 이해 및 집중에 도움이 됩니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ORM - Object Relational Mapping&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ORM을 통해 작성한 객체를 재활용할 수 있다는 측면에서 재사용 및 유지보수의 편리성이 증가합니다.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ORM의 단점&lt;/p&gt;
+
+&lt;p&gt;잘못 구현한 경우 성능이 저하될 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;복잡한 쿼리문의 경우 오히려 SQL문으로 사용하는 것이 더 직관적, 효율적일 수 있습니다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;sequelize-sequelize-cli&#34;&gt;Sequelize, Sequelize CLI&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Node.js 기반의 ORM으로 PostgreSQL, MySQL, MariaDB, SQLite, MS-SQL을 지원합니다.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;프로미스 기반의 ORM이기 때문에 비동기 처리에 용이합니다.&lt;/p&gt;
+
+&lt;p&gt;SELECT * FROM Users WHERE id = 4 // SQL&lt;/p&gt;
+
+&lt;p&gt;user = Users.find(4) // Sequelize&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CLI의 대표적인 기능으로는 Migration, Seed, Model이 있습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Sequelize CLI?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sequelize command line interface의 줄임말로써 &lt;strong&gt;명령어를 사용해 데이터베이스 작업을 할 수 있는 툴입니다.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Model : 테이블을 생성&lt;/li&gt;
+&lt;li&gt;Migration : 코드에 적혀져 있는 데이터베이스 테이블에 대해 실제 데이터베이스에 테이블을 생성하는 개념&lt;/li&gt;
+&lt;li&gt;Seed : 생성된 테이블에 데이터를 추가
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
