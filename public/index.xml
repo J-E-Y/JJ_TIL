@@ -36,6 +36,15 @@
     </item>
     
     <item>
+      <title>Dog Manager</title>
+      <link>/project/dog-manager/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0900</pubDate>
+      
+      <guid>/project/dog-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Debounce 와 Throttle 차이점</title>
       <link>/post/debounce-throttle/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
@@ -1125,18 +1134,20 @@ let promise1 = new Promise((resolve, reject)=&amp;gt;{
 &lt;li&gt;앞에서 해시 자료구조를 배웠을 때 다뤘던 것처럼, 해시 함수는 &lt;strong&gt;같은 값을 넣으면 늘 같은 값을 반환&lt;/strong&gt;해야 합니다. 때문에 여러 암호를 모은 데이터베이스를 기반으로, 암호를 유추해 낼 위험이 있습니다.&lt;/li&gt;
 &lt;li&gt;또한 &lt;code&gt;SHA256&lt;/code&gt;, &lt;code&gt;MD5&lt;/code&gt;등 알고리즘 자체는 이미 널리 공개가 되어 있습니다. 때문에 이미 보안이 뚫린 알고리즘(MD5, SHA1 등)도 있습니다.&lt;/li&gt;
 &lt;li&gt;해싱의 한계를 극복하기 위해, 우리는 해시 함수를 여러 번 반복하여 적용하거나 솔트(salt)를 활용할 수 있습니다.&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Crypto로 해싱을 구현해 보겠습니다.&lt;/p&gt;
-
-&lt;p&gt;const crypto = require(&amp;lsquo;crypto&amp;rsquo;);&lt;/p&gt;
-
-&lt;p&gt;const hashClass = crypto.createHash(&amp;lsquo;sha512&amp;rsquo;);
-// sha512 알고리즘을 사용하는 해시 class를 만든다.
-const hashedValue = hashClass.update(&amp;lsquo;get coding&amp;rsquo;).digest(&amp;lsquo;base64&amp;rsquo;);
-// &amp;lsquo;get coding&amp;rsquo; 이라는 문자열을 해싱하겠다는 의미.
-// 해싱한 문자열을 base64로 인코딩하여 다이제스트를 반환한다.
-// 다이제스트란 해시를 통해 얻어낸 암호화된 값을 뜻한다.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Crypto로 해싱을 구현해 보겠습니다.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+    const crypto = require(&#39;crypto&#39;);
+    
+    const hashClass = crypto.createHash(&#39;sha512&#39;);
+    // sha512 알고리즘을 사용하는 해시 class를 만든다.
+    const hashedValue = hashClass.update(&#39;get coding&#39;).digest(&#39;base64&#39;);
+    // &#39;get coding&#39; 이라는 문자열을 해싱하겠다는 의미. 
+    // 해싱한 문자열을 base64로 인코딩하여 다이제스트를 반환한다. 
+    // 다이제스트란 해시를 통해 얻어낸 암호화된 값을 뜻한다.
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;양방향 암호화도 있습니다! 이 또한 crypto로 구현할 수 있으니 관심이 있다면 &lt;code&gt;cipher&lt;/code&gt;에 대해 알아봅시다.&lt;/p&gt;
 
@@ -1144,29 +1155,36 @@ const hashedValue = hashClass.update(&amp;lsquo;get coding&amp;rsquo;).digest(&a
 
 &lt;ul&gt;
 &lt;li&gt;솔팅(salting)이란 &lt;strong&gt;암호화해야 하는 값에 어떤 별도의 값(salt)을 추가해서 결과를 변형&lt;/strong&gt;하는 것을 뜻합니다.&lt;/li&gt;
+&lt;li&gt;crypto 모듈에서는 pbkd2(Password-Based Key Derivation Function 2)라는 비동기 메서드를 통해 솔트를 적용할 수 있습니다&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;crypto 모듈에서는 pbkd2(Password-Based Key Derivation Function 2)라는 비동기 메서드를 통해 솔트를 적용할 수 있습니다&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+    const crypto = require(&#39;crypto&#39;)
+    // password, salt, iteration, 바이트 길이, 알고리즘, 콜백을 인자로 받는다.
+    crypto.pbkdf2(&#39;생선구이&#39;, &#39;소금&#39;, 123456, 64, &#39;sha512&#39;, (err, derivedKey)=&amp;gt;{ 
+    	if(err) throw err; 
+    	console.log(derivedKey.toString(&#39;hex&#39;)) // hex로 인코딩한다.
+    })
+    
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;const crypto = require(&amp;lsquo;crypto&amp;rsquo;)
-// password, salt, iteration, 바이트 길이, 알고리즘, 콜백을 인자로 받는다.
-crypto.pbkdf2(&amp;lsquo;생선구이&amp;rsquo;, &amp;lsquo;소금&amp;rsquo;, 123456, 64, &amp;lsquo;sha512&amp;rsquo;, (err, derivedKey)=&amp;gt;{
-    if(err) throw err;
-    console.log(derivedKey.toString(&amp;lsquo;hex&amp;rsquo;)) // hex로 인코딩한다.
-})&lt;/p&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;만약 솔트 값이 고정되어 있다면, 솔트 값이 유출되기 쉽겠죠? 따라서 암호화를 할 때마다 랜덤한 솔트 문자열을 생성한다면 좋을 것입니다. 이와 관련하여 crypto에서 사용할 수 있는 메서드가 바로 &lt;code&gt;randomBytes&lt;/code&gt; 입니다.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;만약 솔트 값이 고정되어 있다면, 솔트 값이 유출되기 쉽겠죠? 따라서 암호화를 할 때마다 랜덤한 솔트 문자열을 생성한다면 좋을 것입니다. 이와 관련하여 crypto에서 사용할 수 있는 메서드가 바로 &lt;code&gt;randomBytes&lt;/code&gt; 입니다.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
+        // 랜덤한 솔트를 64바이트 길이로 생성한다. 버퍼 형식으로 반환된다.
+        crypto.randomBytes(64, (err, buf)=&amp;gt;{ 
+        // 랜덤하게 생성된 버퍼를 base64를 통해 인코딩한다.
+        	const randomlyGeneratedSalt = buf.toString(&#39;base64&#39;) 
+        	crypto.pbkdf2(&#39;꽁치구이&#39;, randomlyGeneratedSalt, 123456, 64, &#39;sha512&#39;, (err, derivedKey)=&amp;gt;{
+        	 if(err) throw err; 
+        		console.log(derivedKey.toString(&#39;hex&#39;)) })
+        })
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;// 랜덤한 솔트를 64바이트 길이로 생성한다. 버퍼 형식으로 반환된다.
-crypto.randomBytes(64, (err, buf)=&amp;gt;{ 
-// 랜덤하게 생성된 버퍼를 base64를 통해 인코딩한다.
-    const randomlyGeneratedSalt = buf.toString(&#39;base64&#39;) 
-    crypto.pbkdf2(&#39;꽁치구이&#39;, randomlyGeneratedSalt, 123456, 64, &#39;sha512&#39;, (err, derivedKey)=&amp;gt;{
-     if(err) throw err; 
-        console.log(derivedKey.toString(&#39;hex&#39;)) })
-})
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;랜덤으로 생성된 솔트는 해싱된 값(derivedKey)와 반드시 함께 저장해야 한다는 점을 명심해 주세요.&lt;/p&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;랜덤으로 생성된 솔트는 해싱된 값(derivedKey)와 반드시 함께 저장해야 한다는 점을 명심해 주세요.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;솔티드 해시 외에도 HMAC이라는 방법을 사용하여 보안을 강화할 수도 있습니다. 크립토의 &lt;code&gt;createHMA&lt;/code&gt; 메서드와 함께 알아보세요.&lt;/p&gt;
@@ -15973,12 +15991,24 @@ $ node runNode.js
 &lt;ul&gt;
 &lt;li&gt;다양한 Node version를 설치하고 관리할 수 있는 프로그램&lt;/li&gt;
 &lt;li&gt;버전 관리를 위해  NVM 이라는 도구를 사용&lt;/li&gt;
-&lt;li&gt;NVM역시 하나의 프로그램이므로 설치해야 합니다.
-*
-&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;NVM역시 하나의 프로그램이므로 설치해야 합니다.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;실행 하는 법&lt;/p&gt;&lt;/li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Node.js 역시 하나의 프로그램이니 당연히 버전이 있습니다. 일반적으로 Node.js 홈페이지에 들어가서 Node를 설치하면 가장 최신 버전과 LTS 버전(LTS는 Long Term Support 약자로 장기 서포트를 보장한다는 의미를 담고 있습니다. )을 보여줍니다. 하지만 사실 저 두 가지 버전뿐만 아니라 많은 버전들이 있습니다. 개발을 하다 보면 다양한 Node.js 버전에 대응해야 할 일이 생깁니다. 예를 들면 Node 10.13.0 버전에서는 내가 짠 코드가 잘 돌아갔는데, Node 10.13.0 버전에서는 안 돌아간다! 하는 일들이 생깁니다. 그럼 Node 10.13.0에서 테스트를 해봐야겠죠?!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;문제는 여기부터입니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;내가 설치한 Node는 10.13.0 버전이라고 해봅시다. 그럼 우리는 설치한 Node를 업데이트해야겠죠?! 업데이트는 쉽게 할 수 있습니다. 근데 다시 이전 버전으로 가려면 어떻게 해야 할까요? Node를 지우고 다시 설치하면 되겠죠? 근데 이렇게 버전을 옮길 때마다 지우고 설치해야 한다면 작업할 때 마다 엄청 귀찮겠죠?! 이런 문제를 NVM이 해결해 줍니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;실행 하는 법&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
@@ -15991,6 +16021,12 @@ nvm use 12.13.0 //  12.13.0 버전을 사용하고 싶다면 이렇게 * 버전�
 
 // 정리해보면 NVM은 다양한 Node version를 설치하고 관리할 수 있는 프로그램 입니다.
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;정말 편하게 Node를 설치하고 version을 바꿀 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;정리해보면 NVM은 다양한 Node version를 설치하고 관리할 수 있는 프로그램 입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id=&#34;npm-node-package-manager&#34;&gt;NPM (Node Package Manager)&lt;/h2&gt;
 
@@ -16008,10 +16044,13 @@ nvm use 12.13.0 //  12.13.0 버전을 사용하고 싶다면 이렇게 * 버전�
 &lt;li&gt;&lt;p&gt;패키지 설치&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Node.js에서 사용할 수 있는 모듈인 패키지를 설치할 때에는 npm install 명령어 뒤에 설치할 패키지 이름을 지정한다.
-&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Node.js에서 사용할 수 있는 모듈인 패키지를 설치할 때에는 npm install 명령어 뒤에 설치할 패키지 이름을 지정한다.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;NPM은 Node Package Manager로 일종의 앱스토어입니다. 필요한 모듈을 다운로드할 수 있는, 모듈들이 모여있는 모듈 스토어입니다. 앞으로 필요한 모듈은 대부분 NPM에서 다운로드해서 사용하면 됩니다.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
 // 이렇게 명령 한다. 
@@ -23108,27 +23147,6 @@ console.log(Object.assign(target, source)); // { x: 1, y: 2, z: 3 }
     </item>
     
     <item>
-      <title>External Project</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0900</pubDate>
-      
-      <guid>/project/external-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Collaborative Mapping</title>
-      <link>/project/ex1/</link>
-      <pubDate>Thu, 07 Apr 2016 00:00:00 +0900</pubDate>
-      
-      <guid>/project/ex1/</guid>
-      <description>&lt;p&gt;Founded by myself and Dr. on Geography Miguel Sevilla in 2016, &lt;em&gt;&lt;a href=&#34;https://translate.google.com/translate?sl=es&amp;amp;tl=en&amp;amp;u=https%3A%2F%2Fmapcolabora.org&#34; target=&#34;_blank&#34;&gt;Collaborative Mapping&lt;/a&gt;&lt;/em&gt; is an action-research group of enthusiasts aimed to foster citizen innovation and collective intelligence through Voluntary Geographic Informationand that result in collaborative maps at the service of citizens. We do so through participatory projects and periodical meetings and talks about tools, methodologies or related topics such as Free Culture and Informationalism paradigm. Some of our main achievements so far have been the organization of &lt;a href=&#34;https://www.msf.org/&#34; target=&#34;_blank&#34;&gt;Medecins Sans Frontieres&lt;/a&gt;’s &lt;strong&gt;Humanitarian Hackaton in Spain&lt;/strong&gt; (2017, 2018 and 2019), leading &lt;strong&gt;Mapping parties&lt;/strong&gt; for &lt;a href=&#34;/project/zaccesible&#34;&gt;Accessible Zaragoza&lt;/a&gt; project, or giving a number of &lt;strong&gt;&lt;a href=&#34;https://translate.google.com/translate?hl=&amp;amp;sl=es&amp;amp;tl=en&amp;amp;u=https%3A%2F%2Fmapcolabora.org%23talks&#34; target=&#34;_blank&#34;&gt;talks and workshops&lt;/a&gt;&lt;/strong&gt; on VGI and tools such as Leaflet, Carto, Mapbox, OpenStreetMap, Overpass API, Mapillary, uMap&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;Since then, I have been coordinating the group&amp;rsquo;s activities as well with Dr. Miguel Sevilla-Callejo and Alejandro Suárez, Héctor Hochoa and Joan Cano, who joined the staff soon afterwards.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>An example journal article</title>
       <link>/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0900</pubDate>
@@ -23157,11 +23175,21 @@ console.log(Object.assign(target, source)); // { x: 1, y: 2, z: 3 }
     </item>
     
     <item>
-      <title>Pos</title>
-      <link>/project/pos/</link>
+      <title>Team</title>
+      <link>/project/dream-maker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/project/pos/</guid>
+      <guid>/project/dream-maker/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Previous work&lt;/strong&gt;:&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>new project</title>
+      <link>/project/new-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/new-project/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Previous work&lt;/strong&gt;:&lt;/p&gt;
 </description>
     </item>

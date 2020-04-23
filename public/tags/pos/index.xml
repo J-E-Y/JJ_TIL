@@ -6,36 +6,17 @@
     <description>Recent content in Pos on JohnJung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="/tags/pos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>External Project</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0900</pubDate>
-      
-      <guid>/project/external-project/</guid>
-      <description>An example of linking directly to an external project website using &lt;code&gt;external_link&lt;/code&gt;.</description>
-    </item>
-    
-    <item>
-      <title>Collaborative Mapping</title>
-      <link>/project/ex1/</link>
-      <pubDate>Thu, 07 Apr 2016 00:00:00 +0900</pubDate>
-      
-      <guid>/project/ex1/</guid>
-      <description>Action-research group of enthusiasts aimed to foster citizen innovation and collective intelligence through Voluntary Geographic Informationand that result in collaborative maps at the service of citizens.</description>
-    </item>
-    
-    <item>
-      <title>Pos</title>
-      <link>/project/pos/</link>
+      <title>new project</title>
+      <link>/project/new-project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/project/pos/</guid>
-      <description>hello</description>
+      <guid>/project/new-project/</guid>
+      <description>무엇을 만들까?</description>
     </item>
     
   </channel>

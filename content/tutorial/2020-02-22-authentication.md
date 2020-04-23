@@ -72,6 +72,8 @@ type: docs
 - 해싱의 한계를 극복하기 위해, 우리는 해시 함수를 여러 번 반복하여 적용하거나 솔트(salt)를 활용할 수 있습니다.
 - Crypto로 해싱을 구현해 보겠습니다.
 
+```js
+
     const crypto = require('crypto');
     
     const hashClass = crypto.createHash('sha512');
@@ -81,6 +83,9 @@ type: docs
     // 해싱한 문자열을 base64로 인코딩하여 다이제스트를 반환한다. 
     // 다이제스트란 해시를 통해 얻어낸 암호화된 값을 뜻한다.
 
+```
+
+
 양방향 암호화도 있습니다! 이 또한 crypto로 구현할 수 있으니 관심이 있다면 `cipher`에 대해 알아봅시다. 
 
 ## Salting?
@@ -88,14 +93,20 @@ type: docs
 - 솔팅(salting)이란 **암호화해야 하는 값에 어떤 별도의 값(salt)을 추가해서 결과를 변형**하는 것을 뜻합니다.
 - crypto 모듈에서는 pbkd2(Password-Based Key Derivation Function 2)라는 비동기 메서드를 통해 솔트를 적용할 수 있습니다
 
+```js
+
     const crypto = require('crypto')
     // password, salt, iteration, 바이트 길이, 알고리즘, 콜백을 인자로 받는다.
     crypto.pbkdf2('생선구이', '소금', 123456, 64, 'sha512', (err, derivedKey)=>{ 
     	if(err) throw err; 
     	console.log(derivedKey.toString('hex')) // hex로 인코딩한다.
     })
+    
+```
 
 - 만약 솔트 값이 고정되어 있다면, 솔트 값이 유출되기 쉽겠죠? 따라서 암호화를 할 때마다 랜덤한 솔트 문자열을 생성한다면 좋을 것입니다. 이와 관련하여 crypto에서 사용할 수 있는 메서드가 바로 `randomBytes` 입니다.
+
+```js
 
         // 랜덤한 솔트를 64바이트 길이로 생성한다. 버퍼 형식으로 반환된다.
         crypto.randomBytes(64, (err, buf)=>{ 
@@ -105,7 +116,7 @@ type: docs
         	 if(err) throw err; 
         		console.log(derivedKey.toString('hex')) })
         })
-
+```
 - 랜덤으로 생성된 솔트는 해싱된 값(derivedKey)와 반드시 함께 저장해야 한다는 점을 명심해 주세요.
 
 솔티드 해시 외에도 HMAC이라는 방법을 사용하여 보안을 강화할 수도 있습니다. 크립토의 `createHMA` 메서드와 함께 알아보세요.

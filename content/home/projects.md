@@ -26,25 +26,14 @@ subtitle = ""
     tag = "*"
 
   [[content.filter_button]]
-    name = "first"
-    tag = ".js-id-first"
+    name = "personal"
+    tag = "personal"
 
   [[content.filter_button]]
-    name = "Web development"
-    tag = "Web development"
-
-  [[content.filter_button]]
-    name = "Maps"
-    tag = "Maps"
-
-  [[content.filter_button]]
-    name = "Pos"
-    tag = "Pos"
+    name = "Team"
+    tag = "Team"
   
   
-  [[content.filter_button]]
-    name = "last"
-    tag = "last"
   
 
 [design]
