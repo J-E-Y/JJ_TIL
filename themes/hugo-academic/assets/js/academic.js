@@ -333,9 +333,8 @@
   $(document).ready(function() {
     // Set dark mode if user chose it.
     let default_mode = 0;  
- 
     if ($('body').hasClass('dark')) {
-      default_mode = 1;  
+      default_mode = 1;
   }
     let dark_mode = parseInt(localStorage.getItem('dark_mode') || default_mode);
     if (dark_mode) {
