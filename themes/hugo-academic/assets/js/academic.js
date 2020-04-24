@@ -81,7 +81,7 @@
     event.preventDefault();
     $('html, body').animate({
       'scrollTop': 0
-    }, 800, function() { default_m
+    }, 800, function() {
       window.location.hash = "";
     });
   });
@@ -332,23 +332,12 @@
 
   $(document).ready(function() {
     // Set dark mode if user chose it.
-    //let default_mode = 0; << 기본값 코드  
-    
-    // Get theme variation (day/night).
-    let defaultThemeVariation;
+    let default_mode = 0;  
+ 
     if ($('body').hasClass('dark')) {
-    //  default_mode = 1; << 기본값 코드 
-      // The `color_theme` of the site is dark.
-      defaultThemeVariation = 1;
-    } else if ($('.js-dark-toggle').length && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      // The visitor prefers dark themes and switching to the dark variation is allowed by admin.
-      defaultThemeVariation = 1;
-    } else {
-      // Default to day (light) theme.
-      defaultThemeVariation = 0;
-    }
-  //let dark_mode = parseInt(localStorage.getItem('dark_mode') || default_mode); // 기본값 코드 
-  let dark_mode = parseInt(localStorage.getItem('dark_mode') || defaultThemeVariation);
+      default_mode = 1;  
+  }
+    let dark_mode = parseInt(localStorage.getItem('dark_mode') || default_mode);
     if (dark_mode) {
       $('body').addClass('dark');
       $('link[title=hl-light]')[0].disabled = true;
