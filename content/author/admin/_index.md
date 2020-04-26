@@ -2,31 +2,35 @@
 authors:
 - admin
 bio: I'm a Software Engineer based in the South Korea.I'm quite interested in all aspects of software development.
-#education:
-#  courses:
-#  - course: PhD in Artificial Intelligence
-#    institution: Stanford University
-#    year: 2012
-#  - course: MEng in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2009
-#  - course: BSc in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2008
+education:
+  courses:
+  - course: Code States,Im-Program 17기 수료 
+    institution: Advanced Software Engineering
+    year: 2019
+  - course: Code States,Pre 35기 수료
+    institution: Basic Software Engineering
+    year: 2019
+  - course: 학사 울사대학교 
+    institution: 생활체육학과
+    year: 2014
+  - course: 전문학사 신안산대학교 
+    institution: 레저스포츠과
+    year: 2010
+
 email: "rightfuljung@gmail.com"
 #interests:
 #- Artificial Intelligence
 #- Computational Linguistics
 #- Information Retrieval
 name: John Jung
-#organizations:
-#- name: Stanford University
-#  url: ""
+organizations:
+- name: Learner
+  url: ""
 #role: Studying
 social:
-#- icon: envelope
-#  icon_pack: fas
-#  link: '#contact'
+- icon: envelope
+  icon_pack: fas
+  link: '#contact'
 #- icon: twitter
 #  icon_pack: fab
 #  link: https://twitter.com/GeorgeCushen

@@ -14,22 +14,42 @@ subtitle = "this is subtitle"
 # 
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 
+
+
+[[feature]]
+  icon = "js-square"
+  icon_pack = "fab"
+  name = "JS"
+  description = "10%"
+  
+[[feature]]
+  icon = "react"
+  icon_pack = "fab"
+  name = "reacteurope"
+  description = "10%"
+
+[[feature]]
+  icon = "facebook"
+  icon_pack = "fab"
+  name = "reacteurope"
+  description = "10%"
+
+[[feature]]
+  icon = "facebook"
+  icon_pack = "fab"
+  name = "reacteurope"
+  description = "10%"
+
+
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = "90%"
+  description = "40%"
   
-[[feature]]
-  icon = "chart-line"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
-  
-[[feature]]
-  icon = "camera-retro"
-  icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+
+
+[design.background]
+   color = "SkyBlue"
 
 +++
