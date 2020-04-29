@@ -1,0 +1,458 @@
+---
+title: __node
+date: '2020-01-15'
+draft: true
+menu:
+  tutorial:
+    parent: "CodeStates"
+    weight: 5
+toc: yes
+type: docs
+---
+
+
+
+
+## Node
+
+* node.js 란?
+
+> 노드는 `V8 엔진`으로 만들어진  자바스크립트 `런타임`이다. 
+
+
+* v8 이란 ?
+
+> v8 complies Javascript directly to native machine code
+
+> 자바스크립트를 기계어로 컴파일 해준다. 
+
+* 런타임이란?
+
+> 프로그래밍 언어가 구동되고 있는 환경 이다 
+
+
+결론적으로 Node.js 란?
+
+node.js 는 자바스크립트를 컴파일 해주는 엔진으로 빌드된 자바스크립트 구동중인 환경이다. 
+
+
+
+## RESTful API
+
+
+* REST(REpresentational State Transfer)
+
+> REST API에 REST는 Representational State Transfer의 약자로 소프트웨어 프로그램 아키텍처의 한 형식입니다.
+
+* Roy T. Fieiding 이라는 사람이 REST 를 만들었다. 
+
+> 만든이유. web을 망가뜨리지 않고, 어떻게 HTTP를 개선할수 있을까라는 생각으로 시작 
+
+
+* REST란???  
+
+> "웹에 존재하는 모든 자원(이미지, 동영상, DB 자원)에 고유한 URI를 부여해 활용"하는 것으로, 자원을 정의하고 자원에 대한 주소를 지정하는 방법론을 의미한다고 한다.
+
+
+
+
+
+
+* REST 구성
+
+> REST API는 다음의 구성으로 이루어져있습니다.
+
+  * 자원 (Resource) - URL
+  * 행위 (Verb) - Http method
+  * 표현 (Representations)
+
+
+* URL 설계시 주의사항
+
+  1. 슬래시 구분자(/)는 계층 관계를 나타내는데 사용
+  
+  2. URI 마지막 문자로 슬래시(/)를 포함하지 않는다.
+  
+  3. 하이픈(-)은 URI 가독성을 높이는데 사용
+  
+  4. 밑줄(_)은 URI에 사용하지 않는다.
+  
+  5. URI 경로에는 소문자가 적합하다.
+  
+  6. 파일확장자는 URI에 포함하지 않는다.
+
+
+
+
+
+## CommonJS
+
+* CommonJS 란?
+
+
+자바스크립트를 모튤화 시켜서 사용하는 것이다.
+
+
+모듈 : 독립적인 작은 코드들이 모여있는 집합. 다른 곳에서 가져다 활용할 수 있는 기능들
+
+
+
+1.`require` 는 nodeJS 에서 사용
+
+
+```js
+const moment = require('moment');
+
+```
+
+2.`import`  는 ES6 에서 새롭게 도입 
+
+```js
+
+import moment from 'moment';
+
+```
+
+
+Node.js에서 exports와 mudule.exports의 차이
+
+
+
+exports
+
+
+* exports를 사용할 때는 exports 객체에 프로퍼티를 추가했다
+* 여러 개의 객체를 내보낼 경우, exports 변수의 속성으로 할당한다.
+
+module.exports
+
+* module.exports를 사용할 때는 module.exports 변수에 아예 새로운 객체를 할당했다.
+
+* 딱 하나의 객체를 내보낼 경우, module.exports 변수 자체에 할당한다.
+
+
+
+![](/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 10.51.23 PM.png)
+
+```js
+
+var x = 10;
+var mod = require('./lib/my-module.js');
+var result = mod.x;
+
+```
+
+```js
+
+
+
+//in lib/my-module.js
+var x = 20;
+exports.x = 30;
+
+
+```
+
+result: 30
+
+
+require이 내보내는 것은 exports라는 객체이다.
+
+(exports객체 안에 보내고 싶은 부분을 담는 것임.)
+
+
+```js
+
+var mod = require('./lib/my-module.js');
+var result = mod.x;
+//in lib/my-module.js:
+
+var x = 10;
+exports.x = 20;
+module.exports.x = 30;
+
+
+```
+
+result: 30
+
+exports는 module.exports를 참조하는 객체이다.
+
+
+
+```js
+
+
+var posts = [
+    { title: "'Post 1", body: 'this is post one'},
+    { title: "Porst 2", body: "this is post two"}
+];
+var newarr =[];
+function getPosts() {
+    setTimeout(()=>{
+    let output = "";
+    posts.forEach((post)=>{
+    newarr.push(post.title)
+    });
+    
+    console.log(newarr)
+    },3000);
+}
+getPosts();
+
+function createPost(post){
+    setTimeout(()=>{
+        posts.push(post)
+    },2000)
+}
+createPost({ title: "'Post 3", body: 'this is post three'})
+
+
+
+```
+
+
+```js
+
+
+// getPosts(); // createPost() 안에 인자값으로 넣는다. 
+var posts = [
+    { title: "'Post 1", body: 'this is post one'},
+    { title: "Porst 2", body: "this is post two"}
+];
+var newarr =[];
+function getPosts() {
+    setTimeout(()=>{
+    let output = "";
+    posts.forEach((post)=>{
+    newarr.push(post.title)
+    });
+    
+    console.log(newarr)
+    },1000);
+}
+// getPosts(); // createPost() 안에 인자값으로 넣는다. 
+
+function createPost(post,callback){
+    setTimeout(()=>{
+        posts.push(post)
+        callback()
+    },2000)
+}
+createPost({ title: "'Post 3", body: 'this is post three'},getPosts)
+
+```
+
+
+
+
+## Express
+
+- **Express** 는 **Node.js** 의 핵심 모듈인 **http**와컴포넌트**를 기반으로 하는 간편한 프레임워크입니다.
+
+> 한마디로 Node 에서의 개발을 빠르고 손쉽게 할 수 있도록 도와주는 역할입니다. 
+
+- **Express**의 장점은 **미들웨어(Middleware)** 구조로,  다양한 기능의 미들웨어를 개발자가 선택하여 결합해 빠르고 손쉽게 사용할 수 있습니다.
+
+
+**Express 서버 생성**
+
+```js
+
+
+var express = require('express');
+    var app = express();
+    
+    app.get('/', function (req, res) {
+      res.send('Hello World!');
+    });
+    
+    app.listen(3000, function () {
+      console.log('Example app listening on port 3000!');
+    });
+```
+
+
+- **실행하기**
+
+```js
+
+$ node app.js
+
+```
+
+### Middleware
+
+- '중간 처리' 역할을 수행하는 소프트웨어를 의미합니다.
+    - 요청에 대한 응답을 완수하기 전까지 중간중간 다양한 일을 처리할 수 있습니다.
+    - 미들웨어 함수 생명주기는 request - response 응답을 주기로 종료됩니다.
+    - 미들웨어 함수 우선순위는 먼저 로드 되는 미들웨어 함수가 먼저 실행됩니다.(**코드 순서가 중요합니다!!**)
+    
+```js
+  
+var app = express();
+    
+    app.use(function (req, res, next) {
+      console.log('Time:', Date.now());
+      next();
+    });
+
+```
+
+body-parser는 body-stream을 메모리 객체에 매핑하기 위한 모듈입니다. chunk를 이용하여, `end` event에서 확인 가능 하셨던 것처럼, 이를 이용하시면, 그 과정이 필요하지 않습니다. 
+
+body-parser는 express 4.16.0+ 에 built-in 되어있습니다. 즉, 설치하지 않아도, 사용하실 수 있습니다.
+
+```js
+
+
+var express = require('express');
+    var bodyParser = require('body-parser');
+    
+    var app = express();
+    
+    // (1) app.use 를 사용하지 않는 경우
+    // create application/json parser
+    var jsonParser = bodyParser.json()
+     
+    // create application/x-www-form-urlencoded parser
+    var urlencodedParser = bodyParser.urlencoded({ extended: false })
+    
+     
+    // POST /login gets urlencoded bodies
+    app.post('/login', urlencodedParser, function (req, res) {
+      res.send('welcome, ' + req.body.username)
+    })
+    
+     
+    // POST /api/users gets JSON bodies
+    app.post('/api/users', jsonParser, function (req, res) {
+      // create user in req.body
+    })
+   
+    // (2) app.use 를 사용한다면
+    app.use(bodyParser.json());
+    // or
+    app.use(express.json());
+    
+    var express = require('express');
+    var app = express();
+    var cookieParser = require('cookie-parser');
+    
+    // load the cookie-parsing middleware
+    app.use(cookieParser());
+```
+
+
+### Routing
+
+***라우팅*** 은 **URI**(또는 경로) 및 특정한 **HTTP** 요청 메소드(**GET, POST** 등)인 특정 엔드포인트에 대한 
+
+클라이언트 요청에 애플리케이션이 응답하는 방법을 결정하는 것을 말합니다.
+
+파일을 하나로 해도 무관하지만 다루어야 할 규모가 커지고 엔드포인트 또한 많아진다면 파일을 카테고리 별로 
+
+나누어서 가독성을 높히고 복잡도를 낮출 수 있습니다. 
+
+ 각 라우트는 하나 이상의 핸들러 함수를 가질 수 있으며, 이러한 함수는 라우트가 일치할 때 실행됩니다.
+
+    app.METHOD(PATH, HANDLER)
+
+- `app`은 `express`의 인스턴스입니다.
+- `METHOD`는 [HTTP 요청 메소드]입니다.
+- `PATH`는 서버에서의 경로입니다.
+- `HANDLER`는 라우트가 일치할 때 실행되는 함수입니다.
+
+```js
+
+    // **ex)**
+    app.get('/', function (req, res) {
+      res.send('Hello World!');
+    });
+    
+    app.post('/', function (req, res) {
+      res.send('Got a POST request');
+    });
+
+```
+
+### Route handler
+
+[미들웨어]와 비슷하게 작동하는 여러 콜백 함수를 제공하여 요청을 처리할 수 있습니다. 유일한 차이점은 이러한
+
+ 콜백은 `next('route')`를 호출하여 나머지 라우트 콜백을 우회할 수도 있다는 점입니다. 
+
+이러한 메커니즘을 이용하면 라우트에 대한 사전 조건을 지정한 후, 현재의 라우트를 계속할 이유가 없는 경우에는 
+
+제어를 후속 라우터에 전달할 수 있습니다.
+
+```js
+
+    app.get('/example/b', function (req, res, next) {
+      console.log('the response will be sent by the next function);
+      next(); //--> 다음 function 을 실행시킵니다.
+    }, function (req, res) {
+      res.send('Hello from B!');
+    });
+
+```
+
+
+### Router
+
+```js
+
+var express = require('express');
+var router = express.Router();
+
+```
+
+라우터는 미들웨어 자체처럼 동작하므로 app.use ()에 대한 인수 또는 다른 라우터의 use () 메소드에 대한 인수로 사용할 수 있습니다 .
+
+```js
+
+router.use(function (req, res, next) {
+// 
+      next()
+    })
+    // 이벤트로 끝나는 요청을 처리합니다
+    router.get('/events', function (req, res, next) {
+    //
+    })
+
+```
+
+    
+경로를 파일 , 또는 미니 앱으로 분리하는 방식으로 특정 루트 URL 에 라우터를 사용할 수 있습니다.
+
+```js
+
+app.use('/calendar', router)
+
+```
+
+
+## Event Loop
+
+
+![](/tutorial/2020-02-08-node_files/Screen Shot 2020-04-18 at 10.14.55 AM.png)
+
+
+
+![](/tutorial/2020-02-08-node_files/Screen Shot 2020-01-15 at 11.21.33 AM.png)
+
+
+> Event Loop는 Call Stack과 Callback Queue의 상태를 체크하여,
+Call Stack이 빈 상태가 되면, Callback Queue의 첫번째 콜백을 Call Stack으로 밀어넣는다. 이러한 반복적인 행동을 틱(tick) 이라 부른다.
+
+> 자바스크립트를 `단일 스레드 프로그래밍 언어`라 한번에 하나씩 밖에 실행할 수 없다.
+
+> event Loop  영상
+
+https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title
+
+
+
+
+
+
