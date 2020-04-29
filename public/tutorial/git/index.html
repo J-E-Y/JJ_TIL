@@ -380,19 +380,6 @@
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/tutorial/2020-02-08-configure/">8.configure</a>
-    <ul class="nav docs-sidenav">
-      
-      <li >
-        <a href="/tutorial/2020-03-20-npm-module/">__Npm module</a>
-      </li>
-      
-    </ul>
-    
-
-  </div>
-  
-  <div class="docs-toc-item">
     <a class="docs-toc-link" href="/tutorial/javascript_dictionary/">CodeStates</a>
     <ul class="nav docs-sidenav">
       
@@ -494,6 +481,7 @@
 <li><a href="#git-commit-amend">git :commit &ndash; amend</a></li>
 <li><a href="#git-cheakout">git cheakout&ndash;</a></li>
 <li><a href="#git-reset">git reset</a></li>
+<li><a href="#git-branch-이름-변경">git branch 이름 변경</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -942,6 +930,40 @@ git config --global user.name &quot;yourGitHubusername&quot;
 <ul>
 <li>add 한 파일을 다시 되돌리기</li>
 </ul>
+
+<h2 id="git-branch-이름-변경">git branch 이름 변경</h2>
+
+<ul>
+<li>이름을 바꾸려는 로컬 지점으로 이동</li>
+</ul>
+
+<blockquote>
+<p>git checkout &lt;기존 이름&gt;</p>
+</blockquote>
+
+<ul>
+<li>다음을 입력하여 로컬 지점의 이름을 변경한다.</li>
+</ul>
+
+<blockquote>
+<p>git branch -m &lt;새 이름&gt;</p>
+</blockquote>
+
+<ul>
+<li>&lt;새 이름&gt; 로컬 브랜치를 푸시하고 업스트림 브랜치를 재설정한다.</li>
+</ul>
+
+<blockquote>
+<p>git push origin -u &lt;새 이름&gt;</p>
+</blockquote>
+
+<ul>
+<li>&lt;기존 이름&gt;원격 브랜치를 삭제한다.</li>
+</ul>
+
+<blockquote>
+<p>git push origin &ndash;delete <old\_name></p>
+</blockquote>
 
           </div>
 

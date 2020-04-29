@@ -12,6 +12,8 @@ type: docs
 
 
 
+
+
 ## 1.Command Line (터미널)
 
 
@@ -426,16 +428,32 @@ git config --global user.name "yourGitHubusername"
 
 
 
-
-
-
-
 ## git reset
 
 
 * add 한 파일을 다시 되돌리기 
 
+## git branch 이름 변경
 
+* 이름을 바꾸려는 로컬 지점으로 이동
+
+> git checkout <기존 이름>
+
+
+* 다음을 입력하여 로컬 지점의 이름을 변경한다.
+
+
+> git branch -m <새 이름>
+
+
+
+* <새 이름> 로컬 브랜치를 푸시하고 업스트림 브랜치를 재설정한다.
+
+> git push origin -u <새 이름>
+
+* <기존 이름>원격 브랜치를 삭제한다.
+
+> git push origin --delete <old\_name>
 
 
 

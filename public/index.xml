@@ -1192,26 +1192,6 @@ let promise1 = new Promise((resolve, reject)=&amp;gt;{
     </item>
     
     <item>
-      <title>__Npm module</title>
-      <link>/tutorial/2020-03-20-npm-module/</link>
-      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/2020-03-20-npm-module/</guid>
-      <description>
-
-&lt;h2 id=&#34;debounce&#34;&gt;debounce&lt;/h2&gt;
-
-&lt;p&gt;input창에 onchange 를 하면 버튼을 누를때마다 리소스가 증가한다.
-이것을 방지하기 위한 debounce&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;npm install lodash
-
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
       <title>__node</title>
       <link>/tutorial/2020-02-08-node/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
@@ -3606,55 +3586,6 @@ app.use(cors()); // 4. 실행한다.
     </item>
     
     <item>
-      <title>6.configure</title>
-      <link>/tutorial/2020-02-08-configure/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/2020-02-08-configure/</guid>
-      <description>
-
-&lt;h2 id=&#34;visual-studio&#34;&gt;visual studio&lt;/h2&gt;
-
-&lt;p&gt;Material Icon Them
-DBdiagram 쓰기
-ERD 공부&lt;/p&gt;
-
-&lt;p&gt;magnet 맥스토어
-* vim
-* git hostoy
-* html boilerplate&lt;/p&gt;
-
-&lt;p&gt;eslint-cofig-prettier 충돌나지 않게 하기&lt;/p&gt;
-
-&lt;h2 id=&#34;mysql&#34;&gt;Mysql&lt;/h2&gt;
-
-&lt;p&gt;Mysql 은 디비 이름
-SQL 은 디비를 다루기 위한 언어&lt;/p&gt;
-
-&lt;p&gt;터미널 시작&lt;/p&gt;
-
-&lt;p&gt;1.
-cd /usr/local/mysql/bin&lt;/p&gt;
-
-&lt;p&gt;2.
-./mysql -uroot -p&lt;/p&gt;
-
-&lt;p&gt;테이블 생성&lt;/p&gt;
-
-&lt;h1 id=&#34;port-3000-이미-사용중&#34;&gt;port 3000 이미 사용중?&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Something is already running on port 3000&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;
-npx kill-port 3000
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Bootstrap</title>
       <link>/tutorial/bootstrap/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -4451,6 +4382,40 @@ git config --global user.name &amp;quot;yourGitHubusername&amp;quot;
 &lt;ul&gt;
 &lt;li&gt;add 한 파일을 다시 되돌리기&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&#34;git-branch-이름-변경&#34;&gt;git branch 이름 변경&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;이름을 바꾸려는 로컬 지점으로 이동&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;git checkout &amp;lt;기존 이름&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;다음을 입력하여 로컬 지점의 이름을 변경한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;git branch -m &amp;lt;새 이름&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;새 이름&amp;gt; 로컬 브랜치를 푸시하고 업스트림 브랜치를 재설정한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;git push origin -u &amp;lt;새 이름&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;기존 이름&amp;gt;원격 브랜치를 삭제한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;git push origin &amp;ndash;delete &lt;old\_name&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
