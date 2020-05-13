@@ -4,10 +4,10 @@ external_link:
 image:
   caption: Photo by Toa Heftiba on Unsplash
   focal_point: Smart
-summary: 무엇을 만들까?
+summary: Coming Soon
 tags:
-- Team
-title: new project
+- Personal
+title: New Proeject
 ---
 
 **Previous work**:

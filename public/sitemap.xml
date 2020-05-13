@@ -323,11 +323,16 @@
   </url>
   
   <url>
-    <loc>/displaydocs/</loc>
+    <loc>/project/new-project/</loc>
   </url>
   
   <url>
-    <loc>/project/new-project/</loc>
+    <loc>/tags/personal/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/displaydocs/</loc>
   </url>
   
 </urlset>

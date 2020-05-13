@@ -26,8 +26,8 @@ subtitle = ""
     tag = "*"
 
   [[content.filter_button]]
-    name = "personal"
-    tag = "personal"
+    name = "Personal"
+    tag = "Personal"
 
   [[content.filter_button]]
     name = "Team"
