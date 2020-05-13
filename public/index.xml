@@ -23147,7 +23147,7 @@ console.log(Object.assign(target, source)); // { x: 1, y: 2, z: 3 }
     </item>
     
     <item>
-      <title>Dream-maker</title>
+      <title>Dream Maker</title>
       <link>/project/dream-maker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
