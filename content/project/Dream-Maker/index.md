@@ -4,11 +4,8 @@ external_link: https://github.com/J-E-Y/dreammaker-client
 image:
   caption: Photo by Toa Heftiba on Unsplash
   focal_point: Smart
-summary: 설문조사 통해 진로를 추천 받을수 있는 `웹 서비스`
+summary: 배너, 이벤트 및 쿠폰 기능을 마케팅팀 에서 관리자 페이지를 통해 등록할수 있게하는 `웹앱`
 tags:
 - Team
-title: Dream Maker
+title: Dream-maker
 ---
-
-**Previous work**:
-
