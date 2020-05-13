@@ -319,12 +319,12 @@
   </url>
   
   <url>
-    <loc>/tags/pos/</loc>
-    <priority>0</priority>
+    <loc>/project/dream-maker/</loc>
   </url>
   
   <url>
-    <loc>/project/dream-maker/</loc>
+    <loc>/tags/pos/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

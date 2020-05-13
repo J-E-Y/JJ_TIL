@@ -6,7 +6,7 @@ education:
   courses:
   - course: Code States,Im-Program 17기 수료 
     institution: Advanced Software Engineering
-    year: 2019
+    year: 2020
   - course: Code States,Pre 35기 수료
     institution: Basic Software Engineering
     year: 2019
