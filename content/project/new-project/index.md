@@ -6,7 +6,7 @@ image:
   focal_point: Smart
 summary: 무엇을 만들까?
 tags:
-- Pos
+- Team
 title: new project
 ---
 

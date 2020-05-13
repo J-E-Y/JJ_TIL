@@ -29,5 +29,14 @@
       <description>질문지를 통해 진로찾기를 도와주는 &lt;code&gt;웹 서비스&lt;/code&gt;</description>
     </item>
     
+    <item>
+      <title>new project</title>
+      <link>/project/new-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/new-project/</guid>
+      <description>무엇을 만들까?</description>
+    </item>
+    
   </channel>
 </rss>
