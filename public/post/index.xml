@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on JohnJung</title>
@@ -32,7 +32,7 @@ Debounce 와 Throttle 차이점은? 디바운싱과 스로틀의 가장 큰 차�
       <description>기업협업 프로젝트 Dog-Mate 4명에서 팀을 이루어 프론트2명 백엔드 2명 으로 시작하였다.
 프론트와 백엔드 스택은 이렇다 .
 첫번째 2주 프로젝트와는 다르게 새로운 기술 스택이 추가되었다.
-Front End React,Redux,Redux toolkit,material ui Back End TypeORM,express,typescript-rest Etc TypeScript,eslint,mocha/chai,prettier 1차 배포 후 피드백 배포를 진행하고 기업에서 일하고 계신분에게 피드백을 얻게 되었다.
+Front End	React,Redux,Redux toolkit,material ui Back End	TypeORM,express,typescript-rest Etc	TypeScript,eslint,mocha/chai,prettier 1차 배포 후 피드백 배포를 진행하고 기업에서 일하고 계신분에게 피드백을 얻게 되었다.
 프론트에서는 전반적으로 redux 를 쓰며 이익을 얻는 면이 부족한것 이 아닐까라는 의견을 듣게 되었고 저또한 코드를 작성하며 redux 를 굳이 써야하는 이유를 아직 깨닫지 못했다.</description>
     </item>
     
@@ -42,7 +42,7 @@ Front End React,Redux,Redux toolkit,material ui Back End TypeORM,express,typescr
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/redux/</guid>
-      <description> Do you need Redux?? </description>
+      <description>Do you need Redux?? </description>
     </item>
     
     <item>
@@ -51,7 +51,7 @@ Front End React,Redux,Redux toolkit,material ui Back End TypeORM,express,typescr
       <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/typescript/</guid>
-      <description> 설치 install npx create-react-app my-app --template typescript  </description>
+      <description>설치 install npx create-react-app my-app --template typescript </description>
     </item>
     
     <item>
@@ -60,7 +60,9 @@ Front End React,Redux,Redux toolkit,material ui Back End TypeORM,express,typescr
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/react-with-babel-or-react-with-typescript/</guid>
-      <description>React with Babel [es6,jsx] 바벨이란?
+      <description>React with Babel [es6,jsx] ![](/post/2020-03-11-react-with-babel-or-react-with-typescript_files/Screen Shot 2020-03-11 at 7.45.23 PM.png)
+![](/post/2020-03-11-react-with-babel-or-react-with-typescript_files/Screen Shot 2020-03-11 at 8.04.29 PM.png)
+바벨이란?
 바벨은 컴파일러 버전이 틀린 자바스크립트 문법을 읽을수 있게 컴파일 해주는 것이다.
 react를 돌리기 위해서는 필수적인 모듈이 필요하다. 리엑트를 설정할때 필수적인것 1.Module bundler webpack :
 2.Loader : webpack 이 jsx 가 들어있는 파일을 컴퍼넌트를 작성한 파일을 읽고나서 설정하는 곳이 Lpader 이다. babel-loader : loader 중에 가장 필수로 들어가는게 바벨 loader이다. 바벨로드를 쓰기위해서 babel-core 받아야하고 어떤 바벨을 쓸것이냐 babel-preset-env 받아야 하고 Jsx 를 transform하기 위해서는 babel-plugin-transform-react-jsx 받아야 한다.</description>
@@ -78,9 +80,9 @@ Javascript + type = typescript!
 타입스크립트의 실행기는 무엇인가?
 그것은 라이브러리다. 언어인데 실행기가 라이브러리라고? 맞다 .
 그래서 버그가 있다.
+![](/post/2020-03-10-typesript_files/Screen Shot 2020-03-10 at 9.05.02 PM.png)
 TypeScript 또한 자바스크립트 대체 언어의 하나로써 자바스크립트(ES5)의 Superset(상위확장)이다
-TypeScript 컴파일러(tsc)는 TypeScript 파일(.ts)을 자바스크립트 파일로 컴파일 || 트랜스파일링한다. 컴파일과 트랜스파일링은 같은 의미이다.
- 컴파일은 일반적으로 소스 코드를 바이트 코드로 변환하는 작업을 의미한다.</description>
+TypeScript 컴파일러(tsc)는 TypeScript 파일(.ts)을 자바스크립트 파일로 컴파일 || 트랜스파일링한다. 컴파일과 트랜스파일링은 같은 의미이다.</description>
     </item>
     
     <item>
@@ -89,7 +91,7 @@ TypeScript 컴파일러(tsc)는 TypeScript 파일(.ts)을 자바스크립트 파
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/my-first-project-dreammaker/</guid>
-      <description> 프로젝트에서 가장 중요했던 것은? 초반에 조급하지 않고 충분하게 구조를 계획하고 설계하는것에 필요성과 의사소통의 중요성을 알게 되었습니다. 상대방에 말을 이해하고 듣는것의 얼마나 중요한지를 조금 더 알게 되었던것 같습니다.
+      <description>프로젝트에서 가장 중요했던 것은? 초반에 조급하지 않고 충분하게 구조를 계획하고 설계하는것에 필요성과 의사소통의 중요성을 알게 되었습니다. 상대방에 말을 이해하고 듣는것의 얼마나 중요한지를 조금 더 알게 되었던것 같습니다.
 프로젝트에서 커뮤니케이션 이란? 서로 어떠한 일의 결과를 만들기위한 필수과정
 프로젝트에서 협업이란? 같이하는 즐거운 일
 프로젝트에서 기획이란? 장점은 중심에서 벗어나 길을 잊어 버릴수 상황을 보호한다. 단점은 새로운것이 정해진후에 창의적인 생각을 못하게 될수 있다.
@@ -114,7 +116,8 @@ TypeScript 컴파일러(tsc)는 TypeScript 파일(.ts)을 자바스크립트 파
       
       <guid>/post/2020-03-05-dreammaker-report-7/</guid>
       <description>에러 발견 서버에서 데이터를 받아서 클라이언트에서 핸들링 할때 home page 에서 이러한 메시지의 경고창을 얻게 되었다.
- A cookie associated with a cross-site resource at http://google.com/ was set without the SameSite attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with SameSite=None and Secure. You can review cookies in developer tools under Application&amp;gt;Storage&amp;gt;Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.</description>
+ A cookie associated with a cross-site resource at http://google.com/ was set without the SameSite attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with SameSite=None and Secure. You can review cookies in developer tools under Application&amp;gt;Storage&amp;gt;Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.
+ how to solve  This is a companion repo for the &amp;ldquo;SameSite cookies explained&amp;rdquo; article on web.</description>
     </item>
     
     <item>
@@ -139,7 +142,7 @@ TypeScript 컴파일러(tsc)는 TypeScript 파일(.ts)을 자바스크립트 파
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/dreammaker-report-5/</guid>
-      <description> 1. 오늘의 To-do List (목록) 우분투에서 EC2 인스턴스 연결 FileZilla ftp서버 연결 클라이언트에서 서버에 요청할 형식들 구성 논의 서버에서 클라이언트에 보내줄 형식들 구성 논의 시퀄라이즈에서 mysql curd 명령어 생각, JOIN 문 등 클라이언트 초기 화면 핸들링 후에 첫 P/R 보내기 비회원 전용 테이블 스키마 설계 설문 시작전 선택할 데이터들에 대한 값 보내는 방법 논의  2. 오늘 논의 한 일  EC2 연결한 민재님 컴퓨터에서 우분투가 잘 못되어 다시 설치 후에 EC2를 연결하였는데 서버와 연결이 잘 되지 않음 → 보안 설정 후 문제 해결 Filezilla를 통해 EC2에서 CLI작업 보다 편하게 하고 싶어서 연결시도 하였으나 계속 접속 실패 → 우분투 지우기 전에는 잘 되었으나, 현재 Filezilla와 연결이 되질 않음, 각 팀원들 전부 FIleZilla를 설치하고 pem키를 통해 서버 연결하는 것 성공, 민재님도 지우고 다시 새 서버 만들기를 통해 연결 성공  </description>
+      <description>1. 오늘의 To-do List (목록)  우분투에서 EC2 인스턴스 연결 FileZilla ftp서버 연결 클라이언트에서 서버에 요청할 형식들 구성 논의 서버에서 클라이언트에 보내줄 형식들 구성 논의 시퀄라이즈에서 mysql curd 명령어 생각, JOIN 문 등 클라이언트 초기 화면 핸들링 후에 첫 P/R 보내기 비회원 전용 테이블 스키마 설계 설문 시작전 선택할 데이터들에 대한 값 보내는 방법 논의  2. 오늘 논의 한 일  EC2 연결한 민재님 컴퓨터에서 우분투가 잘 못되어 다시 설치 후에 EC2를 연결하였는데 서버와 연결이 잘 되지 않음 → 보안 설정 후 문제 해결 Filezilla를 통해 EC2에서 CLI작업 보다 편하게 하고 싶어서 연결시도 하였으나 계속 접속 실패 → 우분투 지우기 전에는 잘 되었으나, 현재 Filezilla와 연결이 되질 않음, 각 팀원들 전부 FIleZilla를 설치하고 pem키를 통해 서버 연결하는 것 성공, 민재님도 지우고 다시 새 서버 만들기를 통해 연결 성공  </description>
     </item>
     
     <item>
@@ -148,7 +151,7 @@ TypeScript 컴파일러(tsc)는 TypeScript 파일(.ts)을 자바스크립트 파
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/dreammaker-report-4/</guid>
-      <description>1. 오늘의 To-do List (목록) 어제 조사한 유형별 흥미조사 및 질문지 답변지 관한 내용 공유 DB에 어떻게 원하는 질문과 결과를 넣고 화면에 가져올지 DB 스키마 작성 해보기 클라이언트 UI 화면 목업 만들기 SR 카드 수정 및 분배 ( SR카드는 추가 될 수 있고 변경 될 수 있다. 가져갈 때 시간만 잘 지키자) 홀랜드 검사 유형에 따른 설문내용과 직업 조사 하고 작성 Git - Workflow 연습 -2 (시간 부족으로 못함) AWS 배포 - S3 (시간 부족으로 못함)  2.</description>
+      <description>1. 오늘의 To-do List (목록)  어제 조사한 유형별 흥미조사 및 질문지 답변지 관한 내용 공유 DB에 어떻게 원하는 질문과 결과를 넣고 화면에 가져올지 DB 스키마 작성 해보기 클라이언트 UI 화면 목업 만들기 SR 카드 수정 및 분배 ( SR카드는 추가 될 수 있고 변경 될 수 있다. 가져갈 때 시간만 잘 지키자) 홀랜드 검사 유형에 따른 설문내용과 직업 조사 하고 작성 Git - Workflow 연습 -2 (시간 부족으로 못함) AWS 배포 - S3 (시간 부족으로 못함)  2.</description>
     </item>
     
     <item>
@@ -157,8 +160,8 @@ TypeScript 컴파일러(tsc)는 TypeScript 파일(.ts)을 자바스크립트 파
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/dreammaker-report-3/</guid>
-      <description>1. 오늘의 To-do List (목록) Git-Workflow - 연습 2 컴포넌트 구성 (목업) AWS 리액트 배포 AWS EC2 설정 AWS RDS 설정 데이터베이스 입력작업 (question, answer, holland 테이블 일부만 완료) 엔지니어 체크인 및 피드백 받기 (오후 3시 ~ 오후 4시 예정)  2. 오늘 논의 한 일 GIt-Workflow test-2 진행 중 이슈
- Workflow시에 pull-request 하고 업데이트 된 브랜치 정보를 자신의 저장소로 pull 해오는게 안된다. → 각자 remote연결을 통하여 문제 해결함 Dev브랜치에서 Pull로 받아온 파일들이 기존 feature1 브랜치로 넘어오지 않는다.</description>
+      <description>1. 오늘의 To-do List (목록)  Git-Workflow - 연습 2 컴포넌트 구성 (목업) AWS 리액트 배포 AWS EC2 설정 AWS RDS 설정 데이터베이스 입력작업 (question, answer, holland 테이블 일부만 완료) 엔지니어 체크인 및 피드백 받기 (오후 3시 ~ 오후 4시 예정)  2. 오늘 논의 한 일 GIt-Workflow test-2 진행 중 이슈
+  Workflow시에 pull-request 하고 업데이트 된 브랜치 정보를 자신의 저장소로 pull 해오는게 안된다. → 각자 remote연결을 통하여 문제 해결함</description>
     </item>
     
     <item>
@@ -168,7 +171,11 @@ TypeScript 컴파일러(tsc)는 TypeScript 파일(.ts)을 자바스크립트 파
       
       <guid>/post/daily-project-report-2/</guid>
       <description>DB Schema 만들기
-UI 만들기</description>
+UI 만들기
+![](/post/2020-02-25-daily-project-report-2_files/Screen Shot 2020-02-25 at 3.14.40 PM.png)
+![](/post/2020-02-25-daily-project-report-2_files/Screen Shot 2020-02-25 at 2.21.49 PM.png)
+![](/post/2020-02-25-daily-project-report-2_files/Screen Shot 2020-02-25 at 3.15.45 PM.png)
+![](/post/2020-02-25-daily-project-report-2_files/Screen Shot 2020-02-25 at 3.16.04 PM.png)</description>
     </item>
     
     <item>
@@ -177,7 +184,7 @@ UI 만들기</description>
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/project/</guid>
-      <description> 팀명  Dreammaker  프로젝트 명  Dreammaker  Stand up Meeting time  매일 10시 30분  Team Rule  슬랙 접속시간은 모각코 형식으로 행아웃에서 또는 줌 에서 카메라를 켜놓고 각자 코딩 진행 한다. - 성용 코드 작성시 주석에 신경 쓸 것 (상대방이 이해할 수 있도록, 상대방의 생각과 내 생각이 다를 수 있다.) -민재 의견 조율 사항이 필요시 다수결로 해서 의견 조율 할 것 - 의영 1주일에 1번 정도는 refresh 타임을 갖자 (서로 어땠는지 , 프로젝트 방향에 대한 이야기, 또는 각자의 애로사항 등) - 의영 &amp;lt;토요일 오전타임&amp;gt;  Stack  Front End: Bootstrap,React,css,html,javasript Back End: express,mysql,nodejs Etc: api,eslint,prettier,redux  Project Step Task  [[F]추가 디자인 및 애니메이션 기능] [[F]결과검사 페이지 디자인(CSS&amp;amp;부트스트랩)] [[F]흥미검사 페이지 디자인(CSS&amp;amp;부트스트랩)] [[F] 검사 결과 화면 작성] [F] 테스트 화면 작성 [REACT 배포 테스트] [[F]UI 설계] [[F,B]DB 스키마 작성] [GIT WORKFLOW 테스트] [[F,B]흥미 검사 결과지 가공(필터링)] [[F,B]흥미 검사 질문지 가공(필터링)] [B]흥미 검사 질문지 API화 [B]API 문서 작성하기 [[F] AWS-S3 설정 ] [[B] AWS-E3 설정] [[B] AWS-RDS 설정]  </description>
+      <description>팀명  Dreammaker  프로젝트 명  Dreammaker  Stand up Meeting time  매일 10시 30분  Team Rule  슬랙 접속시간은 모각코 형식으로 행아웃에서 또는 줌 에서 카메라를 켜놓고 각자 코딩 진행 한다. - 성용 코드 작성시 주석에 신경 쓸 것 (상대방이 이해할 수 있도록, 상대방의 생각과 내 생각이 다를 수 있다.) -민재 의견 조율 사항이 필요시 다수결로 해서 의견 조율 할 것 - 의영 1주일에 1번 정도는 refresh 타임을 갖자 (서로 어땠는지 , 프로젝트 방향에 대한 이야기, 또는 각자의 애로사항 등) - 의영 &amp;lt;토요일 오전타임&amp;gt;  Stack  Front End: Bootstrap,React,css,html,javasript Back End: express,mysql,nodejs Etc: api,eslint,prettier,redux  Project Step !</description>
     </item>
     
   </channel>

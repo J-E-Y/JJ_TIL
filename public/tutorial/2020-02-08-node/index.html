@@ -29,7 +29,7 @@
   
   <meta name="description" content="Node  node.js 란?   노드는 V8 엔진으로 만들어진 자바스크립트 런타임이다.
   v8 이란 ?   v8 complies Javascript directly to native machine code
-자바스크립트를 기계어로 컴파일 해준다.
+  자바스크립트를 기계어로 컴파일 해준다.
   런타임이란?   프로그래밍 언어가 구동되고 있는 환경 이다
  결론적으로 Node.js 란?
 node.js 는 자바스크립트를 컴파일 해주는 엔진으로 빌드된 자바스크립트 구동중인 환경이다.
@@ -138,7 +138,7 @@ RESTful API  REST(REpresentational State Transfer)   REST API에 REST는 Represe
   <meta property="og:title" content="__node | JohnJung">
   <meta property="og:description" content="Node  node.js 란?   노드는 V8 엔진으로 만들어진 자바스크립트 런타임이다.
   v8 이란 ?   v8 complies Javascript directly to native machine code
-자바스크립트를 기계어로 컴파일 해준다.
+  자바스크립트를 기계어로 컴파일 해준다.
   런타임이란?   프로그래밍 언어가 구동되고 있는 환경 이다
  결론적으로 Node.js 란?
 node.js 는 자바스크립트를 컴파일 해주는 엔진으로 빌드된 자바스크립트 구동중인 환경이다.
@@ -449,22 +449,20 @@ RESTful API  REST(REpresentational State Transfer)   REST API에 REST는 Represe
       
 
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#node">Node</a></li>
-<li><a href="#restful-api">RESTful API</a></li>
-<li><a href="#commonjs">CommonJS</a></li>
-<li><a href="#express">Express</a>
-<ul>
-<li><a href="#middleware">Middleware</a></li>
-<li><a href="#routing">Routing</a></li>
-<li><a href="#route-handler">Route handler</a></li>
-<li><a href="#router">Router</a></li>
-</ul></li>
-<li><a href="#event-loop">Event Loop</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#node">Node</a></li>
+    <li><a href="#restful-api">RESTful API</a></li>
+    <li><a href="#commonjs">CommonJS</a></li>
+    <li><a href="#express">Express</a>
+      <ul>
+        <li><a href="#middleware">Middleware</a></li>
+        <li><a href="#routing">Routing</a></li>
+        <li><a href="#route-handler">Route handler</a></li>
+        <li><a href="#router">Router</a></li>
+      </ul>
+    </li>
+    <li><a href="#event-loop">Event Loop</a></li>
+  </ul>
 </nav>
 
       <ul class="nav toc-top">
@@ -483,442 +481,359 @@ RESTful API  REST(REpresentational State Transfer)   REST API에 REST는 Represe
           <h1 itemprop="name">__node</h1>
 
           <div class="article-style" itemprop="articleBody">
-            
-
-<h2 id="node">Node</h2>
-
+            <h2 id="node">Node</h2>
 <ul>
 <li>node.js 란?</li>
 </ul>
-
 <blockquote>
 <p>노드는 <code>V8 엔진</code>으로 만들어진  자바스크립트 <code>런타임</code>이다.</p>
 </blockquote>
-
 <ul>
 <li>v8 이란 ?</li>
 </ul>
-
 <blockquote>
 <p>v8 complies Javascript directly to native machine code</p>
-
+</blockquote>
+<blockquote>
 <p>자바스크립트를 기계어로 컴파일 해준다.</p>
 </blockquote>
-
 <ul>
 <li>런타임이란?</li>
 </ul>
-
 <blockquote>
 <p>프로그래밍 언어가 구동되고 있는 환경 이다</p>
 </blockquote>
-
 <p>결론적으로 Node.js 란?</p>
-
 <p>node.js 는 자바스크립트를 컴파일 해주는 엔진으로 빌드된 자바스크립트 구동중인 환경이다.</p>
-
 <h2 id="restful-api">RESTful API</h2>
-
 <ul>
 <li>REST(REpresentational State Transfer)</li>
 </ul>
-
 <blockquote>
 <p>REST API에 REST는 Representational State Transfer의 약자로 소프트웨어 프로그램 아키텍처의 한 형식입니다.</p>
 </blockquote>
-
 <ul>
 <li>Roy T. Fieiding 이라는 사람이 REST 를 만들었다.</li>
 </ul>
-
 <blockquote>
 <p>만든이유. web을 망가뜨리지 않고, 어떻게 HTTP를 개선할수 있을까라는 생각으로 시작</p>
 </blockquote>
-
 <ul>
-<li>REST란???<br /></li>
+<li>REST란???</li>
 </ul>
-
 <blockquote>
-<p>&ldquo;웹에 존재하는 모든 자원(이미지, 동영상, DB 자원)에 고유한 URI를 부여해 활용&rdquo;하는 것으로, 자원을 정의하고 자원에 대한 주소를 지정하는 방법론을 의미한다고 한다.</p>
+<p>&ldquo;웹에 존재하는 모든 자원(이미지, 동영상, DB 자원)에 고유한 URI를 부여해 활용&quot;하는 것으로, 자원을 정의하고 자원에 대한 주소를 지정하는 방법론을 의미한다고 한다.</p>
 </blockquote>
-
 <ul>
 <li>REST 구성</li>
 </ul>
-
 <blockquote>
 <p>REST API는 다음의 구성으로 이루어져있습니다.</p>
 </blockquote>
-
 <ul>
-<li>자원 (Resource) - URL</li>
-<li>행위 (Verb) - Http method</li>
-
-<li><p>표현 (Representations)</p></li>
-
-<li><p>URL 설계시 주의사항</p>
-
+<li>
+<p>자원 (Resource) - URL</p>
+</li>
+<li>
+<p>행위 (Verb) - Http method</p>
+</li>
+<li>
+<p>표현 (Representations)</p>
+</li>
+<li>
+<p>URL 설계시 주의사항</p>
 <ol>
-<li><p>슬래시 구분자(/)는 계층 관계를 나타내는데 사용</p></li>
-
-<li><p>URI 마지막 문자로 슬래시(/)를 포함하지 않는다.</p></li>
-
-<li><p>하이픈(-)은 URI 가독성을 높이는데 사용</p></li>
-
-<li><p>밑줄(_)은 URI에 사용하지 않는다.</p></li>
-
-<li><p>URI 경로에는 소문자가 적합하다.</p></li>
-
-<li><p>파일확장자는 URI에 포함하지 않는다.</p></li>
-</ol></li>
+<li>
+<p>슬래시 구분자(/)는 계층 관계를 나타내는데 사용</p>
+</li>
+<li>
+<p>URI 마지막 문자로 슬래시(/)를 포함하지 않는다.</p>
+</li>
+<li>
+<p>하이픈(-)은 URI 가독성을 높이는데 사용</p>
+</li>
+<li>
+<p>밑줄(_)은 URI에 사용하지 않는다.</p>
+</li>
+<li>
+<p>URI 경로에는 소문자가 적합하다.</p>
+</li>
+<li>
+<p>파일확장자는 URI에 포함하지 않는다.</p>
+</li>
+</ol>
+</li>
 </ul>
-
 <h2 id="commonjs">CommonJS</h2>
-
 <ul>
 <li>CommonJS 란?</li>
 </ul>
-
 <p>자바스크립트를 모튤화 시켜서 사용하는 것이다.</p>
-
 <p>모듈 : 독립적인 작은 코드들이 모여있는 집합. 다른 곳에서 가져다 활용할 수 있는 기능들</p>
-
 <p>1.<code>require</code> 는 nodeJS 에서 사용</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">moment</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;moment&#39;</span>);
 
-<pre><code class="language-js">const moment = require('moment');
+</code></pre></div><p>2.<code>import</code>  는 ES6 에서 새롭게 도입</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">moment</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;moment&#39;</span>;
 
-</code></pre>
-
-<p>2.<code>import</code>  는 ES6 에서 새롭게 도입</p>
-
-<pre><code class="language-js">
-import moment from 'moment';
-
-</code></pre>
-
-<p>Node.js에서 exports와 mudule.exports의 차이</p>
-
+</code></pre></div><p>Node.js에서 exports와 mudule.exports의 차이</p>
 <p>exports</p>
-
 <ul>
 <li>exports를 사용할 때는 exports 객체에 프로퍼티를 추가했다</li>
 <li>여러 개의 객체를 내보낼 경우, exports 변수의 속성으로 할당한다.</li>
 </ul>
-
 <p>module.exports</p>
-
 <ul>
-<li><p>module.exports를 사용할 때는 module.exports 변수에 아예 새로운 객체를 할당했다.</p></li>
-
-<li><p>딱 하나의 객체를 내보낼 경우, module.exports 변수 자체에 할당한다.</p></li>
+<li>
+<p>module.exports를 사용할 때는 module.exports 변수에 아예 새로운 객체를 할당했다.</p>
+</li>
+<li>
+<p>딱 하나의 객체를 내보낼 경우, module.exports 변수 자체에 할당한다.</p>
+</li>
 </ul>
+<p>![](/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 10.51.23 PM.png)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mod</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./lib/my-module.js&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">mod</span>.<span style="color:#a6e22e">x</span>;
 
-<p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-02 at 10.51.23 PM.png" alt="" /></p>
-
-<pre><code class="language-js">
-var x = 10;
-var mod = require('./lib/my-module.js');
-var result = mod.x;
-
-</code></pre>
-
-<pre><code class="language-js">
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 
 
-//in lib/my-module.js
-var x = 20;
-exports.x = 30;
+<span style="color:#75715e">//in lib/my-module.js
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+<span style="color:#a6e22e">exports</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>;
 
 
-</code></pre>
-
-<p>result: 30</p>
-
+</code></pre></div><p>result: 30</p>
 <p>require이 내보내는 것은 exports라는 객체이다.</p>
-
 <p>(exports객체 안에 보내고 싶은 부분을 담는 것임.)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mod</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./lib/my-module.js&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">mod</span>.<span style="color:#a6e22e">x</span>;
+<span style="color:#75715e">//in lib/my-module.js:
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+<span style="color:#a6e22e">exports</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>;
 
-<pre><code class="language-js">
-var mod = require('./lib/my-module.js');
-var result = mod.x;
-//in lib/my-module.js:
 
-var x = 10;
-exports.x = 20;
-module.exports.x = 30;
-
-
-</code></pre>
-
-<p>result: 30</p>
-
+</code></pre></div><p>result: 30</p>
 <p>exports는 module.exports를 참조하는 객체이다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 
-<pre><code class="language-js">
-
-var posts = [
-    { title: &quot;'Post 1&quot;, body: 'this is post one'},
-    { title: &quot;Porst 2&quot;, body: &quot;this is post two&quot;}
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">posts</span> <span style="color:#f92672">=</span> [
+    { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#39;Post 1&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;this is post one&#39;</span>},
+    { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Porst 2&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;this is post two&#34;</span>}
 ];
-var newarr =[];
-function getPosts() {
-    setTimeout(()=&gt;{
-    let output = &quot;&quot;;
-    posts.forEach((post)=&gt;{
-    newarr.push(post.title)
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">newarr</span> <span style="color:#f92672">=</span>[];
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getPosts</span>() {
+    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">output</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+    <span style="color:#a6e22e">posts</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">post</span>)=&gt;{
+    <span style="color:#a6e22e">newarr</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">title</span>)
     });
     
-    console.log(newarr)
-    },3000);
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">newarr</span>)
+    },<span style="color:#ae81ff">3000</span>);
 }
-getPosts();
+<span style="color:#a6e22e">getPosts</span>();
 
-function createPost(post){
-    setTimeout(()=&gt;{
-        posts.push(post)
-    },2000)
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createPost</span>(<span style="color:#a6e22e">post</span>){
+    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{
+        <span style="color:#a6e22e">posts</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">post</span>)
+    },<span style="color:#ae81ff">2000</span>)
 }
-createPost({ title: &quot;'Post 3&quot;, body: 'this is post three'})
+<span style="color:#a6e22e">createPost</span>({ <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#39;Post 3&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;this is post three&#39;</span>})
 
 
 
-</code></pre>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 
-<pre><code class="language-js">
-
-// getPosts(); // createPost() 안에 인자값으로 넣는다. 
-var posts = [
-    { title: &quot;'Post 1&quot;, body: 'this is post one'},
-    { title: &quot;Porst 2&quot;, body: &quot;this is post two&quot;}
+<span style="color:#75715e">// getPosts(); // createPost() 안에 인자값으로 넣는다. 
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">posts</span> <span style="color:#f92672">=</span> [
+    { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#39;Post 1&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;this is post one&#39;</span>},
+    { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Porst 2&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;this is post two&#34;</span>}
 ];
-var newarr =[];
-function getPosts() {
-    setTimeout(()=&gt;{
-    let output = &quot;&quot;;
-    posts.forEach((post)=&gt;{
-    newarr.push(post.title)
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">newarr</span> <span style="color:#f92672">=</span>[];
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getPosts</span>() {
+    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">output</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+    <span style="color:#a6e22e">posts</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">post</span>)=&gt;{
+    <span style="color:#a6e22e">newarr</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">title</span>)
     });
     
-    console.log(newarr)
-    },1000);
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">newarr</span>)
+    },<span style="color:#ae81ff">1000</span>);
 }
-// getPosts(); // createPost() 안에 인자값으로 넣는다. 
-
-function createPost(post,callback){
-    setTimeout(()=&gt;{
-        posts.push(post)
-        callback()
-    },2000)
+<span style="color:#75715e">// getPosts(); // createPost() 안에 인자값으로 넣는다. 
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createPost</span>(<span style="color:#a6e22e">post</span>,<span style="color:#a6e22e">callback</span>){
+    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{
+        <span style="color:#a6e22e">posts</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">post</span>)
+        <span style="color:#a6e22e">callback</span>()
+    },<span style="color:#ae81ff">2000</span>)
 }
-createPost({ title: &quot;'Post 3&quot;, body: 'this is post three'},getPosts)
+<span style="color:#a6e22e">createPost</span>({ <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#39;Post 3&#34;</span>, <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;this is post three&#39;</span>},<span style="color:#a6e22e">getPosts</span>)
 
-</code></pre>
-
-<h2 id="express">Express</h2>
-
+</code></pre></div><h2 id="express">Express</h2>
 <ul>
 <li><strong>Express</strong> 는 <strong>Node.js</strong> 의 핵심 모듈인 <strong>http</strong>와컴포넌트**를 기반으로 하는 간편한 프레임워크입니다.</li>
 </ul>
-
 <blockquote>
 <p>한마디로 Node 에서의 개발을 빠르고 손쉽게 할 수 있도록 도와주는 역할입니다.</p>
 </blockquote>
-
 <ul>
 <li><strong>Express</strong>의 장점은 <strong>미들웨어(Middleware)</strong> 구조로,  다양한 기능의 미들웨어를 개발자가 선택하여 결합해 빠르고 손쉽게 사용할 수 있습니다.</li>
 </ul>
-
 <p><strong>Express 서버 생성</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 
-<pre><code class="language-js">
-
-var express = require('express');
-    var app = express();
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
     
-    app.get('/', function (req, res) {
-      res.send('Hello World!');
+    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;Hello World!&#39;</span>);
     });
     
-    app.listen(3000, function () {
-      console.log('Example app listening on port 3000!');
+    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#ae81ff">3000</span>, <span style="color:#66d9ef">function</span> () {
+      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Example app listening on port 3000!&#39;</span>);
     });
-</code></pre>
-
-<ul>
+</code></pre></div><ul>
 <li><strong>실행하기</strong></li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#a6e22e">$</span> <span style="color:#a6e22e">node</span> <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">js</span>
 
-<pre><code class="language-js">
-$ node app.js
-
-</code></pre>
-
-<h3 id="middleware">Middleware</h3>
-
+</code></pre></div><h3 id="middleware">Middleware</h3>
 <ul>
 <li>&lsquo;중간 처리&rsquo; 역할을 수행하는 소프트웨어를 의미합니다.
-
 <ul>
 <li>요청에 대한 응답을 완수하기 전까지 중간중간 다양한 일을 처리할 수 있습니다.</li>
 <li>미들웨어 함수 생명주기는 request - response 응답을 주기로 종료됩니다.</li>
-<li>미들웨어 함수 우선순위는 먼저 로드 되는 미들웨어 함수가 먼저 실행됩니다.(<strong>코드 순서가 중요합니다!!</strong>)
-<br /></li>
-</ul></li>
+<li>미들웨어 함수 우선순위는 먼저 로드 되는 미들웨어 함수가 먼저 실행됩니다.(<strong>코드 순서가 중요합니다!!</strong>)</li>
 </ul>
-
-<pre><code class="language-js">  
-var app = express();
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">  
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
     
-    app.use(function (req, res, next) {
-      console.log('Time:', Date.now());
-      next();
+    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">next</span>) {
+      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Time:&#39;</span>, Date.<span style="color:#a6e22e">now</span>());
+      <span style="color:#a6e22e">next</span>();
     });
 
-</code></pre>
-
-<p>body-parser는 body-stream을 메모리 객체에 매핑하기 위한 모듈입니다. chunk를 이용하여, <code>end</code> event에서 확인 가능 하셨던 것처럼, 이를 이용하시면, 그 과정이 필요하지 않습니다.</p>
-
+</code></pre></div><p>body-parser는 body-stream을 메모리 객체에 매핑하기 위한 모듈입니다. chunk를 이용하여, <code>end</code> event에서 확인 가능 하셨던 것처럼, 이를 이용하시면, 그 과정이 필요하지 않습니다.</p>
 <p>body-parser는 express 4.16.0+ 에 built-in 되어있습니다. 즉, 설치하지 않아도, 사용하실 수 있습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 
-<pre><code class="language-js">
-
-var express = require('express');
-    var bodyParser = require('body-parser');
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">bodyParser</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;body-parser&#39;</span>);
     
-    var app = express();
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
     
-    // (1) app.use 를 사용하지 않는 경우
-    // create application/json parser
-    var jsonParser = bodyParser.json()
+    <span style="color:#75715e">// (1) app.use 를 사용하지 않는 경우
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// create application/json parser
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">jsonParser</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">bodyParser</span>.<span style="color:#a6e22e">json</span>()
      
-    // create application/x-www-form-urlencoded parser
-    var urlencodedParser = bodyParser.urlencoded({ extended: false })
+    <span style="color:#75715e">// create application/x-www-form-urlencoded parser
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">urlencodedParser</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">bodyParser</span>.<span style="color:#a6e22e">urlencoded</span>({ <span style="color:#a6e22e">extended</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span> })
     
      
-    // POST /login gets urlencoded bodies
-    app.post('/login', urlencodedParser, function (req, res) {
-      res.send('welcome, ' + req.body.username)
+    <span style="color:#75715e">// POST /login gets urlencoded bodies
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#39;/login&#39;</span>, <span style="color:#a6e22e">urlencodedParser</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;welcome, &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">username</span>)
     })
     
      
-    // POST /api/users gets JSON bodies
-    app.post('/api/users', jsonParser, function (req, res) {
-      // create user in req.body
-    })
+    <span style="color:#75715e">// POST /api/users gets JSON bodies
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#39;/api/users&#39;</span>, <span style="color:#a6e22e">jsonParser</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+      <span style="color:#75715e">// create user in req.body
+</span><span style="color:#75715e"></span>    })
    
-    // (2) app.use 를 사용한다면
-    app.use(bodyParser.json());
-    // or
-    app.use(express.json());
+    <span style="color:#75715e">// (2) app.use 를 사용한다면
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">bodyParser</span>.<span style="color:#a6e22e">json</span>());
+    <span style="color:#75715e">// or
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">json</span>());
     
-    var express = require('express');
-    var app = express();
-    var cookieParser = require('cookie-parser');
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cookieParser</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;cookie-parser&#39;</span>);
     
-    // load the cookie-parsing middleware
-    app.use(cookieParser());
-</code></pre>
-
-<h3 id="routing">Routing</h3>
-
-<p><strong><em>라우팅</em></strong> 은 <strong>URI</strong>(또는 경로) 및 특정한 <strong>HTTP</strong> 요청 메소드(<strong>GET, POST</strong> 등)인 특정 엔드포인트에 대한</p>
-
+    <span style="color:#75715e">// load the cookie-parsing middleware
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">cookieParser</span>());
+</code></pre></div><h3 id="routing">Routing</h3>
+<p><em><strong>라우팅</strong></em> 은 <strong>URI</strong>(또는 경로) 및 특정한 <strong>HTTP</strong> 요청 메소드(<strong>GET, POST</strong> 등)인 특정 엔드포인트에 대한</p>
 <p>클라이언트 요청에 애플리케이션이 응답하는 방법을 결정하는 것을 말합니다.</p>
-
 <p>파일을 하나로 해도 무관하지만 다루어야 할 규모가 커지고 엔드포인트 또한 많아진다면 파일을 카테고리 별로</p>
-
 <p>나누어서 가독성을 높히고 복잡도를 낮출 수 있습니다.</p>
-
 <p>각 라우트는 하나 이상의 핸들러 함수를 가질 수 있으며, 이러한 함수는 라우트가 일치할 때 실행됩니다.</p>
-
 <pre><code>app.METHOD(PATH, HANDLER)
 </code></pre>
-
 <ul>
 <li><code>app</code>은 <code>express</code>의 인스턴스입니다.</li>
 <li><code>METHOD</code>는 [HTTP 요청 메소드]입니다.</li>
 <li><code>PATH</code>는 서버에서의 경로입니다.</li>
 <li><code>HANDLER</code>는 라우트가 일치할 때 실행되는 함수입니다.</li>
 </ul>
-
-<pre><code class="language-js">
-    // **ex)**
-    app.get('/', function (req, res) {
-      res.send('Hello World!');
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+    <span style="color:#75715e">// **ex)**
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;Hello World!&#39;</span>);
     });
     
-    app.post('/', function (req, res) {
-      res.send('Got a POST request');
+    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#39;/&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+      <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;Got a POST request&#39;</span>);
     });
 
-</code></pre>
-
-<h3 id="route-handler">Route handler</h3>
-
+</code></pre></div><h3 id="route-handler">Route handler</h3>
 <p>[미들웨어]와 비슷하게 작동하는 여러 콜백 함수를 제공하여 요청을 처리할 수 있습니다. 유일한 차이점은 이러한</p>
-
 <p>콜백은 <code>next('route')</code>를 호출하여 나머지 라우트 콜백을 우회할 수도 있다는 점입니다.</p>
-
 <p>이러한 메커니즘을 이용하면 라우트에 대한 사전 조건을 지정한 후, 현재의 라우트를 계속할 이유가 없는 경우에는</p>
-
 <p>제어를 후속 라우터에 전달할 수 있습니다.</p>
-
-<pre><code class="language-js">
-    app.get('/example/b', function (req, res, next) {
-      console.log('the response will be sent by the next function);
-      next(); //--&gt; 다음 function 을 실행시킵니다.
-    }, function (req, res) {
-      res.send('Hello from B!');
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/example/b&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">next</span>) {
+      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;the response will be sent by the next function);
+</span><span style="color:#e6db74">      next(); //--&gt; 다음 function 을 실행시킵니다.
+</span><span style="color:#e6db74">    }, function (req, res) {
+</span><span style="color:#e6db74">      res.send(&#39;</span><span style="color:#a6e22e">Hello</span> <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">B</span><span style="color:#f92672">!</span><span style="color:#960050;background-color:#1e0010">&#39;</span>);
     });
 
-</code></pre>
+</code></pre></div><h3 id="router">Router</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">router</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">Router</span>();
 
-<h3 id="router">Router</h3>
-
-<pre><code class="language-js">
-var express = require('express');
-var router = express.Router();
-
-</code></pre>
-
-<p>라우터는 미들웨어 자체처럼 동작하므로 app.use ()에 대한 인수 또는 다른 라우터의 use () 메소드에 대한 인수로 사용할 수 있습니다 .</p>
-
-<pre><code class="language-js">
-router.use(function (req, res, next) {
-// 
-      next()
+</code></pre></div><p>라우터는 미들웨어 자체처럼 동작하므로 app.use ()에 대한 인수 또는 다른 라우터의 use () 메소드에 대한 인수로 사용할 수 있습니다 .</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">use</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">next</span>) {
+<span style="color:#75715e">// 
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">next</span>()
     })
-    // 이벤트로 끝나는 요청을 처리합니다
-    router.get('/events', function (req, res, next) {
-    //
-    })
+    <span style="color:#75715e">// 이벤트로 끝나는 요청을 처리합니다
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/events&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">next</span>) {
+    <span style="color:#75715e">//
+</span><span style="color:#75715e"></span>    })
 
-</code></pre>
+</code></pre></div><p>경로를 파일 , 또는 미니 앱으로 분리하는 방식으로 특정 루트 URL 에 라우터를 사용할 수 있습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#39;/calendar&#39;</span>, <span style="color:#a6e22e">router</span>)
 
-<p>경로를 파일 , 또는 미니 앱으로 분리하는 방식으로 특정 루트 URL 에 라우터를 사용할 수 있습니다.</p>
-
-<pre><code class="language-js">
-app.use('/calendar', router)
-
-</code></pre>
-
-<h2 id="event-loop">Event Loop</h2>
-
-<p><img src="/tutorial/2020-02-08-node_files/Screen Shot 2020-04-18 at 10.14.55 AM.png" alt="" /></p>
-
-<p><img src="/tutorial/2020-02-08-node_files/Screen Shot 2020-01-15 at 11.21.33 AM.png" alt="" /></p>
-
+</code></pre></div><h2 id="event-loop">Event Loop</h2>
+<p>![](/tutorial/2020-02-08-node_files/Screen Shot 2020-04-18 at 10.14.55 AM.png)</p>
+<p>![](/tutorial/2020-02-08-node_files/Screen Shot 2020-01-15 at 11.21.33 AM.png)</p>
 <blockquote>
 <p>Event Loop는 Call Stack과 Callback Queue의 상태를 체크하여,
 Call Stack이 빈 상태가 되면, Callback Queue의 첫번째 콜백을 Call Stack으로 밀어넣는다. 이러한 반복적인 행동을 틱(tick) 이라 부른다.</p>
-
+</blockquote>
+<blockquote>
 <p>자바스크립트를 <code>단일 스레드 프로그래밍 언어</code>라 한번에 하나씩 밖에 실행할 수 없다.</p>
-
+</blockquote>
+<blockquote>
 <p>event Loop  영상</p>
 </blockquote>
-
-<p><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;feature=emb_title" target="_blank">https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;feature=emb_title</a></p>
+<p><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;feature=emb_title">https://www.youtube.com/watch?v=8aGhZQkoFbQ&amp;feature=emb_title</a></p>
 
           </div>
 
@@ -1053,7 +968,7 @@ Call Stack이 빈 상태가 되면, Callback Queue의 첫번째 콜백을 Call S
     
     
     
-    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+    <script src="/js/academic.min.7636b87b7ca0b6689810d4b648238174.js"></script>
 
   </body>
 </html>

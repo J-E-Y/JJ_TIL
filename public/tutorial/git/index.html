@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="1.Command Line (터미널) ls  파일보기  ls -A  숨겨진 파일까지 보기  ls -al  상세 내용  // (1) (2)(3) (4) (5) (6) (7) (8) //drwxr-xr-x 2 root wheel 64B 11 7 14:14 test/ //1접근 권한 (읽기/쓰기/실행 가능) 여부 //2chmod 명령어 //3링크된 파일 갯수 //4소유자 //5소유그룹 //6파일 크기 //7만든 날짜 //8만든 시간 //9파일/디렉토리 이름  cd 디렉토리 이름  디렉토리로 이동( print working List )  myuser@mymachine:~$ `cd` Downloads  cd-  뒤로가기  cd /  global 로 가기 (제일 처음 root 디렉토리로 이동 )  pwd  내가 어디있는지 확인  // myuser@mymachine:~/Downloads$ pwd // showing that .">
+  <meta name="description" content="1.Command Line (터미널) ls  파일보기  ls -A  숨겨진 파일까지 보기  ls -al  상세 내용  // (1) (2)(3) (4) (5) (6) (7) (8) //drwxr-xr-x 2 root wheel 64B 11 7 14:14 test/  //1접근 권한 (읽기/쓰기/실행 가능) 여부 //2chmod 명령어 //3링크된 파일 갯수 //4소유자 //5소유그룹 //6파일 크기 //7만든 날짜 //8만든 시간 //9파일/디렉토리 이름  cd 디렉토리 이름  디렉토리로 이동( print working List )  myuser@mymachine:~$ `cd` Downloads cd-  뒤로가기  cd /  global 로 가기 (제일 처음 root 디렉토리로 이동 )  pwd  내가 어디있는지 확인  // myuser@mymachine:~/Downloads$ pwd // showing that .">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/git/">
@@ -130,7 +130,7 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/git/">
   <meta property="og:title" content="Git | JohnJung">
-  <meta property="og:description" content="1.Command Line (터미널) ls  파일보기  ls -A  숨겨진 파일까지 보기  ls -al  상세 내용  // (1) (2)(3) (4) (5) (6) (7) (8) //drwxr-xr-x 2 root wheel 64B 11 7 14:14 test/ //1접근 권한 (읽기/쓰기/실행 가능) 여부 //2chmod 명령어 //3링크된 파일 갯수 //4소유자 //5소유그룹 //6파일 크기 //7만든 날짜 //8만든 시간 //9파일/디렉토리 이름  cd 디렉토리 이름  디렉토리로 이동( print working List )  myuser@mymachine:~$ `cd` Downloads  cd-  뒤로가기  cd /  global 로 가기 (제일 처음 root 디렉토리로 이동 )  pwd  내가 어디있는지 확인  // myuser@mymachine:~/Downloads$ pwd // showing that ."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="1.Command Line (터미널) ls  파일보기  ls -A  숨겨진 파일까지 보기  ls -al  상세 내용  // (1) (2)(3) (4) (5) (6) (7) (8) //drwxr-xr-x 2 root wheel 64B 11 7 14:14 test/  //1접근 권한 (읽기/쓰기/실행 가능) 여부 //2chmod 명령어 //3링크된 파일 갯수 //4소유자 //5소유그룹 //6파일 크기 //7만든 날짜 //8만든 시간 //9파일/디렉토리 이름  cd 디렉토리 이름  디렉토리로 이동( print working List )  myuser@mymachine:~$ `cd` Downloads cd-  뒤로가기  cd /  global 로 가기 (제일 처음 root 디렉토리로 이동 )  pwd  내가 어디있는지 확인  // myuser@mymachine:~/Downloads$ pwd // showing that ."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -437,53 +437,50 @@
       
 
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#1-command-line-터미널">1.Command Line (터미널)</a></li>
-<li><a href="#ls">ls</a></li>
-<li><a href="#ls-a">ls -A</a></li>
-<li><a href="#ls-al">ls -al</a></li>
-<li><a href="#cd-디렉토리-이름">cd 디렉토리 이름</a></li>
-<li><a href="#cd">cd-</a></li>
-<li><a href="#cd-1">cd /</a></li>
-<li><a href="#pwd">pwd</a></li>
-<li><a href="#touch-file-name">touch [file_name]</a></li>
-<li><a href="#mkdir-dir-name">mkdir [dir_name]</a></li>
-<li><a href="#cat-file-name">cat [file_name]</a></li>
-<li><a href="#mv-file-or-dir-target-dir">mv [file_or_dir] [target_dir]</a></li>
-<li><a href="#mv-file-or-dir-new-name">mv [file_or_dir] [new_name]</a></li>
-<li><a href="#cp-file-target-dir-or-cp-r-folder">cp [file] [target_dir] or cp -r [folder]</a></li>
-<li><a href="#rm-filename">rm [filename]</a></li>
-<li><a href="#rm-rf-dirname">rm -rf [dirname]</a></li>
-<li><a href="#rm-d-file-or-dirname">rm -d [file or dirname];</a></li>
-<li><a href="#toc_17">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</a></li>
-<li><a href="#2-git-version-control-system">2.Git(Version Control System)</a></li>
-<li><a href="#git-work-flow">git-work-flow</a></li>
-<li><a href="#git-remote-remove-명칭">git remote remove [명칭]</a></li>
-<li><a href="#git-branch-d-test">git branch -d test</a></li>
-<li><a href="#git-push-origin-delete-test">git push origin &ndash;delete test</a></li>
-<li><a href="#git-branch-a">git branch -a</a></li>
-<li><a href="#git-init">git init</a></li>
-<li><a href="#git-clone">git clone</a></li>
-<li><a href="#git-add">git add .</a></li>
-<li><a href="#git-add-파일-이름">git add 파일 이름</a></li>
-<li><a href="#git-commit-m">git commit -m &ldquo;&rdquo;</a></li>
-<li><a href="#git-remote-add-origin">git remote add origin&rdquo;&rdquo;</a></li>
-<li><a href="#git-push">git push</a></li>
-<li><a href="#git-log">git log</a></li>
-<li><a href="#git-status">git status</a></li>
-<li><a href="#git-config-global">git config &ndash;global</a></li>
-<li><a href="#git-branch-충돌-방지하기">git branch : 충돌 방지하기</a></li>
-<li><a href="#git-branch">git Branch</a></li>
-<li><a href="#기존에-commit한-내용으로-되돌아-가기">기존에 commit한 내용으로 되돌아 가기</a></li>
-<li><a href="#git-log-1">git :log</a></li>
-<li><a href="#git-commit-amend">git :commit &ndash; amend</a></li>
-<li><a href="#git-cheakout">git cheakout&ndash;</a></li>
-<li><a href="#git-reset">git reset</a></li>
-<li><a href="#git-branch-이름-변경">git branch 이름 변경</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#1command-line-터미널">1.Command Line (터미널)</a></li>
+    <li><a href="#ls">ls</a></li>
+    <li><a href="#ls--a">ls -A</a></li>
+    <li><a href="#ls--al">ls -al</a></li>
+    <li><a href="#cd-디렉토리-이름">cd 디렉토리 이름</a></li>
+    <li><a href="#cd-">cd-</a></li>
+    <li><a href="#cd--1">cd /</a></li>
+    <li><a href="#pwd">pwd</a></li>
+    <li><a href="#touch-file_name">touch [file_name]</a></li>
+    <li><a href="#mkdir-dir_name">mkdir [dir_name]</a></li>
+    <li><a href="#cat-file_name">cat [file_name]</a></li>
+    <li><a href="#mv-file_or_dir-target_dir">mv [file_or_dir] [target_dir]</a></li>
+    <li><a href="#mv-file_or_dir-new_name">mv [file_or_dir] [new_name]</a></li>
+    <li><a href="#cp-file-target_dir-or-cp--r-folder">cp [file] [target_dir] or cp -r [folder]</a></li>
+    <li><a href="#rm-filename">rm [filename]</a></li>
+    <li><a href="#rm--rf-dirname">rm -rf [dirname]</a></li>
+    <li><a href="#rm--d-file-or-dirname">rm -d [file or dirname];</a></li>
+    <li><a href="#------------------------------------------------------------">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</a></li>
+    <li><a href="#2gitversion-control-system">2.Git(Version Control System)</a></li>
+    <li><a href="#git-work-flow">git-work-flow</a></li>
+    <li><a href="#git-remote-remove-명칭">git remote remove [명칭]</a></li>
+    <li><a href="#git-branch--d-test">git branch -d test</a></li>
+    <li><a href="#git-push-origin---delete-test">git push origin &ndash;delete test</a></li>
+    <li><a href="#git-branch--a">git branch -a</a></li>
+    <li><a href="#git-init">git init</a></li>
+    <li><a href="#git-clone">git clone</a></li>
+    <li><a href="#git-add-">git add .</a></li>
+    <li><a href="#git-add-파일-이름">git add 파일 이름</a></li>
+    <li><a href="#git-commit--m-">git commit -m &quot;&rdquo;</a></li>
+    <li><a href="#git-remote-add-origin">git remote add origin&rdquo;&rdquo;</a></li>
+    <li><a href="#git-push">git push</a></li>
+    <li><a href="#git-log">git log</a></li>
+    <li><a href="#git-status">git status</a></li>
+    <li><a href="#git-config---global">git config &ndash;global</a></li>
+    <li><a href="#git-branch--충돌-방지하기">git branch : 충돌 방지하기</a></li>
+    <li><a href="#git-branch">git Branch</a></li>
+    <li><a href="#기존에-commit한-내용으로-되돌아-가기">기존에 commit한 내용으로 되돌아 가기</a></li>
+    <li><a href="#git-log-1">git :log</a></li>
+    <li><a href="#git-commit----amend">git :commit &ndash; amend</a></li>
+    <li><a href="#git-cheakout--">git cheakout&ndash;</a></li>
+    <li><a href="#git-reset">git reset</a></li>
+    <li><a href="#git-branch-이름-변경">git branch 이름 변경</a></li>
+  </ul>
 </nav>
 
       <ul class="nav toc-top">
@@ -502,467 +499,414 @@
           <h1 itemprop="name">Git</h1>
 
           <div class="article-style" itemprop="articleBody">
-            
-
-<h2 id="1-command-line-터미널">1.Command Line (터미널)</h2>
-
+            <h2 id="1command-line-터미널">1.Command Line (터미널)</h2>
 <h2 id="ls">ls</h2>
-
 <ul>
 <li>파일보기</li>
 </ul>
-
-<h2 id="ls-a">ls -A</h2>
-
+<h2 id="ls--a">ls -A</h2>
 <ul>
 <li>숨겨진 파일까지 보기</li>
 </ul>
-
-<h2 id="ls-al">ls -al</h2>
-
+<h2 id="ls--al">ls -al</h2>
 <ul>
 <li>상세 내용</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// (1)         (2)(3)   (4)      (5) (6)   (7)   (8)
+</span><span style="color:#75715e">//drwxr-xr-x   2 root  wheel    64B 11  7 14:14 test/
+</span><span style="color:#75715e"></span>
 
-<pre><code class="language-js">// (1)         (2)(3)   (4)      (5) (6)   (7)   (8)
-//drwxr-xr-x   2 root  wheel    64B 11  7 14:14 test/
+<span style="color:#75715e">//1접근 권한 (읽기/쓰기/실행 가능) 여부
+</span><span style="color:#75715e">//2chmod 명령어
+</span><span style="color:#75715e">//3링크된 파일 갯수
+</span><span style="color:#75715e">//4소유자
+</span><span style="color:#75715e">//5소유그룹
+</span><span style="color:#75715e">//6파일 크기
+</span><span style="color:#75715e">//7만든 날짜
+</span><span style="color:#75715e">//8만든 시간
+</span><span style="color:#75715e">//9파일/디렉토리 이름
+</span><span style="color:#75715e"></span>
 
-
-//1접근 권한 (읽기/쓰기/실행 가능) 여부
-//2chmod 명령어
-//3링크된 파일 갯수
-//4소유자
-//5소유그룹
-//6파일 크기
-//7만든 날짜
-//8만든 시간
-//9파일/디렉토리 이름
-
-
-</code></pre>
-
-<h2 id="cd-디렉토리-이름">cd 디렉토리 이름</h2>
-
+</code></pre></div><h2 id="cd-디렉토리-이름">cd 디렉토리 이름</h2>
 <ul>
 <li>디렉토리로 이동( print working List )</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"> <span style="color:#a6e22e">myuser</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">mymachine</span><span style="color:#f92672">:~</span><span style="color:#a6e22e">$</span> <span style="color:#e6db74">`cd`</span> <span style="color:#a6e22e">Downloads</span>
 
-<pre><code class="language-js"> myuser@mymachine:~$ `cd` Downloads
-
-</code></pre>
-
-<h2 id="cd">cd-</h2>
-
+</code></pre></div><h2 id="cd-">cd-</h2>
 <ul>
 <li>뒤로가기</li>
 </ul>
-
-<h2 id="cd-1">cd /</h2>
-
+<h2 id="cd--1">cd /</h2>
 <ul>
 <li>global 로 가기 (제일 처음 root 디렉토리로 이동 )</li>
 </ul>
-
 <h2 id="pwd">pwd</h2>
-
 <ul>
 <li>내가 어디있는지 확인</li>
 </ul>
-
-<pre><code class="language-js">// myuser@mymachine:~/Downloads$ pwd
-// showing that .. Users/myuser/Downloads
-</code></pre>
-
-<h2 id="touch-file-name">touch [file_name]</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// myuser@mymachine:~/Downloads$ pwd
+</span><span style="color:#75715e">// showing that .. Users/myuser/Downloads
+</span></code></pre></div><h2 id="touch-file_name">touch [file_name]</h2>
 <ul>
 <li>빈 파일 생성</li>
 </ul>
-
-<h2 id="mkdir-dir-name">mkdir [dir_name]</h2>
-
+<h2 id="mkdir-dir_name">mkdir [dir_name]</h2>
 <ul>
 <li>디렉토리 생성</li>
 </ul>
-
-<h2 id="cat-file-name">cat [file_name]</h2>
-
+<h2 id="cat-file_name">cat [file_name]</h2>
 <ul>
 <li>텍스트 형태의 파일 확인</li>
 </ul>
-
-<h2 id="mv-file-or-dir-target-dir">mv [file_or_dir] [target_dir]</h2>
-
+<h2 id="mv-file_or_dir-target_dir">mv [file_or_dir] [target_dir]</h2>
 <ul>
 <li>파일 및 디렉토리 옮기기</li>
 </ul>
-
-<h2 id="mv-file-or-dir-new-name">mv [file_or_dir] [new_name]</h2>
-
+<h2 id="mv-file_or_dir-new_name">mv [file_or_dir] [new_name]</h2>
 <ul>
 <li>파일 및 디렉토리 이름 바꾸기</li>
 </ul>
-
-<h2 id="cp-file-target-dir-or-cp-r-folder">cp [file] [target_dir] or cp -r [folder]</h2>
-
+<h2 id="cp-file-target_dir-or-cp--r-folder">cp [file] [target_dir] or cp -r [folder]</h2>
 <ul>
 <li>복사</li>
 </ul>
-
 <h2 id="rm-filename">rm [filename]</h2>
-
 <ul>
 <li>파일 삭제</li>
 <li>휴지통에 들어가지 않음</li>
 </ul>
-
-<h2 id="rm-rf-dirname">rm -rf [dirname]</h2>
-
+<h2 id="rm--rf-dirname">rm -rf [dirname]</h2>
 <ul>
 <li>폴더 삭제</li>
 <li>휴지통에 들어가지 않음</li>
 </ul>
-
-<h2 id="rm-d-file-or-dirname">rm -d [file or dirname];</h2>
-
-<h2 id="toc_17">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h2>
-
-<h2 id="2-git-version-control-system">2.Git(Version Control System)</h2>
-
+<h2 id="rm--d-file-or-dirname">rm -d [file or dirname];</h2>
+<h2 id="------------------------------------------------------------">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h2>
+<h2 id="2gitversion-control-system">2.Git(Version Control System)</h2>
 <h2 id="git-work-flow">git-work-flow</h2>
-
 <ul>
-<li><p>페어랑 같이 fork 를 받아서 작업할때 쓰는 명령어</p>
-
+<li>
+<p>페어랑 같이 fork 를 받아서 작업할때 쓰는 명령어</p>
 <ul>
-<li>1. 각각 서로 github 에 있는 레포주소를 clone 해서 연결한다.</li>
-<li>2. John이 코드를 작성한다. 그리고 add,commit,push 명령어를 통해 github 에 올린다.</li>
-<li>3. Tim 이 변경된 작성 코드를 가져온다. git pull [명칭] master 명령한다. 그리고 pull 땡겨온 것 을 <code>꼭</code> add commit push 를 통해 github 에 올린다. 변경된 push 를 하지 않은체 한다면 다음 commit 이 작동하지 않고 충돌이 난다.
-<br /></li>
-</ul></li>
+<li>
+<ol>
+<li>각각 서로 github 에 있는 레포주소를 clone 해서 연결한다.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>John이 코드를 작성한다. 그리고 add,commit,push 명령어를 통해 github 에 올린다.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Tim 이 변경된 작성 코드를 가져온다. git pull [명칭] master 명령한다. 그리고 pull 땡겨온 것 을 <code>꼭</code> add commit push 를 통해 github 에 올린다. 변경된 push 를 하지 않은체 한다면 다음 commit 이 작동하지 않고 충돌이 난다.</li>
+</ol>
+</li>
 </ul>
-
-<p><img src="/tutorial/Git_files/1.png" alt="" />
-  <img src="/tutorial/Git_files/2.png" alt="" />
-  <img src="/tutorial/Git_files/3.png" alt="" />
-  <img src="/tutorial/Git_files/4.png" alt="" />
-  <img src="/tutorial/Git_files/5.png" alt="" />
-  <img src="/tutorial/Git_files/6.png" alt="" />
-  <img src="/tutorial/Git_files/7.png" alt="" />
-  <img src="/tutorial/Git_files/8.png" alt="" /></p>
-
+<p><img src="/tutorial/Git_files/1.png" alt="">
+<img src="/tutorial/Git_files/2.png" alt="">
+<img src="/tutorial/Git_files/3.png" alt="">
+<img src="/tutorial/Git_files/4.png" alt="">
+<img src="/tutorial/Git_files/5.png" alt="">
+<img src="/tutorial/Git_files/6.png" alt="">
+<img src="/tutorial/Git_files/7.png" alt="">
+<img src="/tutorial/Git_files/8.png" alt=""></p>
+</li>
+</ul>
 <h2 id="git-remote-remove-명칭">git remote remove [명칭]</h2>
-
 <ul>
 <li>remote 연결된거 지우기</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#a6e22e">origin</span>	<span style="color:#a6e22e">https</span><span style="color:#f92672">:</span><span style="color:#75715e">//github.com/J-E-Y/im-sprint-data-structure.git (fetch)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">origin</span>	<span style="color:#a6e22e">https</span><span style="color:#f92672">:</span><span style="color:#75715e">//github.com/J-E-Y/im-sprint-data-structure.git (push)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">pair</span>	<span style="color:#a6e22e">https</span><span style="color:#f92672">:</span><span style="color:#75715e">//github.com/Dal-ya/im-sprint-data-structure.git) (fetch)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">pair</span>	<span style="color:#a6e22e">https</span><span style="color:#f92672">:</span><span style="color:#75715e">//github.com/Dal-ya/im-sprint-data-structure.git) (push)
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">git</span> <span style="color:#a6e22e">remote</span> <span style="color:#a6e22e">remove</span> <span style="color:#a6e22e">pair</span>
 
-<pre><code class="language-js">
-origin	https://github.com/J-E-Y/im-sprint-data-structure.git (fetch)
-origin	https://github.com/J-E-Y/im-sprint-data-structure.git (push)
-pair	https://github.com/Dal-ya/im-sprint-data-structure.git) (fetch)
-pair	https://github.com/Dal-ya/im-sprint-data-structure.git) (push)
-
-git remote remove pair
-
-</code></pre>
-
-<h2 id="git-branch-d-test">git branch -d test</h2>
-
+</code></pre></div><h2 id="git-branch--d-test">git branch -d test</h2>
 <ul>
 <li>branch 지우기</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#a6e22e">git</span> <span style="color:#a6e22e">branch</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">d</span> <span style="color:#a6e22e">test</span>
+<span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">Deleted</span> <span style="color:#a6e22e">branch</span> <span style="color:#a6e22e">test</span> (<span style="color:#a6e22e">was</span> <span style="color:#960050;background-color:#1e0010">########</span>).
 
-<pre><code class="language-js">
-git branch -d test
-# Deleted branch test (was ########).
 
-
-</code></pre>
-
-<h2 id="git-push-origin-delete-test">git push origin &ndash;delete test</h2>
-
+</code></pre></div><h2 id="git-push-origin---delete-test">git push origin &ndash;delete test</h2>
 <ul>
 <li>remote 지우기</li>
 </ul>
-
-<pre><code class="language-js">
-it branch -a
-# *master
-#  test
-#  remote/origin/master
-#  remote/origin/test
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#a6e22e">it</span> <span style="color:#a6e22e">branch</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">a</span>
+<span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">master</span>
+<span style="color:#960050;background-color:#1e0010">#</span>  <span style="color:#a6e22e">test</span>
+<span style="color:#960050;background-color:#1e0010">#</span>  <span style="color:#a6e22e">remote</span><span style="color:#f92672">/</span><span style="color:#a6e22e">origin</span><span style="color:#f92672">/</span><span style="color:#a6e22e">master</span>
+<span style="color:#960050;background-color:#1e0010">#</span>  <span style="color:#a6e22e">remote</span><span style="color:#f92672">/</span><span style="color:#a6e22e">origin</span><span style="color:#f92672">/</span><span style="color:#a6e22e">test</span>
 
 
-git push origin --delete test
-# To &lt;URL of your repository*.git
-#  - [deleted]         test
 
-</code></pre>
+<span style="color:#a6e22e">git</span> <span style="color:#a6e22e">push</span> <span style="color:#a6e22e">origin</span> <span style="color:#f92672">--</span><span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">test</span>
+<span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">To</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">URL</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">your</span> <span style="color:#a6e22e">repository</span><span style="color:#f92672">*</span>.<span style="color:#a6e22e">git</span>
+<span style="color:#960050;background-color:#1e0010">#</span>  <span style="color:#f92672">-</span> [<span style="color:#a6e22e">deleted</span>]         <span style="color:#a6e22e">test</span>
 
-<h2 id="git-branch-a">git branch -a</h2>
-
+</code></pre></div><h2 id="git-branch--a">git branch -a</h2>
 <ul>
 <li>현재 romote 상태 보기</li>
 </ul>
-
-<pre><code class="language-js">
-git branch -a
-# *master
-#  test
-#  remote/origin/master
-#  remote/origin/test
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#a6e22e">git</span> <span style="color:#a6e22e">branch</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">a</span>
+<span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">master</span>
+<span style="color:#960050;background-color:#1e0010">#</span>  <span style="color:#a6e22e">test</span>
+<span style="color:#960050;background-color:#1e0010">#</span>  <span style="color:#a6e22e">remote</span><span style="color:#f92672">/</span><span style="color:#a6e22e">origin</span><span style="color:#f92672">/</span><span style="color:#a6e22e">master</span>
+<span style="color:#960050;background-color:#1e0010">#</span>  <span style="color:#a6e22e">remote</span><span style="color:#f92672">/</span><span style="color:#a6e22e">origin</span><span style="color:#f92672">/</span><span style="color:#a6e22e">test</span>
 
 
 
-</code></pre>
 
-<h2 id="git-init">git init</h2>
-
+</code></pre></div><h2 id="git-init">git init</h2>
 <ul>
 <li>Create an empty Git repository or reinitialize an existing one</li>
 </ul>
-
 <h2 id="git-clone">git clone</h2>
-
 <ul>
 <li>Clone a repository into a new directory</li>
 </ul>
-
-<h2 id="git-add">git add .</h2>
-
+<h2 id="git-add-">git add .</h2>
 <ul>
 <li>Add all file contents to the index</li>
 </ul>
-
 <h2 id="git-add-파일-이름">git add 파일 이름</h2>
-
 <ul>
 <li>one file add</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">git</span> <span style="color:#a6e22e">add</span> <span style="color:#a6e22e">jung</span>.<span style="color:#a6e22e">html</span>
 
-<pre><code class="language-js">git add jung.html
-
-</code></pre>
-
-<h2 id="git-commit-m">git commit -m &ldquo;&rdquo;</h2>
-
+</code></pre></div><h2 id="git-commit--m-">git commit -m &quot;&rdquo;</h2>
 <ul>
 <li>write message into github</li>
 </ul>
-
 <h2 id="git-remote-add-origin">git remote add origin&rdquo;&rdquo;</h2>
-
 <ul>
 <li>link local to github</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">Git</span> <span style="color:#a6e22e">remote</span> <span style="color:#a6e22e">add</span> <span style="color:#a6e22e">origin</span> <span style="color:#e6db74">&#34;https://github.com/J-E-Y/test_2.git&#34;</span>
 
-<pre><code class="language-js">Git remote add origin &quot;https://github.com/J-E-Y/test_2.git&quot;
-
-</code></pre>
-
-<h2 id="git-push">git push</h2>
-
-<pre><code class="language-js">// git push -u origin master  최종 깇허브에 올리기 
-// git push -u origin master  
-// git push -f origin master ( 강제로)
-
-</code></pre>
-
-<h2 id="git-log">git log</h2>
-
+</code></pre></div><h2 id="git-push">git push</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// git push -u origin master  최종 깇허브에 올리기 
+</span><span style="color:#75715e">// git push -u origin master  
+</span><span style="color:#75715e">// git push -f origin master ( 강제로)
+</span><span style="color:#75715e"></span>
+</code></pre></div><h2 id="git-log">git log</h2>
 <ul>
 <li>그동안 commit 한 내용을 볼수 있다.</li>
 </ul>
-
 <p>*enter 키를 치면 밑에 내용을 계속 볼수 있다.</p>
-
 <ul>
 <li>log 파일을 나오려면 q  버튼을 누르면 된다.</li>
 </ul>
-
 <h2 id="git-status">git status</h2>
-
 <ul>
 <li>현재 진행 상태 보기</li>
 </ul>
-
-<h2 id="git-config-global">git config &ndash;global</h2>
-
+<h2 id="git-config---global">git config &ndash;global</h2>
 <ul>
-<li><p>등록하기</p>
-
+<li>등록하기</li>
+</ul>
 <pre><code>git config --global user.email &quot;yourGitHub@email.com&quot;
 git config --global user.name &quot;yourGitHubusername&quot;
 
-</code></pre></li>
-</ul>
-
-<h2 id="git-branch-충돌-방지하기">git branch : 충돌 방지하기</h2>
-
+</code></pre><h2 id="git-branch--충돌-방지하기">git branch : 충돌 방지하기</h2>
 <ul>
-<li><p>merge 하는 중 출돌이 존재할수 있다.</p></li>
-
-<li><p>master branch 와 develop branch와 내용이 다를경우 master branch 에서 통합을 한다.</p></li>
-
-<li><p>merge 하는 순간 conflict 가 발생 한다.</p></li>
-
-<li><p>git은 병합한 코드가 무엇이 다른지 코드안에 표시가 되게 한다.</p></li>
-
-<li><p>그리고 그분은에 들어가서 HAED 부분을 선택할지 develop 부분을 선택할지 직접 수동으로  코드를 삭제해서 결정을 하고 저장한다.</p></li>
-
-<li><p>git add . 하고 다시  git merge develop 한다.</p></li>
-
-<li><p>그럼 병합이 된것이다.</p></li>
-
-<li><p>확인 git merge develop 하면 이미 병합이 되었다 .</p></li>
-
-<li><p>그럼 log 하면 같은 화면에 master와 develop 가 동시에 나온다.</p></li>
-
-<li><p>develop 는 필요없기 떄문 git branch -d develop 명령으로 삭제한다.</p></li>
-
-<li><p>git branch 만 확인하면 master branch 만 남아있다.</p></li>
-
-<li><p>git push  로 마무리</p></li>
+<li>
+<p>merge 하는 중 출돌이 존재할수 있다.</p>
+</li>
+<li>
+<p>master branch 와 develop branch와 내용이 다를경우 master branch 에서 통합을 한다.</p>
+</li>
+<li>
+<p>merge 하는 순간 conflict 가 발생 한다.</p>
+</li>
+<li>
+<p>git은 병합한 코드가 무엇이 다른지 코드안에 표시가 되게 한다.</p>
+</li>
+<li>
+<p>그리고 그분은에 들어가서 HAED 부분을 선택할지 develop 부분을 선택할지 직접 수동으로  코드를 삭제해서 결정을 하고 저장한다.</p>
+</li>
+<li>
+<p>git add . 하고 다시  git merge develop 한다.</p>
+</li>
+<li>
+<p>그럼 병합이 된것이다.</p>
+</li>
+<li>
+<p>확인 git merge develop 하면 이미 병합이 되었다 .</p>
+</li>
+<li>
+<p>그럼 log 하면 같은 화면에 master와 develop 가 동시에 나온다.</p>
+</li>
+<li>
+<p>develop 는 필요없기 떄문 git branch -d develop 명령으로 삭제한다.</p>
+</li>
+<li>
+<p>git branch 만 확인하면 master branch 만 남아있다.</p>
+</li>
+<li>
+<p>git push  로 마무리</p>
+</li>
 </ul>
-
 <h2 id="git-branch">git Branch</h2>
-
-<p><img src="/tutorial/Git_files/Screen Shot 2019-09-24 at 3.19.15 PM.png" alt="" /></p>
-
+<p>![](/tutorial/Git_files/Screen Shot 2019-09-24 at 3.19.15 PM.png)</p>
 <ul>
-<li><p>Branch : git 은 동시에 여러 개발자들이 프로젝트에서 각기 다른 기능을 개발할 수 있도록 브랜치 (branch) 기능을 제공한다.</p></li>
-
-<li><p>일반적으로 EX)</p>
-
+<li>
+<p>Branch : git 은 동시에 여러 개발자들이 프로젝트에서 각기 다른 기능을 개발할 수 있도록 브랜치 (branch) 기능을 제공한다.</p>
+</li>
+<li>
+<p>일반적으로 EX)</p>
 <ul>
 <li>Master Branch</li>
 <li>Develop Branch</li>
 <li>Bug Fix Branch</li>
-</ul></li>
-
-<li><p>기능들이 수정되면 Master Branch 에 합치기(Merge) 라면 명령어를 사용해서 합치면 된다.</p></li>
-
-<li><p>Branch 에는 두가지 용어</p>
-
-<ul>
-<li>1. 통합Branch : Master Branch 를 말한다.</li>
-<li>2. 토픽Branch : 특정 기능을 위해 만들어진 Branch 를 말한다.</li>
-</ul></li>
-
-<li><p>실습</p>
-
-<ul>
-<li><p>git branch 명령 하면 현재 몇개의 branch 가 있는지 확일할수 있다.</p></li>
-
-<li><p>git branch develop 명령 branch 생성</p></li>
-
-<li><p>cheakout develop 명령을 현재 default 값이 master 에서 새로만든 develop branch 로 바꿔준다. (git branch 로 확인할수 있다.);</p></li>
-
-<li><p>이상태에서 기존 master branchs 에 있는 코드에 수정을 하고 git add 하고 git commit 을 하고 log 명렁을 하면 현재 &lsquo;HAED -* develop&rsquo; 바뀐것을 볼수 있다.</p></li>
-
-<li><p>그러면 master branch 에는 적용이 안되있고 새로생성한 branch 에만 해당되어있다.  그러면 develop 에서 작업을 할수 있다.</p></li>
-
-<li><p>이것을 합치기 위해서는 merge 명령을 한다.</p></li>
-
-<li><p>git cheakout master 명령을 해서 되돌아 간다.</p></li>
-
-<li><p>그리고 git merge develop 명령을 해서 합친다.</p></li>
-
-<li><p>마지막으로 git push 명령을 해서 깃허브에 저장한다.</p></li>
-
-<li><p>필요없는 branch develop 를 삭제는 git branch -d develop 이다.</p></li>
-</ul></li>
 </ul>
-
+</li>
+<li>
+<p>기능들이 수정되면 Master Branch 에 합치기(Merge) 라면 명령어를 사용해서 합치면 된다.</p>
+</li>
+<li>
+<p>Branch 에는 두가지 용어</p>
+<ul>
+<li>
+<ol>
+<li>통합Branch : Master Branch 를 말한다.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>토픽Branch : 특정 기능을 위해 만들어진 Branch 를 말한다.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>실습</p>
+<ul>
+<li>
+<p>git branch 명령 하면 현재 몇개의 branch 가 있는지 확일할수 있다.</p>
+</li>
+<li>
+<p>git branch develop 명령 branch 생성</p>
+</li>
+<li>
+<p>cheakout develop 명령을 현재 default 값이 master 에서 새로만든 develop branch 로 바꿔준다. (git branch 로 확인할수 있다.);</p>
+</li>
+<li>
+<p>이상태에서 기존 master branchs 에 있는 코드에 수정을 하고 git add 하고 git commit 을 하고 log 명렁을 하면 현재 &lsquo;HAED -* develop&rsquo; 바뀐것을 볼수 있다.</p>
+</li>
+<li>
+<p>그러면 master branch 에는 적용이 안되있고 새로생성한 branch 에만 해당되어있다.  그러면 develop 에서 작업을 할수 있다.</p>
+</li>
+<li>
+<p>이것을 합치기 위해서는 merge 명령을 한다.</p>
+</li>
+<li>
+<p>git cheakout master 명령을 해서 되돌아 간다.</p>
+</li>
+<li>
+<p>그리고 git merge develop 명령을 해서 합친다.</p>
+</li>
+<li>
+<p>마지막으로 git push 명령을 해서 깃허브에 저장한다.</p>
+</li>
+<li>
+<p>필요없는 branch develop 를 삭제는 git branch -d develop 이다.</p>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="기존에-commit한-내용으로-되돌아-가기">기존에 commit한 내용으로 되돌아 가기</h2>
-
 <ul>
-<li><p>log 명령을 하고</p></li>
-
-<li><p>git reset <code>--hard 9a9sdsa8fsdfsd6a78f6safs</code> 명령을 한다.</p></li>
-
-<li><p>가져온 주소명령으로 돌아가고 그 이후에 있는 commit 내용들을 싹다 지운다.</p></li>
-
-<li><p><em>주의</em> commit 내용들이 지워질뿐 아니라 모든 로컬에 저장되어있는 파일들도 제거된다.</p></li>
-
-<li><p>그리고 나서 push 를 해주는데 push -f 를 명령해야 깃허브 저장소에서도 동일하게 적용된다.</p></li>
+<li>
+<p>log 명령을 하고</p>
+</li>
+<li>
+<p>git reset <code>--hard 9a9sdsa8fsdfsd6a78f6safs</code> 명령을 한다.</p>
+</li>
+<li>
+<p>가져온 주소명령으로 돌아가고 그 이후에 있는 commit 내용들을 싹다 지운다.</p>
+</li>
+<li>
+<p><em>주의</em> commit 내용들이 지워질뿐 아니라 모든 로컬에 저장되어있는 파일들도 제거된다.</p>
+</li>
+<li>
+<p>그리고 나서 push 를 해주는데 push -f 를 명령해야 깃허브 저장소에서도 동일하게 적용된다.</p>
+</li>
 </ul>
-
-<hr />
-
+<hr>
 <h2 id="git-log-1">git :log</h2>
-
-<hr />
-
-<hr />
-
-<h2 id="git-commit-amend">git :commit &ndash; amend</h2>
-
-<hr />
-
+<hr>
+<hr>
+<h2 id="git-commit----amend">git :commit &ndash; amend</h2>
+<hr>
 <ul>
-<li><p>commit 명령을 잘못 넣으면  이명령어를 통해 수정할수 있다.</p></li>
-
-<li><p>unix 에디터가 실행된다. 이모드는 수정모두와 관리자 모드로 나뉜다.</p></li>
-
-<li><p>수정 모드로 들어가고자 한다면 a 를 입력하면 된다.</p></li>
-
-<li><p>그리고 내용을 수정하고 ESC 누르고 : 입력하면 wq! 수정되고 밖으로 나오게 된다.</p></li>
-
-<li><p>git status  하면 수정된 파일을 볼수 있다.</p></li>
-
-<li><p>git push -f 강제로 명령하면 적용된다.</p></li>
+<li>
+<p>commit 명령을 잘못 넣으면  이명령어를 통해 수정할수 있다.</p>
+</li>
+<li>
+<p>unix 에디터가 실행된다. 이모드는 수정모두와 관리자 모드로 나뉜다.</p>
+</li>
+<li>
+<p>수정 모드로 들어가고자 한다면 a 를 입력하면 된다.</p>
+</li>
+<li>
+<p>그리고 내용을 수정하고 ESC 누르고 : 입력하면 wq! 수정되고 밖으로 나오게 된다.</p>
+</li>
+<li>
+<p>git status  하면 수정된 파일을 볼수 있다.</p>
+</li>
+<li>
+<p>git push -f 강제로 명령하면 적용된다.</p>
+</li>
 </ul>
-
-<h2 id="git-cheakout">git cheakout&ndash;</h2>
-
+<h2 id="git-cheakout--">git cheakout&ndash;</h2>
 <ul>
-<li><p>add 한다음에 git status 명령을 하면  수정된 파일이 스테이지에 올라가게 된다.</p></li>
-
-<li><p>cheakout&ndash; 이라는 명령을 하면 add 하기전 코드상태로 되돌아 간다.</p></li>
+<li>
+<p>add 한다음에 git status 명령을 하면  수정된 파일이 스테이지에 올라가게 된다.</p>
+</li>
+<li>
+<p>cheakout&ndash; 이라는 명령을 하면 add 하기전 코드상태로 되돌아 간다.</p>
+</li>
 </ul>
-
 <h2 id="git-reset">git reset</h2>
-
 <ul>
 <li>add 한 파일을 다시 되돌리기</li>
 </ul>
-
 <h2 id="git-branch-이름-변경">git branch 이름 변경</h2>
-
 <ul>
 <li>이름을 바꾸려는 로컬 지점으로 이동</li>
 </ul>
-
 <blockquote>
 <p>git checkout &lt;기존 이름&gt;</p>
 </blockquote>
-
 <ul>
 <li>다음을 입력하여 로컬 지점의 이름을 변경한다.</li>
 </ul>
-
 <blockquote>
 <p>git branch -m &lt;새 이름&gt;</p>
 </blockquote>
-
 <ul>
 <li>&lt;새 이름&gt; 로컬 브랜치를 푸시하고 업스트림 브랜치를 재설정한다.</li>
 </ul>
-
 <blockquote>
 <p>git push origin -u &lt;새 이름&gt;</p>
 </blockquote>
-
 <ul>
 <li>&lt;기존 이름&gt;원격 브랜치를 삭제한다.</li>
 </ul>
-
 <blockquote>
-<p>git push origin &ndash;delete <old\_name></p>
+<p>git push origin &ndash;delete &lt;old_name&gt;</p>
 </blockquote>
 
           </div>
@@ -1098,7 +1042,7 @@ git config --global user.name &quot;yourGitHubusername&quot;
     
     
     
-    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+    <script src="/js/academic.min.7636b87b7ca0b6689810d4b648238174.js"></script>
 
   </body>
 </html>

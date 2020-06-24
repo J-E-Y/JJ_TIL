@@ -27,11 +27,9 @@
   
     
   
-  <meta name="description" content="What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.
- Component 는 데이터(ex: Props, State)를 입력받아 DOM Node를 출력하는 함수의 역할을 합니다.
- Component 는 UI를 구성하는 개별적인 뷰 단위입니다. Application은 이런 Component들이 모여 마치 블럭을 조립하듯 완성됩니다.
- 각 Component 들은 Application의 다른 부분, 또는 다른 Application에서 쉽게 재사용이 가능합니다.
- Component 를 사용하는 이유는 뭘까요?">
+  <meta name="description" content="What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.    Component 는 데이터(ex: Props, State)를 입력받아 DOM Node를 출력하는 함수의 역할을 합니다.
+  Component 는 UI를 구성하는 개별적인 뷰 단위입니다. Application은 이런 Component들이 모여 마치 블럭을 조립하듯 완성됩니다.
+  각 Component 들은 Application의 다른 부분, 또는 다른 Application에서 쉽게 재사용이 가능합니다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/2020-01-20-react/">
@@ -134,11 +132,9 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2020-01-20-react/">
   <meta property="og:title" content="__React | JohnJung">
-  <meta property="og:description" content="What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.
- Component 는 데이터(ex: Props, State)를 입력받아 DOM Node를 출력하는 함수의 역할을 합니다.
- Component 는 UI를 구성하는 개별적인 뷰 단위입니다. Application은 이런 Component들이 모여 마치 블럭을 조립하듯 완성됩니다.
- 각 Component 들은 Application의 다른 부분, 또는 다른 Application에서 쉽게 재사용이 가능합니다.
- Component 를 사용하는 이유는 뭘까요?"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="What is &ldquo;React&rdquo;??  인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐 프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.    Component 는 데이터(ex: Props, State)를 입력받아 DOM Node를 출력하는 함수의 역할을 합니다.
+  Component 는 UI를 구성하는 개별적인 뷰 단위입니다. Application은 이런 Component들이 모여 마치 블럭을 조립하듯 완성됩니다.
+  각 Component 들은 Application의 다른 부분, 또는 다른 Application에서 쉽게 재사용이 가능합니다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2020-01-14T00:00:00&#43;00:00">
@@ -445,34 +441,31 @@
       
 
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#what-is-react">What is &ldquo;React&rdquo;??</a></li>
-<li><a href="#알아야-할-es6-문법들">알아야 할 ES6 문법들</a></li>
-<li><a href="#toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</a></li>
-<li><a href="#jsx">JSX</a></li>
-<li><a href="#component">Component</a></li>
-<li><a href="#props-란">Props 란?</a></li>
-<li><a href="#state">state</a></li>
-<li><a href="#life-cycle">Life Cycle</a></li>
-<li><a href="#lifting-state-up">Lifting state up</a></li>
-<li><a href="#handle-async-function">Handle Async function</a></li>
-<li><a href="#class-or-function-component의-차이">Class OR Function Component의 차이</a></li>
-<li><a href="#virual-dom">virual Dom</a></li>
-<li><a href="#reactdom-과-reactnative-차이점">ReactDom 과 reactNative 차이점?</a></li>
-<li><a href="#생활코딩예제">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
-<li><a href="#component-만들기">Component 만들기</a></li>
-<li><a href="#props-만들기">Props 만들기</a></li>
-<li><a href="#component-파일로-분리하기">Component 파일로 분리하기</a></li>
-<li><a href="#state의-사용">state의 사용</a></li>
-<li><a href="#state-key">state (Key)</a></li>
-<li><a href="#이벤트-state-props-그리고-render-함수">이벤트 state props 그리고 render 함수</a></li>
-<li><a href="#이벤트-설치">이벤트 설치</a></li>
-<li><a href="#state-변경하기">state 변경하기</a></li>
-<li><a href="#컴포넌트-이벤트-만들기">컴포넌트 이벤트 만들기</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#what-is-react">What is &ldquo;React&rdquo;??</a></li>
+    <li><a href="#알아야-할-es6-문법들">알아야 할 ES6 문법들</a></li>
+    <li><a href="#------------------------------------------------------------------------------">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</a></li>
+    <li><a href="#jsx">JSX</a></li>
+    <li><a href="#component">Component</a></li>
+    <li><a href="#props-란">Props 란?</a></li>
+    <li><a href="#state">state</a></li>
+    <li><a href="#life-cycle">Life Cycle</a></li>
+    <li><a href="#lifting-state-up">Lifting state up</a></li>
+    <li><a href="#handle-async-function">Handle Async function</a></li>
+    <li><a href="#class-or-function-component의-차이">Class OR Function Component의 차이</a></li>
+    <li><a href="#virual-dom">virual Dom</a></li>
+    <li><a href="#reactdom-과-reactnative-차이점">ReactDom 과 reactNative 차이점?</a></li>
+    <li><a href="#-------------------생활코딩예제----------------------------------">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</a></li>
+    <li><a href="#component-만들기">Component 만들기</a></li>
+    <li><a href="#props-만들기">Props 만들기</a></li>
+    <li><a href="#component-파일로-분리하기">Component 파일로 분리하기</a></li>
+    <li><a href="#state의-사용">state의 사용</a></li>
+    <li><a href="#state-key">state (Key)</a></li>
+    <li><a href="#이벤트-state-props-그리고-render-함수">이벤트 state props 그리고 render 함수</a></li>
+    <li><a href="#이벤트-설치">이벤트 설치</a></li>
+    <li><a href="#state-변경하기">state 변경하기</a></li>
+    <li><a href="#컴포넌트-이벤트-만들기">컴포넌트 이벤트 만들기</a></li>
+  </ul>
 </nav>
 
       <ul class="nav toc-top">
@@ -491,26 +484,26 @@
           <h1 itemprop="name">__React</h1>
 
           <div class="article-style" itemprop="articleBody">
-            
-
-<h2 id="what-is-react">What is &ldquo;React&rdquo;??</h2>
-
+            <h2 id="what-is-react">What is &ldquo;React&rdquo;??</h2>
 <ul>
 <li>인터렉션이 늘어남에 OR 관리 해야할 Dom 이 많아질수록 관리하기가 힘들어짐</li>
-
-<li><p>프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.</p></li>
-
-<li><p><strong>Component</strong> 는 데이터(ex: Props, State)를 입력받아 DOM Node를 출력하는 함수의 역할을 합니다.</p></li>
-
-<li><p><strong>Component</strong> 는 UI를 구성하는 <strong>개별적</strong>인 뷰 단위입니다. Application은 이런 <strong>Component</strong>들이 모여  마치 블럭을 조립하듯 완성됩니다.</p></li>
-
-<li><p>각 <strong>Component</strong> 들은 Application의 다른 부분, 또는 다른 Application에서 쉽게 <strong>재사용</strong>이 가능합니다.</p></li>
-
-<li><p><strong>Component</strong> 를 사용하는 이유는 뭘까요? Application의 구성요소를 작은 단위로 나누어서 관리를 하게되면 유지 보수, 재사용이 매우 용이해지기 때문입니다!</p></li>
+<li>프론트 엔드 라이브러리, 프레임웍 많이 있다. 그중에 하나가 React 이다.</li>
 </ul>
-
+<ul>
+<li>
+<p><strong>Component</strong> 는 데이터(ex: Props, State)를 입력받아 DOM Node를 출력하는 함수의 역할을 합니다.</p>
+</li>
+<li>
+<p><strong>Component</strong> 는 UI를 구성하는 <strong>개별적</strong>인 뷰 단위입니다. Application은 이런 <strong>Component</strong>들이 모여  마치 블럭을 조립하듯 완성됩니다.</p>
+</li>
+<li>
+<p>각 <strong>Component</strong> 들은 Application의 다른 부분, 또는 다른 Application에서 쉽게 <strong>재사용</strong>이 가능합니다.</p>
+</li>
+<li>
+<p><strong>Component</strong> 를 사용하는 이유는 뭘까요? Application의 구성요소를 작은 단위로 나누어서 관리를 하게되면 유지 보수, 재사용이 매우 용이해지기 때문입니다!</p>
+</li>
+</ul>
 <h2 id="알아야-할-es6-문법들">알아야 할 ES6 문법들</h2>
-
 <pre><code>1) Destructuring(구조 분해)
 2) spread operator(전개 구문)
 3) rest parameters
@@ -519,1364 +512,1214 @@
 6) arrow function(화살표 함수)
 7) for-of loop
 </code></pre>
-
 <p>1.Destructuring(구조 분해)</p>
-
 <blockquote>
 <p>배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 JavaScript 표현식</p>
 </blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">rest</span>;
 
-<pre><code class="language-js">
-var a, b, rest;
+[<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>];
 
-[a, b] = [10, 20];
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>); <span style="color:#75715e">//10
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>); <span style="color:#75715e">//20
+</span><span style="color:#75715e"></span>
+[<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>, ...<span style="color:#a6e22e">rest</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">50</span>];
 
-console.log(a); //10
-console.log(b); //20
-
-[a, b, ...rest] = [10, 20, 30, 40, 50];
-
-console.log(a); //10
-console.log(b); //20
-console.log(rest); //[30, 40, 50]
-
-
-
-({ a, b } = { a: 10, b: 20 });
-console.log(a); // 10
-console.log(b); // 20
-
-({a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40});
-console.log(a); // 10
-console.log(b); // 20
-console.log(rest); // {c: 30, d: 40}
-
-var x = [1, 2, 3, 4, 5];
-var [y, z] = x;
-console.log(y); // 1
-console.log(z); // 2
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>); <span style="color:#75715e">//10
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>); <span style="color:#75715e">//20
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rest</span>); <span style="color:#75715e">//[30, 40, 50]
+</span><span style="color:#75715e"></span>
 
 
-
-
-선언에서 분리한 할당
-
-var a, b;
-
-[a, b] = [1, 2];
-console.log(a); // 1
-console.log(b); // 2
+({ <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> } <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>, <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span> });
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>); <span style="color:#75715e">// 10
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 20
+</span><span style="color:#75715e"></span>
+({<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>, ...<span style="color:#a6e22e">rest</span>} <span style="color:#f92672">=</span> {<span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>, <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>, <span style="color:#a6e22e">c</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span>, <span style="color:#a6e22e">d</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">40</span>});
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>); <span style="color:#75715e">// 10
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 20
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rest</span>); <span style="color:#75715e">// {c: 30, d: 40}
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>];
+<span style="color:#66d9ef">var</span> [<span style="color:#a6e22e">y</span>, <span style="color:#a6e22e">z</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">x</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">y</span>); <span style="color:#75715e">// 1
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">z</span>); <span style="color:#75715e">// 2
+</span><span style="color:#75715e"></span>
 
 
 
-기본값
+<span style="color:#a6e22e">선언에서</span> <span style="color:#a6e22e">분리한</span> <span style="color:#a6e22e">할당</span>
 
-var a, b;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>;
 
-[a=5, b=7] = [1];
-console.log(a); // 1
-console.log(b); // 7
-
-
-
-변수 값 교환하기
-
-var a = 1, b = 3;
-
-[a, b] = [b, a];
-console.log(a); // 3
-console.log(b); // 1
+[<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>); <span style="color:#75715e">// 1
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 2
+</span><span style="color:#75715e"></span>
 
 
-일부 반환 값 무시하기
+<span style="color:#a6e22e">기본값</span>
 
-function f() {
-    return [1, 2, 3];
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>;
+
+[<span style="color:#a6e22e">a</span><span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, <span style="color:#a6e22e">b</span><span style="color:#f92672">=</span><span style="color:#ae81ff">7</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>];
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>); <span style="color:#75715e">// 1
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 7
+</span><span style="color:#75715e"></span>
+
+
+<span style="color:#a6e22e">변수</span> <span style="color:#a6e22e">값</span> <span style="color:#a6e22e">교환하기</span>
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+
+[<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>] <span style="color:#f92672">=</span> [<span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">a</span>];
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>); <span style="color:#75715e">// 3
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 1
+</span><span style="color:#75715e"></span>
+
+<span style="color:#a6e22e">일부</span> <span style="color:#a6e22e">반환</span> <span style="color:#a6e22e">값</span> <span style="color:#a6e22e">무시하기</span>
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>() {
+    <span style="color:#66d9ef">return</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>];
 }
 
-var [a, , b] = f();
-console.log(a); // 1
-console.log(b); // 3
-
-반환 값을 모두 무시할 수도 있음
-[,,] = f();
-
-
-
-
-새로운 변수 이름으로 할당하기
-
-var o = {p: 42, q: true};
-var {p: foo, q: bar} = o;
-//var foo = 42; // 이것과 동일하다. 
-//var bar = true; // 이것과 동일하다. 
-
-
-//[foo, bar] = [42, true]   같다 왜??
+<span style="color:#66d9ef">var</span> [<span style="color:#a6e22e">a</span>, , <span style="color:#a6e22e">b</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">f</span>();
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>); <span style="color:#75715e">// 1
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 3
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">반환</span> <span style="color:#a6e22e">값을</span> <span style="color:#a6e22e">모두</span> <span style="color:#a6e22e">무시할</span> <span style="color:#a6e22e">수도</span> <span style="color:#a6e22e">있음</span>
+[,,] <span style="color:#f92672">=</span> <span style="color:#a6e22e">f</span>();
 
 
 
-console.log(foo); // 42
 
-console.log(bar); // true
+<span style="color:#a6e22e">새로운</span> <span style="color:#a6e22e">변수</span> <span style="color:#a6e22e">이름으로</span> <span style="color:#a6e22e">할당하기</span>
 
-</code></pre>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">o</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">p</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">42</span>, <span style="color:#a6e22e">q</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>};
+<span style="color:#66d9ef">var</span> {<span style="color:#a6e22e">p</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">foo</span>, <span style="color:#a6e22e">q</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">bar</span>} <span style="color:#f92672">=</span> <span style="color:#a6e22e">o</span>;
+<span style="color:#75715e">//var foo = 42; // 이것과 동일하다. 
+</span><span style="color:#75715e">//var bar = true; // 이것과 동일하다. 
+</span><span style="color:#75715e"></span>
 
-<p>2.spread operator(전개 구문)</p>
+<span style="color:#75715e">//[foo, bar] = [42, true]   같다 왜??
+</span><span style="color:#75715e"></span>
 
+
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">foo</span>); <span style="color:#75715e">// 42
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">bar</span>); <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span>
+</code></pre></div><p>2.spread operator(전개 구문)</p>
 <blockquote>
 <p>배열이나 문자열과 같이 반복 가능한 문자를 0개 이상의 인수 (함수로 호출할 경우) 또는 요소 (배열 리터럴의 경우)로 확장하여, 0개 이상의 키-값의 쌍으로 객체로 확장시킬 수 있음.</p>
 </blockquote>
-
-<pre><code class="language-js">
-function sum(x, y, z) {
-  return x + y + z;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">y</span>, <span style="color:#a6e22e">z</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">z</span>;
 }
 
-const numbers = [1, 2, 3];
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numbers</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>];
 
-console.log(sum.apply(null, numbers)); //6
-console.log(sum(...numbers)); //6
-//함수에 배열을 인자로 넣고 싶을 대, apply대신 배열을 전개해서 사용할 수 있다.
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">sum</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">numbers</span>)); <span style="color:#75715e">//6
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">sum</span>(...<span style="color:#a6e22e">numbers</span>)); <span style="color:#75715e">//6
+</span><span style="color:#75715e">//함수에 배열을 인자로 넣고 싶을 대, apply대신 배열을 전개해서 사용할 수 있다.
+</span><span style="color:#75715e"></span>
 
-
-구문
-
-
-myFunction(...iterableObj);
+<span style="color:#a6e22e">구문</span>
 
 
-[...iterableObj, '4', 'five', 6];
+<span style="color:#a6e22e">myFunction</span>(...<span style="color:#a6e22e">iterableObj</span>);
 
 
-let obj = {a: 1, b: 2};
-let objClone = { ...obj }; //얕은 복사
-console.log(objColne); //{a: 1, b: 2}
+[...<span style="color:#a6e22e">iterableObj</span>, <span style="color:#e6db74">&#39;4&#39;</span>, <span style="color:#e6db74">&#39;five&#39;</span>, <span style="color:#ae81ff">6</span>];
 
 
-배열의 연결(concat 대신 사용)
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>};
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">objClone</span> <span style="color:#f92672">=</span> { ...<span style="color:#a6e22e">obj</span> }; <span style="color:#75715e">//얕은 복사
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">objColne</span>); <span style="color:#75715e">//{a: 1, b: 2}
+</span><span style="color:#75715e"></span>
+
+<span style="color:#a6e22e">배열의</span> <span style="color:#a6e22e">연결</span>(<span style="color:#a6e22e">concat</span> <span style="color:#a6e22e">대신</span> <span style="color:#a6e22e">사용</span>)
 
 
-var arr1 = [0, 1, 2];
-var arr2 = [3, 4, 5];
-arr1 = arr1.concat(arr2); //arr1: [0, 1, 2, 3, 4, 5]
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arr1</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arr2</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>];
+<span style="color:#a6e22e">arr1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr1</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">arr2</span>); <span style="color:#75715e">//arr1: [0, 1, 2, 3, 4, 5]
+</span><span style="color:#75715e"></span>
+
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arr1</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arr2</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>];
+<span style="color:#a6e22e">arr1</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">arr1</span>, ...<span style="color:#a6e22e">arr2</span>]; <span style="color:#75715e">//arr1: [0, 1, 2, 3, 4, 5]
+</span><span style="color:#75715e"></span>
 
 
 
-var arr1 = [0, 1, 2];
-var arr2 = [3, 4, 5];
-arr1 = [...arr1, ...arr2]; //arr1: [0, 1, 2, 3, 4, 5]
 
-
-
-
-
-</code></pre>
-
-<p>3.rest parameters</p>
-
+</code></pre></div><p>3.rest parameters</p>
 <ul>
 <li>정해지지 않은 수(an indefinite number, 부정수) 인수를 배열로 나타낼 수 있게 함.</li>
 </ul>
-
-<pre><code class="language-js">
-function sum(...theArgs) {
-  return theArgs.reduce((previous, current) =&gt; {
-    return previous + current;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sum</span>(...<span style="color:#a6e22e">theArgs</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">theArgs</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">previous</span>, <span style="color:#a6e22e">current</span>) =&gt; {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">previous</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">current</span>;
   });
 }
 
-// 만약 function sum(arguments) 으로 하면 
-// sort, map, forEach 또는 pop 같은 메서드 가 되지 않는다. 
+<span style="color:#75715e">// 만약 function sum(arguments) 으로 하면 
+</span><span style="color:#75715e">// sort, map, forEach 또는 pop 같은 메서드 가 되지 않는다. 
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">sum</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)); <span style="color:#75715e">//6
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">sum</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>)); <span style="color:#75715e">//10
+</span><span style="color:#75715e"></span>
 
-console.log(sum(1, 2, 3)); //6
-console.log(sum(1, 2, 3, 4)); //10
+<span style="color:#a6e22e">Rest</span> <span style="color:#a6e22e">파라미터와</span> <span style="color:#a6e22e">arguments</span> <span style="color:#a6e22e">객체간의</span> <span style="color:#a6e22e">차이</span>
+
+<span style="color:#e6db74">`Rest 파라미터`</span><span style="color:#a6e22e">는</span> <span style="color:#a6e22e">구분된</span> <span style="color:#a6e22e">이름</span>(<span style="color:#a6e22e">예</span>, <span style="color:#a6e22e">함수</span> <span style="color:#a6e22e">표현에</span> <span style="color:#a6e22e">정식으로</span> <span style="color:#a6e22e">정의된</span> <span style="color:#a6e22e">것</span>)<span style="color:#a6e22e">이</span> <span style="color:#a6e22e">주어지지</span> <span style="color:#a6e22e">않은</span> <span style="color:#a6e22e">유일한</span> <span style="color:#a6e22e">대상인</span> <span style="color:#a6e22e">반면</span>, <span style="color:#a6e22e">arguments</span> <span style="color:#a6e22e">객체는</span> <span style="color:#a6e22e">함수로</span> <span style="color:#a6e22e">전달된</span> <span style="color:#a6e22e">모든</span> <span style="color:#a6e22e">인수를</span> <span style="color:#a6e22e">포함합니다</span>.
+
+<span style="color:#e6db74">`arguments 객체`</span><span style="color:#a6e22e">는</span> <span style="color:#a6e22e">실제</span> <span style="color:#a6e22e">배열이</span> <span style="color:#a6e22e">아니고</span> <span style="color:#a6e22e">rest</span> <span style="color:#a6e22e">파라미터는</span> Array <span style="color:#a6e22e">인스턴스로</span>, <span style="color:#a6e22e">sort</span>, <span style="color:#a6e22e">map</span>, <span style="color:#a6e22e">forEach</span> <span style="color:#a6e22e">또는</span> <span style="color:#a6e22e">pop</span> <span style="color:#a6e22e">같은</span> <span style="color:#a6e22e">메서드가</span> <span style="color:#a6e22e">바로</span> <span style="color:#a6e22e">인스턴스에</span> <span style="color:#a6e22e">적용될</span> <span style="color:#a6e22e">수</span> <span style="color:#a6e22e">있음을</span> <span style="color:#a6e22e">뜻합니다</span>.
+<span style="color:#a6e22e">즉</span> <span style="color:#a6e22e">arguments</span> <span style="color:#a6e22e">객체는</span> <span style="color:#a6e22e">자체에</span> <span style="color:#a6e22e">특정</span> <span style="color:#a6e22e">추가</span> <span style="color:#a6e22e">기능이</span> <span style="color:#a6e22e">있습니다</span> (<span style="color:#a6e22e">callee</span> <span style="color:#a6e22e">속성처럼</span>).
 
 
-Rest 파라미터와 arguments 객체간의 차이
+<span style="color:#a6e22e">Rest</span> <span style="color:#a6e22e">파라미터</span> <span style="color:#a6e22e">해체</span>
 
-`Rest 파라미터`는 구분된 이름(예, 함수 표현에 정식으로 정의된 것)이 주어지지 않은 유일한 대상인 반면, arguments 객체는 함수로 전달된 모든 인수를 포함합니다.
-
-`arguments 객체`는 실제 배열이 아니고 rest 파라미터는 Array 인스턴스로, sort, map, forEach 또는 pop 같은 메서드가 바로 인스턴스에 적용될 수 있음을 뜻합니다.
-즉 arguments 객체는 자체에 특정 추가 기능이 있습니다 (callee 속성처럼).
-
-
-Rest 파라미터 해체
-
-function f(...[a, b, c]) {
-  return a + b + c;
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>(...[<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">c</span>]) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">c</span>;
 }
 
-f(1)// NaN  (b 와 c 가 undefined)
-f(1,2)// NaN  ( c 가 undefined)
-f(1, 2, 3)    // 6
-f(1, 2, 3, 4) // 6 (4번 째 파라미터는 해체되지 않음)
-
-</code></pre>
-
-<p>4.default parameters(기본 매개변수)</p>
-
+<span style="color:#a6e22e">f</span>(<span style="color:#ae81ff">1</span>)<span style="color:#75715e">// NaN  (b 와 c 가 undefined)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">f</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>)<span style="color:#75715e">// NaN  ( c 가 undefined)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">f</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)    <span style="color:#75715e">// 6
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">f</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>) <span style="color:#75715e">// 6 (4번 째 파라미터는 해체되지 않음)
+</span><span style="color:#75715e"></span>
+</code></pre></div><p>4.default parameters(기본 매개변수)</p>
 <blockquote>
 <p>기본 함수 매개변수(default function parameter)를 사용하면 값이 없거나 undefined가 전달될 경우 매개변수를 기본값으로 초기화할 수 있음.</p>
 </blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 
-<pre><code class="language-js">
 
-
-function multiply(a, b = 1) {
-  return a * b;
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">multiply</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">b</span>;
 }
 
-console.log(multiply(5, 2)); //10  
-console.log(multiply(5)); //5 // 5 * 1
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">multiply</span>(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>)); <span style="color:#75715e">//10  
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">multiply</span>(<span style="color:#ae81ff">5</span>)); <span style="color:#75715e">//5 // 5 * 1
+</span><span style="color:#75715e"></span>
 
 
-
-</code></pre>
-
-<p>5.template literals</p>
-
+</code></pre></div><p>5.template literals</p>
 <blockquote>
 <p>내장된 표현식을 허용하는 문자열 리터럴입니다. 여러 줄로 이뤄진 문자열과 문자 보간기능을 사용할 수 있습니다. 이전 버전의 ES2015사양 명세에서는 &ldquo;template strings&rdquo; (템플릿 문자열) 라고 불려 왔습니다.</p>
 </blockquote>
-
-<pre><code class="language-js">
-var text = `hello`;
-console.log(`text: ${text}, type: ${typeof text}`);
-//text: hello, type: string
-
-</code></pre>
-
-<p>6.arrow function(화살표 함수)</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`hello`</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`text: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">text</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, type: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">text</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+<span style="color:#75715e">//text: hello, type: string
+</span><span style="color:#75715e"></span>
+</code></pre></div><p>6.arrow function(화살표 함수)</p>
 <blockquote>
 <p>화살표 함수 표현(arrow function expression)은 function 표현에 비해 구문이 짧고 자신의 this, arguments, super 또는 new.target을 바인딩 하지 않습니다. 화살표 함수는 항상 익명입니다. 이 함수 표현은 메소드 함수가 아닌 곳에 가장 적합합니다. 그래서 생성자로서 사용할 수 없습니다.</p>
 </blockquote>
-
 <p><code>화살표 함수는 항상 익명입니다.</code></p>
-
-<pre><code class="language-js">var materials = [
-  'Hydrogen',
-  'Helium',
-  'Lithium',
-  'Beryllium'
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">materials</span> <span style="color:#f92672">=</span> [
+  <span style="color:#e6db74">&#39;Hydrogen&#39;</span>,
+  <span style="color:#e6db74">&#39;Helium&#39;</span>,
+  <span style="color:#e6db74">&#39;Lithium&#39;</span>,
+  <span style="color:#e6db74">&#39;Beryllium&#39;</span>
 ];
 
 
 
-materials.map(value =&gt; value.length);
-// //Array [8, 6, 7, 9]
-
-</code></pre>
-
-<p>7.for-of loop</p>
-
+<span style="color:#a6e22e">materials</span>.<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">value</span> =&gt; <span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">length</span>);
+<span style="color:#75715e">// //Array [8, 6, 7, 9]
+</span><span style="color:#75715e"></span>
+</code></pre></div><p>7.for-of loop</p>
 <blockquote>
 <p>for&hellip;of 명령문은 반복가능한 객체 (Array, Map, Set, String, TypedArray, arguments 객체 등을 포함)에 대해서 반복하고 각 개별 속성값에 대해 실행되는 문이 있는 사용자 정의 반복 후크를 호출하는 루프를 생성합니다.</p>
 </blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 
-<pre><code class="language-js">
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">array1</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>];
 
-const array1 = ['a', 'b', 'c'];
-
-for (const element of array1) {
-  console.log(element);
+<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">element</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">array1</span>) {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">element</span>);
 }
-// expected output: &quot;a&quot;
-// expected output: &quot;b&quot;
-// expected output: &quot;c&quot;
+<span style="color:#75715e">// expected output: &#34;a&#34;
+</span><span style="color:#75715e">// expected output: &#34;b&#34;
+</span><span style="color:#75715e">// expected output: &#34;c&#34;
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Map의</span> <span style="color:#a6e22e">대한</span> <span style="color:#a6e22e">반복문</span>
 
-Map의 대한 반복문
+<span style="color:#a6e22e">인스턴스의</span> <span style="color:#a6e22e">키와</span> <span style="color:#a6e22e">value</span> <span style="color:#a6e22e">값을</span> <span style="color:#a6e22e">가져온다</span>. 
 
-인스턴스의 키와 value 값을 가져온다. 
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">iterable</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Map</span>([[<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#ae81ff">1</span>], [<span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#ae81ff">2</span>], [<span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#ae81ff">3</span>]]);
 
-let iterable = new Map([[&quot;a&quot;, 1], [&quot;b&quot;, 2], [&quot;c&quot;, 3]]);
-
-for (let entry of iterable) {
-  console.log(entry);
+<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">entry</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">iterable</span>) {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">entry</span>);
 }
-// [a, 1]
-// [b, 2]
-// [c, 3]
+<span style="color:#75715e">// [a, 1]
+</span><span style="color:#75715e">// [b, 2]
+</span><span style="color:#75715e">// [c, 3]
+</span><span style="color:#75715e"></span>
+ <span style="color:#a6e22e">인스턴스에</span> <span style="color:#a6e22e">value값을</span> <span style="color:#a6e22e">가져온다</span>. 
 
- 인스턴스에 value값을 가져온다. 
-
-for (let [key, value] of iterable) {
-  console.log(value);
+<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>] <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">iterable</span>) {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">value</span>);
 }
-// 1
-// 2
-// 3
+<span style="color:#75715e">// 1
+</span><span style="color:#75715e">// 2
+</span><span style="color:#75715e">// 3
+</span><span style="color:#75715e"></span>
 
 
 
-
-</code></pre>
-
-<h2 id="toc_2">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h2>
-
+</code></pre></div><h2 id="------------------------------------------------------------------------------">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h2>
 <h2 id="jsx">JSX</h2>
-
 <p>JSX  란?</p>
-
 <p>JSX 규칙</p>
-
 <ul>
-<li><p>반드시 하나의 엘리먼트로 감싸야 한다.</p></li>
-
-<li><p>자바스크립트 코드를 적용할 땐 { } 안에 작성한다.</p></li>
-
-<li><p>JSX 내부에선 if문을 사용할 수 없다. IIFE or 삼항연산자 사용</p></li>
-
-<li><p>엘리먼트의 클래스 이름을 적용할 때, className 을 사용(class는 ES6에 존재하기 때문)</p></li>
+<li>
+<p>반드시 하나의 엘리먼트로 감싸야 한다.</p>
+</li>
+<li>
+<p>자바스크립트 코드를 적용할 땐 { } 안에 작성한다.</p>
+</li>
+<li>
+<p>JSX 내부에선 if문을 사용할 수 없다. IIFE or 삼항연산자 사용</p>
+</li>
+<li>
+<p>엘리먼트의 클래스 이름을 적용할 때, className 을 사용(class는 ES6에 존재하기 때문)</p>
+</li>
 </ul>
-
 <h2 id="component">Component</h2>
-
 <p>컴포넌트?</p>
-
 <ul>
 <li>개념상 컴포넌트는 자바스크립트 함수와 비슷함.</li>
 <li>독립적으로 기능할 것과 재사용 가능할 것</li>
 <li>재사용성과 코드 관리에 용이</li>
 <li>하나의 컴포넌트가 하나의 기능만 하게 햐야한다 왜냐하면 에러 발생시 용의하다.</li>
 </ul>
-
 <p>Functional component vs Class component</p>
-
 <ul>
-<li><p>함수형 컴포넌트 생성 방식</p></li>
-
-<li><p>prop 값의 변경 없이 바로 렌더하고자 할 때 사용한다.</p></li>
+<li>
+<p>함수형 컴포넌트 생성 방식</p>
+</li>
+<li>
+<p>prop 값의 변경 없이 바로 렌더하고자 할 때 사용한다.</p>
+</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 
-<pre><code class="language-js">
-
-function Welcome(props) {
-    return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Welcome</span>(<span style="color:#a6e22e">props</span>) {
+    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Hello</span>, {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">name</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;;</span>
 }
 
 
 
-</code></pre>
-
-<ul>
-<li><p>클래스 컴포넌트 생성 방식</p></li>
-
-<li><p>method를 사용해야 하고, 클래스 내에서 state 관리 할 수 있고, life cycle에 맞춘 함수 관리가 가능하다.</p></li>
+</code></pre></div><ul>
+<li>
+<p>클래스 컴포넌트 생성 방식</p>
+</li>
+<li>
+<p>method를 사용해야 하고, 클래스 내에서 state 관리 할 수 있고, life cycle에 맞춘 함수 관리가 가능하다.</p>
+</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 
-<pre><code class="language-js">
 
-
-class Welcome extends React.Component {
-    render() {
-        return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Welcome</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">Component</span> {
+    <span style="color:#a6e22e">render</span>() {
+        <span style="color:#66d9ef">return</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Hello</span>, {<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">name</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;;</span>
     }
 }
 
 
 
-</code></pre>
-
-<h2 id="props-란">Props 란?</h2>
-
+</code></pre></div><h2 id="props-란">Props 란?</h2>
 <p>부모 컴포넌트가 자식 컴포넌트에게 내려주는 데이터</p>
-
 <ul>
 <li>변경불가 - 고정값</li>
 <li>일기전용</li>
 <li>String,number function 내려준다.</li>
 </ul>
-
 <h2 id="state">state</h2>
-
 <ul>
 <li>state 란?</li>
 </ul>
-
 <p>컴퍼넌트의상태
 컴포넌트 안에서 관리해야 한다.
 setState 메소드를 이용하여 변경해야 한다.
 왜냐하면</p>
-
 <p>1  재랜더링 하기위해
 2. 가상돔이 인지하지 못해서</p>
-
 <ul>
 <li>state가 변경되는 것은 동기 VS 비동기 ?</li>
 </ul>
-
 <p>setState 메서드 자체는 동기로 작동
 하지만 내부에서 state 값을 업데이트하는것은 비동기</p>
-
 <ul>
 <li><code>state</code> 의 특징??</li>
 </ul>
-
 <p>클래스 컴포넌트에서 사용가능
 immutable 하다
 컴포넌트 내부에서만 접근 가능하다.
 변경하려면 SetState사용
 state 변화의 결과로 life cycle 이 순환한다.</p>
-
 <h2 id="life-cycle">Life Cycle</h2>
-
 <ul>
 <li>Life Cycle 란?</li>
 </ul>
-
 <p>컴퍼넌트가 생성되고 업데이트되고 사라질때
 항상!!! 보장된 타이밍에 실행되는 메서드</p>
-
-<p><img src="/tutorial/2020-01-20-react_files/life.png" alt="" /></p>
-
+<p><img src="/tutorial/2020-01-20-react_files/life.png" alt=""></p>
 <h2 id="lifting-state-up">Lifting state up</h2>
-
 <ul>
 <li>Lifting state up  이란?</li>
 </ul>
-
 <p>자식 컴포넌트의 어떤 액션을 통해 부모 컴포넌트의 state 를 변경시키는 작업.</p>
-
 <ul>
 <li>why??</li>
 </ul>
-
 <p>컴포넌트 단위로 로직을 작성하기 때문에</p>
-
 <ul>
 <li>how??</li>
 </ul>
-
 <p>1.상위 컴포넌트에서 state 를 변경시키는 method 를 만듭니다.</p>
-
 <p>2.만든 modthod 를 자식 컴포넌트에게 props 로 넘겨준다.</p>
-
-<ol>
+<ol start="3">
 <li>자식 컴포넌트에서는 넘겨받은 props를 싱행시킨다.</li>
 </ol>
-
 <h2 id="handle-async-function">Handle Async function</h2>
-
 <ul>
 <li>setTimeout에서 실행되는 함수안에서 일어나는 연산 들을 가져오기</li>
 </ul>
-
-<pre><code class="language-js">
-function hello17th(callback){
-  setTimeout(function(){
-       var hello = &quot;hello&quot;;
-       var name = &quot;jj&quot;
-       var im17 = &quot;im17&quot;
-       callback( `${hello} ${name} ${im17}`);
-},2000);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">hello17th</span>(<span style="color:#a6e22e">callback</span>){
+  <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){
+       <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">hello</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello&#34;</span>;
+       <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;jj&#34;</span>
+       <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">im17</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;im17&#34;</span>
+       <span style="color:#a6e22e">callback</span>( <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">hello</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">im17</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+},<span style="color:#ae81ff">2000</span>);
 }
 
-hello17th()  // undefined 와 callback is not a function 나온다. 
+<span style="color:#a6e22e">hello17th</span>()  <span style="color:#75715e">// undefined 와 callback is not a function 나온다. 
+</span><span style="color:#75715e"></span>
 
-
-// 그럼 어떻게 위에있는 코드를 실행할수 있을까 ?
-
-// 이렇게 callback 함수를 인자안에 작성하면 위에 작성한
-// 변수들을 모아서 사용할수 있다. 
-
-hello17th(function(value){
-    console.log(value);
+<span style="color:#75715e">// 그럼 어떻게 위에있는 코드를 실행할수 있을까 ?
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// 이렇게 callback 함수를 인자안에 작성하면 위에 작성한
+</span><span style="color:#75715e">// 변수들을 모아서 사용할수 있다. 
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">hello17th</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">value</span>){
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">value</span>);
     })
 
-// 2초후에 실행된다.     
-// hello jj im17 
+<span style="color:#75715e">// 2초후에 실행된다.     
+</span><span style="color:#75715e">// hello jj im17 
+</span><span style="color:#75715e"></span>
 
-
-</code></pre>
-
-<h2 id="class-or-function-component의-차이">Class OR Function Component의 차이</h2>
-
-<p><img src="/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 11.34.35 PM.png" alt="" /></p>
-
-<p><img src="/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 11.34.40 PM.png" alt="" /></p>
-
+</code></pre></div><h2 id="class-or-function-component의-차이">Class OR Function Component의 차이</h2>
+<p>![](/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 11.34.35 PM.png)</p>
+<p>![](/tutorial/2020-01-20-react_files/Screen Shot 2020-01-20 at 11.34.40 PM.png)</p>
 <h2 id="virual-dom">virual Dom</h2>
-
 <p>virual Dom 을 간단하게 설명한다.</p>
-
 <p>브라우저에 HTML 을 받으면 그것을 바로 RealDom 에 적용시키지 않고 virual Dom 을 만들어 브라우저에 있는 Dom 과 virual Dom 을 비교해서
 바뀐 부분만 변경해준다.</p>
-
-<p><img src="/tutorial/2020-01-20-react_files/Screen Shot 2020-02-02 at 11.04.43 PM.png" alt="" /></p>
-
+<p>![](/tutorial/2020-01-20-react_files/Screen Shot 2020-02-02 at 11.04.43 PM.png)</p>
 <h2 id="reactdom-과-reactnative-차이점">ReactDom 과 reactNative 차이점?</h2>
-
 <p>리엑트를 사용해서 웹사이트에 올리고 싶다?</p>
-
 <p>ReactDom 을 쓰면됨</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">ReactDOM</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react-dom&#34;</span>;
 
-<pre><code class="language-js">
-import ReactDOM from &quot;react-dom&quot;;
+<span style="color:#a6e22e">ReactDOM</span>.<span style="color:#a6e22e">render</span>(<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">App</span> <span style="color:#f92672">/&gt;</span>, document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;root&#34;</span>));
 
-ReactDOM.render(&lt;App /&gt;, document.getElementById(&quot;root&quot;));
-
-</code></pre>
-
-<p>리엑트를 사용해서 웹사이트에 올리고 싶다?</p>
-
+</code></pre></div><p>리엑트를 사용해서 웹사이트에 올리고 싶다?</p>
 <p>reactNative 쓰면됨</p>
-
-<h2 id="생활코딩예제">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
-
+<h2 id="-------------------생활코딩예제----------------------------------">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-생활코딩예제&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h2>
 <h2 id="component-만들기">Component 만들기</h2>
-
 <p>HTML tag</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">html</span><span style="color:#f92672">&gt;</span>
+  <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">body</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">header</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">WEB</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;</span>
+      <span style="color:#a6e22e">world</span> <span style="color:#a6e22e">wide</span> <span style="color:#a6e22e">web</span><span style="color:#f92672">!</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/header&gt;</span>
 
-<pre><code class="language-js">&lt;html&gt;
-  &lt;body&gt;
-    &lt;header&gt;
-      &lt;h1&gt;WEB&lt;/h1&gt;
-      world wide web!
-    &lt;/header&gt;
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">nav</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ul</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">HTML</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;&lt;/li&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">CSS</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;&lt;/li&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">JavaScript</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;&lt;/li&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/ul&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/nav&gt;</span>
 
-    &lt;nav&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/nav&gt;
-
-    &lt;article&gt;
-      &lt;h2&gt;HTML&lt;/h2&gt;
-      HTML is HyperText Markup Language.
-    &lt;/article&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">article</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h2</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">HTML</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h2&gt;</span>
+      <span style="color:#a6e22e">HTML</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">HyperText</span> <span style="color:#a6e22e">Markup</span> <span style="color:#a6e22e">Language</span>.
+    <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/article&gt;</span>
+  <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/body&gt;</span>
+<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/html&gt;</span>
 
 
 
-</code></pre>
 
-<p>App.js</p>
+</code></pre></div><p>App.js</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">logo</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./logo.svg&#34;</span>; <span style="color:#75715e">//필요없다 현재
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./App.css&#34;</span>;
 
-<pre><code class="language-js">
-import React, { Component } from &quot;react&quot;;
-import logo from &quot;./logo.svg&quot;; //필요없다 현재
-import &quot;./App.css&quot;;
-
-class Content extends Component {
-  render() {
-    return (
-      &lt;article&gt;
-        &lt;h2&gt;HTML&lt;/h2&gt;
-        HTML is HyperText Markup Language.
-      &lt;/article&gt;
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Content</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">article</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h2</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">HTML</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h2&gt;</span>
+        <span style="color:#a6e22e">HTML</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">HyperText</span> <span style="color:#a6e22e">Markup</span> <span style="color:#a6e22e">Language</span>.
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/article&gt;</span>
     );
   }
 }
 
-class TOC extends Component {
-  render() {
-    return (
-      &lt;nav&gt;
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;  }
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TOC</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">nav</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ul</span><span style="color:#f92672">&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">HTML</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">CSS</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">JavaScript</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/ul&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/nav&gt;  }</span>
 }
 
-// 컴퍼넌트를 만들때는 항상 하나의 최상의 tag로 시작해야한다.
-
-class Subject extends Component {
-  render() {
-    return (
-      &lt;header&gt; 
-        &lt;h1&gt;WEB&lt;/h1&gt;
-        world wide web!
-      &lt;/header&gt;
+<span style="color:#75715e">// 컴퍼넌트를 만들때는 항상 하나의 최상의 tag로 시작해야한다.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Subject</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">header</span><span style="color:#f92672">&gt;</span> 
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">WEB</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;</span>
+        <span style="color:#a6e22e">world</span> <span style="color:#a6e22e">wide</span> <span style="color:#a6e22e">web</span><span style="color:#f92672">!</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/header&gt;</span>
     );
   }
 }
 
-// App이라는 것이 Component 를 만들 것이다.
-// App 는 render 라는 메소드를 가지고 있다.
-
-class App extends Component {
-  render() {
-    return (
-      &lt;div className=&quot;App&quot;&gt;
-        &lt;Subject&gt;&lt;/Subject&gt;
-        &lt;TOC&gt;&lt;/TOC&gt;
-        &lt;Content&gt;&lt;/Content&gt;
-      &lt;/div&gt;
-    ); // class =  에서 calssName으로 바뀜
-  }
+<span style="color:#75715e">// App이라는 것이 Component 를 만들 것이다.
+</span><span style="color:#75715e">// App 는 render 라는 메소드를 가지고 있다.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;App&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Subject</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Subject&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">TOC</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/TOC&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Content</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Content&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
+    ); <span style="color:#75715e">// class =  에서 calssName으로 바뀜
+</span><span style="color:#75715e"></span>  }
 }
 
-export default App;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
 
 
 
-</code></pre>
+</code></pre></div><h2 id="props-만들기">Props 만들기</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">logo</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./logo.svg&#34;</span>; <span style="color:#75715e">//필요없다 현재
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./App.css&#34;</span>;
 
-<h2 id="props-만들기">Props 만들기</h2>
-
-<pre><code class="language-js">import React, { Component } from &quot;react&quot;;
-import logo from &quot;./logo.svg&quot;; //필요없다 현재
-import &quot;./App.css&quot;;
-
-class Content extends Component {
-  render() {
-    return (
-      &lt;article&gt; // props
-        &lt;h2&gt;{this.props.title}&lt;/h2&gt;  
-        {this.props.desc}
-      &lt;/article&gt;
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Content</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">article</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">// props
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h2</span><span style="color:#f92672">&gt;</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">title</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h2&gt;  </span>
+        {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">desc</span>}
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/article&gt;</span>
     );
   }
 }
 
-class TOC extends Component {
-  render() {
-    return (
-      &lt;nav&gt;
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TOC</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">nav</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ul</span><span style="color:#f92672">&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">HTML</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">CSS</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">JavaScript</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/ul&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/nav&gt;</span>
     );
   }
 }
 
-// 컴퍼넌트를 만들때는 항상 하나의 최상의 tag로 시작해야한다.
-class Subject extends Component {
-  render() {
-    return (
-      &lt;header&gt; // props
-        &lt;h1&gt;{this.props.title}&lt;/h1&gt;
-        {this.props.sub}
-      &lt;/header&gt;
+<span style="color:#75715e">// 컴퍼넌트를 만들때는 항상 하나의 최상의 tag로 시작해야한다.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Subject</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">header</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">// props
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">title</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;</span>
+        {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">sub</span>}
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/header&gt;</span>
     );
   }
 }
 
-// App이라는 것이 Component 를 만들 것이다.
-// App 는 render 라는 메소드를 가지고 있다.
-
-class App extends Component {
-  render() {
-    return (
-      &lt;div className=&quot;App&quot;&gt;
-        &lt;Subject title=&quot;WEB&quot; sub=&quot;world wide web!&quot;&gt;&lt;/Subject&gt;
-        &lt;Subject title=&quot;menu&quot; sub=&quot;this is what I wanted to build&quot;&gt;&lt;/Subject&gt;
-        &lt;TOC&gt;&lt;/TOC&gt;
-        &lt;Content
-          title=&quot;HTML&quot;
-          desc=&quot; HTML is HyperText Markup Language.&quot;
-        &gt;&lt;/Content&gt;
-      &lt;/div&gt;
+<span style="color:#75715e">// App이라는 것이 Component 를 만들 것이다.
+</span><span style="color:#75715e">// App 는 render 라는 메소드를 가지고 있다.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;App&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Subject</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;WEB&#34;</span> <span style="color:#a6e22e">sub</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;world wide web!&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Subject&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Subject</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu&#34;</span> <span style="color:#a6e22e">sub</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this is what I wanted to build&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Subject&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">TOC</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/TOC&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Content</span>
+          <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;HTML&#34;</span>
+          <span style="color:#a6e22e">desc</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34; HTML is HyperText Markup Language.&#34;</span>
+        <span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Content&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
     ); 
   }
 }
 
-export default App;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
 
 
 
-</code></pre>
-
-<h2 id="component-파일로-분리하기">Component 파일로 분리하기</h2>
-
+</code></pre></div><h2 id="component-파일로-분리하기">Component 파일로 분리하기</h2>
 <blockquote>
 <p>만약 하나의 파일에 component가 수천개 있다면 복잡할 것이다.</p>
 </blockquote>
-
 <p>App.js</p>
-
 <blockquote>
 <p>main JS 파일</p>
 </blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">logo</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./logo.svg&#34;</span>; <span style="color:#75715e">//필요없다 현재
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/TOC&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Subject</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/subject&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/content&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./App.css&#34;</span>;
 
-<pre><code class="language-js">
-import React, { Component } from &quot;react&quot;;
-import logo from &quot;./logo.svg&quot;; //필요없다 현재
-import TOC from &quot;./component/TOC&quot;;
-import Subject from &quot;./component/subject&quot;;
-import Content from &quot;./component/content&quot;;
-import &quot;./App.css&quot;;
-
-// App이라는 것이 Component 를 만들 것이다.
-// App 는 render 라는 메소드를 가지고 있다.
-
-class App extends Component {
-  render() {
-    return (
-      &lt;div className=&quot;App&quot;&gt;
-        &lt;Subject title=&quot;WEB&quot; sub=&quot;world wide web!&quot;&gt;&lt;/Subject&gt;
-        &lt;Subject title=&quot;menu&quot; sub=&quot;this is what I wanted to build&quot;&gt;&lt;/Subject&gt;
-        &lt;TOC&gt;&lt;/TOC&gt;
-        &lt;Content
-          title=&quot;HTML&quot;
-          desc=&quot; HTML is HyperText Markup Language.&quot;
-        &gt;&lt;/Content&gt;
-      &lt;/div&gt;
-    ); // class =  에서 calssName으로 바뀜
-  }
+<span style="color:#75715e">// App이라는 것이 Component 를 만들 것이다.
+</span><span style="color:#75715e">// App 는 render 라는 메소드를 가지고 있다.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;App&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Subject</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;WEB&#34;</span> <span style="color:#a6e22e">sub</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;world wide web!&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Subject&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Subject</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu&#34;</span> <span style="color:#a6e22e">sub</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this is what I wanted to build&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Subject&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">TOC</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/TOC&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Content</span>
+          <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;HTML&#34;</span>
+          <span style="color:#a6e22e">desc</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34; HTML is HyperText Markup Language.&#34;</span>
+        <span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Content&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
+    ); <span style="color:#75715e">// class =  에서 calssName으로 바뀜
+</span><span style="color:#75715e"></span>  }
 }
 
-export default App;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
 
 
 
 
-</code></pre>
-
-<p>component파일 안에</p>
-
+</code></pre></div><p>component파일 안에</p>
 <p>subject.js</p>
-
 <blockquote>
 <p>component파일</p>
 </blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
 
-<pre><code class="language-js">import React, { Component } from &quot;react&quot;;
-
-// 컴퍼넌트를 만들때는 항상 하나의 최상의 tag로 시작해야한다.
-
-class Subject extends Component {
-  render() {
-    return (
-      &lt;header&gt;
-        &lt;h1&gt;{this.props.title}&lt;/h1&gt;
-        {this.props.sub}
-      &lt;/header&gt;
+<span style="color:#75715e">// 컴퍼넌트를 만들때는 항상 하나의 최상의 tag로 시작해야한다.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Subject</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">header</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">title</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;</span>
+        {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">sub</span>}
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/header&gt;</span>
     );
   }
 }
 
-export default Subject;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">Subject</span>;
 
 
 
-</code></pre>
-
-<p>component파일 안에</p>
-
+</code></pre></div><p>component파일 안에</p>
 <p>content.js</p>
-
 <blockquote>
 <p>component파일</p>
 </blockquote>
-
-<pre><code class="language-js">
-import React, { Component } from &quot;react&quot;;
-class Content extends Component {
-  render() {
-    return (
-      &lt;article&gt;
-        &lt;h2&gt;{this.props.title}&lt;/h2&gt;
-        {this.props.desc}
-      &lt;/article&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Content</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">article</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h2</span><span style="color:#f92672">&gt;</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">title</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h2&gt;</span>
+        {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">desc</span>}
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/article&gt;</span>
     );
   }
 }
 
-export default Content;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">Content</span>;
 
 
 
-</code></pre>
-
-<p>component파일 안에</p>
-
+</code></pre></div><p>component파일 안에</p>
 <p>TOC.js</p>
-
 <blockquote>
 <p>component파일</p>
 </blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
 
-<pre><code class="language-js">
-import React, { Component } from &quot;react&quot;;
-
-class TOC extends Component {
-  render() {
-    return (
-      &lt;nav&gt;
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TOC</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">nav</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ul</span><span style="color:#f92672">&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">HTML</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">CSS</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">JavaScript</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/ul&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/nav&gt;</span>
     );
   }
 }
 
-export default TOC;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">TOC</span>;
 
 
 
-</code></pre>
-
-<h2 id="state의-사용">state의 사용</h2>
-
+</code></pre></div><h2 id="state의-사용">state의 사용</h2>
 <blockquote>
 <p>리팩토링과 마찬가지이다.</p>
 </blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">logo</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./logo.svg&#34;</span>; <span style="color:#75715e">//필요없다 현재
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/TOC&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Subject</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/subject&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/content&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./App.css&#34;</span>;
 
-<pre><code class="language-js">import React, { Component } from &quot;react&quot;;
-import logo from &quot;./logo.svg&quot;; //필요없다 현재
-import TOC from &quot;./component/TOC&quot;;
-import Subject from &quot;./component/subject&quot;;
-import Content from &quot;./component/content&quot;;
-import &quot;./App.css&quot;;
-
-// App이라는 것이 Component 를 만들 것이다.
-// App 는 render 라는 메소드를 가지고 있다.
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      subject: { title: &quot;WEB&quot;, sub: &quot;world wide web!&quot; }
+<span style="color:#75715e">// App이라는 것이 Component 를 만들 것이다.
+</span><span style="color:#75715e">// App 는 render 라는 메소드를 가지고 있다.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>) {
+    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>);
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">subject</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;WEB&#34;</span>, <span style="color:#a6e22e">sub</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;world wide web!&#34;</span> }
     };
   }
-  render() {
-    return (
-      &lt;div className=&quot;App&quot;&gt;
-        &lt;Subject
-          title={this.state.subject.title} //this 로 constructor 에 속성값 불러온다. 
-          sub={this.state.subject.sub}
-        &gt;&lt;/Subject&gt;
-        &lt;TOC&gt;&lt;/TOC&gt;
-        &lt;Content
-          title=&quot;HTML&quot;
-          desc=&quot; HTML is HyperText Markup Language.&quot;
-        &gt;&lt;/Content&gt;
-      &lt;/div&gt;
-    ); // class =  에서 calssName으로 바뀜
-  }
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;App&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Subject</span>
+          <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">title</span>} <span style="color:#75715e">//this 로 constructor 에 속성값 불러온다. 
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">sub</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">sub</span>}
+        <span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Subject&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">TOC</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/TOC&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Content</span>
+          <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;HTML&#34;</span>
+          <span style="color:#a6e22e">desc</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34; HTML is HyperText Markup Language.&#34;</span>
+        <span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Content&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
+    ); <span style="color:#75715e">// class =  에서 calssName으로 바뀜
+</span><span style="color:#75715e"></span>  }
 }
 
-export default App;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
 
 
-</code></pre>
-
-<h2 id="state-key">state (Key)</h2>
-
+</code></pre></div><h2 id="state-key">state (Key)</h2>
 <blockquote>
 <p>복수의 앨리먼트를 생성할 때는 <code>key</code>라는 특수한 <code>props</code>를 사용해야 합니다. 여기서는 key의 사용법을 소개합니다.</p>
 </blockquote>
-
 <p>App.js</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">logo</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./logo.svg&#34;</span>; <span style="color:#75715e">//필요없다 현재
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/TOC&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Subject</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/subject&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/content&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./App.css&#34;</span>;
 
-<pre><code class="language-js">
-import React, { Component } from &quot;react&quot;;
-import logo from &quot;./logo.svg&quot;; //필요없다 현재
-import TOC from &quot;./component/TOC&quot;;
-import Subject from &quot;./component/subject&quot;;
-import Content from &quot;./component/content&quot;;
-import &quot;./App.css&quot;;
-
-// App이라는 것이 Component 를 만들 것이다.
-// App 는 render 라는 메소드를 가지고 있다.
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      subject: { title: &quot;WEB&quot;, sub: &quot;world wide web!&quot; },
-      contents: [
-        // 1. contents 키값과 value 값으로 [] 만들고 그안에 내용을 적는다.
-        { id: 1, title: &quot;HTML&quot;, desc: &quot;HTML is information&quot; },
-        { id: 2, title: &quot;CSS&quot;, desc: &quot;CSS is information&quot; },
-        { id: 3, title: &quot;JS&quot;, desc: &quot;JS is information&quot; }
+<span style="color:#75715e">// App이라는 것이 Component 를 만들 것이다.
+</span><span style="color:#75715e">// App 는 render 라는 메소드를 가지고 있다.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>) {
+    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>);
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">subject</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;WEB&#34;</span>, <span style="color:#a6e22e">sub</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;world wide web!&#34;</span> },
+      <span style="color:#a6e22e">contents</span><span style="color:#f92672">:</span> [
+        <span style="color:#75715e">// 1. contents 키값과 value 값으로 [] 만들고 그안에 내용을 적는다.
+</span><span style="color:#75715e"></span>        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;HTML is information&#34;</span> },
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CSS&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CSS is information&#34;</span> },
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;JS&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;JS is information&#34;</span> }
       ]
     };
   }
-  // 2.render() 메소드 안에 TOC data = {this.state.contents} 넣어준다.
-  // 3.그리고 TOC component 로 이동한다.
-  render() {
-    return (
-      &lt;div className=&quot;App&quot;&gt;
-        &lt;Subject
-          title={this.state.subject.title}
-          sub={this.state.subject.sub}
-        &gt;&lt;/Subject&gt;
-        &lt;TOC data={this.state.contents}&gt;&lt;/TOC&gt;
-        &lt;Content
-          title=&quot;HTML&quot;
-          desc=&quot; HTML is HyperText Markup Language.&quot;
-        &gt;&lt;/Content&gt;
-      &lt;/div&gt;
-    ); // class =  에서 calssName으로 바뀜
-  }
+  <span style="color:#75715e">// 2.render() 메소드 안에 TOC data = {this.state.contents} 넣어준다.
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// 3.그리고 TOC component 로 이동한다.
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;App&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Subject</span>
+          <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">title</span>}
+          <span style="color:#a6e22e">sub</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">sub</span>}
+        <span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Subject&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">data</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>}<span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/TOC&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Content</span>
+          <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;HTML&#34;</span>
+          <span style="color:#a6e22e">desc</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34; HTML is HyperText Markup Language.&#34;</span>
+        <span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Content&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
+    ); <span style="color:#75715e">// class =  에서 calssName으로 바뀜
+</span><span style="color:#75715e"></span>  }
 }
 
-export default App;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
 
 
-</code></pre>
+</code></pre></div><p>이전 TOC.js</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 
-<p>이전 TOC.js</p>
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
 
-<pre><code class="language-js">
-
-import React, { Component } from &quot;react&quot;;
-
-class TOC extends Component {
-  render() {
-    return (
-      &lt;nav&gt;
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TOC</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">nav</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ul</span><span style="color:#f92672">&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">HTML</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">CSS</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3.html&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">JavaScript</span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/ul&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/nav&gt;</span>
     );
   }
 }
 
-export default TOC;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">TOC</span>;
 
 
 
-</code></pre>
-
-<p>이후 TOC.js</p>
-
-<pre><code class="language-js">
+</code></pre></div><p>이후 TOC.js</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 
 
-import React, { Component } from &quot;react&quot;;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
 
-class TOC extends Component {
-  render() {
-    var lists = [];
-    var data = this.props.data; // &lt;TOC data={this.state.contents}&gt;&lt;/TOC&gt; 연결된다.
-    var i = 0;
-    // 여러게의 엘리먼트를 자동으로 생성할때 콘솔에 에러가 발생한다. 왜냐하면 각각의 목록에 키값을 주라는 것이다.
-    // 이것은 react 가 필요로 하는 것이기 때문에 넣어 주어야 한다.
-    // li tag 에 key 를 넣고 값은 App 의 프로퍼티에 있는 dt
-    while (i &lt; data.length) {
-      lists.push(
-        &lt;li key={data[i].id}&gt;
-          &lt;a href={&quot;/content/&quot; + data[i].id}&gt;{data[i].title}&lt;/a&gt;
-        &lt;/li&gt;
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TOC</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">lists</span> <span style="color:#f92672">=</span> [];
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">data</span>; <span style="color:#75715e">// &lt;TOC data={this.state.contents}&gt;&lt;/TOC&gt; 연결된다.
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    <span style="color:#75715e">// 여러게의 엘리먼트를 자동으로 생성할때 콘솔에 에러가 발생한다. 왜냐하면 각각의 목록에 키값을 주라는 것이다.
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 이것은 react 가 필요로 하는 것이기 때문에 넣어 주어야 한다.
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// li tag 에 key 를 넣고 값은 App 의 프로퍼티에 있는 dt
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">length</span>) {
+      <span style="color:#a6e22e">lists</span>.<span style="color:#a6e22e">push</span>(
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">li</span> <span style="color:#a6e22e">key</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">data</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">id</span>}<span style="color:#f92672">&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;/content/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">id</span>}<span style="color:#f92672">&gt;</span>{<span style="color:#a6e22e">data</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">title</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/li&gt;</span>
       );
-      i = i + 1;
+      <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
     }
 
-    return &lt;nav&gt;{lists}&lt;/nav&gt;;
+    <span style="color:#66d9ef">return</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">nav</span><span style="color:#f92672">&gt;</span>{<span style="color:#a6e22e">lists</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/nav&gt;;</span>
   }
 }
 
-//     &lt;ul&gt;
-//       &lt;li&gt;&lt;a href=&quot;1.html&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
-//       &lt;li&gt;&lt;a href=&quot;2.html&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;
-//       &lt;li&gt;&lt;a href=&quot;3.html&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
-//     &lt;/ul&gt;
+<span style="color:#75715e">//     &lt;ul&gt;
+</span><span style="color:#75715e">//       &lt;li&gt;&lt;a href=&#34;1.html&#34;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+</span><span style="color:#75715e">//       &lt;li&gt;&lt;a href=&#34;2.html&#34;&gt;CSS&lt;/a&gt;&lt;/li&gt;
+</span><span style="color:#75715e">//       &lt;li&gt;&lt;a href=&#34;3.html&#34;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+</span><span style="color:#75715e">//     &lt;/ul&gt;
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">TOC</span>;
 
-export default TOC;
 
 
-
-</code></pre>
-
-<h2 id="이벤트-state-props-그리고-render-함수">이벤트 state props 그리고 render 함수</h2>
-
+</code></pre></div><h2 id="이벤트-state-props-그리고-render-함수">이벤트 state props 그리고 render 함수</h2>
 <ul>
 <li>App.js</li>
 </ul>
-
-<pre><code class="language-js">import React, { Component } from &quot;react&quot;;
-// import logo from &quot;./logo.svg&quot;; //필요없다 현재
-import TOC from &quot;./component/TOC&quot;;
-import Subject from &quot;./component/subject&quot;;
-import Content from &quot;./component/content&quot;;
-import &quot;./App.css&quot;;
-// import ReactDOM from &quot;react-dom&quot;;
-
-// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mode: &quot;welcome&quot;, // 이벤트 준비
-      subject: { title: &quot;WEB&quot;, sub: &quot;world wide web!&quot; },
-      welcome: { title: &quot;welcom&quot;, desc: &quot;hello react!!!&quot; }, // 이벤트 준비
-      contents: [
-        { id: 1, title: &quot;HTML&quot;, desc: &quot;HTML is information&quot; },
-        { id: 2, title: &quot;CSS&quot;, desc: &quot;CSS is information&quot; },
-        { id: 3, title: &quot;JS&quot;, desc: &quot;JS is information&quot; }
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#75715e">// import logo from &#34;./logo.svg&#34;; //필요없다 현재
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/TOC&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Subject</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/subject&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/content&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./App.css&#34;</span>;
+<span style="color:#75715e">// import ReactDOM from &#34;react-dom&#34;;
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>) {
+    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>);
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">mode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;welcome&#34;</span>, <span style="color:#75715e">// 이벤트 준비
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">subject</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;WEB&#34;</span>, <span style="color:#a6e22e">sub</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;world wide web!&#34;</span> },
+      <span style="color:#a6e22e">welcome</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;welcom&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;hello react!!!&#34;</span> }, <span style="color:#75715e">// 이벤트 준비
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">contents</span><span style="color:#f92672">:</span> [
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;HTML is information&#34;</span> },
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CSS&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CSS is information&#34;</span> },
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;JS&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;JS is information&#34;</span> }
       ]
     };
   }
 
-  render() {
-    let _title = null; // 이벤트 변수
-    let _desc = null; //  이벤트변수
-    if (this.state.mode === &quot;welcome&quot;) {
-      _title = this.state.welcome.title;
-      _desc = this.state.welcome.desc;
-    } else if (this.state.mode === &quot;read&quot;) {
-      _title = this.state.contents[0].title;
-      _desc = this.state.contents[0].desc;
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; <span style="color:#75715e">// 이벤트 변수
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; <span style="color:#75715e">//  이벤트변수
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">mode</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;welcome&#34;</span>) {
+      <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">welcome</span>.<span style="color:#a6e22e">title</span>;
+      <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">welcome</span>.<span style="color:#a6e22e">desc</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">mode</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;read&#34;</span>) {
+      <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">title</span>;
+      <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">desc</span>;
     }
 
-    return (
-      &lt;div className=&quot;App&quot;&gt;
-        &lt;Subject
-          title={this.state.subject.title} // 이벤트 위에서 변수 가져옴
-          sub={this.state.subject.sub} // 이벤트 위에서 변수 가져옴
-        &gt;&lt;/Subject&gt;
-        &lt;TOC data={this.state.contents}&gt;&lt;/TOC&gt;
-        &lt;Content title={_title} desc={_desc}&gt;&lt;/Content&gt;
-      &lt;/div&gt;
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;App&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Subject</span>
+          <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">title</span>} <span style="color:#75715e">// 이벤트 위에서 변수 가져옴
+</span><span style="color:#75715e"></span>          <span style="color:#a6e22e">sub</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">sub</span>} <span style="color:#75715e">// 이벤트 위에서 변수 가져옴
+</span><span style="color:#75715e"></span>        <span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Subject&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">data</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>}<span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/TOC&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">_title</span>} <span style="color:#a6e22e">desc</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">_desc</span>}<span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Content&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
     );
   }
 }
 
-export default App;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
 
 
-</code></pre>
-
-<h2 id="이벤트-설치">이벤트 설치</h2>
-
+</code></pre></div><h2 id="이벤트-설치">이벤트 설치</h2>
 <blockquote>
 <p>다시 랜더링 되는거 방지하기</p>
-
+</blockquote>
+<blockquote>
 <p>e.preventDefault() 사용하기</p>
 </blockquote>
-
-<pre><code class="language-js">
-import React, { Component } from &quot;react&quot;;
-// import logo from &quot;./logo.svg&quot;; //필요없다 현재
-import TOC from &quot;./component/TOC&quot;;
-import Subject from &quot;./component/subject&quot;;
-import Content from &quot;./component/content&quot;;
-import &quot;./App.css&quot;;
-// import ReactDOM from &quot;react-dom&quot;;
-
-// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mode: &quot;welcome&quot;, // 이벤트 준비
-      subject: { title: &quot;WEB&quot;, sub: &quot;world wide web!&quot; },
-      welcome: { title: &quot;welcom&quot;, desc: &quot;hello react!!!&quot; }, // 이벤트 준비
-      contents: [
-        { id: 1, title: &quot;HTML&quot;, desc: &quot;HTML is information&quot; },
-        { id: 2, title: &quot;CSS&quot;, desc: &quot;CSS is information&quot; },
-        { id: 3, title: &quot;JS&quot;, desc: &quot;JS is information&quot; }
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#75715e">// import logo from &#34;./logo.svg&#34;; //필요없다 현재
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/TOC&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Subject</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/subject&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/content&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./App.css&#34;</span>;
+<span style="color:#75715e">// import ReactDOM from &#34;react-dom&#34;;
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>) {
+    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>);
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">mode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;welcome&#34;</span>, <span style="color:#75715e">// 이벤트 준비
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">subject</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;WEB&#34;</span>, <span style="color:#a6e22e">sub</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;world wide web!&#34;</span> },
+      <span style="color:#a6e22e">welcome</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;welcom&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;hello react!!!&#34;</span> }, <span style="color:#75715e">// 이벤트 준비
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">contents</span><span style="color:#f92672">:</span> [
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;HTML is information&#34;</span> },
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CSS&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CSS is information&#34;</span> },
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;JS&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;JS is information&#34;</span> }
       ]
     };
   }
 
-  render() {
-    let _title = null; // 이벤트 변수
-    let _desc = null; //  이벤트변수
-    if (this.state.mode === &quot;welcome&quot;) {
-      _title = this.state.welcome.title;
-      _desc = this.state.welcome.desc;
-    } else if (this.state.mode === &quot;read&quot;) {
-      _title = this.state.contents[0].title;
-      _desc = this.state.contents[0].desc;
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; <span style="color:#75715e">// 이벤트 변수
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; <span style="color:#75715e">//  이벤트변수
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">mode</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;welcome&#34;</span>) {
+      <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">welcome</span>.<span style="color:#a6e22e">title</span>;
+      <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">welcome</span>.<span style="color:#a6e22e">desc</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">mode</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;read&#34;</span>) {
+      <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">title</span>;
+      <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">desc</span>;
     }
 
-    return (
-      &lt;div className=&quot;App&quot;&gt;
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;App&#34;</span><span style="color:#f92672">&gt;</span>
         {
-          /* &lt;Subject
-          title={this.state.subject.title} // 이벤트 위에서 변수 가져옴
-          sub={this.state.subject.sub} // 이벤트 위에서 변수 가져옴
-        &gt;&lt;/Subject&gt; */
-          // App 함수안에 &lt;subject&gt; 를 풀어해친후 테그안에 OnClick  을 넣느다.
-          // 이때 e 파마미터를 추가하여 e.preventDefault() 호출한다.
-          // 그러면 다시 랜더링하는것을 방지할수 있다.
-          &lt;header&gt;
-            &lt;h1&gt;
-              &lt;a
-                href=&quot;/&quot;
-                onClick={function(e) {
-                  alert(&quot;hello&quot;);
-                  e.preventDefault();
+          <span style="color:#75715e">/* &lt;Subject
+</span><span style="color:#75715e">          title={this.state.subject.title} // 이벤트 위에서 변수 가져옴
+</span><span style="color:#75715e">          sub={this.state.subject.sub} // 이벤트 위에서 변수 가져옴
+</span><span style="color:#75715e">        &gt;&lt;/Subject&gt; */</span>
+          <span style="color:#75715e">// App 함수안에 &lt;subject&gt; 를 풀어해친후 테그안에 OnClick  을 넣느다.
+</span><span style="color:#75715e"></span>          <span style="color:#75715e">// 이때 e 파마미터를 추가하여 e.preventDefault() 호출한다.
+</span><span style="color:#75715e"></span>          <span style="color:#75715e">// 그러면 다시 랜더링하는것을 방지할수 있다.
+</span><span style="color:#75715e"></span>          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">header</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span>
+              <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span>
+                <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>
+                <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>) {
+                  <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;hello&#34;</span>);
+                  <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">preventDefault</span>();
                 }}
-              &gt;
-                {this.state.subject.title}
-              &lt;/a&gt;
-            &lt;/h1&gt;
-            {this.state.subject.desc}
-          &lt;/header&gt;
+              <span style="color:#f92672">&gt;</span>
+                {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">title</span>}
+              <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;</span>
+            {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">desc</span>}
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/header&gt;</span>
         }
 
-        &lt;TOC data={this.state.contents}&gt;&lt;/TOC&gt;
-        &lt;Content title={_title} desc={_desc}&gt;&lt;/Content&gt;
-      &lt;/div&gt;
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">data</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>}<span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/TOC&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">_title</span>} <span style="color:#a6e22e">desc</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">_desc</span>}<span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Content&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
     );
   }
 }
 
-export default App;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
 
 
-</code></pre>
-
-<h2 id="state-변경하기">state 변경하기</h2>
-
+</code></pre></div><h2 id="state-변경하기">state 변경하기</h2>
 <p>두가지 필요</p>
-
 <ol>
 <li>setState() 메소드 사용</li>
 <li>bind(this) this 묶어주기</li>
 </ol>
-
 <p>setState 로 꼭 state 값을 바꿔줘야 한다.</p>
-
 <p>하지만</p>
-
 <p><code>주의</code>
 아래 코드에서는 아니다.
 그이유는 컴퍼넌트가 생성이 끝난 다음에 동적으로 state를 바꿀때는 다르기 때문이다.
 <code>this.setState({})</code> 이렇게 해주어야 한다. 그래야 react 가 안다.</p>
-
-<pre><code class="language-js">class App extends Component {
-constructor(props) {
-    super(props);
-    this.state = {}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+<span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>) {
+    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>);
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {}
     
     }
-    render(){
-    if (this.state.mode === &quot;welcome&quot;) {
-    //블라브라
+    <span style="color:#a6e22e">render</span>(){
+    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">mode</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;welcome&#34;</span>) {
+    <span style="color:#75715e">//블라브라
+</span><span style="color:#75715e"></span>    }
     }
-    }
 
-</code></pre>
-
-<pre><code class="language-js">
-import React, { Component } from &quot;react&quot;;
-// import logo from &quot;./logo.svg&quot;; //필요없다 현재
-import TOC from &quot;./component/TOC&quot;;
-import Subject from &quot;./component/subject&quot;;
-import Content from &quot;./component/content&quot;;
-import &quot;./App.css&quot;;
-// import ReactDOM from &quot;react-dom&quot;;
-
-// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mode: &quot;read&quot;, // 이벤트 준비
-      subject: { title: &quot;WEB&quot;, sub: &quot;world wide web!&quot; },
-      welcome: { title: &quot;welcom&quot;, desc: &quot;hello react!!!&quot; }, // 이벤트 준비
-      contents: [
-        { id: 1, title: &quot;HTML&quot;, desc: &quot;HTML is information&quot; },
-        { id: 2, title: &quot;CSS&quot;, desc: &quot;CSS is information&quot; },
-        { id: 3, title: &quot;JS&quot;, desc: &quot;JS is information&quot; }
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#75715e">// import logo from &#34;./logo.svg&#34;; //필요없다 현재
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/TOC&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Subject</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/subject&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/content&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./App.css&#34;</span>;
+<span style="color:#75715e">// import ReactDOM from &#34;react-dom&#34;;
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>) {
+    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>);
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">mode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;read&#34;</span>, <span style="color:#75715e">// 이벤트 준비
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">subject</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;WEB&#34;</span>, <span style="color:#a6e22e">sub</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;world wide web!&#34;</span> },
+      <span style="color:#a6e22e">welcome</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;welcom&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;hello react!!!&#34;</span> }, <span style="color:#75715e">// 이벤트 준비
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">contents</span><span style="color:#f92672">:</span> [
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;HTML is information&#34;</span> },
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CSS&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CSS is information&#34;</span> },
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;JS&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;JS is information&#34;</span> }
       ]
     };
   }
 
-  render() {
-    let _title = null; // 이벤트 변수
-    let _desc = null; //  이벤트변수
-    if (this.state.mode === &quot;welcome&quot;) {
-      _title = this.state.welcome.title;
-      _desc = this.state.welcome.desc;
-    } else if (this.state.mode === &quot;read&quot;) {
-      _title = this.state.contents[0].title;
-      _desc = this.state.contents[0].desc;
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; <span style="color:#75715e">// 이벤트 변수
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; <span style="color:#75715e">//  이벤트변수
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">mode</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;welcome&#34;</span>) {
+      <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">welcome</span>.<span style="color:#a6e22e">title</span>;
+      <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">welcome</span>.<span style="color:#a6e22e">desc</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">mode</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;read&#34;</span>) {
+      <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">title</span>;
+      <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">desc</span>;
     }
 
-    return (
-      &lt;div className=&quot;App&quot;&gt;
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;App&#34;</span><span style="color:#f92672">&gt;</span>
         {
-          /* &lt;Subject
-          title={this.state.subject.title} // 이벤트 위에서 변수 가져옴
-          sub={this.state.subject.sub} // 이벤트 위에서 변수 가져옴
-        &gt;&lt;/Subject&gt; */
+          <span style="color:#75715e">/* &lt;Subject
+</span><span style="color:#75715e">          title={this.state.subject.title} // 이벤트 위에서 변수 가져옴
+</span><span style="color:#75715e">          sub={this.state.subject.sub} // 이벤트 위에서 변수 가져옴
+</span><span style="color:#75715e">        &gt;&lt;/Subject&gt; */</span>
 
-          &lt;header&gt;
-            &lt;h1&gt;
-              &lt;a
-                href=&quot;/&quot;
-                onClick={function(e) {
-                  e.preventDefault();
-                  // 클릭시 this.state.mode 값을 바꾸는 명령을 할것이다.
-                  // this.state.mode = &quot;welcome&quot; 이것은 자바스크립트에서 허락하지 않는다.
-                  // 이럴때 2가지를 해야한다.
-                  // 1. setState() 메소드를 쓴다.
-                  // 2. bind(this) this 가 바뀌는 것을 잡아준다.
-                  this.setState({
-                    mode: &quot;welcome&quot;
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">header</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span>
+              <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span>
+                <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>
+                <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>) {
+                  <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">preventDefault</span>();
+                  <span style="color:#75715e">// 클릭시 this.state.mode 값을 바꾸는 명령을 할것이다.
+</span><span style="color:#75715e"></span>                  <span style="color:#75715e">// this.state.mode = &#34;welcome&#34; 이것은 자바스크립트에서 허락하지 않는다.
+</span><span style="color:#75715e"></span>                  <span style="color:#75715e">// 이럴때 2가지를 해야한다.
+</span><span style="color:#75715e"></span>                  <span style="color:#75715e">// 1. setState() 메소드를 쓴다.
+</span><span style="color:#75715e"></span>                  <span style="color:#75715e">// 2. bind(this) this 가 바뀌는 것을 잡아준다.
+</span><span style="color:#75715e"></span>                  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>({
+                    <span style="color:#a6e22e">mode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;welcome&#34;</span>
                   });
-                }.bind(this)}
-              &gt;
-                {this.state.subject.title}
-              &lt;/a&gt;
-            &lt;/h1&gt;
-            {this.state.subject.desc}
-          &lt;/header&gt;
+                }.<span style="color:#a6e22e">bind</span>(<span style="color:#66d9ef">this</span>)}
+              <span style="color:#f92672">&gt;</span>
+                {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">title</span>}
+              <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+            <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;</span>
+            {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">desc</span>}
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/header&gt;</span>
         }
 
-        &lt;TOC data={this.state.contents}&gt;&lt;/TOC&gt;
-        &lt;Content title={_title} desc={_desc}&gt;&lt;/Content&gt;
-      &lt;/div&gt;
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">data</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>}<span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/TOC&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">_title</span>} <span style="color:#a6e22e">desc</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">_desc</span>}<span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Content&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
     );
   }
 }
 
-export default App;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
 
 
-</code></pre>
-
-<h2 id="컴포넌트-이벤트-만들기">컴포넌트 이벤트 만들기</h2>
-
+</code></pre></div><h2 id="컴포넌트-이벤트-만들기">컴포넌트 이벤트 만들기</h2>
 <p>이벤트를 사용만 했지 만들지는 않았다.</p>
-
 <p>이벤트의 생상자가 되어보자</p>
-
 <p>브라우저에서 WEB 을 클릭하면 메시지 내용이 바뀌는 것을 구현한다.</p>
-
 <p>App.js 파일</p>
-
-<pre><code class="language-js">import React, { Component } from &quot;react&quot;;
-// import logo from &quot;./logo.svg&quot;; //필요없다 현재
-import TOC from &quot;./component/TOC&quot;;
-import Subject from &quot;./component/subject&quot;;
-import Content from &quot;./component/content&quot;;
-import &quot;./App.css&quot;;
-// import ReactDOM from &quot;react-dom&quot;;
-
-// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mode: &quot;read&quot;,
-      subject: { title: &quot;WEB&quot;, sub: &quot;world wide web!&quot; },
-      welcome: { title: &quot;welcom&quot;, desc: &quot;hello react!!!&quot; },
-      contents: [
-        { id: 1, title: &quot;HTML&quot;, desc: &quot;HTML is information&quot; },
-        { id: 2, title: &quot;CSS&quot;, desc: &quot;CSS is information&quot; },
-        { id: 3, title: &quot;JS&quot;, desc: &quot;JS is information&quot; }
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+<span style="color:#75715e">// import logo from &#34;./logo.svg&#34;; //필요없다 현재
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/TOC&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Subject</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/subject&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./component/content&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./App.css&#34;</span>;
+<span style="color:#75715e">// import ReactDOM from &#34;react-dom&#34;;
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// react 는 특이한점 state or props 가 바뀌면 render 함수가 다시 호촐된다. render() 함수의 하위함수들도싹다 호출된다.화면이 다시 그려진다.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>) {
+    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>);
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">mode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;read&#34;</span>,
+      <span style="color:#a6e22e">subject</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;WEB&#34;</span>, <span style="color:#a6e22e">sub</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;world wide web!&#34;</span> },
+      <span style="color:#a6e22e">welcome</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;welcom&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;hello react!!!&#34;</span> },
+      <span style="color:#a6e22e">contents</span><span style="color:#f92672">:</span> [
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;HTML is information&#34;</span> },
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CSS&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CSS is information&#34;</span> },
+        { <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;JS&#34;</span>, <span style="color:#a6e22e">desc</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;JS is information&#34;</span> }
       ]
     };
   }
 
-  render() {
-    let _title = null;
-    let _desc = null;
-    if (this.state.mode === &quot;welcome&quot;) {
-      _title = this.state.welcome.title;
-      _desc = this.state.welcome.desc;
-    } else if (this.state.mode === &quot;read&quot;) {
-      _title = this.state.contents[0].title;
-      _desc = this.state.contents[0].desc;
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">mode</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;welcome&#34;</span>) {
+      <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">welcome</span>.<span style="color:#a6e22e">title</span>;
+      <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">welcome</span>.<span style="color:#a6e22e">desc</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">mode</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;read&#34;</span>) {
+      <span style="color:#a6e22e">_title</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">title</span>;
+      <span style="color:#a6e22e">_desc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">desc</span>;
     }
 
-    return (
-      &lt;div className=&quot;App&quot;&gt;
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;App&#34;</span><span style="color:#f92672">&gt;</span>
         {
-          &lt;Subject
-            title={this.state.subject.title}
-            sub={this.state.subject.sub}
-            onchanged={function() {
-              this.setState({
-                mode: &quot;welcome&quot;
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Subject</span>
+            <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">title</span>}
+            <span style="color:#a6e22e">sub</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">subject</span>.<span style="color:#a6e22e">sub</span>}
+            <span style="color:#a6e22e">onchanged</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">function</span>() {
+              <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>({
+                <span style="color:#a6e22e">mode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;welcome&#34;</span>
               });
-            }.bind(this)} //원하는 이름의 함수를 만든다. 이름은 onChanged
-          &gt;&lt;/Subject&gt;
+            }.<span style="color:#a6e22e">bind</span>(<span style="color:#66d9ef">this</span>)} <span style="color:#75715e">//원하는 이름의 함수를 만든다. 이름은 onChanged
+</span><span style="color:#75715e"></span>          <span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Subject&gt;</span>
         }
 
-        &lt;TOC data={this.state.contents}&gt;&lt;/TOC&gt;
-        &lt;Content title={_title} desc={_desc}&gt;&lt;/Content&gt;
-      &lt;/div&gt;
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">TOC</span> <span style="color:#a6e22e">data</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">contents</span>}<span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/TOC&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Content</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">_title</span>} <span style="color:#a6e22e">desc</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">_desc</span>}<span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/Content&gt;</span>
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
     );
   }
 }
 
-export default App;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span>;
 
 
-</code></pre>
-
-<p>subject.js 파일</p>
-
+</code></pre></div><p>subject.js 파일</p>
 <ul>
 <li>여기에서 OnClick 을 사용해     e.preventDefault(); 와 this.props.onchanged(); 와 .bind(this) 조합하면 된다.</li>
 </ul>
-
-<pre><code class="language-js">
-import React, { Component } from &quot;react&quot;;
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
 
 
-class Subject extends Component {
-  render() {
-    return (
-      &lt;header&gt;
-        &lt;h1&gt;
-          &lt;a
-            href=&quot;/&quot;
-            onClick={function(e) {
-              e.preventDefault();
-              this.props.onchanged();
-            }.bind(this)}
-          &gt;
-            {this.props.title}
-          &lt;/a&gt;
-        &lt;/h1&gt;
-        {this.props.sub}
-      &lt;/header&gt;
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Subject</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span> (
+      <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">header</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h1</span><span style="color:#f92672">&gt;</span>
+          <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">a</span>
+            <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>
+            <span style="color:#a6e22e">onClick</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>) {
+              <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">preventDefault</span>();
+              <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">onchanged</span>();
+            }.<span style="color:#a6e22e">bind</span>(<span style="color:#66d9ef">this</span>)}
+          <span style="color:#f92672">&gt;</span>
+            {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">title</span>}
+          <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
+        <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/h1&gt;</span>
+        {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">sub</span>}
+      <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/header&gt;</span>
     );
   }
 }
 
-export default Subject;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">Subject</span>;
 
 
 
-</code></pre>
-
+</code></pre></div>
           </div>
 
           
@@ -2010,7 +1853,7 @@ export default Subject;
     
     
     
-    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+    <script src="/js/academic.min.7636b87b7ca0b6689810d4b648238174.js"></script>
 
   </body>
 </html>

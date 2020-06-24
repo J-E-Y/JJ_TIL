@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -10,7 +10,6 @@
   <url>
     <loc>/</loc>
     <lastmod>2030-06-01T13:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -26,19 +25,16 @@
   <url>
     <loc>/project/</loc>
     <lastmod>2020-04-01T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
     <lastmod>2020-04-01T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/team/</loc>
     <lastmod>2020-04-01T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -49,7 +45,6 @@
   <url>
     <loc>/post/</loc>
     <lastmod>2020-03-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -153,6 +148,46 @@
   </url>
   
   <url>
+    <loc>/tutorial/2019-11-14-javascript-daliy-coding-level-1/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2019-11-14-javascript-daliy-coding-level-2/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/javascript_algorithm/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2019-12-21-spint2/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2020-01-05-spint-3/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2019-12-21-sprint1/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2019-11-14-javascript-my-mdn/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/2019-11-26-js-post/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/bootstrap/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
@@ -198,49 +233,13 @@
   </url>
   
   <url>
-    <loc>/tutorial/2019-11-14-javascript-daliy-coding-level-1/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/2019-11-14-javascript-daliy-coding-level-2/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/javascript_algorithm/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/2019-12-21-spint2/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/2020-01-05-spint-3/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/2019-12-21-sprint1/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/2019-11-14-javascript-my-mdn/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/2019-11-26-js-post/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication_types/3/</loc>
     <lastmod>2019-04-07T00:00:00+09:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/admin/</loc>
+    <lastmod>2019-04-07T00:00:00+09:00</lastmod>
   </url>
   
   <url>
@@ -251,13 +250,11 @@
   <url>
     <loc>/authors/</loc>
     <lastmod>2019-04-07T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/publication_types/</loc>
     <lastmod>2019-04-07T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -266,15 +263,8 @@
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
-    <lastmod>2019-04-07T00:00:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/publication_types/2/</loc>
     <lastmod>2015-09-01T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -285,7 +275,6 @@
   <url>
     <loc>/publication_types/1/</loc>
     <lastmod>2013-07-01T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -296,7 +285,6 @@
   <url>
     <loc>/authors/robert-ford/</loc>
     <lastmod>2013-07-01T00:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -310,12 +298,10 @@
   
   <url>
     <loc>/author/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -328,7 +314,6 @@
   
   <url>
     <loc>/tags/personal/</loc>
-    <priority>0</priority>
   </url>
   
   <url>

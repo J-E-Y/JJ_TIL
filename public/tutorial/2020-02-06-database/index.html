@@ -439,22 +439,20 @@
       
 
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#sql-이란">SQL 이란?</a></li>
-</ul></li>
-<li><a href="#sql-vs-nosql">SQL vs NOSQL ?</a></li>
-<li><a href="#mysql-vs-sql">MySQL vs SQL</a></li>
-<li><a href="#mysql-시작하기">MYSQL 시작하기</a></li>
-<li><a href="#learn-sql">Learn SQL</a></li>
-<li><a href="#mvc-design-pattern">MVC design pattern</a></li>
-<li><a href="#orm이란">ORM이란?</a></li>
-<li><a href="#sequelize-sequelize-cli">Sequelize, Sequelize CLI</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#sql-이란">SQL 이란?</a></li>
+      </ul>
+    </li>
+    <li><a href="#sql-vs-nosql-">SQL vs NOSQL ?</a></li>
+    <li><a href="#mysql-vs-sql">MySQL vs SQL</a></li>
+    <li><a href="#mysql-시작하기">MYSQL 시작하기</a></li>
+    <li><a href="#learn-sql">Learn SQL</a></li>
+    <li><a href="#mvc-design-pattern">MVC design pattern</a></li>
+    <li><a href="#orm이란">ORM이란?</a></li>
+    <li><a href="#sequelize-sequelize-cli">Sequelize, Sequelize CLI</a></li>
+  </ul>
 </nav>
 
       <ul class="nav toc-top">
@@ -473,267 +471,220 @@
           <h1 itemprop="name">__Database</h1>
 
           <div class="article-style" itemprop="articleBody">
-            
-
-<h3 id="sql-이란">SQL 이란?</h3>
-
+            <h3 id="sql-이란">SQL 이란?</h3>
 <blockquote>
 <p>데이터베이스는 웹 개발을 위해 다양한 정보를 효율적이고 안정적으로 보관하기 위해서 사용합니다. 가장 많이 사용하시게 될 mysql이 SQL database (관계형 데이터베이스, RDBMS)고, 이를 활용하기 위한 언어가 SQL(Structured Query Language)입니다. 즉, DB에 구조화된(Structured) 질문(Query)을 할 수 있는 컴퓨터 언어(<strong>L</strong>anguage) 입니다.</p>
 </blockquote>
-
-<h2 id="sql-vs-nosql">SQL vs NOSQL ?</h2>
-
+<h2 id="sql-vs-nosql-">SQL vs NOSQL ?</h2>
 <ul>
 <li><strong>SQL Database - Strict Schema, Relations</strong></li>
 </ul>
-
 <p><strong>Strict Schema</strong> - 처음 스키마 설계시 필요할 것으로 예상이 되었던 데이터보다 더 많은 데이터를 다루게 되었을 때, 유연하게 스키마를 바꿀 수 없습니다. 이를 보완하기 위해서 ORM을 사용할 수 있습니다. (Sequelize CLI 등 활용)
 Relations - 스키마 설계 시 one-to-one, one-to-many, many-to-many를 명확히 규정을 하고 스키마를 짜야 합니다. 중복되거나 잘못 입력된 데이터가 쉽게 DB에 삽입될 수 없습니다.</p>
-
 <ul>
 <li><strong>noSQL Database (Not Only SQL!) -  No Schema, Relations</strong></li>
 </ul>
-
 <p><strong>No Schema</strong> - JSON data와 같은 구조를 사용하여, 자바스크립트의 객체를 다루는 것과 같은 느낌으로 데이터 조회가 가능합니다.
 No Relations - JOIN의 개념이 사라지고, duplicate된 데이터가 각각의 Collection에 저장됩니다. (SQL의 table과 같은 개념) JOIN을 하지 않아도 각 Collection에서 원하는 정보를 조회할 수 있습니다. 조회가 noSQL보다 비교적 빠릅니다 (because no JOIN)</p>
-
 <ul>
-<li><p><strong>Where to use SQL?</strong>
+<li>
+<p><strong>Where to use SQL?</strong>
 초기 스키마 구성을 통해서 대부분의 데이터를 처리할 수 있을 때
 스키마 구조는 비교적 간단하지만 Update가 많을 때
-Scale up을 해야하는 경우가 적을 때 - 서버의 성능이 향상되어야 됨</p></li>
-
-<li><p><strong>Where to use NoSQL?</strong>
+Scale up을 해야하는 경우가 적을 때 - 서버의 성능이 향상되어야 됨</p>
+</li>
+<li>
+<p><strong>Where to use NoSQL?</strong>
 이후에 어떤 데이터가 추가될 지 예상할 수 없을 때**
 Read / Write가 Update가 보다 현저히 많을 때
-<strong>Scale up을 해야하는 경우가 많을 때</strong> - 서버의 수량만 더 추가하면 OK</p></li>
+**Scale up을 해야하는 경우가 많을 때** - 서버의 수량만 더 추가하면 OK</p>
+</li>
 </ul>
-
 <h2 id="mysql-vs-sql">MySQL vs SQL</h2>
-
 <ul>
-<li><p>MySQL : 데이터베이스(DataBase)이다.</p></li>
-
-<li><p>SQL : 데이터를 관리하기 위해 설계된 프로그래밍 언어이다.</p></li>
+<li>
+<p>MySQL : 데이터베이스(DataBase)이다.</p>
+</li>
+<li>
+<p>SQL : 데이터를 관리하기 위해 설계된 프로그래밍 언어이다.</p>
+</li>
 </ul>
-
 <h2 id="mysql-시작하기">MYSQL 시작하기</h2>
-
 <p>경로
 cd /usr/local/mysql/bin</p>
-
 <p>비밀번호 입력
 ./mysql -uroot -p</p>
-
 <p>생성
 mysql&gt; CREATE DATABASE jjdb;</p>
-
 <p>삭제
 mysql&gt; DROP CREATE DATABASE jjd;</p>
-
 <p>확인</p>
-
 <p>mysql&gt; DATABASE;</p>
-
 <p>사용
 mysql&gt; UES jjd;</p>
-
 <p>Data table 만들기</p>
-
 <blockquote>
 <p><code>Data table</code>을 만들기 위해서는 명시적으로 Database를 선택해 줘야 함 데이터베이스가 선택되면 생성된 모든 테이블들은 그 해당 데이터베이스에서 만들어짐</p>
 </blockquote>
-
 <p>Table 생성</p>
-
 <p>table 탐색</p>
-
 <p>mysql&gt; DESC <code>jjTable</code></p>
-
 <p>table 삽입</p>
-
 <h2 id="learn-sql">Learn SQL</h2>
-
 <ol>
 <li>Select</li>
 </ol>
-
 <p>Customers table 모두 보기
 SELECT * FROM Customers;</p>
-
 <p>CustomerName만 가져오기
 SELECT CustomerName,City FROM Customers;</p>
-
 <p>중복되지 않는 나라만 가져오기
 SELECT DISTINCT Country FROM Customers;</p>
-
-<ol>
+<ol start="2">
 <li>Where</li>
 </ol>
-
 <p>나라가 멕시코인곳만 가져오기
 SELECT * FROM Customers
-WHERE Country=&lsquo;Mexico&rsquo;;</p>
-
+WHERE Country='Mexico&rsquo;;</p>
 <p>3 And, Or, Not</p>
-
 <p>나라는 Germany Adn Berlin
 SELECT * FROM Customers
-WHERE Country=&ldquo;Germany&rdquo; AND City=&ldquo;Berlin&rdquo;</p>
-
+WHERE Country=&quot;Germany&rdquo; AND City=&quot;Berlin&rdquo;</p>
 <p>나라는 Germany And Berlin OR Munchen
 SELECT * FROM Customers
-WHERE Country=&lsquo;Germany&rsquo; AND (City=&lsquo;Berlin&rsquo; OR City=&lsquo;München&rsquo;);</p>
-
+WHERE Country='Germany&rsquo; AND (City='Berlin&rsquo; OR City='München&rsquo;);</p>
 <p>나라가 Germany 와 USA 가 아닌곳
 SELECT * FROM Customers
-WHERE NOT Country=&lsquo;Germany&rsquo; AND NOT Country=&lsquo;USA&rsquo;;</p>
-
+WHERE NOT Country='Germany&rsquo; AND NOT Country='USA&rsquo;;</p>
 <p>4.Order By</p>
-
 <p>나라 알파벳 순서대로 모든 정보들 정렬
 SELECT * FROM Customers
 ORDER BY Country;</p>
-
 <p>나라 알파벳 반대순서대로 모든 정보들 정렬
 SELECT * FROM Customers
 ORDER BY Country DESC;</p>
-
-<ol>
+<ol start="5">
 <li>Insert Into</li>
 </ol>
-
 <p>원하는 정보 맨밑에저장된다.
 INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
 VALUES (&lsquo;Cardinal&rsquo;,&lsquo;Tom B. Erichsen&rsquo;,&lsquo;Skagen 21&rsquo;,&lsquo;Stavanger&rsquo;,&lsquo;4006&rsquo;,&lsquo;Norway&rsquo;);</p>
-
-<ol>
+<ol start="6">
 <li>Null Values</li>
 </ol>
-
 <p>Customers table 에 CustomerName, ContactName, Address 목록을 불러오는데 Adrress 에 값이 Null 인 목록을 불러와라
 SELECT CustomerName, ContactName, Address
 FROM Customers
 WHERE Address IS NULL;</p>
-
 <p>No result.</p>
-
 <p>반대로 NULL 값이 없는 목록들을 가져와라</p>
-
 <p>SELECT CustomerName, ContactName, Address
 FROM Customers
 WHERE Address IS NOT NULL;</p>
-
-<ol>
+<ol start="7">
 <li>Wildcards</li>
 </ol>
-
 <p>Customers 에 table 안에 city 안에 ber와 같은 char 들이 있는 목록들 불러오기
 SELECT * FROM Customers
-WHERE City LIKE &lsquo;ber%&rsquo;;</p>
-
+WHERE City LIKE &lsquo;ber%';</p>
 <p>LIKE &lsquo;ber%&rsquo;     처음
-LIKE &lsquo;%es%&rsquo;;    중간
+LIKE &lsquo;%es%';    중간
 LIKE &lsquo;_ondon&rsquo;;  끝
 LIKE &lsquo;L_n_on&rsquo;;  검색중간
-LIKE &lsquo;[bsp]%&lsquo;;  b,s,p 시작하는것들
-LIKE &lsquo;[!bsp]%&lsquo;; b,s,p 시작하지 않는것들
-NOT LIKE &lsquo;[bsp]%&lsquo;; b,s,p 시작하지 않는것들
-LIKE &lsquo;[a-c]%&lsquo;;  a부터 c 까지</p>
-
-<ol>
+LIKE &lsquo;[bsp]%';  b,s,p 시작하는것들
+LIKE &lsquo;[!bsp]%'; b,s,p 시작하지 않는것들
+NOT LIKE &lsquo;[bsp]%'; b,s,p 시작하지 않는것들
+LIKE &lsquo;[a-c]%';  a부터 c 까지</p>
+<ol start="8">
 <li>Aliases (map)같은 문법</li>
 </ol>
-
 <p>새로운 테이블을 만든다.
 CustomerID 불러오고 이것의 카테고리는 ID
 CustomerName 불로오고 이것의 카테고리는 Customer
 그것을 화면에 출력</p>
-
 <p>SELECT CustomerID AS ID, CustomerName AS Customer
 FROM Customers;</p>
-
 <p>만약 AS 의 사이에 하나만 있으면 데이터만 출력후
 뒤에로 넘어간다.
-SELECT CustomerName, Address + &lsquo;, &rsquo; + PostalCode + &lsquo; &rsquo; + City + &lsquo;, &rsquo; + Country AS Address
+SELECT CustomerName, Address + &lsquo;, ' + PostalCode + ' ' + City + &lsquo;, ' + Country AS Address
 FROM Customers;</p>
-
-<p><img src="/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-06 at 1.29.29 PM.png" alt="" /></p>
-
+<p>![](/tutorial/2020-01-13-sever_files/Screen Shot 2020-02-06 at 1.29.29 PM.png)</p>
 <h2 id="mvc-design-pattern">MVC design pattern</h2>
-
 <ul>
-<li><strong>MVC 패턴</strong>은 애플리케이션을 <strong>Model, View, Controller</strong> 세 역할로 구분한 개발 방법론입니다. 각 요소는 애플리케이션의 작동과 관련하여 각기 다른 역할을 수행합니다.</li>
-<li>Model은 데이터 처리와 관련된 역할을 수행하는 컴포넌트입니다. 컨트롤러의 명령을 받아 동작합니다.</li>
-<li>View는 사용자들이 보는 화면(UI)으로서, 컨트롤러와의 소통을 통해 데이터를 입력하거나 출력합니다.</li>
-<li>Controller는 데이터(Model)와 사용자 인터페이스(View)를 연결하는 역할을 합니다.</li>
-
-<li><p><strong>구성 요소를 분리</strong>하는 이유는 무엇일까요?</p>
-
-<p>→ 이해하기 쉽고 깔끔한 코드를 짤 수 있습니다. 덕분에 유지보수가 용이해지며, 확장성도 좋아집니다. 또한 기능에 따라 코드를 분류하기 때문에, 중복되는 코드를 작성하는 실수 또한 줄일 수 있습니다.</p></li>
+<li>
+<p><strong>MVC 패턴</strong>은 애플리케이션을 <strong>Model, View, Controller</strong> 세 역할로 구분한 개발 방법론입니다. 각 요소는 애플리케이션의 작동과 관련하여 각기 다른 역할을 수행합니다.</p>
+</li>
+<li>
+<p>Model은 데이터 처리와 관련된 역할을 수행하는 컴포넌트입니다. 컨트롤러의 명령을 받아 동작합니다.</p>
+</li>
+<li>
+<p>View는 사용자들이 보는 화면(UI)으로서, 컨트롤러와의 소통을 통해 데이터를 입력하거나 출력합니다.</p>
+</li>
+<li>
+<p>Controller는 데이터(Model)와 사용자 인터페이스(View)를 연결하는 역할을 합니다.</p>
+</li>
+<li>
+<p><strong>구성 요소를 분리</strong>하는 이유는 무엇일까요?</p>
+<p>→ 이해하기 쉽고 깔끔한 코드를 짤 수 있습니다. 덕분에 유지보수가 용이해지며, 확장성도 좋아집니다. 또한 기능에 따라 코드를 분류하기 때문에, 중복되는 코드를 작성하는 실수 또한 줄일 수 있습니다.</p>
+</li>
 </ul>
-
 <p>크게 3가지 패턴을 이야기 할수 있다.</p>
-
 <ul>
-<li><p><code>Model</code>은 데이터 처리와 관련된 역할을 수행하는 컴포넌트입니다. 컨트롤러의 명령을 받아 동작합니다.</p></li>
-
-<li><p><code>View</code>는 사용자들이 보는 화면(UI)으로서, 컨트롤러와의 소통을 통해 데이터를 입력하거나 출력합니다.</p></li>
-
-<li><p><code>Controller</code>는 데이터(Model)와 사용자 인터페이스(View)를 연결하는 역할을 합니다..</p></li>
+<li>
+<p><code>Model</code>은 데이터 처리와 관련된 역할을 수행하는 컴포넌트입니다. 컨트롤러의 명령을 받아 동작합니다.</p>
+</li>
+<li>
+<p><code>View</code>는 사용자들이 보는 화면(UI)으로서, 컨트롤러와의 소통을 통해 데이터를 입력하거나 출력합니다.</p>
+</li>
+<li>
+<p><code>Controller</code>는 데이터(Model)와 사용자 인터페이스(View)를 연결하는 역할을 합니다..</p>
+</li>
 </ul>
-
 <h2 id="orm이란">ORM이란?</h2>
-
 <ul>
-<li>객체와 관계형 데이터베이스의 데이터를 자동으로 매핑(연결)해주는 것을 말합니다.</li>
-
-<li><p>ORM을 왜 사용할까요?</p>
-
-<p>우리가 사용하는 객체 지향 프로그래밍은 <strong>클래스</strong>를 사용하고, 관계형 데이터베이스는 <strong>테이블</strong>을 사용합니다. 이 때 서로의 구조 간의 불일치가 발생합니다. 따라서 ORM을 활용하여 객체 간의 관계를 바탕으로 SQL을 자동으로 생성하여 이러한 불일치를 해결할 수 있습니다.</p></li>
-
-<li><p>ORM의 장점</p>
-
+<li>
+<p>객체와 관계형 데이터베이스의 데이터를 자동으로 매핑(연결)해주는 것을 말합니다.</p>
+</li>
+<li>
+<p>ORM을 왜 사용할까요?</p>
+<p>우리가 사용하는 객체 지향 프로그래밍은 <strong>클래스</strong>를 사용하고, 관계형 데이터베이스는 <strong>테이블</strong>을 사용합니다. 이 때 서로의 구조 간의 불일치가 발생합니다. 따라서 ORM을 활용하여 객체 간의 관계를 바탕으로 SQL을 자동으로 생성하여 이러한 불일치를 해결할 수 있습니다.</p>
+</li>
+<li>
+<p>ORM의 장점</p>
 <p>익숙한 객체 지향적인 코드를 사용함으로써 직관적인 이해 및 집중에 도움이 됩니다.</p>
-
 <ul>
 <li>ORM - Object Relational Mapping</li>
 </ul>
-
-<p>ORM을 통해 작성한 객체를 재활용할 수 있다는 측면에서 재사용 및 유지보수의 편리성이 증가합니다.</p></li>
-
-<li><p>ORM의 단점</p>
-
+<p>ORM을 통해 작성한 객체를 재활용할 수 있다는 측면에서 재사용 및 유지보수의 편리성이 증가합니다.</p>
+</li>
+<li>
+<p>ORM의 단점</p>
 <p>잘못 구현한 경우 성능이 저하될 수 있습니다.</p>
-
-<p>복잡한 쿼리문의 경우 오히려 SQL문으로 사용하는 것이 더 직관적, 효율적일 수 있습니다.</p></li>
+<p>복잡한 쿼리문의 경우 오히려 SQL문으로 사용하는 것이 더 직관적, 효율적일 수 있습니다.</p>
+</li>
 </ul>
-
 <h2 id="sequelize-sequelize-cli">Sequelize, Sequelize CLI</h2>
-
 <ul>
-<li>Node.js 기반의 ORM으로 PostgreSQL, MySQL, MariaDB, SQLite, MS-SQL을 지원합니다.</li>
-
-<li><p>프로미스 기반의 ORM이기 때문에 비동기 처리에 용이합니다.</p>
-
+<li>
+<p>Node.js 기반의 ORM으로 PostgreSQL, MySQL, MariaDB, SQLite, MS-SQL을 지원합니다.</p>
+</li>
+<li>
+<p>프로미스 기반의 ORM이기 때문에 비동기 처리에 용이합니다.</p>
 <p>SELECT * FROM Users WHERE id = 4 // SQL</p>
-
-<p>user = Users.find(4) // Sequelize</p></li>
+<p>user = Users.find(4) // Sequelize</p>
+</li>
 </ul>
-
 <p>CLI의 대표적인 기능으로는 Migration, Seed, Model이 있습니다.</p>
-
 <ul>
-<li><p><strong>Sequelize CLI?</strong></p>
-
+<li>
+<p><strong>Sequelize CLI?</strong></p>
 <p>Sequelize command line interface의 줄임말로써 <strong>명령어를 사용해 데이터베이스 작업을 할 수 있는 툴입니다.</strong></p>
-
 <ol>
 <li>Model : 테이블을 생성</li>
 <li>Migration : 코드에 적혀져 있는 데이터베이스 테이블에 대해 실제 데이터베이스에 테이블을 생성하는 개념</li>
-<li>Seed : 생성된 테이블에 데이터를 추가
-<br /></li>
-</ol></li>
+<li>Seed : 생성된 테이블에 데이터를 추가</li>
+</ol>
+</li>
 </ul>
 
           </div>
@@ -869,7 +820,7 @@ FROM Customers;</p>
     
     
     
-    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+    <script src="/js/academic.min.7636b87b7ca0b6689810d4b648238174.js"></script>
 
   </body>
 </html>

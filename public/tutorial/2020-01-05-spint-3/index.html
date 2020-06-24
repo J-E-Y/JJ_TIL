@@ -27,12 +27,13 @@
   
     
   
-  <meta name="description" content="프로토타입 상속의 관한개념 prototype || __proto__ || constructor 관계  1.Parent생성자 함수가 생성되는순간 Parent의 프로토타입 객체 (Parent.prototype) 가 형성 된다.
- 2.Parent.protoype 안에는 __proto__ 와 constructor 가 있다.
- 3.__proto__ 는 위에 부모객체를 가르키고 연결되어있다.
- 4.모든 객체는 __proto__가지고 있다. 프로토타입 객체에 접근할수 있게 해준다.
- 4.constructor 는 자기 자신을 가르킨다. Parent === Parent.prototype.constructor // true
- 5.생성자 함수 Parent의 인스턴스로 Son1,2,3,4을 생성했습니다. Son 들은은 __proto__ 프로퍼티를 가지고, Son.__proto__는 자신의 부모인 Parent.">
+  <meta name="description" content="프로토타입 상속의 관한개념 ![](/tutorial/2020-01-05-spint-3_files/Screen Shot 2020-01-09 at 11.05.49 PM.png)
+prototype || __proto__ || constructor 관계   1.Parent생성자 함수가 생성되는순간 Parent의 프로토타입 객체 (Parent.prototype) 가 형성 된다.
+  2.Parent.protoype 안에는 __proto__ 와 constructor 가 있다.
+  3.__proto__ 는 위에 부모객체를 가르키고 연결되어있다.
+  4.모든 객체는 __proto__가지고 있다. 프로토타입 객체에 접근할수 있게 해준다.
+  4.constructor 는 자기 자신을 가르킨다. Parent === Parent.prototype.constructor // true
+  5.생성자 함수 Parent의 인스턴스로 Son1,2,3,4을 생성했습니다.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorial/2020-01-05-spint-3/">
@@ -135,12 +136,13 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2020-01-05-spint-3/">
   <meta property="og:title" content="__Iheritance | JohnJung">
-  <meta property="og:description" content="프로토타입 상속의 관한개념 prototype || __proto__ || constructor 관계  1.Parent생성자 함수가 생성되는순간 Parent의 프로토타입 객체 (Parent.prototype) 가 형성 된다.
- 2.Parent.protoype 안에는 __proto__ 와 constructor 가 있다.
- 3.__proto__ 는 위에 부모객체를 가르키고 연결되어있다.
- 4.모든 객체는 __proto__가지고 있다. 프로토타입 객체에 접근할수 있게 해준다.
- 4.constructor 는 자기 자신을 가르킨다. Parent === Parent.prototype.constructor // true
- 5.생성자 함수 Parent의 인스턴스로 Son1,2,3,4을 생성했습니다. Son 들은은 __proto__ 프로퍼티를 가지고, Son.__proto__는 자신의 부모인 Parent."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="프로토타입 상속의 관한개념 ![](/tutorial/2020-01-05-spint-3_files/Screen Shot 2020-01-09 at 11.05.49 PM.png)
+prototype || __proto__ || constructor 관계   1.Parent생성자 함수가 생성되는순간 Parent의 프로토타입 객체 (Parent.prototype) 가 형성 된다.
+  2.Parent.protoype 안에는 __proto__ 와 constructor 가 있다.
+  3.__proto__ 는 위에 부모객체를 가르키고 연결되어있다.
+  4.모든 객체는 __proto__가지고 있다. 프로토타입 객체에 접근할수 있게 해준다.
+  4.constructor 는 자기 자신을 가르킨다. Parent === Parent.prototype.constructor // true
+  5.생성자 함수 Parent의 인스턴스로 Son1,2,3,4을 생성했습니다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T00:00:00&#43;00:00">
@@ -447,20 +449,18 @@
       
 
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#프로토타입-상속의-관한개념">프로토타입 상속의 관한개념</a>
-<ul>
-<li><a href="#prototype-proto-constructor-관계"><code>prototype</code> || <code>__proto__</code> || <code>constructor</code> 관계</a></li>
-<li><a href="#prototype-chaining"><strong>Prototype Chaining?</strong></a></li>
-<li><a href="#보무객체를-상속받는-예제">보무객체를 상속받는 예제</a></li>
-</ul></li>
-<li><a href="#object-create-사용해서-parent의-모든-프로퍼티-가져오기">Object.create 사용해서 Parent의 모든 프로퍼티 가져오기</a></li>
-<li><a href="#es6-class-키워드">ES6 class 키워드</a></li>
-<li><a href="#es5-와-es6-차이점">ES5 와 ES6 차이점</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#프로토타입-상속의-관한개념">프로토타입 상속의 관한개념</a>
+      <ul>
+        <li><a href="#prototype--__proto__--constructor-관계"><code>prototype</code> || <code>__proto__</code> || <code>constructor</code> 관계</a></li>
+        <li><a href="#prototype-chaining"><strong>Prototype Chaining?</strong></a></li>
+        <li><a href="#보무객체를-상속받는-예제">보무객체를 상속받는 예제</a></li>
+      </ul>
+    </li>
+    <li><a href="#objectcreate-사용해서-parent의-모든-프로퍼티-가져오기">Object.create 사용해서 Parent의 모든 프로퍼티 가져오기</a></li>
+    <li><a href="#es6-class-키워드">ES6 class 키워드</a></li>
+    <li><a href="#es5-와-es6-차이점">ES5 와 ES6 차이점</a></li>
+  </ul>
 </nav>
 
       <ul class="nav toc-top">
@@ -479,214 +479,212 @@
           <h1 itemprop="name">__Iheritance</h1>
 
           <div class="article-style" itemprop="articleBody">
-            
-
-<h2 id="프로토타입-상속의-관한개념">프로토타입 상속의 관한개념</h2>
-
-<p><img src="/tutorial/2020-01-05-spint-3_files/Screen Shot 2020-01-09 at 11.05.49 PM.png" alt="" /></p>
-
-<h3 id="prototype-proto-constructor-관계"><code>prototype</code> || <code>__proto__</code> || <code>constructor</code> 관계</h3>
-
+            <h2 id="프로토타입-상속의-관한개념">프로토타입 상속의 관한개념</h2>
+<p>![](/tutorial/2020-01-05-spint-3_files/Screen Shot 2020-01-09 at 11.05.49 PM.png)</p>
+<h3 id="prototype--__proto__--constructor-관계"><code>prototype</code> || <code>__proto__</code> || <code>constructor</code> 관계</h3>
 <ul>
-<li><p>1.<code>Parent</code>생성자 함수가 생성되는순간 Parent의 프로토타입 객체 (<code>Parent.prototype</code>) 가 형성 된다.</p></li>
-
-<li><p>2.Parent.protoype 안에는 <code>__proto__</code> 와 <code>constructor</code> 가 있다.</p></li>
-
-<li><p>3.<code>__proto__</code> 는 위에 부모객체를 가르키고 연결되어있다.</p></li>
-
-<li><p>4.모든 객체는 <code>__proto__</code>가지고 있다. <code>프로토타입 객체</code>에 접근할수 있게 해준다.</p></li>
-
-<li><p>4.<code>constructor</code> 는 자기 자신을 가르킨다. Parent === Parent.prototype.constructor // true</p></li>
-
-<li><p>5.생성자 함수 <code>Parent</code>의 인스턴스로 <code>Son1,2,3,4</code>을 생성했습니다.  <code>Son 들은</code>은 <code>__proto__</code> 프로퍼티를 가지고, <code>Son.__proto__</code>는 자신의 부모인 <code>Parent.prototype</code> 을 가리키고 있습니다.</p></li>
+<li>
+<p>1.<code>Parent</code>생성자 함수가 생성되는순간 Parent의 프로토타입 객체 (<code>Parent.prototype</code>) 가 형성 된다.</p>
+</li>
+<li>
+<p>2.Parent.protoype 안에는 <code>__proto__</code> 와 <code>constructor</code> 가 있다.</p>
+</li>
+<li>
+<p>3.<code>__proto__</code> 는 위에 부모객체를 가르키고 연결되어있다.</p>
+</li>
+<li>
+<p>4.모든 객체는 <code>__proto__</code>가지고 있다. <code>프로토타입 객체</code>에 접근할수 있게 해준다.</p>
+</li>
+<li>
+<p>4.<code>constructor</code> 는 자기 자신을 가르킨다. Parent === Parent.prototype.constructor // true</p>
+</li>
+<li>
+<p>5.생성자 함수 <code>Parent</code>의 인스턴스로 <code>Son1,2,3,4</code>을 생성했습니다.  <code>Son 들은 </code>은 <code>__proto__</code> 프로퍼티를 가지고, <code>Son.__proto__</code>는 자신의 부모인 <code>Parent.prototype</code> 을 가리키고 있습니다.</p>
+</li>
 </ul>
-
 <h3 id="prototype-chaining"><strong>Prototype Chaining?</strong></h3>
-
 <blockquote>
 <p>자바스크립트 엔진이 어떤 프로퍼티나 메소드에 접근하려고 할 때 해당 객체에서 프로퍼티나 메소드를 찾지 못하면, <code>__proto__</code>가 가리키는 링크를 따라 부모 역할을 하는 프로토타입 객체를 살펴보는 것을 의미합니다.</p>
 </blockquote>
-
 <h3 id="보무객체를-상속받는-예제">보무객체를 상속받는 예제</h3>
-
 <ul>
 <li>생성자 함수 Parent 생성</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"> 
 
-<pre><code class="language-js"> 
-
-function Parent(){
-  this.money = 1000;
-  this.car = &quot;car&quot;
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Parent</span>(){
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">money</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>;
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">car</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;car&#34;</span>
     
     }
 
-// 생성자 함수 Parent 의 메소드 massage 생성 
-
-Parent.prototype.message = function(){
-    return &quot;밥먹어라 아들아&quot;
+<span style="color:#75715e">// 생성자 함수 Parent 의 메소드 massage 생성 
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Parent</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">message</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;밥먹어라 아들아&#34;</span>
     
     }
     
-//new 키워드로 parent 생성자 함수 생성
-    
-var parent = new Parent()     
+<span style="color:#75715e">//new 키워드로 parent 생성자 함수 생성
+</span><span style="color:#75715e"></span>    
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">parent</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Parent</span>()     
 
-// 메소드 message 는 안보이지만 parent의 프로토타입 객체 (parent.prototype) 안에 message 가 저장되어있다.  
+<span style="color:#75715e">// 메소드 message 는 안보이지만 parent의 프로토타입 객체 (parent.prototype) 안에 message 가 저장되어있다.  
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">parent</span> <span style="color:#75715e">// Parent {money: 1000, car: &#34;car&#34;} 
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">parent</span>.<span style="color:#a6e22e">message</span>() <span style="color:#75715e">// &#34;밥먹어라 아들아&#34;
+</span><span style="color:#75715e"></span>
 
-parent // Parent {money: 1000, car: &quot;car&quot;} 
-
-parent.message() // &quot;밥먹어라 아들아&quot;
-
-
-</code></pre>
-
-<h2 id="object-create-사용해서-parent의-모든-프로퍼티-가져오기">Object.create 사용해서 Parent의 모든 프로퍼티 가져오기</h2>
-
+</code></pre></div><h2 id="objectcreate-사용해서-parent의-모든-프로퍼티-가져오기">Object.create 사용해서 Parent의 모든 프로퍼티 가져오기</h2>
 <ul>
-<li>생성자 함수 Son<br /></li>
-
-<li><p>Son 함수는 이제 위에 Parent.prototype 의 접근해서{money: 1000, car: &ldquo;car&rdquo;}  와  <code>message()</code> 를 상속받을 것이다.</p></li>
-
-<li><p>Son 생성자 함수</p></li>
+<li>
+<p>생성자 함수 Son</p>
+</li>
+<li>
+<p>Son 함수는 이제 위에 Parent.prototype 의 접근해서{money: 1000, car: &ldquo;car&rdquo;}  와  <code>message()</code> 를 상속받을 것이다.</p>
+</li>
+<li>
+<p>Son 생성자 함수</p>
+</li>
 </ul>
-
-<pre><code class="language-js">
-function Son(){ 
-  Parent.call(this) // 1.Parent.call(this) 연결 시켜준다. 
-  this.name = &quot;jj&quot;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Son</span>(){ 
+  <span style="color:#a6e22e">Parent</span>.<span style="color:#a6e22e">call</span>(<span style="color:#66d9ef">this</span>) <span style="color:#75715e">// 1.Parent.call(this) 연결 시켜준다. 
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;jj&#34;</span>
     
 
-Son.prototype = Object.create(Parent); // 2.Object.creat() 사용해서 상속
-Son.prototype.constructor = Son; // 3. Son 함수가 constructor: ƒ Son() 자기자신을 가르키게 설정해준다. 
-
-// 결과
-console.dir(Son); // Son {money: 1000, car: &quot;car&quot;, name: &quot;jj&quot;}
-//money: 1000
-//car: &quot;car&quot;
-//name: &quot;jj&quot;
-// __proto__: Parent  &lt;&lt; Parent 과 연결 되어있다
-// constructor: ƒ Parent()
-
-
-
-// 3. Son.prototype.constructor = Son 을 하는 이유는?
-
-// Son.protoype = Object.create(Parent) 하는 순간 
-
-// Son.protoype.constructor = Parent 를 가르키게 된다. 
-
-// 그렇게 되면 Son 함수가 자기 자신을 가르키지 않고 constructor: ƒ Parent() 가르키게 된다.  
-
-// Son.prototype.constructor = Son 를 하지않는다면 
-// 결과 
-console.dir(Son); // Son {money: 1000, car: &quot;car&quot;, name: &quot;jj&quot;}
-
-// money: 1000
-//car: &quot;car&quot;
-//name: &quot;jj&quot;
-// __proto__: Parent  &lt;&lt; Parent 과 연결 되어있다
-// constructor: ƒ Parent() // 하지만 Son 의 construtor 는 Parent()를 가르키게 된다. 
- 
+<span style="color:#a6e22e">Son</span>.<span style="color:#a6e22e">prototype</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">create</span>(<span style="color:#a6e22e">Parent</span>); <span style="color:#75715e">// 2.Object.creat() 사용해서 상속
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">Son</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">constructor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Son</span>; <span style="color:#75715e">// 3. Son 함수가 constructor: ƒ Son() 자기자신을 가르키게 설정해준다. 
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// 결과
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">dir</span>(<span style="color:#a6e22e">Son</span>); <span style="color:#75715e">// Son {money: 1000, car: &#34;car&#34;, name: &#34;jj&#34;}
+</span><span style="color:#75715e">//money: 1000
+</span><span style="color:#75715e">//car: &#34;car&#34;
+</span><span style="color:#75715e">//name: &#34;jj&#34;
+</span><span style="color:#75715e">// __proto__: Parent  &lt;&lt; Parent 과 연결 되어있다
+</span><span style="color:#75715e">// constructor: ƒ Parent()
+</span><span style="color:#75715e"></span>
 
 
+<span style="color:#75715e">// 3. Son.prototype.constructor = Son 을 하는 이유는?
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// Son.protoype = Object.create(Parent) 하는 순간 
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// Son.protoype.constructor = Parent 를 가르키게 된다. 
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// 그렇게 되면 Son 함수가 자기 자신을 가르키지 않고 constructor: ƒ Parent() 가르키게 된다.  
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// Son.prototype.constructor = Son 를 하지않는다면 
+</span><span style="color:#75715e">// 결과 
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">dir</span>(<span style="color:#a6e22e">Son</span>); <span style="color:#75715e">// Son {money: 1000, car: &#34;car&#34;, name: &#34;jj&#34;}
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// money: 1000
+</span><span style="color:#75715e">//car: &#34;car&#34;
+</span><span style="color:#75715e">//name: &#34;jj&#34;
+</span><span style="color:#75715e">// __proto__: Parent  &lt;&lt; Parent 과 연결 되어있다
+</span><span style="color:#75715e">// constructor: ƒ Parent() // 하지만 Son 의 construtor 는 Parent()를 가르키게 된다. 
+</span><span style="color:#75715e"></span> 
 
 
-</code></pre>
 
-<h2 id="es6-class-키워드">ES6 class 키워드</h2>
 
+</code></pre></div><h2 id="es6-class-키워드">ES6 class 키워드</h2>
 <ul>
-<li><p>위에 있는 Parent() 와 Son() 의 상속관계를 예제로 바꿔보자</p></li>
-
-<li><p>Parent class 함수 만든다.</p></li>
+<li>
+<p>위에 있는 Parent() 와 Son() 의 상속관계를 예제로 바꿔보자</p>
+</li>
+<li>
+<p>Parent class 함수 만든다.</p>
+</li>
 </ul>
-
-<pre><code class="language-js">
-class Parent {
-  constructor() { // constructor키가 추가되었다. constructor(Parameter) 넣을수 있다. 
-    this.money = 1000
-    this.car = &quot;car&quot;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parent</span> {
+  <span style="color:#a6e22e">constructor</span>() { <span style="color:#75715e">// constructor키가 추가되었다. constructor(Parameter) 넣을수 있다. 
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">money</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">car</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;car&#34;</span>
     }
-  mesaage(){ // 메소드를 이렇게 정의한다. 
-    return &quot;밥먹어라&quot;;
+  <span style="color:#a6e22e">mesaage</span>(){ <span style="color:#75715e">// 메소드를 이렇게 정의한다. 
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;밥먹어라&#34;</span>;
   }
 }
 
 
 
-</code></pre>
-
-<ul>
+</code></pre></div><ul>
 <li>Son class 함수를 만든다.</li>
 </ul>
-
-<pre><code class="language-js">// 엄청 간단해졌다. 
-class Son extends Parent{  // extentds 키워드 추가 
-  constructor(){
-    super()               // super()추가 Parent.call() 대체 
-    this.name = &quot;jj&quot;    
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// 엄청 간단해졌다. 
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Son</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Parent</span>{  <span style="color:#75715e">// extentds 키워드 추가 
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">constructor</span>(){
+    <span style="color:#66d9ef">super</span>()               <span style="color:#75715e">// super()추가 Parent.call() 대체 
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;jj&#34;</span>    
   }
-       eat(){             // 메소드 추가 
-    return &quot;맛있다.&quot;
+       <span style="color:#a6e22e">eat</span>(){             <span style="color:#75715e">// 메소드 추가 
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;맛있다.&#34;</span>
     } 
 }
 
 
-</code></pre>
-
-<h2 id="es5-와-es6-차이점">ES5 와 ES6 차이점</h2>
-
+</code></pre></div><h2 id="es5-와-es6-차이점">ES5 와 ES6 차이점</h2>
 <ul>
-<li><p>What we&rsquo;ll cover</p></li>
-
-<li><p>Destructuring</p></li>
-
-<li><p>Spread operator</p></li>
-
-<li><p>Rest Parameters</p></li>
-
-<li><p>Default Parameters</p></li>
-
-<li><p>Template Literals</p></li>
-
-<li><p>Arrow Functions</p></li>
-
-<li><p>for &hellip; of Loop</p></li>
-
-<li><p>변수 할당 (Destructuring)</p></li>
+<li>
+<p>What we&rsquo;ll cover</p>
+</li>
+<li>
+<p>Destructuring</p>
+</li>
+<li>
+<p>Spread operator</p>
+</li>
+<li>
+<p>Rest Parameters</p>
+</li>
+<li>
+<p>Default Parameters</p>
+</li>
+<li>
+<p>Template Literals</p>
+</li>
+<li>
+<p>Arrow Functions</p>
+</li>
+<li>
+<p>for &hellip; of Loop</p>
+</li>
+<li>
+<p>변수 할당 (Destructuring)</p>
+</li>
 </ul>
-
-<pre><code class="language-js">// ES5
-
-var user = {
-  first: &quot;john&quot;,
-  last : &quot;jung&quot;,
-  age: 33
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// ES5
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">user</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">first</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;john&#34;</span>,
+  <span style="color:#a6e22e">last</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;jung&#34;</span>,
+  <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">33</span>
 }
 
-var first = user.first
-var last = user.last
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">first</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">first</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">last</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">last</span>
 
-first // &quot;john&quot;
-last // &quot;jung&quot;
+<span style="color:#a6e22e">first</span> <span style="color:#75715e">// &#34;john&#34;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">last</span> <span style="color:#75715e">// &#34;jung&#34;
+</span><span style="color:#75715e"></span>
 
-
-// ES6
-var user = {
-  first: &quot;john&quot;,
-  last : &quot;jung&quot;,
-  age: 33
+<span style="color:#75715e">// ES6
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">user</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">first</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;john&#34;</span>,
+  <span style="color:#a6e22e">last</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;jung&#34;</span>,
+  <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">33</span>
 }
 
-var {first,last} = user;
+<span style="color:#66d9ef">var</span> {<span style="color:#a6e22e">first</span>,<span style="color:#a6e22e">last</span>} <span style="color:#f92672">=</span> <span style="color:#a6e22e">user</span>;
 
-first // &quot;john&quot;
-last // &quot;jung&quot;
+<span style="color:#a6e22e">first</span> <span style="color:#75715e">// &#34;john&#34;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">last</span> <span style="color:#75715e">// &#34;jung&#34;
+</span><span style="color:#75715e"></span>
 
-
-</code></pre>
-
+</code></pre></div>
           </div>
 
           
@@ -820,7 +818,7 @@ last // &quot;jung&quot;
     
     
     
-    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+    <script src="/js/academic.min.7636b87b7ca0b6689810d4b648238174.js"></script>
 
   </body>
 </html>
