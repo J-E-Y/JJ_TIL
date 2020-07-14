@@ -13,7 +13,10 @@ type: docs
 
 
 
-* CPU & 메모리(RAM)& 스토리지(HDD,SSD)
+## CPU & 메모리(RAM)& 스토리지(HDD,SSD)
+
+![](/tutorial/IT terminology_files/Screen Shot 2020-07-14 at 10.31.10 AM.png)
+
 * 1. CPU : 중앙정보처리장치, 레지스터, 데이터를 연산/처리하는 가장 중요한 부분, 아주 빠름 
 
 
