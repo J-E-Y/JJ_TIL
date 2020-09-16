@@ -253,12 +253,11 @@ const numbers = [1, 2, 3, 4, 5]; // Following code will create an array where ea
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/it-terminology/</guid>
-      <description>CPU &amp;amp; 메모리(RAM)&amp;amp; 스토리지(HDD,SSD) ![](/tutorial/IT terminology_files/Screen Shot 2020-07-14 at 10.31.10 AM.png)
-   CPU : 중앙정보처리장치, 레지스터, 데이터를 연산/처리하는 가장 중요한 부분, 아주 빠름     처리속도가 가장 빠르다.
+      <description>CPU&amp;amp;메모리(RAM)&amp;amp;스토리지(HDD,SSD)    CPU : 중앙정보처리장치, 레지스터, 데이터를 연산/처리하는 가장 중요한 부분, 아주 빠름     처리속도가 가장 빠르다.
   어떠한 데이터가져와서 처리하려면
   바로 스토리지로 가지 않는다.왜냐하면 느리고 성능이 CUP 를 못따라 온다.
   그래서 메모리를 거쳐 데이터를 가져와서 처리를 해준다.
-   메모리(RAM)(램) : CPU에서 직접 접근이 가능, 사용자가 자유롭게 내용을 읽고 쓰고 지울 수 있다.</description>
+   메모리(RAM)(램) : CPU에서 직접 접근이 가능, 사용자가 자유롭게 내용을 읽고 쓰고 지울 수 있다. 휘발성 기억장치, 빠름     가격이 비싸다</description>
     </item>
     
   </channel>
