@@ -20,7 +20,7 @@ type: docs
 
 ### Qeustion 
 
-## scrabble word calculator
+### scrabble word calculator
 
 > implement the word_calc method to return the correct Scrabble word score. The scores are already set up for you to use and are managed within Dictionaries:
 
@@ -219,7 +219,7 @@ word_calc("bus") // 5
 
 ### Question
 
-## 4칙연산 함수 만들기 
+### 4칙연산 함수 만들기 
 
 > Create a basic calulator with the following functions add,subtract,multiply and divide, implement the correct code to return correct mathematical value the functions should take two arguments
 
@@ -303,7 +303,7 @@ var answer = {
 
 
 
-## nonUniqueElements(data)
+### nonUniqueElements(data)
 
 ### Question
 
@@ -366,7 +366,7 @@ function checkio(data) {
 
 
 
-## Check_Point_1 Scope
+### Check_Point_1 Scope
 
    * 8번에 result인 x 가 10인 이유는 이해가 되는데 
 
@@ -430,7 +430,7 @@ var result = x; // 40
 
 
 
-## check_point 2 _Closure
+### check_point 2 _Closure
  
 
   * 클로저를 정의한다면 
