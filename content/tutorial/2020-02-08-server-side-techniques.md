@@ -82,7 +82,7 @@ const printString = (string, callback) => { // 1
     
     
 
-## Promise
+### Promise
 
 - `Promise`란 비동기 작업을 처리하기 위해 사용되는 객체입니다.
 - Callback 방식이 있음에도, Promise가 등장한 이유는 무엇일까요?
@@ -172,7 +172,7 @@ let promise1 = new Promise((resolve, reject)=>{
 
 
 
-## async/await
+## as#ync/await
 
 
 - **Async function 선언**은 **AsyncFunction** 객체를 반환하는 비동기 함수를 정의합니다. 반환된 AsyncFunction 객체는 호출 시 **Promise**를 반환합니다. **즉, 동기적이던 함수를 비동기적인 함수로 바꿔주는 역할**을 합니다.
@@ -222,7 +222,7 @@ async / await으로 변경 가능합니다! 🎉
     
 
 
-## fs module
+## fs #module
 
 ### Waht is fs module ?
 

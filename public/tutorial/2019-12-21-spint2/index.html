@@ -436,66 +436,7 @@
       <p class="docs-toc-title">On this page</p>
       
 
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#opp-란">OPP 란?</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#prototype-무엇이냐">prototype 무엇이냐?</a>
-      <ul>
-        <li><a href="#자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다">자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.</a></li>
-      </ul>
-    </li>
-    <li><a href="#instantiation-patterns">Instantiation Patterns</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#자료구조란-">자료구조란 ?</a></li>
-    <li><a href="#stack">Stack</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#queue">Queue</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#linked-list">Linked List</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#graphs">Graphs</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#tree">Tree</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#binary-search-tree">binary search tree</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#hash-table">Hash Table</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#complexity-analysis">Complexity Analysis</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+      <nav id="TableOfContents"></nav>
 
       <ul class="nav toc-top">
         <li><a href="#">Back to top</a></li>
@@ -513,19 +454,19 @@
           <h1 itemprop="name">__DS &amp; OOP</h1>
 
           <div class="article-style" itemprop="articleBody">
-            <h2 id="opp-란">OPP 란?</h2>
-<h4 id="객체-지향-프로그래밍이란oop-object-oriented-programming">객체 지향 프로그래밍이란(OOP: Object Oriented Programming)?</h4>
+            <h1 id="opp-란">OPP 란?</h1>
+<h1 id="객체-지향-프로그래밍이란oop-object-oriented-programming">객체 지향 프로그래밍이란(OOP: Object Oriented Programming)?</h1>
 <ul>
 <li>객체들의 <code>모임</code>이다.</li>
 </ul>
-<h4 id="객체-지향-프로그래밍-장점">객체 지향 프로그래밍 장점</h4>
+<h1 id="객체-지향-프로그래밍-장점">객체 지향 프로그래밍 장점</h1>
 <ul>
 <li>코드의 재사용성 제공
 *객체의 특성이나 속성을 한 번 정의해 놓으면 해당 객체에 소속되어 있는 모든 객체들의 속성으로 사용할 수 있으므로 재사용성이 높아진다.</li>
 <li>유지보수의 용이 : 한 번만 정의한 것을 수정하면 모든 객체의 속성을 수정할 수 있다.</li>
 <li>신뢰성 증대 : 다양하게 사용된 속성들에 경험이 쌓이면서 신뢰가 축적되기 쉽고 그것을 다시 사용한다면 에러(버그)의 가능성이 줄어든다.</li>
 </ul>
-<h4 id="oop의-기본-구성-요소">OOP의 기본 구성 요소</h4>
+<h1 id="oop의-기본-구성-요소">OOP의 기본 구성 요소</h1>
 <ul>
 <li>
 <p>클래스(Class)</p>
@@ -537,7 +478,7 @@
 <p>메서드(Method)</p>
 </li>
 </ul>
-<h4 id="opp-기본-컨셉-4-가지-있다">OPP 기본 컨셉 4 가지 있다.</h4>
+<h1 id="opp-기본-컨셉-4-가지-있다">OPP 기본 컨셉 4 가지 있다.</h1>
 <ul>
 <li>
 <ol>
@@ -560,7 +501,7 @@
 </ol>
 </li>
 </ul>
-<h4 id="1캡슐화란">1.캡슐화란?</h4>
+<h1 id="1캡슐화란">1.캡슐화란?</h1>
 <ul>
 <li>
 <p>속성들(properties)들을  object안에 넣어서 활용한다.</p>
@@ -602,24 +543,24 @@
  <span style="color:#a6e22e">employee</span>.<span style="color:#a6e22e">getWage</span>();<span style="color:#75715e">// 3200
 </span><span style="color:#75715e"></span>
 
-</code></pre></div><h4 id="2상속">2.상속?</h4>
+</code></pre></div><h1 id="2상속">2.상속?</h1>
 <ul>
 <li>상속은 쉽게 말하면 상위 클래스의 모든 것, 행동을 하위 클래스가 가지고 있으며 그대로 사용할 수도 있고 원하면 Customizing을 할 수 있다는 것이다.</li>
 <li>부모 클래스가 가지고 있는 속성(프로퍼티, 메소드) 등을 그대로 자식 클래스가 물려 받아 재사용이 가능하다.</li>
 </ul>
-<h4 id="3추상화란">3.추상화란?</h4>
+<h1 id="3추상화란">3.추상화란?</h1>
 <ul>
 <li>속에는 복잡하게 되어있지만 사용자가 쓰기에는 굉장히 간단하다.</li>
 <li>인터페이스가 간단해진다.</li>
 <li>복잡한걸 알지않아도 사용자 입장에서는 사용 가능</li>
 </ul>
-<h4 id="4여러가지-형태-다양성-">4.여러가지 형태 다양성 ?</h4>
+<h1 id="4여러가지-형태-다양성-">4.여러가지 형태 다양성 ?</h1>
 <ul>
 <li>다형성은 상속을 받은 기능을 변경하거나 확장하는 것</li>
 <li>코드의 재사용성이 높아져 코드의 길이가 감소하고 유지보수가 용이해짐</li>
 </ul>
-<h2 id="prototype-무엇이냐">prototype 무엇이냐?</h2>
-<h3 id="자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다">자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.</h3>
+<h1 id="prototype-무엇이냐">prototype 무엇이냐?</h1>
+<h1 id="자바스크립트는-프로토타입-기반-객체지향-프로그래밍-언어이다">자바스크립트는 프로토타입 기반 객체지향 프로그래밍 언어이다.</h1>
 <ul>
 <li>
 <p>ES6 문법이 도입되기 전에는 JavaScript에는 클래스(Class)가 없었음 그래서 객체 생성을 위해서 prototype을 사용했다.</p>
@@ -628,7 +569,7 @@
 <p>객체를 생성하면, 프로토타입이 결정되고, 우리는 그 프로토타입을 변경할 수 있습니다</p>
 </li>
 </ul>
-<h5 id="첫번째-알아야-할것">첫번째 알아야 할것</h5>
+<h1 id="첫번째-알아야-할것">첫번째 알아야 할것</h1>
 <ul>
 <li>함수를 만들어 변수에 담을때 new 라는 것을 같이 담으면 객체가 된다.</li>
 </ul>
@@ -638,7 +579,7 @@
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person</span>(); <span style="color:#75715e">//  x 라는 변수는 객체가 된다. 
 </span><span style="color:#75715e"></span>
 
-</code></pre></div><h4 id="두번째-알아야할-것">두번째 알아야할 것</h4>
+</code></pre></div><h1 id="두번째-알아야할-것">두번째 알아야할 것</h1>
 <ul>
 <li>객체(object)는 함수(function)로부터 시작된다</li>
 </ul>
@@ -655,7 +596,7 @@
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">jsBook</span> <span style="color:#f92672">=</span> {}          <span style="color:#75715e">// 두번째 방식(생성자 선언 없이 ) // 객체 
 </span><span style="color:#75715e"></span>
 
-</code></pre></div><h4 id="세번째-알아야-할것">세번째 알아야 할것</h4>
+</code></pre></div><h1 id="세번째-알아야-할것">세번째 알아야 할것</h1>
 <ul>
 <li>
 <p>함수 생성시 발생하는 것을 알아야 한다.</p>
@@ -677,7 +618,7 @@
 <blockquote>
 <p>__proto__는 Prototype Link로서 객체가 생성될 때 사용된 생성자(함수)의 <code>Prototype object</code>를 가리킵니다.</p>
 </blockquote>
-<h4 id="네번째-알아야-하는것">네번째 알아야 하는것</h4>
+<h1 id="네번째-알아야-하는것">네번째 알아야 하는것</h1>
 <ul>
 <li>객체(object) 생성시 발생하는 일</li>
 </ul>
@@ -699,7 +640,7 @@
 <blockquote>
 <p><code>prototype property</code>(함수 생성시 함께 생성된 Prototype object를 가리킴)는 함수객체만 가지며 <code>__proto__</code>는 객체라면 모두 갖고 있습니다.</p>
 </blockquote>
-<h4 id="예제">예제)</h4>
+<h1 id="예제">예제)</h1>
 <ul>
 <li>1.일반적인 함수 패턴</li>
 </ul>
@@ -870,7 +811,7 @@
 
 
 
-</code></pre></div><h2 id="instantiation-patterns">Instantiation Patterns</h2>
+</code></pre></div><h1 id="instantiation-patterns">Instantiation Patterns</h1>
 <ul>
 <li>
 <p>자바스크립트에 Class가 나오기 전에 사용하던 4가지 class 선언 방식 이것이 바로 <code>Instantiation Patterns</code> 방식이다.</p>
@@ -902,7 +843,7 @@
 </ol>
 </li>
 </ul>
-<h4 id="1-functional">1. Functional</h4>
+<h1 id="1-functional">1. Functional</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">Car</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
   <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">printingInstance</span> <span style="color:#f92672">=</span> {};
@@ -947,7 +888,7 @@
 </span><span style="color:#75715e"></span>
 
 
-</code></pre></div><h4 id="2-functional-shared">2. Functional Shared</h4>
+</code></pre></div><h1 id="2-functional-shared">2. Functional Shared</h1>
 <ul>
 <li>Functional Shared라는 방식을 사용한다면, someMethods라는 객체에 있는 메소드들의 메모리 주소만을 참조하기 때문에 메모리 효율이 좋아진다</li>
 </ul>
@@ -1065,28 +1006,28 @@
 <span style="color:#a6e22e">car1</span> <span style="color:#75715e">//  {position: 13}
 </span><span style="color:#75715e"></span>
 
-</code></pre></div><h2 id="자료구조란-">자료구조란 ?</h2>
+</code></pre></div><h1 id="자료구조란-">자료구조란 ?</h1>
 <ul>
 <li>데이터에 편리하게 접근하고, 변경하기 위해서 데이터를 저장하거나 조직하는 방법 을 말한다. 모든 목적에 맞는 자료구조는 찾기 어렵다.</li>
 </ul>
-<h2 id="stack">Stack</h2>
-<h4 id="stack-이란-">Stack 이란 ?</h4>
+<h1 id="stack">Stack</h1>
+<h1 id="stack-이란-">Stack 이란 ?</h1>
 <ul>
 <li>마지막에 쌓인것이 먼저 먼저 나오는 자료구조</li>
 <li>Last In First Out  =&gt; <code>L I F O</code> 이렇게 표현된다.</li>
 </ul>
 <p>![](/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 4.43.04 PM.png)</p>
-<h4 id="property">Property</h4>
+<h1 id="property">Property</h1>
 <pre><code>* top : 가장 최근에 들어간, 맨 위의 값
 * maxSize : 스택의 최대 할당 크기
 * storage : 스택이 가지고 있는 데이터들의 모음
 </code></pre>
-<h4 id="method">method</h4>
+<h1 id="method">method</h1>
 <pre><code>* 1. push : 맨 뒤에(위에) 삽입
 * 2. pop : 맨위 제거
 * 3. size : 크기 확인
 </code></pre>
-<h4 id="오류">오류</h4>
+<h1 id="오류">오류</h1>
 <ul>
 <li>
 <p>stack이  꽉차있는데 데이터를 삽입하려고 하면  Stack Overflow가 발생해 데이터가 들어가는 것을 차단한다.</p>
@@ -1098,31 +1039,31 @@
 <p>Stack이 없는데 값을 꺼내려고 하면 <code>Stack underflow</code>가 발생한다.</p>
 </li>
 </ul>
-<h2 id="queue">Queue</h2>
-<h4 id="queue-이란-">Queue 이란 ?</h4>
+<h1 id="queue">Queue</h1>
+<h1 id="queue-이란-">Queue 이란 ?</h1>
 <ul>
 <li>먼저 들어간 데이터가 먼저 나오는 자료 구조.</li>
 <li>First In First Out =&gt; <code>F I F O</code></li>
 </ul>
 <p>![](/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 4.47.58 PM.png)</p>
-<h4 id="property-1">property</h4>
+<h1 id="property-1">property</h1>
 <pre><code>* front : 가장 먼저 들어간, 맨 밑의 값
 * rear : 새로운 데이터가 들어갈 인덱스 (가장 최근의 인덱스 + 1)
 * storage : 큐가 가지고 있는 데이터들의 모음
 </code></pre>
-<h4 id="method-1">method</h4>
+<h1 id="method-1">method</h1>
 <pre><code>* 1. enqueue : 맨 뒤에(위에)삽입
 * 2. dequeue : 제일 앞에 빼기
 </code></pre>
-<h4 id="오류-발생">오류 발생</h4>
+<h1 id="오류-발생">오류 발생</h1>
 <ul>
 <li>만약 큐데이터가 비워있는데  삭제한다고 하면 오류가 발생한다.
 <code>Queue Underflow</code> 라고 한다.</li>
 <li>만약 큐데이터가 꽉 차있을 경우 삽일 하려고 한다면 오류가 난다.
 <code>Queue Overflow</code> 라고 한다.</li>
 </ul>
-<h2 id="linked-list">Linked List</h2>
-<h4 id="linked-list-란">Linked List 란?</h4>
+<h1 id="linked-list">Linked List</h1>
+<h1 id="linked-list-란">Linked List 란?</h1>
 <ul>
 <li>연결리스트는 각 데이터들을 포인터로 연결하여 관리하는 자료구조</li>
 <li>데이터값이 앞과 뒤로 연결되있다.</li>
@@ -1130,7 +1071,7 @@
 <li>배열은 추가삭제가 느리지만 인덱스 조회가 빠르고 Linked List 는 추가삭제는 빠르지만 인덱스의 조회가 느리다.</li>
 </ul>
 <p>![](/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.03.37 PM.png)</p>
-<h4 id="연결-리스트를-사용할-때의-장점">연결 리스트를 사용할 때의 장점</h4>
+<h1 id="연결-리스트를-사용할-때의-장점">연결 리스트를 사용할 때의 장점</h1>
 <ul>
 <li>
 <p>데이터를 차례대로 순회하면서 연산하기 좋음</p>
@@ -1142,7 +1083,7 @@
 <p>배열과는 달리 데이터의 개수를 모르는 경우에도 별도의 비용없이 추가할 수 있음</p>
 </li>
 </ul>
-<h4 id="연결-리스트를-원형으로-연결할-때의-장점">연결 리스트를 원형으로 연결할 때의 장점</h4>
+<h1 id="연결-리스트를-원형으로-연결할-때의-장점">연결 리스트를 원형으로 연결할 때의 장점</h1>
 <ul>
 <li>
 <p>반복적인 순회에서 연결리스트의 끝을 체크해야할 필요가 없음</p>
@@ -1154,17 +1095,17 @@
 <p>이로인해 시간, 메모리, 코드 모두 이득을 볼 수 있음</p>
 </li>
 </ul>
-<h4 id="property-2">Property</h4>
+<h1 id="property-2">Property</h1>
 <pre><code>HEAD : 첫 번째 노드를 지정하는 값
 TAIL : 마지막 노드를 지정하는 값
 </code></pre>
-<h4 id="method-2">Method</h4>
+<h1 id="method-2">Method</h1>
 <pre><code>addToTail 추가 : 마지막 번째 노드에 데이터를 삽입
 removeHead 삭제  : 첫 번째 노드를 삭제
 contains 탐색 : 연결 리스트가 주어진 값을 포함하고 있는지 확인
 </code></pre>
-<h2 id="graphs">Graphs</h2>
-<h4 id="graphs-란">Graphs 란?</h4>
+<h1 id="graphs">Graphs</h1>
+<h1 id="graphs-란">Graphs 란?</h1>
 <ul>
 <li>노드(node)와 노드를 연결하는 간선(edge)로 이루어진 비선형 자료 구조</li>
 <li>버텍스(vertex)와 노드를 연결하는 아크로 이루어진 비선형 자료 구조</li>
@@ -1173,17 +1114,17 @@ contains 탐색 : 연결 리스트가 주어진 값을 포함하고 있는지 �
 <li>오일러 문제(다리 건너기), 길찾기 알고리즘, 최단거리 알고리즘(다익스트라,벨만포드)</li>
 </ul>
 <p>![](/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.35.39 PM.png)</p>
-<h4 id="graphs-종류">Graphs 종류</h4>
+<h1 id="graphs-종류">Graphs 종류</h1>
 <pre><code>* 무방향 그래프
 * 정방향 그래프
 </code></pre>
 <p>![](/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 1.34.31 PM.png)</p>
-<h4 id="property-3">Property</h4>
+<h1 id="property-3">Property</h1>
 <pre><code>node : 그래프를 구성하는 노드들
 edge : 노드들을 연결하고 관계짓는 간선들
 nodes : 노드들을 담고 있는 데이터 배열
 </code></pre>
-<h4 id="method-3">Method</h4>
+<h1 id="method-3">Method</h1>
 <pre><code>addNode : 그래프에 노드를 추가한다.
 removeNode : 그래프에서 노드를 제거한다.
 addEdge : 노드와 노드 사이에 간선을 추가한다.
@@ -1192,7 +1133,7 @@ hasEdge : 노드와 노드 사이에 간선(관계)가 있는지 확인한다.
 contains : 그래프가 주어진 값의 노드를 포함하고 있는지 확인한다.
 forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에 대해 실행한다.
 </code></pre>
-<h4 id="그래프를-코드로-표현하는-2가지-방법">그래프를 코드로 표현하는 2가지 방법</h4>
+<h1 id="그래프를-코드로-표현하는-2가지-방법">그래프를 코드로 표현하는 2가지 방법</h1>
 <ul>
 <li>
 <ol>
@@ -1205,27 +1146,27 @@ forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에
 </ol>
 </li>
 </ul>
-<h4 id="인접-행렬-그래프">인접 행렬 그래프</h4>
+<h1 id="인접-행렬-그래프">인접 행렬 그래프</h1>
 <pre><code>장점: 직관적이며 쉽게 구현 가능
 단점: 불필요한 정보의 저장이 많으며, 그래프의 크기가 커지면 메모리 초과가 발생할 수 있음
 구현: int형의 2차원 배열을 주로 이용하며, 이동할 수 있으면 1, 없으면 0으로 표기함
 </code></pre>
-<h4 id="인접-리스트-그래프---갈-수-있는-곳만-저장">인접 리스트 그래프 - &ldquo;갈 수 있는 곳만 저장&rdquo;</h4>
+<h1 id="인접-리스트-그래프---갈-수-있는-곳만-저장">인접 리스트 그래프 - &ldquo;갈 수 있는 곳만 저장&rdquo;</h1>
 <pre><code>장점: 필요한 정보만 저장하여 메모리 절약 가능
 단점: 인접행렬에 비해 다소 어려움
 구현: 리스트(List)나 벡터(Vector)등의 자료구조를 이용하여 각 정점에서 이동가능한 정점들을 저장(List나 Vector를 이용한 2차원 배열이라 생각하면 이해하기 쉬움)
 </code></pre>
-<h4 id="길찾기-알고리즘">길찾기 알고리즘</h4>
+<h1 id="길찾기-알고리즘">길찾기 알고리즘</h1>
 <p>![](/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-04 at 2.17.29 PM.png)</p>
-<h2 id="tree">Tree</h2>
-<h4 id="tree-란">Tree 란?</h4>
+<h1 id="tree">Tree</h1>
+<h1 id="tree-란">Tree 란?</h1>
 <ul>
 <li>트리는 노드(node)들과 노드들을 연결하는 링크(link)들로 구성됨</li>
 <li>부모-자식 관계를 이루는 노드들로 구성된 자료 구조</li>
 <li>컴퓨터 directory 구조 비슷 특정한 파일을 찾을때 폴더안에 폴더가 있고 그안에 파일이 있다 이러한 구조를 Tree 구조라고 한다.(조직도)</li>
 </ul>
 <p>![](/tutorial/2019-12-21-spint2_files/Screen Shot 2019-12-31 at 5.10.35 PM.png)</p>
-<h4 id="tree-종류에는-4가지가-대표적으로-있다">Tree 종류에는 4가지가 대표적으로 있다.</h4>
+<h1 id="tree-종류에는-4가지가-대표적으로-있다">Tree 종류에는 4가지가 대표적으로 있다.</h1>
 <ul>
 <li>1.이진 트리 (binary Tree) 란?</li>
 <li>2.편향 이진트리(skewed binary tree)란?</li>
@@ -1269,23 +1210,23 @@ forEachNode : 주어진 함수를 그래프가 가지고 있는 노드 각각에
 </ul>
 </li>
 </ul>
-<h4 id="용어">용어</h4>
+<h1 id="용어">용어</h1>
 <pre><code>  루트 노드(root node) : 부모가 없는 노드. 트리는 하나의 루트 노드만을 가진다.
   단말 노드(leaf node) : 자식이 없는 노드이다.
   내부(internal) 노드 : 리프 노드가 아닌 노드.
   링크(link) : 노드를 연결하는 선 (edge, branch 라고도 부름).
   형제(sibling) : 같은 부모를 가지는 노드.
 </code></pre>
-<h4 id="property-4">Property</h4>
+<h1 id="property-4">Property</h1>
 <pre><code>nodes : 값과 자식들로 이루어진, 노드들의 모임
 edge : 노드들을 서로 연결하는 간선
 </code></pre>
-<h4 id="method-4">Method</h4>
+<h1 id="method-4">Method</h1>
 <pre><code>addChild() : 주어가 되는 노드에 자식 노드를 추가한다.
 removeNode() : 주어진 값을 가진 노드를 삭제한다.
 contains() : 주어진 값을 트리에 있는 노드들이 가지고 있는지 확인한다.
 </code></pre>
-<h2 id="binary-search-tree">binary search tree</h2>
+<h1 id="binary-search-tree">binary search tree</h1>
 <ul>
 <li>이진 탐색 트리(binary search tree)는 이진 트리 기반의 <code>탐색</code>을 위한 자료 구조이다</li>
 </ul>
@@ -1328,24 +1269,24 @@ contains() : 주어진 값을 트리에 있는 노드들이 가지고 있는지 
 <blockquote>
 <p>sibling을 먼저 탐색하고, 그 후 다음 depth로 들어가 해당 depth의 slibling을 탐색하는 식으로 전체 트리를 순회합니다.</p>
 </blockquote>
-<h4 id="알고리즘-방법-추가학습">알고리즘 방법 (추가학습)</h4>
+<h1 id="알고리즘-방법-추가학습">알고리즘 방법 (추가학습)</h1>
 <pre><code>&lt;탐색 알고리즘&gt;
 &lt;삽입 알고리즘&gt;
 &lt;삭제 알고리즘&gt;
 이진 탐색 트리의 시간복잡도 분석
 이진 탐색 트리에서는 최상의 경우 시간복잡도가 O(logn)인 탐색을 할 수 있다.
 </code></pre>
-<h4 id="property-5">Property</h4>
+<h1 id="property-5">Property</h1>
 <pre><code>left :  루트노드의 왼쪽에 있는 노드들  오른쪽보다 작은 
 right : 루트 노드 의 오른쪽에 있는 노드들 왼쪽보다 큰 
 value : 노드의 값
 </code></pre>
-<h4 id="method-5">Method</h4>
+<h1 id="method-5">Method</h1>
 <pre><code>insert : 주어진 값으로 노드를 만들어, 맞는 위치에 삽입
 contains : 트리를 반복하여 주어진 값이 있는지 확인
 delete : 노드를 삭제하고 트리 위치를 조정 
 </code></pre>
-<h4 id="삭제하는-3가지-방법">삭제하는 3가지 방법</h4>
+<h1 id="삭제하는-3가지-방법">삭제하는 3가지 방법</h1>
 <ul>
 <li>
 <p>1.맨밑에 지울때 리프한번의 연산 <code>O(1)</code></p>
@@ -1357,8 +1298,8 @@ delete : 노드를 삭제하고 트리 위치를 조정
 <p>3.자식이 2개이상인 노드를 지울때 이자리에 올려줄 친구를 찾는다.??? <code>O(n)</code></p>
 </li>
 </ul>
-<h2 id="hash-table">Hash Table</h2>
-<h4 id="hash-table-란">Hash Table 란?</h4>
+<h1 id="hash-table">Hash Table</h1>
+<h1 id="hash-table-란">Hash Table 란?</h1>
 <ul>
 <li>
 <p>데이터의 효율적 관리를 목적으로 임의의 길이의 데이터를 고정된 길이의 데이터로 매핑하는 함수입니다. 이 때 매핑 전 원래 데이터의 값을 키(key), 매핑 후 데이터의 값을 해시값(hash value), 매핑하는 과정 자체를 해싱(hashing)라고 합니다.</p>
@@ -1378,7 +1319,7 @@ delete : 노드를 삭제하고 트리 위치를 조정
 </ul>
 </li>
 </ul>
-<h4 id="특징">특징</h4>
+<h1 id="특징">특징</h1>
 <ul>
 <li>key,value를가지고 있는 것</li>
 <li>어떤 특정 값을 받으면 그 값을 해시 함수에 통과시켜 나온 인덱스(index)에 저장하는 자료구조</li>
@@ -1386,7 +1327,7 @@ delete : 노드를 삭제하고 트리 위치를 조정
 <li>고유에 인댁스로 바로 접근할수 있기  때문에 빠르게 검색할수 있다.</li>
 <li>해시 테이블은 사전을 구현하는 가장 효율적인 자료구조이다.</li>
 </ul>
-<h4 id="주의">주의</h4>
+<h1 id="주의">주의</h1>
 <ul>
 <li>
 <p>해쉬 테이블은 원래 O(1) 를 자랑하는데 O(n) 이 될수 있다.</p>
@@ -1411,16 +1352,16 @@ delete : 노드를 삭제하고 트리 위치를 조정
 ![](/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-05 at 12.36.09 PM.png)</p>
 </li>
 </ul>
-<h4 id="property-6">Property</h4>
+<h1 id="property-6">Property</h1>
 <pre><code>limit : 한 슬롯(버킷) 안에 들어갈 수 있는 데이터의 최대 갯수이다.
 storage : 데이터들이 저장되는 테이블이다.
 </code></pre>
-<h4 id="method-6">Method</h4>
+<h1 id="method-6">Method</h1>
 <pre><code>insert : 주어진 index로 테이블에 데이터를 추가한다.
 retrieve : 주어진 Index로 데이터 값을 찾아 리턴한다.
 remove : 주어진 키값에 해당하는 index에 들어 있는 값을 제거한다.
 </code></pre>
-<h2 id="complexity-analysis">Complexity Analysis</h2>
+<h1 id="complexity-analysis">Complexity Analysis</h1>
 <p>Complexity Analysis : 복잡도 분석이다.</p>
 <ul>
 <li>
@@ -1430,7 +1371,7 @@ remove : 주어진 키값에 해당하는 index에 들어 있는 값을 제거�
 </ul>
 </li>
 </ul>
-<h4 id="시간복잡도에서는-big-o표기-할수-있다">시간복잡도에서는 Big-O표기 할수 있다.</h4>
+<h1 id="시간복잡도에서는-big-o표기-할수-있다">시간복잡도에서는 Big-O표기 할수 있다.</h1>
 <ul>
 <li>O(1) – 상수 시간 :</li>
 </ul>
@@ -1478,7 +1419,7 @@ remove : 주어진 키값에 해당하는 index에 들어 있는 값을 제거�
 </blockquote>
 <p>![](/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-02 at 11.35.18 AM.png)</p>
 <p>![](/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-02 at 11.35.32 AM.png)</p>
-<h4 id="시간복잡도의-예시">시간복잡도의 예시</h4>
+<h1 id="시간복잡도의-예시">시간복잡도의 예시</h1>
 <p>![](/tutorial/2019-12-21-spint2_files/Screen Shot 2020-01-02 at 11.33.25 AM.png)</p>
 <p><strong>Arrays</strong></p>
 <ul>
@@ -1560,15 +1501,15 @@ remove : 주어진 키값에 해당하는 index에 들어 있는 값을 제거�
 <p><code>하지만 Doubly_linked lists</code> 에서는 <code>insert</code> 와 <code>remove</code> 는 O(1) 이된다
 왜냐하면 이전에 pointer 와 다음에 poniter 둘다를 가지고 있기 때문이다.</p>
 <p><strong>Array % Singly-Linked List &amp; Doubly-Linked Lists</strong></p>
-<h4 id="array">array</h4>
+<h1 id="array">array</h1>
 <pre><code>  O(1) : lookUp
   O(n) : insert/remove
 </code></pre>
-<h4 id="singly-linked-list">Singly-Linked List</h4>
+<h1 id="singly-linked-list">Singly-Linked List</h1>
 <pre><code>  O(1) : insert
   O(n) : lookup, remove
 </code></pre>
-<h4 id="doubly-linked-lists">Doubly-Linked Lists</h4>
+<h1 id="doubly-linked-lists">Doubly-Linked Lists</h1>
 <pre><code>  O(1) : insert/remove
 </code></pre>
 <p><code>여기서 주의해야하는 것이</code></p>
