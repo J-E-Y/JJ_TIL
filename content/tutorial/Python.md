@@ -13,7 +13,7 @@ type: docs
 
 
 ---
-##  Python: **Operators**
+###  Python: **Operators**
 ---
 
 * Arithmetic operators
@@ -191,7 +191,7 @@ Variable names are case-sensitive (age, Age and AGE are three different variable
 
 
 ---
-##  Python: int float str
+###  Python: int float str
 ---
 
 
@@ -261,7 +261,7 @@ print(1,2,3,4,sep=",")  <<<<  중간에 문자 집어넣기
 
 
 ---
-##  Python:Format_string
+###  Python:Format_string
 ---
 
 
@@ -609,7 +609,7 @@ else:
 
 ```
 ---
-##  Python: for
+###  Python: for
 ---
 
 * Description
@@ -657,7 +657,7 @@ for n in range(0,12.2):
 ```
 
 ---
-##  Python: Module
+###  Python: Module
 ---
 
 
@@ -841,7 +841,7 @@ for count in range(line_count):
 ```
 
 ---
-##  Python: Crawler
+###  Python: Crawler
 ---
 
 
