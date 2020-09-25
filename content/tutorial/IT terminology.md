@@ -13,7 +13,7 @@ type: docs
 
 
 
-## CPU&메모리(RAM)&스토리지(HDD,SSD)
+### CPU&메모리(RAM)&스토리지(HDD,SSD)
 
 
 
@@ -99,7 +99,7 @@ type: docs
 
 
 
-## 자료구조란?
+### 자료구조란?
 
 * 자료구조 란 데이터에 편리하게 접근하고, 변경하기 위해서 데이터를 저장하거나 조직하는 방법 을 말한다. 모든 목적에 맞는 자료구조는 없다
 
@@ -337,8 +337,7 @@ type: docs
 
 
 
-## HTML & Internet
-
+### HTML & Internet
 
 
 * HTTP HTML 
@@ -530,14 +529,14 @@ type: docs
 ![](/tutorial/IT terminology_files/BD37F54D-B97E-41B5-BEEF-E92F3E0BAFF9.png)
 
 
-## TLS
+### TLS
 
 #### TLS (Transport Layer Security,)
 
 > 클라이언트/서버 응용 프로그램이 네트워크로 통신을 하는 과정에서 도청, 간섭, 위조를 방지하기 위해서 설계되었다. 그리고 암호화를 해서 최종단의 인증, 통신 기밀성을 유지시켜준다.
 
 
-## CPU 
+### CPU 
 
 #### 중앙 처리 장치 또는 CPU (central processing unit) 
 
@@ -550,7 +549,7 @@ type: docs
 CPU에는 MCU(Micro Control Unit)와 주변 장치(외부 확장 장체에 관한 IC)가 다 들어있는 Soc(System On Chip)가 있다. 주변 IC가 따로 달려 있을 경우, 그것은 MCU라고 할 수 있다
 
 
-## SSL
+### SSL
 
 
 #### SSL (Secure Sockets Layer)  보안 소켓 계층
@@ -562,7 +561,7 @@ CPU에는 MCU(Micro Control Unit)와 주변 장치(외부 확장 장체에 관�
 
 
 
-## 메소드란?
+### 메소드란?
 
 
 #### 객체안에 함수가 들어있는것이 메소드
@@ -584,7 +583,7 @@ obj.foo() // “hello world”
 
 ```
 
-## ASCII(아키스) 
+### ASCII(아키스) 
 
 
 
