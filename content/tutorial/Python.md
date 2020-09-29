@@ -13,7 +13,7 @@ type: docs
 
 
 ---
-###  Python: **Operators**
+#  Python: **Operators**
 ---
 
 * Arithmetic operators
@@ -22,7 +22,7 @@ type: docs
 * Logical operators
 
 
-### Arithmetic Operator
+# Arithmetic Operator
 
 
 |               |                  | 
@@ -36,7 +36,7 @@ type: docs
 |   //	        |   Floor division |	x // y |
 
 
-### Assignment Operators
+# Assignment Operators
 
 
 |               |                   | 
@@ -57,7 +57,7 @@ type: docs
 
 
 
-### Comparison Operators
+# Comparison Operators
 
 |               |                         | 
 | ------------- |:-----------------------:| ----------:    |
@@ -69,7 +69,7 @@ type: docs
 |`<=`	          |Less than or equal to	  | x  <= y        |
 
 
-### Python Logical Operators
+# Python Logical Operators
 
 
 |               |                                                       | 
@@ -119,7 +119,7 @@ Print(3%2) 나머지값구하기(나머지가 1 남는다)
 
 
 ---
-##  Python: **Variables**
+#  Python: **Variables**
 ---
 
 * Description
@@ -191,11 +191,11 @@ Variable names are case-sensitive (age, Age and AGE are three different variable
 
 
 ---
-###  Python: int float str
+#  Python: int float str
 ---
 
 
-##### 1.`int`: 정수
+# 1.`int`: 정수
 
 ```
 x = input("숫자를 입력해주세요.:")
@@ -220,7 +220,7 @@ Print(x+y)
 ```
 
 
-##### 2. `float` :실수  () 소수점 나타내주는것
+# 2. `float` :실수  () 소수점 나타내주는것
 
 ```
 x = `float`(input(“숫자를 입력해주세요.:”)) >>20
@@ -231,7 +231,7 @@ Print(x+y)
 
 ```
 
-##### 3. `Str`  :문자 이것을 사용하면 숫자를 문자로 변환시킬수 있다.
+# 3. `Str`  :문자 이것을 사용하면 숫자를 문자로 변환시킬수 있다.
 
 ```
 x = int(input("숫자를 입력하세요.:")
@@ -260,14 +260,14 @@ print(1,2,3,4,sep=",")  <<<<  중간에 문자 집어넣기
 
 
 
----
-###  Python:Format_string
----
+
+#  Python:Format_string
 
 
-###### format 명령
 
-##### [데이터타입] : s(문자열), c(한글자), d(정수), f(실수)
+# format 명령
+
+# [데이터타입] : s(문자열), c(한글자), d(정수), f(실수)
 
 
 
@@ -309,7 +309,7 @@ print(msg)
 
 
 ---
-##  Python: Variables
+#  Python: Variables
 ---
 
 > ariables are containers for storing data values.
@@ -325,7 +325,7 @@ print(y)
 
 
 ---
-##  Python: conditional
+#  Python: conditional
 ---
 
 
@@ -477,7 +477,7 @@ else:
 
 
 ---
-##  Python: try, except
+#  Python: try, except
 ---
 
 
@@ -528,7 +528,7 @@ print(result)
 
 
 ---
-##  Python: While 
+#  Python: While 
 ---
 
 ```
@@ -609,7 +609,7 @@ else:
 
 ```
 ---
-###  Python: for
+#  Python: for
 ---
 
 * Description
@@ -629,7 +629,7 @@ for n in range(10):
 
 
 
-###### for, range 활용해서 1~100까지의 홀수의 합을 구하는 프로그램
+# for, range 활용해서 1~100까지의 홀수의 합을 구하는 프로그램
 
 
 ```
@@ -657,7 +657,7 @@ for n in range(0,12.2):
 ```
 
 ---
-###  Python: Module
+#  Python: Module
 ---
 
 
@@ -672,7 +672,7 @@ Print(변수.hour)
 Print(변수.corosecond)
 
 ```
-###### 윤년 프로그램 
+# 윤년 프로그램 
 ```
 # 윤년 프로그램을 짜본다.
 # 윤년 2월 29일까지 있는 해
@@ -724,7 +724,7 @@ while True:
 
 
 ---
-##  Python: function
+#  Python: function
 ---
 
 ```
@@ -841,11 +841,11 @@ for count in range(line_count):
 ```
 
 ---
-###  Python: Crawler
+#  Python: Crawler
 ---
 
 
-##### 1. 변수만들어서 저장하기 data.text 모든 리소스 불러오기
+# 1. 변수만들어서 저장하기 data.text 모든 리소스 불러오기
 
 ```
 
@@ -857,7 +857,7 @@ print(data.text)
 ```
 
 
-##### 2. 제대로 돌아가고 있는지 확인
+# 2. 제대로 돌아가고 있는지 확인
 
 
 ```
@@ -875,7 +875,7 @@ print (data.status_code)
 
 
 
-##### 3. Test 해보기 만약 이게 맞다면 응답해라
+# 3. Test 해보기 만약 이게 맞다면 응답해라
 
 ```
 
@@ -886,7 +886,7 @@ if data.status_code == requests.codes.ok:
 ```
 
 
-##### 4. From bs4 import BeautifulSoup HTML를 해석해주는 역활 
+# 4. From bs4 import BeautifulSoup HTML를 해석해주는 역활 
 
 
 ```

@@ -388,39 +388,7 @@
       <p class="docs-toc-title">On this page</p>
       
 
-      <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#python-operators">Python: <strong>Operators</strong></a></li>
-        <li><a href="#arithmetic-operator">Arithmetic Operator</a></li>
-        <li><a href="#assignment-operators">Assignment Operators</a></li>
-        <li><a href="#comparison-operators">Comparison Operators</a></li>
-        <li><a href="#python-logical-operators">Python Logical Operators</a></li>
-      </ul>
-    </li>
-    <li><a href="#python-variables">Python: <strong>Variables</strong></a>
-      <ul>
-        <li><a href="#python-int-float-str">Python: int float str</a></li>
-        <li><a href="#pythonformat_string">Python:Format_string</a></li>
-      </ul>
-    </li>
-    <li><a href="#python-variables-1">Python: Variables</a></li>
-    <li><a href="#python-conditional">Python: conditional</a></li>
-    <li><a href="#python-try-except">Python: try, except</a></li>
-    <li><a href="#python-while">Python: While</a>
-      <ul>
-        <li><a href="#python-for">Python: for</a></li>
-        <li><a href="#python-module">Python: Module</a></li>
-      </ul>
-    </li>
-    <li><a href="#python-function">Python: function</a>
-      <ul>
-        <li><a href="#python-crawler">Python: Crawler</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+      <nav id="TableOfContents"></nav>
 
       <ul class="nav toc-top">
         <li><a href="#">Back to top</a></li>
@@ -439,7 +407,7 @@
 
           <div class="article-style" itemprop="articleBody">
             <hr>
-<h3 id="python-operators">Python: <strong>Operators</strong></h3>
+<h1 id="python-operators">Python: <strong>Operators</strong></h1>
 <hr>
 <ul>
 <li>Arithmetic operators</li>
@@ -447,7 +415,7 @@
 <li>Comparison operators</li>
 <li>Logical operators</li>
 </ul>
-<h3 id="arithmetic-operator">Arithmetic Operator</h3>
+<h1 id="arithmetic-operator">Arithmetic Operator</h1>
 <table>
 <thead>
 <tr>
@@ -494,7 +462,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="assignment-operators">Assignment Operators</h3>
+<h1 id="assignment-operators">Assignment Operators</h1>
 <table>
 <thead>
 <tr>
@@ -571,7 +539,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="comparison-operators">Comparison Operators</h3>
+<h1 id="comparison-operators">Comparison Operators</h1>
 <table>
 <thead>
 <tr>
@@ -613,7 +581,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="python-logical-operators">Python Logical Operators</h3>
+<h1 id="python-logical-operators">Python Logical Operators</h1>
 <table>
 <thead>
 <tr>
@@ -676,7 +644,7 @@ Print(3%2) 나머지값구하기(나머지가 1 남는다)
 # 수행하는 것을 이스케이핑 문자 혹은 이스케이핑 처리
 
 </code></pre><hr>
-<h2 id="python-variables">Python: <strong>Variables</strong></h2>
+<h1 id="python-variables">Python: <strong>Variables</strong></h1>
 <hr>
 <ul>
 <li>Description</li>
@@ -740,9 +708,9 @@ Variable names are case-sensitive (age, Age and AGE are three different variable
 # say_hi : 모두 소문자, 단어사이에 _
 # strSayHi : 변수명 앞에 변수의 타입을 기록
 </code></pre><hr>
-<h3 id="python-int-float-str">Python: int float str</h3>
+<h1 id="python-int-float-str">Python: int float str</h1>
 <hr>
-<h5 id="1int-정수">1.<code>int</code>: 정수</h5>
+<h1 id="1int-정수">1.<code>int</code>: 정수</h1>
 <pre><code>x = input(&quot;숫자를 입력해주세요.:&quot;)
 Y = input(&quot;숫자를 입력해주세요.:”)
 
@@ -762,14 +730,14 @@ y = 30
 
 Print(x+y)
 &gt;&gt;&gt;50
-</code></pre><h5 id="2-float-실수---소수점-나타내주는것">2. <code>float</code> :실수  () 소수점 나타내주는것</h5>
+</code></pre><h1 id="2-float-실수---소수점-나타내주는것">2. <code>float</code> :실수  () 소수점 나타내주는것</h1>
 <pre><code>x = `float`(input(“숫자를 입력해주세요.:”)) &gt;&gt;20
 Y = `float`(input(“숫자를 입력해주세요.:”)) &gt;&gt;30
 
 Print(x+y)
 50.0
 
-</code></pre><h5 id="3-str--문자-이것을-사용하면-숫자를-문자로-변환시킬수-있다">3. <code>Str</code>  :문자 이것을 사용하면 숫자를 문자로 변환시킬수 있다.</h5>
+</code></pre><h1 id="3-str--문자-이것을-사용하면-숫자를-문자로-변환시킬수-있다">3. <code>Str</code>  :문자 이것을 사용하면 숫자를 문자로 변환시킬수 있다.</h1>
 <pre><code>x = int(input(&quot;숫자를 입력하세요.:&quot;)
 Y = int(input(&quot;숫자를 입력하세요.:&quot;)
 
@@ -791,11 +759,9 @@ print(&quot;두 수의 합은&quot;&quot;,`str`(sum),&quot;입니다.&quot;)
 Print(1,2,3,4,end=&quot;,&quot;). &lt;&lt;&lt; 콤마로 띄어쓴다.
 print(1,2,3,4,sep=&quot;,&quot;)  &lt;&lt;&lt;&lt;  중간에 문자 집어넣기
 
-</code></pre><hr>
-<h3 id="pythonformat_string">Python:Format_string</h3>
-<hr>
-<h6 id="format-명령">format 명령</h6>
-<h5 id="데이터타입--s문자열-c한글자-d정수-f실수">[데이터타입] : s(문자열), c(한글자), d(정수), f(실수)</h5>
+</code></pre><h1 id="pythonformat_string">Python:Format_string</h1>
+<h1 id="format-명령">format 명령</h1>
+<h1 id="데이터타입--s문자열-c한글자-d정수-f실수">[데이터타입] : s(문자열), c(한글자), d(정수), f(실수)</h1>
 <ul>
 <li>example exercise 1-1</li>
 </ul>
@@ -814,7 +780,7 @@ foramt_string = &quot;섭씨 '%0.2f'도는 화씨 '%-.4f'도 입니다.&quot;
 msg = foramt_string % (35.7, 99.23)
 print(msg)
 </code></pre><hr>
-<h2 id="python-variables-1">Python: Variables</h2>
+<h1 id="python-variables-1">Python: Variables</h1>
 <hr>
 <blockquote>
 <p>ariables are containers for storing data values.</p>
@@ -827,7 +793,7 @@ y = &quot;John&quot;
 print(x)
 print(y)
 </code></pre><hr>
-<h2 id="python-conditional">Python: conditional</h2>
+<h1 id="python-conditional">Python: conditional</h1>
 <hr>
 <pre><code>
 if (a &gt; b):
@@ -958,7 +924,7 @@ elif menu == &quot;3&quot;:
 else:
     print(&quot;잘못 선택하셨습니다.&quot;)
 </code></pre><hr>
-<h2 id="python-try-except">Python: try, except</h2>
+<h1 id="python-try-except">Python: try, except</h1>
 <hr>
 <pre><code>
 try:
@@ -1001,7 +967,7 @@ print(result)
 # 만약 숫자가 아니라면 다시 입력하라는 메시지를 출력한다.
 # 다시 입력 하라는 메시지는 1회만
 </code></pre><hr>
-<h2 id="python-while">Python: While</h2>
+<h1 id="python-while">Python: While</h1>
 <hr>
 <pre><code>
 while [조건식]:
@@ -1077,7 +1043,7 @@ else:
     print(&quot;잘못 선택하셨습니다.&quot;)
 
 </code></pre><hr>
-<h3 id="python-for">Python: for</h3>
+<h1 id="python-for">Python: for</h1>
 <hr>
 <ul>
 <li>Description</li>
@@ -1089,7 +1055,7 @@ for n in range(10):
     print(n)
     print(n*n)
 
-</code></pre><h6 id="for-range-활용해서-1100까지의-홀수의-합을-구하는-프로그램">for, range 활용해서 1~100까지의 홀수의 합을 구하는 프로그램</h6>
+</code></pre><h1 id="for-range-활용해서-1100까지의-홀수의-합을-구하는-프로그램">for, range 활용해서 1~100까지의 홀수의 합을 구하는 프로그램</h1>
 <pre><code>total = 0
 for x in range(1,101,2):
     total += x
@@ -1108,7 +1074,7 @@ print(total)
 8
 10
 </code></pre><hr>
-<h3 id="python-module">Python: Module</h3>
+<h1 id="python-module">Python: Module</h1>
 <hr>
 <pre><code>
 import datetime
@@ -1119,7 +1085,7 @@ Print(변수.year)
 Print(변수.hour)
 Print(변수.corosecond)
 
-</code></pre><h6 id="윤년-프로그램">윤년 프로그램</h6>
+</code></pre><h1 id="윤년-프로그램">윤년 프로그램</h1>
 <pre><code># 윤년 프로그램을 짜본다.
 # 윤년 2월 29일까지 있는 해
 # 연도가 400으로 나누어 떨어지면 윤년
@@ -1164,7 +1130,7 @@ while True:
         print(&quot;없는 메뉴 입니다.&quot;)
 
 </code></pre><hr>
-<h2 id="python-function">Python: function</h2>
+<h1 id="python-function">Python: function</h1>
 <hr>
 <pre><code># def [함수이름]([매개변수,입력값]):
 #     [실행구문]
@@ -1268,16 +1234,16 @@ for count in range(line_count):
  *****
 
 </code></pre><hr>
-<h3 id="python-crawler">Python: Crawler</h3>
+<h1 id="python-crawler">Python: Crawler</h1>
 <hr>
-<h5 id="1-변수만들어서-저장하기-datatext-모든-리소스-불러오기">1. 변수만들어서 저장하기 data.text 모든 리소스 불러오기</h5>
+<h1 id="1-변수만들어서-저장하기-datatext-모든-리소스-불러오기">1. 변수만들어서 저장하기 data.text 모든 리소스 불러오기</h1>
 <pre><code>
 url = &quot;https://www.naver.com/&quot;
 requests.get(url)
 data = requests.get(url)
 print(data.text)
 
-</code></pre><h5 id="2-제대로-돌아가고-있는지-확인">2. 제대로 돌아가고 있는지 확인</h5>
+</code></pre><h1 id="2-제대로-돌아가고-있는지-확인">2. 제대로 돌아가고 있는지 확인</h1>
 <pre><code>print (data.status_code)
 
 “””
@@ -1288,13 +1254,13 @@ print(data.text)
 300번대 - redirect
 400번대 - 리소스 오류
 500번대 - 소스코드 오류
-</code></pre><h5 id="3-test-해보기-만약-이게-맞다면-응답해라">3. Test 해보기 만약 이게 맞다면 응답해라</h5>
+</code></pre><h1 id="3-test-해보기-만약-이게-맞다면-응답해라">3. Test 해보기 만약 이게 맞다면 응답해라</h1>
 <pre><code>
 if data.status_code == requests.codes.ok:
     print(&quot;work out”)
 
 
-</code></pre><h5 id="4-from-bs4-import-beautifulsoup-html를-해석해주는-역활">4. From bs4 import BeautifulSoup HTML를 해석해주는 역활</h5>
+</code></pre><h1 id="4-from-bs4-import-beautifulsoup-html를-해석해주는-역활">4. From bs4 import BeautifulSoup HTML를 해석해주는 역활</h1>
 <pre><code>
 Parsing(파싱) text 파일을 우리가 원하는 것을 불러오기 위해서는       parsing 필요하다.이럴때 BeautifulSoup 이라는 order 필요.
 
