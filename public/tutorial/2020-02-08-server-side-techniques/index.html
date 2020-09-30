@@ -27,7 +27,8 @@
   
     
   
-  <meta name="description" content="Callback  Callback Function이란, 그 함수 자체가 다른 함수의 인자(argument)로 넘겨져서 주어진 시점에 실행될 수 있도록 하는 함수입니다. 주어진 시점은 동기적일 수도 있고, 아닐 수도(비동기적) 있습니다.
+  <meta name="description" content="Callback
+ Callback Function이란, 그 함수 자체가 다른 함수의 인자(argument)로 넘겨져서 주어진 시점에 실행될 수 있도록 하는 함수입니다. 주어진 시점은 동기적일 수도 있고, 아닐 수도(비동기적) 있습니다.
   Async JS Callback   예제
  const printString = (string, callback) =&gt; { // 1  setTimeout( () =&gt; { console.log(string) callback() }, Math.floor(Math.random() * 100) &#43; 1 ) } const printAll = () =&gt; { // 2  printString(&#34;A&#34;, () =&gt; { // 4  printString(&#34;B&#34;, () =&gt; { // 5  printString(&#34;C&#34;, () =&gt; {}) // 6  }) }) } printAll() // 3    printString 함수 표현식: 이제 printString 함수를 호출할 수 있습니다.">
 
@@ -132,7 +133,8 @@
   <meta property="og:site_name" content="JohnJung">
   <meta property="og:url" content="/tutorial/2020-02-08-server-side-techniques/">
   <meta property="og:title" content="__Asynchronous | JohnJung">
-  <meta property="og:description" content="Callback  Callback Function이란, 그 함수 자체가 다른 함수의 인자(argument)로 넘겨져서 주어진 시점에 실행될 수 있도록 하는 함수입니다. 주어진 시점은 동기적일 수도 있고, 아닐 수도(비동기적) 있습니다.
+  <meta property="og:description" content="Callback
+ Callback Function이란, 그 함수 자체가 다른 함수의 인자(argument)로 넘겨져서 주어진 시점에 실행될 수 있도록 하는 함수입니다. 주어진 시점은 동기적일 수도 있고, 아닐 수도(비동기적) 있습니다.
   Async JS Callback   예제
  const printString = (string, callback) =&gt; { // 1  setTimeout( () =&gt; { console.log(string) callback() }, Math.floor(Math.random() * 100) &#43; 1 ) } const printAll = () =&gt; { // 2  printString(&#34;A&#34;, () =&gt; { // 4  printString(&#34;B&#34;, () =&gt; { // 5  printString(&#34;C&#34;, () =&gt; {}) // 6  }) }) } printAll() // 3    printString 함수 표현식: 이제 printString 함수를 호출할 수 있습니다."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
@@ -392,30 +394,7 @@
       <p class="docs-toc-title">On this page</p>
       
 
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#callback">Callback</a>
-      <ul>
-        <li><a href="#promise">Promise</a></li>
-        <li><a href="#using-promises">Using Promises</a></li>
-      </ul>
-    </li>
-    <li><a href="#promise-chaining">Promise Chaining</a></li>
-    <li><a href="#promiseall">Promise.all</a></li>
-    <li><a href="#asyncawait">as#ync/await</a>
-      <ul>
-        <li><a href="#why-do-we-asyncawait">Why Do We ❤️async/await</a></li>
-      </ul>
-    </li>
-    <li><a href="#fs-module">fs #module</a>
-      <ul>
-        <li><a href="#waht-is-fs-module-">Waht is fs module ?</a></li>
-      </ul>
-    </li>
-    <li><a href="#request">Request</a></li>
-    <li><a href="#http-vs-https">HTTP VS HTTPS?</a></li>
-  </ul>
-</nav>
+      <nav id="TableOfContents"></nav>
 
       <ul class="nav toc-top">
         <li><a href="#">Back to top</a></li>
@@ -433,7 +412,7 @@
           <h1 itemprop="name">__Asynchronous</h1>
 
           <div class="article-style" itemprop="articleBody">
-            <h2 id="callback">Callback</h2>
+            <p>Callback</p>
 <blockquote>
 <p>Callback Function이란, 그 함수 자체가 다른 함수의 인자(argument)로 넘겨져서 주어진 시점에 실행될 수 있도록 하는 함수입니다. 주어진 시점은 동기적일 수도 있고, 아닐 수도(비동기적) 있습니다.</p>
 </blockquote>
@@ -526,7 +505,7 @@
 </ol>
 </li>
 </ol>
-<h3 id="promise">Promise</h3>
+<p>Promise</p>
 <ul>
 <li><code>Promise</code>란 비동기 작업을 처리하기 위해 사용되는 객체입니다.</li>
 <li>Callback 방식이 있음에도, Promise가 등장한 이유는 무엇일까요?
@@ -536,7 +515,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="using-promises">Using Promises</h3>
+<p>Using Promises</p>
 <ul>
 <li>EX)</li>
 </ul>
@@ -590,13 +569,13 @@
     		.<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">error</span>=&gt;<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">error</span>));
 
 
-</code></pre></div><h2 id="promise-chaining">Promise Chaining</h2>
+</code></pre></div><p>Promise Chaining</p>
 <ul>
 <li><code>then()</code>과 <code>catch()</code> 메서드는 <strong>프로미스 객체</strong>를 반환합니다. 때문에 프로미스를 연결해서 사용하는 <strong>Promise chaining</strong>이 가능합니다.</li>
 <li>즉, 어떤 비동기 작업의 결과를 바탕으로 또 다른 비동기 작업을 수행해야 하는 경우, <code>프로미스_객체.then().then() ...</code> 과 같은 형식으로 연결하여 처리할 수 있습니다. 이와 같은 패턴 덕분에, Callback을 중첩해서 쓰는 Callback hell에 빠지지 않을 수 있는 것이지요.</li>
 </ul>
 <p>![](/tutorial/2020-02-08-server-side-techniques_files/Screen Shot 2020-04-21 at 7.22.15 PM.png)</p>
-<h2 id="promiseall">Promise.all</h2>
+<p>Promise.all</p>
 <ul>
 <li>Promise.all 은 무엇일까요?</li>
 </ul>
@@ -619,7 +598,7 @@
 <p>만약 배열의 프로미스가 하나라도 실패하면, 가장 먼저 실패한 프로미스의 <code>reject()</code>가 전달 받은 오류를 <code>catch()</code> 메서드로 넘겨주게 됩니다.</p>
 </li>
 </ul>
-<h2 id="asyncawait">as#ync/await</h2>
+<p>async/await</p>
 <ul>
 <li><strong>Async function 선언</strong>은 <strong>AsyncFunction</strong> 객체를 반환하는 비동기 함수를 정의합니다. 반환된 AsyncFunction 객체는 호출 시 <strong>Promise</strong>를 반환합니다. <strong>즉, 동기적이던 함수를 비동기적인 함수로 바꿔주는 역할</strong>을 합니다.</li>
 <li><strong>await</strong> 연산자는 Async function 내부에서만 사용할 수 있습니다. await는 (보통은 강제로)비동기화 된 함수에서, 일부 비동기 작업을 동기적으로 실행될 수 있게 합니다. 즉, 비동기적인 함수 실행 순서를 일부 동기적으로 하게 합니다, 더 쉽게 말하면, <strong>비동기 함수의 작업이 끝날 때까지 기다려줍니다.</strong></li>
@@ -652,7 +631,7 @@
           <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">processDataInWorker</span>(<span style="color:#a6e22e">v</span>);
         }
 
-</code></pre></div><h3 id="why-do-we-asyncawait">Why Do We ❤️async/await</h3>
+</code></pre></div><p>Why Do We ❤️async/await</p>
 <ul>
 <li>위의 예제 코드에서 await가 없었다면 <code>downloadData</code>, <code>downloadFallbackData</code>, <code>processDataInWorker</code> 함수가 모두 동시에, 비동기적으로 실행되어 각자의 역할에 충실할 수 없었을 것입니다.
 <ol>
@@ -662,8 +641,8 @@
 </ol>
 </li>
 </ul>
-<h2 id="fs-module">fs #module</h2>
-<h3 id="waht-is-fs-module-">Waht is fs module ?</h3>
+<p>fs module</p>
+<p>Waht is fs module ?</p>
 <p>![](/tutorial/2020-02-08-server-side-techniques_files/Screen Shot 2020-04-21 at 7.27.08 PM.png) What is fs module?</p>
 <ul>
 <li>node.js의 fs module은 OS(Windows, Linux, Unix(macOS))의 file system과 상호작용을 합니다. fs module을 사용하여 서버의 local storage에 접근하고 특정 파일의 생성, 읽기, 갱신, 삭제 (CRUD)가 가능합니다.</li>
@@ -698,11 +677,11 @@
             <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`stats: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">stats</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
           });
         }); <span style="color:#75715e">// now I&#39;m in order !
-</span></code></pre></div><h2 id="request">Request</h2>
+</span></code></pre></div><p>Request</p>
 <blockquote>
 <p>The request module is by far the most popular (non-standard) Node package for making HTTP requests. Actually, <code>it is really just a wrapper around Node's built in http module</code>, so you can achieve all of the same functionality on your own with http, but request just makes it a whole lot easier.</p>
 </blockquote>
-<h2 id="http-vs-https">HTTP VS HTTPS?</h2>
+<p>HTTP VS HTTPS?</p>
 <ul>
 <li>
 <p>**HTTP(Hypertext transfer protocol)**는 클라이언트-서버 간에 어떤 문서를 전송하고 받기 위한 통신 규약입니다. 그러나 HTTP에서 이루어지는 통신은 암호화되지 않았으므로 누구나 엿볼 수 있고, 또 통신을 요청하는 상대방에 대한 확인이 없기 때문에 보안에 결함이 있었습니다.</p>

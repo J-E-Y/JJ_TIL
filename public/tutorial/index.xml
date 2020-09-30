@@ -17,7 +17,8 @@
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2020-02-08-server-side-techniques/</guid>
-      <description>Callback  Callback Function이란, 그 함수 자체가 다른 함수의 인자(argument)로 넘겨져서 주어진 시점에 실행될 수 있도록 하는 함수입니다. 주어진 시점은 동기적일 수도 있고, 아닐 수도(비동기적) 있습니다.
+      <description>Callback
+ Callback Function이란, 그 함수 자체가 다른 함수의 인자(argument)로 넘겨져서 주어진 시점에 실행될 수 있도록 하는 함수입니다. 주어진 시점은 동기적일 수도 있고, 아닐 수도(비동기적) 있습니다.
   Async JS Callback   예제
  const printString = (string, callback) =&amp;gt; { // 1  setTimeout( () =&amp;gt; { console.log(string) callback() }, Math.floor(Math.random() * 100) + 1 ) } const printAll = () =&amp;gt; { // 2  printString(&amp;#34;A&amp;#34;, () =&amp;gt; { // 4  printString(&amp;#34;B&amp;#34;, () =&amp;gt; { // 5  printString(&amp;#34;C&amp;#34;, () =&amp;gt; {}) // 6  }) }) } printAll() // 3    printString 함수 표현식: 이제 printString 함수를 호출할 수 있습니다.</description>
     </item>
@@ -37,13 +38,15 @@
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2020-02-08-node/</guid>
-      <description>Node  node.js 란?   노드는 V8 엔진으로 만들어진 자바스크립트 런타임이다.
+      <description>Node
+ node.js 란?   노드는 V8 엔진으로 만들어진 자바스크립트 런타임이다.
   v8 이란 ?   v8 complies Javascript directly to native machine code
   자바스크립트를 기계어로 컴파일 해준다.
   런타임이란?   프로그래밍 언어가 구동되고 있는 환경 이다
  결론적으로 Node.js 란?
 node.js 는 자바스크립트를 컴파일 해주는 엔진으로 빌드된 자바스크립트 구동중인 환경이다.
-RESTful API  REST(REpresentational State Transfer)   REST API에 REST는 Representational State Transfer의 약자로 소프트웨어 프로그램 아키텍처의 한 형식입니다.</description>
+RESTful API
+ REST(REpresentational State Transfer)   REST API에 REST는 Representational State Transfer의 약자로 소프트웨어 프로그램 아키텍처의 한 형식입니다.</description>
     </item>
     
     <item>
@@ -148,8 +151,10 @@ prototype || __proto__ || constructor 관계   1.Parent생성자 함수가 생�
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2019-12-21-sprint1/</guid>
-      <description>Runtime   런타임란?
- 프로그래밍 언어가 실행되는 곳    Node.js   Node 란?
+      <description>Runtime
+  런타임란?
+ 프로그래밍 언어가 실행되는 곳    Node.js
+  Node 란?
  자바스크립트 런타임, V8엔진 등장(속도 향상, 크롬 브라우저의 V8 기반으로 nodejs사용해서 주로 웹서버 구축할수 있는 플랫폼 이다.    V8 크롬 자바스크립트엔진?
   자바스크립트를 기계어로 컴파일 해주는 역활을 해주는것이 V8
   실행 시키는 법
@@ -253,7 +258,8 @@ const numbers = [1, 2, 3, 4, 5]; // Following code will create an array where ea
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/it-terminology/</guid>
-      <description>CPU&amp;amp;메모리(RAM)&amp;amp;스토리지(HDD,SSD)    CPU : 중앙정보처리장치, 레지스터, 데이터를 연산/처리하는 가장 중요한 부분, 아주 빠름     처리속도가 가장 빠르다.
+      <description>CPU&amp;amp;메모리(RAM)&amp;amp;스토리지(HDD,SSD)
+   CPU : 중앙정보처리장치, 레지스터, 데이터를 연산/처리하는 가장 중요한 부분, 아주 빠름     처리속도가 가장 빠르다.
   어떠한 데이터가져와서 처리하려면
   바로 스토리지로 가지 않는다.왜냐하면 느리고 성능이 CUP 를 못따라 온다.
   그래서 메모리를 거쳐 데이터를 가져와서 처리를 해준다.

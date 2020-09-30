@@ -12,7 +12,7 @@ type: docs
 
 
 
-## Callback
+ Callback
 
 > Callback Function이란, 그 함수 자체가 다른 함수의 인자(argument)로 넘겨져서 주어진 시점에 실행될 수 있도록 하는 함수입니다. 주어진 시점은 동기적일 수도 있고, 아닐 수도(비동기적) 있습니다. 
 
@@ -82,7 +82,7 @@ const printString = (string, callback) => { // 1
     
     
 
-### Promise
+ Promise
 
 - `Promise`란 비동기 작업을 처리하기 위해 사용되는 객체입니다.
 - Callback 방식이 있음에도, Promise가 등장한 이유는 무엇일까요?
@@ -90,7 +90,7 @@ const printString = (string, callback) => { // 1
     - Callback에 대한 대안으로서, 그간 라이브러리 형식으로 제공되었던 Promise가 ES6에서 공식적으로 도입이 되었습니다. 🎉
 
 
-### Using Promises
+ Using Promises
 
 
 * EX)
@@ -140,7 +140,7 @@ let fetchCatData = new Promise((resolve, reject) => {
 
 ```
 
-## Promise Chaining
+ Promise Chaining
 
 - `then()`과 `catch()` 메서드는 **프로미스 객체**를 반환합니다. 때문에 프로미스를 연결해서 사용하는 **Promise chaining**이 가능합니다.
 - 즉, 어떤 비동기 작업의 결과를 바탕으로 또 다른 비동기 작업을 수행해야 하는 경우, `프로미스_객체.then().then() ...` 과 같은 형식으로 연결하여 처리할 수 있습니다. 이와 같은 패턴 덕분에, Callback을 중첩해서 쓰는 Callback hell에 빠지지 않을 수 있는 것이지요.
@@ -148,7 +148,7 @@ let fetchCatData = new Promise((resolve, reject) => {
 ![](/tutorial/2020-02-08-server-side-techniques_files/Screen Shot 2020-04-21 at 7.22.15 PM.png)
 
 
-## Promise.all
+ Promise.all
 
 * Promise.all 은 무엇일까요?
 
@@ -172,7 +172,7 @@ let promise1 = new Promise((resolve, reject)=>{
 
 
 
-## as#ync/await
+ async/await
 
 
 - **Async function 선언**은 **AsyncFunction** 객체를 반환하는 비동기 함수를 정의합니다. 반환된 AsyncFunction 객체는 호출 시 **Promise**를 반환합니다. **즉, 동기적이던 함수를 비동기적인 함수로 바꿔주는 역할**을 합니다.
@@ -213,7 +213,7 @@ async / await으로 변경 가능합니다! 🎉
 
 ```
 
-### Why Do We ❤️async/await
+ Why Do We ❤️async/await
 
 - 위의 예제 코드에서 await가 없었다면 `downloadData`, `downloadFallbackData`, `processDataInWorker` 함수가 모두 동시에, 비동기적으로 실행되어 각자의 역할에 충실할 수 없었을 것입니다.
     1. `downloadData` 함수를 통한 데이터 다운로드가 수행되지 못하여 `v`에 값이 제대로 할당되지 못했을 것이고, 
@@ -222,9 +222,9 @@ async / await으로 변경 가능합니다! 🎉
     
 
 
-## fs #module
+ fs module
 
-### Waht is fs module ?
+ Waht is fs module ?
 
 ![](/tutorial/2020-02-08-server-side-techniques_files/Screen Shot 2020-04-21 at 7.27.08 PM.png) What is fs module?
 
@@ -263,12 +263,12 @@ async / await으로 변경 가능합니다! 🎉
 ```
 
 
-## Request
+ Request
 
 > The request module is by far the most popular (non-standard) Node package for making HTTP requests. Actually, `it is really just a wrapper around Node's built in http module`, so you can achieve all of the same functionality on your own with http, but request just makes it a whole lot easier.
 
 
-## HTTP VS HTTPS?
+ HTTP VS HTTPS?
 
 - **HTTP(Hypertext transfer protocol)**는 클라이언트-서버 간에 어떤 문서를 전송하고 받기 위한 통신 규약입니다. 그러나 HTTP에서 이루어지는 통신은 암호화되지 않았으므로 누구나 엿볼 수 있고, 또 통신을 요청하는 상대방에 대한 확인이 없기 때문에 보안에 결함이 있었습니다.
 

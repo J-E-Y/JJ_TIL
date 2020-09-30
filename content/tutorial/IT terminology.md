@@ -13,7 +13,7 @@ type: docs
 
 
 
-### CPU&메모리(RAM)&스토리지(HDD,SSD)
+ CPU&메모리(RAM)&스토리지(HDD,SSD)
 
 
 
@@ -50,7 +50,7 @@ type: docs
 
 
 
-#### CPU
+ CPU
 
 * 중앙 처리 장치 또는 CPU (central processing unit) 
 
@@ -61,7 +61,7 @@ type: docs
 * CPU에는 MCU(Micro Control Unit)와 주변 장치(외부 확장 장체에 관한 IC)가 다 들어있는 Soc(System On Chip)가 있다. 주변 IC가 따로 달려 있을 경우, 그것은 MCU라고 할 수 있다
 
 
-#### 메모리(RAM) (Random Access Memory) 이란?
+ 메모리(RAM) (Random Access Memory) 이란?
 
 ![](/tutorial/IT terminology_files/Screen Shot 2020-01-04 at 1.45.00 PM.png)
 
@@ -71,7 +71,7 @@ type: docs
 
 
 
-####  하드디스크(HDD,SSD)
+  하드디스크(HDD,SSD)
 ![](/tutorial/IT terminology_files/Screen Shot 2020-01-04 at 1.45.17 PM.png)
 
       HDD = SSD. 문서 사진 동영상 드라이버 공간 저장하는곳
@@ -92,28 +92,28 @@ type: docs
       장점: 저장 많이 할수 있다. 가장저렴한 가격 10년 수명
       단점: 속도가 많이 떨어진다.
 
-## 알고리즘이란?
+ 알고리즘이란?
 
 
 * 알고리즘 이란 어떤 값을 입력으로 받아 원하는 값으로 출력하는 잘 정의된 계산 절차 를 말한다. 따라서 알고리즘은 어떤 입력을 어떤 출력으로 변환하는 일련의 계산 과정이라 할 수 있다.
 
 
 
-### 자료구조란?
+ 자료구조란?
 
 * 자료구조 란 데이터에 편리하게 접근하고, 변경하기 위해서 데이터를 저장하거나 조직하는 방법 을 말한다. 모든 목적에 맞는 자료구조는 없다
 
 
-#### 자료구조를 왜 알아야 하는가?
+ 자료구조를 왜 알아야 하는가?
 
 * 자료구조의 역확은 `메모리`의 효율적인 사용하기 위함이라고 할수 있다.
 
 
 
 
-## UI&UX
+ UI&UX
 
-#### UI (user Interface)
+ UI (user Interface)
   
   * The user interface (UI), in the industrial design field of human–computer interaction, is the space where interactions between humans and machines occur
 
@@ -122,7 +122,7 @@ type: docs
   * 자판기를 보고 있으면 음료자판기 UI
 
 
-#### UX (user experience)
+ UX (user experience)
 
   * refers to a person's emotions and attitudes about using a particular product, system or service. It includes the practical, experiential, affective, meaningful and valuable aspects of human–computer interaction and product ownership. Additionally,
 
@@ -132,7 +132,7 @@ type: docs
 
 ![](/tutorial/IT terminology_files/2.png)
 
-## NAT
+ NAT
 
 * Network Address Translation
 
@@ -155,7 +155,7 @@ type: docs
 
 
 
-## port
+ port
 
 
 * Port 란?
@@ -171,7 +171,7 @@ type: docs
 
 
 
-## port forwarding
+ port forwarding
 
 
 * 포트포워딩 (Port Forwarding)이란?
@@ -219,7 +219,7 @@ type: docs
 
 
 
-## URL 
+ URL 
 
 ![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 6.07.41 PM.png)
 
@@ -253,7 +253,7 @@ type: docs
 * 세번째 URL Fragment
 
 
-  * # 보이면 재빨리 찾아서 보내준다. 
+  *  보이면 재빨리 찾아서 보내준다. 
  
 > 만약 이것이 없다면 resource 가 web sever 에 가서 저장된 모든 것들을 찾아야 하기 때문이다. 
 
@@ -272,7 +272,7 @@ type: docs
 
 
 
-## Client & sever
+ Client & sever
 
 
 > HTTP://www.santaged.name/2014/07/up=andnwjkd.thml
@@ -322,7 +322,7 @@ type: docs
   
 
 
-## HTTP 
+ HTTP 
 
 
 * HTTP : `H`ypertext `T`ransfer `P`rotocal
@@ -337,7 +337,7 @@ type: docs
 
 
 
-### HTML & Internet
+ HTML & Internet
 
 
 * HTTP HTML 
@@ -428,11 +428,11 @@ type: docs
 * 패킷  (packet)
 
 
-###### 정보를 주고받을때 패킷을 통해 전단된다. 
+ 정보를 주고받을때 패킷을 통해 전단된다. 
 
 ![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.08.03 PM.png)
 
-###### 용량이 많을때 나눠서 보낸다. 
+ 용량이 많을때 나눠서 보낸다. 
 
 ![](/tutorial/IT terminology_files/Screen Shot 2019-12-16 at 4.09.25 PM.png)
 
@@ -462,7 +462,7 @@ type: docs
 
 
 
-## URL & URI
+ URL & URI
 
 
 
@@ -493,7 +493,7 @@ type: docs
 
 
 
-## JavaScript 와 ECMAScript
+ JavaScript 와 ECMAScript
 
 * JavaScript는 1996년에 만들어졌고, 그 다음에 JavaScript의 표준화를 위해 1997년에 ECMAScript가 만들어졌습니다. 당시 기준에서 JavaScript는 ECMAScript 사양을 따르고 있었기 때문에, JavaScript는 ECMAScript 사양을 준수하고 있던 언어의 예시였습니다.
 
@@ -502,7 +502,7 @@ type: docs
 * 둘의 뗄레야 뗄 수 없는 관계, 그리고 그 두 용어가 혼용되어서 사용되던 이유는 바로 여기에서부터 출발하지 않았을까 생각해봅니다.
 
 
-## Web storage
+ Web storage
 
 * Web storage (웹 스토리지)
 
@@ -523,22 +523,22 @@ type: docs
 
 
 
-## Proxy sever
+ Proxy sever
 
 
 ![](/tutorial/IT terminology_files/BD37F54D-B97E-41B5-BEEF-E92F3E0BAFF9.png)
 
 
-### TLS
+ TLS
 
-#### TLS (Transport Layer Security,)
+ TLS (Transport Layer Security,)
 
 > 클라이언트/서버 응용 프로그램이 네트워크로 통신을 하는 과정에서 도청, 간섭, 위조를 방지하기 위해서 설계되었다. 그리고 암호화를 해서 최종단의 인증, 통신 기밀성을 유지시켜준다.
 
 
-### CPU 
+ CPU 
 
-#### 중앙 처리 장치 또는 CPU (central processing unit) 
+ 중앙 처리 장치 또는 CPU (central processing unit) 
 
 * CPU 처리하는 용도 데이터를 읽고  처리하고  다시쓰는  동작을 합니다. 
 
@@ -549,10 +549,10 @@ type: docs
 CPU에는 MCU(Micro Control Unit)와 주변 장치(외부 확장 장체에 관한 IC)가 다 들어있는 Soc(System On Chip)가 있다. 주변 IC가 따로 달려 있을 경우, 그것은 MCU라고 할 수 있다
 
 
-### SSL
+ SSL
 
 
-#### SSL (Secure Sockets Layer)  보안 소켓 계층
+ SSL (Secure Sockets Layer)  보안 소켓 계층
 
 *월드 와이드 웹 브라우저와 웹 서버 간에 데이터를 안전하게 주고받기 위한 업계 표준 프로토콜. 미국 넷스케이프 커뮤니케이션스사가 개발했고, 마이크로소프트사 등 주요 웹 제품 업체가 채택하고 있다. SSL은 웹 제품뿐만 아니라 파일 전송 규약(FTP) 등 다른 TCP/IP 애플리케이션에 적용할 수 있으며, 인증 암호화 기능이 있다. 
 
@@ -561,10 +561,10 @@ CPU에는 MCU(Micro Control Unit)와 주변 장치(외부 확장 장체에 관�
 
 
 
-### 메소드란?
+ 메소드란?
 
 
-#### 객체안에 함수가 들어있는것이 메소드
+ 객체안에 함수가 들어있는것이 메소드
 
 ```js
 
@@ -583,11 +583,11 @@ obj.foo() // “hello world”
 
 ```
 
-### ASCII(아키스) 
+ ASCII(아키스) 
 
 
 
-#### 아키스 코드란 무엇인가?
+ 아키스 코드란 무엇인가?
 
 * ASCII (American Standard Code for Information Interchange, 미국 정보 교환 표준 부호)
 
@@ -598,13 +598,13 @@ obj.foo() // “hello world”
 * 아스키 코드(ASCII Table)는 0번부터 127번까지만 사용합니다. 127번 이후 코드를 사용했던 적도 있었는데 이는 표준이 아니며 운영체제마다 다른 코드(문자)를 배치했기 때문에 호환이 되지 않습니다. 윈도우즈 운영체제는 현재 128번부터 255번 사이에 포함된 문자를 출력하려는 시도에 대해 물음표(?)를 출력해서 사용하면 안된다는 것을 알려줍니다. 128번과 255번 문자는 물음표는 아니지만 사용할 수 없는 문자입니다.
 
 
-#### ASCII Table (아스키 코드표 )
+ ASCII Table (아스키 코드표 )
 
 ![](/tutorial/IT terminology_files/ASCII Table.png)
 
 
 
-#### ex)
+ ex)
 
 * alphabetPosition 함수 만들기
 
