@@ -22,7 +22,7 @@ email: "rightfuljung@gmail.com"
 #- Artificial Intelligence
 #- Computational Linguistics
 #- Information Retrieval
-name: John Jung
+name: John
 organizations:
 - name: Learner
   url: ""

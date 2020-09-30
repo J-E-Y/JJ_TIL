@@ -53,7 +53,7 @@ time_format = "3:04 PM"
 
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "rightfuljung@gmail.com"
-phone = "+82 10 2942 2742"
+#phone = "+82 10 2942 2742"
 address = "rightfuljung@gmail.com"
 
 
